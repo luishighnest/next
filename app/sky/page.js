@@ -118,25 +118,35 @@ function SkyContent() {
     const playerZoneRef = useRef(null);
     const nowRowRef = useRef(null);
 
-    // Carica canali e guida tv con aggiornamento automatico silenzioso
+    // Carica canali e guida tv con aggiornamento automatico silenzioso tramite API ottimizzata
     useEffect(() => {
         let isMounted = true;
         async function loadSourceChannels(isInitial = false) {
             if (isInitial) setLoading(true);
             try {
                 const ts = Date.now();
-                const [srcData, guideRes] = await Promise.allSettled([
-                    fetchSecureJson(`/${currentSource}?t=${ts}`).catch(() => null),
-                    fetch(`/guida_tv_sky.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null)
-                ]);
+                const res = await fetch(`/api/canali?source=${encodeURIComponent(currentSource)}&t=${ts}`, { cache: "no-store" })
+                    .then(r => r.json())
+                    .catch(() => null);
 
                 if (!isMounted) return;
 
-                const json = srcData.status === "fulfilled" ? srcData.value : null;
-                const gData = guideRes.status === "fulfilled" ? guideRes.value : [];
-                if (Array.isArray(gData)) setGuideData(gData);
+                let channelList = [];
+                if (res && Array.isArray(res.channels)) {
+                    channelList = res.channels;
+                    if (Array.isArray(res.guide)) setGuideData(res.guide);
+                } else {
+                    // Fallback di emergenza
+                    const [srcData, guideRes] = await Promise.allSettled([
+                        fetchSecureJson(`/${currentSource}?t=${ts}`).catch(() => null),
+                        fetch(`/guida_tv_sky.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null)
+                    ]);
+                    const json = srcData.status === "fulfilled" ? srcData.value : null;
+                    const gData = guideRes.status === "fulfilled" ? guideRes.value : [];
+                    if (Array.isArray(gData)) setGuideData(gData);
+                    channelList = parseChannelList(json, currentSource);
+                }
 
-                const channelList = parseChannelList(json, currentSource);
                 setChannels(channelList);
 
                 // Calcola target da chParam o da sessionStorage
@@ -156,7 +166,7 @@ function SkyContent() {
                 let found = null;
                 if (targetKey) {
                     found = channelList.find(c => {
-                        const cSlug = c.slug.replace(/[^a-z0-9]/g, "");
+                        const cSlug = (c.slug || "").replace(/[^a-z0-9]/g, "");
                         return cSlug === targetKey || cSlug.includes(targetKey) || targetKey.includes(cSlug);
                     });
                 }
@@ -165,11 +175,19 @@ function SkyContent() {
                 if (!found && targetKey) {
                     const otherSource = currentSource === "sky.json" ? "sky2.json" : "sky.json";
                     try {
-                        const otherData = await fetchSecureJson(`/${otherSource}?t=${ts}`).catch(() => null);
-                        if (otherData) {
-                            const otherList = parseChannelList(otherData, otherSource);
+                        const otherRes = await fetch(`/api/canali?source=${encodeURIComponent(otherSource)}&t=${ts}`, { cache: "no-store" })
+                            .then(r => r.json())
+                            .catch(() => null);
+
+                        let otherList = otherRes?.channels;
+                        if (!otherList || !Array.isArray(otherList)) {
+                            const otherData = await fetchSecureJson(`/${otherSource}?t=${ts}`).catch(() => null);
+                            if (otherData) otherList = parseChannelList(otherData, otherSource);
+                        }
+
+                        if (otherList && Array.isArray(otherList)) {
                             const foundInOther = otherList.find(c => {
-                                const cSlug = c.slug.replace(/[^a-z0-9]/g, "");
+                                const cSlug = (c.slug || "").replace(/[^a-z0-9]/g, "");
                                 return cSlug === targetKey || cSlug.includes(targetKey) || targetKey.includes(cSlug);
                             });
                             if (foundInOther) {

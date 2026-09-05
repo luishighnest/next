@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import CarouselSection from "@/components/CarouselSection";
-import { fetchSecureJson, isStreamWarp } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 
 const EXT = "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#";
@@ -52,7 +51,7 @@ export default function EventoPlayerPage() {
         async function loadEvent() {
             let foundCh = null;
 
-            // 1. Session Storage check
+            // 1. Session Storage check per risposta istantanea
             try {
                 const stored = sessionStorage.getItem("daznEventChannel") || sessionStorage.getItem("daznCustomChannel");
                 if (stored) {
@@ -65,325 +64,129 @@ export default function EventoPlayerPage() {
                 }
             } catch(e) {}
 
-            // 2. Fetch da categorie.json se non trovato
-            if (!foundCh) {
-                try {
-                    const catRes = await fetch("/categorie.json");
-                    if (catRes.ok) {
-                        const catData = await catRes.json();
-                        const targetSlug = slug.replace(/[^a-z0-9]/g, "");
-                        for (const cat of (catData.categorie || [])) {
-                            for (const c of (cat.canali || [])) {
-                                const cSlug = (c.slug || c.titolo || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                                if (cSlug === targetSlug || cSlug.includes(targetSlug) || targetSlug.includes(cSlug)) {
-                                    foundCh = {
-                                        title: c.titolo,
-                                        group: cat.nome,
-                                        provider: cat.nome,
-                                        logo: c.logo ? `/logos/${c.logo}` : getChannelLogoUrl({ title: c.titolo }),
-                                        url: c.mpd || c.url || "",
-                                        kid_key: c.kid_key || c.key || "",
-                                        sources: [{
-                                            name: "Standard",
-                                            isWarp: false,
-                                            url: c.mpd || c.url || "",
-                                            kid_key: c.kid_key || c.key || ""
-                                        }]
-                                    };
-                                    break;
-                                }
-                            }
-                            if (foundCh) break;
-                        }
-                    }
-                } catch(e) {}
-            }
+            try {
+                const ts = Date.now();
+                const res = await fetch(`/api/canali?t=${ts}`, { cache: "no-store" })
+                    .then(r => r.json())
+                    .catch(() => null);
 
-            // 3. Fetch da test.json se non trovato
-            if (!foundCh) {
-                try {
-                    const daznData = await fetchSecureJson("/test.json");
-                    if (daznData) {
-                        const targetSlug = slug.replace(/[^a-z0-9]/g, "");
-                        for (const grp of Object.keys(daznData)) {
-                            const items = daznData[grp];
-                            if (!Array.isArray(items)) continue;
+                const targetSlug = slug.replace(/[^a-z0-9]/g, "");
 
-                            const matching = [];
-                            for (const ev of items) {
-                                const rawTitle = (ev.name || ev.title || "").trim();
-                                const isWarp = isStreamWarp(rawTitle, ev.mpd || ev.url || "");
-                                let cleanTitle = rawTitle.replace(/\s*\(WARP\)\s*/gi, " ")
-                                                           .replace(/\s*\(HLS\)\s*/gi, " ")
-                                                           .replace(/\s*\(\d+\)\s*$/g, " ")
-                                                           .trim();
-                                if (cleanTitle.toUpperCase().replace(/\s+/g, "") === "DAZN") {
-                                    cleanTitle = "DAZN 1";
-                                }
-                                const evSlug = cleanTitle.toLowerCase().replace(/[^a-z0-9]/g, "");
-
-                                if (evSlug === targetSlug || evSlug.includes(targetSlug) || targetSlug.includes(evSlug)) {
-                                    matching.push({
-                                        name: isWarp ? "WARP (Cloudflare)" : "Standard",
-                                        isWarp: isWarp,
-                                        url: ev.mpd || ev.url || "",
-                                        kid_key: ev.key || ev.kid_key || "",
-                                        ua: ev.ua || "",
-                                        dazn_token: ev.dazn_token || "",
-                                        cleanTitle: cleanTitle,
-                                        image: ev.image || "",
-                                        ora: ev.start ? `${String(new Date(ev.start).getHours()).padStart(2, "0")}:${String(new Date(ev.start).getMinutes()).padStart(2, "0")}` : ""
-                                    });
-                                }
-                            }
-
-                            if (matching.length > 0) {
-                                const warps = matching.filter(s => s.isWarp);
-                                const stds = matching.filter(s => !s.isWarp);
-                                let stdCount = 0;
-                                let warpCount = 0;
-                                matching.forEach(s => {
-                                    if (s.isWarp) {
-                                        warpCount++;
-                                        s.name = warps.length > 1 ? `WARP ${warpCount}` : "WARP (Cloudflare)";
-                                    } else {
-                                        stdCount++;
-                                        s.name = stds.length > 1 ? `Standard ${stdCount}` : "Standard";
-                                    }
-                                });
-
-                                const baseEv = matching.find(x => !x.isWarp) || matching[0];
-                                foundCh = {
-                                    title: baseEv.cleanTitle,
-                                    group: grp,
-                                    provider: baseEv.provider || "DAZN",
-                                    logo: "/logos/dazn.png",
-                                    image: baseEv.image || "",
-                                    ora: baseEv.ora || "",
-                                    url: baseEv.url,
-                                    kid_key: baseEv.kid_key,
-                                    sources: matching
-                                };
+                // Cerca il canale nelle sezioni restituite dall'API unificata
+                if (res && Array.isArray(res.sections)) {
+                    for (const sec of res.sections) {
+                        for (const c of (sec.channels || [])) {
+                            const cSlug = (c.slug || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                            if (cSlug === targetSlug || cSlug.includes(targetSlug) || targetSlug.includes(cSlug)) {
+                                foundCh = c;
                                 break;
                             }
                         }
+                        if (foundCh && foundCh.sources?.length > 0) break;
                     }
-                } catch(e) {}
-            }
+                }
 
-            if (foundCh) {
-                setChannel(prev => {
-                    if (prev && prev.title === foundCh.title && prev.sources?.length === foundCh.sources?.length) {
-                        return prev;
-                    }
-                    return foundCh;
-                });
-
-                setSelectedSource(prevSource => {
-                    if (prevSource) {
-                        // L'utente ha già scelto una sorgente (es. Standard): NON sovrascriverla MAI al refresh o polling!
-                        const stillMatches = foundCh.sources?.find(s =>
-                            (s.name === prevSource.name) ||
-                            (s.url && prevSource.url && s.url === prevSource.url)
-                        );
-                        if (stillMatches) {
-                            if (prevSource.url === stillMatches.url && prevSource.kid_key === stillMatches.kid_key && prevSource.name === stillMatches.name) {
-                                return prevSource;
-                            }
-                            return stillMatches;
-                        }
-                    }
-                    // Solo al primo caricamento assoluto seleziona la prima sorgente
-                    return (foundCh.sources && foundCh.sources.length > 0) ? foundCh.sources[0] : {
-                        name: "Standard",
-                        isWarp: false,
-                        url: foundCh.url,
-                        kid_key: foundCh.kid_key
-                    };
-                });
-            }
-
-            // Carica canali correlati ESATTAMENTE con l'ordine e la logica di evento.html
-            try {
-                const ts = Date.now();
-                const [daznData, catRes, skyData, guideRes] = await Promise.allSettled([
-                    fetchSecureJson(`/test.json?t=${ts}`).catch(() => null),
-                    fetch(`/categorie.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null),
-                    fetchSecureJson(`/sky.json?t=${ts}`).catch(() => null),
-                    fetch(`/guida_tv_sky.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null)
-                ]);
-
-                const sections = [];
-                const currentPlayingTitle = foundCh?.title || "";
-                const currentPlayingGroup = foundCh?.group || "";
-
-                // 0. IN PRIMO PIANO: Se il canale aperto appartiene a una categoria TV (SuperTennis, Eurosport), mostra prima gli altri canali di quella categoria
-                // ESCLUDI SEMPRE Digitale Terrestre (Rai, Mediaset, Discovery, ecc.)
-                const EXCLUDED_CATEGORIES = ["digitale terrestre", "rai", "mediaset", "discovery"];
-                if (catRes.status === "fulfilled" && catRes.value?.categorie) {
-                    for (const cat of catRes.value.categorie) {
-                        if (!cat.canali || cat.canali.length === 0) continue;
-                        // Salta esplicitamente Digitale Terrestre
-                        if (EXCLUDED_CATEGORIES.some(ex => cat.nome.toLowerCase().includes(ex))) continue;
-                        const matchCat = (currentPlayingGroup && cat.nome.toLowerCase() === currentPlayingGroup.toLowerCase()) ||
-                                         cat.canali.some(c => c.titolo === currentPlayingTitle);
-                        if (matchCat) {
-                            const sameCatChannels = cat.canali.map(c => ({
-                                title: c.titolo,
-                                group: cat.nome,
-                                url: c.mpd || c.url || "",
-                                kid_key: c.kid_key || c.key || "",
-                                provider: cat.nome,
-                                logo: c.logo ? `/logos/${c.logo}` : getChannelLogoUrl({ title: c.titolo }),
-                                isCustom: true,
-                                slug: (c.slug || c.titolo).toLowerCase().replace(/[^a-z0-9]/g, "-")
-                            })).filter(c => c.title !== currentPlayingTitle);
-
-                            if (sameCatChannels.length > 0) {
-                                sections.push({
-                                    title: cat.nome,
-                                    channels: sameCatChannels
-                                });
-                            }
+                // Se non trovato nelle sezioni, cerca nei canali Sky completi
+                if ((!foundCh || !foundCh.url) && res) {
+                    const allSky = [...(res.sky1 || []), ...(res.sky2 || [])];
+                    for (const c of allSky) {
+                        const cSlug = (c.slug || c.name || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                        if (cSlug === targetSlug || cSlug.includes(targetSlug) || targetSlug.includes(cSlug)) {
+                            foundCh = {
+                                title: c.name || c.title,
+                                group: c.group,
+                                provider: "SKY",
+                                logo: c.logo,
+                                url: c.url,
+                                kid_key: c.kid_key,
+                                sources: [{
+                                    name: "Standard",
+                                    isWarp: false,
+                                    url: c.url,
+                                    kid_key: c.kid_key
+                                }]
+                            };
+                            break;
                         }
                     }
                 }
 
-                // 1. Categorie dinamiche di test.json (Eventi DAZN con deduplicazione)
-                if (daznData.status === "fulfilled" && daznData.value) {
-                    Object.keys(daznData.value).forEach(grpName => {
-                        const items = daznData.value[grpName];
-                        if (!Array.isArray(items)) return;
-                        const grouped = new Map();
-                        items.forEach(ev => {
-                            const raw = (ev.name || ev.title || "").trim();
-                            if (!raw) return;
-                            const isWarp = isStreamWarp(raw, ev.mpd || ev.url || "");
-                            let clean = raw.replace(/\s*\(WARP\)\s*/gi, " ")
-                                           .replace(/\s*\(HLS\)\s*/gi, " ")
-                                           .replace(/\s*\(\d+\)\s*$/g, " ")
-                                           .trim();
-                            if (clean.toUpperCase().replace(/\s+/g, "") === "DAZN") clean = "DAZN 1";
+                if (foundCh && isMounted) {
+                    setChannel(prev => {
+                        if (prev && prev.title === foundCh.title && prev.sources?.length === foundCh.sources?.length) {
+                            return prev;
+                        }
+                        return foundCh;
+                    });
 
-                            let timeStr = ev.ora || ev.time || "";
-                            const isDazn1 = clean.toUpperCase().replace(/\s+/g, "").includes("DAZN1") || (ev.end && ev.end.startsWith("3000"));
-                            if (!timeStr && ev.start && !isDazn1) {
-                                try {
-                                    const d = new Date(ev.start);
-                                    timeStr = `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
-                                } catch(e) {}
+                    setSelectedSource(prevSource => {
+                        if (prevSource) {
+                            // L'utente ha già scelto una sorgente (es. Standard o WARP): NON sovrascriverla MAI al refresh o polling!
+                            const stillMatches = foundCh.sources?.find(s =>
+                                (s.name === prevSource.name) ||
+                                (s.url && prevSource.url && s.url === prevSource.url)
+                            );
+                            if (stillMatches) {
+                                if (prevSource.url === stillMatches.url && prevSource.kid_key === stillMatches.kid_key && prevSource.name === stillMatches.name) {
+                                    return prevSource;
+                                }
+                                return stillMatches;
                             }
+                        }
+                        // Solo al primo caricamento assoluto seleziona la prima sorgente
+                        return (foundCh.sources && foundCh.sources.length > 0) ? foundCh.sources[0] : {
+                            name: "Standard",
+                            isWarp: false,
+                            url: foundCh.url,
+                            kid_key: foundCh.kid_key
+                        };
+                    });
+                }
 
-                            const cleanSlug = clean.toLowerCase().replace(/[^a-z0-9]/g, "-");
-                            const groupKey = grpName + ":::" + clean.toLowerCase();
+                // Costruisci le sezioni correlate
+                const sections = [];
+                const currentPlayingTitle = foundCh?.title || "";
+                const currentPlayingGroup = foundCh?.group || "";
 
-                            if (grouped.has(groupKey)) {
-                                const existing = grouped.get(groupKey);
-                                existing.sources.push({
-                                    name: isWarp ? "WARP (Cloudflare)" : "Standard",
-                                    isWarp: isWarp,
-                                    url: ev.mpd || ev.url || "",
-                                    kid_key: ev.key || ev.kid_key || ""
-                                });
-                            } else {
-                                grouped.set(groupKey, {
-                                    id: clean,
-                                    title: clean,
-                                    group: grpName,
-                                    image: ev.image || "",
-                                    logo: "/logos/dazn.png",
-                                    url: ev.mpd || ev.url || "",
-                                    kid_key: ev.key || ev.kid_key || "",
-                                    provider: ev.provider || "DAZN",
-                                    ora: timeStr,
-                                    isCustom: true,
-                                    isTestJson: true,
-                                    slug: cleanSlug,
-                                    sources: [{
-                                        name: isWarp ? "WARP (Cloudflare)" : "Standard",
-                                        isWarp: isWarp,
-                                        url: ev.mpd || ev.url || "",
-                                        kid_key: ev.key || ev.kid_key || ""
-                                    }]
-                                });
-                            }
-                        });
+                if (res && Array.isArray(res.sections)) {
+                    // 0. Se il canale appartiene a una categoria TV (es. Eurosport, SuperTennis), mostra prima quella categoria (escludendo Digitale Terrestre)
+                    const EXCLUDED_CATEGORIES = ["digitale terrestre", "rai", "mediaset", "discovery"];
+                    const sameCatSec = res.sections.find(sec => {
+                        if (EXCLUDED_CATEGORIES.some(ex => sec.title.toLowerCase().includes(ex))) return false;
+                        return (currentPlayingGroup && sec.title.toLowerCase() === currentPlayingGroup.toLowerCase()) ||
+                               (sec.channels || []).some(c => c.title === currentPlayingTitle);
+                    });
 
-                        const list = Array.from(grouped.values()).filter(c => c.title !== currentPlayingTitle);
-                        if (list.length > 0) {
+                    if (sameCatSec) {
+                        const filtered = (sameCatSec.channels || []).filter(c => c.title !== currentPlayingTitle);
+                        if (filtered.length > 0) {
                             sections.push({
-                                title: grpName,
-                                channels: list
+                                title: sameCatSec.title,
+                                channels: filtered
+                            });
+                        }
+                    }
+
+                    // 1. Aggiungi tutte le altre sezioni (escludendo il canale attualmente in riproduzione)
+                    res.sections.forEach(sec => {
+                        if (sameCatSec && sec.title === sameCatSec.title) return;
+                        const filtered = (sec.channels || []).filter(c => c.title !== currentPlayingTitle);
+                        if (filtered.length > 0) {
+                            sections.push({
+                                title: sec.title,
+                                channels: filtered
                             });
                         }
                     });
                 }
 
-                // 2. Canali Sky Sport 24/7 con Guida TV da sky.json
-                const guideData = guideRes.status === "fulfilled" ? guideRes.value : null;
-                const getEpgForName = (name) => {
-                    if (!guideData || !Array.isArray(guideData)) return null;
-                    const norm = (name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                    for (const g of guideData) {
-                        if (!g || !g.canale) continue;
-                        const gn = g.canale.toLowerCase().replace(/[^a-z0-9]/g, "");
-                        if (gn === norm || gn.includes(norm) || norm.includes(gn)) {
-                            return g.programmi || null;
-                        }
-                    }
-                    return null;
-                };
-
-                if (skyData.status === "fulfilled" && skyData.value && skyData.value["Sky Sport"]) {
-                    const skySportList = skyData.value["Sky Sport"].map(c => ({
-                        title: c.name || c.title || "",
-                        group: "Sky Sport",
-                        url: c.mpd || c.url || "",
-                        kid_key: c.key || c.kid_key || "",
-                        provider: "SKY",
-                        logo: getChannelLogoUrl({ title: c.name || c.title, group: "SKYSPORT" }),
-                        epg: getEpgForName(c.name || c.title),
-                        slug: (c.name || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
-                        isSky: true
-                    })).filter(c => c.title !== currentPlayingTitle);
-
-                    if (skySportList.length > 0) {
-                        sections.push({
-                            title: "Canali Sky Sport 24/7",
-                            channels: skySportList
-                        });
-                    }
-                }
-
-                // 3. Sky Intrattenimento da sky.json
-                if (skyData.status === "fulfilled" && skyData.value && skyData.value["Sky Intrattenimento"]) {
-                    const skyIntrList = skyData.value["Sky Intrattenimento"].map(c => ({
-                        title: c.name || c.title || "",
-                        group: "Sky Intrattenimento",
-                        url: c.mpd || c.url || "",
-                        kid_key: c.key || c.kid_key || "",
-                        provider: "SKY",
-                        logo: getChannelLogoUrl({ title: c.name || c.title }),
-                        epg: getEpgForName(c.name || c.title),
-                        slug: (c.name || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
-                        isSky: true
-                    })).filter(c => c.title !== currentPlayingTitle);
-
-                    if (skyIntrList.length > 0) {
-                        sections.push({
-                            title: "Sky Intrattenimento",
-                            channels: skyIntrList
-                        });
-                    }
-                }
-
                 if (isMounted) {
                     setRelatedSections(sections);
                 }
-            } catch(e) {}
-
-            if (isMounted) {
-                setLoading(false);
+            } catch(e) {
+                console.error("Errore caricamento evento:", e);
+            } finally {
+                if (isMounted) setLoading(false);
             }
         }
 
