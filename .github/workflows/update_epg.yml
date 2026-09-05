@@ -1,0 +1,34 @@
+name: Aggiornamento Automatico Guida TV
+
+on:
+  schedule:
+    # 22:01 UTC corrisponde alle 00:01 in Italia (CEST UTC+2)
+    # Viene eseguito ogni giorno alle 00:01 italiane
+    - cron: '1 22 * * *'
+  workflow_dispatch: # Permette di avviare il flusso anche manualmente da GitHub
+
+jobs:
+  update-epg:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Esegui Scraper Guida TV 24H & Sync Upstash
+        env:
+          UPSTASH_REDIS_REST_URL: ${{ secrets.UPSTASH_REDIS_REST_URL || 'https://ace-seal-162556.upstash.io' }}
+          UPSTASH_REDIS_REST_TOKEN: ${{ secrets.UPSTASH_REDIS_REST_TOKEN || 'gQAAAAAAAnr8AAIgcDEyZjRkYjEwYmUzZDY0M2RhYjZkNjhmMDFjNGVkMjVmYw' }}
+        run: node scripts/aggiorna_guida.js
+
+      - name: Commit e Push Aggiornamento
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/guida_tv_sky.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Aggiornamento automatico giornaliero Guida TV e locandine HD [skip ci]" && git push)
