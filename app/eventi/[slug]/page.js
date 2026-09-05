@@ -46,8 +46,9 @@ export default function EventoPlayerPage() {
     }, []);
 
     useEffect(() => {
+        let isMounted = true;
+
         async function loadEvent() {
-            setLoading(true);
             let foundCh = null;
 
             // 1. Session Storage check
@@ -185,11 +186,12 @@ export default function EventoPlayerPage() {
 
             // Carica canali correlati ESATTAMENTE con l'ordine e la logica di evento.html
             try {
+                const ts = Date.now();
                 const [daznData, catRes, skyData, guideRes] = await Promise.allSettled([
-                    fetchSecureJson("/test.json").catch(() => null),
-                    fetch("/categorie.json").then(r => r.json()).catch(() => null),
-                    fetchSecureJson("/sky.json").catch(() => null),
-                    fetch("/guida_tv_sky.json").then(r => r.json()).catch(() => null)
+                    fetchSecureJson(`/test.json?t=${ts}`).catch(() => null),
+                    fetch(`/categorie.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null),
+                    fetchSecureJson(`/sky.json?t=${ts}`).catch(() => null),
+                    fetch(`/guida_tv_sky.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null)
                 ]);
 
                 const sections = [];
@@ -356,13 +358,39 @@ export default function EventoPlayerPage() {
                     }
                 }
 
-                setRelatedSections(sections);
+                if (isMounted) {
+                    setRelatedSections(sections);
+                }
             } catch(e) {}
 
-            setLoading(false);
+            if (isMounted) {
+                setLoading(false);
+            }
         }
 
         loadEvent();
+
+        // Polling automatico in background ogni 5 secondi per aggiornare i correlati (es. nuovi eventi aggiunti)
+        const intervalId = setInterval(() => {
+            if (document.visibilityState === "visible") {
+                loadEvent();
+            }
+        }, 5000);
+
+        const onFocus = () => {
+            if (document.visibilityState === "visible") {
+                loadEvent();
+            }
+        };
+        window.addEventListener("focus", onFocus);
+        document.addEventListener("visibilitychange", onFocus);
+
+        return () => {
+            isMounted = false;
+            clearInterval(intervalId);
+            window.removeEventListener("focus", onFocus);
+            document.removeEventListener("visibilitychange", onFocus);
+        };
     }, [slug]);
 
     // Costruzione URL Iframe per estensione Chrome identico ad evento.html

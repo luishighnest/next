@@ -18,17 +18,22 @@ export default function HomePage() {
     const [exploreData, setExploreData] = useState(null);
 
     useEffect(() => {
-        async function loadData() {
-            setLoading(true);
+        let isMounted = true;
+
+        async function loadData(isInitial = false) {
+            if (isInitial) setLoading(true);
             try {
-                // Fetch parallelo da test.json, sky.json, sky2.json, categorie.json, guida_tv_sky.json
+                // Fetch parallelo con cache: "no-store" e timestamp anti-cache
+                const ts = Date.now();
                 const [testRes, skyRes, sky2Res, catRes, guideRes] = await Promise.allSettled([
-                    fetchSecureJson("/test.json").catch(() => null),
-                    fetchSecureJson("/sky.json").catch(() => null),
-                    fetchSecureJson("/sky2.json").catch(() => null),
-                    fetch("/categorie.json").then(r => r.json()).catch(() => null),
-                    fetch("/guida_tv_sky.json").then(r => r.json()).catch(() => null)
+                    fetchSecureJson(`/test.json?t=${ts}`).catch(() => null),
+                    fetchSecureJson(`/sky.json?t=${ts}`).catch(() => null),
+                    fetchSecureJson(`/sky2.json?t=${ts}`).catch(() => null),
+                    fetch(`/categorie.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null),
+                    fetch(`/guida_tv_sky.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null)
                 ]);
+
+                if (!isMounted) return;
 
                 const testData = testRes.status === "fulfilled" ? testRes.value : null;
                 const skyData = skyRes.status === "fulfilled" ? skyRes.value : null;
@@ -280,15 +285,43 @@ export default function HomePage() {
                     return a.localeCompare(b);
                 });
 
-                setCategories(sortedSections);
+                if (isMounted) {
+                    setCategories(sortedSections);
+                }
             } catch(e) {
                 console.error("Errore caricamento categorie", e);
             } finally {
-                setLoading(false);
+                if (isMounted && isInitial) {
+                    setLoading(false);
+                }
             }
         }
 
-        loadData();
+        // Caricamento iniziale con spinner
+        loadData(true);
+
+        // Auto-polling silenzioso ogni 5 secondi (in background senza refresh o flicker)
+        const intervalId = setInterval(() => {
+            if (document.visibilityState === "visible") {
+                loadData(false);
+            }
+        }, 5000);
+
+        // Aggiorna istantaneamente appena torni sulla scheda del browser
+        const onVisibilityOrFocus = () => {
+            if (document.visibilityState === "visible") {
+                loadData(false);
+            }
+        };
+        window.addEventListener("focus", onVisibilityOrFocus);
+        document.addEventListener("visibilitychange", onVisibilityOrFocus);
+
+        return () => {
+            isMounted = false;
+            clearInterval(intervalId);
+            window.removeEventListener("focus", onVisibilityOrFocus);
+            document.removeEventListener("visibilitychange", onVisibilityOrFocus);
+        };
     }, []);
 
     const shouldShowGroup = (sec, f) => {
