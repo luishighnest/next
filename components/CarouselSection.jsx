@@ -80,14 +80,25 @@ export default function CarouselSection({ title, channels, onExplore, isRelated 
 
     if (!channels || channels.length === 0) return null;
 
+    const count = channels.length;
+    const isTestJsonGroup = channels.some(c => c.isTestJson || (c.group && c.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")));
+    const badgeLabel = isTestJsonGroup
+        ? `${count} ${count === 1 ? "evento" : "eventi"}`
+        : `${count} ${count === 1 ? "canale" : "canali"}`;
+
     return (
         <div className={isRelated ? "" : "home-section"}>
-            <div className="category-header-container" style={isRelated ? { marginBottom: "12px", marginTop: "24px" } : {}}>
-                {isRelated ? (
-                    <h2 className="related-title" style={{ margin: 0 }}>{title}</h2>
-                ) : (
-                    <h2>{title}</h2>
-                )}
+            <div className="category-header-container" style={isRelated ? { marginBottom: "16px", marginTop: "28px" } : {}}>
+                <div className="category-header-left">
+                    {isRelated ? (
+                        <h2 className="related-title" style={{ margin: 0 }}>{title}</h2>
+                    ) : (
+                        <h2>{title}</h2>
+                    )}
+                    <span className="category-count-badge">
+                        {badgeLabel}
+                    </span>
+                </div>
                 <div className="category-header-right" style={{ display: "flex", alignItems: "center", gap: "20px" }}>
                     {!isRelated && onExplore && (
                         <button

@@ -347,6 +347,20 @@ function SkyContent() {
         setSelectedChannel(filteredChannels[prevIdx]);
     };
 
+    // Sincronizza dinamicamente l'URL nel browser quando cambia il canale selezionato
+    useEffect(() => {
+        if (!selectedChannel) return;
+        const slug = selectedChannel.slug || (selectedChannel.name || "").toLowerCase().replace(/[^a-z0-9]/g, "-");
+        const src = selectedChannel.skySource || currentSource;
+        const newUrl = `/sky?ch=${slug}${src ? `&src=${src}` : ""}`;
+        if (typeof window !== "undefined") {
+            try {
+                window.history.replaceState(null, "", newUrl);
+                sessionStorage.setItem("nmdz_skyChannel", JSON.stringify(selectedChannel));
+            } catch(e) {}
+        }
+    }, [selectedChannel, currentSource]);
+
     return (
         <div className="sky-app">
             {/* Header / Navbar */}
