@@ -157,9 +157,11 @@ async function fetchPage(url) {
     try {
         const res = await fetch(url, {
             headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+                'Accept-Language': 'it-IT,it;q=0.9,en;q=0.8'
             },
-            signal: AbortSignal.timeout(8000)
+            signal: AbortSignal.timeout(10000)
         });
         if (!res.ok) return null;
         return await res.text();
@@ -168,115 +170,124 @@ async function fetchPage(url) {
     }
 }
 
-function parseSections(html, offsetHour = 0) {
+/**
+ * Estrae l'array dei programmi del canale dal Flight stream di Next.js (guidatv.org).
+ * I programmi hanno data/ora ISO reali (UTC) che vengono convertiti all'orario esatto di Roma (UTC+2 estate / UTC+1 inverno).
+ */
+function extractChannelSchedule(html, offsetHour = 0) {
     if (!html) return [];
-    const items = [];
-    const sections = html.split(/<h3 class="hour/i);
-    
-    for (let i = 1; i < sections.length; i++) {
-        const sec = sections[i];
-        const timeMatch = sec.match(/>\s*(\d{2}:\d{2})\s*<\/h3>/i);
-        
-        let title = "";
-        const h2Match = sec.match(/<h2[^>]*class="[^"]*card-title[^"]*"[^>]*>([^<]+)<\/h2>/i) || sec.match(/<h2[^>]*>([^<]+)<\/h2>/i);
-        if (h2Match) {
-            title = h2Match[1].trim();
-        } else {
-            const altMatch = sec.match(/alt="copertina ([^"]+)"/i) || sec.match(/alt="([^"]+)"/i);
-            if (altMatch) {
-                title = altMatch[1].trim();
+    const progKey = '\\\"prog\\\":[';
+    const startIdx = html.indexOf(progKey);
+    if (startIdx === -1) return [];
+
+    const arrayStart = startIdx + progKey.length - 1;
+    let depth = 0;
+    let inStr = false;
+    let escape = false;
+    let arrayEnd = -1;
+
+    for (let i = arrayStart; i < html.length; i++) {
+        const c = html[i];
+        if (escape) {
+            escape = false;
+            continue;
+        }
+        if (c === '\\') {
+            escape = true;
+            continue;
+        }
+        if (c === '"') {
+            inStr = !inStr;
+            continue;
+        }
+        if (!inStr) {
+            if (c === '[') depth++;
+            else if (c === ']') {
+                depth--;
+                if (depth === 0) {
+                    arrayEnd = i + 1;
+                    break;
+                }
             }
         }
-        
-        if (timeMatch && title) {
-            let time = timeMatch[1].trim();
+    }
+
+    if (arrayEnd === -1) return [];
+
+    const rawArray = html.slice(arrayStart, arrayEnd);
+    const unescaped = rawArray.replace(/\\"/g, '"').replace(/\\\\/g, '\\');
+    
+    let progs;
+    try {
+        progs = JSON.parse(unescaped);
+    } catch (e) {
+        return [];
+    }
+
+    const list = [];
+    const seen = new Set();
+
+    for (const p of progs) {
+        if (!p || !p.title || !p.inizio) continue;
+        let title = (p.title || "")
+            .replace(/&#x27;/g, "'")
+            .replace(/&amp;/g, '&')
+            .replace(/&quot;/g, '"')
+            .replace(/\\'/g, "'")
+            .trim();
             
-            if (offsetHour) {
-                const [h, m] = time.split(':').map(Number);
-                const newH = (h + offsetHour) % 24;
-                time = String(newH).padStart(2, '0') + ':' + String(m).padStart(2, '0');
+        if (title.toLowerCase().includes('programmazione non disponibile') || !title) continue;
+
+        const dStart = new Date(p.inizio);
+        const dEnd = p.fine ? new Date(p.fine) : null;
+
+        // Orario locale esatto italiano (Europe/Rome)
+        let startStr = dStart.toLocaleTimeString('it-IT', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false });
+        let endStr = dEnd ? dEnd.toLocaleTimeString('it-IT', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false }) : '';
+
+        if (offsetHour) {
+            const [h, min] = startStr.split(':').map(Number);
+            startStr = String((h + offsetHour) % 24).padStart(2, '0') + ':' + String(min).padStart(2, '0');
+            if (endStr) {
+                const [eh, emin] = endStr.split(':').map(Number);
+                endStr = String((eh + offsetHour) % 24).padStart(2, '0') + ':' + String(emin).padStart(2, '0');
             }
-            
-            title = title.replace(/&#x27;/g, "'").replace(/&amp;/g, '&').replace(/&quot;/g, '"');
-            const lowerT = title.toLowerCase();
-            if (lowerT.includes('programmazione non disponibile') || lowerT.includes('programmazione da definire') || !title.trim()) {
-                continue;
-            }
-            
-            let imgUrl = "";
-            const imgParamMatch = sec.match(/url=([^&"'\s]+)/i);
-            if (imgParamMatch) {
-                try {
-                    imgUrl = decodeURIComponent(imgParamMatch[1]);
-                } catch(e) {
-                    imgUrl = imgParamMatch[1];
-                }
-            } else {
-                const directImgMatch = sec.match(/src="([^"]*(?:ethaneurope|img-guidatv|tmdb)[^"]*)"/i);
-                if (directImgMatch) imgUrl = directImgMatch[1];
-            }
-            
-            if (imgUrl) {
-                imgUrl = imgUrl.replace(/\\/g, '').trim();
-            }
-            
-            items.push({
-                ora: time,
+        }
+
+        const img = (p.image || "").replace(/\\/g, '').trim();
+        const desc = (p.description || "").replace(/\\/g, '').trim();
+
+        if (!seen.has(startStr)) {
+            seen.add(startStr);
+            list.push({
+                ora: startStr,
+                fine: endStr,
                 titolo: title,
-                descrizione: "",
-                immagine: imgUrl
+                descrizione: desc,
+                immagine: img
             });
         }
     }
-    return items;
+
+    list.sort((a, b) => a.ora.localeCompare(b.ora));
+    return list;
 }
 
 async function scrapeChannel24H(ch) {
-    const urls = [
-        `https://www.guidatv.org/canali/${ch.slug}/ieri`,
-        `https://www.guidatv.org/canali/${ch.slug}`,
-        `https://www.guidatv.org/canali/${ch.slug}/domani`
-    ];
-    
-    const pages = await Promise.all(urls.map(u => fetchPage(u)));
-    
-    // Combina i programmi di ieri, oggi e domani per coprire esattamente 00:00 - 23:59
-    const allProgs = [];
-    pages.forEach(html => {
-        if (html) {
-            const list = parseSections(html, ch.offsetHour || 0);
-            allProgs.push(...list);
-        }
-    });
+    // Interroga la pagina ufficiale del canale per la giornata odierna
+    const url = `https://www.guidatv.org/canali/${ch.slug}`;
+    const html = await fetchPage(url);
+    if (!html) return null;
 
-    if (allProgs.length === 0) return null;
-
-    // Ordina per orario da 00:00 a 23:59 e deduplica
-    allProgs.sort((a, b) => a.ora.localeCompare(b.ora));
-    
-    const uniqueProgs = [];
-    const seenTimes = new Map();
-    
-    for (let p of allProgs) {
-        if (!seenTimes.has(p.ora)) {
-            seenTimes.set(p.ora, p);
-            uniqueProgs.push(p);
-        } else {
-            // Se esiste già ma quello nuovo ha l'immagine migliore, aggiorna
-            const existing = seenTimes.get(p.ora);
-            if (!existing.immagine && p.immagine) {
-                existing.immagine = p.immagine;
-            }
-        }
-    }
+    const list = extractChannelSchedule(html, ch.offsetHour || 0);
+    if (list.length === 0) return null;
 
     return {
         canale: ch.name,
         categoria: ch.cat,
-        programmi: uniqueProgs
+        programmi: list
     };
 }
-
 
 async function syncToUpstash(data) {
     const url = (process.env.UPSTASH_REDIS_REST_URL || "https://ace-seal-162556.upstash.io").trim();
@@ -304,11 +315,11 @@ async function syncToUpstash(data) {
 
 async function runScrape24H() {
     const today = new Date();
-    const dateLabel = today.toISOString().split('T')[0];
+    const dateLabel = today.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome' });
     console.log(`[${new Date().toLocaleTimeString()}] Avvio scraping Guida TV 24H (00:00 - 23:59) da guidatv.org per la data: ${dateLabel}...`);
     
     const results = [];
-    // Elaborazione a blocchi di 6 canali paralleli per massima velocità
+    // Elaborazione a blocchi di 6 canali paralleli per velocita e rispetto del rate-limit
     const chunkSize = 6;
     for (let i = 0; i < CHANNELS_MAP.length; i += chunkSize) {
         const chunk = CHANNELS_MAP.slice(i, i + chunkSize);
@@ -318,7 +329,7 @@ async function runScrape24H() {
             const ch = chunk[idx];
             if (data && data.programmi.length > 0) {
                 const withImg = data.programmi.filter(p => p.immagine && p.immagine !== '').length;
-                console.log(`[OK] ${ch.name.padEnd(24)} -> ${String(data.programmi.length).padStart(2)} programmi 00:00-23:59 (${withImg} locandine HD)`);
+                console.log(`[OK] ${ch.name.padEnd(24)} -> ${String(data.programmi.length).padStart(2)} programmi (${withImg} locandine HD)`);
                 results.push(data);
             } else {
                 console.log(`[--] ${ch.name.padEnd(24)} -> Non disponibile`);
@@ -331,7 +342,6 @@ async function runScrape24H() {
     console.log(`\n[OK] Guida TV 24H salvata con successo in: ${targetFile}`);
     await syncToUpstash(results);
     console.log(`[OK] Totale canali salvati: ${results.length}/${CHANNELS_MAP.length}`);
-
 }
 
 runScrape24H().catch(err => {

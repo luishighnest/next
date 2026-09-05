@@ -223,18 +223,35 @@ export async function GET(request) {
             });
         }
 
-        // 5. Inietta Guida TV
+        // 5. Inietta Guida TV (Match preciso prioritario, poi fallback senza HD)
         if (guideData && Array.isArray(guideData)) {
+            const guideMap = new Map();
             guideData.forEach(epgGroup => {
-                if (!epgGroup.canale) return;
-                const epgName = normalizeEpg(epgGroup.canale);
-                const target = orderedChannels.find(c => {
-                    if (!c.title) return false;
-                    const cName = normalizeEpg(c.title);
-                    return cName === epgName || cName.includes(epgName) || epgName.includes(cName);
-                });
-                if (target && epgGroup.programmi && epgGroup.programmi.length > 0) {
-                    target.epg = epgGroup.programmi;
+                if (!epgGroup.canale || !Array.isArray(epgGroup.programmi) || epgGroup.programmi.length === 0) return;
+                const norm = normalizeEpg(epgGroup.canale);
+                if (!guideMap.has(norm)) {
+                    guideMap.set(norm, epgGroup.programmi);
+                }
+            });
+
+            orderedChannels.forEach(c => {
+                if (!c.title) return;
+                const cNorm = normalizeEpg(c.title);
+
+                // 1. Corrispondenza esatta
+                if (guideMap.has(cNorm)) {
+                    c.epg = guideMap.get(cNorm);
+                    return;
+                }
+
+                // 2. Corrispondenza base (esclude suffisso HD / FHD / 4K)
+                const cBase = cNorm.replace(/fhd|uhd|4k|1080p|720p|hd/g, "");
+                for (const [gNorm, progs] of guideMap.entries()) {
+                    const gBase = gNorm.replace(/fhd|uhd|4k|1080p|720p|hd/g, "");
+                    if (cBase === gBase && cBase.length > 2) {
+                        c.epg = progs;
+                        return;
+                    }
                 }
             });
         }
