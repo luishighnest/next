@@ -15,7 +15,6 @@ export default function EventoPlayerPage() {
 
     const [channel, setChannel] = useState(null);
     const [selectedSource, setSelectedSource] = useState(null);
-    const [showGithubMenu, setShowGithubMenu] = useState(false);
     const [relatedSections, setRelatedSections] = useState([]);
     const [loading, setLoading] = useState(true);
     const [isNavHidden, setIsNavHidden] = useState(false);
@@ -386,8 +385,6 @@ export default function EventoPlayerPage() {
         return EXT + selectedSource.url + (extraParams.length ? sep + extraParams.join("&") : "");
     };
 
-    const isDazn1 = (channel?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
-
     return (
         <div style={{ backgroundColor: "#000000", minHeight: "100vh", color: "#ffffff", paddingBottom: "60px" }}>
             {/* Header / Navbar identica (Nessun tasto selezionato in bianco) */}
@@ -442,7 +439,7 @@ export default function EventoPlayerPage() {
                             </div>
                         </div>
 
-                        {/* Deck Tasti Sorgente (Standard vs WARP e tasti GitHub per DAZN 1) */}
+                        {/* Deck Tasti Sorgente (Standard vs WARP) */}
                         <div className="event-sources-wrapper">
                             {channel?.sources && channel.sources.map((s, idx) => {
                                 const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
@@ -462,49 +459,6 @@ export default function EventoPlayerPage() {
                                     </button>
                                 );
                             })}
-
-                            {isDazn1 && (
-                                <div style={{ position: "relative", display: "inline-block" }}>
-                                    <button
-                                        type="button"
-                                        className="event-source-btn"
-                                        style={{ background: "rgba(255,255,255,0.08)" }}
-                                        onClick={() => setShowGithubMenu(!showGithubMenu)}
-                                    >
-                                        <i className="fa-brands fa-github"></i>
-                                        <span>Server GitHub</span>
-                                        <i className="fa-solid fa-chevron-down" style={{ fontSize: "0.65rem", marginLeft: "4px" }}></i>
-                                    </button>
-                                    {showGithubMenu && (
-                                        <div className="github-sources-menu" style={{ display: "flex" }}>
-                                            <a
-                                                href="https://raw.githubusercontent.com/luishighnest/zadonkais/main/test.json"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="github-sub-btn"
-                                            >
-                                                Zadonkais
-                                            </a>
-                                            <a
-                                                href="https://raw.githubusercontent.com/luishighnest/kodi/main/test.json"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="github-sub-btn"
-                                            >
-                                                Kodi
-                                            </a>
-                                            <a
-                                                href="https://github.com/luishighnest/next"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="github-sub-btn"
-                                            >
-                                                Next Repo
-                                            </a>
-                                        </div>
-                                    )}
-                                </div>
-                            )}
                         </div>
                     </div>
                 </div>
