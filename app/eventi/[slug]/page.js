@@ -197,10 +197,14 @@ export default function EventoPlayerPage() {
                 const currentPlayingTitle = foundCh?.title || "";
                 const currentPlayingGroup = foundCh?.group || "";
 
-                // 0. IN PRIMO PIANO: Se il canale aperto appartiene a una categoria TV (SuperTennis, Eurosport, Digitale Terrestre), mostra prima gli altri canali di quella categoria
+                // 0. IN PRIMO PIANO: Se il canale aperto appartiene a una categoria TV (SuperTennis, Eurosport), mostra prima gli altri canali di quella categoria
+                // ESCLUDI SEMPRE Digitale Terrestre (Rai, Mediaset, Discovery, ecc.)
+                const EXCLUDED_CATEGORIES = ["digitale terrestre", "rai", "mediaset", "discovery"];
                 if (catRes.status === "fulfilled" && catRes.value?.categorie) {
                     for (const cat of catRes.value.categorie) {
                         if (!cat.canali || cat.canali.length === 0) continue;
+                        // Salta esplicitamente Digitale Terrestre
+                        if (EXCLUDED_CATEGORIES.some(ex => cat.nome.toLowerCase().includes(ex))) continue;
                         const matchCat = (currentPlayingGroup && cat.nome.toLowerCase() === currentPlayingGroup.toLowerCase()) ||
                                          cat.canali.some(c => c.titolo === currentPlayingTitle);
                         if (matchCat) {
