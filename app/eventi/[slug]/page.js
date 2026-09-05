@@ -47,6 +47,7 @@ export default function EventoPlayerPage() {
 
     useEffect(() => {
         let isMounted = true;
+        setSelectedSource(null);
 
         async function loadEvent() {
             let foundCh = null;
@@ -171,17 +172,35 @@ export default function EventoPlayerPage() {
             }
 
             if (foundCh) {
-                setChannel(foundCh);
-                if (foundCh.sources && foundCh.sources.length > 0) {
-                    setSelectedSource(foundCh.sources[0]);
-                } else {
-                    setSelectedSource({
+                setChannel(prev => {
+                    if (prev && prev.title === foundCh.title && prev.sources?.length === foundCh.sources?.length) {
+                        return prev;
+                    }
+                    return foundCh;
+                });
+
+                setSelectedSource(prevSource => {
+                    if (prevSource) {
+                        // L'utente ha già scelto una sorgente (es. Standard): NON sovrascriverla MAI al refresh o polling!
+                        const stillMatches = foundCh.sources?.find(s =>
+                            (s.name === prevSource.name) ||
+                            (s.url && prevSource.url && s.url === prevSource.url)
+                        );
+                        if (stillMatches) {
+                            if (prevSource.url === stillMatches.url && prevSource.kid_key === stillMatches.kid_key && prevSource.name === stillMatches.name) {
+                                return prevSource;
+                            }
+                            return stillMatches;
+                        }
+                    }
+                    // Solo al primo caricamento assoluto seleziona la prima sorgente
+                    return (foundCh.sources && foundCh.sources.length > 0) ? foundCh.sources[0] : {
                         name: "Standard",
                         isWarp: false,
                         url: foundCh.url,
                         kid_key: foundCh.kid_key
-                    });
-                }
+                    };
+                });
             }
 
             // Carica canali correlati ESATTAMENTE con l'ordine e la logica di evento.html
