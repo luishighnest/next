@@ -21,7 +21,7 @@ const SKY_CID_MAP = {
 };
 
 function normalizeName(s) {
-    return (s || "").toLowerCase().replace(/fhd|uhd|4k|1080p|720p/g, "").replace(/[^a-z0-9]/g, "");
+    return (s || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
 function cidFromUrl(url) {
@@ -280,11 +280,19 @@ function SkyContent() {
     const getCurrentProgram = (channelName) => {
         if (!guideData || !Array.isArray(guideData)) return null;
         const wanted = normalizeName(channelName);
-        const group = guideData.find(g => {
-            if (!g || !g.canale) return false;
-            const gn = normalizeName(g.canale);
-            return gn === wanted || gn.includes(wanted) || wanted.includes(gn);
-        });
+        // 1. Corrispondenza esatta
+        let group = guideData.find(g => g && g.canale && normalizeName(g.canale) === wanted);
+
+        // 2. Corrispondenza base (rimuove solo suffissi di qualita)
+        if (!group) {
+            const cleanQuality = s => s.replace(/fhd|uhd|4k|1080p|720p|hd/g, "");
+            const wantedBase = cleanQuality(wanted);
+            group = guideData.find(g => {
+                if (!g || !g.canale) return false;
+                const gnBase = cleanQuality(normalizeName(g.canale));
+                return wantedBase === gnBase && wantedBase.length > 2;
+            });
+        }
         if (!group || !Array.isArray(group.programmi) || group.programmi.length === 0) return null;
 
         const now = new Date();
