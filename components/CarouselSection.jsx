@@ -1,39 +1,117 @@
-"use client";
-import React, { useRef } from "react";
+﻿"use client";
+import React, { useRef, useEffect } from "react";
 import ChannelCard from "./ChannelCard";
 
 export default function CarouselSection({ title, channels }) {
+    const wrapperRef = useRef(null);
     const scrollRef = useRef(null);
+    const btnLeftRef = useRef(null);
+    const btnRightRef = useRef(null);
+
+    const updateArrows = () => {
+        const grid = scrollRef.current;
+        if (!grid) return;
+        if (btnLeftRef.current) {
+            if (grid.scrollLeft <= 5) {
+                btnLeftRef.current.classList.add("arrow-disabled");
+            } else {
+                btnLeftRef.current.classList.remove("arrow-disabled");
+            }
+        }
+        if (btnRightRef.current) {
+            if (Math.ceil(grid.scrollLeft + grid.clientWidth) >= grid.scrollWidth - 5) {
+                btnRightRef.current.classList.add("arrow-disabled");
+            } else {
+                btnRightRef.current.classList.remove("arrow-disabled");
+            }
+        }
+    };
+
+    useEffect(() => {
+        const wrapper = wrapperRef.current;
+        if (!wrapper) return;
+
+        const updateCardWidth = () => {
+            const w = wrapper.clientWidth;
+            if (w > 0) {
+                let numCards = 5;
+                if (window.innerWidth <= 768) {
+                    numCards = 2;
+                } else if (window.innerWidth <= 1100) {
+                    numCards = 3;
+                } else if (window.innerWidth <= 1350) {
+                    numCards = 4;
+                }
+                const gapCount = numCards - 1;
+                const totalGapSpace = gapCount * 16;
+                const cardW = (w - totalGapSpace) / numCards;
+                wrapper.style.setProperty("--card-width", `${cardW}px`);
+                wrapper.dataset.cardsPerView = numCards;
+                updateArrows();
+            }
+        };
+
+        const resizeObserver = new ResizeObserver(updateCardWidth);
+        resizeObserver.observe(wrapper);
+        updateCardWidth();
+
+        const grid = scrollRef.current;
+        if (grid) {
+            grid.addEventListener("scroll", updateArrows, { passive: true });
+        }
+
+        return () => {
+            resizeObserver.disconnect();
+            if (grid) {
+                grid.removeEventListener("scroll", updateArrows);
+            }
+        };
+    }, []);
 
     const scroll = (direction) => {
-        if (scrollRef.current) {
-            const scrollAmount = direction === "left" ? -600 : 600;
-            scrollRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        const wrapper = wrapperRef.current;
+        const grid = scrollRef.current;
+        if (wrapper && grid) {
+            const scrollAmount = wrapper.clientWidth + 16;
+            const targetLeft = direction === "left" ? grid.scrollLeft - scrollAmount : grid.scrollLeft + scrollAmount;
+            grid.scrollTo({ left: targetLeft, behavior: "smooth" });
         }
     };
 
     if (!channels || channels.length === 0) return null;
 
     return (
-        <div className="home-section" style={{ marginBottom: "36px" }}>
-            <div className="category-header-container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "14px" }}>
-                <h2 className="related-title" style={{ margin: 0 }}>{title}</h2>
-                <div className="category-header-right" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                    <div className="carousel-top-nav" style={{ display: "flex", gap: "6px" }}>
-                        <button type="button" className="top-nav-btn left" onClick={() => scroll("left")}>
+        <div className="home-section">
+            <div className="category-header-container">
+                <h2 className="related-title">{title}</h2>
+                <div className="category-header-right">
+                    <div className="carousel-top-nav">
+                        <button
+                            ref={btnLeftRef}
+                            type="button"
+                            className="top-nav-btn left"
+                            onClick={() => scroll("left")}
+                            aria-label="Precedente"
+                        >
                             <span className="material-symbols-rounded">chevron_left</span>
                         </button>
-                        <button type="button" className="top-nav-btn right" onClick={() => scroll("right")}>
+                        <button
+                            ref={btnRightRef}
+                            type="button"
+                            className="top-nav-btn right"
+                            onClick={() => scroll("right")}
+                            aria-label="Successivo"
+                        >
                             <span className="material-symbols-rounded">chevron_right</span>
                         </button>
                     </div>
                 </div>
             </div>
 
-            <div className="carousel-wrapper">
-                <div className="home-carousel" ref={scrollRef} style={{ display: "flex", gap: "16px", overflowX: "auto", scrollBehavior: "smooth", paddingBottom: "10px" }}>
+            <div className="carousel-wrapper" ref={wrapperRef}>
+                <div className="home-carousel" ref={scrollRef}>
                     {channels.map((ch, idx) => (
-                        <ChannelCard key={ch.id || ch.title + idx} channel={ch} />
+                        <ChannelCard key={ch.id || (ch.title + idx)} channel={ch} />
                     ))}
                 </div>
             </div>

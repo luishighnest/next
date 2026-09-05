@@ -1,8 +1,12 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import { fetchSecureJson, isStreamWarp } from "@/lib/crypto";
+
+function normalizeEpg(s) {
+    return (s || "").toLowerCase().replace(/fhd|uhd|4k|1080p|720p/g, "").replace(/[^a-z0-9]/g, "");
+}
 
 export default function HomePage() {
     const [filter, setFilter] = useState("all");
@@ -14,21 +18,110 @@ export default function HomePage() {
         async function loadData() {
             setLoading(true);
             try {
-                // Fetch parallelo da test.json, sky.json, categorie.json
-                const [testData, skyData, catData] = await Promise.allSettled([
+                // Fetch parallelo da test.json, sky.json, sky2.json, categorie.json, guida_tv_sky.json
+                const [testRes, skyRes, sky2Res, catRes, guideRes] = await Promise.allSettled([
                     fetchSecureJson("/test.json").catch(() => null),
                     fetchSecureJson("/sky.json").catch(() => null),
-                    fetch("/categorie.json").then(r => r.json()).catch(() => null)
+                    fetchSecureJson("/sky2.json").catch(() => null),
+                    fetch("/categorie.json").then(r => r.json()).catch(() => null),
+                    fetch("/guida_tv_sky.json").then(r => r.json()).catch(() => null)
                 ]);
 
-                const sections = [];
+                const testData = testRes.status === "fulfilled" ? testRes.value : null;
+                const skyData = skyRes.status === "fulfilled" ? skyRes.value : null;
+                const sky2Data = sky2Res.status === "fulfilled" ? sky2Res.value : null;
+                const catData = catRes.status === "fulfilled" ? catRes.value : null;
+                const guideData = guideRes.status === "fulfilled" ? guideRes.value : null;
 
-                // 1. Dati DAZN da test.json
-                if (testData.status === "fulfilled" && testData.value) {
-                    const daznObj = testData.value;
-                    Object.keys(daznObj).forEach(groupName => {
-                        const items = daznObj[groupName];
+                const orderedChannels = [];
+                const customCategoriesList = [];
+
+                // 1. Processa Sky 1 (sky.json)
+                if (skyData) {
+                    Object.keys(skyData).forEach(groupName => {
+                        const items = skyData[groupName];
+                        if (!Array.isArray(items)) return;
+                        items.forEach(c => {
+                            let grp = groupName;
+                            const grpUpper = grp.toUpperCase();
+                            if (grpUpper === "NEWS") grp = "Sky Intrattenimento";
+                            else if (grpUpper.includes("SPORT")) grp = "Sky Sport";
+                            else grp = "Sky Intrattenimento";
+
+                            orderedChannels.push({
+                                title: c.name || c.title || "",
+                                group: grp,
+                                navbar: grp === "Sky Sport" ? "sport" : "intrattenimento",
+                                url: c.mpd || c.url || "",
+                                kid_key: c.key || c.kid_key || "",
+                                logo: c.logo || "",
+                                provider: "SKY",
+                                skySource: "sky.json",
+                                slug: (c.name || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                                isSky: true
+                            });
+                        });
+                    });
+                }
+
+                // 2. Processa Sky 2 (sky2.json) per Cinema e Bambini
+                if (sky2Data) {
+                    Object.keys(sky2Data).forEach(groupName => {
+                        if (groupName === "Sky Sport" || groupName === "Sky Intrattenimento") return; // Sky 1 prioritario
+                        const items = sky2Data[groupName];
+                        if (!Array.isArray(items)) return;
+                        items.forEach(c => {
+                            orderedChannels.push({
+                                title: c.name || c.title || "",
+                                group: groupName,
+                                navbar: "intrattenimento",
+                                url: c.mpd || c.url || "",
+                                kid_key: c.key || c.kid_key || "",
+                                logo: c.logo || "",
+                                provider: "SKY",
+                                skySource: "sky2.json",
+                                slug: (c.name || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                                isSky: true
+                            });
+                        });
+                    });
+                }
+
+                // 3. Processa canali da categorie.json (Eurosport, SuperTennis, Digitale Terrestre, ecc.)
+                if (catData && Array.isArray(catData.categorie)) {
+                    catData.categorie.forEach(cat => {
+                        customCategoriesList.push(cat);
+                        if (!cat.canali || cat.canali.length === 0) return;
+                        cat.canali.forEach(c => {
+                            if (!c.titolo) return;
+                            orderedChannels.push({
+                                title: c.titolo,
+                                group: cat.nome,
+                                navbar: cat.navbar || (cat.nome.toLowerCase().includes("sport") ? "sport" : "intrattenimento"),
+                                url: c.mpd || c.url || "",
+                                kid_key: c.kid_key || c.key || "",
+                                provider: c.provider || cat.nome,
+                                logo: c.logo ? `/logos/${c.logo}` : "",
+                                isCustom: true,
+                                slug: (c.slug || c.titolo).toLowerCase().replace(/[^a-z0-9]/g, "-")
+                            });
+                        });
+                    });
+                }
+
+                // 4. Dati DAZN da test.json con DEDUPLICAZIONE RIGOROSA
+                if (testData) {
+                    Object.keys(testData).forEach(groupName => {
+                        const items = testData[groupName];
                         if (!Array.isArray(items) || items.length === 0) return;
+
+                        if (!customCategoriesList.some(c => c.nome === groupName)) {
+                            customCategoriesList.push({
+                                id: groupName.toLowerCase().replace(/[^a-z0-9]/g, "_"),
+                                nome: groupName,
+                                navbar: "eventi"
+                            });
+                        }
 
                         const groupedMap = new Map();
                         items.forEach(ev => {
@@ -62,11 +155,13 @@ export default function HomePage() {
                             if (groupedMap.has(groupKey)) {
                                 const existing = groupedMap.get(groupKey);
                                 existing.sources.push(sourceItem);
-                                if (!isWarp && !existing.url) {
+                                if (!isWarp && (!existing.url || existing.url.includes(".m3u8"))) {
                                     existing.url = sourceItem.url;
                                     existing.kid_key = sourceItem.kid_key;
+                                    existing.ua = sourceItem.ua;
                                 }
                             } else {
+                                const isSkyGroup = groupName.toUpperCase().replace(/\s+/g, "").includes("EVENTI");
                                 const chObj = {
                                     id: cleanTitle,
                                     title: cleanTitle,
@@ -74,20 +169,21 @@ export default function HomePage() {
                                     navbar: "eventi",
                                     url: ev.mpd || ev.url || "",
                                     kid_key: ev.key || ev.kid_key || "",
-                                    provider: groupName === "EVENTI" ? "SKY SPORT" : "DAZN",
+                                    provider: isSkyGroup ? "SKY SPORT" : "DAZN",
                                     logo: "/logos/dazn.png",
                                     image: ev.image || "",
                                     ora: timeStr,
                                     sources: [sourceItem],
+                                    isCustom: true,
+                                    isTestJson: true,
                                     slug: cleanTitle.toLowerCase().replace(/[^a-z0-9]/g, "-")
                                 };
                                 groupedMap.set(groupKey, chObj);
                             }
                         });
 
-                        const chList = Array.from(groupedMap.values());
-                        // Ordina i sources di ciascun canale (Standard prima, poi WARP)
-                        chList.forEach(c => {
+                        const deduplicatedItems = Array.from(groupedMap.values());
+                        deduplicatedItems.forEach(c => {
                             const warps = c.sources.filter(s => s.isWarp);
                             const stds = c.sources.filter(s => !s.isWarp);
                             let stdCount = 0;
@@ -101,76 +197,81 @@ export default function HomePage() {
                                     s.name = stds.length > 1 ? `Standard ${stdCount}` : "Standard";
                                 }
                             });
-                        });
-
-                        sections.push({
-                            title: groupName,
-                            navbar: "eventi",
-                            channels: chList
+                            orderedChannels.push(c);
                         });
                     });
                 }
 
-                // 2. Canali Sky da sky.json
-                if (skyData.status === "fulfilled" && skyData.value) {
-                    const sData = skyData.value;
-                    Object.keys(sData).forEach(grpName => {
-                        const items = sData[grpName];
-                        if (!Array.isArray(items) || items.length === 0) return;
-                        const isSport = grpName.toLowerCase().includes("sport");
-                        sections.push({
-                            title: grpName,
-                            navbar: isSport ? "sport" : "intrattenimento",
-                            channels: items.map(c => ({
-                                id: c.name,
-                                title: c.name,
-                                group: grpName,
-                                navbar: isSport ? "sport" : "intrattenimento",
-                                url: c.mpd || "",
-                                kid_key: c.key || "",
-                                provider: "SKY",
-                                logo: c.logo || "/logos/sksport.png",
-                                slug: (c.name || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
-                                sources: [{
-                                    name: "Standard",
-                                    isWarp: false,
-                                    url: c.mpd || "",
-                                    kid_key: c.key || ""
-                                }]
-                            }))
+                // 5. Inietta la Guida TV Sky
+                if (guideData && Array.isArray(guideData)) {
+                    guideData.forEach(epgGroup => {
+                        if (!epgGroup.canale) return;
+                        const epgName = normalizeEpg(epgGroup.canale);
+                        const target = orderedChannels.find(c => {
+                            if (!c.title) return false;
+                            const cName = normalizeEpg(c.title);
+                            return cName === epgName || cName.includes(epgName) || epgName.includes(cName);
                         });
+                        if (target && epgGroup.programmi && epgGroup.programmi.length > 0) {
+                            target.epg = epgGroup.programmi;
+                        }
                     });
                 }
 
-                // 3. Categorie da categorie.json
-                if (catData.status === "fulfilled" && catData.value && catData.value.categorie) {
-                    catData.value.categorie.forEach(cat => {
-                        if (!cat.canali || cat.canali.length === 0) return;
-                        sections.push({
-                            title: cat.nome,
-                            navbar: cat.navbar || "intrattenimento",
-                            channels: cat.canali.map(c => ({
-                                id: c.titolo,
-                                title: c.titolo,
-                                group: cat.nome,
-                                navbar: cat.navbar || "intrattenimento",
-                                url: c.mpd || c.url || "",
-                                kid_key: c.kid_key || c.key || "",
-                                provider: cat.nome,
-                                logo: c.logo ? `/logos/${c.logo}` : "/logos/premium_logo_dark.jpg",
-                                slug: (c.slug || c.titolo).toLowerCase().replace(/[^a-z0-9]/g, "-"),
-                                sources: [{
-                                    name: "Standard",
-                                    isWarp: false,
-                                    url: c.mpd || c.url || "",
-                                    kid_key: c.kid_key || c.key || ""
-                                }]
-                            }))
+                // 6. Raggruppa e ordina le sezioni IDENTICAMENTE ad app.js
+                const groupMap = new Map();
+                orderedChannels.forEach(ch => {
+                    const g = ch.group;
+                    if (!groupMap.has(g)) {
+                        groupMap.set(g, {
+                            title: g,
+                            navbar: ch.navbar || "sport",
+                            channels: []
                         });
-                    });
-                }
+                    }
+                    groupMap.get(g).channels.push(ch);
+                });
 
-                setCategories(sections);
+                const sportPriority = ["Sky Sport", "Eurosport", "SuperTennis"];
+                const intrattenimentoPriority = ["Sky Intrattenimento", "Sky Cinema", "Digitale Terrestre", "Sky Bambini"];
+
+                const sortedSections = Array.from(groupMap.values()).sort((secA, secB) => {
+                    const a = secA.title;
+                    const b = secB.title;
+                    const navA = secA.navbar;
+                    const navB = secB.navbar;
+
+                    const macroOrder = { "sport": 1, "intrattenimento": 2, "eventi": 3 };
+                    const ordA = macroOrder[navA] || 99;
+                    const ordB = macroOrder[navB] || 99;
+                    if (ordA !== ordB) return ordA - ordB;
+
+                    if (navA === "sport" && navB === "sport") {
+                        const idxA = sportPriority.indexOf(a);
+                        const idxB = sportPriority.indexOf(b);
+                        if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+                        if (idxA !== -1) return -1;
+                        if (idxB !== -1) return 1;
+                    }
+
+                    if (navA === "intrattenimento" && navB === "intrattenimento") {
+                        const idxA = intrattenimentoPriority.indexOf(a);
+                        const idxB = intrattenimentoPriority.indexOf(b);
+                        if (idxA !== -1 && idxB !== -1) return idxA - idxB;
+                        if (idxA !== -1) return -1;
+                        if (idxB !== -1) return 1;
+                    }
+
+                    const cIdxA = customCategoriesList.findIndex(c => c.nome === a);
+                    const cIdxB = customCategoriesList.findIndex(c => c.nome === b);
+                    if (cIdxA !== -1 && cIdxB !== -1) return cIdxA - cIdxB;
+                    if (cIdxA !== -1) return -1;
+                    if (cIdxB !== -1) return 1;
+
+                    return a.localeCompare(b);
+                });
+
+                setCategories(sortedSections);
             } catch(e) {
                 console.error("Errore caricamento categorie", e);
             } finally {
@@ -189,7 +290,7 @@ export default function HomePage() {
         const q = search.toLowerCase();
         return {
             ...sec,
-            channels: sec.channels.filter(c => 
+            channels: sec.channels.filter(c =>
                 (c.title || "").toLowerCase().includes(q) ||
                 (c.group || "").toLowerCase().includes(q)
             )
@@ -197,14 +298,14 @@ export default function HomePage() {
     }).filter(sec => sec.channels.length > 0);
 
     return (
-        <div className="desktop-home" style={{ display: "block", minHeight: "100vh", backgroundColor: "#000000" }}>
+        <div className="desktop-home" style={{ display: "block", minHeight: "100vh" }}>
             <Navbar
                 activeFilter={filter}
                 onFilterChange={(f) => setFilter(f)}
                 onSearch={(s) => setSearch(s)}
             />
 
-            <main className="home-content" style={{ maxWidth: "1600px", margin: "0 auto", padding: "20px 8vw 80px" }}>
+            <main className="home-content">
                 {loading ? (
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh" }}>
                         <div className="spinner" style={{ width: "40px", height: "40px", border: "3px solid rgba(255,255,255,0.1)", borderTopColor: "#e30a17", borderRadius: "50%", animation: "spin 0.8s linear infinite" }}></div>

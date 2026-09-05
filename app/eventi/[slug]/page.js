@@ -1,14 +1,17 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect } from "react";
-import { useParams, useRouter } from "next/navigation";
-import Navbar from "@/components/Navbar";
+import { useParams } from "next/navigation";
+import Link from "next/link";
 import CarouselSection from "@/components/CarouselSection";
 import { fetchSecureJson, isStreamWarp } from "@/lib/crypto";
+import { getChannelLogoUrl } from "@/lib/epg";
+
+const EXT = "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#";
+const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
 
 export default function EventoPlayerPage() {
     const params = useParams();
-    const router = useRouter();
-    const slug = params.slug ? String(params.slug).toLowerCase() : "";
+    const slug = params?.slug ? String(params.slug).toLowerCase() : "";
 
     const [channel, setChannel] = useState(null);
     const [selectedSource, setSelectedSource] = useState(null);
@@ -23,7 +26,7 @@ export default function EventoPlayerPage() {
 
             // 1. Session Storage check
             try {
-                const stored = sessionStorage.getItem("daznEventChannel");
+                const stored = sessionStorage.getItem("daznEventChannel") || sessionStorage.getItem("daznCustomChannel");
                 if (stored) {
                     const parsed = JSON.parse(stored);
                     const cleanStoredSlug = (parsed.slug || parsed.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
@@ -34,7 +37,41 @@ export default function EventoPlayerPage() {
                 }
             } catch(e) {}
 
-            // 2. Fetch da test.json se non trovato
+            // 2. Fetch da categorie.json se non trovato
+            if (!foundCh) {
+                try {
+                    const catRes = await fetch("/categorie.json");
+                    if (catRes.ok) {
+                        const catData = await catRes.json();
+                        const targetSlug = slug.replace(/[^a-z0-9]/g, "");
+                        for (const cat of (catData.categorie || [])) {
+                            for (const c of (cat.canali || [])) {
+                                const cSlug = (c.slug || c.titolo || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                                if (cSlug === targetSlug || cSlug.includes(targetSlug) || targetSlug.includes(cSlug)) {
+                                    foundCh = {
+                                        title: c.titolo,
+                                        group: cat.nome,
+                                        provider: cat.nome,
+                                        logo: c.logo ? `/logos/${c.logo}` : getChannelLogoUrl({ title: c.titolo }),
+                                        url: c.mpd || c.url || "",
+                                        kid_key: c.kid_key || c.key || "",
+                                        sources: [{
+                                            name: "Standard",
+                                            isWarp: false,
+                                            url: c.mpd || c.url || "",
+                                            kid_key: c.kid_key || c.key || ""
+                                        }]
+                                    };
+                                    break;
+                                }
+                            }
+                            if (foundCh) break;
+                        }
+                    }
+                } catch(e) {}
+            }
+
+            // 3. Fetch da test.json se non trovato
             if (!foundCh) {
                 try {
                     const daznData = await fetchSecureJson("/test.json");
@@ -61,7 +98,10 @@ export default function EventoPlayerPage() {
                                         url: ev.mpd || ev.url || "",
                                         kid_key: ev.key || ev.kid_key || "",
                                         ua: ev.ua || "",
-                                        dazn_token: ev.dazn_token || ""
+                                        dazn_token: ev.dazn_token || "",
+                                        cleanTitle: cleanTitle,
+                                        image: ev.image || "",
+                                        ora: ev.start ? `${String(new Date(ev.start).getHours()).padStart(2, "0")}:${String(new Date(ev.start).getMinutes()).padStart(2, "0")}` : ""
                                     });
                                 }
                             }
@@ -83,10 +123,12 @@ export default function EventoPlayerPage() {
 
                                 const baseEv = matching.find(x => !x.isWarp) || matching[0];
                                 foundCh = {
-                                    title: grp === "EVENTI" ? "Sky Sport" : (items.find(x => x.name || x.title) || {}).name || "DAZN 1",
+                                    title: baseEv.cleanTitle,
                                     group: grp,
                                     provider: grp === "EVENTI" ? "SKY SPORT" : "DAZN",
                                     logo: "/logos/dazn.png",
+                                    image: baseEv.image || "",
+                                    ora: baseEv.ora || "",
                                     url: baseEv.url,
                                     kid_key: baseEv.kid_key,
                                     sources: matching
@@ -114,28 +156,62 @@ export default function EventoPlayerPage() {
 
             // Carica canali correlati
             try {
-                const [daznData, skyData] = await Promise.allSettled([
-                    fetchSecureJson("/test.json"),
-                    fetchSecureJson("/sky.json")
+                const [daznData, catRes] = await Promise.allSettled([
+                    fetchSecureJson("/test.json").catch(() => null),
+                    fetch("/categorie.json").then(r => r.json()).catch(() => null)
                 ]);
+
                 const sections = [];
                 if (daznData.status === "fulfilled" && daznData.value) {
-                    const firstGrp = Object.keys(daznData.value)[0];
-                    if (firstGrp && Array.isArray(daznData.value[firstGrp])) {
-                        sections.push({
-                            title: "Altri Eventi in Diretta",
-                            channels: daznData.value[firstGrp].slice(0, 12).map(ev => ({
-                                title: ev.name || ev.title,
-                                group: firstGrp,
-                                image: ev.image || "",
-                                logo: "/logos/dazn.png",
-                                url: ev.mpd || "",
-                                kid_key: ev.key || "",
-                                slug: (ev.name || ev.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-")
-                            }))
+                    Object.keys(daznData.value).forEach(grpName => {
+                        const items = daznData.value[grpName];
+                        if (!Array.isArray(items)) return;
+                        const grouped = new Map();
+                        items.forEach(ev => {
+                            const raw = (ev.name || ev.title || "").trim();
+                            const clean = raw.replace(/\s*\(WARP\)\s*/gi, " ").replace(/\s*\(HLS\)\s*/gi, " ").replace(/\s*\(\d+\)\s*$/g, " ").trim();
+                            if (!grouped.has(clean.toLowerCase())) {
+                                grouped.set(clean.toLowerCase(), {
+                                    title: clean,
+                                    group: grpName,
+                                    image: ev.image || "",
+                                    logo: "/logos/dazn.png",
+                                    url: ev.mpd || "",
+                                    kid_key: ev.key || "",
+                                    slug: clean.toLowerCase().replace(/[^a-z0-9]/g, "-")
+                                });
+                            }
                         });
-                    }
+                        const list = Array.from(grouped.values()).filter(c => c.title !== foundCh?.title);
+                        if (list.length > 0) {
+                            sections.push({
+                                title: grpName,
+                                channels: list
+                            });
+                        }
+                    });
                 }
+
+                if (catRes.status === "fulfilled" && catRes.value?.categorie) {
+                    catRes.value.categorie.forEach(cat => {
+                        if (!cat.canali || cat.canali.length === 0) return;
+                        const list = cat.canali.map(c => ({
+                            title: c.titolo,
+                            group: cat.nome,
+                            logo: c.logo ? `/logos/${c.logo}` : getChannelLogoUrl({ title: c.titolo }),
+                            url: c.mpd || "",
+                            kid_key: c.kid_key || "",
+                            slug: (c.slug || c.titolo).toLowerCase().replace(/[^a-z0-9]/g, "-")
+                        })).filter(c => c.title !== foundCh?.title);
+                        if (list.length > 0) {
+                            sections.push({
+                                title: cat.nome,
+                                channels: list
+                            });
+                        }
+                    });
+                }
+
                 setRelatedSections(sections);
             } catch(e) {}
 
@@ -145,10 +221,9 @@ export default function EventoPlayerPage() {
         loadEvent();
     }, [slug]);
 
-    // Costruzione URL Iframe per estensione Chrome
+    // Costruzione URL Iframe per estensione Chrome identico ad evento.html
     const getIframeUrl = () => {
         if (!selectedSource || !selectedSource.url) return "";
-        const EXT = "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#";
         let ckParam = "";
         const rawKey = selectedSource.kid_key || "";
         if (rawKey && rawKey.includes(":")) {
@@ -158,9 +233,9 @@ export default function EventoPlayerPage() {
             try { ckParam = "ck=" + btoa(JSON.stringify(ckObj)); } catch(e) {}
         }
         let headersParam = "";
-        if (selectedSource.ua) {
-            try { headersParam = "headers=" + btoa(JSON.stringify({ "User-Agent": selectedSource.ua })); } catch(e) {}
-        }
+        const uaVal = selectedSource.ua || UA;
+        try { headersParam = "headers=" + btoa(JSON.stringify({ "User-Agent": uaVal })); } catch(e) {}
+
         const extraParams = [ckParam, headersParam].filter(Boolean);
         const sep = selectedSource.url.includes("?") ? "&" : "?";
         return EXT + selectedSource.url + (extraParams.length ? sep + extraParams.join("&") : "");
@@ -169,10 +244,23 @@ export default function EventoPlayerPage() {
     const isDazn1 = (channel?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
 
     return (
-        <div style={{ backgroundColor: "#000000", minHeight: "100vh", color: "#ffffff" }}>
-            <Navbar activeFilter="all" />
+        <div style={{ backgroundColor: "#000000", minHeight: "100vh", color: "#ffffff", paddingBottom: "60px" }}>
+            {/* Header / Navbar identica */}
+            <div className="home-header-wrapper" style={{ position: "sticky", top: "14px", zIndex: 9999, marginBottom: "20px" }}>
+                <div className="home-header">
+                    <Link href="/">
+                        <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="brand-logo" />
+                    </Link>
+                    <nav className="sky-nav-links">
+                        <Link href="/" className="nav-link"><i className="fas fa-house"></i>Home</Link>
+                        <Link href="/?tab=sport" className="nav-link"><i className="fas fa-trophy"></i>Sport</Link>
+                        <Link href="/?tab=intrattenimento" className="nav-link"><i className="fas fa-masks-theater"></i>Intrattenimento</Link>
+                        <Link href="/?tab=eventi" className="nav-link active"><i className="fas fa-ticket"></i>Eventi</Link>
+                    </nav>
+                </div>
+            </div>
 
-            <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 16px 60px" }}>
+            <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 16px" }}>
                 <div className="event-main-stage">
                     <div className="player-wrapper">
                         {loading ? (
@@ -185,6 +273,7 @@ export default function EventoPlayerPage() {
                                 src={getIframeUrl()}
                                 allowFullScreen
                                 allow="autoplay; encrypted-media; fullscreen"
+                                title="Player"
                             />
                         )}
                     </div>
@@ -213,7 +302,7 @@ export default function EventoPlayerPage() {
                             </div>
                         </div>
 
-                        {/* Deck Tasti Sorgente (Standard vs WARP e 3 bottoni GitHub per DAZN 1) */}
+                        {/* Deck Tasti Sorgente (Standard vs WARP e tasti GitHub per DAZN 1) */}
                         <div className="event-sources-wrapper">
                             {channel?.sources && channel.sources.map((s, idx) => {
                                 const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
@@ -234,45 +323,43 @@ export default function EventoPlayerPage() {
                                 );
                             })}
 
-                            {/* Tasto speciale DAZN 1 con 3 link GitHub che aprono il browser */}
                             {isDazn1 && (
-                                <div style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+                                <div style={{ position: "relative", display: "inline-block" }}>
                                     <button
                                         type="button"
                                         className="event-source-btn"
-                                        style={{ background: showGithubMenu ? "rgba(255,255,255,0.15)" : "rgba(255,255,255,0.06)", borderColor: "rgba(255,255,255,0.25)" }}
+                                        style={{ background: "rgba(255,255,255,0.08)" }}
                                         onClick={() => setShowGithubMenu(!showGithubMenu)}
-                                        title="Link GitHub Luishighnest"
                                     >
                                         <i className="fa-brands fa-github"></i>
-                                        <span>GitHub {showGithubMenu ? "▲" : "▼"}</span>
+                                        <span>Server GitHub</span>
+                                        <i className="fa-solid fa-chevron-down" style={{ fontSize: "0.65rem", marginLeft: "4px" }}></i>
                                     </button>
-
                                     {showGithubMenu && (
-                                        <div className="github-links-container">
+                                        <div className="github-sources-menu" style={{ display: "flex" }}>
                                             <a
-                                                href="https://github.com/luishighnest/kodi"
+                                                href="https://raw.githubusercontent.com/luishighnest/zadonkais/main/test.json"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="github-sub-btn"
                                             >
-                                                <i className="fa-brands fa-github"></i> kodi
+                                                Zadonkais
                                             </a>
                                             <a
-                                                href="https://github.com/luishighnest/zadonkais"
+                                                href="https://raw.githubusercontent.com/luishighnest/kodi/main/test.json"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="github-sub-btn"
                                             >
-                                                <i className="fa-brands fa-github"></i> zadonkais
+                                                Kodi
                                             </a>
                                             <a
-                                                href="https://github.com/luishighnest/telegram-calcio-bot"
+                                                href="https://github.com/luishighnest/next"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="github-sub-btn"
                                             >
-                                                <i className="fa-brands fa-github"></i> telegram-calcio-bot
+                                                Next Repo
                                             </a>
                                         </div>
                                     )}
@@ -282,8 +369,8 @@ export default function EventoPlayerPage() {
                     </div>
                 </div>
 
-                {/* Sezione Canali Correlati */}
-                <div className="related-section">
+                {/* Sezioni Correlate */}
+                <div style={{ marginTop: "40px" }}>
                     {relatedSections.map(sec => (
                         <CarouselSection
                             key={sec.title}
