@@ -184,14 +184,48 @@ export default function EventoPlayerPage() {
                 }
             }
 
-            // Carica canali correlati
+            // Carica canali correlati ESATTAMENTE con l'ordine e la logica di evento.html
             try {
-                const [daznData, catRes] = await Promise.allSettled([
+                const [daznData, catRes, skyData, guideRes] = await Promise.allSettled([
                     fetchSecureJson("/test.json").catch(() => null),
-                    fetch("/categorie.json").then(r => r.json()).catch(() => null)
+                    fetch("/categorie.json").then(r => r.json()).catch(() => null),
+                    fetchSecureJson("/sky.json").catch(() => null),
+                    fetch("/guida_tv_sky.json").then(r => r.json()).catch(() => null)
                 ]);
 
                 const sections = [];
+                const currentPlayingTitle = foundCh?.title || "";
+                const currentPlayingGroup = foundCh?.group || "";
+
+                // 0. IN PRIMO PIANO: Se il canale aperto appartiene a una categoria TV (SuperTennis, Eurosport, Digitale Terrestre), mostra prima gli altri canali di quella categoria
+                if (catRes.status === "fulfilled" && catRes.value?.categorie) {
+                    for (const cat of catRes.value.categorie) {
+                        if (!cat.canali || cat.canali.length === 0) continue;
+                        const matchCat = (currentPlayingGroup && cat.nome.toLowerCase() === currentPlayingGroup.toLowerCase()) ||
+                                         cat.canali.some(c => c.titolo === currentPlayingTitle);
+                        if (matchCat) {
+                            const sameCatChannels = cat.canali.map(c => ({
+                                title: c.titolo,
+                                group: cat.nome,
+                                url: c.mpd || c.url || "",
+                                kid_key: c.kid_key || c.key || "",
+                                provider: cat.nome,
+                                logo: c.logo ? `/logos/${c.logo}` : getChannelLogoUrl({ title: c.titolo }),
+                                isCustom: true,
+                                slug: (c.slug || c.titolo).toLowerCase().replace(/[^a-z0-9]/g, "-")
+                            })).filter(c => c.title !== currentPlayingTitle);
+
+                            if (sameCatChannels.length > 0) {
+                                sections.push({
+                                    title: cat.nome,
+                                    channels: sameCatChannels
+                                });
+                            }
+                        }
+                    }
+                }
+
+                // 1. Categorie dinamiche di test.json (Eventi DAZN con deduplicazione)
                 if (daznData.status === "fulfilled" && daznData.value) {
                     Object.keys(daznData.value).forEach(grpName => {
                         const items = daznData.value[grpName];
@@ -199,20 +233,59 @@ export default function EventoPlayerPage() {
                         const grouped = new Map();
                         items.forEach(ev => {
                             const raw = (ev.name || ev.title || "").trim();
-                            const clean = raw.replace(/\s*\(WARP\)\s*/gi, " ").replace(/\s*\(HLS\)\s*/gi, " ").replace(/\s*\(\d+\)\s*$/g, " ").trim();
-                            if (!grouped.has(clean.toLowerCase())) {
-                                grouped.set(clean.toLowerCase(), {
+                            if (!raw) return;
+                            const isWarp = isStreamWarp(raw, ev.mpd || ev.url || "");
+                            let clean = raw.replace(/\s*\(WARP\)\s*/gi, " ")
+                                           .replace(/\s*\(HLS\)\s*/gi, " ")
+                                           .replace(/\s*\(\d+\)\s*$/g, " ")
+                                           .trim();
+                            if (clean.toUpperCase().replace(/\s+/g, "") === "DAZN") clean = "DAZN 1";
+
+                            let timeStr = ev.ora || ev.time || "";
+                            const isDazn1 = clean.toUpperCase().replace(/\s+/g, "").includes("DAZN1") || (ev.end && ev.end.startsWith("3000"));
+                            if (!timeStr && ev.start && !isDazn1) {
+                                try {
+                                    const d = new Date(ev.start);
+                                    timeStr = `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+                                } catch(e) {}
+                            }
+
+                            const cleanSlug = clean.toLowerCase().replace(/[^a-z0-9]/g, "-");
+                            const groupKey = grpName + ":::" + clean.toLowerCase();
+
+                            if (grouped.has(groupKey)) {
+                                const existing = grouped.get(groupKey);
+                                existing.sources.push({
+                                    name: isWarp ? "WARP (Cloudflare)" : "Standard",
+                                    isWarp: isWarp,
+                                    url: ev.mpd || ev.url || "",
+                                    kid_key: ev.key || ev.kid_key || ""
+                                });
+                            } else {
+                                grouped.set(groupKey, {
+                                    id: clean,
                                     title: clean,
                                     group: grpName,
                                     image: ev.image || "",
                                     logo: "/logos/dazn.png",
-                                    url: ev.mpd || "",
-                                    kid_key: ev.key || "",
-                                    slug: clean.toLowerCase().replace(/[^a-z0-9]/g, "-")
+                                    url: ev.mpd || ev.url || "",
+                                    kid_key: ev.key || ev.kid_key || "",
+                                    provider: grpName === "EVENTI" ? "SKY SPORT" : "DAZN",
+                                    ora: timeStr,
+                                    isCustom: true,
+                                    isTestJson: true,
+                                    slug: cleanSlug,
+                                    sources: [{
+                                        name: isWarp ? "WARP (Cloudflare)" : "Standard",
+                                        isWarp: isWarp,
+                                        url: ev.mpd || ev.url || "",
+                                        kid_key: ev.key || ev.kid_key || ""
+                                    }]
                                 });
                             }
                         });
-                        const list = Array.from(grouped.values()).filter(c => c.title !== foundCh?.title);
+
+                        const list = Array.from(grouped.values()).filter(c => c.title !== currentPlayingTitle);
                         if (list.length > 0) {
                             sections.push({
                                 title: grpName,
@@ -222,24 +295,62 @@ export default function EventoPlayerPage() {
                     });
                 }
 
-                if (catRes.status === "fulfilled" && catRes.value?.categorie) {
-                    catRes.value.categorie.forEach(cat => {
-                        if (!cat.canali || cat.canali.length === 0) return;
-                        const list = cat.canali.map(c => ({
-                            title: c.titolo,
-                            group: cat.nome,
-                            logo: c.logo ? `/logos/${c.logo}` : getChannelLogoUrl({ title: c.titolo }),
-                            url: c.mpd || "",
-                            kid_key: c.kid_key || "",
-                            slug: (c.slug || c.titolo).toLowerCase().replace(/[^a-z0-9]/g, "-")
-                        })).filter(c => c.title !== foundCh?.title);
-                        if (list.length > 0) {
-                            sections.push({
-                                title: cat.nome,
-                                channels: list
-                            });
+                // 2. Canali Sky Sport 24/7 con Guida TV da sky.json
+                const guideData = guideRes.status === "fulfilled" ? guideRes.value : null;
+                const getEpgForName = (name) => {
+                    if (!guideData || !Array.isArray(guideData)) return null;
+                    const norm = (name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                    for (const g of guideData) {
+                        if (!g || !g.canale) continue;
+                        const gn = g.canale.toLowerCase().replace(/[^a-z0-9]/g, "");
+                        if (gn === norm || gn.includes(norm) || norm.includes(gn)) {
+                            return g.programmi || null;
                         }
-                    });
+                    }
+                    return null;
+                };
+
+                if (skyData.status === "fulfilled" && skyData.value && skyData.value["Sky Sport"]) {
+                    const skySportList = skyData.value["Sky Sport"].map(c => ({
+                        title: c.name || c.title || "",
+                        group: "Sky Sport",
+                        url: c.mpd || c.url || "",
+                        kid_key: c.key || c.kid_key || "",
+                        provider: "SKY",
+                        logo: getChannelLogoUrl({ title: c.name || c.title, group: "SKYSPORT" }),
+                        epg: getEpgForName(c.name || c.title),
+                        slug: (c.name || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                        isSky: true
+                    })).filter(c => c.title !== currentPlayingTitle);
+
+                    if (skySportList.length > 0) {
+                        sections.push({
+                            title: "Canali Sky Sport 24/7",
+                            channels: skySportList
+                        });
+                    }
+                }
+
+                // 3. Sky Intrattenimento da sky.json
+                if (skyData.status === "fulfilled" && skyData.value && skyData.value["Sky Intrattenimento"]) {
+                    const skyIntrList = skyData.value["Sky Intrattenimento"].map(c => ({
+                        title: c.name || c.title || "",
+                        group: "Sky Intrattenimento",
+                        url: c.mpd || c.url || "",
+                        kid_key: c.key || c.kid_key || "",
+                        provider: "SKY",
+                        logo: getChannelLogoUrl({ title: c.name || c.title }),
+                        epg: getEpgForName(c.name || c.title),
+                        slug: (c.name || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                        isSky: true
+                    })).filter(c => c.title !== currentPlayingTitle);
+
+                    if (skyIntrList.length > 0) {
+                        sections.push({
+                            title: "Sky Intrattenimento",
+                            channels: skyIntrList
+                        });
+                    }
                 }
 
                 setRelatedSections(sections);
@@ -275,7 +386,7 @@ export default function EventoPlayerPage() {
 
     return (
         <div style={{ backgroundColor: "#000000", minHeight: "100vh", color: "#ffffff", paddingBottom: "60px" }}>
-            {/* Header / Navbar identica */}
+            {/* Header / Navbar identica (Nessun tasto selezionato in bianco) */}
             <div className={`home-header-wrapper ${isNavHidden ? "nav-hidden" : ""}`} style={{ position: "sticky", top: "14px", zIndex: 9999, marginBottom: "20px" }}>
                 <div className="home-header">
                     <Link href="/">
@@ -285,7 +396,7 @@ export default function EventoPlayerPage() {
                         <Link href="/" className="nav-link"><i className="fas fa-house"></i>Home</Link>
                         <Link href="/?tab=sport" className="nav-link"><i className="fas fa-trophy"></i>Sport</Link>
                         <Link href="/?tab=intrattenimento" className="nav-link"><i className="fas fa-masks-theater"></i>Intrattenimento</Link>
-                        <Link href="/?tab=eventi" className="nav-link active"><i className="fas fa-ticket"></i>Eventi</Link>
+                        <Link href="/?tab=eventi" className="nav-link"><i className="fas fa-ticket"></i>Eventi</Link>
                     </nav>
                 </div>
             </div>
@@ -293,19 +404,14 @@ export default function EventoPlayerPage() {
             <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 16px" }}>
                 <div className="event-main-stage">
                     <div className="player-wrapper">
-                        {loading ? (
-                            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%" }}>
-                                <div className="spinner" style={{ width: "40px", height: "40px", border: "3px solid rgba(255,255,255,0.1)", borderTopColor: "#e30a17", borderRadius: "50%", animation: "spin 0.8s linear infinite" }}></div>
-                            </div>
-                        ) : (
-                            <iframe
-                                id="player-frame"
-                                src={getIframeUrl()}
-                                allowFullScreen
-                                allow="autoplay; encrypted-media; fullscreen"
-                                title="Player"
-                            />
-                        )}
+                        <iframe
+                            id="player-frame"
+                            src={getIframeUrl()}
+                            allowFullScreen
+                            allow="autoplay; encrypted-media; fullscreen"
+                            title="Player"
+                            style={{ display: "block", width: "100%", height: "100%", border: "none", background: "#000000", transition: "opacity 0.5s ease-in-out" }}
+                        />
                     </div>
 
                     <div className="event-deck">

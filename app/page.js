@@ -288,10 +288,20 @@ export default function HomePage() {
         loadData();
     }, []);
 
-    const filteredSections = categories.filter(sec => {
-        if (filter !== "all" && sec.navbar !== filter) return false;
-        return true;
-    }).map(sec => {
+    const shouldShowGroup = (sec, f) => {
+        if (f === "all") return true;
+        const isTestJson = sec.navbar === "eventi" || sec.channels.some(c => c.isTestJson);
+        if (isTestJson) {
+            const normName = (sec.title || "").toUpperCase().replace(/\s+/g, "");
+            if (normName === "LIVETV" && f === "eventi") {
+                return false;
+            }
+            return f !== "intrattenimento";
+        }
+        return sec.navbar === f;
+    };
+
+    const filteredSections = categories.filter(sec => shouldShowGroup(sec, filter)).map(sec => {
         if (!search.trim()) return sec;
         const q = search.toLowerCase();
         return {
