@@ -155,7 +155,7 @@ export default function EventoPlayerPage() {
                                 foundCh = {
                                     title: baseEv.cleanTitle,
                                     group: grp,
-                                    provider: grp === "EVENTI" ? "SKY SPORT" : "DAZN",
+                                    provider: baseEv.provider || "DAZN",
                                     logo: "/logos/dazn.png",
                                     image: baseEv.image || "",
                                     ora: baseEv.ora || "",
@@ -275,7 +275,7 @@ export default function EventoPlayerPage() {
                                     logo: "/logos/dazn.png",
                                     url: ev.mpd || ev.url || "",
                                     kid_key: ev.key || ev.kid_key || "",
-                                    provider: grpName === "EVENTI" ? "SKY SPORT" : "DAZN",
+                                    provider: ev.provider || "DAZN",
                                     ora: timeStr,
                                     isCustom: true,
                                     isTestJson: true,

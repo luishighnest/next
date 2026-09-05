@@ -28,7 +28,7 @@ export default function ChannelCard({ channel }) {
         (channel.title && channel.title.toLowerCase().includes("sky"))
     );
 
-    const targetHref = isSky ? `/sky?ch=${slug}` : `/eventi/${slug}`;
+    const targetHref = isSky ? `/sky?ch=${slug}${channel.skySource ? `&src=${channel.skySource}` : ""}` : `/eventi/${slug}`;
 
     const isDazn1Channel = (channel.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
     const dynColor = getDynamicColor(channel.title);

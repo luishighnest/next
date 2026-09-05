@@ -55,11 +55,58 @@ function buildExtUrl(ch) {
     return EXT + baseUrl + sep + parts.join("&");
 }
 
+function parseChannelList(json, sourceName) {
+    const list = [];
+    if (!json) return list;
+    const allowedGroups = sourceName === "sky2.json"
+        ? Object.keys(json)
+        : ["Sky Sport", "Sky Intrattenimento"];
+
+    allowedGroups.forEach(g => {
+        const items = json[g];
+        if (!Array.isArray(items)) return;
+        items.forEach(item => {
+            const url = item.mpd || item.url || "";
+            const cid = cidFromUrl(url) || (item.name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+            const rawLogo = item.logo || "";
+            const hasValidLogo = rawLogo && !rawLogo.includes("ui-avatars.com");
+            const channelLogo = hasValidLogo ? rawLogo : (getChannelLogoUrl({ title: item.name || item.title, group: g }));
+
+            list.push({
+                name: item.name || item.title || "",
+                group: g,
+                url: url,
+                kid_key: item.key || item.kid_key || "",
+                logo: channelLogo,
+                cid: cid,
+                slug: (item.name || item.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                skySource: sourceName
+            });
+        });
+    });
+    return list;
+}
+
 function SkyContent() {
     const searchParams = useSearchParams();
     const chParam = searchParams.get("ch") || "";
+    const srcParam = searchParams.get("src") || "";
 
-    const [currentSource, setCurrentSource] = useState("sky.json");
+    const [currentSource, setCurrentSource] = useState(() => {
+        if (srcParam === "sky2.json" || srcParam === "sky.json") return srcParam;
+        if (typeof window !== "undefined") {
+            try {
+                const stored = sessionStorage.getItem("nmdz_skyChannel");
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    if (parsed.skySource === "sky2.json" || parsed.skySource === "sky.json") {
+                        return parsed.skySource;
+                    }
+                }
+            } catch(e) {}
+        }
+        return "sky.json";
+    });
     const [channels, setChannels] = useState([]);
     const [guideData, setGuideData] = useState([]);
     const [activeTab, setActiveTab] = useState("all");
@@ -89,70 +136,64 @@ function SkyContent() {
                 const gData = guideRes.status === "fulfilled" ? guideRes.value : [];
                 if (Array.isArray(gData)) setGuideData(gData);
 
-                const channelList = [];
-                const allowedGroups = currentSource === "sky2.json"
-                    ? ["Sky Sport", "Sky Intrattenimento", "Sky Cinema", "Sky Bambini"]
-                    : ["Sky Sport", "Sky Intrattenimento"];
+                const channelList = parseChannelList(json, currentSource);
+                setChannels(channelList);
 
-                if (json) {
-                    allowedGroups.forEach(g => {
-                        const list = json[g];
-                        if (!Array.isArray(list)) return;
-                        list.forEach(item => {
-                            const url = item.mpd || item.url || "";
-                            const cid = cidFromUrl(url) || (item.name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                            const rawLogo = item.logo || "";
-                            const hasValidLogo = rawLogo && !rawLogo.includes("ui-avatars.com");
-                            const channelLogo = hasValidLogo ? rawLogo : (getChannelLogoUrl({ title: item.name || item.title, group: g }));
+                // Calcola target da chParam o da sessionStorage
+                const cleanTarget = (chParam || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                let storedTarget = "";
+                try {
+                    const stored = sessionStorage.getItem("nmdz_skyChannel");
+                    if (stored) {
+                        const parsed = JSON.parse(stored);
+                        storedTarget = (parsed.slug || parsed.title || parsed.name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                    }
+                } catch(e) {}
 
-                            channelList.push({
-                                name: item.name || item.title || "",
-                                group: g,
-                                url: url,
-                                kid_key: item.key || item.kid_key || "",
-                                logo: channelLogo,
-                                cid: cid,
-                                slug: (item.name || item.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-")
-                            });
-                        });
+                const targetKey = cleanTarget || storedTarget;
+
+                // 1. Cerca il canale nella sorgente attiva
+                let found = null;
+                if (targetKey) {
+                    found = channelList.find(c => {
+                        const cSlug = c.slug.replace(/[^a-z0-9]/g, "");
+                        return cSlug === targetKey || cSlug.includes(targetKey) || targetKey.includes(cSlug);
                     });
                 }
 
-                setChannels(channelList);
+                // 2. Se NON esiste nella sorgente attiva, cerca automaticamente nell'altra sorgente (sky.json <-> sky2.json)
+                if (!found && targetKey) {
+                    const otherSource = currentSource === "sky.json" ? "sky2.json" : "sky.json";
+                    try {
+                        const otherData = await fetchSecureJson(`/${otherSource}?t=${ts}`).catch(() => null);
+                        if (otherData) {
+                            const otherList = parseChannelList(otherData, otherSource);
+                            const foundInOther = otherList.find(c => {
+                                const cSlug = c.slug.replace(/[^a-z0-9]/g, "");
+                                return cSlug === targetKey || cSlug.includes(targetKey) || targetKey.includes(cSlug);
+                            });
+                            if (foundInOther) {
+                                // Trovato nell'altra sorgente! Switch automatico a quell'esatto canale su sky2 o sky1
+                                setCurrentSource(otherSource);
+                                setChannels(otherList);
+                                setSelectedChannel(foundInOther);
+                                return;
+                            }
+                        }
+                    } catch(err) {
+                        console.error("Errore verifica automatica altra sorgente Sky", err);
+                    }
+                }
 
-                // Seleziona canale iniziale solo al primo caricamento o se quello corrente non esiste più
+                // 3. Seleziona canale
                 setSelectedChannel(prevSelected => {
                     if (prevSelected) {
                         const stillExists = channelList.find(c => c.slug === prevSelected.slug || c.name === prevSelected.name);
                         if (stillExists) return stillExists;
                     }
-
-                    let found = null;
-                    const cleanTarget = (chParam || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-
-                    if (cleanTarget) {
-                        found = channelList.find(c => {
-                            const cSlug = c.slug.replace(/[^a-z0-9]/g, "");
-                            return cSlug === cleanTarget || cSlug.includes(cleanTarget) || cleanTarget.includes(cSlug);
-                        });
-                    }
-
-                    if (!found) {
-                        try {
-                            const stored = sessionStorage.getItem("nmdz_skyChannel");
-                            if (stored) {
-                                const parsed = JSON.parse(stored);
-                                const parsedSlug = (parsed.slug || parsed.title || parsed.name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                                found = channelList.find(c => c.slug.replace(/[^a-z0-9]/g, "") === parsedSlug);
-                            }
-                        } catch(e) {}
-                    }
-
-                    if (!found && channelList.length > 0) {
-                        found = channelList[0];
-                    }
-
-                    return found || null;
+                    if (found) return found;
+                    if (channelList.length > 0) return channelList[0];
+                    return null;
                 });
             } catch(e) {
                 console.error("Errore Sky", e);
@@ -273,7 +314,7 @@ function SkyContent() {
 
     // Filtri
     const availableGroups = currentSource === "sky2.json"
-        ? ["Sky Sport", "Sky Intrattenimento", "Sky Cinema", "Sky Bambini"]
+        ? ["Sky Sport", "Sky Cinema", "Sky Intrattenimento", "Sky Bambini", "RAI", "MEDIASET", "DISCOVERY", "ALTRI"]
         : ["Sky Sport", "Sky Intrattenimento"];
 
     const filteredChannels = channels.filter(ch => {
@@ -368,9 +409,14 @@ function SkyContent() {
                         </button>
                         {availableGroups.map(grp => {
                             let icon = "fa-trophy";
-                            if (grp.includes("Intrattenimento")) icon = "fa-masks-theater";
-                            if (grp.includes("Cinema")) icon = "fa-film";
-                            if (grp.includes("Bambini")) icon = "fa-child-reaching";
+                            const gl = grp.toLowerCase();
+                            if (gl.includes("intrattenimento")) icon = "fa-masks-theater";
+                            else if (gl.includes("cinema")) icon = "fa-film";
+                            else if (gl.includes("bambini")) icon = "fa-child-reaching";
+                            else if (gl.includes("rai") || gl.includes("mediaset")) icon = "fa-tv";
+                            else if (gl.includes("discovery")) icon = "fa-compass";
+                            else if (gl.includes("sport")) icon = "fa-trophy";
+                            else icon = "fa-list";
                             return (
                                 <button
                                     key={grp}

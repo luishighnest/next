@@ -175,7 +175,6 @@ export default function HomePage() {
                                     existing.ua = sourceItem.ua;
                                 }
                             } else {
-                                const isSkyGroup = groupName.toUpperCase().replace(/\s+/g, "").includes("EVENTI");
                                 const chObj = {
                                     id: cleanTitle,
                                     title: cleanTitle,
@@ -183,7 +182,7 @@ export default function HomePage() {
                                     navbar: "eventi",
                                     url: ev.mpd || ev.url || "",
                                     kid_key: ev.key || ev.kid_key || "",
-                                    provider: isSkyGroup ? "SKY SPORT" : "DAZN",
+                                    provider: ev.provider || "DAZN",
                                     logo: "/logos/dazn.png",
                                     image: ev.image || "",
                                     ora: timeStr,
