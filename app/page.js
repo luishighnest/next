@@ -67,10 +67,13 @@ export default function HomePage() {
                     });
                 }
 
-                // 2. Processa Sky 2 (sky2.json) per Cinema e Bambini
+                // 2. Processa Sky 2 (sky2.json) per Cinema e Bambini SOLO gruppi Sky
+                // I gruppi non-Sky (Rai, Mediaset, Altro ecc.) vengono saltati nella home — appaiono solo in /sky
+                const SKY2_HOME_GROUPS = ["Sky Cinema", "Sky Bambini"];
                 if (sky2Data) {
                     Object.keys(sky2Data).forEach(groupName => {
-                        if (groupName === "Sky Sport" || groupName === "Sky Intrattenimento") return; // Sky 1 prioritario
+                        // Nella HOME mostra SOLO i gruppi Sky noti — salta tutti gli altri (Rai, Mediaset, Altro...)
+                        if (!SKY2_HOME_GROUPS.includes(groupName)) return;
                         const items = sky2Data[groupName];
                         if (!Array.isArray(items)) return;
                         items.forEach(c => {
