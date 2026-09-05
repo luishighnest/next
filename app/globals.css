@@ -49,12 +49,15 @@ input, textarea {
     user-select: text;
 }
 
-body {
+html, body {
+    margin: 0;
+    padding: 0;
     font-family: var(--font-main);
     background-color: var(--bg-base);
     color: var(--text-primary);
-    height: 100vh; height: 100dvh;
-    overflow: hidden;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -6323,4 +6326,267 @@ html {
             .now-logo { width: 64px; height: 64px; }
             .zap-btn { width: 50px; height: 50px; }
         }
-    
+
+/* ============================================================
+   EVENTO & PLAYER CINEMA STYLES (NEXT.JS)
+   ============================================================ */
+.brand-logo { 
+    height: 34px !important;
+    width: 34px !important;
+    min-width: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+    border-radius: 8px !important;
+    object-fit: cover !important;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
+    margin: 0 2px 0 0 !important;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: block !important;
+}
+.sky-nav-links {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+.sky-nav-links .nav-link {
+    height: 34px;
+    box-sizing: border-box;
+    padding: 0 16px;
+    border-radius: 99px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif !important;
+    color: rgba(255, 255, 255, 0.65);
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: 1px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+}
+.sky-nav-links .nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+.sky-nav-links .nav-link.active {
+    color: #000000 !important;
+    background: #ffffff !important;
+    font-weight: 700;
+    border-color: #ffffff !important;
+    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.25);
+}
+
+.event-main-stage {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9) !important;
+    background: #000000 !important;
+    box-sizing: border-box;
+}
+
+.player-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000000;
+    border-radius: 0;
+    overflow: hidden;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.event-deck {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: linear-gradient(180deg, rgba(16, 16, 22, 0.98) 0%, rgba(10, 10, 14, 0.99) 100%);
+    border: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 0;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+    margin: 0 !important;
+}
+
+.event-deck-left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    flex: 1;
+}
+
+.event-logo-box {
+    width: 48px !important;
+    height: 48px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    border-radius: 12px !important;
+    background: #000000 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    flex-shrink: 0 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+.event-channel-logo {
+    width: 36px !important;
+    height: 36px !important;
+    max-width: 36px !important;
+    max-height: 36px !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: auto !important;
+}
+
+.event-details {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.event-meta-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+    background: #e30a17;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    box-shadow: 0 0 12px rgba(227, 10, 23, 0.4);
+}
+
+.live-badge .dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    animation: live-pulse 1.2s ease infinite;
+}
+
+.event-tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 2px 9px;
+    border-radius: 4px;
+}
+
+.event-time-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: rgba(227, 10, 23, 0.15);
+    border: 1px solid rgba(227, 10, 23, 0.35);
+    padding: 2px 10px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.event-time-badge i {
+    font-size: 0.7rem;
+    color: #e30a17;
+}
+
+.event-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.event-sources-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.event-source-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    user-select: none;
+    backdrop-filter: blur(12px);
+}
+
+.event-source-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.event-source-btn.active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);
+}
+
+.related-section {
+    max-width: 1600px;
+    margin: 40px auto 70px auto;
+    padding: 0 8vw;
+    width: 100%;
+    box-sizing: border-box;
+}

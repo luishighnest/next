@@ -1,5 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import { fetchSecureJson, isStreamWarp } from "@/lib/crypto";
@@ -10,12 +11,27 @@ function normalizeEpg(s) {
     return (s || "").toLowerCase().replace(/fhd|uhd|4k|1080p|720p/g, "").replace(/[^a-z0-9]/g, "");
 }
 
-export default function HomePage() {
-    const [filter, setFilter] = useState("all");
+function HomePageContent() {
+    const searchParams = useSearchParams();
+    const router = useRouter();
+    const tabParam = searchParams.get("tab") || searchParams.get("filter") || "all";
+    const [filter, setFilter] = useState(tabParam);
     const [search, setSearch] = useState("");
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
     const [exploreData, setExploreData] = useState(null);
+
+    useEffect(() => {
+        if (tabParam && ["all", "sport", "intrattenimento", "eventi"].includes(tabParam)) {
+            setFilter(tabParam);
+        }
+    }, [tabParam]);
+
+    const handleFilterChange = (f) => {
+        setFilter(f);
+        const url = f === "all" ? "/" : `/?tab=${f}`;
+        router.push(url, { scroll: false });
+    };
 
     useEffect(() => {
         let isMounted = true;
@@ -95,7 +111,7 @@ export default function HomePage() {
         <div className="desktop-home" style={{ display: "block", minHeight: "100vh" }}>
             <Navbar
                 activeFilter={filter}
-                onFilterChange={(f) => setFilter(f)}
+                onFilterChange={handleFilterChange}
                 onSearch={(s) => setSearch(s)}
             />
 
@@ -142,3 +158,12 @@ export default function HomePage() {
         </div>
     );
 }
+
+export default function HomePage() {
+    return (
+        <Suspense fallback={<div className="desktop-home" style={{ display: "block", minHeight: "100vh" }} />}>
+            <HomePageContent />
+        </Suspense>
+    );
+}
+

@@ -244,10 +244,10 @@ export default function EventoPlayerPage() {
                         <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="brand-logo" />
                     </Link>
                     <nav className="sky-nav-links">
-                        <Link href="/" className="nav-link"><i className="fas fa-house"></i>Home</Link>
-                        <Link href="/?tab=sport" className="nav-link"><i className="fas fa-trophy"></i>Sport</Link>
-                        <Link href="/?tab=intrattenimento" className="nav-link"><i className="fas fa-masks-theater"></i>Intrattenimento</Link>
-                        <Link href="/?tab=eventi" className="nav-link"><i className="fas fa-ticket"></i>Eventi</Link>
+                        <Link href="/" className="nav-link"><i className="fas fa-house" style={{ marginRight: "6px" }}></i>Home</Link>
+                        <Link href="/?tab=sport" className="nav-link"><i className="fas fa-trophy" style={{ marginRight: "6px" }}></i>Sport</Link>
+                        <Link href="/?tab=intrattenimento" className="nav-link"><i className="fas fa-masks-theater" style={{ marginRight: "6px" }}></i>Intrattenimento</Link>
+                        <Link href="/?tab=eventi" className="nav-link active"><i className="fas fa-ticket" style={{ marginRight: "6px" }}></i>Eventi</Link>
                     </nav>
                 </div>
             </div>
@@ -277,7 +277,7 @@ export default function EventoPlayerPage() {
                             <div className="event-details">
                                 <div className="event-meta-row">
                                     <span className="live-badge"><span className="dot"></span>LIVE</span>
-                                    <span className="event-tag">{channel?.provider || "DAZN"}</span>
+                                    <span className="event-tag">{channel?.group || channel?.category || "EVENTI"}</span>
                                     {channel?.ora && (
                                         <span className="event-time-badge">
                                             <i className="fa-regular fa-clock"></i>
