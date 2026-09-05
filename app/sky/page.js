@@ -71,20 +71,23 @@ function SkyContent() {
     const playerZoneRef = useRef(null);
     const nowRowRef = useRef(null);
 
-    // Carica canali e guida tv
+    // Carica canali e guida tv con aggiornamento automatico silenzioso
     useEffect(() => {
         let isMounted = true;
-        async function loadSourceChannels() {
-            setLoading(true);
+        async function loadSourceChannels(isInitial = false) {
+            if (isInitial) setLoading(true);
             try {
+                const ts = Date.now();
                 const [srcData, guideRes] = await Promise.allSettled([
-                    fetchSecureJson("/" + currentSource).catch(() => null),
-                    fetch("/guida_tv_sky.json").then(r => r.json()).catch(() => null)
+                    fetchSecureJson(`/${currentSource}?t=${ts}`).catch(() => null),
+                    fetch(`/guida_tv_sky.json?t=${ts}`, { cache: "no-store" }).then(r => r.json()).catch(() => null)
                 ]);
+
+                if (!isMounted) return;
 
                 const json = srcData.status === "fulfilled" ? srcData.value : null;
                 const gData = guideRes.status === "fulfilled" ? guideRes.value : [];
-                if (isMounted && Array.isArray(gData)) setGuideData(gData);
+                if (Array.isArray(gData)) setGuideData(gData);
 
                 const channelList = [];
                 const allowedGroups = currentSource === "sky2.json"
@@ -115,10 +118,15 @@ function SkyContent() {
                     });
                 }
 
-                if (isMounted) {
-                    setChannels(channelList);
+                setChannels(channelList);
 
-                    // Seleziona canale iniziale (da parametro URL o sessionStorage o primo della lista)
+                // Seleziona canale iniziale solo al primo caricamento o se quello corrente non esiste più
+                setSelectedChannel(prevSelected => {
+                    if (prevSelected) {
+                        const stillExists = channelList.find(c => c.slug === prevSelected.slug || c.name === prevSelected.name);
+                        if (stillExists) return stillExists;
+                    }
+
                     let found = null;
                     const cleanTarget = (chParam || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
@@ -144,17 +152,40 @@ function SkyContent() {
                         found = channelList[0];
                     }
 
-                    setSelectedChannel(found || null);
-                    setLoading(false);
-                }
+                    return found || null;
+                });
             } catch(e) {
                 console.error("Errore Sky", e);
-                if (isMounted) setLoading(false);
+            } finally {
+                if (isMounted && isInitial) setLoading(false);
             }
         }
 
-        loadSourceChannels();
-        return () => { isMounted = false; };
+        // Caricamento iniziale
+        loadSourceChannels(true);
+
+        // Auto-polling silenzioso ogni 5 secondi in background
+        const intervalId = setInterval(() => {
+            if (document.visibilityState === "visible") {
+                loadSourceChannels(false);
+            }
+        }, 5000);
+
+        // Aggiorna istantaneamente quando torni sulla scheda del browser
+        const onFocus = () => {
+            if (document.visibilityState === "visible") {
+                loadSourceChannels(false);
+            }
+        };
+        window.addEventListener("focus", onFocus);
+        document.addEventListener("visibilitychange", onFocus);
+
+        return () => {
+            isMounted = false;
+            clearInterval(intervalId);
+            window.removeEventListener("focus", onFocus);
+            document.removeEventListener("visibilitychange", onFocus);
+        };
     }, [currentSource]);
 
     // Fit player 16:9
