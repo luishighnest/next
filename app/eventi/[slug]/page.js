@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
@@ -18,6 +18,33 @@ export default function EventoPlayerPage() {
     const [showGithubMenu, setShowGithubMenu] = useState(false);
     const [relatedSections, setRelatedSections] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [isNavHidden, setIsNavHidden] = useState(false);
+
+    useEffect(() => {
+        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+
+        function handleScroll() {
+            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            if (currentScrollY <= 10) {
+                setIsNavHidden(false);
+            } else if (currentScrollY > lastScrollY && currentScrollY > 25) {
+                setIsNavHidden(true);
+            } else if (currentScrollY < lastScrollY) {
+                setIsNavHidden(false);
+            }
+            lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+        }
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("touchmove", handleScroll, { passive: true });
+        window.addEventListener("wheel", handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("touchmove", handleScroll);
+            window.removeEventListener("wheel", handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         async function loadEvent() {
@@ -85,10 +112,13 @@ export default function EventoPlayerPage() {
                             for (const ev of items) {
                                 const rawTitle = (ev.name || ev.title || "").trim();
                                 const isWarp = isStreamWarp(rawTitle, ev.mpd || ev.url || "");
-                                const cleanTitle = rawTitle.replace(/\s*\(WARP\)\s*/gi, " ")
+                                let cleanTitle = rawTitle.replace(/\s*\(WARP\)\s*/gi, " ")
                                                            .replace(/\s*\(HLS\)\s*/gi, " ")
                                                            .replace(/\s*\(\d+\)\s*$/g, " ")
                                                            .trim();
+                                if (cleanTitle.toUpperCase().replace(/\s+/g, "") === "DAZN") {
+                                    cleanTitle = "DAZN 1";
+                                }
                                 const evSlug = cleanTitle.toLowerCase().replace(/[^a-z0-9]/g, "");
 
                                 if (evSlug === targetSlug || evSlug.includes(targetSlug) || targetSlug.includes(evSlug)) {
@@ -246,7 +276,7 @@ export default function EventoPlayerPage() {
     return (
         <div style={{ backgroundColor: "#000000", minHeight: "100vh", color: "#ffffff", paddingBottom: "60px" }}>
             {/* Header / Navbar identica */}
-            <div className="home-header-wrapper" style={{ position: "sticky", top: "14px", zIndex: 9999, marginBottom: "20px" }}>
+            <div className={`home-header-wrapper ${isNavHidden ? "nav-hidden" : ""}`} style={{ position: "sticky", top: "14px", zIndex: 9999, marginBottom: "20px" }}>
                 <div className="home-header">
                     <Link href="/">
                         <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="brand-logo" />

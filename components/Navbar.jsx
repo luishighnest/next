@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SettingsModal from "./SettingsModal";
@@ -10,6 +10,33 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [searchVal, setSearchVal] = useState("");
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+    const [isNavHidden, setIsNavHidden] = useState(false);
+
+    useEffect(() => {
+        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+
+        function handleScroll() {
+            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+            if (currentScrollY <= 10) {
+                setIsNavHidden(false);
+            } else if (currentScrollY > lastScrollY && currentScrollY > 25) {
+                setIsNavHidden(true);
+            } else if (currentScrollY < lastScrollY) {
+                setIsNavHidden(false);
+            }
+            lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+        }
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        window.addEventListener("touchmove", handleScroll, { passive: true });
+        window.addEventListener("wheel", handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("touchmove", handleScroll);
+            window.removeEventListener("wheel", handleScroll);
+        };
+    }, []);
 
     const handleNavClick = (filter) => {
         if (onFilterChange) {
@@ -27,7 +54,7 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
 
     return (
         <>
-            <div className="home-header-wrapper" id="home-header-wrapper">
+            <div className={`home-header-wrapper ${isNavHidden ? "nav-hidden" : ""}`} id="home-header-wrapper">
                 <div className="home-header">
                     <div className="header-left">
                         <Link href="/">

@@ -5,7 +5,12 @@ export default function SettingsModal({ onClose }) {
     const [activeTab, setActiveTab] = useState("tab-player");
 
     return (
-        <div id="settings-modal-overlay" onClick={(e) => { if (e.target.id === "settings-modal-overlay") onClose(); }}>
+        <div
+            id="settings-modal-overlay"
+            className="active"
+            style={{ display: "flex", opacity: 1, pointerEvents: "auto" }}
+            onClick={(e) => { if (e.target.id === "settings-modal-overlay") onClose(); }}
+        >
             <div className="settings-modal-card">
                 <div className="settings-modal-header">
                     <div className="settings-modal-header-title">

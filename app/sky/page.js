@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect, useRef, useTransition, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
@@ -447,6 +447,35 @@ function SkyContent() {
                             <div className="now-meta-row">
                                 <span className="live-badge"><span className="dot"></span>LIVE</span>
                                 <span className="now-group">{selectedChannel?.group || "Sky"}</span>
+                                {(() => {
+                                    const streamUrl = selectedChannel?.url || selectedChannel?.mpd || "";
+                                    const expMatch = streamUrl.match(/_e~([0-9]+)_/);
+                                    if (!expMatch) return null;
+                                    const expTs = parseInt(expMatch[1], 10) * 1000;
+                                    const expDate = new Date(expTs);
+                                    const now = new Date();
+                                    const diffMin = Math.round((expDate - now) / 60000);
+                                    const timeStr = String(expDate.getHours()).padStart(2, "0") + ":" + String(expDate.getMinutes()).padStart(2, "0");
+                                    let dateStr = "";
+                                    if (expDate.getDate() !== now.getDate()) {
+                                        dateStr = String(expDate.getDate()).padStart(2, "0") + "/" + String(expDate.getMonth() + 1).padStart(2, "0") + " ";
+                                    }
+                                    const isExpired = diffMin <= 0;
+                                    let expiryText = "";
+                                    if (isExpired) {
+                                        expiryText = "Scaduto alle " + timeStr;
+                                    } else if (diffMin < 60) {
+                                        expiryText = "Scade tra " + diffMin + " min (" + timeStr + ")";
+                                    } else {
+                                        expiryText = "Scadenza: " + dateStr + timeStr;
+                                    }
+                                    return (
+                                        <span className={`now-expiry-badge ${isExpired ? "expired" : ""}`} id="nowExpiry" style={{ display: "inline-flex" }}>
+                                            <i className="fa-regular fa-clock" style={{ marginRight: "4px" }}></i>
+                                            <span id="nowExpiryText">{expiryText}</span>
+                                        </span>
+                                    );
+                                })()}
                             </div>
                             <div className="now-epg-text">
                                 {currentEpg ? `${currentEpg.ora} - ${currentEpg.titolo} ${currentEpg.next ? `(Succ: ${currentEpg.next})` : ""}` : "Trasmissione in diretta"}

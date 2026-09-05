@@ -1,8 +1,10 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import { fetchSecureJson, isStreamWarp } from "@/lib/crypto";
+
+import ChannelCard from "@/components/ChannelCard";
 
 function normalizeEpg(s) {
     return (s || "").toLowerCase().replace(/fhd|uhd|4k|1080p|720p/g, "").replace(/[^a-z0-9]/g, "");
@@ -13,6 +15,7 @@ export default function HomePage() {
     const [search, setSearch] = useState("");
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [exploreData, setExploreData] = useState(null);
 
     useEffect(() => {
         async function loadData() {
@@ -128,10 +131,13 @@ export default function HomePage() {
                             if (!ev.name && !ev.title) return;
                             const rawTitle = (ev.name || ev.title).trim();
                             const isWarp = isStreamWarp(rawTitle, ev.mpd || ev.url || "");
-                            const cleanTitle = rawTitle.replace(/\s*\(WARP\)\s*/gi, " ")
+                            let cleanTitle = rawTitle.replace(/\s*\(WARP\)\s*/gi, " ")
                                                        .replace(/\s*\(HLS\)\s*/gi, " ")
                                                        .replace(/\s*\(\d+\)\s*$/g, " ")
                                                        .trim();
+                            if (cleanTitle.toUpperCase().replace(/\s+/g, "") === "DAZN") {
+                                cleanTitle = "DAZN 1";
+                            }
 
                             let timeStr = "";
                             const isDazn1 = cleanTitle.toUpperCase().replace(/\s+/g, "").includes("DAZN1") || (ev.end && ev.end.startsWith("3000"));
@@ -316,10 +322,35 @@ export default function HomePage() {
                             key={sec.title}
                             title={sec.title}
                             channels={sec.channels}
+                            onExplore={(title, chs) => setExploreData({ title, channels: chs })}
                         />
                     ))
                 )}
             </main>
+
+            {/* Explore All Full-Screen Overlay 1:1 con index.html / app.js */}
+            {exploreData && (
+                <div id="explore-all-overlay" className="explore-all-overlay" style={{ display: "flex" }}>
+                    <div className="explore-header">
+                        <h1 id="explore-category-title">{exploreData.title}</h1>
+                        <button
+                            id="explore-close"
+                            className="explore-close"
+                            onClick={() => setExploreData(null)}
+                            aria-label="Chiudi"
+                        >
+                            <span className="material-symbols-rounded">close</span>
+                        </button>
+                    </div>
+                    <div className="explore-content-wrapper">
+                        <div id="explore-channels-grid" className="explore-channels-grid">
+                            {exploreData.channels.map((ch, idx) => (
+                                <ChannelCard key={ch.id || (ch.title + idx)} channel={ch} />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

@@ -2464,6 +2464,18 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     text-transform: none; /* Normale, non tutto maiuscolo */
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.category-header-container h2::before,
+.related-title::before {
+    content: '';
+    width: 3.5px;
+    height: 18px;
+    background: #e30a17;
+    border-radius: 2px;
+    display: inline-block;
+    flex-shrink: 0;
 }
 
 .category-header-container::after {

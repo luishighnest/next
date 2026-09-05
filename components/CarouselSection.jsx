@@ -1,8 +1,8 @@
 ﻿"use client";
-import React, { useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ChannelCard from "./ChannelCard";
 
-export default function CarouselSection({ title, channels }) {
+export default function CarouselSection({ title, channels, onExplore }) {
     const wrapperRef = useRef(null);
     const scrollRef = useRef(null);
     const btnLeftRef = useRef(null);
@@ -83,8 +83,20 @@ export default function CarouselSection({ title, channels }) {
     return (
         <div className="home-section">
             <div className="category-header-container">
-                <h2 className="related-title">{title}</h2>
+                <h2>{title}</h2>
                 <div className="category-header-right">
+                    <button
+                        type="button"
+                        className="explore-all-btn"
+                        onClick={() => {
+                            if (onExplore) onExplore(title, channels);
+                        }}
+                    >
+                        Esplora tutti
+                        <span className="material-symbols-rounded" style={{ fontSize: "1.1rem", marginLeft: "2px" }}>
+                            arrow_forward
+                        </span>
+                    </button>
                     <div className="carousel-top-nav">
                         <button
                             ref={btnLeftRef}
