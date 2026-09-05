@@ -2466,8 +2466,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     position: relative;
     z-index: 10;
 }
-.category-header-container h2,
-.related-title {
+.category-header-container h2 {
     margin: 0;
     font-family: 'Outfit', sans-serif;
     font-size: 1.7rem;
@@ -2480,11 +2479,32 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     gap: 10px;
 }
 
-.category-header-container h2::before,
-.related-title::before {
+.category-header-container h2::before {
     content: '';
     width: 3.5px;
     height: 18px;
+    background: #e30a17;
+    border-radius: 2px;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.related-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.2rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: -0.01em;
+}
+
+.related-title::before {
+    content: '';
+    width: 3px;
+    height: 16px;
     background: #e30a17;
     border-radius: 2px;
     display: inline-block;

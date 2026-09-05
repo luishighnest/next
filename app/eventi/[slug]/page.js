@@ -505,13 +505,14 @@ export default function EventoPlayerPage() {
                     </div>
                 </div>
 
-                {/* Sezioni Correlate */}
-                <div style={{ marginTop: "40px" }}>
+                {/* Sezioni Correlate identiche a evento.html */}
+                <div className="related-section" id="dynamic-categories-container">
                     {relatedSections.map(sec => (
                         <CarouselSection
                             key={sec.title}
                             title={sec.title}
                             channels={sec.channels}
+                            isRelated={true}
                         />
                     ))}
                 </div>
