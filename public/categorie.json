@@ -1,0 +1,417 @@
+{
+    "categorie": [
+        {
+            "id": "sky_sport",
+            "nome": "Sky Sport",
+            "navbar": "sport",
+            "canali": []
+        },
+        {
+            "id": "eurosport",
+            "nome": "Eurosport",
+            "navbar": "sport",
+            "canali": [
+                {
+                    "titolo": "Eurosport 1",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(eurosport1)/manifest.mpd?ck=eyIxNjMzMDNhODgzODI0OTc3YjA1ZDczNTdkYTgyZjQ4NyI6IjQwZDVlMTE5OGQyM2FhYWQ5MDc5YmRjODgxZjJjYTVhIn0%3D",
+                    "kid_key": "",
+                    "logo": "eurosport.png"
+                },
+                {
+                    "titolo": "Eurosport 2",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(eurosport2)/manifest.mpd?ck=eyJlZGI0MGRhODMyYzQ0OTU3YjQ5YTMwMzUxZWJjY2VlMyI6IjM3OTc5MDQ0ZmQ0ODBhZTEwYTQ0MWM2Yzg1NDdiMzhhIn0%3D",
+                    "kid_key": "",
+                    "logo": "eurosport.png"
+                },
+                {
+                    "titolo": "Eurosport 3",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(eurosport3)/manifest.mpd?ck=eyIxZjBkYjMxOWExZTM0OTJjYTAyZDFkYmNmZWYxNzZhYyI6ImVmM2JjM2IxNWNhZjMzMDY0ZDFlOGY5ZDBiNDZiNGIxIn0%3D",
+                    "kid_key": "",
+                    "logo": "eurosport.png"
+                },
+                {
+                    "titolo": "Eurosport 4",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(eurosport4)/manifest.mpd?ck=eyJlYWRlN2FhMjMxNGE0MDdkYTgyMGQ2YzgxMTY3Y2I5MCI6ImM2YjcwMWRhZTZjOGJkZWFkMmNiZTZlY2RlMDc2OWJiIn0%3D",
+                    "kid_key": "",
+                    "logo": "eurosport.png"
+                },
+                {
+                    "titolo": "Eurosport 5",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(eurosport5)/manifest.mpd?ck=eyJkYTllODVlMGE2ZjQ0NTlmOTM0NGNkYjU0NGMyMmE0ZSI6IjZhZjNhMWYwOTExZGExZTVmNmExOTY4NzJhYjVmYmZlIn0%3D",
+                    "kid_key": "",
+                    "logo": "eurosport.png"
+                },
+                {
+                    "titolo": "Eurosport 6",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(eurosport6)/manifest.mpd?ck=eyI3Mzk1OTg2ZmQ0NmQ0ZDBhYjQ3MjQ3MWMyMjQ2MjFlMyI6ImFkZjFmNDBhOGRiNTJlMzE5YTE4Y2EwMGE0ZGJlMGFhIn0%3D",
+                    "kid_key": "",
+                    "logo": "eurosport.png"
+                }
+            ]
+        },
+        {
+            "id": "supertennis",
+            "nome": "SuperTennis",
+            "navbar": "sport",
+            "canali": [
+                {
+                    "titolo": "SuperTennis 1",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://421b2081187a40368f24e4fb496bfc26.msvdn.net/channel1/manifest.mpd",
+                    "kid_key": "",
+                    "logo": "supertennis.png"
+                },
+                {
+                    "titolo": "SuperTennis 2",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://421b2081187a40368f24e4fb496bfc26.msvdn.net/channel2/manifest.mpd",
+                    "kid_key": "",
+                    "logo": "supertennis.png"
+                },
+                {
+                    "titolo": "SuperTennis 3",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://421b2081187a40368f24e4fb496bfc26.msvdn.net/channel3/manifest.mpd",
+                    "kid_key": "",
+                    "logo": "supertennis.png"
+                },
+                {
+                    "titolo": "Supertennis 4",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://421b2081187a40368f24e4fb496bfc26.msvdn.net/channel4/manifest.mpd",
+                    "kid_key": "",
+                    "logo": "supertennis.png"
+                }
+            ]
+        },
+        {
+            "id": "sky_intrattenimento",
+            "nome": "Sky Intrattenimento",
+            "navbar": "intrattenimento",
+            "canali": []
+        },
+        {
+            "id": "sky_cinema",
+            "nome": "Sky Cinema",
+            "navbar": "intrattenimento",
+            "canali": []
+        },
+        {
+            "id": "digitale_terrestre",
+            "nome": "Digitale Terrestre",
+            "navbar": "intrattenimento",
+            "canali": [
+                {
+                    "titolo": "Rai 1",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp8-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09101/stb-dash-fhd-avc/SV09101.mpd?ck=N2Y5ZjZlM2M3OGIyNDg2ZjlmZTEzZTA2YmRiNzY4ZDI6YjM0MWMxMTM2YTM3MzhmM2E2ZWExOTdkMzFmYWIzNWM=",
+                    "kid_key": "",
+                    "logo": "rai1.png"
+                },
+                {
+                    "titolo": "Rai 2",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp4-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09103/stb-dash-fhd-avc/SV09103.mpd?ck=ODM5ODUzMzc2OGFlNDliZTg2MmY0NThlZGM3OGY4Mjg6NjA5MjczYzI2YzMxYTQwOTAzMTBlMzk0NWMwZGI1ZGYsNmYxNjE1Mjk0NzkzM2UyY2I3NTI4ODc5MDUyNTkxYTk6YWQ2MjkxNTY5NzcyYmI3ZDhjODlmYjI1NjVmZTQxMTU=",
+                    "kid_key": "",
+                    "logo": "rai2.png"
+                },
+                {
+                    "titolo": "Rai 3",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp5-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09104/stb-dash-fhd-avc/SV09104.mpd?ck=ZjMzOWEzNzgxM2Y3NDI3MDhkMTQzNjU2ZGQ1ZjUzMjM6MTdhOWExM2UzZmJmZTFkOWNhZDczOWMyMWM4OWQzZmMsNzdiYzljZTNiMGNjM2NlN2IwMWY2NjU2YjI1NTQ0YTc6MjZmODliOWEzMmUyNjU4YWY4NDA3NDNiODE2NTRjMmQ=",
+                    "kid_key": "",
+                    "logo": "rai3.png"
+                },
+                {
+                    "titolo": "Rete 4",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp7-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09242/stb-dash-fhd-avc/SV09242.mpd?ck=MmRjMjBlNTM5N2U1NDAxNjk5OWI5Y2E0ZmM2ZmJiNzQ6MDVjOWNiZGFlYWVkNGY3ZmY2ZjBkYjk3OGM2YWFmZTksNTAyODI5YTYxOGE5NDBmZWJiMTkyMzVjZGEzNDE0MDE6ZjFlMWY5MDg0OTE0Mzk0YzU4OGMzODdiZDU4ZDYzOGY=",
+                    "kid_key": "",
+                    "logo": "rete4.png"
+                },
+                {
+                    "titolo": "Canale 5",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(canale5)/manifest.mpd?ck=ZTE5ZWY2MWIxNGM1NDQ4NWFlMmM2YWM0ZjEyZWExMGM6MmJjNWU0NzZkMjk2NDAxZWU2NmJkOGE2NDcyNjdjNDQ=",
+                    "kid_key": "",
+                    "logo": "canale5.png"
+                },
+                {
+                    "titolo": "Italia 1",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://live03p-col.msf.cdn.mediaset.net/live/ch-i1/i1-dash-widevine.isml/manifest.mpd?ck=MDBmOWYzYzA3ODM1MzZiOGVlOTE3MDRlMjNiNzgwMTY6YmZkMDRkNmY1NDRjOWNjNGQzNWNiMTNhYjY3Nzg1ODcsZjI2ZTI2NDUxNDdiNDQ0ZjllMTE2YWFjNjRkNGU1ZDI6NGY0MGYyOTRjNDcxYjViMjcyNDI5MGFhNTdjZDg2NGY=",
+                    "kid_key": "",
+                    "logo": "italia1.png"
+                },
+                {
+                    "titolo": "LA7",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(la7)/manifest.mpd?ck=OThkMjllMmU3NDljNDNlOGJkMzQzYjAyNWY2ZjBiZmQ6ZGM0MGYwYzAyMDhkZjk4MzBiMDY4MTY5Y2U0MjZlNDc=",
+                    "kid_key": "",
+                    "logo": "la7.png"
+                },
+                {
+                    "titolo": "LA7d HD",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(la7dhd)/manifest.mpd?ck=MjI1YjEwMDhiYzM1NGVkYThkZjRhYzYwNDcwZTcwYzc6NTRmNmEzYmE3NDhjZjhhNDcwZDFlZmZhZmU2MjBjZmU=",
+                    "kid_key": "",
+                    "logo": "la7d.png"
+                },
+                {
+                    "titolo": "Nove",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp8-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09472/stb-dash-fhd-avc/SV09472.mpd?ck=ZTBlNjMyNzFmMThmM2E4Yjg0YjBhNWQ1YmJmNGM2ODU6NDBmZTZjMjZiZTA5ZTU2NzhmYjcyOWE5YWI2OWIzMzY=",
+                    "kid_key": "",
+                    "logo": "nove.png"
+                },
+                {
+                    "titolo": "20 Mediaset",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(venti)/manifest.mpd?ck=MjA1ZDJiZGJjMTIxNDIzZGIyNTkyZThhOGU5YjllN2U6Yzc5OTE4OTNhYmFlMjUwODQ0YWI2NGI0ZTAwYmE4NDM=",
+                    "kid_key": "",
+                    "logo": "20mediaset.png"
+                },
+                {
+                    "titolo": "Rai 4",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp6-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09105/stb-dash-fhd-avc/SV09105.mpd?ck=NzUxMjI0NDdjNGZlNGY5NmFhNjBlZjlmMTYyMDZjOTQ6NmNlMzFiYTM1YjA5ZjM3ZmQwMGJhZDUwYjhhZjI1OTcsYWZhMGVmMGU4MTcxM2RlNjg3Y2U2NjcyNWZhNGU3Njg6Y2RjMjNjODZjN2YyZGRkY2UzZWU4NzljYTM3YTBhODQ=",
+                    "kid_key": "",
+                    "logo": "rai4.png"
+                },
+                {
+                    "titolo": "Iris",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(iris)/manifest.mpd?ck=MzhjZjNmMWIzNjZhNDEwZDhmNTY1NjhmYzgzYWZhZWY6YmZlYTBhODYwMDZlMTQ3YmZkY2NlMThkYjQzZTczZGY=",
+                    "kid_key": "",
+                    "logo": "iris.png"
+                },
+                {
+                    "titolo": "Rai 5",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp13-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV00470/stb-dash-sd-avc/SV00470.mpd?ck=MWQwN2MyNTY1OGJkNGYyOGI4NTBkYWUzYmM2NDM2Y2E6M2NhNzg4NzBlNTYyNmIyNDhjYTIzMmY3ZDU3MWM1NGEsYWExNDNkNjA2MmE2M2UwMGE1Y2ExYmM2OTZhOTE1Zjc6MGM0Y2NjZjIzZjZmMWU4YjUyM2YyYThjNWRjYzBlY2E=",
+                    "kid_key": "",
+                    "logo": "rai5.png"
+                },
+                {
+                    "titolo": "Rai Movie",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp8-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09108/stb-dash-hdready-avc/SV09108.mpd?ck=ZTFmYWFmYWJlMTA4NGUzMGI2NTc2NDViZjcxYzFhZTI6ZmFiNTRlNjU5NTI4NGQ0OTA4NzRmY2RiNmViNmY0NjYsMTA2YThkMzg4MzAyM2YzZWEzOTY4M2QzZThjMjcxMTM6M2ZjODkxM2YwYzM4OTU2MTUxYmI2YWEzN2FjZTIyMmI=",
+                    "kid_key": "",
+                    "logo": "raimovie.png"
+                },
+                {
+                    "titolo": "Rai Premium",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp12-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV00484/stb-dash-sd-avc/SV00484.mpd?ck=ODdjOGI0MGJlNTQ2NDEyNmI3NzlkMmJhNWVmNDY5ZWM6YjkyODE3NjI3MzY3MDU3YjA3ZjU5NjAyYzc2NWIzODEsYjkyZWJlNDcxZDIxM2EyMmI3ZGEzZGNmOWRiNzk2MzA6MzE3NmZlYTU4ZTQ3NDZkYTQ2NjUyYWFjYWRkYmJiNTY=",
+                    "kid_key": "",
+                    "logo": "raipremium.png"
+                },
+                {
+                    "titolo": "TwentySeven",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp13-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV06547/stb-dash-sd-avc/SV06547.mpd?ck=MjI0Y2JjNjJjYzFkM2FjMDllZmJkMDQ5ZTYxODYwNjU6M2MxNDhhM2E0NzBiMjBmYjQ3YmIyNzc2MGI1MmJlYjQ=\"}, {id:207,name:\"Video Italia\",cat:\"digitale_terrestre\",icon:\"ph-music-notes\",code:\"https://wp3-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09246/stb-dash-fhd-avc/SV09246.mpd?ck=YWI2ZmEzYWJiNjEwNDhmZWIwZDliMDlmMzM3ZmEwODM6NWU2ODU4YzgzMDVkYWMyZGE2ZWI5NDM4N2RjMGNkNmQsMjI1MmU0MDQwYWMzM2MwODk2MDZhYzkxYmRjMzNhMmM6OTNhYzdjZjA5NDUxZTU2YjkzNTFkODYyMjY2Y2RhYTk=",
+                    "kid_key": "",
+                    "logo": "twentyseven.png"
+                },
+                {
+                    "titolo": "La5",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(la5)/manifest.mpd?ck=MjkzNzBhNjI4YWFiNDg0M2E1NTI1YjQzMzlhMzUxNTA6Nzc3ZjY1MzdhYjI5Mzk0MTZlZjA1NjRkOTExNjdkNWU=",
+                    "kid_key": "",
+                    "logo": "la5.png"
+                },
+                {
+                    "titolo": "Mediaset Extra",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp4-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09722/stb-dash-fhd-avc/SV09722.mpd?ck=OTcwYzYzZjUzMGIwNGM0MzkxYTAzNzViNTU1NGFlZTI6Mzk1YzE4ZGM3MTg0Mjc2OGU5M2RhNGEyN2VmMWI3OWIsMjc3MjM3NmRkZmU0MzA5NTlmYTg2OTExOTU0NTk0ZTU6ODQzYzhjNTFmMWI3MjBiYTU1MjdmNDM4ZmJhZGYwODE=",
+                    "kid_key": "",
+                    "logo": "mediasetextra.png"
+                },
+                {
+                    "titolo": "Focus",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(focus)/manifest.mpd?ck=ZTFhZmVhNGJlNzA0NGYxNTgzM2FhMTBlYjc3MjNkZDg6MDQxNjZkYWRmNzAzMzhmZTBkODE0MTZjOWFmNWJhYjM=",
+                    "kid_key": "",
+                    "logo": "focus.png"
+                },
+                {
+                    "titolo": "Top Crime",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(topcrime)/manifest.mpd?ck=ZTkwODUwODRjMjExNDZkNmE0ZmM5MDJiMzU0N2E1OWM6ZjZhMmFjMDg0MGQxMGUwOGUxN2Q1ZDIzMzFiNGVmNDg=",
+                    "kid_key": "",
+                    "logo": "topcrime.png"
+                },
+                {
+                    "titolo": "Italia 2",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(italia2)/manifest.mpd?ck=NWMxNjM4ZGQ0YTdjNDhmNzg4ZjVhNTI5MWEyZjg3NWU6YTI0NDQ3ZGRmNzRlYTYwMGMxYWUzMDFiYWM3OTRmNDE=",
+                    "kid_key": "",
+                    "logo": "italia2.png"
+                },
+                {
+                    "titolo": "TGCOM24",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(tgcom24)/manifest.mpd?ck=ZmZiMGJlYzEwZWNmNDBhNmFhMTMzNzE2ZjlhZGJmNWY6MmI3YjI5YWI2OGE3MjlmMjU2YjJjOTIzOTk5OWM0NjM=",
+                    "kid_key": "",
+                    "logo": "tgcom24.png"
+                },
+                {
+                    "titolo": "Rai News",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp9-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09109/stb-dash-fhd-avc/SV09109.mpd?ck=M2Y0NDIzZmVjYjA5NDM4Yzg3ODJhZjBhN2JjYjIyMDQ6ZmE0OTM3M2RkYWM3YjBlOTA3OWU2MmExYAB1NTgwN2MsNjAxM2ExNDNiZTYzMzZjYTg0ZGFlNzViZmMyOTAxY2U6MzAwMDZjZTliYjgzYWEzMjI3MGViNGUyNjk4ZmQ5YzY=",
+                    "kid_key": "",
+                    "logo": "rainews24.png"
+                },
+                {
+                    "titolo": "Rai Storia",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp1-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09112/stb-dash-fhd-avc/SV09112.mpd?ck=YWY3MDI1NjE3NjI2NDc5NjhkYTQ2MzIyMWIxYjU3OTc6YmFkYjk0YTg5ODA1Y2JjNmM5NjFkZWEwYTU3MGJkYWEsYmUxMmQyZjMwZTA1MzVhMGFiYWVlMzI0YzkxYzRmZTQ6MzAwZGMxY2I3Mzk2MzZlMjY0YjM0MDZlYzQ0YjdhY2Y=",
+                    "kid_key": "",
+                    "logo": "raistoria.png"
+                },
+                {
+                    "titolo": "Rai Scuola",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp10-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV06534/stb-dash-fhd-avc/SV06534.mpd?ck=OTEwMTg4NjYxYjljM2UyMjhmMGU1NDQ2NGQ2YjZjZTM6ZDBhNGRkMTVlMDc0OWYwMTIxZjFmNTYwZmU4YWZkOTI=\"}, {id:196,name:\"Rai Sport\",cat:\"digitale_terrestre\",icon:\"ph-soccer-ball\",code:\"https://wp11-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09106/stb-dash-fhd-avc/SV09106.mpd?ck=ODdhNWJlYWM1NGM3NGJmNGE5NWExNDJiOTBmYjgxN2Y6NDYxOGQxZDhkMTkwMzIyMzk5MDYzNWYxODFhZmQyMDIsYTVmODFkNzk0OWY4M2ZiOWJkYzM5ZmRlYzYxMzllM2M6YWFjMjU4M2FiODcwZmM2NWVkZGRhOTk0ZTA5MGNhODk=",
+                    "kid_key": "",
+                    "logo": "raiscuola.png"
+                },
+                {
+                    "titolo": "Motor Trend",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp7-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09723/stb-dash-fhd-avc/SV09723.mpd?ck=MzY0NjBlOTI0MjUxNDJjNmE2NDc1YmYyNmY2NGQ1YTY6NzVkZTU5ZTI5MzM0NGVkZDM3YWU2Yzc1MWI0NTEwZTcsOGFlMzNlMGRhZTVmM2FjYzgyOWZlODM2YzAwZjc0MmM6MDEyZjg4MGVhYzY1MmI1NjM2MzdiNGM5Njk4OWZkODQ=",
+                    "kid_key": "",
+                    "logo": "motortrend.png"
+                },
+                {
+                    "titolo": "Giallo",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(giallo)/manifest.mpd?ck=OTdjYmIwNmExZmYzNGYyZDkxOGFmOThhMzFhZDhkOTE6Mzg5MTRlOWIwNjNlNmQ4ZWMxNzk3NWM1Mjg4NTRlMmY=",
+                    "kid_key": "",
+                    "logo": "giallo.png"
+                },
+                {
+                    "titolo": "HGTV",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp2-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV06317/stb-dash-fhd-avc/SV06317.mpd?ck=MmE2M2VkOTg5NjJmNGQ3Yjk5NjNiYTZlNzllNDBjMDU6YTcyYzk0ZjZhMGQxZDY1NDVlNzRkYzBhMTIzNjZjZTUsODUyYjY1NzAxNDllM2UyNWI0YTM3MzkwMzEyNWY5NTM6ZmJjNDg1MmFhOTgwNGM3MDg3YTRlYTY5ZTdlNzQ1Y2E=",
+                    "kid_key": "",
+                    "logo": "hgtv.png"
+                },
+                {
+                    "titolo": "Sportitalia",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp5-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09724/stb-dash-fhd-avc/SV09724.mpd?ck=M2VjMGU2NzQxMWQ4NDE2OTgwYzViZGY3ZmJmZDU3YmY6MzE3YzU4YzM0MmNjYjc3NjUyODNmYTg4ZTYwMTRmNjksMjVlYjQxOTMzMzE1MzNkY2FlNWI0OTk5NzUzMjI2ZDk6OWEzZWI4ZTdkYjU1YTk1M2JjZWE1OWZlYmMxYzllODI=",
+                    "kid_key": "",
+                    "logo": "sportitalia.png"
+                },
+                {
+                    "titolo": "Super!",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp12-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV00486/stb-dash-sd-avc/SV00486.mpd?ck=ZDQ4NGJkNTg2ZTc1MzBlNWEwOTlkYmRiY2RiZjVlYzM6ZDhkMzY1ZDYwMjBlMWQ4NTY3YzMzZWRhYzczNDY1MmQ=\"}, {id:205,name:\"TV8\",cat:\"digitale_terrestre\",icon:\"ph-television\",code:\"https://wp5-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09318/stb-dash-fhd-avc/SV09318.mpd?ck=M2JmMWNkNjVlODVjNGY2YWIyZjJlZTlhYzg0MDNiOWI6OTE0MmY3ZTYyZDAxMWE4NzkzZTliMTVlZDM2ZDdiN2YsZjg2NzMzMmM2NDJlM2Q3NDk3OTcwZDU1ZjAzMzRjM2I6NjExMWRkYTY4ZDVlYjllMjllZjVmYWIxNDdlMzExNDk=",
+                    "kid_key": "",
+                    "logo": "super.png"
+                },
+                {
+                    "titolo": "K2",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp12-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV00480/stb-dash-sd-avc/SV00480.mpd?ck=ZGQ4NjNmYzExNzhlMzY4M2JkZmU2NzViMjM1MTA0MDA6NTYwZjNhOTA5YTlkMTQ2MTdlZjRkNTBlNjQ2ZDY4Y2E=",
+                    "kid_key": "",
+                    "logo": "k2.png"
+                },
+                {
+                    "titolo": "Frisbee",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://timlivetu0.cb.ticdn.it/Content/DASH/Live/channel(frisbee)/manifest.mpd?ck=ZDVjZTI1ZDAwYTg4NDQyZWIwMDk5MTc0OWQzMTkxZmM6YWExZjYwNjM4YWIzYmI0ZmRlODYxODg2NjZmMzUwYzA=",
+                    "kid_key": "",
+                    "logo": "frisbee.png"
+                },
+                {
+                    "titolo": "Rai Gulp",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp7-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09111/stb-dash-fhd-avc/SV09111.mpd?ck=NDZmY2NiZjg3YmQyMzQ3MjlkNDIwNTU1YzE2ZGU2ZTg6ODllNWZlNjg4NDEwNjUzNmE2NGZkNmQ3Y2Y0MGE0Yzg=",
+                    "kid_key": "",
+                    "logo": "raigulp.png"
+                },
+                {
+                    "titolo": "Rai Yoyo",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp13-s-anp33343334-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV00472/stb-dash-sd-avc/SV00472.mpd?ck=ZjAwMWVjYzlmN2FhM2I5MWFhOGIyNjNiNmNmNmZlMmQ6ZWIzZDk1ZDgxOTQ4NTFlMjNjZDAwNzgxM2RlMDc5Yzc=\"}, {id:199,name:\"Real Time\",cat:\"digitale_terrestre\",icon:\"ph-television\",code:\"https://wp3-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09319/stb-dash-fhd-avc/SV09319.mpd?ck=NzU0NTNmYTczMjJmNGI4YjgxYjI4NTUyOWI3MjZlNjM6Y2E3OWJkMjY1YmU2YWM3MzE1NTU1YWExYmJlYTZhZmUsNjBlYjhkZGJhNzExMzkxNTkxNGI4NjU2NjJmZWNiZGI6OGFjYTZlZGRkMGEyODBmMzlkZGM3NTM3MmJlMmFmZDk=",
+                    "kid_key": "",
+                    "logo": "raiyoyo.png"
+                },
+                {
+                    "titolo": "RSI La1",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp3-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09042/stb-dash-fhd-avc/SV09042.mpd?ck=MDlhZjVmNmViODkwNDFjYThmNWQxNjQxNjUxNDJlODY6MTk4OWNjOWM5Y2U1YjJiNTJjYjkzZWRhYWVmZTg0MjAsZDI2OGQ4MTBkOGE3M2JkOGI3ZDU0YTZhMDg3NTgxZDI6MWFhZjI5NzU0MzE2OGM2MjVlMDVhYTllMjczNDQ0NzE=",
+                    "kid_key": "",
+                    "logo": "rsila1.png"
+                },
+                {
+                    "titolo": "RSI La2",
+                    "provider": "DAZN",
+                    "sky_ch": "",
+                    "mpd": "https://wp2-s-anp31323132-live-ch-prod.prod.cdn.dmdsdp.com/live/disk1/SV09043/stb-dash-fhd-avc/SV09043.mpd?ck=MTE3ZDA3ZmQ5OGNjNDZlZjhlMDk5MzZkMGQzN2M1MDY6Yjk1MjhjYjNmMjNlYWFkNzg5ZjBmMzNiZjZiMDE4NjgsMTY2YjJmMGQ1NmZiMzJkOWI0NmQ0YjFjYTFiNWJmMTY6ZDc4ZWU1YzkxZWIzYjliNmQzNzQxNGE0Zjc4OWJjOWI=",
+                    "kid_key": "",
+                    "logo": "rsila2.png"
+                }
+            ]
+        },
+        {
+            "id": "sky_bambini",
+            "nome": "Sky Bambini",
+            "navbar": "intrattenimento",
+            "canali": []
+        }
+    ]
+}
