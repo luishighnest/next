@@ -44,8 +44,7 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
                 }
                 const gapCount = numCards - 1;
                 const totalGapSpace = gapCount * 16;
-                const cardW = (w - totalGapSpace) / numCards;
-                wrapper.style.setProperty("--card-width", `${cardW}px`);
+                wrapper.style.setProperty("--card-width", `calc((100% - ${totalGapSpace}px) / ${numCards})`);
                 wrapper.dataset.cardsPerView = numCards;
                 updateArrows();
             }
@@ -80,13 +79,24 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
     }, []);
 
     const scroll = (direction) => {
-        const wrapper = wrapperRef.current;
         const grid = scrollRef.current;
-        if (wrapper && grid) {
-            const scrollAmount = wrapper.clientWidth + 16;
-            const targetLeft = direction === "left" ? grid.scrollLeft - scrollAmount : grid.scrollLeft + scrollAmount;
-            grid.scrollTo({ left: targetLeft, behavior: "smooth" });
+        if (!grid) return;
+
+        const w = grid.clientWidth;
+        const pageWidth = w + 16;
+        const maxScroll = grid.scrollWidth - grid.clientWidth;
+
+        const currentPage = Math.round(grid.scrollLeft / pageWidth);
+        let targetLeft;
+
+        if (direction === "left") {
+            targetLeft = Math.max(0, (currentPage - 1) * pageWidth);
+        } else {
+            const nextTarget = (currentPage + 1) * pageWidth;
+            targetLeft = nextTarget >= maxScroll - 20 ? maxScroll : nextTarget;
         }
+
+        grid.scrollTo({ left: targetLeft, behavior: "smooth" });
     };
 
     if (!channels || channels.length === 0) return null;

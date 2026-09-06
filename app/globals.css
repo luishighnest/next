@@ -1948,6 +1948,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
     --card-width: calc((100% - (4 * 16px)) / 5);
 }
 
@@ -2026,13 +2028,14 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     overflow-x: auto;
     overflow-y: hidden;
     gap: 16px; 
+    width: 100%;
     
-    /* Bleed: 20px di respiro per non troncare bordo bianco e ombra in hover sui bordi */
-    padding: 30px 20px 60px 20px; 
-    margin: -30px -20px -60px -20px;
-    scroll-padding-inline: 20px;
+    /* Nessun padding/margine orizzontale: le locandine sono a filo perfetto senza alcuna sporgenza */
+    padding: 16px 0 32px 0; 
+    margin: -16px 0 -32px 0;
+    scroll-padding-inline: 0;
     
-    /* Scroll Snapping tipo Apple TV / Netflix */
+    /* Scroll Snapping fluido */
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -3782,10 +3785,10 @@ video { outline: none !important; }
 
 .now-card-wrapper {
     flex: 0 0 var(--card-width, 260px);
+    width: var(--card-width, 260px);
     max-width: var(--card-width, 260px);
-    min-width: 0;
+    min-width: var(--card-width, 260px);
     position: relative;
-    width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
     transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
