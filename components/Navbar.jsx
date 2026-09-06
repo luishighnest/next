@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SettingsModal from "./SettingsModal";
@@ -11,6 +11,8 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
     const [searchVal, setSearchVal] = useState("");
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const [isNavHidden, setIsNavHidden] = useState(false);
+    const searchWrapperRef = useRef(null);
+    const searchInputRef = useRef(null);
 
     useEffect(() => {
         let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
@@ -46,10 +48,35 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
         }
     };
 
+    useEffect(() => {
+        if (!isSearchOpen) return;
+
+        function handleClickOutside(e) {
+            if (searchWrapperRef.current && !searchWrapperRef.current.contains(e.target)) {
+                handleCloseSearch();
+            }
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        document.addEventListener("touchstart", handleClickOutside, { passive: true });
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+            document.removeEventListener("touchstart", handleClickOutside);
+        };
+    }, [isSearchOpen]);
+
     const handleSearchInput = (e) => {
         const val = e.target.value;
         setSearchVal(val);
         if (onSearch) onSearch(val);
+    };
+
+    const handleOpenSearch = () => {
+        setIsSearchOpen(true);
+        setTimeout(() => {
+            if (searchInputRef.current) searchInputRef.current.focus();
+        }, 80);
     };
 
     const handleCloseSearch = () => {
@@ -108,42 +135,41 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
                         </button>
                     </div>
 
-                    <div className={`header-search-wrapper ${isSearchOpen ? "active" : ""}`} style={{ position: "relative", display: "flex", alignItems: "center" }}>
-                        {!isSearchOpen && (
-                            <button
-                                type="button"
-                                className="search-icon-btn"
-                                onClick={() => setIsSearchOpen(true)}
-                                aria-label="Cerca"
-                                title="Cerca canali, eventi, guida TV"
-                            >
-                                <i className="fas fa-magnifying-glass"></i>
-                            </button>
-                        )}
-                        {isSearchOpen && (
-                            <div className="header-search-container open" style={{ display: "flex", width: "270px", opacity: 1, pointerEvents: "all", padding: "6px 10px 6px 14px", background: "rgba(20, 20, 20, 0.95)", border: "1px solid rgba(255, 255, 255, 0.25)", borderRadius: "99px" }}>
-                                <span className="material-symbols-rounded search-icon" style={{ fontSize: "1.2rem", color: "rgba(255, 255, 255, 0.6)", marginRight: "8px", alignSelf: "center" }}>search</span>
-                                <input
-                                    type="text"
-                                    className="home-search-input"
-                                    placeholder="Cerca canali, eventi, guida TV..."
-                                    value={searchVal}
-                                    onChange={handleSearchInput}
-                                    onKeyDown={(e) => { if (e.key === "Escape") handleCloseSearch(); }}
-                                    autoFocus
-                                    style={{ flex: 1, background: "transparent", border: "none", color: "#fff", outline: "none", fontSize: "0.88rem" }}
-                                />
+                    <div className={`header-search-wrapper ${isSearchOpen ? "active" : ""}`} ref={searchWrapperRef}>
+                        <button
+                            type="button"
+                            className={`search-icon-btn ${isSearchOpen ? "hidden" : ""}`}
+                            onClick={handleOpenSearch}
+                            aria-label="Cerca"
+                            title="Cerca canali, eventi, guida TV"
+                        >
+                            <i className="fas fa-magnifying-glass"></i>
+                        </button>
+
+                        <div className={`header-search-container ${isSearchOpen ? "open" : ""}`}>
+                            <span className="material-symbols-rounded search-icon">search</span>
+                            <input
+                                ref={searchInputRef}
+                                type="text"
+                                className="home-search-input"
+                                placeholder="Cerca canali, eventi, guida TV..."
+                                value={searchVal}
+                                onChange={handleSearchInput}
+                                onKeyDown={(e) => { if (e.key === "Escape") handleCloseSearch(); }}
+                            />
+                            {isSearchOpen && (
                                 <button
                                     type="button"
                                     className="search-close-btn"
                                     onClick={handleCloseSearch}
                                     style={{ background: "transparent", border: "none", color: "rgba(255, 255, 255, 0.7)", cursor: "pointer", display: "flex", alignItems: "center", padding: "2px" }}
                                     title="Chiudi ricerca (Esc)"
+                                    aria-label="Chiudi ricerca"
                                 >
                                     <span className="material-symbols-rounded" style={{ fontSize: "1.2rem" }}>close</span>
                                 </button>
-                            </div>
-                        )}
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
