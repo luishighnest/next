@@ -2458,6 +2458,22 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     font-size: 2.2rem;
 }
 
+.home-section {
+    position: relative;
+    animation: sectionFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes sectionFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .category-header-container {
     display: flex;
     align-items: center;
@@ -3670,6 +3686,64 @@ video { outline: none !important; }
 /* NOW TV STYLE EPG CARDS                                   */
 /* ========================================================= */
 
+/* ============================================================
+   SKELETON SHIMMER LOADING
+   ============================================================ */
+.skeleton-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    animation: fadeIn 0.2s ease-out;
+}
+
+.skeleton-shimmer {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.04) 0%,
+        rgba(255, 255, 255, 0.09) 50%,
+        rgba(255, 255, 255, 0.04) 100%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+:root.light-theme .skeleton-shimmer {
+    background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.04) 0%,
+        rgba(0, 0, 0, 0.09) 50%,
+        rgba(0, 0, 0, 0.04) 100%
+    );
+    background-size: 200% 100%;
+}
+
+.skeleton-section {
+    pointer-events: none;
+    user-select: none;
+    animation: none !important;
+}
+
+.skeleton-card {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    background: #141414 !important;
+    box-shadow: none !important;
+}
+
+:root.light-theme .skeleton-card {
+    border-color: rgba(0, 0, 0, 0.05) !important;
+    background: #e8e8e8 !important;
+    box-shadow: none !important;
+}
+
 .now-card-wrapper {
     flex: 0 0 var(--card-width, 260px);
     max-width: var(--card-width, 260px);
@@ -3678,7 +3752,7 @@ video { outline: none !important; }
     width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
-    transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
     outline: none;
     border-radius: 0;
     display: flex;
@@ -3686,7 +3760,7 @@ video { outline: none !important; }
 }
 
 .now-card-wrapper:hover {
-    /* Rimosso scale(1.05) per mantenere sempre la stessa dimensione */
+    transform: translateY(-4px);
 }
 
 .now-card {
@@ -3698,7 +3772,8 @@ video { outline: none !important; }
     background: #1a1a1a;
     box-shadow: 0 8px 24px rgba(0,0,0,0.5);
     border: 2px solid transparent;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+                box-shadow 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 /* Oscuramento immagine al passaggio del mouse */
@@ -3720,15 +3795,15 @@ video { outline: none !important; }
 }
 
 .now-card-wrapper:hover .now-card {
-    border-color: #ffffff; /* Bordo bianco puro, identico alla dashboard */
-    box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+    border-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65), 0 0 16px rgba(227, 10, 23, 0.22);
 }
 
 .now-card-play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.85);
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -3742,7 +3817,11 @@ video { outline: none !important; }
     justify-content: center;
     opacity: 0;
     z-index: 5;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+                background-color 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease,
+                opacity 0.2s ease;
     pointer-events: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
@@ -3752,7 +3831,10 @@ video { outline: none !important; }
 }
 .now-card-wrapper:hover .now-card-play-btn {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1.05);
+    background: rgba(227, 10, 23, 0.88);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 18px rgba(227, 10, 23, 0.45);
 }
 
 .now-card-wrapper:hover .now-card.active {
@@ -3770,6 +3852,16 @@ video { outline: none !important; }
     pointer-events: none;
     -webkit-user-drag: none;
     user-select: none;
+    animation: cardImgFadeIn 0.3s ease-out;
+}
+
+@keyframes cardImgFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .now-card-fallback-bg {

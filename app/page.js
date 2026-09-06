@@ -3,6 +3,7 @@ import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
+import SkeletonSection from "@/components/SkeletonSection";
 import { fetchSecureJson, isStreamWarp } from "@/lib/crypto";
 
 import ChannelCard from "@/components/ChannelCard";
@@ -139,8 +140,10 @@ function HomePageContent() {
 
             <main className="home-content">
                 {loading ? (
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", minHeight: "50vh" }}>
-                        <div className="spinner" style={{ width: "40px", height: "40px", border: "3px solid rgba(255,255,255,0.1)", borderTopColor: "#e30a17", borderRadius: "50%", animation: "spin 0.8s linear infinite" }}></div>
+                    <div className="skeleton-container" style={{ width: "100%" }}>
+                        <SkeletonSection cardCount={6} />
+                        <SkeletonSection cardCount={6} />
+                        <SkeletonSection cardCount={6} />
                     </div>
                 ) : (
                     filteredSections.map(sec => (
