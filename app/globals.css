@@ -3757,6 +3757,8 @@ video { outline: none !important; }
     border-radius: 0;
     display: flex;
     flex-direction: column;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
 }
 
 .now-card-wrapper:hover {

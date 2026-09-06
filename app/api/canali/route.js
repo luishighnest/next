@@ -5,6 +5,10 @@ import { getChannelLogoUrl } from "@/lib/epg";
 
 export const dynamic = "force-dynamic";
 
+let memoryCache = null;
+let lastCacheTime = 0;
+const CACHE_TTL_MS = 8000;
+
 function cidFromUrl(u) {
     if (!u) return "";
     const m = u.match(/channel\(([^)]+)\)/i);
@@ -18,6 +22,15 @@ function normalizeEpg(str) {
 export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const sourceParam = searchParams.get("source") || "";
+
+    if (!sourceParam && memoryCache && (Date.now() - lastCacheTime < CACHE_TTL_MS)) {
+        return NextResponse.json(memoryCache, {
+            headers: {
+                "Cache-Control": "public, s-maxage=8, stale-while-revalidate=20",
+                "X-Cache": "HIT"
+            }
+        });
+    }
 
     try {
         const [eventiData, sky1Data, sky2Data, catData, guideData] = await Promise.all([
@@ -311,14 +324,24 @@ export async function GET(request) {
             return a.localeCompare(b);
         });
 
-        return NextResponse.json({
+        const payload = {
             sections: sortedSections,
             sky1: sky1Channels,
             sky2: sky2Channels,
             guide: guideData || [],
             updatedAt: Date.now()
-        }, {
-            headers: { "Cache-Control": "no-store, max-age=0" }
+        };
+
+        if (!sourceParam) {
+            memoryCache = payload;
+            lastCacheTime = Date.now();
+        }
+
+        return NextResponse.json(payload, {
+            headers: {
+                "Cache-Control": "public, s-maxage=8, stale-while-revalidate=20",
+                "X-Cache": "MISS"
+            }
         });
     } catch (e) {
         console.error("Errore API /api/canali:", e);

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, Suspense, useDeferredValue } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
@@ -18,9 +18,24 @@ function HomePageContent() {
     const tabParam = searchParams.get("tab") || searchParams.get("filter") || "all";
     const [filter, setFilter] = useState(tabParam);
     const [search, setSearch] = useState("");
+    const deferredSearch = useDeferredValue(search);
     const [categories, setCategories] = useState([]);
     const [loading, setLoading] = useState(true);
     const [exploreData, setExploreData] = useState(null);
+
+    // SWR: Instant hydration da localStorage per caricamento istantaneo (0.0s)
+    useEffect(() => {
+        try {
+            const cached = localStorage.getItem("nmdz_cached_sections");
+            if (cached) {
+                const parsed = JSON.parse(cached);
+                if (Array.isArray(parsed) && parsed.length > 0) {
+                    setCategories(parsed);
+                    setLoading(false);
+                }
+            }
+        } catch (e) {}
+    }, []);
 
     useEffect(() => {
         if (tabParam && ["all", "sport", "intrattenimento", "eventi"].includes(tabParam)) {
@@ -56,16 +71,23 @@ function HomePageContent() {
         router.push(url, { scroll: false });
     };
 
+    // Polling resiliente con Exponential Backoff e sincronizzazione all'evento online
     useEffect(() => {
         let isMounted = true;
+        let pollTimeout = null;
+        let failureCount = 0;
 
         async function loadData(isInitial = false) {
-            if (isInitial) setLoading(true);
+            if (isInitial && categories.length === 0) setLoading(true);
             try {
                 const res = await fetch(`/api/canali?t=${Date.now()}`, { cache: "no-store" });
                 if (res.ok) {
                     const data = await res.json();
+                    failureCount = 0;
                     if (isMounted && data && Array.isArray(data.sections)) {
+                        try {
+                            localStorage.setItem("nmdz_cached_sections", JSON.stringify(data.sections));
+                        } catch (e) {}
                         setCategories(prev => {
                             if (prev && prev.length === data.sections.length) {
                                 try {
@@ -77,40 +99,53 @@ function HomePageContent() {
                             return data.sections;
                         });
                     }
+                } else {
+                    failureCount++;
                 }
             } catch(e) {
-                console.error("Errore caricamento canali via API", e);
+                failureCount++;
             } finally {
                 if (isMounted && isInitial) {
                     setLoading(false);
                 }
+                if (isMounted) {
+                    scheduleNextPoll();
+                }
             }
         }
 
-        // Caricamento iniziale con spinner
+        function scheduleNextPoll() {
+            if (!isMounted) return;
+            clearTimeout(pollTimeout);
+            const delay = failureCount === 0 ? 5000 : Math.min(30000, 5000 * Math.pow(1.5, failureCount));
+            pollTimeout = setTimeout(() => {
+                if (document.visibilityState === "visible") {
+                    loadData(false);
+                } else {
+                    scheduleNextPoll();
+                }
+            }, delay);
+        }
+
         loadData(true);
 
-        // Auto-polling silenzioso ogni 5 secondi (in background senza refresh o flicker)
-        const intervalId = setInterval(() => {
+        const onOnlineOrFocus = () => {
             if (document.visibilityState === "visible") {
-                loadData(false);
-            }
-        }, 5000);
-
-        // Aggiorna istantaneamente appena torni sulla scheda del browser
-        const onVisibilityOrFocus = () => {
-            if (document.visibilityState === "visible") {
+                failureCount = 0;
                 loadData(false);
             }
         };
-        window.addEventListener("focus", onVisibilityOrFocus);
-        document.addEventListener("visibilitychange", onVisibilityOrFocus);
+
+        window.addEventListener("focus", onOnlineOrFocus);
+        window.addEventListener("online", onOnlineOrFocus);
+        document.addEventListener("visibilitychange", onOnlineOrFocus);
 
         return () => {
             isMounted = false;
-            clearInterval(intervalId);
-            window.removeEventListener("focus", onVisibilityOrFocus);
-            document.removeEventListener("visibilitychange", onVisibilityOrFocus);
+            clearTimeout(pollTimeout);
+            window.removeEventListener("focus", onOnlineOrFocus);
+            window.removeEventListener("online", onOnlineOrFocus);
+            document.removeEventListener("visibilitychange", onOnlineOrFocus);
         };
     }, []);
 
@@ -127,15 +162,32 @@ function HomePageContent() {
         return sec.navbar === f;
     };
 
+    // Ricerca globale avanzata: canali, gruppi, eventi e Guida TV completa (titoli programmi, orari, descrizioni)
+    const matchesChannel = (c, q) => {
+        if (!q) return true;
+        if ((c.title || "").toLowerCase().includes(q)) return true;
+        if ((c.name || "").toLowerCase().includes(q)) return true;
+        if ((c.group || "").toLowerCase().includes(q)) return true;
+        if ((c.desc || "").toLowerCase().includes(q)) return true;
+        if ((c.descrizione || "").toLowerCase().includes(q)) return true;
+        if ((c.ora || "").toLowerCase().includes(q)) return true;
+        if (Array.isArray(c.epg)) {
+            return c.epg.some(p => 
+                (p?.titolo || "").toLowerCase().includes(q) ||
+                (p?.desc || "").toLowerCase().includes(q) ||
+                (p?.descrizione || "").toLowerCase().includes(q) ||
+                (p?.ora || "").toLowerCase().includes(q)
+            );
+        }
+        return false;
+    };
+
     const filteredSections = categories.filter(sec => shouldShowGroup(sec, filter)).map(sec => {
-        if (!search.trim()) return sec;
-        const q = search.toLowerCase();
+        if (!deferredSearch.trim()) return sec;
+        const q = deferredSearch.toLowerCase().trim();
         return {
             ...sec,
-            channels: sec.channels.filter(c =>
-                (c.title || "").toLowerCase().includes(q) ||
-                (c.group || "").toLowerCase().includes(q)
-            )
+            channels: sec.channels.filter(c => matchesChannel(c, q))
         };
     }).filter(sec => sec.channels.length > 0);
 

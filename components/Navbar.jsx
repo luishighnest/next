@@ -52,6 +52,12 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
         if (onSearch) onSearch(val);
     };
 
+    const handleCloseSearch = () => {
+        setIsSearchOpen(false);
+        setSearchVal("");
+        if (onSearch) onSearch("");
+    };
+
     return (
         <>
             <div className={`home-header-wrapper ${isNavHidden ? "nav-hidden" : ""}`} id="home-header-wrapper">
@@ -102,36 +108,39 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
                         </button>
                     </div>
 
-                    <div className={`header-search-wrapper ${isSearchOpen ? "active" : ""}`}>
-                        <button
-                            type="button"
-                            className="search-icon-btn"
-                            onClick={() => setIsSearchOpen(!isSearchOpen)}
-                            aria-label="Cerca"
-                        >
-                            <i className="fas fa-magnifying-glass"></i>
-                        </button>
+                    <div className={`header-search-wrapper ${isSearchOpen ? "active" : ""}`} style={{ position: "relative", display: "flex", alignItems: "center" }}>
+                        {!isSearchOpen && (
+                            <button
+                                type="button"
+                                className="search-icon-btn"
+                                onClick={() => setIsSearchOpen(true)}
+                                aria-label="Cerca"
+                                title="Cerca canali, eventi, guida TV"
+                            >
+                                <i className="fas fa-magnifying-glass"></i>
+                            </button>
+                        )}
                         {isSearchOpen && (
-                            <div className="header-search-container" style={{ display: "flex" }}>
-                                <span className="material-symbols-rounded search-icon">search</span>
+                            <div className="header-search-container open" style={{ display: "flex", width: "270px", opacity: 1, pointerEvents: "all", padding: "6px 10px 6px 14px", background: "rgba(20, 20, 20, 0.95)", border: "1px solid rgba(255, 255, 255, 0.25)", borderRadius: "99px" }}>
+                                <span className="material-symbols-rounded search-icon" style={{ fontSize: "1.2rem", color: "rgba(255, 255, 255, 0.6)", marginRight: "8px", alignSelf: "center" }}>search</span>
                                 <input
                                     type="text"
                                     className="home-search-input"
-                                    placeholder="Cerca canali, eventi..."
+                                    placeholder="Cerca canali, eventi, guida TV..."
                                     value={searchVal}
                                     onChange={handleSearchInput}
+                                    onKeyDown={(e) => { if (e.key === "Escape") handleCloseSearch(); }}
                                     autoFocus
+                                    style={{ flex: 1, background: "transparent", border: "none", color: "#fff", outline: "none", fontSize: "0.88rem" }}
                                 />
                                 <button
                                     type="button"
                                     className="search-close-btn"
-                                    onClick={() => {
-                                        setIsSearchOpen(false);
-                                        setSearchVal("");
-                                        if (onSearch) onSearch("");
-                                    }}
+                                    onClick={handleCloseSearch}
+                                    style={{ background: "transparent", border: "none", color: "rgba(255, 255, 255, 0.7)", cursor: "pointer", display: "flex", alignItems: "center", padding: "2px" }}
+                                    title="Chiudi ricerca (Esc)"
                                 >
-                                    <span className="material-symbols-rounded">close</span>
+                                    <span className="material-symbols-rounded" style={{ fontSize: "1.2rem" }}>close</span>
                                 </button>
                             </div>
                         )}
