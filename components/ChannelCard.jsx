@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 
@@ -13,7 +13,7 @@ function getDynamicColor(str) {
     return `hsl(${hue}, 80%, 60%)`;
 }
 
-export default function ChannelCard({ channel }) {
+function ChannelCard({ channel, priority = false }) {
     const router = useRouter();
     const slug = channel.slug || (channel.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-");
     const progInfo = getCurrentProgramInfo(channel.epg);
@@ -35,6 +35,12 @@ export default function ChannelCard({ channel }) {
     let fallbackTime = channel.ora ? `Ore ${channel.ora}` : (channel.provider || "Live");
     if (isDazn1Channel) fallbackTime = channel.group || "Live TV";
 
+    const handlePrefetch = useCallback(() => {
+        try {
+            router.prefetch(targetHref);
+        } catch(e) {}
+    }, [router, targetHref]);
+
     const handleClick = () => {
         try {
             if (isSky) {
@@ -50,6 +56,8 @@ export default function ChannelCard({ channel }) {
         <div
             className="now-card-wrapper home-card-mode"
             onClick={handleClick}
+            onMouseEnter={handlePrefetch}
+            onFocus={handlePrefetch}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleClick(); }}
@@ -57,15 +65,39 @@ export default function ChannelCard({ channel }) {
             <div className={`now-card ${!hasImage ? "now-card-no-image" : ""}`}>
                 {hasImage ? (
                     <>
-                        <img src={cardImgUrl} className="now-card-bg" alt={channel.title} referrerPolicy="no-referrer" />
+                        <img
+                            src={cardImgUrl}
+                            className="now-card-bg"
+                            alt={channel.title}
+                            referrerPolicy="no-referrer"
+                            loading={priority ? "eager" : "lazy"}
+                            decoding="async"
+                            fetchPriority={priority ? "high" : "auto"}
+                        />
                         <div className="now-card-top-vignette"></div>
-                        {logoUrl && <img src={logoUrl} className="now-card-floating-logo" alt="Logo" />}
+                        {logoUrl && (
+                            <img
+                                src={logoUrl}
+                                className="now-card-floating-logo"
+                                alt="Logo"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        )}
                     </>
                 ) : (
                     <>
                         <div className="now-card-classic-bg"></div>
                         <div className="now-card-classic-glow" style={{ background: `radial-gradient(circle at top right, ${dynColor} 0%, transparent 60%)`, opacity: 0.15 }}></div>
-                        {logoUrl && <img src={logoUrl} className="now-card-classic-logo" alt="Logo" />}
+                        {logoUrl && (
+                            <img
+                                src={logoUrl}
+                                className="now-card-classic-logo"
+                                alt="Logo"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                        )}
                     </>
                 )}
 
@@ -98,3 +130,30 @@ export default function ChannelCard({ channel }) {
         </div>
     );
 }
+
+function arePropsEqual(prevProps, nextProps) {
+    if (prevProps.priority !== nextProps.priority) return false;
+    const p = prevProps.channel;
+    const n = nextProps.channel;
+    if (p === n) return true;
+    if (!p || !n) return false;
+    if (p.id !== n.id) return false;
+    if (p.title !== n.title) return false;
+    if (p.ora !== n.ora) return false;
+    if (p.image !== n.image) return false;
+    if (p.url !== n.url || p.mpd !== n.mpd) return false;
+    if (p.skySource !== n.skySource) return false;
+    
+    // Compare epg length / first item progress
+    const pEpg = p.epg || [];
+    const nEpg = n.epg || [];
+    if (pEpg.length !== nEpg.length) return false;
+    if (pEpg.length > 0 && nEpg.length > 0) {
+        if (pEpg[0]?.titolo !== nEpg[0]?.titolo) return false;
+        if (pEpg[0]?.oraInizio !== nEpg[0]?.oraInizio) return false;
+        if (pEpg[0]?.percentuale !== nEpg[0]?.percentuale) return false;
+    }
+    return true;
+}
+
+export default React.memo(ChannelCard, arePropsEqual);

@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 :root {
     /* Pure Monochrome Palette */
     --bg-base: #000000;
@@ -2460,6 +2458,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 .home-section {
     position: relative;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 340px;
     animation: sectionFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 

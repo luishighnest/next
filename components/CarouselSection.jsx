@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import ChannelCard from "./ChannelCard";
 
-export default function CarouselSection({ title, channels, onExplore, isRelated = false }) {
+function CarouselSection({ title, channels, onExplore, isRelated = false }) {
     const wrapperRef = useRef(null);
     const scrollRef = useRef(null);
     const btnLeftRef = useRef(null);
@@ -55,15 +55,26 @@ export default function CarouselSection({ title, channels, onExplore, isRelated 
         resizeObserver.observe(wrapper);
         updateCardWidth();
 
+        let ticking = false;
+        const handleScroll = () => {
+            if (!ticking) {
+                requestAnimationFrame(() => {
+                    updateArrows();
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        };
+
         const grid = scrollRef.current;
         if (grid) {
-            grid.addEventListener("scroll", updateArrows, { passive: true });
+            grid.addEventListener("scroll", handleScroll, { passive: true });
         }
 
         return () => {
             resizeObserver.disconnect();
             if (grid) {
-                grid.removeEventListener("scroll", updateArrows);
+                grid.removeEventListener("scroll", handleScroll);
             }
         };
     }, []);
@@ -138,10 +149,12 @@ export default function CarouselSection({ title, channels, onExplore, isRelated 
             <div className="carousel-wrapper" ref={wrapperRef}>
                 <div className="home-carousel" ref={scrollRef}>
                     {channels.map((ch, idx) => (
-                        <ChannelCard key={ch.id || (ch.title + idx)} channel={ch} />
+                        <ChannelCard key={ch.id || (ch.title + idx)} channel={ch} priority={idx < 5} />
                     ))}
                 </div>
             </div>
         </div>
     );
 }
+
+export default React.memo(CarouselSection);

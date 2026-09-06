@@ -66,7 +66,16 @@ function HomePageContent() {
                 if (res.ok) {
                     const data = await res.json();
                     if (isMounted && data && Array.isArray(data.sections)) {
-                        setCategories(data.sections);
+                        setCategories(prev => {
+                            if (prev && prev.length === data.sections.length) {
+                                try {
+                                    if (JSON.stringify(prev) === JSON.stringify(data.sections)) {
+                                        return prev;
+                                    }
+                                } catch (e) {}
+                            }
+                            return data.sections;
+                        });
                     }
                 }
             } catch(e) {
