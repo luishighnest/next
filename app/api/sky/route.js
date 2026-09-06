@@ -14,19 +14,35 @@ export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const source = searchParams.get("source") || "sky1";
     try {
+        if (source === "all") {
+            const [sky1, sky2, guida] = await Promise.all([
+                getStoreData("sky1"),
+                getStoreData("sky2"),
+                getStoreData("guida")
+            ]);
+            return NextResponse.json({
+                success: true,
+                sky1: sky1 || {},
+                sky2: sky2 || {},
+                guida: guida || [],
+                updatedAt: Date.now()
+            }, {
+                headers: { "Cache-Control": "no-store, max-age=0" }
+            });
+        }
         const targetKey = source === "sky2" ? "sky2" : (source === "guida" ? "guida" : "sky1");
         const data = await getStoreData(targetKey) || (targetKey === "guida" ? [] : {});
         return NextResponse.json(data, {
             headers: { "Cache-Control": "no-store, max-age=0" }
         });
     } catch (e) {
-        return NextResponse.json({ error: String(e) }, { status: 500 });
+        return NextResponse.json({ success: false, error: String(e) }, { status: 500 });
     }
 }
 
 export async function POST(request) {
     if (!checkAuth(request)) {
-        return NextResponse.json({ error: "Non autorizzato" }, { status: 401 });
+        return NextResponse.json({ success: false, error: "Non autorizzato" }, { status: 401 });
     }
 
     try {
@@ -35,7 +51,7 @@ export async function POST(request) {
         const channelData = body.data || body.channels || body.guida || body;
 
         if (!channelData) {
-            return NextResponse.json({ error: "Dati non validi" }, { status: 400 });
+            return NextResponse.json({ success: false, error: "Dati non validi" }, { status: 400 });
         }
 
         await setStoreData(source, channelData);
@@ -47,6 +63,6 @@ export async function POST(request) {
         });
     } catch (e) {
         console.error("Errore POST /api/sky:", e);
-        return NextResponse.json({ error: String(e) }, { status: 500 });
+        return NextResponse.json({ success: false, error: String(e) }, { status: 500 });
     }
 }

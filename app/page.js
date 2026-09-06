@@ -12,11 +12,14 @@ function normalizeEpg(s) {
     return (s || "").toLowerCase().replace(/fhd|uhd|4k|1080p|720p/g, "").replace(/[^a-z0-9]/g, "");
 }
 
+const VALID_TABS = ["sport", "intrattenimento", "eventi"];
+
 function HomePageContent() {
     const searchParams = useSearchParams();
     const router = useRouter();
-    const tabParam = searchParams.get("tab") || searchParams.get("filter") || "all";
-    const [filter, setFilter] = useState(tabParam);
+    const rawTab = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
+    const initialFilter = VALID_TABS.includes(rawTab) ? rawTab : "all";
+    const [filter, setFilter] = useState(initialFilter);
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
     const [categories, setCategories] = useState([]);
@@ -37,11 +40,22 @@ function HomePageContent() {
         } catch (e) {}
     }, []);
 
+    // Pulizia e normalizzazione degli endpoint: /?tab=home o parametri errati diventano '/'
     useEffect(() => {
-        if (tabParam && ["all", "sport", "intrattenimento", "eventi"].includes(tabParam)) {
-            setFilter(tabParam);
+        const currentTab = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
+        const hasTabParam = searchParams.has("tab") || searchParams.has("filter");
+
+        if (hasTabParam) {
+            if (currentTab === "home" || currentTab === "all" || !VALID_TABS.includes(currentTab)) {
+                router.replace("/", { scroll: false });
+                setFilter("all");
+            } else if (VALID_TABS.includes(currentTab)) {
+                setFilter(currentTab);
+            }
+        } else {
+            setFilter("all");
         }
-    }, [tabParam]);
+    }, [searchParams, router]);
 
     useEffect(() => {
         if (exploreData) {
@@ -66,8 +80,9 @@ function HomePageContent() {
     }, [exploreData]);
 
     const handleFilterChange = (f) => {
-        setFilter(f);
-        const url = f === "all" ? "/" : `/?tab=${f}`;
+        const cleanTab = (f === "home" || f === "all") ? "all" : f;
+        setFilter(cleanTab);
+        const url = cleanTab === "all" ? "/" : `/?tab=${cleanTab}`;
         router.push(url, { scroll: false });
     };
 
@@ -150,7 +165,7 @@ function HomePageContent() {
     }, []);
 
     const shouldShowGroup = (sec, f) => {
-        if (f === "all") return true;
+        if (f === "all" || f === "home") return true;
         const isTestJson = sec.navbar === "eventi" || sec.channels.some(c => c.isTestJson);
         if (isTestJson) {
             const normName = (sec.title || "").toUpperCase().replace(/\s+/g, "");

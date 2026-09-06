@@ -1768,16 +1768,22 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
     margin-right: 4px;
     padding: 0;
+    flex-shrink: 0;
 }
 .settings-icon-btn:hover {
     color: #ffffff;
     background: rgba(255, 255, 255, 0.1);
 }
-.settings-icon-btn .material-symbols-rounded {
-    font-size: 1.25rem;
+.settings-icon-btn .material-symbols-rounded,
+.settings-icon-btn i {
+    font-size: 1.05rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* === COLLAPSIBLE SEARCH === */
@@ -1800,24 +1806,27 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     border-radius: 50%;
     background: transparent;
     border: none;
-    color: var(--text-secondary, rgba(255, 255, 255, 0.7));
+    color: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+    transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
     flex-shrink: 0;
     padding: 0;
     z-index: 2;
 }
 .search-icon-btn .material-symbols-rounded,
 .search-icon-btn i {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .search-icon-btn:hover {
     background: rgba(255, 255, 255, 0.1);
-    color: #fff;
-    transform: scale(1.06);
+    color: #ffffff;
 }
 .search-icon-btn.hidden,
 .header-search-wrapper.active .search-icon-btn {
@@ -1866,7 +1875,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .header-search-container:focus-within {
     border-color: rgba(255, 255, 255, 0.5);
     background: rgba(22, 22, 22, 0.98);
-    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.7), 0 0 16px rgba(227, 10, 23, 0.25);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 .header-search-container .search-icon {
     color: rgba(255, 255, 255, 0.55);
@@ -3824,8 +3833,8 @@ video { outline: none !important; }
 }
 
 .now-card-wrapper:hover .now-card {
-    border-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65), 0 0 16px rgba(227, 10, 23, 0.22);
+    border-color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
 .now-card-play-btn {
@@ -3861,9 +3870,9 @@ video { outline: none !important; }
 .now-card-wrapper:hover .now-card-play-btn {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.05);
-    background: rgba(227, 10, 23, 0.88);
-    border-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0 0 18px rgba(227, 10, 23, 0.45);
+    background: rgba(255, 255, 255, 0.28);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .now-card-wrapper:hover .now-card.active {

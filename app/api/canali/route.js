@@ -22,8 +22,13 @@ function normalizeEpg(str) {
 export async function GET(request) {
     const { searchParams } = new URL(request.url);
     const sourceParam = searchParams.get("source") || "";
+    const tabFilter = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
+    const searchQuery = (searchParams.get("q") || searchParams.get("search") || "").toLowerCase().trim();
+    const includeGuide = searchParams.get("guide") === "true" || searchParams.get("include_guide") === "1";
 
-    if (!sourceParam && memoryCache && (Date.now() - lastCacheTime < CACHE_TTL_MS)) {
+    const hasCustomFilters = Boolean(sourceParam || tabFilter || searchQuery || includeGuide);
+
+    if (!hasCustomFilters && memoryCache && (Date.now() - lastCacheTime < CACHE_TTL_MS)) {
         return NextResponse.json(memoryCache, {
             headers: {
                 "Cache-Control": "public, s-maxage=8, stale-while-revalidate=20",
@@ -55,16 +60,19 @@ export async function GET(request) {
                     const rawLogo = item.logo || "";
                     const hasValidLogo = rawLogo && !rawLogo.includes("ui-avatars.com");
                     const channelLogo = hasValidLogo ? rawLogo : getChannelLogoUrl({ title: item.name || item.title, group: g });
+                    const cleanName = item.name || item.title || "";
 
                     list.push({
-                        name: item.name || item.title || "",
-                        title: item.name || item.title || "",
+                        id: cleanName.toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                        name: cleanName,
+                        title: cleanName,
                         group: g,
                         url: url,
                         kid_key: item.key || item.kid_key || "",
                         logo: channelLogo,
+                        image: item.image || "",
                         cid: cid,
-                        slug: (item.name || item.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                        slug: cleanName.toLowerCase().replace(/[^a-z0-9]/g, "-"),
                         skySource: sourceName,
                         provider: "SKY",
                         isSky: true
@@ -77,14 +85,39 @@ export async function GET(request) {
         const sky1Channels = parseSkyList(sky1Data, ["Sky Sport", "Sky Intrattenimento"], "sky.json");
         const sky2Channels = parseSkyList(sky2Data, null, "sky2.json");
 
-        // Se è richiesta specificamente una sorgente (per la sezione /sky)
+        // Se è richiesta specificamente una sorgente (per la sezione /sky o per la guida)
         if (sourceParam === "sky1" || sourceParam === "sky.json") {
-            return NextResponse.json({ channels: sky1Channels, guide: guideData || [] }, {
+            return NextResponse.json({
+                success: true,
+                source: "sky1",
+                total: sky1Channels.length,
+                channels: sky1Channels,
+                guide: guideData || [],
+                updatedAt: Date.now()
+            }, {
                 headers: { "Cache-Control": "no-store, max-age=0" }
             });
         }
         if (sourceParam === "sky2" || sourceParam === "sky2.json") {
-            return NextResponse.json({ channels: sky2Channels, guide: guideData || [] }, {
+            return NextResponse.json({
+                success: true,
+                source: "sky2",
+                total: sky2Channels.length,
+                channels: sky2Channels,
+                guide: guideData || [],
+                updatedAt: Date.now()
+            }, {
+                headers: { "Cache-Control": "no-store, max-age=0" }
+            });
+        }
+        if (sourceParam === "guida" || sourceParam === "epg") {
+            return NextResponse.json({
+                success: true,
+                source: "guida",
+                total: (guideData || []).length,
+                guide: guideData || [],
+                updatedAt: Date.now()
+            }, {
                 headers: { "Cache-Control": "no-store, max-age=0" }
             });
         }
@@ -126,16 +159,20 @@ export async function GET(request) {
                 if (!cat.canali || cat.canali.length === 0) return;
                 cat.canali.forEach(c => {
                     if (!c.titolo) return;
+                    const cleanTitle = c.titolo;
                     orderedChannels.push({
-                        title: c.titolo,
+                        id: (c.slug || cleanTitle).toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                        title: cleanTitle,
+                        name: cleanTitle,
                         group: cat.nome,
                         navbar: cat.navbar || (cat.nome.toLowerCase().includes("sport") ? "sport" : "intrattenimento"),
                         url: c.mpd || c.url || "",
                         kid_key: c.kid_key || c.key || "",
                         provider: c.provider || cat.nome,
-                        logo: c.logo ? `/logos/${c.logo}` : "",
+                        logo: c.logo ? (c.logo.startsWith("/") ? c.logo : `/logos/${c.logo}`) : "",
+                        image: c.image || "",
                         isCustom: true,
-                        slug: (c.slug || c.titolo).toLowerCase().replace(/[^a-z0-9]/g, "-")
+                        slug: (c.slug || cleanTitle).toLowerCase().replace(/[^a-z0-9]/g, "-")
                     });
                 });
             });
@@ -324,15 +361,47 @@ export async function GET(request) {
             return a.localeCompare(b);
         });
 
+        let finalSections = sortedSections;
+        if (tabFilter && tabFilter !== "all" && tabFilter !== "home") {
+            finalSections = finalSections.filter(sec => {
+                if (tabFilter === "eventi") {
+                    return sec.navbar === "eventi" || (sec.channels && sec.channels.some(c => c.isTestJson));
+                }
+                return sec.navbar === tabFilter;
+            });
+        }
+
+        if (searchQuery) {
+            finalSections = finalSections.map(sec => ({
+                ...sec,
+                channels: (sec.channels || []).filter(c => {
+                    if ((c.title || "").toLowerCase().includes(searchQuery)) return true;
+                    if ((c.group || "").toLowerCase().includes(searchQuery)) return true;
+                    if (Array.isArray(c.epg)) {
+                        return c.epg.some(p => (p?.titolo || "").toLowerCase().includes(searchQuery));
+                    }
+                    return false;
+                })
+            })).filter(sec => sec.channels.length > 0);
+        }
+
+        const totalChannelsCount = finalSections.reduce((acc, sec) => acc + (sec.channels ? sec.channels.length : 0), 0);
+
         const payload = {
-            sections: sortedSections,
+            success: true,
+            totalSections: finalSections.length,
+            totalChannels: totalChannelsCount,
+            sections: finalSections,
             sky1: sky1Channels,
             sky2: sky2Channels,
-            guide: guideData || [],
             updatedAt: Date.now()
         };
 
-        if (!sourceParam) {
+        if (includeGuide) {
+            payload.guide = guideData || [];
+        }
+
+        if (!hasCustomFilters) {
             memoryCache = payload;
             lastCacheTime = Date.now();
         }
@@ -345,6 +414,6 @@ export async function GET(request) {
         });
     } catch (e) {
         console.error("Errore API /api/canali:", e);
-        return NextResponse.json({ error: "Errore caricamento canali", details: String(e) }, { status: 500 });
+        return NextResponse.json({ success: false, error: "Errore caricamento canali", details: String(e) }, { status: 500 });
     }
 }

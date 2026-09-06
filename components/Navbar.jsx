@@ -41,10 +41,11 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
     }, []);
 
     const handleNavClick = (filter) => {
+        const cleanFilter = (filter === "home" || filter === "all") ? "all" : filter;
         if (onFilterChange) {
-            onFilterChange(filter);
+            onFilterChange(cleanFilter);
         } else {
-            router.push(filter === "all" ? "/" : `/?tab=${filter}`);
+            router.push(cleanFilter === "all" ? "/" : `/?tab=${cleanFilter}`);
         }
     };
 

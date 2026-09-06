@@ -397,8 +397,8 @@ function SkyContent() {
                     </Link>
                     <nav className="sky-nav-links">
                         <Link href="/" className="nav-link"><i className="fas fa-house"></i>Home</Link>
-                        <Link href="/?tab=sport" className="nav-link active"><i className="fas fa-trophy"></i>Sport</Link>
-                        <Link href="/?tab=intrattenimento" className="nav-link"><i className="fas fa-masks-theater"></i>Intrattenimento</Link>
+                        <Link href="/?tab=sport" className={`nav-link ${currentSource === "sky.json" ? "active" : ""}`}><i className="fas fa-trophy"></i>Sport</Link>
+                        <Link href="/?tab=intrattenimento" className={`nav-link ${currentSource === "sky2.json" ? "active" : ""}`}><i className="fas fa-masks-theater"></i>Intrattenimento</Link>
                         <Link href="/?tab=eventi" className="nav-link"><i className="fas fa-ticket"></i>Eventi</Link>
                     </nav>
                 </div>

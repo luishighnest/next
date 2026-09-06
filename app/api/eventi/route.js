@@ -10,20 +10,71 @@ function checkAuth(request) {
 
 export const dynamic = "force-dynamic";
 
-export async function GET() {
+export async function GET(request) {
     try {
+        const { searchParams } = new URL(request.url);
+        const category = searchParams.get("category");
+        const query = (searchParams.get("q") || searchParams.get("search") || "").toLowerCase().trim();
+        const format = searchParams.get("format");
         const eventi = await getStoreData("eventi") || {};
+
+        if (category) {
+            const list = eventi[category] || [];
+            const filtered = query ? list.filter(e => (e.name || e.title || "").toLowerCase().includes(query)) : list;
+            return NextResponse.json({
+                success: true,
+                category,
+                count: filtered.length,
+                events: filtered
+            }, {
+                headers: { "Cache-Control": "no-store, max-age=0" }
+            });
+        }
+
+        if (query) {
+            const results = {};
+            let total = 0;
+            Object.keys(eventi).forEach(cat => {
+                const matched = (eventi[cat] || []).filter(e => (e.name || e.title || "").toLowerCase().includes(query));
+                if (matched.length > 0) {
+                    results[cat] = matched;
+                    total += matched.length;
+                }
+            });
+            return NextResponse.json({
+                success: true,
+                query,
+                total,
+                events: results
+            }, {
+                headers: { "Cache-Control": "no-store, max-age=0" }
+            });
+        }
+
+        if (format === "clean" || format === "metadata") {
+            const categories = Object.keys(eventi);
+            const total = categories.reduce((acc, cat) => acc + (Array.isArray(eventi[cat]) ? eventi[cat].length : 0), 0);
+            return NextResponse.json({
+                success: true,
+                total,
+                categories,
+                events: eventi
+            }, {
+                headers: { "Cache-Control": "no-store, max-age=0" }
+            });
+        }
+
         return NextResponse.json(eventi, {
             headers: { "Cache-Control": "no-store, max-age=0" }
         });
     } catch (e) {
-        return NextResponse.json({ error: String(e) }, { status: 500 });
+        return NextResponse.json({ success: false, error: String(e) }, { status: 500 });
     }
 }
 
 export async function POST(request) {
     if (!checkAuth(request)) {
-        return NextResponse.json({ error: "Non autorizzato (x-api-key non valida)" }, { status: 401 });
+        return NextResponse.json({ success: false, error: "Non autorizzato (x-api-key non valida)" }, { status: 401 });
     }
 
     try {
@@ -44,7 +95,7 @@ export async function POST(request) {
         const newEvent = body.event || body;
 
         if (!newEvent || (!newEvent.name && !newEvent.title)) {
-            return NextResponse.json({ error: "Titolo evento obbligatorio" }, { status: 400 });
+            return NextResponse.json({ success: false, error: "Titolo evento obbligatorio" }, { status: 400 });
         }
 
         const eventi = await getStoreData("eventi") || {};
@@ -95,13 +146,13 @@ export async function POST(request) {
         });
     } catch (e) {
         console.error("Errore POST /api/eventi:", e);
-        return NextResponse.json({ error: "Errore salvataggio evento", details: String(e) }, { status: 500 });
+        return NextResponse.json({ success: false, error: "Errore salvataggio evento", details: String(e) }, { status: 500 });
     }
 }
 
 export async function DELETE(request) {
     if (!checkAuth(request)) {
-        return NextResponse.json({ error: "Non autorizzato" }, { status: 401 });
+        return NextResponse.json({ success: false, error: "Non autorizzato" }, { status: 401 });
     }
 
     try {
@@ -110,7 +161,7 @@ export async function DELETE(request) {
         const targetSlug = (body.slug || "").toLowerCase().replace(/[^a-z0-9]/g, "");
 
         if (!targetTitle && !targetSlug) {
-            return NextResponse.json({ error: "Specificare title o slug da eliminare" }, { status: 400 });
+            return NextResponse.json({ success: false, error: "Specificare title o slug da eliminare" }, { status: 400 });
         }
 
         const eventi = await getStoreData("eventi") || {};
@@ -138,6 +189,6 @@ export async function DELETE(request) {
         });
     } catch (e) {
         console.error("Errore DELETE /api/eventi:", e);
-        return NextResponse.json({ error: String(e) }, { status: 500 });
+        return NextResponse.json({ success: false, error: String(e) }, { status: 500 });
     }
 }
