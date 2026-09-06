@@ -2018,11 +2018,10 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     overflow-y: hidden;
     gap: 16px; 
     
-    /* Micro-bleed: 14px di respiro per l'ombra/bordo in hover. 
-       � minore del gap di 16px, quindi la 5^ card (che inizia a 16px) resta comunque invisibile! */
-    padding: 30px 14px 60px 14px; 
-    margin: -30px -14px -60px -14px;
-    scroll-padding-inline: 14px;
+    /* Bleed: 20px di respiro per non troncare bordo bianco e ombra in hover sui bordi */
+    padding: 30px 20px 60px 20px; 
+    margin: -30px -20px -60px -20px;
+    scroll-padding-inline: 20px;
     
     /* Scroll Snapping tipo Apple TV / Netflix */
     scroll-snap-type: x mandatory;
@@ -2488,8 +2487,6 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 .home-section {
     position: relative;
-    content-visibility: auto;
-    contain-intrinsic-size: 0 340px;
     animation: sectionFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
