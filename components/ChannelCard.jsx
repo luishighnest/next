@@ -19,9 +19,8 @@ export default function ChannelCard({ channel }) {
     const progInfo = getCurrentProgramInfo(channel.epg);
     const cardImgUrl = channel.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
     const hasImage = Boolean(cardImgUrl);
-    const logoUrl = getChannelLogoUrl(channel);
-
     const isTestJsonEvent = channel.isTestJson || (channel.group && channel.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel.eventSlug);
+    const logoUrl = isTestJsonEvent ? "/logos/dazn.png" : getChannelLogoUrl(channel);
     const isSky = !isTestJsonEvent && (
         channel.provider === "SKY" || 
         (channel.group && (channel.group.includes("Sky") || channel.group === "Sky Cinema" || channel.group === "Sky Bambini")) ||
