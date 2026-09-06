@@ -21,7 +21,7 @@
         "ora": "06:00",
         "fine": "06:15",
         "titolo": "Tennis Us Open The Insider 2026 Ep.7 06/09/2026",
-        "descrizione": "... 06/09/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider",
+        "descrizione": "... 06/09/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider\"",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
@@ -77,7 +77,7 @@
         "ora": "12:30",
         "fine": "12:45",
         "titolo": "Tennis Us Open The Insider 2026 Ep.7 06/09/2026",
-        "descrizione": "... 06/09/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider",
+        "descrizione": "... 06/09/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider\"",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
@@ -124,13 +124,41 @@
       },
       {
         "ora": "14:55",
-        "fine": "17:00",
+        "fine": "16:45",
         "titolo": "GP Italia: Gara",
         "descrizione": "A Monza la gara piu' veloce dell'anno: grande attesa per i padroni di casa, le due Ferrari e il leader del mondiale Antonelli. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/834de743-77dd-4f15-80db-350dba84112f/background/600"
       },
       {
-        "ora": "17:00",
+        "ora": "16:45",
+        "fine": "17:30",
+        "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
+        "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
+      },
+      {
+        "ora": "17:30",
+        "fine": "17:50",
+        "titolo": "Studio Eurovolley",
+        "descrizione": "Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+        "immagine": "https://img-guidatv.org/8714/studi/6.jpg"
+      },
+      {
+        "ora": "17:50",
+        "fine": "20:00",
+        "titolo": "Italia - Turchia Finale 1°/2° Posto",
+        "descrizione": "... 1^/2^ Posto Campionati Europei di pallavolo femminile. - E' la Finale degli Europei femminili, l'Italia di Velasco affronta le campionesse in carica della Turchia. Tc Locatelli-Sangiuliano",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/581e2304-9523-4d69-b06a-479561313509/background/600"
+      },
+      {
+        "ora": "20:00",
+        "fine": "20:30",
+        "titolo": "Studio Eurovolley",
+        "descrizione": "Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+        "immagine": "https://img-guidatv.org/8714/studi/6.jpg"
+      },
+      {
+        "ora": "20:30",
         "fine": "00:30",
         "titolo": "Tennis Us Open - Ep. 42 - Tennis Grand Slam Us Open 2026 8a Giornata (Ss Uno) 06/09/2026",
         "descrizione": "MEDVEDEV-TIAFOE, PEGULA-CIRSTEA (Bisti-Pescosolido); SHELTON-TSITSIPAS (Ferrero-Rossi)",
@@ -556,27 +584,27 @@
       },
       {
         "ora": "12:25",
-        "fine": "14:25",
+        "fine": "14:40",
         "titolo": "Juventus - Milan",
         "descrizione": "... Women's Cup. - Bianconere a punteggio pieno con 6 punti. Milan a quota 4. Le rossonere hanno vinto gli ultimi 2 precedenti, dopo 2 pareggi e 6 sconfitte. TC: Gaia Brunelli",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d40b259d-a1b8-40f5-82b4-c017afbbc0e1/background/600"
       },
       {
-        "ora": "14:25",
-        "fine": "14:40",
+        "ora": "14:40",
+        "fine": "14:55",
         "titolo": "Programmazione da definire",
         "descrizione": "I palinsesti sono in via di definizione da parte emittente",
         "immagine": ""
       },
       {
         "ora": "14:55",
-        "fine": "17:00",
+        "fine": "17:05",
         "titolo": "Everton - Manchester United",
         "descrizione": "... United Premier League. - From Hill Dickinson Stadium in Liverpool, Merseyside, England.",
         "immagine": "https://img-guidatv.org/partite/premierleague.jpeg"
       },
       {
-        "ora": "17:00",
+        "ora": "17:05",
         "fine": "17:55",
         "titolo": "Sky Sunday Football Prepartita",
         "descrizione": "La presentazione del match di Serie A, le immagini e le interviste ai protagonisti. Nello studio di Leo Di Bello, anche calcio internazionale e le news di tutti gli sport di Sky.",
@@ -632,23 +660,16 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "07:45",
-        "fine": "08:00",
+        "fine": "06:15",
         "titolo": "Tennis Us Open The Insider 2026 Ep.7 06/09/2026",
         "descrizione": "... 06/09/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider",
         "immagine": "https://img-guidatv.org/11237/tennis-us-open/6.jpg"
       },
       {
-        "ora": "08:00",
+        "ora": "06:15",
         "fine": "08:30",
         "titolo": "7a giornata",
-        "descrizione": "7a giornata Tennis Us Open",
+        "descrizione": "POTAPOVA-ANISIMOVA (Boschetto-Furlan); BLOCKX-COBOLLI (Boschetto-Golarsa); KHACHANOV-BONZI (Cazzaniga-Reggi); JOVIC-EALA, ZVEREV-TABILO (Ramella-Pescosolido)",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
@@ -669,7 +690,7 @@
         "ora": "09:00",
         "fine": "12:00",
         "titolo": "7a giornata",
-        "descrizione": "7a giornata Tennis Us Open",
+        "descrizione": "POTAPOVA-ANISIMOVA (Boschetto-Furlan); BLOCKX-COBOLLI (Boschetto-Golarsa); KHACHANOV-BONZI (Cazzaniga-Reggi); JOVIC-EALA, ZVEREV-TABILO (Ramella-Pescosolido)",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
@@ -690,18 +711,18 @@
         "ora": "12:30",
         "fine": "15:55",
         "titolo": "7a giornata",
-        "descrizione": "7a giornata Tennis Us Open",
+        "descrizione": "POTAPOVA-ANISIMOVA (Boschetto-Furlan); BLOCKX-COBOLLI (Boschetto-Golarsa); KHACHANOV-BONZI (Cazzaniga-Reggi); JOVIC-EALA, ZVEREV-TABILO (Ramella-Pescosolido)",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
         "ora": "15:55",
-        "fine": "16:10",
+        "fine": "16:15",
         "titolo": "Highlights Show US Open",
         "descrizione": "Il racconto per immagini dei match piu' importanti della giornata appena conclusa agli US Open di tennis",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "16:10",
+        "ora": "16:15",
         "fine": "16:30",
         "titolo": "Tennis Us Open The Insider 2026 Ep.7 06/09/2026",
         "descrizione": "... 06/09/2026 The Insider: US Open. - Le storie dello US Open raccontate con interviste e immagini dietro le quinte, con Stefano Meloccaro nel ruolo di \"insider",
@@ -716,6 +737,20 @@
       },
       {
         "ora": "17:00",
+        "fine": "20:00",
+        "titolo": "8a Giornata",
+        "descrizione": "MEDVEDEV-TIAFOE, PEGULA-CIRSTEA (Bisti-Pescosolido); SHELTON-TSITSIPAS (Ferrero-Rossi)",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+      },
+      {
+        "ora": "20:00",
+        "fine": "22:00",
+        "titolo": "Tennis Us Open - Ep. 90 - Tennis Grand Slam Us Open 2026 8a Giornata Paul/ Alcaraz 06/09/2026",
+        "descrizione": "... 2026 8a Giornata Paul/ Alcaraz 06/09/2026 Tennis Us Open. - Tennis Us Open",
+        "immagine": "https://img-guidatv.org/11237/tennis-us-open/6.jpg"
+      },
+      {
+        "ora": "22:00",
         "fine": "00:30",
         "titolo": "8a Giornata",
         "descrizione": "MEDVEDEV-TIAFOE, PEGULA-CIRSTEA (Bisti-Pescosolido); SHELTON-TSITSIPAS (Ferrero-Rossi)",
@@ -792,10 +827,17 @@
       },
       {
         "ora": "08:10",
-        "fine": "09:25",
+        "fine": "09:15",
         "titolo": "Monza: Feature Race",
         "descrizione": "Dall'Autodromo Nazionale di Monza, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/56ee0170-ea25-4d93-9910-0c24a653094c/background/600"
+      },
+      {
+        "ora": "09:15",
+        "fine": "09:40",
+        "titolo": "Giro d'Italia: Lewis & Charles",
+        "descrizione": "Giro d'Italia: Lewis & Charles (ITA 2025)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ffd5adad-fdee-436f-8269-847658540c8d/background/600"
       },
       {
         "ora": "09:40",
@@ -813,24 +855,24 @@
       },
       {
         "ora": "11:40",
-        "fine": "12:30",
+        "fine": "12:40",
         "titolo": "Italia: Gara",
         "descrizione": "Dall'Autodromo Nazionale di Monza, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/50eec40a-4f42-4334-8314-0c4aafc7b99f/background/600"
       },
       {
-        "ora": "12:30",
-        "fine": "12:45",
+        "ora": "12:40",
+        "fine": "13:00",
         "titolo": "Giro d'Italia: Lewis & Charles",
         "descrizione": "Giro d'Italia: Lewis & Charles (ITA 2025)",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ffd5adad-fdee-436f-8269-847658540c8d/background/600"
       },
       {
-        "ora": "12:45",
+        "ora": "13:00",
         "fine": "13:30",
-        "titolo": "Inside The Team - Un Gp con Kimi",
-        "descrizione": "Inside The Team - Un Gp con Kimi",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/59bb332e-1c30-4f19-bc9b-dd78dabec831/background/600"
+        "titolo": "Little Italy: La Mercedes di Kimi",
+        "descrizione": "La Mercedes di Kimi Antonelli.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2eb35e6e-1e77-4610-b6f3-1ca1a5f922db/background/600"
       },
       {
         "ora": "13:30",
@@ -841,20 +883,20 @@
       },
       {
         "ora": "14:55",
-        "fine": "17:00",
+        "fine": "17:10",
         "titolo": "GP Italia: Gara",
         "descrizione": "A Monza la gara piu' veloce dell'anno: grande attesa per i padroni di casa, le due Ferrari e il leader del mondiale Antonelli. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/834de743-77dd-4f15-80db-350dba84112f/background/600"
       },
       {
-        "ora": "17:00",
-        "fine": "17:30",
+        "ora": "17:10",
+        "fine": "17:35",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
       },
       {
-        "ora": "17:30",
+        "ora": "17:35",
         "fine": "18:00",
         "titolo": "F1 Debriefing",
         "descrizione": "E' il momento dell'analisi: dopo i giri in pista, giro di opinioni sui temi principali emersi dalla gara e dall'intero weekend. Conduce Davide Camicioli.",
@@ -1064,27 +1106,13 @@
       },
       {
         "ora": "12:35",
-        "fine": "13:15",
+        "fine": "13:50",
         "titolo": "Francia: Gara 2",
         "descrizione": "Nono Round della stagione 2026. Dal circuito di Magny Cours, gara 2 della World Supersport. Telecronaca Vercellesi - Temporali",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/39eab4b5-0ef4-4555-8726-825829f5799a/background/600"
       },
       {
-        "ora": "13:15",
-        "fine": "13:30",
-        "titolo": "Bulega: La Stagione Dei Record",
-        "descrizione": "Nicolo' Bulega sta battendo ogni record di vittorie in Superbike in attesa di scoprire se per lui, nel 2027, si apriranno le porte della MotoGP.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ad2df663-0e03-4e0b-89af-a49dcd2f94bf/background/600"
-      },
-      {
-        "ora": "13:30",
-        "fine": "13:45",
-        "titolo": "Marquez: E' rosso",
-        "descrizione": "Speciale giornalistico con cui la Ducati e i principali media sportivi celebrano e annunciano il clamoroso rinnovo di contratto di Marc Marquez con la squadra ufficiale Ducati Lenovo Team fino al 2028.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/185c1e47-47bf-4e09-b063-45f5c471fb2b/background/600"
-      },
-      {
-        "ora": "13:45",
+        "ora": "13:50",
         "fine": "14:00",
         "titolo": "Francia",
         "descrizione": "L'anteprima della gara di Superbike.",
@@ -1092,21 +1120,21 @@
       },
       {
         "ora": "14:00",
-        "fine": "14:25",
+        "fine": "14:45",
         "titolo": "Francia: Gara 2",
         "descrizione": "Nono Round della stagione 2026. Dal circuito di Magny Cours, gara 2 della World Superbike. Telecronaca Vercellesi - Temporali",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a349c418-4255-4eb7-a7fa-4be89bf2f8a2/background/600"
       },
       {
-        "ora": "14:25",
-        "fine": "14:45",
+        "ora": "14:45",
+        "fine": "14:55",
         "titolo": "Francia",
         "descrizione": "Commenti e considerazioni in merito all'evento superbike appena trasmesso.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/26df4808-7dff-433e-b06f-67f25c967c2c/background/600"
       },
       {
-        "ora": "14:45",
-        "fine": "14:55",
+        "ora": "14:55",
+        "fine": "15:10",
         "titolo": "Bastianini Riflettori Accesi",
         "descrizione": "Bastianini Riflettori Accesi 29/08/2026",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/67185dd7-3575-4fa7-9439-b87fb6c96b5f/background/600"
@@ -1266,17 +1294,10 @@
       },
       {
         "ora": "14:50",
-        "fine": "16:55",
-        "titolo": "Finale terzo posto: Poland - Serbia",
-        "descrizione": "... - Serbia. - Dalla Turchia, Cechia, Azerbaigian e Svezia.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/50519780-f60f-4b29-a40d-620dfb1d6dcc/background/600"
-      },
-      {
-        "ora": "16:55",
         "fine": "17:30",
-        "titolo": "The Boat Show",
-        "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/044cd65a-6642-4bd8-9dd5-5714928c4194/background/600"
+        "titolo": "Finale terzo posto: Poland - Serbia",
+        "descrizione": "... - Serbia. - E' la Finale che mette in palio la medaglia di bronzo agli Europei, Serbia-Polonia. Tc Palermo-Gennari",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/50519780-f60f-4b29-a40d-620dfb1d6dcc/background/600"
       },
       {
         "ora": "17:30",
@@ -1289,7 +1310,7 @@
         "ora": "17:50",
         "fine": "20:00",
         "titolo": "Italia - Turchia Finale 1°/2° Posto",
-        "descrizione": "... 1^/2^ Posto Campionati Europei di pallavolo femminile. - Dalla Turchia, Cechia, Azerbaigian e Svezia.",
+        "descrizione": "... 1^/2^ Posto Campionati Europei di pallavolo femminile. - E' la Finale degli Europei femminili, l'Italia di Velasco affronta le campionesse in carica della Turchia. Tc Locatelli-Sangiuliano",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/581e2304-9523-4d69-b06a-479561313509/background/600"
       },
       {
@@ -1317,7 +1338,7 @@
         "ora": "23:30",
         "fine": "01:30",
         "titolo": "Italia - Turchia Finale 1°/2° Posto",
-        "descrizione": "... Campionati Europei di pallavolo femminile. - Dalla Turchia, Cechia, Azerbaigian e Svezia.",
+        "descrizione": "... Campionati Europei di pallavolo femminile. - E' la Finale degli Europei femminili, l'Italia di Velasco affronta le campionesse in carica della Turchia. Tc Locatelli-Sangiuliano",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/581e2304-9523-4d69-b06a-479561313509/background/600"
       }
     ]
@@ -1335,27 +1356,27 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:45",
+        "fine": "07:40",
         "titolo": "Programmazione da definire",
         "descrizione": "I palinsesti sono in via di definizione da parte emittente",
         "immagine": ""
       },
       {
-        "ora": "07:45",
-        "fine": "10:00",
+        "ora": "07:40",
+        "fine": "10:05",
         "titolo": "7a giornata",
         "descrizione": "7a giornata Tennis Us Open",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "10:00",
-        "fine": "11:30",
+        "ora": "10:05",
+        "fine": "11:40",
         "titolo": "Valencia Day 1",
         "descrizione": "Le gare del SailGP.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/256a44b0-204d-46e9-b17a-41742146f93c/background/600"
       },
       {
-        "ora": "11:30",
+        "ora": "11:40",
         "fine": "13:30",
         "titolo": "Schalke 04 - FC Bayern Monaco",
         "descrizione": "Dalla Veltins-Arena di Gelsenkirchen, Germania.",
@@ -1363,20 +1384,20 @@
       },
       {
         "ora": "13:30",
-        "fine": "14:50",
+        "fine": "15:05",
         "titolo": "Valencia Day 2",
         "descrizione": "Le gare del SailGP.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/24344c88-d025-4754-b043-037ec1036b5c/background/600"
       },
       {
-        "ora": "14:50",
-        "fine": "17:00",
+        "ora": "15:05",
+        "fine": "17:10",
         "titolo": "Salernitana - Cavese",
         "descrizione": "Dallo Stadio Arechi di Salerno, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/237e6944-6f09-4985-b307-6f8f3701dafa/background/600"
       },
       {
-        "ora": "17:00",
+        "ora": "17:10",
         "fine": "00:30",
         "titolo": "Diretta Us Open 8a giornata",
         "descrizione": "... giornata Tennis Us Open. - Tutto il meglio degli US Open di tennis: da un campo all'altro per non perdere nulla della giornata",
@@ -1439,41 +1460,41 @@
       },
       {
         "ora": "12:00",
-        "fine": "17:00",
+        "fine": "18:45",
         "titolo": "Omega European Masters: Giorno 4",
         "descrizione": "... Giorno 4 Golf: DP World Tour. - Dal Crans-sur-Sierre Golf Club di Crans Montana, Svizzera.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/56154bb9-8056-4840-9048-459524d83d65/background/600"
       },
       {
-        "ora": "17:00",
-        "fine": "17:30",
+        "ora": "18:45",
+        "fine": "19:00",
         "titolo": "Speciale Golf Pgai Championship 2026 03/08/2026",
         "descrizione": "... 03/08/2026. - - - Speciale Golf Pgai Championship 2026...",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/256dd6e2-20a4-4560-95be-4c68d2ae85b6/background/600"
       },
       {
-        "ora": "17:30",
-        "fine": "18:00",
+        "ora": "19:00",
+        "fine": "19:30",
         "titolo": "Open d'Italia",
         "descrizione": "Open d'italia del 16 luglio: Golf Italian Pro Tour.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e0fe6a7a-b583-4d23-ae66-8e99ab22ef91/background/600"
       },
       {
-        "ora": "18:00",
-        "fine": "18:15",
+        "ora": "19:30",
+        "fine": "19:45",
         "titolo": "Speciale Golf - Golf Vde Legend Exhibition 26/07/2026",
         "descrizione": "... Exhibition 26/07/2026. - Scopriamo insieme i giocatori piu' interessanti, vincenti e talentuosi del golf tedesco.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a4ad6015-3797-45ff-9783-ff250389a112/background/600"
       },
       {
-        "ora": "18:15",
-        "fine": "18:30",
+        "ora": "19:45",
+        "fine": "20:00",
         "titolo": "British Masters",
         "descrizione": "... World Tour. - Le sintesi dedicate alle partite del DP World Tour.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aba7756a-9ca1-44e2-b662-3350e32fdc58/background/600"
       },
       {
-        "ora": "18:30",
+        "ora": "20:00",
         "fine": "21:30",
         "titolo": "Omega European Masters: Giorno 4",
         "descrizione": "... Golf: DP World Tour. - Dal Crans-sur-Sierre Golf Club di Crans Montana, Svizzera.",
@@ -1523,7 +1544,7 @@
       {
         "ora": "04:05",
         "fine": "06:00",
-        "titolo": "Cechia - Italia Campionati Mondiali...",
+        "titolo": "Cechia - Italia",
         "descrizione": "... femminili FIBA 2026. - 32 anni dopo l'ultima volta l'Italia torna al Mondiale. Per le ragazze arriva subito una partita chiave che potrebbe gia' valere un pezzo di qualificazione alla fase successiva. TC: De Rosa-Macchi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7eb662ad-774e-49c9-93ba-e38c90e25230/background/600"
       },
@@ -1564,15 +1585,22 @@
       },
       {
         "ora": "13:30",
+        "fine": "14:00",
+        "titolo": "Teo Soragna Incontra Simone Fontecchio",
+        "descrizione": "Teo Soragna Incontra Simone Fontecchio",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4b30747e-d6e8-4e18-9c72-307bda393a9a/background/600"
+      },
+      {
+        "ora": "14:00",
         "fine": "14:20",
-        "titolo": "Il Film Delle Finali NBA 2026",
-        "descrizione": "Cinque gare di un'intensita' senza pari: la sfida tra New York e San Antonio ha regalato emozioni incredibili. Riviviamo i momenti piu' belli del trionfo dei Knicks, di nuovo campioni NBA dopo 53 anni",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/99614152-0aea-45aa-a354-55fc40519b43/background/600"
+        "titolo": "Il Maestro, La Pallacanestro Di Zelimir Obradovic",
+        "descrizione": "... Zelimir Obradovic. - L'allenatore piu' vincente nella storia dell'Eurolega racconta se' stesso e la sua pallacanestro a margine di un clinic tenutosi a Roma. Intervista di Geri De Rosa, montaggio di Andrea Rappazzo.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f8fb280a-9bda-43fa-b257-661331cc4abc/background/600"
       },
       {
         "ora": "14:20",
         "fine": "16:30",
-        "titolo": "Cina - Cechia",
+        "titolo": "China PR - Czechia",
         "descrizione": "... Mondiali femminili FIBA 2026. - Da Berlino, Germania.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9114f8a8-c228-44f5-92b5-126fa4b8905f/background/600"
       },
@@ -2037,13 +2065,13 @@
       },
       {
         "ora": "14:55",
-        "fine": "17:00",
+        "fine": "17:10",
         "titolo": "GP Italia: Gara",
         "descrizione": "A Monza la gara piu' veloce dell'anno: grande attesa per i padroni di casa, le due Ferrari e il leader del mondiale Antonelli. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/834de743-77dd-4f15-80db-350dba84112f/background/600"
       },
       {
-        "ora": "17:00",
+        "ora": "17:10",
         "fine": "17:55",
         "titolo": "Sky Sunday Football Prepartita",
         "descrizione": "La presentazione del match di Serie A, le immagini e le interviste ai protagonisti. Nello studio di Leo Di Bello, anche calcio internazionale e le news di tutti gli sport di Sky.",
@@ -2120,9 +2148,9 @@
       {
         "ora": "17:00",
         "fine": "02:00",
-        "titolo": "Tennis Us Open",
+        "titolo": "8a giornata",
         "descrizione": "Tennis Grand Slam Us Open 2026 8a Giornata. Dalle ore 17:00",
-        "immagine": "https://img-guidatv.org/8713/tennis/6.jpg"
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       }
     ]
   },
@@ -2343,14 +2371,14 @@
       {
         "ora": "06:30",
         "fine": "08:00",
-        "titolo": "US Open 2026 - Singolare femminile",
+        "titolo": "US Open 2026 - Singolare femminile - Ep. 27 - Iga Swiatek vs Marie Bouzkova US OPEN 2026 # 4",
         "descrizione": "Iga Swiatek vs Marie Bouzkova US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
         "ora": "08:00",
         "fine": "09:35",
-        "titolo": "US Open 2026 - Singolare maschile",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 47 - Taylor Fritz vs Francisco Cerundolo US OPEN 2026 # 9",
         "descrizione": "Taylor Fritz vs Francisco Cerundolo US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
@@ -2371,19 +2399,19 @@
       {
         "ora": "11:35",
         "fine": "13:30",
-        "titolo": "US Open 2026 - Singolare maschile",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 48 - Flavio Cobolli vs Alexander Bockx US OPEN 2026 # 7",
         "descrizione": "Flavio Cobolli vs Alexander Bockx US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
         "ora": "13:30",
-        "fine": "14:20",
+        "fine": "14:50",
         "titolo": "SUPERTENNIS TODAY - USOPEN",
         "descrizione": "Il nostro studio di continuita' Live dall'Arthur Ashe Stadium",
         "immagine": "https://img-guidatv.org/54/supertennis-today-usopen/0.jpg"
       },
       {
-        "ora": "14:20",
+        "ora": "14:50",
         "fine": "16:45",
         "titolo": "US Open 2026 - Singolare maschile",
         "descrizione": "Luciano Darderi vs Dane Sweeny US OPEN 2026",
@@ -2544,29 +2572,29 @@
       {
         "ora": "00:40",
         "fine": "01:40",
-        "titolo": "Beach Volley. C.To Italiano Gold Caorle",
-        "descrizione": "Beach Volley. C.to Italiano Gold Caorle - Finale femminile",
+        "titolo": "Beach Volley: Campionato Italiano Gold 2026 - Caorle: Finale Femminile",
+        "descrizione": "Campionato Italiano Gold - Caorle: Finale femminile",
         "immagine": "https://img-guidatv.org/32/beach-volley/0.jpg"
       },
       {
         "ora": "01:40",
         "fine": "03:00",
-        "titolo": "Ciclismo: Gp Industria E Artigianato",
+        "titolo": "Ciclismo - GP Industria E Artigianato 2026",
         "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "03:00",
         "fine": "05:00",
-        "titolo": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 USA - Italia",
-        "descrizione": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 USA - Italia",
-        "immagine": "https://img-guidatv.org/32/calcio-femminile-camp-mondiali-u20-polonia-2026-usa-italia/0.jpg"
+        "titolo": "USA - ITALIA",
+        "descrizione": "Le Azzurre del'Under 20 esordicono ai Mondiali di categoria contro le loro pari grado statunitensi.",
+        "immagine": "https://img-guidatv.org/32/usa-italia/0.jpg"
       },
       {
         "ora": "05:00",
         "fine": "06:00",
-        "titolo": "Canoa Sprint. Mondiali Canoa E Paracanoa Poznan 2026 3a Giornata: Finali (Seconda Parte)",
-        "descrizione": "Canoa Sprint. Mondiali Canoa e Paracanoa Poznan 2026 3a giornata: Finali (seconda parte)",
+        "titolo": "Canoa: Mondiali Canoa Sprint 2026 - 3a Giornata: Finali (Seconda Parte)",
+        "descrizione": "Mondiali - 3a giornata: Finali (seconda parte)",
         "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
       },
       {
@@ -2704,29 +2732,29 @@
       {
         "ora": "00:40",
         "fine": "01:40",
-        "titolo": "Beach Volley. C.To Italiano Gold Caorle",
-        "descrizione": "Beach Volley. C.to Italiano Gold Caorle - Finale femminile",
+        "titolo": "Beach Volley: Campionato Italiano Gold 2026 - Caorle: Finale Femminile",
+        "descrizione": "Campionato Italiano Gold - Caorle: Finale femminile",
         "immagine": "https://img-guidatv.org/32/beach-volley/0.jpg"
       },
       {
         "ora": "01:40",
         "fine": "03:00",
-        "titolo": "Ciclismo: Gp Industria E Artigianato",
+        "titolo": "Ciclismo - GP Industria E Artigianato 2026",
         "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "03:00",
         "fine": "05:00",
-        "titolo": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 USA - Italia",
-        "descrizione": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 USA - Italia",
-        "immagine": "https://img-guidatv.org/32/calcio-femminile-camp-mondiali-u20-polonia-2026-usa-italia/0.jpg"
+        "titolo": "USA - ITALIA",
+        "descrizione": "Le Azzurre del'Under 20 esordicono ai Mondiali di categoria contro le loro pari grado statunitensi.",
+        "immagine": "https://img-guidatv.org/32/usa-italia/0.jpg"
       },
       {
         "ora": "05:00",
         "fine": "06:00",
-        "titolo": "Canoa Sprint. Mondiali Canoa E Paracanoa Poznan 2026 3a Giornata: Finali (Seconda Parte)",
-        "descrizione": "Canoa Sprint. Mondiali Canoa e Paracanoa Poznan 2026 3a giornata: Finali (seconda parte)",
+        "titolo": "Canoa: Mondiali Canoa Sprint 2026 - 3a Giornata: Finali (Seconda Parte)",
+        "descrizione": "Mondiali - 3a giornata: Finali (seconda parte)",
         "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
       },
       {
@@ -6423,57 +6451,50 @@
         "immagine": "https://image.tmdb.org/t/p/w300/lGwH9KWYhU16ZYyNX7mz30M0J1U.jpg"
       },
       {
-        "ora": "02:55",
-        "fine": "03:20",
+        "ora": "03:10",
+        "fine": "03:30",
         "titolo": "Ugly Americans",
         "descrizione": "In un universo alternativo di \"New York City\" creature dell'orrore, della fantasia e della fantascienza vivono tra noi come comuni cittadini.",
         "immagine": "https://image.tmdb.org/t/p/w300/lGwH9KWYhU16ZYyNX7mz30M0J1U.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "03:40",
+        "ora": "03:30",
+        "fine": "03:50",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:00",
+        "ora": "03:50",
+        "fine": "04:15",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
+        "ora": "04:15",
+        "fine": "04:35",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep2 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "04:50",
+        "ora": "04:35",
+        "fine": "04:55",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep3 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:15",
+        "ora": "04:55",
+        "fine": "05:20",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep4 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:35",
-        "titolo": "See Dad Run",
-        "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
-        "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
-      },
-      {
-        "ora": "05:35",
-        "fine": "06:00",
+        "ora": "05:20",
+        "fine": "05:40",
         "titolo": "See Dad Run",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
@@ -6821,57 +6842,50 @@
         "immagine": "https://image.tmdb.org/t/p/w300/lGwH9KWYhU16ZYyNX7mz30M0J1U.jpg"
       },
       {
-        "ora": "02:55",
-        "fine": "03:20",
+        "ora": "03:10",
+        "fine": "03:30",
         "titolo": "Ugly Americans",
         "descrizione": "In un universo alternativo di \"New York City\" creature dell'orrore, della fantasia e della fantascienza vivono tra noi come comuni cittadini.",
         "immagine": "https://image.tmdb.org/t/p/w300/lGwH9KWYhU16ZYyNX7mz30M0J1U.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "03:40",
+        "ora": "03:30",
+        "fine": "03:50",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:00",
+        "ora": "03:50",
+        "fine": "04:15",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
+        "ora": "04:15",
+        "fine": "04:35",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep2 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "04:50",
+        "ora": "04:35",
+        "fine": "04:55",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep3 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:15",
+        "ora": "04:55",
+        "fine": "05:20",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep4 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:35",
-        "titolo": "See Dad Run",
-        "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
-        "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
-      },
-      {
-        "ora": "05:35",
-        "fine": "06:00",
+        "ora": "05:20",
+        "fine": "05:40",
         "titolo": "See Dad Run",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
@@ -7348,7 +7362,7 @@
         "fine": "01:25",
         "titolo": "La Voce Di Hind Rajab",
         "descrizione": "29 gennaio 2024. I volontari della Mezzaluna Rossa ricevono una chiamata di emergenza. Una bambina di sei anni è intrappolata in un’auto sotto attacco a Gaza, e implora di essere salvata. Mentre cercano di tenerla al telefono fanno tutto il possibile per farle arrivare un’ambulanza. Il suo nome era Hind Rajab.",
-        "immagine": "https://image.tmdb.org/t/p/w300/dxMJK7Ugfs7M0Ac9qFIHsmeX3k2.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/rB2jkCaKkIhXZwFGg0X0JGuaPbu.jpg"
       }
     ]
   },
@@ -8159,7 +8173,7 @@
         "fine": "01:25",
         "titolo": "La Voce Di Hind Rajab",
         "descrizione": "29 gennaio 2024. I volontari della Mezzaluna Rossa ricevono una chiamata di emergenza. Una bambina di sei anni è intrappolata in un’auto sotto attacco a Gaza, e implora di essere salvata. Mentre cercano di tenerla al telefono fanno tutto il possibile per farle arrivare un’ambulanza. Il suo nome era Hind Rajab.",
-        "immagine": "https://image.tmdb.org/t/p/w300/dxMJK7Ugfs7M0Ac9qFIHsmeX3k2.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/rB2jkCaKkIhXZwFGg0X0JGuaPbu.jpg"
       }
     ]
   },
@@ -11636,13 +11650,13 @@
       },
       {
         "ora": "02:50",
-        "fine": "03:20",
+        "fine": "03:15",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep4 di 10 Gli Stivali/Il Pappagallo Lunare/La Palla Coda - Gli stivali deragliano./I piccoli accudiscono un pappagallo./La palla coda.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f4269d42-050e-4450-9fe2-c236b1a544bd/background/600"
       },
       {
-        "ora": "03:20",
+        "ora": "03:15",
         "fine": "03:40",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep5 di 10 La Mucca Lunare/Il Nuvolizzatore/L'Insetto Spaziale - I cuccioli col giocattolo./Kai e Tim alla fiera./Insetto Spaziale scovato.",
@@ -11650,20 +11664,20 @@
       },
       {
         "ora": "03:40",
-        "fine": "04:05",
+        "fine": "04:00",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep6 di 10 - I cuccioli col giocattolo./Kai e Tim alla fiera./Insetto Spaziale scovato.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f4269d42-050e-4450-9fe2-c236b1a544bd/background/600"
       },
       {
-        "ora": "04:05",
-        "fine": "04:30",
+        "ora": "04:00",
+        "fine": "04:25",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep13 di 13 - Mister Coccodrillo e Daisy trasformano la vita di tutti i giorni in buffe avventure tra amicizia, entusiasmo e divertenti incomprensioni.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8fa93dbd-8bcf-4922-b9c4-04f2209cce73/background/600"
       },
       {
-        "ora": "04:30",
+        "ora": "04:25",
         "fine": "04:50",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep1 di 13 - La nonna di Daisy viene a trovarla. / Mister Coccodrillo cerca lavoro.",
@@ -12160,13 +12174,13 @@
       },
       {
         "ora": "02:50",
-        "fine": "03:20",
+        "fine": "03:15",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep4 di 10 Gli Stivali/Il Pappagallo Lunare/La Palla Coda - Gli stivali deragliano./I piccoli accudiscono un pappagallo./La palla coda.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f4269d42-050e-4450-9fe2-c236b1a544bd/background/600"
       },
       {
-        "ora": "03:20",
+        "ora": "03:15",
         "fine": "03:40",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep5 di 10 La Mucca Lunare/Il Nuvolizzatore/L'Insetto Spaziale - I cuccioli col giocattolo./Kai e Tim alla fiera./Insetto Spaziale scovato.",
@@ -12174,20 +12188,20 @@
       },
       {
         "ora": "03:40",
-        "fine": "04:05",
+        "fine": "04:00",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep6 di 10 - I cuccioli col giocattolo./Kai e Tim alla fiera./Insetto Spaziale scovato.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f4269d42-050e-4450-9fe2-c236b1a544bd/background/600"
       },
       {
-        "ora": "04:05",
-        "fine": "04:30",
+        "ora": "04:00",
+        "fine": "04:25",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep13 di 13 - Mister Coccodrillo e Daisy trasformano la vita di tutti i giorni in buffe avventure tra amicizia, entusiasmo e divertenti incomprensioni.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8fa93dbd-8bcf-4922-b9c4-04f2209cce73/background/600"
       },
       {
-        "ora": "04:30",
+        "ora": "04:25",
         "fine": "04:50",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep1 di 13 - La nonna di Daisy viene a trovarla. / Mister Coccodrillo cerca lavoro.",
@@ -17976,13 +17990,13 @@
       },
       {
         "ora": "16:46",
-        "fine": "17:40",
+        "fine": "18:00",
         "titolo": "Dalla Strada Al Palco",
         "descrizione": "Una nuova puntata ricca di novità e spettacolo, con la conduzione di Nek e Bianca Guaccero. Un viaggio emozionante nel mondo degli artisti di strada con le loro straordinarie storie, il loro talento, la passione e la creatività.  Numeri d'apertura spettacolari danno il via ad ogni puntata, coinvolgendo i conduttori, l'orchestra e il corpo di ballo, per un inizio scoppiettante. Ancora più protagonisti i \"passanti importanti\": questa settimana saranno ospiti Valentina Persia, Beppe Fiorello e Sergio Friscia, che saranno parte integrante dello show e interagiranno direttamente con gli artisti, contribuendo a creare momenti di varietà memorabili. Anche questa terza serata sarà una grande festa in cui non mancheranno le sorprese, con gli interventi musicali di artisti affermati che compariranno inaspettatamente per duettare e regalare un sogno ai talenti in gara, partecipando a numeri unici creati appositamente per loro.",
         "immagine": "https://img-guidatv.org/1/dalla-strada-al-palco/5.jpg"
       },
       {
-        "ora": "17:40",
+        "ora": "18:00",
         "fine": "20:00",
         "titolo": "Europei Femminili Di Pallavolo 2026 - Finale: Italia - Turchia",
         "descrizione": "Italia contro Turchia, Velasco contro Santarelli. Questa partita è il rematch della finale mondiale dello scorso anno, la tensione agonistica e il tasso tecnico saranno sicuramente gli stessi.",
@@ -18213,13 +18227,13 @@
       },
       {
         "ora": "16:46",
-        "fine": "17:40",
+        "fine": "18:00",
         "titolo": "Dalla Strada Al Palco",
         "descrizione": "Una nuova puntata ricca di novità e spettacolo, con la conduzione di Nek e Bianca Guaccero. Un viaggio emozionante nel mondo degli artisti di strada con le loro straordinarie storie, il loro talento, la passione e la creatività.  Numeri d'apertura spettacolari danno il via ad ogni puntata, coinvolgendo i conduttori, l'orchestra e il corpo di ballo, per un inizio scoppiettante. Ancora più protagonisti i \"passanti importanti\": questa settimana saranno ospiti Valentina Persia, Beppe Fiorello e Sergio Friscia, che saranno parte integrante dello show e interagiranno direttamente con gli artisti, contribuendo a creare momenti di varietà memorabili. Anche questa terza serata sarà una grande festa in cui non mancheranno le sorprese, con gli interventi musicali di artisti affermati che compariranno inaspettatamente per duettare e regalare un sogno ai talenti in gara, partecipando a numeri unici creati appositamente per loro.",
         "immagine": "https://img-guidatv.org/1/dalla-strada-al-palco/5.jpg"
       },
       {
-        "ora": "17:40",
+        "ora": "18:00",
         "fine": "20:00",
         "titolo": "Europei Femminili Di Pallavolo 2026 - Finale: Italia - Turchia",
         "descrizione": "Italia contro Turchia, Velasco contro Santarelli. Questa partita è il rematch della finale mondiale dello scorso anno, la tensione agonistica e il tasso tecnico saranno sicuramente gli stessi.",
@@ -18430,9 +18444,9 @@
       {
         "ora": "19:39",
         "fine": "20:30",
-        "titolo": "Sotto tiro",
-        "descrizione": "TELEFILM - - Un killer uccide tre ebrei sparando da una motocicletta. La comunità ebraica mette in campo cinquecento guardie giurate. Frank ritiene questa decisione un segno di sfiducia verso il Dipartimento.... - 5^ stagione Con Tom Selleck, Bridget Moynahan, Donnie Wahlberg",
-        "immagine": "https://img-guidatv.org/2/sotto-tiro/0.jpg"
+        "titolo": "Blue Bloods",
+        "descrizione": "La serie segue le vicende della famiglia Reagan, che da generazioni lavorano come poliziotti presso il New York City Police Department. Frank Reagan è il capo del dipartimento, ruolo che precedentemente è stato ricoperto da suo padre Henry, è rimasto vedovo con tre figli ormai adulti: Danny, Erin, Jamie, e un altro figlio che è morto. Danny è un detective che svolge il suo lavoro in modo duro e non sempre seguendo il manuale, Erin è un assistente procuratore distrettuale che persegue molti criminali arrestati da Danny e Frank, Jamie invece è un ufficiale fresco di Accademia appena entrato nel corpo di polizia. Henry è il padre di Frank, un commissario di polizia in pensione che fornisce consulenze a suo figlio e ai nipoti.",
+        "immagine": "https://img-guidatv.org/serie/5e78d8c7ce1e246c511cb9ac_p_12_rs_300.jpg"
       },
       {
         "ora": "20:30",
@@ -18625,9 +18639,9 @@
       {
         "ora": "19:39",
         "fine": "20:30",
-        "titolo": "Sotto tiro",
-        "descrizione": "TELEFILM - - Un killer uccide tre ebrei sparando da una motocicletta. La comunità ebraica mette in campo cinquecento guardie giurate. Frank ritiene questa decisione un segno di sfiducia verso il Dipartimento.... - 5^ stagione Con Tom Selleck, Bridget Moynahan, Donnie Wahlberg",
-        "immagine": "https://img-guidatv.org/2/sotto-tiro/0.jpg"
+        "titolo": "Blue Bloods",
+        "descrizione": "La serie segue le vicende della famiglia Reagan, che da generazioni lavorano come poliziotti presso il New York City Police Department. Frank Reagan è il capo del dipartimento, ruolo che precedentemente è stato ricoperto da suo padre Henry, è rimasto vedovo con tre figli ormai adulti: Danny, Erin, Jamie, e un altro figlio che è morto. Danny è un detective che svolge il suo lavoro in modo duro e non sempre seguendo il manuale, Erin è un assistente procuratore distrettuale che persegue molti criminali arrestati da Danny e Frank, Jamie invece è un ufficiale fresco di Accademia appena entrato nel corpo di polizia. Henry è il padre di Frank, un commissario di polizia in pensione che fornisce consulenze a suo figlio e ai nipoti.",
+        "immagine": "https://img-guidatv.org/serie/5e78d8c7ce1e246c511cb9ac_p_12_rs_300.jpg"
       },
       {
         "ora": "20:30",
@@ -18841,9 +18855,9 @@
       {
         "ora": "18:00",
         "fine": "19:00",
-        "titolo": "Speciale TGR - Il Palio Di Asti",
-        "descrizione": "Direttore Roberto Pacchetti. Vicedirettrice Ines Maggiolini. Caporedattore centrale Francesco Marino. A cura della TGR Piemonte",
-        "immagine": "https://img-guidatv.org/3/speciale-tgr-il-palio-di-asti/0.jpg"
+        "titolo": "Speciale TGR - Il Palio Di Asti 2026",
+        "descrizione": "Tradizione, storia e adrenalina si incontrano nel Palio di Asti, l'antica corsa a pelo che vede sfidarsi borghi, rioni e comuni del territorio. Un appuntamento unico che unisce storia, folklore e spettacolo nel nome di San Secondo, patrono della città.",
+        "immagine": "https://img-guidatv.org/3/speciale-tgr-il-palio-di-asti-2026/0.jpg"
       },
       {
         "ora": "19:00",
@@ -19092,9 +19106,9 @@
       {
         "ora": "18:00",
         "fine": "19:00",
-        "titolo": "Speciale TGR - Il Palio Di Asti",
-        "descrizione": "Direttore Roberto Pacchetti. Vicedirettrice Ines Maggiolini. Caporedattore centrale Francesco Marino. A cura della TGR Piemonte",
-        "immagine": "https://img-guidatv.org/3/speciale-tgr-il-palio-di-asti/0.jpg"
+        "titolo": "Speciale TGR - Il Palio Di Asti 2026",
+        "descrizione": "Tradizione, storia e adrenalina si incontrano nel Palio di Asti, l'antica corsa a pelo che vede sfidarsi borghi, rioni e comuni del territorio. Un appuntamento unico che unisce storia, folklore e spettacolo nel nome di San Secondo, patrono della città.",
+        "immagine": "https://img-guidatv.org/3/speciale-tgr-il-palio-di-asti-2026/0.jpg"
       },
       {
         "ora": "19:00",
@@ -19205,7 +19219,7 @@
         "fine": "06:42",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001024801/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:42",
@@ -19275,7 +19289,7 @@
         "fine": "16:51",
         "titolo": "Diario del weekend",
         "descrizione": "Diario del weekend",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000201/media/1/1/624d8d4d-7c77-46a3-b443-e3345263a42f/dfaa9583-0aad-4bf0-8194-b6ef67ba8dc0.jpg"
       },
       {
         "ora": "16:51",
@@ -19365,7 +19379,7 @@
         "fine": "06:42",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001024801/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:42",
@@ -19435,7 +19449,7 @@
         "fine": "16:51",
         "titolo": "Diario del weekend",
         "descrizione": "Diario del weekend",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000201/media/1/1/624d8d4d-7c77-46a3-b443-e3345263a42f/dfaa9583-0aad-4bf0-8194-b6ef67ba8dc0.jpg"
       },
       {
         "ora": "16:51",
@@ -19525,7 +19539,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101198501/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19797,7 +19811,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101198501/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -20167,14 +20181,14 @@
         "fine": "13:05",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201049701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:05",
         "fine": "14:00",
         "titolo": "Sport Mediaset XXL",
         "descrizione": "Approfondimento in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-xxl/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314666401000301/media/7/7/f3ffd647-59e9-432d-af8e-f360a8b2be6f/fcd91810-e03d-4e69-9b2c-dd97b995ef57.jpg"
       },
       {
         "ora": "14:00",
@@ -20418,14 +20432,14 @@
         "fine": "13:05",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201049701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:05",
         "fine": "14:00",
         "titolo": "Sport Mediaset XXL",
         "descrizione": "Approfondimento in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-xxl/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314666401000301/media/7/7/f3ffd647-59e9-432d-af8e-f360a8b2be6f/fcd91810-e03d-4e69-9b2c-dd97b995ef57.jpg"
       },
       {
         "ora": "14:00",
@@ -21277,27 +21291,27 @@
       },
       {
         "ora": "14:55",
-        "fine": "16:45",
+        "fine": "17:45",
         "titolo": "GP Italia: Gara",
         "descrizione": "A Monza la gara piu' veloce dell'anno: grande attesa per i padroni di casa, le due Ferrari e il leader del mondiale Antonelli. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/834de743-77dd-4f15-80db-350dba84112f/background/600"
       },
       {
-        "ora": "16:45",
-        "fine": "17:05",
+        "ora": "17:45",
+        "fine": "17:50",
         "titolo": "[REPLICA] - F1 Podio",
         "descrizione": "Al termine del gp di F1 le immagini del podio e le interviste dei protagonisti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b7fd36f6-0ee8-4a2f-a9b8-06b440ad7b69/background/600"
       },
       {
-        "ora": "17:05",
-        "fine": "17:30",
+        "ora": "17:50",
+        "fine": "17:55",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
       },
       {
-        "ora": "17:30",
+        "ora": "17:55",
         "fine": "18:00",
         "titolo": "F1 Debriefing",
         "descrizione": "E' il momento dell'analisi: dopo i giri in pista, giro di opinioni sui temi principali emersi dalla gara e dall'intero weekend. Conduce Davide Camicioli.",
@@ -21359,24 +21373,24 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:05",
-        "fine": "02:30",
+        "ora": "01:20",
+        "fine": "02:55",
         "titolo": "Nudi e crudi",
         "descrizione": "Due persone, una di nazionalita' americana e l'altra brasiliana, vengono abbandonati in Sudafrica. Ma scopriranno ben presto le difficolta' di comunicazione.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "04:15",
+        "ora": "02:55",
+        "fine": "04:45",
         "titolo": "Nudi e crudi",
         "descrizione": "Due uomini e una donna tentano di sopravvivere nel terribile caldo del Sudafrica.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "04:15",
+        "ora": "04:45",
         "fine": "06:00",
         "titolo": "Nudi e crudi",
-        "descrizione": "Due persone affrontano un'enorme sfida quando tentano di sopravvivere in un luogo ostile e completamente nudi. Ce la faranno?",
+        "descrizione": "Una biologa e un bushman australiano instaurano un forte legame mentre affrontano il deserto della Namibia. Alla ricerca di cibo, i due vengono inseguiti dai babbuini.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
@@ -21416,48 +21430,48 @@
       },
       {
         "ora": "11:20",
-        "fine": "12:20",
+        "fine": "12:30",
         "titolo": "Asia",
         "descrizione": "Un viaggio straordinario alla scoperta dell'Asia.",
         "immagine": "https://img-guidatv.org/17/asia/0.jpg"
       },
       {
-        "ora": "12:20",
-        "fine": "14:20",
+        "ora": "12:30",
+        "fine": "14:35",
         "titolo": "Cash or Trash - La notte dei tesori",
         "descrizione": "Lo studio diventa un colorato tendone da circo e i mercanti sono pronti ad accogliere tesori e ospiti speciali.",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-la-notte-dei-tesori/6.jpg"
       },
       {
-        "ora": "14:20",
-        "fine": "15:25",
+        "ora": "14:35",
+        "fine": "15:40",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "15:25",
-        "fine": "16:30",
+        "ora": "15:40",
+        "fine": "16:45",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "18:45",
-        "titolo": "The Best of Aldo, Giovanni e Giacomo",
-        "descrizione": "Una divertente raccolta degli spettacoli di Aldo, Giovanni e Giacomo.",
-        "immagine": "https://img-guidatv.org/17/the-best-of-aldo-giovanni-e-giacomo/6.jpg"
+        "ora": "16:45",
+        "fine": "19:05",
+        "titolo": "The Best of Aldo, Giovanni e Giacomo 2016",
+        "descrizione": "Uno spettacolo per celebrare 25 anni di successi del trio piu' amato d'Italia, con tutti gli sketch che li hanno resi famosi e che sono entrati nella storia della comicita' italiana.",
+        "immagine": "https://img-guidatv.org/17/the-best-of-aldo-giovanni-e-giacomo-20/0.jpg"
       },
       {
-        "ora": "18:45",
-        "fine": "20:20",
+        "ora": "19:05",
+        "fine": "20:25",
         "titolo": "Little Big Italy",
         "descrizione": "Il ristoratore Francesco Panella e' alla scoperta dei piu' autentici ristoranti italiani di Parigi. Sara' una sfida all'ultimo piatto tra i locali del cuore di 3 italiani residenti nella Ville Lumiere.",
         "immagine": "https://img-guidatv.org/17/little-big-italy/7.jpg"
       },
       {
-        "ora": "20:20",
+        "ora": "20:25",
         "fine": "21:30",
         "titolo": "Little Big Italy",
         "descrizione": "Il ristoratore Francesco Panella e' alla scoperta dei piu' autentici ristoranti italiani di Manhattan. Sara' una sfida all'ultimo piatto tra i locali del cuore di 3 italiani residenti nella Grande Mela.",
@@ -21465,7 +21479,7 @@
       },
       {
         "ora": "21:30",
-        "fine": "01:05",
+        "fine": "01:20",
         "titolo": "La Corrida Remix",
         "descrizione": "Una raccolta dei migliori momenti de \"La Corrida\".",
         "immagine": "https://img-guidatv.org/17/la-corrida-remix/5.jpg"
@@ -21477,24 +21491,24 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:05",
-        "fine": "02:30",
+        "ora": "01:20",
+        "fine": "02:55",
         "titolo": "Nudi e crudi",
         "descrizione": "Due persone, una di nazionalita' americana e l'altra brasiliana, vengono abbandonati in Sudafrica. Ma scopriranno ben presto le difficolta' di comunicazione.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "04:15",
+        "ora": "02:55",
+        "fine": "04:45",
         "titolo": "Nudi e crudi",
         "descrizione": "Due uomini e una donna tentano di sopravvivere nel terribile caldo del Sudafrica.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "04:15",
+        "ora": "04:45",
         "fine": "06:00",
         "titolo": "Nudi e crudi",
-        "descrizione": "Due persone affrontano un'enorme sfida quando tentano di sopravvivere in un luogo ostile e completamente nudi. Ce la faranno?",
+        "descrizione": "Una biologa e un bushman australiano instaurano un forte legame mentre affrontano il deserto della Namibia. Alla ricerca di cibo, i due vengono inseguiti dai babbuini.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
@@ -21534,48 +21548,48 @@
       },
       {
         "ora": "11:20",
-        "fine": "12:20",
+        "fine": "12:30",
         "titolo": "Asia",
         "descrizione": "Un viaggio straordinario alla scoperta dell'Asia.",
         "immagine": "https://img-guidatv.org/17/asia/0.jpg"
       },
       {
-        "ora": "12:20",
-        "fine": "14:20",
+        "ora": "12:30",
+        "fine": "14:35",
         "titolo": "Cash or Trash - La notte dei tesori",
         "descrizione": "Lo studio diventa un colorato tendone da circo e i mercanti sono pronti ad accogliere tesori e ospiti speciali.",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-la-notte-dei-tesori/6.jpg"
       },
       {
-        "ora": "14:20",
-        "fine": "15:25",
+        "ora": "14:35",
+        "fine": "15:40",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "15:25",
-        "fine": "16:30",
+        "ora": "15:40",
+        "fine": "16:45",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "18:45",
-        "titolo": "The Best of Aldo, Giovanni e Giacomo",
-        "descrizione": "Una divertente raccolta degli spettacoli di Aldo, Giovanni e Giacomo.",
-        "immagine": "https://img-guidatv.org/17/the-best-of-aldo-giovanni-e-giacomo/6.jpg"
+        "ora": "16:45",
+        "fine": "19:05",
+        "titolo": "The Best of Aldo, Giovanni e Giacomo 2016",
+        "descrizione": "Uno spettacolo per celebrare 25 anni di successi del trio piu' amato d'Italia, con tutti gli sketch che li hanno resi famosi e che sono entrati nella storia della comicita' italiana.",
+        "immagine": "https://img-guidatv.org/17/the-best-of-aldo-giovanni-e-giacomo-20/0.jpg"
       },
       {
-        "ora": "18:45",
-        "fine": "20:20",
+        "ora": "19:05",
+        "fine": "20:25",
         "titolo": "Little Big Italy",
         "descrizione": "Il ristoratore Francesco Panella e' alla scoperta dei piu' autentici ristoranti italiani di Parigi. Sara' una sfida all'ultimo piatto tra i locali del cuore di 3 italiani residenti nella Ville Lumiere.",
         "immagine": "https://img-guidatv.org/17/little-big-italy/7.jpg"
       },
       {
-        "ora": "20:20",
+        "ora": "20:25",
         "fine": "21:30",
         "titolo": "Little Big Italy",
         "descrizione": "Il ristoratore Francesco Panella e' alla scoperta dei piu' autentici ristoranti italiani di Manhattan. Sara' una sfida all'ultimo piatto tra i locali del cuore di 3 italiani residenti nella Grande Mela.",
@@ -21583,7 +21597,7 @@
       },
       {
         "ora": "21:30",
-        "fine": "01:05",
+        "fine": "01:20",
         "titolo": "La Corrida Remix",
         "descrizione": "Una raccolta dei migliori momenti de \"La Corrida\".",
         "immagine": "https://img-guidatv.org/17/la-corrida-remix/5.jpg"
@@ -25680,28 +25694,28 @@
         "fine": "12:25",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
-        "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501049701/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "12:25",
         "fine": "12:58",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201049701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "12:58",
         "fine": "13:34",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/10473/tg5/4.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201099401/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "13:34",
         "fine": "14:17",
         "titolo": "Sport Mediaset XXL",
         "descrizione": "Approfondimento in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-xxl/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314666401000301/media/7/7/f3ffd647-59e9-432d-af8e-f360a8b2be6f/fcd91810-e03d-4e69-9b2c-dd97b995ef57.jpg"
       },
       {
         "ora": "14:17",
@@ -25729,28 +25743,28 @@
         "fine": "15:54",
         "titolo": "Diario del weekend",
         "descrizione": "Diario del weekend",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000201/media/1/1/624d8d4d-7c77-46a3-b443-e3345263a42f/dfaa9583-0aad-4bf0-8194-b6ef67ba8dc0.jpg"
       },
       {
         "ora": "15:54",
         "fine": "16:14",
         "titolo": "Diario del weekend",
         "descrizione": "Diario del weekend",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000201/media/1/1/624d8d4d-7c77-46a3-b443-e3345263a42f/dfaa9583-0aad-4bf0-8194-b6ef67ba8dc0.jpg"
       },
       {
         "ora": "16:14",
         "fine": "16:39",
         "titolo": "Diario del weekend",
         "descrizione": "Diario del weekend",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000201/media/1/1/624d8d4d-7c77-46a3-b443-e3345263a42f/dfaa9583-0aad-4bf0-8194-b6ef67ba8dc0.jpg"
       },
       {
         "ora": "16:39",
         "fine": "16:51",
         "titolo": "Diario del weekend",
         "descrizione": "Diario del weekend",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000201/media/1/1/624d8d4d-7c77-46a3-b443-e3345263a42f/dfaa9583-0aad-4bf0-8194-b6ef67ba8dc0.jpg"
       },
       {
         "ora": "16:51",
@@ -28426,49 +28440,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:15",
-        "fine": "01:15",
+        "ora": "00:10",
+        "fine": "01:10",
         "titolo": "Trasporti impossibili: Germania",
         "descrizione": "Seguiamo il lavoro di alcuni specialisti di ingegneria.",
         "immagine": "https://img-guidatv.org/93/trasporti-impossibili-germania/5.jpg"
       },
       {
-        "ora": "01:15",
-        "fine": "02:15",
+        "ora": "01:10",
+        "fine": "02:10",
         "titolo": "Trasporti impossibili: Germania",
         "descrizione": "Seguiamo il lavoro di alcuni specialisti di ingegneria.",
         "immagine": "https://img-guidatv.org/93/trasporti-impossibili-germania/5.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "03:15",
+        "ora": "02:10",
+        "fine": "03:10",
         "titolo": "Affari a quattro ruote: l'auto dei sogni",
         "descrizione": "Mike Brewer e Marc 'Elvis' Priestley aiutano l'agricoltore Tom a scambiare una vecchia Jaguar e un trattore con un DeLorean. Ma con un prezzo di 30.000 sterline non sara' facile.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-l-auto-dei-sogni/1.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "04:15",
+        "ora": "03:10",
+        "fine": "04:10",
         "titolo": "Affari a quattro ruote: l'auto dei sogni",
         "descrizione": "Mike Brewer e il meccanico Marc 'Elvis' Priestley aiutano l'agente di polizia Deepak a scambiare la sua Nissan Juke con un'elegante Porsche Cayenne.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-l-auto-dei-sogni/1.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "05:10",
+        "ora": "04:10",
+        "fine": "05:05",
         "titolo": "Affari a quattro ruote: l'auto dei sogni",
         "descrizione": "Mike Brewer e il meccanico Marc 'Elvis' Priestley aiutano alcuni appassionati di auto a scambiare i loro veicoli indesiderati con l'auto dei loro sogni.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-l-auto-dei-sogni/1.jpg"
       },
       {
-        "ora": "05:10",
-        "fine": "05:35",
+        "ora": "05:05",
+        "fine": "05:30",
         "titolo": "Come e' fatto",
         "descrizione": "Quadri elettrici, aquiloni, montature per occhiali e spazzolini da denti sono attentamente esaminati per scoprire come sono fatti.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "05:35",
+        "ora": "05:30",
         "fine": "06:00",
         "titolo": "Come e' fatto",
         "descrizione": "Veicoli a tre ruote, mazze da baseball, bonsai artificiali e tromboni; i piu' svariati oggetti quotidiani vengono minuziosamente esaminati per spiegare come funzionano.",
@@ -28477,110 +28491,103 @@
       {
         "ora": "06:00",
         "fine": "06:25",
-        "titolo": "Marchio di fabbrica",
-        "descrizione": "Come vengono raccolte e lavorate le noci piu' dure e costose del mondo? Come viene trasformata l'acqua di un lago in acqua potabile? E come si tengono sotto controllo migliaia di spettatori durante un'esibizione?",
-        "immagine": "https://img-guidatv.org/93/marchio-di-fabbrica/5.jpg"
-      },
-      {
-        "ora": "06:25",
-        "fine": "06:50",
         "titolo": "Come e' fatto",
         "descrizione": "Scopriamo come vengono realizzati alcuni oggetti di uso quotidiano, tra cui le carrucole e le palle mediche.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "06:50",
-        "fine": "07:15",
+        "ora": "06:25",
+        "fine": "06:50",
         "titolo": "Marchio di fabbrica",
         "descrizione": "Come viene costruito il piu' grande condominio del mondo? Come vengono prodotti i classici stivali britannici? E come vengono realizzate le pentole che resistono una vita intera?",
         "immagine": "https://img-guidatv.org/93/marchio-di-fabbrica/5.jpg"
       },
       {
-        "ora": "07:15",
-        "fine": "07:40",
+        "ora": "06:50",
+        "fine": "07:20",
         "titolo": "Come e' fatto",
         "descrizione": "Scopriamo come vengono realizzati alcuni oggetti e cibi di uso quotidiano, tra cui le mandorle e le motociclette di lusso.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "07:40",
-        "fine": "08:35",
+        "ora": "07:20",
+        "fine": "08:10",
         "titolo": "Eroi della demolizione",
         "descrizione": "Squadre specializzate si occupano di imponenti demolizioni in Germania.",
         "immagine": "https://img-guidatv.org/93/eroi-della-demolizione/5.jpg"
       },
       {
-        "ora": "08:35",
-        "fine": "09:30",
+        "ora": "08:10",
+        "fine": "09:00",
         "titolo": "Eroi della demolizione",
         "descrizione": "Squadre specializzate si occupano di imponenti demolizioni in Germania.",
         "immagine": "https://img-guidatv.org/93/eroi-della-demolizione/5.jpg"
       },
       {
-        "ora": "09:30",
-        "fine": "10:30",
+        "ora": "09:00",
+        "fine": "10:00",
         "titolo": "Come funziona l'autostrada",
         "descrizione": "E' una delle autostrade piu' trafficate e pericolose d'Europa: la Bundesautobahn 2. Scopriamo chi lavora su questa lunga arteria autostradale, attraversata ogni giorno da molte persone.",
         "immagine": "https://img-guidatv.org/93/come-funziona-l-autostrada/5.jpg"
       },
       {
-        "ora": "10:30",
-        "fine": "11:30",
+        "ora": "10:00",
+        "fine": "10:55",
         "titolo": "Come funziona l'autostrada",
         "descrizione": "E' una delle autostrade piu' trafficate e pericolose d'Europa: la Bundesautobahn 2. Scopriamo chi lavora su questa lunga arteria autostradale, attraversata ogni giorno da molte persone.",
         "immagine": "https://img-guidatv.org/93/come-funziona-l-autostrada/5.jpg"
       },
       {
-        "ora": "11:30",
-        "fine": "12:30",
+        "ora": "10:55",
+        "fine": "11:55",
         "titolo": "Come funziona l'autostrada",
         "descrizione": "E' una delle autostrade piu' trafficate e pericolose d'Europa: la Bundesautobahn 2. Scopriamo chi lavora su questa lunga arteria autostradale, attraversata ogni giorno da molte persone.",
         "immagine": "https://img-guidatv.org/93/come-funziona-l-autostrada/5.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:30",
+        "ora": "11:55",
+        "fine": "12:55",
         "titolo": "I re dell'asfalto",
         "descrizione": "Essere un camionista non e' facile: tante ore di lavoro, enormi carichi e strade trafficate. I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "13:30",
-        "fine": "14:30",
+        "ora": "12:55",
+        "fine": "14:00",
         "titolo": "I re dell'asfalto",
         "descrizione": "Essere un camionista non e' facile: tante ore di lavoro, enormi carichi e strade trafficate. I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "14:30",
-        "fine": "15:30",
+        "ora": "14:00",
+        "fine": "15:05",
         "titolo": "I re dell'asfalto",
         "descrizione": "Essere un camionista non e' facile: tante ore di lavoro, enormi carichi e strade trafficate. I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "15:30",
-        "fine": "16:40",
+        "ora": "15:05",
+        "fine": "16:20",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Gerry e Aurelien sistemano auto iconiche.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "16:40",
-        "fine": "17:55",
+        "ora": "16:20",
+        "fine": "17:40",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Gerry e Aurelien sistemano auto iconiche.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "17:55",
-        "fine": "19:15",
+        "ora": "17:40",
+        "fine": "19:10",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Gerry e Aurelien sistemano auto iconiche.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "19:15",
+        "ora": "19:10",
         "fine": "20:15",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "\"Affari a quattro ruote\" arriva in Francia. Gerry trova i piu' bei modelli sul mercato; Aure'lien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
@@ -28602,14 +28609,14 @@
       },
       {
         "ora": "22:15",
-        "fine": "23:15",
+        "fine": "23:05",
         "titolo": "Eroi della demolizione",
         "descrizione": "Squadre specializzate si occupano di imponenti demolizioni in Germania.",
         "immagine": "https://img-guidatv.org/93/eroi-della-demolizione/5.jpg"
       },
       {
-        "ora": "23:15",
-        "fine": "00:15",
+        "ora": "23:05",
+        "fine": "00:10",
         "titolo": "Eroi della demolizione",
         "descrizione": "Squadre specializzate si occupano di imponenti demolizioni in Germania.",
         "immagine": "https://img-guidatv.org/93/eroi-della-demolizione/5.jpg"
@@ -28621,49 +28628,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:15",
-        "fine": "01:15",
+        "ora": "00:10",
+        "fine": "01:10",
         "titolo": "Trasporti impossibili: Germania",
         "descrizione": "Seguiamo il lavoro di alcuni specialisti di ingegneria.",
         "immagine": "https://img-guidatv.org/93/trasporti-impossibili-germania/5.jpg"
       },
       {
-        "ora": "01:15",
-        "fine": "02:15",
+        "ora": "01:10",
+        "fine": "02:10",
         "titolo": "Trasporti impossibili: Germania",
         "descrizione": "Seguiamo il lavoro di alcuni specialisti di ingegneria.",
         "immagine": "https://img-guidatv.org/93/trasporti-impossibili-germania/5.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "03:15",
+        "ora": "02:10",
+        "fine": "03:10",
         "titolo": "Affari a quattro ruote: l'auto dei sogni",
         "descrizione": "Mike Brewer e Marc 'Elvis' Priestley aiutano l'agricoltore Tom a scambiare una vecchia Jaguar e un trattore con un DeLorean. Ma con un prezzo di 30.000 sterline non sara' facile.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-l-auto-dei-sogni/1.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "04:15",
+        "ora": "03:10",
+        "fine": "04:10",
         "titolo": "Affari a quattro ruote: l'auto dei sogni",
         "descrizione": "Mike Brewer e il meccanico Marc 'Elvis' Priestley aiutano l'agente di polizia Deepak a scambiare la sua Nissan Juke con un'elegante Porsche Cayenne.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-l-auto-dei-sogni/1.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "05:10",
+        "ora": "04:10",
+        "fine": "05:05",
         "titolo": "Affari a quattro ruote: l'auto dei sogni",
         "descrizione": "Mike Brewer e il meccanico Marc 'Elvis' Priestley aiutano alcuni appassionati di auto a scambiare i loro veicoli indesiderati con l'auto dei loro sogni.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-l-auto-dei-sogni/1.jpg"
       },
       {
-        "ora": "05:10",
-        "fine": "05:35",
+        "ora": "05:05",
+        "fine": "05:30",
         "titolo": "Come e' fatto",
         "descrizione": "Quadri elettrici, aquiloni, montature per occhiali e spazzolini da denti sono attentamente esaminati per scoprire come sono fatti.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "05:35",
+        "ora": "05:30",
         "fine": "06:00",
         "titolo": "Come e' fatto",
         "descrizione": "Veicoli a tre ruote, mazze da baseball, bonsai artificiali e tromboni; i piu' svariati oggetti quotidiani vengono minuziosamente esaminati per spiegare come funzionano.",
@@ -28672,110 +28679,103 @@
       {
         "ora": "06:00",
         "fine": "06:25",
-        "titolo": "Marchio di fabbrica",
-        "descrizione": "Come vengono raccolte e lavorate le noci piu' dure e costose del mondo? Come viene trasformata l'acqua di un lago in acqua potabile? E come si tengono sotto controllo migliaia di spettatori durante un'esibizione?",
-        "immagine": "https://img-guidatv.org/93/marchio-di-fabbrica/5.jpg"
-      },
-      {
-        "ora": "06:25",
-        "fine": "06:50",
         "titolo": "Come e' fatto",
         "descrizione": "Scopriamo come vengono realizzati alcuni oggetti di uso quotidiano, tra cui le carrucole e le palle mediche.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "06:50",
-        "fine": "07:15",
+        "ora": "06:25",
+        "fine": "06:50",
         "titolo": "Marchio di fabbrica",
         "descrizione": "Come viene costruito il piu' grande condominio del mondo? Come vengono prodotti i classici stivali britannici? E come vengono realizzate le pentole che resistono una vita intera?",
         "immagine": "https://img-guidatv.org/93/marchio-di-fabbrica/5.jpg"
       },
       {
-        "ora": "07:15",
-        "fine": "07:40",
+        "ora": "06:50",
+        "fine": "07:20",
         "titolo": "Come e' fatto",
         "descrizione": "Scopriamo come vengono realizzati alcuni oggetti e cibi di uso quotidiano, tra cui le mandorle e le motociclette di lusso.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "07:40",
-        "fine": "08:35",
+        "ora": "07:20",
+        "fine": "08:10",
         "titolo": "Eroi della demolizione",
         "descrizione": "Squadre specializzate si occupano di imponenti demolizioni in Germania.",
         "immagine": "https://img-guidatv.org/93/eroi-della-demolizione/5.jpg"
       },
       {
-        "ora": "08:35",
-        "fine": "09:30",
+        "ora": "08:10",
+        "fine": "09:00",
         "titolo": "Eroi della demolizione",
         "descrizione": "Squadre specializzate si occupano di imponenti demolizioni in Germania.",
         "immagine": "https://img-guidatv.org/93/eroi-della-demolizione/5.jpg"
       },
       {
-        "ora": "09:30",
-        "fine": "10:30",
+        "ora": "09:00",
+        "fine": "10:00",
         "titolo": "Come funziona l'autostrada",
         "descrizione": "E' una delle autostrade piu' trafficate e pericolose d'Europa: la Bundesautobahn 2. Scopriamo chi lavora su questa lunga arteria autostradale, attraversata ogni giorno da molte persone.",
         "immagine": "https://img-guidatv.org/93/come-funziona-l-autostrada/5.jpg"
       },
       {
-        "ora": "10:30",
-        "fine": "11:30",
+        "ora": "10:00",
+        "fine": "10:55",
         "titolo": "Come funziona l'autostrada",
         "descrizione": "E' una delle autostrade piu' trafficate e pericolose d'Europa: la Bundesautobahn 2. Scopriamo chi lavora su questa lunga arteria autostradale, attraversata ogni giorno da molte persone.",
         "immagine": "https://img-guidatv.org/93/come-funziona-l-autostrada/5.jpg"
       },
       {
-        "ora": "11:30",
-        "fine": "12:30",
+        "ora": "10:55",
+        "fine": "11:55",
         "titolo": "Come funziona l'autostrada",
         "descrizione": "E' una delle autostrade piu' trafficate e pericolose d'Europa: la Bundesautobahn 2. Scopriamo chi lavora su questa lunga arteria autostradale, attraversata ogni giorno da molte persone.",
         "immagine": "https://img-guidatv.org/93/come-funziona-l-autostrada/5.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:30",
+        "ora": "11:55",
+        "fine": "12:55",
         "titolo": "I re dell'asfalto",
         "descrizione": "Essere un camionista non e' facile: tante ore di lavoro, enormi carichi e strade trafficate. I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "13:30",
-        "fine": "14:30",
+        "ora": "12:55",
+        "fine": "14:00",
         "titolo": "I re dell'asfalto",
         "descrizione": "Essere un camionista non e' facile: tante ore di lavoro, enormi carichi e strade trafficate. I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "14:30",
-        "fine": "15:30",
+        "ora": "14:00",
+        "fine": "15:05",
         "titolo": "I re dell'asfalto",
         "descrizione": "Essere un camionista non e' facile: tante ore di lavoro, enormi carichi e strade trafficate. I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "15:30",
-        "fine": "16:40",
+        "ora": "15:05",
+        "fine": "16:20",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Gerry e Aurelien sistemano auto iconiche.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "16:40",
-        "fine": "17:55",
+        "ora": "16:20",
+        "fine": "17:40",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Gerry e Aurelien sistemano auto iconiche.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "17:55",
-        "fine": "19:15",
+        "ora": "17:40",
+        "fine": "19:10",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Gerry e Aurelien sistemano auto iconiche.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "19:15",
+        "ora": "19:10",
         "fine": "20:15",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "\"Affari a quattro ruote\" arriva in Francia. Gerry trova i piu' bei modelli sul mercato; Aure'lien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
@@ -28797,14 +28797,14 @@
       },
       {
         "ora": "22:15",
-        "fine": "23:15",
+        "fine": "23:05",
         "titolo": "Eroi della demolizione",
         "descrizione": "Squadre specializzate si occupano di imponenti demolizioni in Germania.",
         "immagine": "https://img-guidatv.org/93/eroi-della-demolizione/5.jpg"
       },
       {
-        "ora": "23:15",
-        "fine": "00:15",
+        "ora": "23:05",
+        "fine": "00:10",
         "titolo": "Eroi della demolizione",
         "descrizione": "Squadre specializzate si occupano di imponenti demolizioni in Germania.",
         "immagine": "https://img-guidatv.org/93/eroi-della-demolizione/5.jpg"
@@ -30453,9 +30453,9 @@
       {
         "ora": "00:05",
         "fine": "00:55",
-        "titolo": "Joseph - Il velo della menzogna",
-        "descrizione": "Impossibile diffidare di Joseph, l'entusiasmo contagioso e la sua vita caotica, di cui parla in ogni occasione, lo fanno apparire assolutamente innocuo. Una caratteristica particolarmente utile quando il tuo lavoro è risolvere omicidi.",
-        "immagine": "https://img-guidatv.org/90/joseph-il-velo-della-menzogna/0.png"
+        "titolo": "Joseph",
+        "descrizione": "Serie crime caratterizzata da un investigatore che fa della sua particolarità il punto di forza. Joseph è un giallo poliziesco in cui troviamo il protagonista che pur ispirandosi al classico tenente Colombo cresce nelle differenze dal suo originario capostipite. Joseph ha diversi problemi privati da affrontare visto che sta vivendo un difficile divorzio e deve gestire la madre a cui è molto legato. Ma Joseph è anche un poliziotto di origine martinicana che indaga sugli omicidi in modo molto originale. A dare il volto al protagonista troviamo l'attore, regista e sceneggiatore Lucien Jean-Baptiste (Munch), anche ideatore della serie insieme a Sébastien Mounier. Al suo fianco Claire Borotra nei panni della ex moglie e Firmine Richard in quelli della madre. Lucien Jean-Baptiste è anche il regista di Joseph che è stato girato tra i paesi della Loira e in Normandia.",
+        "immagine": "https://image.tmdb.org/t/p/w300/tH0QGa0uELsXkOdXJ9gvIMLkp9G.jpg"
       },
       {
         "ora": "00:55",
@@ -30467,7 +30467,7 @@
       {
         "ora": "02:35",
         "fine": "02:45",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30481,7 +30481,7 @@
       {
         "ora": "02:50",
         "fine": "03:00",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30502,7 +30502,7 @@
       {
         "ora": "04:05",
         "fine": "04:15",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30516,28 +30516,28 @@
       {
         "ora": "04:20",
         "fine": "05:00",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
       {
         "ora": "05:00",
         "fine": "05:10",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
         "ora": "05:10",
         "fine": "07:10",
-        "titolo": "La domenica sportiva (R)",
+        "titolo": "La domenica sportiva",
         "descrizione": "Le immagini del weekend",
         "immagine": "https://img-guidatv.org/90/la-domenica-sportiva/5.jpg"
       },
       {
         "ora": "06:15",
         "fine": "06:25",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30551,7 +30551,7 @@
       {
         "ora": "06:30",
         "fine": "06:45",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30670,30 +30670,30 @@
       {
         "ora": "12:55",
         "fine": "14:35",
-        "titolo": "Il giovane ispettore Morse - Uniforme",
-        "descrizione": "Oxford, anni '70. Dotato di un intuito sorprendente, il giovane Endeavour Morse lavora come detective insieme all'ispettore Fred Thursday. Tra la passione per i cruciverba e l'amore per la musica classica, Morse si trova spesso confrontato con indagini avvincenti dove avrà modo di dimostrare le sue abilità.",
-        "immagine": "https://img-guidatv.org/90/il-giovane-ispettore-morse-uniforme/0.png"
+        "titolo": "Il Giovane Ispettore Morse",
+        "descrizione": "Ambientata tra gli anni '60 e '70, la serie ruota attorno alla carriera giovanile di Endeavour Morse dopo che ha abbandonato Oxford senza laurearsi ed essere entrato nella polizia. I racconti si svolgono presso il commissariato cittadino di Cowley, nel quale l'agente Morse verrà preso di mira per il suo attivismo e le indagini scomode.",
+        "immagine": "https://image.tmdb.org/t/p/w300/l0Iu2U88jrd3q4zn3bSmfxCZsRB.jpg"
       },
       {
         "ora": "14:35",
         "fine": "15:35",
-        "titolo": "Sorelle e delitti - Il melo giapponese",
-        "descrizione": "Dopo la morte del padre, le sorelle Viktoria, poliziotta, e Felicitas, scienziata forense, dai caratteri decisamente opposti, si ritrovano a collaborare nelle indagini.",
-        "immagine": "https://img-guidatv.org/90/sorelle-e-delitti-il-melo-giapponese/0.png"
+        "titolo": "Sorelle E Delitti",
+        "descrizione": "Feli e Viktoria si ritrovano dopo la morte del padre. Trasferitasi da Berlino Feli incomincia a lavorare nella scientifica della polizia. Viktoria, invece è un poliziotto. Le due dovranno ricostruire il loro rapporto.",
+        "immagine": "https://image.tmdb.org/t/p/w300/wMQNOJ3lNr0dUf6L3GYwq3yUVbT.jpg"
       },
       {
         "ora": "15:35",
         "fine": "16:25",
-        "titolo": "I sentieri del Devon e della Cornovaglia - con Michael Portillo - Terzo giorno - Cornovaglia del nord",
+        "titolo": "I Sentieri Del Devon E Della Cornovaglia - Con Michael Portillo - Terzo Giorno",
         "descrizione": "Micheal intraprende un lungo percorso a piedi alla scoperta degli splendidi scenari che offrono Devon e Cornovaglia.",
-        "immagine": "https://img-guidatv.org/90/i-sentieri-del-devon-e-della-cornovaglia-con-michael-portillo-terzo-giorno-cornovaglia-del-nord/0.jpg"
+        "immagine": "https://img-guidatv.org/90/i-sentieri-del-devon-e-della-cornovaglia-con-michael-portillo-terzo-giorno/0.jpg"
       },
       {
         "ora": "16:25",
         "fine": "18:00",
-        "titolo": "Benjamin Lebel - Delitti D.O.C - L'acquavite della discordia",
-        "descrizione": "Benjamin Lebel, rinomato enologo di Bordeaux, è chiamato a risolvere misteriosi omicidi grazie al suo fiuto infallibile.",
-        "immagine": "https://img-guidatv.org/90/benjamin-lebel-delitti-d-o-c-l-acquavite-della-discordia/0.jpg"
+        "titolo": "Benjamin Lebel - Delitti D.O.C",
+        "descrizione": "Benjamin Lebel - Delitti D.O.C. (Le Sang de la vigne) è una serie televisiva francese trasmessa dal 12 febbraio 2011 al 21 gennaio 2017 su France 3.",
+        "immagine": "https://image.tmdb.org/t/p/w300/twRjJ9jpOD1StO272xaYDZfAbHN.jpg"
       },
       {
         "ora": "18:00",
@@ -30761,9 +30761,9 @@
       {
         "ora": "21:50",
         "fine": "22:50",
-        "titolo": "Segreti e spie: una partita nucleare - Segreti e spie: una partita nucleare - Paranoia",
+        "titolo": "Segreti e spie una partita nucleare",
         "descrizione": "Documentario di Emily Thompson e Lucie RidoutNell'estate del 1982, la spia del KGB Oleg Gordievsky lascia Mosca e si trasferisce a Londra per lavorare all'Ambasciata sovietica. Est e Ovest non si capiscono e in questo clima di totale sfiducia i malintesi sono inevitabili. Di conseguenza, la Guerra Fredda, che va avanti da quasi 40 anni, si inasprisce. Spionaggio e paranoia non fanno altro che esacerbare i sospetti tra le due superpotenze e spingono URSS e Stati Uniti in una folle corsa agli armamenti che minaccia di portare l'umanità verso l'apocalisse nucleare.",
-        "immagine": "https://img-guidatv.org/90/segreti-e-spie-una-partita-nucleare-segreti-e-spie-una-partita-nucleare-paranoia/0.jpg"
+        "immagine": "https://img-guidatv.org/90/segreti-e-spie-una-partita-nucleare/5.jpg"
       },
       {
         "ora": "22:50",
@@ -30782,9 +30782,9 @@
       {
         "ora": "23:15",
         "fine": "00:05",
-        "titolo": "Joseph - Il silenzio della campionessa",
-        "descrizione": "Impossibile diffidare di Joseph, l'entusiasmo contagioso e la sua vita caotica, di cui parla in ogni occasione, lo fanno apparire assolutamente innocuo. Una caratteristica particolarmente utile quando il tuo lavoro è risolvere omicidi.",
-        "immagine": "https://img-guidatv.org/90/joseph-il-silenzio-della-campionessa/0.jpg"
+        "titolo": "Joseph",
+        "descrizione": "Serie crime caratterizzata da un investigatore che fa della sua particolarità il punto di forza. Joseph è un giallo poliziesco in cui troviamo il protagonista che pur ispirandosi al classico tenente Colombo cresce nelle differenze dal suo originario capostipite. Joseph ha diversi problemi privati da affrontare visto che sta vivendo un difficile divorzio e deve gestire la madre a cui è molto legato. Ma Joseph è anche un poliziotto di origine martinicana che indaga sugli omicidi in modo molto originale. A dare il volto al protagonista troviamo l'attore, regista e sceneggiatore Lucien Jean-Baptiste (Munch), anche ideatore della serie insieme a Sébastien Mounier. Al suo fianco Claire Borotra nei panni della ex moglie e Firmine Richard in quelli della madre. Lucien Jean-Baptiste è anche il regista di Joseph che è stato girato tra i paesi della Loira e in Normandia.",
+        "immagine": "https://image.tmdb.org/t/p/w300/gh3so8uoZh6HB43m9qqmSkB3wkO.jpg"
       }
     ]
   },
@@ -30795,9 +30795,9 @@
       {
         "ora": "00:05",
         "fine": "00:55",
-        "titolo": "Joseph - Il velo della menzogna",
-        "descrizione": "Impossibile diffidare di Joseph, l'entusiasmo contagioso e la sua vita caotica, di cui parla in ogni occasione, lo fanno apparire assolutamente innocuo. Una caratteristica particolarmente utile quando il tuo lavoro è risolvere omicidi.",
-        "immagine": "https://img-guidatv.org/90/joseph-il-velo-della-menzogna/0.png"
+        "titolo": "Joseph",
+        "descrizione": "Serie crime caratterizzata da un investigatore che fa della sua particolarità il punto di forza. Joseph è un giallo poliziesco in cui troviamo il protagonista che pur ispirandosi al classico tenente Colombo cresce nelle differenze dal suo originario capostipite. Joseph ha diversi problemi privati da affrontare visto che sta vivendo un difficile divorzio e deve gestire la madre a cui è molto legato. Ma Joseph è anche un poliziotto di origine martinicana che indaga sugli omicidi in modo molto originale. A dare il volto al protagonista troviamo l'attore, regista e sceneggiatore Lucien Jean-Baptiste (Munch), anche ideatore della serie insieme a Sébastien Mounier. Al suo fianco Claire Borotra nei panni della ex moglie e Firmine Richard in quelli della madre. Lucien Jean-Baptiste è anche il regista di Joseph che è stato girato tra i paesi della Loira e in Normandia.",
+        "immagine": "https://image.tmdb.org/t/p/w300/tH0QGa0uELsXkOdXJ9gvIMLkp9G.jpg"
       },
       {
         "ora": "00:55",
@@ -30809,7 +30809,7 @@
       {
         "ora": "02:35",
         "fine": "02:45",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30823,7 +30823,7 @@
       {
         "ora": "02:50",
         "fine": "03:00",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30844,7 +30844,7 @@
       {
         "ora": "04:05",
         "fine": "04:15",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30858,28 +30858,28 @@
       {
         "ora": "04:20",
         "fine": "05:00",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
       {
         "ora": "05:00",
         "fine": "05:10",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
         "ora": "05:10",
         "fine": "07:10",
-        "titolo": "La domenica sportiva (R)",
+        "titolo": "La domenica sportiva",
         "descrizione": "Le immagini del weekend",
         "immagine": "https://img-guidatv.org/90/la-domenica-sportiva/5.jpg"
       },
       {
         "ora": "06:15",
         "fine": "06:25",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30893,7 +30893,7 @@
       {
         "ora": "06:30",
         "fine": "06:45",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -31012,30 +31012,30 @@
       {
         "ora": "12:55",
         "fine": "14:35",
-        "titolo": "Il giovane ispettore Morse - Uniforme",
-        "descrizione": "Oxford, anni '70. Dotato di un intuito sorprendente, il giovane Endeavour Morse lavora come detective insieme all'ispettore Fred Thursday. Tra la passione per i cruciverba e l'amore per la musica classica, Morse si trova spesso confrontato con indagini avvincenti dove avrà modo di dimostrare le sue abilità.",
-        "immagine": "https://img-guidatv.org/90/il-giovane-ispettore-morse-uniforme/0.png"
+        "titolo": "Il Giovane Ispettore Morse",
+        "descrizione": "Ambientata tra gli anni '60 e '70, la serie ruota attorno alla carriera giovanile di Endeavour Morse dopo che ha abbandonato Oxford senza laurearsi ed essere entrato nella polizia. I racconti si svolgono presso il commissariato cittadino di Cowley, nel quale l'agente Morse verrà preso di mira per il suo attivismo e le indagini scomode.",
+        "immagine": "https://image.tmdb.org/t/p/w300/l0Iu2U88jrd3q4zn3bSmfxCZsRB.jpg"
       },
       {
         "ora": "14:35",
         "fine": "15:35",
-        "titolo": "Sorelle e delitti - Il melo giapponese",
-        "descrizione": "Dopo la morte del padre, le sorelle Viktoria, poliziotta, e Felicitas, scienziata forense, dai caratteri decisamente opposti, si ritrovano a collaborare nelle indagini.",
-        "immagine": "https://img-guidatv.org/90/sorelle-e-delitti-il-melo-giapponese/0.png"
+        "titolo": "Sorelle E Delitti",
+        "descrizione": "Feli e Viktoria si ritrovano dopo la morte del padre. Trasferitasi da Berlino Feli incomincia a lavorare nella scientifica della polizia. Viktoria, invece è un poliziotto. Le due dovranno ricostruire il loro rapporto.",
+        "immagine": "https://image.tmdb.org/t/p/w300/wMQNOJ3lNr0dUf6L3GYwq3yUVbT.jpg"
       },
       {
         "ora": "15:35",
         "fine": "16:25",
-        "titolo": "I sentieri del Devon e della Cornovaglia - con Michael Portillo - Terzo giorno - Cornovaglia del nord",
+        "titolo": "I Sentieri Del Devon E Della Cornovaglia - Con Michael Portillo - Terzo Giorno",
         "descrizione": "Micheal intraprende un lungo percorso a piedi alla scoperta degli splendidi scenari che offrono Devon e Cornovaglia.",
-        "immagine": "https://img-guidatv.org/90/i-sentieri-del-devon-e-della-cornovaglia-con-michael-portillo-terzo-giorno-cornovaglia-del-nord/0.jpg"
+        "immagine": "https://img-guidatv.org/90/i-sentieri-del-devon-e-della-cornovaglia-con-michael-portillo-terzo-giorno/0.jpg"
       },
       {
         "ora": "16:25",
         "fine": "18:00",
-        "titolo": "Benjamin Lebel - Delitti D.O.C - L'acquavite della discordia",
-        "descrizione": "Benjamin Lebel, rinomato enologo di Bordeaux, è chiamato a risolvere misteriosi omicidi grazie al suo fiuto infallibile.",
-        "immagine": "https://img-guidatv.org/90/benjamin-lebel-delitti-d-o-c-l-acquavite-della-discordia/0.jpg"
+        "titolo": "Benjamin Lebel - Delitti D.O.C",
+        "descrizione": "Benjamin Lebel - Delitti D.O.C. (Le Sang de la vigne) è una serie televisiva francese trasmessa dal 12 febbraio 2011 al 21 gennaio 2017 su France 3.",
+        "immagine": "https://image.tmdb.org/t/p/w300/twRjJ9jpOD1StO272xaYDZfAbHN.jpg"
       },
       {
         "ora": "18:00",
@@ -31103,9 +31103,9 @@
       {
         "ora": "21:50",
         "fine": "22:50",
-        "titolo": "Segreti e spie: una partita nucleare - Segreti e spie: una partita nucleare - Paranoia",
+        "titolo": "Segreti e spie una partita nucleare",
         "descrizione": "Documentario di Emily Thompson e Lucie RidoutNell'estate del 1982, la spia del KGB Oleg Gordievsky lascia Mosca e si trasferisce a Londra per lavorare all'Ambasciata sovietica. Est e Ovest non si capiscono e in questo clima di totale sfiducia i malintesi sono inevitabili. Di conseguenza, la Guerra Fredda, che va avanti da quasi 40 anni, si inasprisce. Spionaggio e paranoia non fanno altro che esacerbare i sospetti tra le due superpotenze e spingono URSS e Stati Uniti in una folle corsa agli armamenti che minaccia di portare l'umanità verso l'apocalisse nucleare.",
-        "immagine": "https://img-guidatv.org/90/segreti-e-spie-una-partita-nucleare-segreti-e-spie-una-partita-nucleare-paranoia/0.jpg"
+        "immagine": "https://img-guidatv.org/90/segreti-e-spie-una-partita-nucleare/5.jpg"
       },
       {
         "ora": "22:50",
@@ -31124,9 +31124,9 @@
       {
         "ora": "23:15",
         "fine": "00:05",
-        "titolo": "Joseph - Il silenzio della campionessa",
-        "descrizione": "Impossibile diffidare di Joseph, l'entusiasmo contagioso e la sua vita caotica, di cui parla in ogni occasione, lo fanno apparire assolutamente innocuo. Una caratteristica particolarmente utile quando il tuo lavoro è risolvere omicidi.",
-        "immagine": "https://img-guidatv.org/90/joseph-il-silenzio-della-campionessa/0.jpg"
+        "titolo": "Joseph",
+        "descrizione": "Serie crime caratterizzata da un investigatore che fa della sua particolarità il punto di forza. Joseph è un giallo poliziesco in cui troviamo il protagonista che pur ispirandosi al classico tenente Colombo cresce nelle differenze dal suo originario capostipite. Joseph ha diversi problemi privati da affrontare visto che sta vivendo un difficile divorzio e deve gestire la madre a cui è molto legato. Ma Joseph è anche un poliziotto di origine martinicana che indaga sugli omicidi in modo molto originale. A dare il volto al protagonista troviamo l'attore, regista e sceneggiatore Lucien Jean-Baptiste (Munch), anche ideatore della serie insieme a Sébastien Mounier. Al suo fianco Claire Borotra nei panni della ex moglie e Firmine Richard in quelli della madre. Lucien Jean-Baptiste è anche il regista di Joseph che è stato girato tra i paesi della Loira e in Normandia.",
+        "immagine": "https://image.tmdb.org/t/p/w300/gh3so8uoZh6HB43m9qqmSkB3wkO.jpg"
       }
     ]
   },
@@ -31137,23 +31137,37 @@
       {
         "ora": "01:10",
         "fine": "03:10",
-        "titolo": "La domenica sportiva",
+        "titolo": "La domenica sportiva (R)",
         "descrizione": "Le immagini del weekend",
         "immagine": "https://img-guidatv.org/91/la-domenica-sportiva/2.jpg"
       },
       {
         "ora": "03:10",
         "fine": "05:00",
-        "titolo": "Tennis: US Open 2026 - Ottavi di finale",
+        "titolo": "Tennis: US Open 2026 - Ottavi di finale (R)",
         "descrizione": "da New York (USA)",
         "immagine": "https://img-guidatv.org/91/tennis/0.jpg"
       },
       {
         "ora": "05:00",
+        "fine": "05:10",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
+      },
+      {
+        "ora": "05:15",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Quotidiano (R) + Lo Specchio (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Il Quotidiano (R)",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
       {
         "ora": "05:30",
@@ -31165,7 +31179,7 @@
       {
         "ora": "06:15",
         "fine": "06:25",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -31179,7 +31193,7 @@
       {
         "ora": "06:30",
         "fine": "06:45",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
@@ -31192,13 +31206,13 @@
       },
       {
         "ora": "07:05",
-        "fine": "07:15",
-        "titolo": "Il Quotidiano",
+        "fine": "07:20",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
       {
-        "ora": "07:15",
+        "ora": "07:20",
         "fine": "07:50",
         "titolo": "La Storia del Regionale",
         "descrizione": "Una trasmissione della TSI diventata proverbiale: il Regionale. Per tanti, tantissimi anni l'appuntamento con l'attualità della Svizzera italiana. Il papà degli attuali Quotidiano e Buonasera. Ripercorriamo la sua storia. Ripercorriamo la nostra storia.",
@@ -31221,21 +31235,21 @@
       {
         "ora": "08:55",
         "fine": "09:15",
-        "titolo": "Sportsera",
+        "titolo": "Sportsera (R)",
         "descrizione": "L'attualità sportiva del giorno",
         "immagine": "https://img-guidatv.org/91/sportsera/0.jpg"
       },
       {
         "ora": "09:15",
         "fine": "11:00",
-        "titolo": "Calcio: Super League 2026/2027 - Grasshopper - Zurigo",
+        "titolo": "Calcio: Super League 2026/2027 - Grasshopper - Zurigo (R)",
         "descrizione": "da Zurigo",
         "immagine": "https://img-guidatv.org/91/calcio-super-league/5.jpg"
       },
       {
         "ora": "11:00",
         "fine": "12:25",
-        "titolo": "Falò",
+        "titolo": "Falò (R)",
         "descrizione": "",
         "immagine": "https://img-guidatv.org/91/falo/0.jpg"
       },
@@ -31284,14 +31298,14 @@
       {
         "ora": "20:05",
         "fine": "22:55",
-        "titolo": "I mondi di Claudio",
-        "descrizione": "Il ticinese Claudio Gazzaroli è considerato uno dei migliori fotografi subacquei al mondo. Ha iniziato a fotografare sott'acqua nei fiumi e nei laghetti alpini del Canton Ticino per poi estendere i suoi orizzonti ai mari più lontani, dai Caraibi al resto del mondo. Il racconto di una passione che gli è valsa una sterminata serie di riconoscimenti internazionali oltre alle esperienze indimenticabili nelle acque vicine e lontane.",
-        "immagine": "https://img-guidatv.org/91/i-mondi-di-claudio/0.png"
+        "titolo": "TENNIS: US OPEN: T. PAUL - C. ALCARAZ",
+        "descrizione": "TENNIS: US OPEN: T. PAUL - C. ALCARAZ",
+        "immagine": "https://img-guidatv.org/91/tennis/0.jpg"
       },
       {
         "ora": "22:55",
         "fine": "01:10",
-        "titolo": "Automobilismo: Formula Uno 2026 - Gran Premio d'Italia",
+        "titolo": "Automobilismo: Formula Uno 2026 - Gran Premio d'Italia (R)",
         "descrizione": "da Monza (ITA)",
         "immagine": "https://img-guidatv.org/91/automobilismo-formula-uno/7.jpg"
       }
@@ -31304,23 +31318,37 @@
       {
         "ora": "01:10",
         "fine": "03:10",
-        "titolo": "La domenica sportiva",
+        "titolo": "La domenica sportiva (R)",
         "descrizione": "Le immagini del weekend",
         "immagine": "https://img-guidatv.org/91/la-domenica-sportiva/2.jpg"
       },
       {
         "ora": "03:10",
         "fine": "05:00",
-        "titolo": "Tennis: US Open 2026 - Ottavi di finale",
+        "titolo": "Tennis: US Open 2026 - Ottavi di finale (R)",
         "descrizione": "da New York (USA)",
         "immagine": "https://img-guidatv.org/91/tennis/0.jpg"
       },
       {
         "ora": "05:00",
+        "fine": "05:10",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
+      },
+      {
+        "ora": "05:15",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Quotidiano (R) + Lo Specchio (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Il Quotidiano (R)",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
       {
         "ora": "05:30",
@@ -31332,7 +31360,7 @@
       {
         "ora": "06:15",
         "fine": "06:25",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -31346,7 +31374,7 @@
       {
         "ora": "06:30",
         "fine": "06:45",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
@@ -31359,13 +31387,13 @@
       },
       {
         "ora": "07:05",
-        "fine": "07:15",
-        "titolo": "Il Quotidiano",
+        "fine": "07:20",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
       {
-        "ora": "07:15",
+        "ora": "07:20",
         "fine": "07:50",
         "titolo": "La Storia del Regionale",
         "descrizione": "Una trasmissione della TSI diventata proverbiale: il Regionale. Per tanti, tantissimi anni l'appuntamento con l'attualità della Svizzera italiana. Il papà degli attuali Quotidiano e Buonasera. Ripercorriamo la sua storia. Ripercorriamo la nostra storia.",
@@ -31388,21 +31416,21 @@
       {
         "ora": "08:55",
         "fine": "09:15",
-        "titolo": "Sportsera",
+        "titolo": "Sportsera (R)",
         "descrizione": "L'attualità sportiva del giorno",
         "immagine": "https://img-guidatv.org/91/sportsera/0.jpg"
       },
       {
         "ora": "09:15",
         "fine": "11:00",
-        "titolo": "Calcio: Super League 2026/2027 - Grasshopper - Zurigo",
+        "titolo": "Calcio: Super League 2026/2027 - Grasshopper - Zurigo (R)",
         "descrizione": "da Zurigo",
         "immagine": "https://img-guidatv.org/91/calcio-super-league/5.jpg"
       },
       {
         "ora": "11:00",
         "fine": "12:25",
-        "titolo": "Falò",
+        "titolo": "Falò (R)",
         "descrizione": "",
         "immagine": "https://img-guidatv.org/91/falo/0.jpg"
       },
@@ -31451,14 +31479,14 @@
       {
         "ora": "20:05",
         "fine": "22:55",
-        "titolo": "I mondi di Claudio",
-        "descrizione": "Il ticinese Claudio Gazzaroli è considerato uno dei migliori fotografi subacquei al mondo. Ha iniziato a fotografare sott'acqua nei fiumi e nei laghetti alpini del Canton Ticino per poi estendere i suoi orizzonti ai mari più lontani, dai Caraibi al resto del mondo. Il racconto di una passione che gli è valsa una sterminata serie di riconoscimenti internazionali oltre alle esperienze indimenticabili nelle acque vicine e lontane.",
-        "immagine": "https://img-guidatv.org/91/i-mondi-di-claudio/0.png"
+        "titolo": "TENNIS: US OPEN: T. PAUL - C. ALCARAZ",
+        "descrizione": "TENNIS: US OPEN: T. PAUL - C. ALCARAZ",
+        "immagine": "https://img-guidatv.org/91/tennis/0.jpg"
       },
       {
         "ora": "22:55",
         "fine": "01:10",
-        "titolo": "Automobilismo: Formula Uno 2026 - Gran Premio d'Italia",
+        "titolo": "Automobilismo: Formula Uno 2026 - Gran Premio d'Italia (R)",
         "descrizione": "da Monza (ITA)",
         "immagine": "https://img-guidatv.org/91/automobilismo-formula-uno/7.jpg"
       }
