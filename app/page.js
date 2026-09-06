@@ -27,6 +27,28 @@ function HomePageContent() {
         }
     }, [tabParam]);
 
+    useEffect(() => {
+        if (exploreData) {
+            const origHtmlOverflow = document.documentElement.style.overflow;
+            const origBodyOverflow = document.body.style.overflow;
+            document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+
+            const handleKeyDown = (e) => {
+                if (e.key === "Escape") {
+                    setExploreData(null);
+                }
+            };
+            window.addEventListener("keydown", handleKeyDown);
+
+            return () => {
+                document.documentElement.style.overflow = origHtmlOverflow;
+                document.body.style.overflow = origBodyOverflow;
+                window.removeEventListener("keydown", handleKeyDown);
+            };
+        }
+    }, [exploreData]);
+
     const handleFilterChange = (f) => {
         setFilter(f);
         const url = f === "all" ? "/" : `/?tab=${f}`;
