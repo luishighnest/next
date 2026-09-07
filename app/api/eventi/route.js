@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getStoreData, setStoreData } from "@/lib/db";
+import { createSlug, matchSlug } from "@/lib/slug";
 
 const API_SECRET_KEY = process.env.API_SECRET_KEY || "zadonkais_secret_2026";
 
@@ -127,7 +128,8 @@ export async function POST(request) {
             ua: newEvent.ua || "",
             dazn_token: newEvent.dazn_token || "",
             type: newEvent.type || "evento",
-            provider: newEvent.provider || "DAZN"
+            provider: newEvent.provider || "DAZN",
+            slug: createSlug(evName)
         };
 
         if (existingIdx !== -1) {
@@ -157,10 +159,8 @@ export async function DELETE(request) {
 
     try {
         const body = await request.json();
-        const targetTitle = (body.title || body.name || "").toLowerCase().trim();
-        const targetSlug = (body.slug || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-
-        if (!targetTitle && !targetSlug) {
+        const target = body.slug || body.title || body.name || "";
+        if (!target) {
             return NextResponse.json({ success: false, error: "Specificare title o slug da eliminare" }, { status: 400 });
         }
 
@@ -170,13 +170,7 @@ export async function DELETE(request) {
         Object.keys(eventi).forEach(cat => {
             if (!Array.isArray(eventi[cat])) return;
             const initialLen = eventi[cat].length;
-            eventi[cat] = eventi[cat].filter(e => {
-                const name = (e.name || e.title || "").toLowerCase().trim();
-                const slug = name.replace(/[^a-z0-9]/g, "");
-                if (targetTitle && name === targetTitle) return false;
-                if (targetSlug && slug === targetSlug) return false;
-                return true;
-            });
+            eventi[cat] = eventi[cat].filter(e => !matchSlug(e, target));
             removedTotal += (initialLen - eventi[cat].length);
         });
 

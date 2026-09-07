@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import CarouselSection from "@/components/CarouselSection";
 import { getChannelLogoUrl } from "@/lib/epg";
+import { matchSlug, getChannelSlug } from "@/lib/slug";
 
 const EXT = "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
@@ -56,9 +57,7 @@ export default function EventoPlayerPage() {
                 const stored = sessionStorage.getItem("daznEventChannel") || sessionStorage.getItem("daznCustomChannel");
                 if (stored) {
                     const parsed = JSON.parse(stored);
-                    const cleanStoredSlug = (parsed.slug || parsed.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                    const targetSlug = slug.replace(/[^a-z0-9]/g, "");
-                    if (cleanStoredSlug === targetSlug || cleanStoredSlug.includes(targetSlug) || targetSlug.includes(cleanStoredSlug)) {
+                    if (matchSlug(parsed, slug)) {
                         foundCh = parsed;
                     }
                 }
@@ -70,14 +69,11 @@ export default function EventoPlayerPage() {
                     .then(r => r.json())
                     .catch(() => null);
 
-                const targetSlug = slug.replace(/[^a-z0-9]/g, "");
-
                 // Cerca il canale nelle sezioni restituite dall'API unificata
                 if (res && Array.isArray(res.sections)) {
                     for (const sec of res.sections) {
                         for (const c of (sec.channels || [])) {
-                            const cSlug = (c.slug || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                            if (cSlug === targetSlug || cSlug.includes(targetSlug) || targetSlug.includes(cSlug)) {
+                            if (matchSlug(c, slug)) {
                                 foundCh = c;
                                 break;
                             }
@@ -90,8 +86,7 @@ export default function EventoPlayerPage() {
                 if ((!foundCh || !foundCh.url) && res) {
                     const allSky = [...(res.sky1 || []), ...(res.sky2 || [])];
                     for (const c of allSky) {
-                        const cSlug = (c.slug || c.name || c.title || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                        if (cSlug === targetSlug || cSlug.includes(targetSlug) || targetSlug.includes(cSlug)) {
+                        if (matchSlug(c, slug)) {
                             foundCh = {
                                 title: c.name || c.title,
                                 group: c.group,
@@ -99,6 +94,7 @@ export default function EventoPlayerPage() {
                                 logo: c.logo,
                                 url: c.url,
                                 kid_key: c.kid_key,
+                                slug: getChannelSlug(c),
                                 sources: [{
                                     name: "Standard",
                                     isWarp: false,
@@ -108,6 +104,16 @@ export default function EventoPlayerPage() {
                             };
                             break;
                         }
+                    }
+                }
+
+                // Sincronizza l'URL nel browser con lo slug professionale se diverso da quello grezzo
+                if (foundCh) {
+                    const professionalSlug = getChannelSlug(foundCh);
+                    if (professionalSlug && professionalSlug !== slug && typeof window !== "undefined") {
+                        try {
+                            window.history.replaceState(null, "", `/eventi/${professionalSlug}`);
+                        } catch(e) {}
                     }
                 }
 

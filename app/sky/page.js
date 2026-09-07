@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { fetchSecureJson } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
+import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
 
 const EXT = "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
@@ -79,7 +80,7 @@ function parseChannelList(json, sourceName) {
                 kid_key: item.key || item.kid_key || "",
                 logo: channelLogo,
                 cid: cid,
-                slug: (item.name || item.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                slug: createSlug(item.name || item.title || ""),
                 skySource: sourceName
             });
         });
@@ -93,7 +94,8 @@ function SkyContent() {
     const srcParam = searchParams.get("src") || "";
 
     const [currentSource, setCurrentSource] = useState(() => {
-        if (srcParam === "sky2.json" || srcParam === "sky.json") return srcParam;
+        if (srcParam === "sky2" || srcParam === "sky2.json" || srcParam === "2") return "sky2.json";
+        if (srcParam === "sky1" || srcParam === "sky.json" || srcParam === "1") return "sky.json";
         if (typeof window !== "undefined") {
             try {
                 const stored = sessionStorage.getItem("nmdz_skyChannel");
@@ -150,25 +152,21 @@ function SkyContent() {
                 setChannels(channelList);
 
                 // Calcola target da chParam o da sessionStorage
-                const cleanTarget = (chParam || "").toLowerCase().replace(/[^a-z0-9]/g, "");
                 let storedTarget = "";
                 try {
                     const stored = sessionStorage.getItem("nmdz_skyChannel");
                     if (stored) {
                         const parsed = JSON.parse(stored);
-                        storedTarget = (parsed.slug || parsed.title || parsed.name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                        storedTarget = parsed.slug || parsed.title || parsed.name || "";
                     }
                 } catch(e) {}
 
-                const targetKey = cleanTarget || storedTarget;
+                const targetKey = chParam || storedTarget;
 
                 // 1. Cerca il canale nella sorgente attiva
                 let found = null;
                 if (targetKey) {
-                    found = channelList.find(c => {
-                        const cSlug = (c.slug || "").replace(/[^a-z0-9]/g, "");
-                        return cSlug === targetKey || cSlug.includes(targetKey) || targetKey.includes(cSlug);
-                    });
+                    found = channelList.find(c => matchSlug(c, targetKey));
                 }
 
                 // 2. Se NON esiste nella sorgente attiva, cerca automaticamente nell'altra sorgente (sky.json <-> sky2.json)
@@ -186,10 +184,7 @@ function SkyContent() {
                         }
 
                         if (otherList && Array.isArray(otherList)) {
-                            const foundInOther = otherList.find(c => {
-                                const cSlug = (c.slug || "").replace(/[^a-z0-9]/g, "");
-                                return cSlug === targetKey || cSlug.includes(targetKey) || targetKey.includes(cSlug);
-                            });
+                            const foundInOther = otherList.find(c => matchSlug(c, targetKey));
                             if (foundInOther) {
                                 // Trovato nell'altra sorgente! Switch automatico a quell'esatto canale su sky2 o sky1
                                 setCurrentSource(otherSource);
@@ -376,9 +371,9 @@ function SkyContent() {
     // Sincronizza dinamicamente l'URL nel browser quando cambia il canale selezionato
     useEffect(() => {
         if (!selectedChannel) return;
-        const slug = selectedChannel.slug || (selectedChannel.name || "").toLowerCase().replace(/[^a-z0-9]/g, "-");
-        const src = selectedChannel.skySource || currentSource;
-        const newUrl = `/sky?ch=${slug}${src ? `&src=${src}` : ""}`;
+        const slug = getChannelSlug(selectedChannel);
+        const isSky2 = (selectedChannel.skySource || currentSource) === "sky2.json";
+        const newUrl = `/sky?ch=${slug}${isSky2 ? "&src=sky2" : ""}`;
         if (typeof window !== "undefined") {
             try {
                 window.history.replaceState(null, "", newUrl);

@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getStoreData } from "@/lib/db";
 import { isStreamWarp } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
+import { createSlug } from "@/lib/slug";
 
 export const dynamic = "force-dynamic";
 
@@ -62,8 +63,10 @@ export async function GET(request) {
                     const channelLogo = hasValidLogo ? rawLogo : getChannelLogoUrl({ title: item.name || item.title, group: g });
                     const cleanName = item.name || item.title || "";
 
+                    const channelSlug = createSlug(cleanName);
+
                     list.push({
-                        id: cleanName.toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                        id: channelSlug,
                         name: cleanName,
                         title: cleanName,
                         group: g,
@@ -72,7 +75,7 @@ export async function GET(request) {
                         logo: channelLogo,
                         image: item.image || "",
                         cid: cid,
-                        slug: cleanName.toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                        slug: channelSlug,
                         skySource: sourceName,
                         provider: "SKY",
                         isSky: true
@@ -160,8 +163,9 @@ export async function GET(request) {
                 cat.canali.forEach(c => {
                     if (!c.titolo) return;
                     const cleanTitle = c.titolo;
+                    const channelSlug = createSlug(c.slug || cleanTitle);
                     orderedChannels.push({
-                        id: (c.slug || cleanTitle).toLowerCase().replace(/[^a-z0-9]/g, "-"),
+                        id: channelSlug,
                         title: cleanTitle,
                         name: cleanTitle,
                         group: cat.nome,
@@ -172,7 +176,7 @@ export async function GET(request) {
                         logo: c.logo ? (c.logo.startsWith("/") ? c.logo : `/logos/${c.logo}`) : "",
                         image: c.image || "",
                         isCustom: true,
-                        slug: (c.slug || cleanTitle).toLowerCase().replace(/[^a-z0-9]/g, "-")
+                        slug: channelSlug
                     });
                 });
             });
@@ -247,7 +251,7 @@ export async function GET(request) {
                             sources: [sourceItem],
                             isCustom: true,
                             isTestJson: true,
-                            slug: cleanTitle.toLowerCase().replace(/[^a-z0-9]/g, "-")
+                            slug: createSlug(cleanTitle)
                         };
                         groupedMap.set(groupKey, chObj);
                     }

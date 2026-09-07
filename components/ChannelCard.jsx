@@ -2,6 +2,7 @@
 import React, { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
+import { getChannelSlug } from "@/lib/slug";
 
 function getDynamicColor(str) {
     if (!str) return "hsl(210, 80%, 60%)";
@@ -15,7 +16,7 @@ function getDynamicColor(str) {
 
 function ChannelCard({ channel, priority = false }) {
     const router = useRouter();
-    const slug = channel.slug || (channel.title || "").toLowerCase().replace(/[^a-z0-9]/g, "-");
+    const slug = getChannelSlug(channel);
     const progInfo = getCurrentProgramInfo(channel.epg);
     const cardImgUrl = channel.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
     const hasImage = Boolean(cardImgUrl);
@@ -27,7 +28,8 @@ function ChannelCard({ channel, priority = false }) {
         (channel.title && channel.title.toLowerCase().includes("sky"))
     );
 
-    const targetHref = isSky ? `/sky?ch=${slug}${channel.skySource ? `&src=${channel.skySource}` : ""}` : `/eventi/${slug}`;
+    const cleanSrc = channel.skySource ? (channel.skySource.includes("sky2") ? "sky2" : "") : "";
+    const targetHref = isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`;
 
     const isDazn1Channel = (channel.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
     const dynColor = getDynamicColor(channel.title);
