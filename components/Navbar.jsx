@@ -29,15 +29,9 @@ export default function Navbar({
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
 
-    // Su /sky e singole pagine evento (/eventi/[slug], /evento/[slug]), logo e cerca/impostazioni scompaiono
-    const isEventDetailPage = pathname ? (
-        (pathname.startsWith("/eventi/") && pathname !== "/eventi") ||
-        pathname.startsWith("/evento/")
-    ) : false;
+    // Su tutte le sezioni (Home, Sky, Evento), la navbar è IDENTICA con le sue 3 isole
     const isSkyPage = pathname ? pathname.startsWith("/sky") : false;
-    const shouldHideSides = hideSideIslands !== undefined
-        ? hideSideIslands
-        : (isSkyPage || isEventDetailPage);
+    const shouldHideSides = hideSideIslands === true;
 
     const lastScrollYRef = useRef(0);
 
@@ -218,6 +212,15 @@ export default function Navbar({
                                 placeholder="Cerca film, serie TV, eventi sportivi, canali..."
                                 value={searchVal}
                                 onChange={(e) => handleSearchChange(e.target.value)}
+                                onKeyDown={(e) => {
+                                    if (e.key === "Enter") {
+                                        if (onSearch) {
+                                            onSearch(searchVal);
+                                        } else if (searchVal.trim()) {
+                                            router.push(`/home?search=${encodeURIComponent(searchVal.trim())}`);
+                                        }
+                                    }
+                                }}
                                 autoFocus
                             />
                             {searchVal && (
