@@ -42,6 +42,11 @@ export default function Navbar({
     const lastScrollYRef = useRef(0);
 
     useEffect(() => {
+        if (isSkyPage) {
+            setIsNavHidden(false);
+            return;
+        }
+
         let ticking = false;
 
         function getScrollY() {
@@ -49,14 +54,26 @@ export default function Navbar({
         }
 
         function updateScroll() {
+            if (isSkyPage) {
+                setIsNavHidden(false);
+                ticking = false;
+                return;
+            }
+
             const currentScrollY = getScrollY();
             const lastScrollY = lastScrollYRef.current;
+            const delta = currentScrollY - lastScrollY;
 
-            if (currentScrollY <= 8) {
+            // Se siamo vicini alla cima della pagina, mostra sempre la navbar
+            if (currentScrollY <= 25) {
                 setIsNavHidden(false);
-            } else if (currentScrollY > lastScrollY && currentScrollY > 8) {
+            } 
+            // Se scrolliamo verso il BASSO (con almeno 4px di movimento effettivo)
+            else if (delta > 4 && currentScrollY > 35) {
                 setIsNavHidden(true);
-            } else if (currentScrollY < lastScrollY) {
+            } 
+            // Se scrolliamo verso l'ALTO (con almeno 4px di movimento effettivo)
+            else if (delta < -4) {
                 setIsNavHidden(false);
             }
 
@@ -72,12 +89,36 @@ export default function Navbar({
         }
 
         function onWheel(e) {
+            if (isSkyPage) return;
             const currentScrollY = getScrollY();
-            if (e.deltaY > 6) {
-                if (currentScrollY > 6 || e.deltaY > 15) {
+            if (e.deltaY > 8) {
+                if (currentScrollY > 35) {
                     setIsNavHidden(true);
                 }
-            } else if (e.deltaY < -6) {
+            } else if (e.deltaY < -8) {
+                setIsNavHidden(false);
+            }
+        }
+
+        let touchStartY = 0;
+        function onTouchStart(e) {
+            if (e.touches && e.touches[0]) {
+                touchStartY = e.touches[0].clientY;
+            }
+        }
+
+        function onTouchMove(e) {
+            if (isSkyPage) return;
+            if (!e.touches || !e.touches[0]) return;
+            const currentTouchY = e.touches[0].clientY;
+            const diff = touchStartY - currentTouchY;
+            const currentScrollY = getScrollY();
+
+            if (currentScrollY <= 25) {
+                setIsNavHidden(false);
+            } else if (diff > 8 && currentScrollY > 35) {
+                setIsNavHidden(true);
+            } else if (diff < -8) {
                 setIsNavHidden(false);
             }
         }
@@ -86,25 +127,25 @@ export default function Navbar({
         document.addEventListener("scroll", onScroll, { passive: true });
         window.addEventListener("wheel", onWheel, { passive: true, capture: true });
         document.addEventListener("wheel", onWheel, { passive: true });
-        window.addEventListener("touchmove", onScroll, { passive: true, capture: true });
-        document.addEventListener("touchmove", onScroll, { passive: true });
+        window.addEventListener("touchstart", onTouchStart, { passive: true });
+        window.addEventListener("touchmove", onTouchMove, { passive: true, capture: true });
 
         return () => {
             window.removeEventListener("scroll", onScroll, { capture: true });
             document.removeEventListener("scroll", onScroll);
             window.removeEventListener("wheel", onWheel, { capture: true });
             document.removeEventListener("wheel", onWheel);
-            window.removeEventListener("touchmove", onScroll, { capture: true });
-            document.removeEventListener("touchmove", onScroll);
+            window.removeEventListener("touchstart", onTouchStart);
+            window.removeEventListener("touchmove", onTouchMove, { capture: true });
         };
-    }, []);
+    }, [isSkyPage, pathname]);
 
     useEffect(() => {
         setIsNavHidden(false);
         setIsSearchOpen(false);
         const cur = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || 0;
         lastScrollYRef.current = cur;
-    }, [pathname, activeFilter]);
+    }, [pathname, activeFilter, isSkyPage]);
 
     const handleNavClick = (filter) => {
         const cleanFilter = (filter === "home" || filter === "all") ? "all" : filter;

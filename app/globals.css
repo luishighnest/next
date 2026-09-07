@@ -1676,21 +1676,22 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
    ARCHITETTURA NAVBAR A 3 ISOLE SEPARATE (visionOS / iPadOS Style)
    ========================================================================== */
 
-/* Wrapper fixed/sticky sopra il contenuto per far "galleggiare" le 3 isole */
+/* Wrapper fixed sopra il contenuto per far "galleggiare" le 3 isole */
 .home-header-wrapper {
-    position: sticky;
+    position: fixed;
     top: 18px;
-    z-index: 200;
+    left: 0;
+    right: 0;
+    z-index: 10001;
     width: 100%;
     pointer-events: none;
-    margin-bottom: -80px; /* Overlap per far iniziare il contenuto dietro in trasparenza */
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
     will-change: transform, opacity;
 }
 
 .home-header-wrapper.nav-hidden {
-    transform: translateY(-120%);
-    opacity: 0;
+    transform: translateY(-160%) !important;
+    opacity: 0 !important;
     pointer-events: none !important;
 }
 
@@ -5157,12 +5158,13 @@ html {
             box-sizing: border-box;
         }
 
-        /* Navbar sticky e a scomparsa sullo scroll per la pagina player evento */
+        /* Navbar fixed e a scomparsa sullo scroll per la pagina player evento */
         .event-player-page .home-header-wrapper {
-            position: sticky !important;
+            position: fixed !important;
             top: 16px !important;
-            z-index: 200 !important;
-            margin-bottom: 20px !important;
+            left: 0 !important;
+            right: 0 !important;
+            z-index: 10001 !important;
             width: 100% !important;
             pointer-events: none !important;
             transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease !important;
@@ -5170,7 +5172,7 @@ html {
         }
         
         .event-player-page .home-header-wrapper.nav-hidden {
-            transform: translateY(-120%) !important;
+            transform: translateY(-160%) !important;
             opacity: 0 !important;
             pointer-events: none !important;
         }
@@ -6015,11 +6017,18 @@ body:has(.sky-app) {
     background: #000000;
 }
 
-        /* Navbar spacing per Sky App */
-        .sky-app .home-header-wrapper {
-            margin-bottom: 14px !important;
+        /* Navbar spacing per Sky App (Sempre visibile, non scompare mai) */
+        .sky-app .home-header-wrapper,
+        .sky-app .home-header-wrapper.nav-hidden {
             position: relative !important;
             top: 14px !important;
+            left: auto !important;
+            right: auto !important;
+            margin-bottom: 14px !important;
+            transform: none !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: auto !important;
         }
 
         .sky-main {
