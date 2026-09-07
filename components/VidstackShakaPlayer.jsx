@@ -14,8 +14,8 @@ export default function VidstackShakaPlayer({
     const playerInstanceRef = useRef(null);
 
     const [isPlaying, setIsPlaying] = useState(false);
-    const [isMuted, setIsMuted] = useState(false);
-    const [volume, setVolume] = useState(1);
+    const [isMuted, setIsMuted] = useState(autoPlay);
+    const [volume, setVolume] = useState(autoPlay ? 0 : 1);
     const [isFullscreen, setIsFullscreen] = useState(false);
     const [showControls, setShowControls] = useState(true);
     const [errorMsg, setErrorMsg] = useState(null);
@@ -125,10 +125,17 @@ export default function VidstackShakaPlayer({
                     });
                 }
 
-                // Configurazione Shaka: ClearKey DRM, DASH Live settings con tolleranza drift e buffer
+                // Configurazione Shaka: ClearKey DRM esplicito con mapping UUID Sky, DASH Live settings
                 player.configure({
                     drm: {
-                        clearKeys: clearKeysObj
+                        clearKeys: clearKeysObj,
+                        preferredKeySystems: ["org.w3.clearkey"],
+                        keySystemsMapping: {
+                            "urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4": "org.w3.clearkey",
+                            "5e629af5-38da-4063-8977-97ffbd9902d4": "org.w3.clearkey",
+                            "5e629af538da4063897797ffbd9902d4": "org.w3.clearkey"
+                        },
+                        parseInbandPsshEnabled: true
                     },
                     manifest: {
                         dash: {
@@ -268,6 +275,7 @@ export default function VidstackShakaPlayer({
                 className="vidstack-video"
                 poster={poster}
                 playsInline
+                autoPlay={autoPlay}
                 muted={isMuted}
                 onCanPlay={() => setIsLoading(false)}
                 onLoadedData={() => setIsLoading(false)}
