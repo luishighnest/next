@@ -7,6 +7,7 @@ import { fetchSecureJson } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
+import VidstackShakaPlayer from "@/components/VidstackShakaPlayer";
 
 const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
 
@@ -615,6 +616,14 @@ function SkyContent() {
                                     <div className="sky-spinner"></div>
                                     <span className="sky-loader-text">Caricamento canali Sky...</span>
                                 </div>
+                            ) : selectedChannel?.url || selectedChannel?.mpd ? (
+                                <VidstackShakaPlayer
+                                    src={selectedChannel.url || selectedChannel.mpd}
+                                    kidKey={selectedChannel.kid_key}
+                                    poster={currentEpg?.immagine || selectedChannel.logo || ""}
+                                    title={selectedChannel.name || selectedChannel.title || ""}
+                                    autoPlay={true}
+                                />
                             ) : (
                                 <iframe
                                     id="player-frame"
