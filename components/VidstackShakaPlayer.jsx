@@ -134,14 +134,16 @@ export default function VidstackShakaPlayer({
                     });
                 }
 
+                // Shaka Player supporta direttamente la mappa { [hexKid]: hexKey } per clearKeys
                 player.configure({
                     drm: {
                         clearKeys: clearKeysObj
                     },
                     streaming: {
-                        bufferingGoal: 10,
+                        bufferingGoal: 6,
                         rebufferingGoal: 2,
-                        bufferBehind: 15
+                        bufferBehind: 10,
+                        alwaysStreamText: false
                     }
                 });
 
@@ -200,20 +202,29 @@ export default function VidstackShakaPlayer({
                 await player.load(playbackUrl);
                 if (!isMounted) return;
 
+                // Non appena load ha successo, togliamo il loading
                 setIsLoading(false);
-                if (autoPlay && videoRef.current) {
-                    videoRef.current.play().then(() => setIsPlaying(true)).catch(() => {
+
+                if (videoRef.current) {
+                    // Forziamo avvio immediato con muted se necessario per aggirare le policy di autoplay dei browser
+                    videoRef.current.play().then(() => {
+                        setIsPlaying(true);
+                        setIsLoading(false);
+                    }).catch(() => {
                         if (videoRef.current) {
                             videoRef.current.muted = true;
                             setIsMuted(true);
-                            videoRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
+                            videoRef.current.play().then(() => {
+                                setIsPlaying(true);
+                                setIsLoading(false);
+                            }).catch(() => {});
                         }
                     });
                 }
             } catch (err) {
                 console.error("Errore init Shaka:", err);
                 if (isMounted) {
-                    setErrorMsg("Impossibile caricare il flusso video.");
+                    setErrorMsg("Impossibile caricare il flusso video (" + (err.message || err.code || "errore") + ")");
                     setIsLoading(false);
                 }
             }
@@ -250,10 +261,16 @@ export default function VidstackShakaPlayer({
                 muted={isMuted}
                 onCanPlay={() => setIsLoading(false)}
                 onLoadedData={() => setIsLoading(false)}
-                onPlay={() => setIsPlaying(true)}
+                onTimeUpdate={() => setIsLoading(false)}
+                onPlay={() => {
+                    setIsPlaying(true);
+                    setIsLoading(false);
+                }}
                 onPause={() => setIsPlaying(false)}
-                onWaiting={() => setIsLoading(true)}
-                onPlaying={() => setIsLoading(false)}
+                onPlaying={() => {
+                    setIsPlaying(true);
+                    setIsLoading(false);
+                }}
             />
 
             {isLoading && !errorMsg && (
