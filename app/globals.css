@@ -2902,10 +2902,12 @@ body:has(.explore-all-overlay) {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 99999;
-    background: #000000;
+    background: rgba(0, 0, 0, 0.96);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     display: flex;
     flex-direction: column;
-    padding: 60px 80px;
+    padding: 50px 8vw;
     overflow-y: auto;
     overscroll-behavior: contain;
     animation: fadeIn 0.3s ease;
@@ -2932,7 +2934,12 @@ body:has(.explore-all-overlay) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
 .explore-header h1 {
     font-family: 'Outfit', sans-serif;
@@ -2966,26 +2973,83 @@ body:has(.explore-all-overlay) {
 .explore-close span {
     font-size: 1.6rem;
 }
+
+.explore-content-wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
 .explore-channels-grid {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 16px;
-    padding-bottom: 60px;
+    gap: 20px;
+    row-gap: 28px;
+    padding-bottom: 80px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-@media (max-width: 1350px) {
+/* Fissa le card all'interno della griglia per evitare sovrapposizioni o sfasamenti */
+.explore-channels-grid .now-card-wrapper {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-bottom: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.explore-channels-grid .now-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.explore-channels-grid .now-card-info-external {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 1400px) {
     .explore-channels-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+        row-gap: 24px;
     }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1050px) {
+    .explore-all-overlay {
+        padding: 36px 24px;
+    }
     .explore-channels-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+        row-gap: 22px;
     }
 }
 @media (max-width: 768px) {
+    .explore-all-overlay {
+        padding: 28px 16px;
+    }
     .explore-channels-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        row-gap: 18px;
+    }
+    .explore-header h1 {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .explore-channels-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        row-gap: 20px;
     }
 }
 .explore-card-wrapper {
@@ -4736,6 +4800,14 @@ body.in-iframe #center-play-pause-icon { font-size: 3.5rem; }
     .home-header-islands {
         max-width: 2200px;
         padding: 0 5vw;
+    }
+    .explore-header,
+    .explore-content-wrapper {
+        max-width: 2200px;
+    }
+    .explore-channels-grid {
+        gap: 24px;
+        row-gap: 32px;
     }
     .home-header {
         padding: 8px 20px;
