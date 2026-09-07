@@ -42,10 +42,15 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
 
     const handleNavClick = (filter) => {
         const cleanFilter = (filter === "home" || filter === "all") ? "all" : filter;
+        let targetPath = "/home";
+        if (cleanFilter === "sport") targetPath = "/sport";
+        else if (cleanFilter === "intrattenimento") targetPath = "/intrattenimento";
+        else if (cleanFilter === "eventi") targetPath = "/eventi";
+
         if (onFilterChange) {
             onFilterChange(cleanFilter);
         } else {
-            router.push(cleanFilter === "all" ? "/" : `/?tab=${cleanFilter}`);
+            router.push(targetPath);
         }
     };
 
@@ -91,38 +96,38 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
             <div className={`home-header-wrapper ${isNavHidden ? "nav-hidden" : ""}`} id="home-header-wrapper">
                 <div className="home-header">
                     <div className="header-left">
-                        <Link href="/">
+                        <Link href="/home">
                             <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="home-brand-logo" />
                         </Link>
                         <nav className="home-nav">
-                            <button
-                                type="button"
+                            <Link
+                                href="/home"
                                 className={`nav-link ${activeFilter === "all" ? "active" : ""}`}
-                                onClick={() => handleNavClick("all")}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
                             >
                                 <i className="fas fa-house" style={{ marginRight: "6px" }}></i>Home
-                            </button>
-                            <button
-                                type="button"
+                            </Link>
+                            <Link
+                                href="/sport"
                                 className={`nav-link ${activeFilter === "sport" ? "active" : ""}`}
-                                onClick={() => handleNavClick("sport")}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
                             >
                                 <i className="fas fa-trophy" style={{ marginRight: "6px" }}></i>Sport
-                            </button>
-                            <button
-                                type="button"
+                            </Link>
+                            <Link
+                                href="/intrattenimento"
                                 className={`nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
-                                onClick={() => handleNavClick("intrattenimento")}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
                             >
                                 <i className="fas fa-masks-theater" style={{ marginRight: "6px" }}></i>Intrattenimento
-                            </button>
-                            <button
-                                type="button"
+                            </Link>
+                            <Link
+                                href="/eventi"
                                 className={`nav-link ${activeFilter === "eventi" ? "active" : ""}`}
-                                onClick={() => handleNavClick("eventi")}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
                             >
                                 <i className="fas fa-ticket" style={{ marginRight: "6px" }}></i>Eventi
-                            </button>
+                            </Link>
                         </nav>
                         <div className="nav-separator"></div>
                         <button

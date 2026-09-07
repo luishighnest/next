@@ -387,14 +387,14 @@ function SkyContent() {
             {/* Header / Navbar */}
             <div className="home-header-wrapper" style={{ position: "relative", top: "14px", marginBottom: "20px" }}>
                 <div className="home-header">
-                    <Link href="/">
+                    <Link href="/home">
                         <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="brand-logo" />
                     </Link>
                     <nav className="sky-nav-links">
-                        <Link href="/" className="nav-link"><i className="fas fa-house"></i>Home</Link>
-                        <Link href="/?tab=sport" className={`nav-link ${currentSource === "sky.json" ? "active" : ""}`}><i className="fas fa-trophy"></i>Sport</Link>
-                        <Link href="/?tab=intrattenimento" className={`nav-link ${currentSource === "sky2.json" ? "active" : ""}`}><i className="fas fa-masks-theater"></i>Intrattenimento</Link>
-                        <Link href="/?tab=eventi" className="nav-link"><i className="fas fa-ticket"></i>Eventi</Link>
+                        <Link href="/home" className="nav-link"><i className="fas fa-house"></i>Home</Link>
+                        <Link href="/sport" className={`nav-link ${currentSource === "sky.json" ? "active" : ""}`}><i className="fas fa-trophy"></i>Sport</Link>
+                        <Link href="/intrattenimento" className={`nav-link ${currentSource === "sky2.json" ? "active" : ""}`}><i className="fas fa-masks-theater"></i>Intrattenimento</Link>
+                        <Link href="/eventi" className="nav-link"><i className="fas fa-ticket"></i>Eventi</Link>
                     </nav>
                 </div>
             </div>
