@@ -140,10 +140,9 @@ export default function VidstackShakaPlayer({
                         clearKeys: clearKeysObj
                     },
                     streaming: {
-                        bufferingGoal: 6,
+                        bufferingGoal: 10,
                         rebufferingGoal: 2,
-                        bufferBehind: 10,
-                        alwaysStreamText: false
+                        bufferBehind: 15
                     }
                 });
 
