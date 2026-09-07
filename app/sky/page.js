@@ -396,8 +396,8 @@ function SkyContent() {
 
     return (
         <div className="sky-app">
-            {/* Header / Navbar a 3 Isole */}
-            <Navbar activeFilter={currentSource === "sky.json" ? "sport" : "intrattenimento"} onSearch={setSearchQuery} />
+            {/* Header / Navbar a Isola Singola (Senza Logo e Senza Cerca/Impostazioni) */}
+            <Navbar activeFilter={currentSource === "sky.json" ? "sport" : "intrattenimento"} hideSideIslands={true} />
 
             {/* Layout Principale Sky Glass */}
             <main className="sky-main">

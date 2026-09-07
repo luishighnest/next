@@ -1699,6 +1699,23 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     width: 100%;
 }
 
+/* Modalità isola singola centrale su /sky e su /eventi/[slug] (Logo e Cerca/Impostazioni nascosti) */
+.home-header-islands.nav-single-island {
+    justify-content: center !important;
+}
+
+.home-header-islands.nav-single-island .nav-island-center {
+    position: relative !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 auto !important;
+}
+
+.home-header-islands.nav-single-island .nav-island-left,
+.home-header-islands.nav-single-island .nav-island-right {
+    display: none !important;
+}
+
 /* Base comune per le 3 isole flottanti in vetro scuro visionOS */
 .nav-island {
     pointer-events: all;
