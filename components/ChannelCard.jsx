@@ -129,7 +129,7 @@ function ChannelCard({ channel, categoryName, priority = false }) {
 
             <div className="now-card-info-external">
                 <span className="now-card-time-ext">
-                    {categoryLabel}
+                    {progInfo ? (progInfo.oraFine ? `${progInfo.oraInizio} - ${progInfo.oraFine}` : progInfo.oraInizio) : categoryLabel}
                 </span>
                 <span className="now-card-title-ext">
                     {progInfo ? progInfo.titolo : channel.title}
