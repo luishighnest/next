@@ -353,7 +353,8 @@ export default function EventoPlayerPage() {
                                 src={selectedSource.url}
                                 kidKey={selectedSource.kid_key}
                                 headers={{
-                                    ...(selectedSource.dazn_token ? { "dazn-token": selectedSource.dazn_token } : {})
+                                    ...(selectedSource.dazn_token ? { "dazn-token": selectedSource.dazn_token } : {}),
+                                    ...(selectedSource.ua ? { "user-agent": selectedSource.ua } : {})
                                 }}
                                 poster={channel?.image || ""}
                                 title={channel?.title || ""}

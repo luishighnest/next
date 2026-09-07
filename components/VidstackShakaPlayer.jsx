@@ -145,6 +145,8 @@ export default function VidstackShakaPlayer({
                     }
                 });
 
+                const userAgentParam = headers["user-agent"] ? `&ua=${encodeURIComponent(headers["user-agent"])}` : "";
+
                 // Gestione filtri di rete
                 player.getNetworkingEngine().registerRequestFilter((type, request) => {
                     const uri = request.uris[0];
@@ -168,7 +170,7 @@ export default function VidstackShakaPlayer({
                     // Per DAZN WARP o flussi protetti che richiedono header o bypass CORS
                     if (uri.includes("dazn") || headers["dazn-token"]) {
                         const tokenParam = headers["dazn-token"] ? `&dazn-token=${encodeURIComponent(headers["dazn-token"])}` : "";
-                        request.uris[0] = `/api/proxy?url=${encodeURIComponent(uri)}${tokenParam}`;
+                        request.uris[0] = `/api/proxy?url=${encodeURIComponent(uri)}${tokenParam}${userAgentParam}`;
                     }
                 });
 
@@ -189,10 +191,10 @@ export default function VidstackShakaPlayer({
                     playbackUrl = warpMatch[1] + (warpMatch[3] || "");
                 }
 
-                // Se playbackUrl è DAZN, carichiamo tramite proxy con il dazn-token
+                // Se playbackUrl è DAZN, carichiamo tramite proxy con il dazn-token e lo ua
                 if (playbackUrl.includes("dazn") || activeHeaders["dazn-token"]) {
                     const tokenParam = activeHeaders["dazn-token"] ? `&dazn-token=${encodeURIComponent(activeHeaders["dazn-token"])}` : "";
-                    playbackUrl = `/api/proxy?url=${encodeURIComponent(playbackUrl)}${tokenParam}`;
+                    playbackUrl = `/api/proxy?url=${encodeURIComponent(playbackUrl)}${tokenParam}${userAgentParam}`;
                 }
 
                 await player.load(playbackUrl);
@@ -245,6 +247,9 @@ export default function VidstackShakaPlayer({
                 className="vidstack-video"
                 poster={poster}
                 playsInline
+                muted={isMuted}
+                onCanPlay={() => setIsLoading(false)}
+                onLoadedData={() => setIsLoading(false)}
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}
                 onWaiting={() => setIsLoading(true)}
