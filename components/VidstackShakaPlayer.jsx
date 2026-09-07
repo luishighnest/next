@@ -108,14 +108,28 @@ export default function VidstackShakaPlayer({
                 player = new shaka.Player();
                 await player.attach(videoRef.current);
                 playerInstanceRef.current = player;
-
                 const clearKeysObj = {};
                 if (kidKey && typeof kidKey === "string") {
                     const pairs = kidKey.split(",");
                     pairs.forEach(pair => {
                         const [k, v] = pair.split(":");
                         if (k && v) {
-                            clearKeysObj[k.trim().toLowerCase()] = v.trim().toLowerCase();
+                            const kClean = k.trim().replace(/-/g, "").toLowerCase();
+                            const vClean = v.trim().replace(/-/g, "").toLowerCase();
+                            clearKeysObj[kClean] = vClean;
+
+                            // Supporto sia formato hex che standard base64url richiesto da EME spec
+                            if (kClean.length === 32 && vClean.length === 32) {
+                                try {
+                                    const toB64Url = (hex) => {
+                                        const bytes = new Uint8Array(hex.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+                                        let bin = "";
+                                        bytes.forEach(b => bin += String.fromCharCode(b));
+                                        return btoa(bin).replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+                                    };
+                                    clearKeysObj[toB64Url(kClean)] = toB64Url(vClean);
+                                } catch (e) {}
+                            }
                         }
                     });
                 }
@@ -131,17 +145,28 @@ export default function VidstackShakaPlayer({
                     }
                 });
 
+                // Gestione filtri di rete
                 player.getNetworkingEngine().registerRequestFilter((type, request) => {
                     const uri = request.uris[0];
                     if (!uri) return;
-                    // Evita assolutamente di ri-proxyficare una richiesta già proxyficata
+
+                    // Se la richiesta è già indirizzata al proxy locale, non toccarla
                     if (uri.includes("/api/proxy?url=") || uri.includes("%2Fapi%2Fproxy")) {
                         return;
                     }
                     if (uri.startsWith("/api/proxy") || uri.startsWith(window.location.origin + "/api/proxy")) {
                         return;
                     }
-                    if (uri.startsWith("http://") || uri.startsWith("https://")) {
+
+                    // CDN di Sky (pcdn07.cssott02.com, akamaized, ecc.) hanno Access-Control-Allow-Origin: * nativo!
+                    // Non inviarle al proxy server-side Vercel per evitare blocchi IP Akamai (403 Access Denied)
+                    const isSkyCdn = uri.includes("cssott02.com") || uri.includes("sky") || uri.includes("nowtv");
+                    if (isSkyCdn) {
+                        return;
+                    }
+
+                    // Per DAZN WARP o flussi protetti che richiedono header o bypass CORS
+                    if (uri.includes("dazn") || headers["dazn-token"]) {
                         const tokenParam = headers["dazn-token"] ? `&dazn-token=${encodeURIComponent(headers["dazn-token"])}` : "";
                         request.uris[0] = `/api/proxy?url=${encodeURIComponent(uri)}${tokenParam}`;
                     }
@@ -155,7 +180,22 @@ export default function VidstackShakaPlayer({
                     }
                 });
 
-                await player.load(src);
+                // Se l'URL è DAZN WARP ed è presente un JWT nell'URL (@eyJ...), estraiamo token e URL pulita
+                let playbackUrl = src;
+                let activeHeaders = { ...headers };
+                const warpMatch = typeof src === "string" && src.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
+                if (warpMatch) {
+                    activeHeaders["dazn-token"] = warpMatch[2];
+                    playbackUrl = warpMatch[1] + (warpMatch[3] || "");
+                }
+
+                // Se playbackUrl è DAZN, carichiamo tramite proxy con il dazn-token
+                if (playbackUrl.includes("dazn") || activeHeaders["dazn-token"]) {
+                    const tokenParam = activeHeaders["dazn-token"] ? `&dazn-token=${encodeURIComponent(activeHeaders["dazn-token"])}` : "";
+                    playbackUrl = `/api/proxy?url=${encodeURIComponent(playbackUrl)}${tokenParam}`;
+                }
+
+                await player.load(playbackUrl);
                 if (!isMounted) return;
 
                 setIsLoading(false);
