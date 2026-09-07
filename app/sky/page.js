@@ -473,8 +473,8 @@ function SkyContent() {
 
     return (
         <div className="sky-app">
-            {/* Header / Navbar a Isola Singola Centrale (Senza caselle laterali, identica alla Home per posizione e grandezza) */}
-            <Navbar activeFilter={currentSource === "sky.json" ? "sport" : "intrattenimento"} hideSideIslands={true} />
+            {/* Header / Navbar Identica alla Home per posizione, dimensione ed elementi */}
+            <Navbar activeFilter={currentSource === "sky.json" ? "sport" : "intrattenimento"} />
 
             {/* Layout Principale Sky Glass */}
             <main className="sky-main">
