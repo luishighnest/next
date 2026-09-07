@@ -94,42 +94,96 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
     return (
         <>
             <div className={`home-header-wrapper ${isNavHidden ? "nav-hidden" : ""}`} id="home-header-wrapper">
-                <div className="home-header">
-                    <div className="header-left">
-                        <Link href="/home">
+                <div className="home-header-islands">
+                    {/* ISOLA 1: Logo Brand Autonomo */}
+                    <div className="nav-island nav-island-left">
+                        <Link href="/home" className="brand-island-link" title="NMDZ - Home" aria-label="NMDZ Home">
                             <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="home-brand-logo" />
                         </Link>
-                        <nav className="home-nav">
-                            <Link
-                                href="/home"
-                                className={`nav-link ${activeFilter === "all" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
+                    </div>
+
+                    {/* ISOLA 2: Navigazione Principale a Capsule al Centro */}
+                    <nav className="nav-island nav-island-center" aria-label="Navigazione principale">
+                        <Link
+                            href="/home"
+                            className={`nav-link ${activeFilter === "all" ? "active" : ""}`}
+                            onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
+                        >
+                            <i className="fas fa-house"></i>
+                            <span className="nav-label">Home</span>
+                        </Link>
+                        <Link
+                            href="/sport"
+                            className={`nav-link ${activeFilter === "sport" ? "active" : ""}`}
+                            onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
+                        >
+                            <i className="fas fa-trophy"></i>
+                            <span className="nav-label">Sport</span>
+                        </Link>
+                        <Link
+                            href="/intrattenimento"
+                            className={`nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
+                            onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
+                        >
+                            <i className="fas fa-masks-theater"></i>
+                            <span className="nav-label">Intrattenimento</span>
+                        </Link>
+                        <Link
+                            href="/eventi"
+                            className={`nav-link ${activeFilter === "eventi" ? "active" : ""}`}
+                            onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
+                        >
+                            <i className="fas fa-ticket"></i>
+                            <span className="nav-label">Eventi</span>
+                        </Link>
+                    </nav>
+
+                    {/* ISOLA 3: Azioni Interattive (Cerca + Impostazioni) */}
+                    <div className="nav-island nav-island-right">
+                        <div className={`header-search-wrapper ${isSearchOpen ? "active" : ""}`} ref={searchWrapperRef}>
+                            <button
+                                type="button"
+                                className={`search-icon-btn ${isSearchOpen ? "hidden" : ""}`}
+                                onClick={handleOpenSearch}
+                                aria-label="Cerca"
+                                title="Cerca canali, eventi, guida TV"
                             >
-                                <i className="fas fa-house" style={{ marginRight: "6px" }}></i>Home
-                            </Link>
-                            <Link
-                                href="/sport"
-                                className={`nav-link ${activeFilter === "sport" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
-                            >
-                                <i className="fas fa-trophy" style={{ marginRight: "6px" }}></i>Sport
-                            </Link>
-                            <Link
-                                href="/intrattenimento"
-                                className={`nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
-                            >
-                                <i className="fas fa-masks-theater" style={{ marginRight: "6px" }}></i>Intrattenimento
-                            </Link>
-                            <Link
-                                href="/eventi"
-                                className={`nav-link ${activeFilter === "eventi" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
-                            >
-                                <i className="fas fa-ticket" style={{ marginRight: "6px" }}></i>Eventi
-                            </Link>
-                        </nav>
-                        <div className="nav-separator"></div>
+                                <i className="fas fa-magnifying-glass"></i>
+                            </button>
+
+                            <div className={`header-search-container ${isSearchOpen ? "open" : ""}`}>
+                                <span className="material-symbols-rounded search-icon">search</span>
+                                <input
+                                    ref={searchInputRef}
+                                    type="text"
+                                    className="home-search-input"
+                                    placeholder="Cerca canali, eventi..."
+                                    value={searchVal}
+                                    onChange={handleSearchInput}
+                                    onKeyDown={(e) => {
+                                        if (e.key === "Escape") handleCloseSearch();
+                                        if (e.key === "Enter" && !onSearch && searchVal.trim()) {
+                                            router.push(`/home?search=${encodeURIComponent(searchVal.trim())}`);
+                                        }
+                                    }}
+                                />
+                                {isSearchOpen && (
+                                    <button
+                                        type="button"
+                                        className="search-close-btn"
+                                        onClick={handleCloseSearch}
+                                        style={{ background: "transparent", border: "none", color: "rgba(255, 255, 255, 0.7)", cursor: "pointer", display: "flex", alignItems: "center", padding: "2px" }}
+                                        title="Chiudi ricerca (Esc)"
+                                        aria-label="Chiudi ricerca"
+                                    >
+                                        <span className="material-symbols-rounded" style={{ fontSize: "1.2rem" }}>close</span>
+                                    </button>
+                                )}
+                            </div>
+                        </div>
+
+                        <div className="island-separator"></div>
+
                         <button
                             type="button"
                             className="settings-icon-btn"
@@ -139,43 +193,6 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch }) {
                         >
                             <i className="fas fa-gear"></i>
                         </button>
-                    </div>
-
-                    <div className={`header-search-wrapper ${isSearchOpen ? "active" : ""}`} ref={searchWrapperRef}>
-                        <button
-                            type="button"
-                            className={`search-icon-btn ${isSearchOpen ? "hidden" : ""}`}
-                            onClick={handleOpenSearch}
-                            aria-label="Cerca"
-                            title="Cerca canali, eventi, guida TV"
-                        >
-                            <i className="fas fa-magnifying-glass"></i>
-                        </button>
-
-                        <div className={`header-search-container ${isSearchOpen ? "open" : ""}`}>
-                            <span className="material-symbols-rounded search-icon">search</span>
-                            <input
-                                ref={searchInputRef}
-                                type="text"
-                                className="home-search-input"
-                                placeholder="Cerca canali, eventi, guida TV..."
-                                value={searchVal}
-                                onChange={handleSearchInput}
-                                onKeyDown={(e) => { if (e.key === "Escape") handleCloseSearch(); }}
-                            />
-                            {isSearchOpen && (
-                                <button
-                                    type="button"
-                                    className="search-close-btn"
-                                    onClick={handleCloseSearch}
-                                    style={{ background: "transparent", border: "none", color: "rgba(255, 255, 255, 0.7)", cursor: "pointer", display: "flex", alignItems: "center", padding: "2px" }}
-                                    title="Chiudi ricerca (Esc)"
-                                    aria-label="Chiudi ricerca"
-                                >
-                                    <span className="material-symbols-rounded" style={{ fontSize: "1.2rem" }}>close</span>
-                                </button>
-                            )}
-                        </div>
                     </div>
                 </div>
             </div>

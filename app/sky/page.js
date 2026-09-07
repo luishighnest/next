@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef, useTransition, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
 import { fetchSecureJson } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
@@ -395,20 +396,8 @@ function SkyContent() {
 
     return (
         <div className="sky-app">
-            {/* Header / Navbar */}
-            <div className="home-header-wrapper" style={{ position: "relative", top: "14px", marginBottom: "20px" }}>
-                <div className="home-header">
-                    <Link href="/home">
-                        <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="brand-logo" />
-                    </Link>
-                    <nav className="sky-nav-links">
-                        <Link href="/home" className="nav-link"><i className="fas fa-house"></i>Home</Link>
-                        <Link href="/sport" className={`nav-link ${currentSource === "sky.json" ? "active" : ""}`}><i className="fas fa-trophy"></i>Sport</Link>
-                        <Link href="/intrattenimento" className={`nav-link ${currentSource === "sky2.json" ? "active" : ""}`}><i className="fas fa-masks-theater"></i>Intrattenimento</Link>
-                        <Link href="/eventi" className="nav-link"><i className="fas fa-ticket"></i>Eventi</Link>
-                    </nav>
-                </div>
-            </div>
+            {/* Header / Navbar a 3 Isole */}
+            <Navbar activeFilter={currentSource === "sky.json" ? "sport" : "intrattenimento"} onSearch={setSearchQuery} />
 
             {/* Layout Principale Sky Glass */}
             <main className="sky-main">

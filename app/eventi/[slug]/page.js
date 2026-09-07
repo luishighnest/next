@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import Link from "next/link";
+import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { matchSlug, getChannelSlug } from "@/lib/slug";
@@ -41,33 +41,6 @@ export default function EventoPlayerPage() {
         return [];
     });
     const [loading, setLoading] = useState(() => !channel);
-    const [isNavHidden, setIsNavHidden] = useState(false);
-
-    useEffect(() => {
-        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
-
-        function handleScroll() {
-            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-            if (currentScrollY <= 10) {
-                setIsNavHidden(false);
-            } else if (currentScrollY > lastScrollY && currentScrollY > 25) {
-                setIsNavHidden(true);
-            } else if (currentScrollY < lastScrollY) {
-                setIsNavHidden(false);
-            }
-            lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
-        }
-
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        window.addEventListener("touchmove", handleScroll, { passive: true });
-        window.addEventListener("wheel", handleScroll, { passive: true });
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("touchmove", handleScroll);
-            window.removeEventListener("wheel", handleScroll);
-        };
-    }, []);
 
     useEffect(() => {
         let isMounted = true;
@@ -270,21 +243,8 @@ export default function EventoPlayerPage() {
     };
 
     return (
-        <div style={{ backgroundColor: "#000000", minHeight: "100vh", color: "#ffffff", paddingBottom: "60px" }}>
-            {/* Header / Navbar identica (Nessun tasto selezionato in bianco) */}
-            <div className={`home-header-wrapper ${isNavHidden ? "nav-hidden" : ""}`} style={{ position: "sticky", top: "14px", zIndex: 9999, marginBottom: "20px" }}>
-                <div className="home-header">
-                    <Link href="/home">
-                        <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="brand-logo" />
-                    </Link>
-                    <nav className="sky-nav-links">
-                        <Link href="/home" className="nav-link"><i className="fas fa-house" style={{ marginRight: "6px" }}></i>Home</Link>
-                        <Link href="/sport" className="nav-link"><i className="fas fa-trophy" style={{ marginRight: "6px" }}></i>Sport</Link>
-                        <Link href="/intrattenimento" className="nav-link"><i className="fas fa-masks-theater" style={{ marginRight: "6px" }}></i>Intrattenimento</Link>
-                        <Link href="/eventi" className="nav-link"><i className="fas fa-ticket" style={{ marginRight: "6px" }}></i>Eventi</Link>
-                    </nav>
-                </div>
-            </div>
+        <div className="event-player-page" style={{ backgroundColor: "#000000", minHeight: "100vh", color: "#ffffff", paddingBottom: "60px" }}>
+            <Navbar activeFilter="eventi" />
 
             <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "0 16px" }}>
                 <div className="event-main-stage">

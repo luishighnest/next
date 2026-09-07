@@ -1664,100 +1664,162 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 .desktop-home.fade-out { opacity: 0; pointer-events: none; transform: scale(1.02); }
 
-/* Wrapper trasparente sopra il contenuto per "galleggiare" la navbar */
+/* ==========================================================================
+   ARCHITETTURA NAVBAR A 3 ISOLE SEPARATE (visionOS / iPadOS Style)
+   ========================================================================== */
+
+/* Wrapper fixed/sticky sopra il contenuto per far "galleggiare" le 3 isole */
 .home-header-wrapper {
     position: sticky;
-    top: 16px;
+    top: 18px;
     z-index: 200;
-    display: flex;
-    justify-content: center;
+    width: 100%;
     pointer-events: none;
-    margin-bottom: -80px; /* overlap so content starts behind */
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.25s ease;
+    margin-bottom: -80px; /* Overlap per far iniziare il contenuto dietro in trasparenza */
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
     will-change: transform, opacity;
 }
+
 .home-header-wrapper.nav-hidden {
     transform: translateY(-120%);
     opacity: 0;
     pointer-events: none !important;
 }
-.home-header { 
+
+/* Griglia / Contenitore delle 3 isole perfettamente allineato al contenuto (.home-content: max-width 1600px, padding 0 8vw) */
+.home-header-islands {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Base comune per le 3 isole flottanti in vetro scuro visionOS */
+.nav-island {
     pointer-events: all;
     display: inline-flex;
-    align-items: center; 
-    gap: 12px;
-    background: #000000;
-    border: 1px solid rgba(255,255,255,0.12);
+    align-items: center;
+    background: rgba(12, 12, 12, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 999px;
-    padding: 6px 16px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.4);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    width: auto;
-    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.65), 0 2px 10px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(28px) saturate(190%);
+    -webkit-backdrop-filter: blur(28px) saturate(190%);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
 }
-.home-brand-logo { 
-    height: 36px !important;
-    width: 36px !important;
-    min-width: 36px !important;
-    max-width: 36px !important;
-    border-radius: 10px !important;
-    object-fit: cover !important;
-    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
-    margin-right: 12px !important;
+
+.nav-island:hover {
+    border-color: rgba(255, 255, 255, 0.22);
+    box-shadow: 0 12px 42px rgba(0, 0, 0, 0.8), 0 2px 12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* ISOLA 1 (SINISTRA): Logo brand autonomo */
+.nav-island-left {
+    padding: 5px;
+    height: 48px;
     flex-shrink: 0;
-    cursor: pointer;
-    background: transparent !important;
-    border: none !important;
+}
+
+.brand-island-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    line-height: 0;
+    border-radius: 999px;
+}
+
+.brand-island-link .home-brand-logo {
+    height: 38px !important;
+    width: 38px !important;
+    min-width: 38px !important;
+    max-width: 38px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    margin: 0 !important;
     padding: 0 !important;
     display: block !important;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
-.header-left {
-    display: flex;
+
+.nav-island-left:hover .home-brand-logo {
+    transform: scale(1.08);
+}
+
+/* ISOLA 2 (CENTRO): Navigazione categorie pura, perfettamente al centro dello schermo */
+.nav-island-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 6px;
+    height: 48px;
+    display: inline-flex;
     align-items: center;
+    gap: 4px;
 }
-.home-nav {
-    display: flex;
-    gap: 2px;
-    align-items: center;
-}
-.nav-link {
+
+.nav-island-center .nav-link {
     padding: 7px 18px;
-    border-radius: 99px;
-    font-size: 0.9rem;
+    border-radius: 999px;
+    font-size: 0.88rem;
     font-weight: 500;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
     color: rgba(255, 255, 255, 0.65);
     white-space: nowrap;
-    transition: all 0.2s ease;
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
     border: 1px solid transparent;
     background: transparent;
     cursor: pointer;
     text-decoration: none;
     letter-spacing: 0.01em;
+    user-select: none;
 }
-.nav-link:hover {
+
+.nav-island-center .nav-link i {
+    font-size: 0.95rem;
+    line-height: 1;
+}
+
+.nav-island-center .nav-link:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
 }
-.nav-link.active {
+
+.nav-island-center .nav-link.active {
     color: #000000 !important;
     background: #ffffff !important;
     font-weight: 700;
     border-color: #ffffff !important;
-    box-shadow: 0 2px 12px rgba(255, 255, 255, 0.25);
+    box-shadow: 0 2px 14px rgba(255, 255, 255, 0.28);
 }
-.nav-separator {
-    width: 1px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 0 8px;
+
+.nav-island-center .nav-link.active i {
+    color: #000000 !important;
 }
-.settings-icon-btn {
+
+/* ISOLA 3 (DESTRA): Azioni interattive (Ricerca espandibile + Impostazioni) */
+.nav-island-right {
+    padding: 5px 8px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.nav-island-right .settings-icon-btn,
+.nav-island-right .search-icon-btn {
     width: 38px;
     height: 38px;
     border-radius: 50%;
@@ -1768,22 +1830,66 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s ease, color 0.2s ease, opacity 0.2s ease;
-    margin-right: 4px;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
     padding: 0;
     flex-shrink: 0;
+    box-sizing: border-box;
 }
-.settings-icon-btn:hover {
+
+.nav-island-right .settings-icon-btn:hover,
+.nav-island-right .search-icon-btn:hover {
     color: #ffffff;
     background: rgba(255, 255, 255, 0.1);
 }
-.settings-icon-btn .material-symbols-rounded,
-.settings-icon-btn i {
+
+.nav-island-right .settings-icon-btn:active,
+.nav-island-right .search-icon-btn:active {
+    transform: scale(0.92);
+}
+
+.nav-island-right .settings-icon-btn i,
+.nav-island-right .search-icon-btn i {
     font-size: 1.05rem;
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Separatore sottile interno all'isola destra tra Cerca e Impostazioni */
+.island-separator,
+.nav-island-right .nav-separator {
+    width: 1px;
+    height: 18px;
+    background: rgba(255, 255, 255, 0.16);
+    margin: 0 4px;
+    flex-shrink: 0;
+}
+
+/* Compatibilità con elementi legacy .home-header */
+.home-header { 
+    pointer-events: all;
+    display: inline-flex;
+    align-items: center; 
+    gap: 12px;
+    background: rgba(12, 12, 12, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    padding: 6px 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.4);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+.home-brand-logo { 
+    height: 36px !important;
+    width: 36px !important;
+    min-width: 36px !important;
+    max-width: 36px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: block !important;
 }
 
 /* === COLLAPSIBLE SEARCH === */
@@ -1930,6 +2036,96 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     transform: rotate(90deg);
+}
+
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES PER ARCHITETTURA A 3 ISOLE
+   ========================================================================== */
+@media (max-width: 1100px) {
+    .home-header-islands {
+        padding: 0 24px;
+    }
+    .nav-island-center .nav-link {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+    }
+    .header-search-container.open {
+        width: 230px;
+    }
+}
+
+@media (max-width: 860px) {
+    .home-header-islands {
+        padding: 0 16px;
+    }
+    .nav-island-center {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+    .nav-island-center .nav-link {
+        padding: 6px 11px;
+        font-size: 0.82rem;
+        gap: 5px;
+    }
+    .header-search-container.open {
+        width: 190px;
+    }
+}
+
+@media (max-width: 640px) {
+    .home-header-wrapper {
+        top: 10px;
+        margin-bottom: -60px;
+    }
+    .home-header-islands {
+        padding: 0 10px;
+        gap: 6px;
+    }
+    .nav-island-left {
+        height: 42px;
+        padding: 4px;
+    }
+    .brand-island-link .home-brand-logo {
+        height: 32px !important;
+        width: 32px !important;
+        min-width: 32px !important;
+        max-width: 32px !important;
+    }
+    .nav-island-center {
+        height: 42px;
+        padding: 4px 6px;
+        gap: 3px;
+    }
+    .nav-island-center .nav-link {
+        padding: 6px 9px;
+        font-size: 0.8rem;
+    }
+    /* Su mobile ultra-compatto visualizza solo le icone eleganti */
+    .nav-island-center .nav-label {
+        display: none;
+    }
+    .nav-island-center .nav-link i {
+        font-size: 1.05rem;
+        margin: 0 !important;
+    }
+    .nav-island-right {
+        height: 42px;
+        padding: 4px 6px;
+    }
+    .nav-island-right .settings-icon-btn,
+    .nav-island-right .search-icon-btn {
+        width: 32px;
+        height: 32px;
+    }
+    .nav-island-right .settings-icon-btn i,
+    .nav-island-right .search-icon-btn i {
+        font-size: 0.95rem;
+    }
+    .header-search-container.open {
+        width: 150px;
+        padding: 4px 6px 4px 10px;
+    }
 }
 
 .home-section { margin-bottom: 70px; position: relative; z-index: 10; }
@@ -2947,10 +3143,14 @@ body:has(.explore-all-overlay) {
     color: var(--text-primary);
 }
 
-:root.light-theme .home-header {
-    background: #ffffff;
+:root.light-theme .home-header,
+:root.light-theme .nav-island {
+    background: rgba(255, 255, 255, 0.88);
     border-color: rgba(0, 0, 0, 0.1);
     box-shadow: 0 8px 32px rgba(0,0,0,0.1), 0 2px 8px rgba(0,0,0,0.05);
+}
+:root.light-theme .island-separator {
+    background: rgba(0, 0, 0, 0.15);
 }
 
 :root.light-theme .home-search-input {
@@ -4516,6 +4716,10 @@ body.in-iframe #center-play-pause-icon { font-size: 3.5rem; }
         padding-left: 5vw;
         padding-right: 5vw;
     }
+    .home-header-islands {
+        max-width: 2200px;
+        padding: 0 5vw;
+    }
     .home-header {
         padding: 8px 20px;
     }
@@ -4681,91 +4885,11 @@ html {
             min-height: 100vh;
         }
 
-        /* Navbar centrata identica al sito */
-        .home-header-wrapper {
-            position: sticky;
-            top: 14px;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            pointer-events: none;
-            margin-bottom: 20px;
-            transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.25s ease;
-            will-change: transform, opacity;
-            padding: 0 12px;
-        }
-        .home-header-wrapper.nav-hidden {
-            transform: translateY(-150%) !important;
-            opacity: 0 !important;
-            pointer-events: none !important;
-        }
-        .home-header { 
-            pointer-events: all;
-            display: inline-flex;
-            align-items: center; 
-            gap: 8px;
-            height: 48px;
-            box-sizing: border-box;
-            background: #000000;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 999px;
-            padding: 0 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            width: auto;
-            max-width: fit-content;
-        }
-        .brand-logo { 
-            height: 34px !important;
-            width: 34px !important;
-            min-width: 34px !important;
-            max-width: 34px !important;
-            max-height: 34px !important;
-            border-radius: 8px !important;
-            object-fit: cover !important;
-            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
-            margin: 0 2px 0 0 !important;
-            flex-shrink: 0;
-            cursor: pointer;
-            display: block !important;
-        }
-        .sky-nav-links {
-            display: flex;
-            gap: 2px;
-            align-items: center;
-        }
-        .sky-nav-links .nav-link {
-            height: 34px;
-            box-sizing: border-box;
-            padding: 0 16px;
-            border-radius: 99px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif !important;
-            color: rgba(255, 255, 255, 0.65);
-            white-space: nowrap;
-            transition: all 0.2s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            border: 1px solid transparent;
-            background: transparent;
-            cursor: pointer;
-            text-decoration: none;
-            letter-spacing: 0.01em;
-        }
-        .sky-nav-links .nav-link:hover {
-            color: #ffffff;
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.12);
-        }
-        .sky-nav-links .nav-link.active {
-            color: #000000 !important;
-            background: #ffffff !important;
-            font-weight: 700;
-            border-color: #ffffff !important;
-            box-shadow: 0 2px 12px rgba(255, 255, 255, 0.25);
+        /* Navbar spacing per la pagina player evento */
+        .event-player-page .home-header-wrapper {
+            margin-bottom: 20px !important;
+            position: relative !important;
+            top: 14px !important;
         }
         
         /* Stage Player compatto e concentrato - Blocco unico coeso SENZA righe laterali */
@@ -5605,84 +5729,11 @@ html {
             background: #000000;
         }
 
-                /* Navbar centrata identica al sito */
-        .home-header-wrapper {
-            position: sticky;
-            top: 14px;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            pointer-events: none;
-            margin-bottom: 20px;
-            padding: 0 12px;
-        }
-        .home-header { 
-            pointer-events: all;
-            display: inline-flex;
-            align-items: center; 
-            gap: 8px;
-            height: 48px;
-            box-sizing: border-box;
-            background: #000000;
-            border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 999px;
-            padding: 0 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 2px 8px rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            width: auto;
-            max-width: fit-content;
-        }
-        .brand-logo { 
-            height: 34px !important;
-            width: 34px !important;
-            min-width: 34px !important;
-            max-width: 34px !important;
-            max-height: 34px !important;
-            border-radius: 8px !important;
-            object-fit: cover !important;
-            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
-            margin: 0 2px 0 0 !important;
-            flex-shrink: 0;
-            cursor: pointer;
-            display: block !important;
-        }
-        .sky-nav-links {
-            display: flex;
-            gap: 2px;
-            align-items: center;
-        }
-        .sky-nav-links .nav-link {
-            height: 34px;
-            box-sizing: border-box;
-            padding: 0 16px;
-            border-radius: 99px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif !important;
-            color: rgba(255, 255, 255, 0.65);
-            white-space: nowrap;
-            transition: all 0.2s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            border: 1px solid transparent;
-            background: transparent;
-            cursor: pointer;
-            text-decoration: none;
-            letter-spacing: 0.01em;
-        }
-        .sky-nav-links .nav-link:hover {
-            color: #ffffff;
-            background: rgba(255, 255, 255, 0.08);
-            border-color: rgba(255, 255, 255, 0.12);
-        }
-        .sky-nav-links .nav-link.active {
-            color: #000000 !important;
-            background: #ffffff !important;
-            font-weight: 700;
-            border-color: #ffffff !important;
-            box-shadow: 0 2px 12px rgba(255, 255, 255, 0.25);
+        /* Navbar spacing per Sky App */
+        .sky-app .home-header-wrapper {
+            margin-bottom: 14px !important;
+            position: relative !important;
+            top: 14px !important;
         }
 
         .sky-main {
