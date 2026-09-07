@@ -31,8 +31,8 @@
     outline: none;
 }
 
-::selection { background: transparent; }
-::-moz-selection { background: transparent; }
+::selection { background: rgba(255, 255, 255, 0.25); color: #ffffff; }
+::-moz-selection { background: rgba(255, 255, 255, 0.25); color: #ffffff; }
 
 button, a, input, select, textarea {
     -webkit-tap-highlight-color: transparent !important;
@@ -2023,6 +2023,19 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     font-size: 1.05rem;
     font-family: inherit;
     font-weight: 400;
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    cursor: text !important;
+}
+
+.search-fullbar-input::selection {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+.search-fullbar-input::-moz-selection {
+    background: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
 }
 
 .search-fullbar-input::placeholder {
