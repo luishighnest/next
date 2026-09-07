@@ -334,6 +334,18 @@ export default function EventoPlayerPage() {
                             style={{ display: "block", width: "100%", height: "100%", border: "none", background: "#000000", transition: "opacity 0.5s ease-in-out" }}
                         />
                     </div>
+                    {/* DEBUG TEMPORANEO - rimuovere dopo fix */}
+                    {getIframeUrl() && (
+                        <div style={{ background: "#111", color: "#aaa", fontSize: "11px", padding: "8px 12px", borderRadius: "8px", marginTop: "8px", wordBreak: "break-all" }}>
+                            <b style={{ color: "#fff" }}>🔗 URL generata:</b><br />
+                            <a href={getIframeUrl()} target="_blank" rel="noreferrer" style={{ color: "#4af", textDecoration: "underline" }}>{getIframeUrl()}</a>
+                        </div>
+                    )}
+                    {!getIframeUrl() && (
+                        <div style={{ background: "#300", color: "#f88", fontSize: "11px", padding: "8px 12px", borderRadius: "8px", marginTop: "8px" }}>
+                            ⚠️ URL vuota — sorgente non caricata (selectedSource: {JSON.stringify(selectedSource)})
+                        </div>
+                    )}
 
                     <div className="event-deck">
                         <div className="event-deck-left">
