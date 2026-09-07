@@ -6967,7 +6967,7 @@ body:has(.sky-app) {
 }
 
 .event-main-stage {
-    max-width: 860px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 0 !important;
     display: flex;
@@ -6976,9 +6976,10 @@ body:has(.sky-app) {
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.95), 0 0 40px rgba(255, 255, 255, 0.03) !important;
     background: #000000 !important;
     box-sizing: border-box;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
 }
 
 .player-wrapper {
@@ -6997,15 +6998,15 @@ body:has(.sky-app) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
-    background: linear-gradient(180deg, rgba(16, 16, 22, 0.98) 0%, rgba(10, 10, 14, 0.99) 100%);
+    gap: 18px;
+    background: rgba(14, 14, 18, 0.94) !important;
     border: none !important;
     border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
     border-radius: 0;
-    padding: 14px 20px;
+    padding: 16px 24px;
     box-sizing: border-box;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
     position: relative;
     margin: 0 !important;
 }
@@ -7013,7 +7014,7 @@ body:has(.sky-app) {
 .event-deck-left {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 16px;
     min-width: 0;
     flex: 1;
 }
