@@ -223,10 +223,10 @@ export default function SettingsModal({ onClose }) {
                                         value={settings.pollIntervalSec}
                                         onChange={(e) => handleChange("pollIntervalSec", parseInt(e.target.value, 10))}
                                     >
-                                        <option value="3">3 Secondi (Ultra-Reattivo)</option>
-                                        <option value="5">5 Secondi (Predefinito)</option>
-                                        <option value="10">10 Secondi (Bilanciato)</option>
-                                        <option value="20">20 Secondi (Risparmio Rete)</option>
+                                        <option value="10">10 Secondi (Reattivo)</option>
+                                        <option value="15">15 Secondi (Consigliato - Ottimizzato)</option>
+                                        <option value="30">30 Secondi (Fluido & Risparmio Rete)</option>
+                                        <option value="60">60 Secondi (Massima Efficienza)</option>
                                     </select>
                                 </div>
 

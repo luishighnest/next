@@ -273,7 +273,7 @@ export default function Navbar({
                             onClick={(e) => {
                                 e.preventDefault();
                                 handleCloseSearch();
-                                router.push("/home");
+                                handleNavClick("all");
                             }}
                         >
                             <img src="/logos/nmdz_monogram.png" alt="Logo" className="brand-wordmark-symbol" />

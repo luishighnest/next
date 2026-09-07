@@ -194,15 +194,17 @@ function HomeViewContent({ defaultTab = "all" }) {
                             localStorage.setItem("nmdz_cached_sections", JSON.stringify(data.sections));
                         } catch (e) {}
 
-                        setCategories(prev => {
-                            if (prev && prev.length === data.sections.length) {
-                                try {
-                                    if (JSON.stringify(prev) === JSON.stringify(data.sections)) {
-                                        return prev;
-                                    }
-                                } catch (e) {}
-                            }
-                            return data.sections;
+                        React.startTransition(() => {
+                            setCategories(prev => {
+                                if (prev && prev.length === data.sections.length) {
+                                    try {
+                                        if (JSON.stringify(prev) === JSON.stringify(data.sections)) {
+                                            return prev;
+                                        }
+                                    } catch (e) {}
+                                }
+                                return data.sections;
+                            });
                         });
                         setLoading(false);
                     }
@@ -223,8 +225,10 @@ function HomeViewContent({ defaultTab = "all" }) {
             if (!isMounted) return;
             clearTimeout(pollTimeout);
             const tech = getTechSettings();
-            const baseInterval = (tech.pollIntervalSec || 5) * 1000;
-            const delay = failureCount === 0 ? baseInterval : Math.min(30000, baseInterval * Math.pow(1.5, failureCount));
+            // Ottimizzazione intervallo di polling minimo a 15s per evitare frame-drop durante l'uso
+            const configuredInterval = tech.pollIntervalSec || 15;
+            const baseInterval = Math.max(10, configuredInterval) * 1000;
+            const delay = failureCount === 0 ? baseInterval : Math.min(45000, baseInterval * Math.pow(1.5, failureCount));
             pollTimeout = setTimeout(() => {
                 if (document.visibilityState === "visible") {
                     loadData();
