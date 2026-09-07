@@ -29,9 +29,15 @@ export default function Navbar({
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
 
-    // Su tutte le sezioni (Home, Sky, Evento), la navbar è IDENTICA con le sue 3 isole
+    // In Sky ed Evento le caselle in alto a sinistra (logo) e in alto a destra (cerca/impostazioni) non devono esserci
+    const isEventDetailPage = pathname ? (
+        (pathname.startsWith("/eventi/") && pathname !== "/eventi") ||
+        pathname.startsWith("/evento/")
+    ) : false;
     const isSkyPage = pathname ? pathname.startsWith("/sky") : false;
-    const shouldHideSides = hideSideIslands === true;
+    const shouldHideSides = hideSideIslands !== undefined
+        ? hideSideIslands
+        : (isSkyPage || isEventDetailPage);
 
     const lastScrollYRef = useRef(0);
 

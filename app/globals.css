@@ -1714,10 +1714,10 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .home-header-islands.nav-single-island .nav-island-center {
-    position: relative !important;
-    left: auto !important;
-    transform: none !important;
-    margin: 0 auto !important;
+    position: absolute !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin: 0 !important;
 }
 
 .home-header-islands.nav-single-island .nav-island-left,
