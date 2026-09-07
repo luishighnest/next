@@ -8,7 +8,6 @@ import { matchSlug, getChannelSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
 
 const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
-const DEFAULT_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
 
 function getInitialSource(ch) {
     if (!ch) return null;
@@ -18,7 +17,9 @@ function getInitialSource(ch) {
             name: "Standard",
             isWarp: false,
             url: ch.url,
-            kid_key: ch.kid_key || ""
+            kid_key: ch.kid_key || "",
+            ua: ch.ua || "",
+            dazn_token: ch.dazn_token || ""
         };
     }
     return null;
@@ -265,13 +266,14 @@ export default function EventoPlayerPage() {
         if (!selectedSource || !selectedSource.url) return "";
         const tech = getTechSettings();
         const extId = tech.extensionId || DEFAULT_EXT_ID;
-        const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
+        // Usa extension:// (non chrome-extension://) per compatibilità con il player WARP
+        const extPrefix = `extension://${extId}/pages/player.html#`;
 
         const rawUrl = selectedSource.url.trim();
 
         // Se l'URL è già una URL di estensione, sostituisci solo l'ID e usala direttamente
         if (rawUrl.startsWith("chrome-extension://") || rawUrl.startsWith("extension://")) {
-            return rawUrl.replace(/^(chrome-extension|extension):\/\/[^/]+/, `chrome-extension://${extId}`);
+            return rawUrl.replace(/^(chrome-extension|extension):\/\/[^/]+/, `extension://${extId}`);
         }
 
         // DAZN WARP: URL tipo https://cdn.dazn.com/@JWT/dash/stream.mpd?p=web
@@ -281,7 +283,6 @@ export default function EventoPlayerPage() {
 
         const warpMatch = rawUrl.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
         if (warpMatch) {
-            // Estrai il JWT dal path e ricostruisci l'URL senza di esso
             daznToken = warpMatch[2];
             mpdUrl = warpMatch[1] + (warpMatch[3] || "");
         }
@@ -296,21 +297,30 @@ export default function EventoPlayerPage() {
             try { ckParam = "ck=" + btoa(JSON.stringify(ckObj)); } catch(e) {}
         }
 
-        // Costruisci headers con user-agent, referer, origin e dazn-token
+        // Usa ESCLUSIVAMENTE lo user agent dell'evento estratto (se presente nel JSON)
+        const rawUa = selectedSource.ua ? String(selectedSource.ua).trim() : "";
+
+        // Costruisci headers con user-agent (solo se fornito dall'evento), referer, origin e dazn-token
         let headersParam = "";
-        const rawUa = tech.customUserAgent || selectedSource.ua || DEFAULT_UA;
         try {
             const headersObj = {
-                "user-agent": rawUa,
                 "referer": "https://www.dazn.com/",
                 "origin": "https://www.dazn.com"
             };
+            if (rawUa) {
+                headersObj["user-agent"] = rawUa;
+            }
             if (daznToken) {
                 headersObj["dazn-token"] = daznToken;
             }
             headersParam = "headers=" + btoa(unescape(encodeURIComponent(JSON.stringify(headersObj))));
         } catch(e) {
-            try { headersParam = "headers=" + btoa(JSON.stringify({ "user-agent": rawUa })); } catch(e2) {}
+            try { 
+                const fallbackObj = { "referer": "https://www.dazn.com/", "origin": "https://www.dazn.com" };
+                if (rawUa) fallbackObj["user-agent"] = rawUa;
+                if (daznToken) fallbackObj["dazn-token"] = daznToken;
+                headersParam = "headers=" + btoa(JSON.stringify(fallbackObj)); 
+            } catch(e2) {}
         }
 
         const extraParams = [ckParam, headersParam].filter(Boolean);

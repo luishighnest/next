@@ -289,6 +289,8 @@ export async function GET(request) {
                             logo: ev.image || "/logos/dazn.png",
                             image: ev.image || "",
                             ora: timeStr,
+                            ua: ev.ua || "",
+                            dazn_token: ev.dazn_token || "",
                             sources: [sourceItem],
                             isCustom: true,
                             isTestJson: true,

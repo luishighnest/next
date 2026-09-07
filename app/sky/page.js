@@ -9,7 +9,6 @@ import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
 
 const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
-const DEFAULT_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
 
 const SKY_CID_MAP = {
     "skysportuno": "sksportuno.png", "skysport24": "sksport24.png", "skysportarena": "sksportarena.png",
@@ -57,8 +56,10 @@ function buildExtUrl(ch) {
             try { parts.push("ck=" + btoa(JSON.stringify(ckObj))); } catch(e) {}
         }
     }
-    const uaVal = tech.customUserAgent || DEFAULT_UA;
-    try { parts.push("headers=" + btoa(JSON.stringify({ "User-Agent": uaVal }))); } catch(e) {}
+    const uaVal = tech.customUserAgent || "";
+    if (uaVal) {
+        try { parts.push("headers=" + btoa(JSON.stringify({ "User-Agent": uaVal }))); } catch(e) {}
+    }
     const sep = baseUrl.includes("?") ? "&" : "?";
     return extPrefix + baseUrl + sep + parts.join("&");
 }
