@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
-import { getChannelLogoUrl } from "@/lib/epg";
+import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { matchSlug, getChannelSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
 
@@ -359,13 +359,22 @@ export default function EventoPlayerPage() {
 
                     <div className="event-deck">
                         <div className="event-deck-left">
-                            <div className="event-logo-box">
-                                <img
-                                    className="event-channel-logo"
-                                    src={channel?.logo || "/logos/dazn.png"}
-                                    alt="Logo"
-                                />
-                            </div>
+                            {(() => {
+                                const progInfo = getCurrentProgramInfo(channel?.epg);
+                                const coverImg = channel?.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
+                                const displayImg = coverImg || channel?.logo || "/logos/dazn.png";
+                                const isFullCover = Boolean(coverImg);
+
+                                return (
+                                    <div className={`event-logo-box ${isFullCover ? "has-cover" : ""}`}>
+                                        <img
+                                            className={`event-channel-logo ${isFullCover ? "is-cover-img" : ""}`}
+                                            src={displayImg}
+                                            alt={channel?.title || "Logo"}
+                                        />
+                                    </div>
+                                );
+                            })()}
                             <div className="event-details">
                                 <div className="event-meta-row">
                                     <span className="live-badge"><span className="dot"></span>LIVE</span>
