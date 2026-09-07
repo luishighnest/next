@@ -260,7 +260,7 @@ export default function EventoPlayerPage() {
         };
     }, [slug]);
 
-    // Costruzione URL Iframe per estensione Chrome identico ad evento.html con parametri tecnici
+    // Costruzione URL Iframe per estensione Chrome
     const getIframeUrl = () => {
         if (!selectedSource || !selectedSource.url) return "";
         const tech = getTechSettings();
@@ -269,15 +269,21 @@ export default function EventoPlayerPage() {
 
         const rawUrl = selectedSource.url.trim();
 
-        // Se l'URL è già una URL di estensione (chrome-extension:// o extension://) usala direttamente
-        // Sostituisci solo l'ID dell'estensione se necessario
+        // Se l'URL è già una URL di estensione, sostituisci solo l'ID e usala direttamente
         if (rawUrl.startsWith("chrome-extension://") || rawUrl.startsWith("extension://")) {
-            // Sostituisce l'ID estensione con quello configurato dall'utente nelle impostazioni
-            const normalized = rawUrl.replace(
-                /^(chrome-extension|extension):\/\/[^/]+/,
-                `chrome-extension://${extId}`
-            );
-            return normalized;
+            return rawUrl.replace(/^(chrome-extension|extension):\/\/[^/]+/, `chrome-extension://${extId}`);
+        }
+
+        // DAZN WARP: URL tipo https://cdn.dazn.com/@JWT/dash/stream.mpd?p=web
+        // L'estensione si aspetta URL PULITA + JWT come dazn-token negli headers
+        let mpdUrl = rawUrl;
+        let daznToken = selectedSource.dazn_token || "";
+
+        const warpMatch = rawUrl.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
+        if (warpMatch) {
+            // Estrai il JWT dal path e ricostruisci l'URL senza di esso
+            daznToken = warpMatch[2];
+            mpdUrl = warpMatch[1] + (warpMatch[3] || "");
         }
 
         // Costruisci ck= dal kid_key (formato "kid:key")
@@ -290,36 +296,26 @@ export default function EventoPlayerPage() {
             try { ckParam = "ck=" + btoa(JSON.stringify(ckObj)); } catch(e) {}
         }
 
-        // Costruisci headers=: supporta sia stringa UA che oggetto JSON completo
+        // Costruisci headers con user-agent, referer, origin e dazn-token
         let headersParam = "";
         const rawUa = tech.customUserAgent || selectedSource.ua || DEFAULT_UA;
         try {
-            // Se ua è già un oggetto JSON con header multipli, usalo direttamente
-            let headersObj;
-            if (typeof rawUa === "string" && rawUa.trim().startsWith("{")) {
-                headersObj = JSON.parse(rawUa);
-            } else {
-                headersObj = { "User-Agent": rawUa };
-            }
-            // Aggiungi sempre referer DAZN se non presente
-            if (!headersObj["referer"] && !headersObj["Referer"]) {
-                headersObj["referer"] = "https://www.dazn.com/";
-            }
-            if (!headersObj["origin"] && !headersObj["Origin"]) {
-                headersObj["origin"] = "https://www.dazn.com";
-            }
-            // Aggiungi dazn-token se disponibile
-            if (selectedSource.dazn_token && !headersObj["dazn-token"]) {
-                headersObj["dazn-token"] = selectedSource.dazn_token;
+            const headersObj = {
+                "user-agent": rawUa,
+                "referer": "https://www.dazn.com/",
+                "origin": "https://www.dazn.com"
+            };
+            if (daznToken) {
+                headersObj["dazn-token"] = daznToken;
             }
             headersParam = "headers=" + btoa(unescape(encodeURIComponent(JSON.stringify(headersObj))));
         } catch(e) {
-            try { headersParam = "headers=" + btoa(JSON.stringify({ "User-Agent": rawUa })); } catch(e2) {}
+            try { headersParam = "headers=" + btoa(JSON.stringify({ "user-agent": rawUa })); } catch(e2) {}
         }
 
         const extraParams = [ckParam, headersParam].filter(Boolean);
-        const sep = rawUrl.includes("?") ? "&" : "?";
-        return extPrefix + rawUrl + (extraParams.length ? sep + extraParams.join("&") : "");
+        const sep = mpdUrl.includes("?") ? "&" : "?";
+        return extPrefix + mpdUrl + (extraParams.length ? sep + extraParams.join("&") : "");
     };
 
     return (
