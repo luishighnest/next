@@ -274,7 +274,7 @@ function HomeViewContent({ defaultTab = "all" }) {
     }).filter(sec => sec.channels.length > 0);
 
     return (
-        <div className="desktop-home" style={{ display: "block", minHeight: "100vh" }}>
+        <div className="desktop-home" style={{ display: "block", minHeight: "125vh" }}>
             <Navbar
                 activeFilter={filter}
                 onFilterChange={handleFilterChange}
@@ -329,7 +329,7 @@ function HomeViewContent({ defaultTab = "all" }) {
 
 export default function HomeView({ defaultTab = "all" }) {
     return (
-        <Suspense fallback={<div className="desktop-home" style={{ display: "block", minHeight: "100vh" }} />}>
+        <Suspense fallback={<div className="desktop-home" style={{ display: "block", minHeight: "125vh" }} />}>
             <HomeViewContent defaultTab={defaultTab} />
         </Suspense>
     );

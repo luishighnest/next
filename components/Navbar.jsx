@@ -26,29 +26,51 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch, hideSid
 
     useEffect(() => {
         let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+        let ticking = false;
 
-        function handleScroll() {
+        function updateScroll() {
             const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
             if (currentScrollY <= 10) {
                 setIsNavHidden(false);
-            } else if (currentScrollY > lastScrollY && currentScrollY > 25) {
+            } else if (currentScrollY > lastScrollY && currentScrollY > 15) {
                 setIsNavHidden(true);
             } else if (currentScrollY < lastScrollY) {
                 setIsNavHidden(false);
             }
             lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+            ticking = false;
         }
 
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        window.addEventListener("touchmove", handleScroll, { passive: true });
-        window.addEventListener("wheel", handleScroll, { passive: true });
+        function onScroll() {
+            if (!ticking) {
+                window.requestAnimationFrame(updateScroll);
+                ticking = true;
+            }
+        }
+
+        function onWheel(e) {
+            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
+            if (e.deltaY > 10 && currentScrollY > 15) {
+                setIsNavHidden(true);
+            } else if (e.deltaY < -8) {
+                setIsNavHidden(false);
+            }
+        }
+
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("wheel", onWheel, { passive: true });
+        window.addEventListener("touchmove", onScroll, { passive: true });
 
         return () => {
-            window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("touchmove", handleScroll);
-            window.removeEventListener("wheel", handleScroll);
+            window.removeEventListener("scroll", onScroll);
+            window.removeEventListener("wheel", onWheel);
+            window.removeEventListener("touchmove", onScroll);
         };
     }, []);
+
+    useEffect(() => {
+        setIsNavHidden(false);
+    }, [pathname, activeFilter]);
 
     const handleNavClick = (filter) => {
         const cleanFilter = (filter === "home" || filter === "all") ? "all" : filter;

@@ -1634,7 +1634,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .desktop-home {
     position: absolute;
     top: 0; left: 0; right: 0;
-    min-height: 100vh;
+    min-height: 125vh;
     background: #000000;
     z-index: 10000;
     color: #fff;
@@ -4974,11 +4974,22 @@ html {
             min-height: 100vh;
         }
 
-        /* Navbar spacing per la pagina player evento */
+        /* Navbar sticky e a scomparsa sullo scroll per la pagina player evento */
         .event-player-page .home-header-wrapper {
+            position: sticky !important;
+            top: 16px !important;
+            z-index: 200 !important;
             margin-bottom: 20px !important;
-            position: relative !important;
-            top: 14px !important;
+            width: 100% !important;
+            pointer-events: none !important;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease !important;
+            will-change: transform, opacity;
+        }
+        
+        .event-player-page .home-header-wrapper.nav-hidden {
+            transform: translateY(-120%) !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
         }
         
         /* Stage Player compatto e concentrato - Blocco unico coeso SENZA righe laterali */
