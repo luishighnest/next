@@ -11,15 +11,21 @@ export async function GET(request) {
             return new NextResponse("Missing url parameter", { status: 400 });
         }
 
+        const isDazn = targetUrl.includes("dazn");
         const headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
-            "Referer": "https://www.dazn.com/",
-            "Origin": "https://www.dazn.com"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
         };
 
-        const daznToken = searchParams.get("dazn-token");
-        if (daznToken) {
-            headers["dazn-token"] = daznToken;
+        if (isDazn) {
+            headers["Referer"] = "https://www.dazn.com/";
+            headers["Origin"] = "https://www.dazn.com";
+            const daznToken = searchParams.get("dazn-token");
+            if (daznToken) {
+                headers["dazn-token"] = daznToken;
+            }
+        } else {
+            headers["Referer"] = "https://www.nowtv.it/";
+            headers["Origin"] = "https://www.nowtv.it";
         }
 
         const res = await fetch(targetUrl, {

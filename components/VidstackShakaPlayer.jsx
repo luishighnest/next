@@ -133,12 +133,17 @@ export default function VidstackShakaPlayer({
 
                 player.getNetworkingEngine().registerRequestFilter((type, request) => {
                     const uri = request.uris[0];
-                    if (uri && !uri.startsWith("/api/proxy") && !uri.startsWith(window.location.origin + "/api/proxy")) {
-                        // Se è uno stream DAZN o un manifest remoto, passa attraverso il proxy interno
-                        if (uri.includes("dazn") || uri.includes("sky") || uri.includes(".mpd")) {
-                            const tokenParam = headers["dazn-token"] ? `&dazn-token=${encodeURIComponent(headers["dazn-token"])}` : "";
-                            request.uris[0] = `/api/proxy?url=${encodeURIComponent(uri)}${tokenParam}`;
-                        }
+                    if (!uri) return;
+                    // Evita assolutamente di ri-proxyficare una richiesta già proxyficata
+                    if (uri.includes("/api/proxy?url=") || uri.includes("%2Fapi%2Fproxy")) {
+                        return;
+                    }
+                    if (uri.startsWith("/api/proxy") || uri.startsWith(window.location.origin + "/api/proxy")) {
+                        return;
+                    }
+                    if (uri.startsWith("http://") || uri.startsWith("https://")) {
+                        const tokenParam = headers["dazn-token"] ? `&dazn-token=${encodeURIComponent(headers["dazn-token"])}` : "";
+                        request.uris[0] = `/api/proxy?url=${encodeURIComponent(uri)}${tokenParam}`;
                     }
                 });
 
