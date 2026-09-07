@@ -1745,38 +1745,60 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     box-shadow: 0 12px 42px rgba(0, 0, 0, 0.8), 0 2px 12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
-/* ISOLA 1 (SINISTRA): Logo brand autonomo */
-.nav-island-left {
-    padding: 5px;
-    height: 48px;
-    flex-shrink: 0;
-}
-
-.brand-island-link {
-    display: flex;
+/* ==========================================================================
+   BRAND WORDMARK VETTORIALE A FILO SINISTRO (Modello tv.apple.com)
+   ========================================================================== */
+.apple-tv-brand-wordmark {
+    position: absolute;
+    left: 48px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    gap: 9px;
     text-decoration: none;
-    line-height: 0;
-    border-radius: 999px;
-}
-
-.brand-island-link .home-brand-logo {
-    height: 38px !important;
-    width: 38px !important;
-    min-width: 38px !important;
-    max-width: 38px !important;
-    border-radius: 50% !important;
-    object-fit: cover !important;
-    margin: 0 !important;
+    pointer-events: auto;
+    cursor: pointer;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
     padding: 0 !important;
-    display: block !important;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    height: 48px;
+    transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s ease;
+    z-index: 10002;
+    user-select: none;
 }
 
-.nav-island-left:hover .home-brand-logo {
-    transform: scale(1.08);
+.apple-tv-brand-wordmark:hover {
+    opacity: 0.72;
+    transform: translateY(-50%) scale(0.98);
+}
+
+.apple-tv-brand-wordmark:active {
+    opacity: 0.48;
+}
+
+.brand-wordmark-symbol {
+    height: 24px;
+    width: 24px;
+    min-width: 24px;
+    max-width: 24px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.6));
+}
+
+.brand-wordmark-text {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Inter, sans-serif !important;
+    font-size: 1.16rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    line-height: 1;
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 /* ISOLA 2 (CENTRO): Navigazione categorie pura, perfettamente al centro dello schermo */
@@ -2238,6 +2260,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
    RESPONSIVE MEDIA QUERIES PER ARCHITETTURA A 3 ISOLE
    ========================================================================== */
 @media (max-width: 1100px) {
+    .apple-tv-brand-wordmark {
+        left: 24px;
+    }
     .home-header-islands {
         padding: 0 24px;
     }
@@ -2251,6 +2276,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 @media (max-width: 860px) {
+    .apple-tv-brand-wordmark {
+        left: 18px;
+    }
     .home-header-islands {
         padding: 0 16px;
     }
@@ -2274,19 +2302,21 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
         top: 10px;
         margin-bottom: -60px;
     }
+    .apple-tv-brand-wordmark {
+        left: 12px;
+        gap: 6px;
+    }
+    .brand-wordmark-symbol {
+        height: 20px;
+        width: 20px;
+        min-width: 20px;
+    }
+    .brand-wordmark-text {
+        font-size: 0.95rem;
+    }
     .home-header-islands {
         padding: 0 10px;
         gap: 6px;
-    }
-    .nav-island-left {
-        height: 42px;
-        padding: 4px;
-    }
-    .brand-island-link .home-brand-logo {
-        height: 32px !important;
-        width: 32px !important;
-        min-width: 32px !important;
-        max-width: 32px !important;
     }
     .nav-island-center {
         height: 42px;

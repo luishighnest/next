@@ -253,15 +253,16 @@ export default function Navbar({
                         </div>
                     </div>
                 ) : (
-                    <div className={`home-header-islands ${shouldHideSides ? "nav-single-island" : ""}`}>
-                        {/* ISOLA 1: Logo Brand Autonomo (Scompare su /sky e su /eventi/[slug]) */}
+                    <>
+                        {/* Wordmark Vettoriale Stile tv.apple.com (Trasparente, a filo sinistro, senza cornice o pallino) */}
                         {!shouldHideSides && (
-                            <div className="nav-island nav-island-left">
-                                <Link href="/home" className="brand-island-link" title="NMDZ - Home" aria-label="NMDZ Home">
-                                    <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="home-brand-logo" />
-                                </Link>
-                            </div>
+                            <Link href="/home" className="apple-tv-brand-wordmark" title="NMDZ - Home" aria-label="NMDZ Home">
+                                <img src="/logos/nmdz_monogram.png" alt="NMDZ" className="brand-wordmark-symbol" />
+                                <span className="brand-wordmark-text">NMDZ</span>
+                            </Link>
                         )}
+
+                        <div className={`home-header-islands ${shouldHideSides ? "nav-single-island" : ""}`}>
 
                         {/* ISOLA 2: Navigazione Principale a Capsule al Centro */}
                         <nav className="nav-island nav-island-center" aria-label="Navigazione principale">
@@ -326,6 +327,7 @@ export default function Navbar({
                             </div>
                         )}
                     </div>
+                </>
                 )}
             </div>
 
