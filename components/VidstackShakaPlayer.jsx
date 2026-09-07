@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function VidstackShakaPlayer({
@@ -132,14 +132,13 @@ export default function VidstackShakaPlayer({
                 });
 
                 player.getNetworkingEngine().registerRequestFilter((type, request) => {
-                    if (headers && typeof headers === "object") {
-                        Object.keys(headers).forEach(headerKey => {
-                            const val = headers[headerKey];
-                            const lower = headerKey.toLowerCase();
-                            if (val && lower !== "user-agent" && lower !== "referer" && lower !== "origin") {
-                                request.headers[headerKey] = val;
-                            }
-                        });
+                    const uri = request.uris[0];
+                    if (uri && !uri.startsWith("/api/proxy") && !uri.startsWith(window.location.origin + "/api/proxy")) {
+                        // Se è uno stream DAZN o un manifest remoto, passa attraverso il proxy interno
+                        if (uri.includes("dazn") || uri.includes("sky") || uri.includes(".mpd")) {
+                            const tokenParam = headers["dazn-token"] ? `&dazn-token=${encodeURIComponent(headers["dazn-token"])}` : "";
+                            request.uris[0] = `/api/proxy?url=${encodeURIComponent(uri)}${tokenParam}`;
+                        }
                     }
                 });
 
