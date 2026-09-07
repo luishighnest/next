@@ -484,8 +484,8 @@ function SkyContent() {
 
     return (
         <div className="sky-app">
-            {/* Header / Navbar Identica alla Home per posizione, dimensione ed elementi */}
-            <Navbar activeFilter={currentSource === "sky.json" ? "sport" : "intrattenimento"} />
+            {/* Header / Navbar Identica alla Home ma neutra senza evidenziare filtri catalogo */}
+            <Navbar activeFilter={null} />
 
             {/* Layout Principale Sky Glass */}
             <main className="sky-main">
