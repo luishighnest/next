@@ -108,6 +108,8 @@ export default function VidstackShakaPlayer({
                 player = new shaka.Player();
                 await player.attach(videoRef.current);
                 playerInstanceRef.current = player;
+
+                // Oggetto ClearKey per Shaka: solo formato hex 32 caratteri pulito
                 const clearKeysObj = {};
                 if (kidKey && typeof kidKey === "string") {
                     const pairs = kidKey.split(",");
@@ -116,33 +118,37 @@ export default function VidstackShakaPlayer({
                         if (k && v) {
                             const kClean = k.trim().replace(/-/g, "").toLowerCase();
                             const vClean = v.trim().replace(/-/g, "").toLowerCase();
-                            clearKeysObj[kClean] = vClean;
-
-                            // Supporto sia formato hex che standard base64url richiesto da EME spec
                             if (kClean.length === 32 && vClean.length === 32) {
-                                try {
-                                    const toB64Url = (hex) => {
-                                        const bytes = new Uint8Array(hex.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
-                                        let bin = "";
-                                        bytes.forEach(b => bin += String.fromCharCode(b));
-                                        return btoa(bin).replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
-                                    };
-                                    clearKeysObj[toB64Url(kClean)] = toB64Url(vClean);
-                                } catch (e) {}
+                                clearKeysObj[kClean] = vClean;
                             }
                         }
                     });
                 }
 
-                // Shaka Player supporta direttamente la mappa { [hexKid]: hexKey } per clearKeys
+                // Configurazione Shaka: ClearKey DRM, DASH Live settings con tolleranza drift e buffer
                 player.configure({
                     drm: {
                         clearKeys: clearKeysObj
                     },
+                    manifest: {
+                        dash: {
+                            ignoreMinBufferTime: true,
+                            autoCorrectDrift: true
+                        }
+                    },
                     streaming: {
-                        bufferingGoal: 10,
+                        bufferingGoal: 4,
                         rebufferingGoal: 2,
-                        bufferBehind: 15
+                        bufferBehind: 10,
+                        safeSeekOffset: 8,
+                        stallEnabled: true
+                    }
+                });
+
+                // Listener buffering per garantire che lo spinner scompaia non appena il buffer è pronto
+                player.addEventListener("buffering", (event) => {
+                    if (!event.buffering && isMounted) {
+                        setIsLoading(false);
                     }
                 });
 
@@ -220,6 +226,11 @@ export default function VidstackShakaPlayer({
                         }
                     });
                 }
+
+                // Timeout di sicurezza per sbloccare l'overlay di caricamento
+                setTimeout(() => {
+                    if (isMounted) setIsLoading(false);
+                }, 4000);
             } catch (err) {
                 console.error("Errore init Shaka:", err);
                 if (isMounted) {
