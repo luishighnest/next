@@ -115,23 +115,100 @@ function SkyContent() {
     });
 
     const initialChannels = memorySkyChannels[currentSource] || [];
-    const [channels, setChannels] = useState(initialChannels);
+    const [channels, setChannels] = useState(() => {
+        if (initialChannels.length > 0) return initialChannels;
+        if (typeof window !== "undefined") {
+            try {
+                const cached = localStorage.getItem("nmdz_cached_sections");
+                if (cached) {
+                    const parsed = JSON.parse(cached);
+                    if (Array.isArray(parsed)) {
+                        const skySecs = parsed.filter(s => s.title?.includes("Sky") || s.channels?.some(c => c.isSky));
+                        const flat = [];
+                        skySecs.forEach(s => (s.channels || []).forEach(c => flat.push(c)));
+                        if (flat.length > 0) return flat;
+                    }
+                }
+            } catch(e) {}
+        }
+        return [];
+    });
     const [guideData, setGuideData] = useState(() => memorySkyGuide || []);
     const [activeTab, setActiveTab] = useState("all");
     const [searchQuery, setSearchQuery] = useState("");
-    const [selectedChannel, setSelectedChannel] = useState(null);
-    const [loading, setLoading] = useState(() => initialChannels.length === 0);
+    const [selectedChannel, setSelectedChannel] = useState(() => {
+        if (typeof window !== "undefined") {
+            try {
+                const stored = sessionStorage.getItem("nmdz_skyChannel");
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    if (!chParam || matchSlug(parsed, chParam)) {
+                        return parsed;
+                    }
+                }
+                const cached = localStorage.getItem("nmdz_cached_sections");
+                if (cached) {
+                    const parsed = JSON.parse(cached);
+                    if (Array.isArray(parsed)) {
+                        for (const sec of parsed) {
+                            for (const c of (sec.channels || [])) {
+                                if (chParam && matchSlug(c, chParam)) {
+                                    return c;
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch(e) {}
+        }
+        return null;
+    });
+    const [loading, setLoading] = useState(() => {
+        if (typeof window !== "undefined") {
+            try {
+                const stored = sessionStorage.getItem("nmdz_skyChannel");
+                if (stored) return false;
+            } catch(e) {}
+        }
+        return initialChannels.length === 0;
+    });
 
     const playerWrapRef = useRef(null);
     const playerZoneRef = useRef(null);
     const nowRowRef = useRef(null);
+
+    // Reagisci immediatamente al cambio di chParam
+    useEffect(() => {
+        if (!chParam) return;
+        if (selectedChannel && matchSlug(selectedChannel, chParam)) return;
+
+        if (typeof window !== "undefined") {
+            try {
+                const stored = sessionStorage.getItem("nmdz_skyChannel");
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    if (matchSlug(parsed, chParam)) {
+                        setSelectedChannel(parsed);
+                        return;
+                    }
+                }
+            } catch(e) {}
+        }
+
+        if (channels && channels.length > 0) {
+            const found = channels.find(c => matchSlug(c, chParam));
+            if (found) setSelectedChannel(found);
+        }
+    }, [chParam, channels]);
 
     // Carica canali e guida tv con aggiornamento automatico silenzioso tramite API ottimizzata
     useEffect(() => {
         let isMounted = true;
         async function loadSourceChannels(isInitial = false) {
             if (isInitial && (!memorySkyChannels[currentSource] || memorySkyChannels[currentSource].length === 0)) {
-                setLoading(true);
+                if (!selectedChannel) {
+                    setLoading(true);
+                }
             }
             try {
                 const ts = Date.now();
@@ -522,7 +599,7 @@ function SkyContent() {
                 <section className="sky-right">
                     <div className="sky-player-zone" ref={playerZoneRef}>
                         <div className="sky-player-wrap" ref={playerWrapRef}>
-                            {loading ? (
+                            {loading && !selectedChannel ? (
                                 <div className="sky-loader">
                                     <div className="sky-spinner"></div>
                                     <span className="sky-loader-text">Caricamento canali Sky...</span>

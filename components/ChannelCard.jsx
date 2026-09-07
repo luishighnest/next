@@ -1,6 +1,6 @@
 "use client";
-import React, { useCallback } from "react";
-import { useRouter } from "next/navigation";
+import React from "react";
+import Link from "next/link";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { getChannelSlug } from "@/lib/slug";
 
@@ -15,7 +15,6 @@ function getDynamicColor(str) {
 }
 
 function ChannelCard({ channel, priority = false }) {
-    const router = useRouter();
     const slug = getChannelSlug(channel);
     const progInfo = getCurrentProgramInfo(channel.epg);
     const cardImgUrl = channel.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
@@ -37,32 +36,24 @@ function ChannelCard({ channel, priority = false }) {
     let fallbackTime = channel.ora ? `Ore ${channel.ora}` : (channel.provider || "Live");
     if (isDazn1Channel) fallbackTime = channel.group || "Live TV";
 
-    const handlePrefetch = useCallback(() => {
-        try {
-            router.prefetch(targetHref);
-        } catch(e) {}
-    }, [router, targetHref]);
-
     const handleClick = () => {
         try {
             if (isSky) {
                 sessionStorage.setItem("nmdz_skyChannel", JSON.stringify(channel));
             } else {
                 sessionStorage.setItem("daznEventChannel", JSON.stringify(channel));
+                sessionStorage.setItem("daznCustomChannel", JSON.stringify(channel));
             }
         } catch(e) {}
-        router.push(targetHref);
     };
 
     return (
-        <div
+        <Link
+            href={targetHref}
+            prefetch={true}
             className="now-card-wrapper home-card-mode"
             onClick={handleClick}
-            onMouseEnter={handlePrefetch}
-            onFocus={handlePrefetch}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") handleClick(); }}
+            style={{ textDecoration: "none", color: "inherit", WebkitTapHighlightColor: "transparent" }}
         >
             <div className={`now-card ${!hasImage ? "now-card-no-image" : ""}`}>
                 {hasImage ? (
@@ -129,7 +120,7 @@ function ChannelCard({ channel, priority = false }) {
                     {progInfo ? progInfo.titolo : channel.title}
                 </span>
             </div>
-        </div>
+        </Link>
     );
 }
 

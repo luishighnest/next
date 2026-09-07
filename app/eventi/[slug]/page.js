@@ -9,6 +9,20 @@ import { matchSlug, getChannelSlug } from "@/lib/slug";
 const EXT = "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#";
 const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
 
+function getInitialSource(ch) {
+    if (!ch) return null;
+    if (Array.isArray(ch.sources) && ch.sources.length > 0) return ch.sources[0];
+    if (ch.url) {
+        return {
+            name: "Standard",
+            isWarp: false,
+            url: ch.url,
+            kid_key: ch.kid_key || ""
+        };
+    }
+    return null;
+}
+
 export default function EventoPlayerPage() {
     const params = useParams();
     const slug = params?.slug ? String(params.slug).toLowerCase() : "";
@@ -21,11 +35,22 @@ export default function EventoPlayerPage() {
                     const parsed = JSON.parse(stored);
                     if (matchSlug(parsed, slug)) return parsed;
                 }
+                const cached = localStorage.getItem("nmdz_cached_sections");
+                if (cached) {
+                    const parsed = JSON.parse(cached);
+                    if (Array.isArray(parsed)) {
+                        for (const sec of parsed) {
+                            for (const c of (sec.channels || [])) {
+                                if (matchSlug(c, slug)) return c;
+                            }
+                        }
+                    }
+                }
             } catch(e) {}
         }
         return null;
     });
-    const [selectedSource, setSelectedSource] = useState(null);
+    const [selectedSource, setSelectedSource] = useState(() => getInitialSource(channel));
     const [relatedSections, setRelatedSections] = useState(() => {
         if (typeof window !== "undefined") {
             try {
@@ -44,7 +69,21 @@ export default function EventoPlayerPage() {
 
     useEffect(() => {
         let isMounted = true;
-        setSelectedSource(null);
+
+        // Se lo slug cambia (es. navigazione o click su correlati), aggiorna subito da sessionStorage
+        if (typeof window !== "undefined") {
+            try {
+                const stored = sessionStorage.getItem("daznEventChannel") || sessionStorage.getItem("daznCustomChannel");
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    if (matchSlug(parsed, slug)) {
+                        setChannel(parsed);
+                        setSelectedSource(getInitialSource(parsed));
+                        setLoading(false);
+                    }
+                }
+            } catch(e) {}
+        }
 
         async function loadEvent() {
             let foundCh = null;
@@ -58,6 +97,7 @@ export default function EventoPlayerPage() {
                         foundCh = parsed;
                         if (isMounted) {
                             setChannel(foundCh);
+                            setSelectedSource(prev => prev && prev.url ? prev : getInitialSource(foundCh));
                             setLoading(false);
                         }
                     }
@@ -65,8 +105,7 @@ export default function EventoPlayerPage() {
             } catch(e) {}
 
             try {
-                const ts = Date.now();
-                const res = await fetch(`/api/canali?t=${ts}`, { cache: "no-store" })
+                const res = await fetch(`/api/canali`)
                     .then(r => r.json())
                     .catch(() => null);
 
@@ -127,7 +166,7 @@ export default function EventoPlayerPage() {
                     });
 
                     setSelectedSource(prevSource => {
-                        if (prevSource) {
+                        if (prevSource && prevSource.url) {
                             // L'utente ha già scelto una sorgente (es. Standard o WARP): NON sovrascriverla MAI al refresh o polling!
                             const stillMatches = foundCh.sources?.find(s =>
                                 (s.name === prevSource.name) ||
@@ -140,14 +179,10 @@ export default function EventoPlayerPage() {
                                 return stillMatches;
                             }
                         }
-                        // Solo al primo caricamento assoluto seleziona la prima sorgente
-                        return (foundCh.sources && foundCh.sources.length > 0) ? foundCh.sources[0] : {
-                            name: "Standard",
-                            isWarp: false,
-                            url: foundCh.url,
-                            kid_key: foundCh.kid_key
-                        };
+                        // Solo se non abbiamo ancora una sorgente valida
+                        return getInitialSource(foundCh);
                     });
+                    setLoading(false);
                 }
 
                 // Costruisci le sezioni correlate
