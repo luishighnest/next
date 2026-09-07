@@ -247,15 +247,11 @@ export default function Navbar({
                         </div>
                     </div>
                 ) : (
-                    <>
-                        {/* Logo Vettoriale Stile tv.apple.com (SOLO il logo, trasparente, a filo sinistro, senza testo) */}
-                        {!shouldHideSides && (
-                            <Link href="/home" className="apple-tv-brand-wordmark" title="NMDZ - Home" aria-label="NMDZ Home">
-                                <img src="/logos/nmdz_monogram.png" alt="Logo" className="brand-wordmark-symbol" />
-                            </Link>
-                        )}
-
-                        <div className={`home-header-islands ${shouldHideSides ? "nav-single-island" : ""}`}>
+                    <div className="home-header-islands">
+                        {/* Logo Vettoriale Stile tv.apple.com (SOLO il logo, trasparente, a filo sinistro) */}
+                        <Link href="/home" className="apple-tv-brand-wordmark" title="NMDZ - Home" aria-label="NMDZ Home">
+                            <img src="/logos/nmdz_monogram.png" alt="Logo" className="brand-wordmark-symbol" />
+                        </Link>
 
                         {/* ISOLA 2: Navigazione Principale a Capsule al Centro */}
                         <nav className="nav-island nav-island-center" aria-label="Navigazione principale">
@@ -292,10 +288,8 @@ export default function Navbar({
                                 <span className="nav-label">Eventi</span>
                             </Link>
                         </nav>
-                    </div>
 
-                    {/* Azioni Interattive Destra Stile tv.apple.com (Cerca + Impostazioni posizionate a filo destro) */}
-                    {!shouldHideSides && (
+                        {/* Azioni Interattive Destra Stile tv.apple.com (Cerca + Impostazioni a filo destro) */}
                         <div className="nav-island nav-island-right">
                             <button
                                 type="button"
@@ -319,8 +313,7 @@ export default function Navbar({
                                 <i className="fas fa-gear"></i>
                             </button>
                         </div>
-                    )}
-                </>
+                    </div>
                 )}
             </div>
 

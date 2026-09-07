@@ -1682,6 +1682,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     top: 18px;
     left: 0;
     right: 0;
+    height: 48px;
     z-index: 10001;
     width: 100%;
     pointer-events: none;
@@ -1695,17 +1696,18 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     pointer-events: none !important;
 }
 
-/* Griglia / Contenitore delle 3 isole perfettamente allineato al contenuto (.home-content: max-width 1600px, padding 0 8vw) */
+/* Griglia / Contenitore delle 3 isole a tutta larghezza con padding simmetrico stile Apple TV */
 .home-header-islands {
-    max-width: 1600px;
+    width: 100%;
+    max-width: 100%;
+    height: 48px;
     margin: 0 auto;
-    padding: 0 8vw;
+    padding: 0 48px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
     box-sizing: border-box;
-    width: 100%;
 }
 
 /* Modalità isola singola centrale su /sky e su /eventi/[slug] (Logo e Cerca/Impostazioni nascosti) */
@@ -1749,13 +1751,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
    BRAND WORDMARK VETTORIALE A FILO SINISTRO (Modello tv.apple.com)
    ========================================================================== */
 .apple-tv-brand-wordmark {
-    position: absolute;
-    left: 48px;
-    top: 50%;
-    transform: translateY(-50%);
     display: inline-flex;
     align-items: center;
-    gap: 9px;
+    justify-content: center;
     text-decoration: none;
     pointer-events: auto;
     cursor: pointer;
@@ -1769,11 +1767,12 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s ease;
     z-index: 10002;
     user-select: none;
+    flex-shrink: 0;
 }
 
 .apple-tv-brand-wordmark:hover {
     opacity: 0.72;
-    transform: translateY(-50%) scale(0.98);
+    transform: scale(0.96);
 }
 
 .apple-tv-brand-wordmark:active {
@@ -1794,7 +1793,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .nav-island-center {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 5px 6px;
     height: 48px;
     display: inline-flex;
@@ -1846,16 +1846,14 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 /* ISOLA 3 (DESTRA): Azioni interattive (Ricerca + Impostazioni) a filo destro simmetrico stile Apple TV */
 .nav-island-right {
-    position: absolute;
-    right: 48px;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
     padding: 5px 8px;
     height: 48px;
     display: inline-flex;
     align-items: center;
     gap: 2px;
     flex-shrink: 0;
+    margin-left: auto;
     z-index: 10002;
 }
 
@@ -2253,12 +2251,6 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
    RESPONSIVE MEDIA QUERIES PER ARCHITETTURA A 3 ISOLE
    ========================================================================== */
 @media (max-width: 1100px) {
-    .apple-tv-brand-wordmark {
-        left: 24px;
-    }
-    .nav-island-right {
-        right: 24px;
-    }
     .home-header-islands {
         padding: 0 24px;
     }
@@ -2272,19 +2264,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 @media (max-width: 860px) {
-    .apple-tv-brand-wordmark {
-        left: 18px;
-    }
-    .nav-island-right {
-        right: 18px;
-    }
     .home-header-islands {
         padding: 0 16px;
-    }
-    .nav-island-center {
-        position: static;
-        transform: none;
-        margin: 0 auto;
     }
     .nav-island-center .nav-link {
         padding: 6px 11px;
@@ -2301,16 +2282,12 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
         top: 10px;
         margin-bottom: -60px;
     }
-    .apple-tv-brand-wordmark {
-        left: 12px;
-    }
     .brand-wordmark-symbol {
-        height: 24px;
-        width: 24px;
-        min-width: 24px;
+        height: 22px;
+        width: 22px;
+        min-width: 22px;
     }
     .nav-island-right {
-        right: 12px;
         height: 42px;
         padding: 4px 6px;
     }
