@@ -267,6 +267,20 @@ export default function EventoPlayerPage() {
         const extId = tech.extensionId || DEFAULT_EXT_ID;
         const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
 
+        const rawUrl = selectedSource.url.trim();
+
+        // Se l'URL è già una URL di estensione (chrome-extension:// o extension://) usala direttamente
+        // Sostituisci solo l'ID dell'estensione se necessario
+        if (rawUrl.startsWith("chrome-extension://") || rawUrl.startsWith("extension://")) {
+            // Sostituisce l'ID estensione con quello configurato dall'utente nelle impostazioni
+            const normalized = rawUrl.replace(
+                /^(chrome-extension|extension):\/\/[^/]+/,
+                `chrome-extension://${extId}`
+            );
+            return normalized;
+        }
+
+        // Costruisci ck= dal kid_key (formato "kid:key")
         let ckParam = "";
         const rawKey = selectedSource.kid_key || "";
         if (rawKey && rawKey.includes(":")) {
@@ -275,13 +289,37 @@ export default function EventoPlayerPage() {
             ckObj[parts[0].trim()] = parts[1].trim();
             try { ckParam = "ck=" + btoa(JSON.stringify(ckObj)); } catch(e) {}
         }
+
+        // Costruisci headers=: supporta sia stringa UA che oggetto JSON completo
         let headersParam = "";
-        const uaVal = tech.customUserAgent || selectedSource.ua || DEFAULT_UA;
-        try { headersParam = "headers=" + btoa(JSON.stringify({ "User-Agent": uaVal })); } catch(e) {}
+        const rawUa = tech.customUserAgent || selectedSource.ua || DEFAULT_UA;
+        try {
+            // Se ua è già un oggetto JSON con header multipli, usalo direttamente
+            let headersObj;
+            if (typeof rawUa === "string" && rawUa.trim().startsWith("{")) {
+                headersObj = JSON.parse(rawUa);
+            } else {
+                headersObj = { "User-Agent": rawUa };
+            }
+            // Aggiungi sempre referer DAZN se non presente
+            if (!headersObj["referer"] && !headersObj["Referer"]) {
+                headersObj["referer"] = "https://www.dazn.com/";
+            }
+            if (!headersObj["origin"] && !headersObj["Origin"]) {
+                headersObj["origin"] = "https://www.dazn.com";
+            }
+            // Aggiungi dazn-token se disponibile
+            if (selectedSource.dazn_token && !headersObj["dazn-token"]) {
+                headersObj["dazn-token"] = selectedSource.dazn_token;
+            }
+            headersParam = "headers=" + btoa(unescape(encodeURIComponent(JSON.stringify(headersObj))));
+        } catch(e) {
+            try { headersParam = "headers=" + btoa(JSON.stringify({ "User-Agent": rawUa })); } catch(e2) {}
+        }
 
         const extraParams = [ckParam, headersParam].filter(Boolean);
-        const sep = selectedSource.url.includes("?") ? "&" : "?";
-        return extPrefix + selectedSource.url + (extraParams.length ? sep + extraParams.join("&") : "");
+        const sep = rawUrl.includes("?") ? "&" : "?";
+        return extPrefix + rawUrl + (extraParams.length ? sep + extraParams.join("&") : "");
     };
 
     return (

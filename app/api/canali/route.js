@@ -286,7 +286,7 @@ export async function GET(request) {
                             url: ev.mpd || ev.url || "",
                             kid_key: ev.key || ev.kid_key || "",
                             provider: ev.provider || "DAZN",
-                            logo: "/logos/dazn.png",
+                            logo: ev.image || "/logos/dazn.png",
                             image: ev.image || "",
                             ora: timeStr,
                             sources: [sourceItem],
