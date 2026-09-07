@@ -13,10 +13,34 @@ export default function EventoPlayerPage() {
     const params = useParams();
     const slug = params?.slug ? String(params.slug).toLowerCase() : "";
 
-    const [channel, setChannel] = useState(null);
+    const [channel, setChannel] = useState(() => {
+        if (typeof window !== "undefined") {
+            try {
+                const stored = sessionStorage.getItem("daznEventChannel") || sessionStorage.getItem("daznCustomChannel");
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    if (matchSlug(parsed, slug)) return parsed;
+                }
+            } catch(e) {}
+        }
+        return null;
+    });
     const [selectedSource, setSelectedSource] = useState(null);
-    const [relatedSections, setRelatedSections] = useState([]);
-    const [loading, setLoading] = useState(true);
+    const [relatedSections, setRelatedSections] = useState(() => {
+        if (typeof window !== "undefined") {
+            try {
+                const cached = localStorage.getItem("nmdz_cached_sections");
+                if (cached) {
+                    const parsed = JSON.parse(cached);
+                    if (Array.isArray(parsed)) {
+                        return parsed.filter(s => s.channels?.some(c => c.isTestJson) || s.navbar === "eventi");
+                    }
+                }
+            } catch(e) {}
+        }
+        return [];
+    });
+    const [loading, setLoading] = useState(() => !channel);
     const [isNavHidden, setIsNavHidden] = useState(false);
 
     useEffect(() => {
@@ -59,6 +83,10 @@ export default function EventoPlayerPage() {
                     const parsed = JSON.parse(stored);
                     if (matchSlug(parsed, slug)) {
                         foundCh = parsed;
+                        if (isMounted) {
+                            setChannel(foundCh);
+                            setLoading(false);
+                        }
                     }
                 }
             } catch(e) {}

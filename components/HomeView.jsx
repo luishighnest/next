@@ -8,12 +8,34 @@ import ChannelCard from "@/components/ChannelCard";
 
 const VALID_TABS = ["sport", "intrattenimento", "eventi"];
 
+// Cache in memoria a livello di modulo: persiste tra le navigazioni dell'app cliente (0ms overhead)
+let memorySections = null;
+
+function getCachedSections() {
+    if (memorySections && Array.isArray(memorySections) && memorySections.length > 0) {
+        return memorySections;
+    }
+    if (typeof window !== "undefined") {
+        try {
+            const stored = localStorage.getItem("nmdz_cached_sections");
+            if (stored) {
+                const parsed = JSON.parse(stored);
+                if (Array.isArray(parsed) && parsed.length > 0) {
+                    memorySections = parsed;
+                    return parsed;
+                }
+            }
+        } catch (e) {}
+    }
+    return [];
+}
+
 function HomeViewContent({ defaultTab = "all" }) {
     const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
 
-    // Determina il tab iniziale in base a defaultTab, pathname o searchParams legacy
+    // Determina il tab iniziale in base a pathname, defaultTab o searchParams legacy
     const getInitialFilter = () => {
         if (pathname === "/sport") return "sport";
         if (pathname === "/intrattenimento") return "intrattenimento";
@@ -26,28 +48,40 @@ function HomeViewContent({ defaultTab = "all" }) {
         return "all";
     };
 
+    const initialSections = getCachedSections();
+    const [categories, setCategories] = useState(initialSections);
+    const [loading, setLoading] = useState(() => initialSections.length === 0);
     const [filter, setFilter] = useState(getInitialFilter);
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
-    const [categories, setCategories] = useState([]);
-    const [loading, setLoading] = useState(true);
     const [exploreData, setExploreData] = useState(null);
 
-    // SWR: Instant hydration da localStorage per caricamento istantaneo (0.0s)
+    // Idratazione istantanea da memoria / localStorage all'avvio se ancora non presente
     useEffect(() => {
-        try {
-            const cached = localStorage.getItem("nmdz_cached_sections");
-            if (cached) {
-                const parsed = JSON.parse(cached);
-                if (Array.isArray(parsed) && parsed.length > 0) {
-                    setCategories(parsed);
-                    setLoading(false);
-                }
+        if (categories.length === 0) {
+            const cached = getCachedSections();
+            if (cached && cached.length > 0) {
+                setCategories(cached);
+                setLoading(false);
             }
-        } catch (e) {}
+        }
+    }, [categories.length]);
+
+    // Sincronizza il filtro istantaneamente sui pulsanti back/forward del browser
+    useEffect(() => {
+        const handlePopState = () => {
+            const p = window.location.pathname;
+            if (p === "/sport") setFilter("sport");
+            else if (p === "/intrattenimento") setFilter("intrattenimento");
+            else if (p === "/eventi") setFilter("eventi");
+            else if (p === "/home" || p === "/") setFilter("all");
+        };
+
+        window.addEventListener("popstate", handlePopState);
+        return () => window.removeEventListener("popstate", handlePopState);
     }, []);
 
-    // Sincronizza il filtro se il pathname cambia (es. pulsanti back/forward del browser)
+    // Sincronizza il filtro al variare del pathname Next.js
     useEffect(() => {
         if (pathname === "/sport") setFilter("sport");
         else if (pathname === "/intrattenimento") setFilter("intrattenimento");
@@ -99,6 +133,7 @@ function HomeViewContent({ defaultTab = "all" }) {
         }
     }, [exploreData]);
 
+    // Cambio tab ultra-fluido: aggiorna lo stato a 0ms e sincronizza l'URL senza smontare la pagina
     const handleFilterChange = (targetTab) => {
         const cleanTab = (targetTab === "home" || targetTab === "all") ? "all" : targetTab;
         setFilter(cleanTab);
@@ -109,27 +144,33 @@ function HomeViewContent({ defaultTab = "all" }) {
         else if (cleanTab === "eventi") targetPath = "/eventi";
 
         if (pathname !== targetPath) {
-            router.push(targetPath, { scroll: false });
+            window.history.pushState(null, "", targetPath);
         }
     };
 
-    // Polling resiliente con Exponential Backoff e sincronizzazione all'evento online
+    // Caricamento resiliente in background (Stale-While-Revalidate): MAI rimettere loading=true se ci sono già dati
     useEffect(() => {
         let isMounted = true;
         let pollTimeout = null;
         let failureCount = 0;
 
-        async function loadData(isInitial = false) {
-            if (isInitial && categories.length === 0) setLoading(true);
+        async function loadData() {
+            // Mostra lo skeleton SOLO ed ESCLUSIVAMENTE se la memoria e la cache locale sono completamente vuote
+            if (categories.length === 0 && (!memorySections || memorySections.length === 0)) {
+                setLoading(true);
+            }
+
             try {
                 const res = await fetch(`/api/canali?t=${Date.now()}`, { cache: "no-store" });
                 if (res.ok) {
                     const data = await res.json();
                     failureCount = 0;
                     if (isMounted && data && Array.isArray(data.sections)) {
+                        memorySections = data.sections;
                         try {
                             localStorage.setItem("nmdz_cached_sections", JSON.stringify(data.sections));
                         } catch (e) {}
+
                         setCategories(prev => {
                             if (prev && prev.length === data.sections.length) {
                                 try {
@@ -140,6 +181,7 @@ function HomeViewContent({ defaultTab = "all" }) {
                             }
                             return data.sections;
                         });
+                        setLoading(false);
                     }
                 } else {
                     failureCount++;
@@ -147,10 +189,8 @@ function HomeViewContent({ defaultTab = "all" }) {
             } catch(e) {
                 failureCount++;
             } finally {
-                if (isMounted && isInitial) {
-                    setLoading(false);
-                }
                 if (isMounted) {
+                    setLoading(false);
                     scheduleNextPoll();
                 }
             }
@@ -162,19 +202,19 @@ function HomeViewContent({ defaultTab = "all" }) {
             const delay = failureCount === 0 ? 5000 : Math.min(30000, 5000 * Math.pow(1.5, failureCount));
             pollTimeout = setTimeout(() => {
                 if (document.visibilityState === "visible") {
-                    loadData(false);
+                    loadData();
                 } else {
                     scheduleNextPoll();
                 }
             }, delay);
         }
 
-        loadData(true);
+        loadData();
 
         const onOnlineOrFocus = () => {
             if (document.visibilityState === "visible") {
                 failureCount = 0;
-                loadData(false);
+                loadData();
             }
         };
 

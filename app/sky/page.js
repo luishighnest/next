@@ -88,6 +88,9 @@ function parseChannelList(json, sourceName) {
     return list;
 }
 
+let memorySkyChannels = {};
+let memorySkyGuide = null;
+
 function SkyContent() {
     const searchParams = useSearchParams();
     const chParam = searchParams.get("ch") || "";
@@ -109,12 +112,14 @@ function SkyContent() {
         }
         return "sky.json";
     });
-    const [channels, setChannels] = useState([]);
-    const [guideData, setGuideData] = useState([]);
+
+    const initialChannels = memorySkyChannels[currentSource] || [];
+    const [channels, setChannels] = useState(initialChannels);
+    const [guideData, setGuideData] = useState(() => memorySkyGuide || []);
     const [activeTab, setActiveTab] = useState("all");
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedChannel, setSelectedChannel] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(() => initialChannels.length === 0);
 
     const playerWrapRef = useRef(null);
     const playerZoneRef = useRef(null);
@@ -124,7 +129,9 @@ function SkyContent() {
     useEffect(() => {
         let isMounted = true;
         async function loadSourceChannels(isInitial = false) {
-            if (isInitial) setLoading(true);
+            if (isInitial && (!memorySkyChannels[currentSource] || memorySkyChannels[currentSource].length === 0)) {
+                setLoading(true);
+            }
             try {
                 const ts = Date.now();
                 const res = await fetch(`/api/canali?source=${encodeURIComponent(currentSource)}&t=${ts}`, { cache: "no-store" })
@@ -136,7 +143,11 @@ function SkyContent() {
                 let channelList = [];
                 if (res && Array.isArray(res.channels)) {
                     channelList = res.channels;
-                    if (Array.isArray(res.guide)) setGuideData(res.guide);
+                    memorySkyChannels[currentSource] = channelList;
+                    if (Array.isArray(res.guide)) {
+                        memorySkyGuide = res.guide;
+                        setGuideData(res.guide);
+                    }
                 } else {
                     // Fallback di emergenza
                     const [srcData, guideRes] = await Promise.allSettled([
