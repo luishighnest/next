@@ -54,7 +54,17 @@ function HomeViewContent({ defaultTab = "all" }) {
     const [filter, setFilter] = useState(getInitialFilter);
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
+    const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [exploreData, setExploreData] = useState(null);
+
+    // Se la query string contiene ?search=, apre subito la ricerca
+    useEffect(() => {
+        const q = searchParams.get("search");
+        if (q) {
+            setSearch(q);
+            setIsSearchOpen(true);
+        }
+    }, [searchParams]);
 
     // Idratazione istantanea da memoria / localStorage all'avvio se ancora non presente
     useEffect(() => {
@@ -264,6 +274,23 @@ function HomeViewContent({ defaultTab = "all" }) {
         return false;
     };
 
+    const searchResultsChannels = React.useMemo(() => {
+        const q = deferredSearch.trim().toLowerCase();
+        if (!q) return [];
+        const seen = new Set();
+        const list = [];
+        for (const sec of categories) {
+            for (const ch of (sec.channels || [])) {
+                const idKey = ch.id || ch.url || (ch.title + (ch.ora || ""));
+                if (!seen.has(idKey) && matchesChannel(ch, q)) {
+                    seen.add(idKey);
+                    list.push(ch);
+                }
+            }
+        }
+        return list;
+    }, [categories, deferredSearch]);
+
     const filteredSections = categories.filter(sec => shouldShowGroup(sec, filter)).map(sec => {
         if (!deferredSearch.trim()) return sec;
         const q = deferredSearch.toLowerCase().trim();
@@ -278,25 +305,88 @@ function HomeViewContent({ defaultTab = "all" }) {
             <Navbar
                 activeFilter={filter}
                 onFilterChange={handleFilterChange}
+                isSearchOpen={isSearchOpen}
+                setIsSearchOpen={setIsSearchOpen}
+                searchVal={search}
+                setSearchVal={setSearch}
                 onSearch={(s) => setSearch(s)}
             />
 
             <main className="home-content">
-                {loading ? (
-                    <div className="skeleton-container" style={{ width: "100%" }}>
-                        <SkeletonSection cardCount={6} />
-                        <SkeletonSection cardCount={6} />
-                        <SkeletonSection cardCount={6} />
+                {isSearchOpen ? (
+                    <div className="search-view-container">
+                        {!deferredSearch.trim() ? (
+                            <div className="search-empty-prompt">
+                                <div className="search-prompt-icon">
+                                    <i className="fas fa-magnifying-glass"></i>
+                                </div>
+                                <h2>Cosa vuoi guardare?</h2>
+                                <p>Cerca canali, eventi sportivi, serie TV, film o programmazione TV</p>
+                                <div className="search-suggestions-chips">
+                                    <span className="suggestions-label">Suggeriti:</span>
+                                    {["Sky Sport", "Serie A", "Formula 1", "MotoGP", "Cinema", "DAZN", "Canale 5"].map(chip => (
+                                        <button
+                                            key={chip}
+                                            type="button"
+                                            className="search-chip-btn"
+                                            onClick={() => setSearch(chip)}
+                                        >
+                                            {chip}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        ) : (
+                            <div className="search-results-section">
+                                <div className="search-results-header">
+                                    <h2>
+                                        Risultati per <span className="search-highlight">&ldquo;{search}&rdquo;</span>
+                                    </h2>
+                                    <span className="search-results-count">
+                                        {searchResultsChannels.length} {searchResultsChannels.length === 1 ? "canale trovato" : "canali ed eventi trovati"}
+                                    </span>
+                                </div>
+
+                                {searchResultsChannels.length > 0 ? (
+                                    <div className="explore-channels-grid">
+                                        {searchResultsChannels.map((ch, idx) => (
+                                            <ChannelCard key={ch.id || (ch.title + idx)} channel={ch} />
+                                        ))}
+                                    </div>
+                                ) : (
+                                    <div className="search-no-results">
+                                        <i className="fas fa-film"></i>
+                                        <h3>Nessun risultato trovato</h3>
+                                        <p>Nessun canale o evento corrisponde alla ricerca per <strong>&ldquo;{search}&rdquo;</strong>.</p>
+                                        <button
+                                            type="button"
+                                            className="search-reset-btn"
+                                            onClick={() => setSearch("")}
+                                        >
+                                            Cancella ricerca
+                                        </button>
+                                    </div>
+                                )}
+                            </div>
+                        )}
                     </div>
                 ) : (
-                    filteredSections.map(sec => (
-                        <CarouselSection
-                            key={sec.title}
-                            title={sec.title}
-                            channels={sec.channels}
-                            onExplore={(title, chs) => setExploreData({ title, channels: chs })}
-                        />
-                    ))
+                    loading ? (
+                        <div className="skeleton-container" style={{ width: "100%" }}>
+                            <SkeletonSection cardCount={6} />
+                            <SkeletonSection cardCount={6} />
+                            <SkeletonSection cardCount={6} />
+                        </div>
+                    ) : (
+                        filteredSections.map(sec => (
+                            <CarouselSection
+                                key={sec.title}
+                                title={sec.title}
+                                channels={sec.channels}
+                                onExplore={(title, chs) => setExploreData({ title, channels: chs })}
+                            />
+                        ))
+                    )
                 )}
             </main>
 

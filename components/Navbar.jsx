@@ -4,11 +4,26 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SettingsModal from "./SettingsModal";
 
-export default function Navbar({ activeFilter, onFilterChange, onSearch, hideSideIslands }) {
+export default function Navbar({
+    activeFilter,
+    onFilterChange,
+    onSearch,
+    hideSideIslands,
+    isSearchOpen: propIsSearchOpen,
+    setIsSearchOpen: propSetIsSearchOpen,
+    searchVal: propSearchVal,
+    setSearchVal: propSetSearchVal
+}) {
     const pathname = usePathname();
     const router = useRouter();
-    const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const [searchVal, setSearchVal] = useState("");
+    const [localIsSearchOpen, setLocalIsSearchOpen] = useState(false);
+    const [localSearchVal, setLocalSearchVal] = useState("");
+
+    const isSearchOpen = propIsSearchOpen !== undefined ? propIsSearchOpen : localIsSearchOpen;
+    const setIsSearchOpen = propSetIsSearchOpen || setLocalIsSearchOpen;
+    const searchVal = propSearchVal !== undefined ? propSearchVal : localSearchVal;
+    const setSearchVal = propSetSearchVal || setLocalSearchVal;
+
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const [isNavHidden, setIsNavHidden] = useState(false);
     const searchWrapperRef = useRef(null);
@@ -70,6 +85,7 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch, hideSid
 
     useEffect(() => {
         setIsNavHidden(false);
+        setIsSearchOpen(false);
     }, [pathname, activeFilter]);
 
     const handleNavClick = (filter) => {
@@ -89,23 +105,19 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch, hideSid
     useEffect(() => {
         if (!isSearchOpen) return;
 
-        function handleClickOutside(e) {
-            if (searchWrapperRef.current && !searchWrapperRef.current.contains(e.target)) {
+        function handleKeyDown(e) {
+            if (e.key === "Escape") {
                 handleCloseSearch();
             }
         }
 
-        document.addEventListener("mousedown", handleClickOutside);
-        document.addEventListener("touchstart", handleClickOutside, { passive: true });
-
+        window.addEventListener("keydown", handleKeyDown);
         return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-            document.removeEventListener("touchstart", handleClickOutside);
+            window.removeEventListener("keydown", handleKeyDown);
         };
     }, [isSearchOpen]);
 
-    const handleSearchInput = (e) => {
-        const val = e.target.value;
+    const handleSearchChange = (val) => {
         setSearchVal(val);
         if (onSearch) onSearch(val);
     };
@@ -114,7 +126,7 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch, hideSid
         setIsSearchOpen(true);
         setTimeout(() => {
             if (searchInputRef.current) searchInputRef.current.focus();
-        }, 80);
+        }, 60);
     };
 
     const handleCloseSearch = () => {
@@ -123,114 +135,122 @@ export default function Navbar({ activeFilter, onFilterChange, onSearch, hideSid
         if (onSearch) onSearch("");
     };
 
+    const isHidden = isNavHidden && !isSearchOpen;
+
     return (
         <>
-            <div className={`home-header-wrapper ${isNavHidden ? "nav-hidden" : ""}`} id="home-header-wrapper">
-                <div className={`home-header-islands ${shouldHideSides ? "nav-single-island" : ""}`}>
-                    {/* ISOLA 1: Logo Brand Autonomo (Scompare su /sky e su /eventi/[slug]) */}
-                    {!shouldHideSides && (
-                        <div className="nav-island nav-island-left">
-                            <Link href="/home" className="brand-island-link" title="NMDZ - Home" aria-label="NMDZ Home">
-                                <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="home-brand-logo" />
-                            </Link>
-                        </div>
-                    )}
-
-                    {/* ISOLA 2: Navigazione Principale a Capsule al Centro */}
-                    <nav className="nav-island nav-island-center" aria-label="Navigazione principale">
-                        <Link
-                            href="/home"
-                            className={`nav-link ${activeFilter === "all" ? "active" : ""}`}
-                            onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
-                        >
-                            <i className="fas fa-house"></i>
-                            <span className="nav-label">Home</span>
-                        </Link>
-                        <Link
-                            href="/sport"
-                            className={`nav-link ${activeFilter === "sport" ? "active" : ""}`}
-                            onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
-                        >
-                            <i className="fas fa-trophy"></i>
-                            <span className="nav-label">Sport</span>
-                        </Link>
-                        <Link
-                            href="/intrattenimento"
-                            className={`nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
-                            onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
-                        >
-                            <i className="fas fa-masks-theater"></i>
-                            <span className="nav-label">Intrattenimento</span>
-                        </Link>
-                        <Link
-                            href="/eventi"
-                            className={`nav-link ${activeFilter === "eventi" ? "active" : ""}`}
-                            onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
-                        >
-                            <i className="fas fa-ticket"></i>
-                            <span className="nav-label">Eventi</span>
-                        </Link>
-                    </nav>
-
-                    {/* ISOLA 3: Azioni Interattive (Cerca + Impostazioni) (Scompare su /sky e su /eventi/[slug]) */}
-                    {!shouldHideSides && (
-                        <div className="nav-island nav-island-right">
-                            <div className={`header-search-wrapper ${isSearchOpen ? "active" : ""}`} ref={searchWrapperRef}>
+            <div className={`home-header-wrapper ${isHidden ? "nav-hidden" : ""} ${isSearchOpen ? "search-mode-active" : ""}`} id="home-header-wrapper">
+                {isSearchOpen ? (
+                    <div className="home-search-fullbar-container" ref={searchWrapperRef}>
+                        <div className="home-search-fullbar">
+                            <i className="fas fa-magnifying-glass search-fullbar-icon"></i>
+                            <input
+                                ref={searchInputRef}
+                                type="text"
+                                className="search-fullbar-input"
+                                placeholder="Cerca film, serie TV, eventi sportivi, canali..."
+                                value={searchVal}
+                                onChange={(e) => handleSearchChange(e.target.value)}
+                                autoFocus
+                            />
+                            {searchVal && (
                                 <button
                                     type="button"
-                                    className={`search-icon-btn ${isSearchOpen ? "hidden" : ""}`}
+                                    className="search-fullbar-clear-btn"
+                                    onClick={() => handleSearchChange("")}
+                                    aria-label="Cancella testo"
+                                    title="Cancella testo"
+                                >
+                                    <i className="fas fa-circle-xmark"></i>
+                                </button>
+                            )}
+                            <button
+                                type="button"
+                                className="search-fullbar-close-btn"
+                                onClick={handleCloseSearch}
+                                aria-label="Chiudi ricerca"
+                                title="Chiudi ricerca (Esc)"
+                            >
+                                <span className="close-text">Chiudi</span>
+                                <i className="fas fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                ) : (
+                    <div className={`home-header-islands ${shouldHideSides ? "nav-single-island" : ""}`}>
+                        {/* ISOLA 1: Logo Brand Autonomo (Scompare su /sky e su /eventi/[slug]) */}
+                        {!shouldHideSides && (
+                            <div className="nav-island nav-island-left">
+                                <Link href="/home" className="brand-island-link" title="NMDZ - Home" aria-label="NMDZ Home">
+                                    <img src="/logos/premium_logo_dark.jpg" alt="Logo" className="home-brand-logo" />
+                                </Link>
+                            </div>
+                        )}
+
+                        {/* ISOLA 2: Navigazione Principale a Capsule al Centro */}
+                        <nav className="nav-island nav-island-center" aria-label="Navigazione principale">
+                            <Link
+                                href="/home"
+                                className={`nav-link ${activeFilter === "all" ? "active" : ""}`}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
+                            >
+                                <i className="fas fa-house"></i>
+                                <span className="nav-label">Home</span>
+                            </Link>
+                            <Link
+                                href="/sport"
+                                className={`nav-link ${activeFilter === "sport" ? "active" : ""}`}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
+                            >
+                                <i className="fas fa-trophy"></i>
+                                <span className="nav-label">Sport</span>
+                            </Link>
+                            <Link
+                                href="/intrattenimento"
+                                className={`nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
+                            >
+                                <i className="fas fa-masks-theater"></i>
+                                <span className="nav-label">Intrattenimento</span>
+                            </Link>
+                            <Link
+                                href="/eventi"
+                                className={`nav-link ${activeFilter === "eventi" ? "active" : ""}`}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
+                            >
+                                <i className="fas fa-ticket"></i>
+                                <span className="nav-label">Eventi</span>
+                            </Link>
+                        </nav>
+
+                        {/* ISOLA 3: Azioni Interattive (Cerca + Impostazioni) (Scompare su /sky e su /eventi/[slug]) */}
+                        {!shouldHideSides && (
+                            <div className="nav-island nav-island-right">
+                                <button
+                                    type="button"
+                                    className="search-icon-btn"
                                     onClick={handleOpenSearch}
                                     aria-label="Cerca"
-                                    title="Cerca canali, eventi, guida TV"
+                                    title="Cerca canali, eventi, film..."
                                 >
                                     <i className="fas fa-magnifying-glass"></i>
                                 </button>
 
-                                <div className={`header-search-container ${isSearchOpen ? "open" : ""}`}>
-                                    <span className="material-symbols-rounded search-icon">search</span>
-                                    <input
-                                        ref={searchInputRef}
-                                        type="text"
-                                        className="home-search-input"
-                                        placeholder="Cerca canali, eventi..."
-                                        value={searchVal}
-                                        onChange={handleSearchInput}
-                                        onKeyDown={(e) => {
-                                            if (e.key === "Escape") handleCloseSearch();
-                                            if (e.key === "Enter" && !onSearch && searchVal.trim()) {
-                                                router.push(`/home?search=${encodeURIComponent(searchVal.trim())}`);
-                                            }
-                                        }}
-                                    />
-                                    {isSearchOpen && (
-                                        <button
-                                            type="button"
-                                            className="search-close-btn"
-                                            onClick={handleCloseSearch}
-                                            style={{ background: "transparent", border: "none", color: "rgba(255, 255, 255, 0.7)", cursor: "pointer", display: "flex", alignItems: "center", padding: "2px" }}
-                                            title="Chiudi ricerca (Esc)"
-                                            aria-label="Chiudi ricerca"
-                                        >
-                                            <span className="material-symbols-rounded" style={{ fontSize: "1.2rem" }}>close</span>
-                                        </button>
-                                    )}
-                                </div>
+                                <div className="island-separator"></div>
+
+                                <button
+                                    type="button"
+                                    className="settings-icon-btn"
+                                    onClick={() => setIsSettingsOpen(true)}
+                                    aria-label="Impostazioni"
+                                    title="Impostazioni"
+                                >
+                                    <i className="fas fa-gear"></i>
+                                </button>
                             </div>
-
-                            <div className="island-separator"></div>
-
-                            <button
-                                type="button"
-                                className="settings-icon-btn"
-                                onClick={() => setIsSettingsOpen(true)}
-                                aria-label="Impostazioni"
-                                title="Impostazioni"
-                            >
-                                <i className="fas fa-gear"></i>
-                            </button>
-                        </div>
-                    )}
-                </div>
+                        )}
+                    </div>
+                )}
             </div>
 
             {isSettingsOpen && <SettingsModal onClose={() => setIsSettingsOpen(false)} />}
