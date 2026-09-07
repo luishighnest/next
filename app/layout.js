@@ -4,7 +4,12 @@ export const metadata = {
     title: "NMDZ - Live TV & Sport",
     description: "Next.js & React High Performance Streaming Platform",
     icons: {
-        icon: "/logos/premium_logo_dark.jpg",
+        icon: [
+            { url: "/logos/nmdz_monogram.png", type: "image/png" },
+            { url: "/favicon.ico" }
+        ],
+        shortcut: "/logos/nmdz_monogram.png",
+        apple: "/logos/nmdz_monogram.png",
     },
 };
 
