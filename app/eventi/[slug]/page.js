@@ -266,14 +266,14 @@ export default function EventoPlayerPage() {
         if (!selectedSource || !selectedSource.url) return "";
         const tech = getTechSettings();
         const extId = tech.extensionId || DEFAULT_EXT_ID;
-        // Usa extension:// (non chrome-extension://) per compatibilità con il player WARP
-        const extPrefix = `extension://${extId}/pages/player.html#`;
+        // In iframe src i browser Chromium permettono SOLO chrome-extension:// (extension:// non è un protocollo URI riconosciuto per iframe embedded)
+        const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
 
         const rawUrl = selectedSource.url.trim();
 
-        // Se l'URL è già una URL di estensione, sostituisci solo l'ID e usala direttamente
+        // Se l'URL è già una URL di estensione, normalizzala a chrome-extension:// per l'iframe
         if (rawUrl.startsWith("chrome-extension://") || rawUrl.startsWith("extension://")) {
-            return rawUrl.replace(/^(chrome-extension|extension):\/\/[^/]+/, `extension://${extId}`);
+            return rawUrl.replace(/^(chrome-extension|extension):\/\/[^/]+/, `chrome-extension://${extId}`);
         }
 
         // DAZN WARP: URL tipo https://cdn.dazn.com/@JWT/dash/stream.mpd?p=web
@@ -287,39 +287,51 @@ export default function EventoPlayerPage() {
             mpdUrl = warpMatch[1] + (warpMatch[3] || "");
         }
 
-        // Costruisci ck= dal kid_key (formato "kid:key")
+        // Costruisci ck= dal kid_key (formato "kid:key" o "kid:key,kid2:key2")
         let ckParam = "";
-        const rawKey = selectedSource.kid_key || "";
+        const rawKey = selectedSource.kid_key || selectedSource.key || "";
         if (rawKey && rawKey.includes(":")) {
-            const parts = rawKey.split(":");
             const ckObj = {};
-            ckObj[parts[0].trim()] = parts[1].trim();
-            try { ckParam = "ck=" + btoa(JSON.stringify(ckObj)); } catch(e) {}
+            const pairs = rawKey.split(",");
+            pairs.forEach(pair => {
+                const parts = pair.split(":");
+                if (parts.length === 2 && parts[0].trim() && parts[1].trim()) {
+                    ckObj[parts[0].trim()] = parts[1].trim();
+                }
+            });
+            if (Object.keys(ckObj).length > 0) {
+                try {
+                    ckParam = "ck=" + encodeURIComponent(btoa(JSON.stringify(ckObj)));
+                } catch(e) {}
+            }
         }
 
         // Usa ESCLUSIVAMENTE lo user agent dell'evento estratto (se presente nel JSON)
         const rawUa = selectedSource.ua ? String(selectedSource.ua).trim() : "";
 
-        // Costruisci headers con user-agent (solo se fornito dall'evento), referer, origin e dazn-token
+        // Costruisci headers con user-agent, referer, origin e dazn-token
         let headersParam = "";
         try {
             const headersObj = {
+                "user-agent": rawUa,
                 "referer": "https://www.dazn.com/",
                 "origin": "https://www.dazn.com"
             };
-            if (rawUa) {
-                headersObj["user-agent"] = rawUa;
+            if (!rawUa) {
+                delete headersObj["user-agent"];
             }
             if (daznToken) {
                 headersObj["dazn-token"] = daznToken;
             }
-            headersParam = "headers=" + btoa(unescape(encodeURIComponent(JSON.stringify(headersObj))));
+            const jsonStr = JSON.stringify(headersObj);
+            const b64 = btoa(unescape(encodeURIComponent(jsonStr)));
+            headersParam = "headers=" + encodeURIComponent(b64);
         } catch(e) {
             try { 
                 const fallbackObj = { "referer": "https://www.dazn.com/", "origin": "https://www.dazn.com" };
                 if (rawUa) fallbackObj["user-agent"] = rawUa;
                 if (daznToken) fallbackObj["dazn-token"] = daznToken;
-                headersParam = "headers=" + btoa(JSON.stringify(fallbackObj)); 
+                headersParam = "headers=" + encodeURIComponent(btoa(JSON.stringify(fallbackObj))); 
             } catch(e2) {}
         }
 
