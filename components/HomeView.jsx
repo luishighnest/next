@@ -311,7 +311,10 @@ function HomeViewContent({ defaultTab = "all" }) {
                 const idKey = ch.id || ch.url || (ch.title + (ch.ora || ""));
                 if (!seen.has(idKey) && matchesChannel(ch, q)) {
                     seen.add(idKey);
-                    list.push(ch);
+                    list.push({
+                        ...ch,
+                        group: ch.group || sec.title
+                    });
                 }
             }
         }
@@ -434,7 +437,11 @@ function HomeViewContent({ defaultTab = "all" }) {
                     <div className="explore-content-wrapper">
                         <div id="explore-channels-grid" className="explore-channels-grid">
                             {exploreData.channels.map((ch, idx) => (
-                                <ChannelCard key={ch.id || (ch.title + idx)} channel={ch} />
+                                <ChannelCard
+                                    key={ch.id || (ch.title + idx)}
+                                    channel={ch}
+                                    categoryName={exploreData.title}
+                                />
                             ))}
                         </div>
                     </div>

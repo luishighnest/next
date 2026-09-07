@@ -14,7 +14,7 @@ function getDynamicColor(str) {
     return `hsl(${hue}, 80%, 60%)`;
 }
 
-function ChannelCard({ channel, priority = false }) {
+function ChannelCard({ channel, categoryName, priority = false }) {
     const slug = getChannelSlug(channel);
     const progInfo = getCurrentProgramInfo(channel.epg);
     const cardImgUrl = channel.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
@@ -33,8 +33,23 @@ function ChannelCard({ channel, priority = false }) {
     const isDazn1Channel = (channel.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
     const dynColor = getDynamicColor(channel.title);
 
-    let fallbackTime = channel.ora ? `Ore ${channel.ora}` : (channel.provider || "Live");
-    if (isDazn1Channel) fallbackTime = channel.group || "Live TV";
+    // Risoluzione della categoria di appartenenza della locandina:
+    // 1. Se passata esplicitamente dal carosello o overlay (es. "SuperTennis", "Eurosport", "Digitale Terrestre")
+    // 2. Se definita in channel.group o category
+    // 3. Fallback intelligente in base al provider o contesto
+    const rawCategory = categoryName || channel.group || channel.category || "";
+    let categoryLabel = rawCategory;
+    if (!categoryLabel || categoryLabel.toUpperCase() === "DAZN") {
+        if (channel.title && channel.title.toLowerCase().includes("supertennis")) {
+            categoryLabel = "SuperTennis";
+        } else if (channel.title && channel.title.toLowerCase().includes("eurosport")) {
+            categoryLabel = "Eurosport";
+        } else if (isSky) {
+            categoryLabel = "Sky";
+        } else {
+            categoryLabel = channel.group || "Eventi";
+        }
+    }
 
     const handleClick = () => {
         try {
@@ -114,7 +129,7 @@ function ChannelCard({ channel, priority = false }) {
 
             <div className="now-card-info-external">
                 <span className="now-card-time-ext">
-                    {progInfo ? (progInfo.oraFine ? `${progInfo.oraInizio} - ${progInfo.oraFine}` : progInfo.oraInizio) : fallbackTime}
+                    {categoryLabel}
                 </span>
                 <span className="now-card-title-ext">
                     {progInfo ? progInfo.titolo : channel.title}
@@ -126,12 +141,14 @@ function ChannelCard({ channel, priority = false }) {
 
 function arePropsEqual(prevProps, nextProps) {
     if (prevProps.priority !== nextProps.priority) return false;
+    if (prevProps.categoryName !== nextProps.categoryName) return false;
     const p = prevProps.channel;
     const n = nextProps.channel;
     if (p === n) return true;
     if (!p || !n) return false;
     if (p.id !== n.id) return false;
     if (p.title !== n.title) return false;
+    if (p.group !== n.group) return false;
     if (p.ora !== n.ora) return false;
     if (p.image !== n.image) return false;
     if (p.url !== n.url || p.mpd !== n.mpd) return false;

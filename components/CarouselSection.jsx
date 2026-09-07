@@ -162,7 +162,12 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
             <div className="carousel-wrapper" ref={wrapperRef}>
                 <div className="home-carousel" ref={scrollRef}>
                     {channels.map((ch, idx) => (
-                        <ChannelCard key={ch.id || (ch.title + idx)} channel={ch} priority={idx < 5} />
+                        <ChannelCard
+                            key={ch.id || (ch.title + idx)}
+                            channel={ch}
+                            categoryName={title}
+                            priority={idx < 5}
+                        />
                     ))}
                 </div>
             </div>
