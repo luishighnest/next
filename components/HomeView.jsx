@@ -123,8 +123,6 @@ function HomeViewContent({ defaultTab = "all" }) {
     // Gestione blocco scroll modale "Esplora tutti"
     useEffect(() => {
         if (exploreData) {
-            const origHtmlOverflow = document.documentElement.style.overflow;
-            const origBodyOverflow = document.body.style.overflow;
             document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
 
@@ -136,10 +134,13 @@ function HomeViewContent({ defaultTab = "all" }) {
             window.addEventListener("keydown", handleKeyDown);
 
             return () => {
-                document.documentElement.style.overflow = origHtmlOverflow;
-                document.body.style.overflow = origBodyOverflow;
+                document.documentElement.style.overflow = "";
+                document.body.style.overflow = "";
                 window.removeEventListener("keydown", handleKeyDown);
             };
+        } else {
+            document.documentElement.style.overflow = "";
+            document.body.style.overflow = "";
         }
     }, [exploreData]);
 
