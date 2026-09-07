@@ -5,9 +5,10 @@ import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { matchSlug, getChannelSlug } from "@/lib/slug";
+import { getTechSettings } from "@/lib/settings";
 
-const EXT = "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#";
-const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
+const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
+const DEFAULT_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
 
 function getInitialSource(ch) {
     if (!ch) return null;
@@ -234,12 +235,14 @@ export default function EventoPlayerPage() {
 
         loadEvent();
 
-        // Polling automatico in background ogni 5 secondi per aggiornare i correlati (es. nuovi eventi aggiunti)
+        // Polling automatico in background con intervallo configurabile da impostazioni tecniche
+        const tech = getTechSettings();
+        const pollMs = (tech.pollIntervalSec || 5) * 1000;
         const intervalId = setInterval(() => {
             if (document.visibilityState === "visible") {
                 loadEvent();
             }
-        }, 5000);
+        }, pollMs);
 
         const onFocus = () => {
             if (document.visibilityState === "visible") {
@@ -257,9 +260,13 @@ export default function EventoPlayerPage() {
         };
     }, [slug]);
 
-    // Costruzione URL Iframe per estensione Chrome identico ad evento.html
+    // Costruzione URL Iframe per estensione Chrome identico ad evento.html con parametri tecnici
     const getIframeUrl = () => {
         if (!selectedSource || !selectedSource.url) return "";
+        const tech = getTechSettings();
+        const extId = tech.extensionId || DEFAULT_EXT_ID;
+        const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
+
         let ckParam = "";
         const rawKey = selectedSource.kid_key || "";
         if (rawKey && rawKey.includes(":")) {
@@ -269,12 +276,12 @@ export default function EventoPlayerPage() {
             try { ckParam = "ck=" + btoa(JSON.stringify(ckObj)); } catch(e) {}
         }
         let headersParam = "";
-        const uaVal = selectedSource.ua || UA;
+        const uaVal = tech.customUserAgent || selectedSource.ua || DEFAULT_UA;
         try { headersParam = "headers=" + btoa(JSON.stringify({ "User-Agent": uaVal })); } catch(e) {}
 
         const extraParams = [ckParam, headersParam].filter(Boolean);
         const sep = selectedSource.url.includes("?") ? "&" : "?";
-        return EXT + selectedSource.url + (extraParams.length ? sep + extraParams.join("&") : "");
+        return extPrefix + selectedSource.url + (extraParams.length ? sep + extraParams.join("&") : "");
     };
 
     return (

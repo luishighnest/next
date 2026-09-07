@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import SkeletonSection from "@/components/SkeletonSection";
 import ChannelCard from "@/components/ChannelCard";
+import { getTechSettings } from "@/lib/settings";
 
 const VALID_TABS = ["sport", "intrattenimento", "eventi"];
 
@@ -215,7 +216,9 @@ function HomeViewContent({ defaultTab = "all" }) {
         function scheduleNextPoll() {
             if (!isMounted) return;
             clearTimeout(pollTimeout);
-            const delay = failureCount === 0 ? 5000 : Math.min(30000, 5000 * Math.pow(1.5, failureCount));
+            const tech = getTechSettings();
+            const baseInterval = (tech.pollIntervalSec || 5) * 1000;
+            const delay = failureCount === 0 ? baseInterval : Math.min(30000, baseInterval * Math.pow(1.5, failureCount));
             pollTimeout = setTimeout(() => {
                 if (document.visibilityState === "visible") {
                     loadData();
@@ -234,9 +237,25 @@ function HomeViewContent({ defaultTab = "all" }) {
             }
         };
 
+        const onBeforeUnload = () => {
+            const tech = getTechSettings();
+            if (tech.wipeCacheOnExit) {
+                try {
+                    localStorage.removeItem("nmdz_cached_sections");
+                } catch(e) {}
+            }
+        };
+
+        const onCacheCleared = () => {
+            memorySections = null;
+            loadData();
+        };
+
         window.addEventListener("focus", onOnlineOrFocus);
         window.addEventListener("online", onOnlineOrFocus);
         document.addEventListener("visibilitychange", onOnlineOrFocus);
+        window.addEventListener("beforeunload", onBeforeUnload);
+        window.addEventListener("nmdz:cache_cleared", onCacheCleared);
 
         return () => {
             isMounted = false;
@@ -244,6 +263,8 @@ function HomeViewContent({ defaultTab = "all" }) {
             window.removeEventListener("focus", onOnlineOrFocus);
             window.removeEventListener("online", onOnlineOrFocus);
             document.removeEventListener("visibilitychange", onOnlineOrFocus);
+            window.removeEventListener("beforeunload", onBeforeUnload);
+            window.removeEventListener("nmdz:cache_cleared", onCacheCleared);
         };
     }, []);
 

@@ -6,9 +6,10 @@ import Navbar from "@/components/Navbar";
 import { fetchSecureJson } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
+import { getTechSettings } from "@/lib/settings";
 
-const EXT = "chrome-extension://opmeopcambhfimffbomjgemehjkbbmji/pages/player.html#";
-const UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
+const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
+const DEFAULT_UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36";
 
 const SKY_CID_MAP = {
     "skysportuno": "sksportuno.png", "skysport24": "sksport24.png", "skysportarena": "sksportarena.png",
@@ -37,6 +38,10 @@ function cidFromUrl(url) {
 function buildExtUrl(ch) {
     const baseUrl = (ch?.url || ch?.mpd || "").trim();
     if (!baseUrl) return "";
+    const tech = getTechSettings();
+    const extId = tech.extensionId || DEFAULT_EXT_ID;
+    const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
+
     const parts = [];
     const rawKey = ch.kid_key || "";
     if (rawKey && rawKey.includes(":")) {
@@ -52,9 +57,10 @@ function buildExtUrl(ch) {
             try { parts.push("ck=" + btoa(JSON.stringify(ckObj))); } catch(e) {}
         }
     }
-    try { parts.push("headers=" + btoa(JSON.stringify({ "User-Agent": UA }))); } catch(e) {}
+    const uaVal = tech.customUserAgent || DEFAULT_UA;
+    try { parts.push("headers=" + btoa(JSON.stringify({ "User-Agent": uaVal }))); } catch(e) {}
     const sep = baseUrl.includes("?") ? "&" : "?";
-    return EXT + baseUrl + sep + parts.join("&");
+    return extPrefix + baseUrl + sep + parts.join("&");
 }
 
 function parseChannelList(json, sourceName) {
@@ -108,6 +114,10 @@ function SkyContent() {
                     if (parsed.skySource === "sky2.json" || parsed.skySource === "sky.json") {
                         return parsed.skySource;
                     }
+                }
+                const tech = getTechSettings();
+                if (tech.defaultSkySource === "sky2.json" || tech.defaultSkySource === "sky.json") {
+                    return tech.defaultSkySource;
                 }
             } catch(e) {}
         }
