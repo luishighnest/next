@@ -1,10 +1,12 @@
 name: Aggiornamento Automatico Guida TV
-
+ 
 on:
   schedule:
-    # 22:01 UTC corrisponde alle 00:01 in Italia (CEST UTC+2)
-    # Viene eseguito ogni giorno alle 00:01 italiane
-    - cron: '1 22 * * *'
+    # 22:05 UTC = 00:05 CET/CEST (inizio giornata)
+    # 04:05 UTC = 06:05 CET/CEST (mattina presto)
+    # 10:05 UTC = 12:05 CET/CEST (metà giornata / orari pomeridiani)
+    # 16:05 UTC = 18:05 CET/CEST (prima serata)
+    - cron: '5 22,4,10,16 * * *'
   workflow_dispatch: # Permette di avviare il flusso anche manualmente da GitHub
 
 jobs:
@@ -33,4 +35,4 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add public/guida_tv_sky.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Aggiornamento automatico giornaliero Guida TV e locandine HD [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Aggiornamento automatico giornaliero Guida TV e locandine HD [skip ci]" && git push) || echo "Push non necessario o completato"

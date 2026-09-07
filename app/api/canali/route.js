@@ -3,12 +3,52 @@ import { getStoreData } from "@/lib/db";
 import { isStreamWarp } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug } from "@/lib/slug";
+import { runScrape24H } from "@/lib/scraper";
 
 export const dynamic = "force-dynamic";
 
 let memoryCache = null;
 let lastCacheTime = 0;
 const CACHE_TTL_MS = 8000;
+
+let isBackgroundScraping = false;
+let lastStaleCheckTime = 0;
+
+function checkAndTriggerBackgroundGuidaUpdate() {
+    const now = Date.now();
+    // Non controllare piu di una volta ogni 15 minuti
+    if (now - lastStaleCheckTime < 15 * 60 * 1000 || isBackgroundScraping) {
+        return;
+    }
+    lastStaleCheckTime = now;
+
+    // Esegui in background senza bloccare la risposta HTTP
+    (async () => {
+        try {
+            const todayRome = new Date().toLocaleDateString('it-IT', { timeZone: 'Europe/Rome' });
+            const redisGuidaDate = await getStoreData("guida_date");
+            if (redisGuidaDate && redisGuidaDate === todayRome) {
+                return;
+            }
+
+            console.log(`[Auto-Update Guida] Guida non aggiornata per oggi (${redisGuidaDate} vs ${todayRome}). Avvio scraping in background...`);
+            isBackgroundScraping = true;
+            runScrape24H()
+                .then((res) => {
+                    console.log("[Auto-Update Guida] Scraping background completato con successo:", res);
+                })
+                .catch((err) => {
+                    console.error("[Auto-Update Guida] Errore processo scraper:", err);
+                })
+                .finally(() => {
+                    isBackgroundScraping = false;
+                });
+        } catch (err) {
+            isBackgroundScraping = false;
+            console.error("[Auto-Update Guida] Errore trigger:", err);
+        }
+    })();
+}
 
 function cidFromUrl(u) {
     if (!u) return "";
@@ -21,6 +61,7 @@ function normalizeEpg(str) {
 }
 
 export async function GET(request) {
+    checkAndTriggerBackgroundGuidaUpdate();
     const { searchParams } = new URL(request.url);
     const sourceParam = searchParams.get("source") || "";
     const tabFilter = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
