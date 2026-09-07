@@ -21,7 +21,7 @@ export default function SkeletonSection({ cardCount = 6 }) {
                 }
                 const gapCount = numCards - 1;
                 const totalGapSpace = gapCount * 16;
-                const cardW = (w - totalGapSpace) / numCards;
+                const cardW = Math.floor((w - totalGapSpace) / numCards);
                 wrapper.style.setProperty("--card-width", `${cardW}px`);
             }
         };

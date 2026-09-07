@@ -44,7 +44,8 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
                 }
                 const gapCount = numCards - 1;
                 const totalGapSpace = gapCount * 16;
-                wrapper.style.setProperty("--card-width", `calc((100% - ${totalGapSpace}px) / ${numCards})`);
+                const cardW = Math.floor((w - totalGapSpace) / numCards);
+                wrapper.style.setProperty("--card-width", `${cardW}px`);
                 wrapper.dataset.cardsPerView = numCards;
                 updateArrows();
             }
@@ -80,19 +81,21 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
 
     const scroll = (direction) => {
         const grid = scrollRef.current;
-        if (!grid) return;
+        const wrapper = wrapperRef.current;
+        if (!grid || !wrapper) return;
 
-        const w = grid.clientWidth;
-        const pageWidth = w + 16;
+        const numCards = parseInt(wrapper.dataset.cardsPerView, 10) || 5;
+        const cardW = parseFloat(wrapper.style.getPropertyValue("--card-width")) || 240;
+        const pageStep = numCards * (cardW + 16);
         const maxScroll = grid.scrollWidth - grid.clientWidth;
 
-        const currentPage = Math.round(grid.scrollLeft / pageWidth);
+        const currentPage = Math.round(grid.scrollLeft / pageStep);
         let targetLeft;
 
         if (direction === "left") {
-            targetLeft = Math.max(0, (currentPage - 1) * pageWidth);
+            targetLeft = Math.max(0, (currentPage - 1) * pageStep);
         } else {
-            const nextTarget = (currentPage + 1) * pageWidth;
+            const nextTarget = (currentPage + 1) * pageStep;
             targetLeft = nextTarget >= maxScroll - 20 ? maxScroll : nextTarget;
         }
 
