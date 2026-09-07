@@ -248,11 +248,10 @@ export default function Navbar({
                     </div>
                 ) : (
                     <>
-                        {/* Wordmark Vettoriale Stile tv.apple.com (Trasparente, a filo sinistro, senza cornice o pallino) */}
+                        {/* Logo Vettoriale Stile tv.apple.com (SOLO il logo, trasparente, a filo sinistro, senza testo) */}
                         {!shouldHideSides && (
                             <Link href="/home" className="apple-tv-brand-wordmark" title="NMDZ - Home" aria-label="NMDZ Home">
-                                <img src="/logos/nmdz_monogram.png" alt="NMDZ" className="brand-wordmark-symbol" />
-                                <span className="brand-wordmark-text">NMDZ</span>
+                                <img src="/logos/nmdz_monogram.png" alt="Logo" className="brand-wordmark-symbol" />
                             </Link>
                         )}
 
@@ -293,34 +292,34 @@ export default function Navbar({
                                 <span className="nav-label">Eventi</span>
                             </Link>
                         </nav>
-
-                        {/* ISOLA 3: Azioni Interattive (Cerca + Impostazioni) (Scompare su /sky e su /eventi/[slug]) */}
-                        {!shouldHideSides && (
-                            <div className="nav-island nav-island-right">
-                                <button
-                                    type="button"
-                                    className="search-icon-btn"
-                                    onClick={handleOpenSearch}
-                                    aria-label="Cerca"
-                                    title="Cerca canali, eventi, film..."
-                                >
-                                    <i className="fas fa-magnifying-glass"></i>
-                                </button>
-
-                                <div className="island-separator"></div>
-
-                                <button
-                                    type="button"
-                                    className="settings-icon-btn"
-                                    onClick={() => setIsSettingsOpen(true)}
-                                    aria-label="Impostazioni"
-                                    title="Impostazioni"
-                                >
-                                    <i className="fas fa-gear"></i>
-                                </button>
-                            </div>
-                        )}
                     </div>
+
+                    {/* Azioni Interattive Destra Stile tv.apple.com (Cerca + Impostazioni posizionate a filo destro) */}
+                    {!shouldHideSides && (
+                        <div className="nav-island nav-island-right">
+                            <button
+                                type="button"
+                                className="search-icon-btn"
+                                onClick={handleOpenSearch}
+                                aria-label="Cerca"
+                                title="Cerca canali, eventi, film..."
+                            >
+                                <i className="fas fa-magnifying-glass"></i>
+                            </button>
+
+                            <div className="island-separator"></div>
+
+                            <button
+                                type="button"
+                                className="settings-icon-btn"
+                                onClick={() => setIsSettingsOpen(true)}
+                                aria-label="Impostazioni"
+                                title="Impostazioni"
+                            >
+                                <i className="fas fa-gear"></i>
+                            </button>
+                        </div>
+                    )}
                 </>
                 )}
             </div>
