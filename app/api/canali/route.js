@@ -320,7 +320,7 @@ export async function GET(request) {
             });
         }
 
-        // 5. Inietta Guida TV (Match preciso prioritario, poi fallback senza HD)
+        // 5. Inietta Guida TV (Match preciso prioritario, poi fallback senza HD e alias intelligenti)
         if (guideData && Array.isArray(guideData)) {
             const guideMap = new Map();
             guideData.forEach(epgGroup => {
@@ -330,6 +330,26 @@ export async function GET(request) {
                     guideMap.set(norm, epgGroup.programmi);
                 }
             });
+
+            // Tabella di alias per canali con diciture leggermente differenti
+            const ALIAS_MAP = {
+                "skysportmotogp": "skysportmotogp",
+                "skymotogp": "skysportmotogp",
+                "skysportf1": "skysportf1",
+                "skysportuno": "skysportuno",
+                "skysport1": "skysportuno",
+                "skysportcalcio": "skysportcalcio",
+                "skysporttennis": "skysporttennis",
+                "skysport24": "skysport24",
+                "skytg24": "skytg24",
+                "skycollection": "skycinemacollection",
+                "skymtv": "mtv",
+                "mtvhd": "mtv",
+                "skyarte": "skyarte",
+                "skyuno": "skyuno",
+                "skyunoplus": "skyunoplus",
+                "skyunopiu": "skyunoplus"
+            };
 
             orderedChannels.forEach(c => {
                 if (!c.title) return;
@@ -341,13 +361,33 @@ export async function GET(request) {
                     return;
                 }
 
-                // 2. Corrispondenza base (esclude suffisso HD / FHD / 4K)
+                // 2. Corrispondenza tramite tabella di alias
+                if (ALIAS_MAP[cNorm] && guideMap.has(ALIAS_MAP[cNorm])) {
+                    c.epg = guideMap.get(ALIAS_MAP[cNorm]);
+                    return;
+                }
+
+                // 3. Corrispondenza base (esclude suffisso HD / FHD / 4K / numeri canale secondari)
                 const cBase = cNorm.replace(/fhd|uhd|4k|1080p|720p|hd/g, "");
                 for (const [gNorm, progs] of guideMap.entries()) {
                     const gBase = gNorm.replace(/fhd|uhd|4k|1080p|720p|hd/g, "");
                     if (cBase === gBase && cBase.length > 2) {
                         c.epg = progs;
                         return;
+                    }
+                    if (ALIAS_MAP[cBase] === gBase) {
+                        c.epg = progs;
+                        return;
+                    }
+                }
+
+                // 4. Corrispondenza contenimento (es. "Sky Sport F1 HD" vs "Sky Sport F1")
+                for (const [gNorm, progs] of guideMap.entries()) {
+                    if (cNorm.length >= 6 && gNorm.length >= 6) {
+                        if (cNorm.includes(gNorm) || gNorm.includes(cNorm)) {
+                            c.epg = progs;
+                            return;
+                        }
                     }
                 }
             });
