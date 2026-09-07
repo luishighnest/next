@@ -39,20 +39,28 @@ export default function Navbar({
         ? hideSideIslands
         : (isSkyPage || isEventDetailPage);
 
+    const lastScrollYRef = useRef(0);
+
     useEffect(() => {
-        let lastScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
         let ticking = false;
 
+        function getScrollY() {
+            return window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || 0;
+        }
+
         function updateScroll() {
-            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-            if (currentScrollY <= 10) {
+            const currentScrollY = getScrollY();
+            const lastScrollY = lastScrollYRef.current;
+
+            if (currentScrollY <= 8) {
                 setIsNavHidden(false);
-            } else if (currentScrollY > lastScrollY && currentScrollY > 15) {
+            } else if (currentScrollY > lastScrollY && currentScrollY > 8) {
                 setIsNavHidden(true);
             } else if (currentScrollY < lastScrollY) {
                 setIsNavHidden(false);
             }
-            lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+
+            lastScrollYRef.current = currentScrollY <= 0 ? 0 : currentScrollY;
             ticking = false;
         }
 
@@ -64,28 +72,38 @@ export default function Navbar({
         }
 
         function onWheel(e) {
-            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop || 0;
-            if (e.deltaY > 10 && currentScrollY > 15) {
-                setIsNavHidden(true);
-            } else if (e.deltaY < -8) {
+            const currentScrollY = getScrollY();
+            if (e.deltaY > 6) {
+                if (currentScrollY > 6 || e.deltaY > 15) {
+                    setIsNavHidden(true);
+                }
+            } else if (e.deltaY < -6) {
                 setIsNavHidden(false);
             }
         }
 
-        window.addEventListener("scroll", onScroll, { passive: true });
-        window.addEventListener("wheel", onWheel, { passive: true });
-        window.addEventListener("touchmove", onScroll, { passive: true });
+        window.addEventListener("scroll", onScroll, { passive: true, capture: true });
+        document.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("wheel", onWheel, { passive: true, capture: true });
+        document.addEventListener("wheel", onWheel, { passive: true });
+        window.addEventListener("touchmove", onScroll, { passive: true, capture: true });
+        document.addEventListener("touchmove", onScroll, { passive: true });
 
         return () => {
-            window.removeEventListener("scroll", onScroll);
-            window.removeEventListener("wheel", onWheel);
-            window.removeEventListener("touchmove", onScroll);
+            window.removeEventListener("scroll", onScroll, { capture: true });
+            document.removeEventListener("scroll", onScroll);
+            window.removeEventListener("wheel", onWheel, { capture: true });
+            document.removeEventListener("wheel", onWheel);
+            window.removeEventListener("touchmove", onScroll, { capture: true });
+            document.removeEventListener("touchmove", onScroll);
         };
     }, []);
 
     useEffect(() => {
         setIsNavHidden(false);
         setIsSearchOpen(false);
+        const cur = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || 0;
+        lastScrollYRef.current = cur;
     }, [pathname, activeFilter]);
 
     const handleNavClick = (filter) => {
@@ -94,6 +112,14 @@ export default function Navbar({
         if (cleanFilter === "sport") targetPath = "/sport";
         else if (cleanFilter === "intrattenimento") targetPath = "/intrattenimento";
         else if (cleanFilter === "eventi") targetPath = "/eventi";
+
+        try {
+            window.scrollTo({ top: 0, behavior: "instant" });
+        } catch(e) {
+            window.scrollTo(0, 0);
+        }
+        setIsNavHidden(false);
+        lastScrollYRef.current = 0;
 
         if (onFilterChange) {
             onFilterChange(cleanFilter);

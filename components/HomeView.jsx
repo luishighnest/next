@@ -147,6 +147,11 @@ function HomeViewContent({ defaultTab = "all" }) {
     const handleFilterChange = (targetTab) => {
         const cleanTab = (targetTab === "home" || targetTab === "all") ? "all" : targetTab;
         setFilter(cleanTab);
+        try {
+            window.scrollTo({ top: 0, behavior: "instant" });
+        } catch(e) {
+            window.scrollTo(0, 0);
+        }
         
         let targetPath = "/home";
         if (cleanTab === "sport") targetPath = "/sport";
@@ -301,7 +306,7 @@ function HomeViewContent({ defaultTab = "all" }) {
     }).filter(sec => sec.channels.length > 0);
 
     return (
-        <div className="desktop-home" style={{ display: "block", minHeight: "125vh" }}>
+        <div className="desktop-home" style={{ display: "block", minHeight: "140vh" }}>
             <Navbar
                 activeFilter={filter}
                 onFilterChange={handleFilterChange}
@@ -419,7 +424,7 @@ function HomeViewContent({ defaultTab = "all" }) {
 
 export default function HomeView({ defaultTab = "all" }) {
     return (
-        <Suspense fallback={<div className="desktop-home" style={{ display: "block", minHeight: "125vh" }} />}>
+        <Suspense fallback={<div className="desktop-home" style={{ display: "block", minHeight: "140vh" }} />}>
             <HomeViewContent defaultTab={defaultTab} />
         </Suspense>
     );
