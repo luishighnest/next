@@ -2027,15 +2027,15 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     overflow-x: auto;
     overflow-y: hidden;
     gap: 16px; 
-    width: 100%;
+    width: calc(100% + 12px);
     
-    /* Micro-bleed calibrato a 4px: spazio perfetto per far risaltare il bordo bianco (2px)
+    /* Micro-bleed calibrato a 6px: spazio perfetto per far risaltare il bordo bianco (2px)
        e la curvatura (border-radius: 14px) della card all'estremo destro e sinistro in hover.
-       Poiché il gap tra le card è 16px (16px >> 4px), la card successiva o precedente
+       Poiché il gap tra le card è 16px (16px >> 6px), la card successiva o precedente
        è COMPLETAMENTE INVISIBILE sia a destra che a sinistra! */
-    padding: 16px 4px 32px 4px; 
-    margin: -16px -4px -32px -4px;
-    scroll-padding-inline: 4px;
+    padding: 16px 6px 32px 6px; 
+    margin: -16px -6px -32px -6px;
+    scroll-padding-inline: 6px;
     
     /* Scroll Snapping fluido */
     scroll-snap-type: x mandatory;

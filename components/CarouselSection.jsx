@@ -89,13 +89,13 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
         const pageStep = numCards * (cardW + 16);
         const maxScroll = grid.scrollWidth - grid.clientWidth;
 
-        const currentPage = Math.round(grid.scrollLeft / pageStep);
         let targetLeft;
-
         if (direction === "left") {
-            targetLeft = Math.max(0, (currentPage - 1) * pageStep);
+            const prevPage = Math.floor((grid.scrollLeft - 5) / pageStep);
+            targetLeft = Math.max(0, prevPage * pageStep);
         } else {
-            const nextTarget = (currentPage + 1) * pageStep;
+            const nextPage = Math.ceil((grid.scrollLeft + 5) / pageStep);
+            const nextTarget = nextPage * pageStep;
             targetLeft = nextTarget >= maxScroll - 20 ? maxScroll : nextTarget;
         }
 
