@@ -6,7 +6,6 @@ import CarouselSection from "@/components/CarouselSection";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { matchSlug, getChannelSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
-import VidstackShakaPlayer from "@/components/VidstackShakaPlayer";
 
 const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
 
@@ -348,28 +347,14 @@ export default function EventoPlayerPage() {
             <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "86px 16px 0 16px" }}>
                 <div className="event-main-stage">
                     <div className="player-wrapper">
-                        {selectedSource?.url ? (
-                            <VidstackShakaPlayer
-                                src={selectedSource.url}
-                                kidKey={selectedSource.kid_key}
-                                headers={{
-                                    ...(selectedSource.dazn_token ? { "dazn-token": selectedSource.dazn_token } : {}),
-                                    ...(selectedSource.ua ? { "user-agent": selectedSource.ua } : {})
-                                }}
-                                poster={channel?.image || ""}
-                                title={channel?.title || ""}
-                                autoPlay={true}
-                            />
-                        ) : (
-                            <iframe
-                                id="player-frame"
-                                src={getIframeUrl()}
-                                allowFullScreen
-                                allow="autoplay; encrypted-media; fullscreen"
-                                title="Player"
-                                style={{ display: "block", width: "100%", height: "100%", border: "none", background: "#000000" }}
-                            />
-                        )}
+                        <iframe
+                            id="player-frame"
+                            src={getIframeUrl()}
+                            allowFullScreen
+                            allow="autoplay; encrypted-media; fullscreen"
+                            title="Player"
+                            style={{ display: "block", width: "100%", height: "100%", border: "none", background: "#000000", transition: "opacity 0.5s ease-in-out" }}
+                        />
                     </div>
 
                     <div className="event-deck">
