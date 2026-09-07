@@ -265,7 +265,17 @@ export default function Navbar({
                 ) : (
                     <div className="home-header-islands">
                         {/* Logo Vettoriale Stile tv.apple.com (SOLO il logo, trasparente, a filo sinistro) */}
-                        <Link href="/home" className="apple-tv-brand-wordmark" title="NMDZ - Home" aria-label="NMDZ Home">
+                        <Link
+                            href="/home"
+                            className="apple-tv-brand-wordmark"
+                            title="NMDZ - Home"
+                            aria-label="NMDZ Home"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                handleCloseSearch();
+                                router.push("/home");
+                            }}
+                        >
                             <img src="/logos/nmdz_monogram.png" alt="Logo" className="brand-wordmark-symbol" />
                         </Link>
 
