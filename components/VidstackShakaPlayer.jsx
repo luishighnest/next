@@ -140,7 +140,15 @@ export default function VidstackShakaPlayer({
                     manifest: {
                         dash: {
                             ignoreMinBufferTime: true,
-                            autoCorrectDrift: true
+                            autoCorrectDrift: true,
+                            keySystemsByURI: {
+                                "urn:uuid:1077efec-c0b2-4d02-ace3-3c1e52e2fb4b": "org.w3.clearkey",
+                                "urn:uuid:e2719d58-a985-b3c9-781a-b030af78d30e": "org.w3.clearkey",
+                                "urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4": "org.w3.clearkey",
+                                "5e629af5-38da-4063-8977-97ffbd9902d4": "org.w3.clearkey",
+                                "5e629af538da4063897797ffbd9902d4": "org.w3.clearkey",
+                                "urn:mpeg:dash:mp4protection:2011": "org.w3.clearkey"
+                            }
                         }
                     },
                     streaming: {
@@ -217,6 +225,24 @@ export default function VidstackShakaPlayer({
                 // Non appena load ha successo, togliamo il loading
                 setIsLoading(false);
 
+                // Verifica tracce video/audio
+                try {
+                    const tracks = player.getVariantTracks();
+                    console.log("[Shaka] Variant tracks found:", tracks.length, tracks);
+                    const activeTrack = tracks.find(t => t.active);
+                    console.log("[Shaka] Active track:", activeTrack);
+                    // Se la traccia attiva non ha video o non c'è traccia attiva con video, seleziona esplicitamente la migliore con video
+                    if (!activeTrack || !activeTrack.videoCodec || !activeTrack.height) {
+                        const videoTrack = tracks.find(t => t.videoCodec && t.height);
+                        if (videoTrack) {
+                            console.log("[Shaka] Forcing selection of video track:", videoTrack);
+                            player.selectVariantTrack(videoTrack, /* clearBuffer= */ true);
+                        }
+                    }
+                } catch(e) {
+                    console.warn("[Shaka] Traccia error:", e);
+                }
+
                 if (videoRef.current) {
                     // Forziamo avvio immediato con muted se necessario per aggirare le policy di autoplay dei browser
                     videoRef.current.play().then(() => {
@@ -273,7 +299,7 @@ export default function VidstackShakaPlayer({
             <video
                 ref={videoRef}
                 className="vidstack-video"
-                poster={poster}
+                poster={isPlaying ? "" : poster}
                 playsInline
                 autoPlay={autoPlay}
                 muted={isMuted}
