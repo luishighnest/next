@@ -14,7 +14,7 @@ function getDynamicColor(str) {
     return `hsl(${hue}, 80%, 60%)`;
 }
 
-function ChannelCard({ channel, categoryName, priority = false }) {
+function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const slug = getChannelSlug(channel);
     const progInfo = getCurrentProgramInfo(channel.epg);
     const cardImgUrl = channel.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
@@ -60,6 +60,7 @@ function ChannelCard({ channel, categoryName, priority = false }) {
                 sessionStorage.setItem("daznCustomChannel", JSON.stringify(channel));
             }
         } catch(e) {}
+        if (onCardClick) onCardClick();
     };
 
     return (

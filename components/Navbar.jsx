@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SettingsModal from "./SettingsModal";
+import SearchView from "./SearchView";
 
 export default function Navbar({
     activeFilter,
@@ -178,6 +179,21 @@ export default function Navbar({
         };
     }, [isSearchOpen]);
 
+    const isStandaloneSearch = onSearch === undefined;
+
+    useEffect(() => {
+        if (isStandaloneSearch && isSearchOpen) {
+            const originalHtmlOverflow = document.documentElement.style.overflow;
+            const originalBodyOverflow = document.body.style.overflow;
+            document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            return () => {
+                document.documentElement.style.overflow = originalHtmlOverflow;
+                document.body.style.overflow = originalBodyOverflow;
+            };
+        }
+    }, [isStandaloneSearch, isSearchOpen]);
+
     const handleSearchChange = (val) => {
         setSearchVal(val);
         if (onSearch) onSearch(val);
@@ -316,6 +332,24 @@ export default function Navbar({
                     </div>
                 )}
             </div>
+            
+            {isStandaloneSearch && isSearchOpen && (
+                <div 
+                    className="global-search-modal-overlay" 
+                    onClick={(e) => {
+                        if (e.target.classList.contains("global-search-modal-overlay")) {
+                            handleCloseSearch();
+                        }
+                    }}
+                >
+                    <SearchView
+                        search={searchVal}
+                        onSearchChange={handleSearchChange}
+                        onClose={handleCloseSearch}
+                        onSelectChannel={handleCloseSearch}
+                    />
+                </div>
+            )}
 
             {isSettingsOpen && <SettingsModal onClose={() => setIsSettingsOpen(false)} />}
         </>

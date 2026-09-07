@@ -80,15 +80,15 @@ export default function SettingsModal({ onClose }) {
                 <div className="settings-modal-header">
                     <div className="settings-modal-header-title">
                         <div className="settings-header-icon">
-                            <span className="material-symbols-rounded">terminal</span>
+                            <i className="fas fa-sliders"></i>
                         </div>
                         <div>
-                            <h2>Parametri Tecnici del Sistema</h2>
+                            <h2>Impostazioni di Sistema</h2>
                             <p>Configurazione runtime flussi, proxy, caching e sicurezza</p>
                         </div>
                     </div>
-                    <button className="settings-modal-close" onClick={onClose} aria-label="Chiudi">
-                        <span className="material-symbols-rounded">close</span>
+                    <button className="settings-modal-close" onClick={onClose} aria-label="Chiudi" title="Chiudi">
+                        <i className="fas fa-xmark"></i>
                     </button>
                 </div>
 
@@ -101,7 +101,7 @@ export default function SettingsModal({ onClose }) {
                             className={`settings-tab-btn ${activeTab === "tab-stream" ? "active" : ""}`}
                             onClick={() => setActiveTab("tab-stream")}
                         >
-                            <span className="material-symbols-rounded">tune</span>
+                            <i className="fas fa-sliders"></i>
                             <span>Stream & Extension</span>
                         </button>
                         <button
@@ -109,7 +109,7 @@ export default function SettingsModal({ onClose }) {
                             className={`settings-tab-btn ${activeTab === "tab-network" ? "active" : ""}`}
                             onClick={() => setActiveTab("tab-network")}
                         >
-                            <span className="material-symbols-rounded">network_check</span>
+                            <i className="fas fa-network-wired"></i>
                             <span>Network & Polling</span>
                         </button>
                         <button
@@ -117,7 +117,7 @@ export default function SettingsModal({ onClose }) {
                             className={`settings-tab-btn ${activeTab === "tab-cache" ? "active" : ""}`}
                             onClick={() => setActiveTab("tab-cache")}
                         >
-                            <span className="material-symbols-rounded">memory</span>
+                            <i className="fas fa-hard-drive"></i>
                             <span>Cache & Memoria</span>
                         </button>
                         <button
@@ -125,7 +125,7 @@ export default function SettingsModal({ onClose }) {
                             className={`settings-tab-btn ${activeTab === "tab-security" ? "active" : ""}`}
                             onClick={() => setActiveTab("tab-security")}
                         >
-                            <span className="material-symbols-rounded">security</span>
+                            <i className="fas fa-shield-halved"></i>
                             <span>Sicurezza & Sessione</span>
                         </button>
                     </div>
@@ -200,7 +200,7 @@ export default function SettingsModal({ onClose }) {
                                             if (newUa) handleChange("customUserAgent", newUa.trim());
                                         }}
                                     >
-                                        <span className="material-symbols-rounded">edit</span>
+                                        <i className="fas fa-pen-to-square"></i>
                                         <span>Personalizza UA</span>
                                     </button>
                                 </div>
@@ -238,10 +238,10 @@ export default function SettingsModal({ onClose }) {
                                     <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                                         {networkLatency !== null && (
                                             <span style={{
-                                                fontSize: "0.85rem",
-                                                fontWeight: "bold",
-                                                color: typeof networkLatency === "number" && networkLatency < 250 ? "#00ff66" : "#ffaa00"
-                                            }}>
+                                                 fontSize: "0.85rem",
+                                                 fontWeight: "bold",
+                                                 color: typeof networkLatency === "number" && networkLatency < 250 ? "#30d158" : "#ff9f0a"
+                                             }}>
                                                 {networkLatency} {typeof networkLatency === "number" ? "ms" : ""}
                                             </span>
                                         )}
@@ -251,7 +251,7 @@ export default function SettingsModal({ onClose }) {
                                             disabled={testingPing}
                                             onClick={testLatency}
                                         >
-                                            <span className="material-symbols-rounded">speed</span>
+                                            <i className="fas fa-gauge-high"></i>
                                             <span>{testingPing ? "Pinging..." : "Test Ping"}</span>
                                         </button>
                                     </div>
@@ -284,7 +284,7 @@ export default function SettingsModal({ onClose }) {
 
                                 <div className="security-status-card">
                                     <div className="sec-status-icon">
-                                        <span className="material-symbols-rounded">database</span>
+                                        <i className="fas fa-database"></i>
                                     </div>
                                     <div className="sec-status-info">
                                         <h4>Stato Cache Dispositivo</h4>
@@ -305,7 +305,7 @@ export default function SettingsModal({ onClose }) {
                                         className="setting-action-btn"
                                         onClick={handleClearCache}
                                     >
-                                        <span className="material-symbols-rounded">delete_sweep</span>
+                                        <i className="fas fa-trash-can"></i>
                                         <span>Svuota Cache</span>
                                     </button>
                                 </div>
@@ -335,7 +335,7 @@ export default function SettingsModal({ onClose }) {
                                         className="setting-action-btn secondary"
                                         onClick={handleResetAll}
                                     >
-                                        <span className="material-symbols-rounded">restart_alt</span>
+                                        <i className="fas fa-arrow-rotate-left"></i>
                                         <span>Ripristina Tutto</span>
                                     </button>
                                 </div>
@@ -349,7 +349,7 @@ export default function SettingsModal({ onClose }) {
 
                                 <div className="security-status-card">
                                     <div className="sec-status-icon">
-                                        <span className="material-symbols-rounded">verified_user</span>
+                                        <i className="fas fa-shield-halved"></i>
                                     </div>
                                     <div className="sec-status-info">
                                         <h4>Cifratura AES-256-GCM + PBKDF2</h4>
@@ -407,7 +407,7 @@ export default function SettingsModal({ onClose }) {
                                             }
                                         }}
                                     >
-                                        <span className="material-symbols-rounded">lock</span>
+                                        <i className="fas fa-lock"></i>
                                         <span>Blocca Sessione</span>
                                     </button>
                                 </div>
@@ -421,19 +421,19 @@ export default function SettingsModal({ onClose }) {
                     <div>
                         {savedToast && (
                             <span className="settings-saved-toast show">
-                                <span className="material-symbols-rounded" style={{ fontSize: "16px" }}>check_circle</span>
-                                Impostazione salvata e attiva
+                                <i className="fas fa-circle-check" style={{ fontSize: "14px" }}></i>
+                                Impostazione salvata
                             </span>
                         )}
                         {cacheClearedToast && (
-                            <span className="settings-saved-toast show" style={{ color: "#00a2ff" }}>
-                                <span className="material-symbols-rounded" style={{ fontSize: "16px" }}>done_all</span>
-                                Cache canali svuotata con successo
+                            <span className="settings-saved-toast show">
+                                <i className="fas fa-circle-check" style={{ fontSize: "14px" }}></i>
+                                Cache svuotata con successo
                             </span>
                         )}
                     </div>
                     <button type="button" className="settings-btn-save" onClick={onClose}>
-                        Chiudi e Applica
+                        Chiudi e Salva
                     </button>
                 </div>
             </div>

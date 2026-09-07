@@ -2080,6 +2080,42 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 /* ==========================================================================
+   GLOBAL SEARCH OVERLAY (Per /sky, /eventi e pagine player)
+   ========================================================================== */
+.global-search-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 86px;
+    padding-left: calc(max(24px, 5vw));
+    padding-right: calc(max(24px, 5vw));
+    padding-bottom: 80px;
+    background: rgba(0, 0, 0, 0.94);
+    backdrop-filter: blur(40px) saturate(180%);
+    -webkit-backdrop-filter: blur(40px) saturate(180%);
+    z-index: 10000;
+    overflow-y: auto;
+    overflow-x: hidden;
+    animation: searchOverlayFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+}
+
+@keyframes searchOverlayFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================================================
    SEARCH OVERLAY VIEW (Schermata di ricerca che sostituisce le locandine)
    ========================================================================== */
 .search-view-container {
@@ -5563,17 +5599,19 @@ html {
         .settings-modal-card {
             width: 100% !important;
             max-width: 820px !important;
-            height: 600px !important;
+            height: 590px !important;
             max-height: 88vh !important;
-            background: #0e1016 !important;
+            background: rgba(14, 14, 17, 0.96) !important;
             border: 1px solid rgba(255, 255, 255, 0.12) !important;
-            border-radius: 28px !important;
-            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+            border-radius: 26px !important;
+            box-shadow: 0 32px 80px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.05) !important;
+            backdrop-filter: blur(40px) saturate(190%) !important;
+            -webkit-backdrop-filter: blur(40px) saturate(190%) !important;
             display: flex !important;
             flex-direction: column !important;
             overflow: hidden !important;
             color: #ffffff !important;
-            font-family: 'Inter', -apple-system, sans-serif !important;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, sans-serif !important;
             transform: scale(0.95) translateY(10px);
             transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
             box-sizing: border-box !important;
@@ -5599,20 +5637,21 @@ html {
         .settings-header-icon {
             width: 44px !important;
             height: 44px !important;
-            border-radius: 14px !important;
-            background: linear-gradient(135deg, rgba(227, 10, 23, 0.2) 0%, rgba(0, 112, 243, 0.2) 100%) !important;
-            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            border-radius: 12px !important;
+            background: rgba(255, 255, 255, 0.08) !important;
+            border: 1px solid rgba(255, 255, 255, 0.14) !important;
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
             color: #ffffff !important;
         }
-        .settings-header-icon .material-symbols-rounded { font-size: 24px !important; }
+        .settings-header-icon i { font-size: 20px !important; }
         .settings-modal-header h2 {
             font-size: 1.25rem !important;
             font-weight: 700 !important;
             margin: 0 !important;
             color: #ffffff !important;
+            letter-spacing: -0.01em !important;
         }
         .settings-modal-header p {
             font-size: 0.8rem !important;
@@ -5635,7 +5674,7 @@ html {
         .settings-modal-close:hover {
             background: rgba(255, 255, 255, 0.15) !important;
             color: #ffffff !important;
-            transform: rotate(90deg) !important;
+            transform: scale(1.05) !important;
         }
 
         /* Body */
@@ -5659,8 +5698,8 @@ html {
         }
         .settings-tab-btn {
             width: 100% !important;
-            padding: 12px 14px !important;
-            border-radius: 14px !important;
+            padding: 11px 14px !important;
+            border-radius: 12px !important;
             background: transparent !important;
             border: 1px solid transparent !important;
             color: rgba(255, 255, 255, 0.6) !important;
@@ -5679,17 +5718,19 @@ html {
         }
         .settings-tab-btn.active {
             color: #ffffff !important;
-            background: rgba(255, 255, 255, 0.1) !important;
-            border-color: rgba(255, 255, 255, 0.15) !important;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+            background: rgba(255, 255, 255, 0.12) !important;
+            border-color: rgba(255, 255, 255, 0.18) !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
         }
-        .settings-tab-btn .material-symbols-rounded {
-            font-size: 20px !important;
-            opacity: 0.8 !important;
+        .settings-tab-btn i {
+            font-size: 16px !important;
+            opacity: 0.7 !important;
+            width: 18px !important;
+            text-align: center !important;
         }
-        .settings-tab-btn.active .material-symbols-rounded {
+        .settings-tab-btn.active i {
             opacity: 1 !important;
-            color: #00a2ff !important;
+            color: #ffffff !important;
         }
 
         /* Content Area */
@@ -5702,7 +5743,7 @@ html {
         .settings-pane {
             display: none !important;
             flex-direction: column !important;
-            gap: 18px !important;
+            gap: 16px !important;
         }
         .settings-pane.active {
             display: flex !important;
@@ -5726,7 +5767,7 @@ html {
             padding: 14px 18px !important;
             background: rgba(255, 255, 255, 0.03) !important;
             border: 1px solid rgba(255, 255, 255, 0.06) !important;
-            border-radius: 18px !important;
+            border-radius: 16px !important;
             gap: 16px !important;
             transition: all 0.2s ease !important;
         }
@@ -5752,8 +5793,8 @@ html {
 
         /* Select Dropdown */
         .setting-select {
-            background: #181a20 !important;
-            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            background: rgba(22, 22, 26, 0.9) !important;
+            border: 1px solid rgba(255, 255, 255, 0.14) !important;
             color: #ffffff !important;
             padding: 9px 14px !important;
             border-radius: 12px !important;
@@ -5762,11 +5803,12 @@ html {
             outline: none !important;
             cursor: pointer !important;
             transition: all 0.2s ease !important;
-            max-width: 200px !important;
+            max-width: 220px !important;
         }
         .setting-select:focus {
-            border-color: #0070f3 !important;
-            box-shadow: 0 0 15px rgba(0, 112, 243, 0.3) !important;
+            border-color: rgba(255, 255, 255, 0.45) !important;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15) !important;
+            background: rgba(28, 28, 34, 0.95) !important;
         }
 
         /* Action Buttons */
@@ -5774,8 +5816,8 @@ html {
             padding: 9px 16px !important;
             border-radius: 12px !important;
             font-size: 0.85rem !important;
-            font-weight: 700 !important;
-            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            font-weight: 600 !important;
+            border: 1px solid rgba(255, 255, 255, 0.14) !important;
             background: rgba(255, 255, 255, 0.08) !important;
             color: #ffffff !important;
             cursor: pointer !important;
@@ -5787,12 +5829,13 @@ html {
         }
         .setting-action-btn:hover {
             background: rgba(255, 255, 255, 0.15) !important;
+            border-color: rgba(255, 255, 255, 0.25) !important;
             transform: translateY(-1px) !important;
         }
         .setting-action-btn.danger {
             background: rgba(227, 10, 23, 0.15) !important;
-            border-color: rgba(227, 10, 23, 0.4) !important;
-            color: #ff4d5a !important;
+            border-color: rgba(227, 10, 23, 0.35) !important;
+            color: #ff5252 !important;
         }
         .setting-action-btn.danger:hover {
             background: #e30a17 !important;
@@ -5803,6 +5846,10 @@ html {
             background: transparent !important;
             border-color: rgba(255, 255, 255, 0.1) !important;
             color: rgba(255, 255, 255, 0.6) !important;
+        }
+        .setting-action-btn.secondary:hover {
+            background: rgba(255, 255, 255, 0.06) !important;
+            color: #ffffff !important;
         }
 
         /* Toggle Switch */
@@ -5835,7 +5882,7 @@ html {
             box-shadow: 0 2px 5px rgba(0,0,0,0.3) !important;
         }
         .setting-switch input:checked + .slider {
-            background-color: #0070f3 !important;
+            background-color: #e30a17 !important;
         }
         .setting-switch input:checked + .slider:before {
             transform: translateX(20px) !important;
@@ -5847,21 +5894,21 @@ html {
             align-items: center !important;
             gap: 14px !important;
             padding: 16px 20px !important;
-            background: linear-gradient(135deg, rgba(0, 255, 102, 0.08) 0%, rgba(0, 112, 243, 0.08) 100%) !important;
-            border: 1px solid rgba(0, 255, 102, 0.25) !important;
-            border-radius: 18px !important;
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 16px !important;
             margin-bottom: 4px !important;
         }
         .sec-status-icon {
             width: 40px !important;
             height: 40px !important;
             border-radius: 12px !important;
-            background: rgba(0, 255, 102, 0.15) !important;
-            color: #00ff66 !important;
+            background: rgba(255, 255, 255, 0.08) !important;
+            color: #ffffff !important;
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
-            font-size: 22px !important;
+            font-size: 18px !important;
             flex-shrink: 0 !important;
         }
         .sec-status-info h4 {
@@ -5873,13 +5920,14 @@ html {
         .sec-status-info p {
             margin: 3px 0 0 0 !important;
             font-size: 0.78rem !important;
-            color: rgba(255, 255, 255, 0.6) !important;
+            color: rgba(255, 255, 255, 0.55) !important;
         }
         .sec-status-badge {
             margin-left: auto !important;
             padding: 4px 10px !important;
-            background: rgba(0, 255, 102, 0.2) !important;
-            color: #00ff66 !important;
+            background: rgba(255, 255, 255, 0.1) !important;
+            border: 1px solid rgba(255, 255, 255, 0.14) !important;
+            color: #ffffff !important;
             font-size: 0.72rem !important;
             font-weight: 800 !important;
             border-radius: 99px !important;
@@ -5911,7 +5959,7 @@ html {
             display: inline-flex !important;
             align-items: center !important;
             gap: 6px !important;
-            color: #00ff66 !important;
+            color: #30d158 !important;
             font-size: 0.82rem !important;
             font-weight: 600 !important;
             opacity: 0;
@@ -5919,20 +5967,22 @@ html {
         }
         .settings-saved-toast.show { opacity: 1 !important; }
         .settings-btn-save {
-            padding: 10px 24px !important;
-            border-radius: 14px !important;
+            padding: 9px 24px !important;
+            border-radius: 999px !important;
             font-size: 0.9rem !important;
             font-weight: 700 !important;
             border: none !important;
-            background: linear-gradient(135deg, #0070f3 0%, #00a2ff 100%) !important;
-            color: #ffffff !important;
+            background: #ffffff !important;
+            color: #000000 !important;
             cursor: pointer !important;
-            box-shadow: 0 4px 15px rgba(0, 112, 243, 0.4) !important;
+            box-shadow: 0 2px 14px rgba(255, 255, 255, 0.25) !important;
             transition: all 0.2s ease !important;
+            font-family: inherit !important;
         }
         .settings-btn-save:hover {
-            transform: translateY(-1px) !important;
-            box-shadow: 0 6px 20px rgba(0, 112, 243, 0.6) !important;
+            background: rgba(255, 255, 255, 0.88) !important;
+            transform: translateY(-1px) scale(1.02) !important;
+            box-shadow: 0 4px 20px rgba(255, 255, 255, 0.35) !important;
         }
 
         /* Mobile Responsive */
