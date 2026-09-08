@@ -16,8 +16,16 @@ export default function GuidaTvModal({ isOpen, onClose }) {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedProgram, setSelectedProgram] = useState(null);
     const [selectedChannel, setSelectedChannel] = useState(null);
-    const [currentMinutes, setCurrentMinutes] = useState(0);
-    const [currentTimeStr, setCurrentTimeStr] = useState("");
+    
+    // Inizializza subito con i minuti esatti attuali per calcolare immediatamente il posizionamento
+    const [currentMinutes, setCurrentMinutes] = useState(() => {
+        const now = new Date();
+        return now.getHours() * 60 + now.getMinutes();
+    });
+    const [currentTimeStr, setCurrentTimeStr] = useState(() => {
+        const now = new Date();
+        return now.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+    });
     const [selectedDayOffset, setSelectedDayOffset] = useState(0); // 0 = Oggi
 
     const headerTimelineRef = useRef(null);
@@ -134,14 +142,29 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         return (h || 0) * 60 + (m || 0);
     }
 
-    // Scroll iniziale automatico all'ora corrente
+    // Scroll iniziale automatico all'ora corrente ESATTA SENZA ANIMAZIONE
     useEffect(() => {
-        if (!loading && gridTimelineRef.current && currentMinutes > 0) {
-            const scrollTo = Math.max(0, (currentMinutes - 20) * PX_PER_MINUTE);
-            gridTimelineRef.current.scrollLeft = scrollTo;
+        if (!loading && isOpen && currentMinutes > 0) {
+            // Posiziona la linea temporale esattamente all'orario attuale (allineato all'inizio del blocco visualizzato)
+            const scrollTo = Math.max(0, currentMinutes * PX_PER_MINUTE);
+            
+            // Forza lo scroll istantaneo senza alcuna animazione
+            if (gridTimelineRef.current) {
+                gridTimelineRef.current.style.scrollBehavior = "auto";
+                gridTimelineRef.current.scrollLeft = scrollTo;
+            }
             if (headerTimelineRef.current) {
+                headerTimelineRef.current.style.scrollBehavior = "auto";
                 headerTimelineRef.current.scrollLeft = scrollTo;
             }
+
+            // Ripristina smooth solo per i click manuali successivi dei tasti telecomando
+            const timer = setTimeout(() => {
+                if (gridTimelineRef.current) gridTimelineRef.current.style.scrollBehavior = "";
+                if (headerTimelineRef.current) headerTimelineRef.current.style.scrollBehavior = "";
+            }, 100);
+
+            return () => clearTimeout(timer);
         }
     }, [loading, isOpen]);
 

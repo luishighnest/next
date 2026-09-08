@@ -8512,7 +8512,6 @@ body:has(.sky-app) {
     height: 100%;
     overflow: auto;
     position: relative;
-    scroll-behavior: smooth;
 }
 
 .ee-channels-container {
