@@ -170,6 +170,142 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         }
     }, [loading, isOpen]);
 
+    // Gestione Drag-to-Scroll con il mouse per PC
+    const isDraggingRef = useRef(false);
+    const startXRef = useRef(0);
+    const scrollLeftRef = useRef(0);
+    const hasDraggedRef = useRef(false);
+
+    const handleMouseDown = (e) => {
+        // Solo tasto sinistro e non su bottoni/input interattivi diretti
+        if (e.button !== 0) return;
+        if (e.target.closest("button, input, a")) return;
+        if (!gridTimelineRef.current) return;
+
+        isDraggingRef.current = true;
+        hasDraggedRef.current = false;
+        startXRef.current = e.pageX - gridTimelineRef.current.offsetLeft;
+        scrollLeftRef.current = gridTimelineRef.current.scrollLeft;
+        gridTimelineRef.current.style.cursor = "grabbing";
+        gridTimelineRef.current.style.userSelect = "none";
+    };
+
+    const handleMouseMove = (e) => {
+        if (!isDraggingRef.current || !gridTimelineRef.current) return;
+        e.preventDefault();
+        const x = e.pageX - gridTimelineRef.current.offsetLeft;
+        const walk = (x - startXRef.current) * 1.5; // Moltiplicatore di velocità per fluidità PC
+        if (Math.abs(walk) > 4) {
+            hasDraggedRef.current = true;
+        }
+        gridTimelineRef.current.scrollLeft = scrollLeftRef.current - walk;
+    };
+
+    const handleMouseUpOrLeave = () => {
+        if (isDraggingRef.current && gridTimelineRef.current) {
+            isDraggingRef.current = false;
+            gridTimelineRef.current.style.cursor = "";
+            gridTimelineRef.current.style.userSelect = "";
+            // Piccolo delay per evitare che l'evento mouseUp scateni il click di un programma dopo il trascinamento
+            setTimeout(() => {
+                hasDraggedRef.current = false;
+            }, 50);
+        }
+    };
+
+    // Supporto rotellina del mouse per scorrere orizzontalmente nel tempo
+    useEffect(() => {
+        const gridEl = gridTimelineRef.current;
+        if (!gridEl) return;
+
+        const handleWheel = (e) => {
+            // Se si preme Shift o se lo scorrimento è orizzontale nativo del mouse
+            if (e.shiftKey || Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+                // Lascia fluire lo scorrimento orizzontale nativo
+                return;
+            }
+            // Se l'utente usa la normale rotella verticale e si trova all'estremità verticale o tiene premuto Alt
+            // Oppure quando la rotellina scorre verticalmente ma l'utente vuole scorrere la timeline temporale:
+            // Con shift fa lo scroll orizzontale classico del browser; qui aggiungiamo il supporto fluido per rotellina standard se si trova sulla fascia programmi
+            if (Math.abs(e.deltaY) > 0 && !e.ctrlKey) {
+                // Se c'è spazio orizzontale e l'utente usa la rotella con Shift o sul container
+                if (e.shiftKey) {
+                    e.preventDefault();
+                    gridEl.scrollLeft += e.deltaY;
+                }
+            }
+        };
+
+        gridEl.addEventListener("wheel", handleWheel, { passive: false });
+        return () => gridEl.removeEventListener("wheel", handleWheel);
+    }, [isOpen, loading]);
+
+    // Scorciatoie da tastiera avanzate per PC
+    useEffect(() => {
+        if (!isOpen) return;
+
+        const handleKeyDown = (e) => {
+            // Ignora se si sta scrivendo nell'input di ricerca
+            if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") {
+                if (e.key === "Escape") {
+                    setIsSearchVisible(false);
+                    setSearchQuery("");
+                }
+                return;
+            }
+
+            if (e.key === "Escape") {
+                onClose();
+            } else if (e.key === "ArrowRight") {
+                // Scorre avanti di 30 minuti
+                e.preventDefault();
+                handleScrollStep(0.25);
+            } else if (e.key === "ArrowLeft") {
+                // Scorre indietro di 30 minuti
+                e.preventDefault();
+                handleScrollStep(-0.25);
+            } else if (e.key === "ArrowDown") {
+                // Canale successivo
+                e.preventDefault();
+                if (filteredChannels.length === 0) return;
+                const curIndex = filteredChannels.findIndex(c => c.canale === selectedChannel?.canale);
+                const nextIndex = curIndex === -1 ? 0 : Math.min(curIndex + 1, filteredChannels.length - 1);
+                const nextCh = filteredChannels[nextIndex];
+                setSelectedChannel(nextCh);
+                setSelectedProgram(nextCh.programmi?.[0] || null);
+            } else if (e.key === "ArrowUp") {
+                // Canale precedente
+                e.preventDefault();
+                if (filteredChannels.length === 0) return;
+                const curIndex = filteredChannels.findIndex(c => c.canale === selectedChannel?.canale);
+                const prevIndex = curIndex <= 0 ? 0 : curIndex - 1;
+                const prevCh = filteredChannels[prevIndex];
+                setSelectedChannel(prevCh);
+                setSelectedProgram(prevCh.programmi?.[0] || null);
+            } else if (e.key === "Enter" || e.key === " ") {
+                // Guarda il canale selezionato
+                if (selectedChannel) {
+                    e.preventDefault();
+                    handleWatchChannel(selectedChannel.canale);
+                }
+            } else if (e.key.toLowerCase() === "o" || e.key.toLowerCase() === "t") {
+                // Salta a ON NOW
+                e.preventDefault();
+                handleJumpToNow();
+            } else if (e.key === "/") {
+                // Apri ricerca
+                e.preventDefault();
+                setIsSearchVisible(true);
+                setTimeout(() => {
+                    if (searchInputRef.current) searchInputRef.current.focus();
+                }, 50);
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [isOpen, onClose, filteredChannels, selectedChannel, currentMinutes]);
+
     // Sincronizzazione scroll orizzontale tra Header Orari e Griglia
     const handleGridScroll = (e) => {
         if (headerTimelineRef.current) {
@@ -185,10 +321,10 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         }
     };
 
-    // Navigazione orizzontale a step (+2 ore / -2 ore)
-    const handleScrollStep = (direction) => {
+    // Navigazione orizzontale a step (+2 ore / -2 ore oppure frazioni di ora)
+    const handleScrollStep = (hours = 2) => {
         if (gridTimelineRef.current) {
-            const delta = direction * 120 * PX_PER_MINUTE;
+            const delta = hours * 60 * PX_PER_MINUTE;
             gridTimelineRef.current.scrollBy({ left: delta, behavior: "smooth" });
         }
     };
@@ -369,6 +505,10 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                 className="ee-epg-scroll-viewport"
                                 ref={gridTimelineRef}
                                 onScroll={handleGridScroll}
+                                onMouseDown={handleMouseDown}
+                                onMouseMove={handleMouseMove}
+                                onMouseUp={handleMouseUpOrLeave}
+                                onMouseLeave={handleMouseUpOrLeave}
                             >
                                 {/* Lista Canali con i blocchi del palinsesto */}
                                 <div className="ee-channels-container" style={{ width: `${totalWidthPx}px` }}>
@@ -462,12 +602,18 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                                                         left: `${leftPx}px`,
                                                                         width: `${widthPx}px`
                                                                     }}
-                                                                    onClick={() => {
+                                                                    onClick={(e) => {
+                                                                        // Se era un trascinamento del mouse, non selezionare
+                                                                        if (hasDraggedRef.current) return;
                                                                         setSelectedProgram(prog);
                                                                         setSelectedChannel(ch);
                                                                     }}
                                                                     onDoubleClick={() => handleWatchChannel(ch.canale)}
-                                                                    title={`${prog.ora} - ${prog.fine || ""} | ${prog.titolo}\n(Doppio click per guardare)`}
+                                                                    onMouseEnter={() => {
+                                                                        const slug = createSlug(ch.canale);
+                                                                        router.prefetch("/sky?ch=" + slug);
+                                                                    }}
+                                                                    title={`${prog.ora} - ${prog.fine || ""} | ${prog.titolo}\n(Click per info, Doppio click per guardare)`}
                                                                 >
                                                                     <div className="ee-prog-inner">
                                                                         <div className="ee-prog-title-row">
@@ -479,6 +625,18 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                                                             <span className="ee-prog-title">{prog.titolo}</span>
                                                                         </div>
                                                                     </div>
+                                                                    {/* Bottone rapido guarda al passaggio del mouse su PC */}
+                                                                    <button
+                                                                        type="button"
+                                                                        className="ee-quick-watch-hover-btn"
+                                                                        onClick={(e) => {
+                                                                            e.stopPropagation();
+                                                                            handleWatchChannel(ch.canale);
+                                                                        }}
+                                                                        title={`Guarda subito ${ch.canale}`}
+                                                                    >
+                                                                        <i className="fas fa-play"></i>
+                                                                    </button>
                                                                 </div>
                                                             );
                                                         });
@@ -532,14 +690,13 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                     </div>
                 )}
 
-                {/* 5. BOTTOM FOOTER TELECOMANDO (EE Quick Keys) */}
+                {/* 5. BOTTOM FOOTER TELECOMANDO (EE Quick Keys & PC Shortcuts) */}
                 <div className="ee-epg-footer">
                     <button
                         type="button"
                         className="ee-footer-btn-key"
                         onClick={() => {
                             if (selectedProgram) {
-                                // Chiude o apre il toggle
                                 setSelectedProgram(null);
                             } else if (filteredChannels.length > 0) {
                                 const ch = filteredChannels[0];
@@ -551,27 +708,42 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                         <span className="ee-key-circle info">
                             <i className="fas fa-info"></i>
                         </span>
-                        <span className="ee-key-label">{selectedProgram ? "CHIUDI INFO" : "INFO PROGRAMMA"}</span>
+                        <span className="ee-key-label">{selectedProgram ? "CHIUDI INFO" : "INFO (I)"}</span>
                     </button>
 
                     <button type="button" className="ee-footer-btn-key" onClick={handleJumpToNow}>
                         <span className="ee-key-circle green"></span>
-                        <span className="ee-key-label">ON NOW</span>
+                        <span className="ee-key-label">ON NOW (O)</span>
                     </button>
 
-                    <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(-1)}>
+                    <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(-2)}>
                         <span className="ee-key-circle arrow">◀◀</span>
                         <span className="ee-key-label">-2 ORE</span>
                     </button>
 
-                    <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(1)}>
+                    <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(2)}>
                         <span className="ee-key-circle arrow">▶▶</span>
                         <span className="ee-key-label">+2 ORE</span>
                     </button>
 
                     <div className="ee-footer-key">
+                        <span className="ee-key-badge">Tasti ↑ ↓</span>
+                        <span className="ee-key-label">Cambia Canale</span>
+                    </div>
+
+                    <div className="ee-footer-key">
+                        <span className="ee-key-badge">Tasti ← →</span>
+                        <span className="ee-key-label">Scorri Tempo</span>
+                    </div>
+
+                    <div className="ee-footer-key">
+                        <span className="ee-key-badge">Invio</span>
+                        <span className="ee-key-label">Guarda Canale</span>
+                    </div>
+
+                    <div className="ee-footer-key">
                         <span className="ee-key-circle blue"></span>
-                        <span className="ee-key-label">DOPPIO CLICK: GUARDA CANALE</span>
+                        <span className="ee-key-label">Trascina mouse / Shift+Rotella</span>
                     </div>
                 </div>
             </div>

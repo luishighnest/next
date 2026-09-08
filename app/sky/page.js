@@ -468,6 +468,23 @@ function SkyContent() {
         setSelectedChannel(filteredChannels[prevIdx]);
     };
 
+    // Scorciatoie tastiera per cambiare canale su PC (Tasti Freccia Su e Freccia Giù)
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+            if (e.key === "ArrowUp") {
+                e.preventDefault();
+                handlePrevChannel();
+            } else if (e.key === "ArrowDown") {
+                e.preventDefault();
+                handleNextChannel();
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [filteredChannels, selectedChannel]);
+
     // Sincronizza dinamicamente l'URL nel browser quando cambia il canale selezionato
     useEffect(() => {
         if (!selectedChannel) return;
@@ -685,23 +702,25 @@ function SkyContent() {
                             </div>
                         </div>
 
-                        {/* Zapping Controls */}
+                        {/* Zapping Controls con frecce Su / Giù per PC e Telecomando */}
                         <div className="zap-controls">
                             <button
                                 type="button"
-                                className="zap-btn"
+                                className="zap-btn zap-btn-up"
                                 onClick={handlePrevChannel}
-                                title="Canale precedente"
+                                title="Canale precedente (Freccia Su ↑)"
+                                aria-label="Canale precedente"
                             >
-                                <span className="material-symbols-rounded">skip_previous</span>
+                                <span className="material-symbols-rounded">keyboard_arrow_up</span>
                             </button>
                             <button
                                 type="button"
-                                className="zap-btn"
+                                className="zap-btn zap-btn-down"
                                 onClick={handleNextChannel}
-                                title="Canale successivo"
+                                title="Canale successivo (Freccia Giù ↓)"
+                                aria-label="Canale successivo"
                             >
-                                <span className="material-symbols-rounded">skip_next</span>
+                                <span className="material-symbols-rounded">keyboard_arrow_down</span>
                             </button>
                         </div>
                     </div>

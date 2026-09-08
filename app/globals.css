@@ -8878,6 +8878,95 @@ body:has(.sky-app) {
     font-size: 0.68rem;
 }
 
+/* Badge per tasti da tastiera PC nel footer */
+.ee-key-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 7px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 0.68rem;
+    font-weight: 700;
+    font-family: inherit;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Desktop Scrollbar sottile & elegante per viewport EPG */
+.ee-epg-scroll-viewport {
+    cursor: grab;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.22) rgba(0, 0, 0, 0.4);
+}
+
+.ee-epg-scroll-viewport::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.ee-epg-scroll-viewport::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.ee-epg-scroll-viewport::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+}
+
+.ee-epg-scroll-viewport::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Bottone rapido guarda canale su PC all'hover del programma */
+.ee-quick-watch-hover-btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%) scale(0.85);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #e30a17;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.72rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 2px 10px rgba(227, 10, 23, 0.6);
+    z-index: 8;
+}
+
+.ee-program-block:hover .ee-quick-watch-hover-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) scale(1);
+}
+
+.ee-quick-watch-hover-btn:hover {
+    background: #ff1f2d;
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 4px 14px rgba(255, 31, 45, 0.8);
+}
+
+.ee-program-block.is-live .ee-quick-watch-hover-btn {
+    background: #000000;
+    border-color: #000000;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.ee-program-block.is-live .ee-quick-watch-hover-btn:hover {
+    background: #222222;
+    transform: translateY(-50%) scale(1.15);
+}
+
 .ee-loading-state {
     display: flex;
     flex-direction: column;
