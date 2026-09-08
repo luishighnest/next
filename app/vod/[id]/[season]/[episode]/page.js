@@ -12,29 +12,6 @@ export default function TvSeriesPlayerPage() {
     const [seriesTitle, setSeriesTitle] = useState("Serie TV");
     const [episodeTitle, setEpisodeTitle] = useState("");
     const [totalEpisodesInSeason, setTotalEpisodesInSeason] = useState(0);
-    const [playerSrc, setPlayerSrc] = useState("");
-    const [loading, setLoading] = useState(true);
-    const [embedError, setEmbedError] = useState(false);
-
-    // Fetch signed embed URL server-side to avoid error 233011
-    useEffect(() => {
-        if (!id) return;
-        setLoading(true);
-        setEmbedError(false);
-        setPlayerSrc("");
-
-        fetch(`/api/vod?action=vixembed&type=tv&id=${id}&season=${season}&episode=${episode}&lang=it`)
-            .then(res => res.json())
-            .then(data => {
-                if (data?.embedUrl) {
-                    setPlayerSrc(data.embedUrl);
-                } else {
-                    setEmbedError(true);
-                }
-            })
-            .catch(() => setEmbedError(true))
-            .finally(() => setLoading(false));
-    }, [id, season, episode]);
 
     // Carica dettagli serie ed episodio
     useEffect(() => {
@@ -54,17 +31,22 @@ export default function TvSeriesPlayerPage() {
             fetch(`/api/vod?action=details&type=tv&id=${id}`)
                 .then(res => res.json())
                 .then(data => {
-                    if (data?.details?.name) setSeriesTitle(data.details.name);
+                    if (data?.details?.name) {
+                        setSeriesTitle(data.details.name);
+                    }
                 })
                 .catch(() => {});
 
+            // Info stagione per conteggio episodi e titolo episodio
             fetch(`/api/vod?action=season&id=${id}&season=${season}`)
                 .then(res => res.json())
                 .then(data => {
                     if (data?.season?.episodes) {
                         setTotalEpisodesInSeason(data.season.episodes.length);
                         const curEp = data.season.episodes.find(e => String(e.episode_number) === String(episode));
-                        if (curEp?.name) setEpisodeTitle(curEp.name);
+                        if (curEp && curEp.name) {
+                            setEpisodeTitle(curEp.name);
+                        }
                     }
                 })
                 .catch(() => {});
@@ -75,9 +57,12 @@ export default function TvSeriesPlayerPage() {
     const hasNext = totalEpisodesInSeason > 0 ? curEpNum < totalEpisodesInSeason : true;
     const hasPrev = curEpNum > 1;
 
+    // URL diretto VixSrc con autoplay e primaryColor personalizzato
+    const playerSrc = `https://vixsrc.to/tv/${id}/${season}/${episode}?primaryColor=e30a17&autoplay=true&lang=it`;
+
     return (
         <div className="vod-fullscreen-cinema">
-            {/* Topbar sempre visibile */}
+            {/* Overlay superiore controlli: SEMPRE VISIBILE, non copre i controlli nativi in basso */}
             <div className="vod-fullscreen-topbar visible">
                 <Link href={`/vod/info/${id}?type=tv`} className="vod-fullscreen-back-btn">
                     <span className="material-symbols-rounded">arrow_back</span>
@@ -92,57 +77,38 @@ export default function TvSeriesPlayerPage() {
 
                 <div className="vod-fullscreen-actions">
                     {hasPrev && (
-                        <Link
-                            href={`/vod/${id}/${season}/${curEpNum - 1}`}
-                            className="vod-fs-nav-btn"
+                        <Link 
+                            href={`/vod/${id}/${season}/${curEpNum - 1}`} 
+                            className="vod-fs-nav-btn" 
                             title="Episodio precedente"
                         >
                             <span className="material-symbols-rounded">skip_previous</span>
                         </Link>
                     )}
                     {hasNext && (
-                        <Link
-                            href={`/vod/${id}/${season}/${curEpNum + 1}`}
-                            className="vod-fs-nav-btn"
+                        <Link 
+                            href={`/vod/${id}/${season}/${curEpNum + 1}`} 
+                            className="vod-fs-nav-btn" 
                             title="Episodio successivo"
                         >
                             <span className="material-symbols-rounded">skip_next</span>
                         </Link>
                     )}
-                    <Link href="/vod" className="vod-fullscreen-home-btn" title="Catalogo VOD">
+                    <Link href="/vod" className="vod-fullscreen-home-btn" title="Vai al Catalogo VOD">
                         <span className="material-symbols-rounded">grid_view</span>
                     </Link>
                 </div>
             </div>
 
-            {/* Player */}
-            {loading && (
-                <div className="vod-player-loading">
-                    <div className="vod-player-spinner" />
-                    <p>Caricamento in corso…</p>
-                </div>
-            )}
-
-            {embedError && !loading && (
-                <div className="vod-player-error">
-                    <span className="material-symbols-rounded">error</span>
-                    <p>Impossibile caricare l&apos;episodio.</p>
-                    <button onClick={() => window.location.reload()} className="vod-player-retry-btn">
-                        Riprova
-                    </button>
-                </div>
-            )}
-
-            {playerSrc && !loading && (
-                <iframe
-                    src={playerSrc}
-                    className="vod-fullscreen-iframe"
-                    referrerPolicy="no-referrer"
-                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    title={`${seriesTitle} - S${season} E${episode}`}
-                />
-            )}
+            {/* Iframe VixSrc Cinema a 100vw e 100vh con no-referrer */}
+            <iframe
+                src={playerSrc}
+                className="vod-fullscreen-iframe"
+                referrerPolicy="no-referrer"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                allowFullScreen
+                title={`${seriesTitle} - S${season} E${episode}`}
+            />
         </div>
     );
 }

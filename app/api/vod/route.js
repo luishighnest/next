@@ -79,62 +79,6 @@ export async function GET(request) {
             });
         }
 
-        if (action === "vixembed") {
-            const type = searchParams.get("type") || "movie";
-            const id = searchParams.get("id");
-            const season = searchParams.get("season");
-            const episode = searchParams.get("episode");
-            const lang = searchParams.get("lang") || "it";
-
-            if (!id) {
-                return NextResponse.json({ error: "Missing id" }, { status: 400 });
-            }
-
-            let vixUrl;
-            if (type === "tv") {
-                vixUrl = `https://vixsrc.to/api/tv/${id}/${season}/${episode}?lang=${lang}`;
-            } else {
-                vixUrl = `https://vixsrc.to/api/movie/${id}?lang=${lang}`;
-            }
-
-            const vixRes = await fetch(vixUrl, {
-                headers: {
-                    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-                    "Referer": "https://vixsrc.to/",
-                    "Origin": "https://vixsrc.to",
-                    "Accept": "application/json"
-                },
-                cache: "no-store"
-            });
-
-            if (!vixRes.ok) {
-                return NextResponse.json({ error: `VixSrc error ${vixRes.status}` }, { status: 502 });
-            }
-
-            const vixData = await vixRes.json();
-
-            if (vixData?.src) {
-                return NextResponse.json({
-                    success: true,
-                    embedUrl: "https://vixsrc.to" + vixData.src
-                }, {
-                    headers: { "Cache-Control": "no-store" }
-                });
-            }
-
-            // Fallback: return the direct page URL if no embed src
-            const fallbackUrl = type === "tv"
-                ? `https://vixsrc.to/tv/${id}/${season}/${episode}?primaryColor=e30a17&autoplay=true&lang=${lang}`
-                : `https://vixsrc.to/movie/${id}?primaryColor=e30a17&autoplay=true&lang=${lang}`;
-
-            return NextResponse.json({
-                success: true,
-                embedUrl: fallbackUrl,
-                fallback: true
-            }, {
-                headers: { "Cache-Control": "no-store" }
-            });
-        }
 
         if (action === "season") {
             const id = searchParams.get("id");

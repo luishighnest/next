@@ -8,29 +8,6 @@ export default function MoviePlayerPage() {
     const id = params?.id ? String(params.id) : "";
 
     const [movieTitle, setMovieTitle] = useState("Film VOD");
-    const [playerSrc, setPlayerSrc] = useState("");
-    const [loading, setLoading] = useState(true);
-    const [embedError, setEmbedError] = useState(false);
-
-    // Fetch signed embed URL server-side to avoid CORS/adblock/JWPlayer issues
-    useEffect(() => {
-        if (!id) return;
-        setLoading(true);
-        setEmbedError(false);
-        setPlayerSrc("");
-
-        fetch(`/api/vod?action=vixembed&type=movie&id=${id}&lang=it`)
-            .then(res => res.json())
-            .then(data => {
-                if (data?.embedUrl) {
-                    setPlayerSrc(data.embedUrl);
-                } else {
-                    setEmbedError(true);
-                }
-            })
-            .catch(() => setEmbedError(true))
-            .finally(() => setLoading(false));
-    }, [id]);
 
     // Carica titolo film da sessionStorage o TMDB
     useEffect(() => {
@@ -59,9 +36,11 @@ export default function MoviePlayerPage() {
         }
     }, [id]);
 
+    const playerSrc = `https://vixsrc.to/movie/${id}?primaryColor=e30a17&autoplay=true&lang=it`;
+
     return (
         <div className="vod-fullscreen-cinema">
-            {/* Overlay superiore con pulsante Indietro e Titolo - Sempre visibile e trasparente/non invasivo */}
+            {/* Overlay superiore con pulsante Indietro e Titolo - Sempre visibile in alto */}
             <div className="vod-fullscreen-topbar visible">
                 <Link href={`/vod/info/${id}?type=movie`} className="vod-fullscreen-back-btn">
                     <span className="material-symbols-rounded">arrow_back</span>
@@ -80,34 +59,15 @@ export default function MoviePlayerPage() {
                 </div>
             </div>
 
-            {/* Player state management */}
-            {loading && (
-                <div className="vod-player-loading">
-                    <div className="vod-player-spinner" />
-                    <p>Caricamento in corso…</p>
-                </div>
-            )}
-
-            {embedError && !loading && (
-                <div className="vod-player-error">
-                    <span className="material-symbols-rounded">error</span>
-                    <p>Impossibile caricare il film.</p>
-                    <button onClick={() => window.location.reload()} className="vod-player-retry-btn">
-                        Riprova
-                    </button>
-                </div>
-            )}
-
-            {playerSrc && !loading && (
-                <iframe
-                    src={playerSrc}
-                    className="vod-fullscreen-iframe"
-                    referrerPolicy="no-referrer"
-                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                    allowFullScreen
-                    title={movieTitle}
-                />
-            )}
+            {/* Iframe VixSrc Cinema a 100vw e 100vh */}
+            <iframe
+                src={playerSrc}
+                className="vod-fullscreen-iframe"
+                referrerPolicy="no-referrer"
+                allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
+                allowFullScreen
+                title={movieTitle}
+            />
         </div>
     );
 }
