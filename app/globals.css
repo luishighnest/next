@@ -10068,16 +10068,17 @@ body:has(.sky-app) {
     display: block;
 }
 
+/* Topbar player a tutta larghezza */
 .vod-fullscreen-topbar {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 16px 28px;
+    padding: 18px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.35) 65%, transparent 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.3) 70%, transparent 100%);
     z-index: 2147483647;
     pointer-events: auto;
 }
@@ -10092,76 +10093,68 @@ body:has(.sky-app) {
     display: flex;
 }
 
-/* Pulsante Indietro Minimal */
-.vod-fullscreen-back-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 8px 16px;
-    border-radius: 999px;
+/* Pulsante Indietro Minimal: SOLO ICONA */
+.vod-fullscreen-back-btn.icon-only {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border-radius: 50%;
     background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     color: rgba(255, 255, 255, 0.9);
-    font-size: 0.88rem;
-    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     transition: all 0.2s ease;
+    flex-shrink: 0;
 }
-.vod-fullscreen-back-btn span.material-symbols-rounded {
-    font-size: 1.15rem;
+.vod-fullscreen-back-btn.icon-only span.material-symbols-rounded {
+    font-size: 1.25rem;
 }
-.vod-fullscreen-back-btn:hover {
-    background: rgba(255, 255, 255, 0.16);
-    border-color: rgba(255, 255, 255, 0.25);
+.vod-fullscreen-back-btn.icon-only:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.28);
     color: #ffffff;
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
-/* Titolo SOLO testo pulito, senza casella né box */
-.vod-fullscreen-title-clean {
+/* Titolo PERFETTAMENTE AL CENTRO in alto, SOLO TESTO senza casella */
+.vod-fullscreen-title-clean.center-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: center;
     background: none;
     border: none;
     padding: 0;
+    margin: 0;
     box-shadow: none;
     pointer-events: none;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 
-.vod-fs-clean-ep {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: #ff3342;
-    letter-spacing: 0.04em;
-}
-
-.vod-fs-clean-title {
-    font-size: 0.95rem;
+.vod-fullscreen-title-clean.center-title .vod-fs-clean-title {
+    font-size: 0.96rem;
     font-weight: 600;
     color: #ffffff;
+    letter-spacing: 0.02em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 0 12px rgba(0, 0, 0, 0.6);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 45vw;
-}
-
-.vod-fs-clean-sub {
-    font-size: 0.88rem;
-    color: rgba(255, 255, 255, 0.65);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 30vw;
+    max-width: 60vw;
 }
 
 .vod-fullscreen-actions {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-shrink: 0;
 }
 
 /* Tasti azione minimal */
@@ -10189,6 +10182,47 @@ body:has(.sky-app) {
     border-color: rgba(255, 255, 255, 0.25);
     color: #ffffff;
     transform: scale(1.05);
+}
+
+/* Tasto schermo intero invisibile nell'estremità più bassa in basso a destra */
+.vod-fs-invisible-bottom-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 2147483647;
+    opacity: 0;
+    pointer-events: auto;
+}
+
+/* Pulsante VOD nella scheda info */
+.atv-btn-vod-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 15px 28px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.atv-btn-vod-back:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    transform: scale(1.03);
 }
 
 @media (max-width: 1024px) {

@@ -7,11 +7,11 @@ export default function MoviePlayerPage() {
     const params = useParams();
     const id = params?.id ? String(params.id) : "";
 
-    const [movieTitle, setMovieTitle] = useState("Film VOD");
+    const [movieTitle, setMovieTitle] = useState("");
     const [isFullscreen, setIsFullscreen] = useState(false);
     const containerRef = useRef(null);
 
-    // Gestione schermo intero nativo del browser sul container
+    // Toggle schermo intero sul container
     const toggleFullscreen = () => {
         if (!document.fullscreenElement) {
             if (containerRef.current?.requestFullscreen) {
@@ -44,7 +44,7 @@ export default function MoviePlayerPage() {
                 if (stored) {
                     const parsed = JSON.parse(stored);
                     if (String(parsed.tmdbId) === String(id) || String(parsed.id).includes(String(id))) {
-                        setMovieTitle(parsed.title || parsed.name || "Film VOD");
+                        setMovieTitle(parsed.title || parsed.name || "");
                         return;
                     }
                 }
@@ -65,46 +65,47 @@ export default function MoviePlayerPage() {
 
     const playerSrc = `https://vixsrc.to/movie/${id}?primaryColor=e30a17&autoplay=true&lang=it`;
 
+    // Formato richiesto: SOLO "TITOLO FILM"
+    const displayTitle = movieTitle || "Film";
+
     return (
         <div className="vod-fullscreen-cinema" ref={containerRef}>
-            {/* Topbar minimal: visibile sia normale che a schermo intero */}
+            {/* Topbar: solo icona a sinistra, titolo al centro, azioni a destra */}
             <div className="vod-fullscreen-topbar visible">
-                <Link href={`/vod/info/${id}?type=movie`} className="vod-fullscreen-back-btn" title="Torna alla scheda">
+                {/* Tasto in alto a sinistra: SOLO ICONA, nessun testo */}
+                <Link href={`/vod/info/${id}?type=movie`} className="vod-fullscreen-back-btn icon-only" title="Torna alla scheda">
                     <span className="material-symbols-rounded">arrow_back</span>
-                    <span className="vod-fs-back-text">Torna alla scheda</span>
                 </Link>
 
-                {/* Titolo solo testo pulito senza casella */}
-                <div className="vod-fullscreen-title-clean">
-                    <span className="vod-fs-clean-ep">FILM</span>
-                    <span className="vod-fs-clean-title">{movieTitle}</span>
+                {/* Titolo perfettamente in alto al centro: SOLO TESTO senza casella */}
+                <div className="vod-fullscreen-title-clean center-title">
+                    <span className="vod-fs-clean-title">{displayTitle}</span>
                 </div>
 
                 <div className="vod-fullscreen-actions">
-                    <button
-                        type="button"
-                        onClick={toggleFullscreen}
-                        className="vod-fs-nav-btn"
-                        title={isFullscreen ? "Esci da schermo intero" : "Schermo intero"}
-                    >
-                        <span className="material-symbols-rounded">
-                            {isFullscreen ? "fullscreen_exit" : "fullscreen"}
-                        </span>
-                    </button>
                     <Link href="/vod" className="vod-fullscreen-home-btn" title="Vai al Catalogo VOD">
                         <span className="material-symbols-rounded">grid_view</span>
                     </Link>
                 </div>
             </div>
 
-            {/* Iframe VixSrc Cinema a 100vw e 100vh */}
+            {/* Tasto schermo intero invisibile nell'estremità più bassa in basso a destra */}
+            <button
+                type="button"
+                onClick={toggleFullscreen}
+                className="vod-fs-invisible-bottom-btn"
+                title={isFullscreen ? "Esci da schermo intero" : "Schermo intero"}
+                aria-label="Schermo intero"
+            />
+
+            {/* Iframe VixSrc Cinema */}
             <iframe
                 src={playerSrc}
                 className="vod-fullscreen-iframe"
                 referrerPolicy="no-referrer"
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
-                title={movieTitle}
+                title={displayTitle}
             />
         </div>
     );

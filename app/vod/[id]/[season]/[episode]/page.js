@@ -9,13 +9,12 @@ export default function TvSeriesPlayerPage() {
     const season = params?.season ? String(params.season) : "1";
     const episode = params?.episode ? String(params.episode) : "1";
 
-    const [seriesTitle, setSeriesTitle] = useState("Serie TV");
-    const [episodeTitle, setEpisodeTitle] = useState("");
+    const [seriesTitle, setSeriesTitle] = useState("");
     const [totalEpisodesInSeason, setTotalEpisodesInSeason] = useState(0);
     const [isFullscreen, setIsFullscreen] = useState(false);
     const containerRef = useRef(null);
 
-    // Gestione schermo intero nativo del browser sul container
+    // Toggle schermo intero sul container
     const toggleFullscreen = () => {
         if (!document.fullscreenElement) {
             if (containerRef.current?.requestFullscreen) {
@@ -40,7 +39,7 @@ export default function TvSeriesPlayerPage() {
         };
     }, []);
 
-    // Carica dettagli serie ed episodio
+    // Carica dettagli serie
     useEffect(() => {
         if (typeof window !== "undefined") {
             try {
@@ -48,7 +47,7 @@ export default function TvSeriesPlayerPage() {
                 if (stored) {
                     const parsed = JSON.parse(stored);
                     if (String(parsed.tmdbId) === String(id) || String(parsed.id).includes(String(id))) {
-                        setSeriesTitle(parsed.title || parsed.name || "Serie TV");
+                        setSeriesTitle(parsed.title || parsed.name || "");
                     }
                 }
             } catch (e) {}
@@ -64,21 +63,16 @@ export default function TvSeriesPlayerPage() {
                 })
                 .catch(() => {});
 
-            // Info stagione per conteggio episodi e titolo episodio
             fetch(`/api/vod?action=season&id=${id}&season=${season}`)
                 .then(res => res.json())
                 .then(data => {
                     if (data?.season?.episodes) {
                         setTotalEpisodesInSeason(data.season.episodes.length);
-                        const curEp = data.season.episodes.find(e => String(e.episode_number) === String(episode));
-                        if (curEp && curEp.name) {
-                            setEpisodeTitle(curEp.name);
-                        }
                     }
                 })
                 .catch(() => {});
         }
-    }, [id, season, episode]);
+    }, [id, season]);
 
     const curEpNum = parseInt(episode, 10);
     const hasNext = totalEpisodesInSeason > 0 ? curEpNum < totalEpisodesInSeason : true;
@@ -86,20 +80,21 @@ export default function TvSeriesPlayerPage() {
 
     const playerSrc = `https://vixsrc.to/tv/${id}/${season}/${episode}?primaryColor=e30a17&autoplay=true&lang=it`;
 
+    // Formato richiesto: "TITOLO SERIE S2:E1"
+    const displayTitle = seriesTitle ? `${seriesTitle} S${season}:E${episode}` : `S${season}:E${episode}`;
+
     return (
         <div className="vod-fullscreen-cinema" ref={containerRef}>
-            {/* Topbar minimal: visibile sia normale che a schermo intero */}
+            {/* Topbar: solo icona a sinistra, titolo al centro, azioni a destra */}
             <div className="vod-fullscreen-topbar visible">
-                <Link href={`/vod/info/${id}?type=tv`} className="vod-fullscreen-back-btn" title="Torna agli episodi">
+                {/* Tasto in alto a sinistra: SOLO ICONA, nessun testo */}
+                <Link href={`/vod/info/${id}?type=tv`} className="vod-fullscreen-back-btn icon-only" title="Torna alla scheda">
                     <span className="material-symbols-rounded">arrow_back</span>
-                    <span className="vod-fs-back-text">Torna agli episodi</span>
                 </Link>
 
-                {/* Titolo solo testo pulito senza casella */}
-                <div className="vod-fullscreen-title-clean">
-                    <span className="vod-fs-clean-ep">S{season}:E{episode}</span>
-                    <span className="vod-fs-clean-title">{seriesTitle}</span>
-                    {episodeTitle && <span className="vod-fs-clean-sub">• {episodeTitle}</span>}
+                {/* Titolo perfettamente in alto al centro: SOLO TESTO senza casella */}
+                <div className="vod-fullscreen-title-clean center-title">
+                    <span className="vod-fs-clean-title">{displayTitle}</span>
                 </div>
 
                 <div className="vod-fullscreen-actions">
@@ -121,30 +116,29 @@ export default function TvSeriesPlayerPage() {
                             <span className="material-symbols-rounded">skip_next</span>
                         </Link>
                     )}
-                    <button
-                        type="button"
-                        onClick={toggleFullscreen}
-                        className="vod-fs-nav-btn"
-                        title={isFullscreen ? "Esci da schermo intero" : "Schermo intero"}
-                    >
-                        <span className="material-symbols-rounded">
-                            {isFullscreen ? "fullscreen_exit" : "fullscreen"}
-                        </span>
-                    </button>
                     <Link href="/vod" className="vod-fullscreen-home-btn" title="Vai al Catalogo VOD">
                         <span className="material-symbols-rounded">grid_view</span>
                     </Link>
                 </div>
             </div>
 
-            {/* Iframe VixSrc Cinema a 100vw e 100vh con no-referrer */}
+            {/* Tasto schermo intero invisibile nell'estremità più bassa in basso a destra */}
+            <button
+                type="button"
+                onClick={toggleFullscreen}
+                className="vod-fs-invisible-bottom-btn"
+                title={isFullscreen ? "Esci da schermo intero" : "Schermo intero"}
+                aria-label="Schermo intero"
+            />
+
+            {/* Iframe VixSrc Cinema */}
             <iframe
                 src={playerSrc}
                 className="vod-fullscreen-iframe"
                 referrerPolicy="no-referrer"
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
-                title={`${seriesTitle} - S${season} E${episode}`}
+                title={displayTitle}
             />
         </div>
     );

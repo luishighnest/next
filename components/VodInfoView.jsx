@@ -276,6 +276,11 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                                     <span>Trailer</span>
                                 </button>
                             )}
+
+                            <Link href="/vod" className="atv-btn-vod-back">
+                                <span className="material-symbols-rounded">arrow_back</span>
+                                <span>VOD</span>
+                            </Link>
                         </div>
                     </div>
                 </div>
