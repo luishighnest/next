@@ -306,17 +306,6 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                 ref={gridTimelineRef}
                                 onScroll={handleGridScroll}
                             >
-                                {/* Cursore verticale ORA ATTUALE (Cyan Neon come da foto) */}
-                                {selectedDayOffset === 0 && (
-                                    <div
-                                        className="ee-current-time-marker"
-                                        style={{ left: `${nowIndicatorLeftPx}px` }}
-                                    >
-                                        <div className="ee-marker-head"></div>
-                                        <div className="ee-marker-line"></div>
-                                    </div>
-                                )}
-
                                 {/* Lista Canali con i blocchi del palinsesto */}
                                 <div className="ee-channels-container" style={{ width: `${totalWidthPx}px` }}>
                                     {filteredChannels.map((ch, idx) => {
