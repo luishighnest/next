@@ -1916,7 +1916,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     width: 1px;
     height: 18px;
     background: rgba(255, 255, 255, 0.16);
-    margin: 0 2px;
+    margin: 0;
     flex-shrink: 0;
 }
 
