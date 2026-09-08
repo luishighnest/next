@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
@@ -12,6 +12,33 @@ export default function TvSeriesPlayerPage() {
     const [seriesTitle, setSeriesTitle] = useState("Serie TV");
     const [episodeTitle, setEpisodeTitle] = useState("");
     const [totalEpisodesInSeason, setTotalEpisodesInSeason] = useState(0);
+    const [isFullscreen, setIsFullscreen] = useState(false);
+    const containerRef = useRef(null);
+
+    // Gestione schermo intero nativo del browser sul container
+    const toggleFullscreen = () => {
+        if (!document.fullscreenElement) {
+            if (containerRef.current?.requestFullscreen) {
+                containerRef.current.requestFullscreen().catch(() => {});
+            }
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen().catch(() => {});
+            }
+        }
+    };
+
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(!!document.fullscreenElement);
+        };
+        document.addEventListener("fullscreenchange", handleFullscreenChange);
+        document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
+        return () => {
+            document.removeEventListener("fullscreenchange", handleFullscreenChange);
+            document.removeEventListener("webkitfullscreenchange", handleFullscreenChange);
+        };
+    }, []);
 
     // Carica dettagli serie ed episodio
     useEffect(() => {
@@ -57,22 +84,22 @@ export default function TvSeriesPlayerPage() {
     const hasNext = totalEpisodesInSeason > 0 ? curEpNum < totalEpisodesInSeason : true;
     const hasPrev = curEpNum > 1;
 
-    // URL diretto VixSrc con autoplay e primaryColor personalizzato
     const playerSrc = `https://vixsrc.to/tv/${id}/${season}/${episode}?primaryColor=e30a17&autoplay=true&lang=it`;
 
     return (
-        <div className="vod-fullscreen-cinema">
-            {/* Overlay superiore controlli: SEMPRE VISIBILE, non copre i controlli nativi in basso */}
+        <div className="vod-fullscreen-cinema" ref={containerRef}>
+            {/* Topbar minimal: visibile sia normale che a schermo intero */}
             <div className="vod-fullscreen-topbar visible">
-                <Link href={`/vod/info/${id}?type=tv`} className="vod-fullscreen-back-btn">
+                <Link href={`/vod/info/${id}?type=tv`} className="vod-fullscreen-back-btn" title="Torna agli episodi">
                     <span className="material-symbols-rounded">arrow_back</span>
                     <span className="vod-fs-back-text">Torna agli episodi</span>
                 </Link>
 
-                <div className="vod-fullscreen-title-badge">
-                    <span className="vod-fs-type tv-badge">S{season} E{episode}</span>
-                    <span className="vod-fs-title">{seriesTitle}</span>
-                    {episodeTitle && <span className="vod-fs-subtitle">• {episodeTitle}</span>}
+                {/* Titolo solo testo pulito senza casella */}
+                <div className="vod-fullscreen-title-clean">
+                    <span className="vod-fs-clean-ep">S{season}:E{episode}</span>
+                    <span className="vod-fs-clean-title">{seriesTitle}</span>
+                    {episodeTitle && <span className="vod-fs-clean-sub">• {episodeTitle}</span>}
                 </div>
 
                 <div className="vod-fullscreen-actions">
@@ -94,6 +121,16 @@ export default function TvSeriesPlayerPage() {
                             <span className="material-symbols-rounded">skip_next</span>
                         </Link>
                     )}
+                    <button
+                        type="button"
+                        onClick={toggleFullscreen}
+                        className="vod-fs-nav-btn"
+                        title={isFullscreen ? "Esci da schermo intero" : "Schermo intero"}
+                    >
+                        <span className="material-symbols-rounded">
+                            {isFullscreen ? "fullscreen_exit" : "fullscreen"}
+                        </span>
+                    </button>
                     <Link href="/vod" className="vod-fullscreen-home-btn" title="Vai al Catalogo VOD">
                         <span className="material-symbols-rounded">grid_view</span>
                     </Link>

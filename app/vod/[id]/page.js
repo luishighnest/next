@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
@@ -8,6 +8,33 @@ export default function MoviePlayerPage() {
     const id = params?.id ? String(params.id) : "";
 
     const [movieTitle, setMovieTitle] = useState("Film VOD");
+    const [isFullscreen, setIsFullscreen] = useState(false);
+    const containerRef = useRef(null);
+
+    // Gestione schermo intero nativo del browser sul container
+    const toggleFullscreen = () => {
+        if (!document.fullscreenElement) {
+            if (containerRef.current?.requestFullscreen) {
+                containerRef.current.requestFullscreen().catch(() => {});
+            }
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen().catch(() => {});
+            }
+        }
+    };
+
+    useEffect(() => {
+        const handleFullscreenChange = () => {
+            setIsFullscreen(!!document.fullscreenElement);
+        };
+        document.addEventListener("fullscreenchange", handleFullscreenChange);
+        document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
+        return () => {
+            document.removeEventListener("fullscreenchange", handleFullscreenChange);
+            document.removeEventListener("webkitfullscreenchange", handleFullscreenChange);
+        };
+    }, []);
 
     // Carica titolo film da sessionStorage o TMDB
     useEffect(() => {
@@ -39,20 +66,31 @@ export default function MoviePlayerPage() {
     const playerSrc = `https://vixsrc.to/movie/${id}?primaryColor=e30a17&autoplay=true&lang=it`;
 
     return (
-        <div className="vod-fullscreen-cinema">
-            {/* Overlay superiore con pulsante Indietro e Titolo - Sempre visibile in alto */}
+        <div className="vod-fullscreen-cinema" ref={containerRef}>
+            {/* Topbar minimal: visibile sia normale che a schermo intero */}
             <div className="vod-fullscreen-topbar visible">
-                <Link href={`/vod/info/${id}?type=movie`} className="vod-fullscreen-back-btn">
+                <Link href={`/vod/info/${id}?type=movie`} className="vod-fullscreen-back-btn" title="Torna alla scheda">
                     <span className="material-symbols-rounded">arrow_back</span>
                     <span className="vod-fs-back-text">Torna alla scheda</span>
                 </Link>
 
-                <div className="vod-fullscreen-title-badge">
-                    <span className="vod-fs-type">FILM</span>
-                    <span className="vod-fs-title">{movieTitle}</span>
+                {/* Titolo solo testo pulito senza casella */}
+                <div className="vod-fullscreen-title-clean">
+                    <span className="vod-fs-clean-ep">FILM</span>
+                    <span className="vod-fs-clean-title">{movieTitle}</span>
                 </div>
 
                 <div className="vod-fullscreen-actions">
+                    <button
+                        type="button"
+                        onClick={toggleFullscreen}
+                        className="vod-fs-nav-btn"
+                        title={isFullscreen ? "Esci da schermo intero" : "Schermo intero"}
+                    >
+                        <span className="material-symbols-rounded">
+                            {isFullscreen ? "fullscreen_exit" : "fullscreen"}
+                        </span>
+                    </button>
                     <Link href="/vod" className="vod-fullscreen-home-btn" title="Vai al Catalogo VOD">
                         <span className="material-symbols-rounded">grid_view</span>
                     </Link>

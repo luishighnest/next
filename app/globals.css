@@ -10073,118 +10073,122 @@ body:has(.sky-app) {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 24px 36px;
+    padding: 16px 28px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
-    z-index: 100005;
-    transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.35) 65%, transparent 100%);
+    z-index: 2147483647;
     pointer-events: auto;
 }
 
-.vod-fullscreen-topbar.hidden {
-    opacity: 0;
-    transform: translateY(-20px);
-    pointer-events: none;
+.vod-fullscreen-cinema:fullscreen .vod-fullscreen-topbar,
+.vod-fullscreen-cinema:-webkit-full-screen .vod-fullscreen-topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2147483647;
+    display: flex;
 }
 
-.vod-fullscreen-topbar.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+/* Pulsante Indietro Minimal */
 .vod-fullscreen-back-btn {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 22px;
+    gap: 6px;
+    padding: 8px 16px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    color: #ffffff;
-    font-size: 0.92rem;
-    font-weight: 600;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.88rem;
+    font-weight: 500;
     text-decoration: none;
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: all 0.2s ease;
+}
+.vod-fullscreen-back-btn span.material-symbols-rounded {
+    font-size: 1.15rem;
 }
 .vod-fullscreen-back-btn:hover {
-    background: rgba(255, 255, 255, 0.22);
-    border-color: rgba(255, 255, 255, 0.4);
-    transform: scale(1.03);
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.25);
     color: #ffffff;
+    transform: scale(1.02);
 }
 
-.vod-fullscreen-title-badge {
+/* Titolo SOLO testo pulito, senza casella né box */
+.vod-fullscreen-title-clean {
     display: flex;
     align-items: center;
-    gap: 12px;
-    background: rgba(14, 14, 18, 0.7);
-    padding: 8px 20px;
-    border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    gap: 8px;
+    background: none;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    pointer-events: none;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-.vod-fs-type {
-    font-size: 0.75rem;
-    font-weight: 800;
-    padding: 2px 7px;
-    border-radius: 4px;
-    background: rgba(227, 10, 23, 0.3);
-    color: #ff3342;
-    border: 1px solid rgba(227, 10, 23, 0.5);
-    letter-spacing: 0.05em;
-}
-
-.vod-fs-type.tv-badge {
-    background: rgba(10, 132, 255, 0.3);
-    color: #5ac8fa;
-    border: 1px solid rgba(10, 132, 255, 0.5);
-}
-
-.vod-fs-title {
-    font-size: 0.96rem;
+.vod-fs-clean-ep {
+    font-size: 0.82rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #ff3342;
+    letter-spacing: 0.04em;
 }
 
-.vod-fs-subtitle {
+.vod-fs-clean-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 45vw;
+}
+
+.vod-fs-clean-sub {
     font-size: 0.88rem;
     color: rgba(255, 255, 255, 0.65);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 30vw;
 }
 
 .vod-fullscreen-actions {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
+/* Tasti azione minimal */
 .vod-fs-nav-btn, .vod-fullscreen-home-btn {
-    width: 44px;
-    height: 44px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.vod-fs-nav-btn span, .vod-fullscreen-home-btn span {
+    font-size: 1.2rem;
 }
 .vod-fs-nav-btn:hover, .vod-fullscreen-home-btn:hover {
-    background: rgba(255, 255, 255, 0.24);
-    transform: scale(1.08);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.25);
     color: #ffffff;
+    transform: scale(1.05);
 }
 
 @media (max-width: 1024px) {
