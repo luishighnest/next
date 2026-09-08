@@ -160,6 +160,7 @@ export default function Navbar({
         if (cleanFilter === "sport") targetPath = "/sport";
         else if (cleanFilter === "intrattenimento") targetPath = "/intrattenimento";
         else if (cleanFilter === "eventi") targetPath = "/eventi";
+        else if (cleanFilter === "vod") targetPath = "/vod";
 
         try {
             window.scrollTo({ top: 0, behavior: "instant" });
@@ -328,6 +329,13 @@ export default function Navbar({
                                 onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
                             >
                                 <span className="nav-label">Eventi</span>
+                            </Link>
+                            <Link
+                                href="/vod"
+                                className={`nav-link ${activeFilter === "vod" ? "active" : ""}`}
+                                onClick={(e) => { e.preventDefault(); handleNavClick("vod"); }}
+                            >
+                                <span className="nav-label">Vod</span>
                             </Link>
                         </nav>
 

@@ -165,6 +165,10 @@ function HomeViewContent({ defaultTab = "all" }) {
         if (cleanTab === "sport") targetPath = "/sport";
         else if (cleanTab === "intrattenimento") targetPath = "/intrattenimento";
         else if (cleanTab === "eventi") targetPath = "/eventi";
+        else if (cleanTab === "vod") {
+            router.push("/vod");
+            return;
+        }
 
         if (pathname !== targetPath) {
             window.history.pushState(null, "", targetPath);

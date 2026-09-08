@@ -27,8 +27,11 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         (channel.title && channel.title.toLowerCase().includes("sky"))
     );
 
+    const isVod = Boolean(channel.isVod || channel.vodType);
     const cleanSrc = channel.skySource ? (channel.skySource.includes("sky2") ? "sky2" : "") : "";
-    const targetHref = isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`;
+    const targetHref = isVod 
+        ? `/vod?play=${channel.vodType || "movie"}_${channel.tmdbId}` 
+        : (isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`);
 
     const isDazn1Channel = (channel.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
     const dynColor = getDynamicColor(channel.title);
@@ -39,7 +42,9 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     // 3. Fallback intelligente in base al provider o contesto
     const rawCategory = categoryName || channel.group || channel.category || "";
     let categoryLabel = rawCategory;
-    if (!categoryLabel || categoryLabel.toUpperCase() === "DAZN") {
+    if (isVod) {
+        categoryLabel = channel.rating ? `★ ${channel.rating} • ${channel.group || "VOD"}` : (channel.group || "VOD");
+    } else if (!categoryLabel || categoryLabel.toUpperCase() === "DAZN") {
         if (channel.title && channel.title.toLowerCase().includes("supertennis")) {
             categoryLabel = "SuperTennis";
         } else if (channel.title && channel.title.toLowerCase().includes("eurosport")) {
@@ -53,7 +58,9 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
 
     const handleClick = () => {
         try {
-            if (isSky) {
+            if (isVod) {
+                sessionStorage.setItem("nmdz_vodItem", JSON.stringify(channel));
+            } else if (isSky) {
                 sessionStorage.setItem("nmdz_skyChannel", JSON.stringify(channel));
             } else {
                 sessionStorage.setItem("daznEventChannel", JSON.stringify(channel));
@@ -154,6 +161,7 @@ function arePropsEqual(prevProps, nextProps) {
     if (p.image !== n.image) return false;
     if (p.url !== n.url || p.mpd !== n.mpd) return false;
     if (p.skySource !== n.skySource) return false;
+    if (p.isVod !== n.isVod || p.tmdbId !== n.tmdbId || p.vodType !== n.vodType) return false;
     
     // Compare epg length / first item progress
     const pEpg = p.epg || [];
