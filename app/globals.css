@@ -1844,64 +1844,79 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     color: #000000 !important;
 }
 
-/* ISOLA 3 (DESTRA): Azioni interattive (Ricerca + Impostazioni) a filo destro simmetrico stile Apple TV */
+/* ISOLA 3 (DESTRA): Azioni interattive (Ricerca + Guida TV + Impostazioni) a filo destro - identiche dimensioni isola centrale */
 .nav-island-right {
     position: relative;
-    padding: 5px 8px;
+    padding: 5px 6px;
     height: 48px;
     display: inline-flex;
     align-items: center;
-    gap: 2px;
+    gap: 4px;
     flex-shrink: 0;
     margin-left: auto;
     z-index: 10002;
 }
 
 .nav-island-right .settings-icon-btn,
-.nav-island-right .search-icon-btn {
+.nav-island-right .search-icon-btn,
+.nav-island-right .guidatv-icon-btn {
     width: 38px;
     height: 38px;
-    border-radius: 50%;
+    border-radius: 999px;
     background: transparent;
-    border: none;
+    border: 1px solid transparent;
     color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     padding: 0;
     flex-shrink: 0;
     box-sizing: border-box;
 }
 
 .nav-island-right .settings-icon-btn:hover,
-.nav-island-right .search-icon-btn:hover {
+.nav-island-right .search-icon-btn:hover,
+.nav-island-right .guidatv-icon-btn:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.nav-island-right .guidatv-icon-btn.active {
+    color: #000000 !important;
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 2px 14px rgba(255, 255, 255, 0.28);
+}
+
+.nav-island-right .guidatv-icon-btn.active i {
+    color: #000000 !important;
 }
 
 .nav-island-right .settings-icon-btn:active,
-.nav-island-right .search-icon-btn:active {
-    transform: scale(0.92);
+.nav-island-right .search-icon-btn:active,
+.nav-island-right .guidatv-icon-btn:active {
+    transform: scale(0.94);
 }
 
 .nav-island-right .settings-icon-btn i,
-.nav-island-right .search-icon-btn i {
-    font-size: 1.05rem;
+.nav-island-right .search-icon-btn i,
+.nav-island-right .guidatv-icon-btn i {
+    font-size: 0.95rem;
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Separatore sottile interno all'isola destra tra Cerca e Impostazioni */
+/* Separatore sottile interno all'isola destra tra Guida TV e Impostazioni */
 .island-separator,
 .nav-island-right .nav-separator {
     width: 1px;
     height: 18px;
     background: rgba(255, 255, 255, 0.16);
-    margin: 0 4px;
+    margin: 0 2px;
     flex-shrink: 0;
 }
 
@@ -2357,13 +2372,15 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
         display: inline-block;
     }
     .nav-island-right .settings-icon-btn,
-    .nav-island-right .search-icon-btn {
+    .nav-island-right .search-icon-btn,
+    .nav-island-right .guidatv-icon-btn {
         width: 32px;
         height: 32px;
     }
     .nav-island-right .settings-icon-btn i,
-    .nav-island-right .search-icon-btn i {
-        font-size: 0.95rem;
+    .nav-island-right .search-icon-btn i,
+    .nav-island-right .guidatv-icon-btn i {
+        font-size: 0.88rem;
     }
     .home-search-fullbar-container {
         padding: 0 10px;
@@ -7372,46 +7389,6 @@ body:has(.sky-app) {
 /* ============================================================
    GUIDA TV EPG MODAL STYLES (SKY GLASS / TV APPLE STYLE - PURE BLACK)
    ============================================================ */
-/* Icon button nella Navbar Destra */
-.nav-island-right .guidatv-icon-btn {
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: transparent;
-    border: none;
-    color: rgba(255, 255, 255, 0.7);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-    padding: 0;
-    flex-shrink: 0;
-    box-sizing: border-box;
-}
-
-.nav-island-right .guidatv-icon-btn:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.nav-island-right .guidatv-icon-btn.active {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.16);
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
-}
-
-.nav-island-right .guidatv-icon-btn:active {
-    transform: scale(0.92);
-}
-
-.nav-island-right .guidatv-icon-btn i {
-    font-size: 1.05rem;
-    line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 /* Modale Guida TV - Puro Nero coerente con il resto del sito */
 .guidatv-backdrop {
