@@ -9327,3 +9327,575 @@ body:has(.sky-app) {
         border-top: 1px solid rgba(255, 255, 255, 0.08);
     }
 }
+
+
+/* ==========================================================================
+   VOD INFO PAGE & CINEMA FULLSCREEN PLAYER (Apple TV / visionOS Style)
+   ========================================================================== */
+.vod-info-page {
+    min-height: 100vh;
+    background: #0a0a0c;
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.vod-info-hero {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 120px 48px 48px;
+    overflow: hidden;
+}
+
+.vod-info-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+    filter: brightness(0.65) saturate(1.15);
+    transform: scale(1.03);
+    z-index: 1;
+}
+
+.vod-info-hero-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(10, 10, 12, 0.2) 0%, rgba(10, 10, 12, 0.75) 60%, #0a0a0c 100%),
+                radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.8) 0%, transparent 80%);
+    z-index: 2;
+}
+
+.vod-info-hero-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.vod-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+    font-size: 0.88rem;
+    font-weight: 500;
+    text-decoration: none;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    margin-bottom: 32px;
+    transition: all 0.2s ease;
+}
+.vod-back-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateX(-4px);
+}
+
+.vod-info-layout {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.vod-info-poster-col {
+    flex-shrink: 0;
+}
+
+.vod-info-poster-box {
+    width: 240px;
+    aspect-ratio: 2 / 3;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #16161a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+.vod-info-poster-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vod-info-poster-ph {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+.vod-info-poster-ph span {
+    font-size: 3rem;
+}
+
+.vod-info-meta-col {
+    flex: 1;
+    min-width: 0;
+}
+
+.vod-info-badges {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.vod-badge {
+    font-size: 0.78rem;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.vod-info-pill {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 3px 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.vod-info-pill.vod-rating-pill {
+    color: #ffd60a;
+    background: rgba(255, 214, 10, 0.12);
+    border-color: rgba(255, 214, 10, 0.3);
+}
+
+.vod-star-icon {
+    font-size: 1rem;
+}
+
+.vod-info-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0 0 12px 0;
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+}
+
+.vod-info-genres {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 18px;
+}
+
+.vod-info-overview {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 820px;
+    margin: 0 0 28px 0;
+}
+
+.vod-info-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.vod-play-primary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 32px;
+    background: #e30a17;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(227, 10, 23, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.15);
+    transition: all 0.2s ease;
+}
+.vod-play-primary-btn:hover {
+    background: #ff1f2d;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 14px 40px rgba(227, 10, 23, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.3);
+}
+
+/* Sezione Episodi Serie TV */
+.vod-episodes-section {
+    width: 100%;
+    max-width: 1360px;
+    margin: 40px auto 0;
+    padding: 0 48px;
+}
+
+.vod-episodes-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.vod-section-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+.vod-season-pills {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.vod-season-pill {
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+.vod-season-pill:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+}
+.vod-season-pill.active {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.25);
+}
+
+.vod-episodes-loading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 40px 0;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.vod-episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.vod-episode-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.25s ease;
+}
+.vod-episode-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+}
+
+.vod-ep-card-thumb-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #141416;
+    overflow: hidden;
+}
+
+.vod-ep-card-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.vod-episode-card:hover .vod-ep-card-thumb {
+    transform: scale(1.05);
+}
+
+.vod-ep-card-thumb-ph {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.vod-ep-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.vod-episode-card:hover .vod-ep-card-overlay {
+    opacity: 1;
+}
+
+.ep-play-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #e30a17;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+}
+
+.vod-ep-card-num-badge {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    padding: 3px 7px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+}
+
+.vod-ep-card-meta {
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.vod-ep-card-title {
+    font-size: 0.96rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 6px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vod-ep-card-desc {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.4;
+    margin: 0 0 10px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    flex: 1;
+}
+
+.vod-ep-card-runtime {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* ==========================================================================
+   VOD CINEMA FULLSCREEN PLAYER (/vod/[id] & /vod/[id]/[season]/[episode])
+   ========================================================================== */
+.vod-fullscreen-cinema {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    z-index: 100000;
+    overflow: hidden;
+}
+
+.vod-fullscreen-iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    background: #000000;
+    display: block;
+}
+
+.vod-fullscreen-topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+    z-index: 100005;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: auto;
+}
+
+.vod-fullscreen-topbar.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.vod-fullscreen-topbar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.vod-fullscreen-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all 0.2s ease;
+}
+.vod-fullscreen-back-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.03);
+}
+
+.vod-fullscreen-title-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.vod-fs-type {
+    font-size: 0.75rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(227, 10, 23, 0.3);
+    color: #ff3342;
+    border: 1px solid rgba(227, 10, 23, 0.5);
+    letter-spacing: 0.05em;
+}
+
+.vod-fs-type.tv-badge {
+    background: rgba(10, 132, 255, 0.3);
+    color: #5ac8fa;
+    border: 1px solid rgba(10, 132, 255, 0.5);
+}
+
+.vod-fs-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.vod-fs-subtitle {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.vod-fullscreen-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vod-fs-nav-btn, .vod-fullscreen-home-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: all 0.2s ease;
+}
+.vod-fs-nav-btn:hover, .vod-fullscreen-home-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+    .vod-info-hero {
+        padding: 100px 20px 32px;
+    }
+    .vod-info-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+    }
+    .vod-info-poster-box {
+        width: 170px;
+    }
+    .vod-info-title {
+        font-size: 2rem;
+    }
+    .vod-info-badges {
+        justify-content: center;
+    }
+    .vod-info-actions {
+        justify-content: center;
+    }
+    .vod-episodes-section {
+        padding: 0 20px;
+    }
+    .vod-fullscreen-topbar {
+        padding: 14px 16px;
+    }
+    .vod-fs-back-text {
+        display: none;
+    }
+}

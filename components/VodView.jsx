@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import SkeletonSection from "@/components/SkeletonSection";
 import ChannelCard from "@/components/ChannelCard";
-import VodPlayerModal from "@/components/VodPlayerModal";
 
 let memoryVodSections = null;
 
@@ -40,45 +39,6 @@ function VodContent() {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [exploreData, setExploreData] = useState(null);
 
-    // Gestione Player VOD
-    const [activeVodItem, setActiveVodItem] = useState(null);
-    const [isPlayerOpen, setIsPlayerOpen] = useState(false);
-
-    // Controlla se c'è un parametro ?play= nella URL (es. ?play=movie_123 o ?play=tv_456)
-    useEffect(() => {
-        const playParam = searchParams.get("play");
-        if (playParam) {
-            const parts = playParam.split("_");
-            const vodType = parts[0] === "tv" ? "tv" : "movie";
-            const tmdbId = parts.slice(1).join("_");
-
-            // Cerca prima in sessionStorage
-            let storedItem = null;
-            try {
-                const raw = sessionStorage.getItem("nmdz_vodItem");
-                if (raw) storedItem = JSON.parse(raw);
-            } catch (e) {}
-
-            if (storedItem && (String(storedItem.tmdbId) === String(tmdbId) || String(storedItem.id) === playParam)) {
-                setActiveVodItem(storedItem);
-                setIsPlayerOpen(true);
-            } else {
-                setActiveVodItem({
-                    id: playParam,
-                    tmdbId: tmdbId,
-                    vodType: vodType,
-                    title: "Caricamento...",
-                    group: vodType === "movie" ? "Film" : "Serie TV",
-                    isVod: true
-                });
-                setIsPlayerOpen(true);
-            }
-        } else {
-            setIsPlayerOpen(false);
-            setActiveVodItem(null);
-        }
-    }, [searchParams]);
-
     // Carica sezioni VOD da /api/vod
     useEffect(() => {
         let isMounted = true;
@@ -107,19 +67,6 @@ function VodContent() {
         fetchVodCatalog();
         return () => { isMounted = false; };
     }, []);
-
-    const handleCardSelect = (item) => {
-        setActiveVodItem(item);
-        setIsPlayerOpen(true);
-        const playId = `${item.vodType || "movie"}_${item.tmdbId}`;
-        window.history.pushState(null, "", `/vod?play=${playId}`);
-    };
-
-    const handleClosePlayer = () => {
-        setIsPlayerOpen(false);
-        setActiveVodItem(null);
-        window.history.pushState(null, "", "/vod");
-    };
 
     const handleFilterChange = (tab) => {
         if (tab === "vod") return;
@@ -200,20 +147,12 @@ function VodContent() {
                                     key={ch.id || (ch.title + idx)}
                                     channel={ch}
                                     categoryName={exploreData.title}
-                                    onCardClick={() => handleCardSelect(ch)}
                                 />
                             ))}
                         </div>
                     </div>
                 </div>
             )}
-
-            {/* Player Modale VOD */}
-            <VodPlayerModal
-                item={activeVodItem}
-                isOpen={isPlayerOpen}
-                onClose={handleClosePlayer}
-            />
         </div>
     );
 }

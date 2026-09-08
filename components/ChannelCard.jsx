@@ -30,7 +30,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const isVod = Boolean(channel.isVod || channel.vodType);
     const cleanSrc = channel.skySource ? (channel.skySource.includes("sky2") ? "sky2" : "") : "";
     const targetHref = isVod 
-        ? `/vod?play=${channel.vodType || "movie"}_${channel.tmdbId}` 
+        ? `/vod/info/${channel.tmdbId || String(channel.id).replace(/^vod_(movie|tv)_/, "")}?type=${channel.vodType || "movie"}` 
         : (isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`);
 
     const isDazn1Channel = (channel.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
