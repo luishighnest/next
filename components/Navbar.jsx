@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SettingsModal from "./SettingsModal";
 import SearchView from "./SearchView";
+import GuidaTvModal from "./GuidaTvModal";
 
 export default function Navbar({
     activeFilter,
@@ -26,6 +27,7 @@ export default function Navbar({
     const setSearchVal = propSetSearchVal || setLocalSearchVal;
 
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+    const [isGuidaTvOpen, setIsGuidaTvOpen] = useState(false);
     const [isNavHidden, setIsNavHidden] = useState(false);
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
@@ -313,6 +315,17 @@ export default function Navbar({
                                 <i className="fas fa-ticket"></i>
                                 <span className="nav-label">Eventi</span>
                             </Link>
+
+                            <button
+                                type="button"
+                                className={`nav-link nav-link-guidatv ${isGuidaTvOpen ? "active" : ""}`}
+                                onClick={() => setIsGuidaTvOpen(true)}
+                                aria-label="Apri Guida TV"
+                                title="Guida TV EPG (Palinsesto TV)"
+                            >
+                                <i className="fas fa-tv"></i>
+                                <span className="nav-label">Guida TV</span>
+                            </button>
                         </nav>
 
                         {/* Azioni Interattive Destra Stile tv.apple.com (Cerca + Impostazioni a filo destro) */}
@@ -362,6 +375,7 @@ export default function Navbar({
             )}
 
             {isSettingsOpen && <SettingsModal onClose={() => setIsSettingsOpen(false)} />}
+            <GuidaTvModal isOpen={isGuidaTvOpen} onClose={() => setIsGuidaTvOpen(false)} />
         </>
     );
 }
