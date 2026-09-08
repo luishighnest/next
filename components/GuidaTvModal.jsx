@@ -222,6 +222,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                     </div>
 
                     <div className="guidatv-time-filters">
+                        <span className="guidatv-filter-label">Fascia:</span>
                         <button
                             type="button"
                             className={"guidatv-time-pill " + (selectedTimeFilter === "all" ? "active" : "")}
@@ -234,7 +235,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                             className={"guidatv-time-pill " + (selectedTimeFilter === "serata" ? "active" : "")}
                             onClick={() => setSelectedTimeFilter("serata")}
                         >
-                            Prima Serata (20:30)
+                            Prima Serata
                         </button>
                         <button
                             type="button"
@@ -306,63 +307,80 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                             </div>
 
                             <div className="guidatv-program-panel">
-                                <div className="guidatv-active-banner">
-                                    <div className="guidatv-banner-left">
-                                        <img
-                                            src={getChannelLogoUrl({ title: selectedChannel?.canale })}
-                                            alt=""
-                                            className="guidatv-banner-logo"
-                                        />
-                                        <div>
-                                            <h3 className="guidatv-banner-title">{selectedChannel?.canale || "Seleziona Canale"}</h3>
-                                            <span className="guidatv-banner-sub">{selectedChannel?.categoria || "Live TV"}</span>
-                                        </div>
+                                {/* Cinema Hero Stage del canale e programma selezionato (Coerente con Sky/Eventi) */}
+                                <div className="guidatv-cinema-stage">
+                                    <div className="guidatv-stage-backdrop">
+                                        {selectedProgram?.immagine && (
+                                            <img
+                                                src={selectedProgram.immagine}
+                                                alt=""
+                                                className="guidatv-stage-bg-img"
+                                                loading="lazy"
+                                            />
+                                        )}
+                                        <div className="guidatv-stage-overlay-grad"></div>
                                     </div>
-                                    <button
-                                        type="button"
-                                        className="guidatv-watch-hero-btn"
-                                        onClick={() => handleWatchChannel(selectedChannel?.canale)}
-                                    >
-                                        <i className="fas fa-play"></i>
-                                        <span>Guarda Canale Live</span>
-                                    </button>
-                                </div>
 
-                                {selectedProgram && (
-                                    <div className="guidatv-detail-card">
-                                        {selectedProgram.immagine && (
-                                            <div className="guidatv-detail-img-box">
-                                                <img
-                                                    src={selectedProgram.immagine}
-                                                    alt={selectedProgram.titolo}
-                                                    className="guidatv-detail-img"
-                                                    loading="lazy"
-                                                />
-                                                <div className="guidatv-detail-img-grad"></div>
+                                    <div className="guidatv-stage-content">
+                                        <div className="guidatv-stage-top">
+                                            <div className="guidatv-stage-channel-badge">
+                                                <div className="guidatv-stage-logo-wrap">
+                                                    <img
+                                                        src={getChannelLogoUrl({ title: selectedChannel?.canale })}
+                                                        alt=""
+                                                        className="guidatv-stage-logo"
+                                                    />
+                                                </div>
+                                                <div className="guidatv-stage-channel-meta">
+                                                    <span className="guidatv-stage-ch-name">{selectedChannel?.canale || "Seleziona Canale"}</span>
+                                                    <span className="guidatv-stage-ch-cat">{selectedChannel?.categoria || "Live TV"}</span>
+                                                </div>
+                                            </div>
+
+                                            <button
+                                                type="button"
+                                                className="guidatv-hero-play-btn"
+                                                onClick={() => handleWatchChannel(selectedChannel?.canale)}
+                                            >
+                                                <i className="fas fa-play"></i>
+                                                <span>Guarda Canale</span>
+                                            </button>
+                                        </div>
+
+                                        {selectedProgram && (
+                                            <div className="guidatv-stage-main">
+                                                <div className="guidatv-stage-meta-row">
+                                                    <span className="stage-time-pill">
+                                                        <i className="fa-regular fa-clock"></i>
+                                                        {selectedProgram.ora} {selectedProgram.fine ? `- ${selectedProgram.fine}` : ""}
+                                                    </span>
+                                                    {liveProg?.titolo === selectedProgram.titolo && (
+                                                        <span className="stage-live-badge">
+                                                            <span className="dot"></span>IN ONDA
+                                                        </span>
+                                                    )}
+                                                </div>
+
+                                                <h1 className="guidatv-stage-title">{selectedProgram.titolo}</h1>
+
+                                                {selectedProgram.descrizione && (
+                                                    <p className="guidatv-stage-desc">
+                                                        {selectedProgram.descrizione}
+                                                    </p>
+                                                )}
                                             </div>
                                         )}
-                                        <div className="guidatv-detail-body">
-                                            <div className="guidatv-detail-meta">
-                                                <span className="detail-time-badge">
-                                                    <i className="fas fa-clock"></i> {selectedProgram.ora} {selectedProgram.fine ? "- " + selectedProgram.fine : ""}
-                                                </span>
-                                                {liveProg?.titolo === selectedProgram.titolo && (
-                                                    <span className="detail-live-badge">ORA IN ONDA</span>
-                                                )}
-                                                <span className="detail-channel-tag">{selectedChannel?.canale}</span>
-                                            </div>
-                                            <h2 className="guidatv-detail-title">{selectedProgram.titolo}</h2>
-                                            <p className="guidatv-detail-desc">
-                                                {selectedProgram.descrizione || "Nessuna trama o descrizione disponibile per questo programma."}
-                                            </p>
-                                        </div>
                                     </div>
-                                )}
+                                </div>
 
+                                {/* Timeline orizzontale coerente con le card eventi del sito */}
                                 <div className="guidatv-timeline-section">
                                     <div className="guidatv-timeline-header">
-                                        <span className="timeline-title">Programmazione Completa di Oggi</span>
-                                        <span className="timeline-count">{channelPrograms.length} eventi</span>
+                                        <div className="timeline-header-left">
+                                            <i className="fas fa-calendar-day"></i>
+                                            <span className="timeline-title">Palinsesto Giornaliero</span>
+                                        </div>
+                                        <span className="timeline-count">{channelPrograms.length} programmi</span>
                                     </div>
 
                                     <div className="guidatv-timeline-scroll" ref={timelineRef}>
@@ -373,16 +391,16 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                             return (
                                                 <div
                                                     key={prog.ora + pIdx}
-                                                    className={"guidatv-prog-card " + (isSelected ? "selected " : "") + (isLive ? "live" : "")}
+                                                    className={"guidatv-schedule-card " + (isSelected ? "selected " : "") + (isLive ? "live" : "")}
                                                     onClick={() => setSelectedProgram(prog)}
                                                 >
-                                                    <div className="prog-card-top">
-                                                        <span className="prog-card-time">{prog.ora}</span>
-                                                        {isLive && <span className="prog-card-live-dot">LIVE</span>}
+                                                    <div className="schedule-card-header">
+                                                        <span className="schedule-time">{prog.ora}</span>
+                                                        {isLive && <span className="schedule-live-dot">LIVE</span>}
                                                     </div>
-                                                    <div className="prog-card-title">{prog.titolo}</div>
+                                                    <div className="schedule-title">{prog.titolo}</div>
                                                     {prog.descrizione && (
-                                                        <div className="prog-card-snippet">{prog.descrizione}</div>
+                                                        <div className="schedule-snippet">{prog.descrizione}</div>
                                                     )}
                                                 </div>
                                             );

@@ -7576,32 +7576,43 @@ body:has(.sky-app) {
     gap: 8px;
 }
 
+.guidatv-filter-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.05em;
+    margin-right: 4px;
+}
+
 .guidatv-cat-pill,
 .guidatv-time-pill {
     padding: 6px 14px;
-    border-radius: 20px;
+    border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-    background: #141418;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.82rem;
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8rem;
     font-weight: 600;
+    font-family: inherit;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
     white-space: nowrap;
 }
 
 .guidatv-cat-pill:hover,
 .guidatv-time-pill:hover {
-    background: #1f1f26;
+    background: rgba(255, 255, 255, 0.09);
     color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.18);
 }
 
 .guidatv-cat-pill.active,
 .guidatv-time-pill.active {
-    background: #ffffff;
-    color: #000000;
-    border-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .guidatv-content {
@@ -7782,291 +7793,349 @@ body:has(.sky-app) {
     transform: scale(1.1);
 }
 
-/* PANNELLO DESTRO GUIDA TV */
+/* CINEMA HERO STAGE GUIDA TV (COERENTE CON SKY GLASS / APPLE TV DEL SITO) */
 .guidatv-program-panel {
     flex: 1;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    padding: 24px 28px;
-    gap: 20px;
-    background: #08080a;
+    padding: 24px;
+    gap: 24px;
+    background: #000000;
 }
 
-.guidatv-active-banner {
+.guidatv-cinema-stage {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 280px;
+    background: #0d0d11;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+}
+
+.guidatv-stage-backdrop {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.guidatv-stage-bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.45) saturate(1.2);
+    transform: scale(1.03);
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.guidatv-cinema-stage:hover .guidatv-stage-bg-img {
+    transform: scale(1.06);
+}
+
+.guidatv-stage-overlay-grad {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(10, 10, 14, 0.75) 0%,
+        rgba(8, 8, 12, 0.88) 50%,
+        rgba(5, 5, 8, 0.98) 100%
+    );
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.guidatv-stage-content {
+    position: relative;
+    z-index: 2;
+    padding: 24px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 280px;
+    box-sizing: border-box;
+}
+
+.guidatv-stage-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 20px;
-    background: #111114;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 16px;
+    gap: 16px;
+    margin-bottom: 24px;
 }
 
-.guidatv-banner-left {
+.guidatv-stage-channel-badge {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 6px 14px 6px 8px;
+    border-radius: 999px;
+    backdrop-filter: blur(12px);
 }
 
-.guidatv-banner-logo {
-    width: 52px;
-    height: 52px;
-    object-fit: contain;
+.guidatv-stage-logo-wrap {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
     background: #000000;
-    border-radius: 12px;
-    padding: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    overflow: hidden;
 }
 
-.guidatv-banner-title {
-    font-size: 1.3rem;
+.guidatv-stage-logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.guidatv-stage-channel-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.guidatv-stage-ch-name {
+    font-size: 0.92rem;
     font-weight: 800;
     color: #ffffff;
-    margin: 0;
+    line-height: 1.2;
 }
 
-.guidatv-banner-sub {
-    font-size: 0.8rem;
+.guidatv-stage-ch-cat {
+    font-size: 0.68rem;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
-    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
 
-.guidatv-watch-hero-btn {
-    display: flex;
+.guidatv-hero-play-btn {
+    display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 12px 22px;
+    padding: 10px 22px;
     background: #e30a17;
     color: #ffffff;
     border: none;
-    border-radius: 30px;
-    font-size: 0.9rem;
-    font-weight: 700;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 800;
+    font-family: inherit;
     cursor: pointer;
-    box-shadow: 0 4px 20px rgba(227, 10, 23, 0.4);
-    transition: transform 0.15s ease, background 0.15s ease;
+    box-shadow: 0 4px 20px rgba(227, 10, 23, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+    transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-.guidatv-watch-hero-btn:hover {
+.guidatv-hero-play-btn:hover {
     background: #ff1c2b;
-    transform: scale(1.03);
+    transform: translateY(-1px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(227, 10, 23, 0.65);
 }
 
-/* SCHEDA DETTAGLIO PROGRAMMA - OTTIMIZZATA PER COPERTINE COMPLETE */
-.guidatv-detail-card {
-    display: flex;
-    gap: 24px;
-    background: #111114;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 18px;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-    align-items: stretch;
+.guidatv-hero-play-btn:active {
+    transform: scale(0.97);
 }
 
-.guidatv-detail-img-box {
-    width: 320px;
-    min-height: 180px;
-    flex-shrink: 0;
-    border-radius: 12px;
-    overflow: hidden;
-    position: relative;
-    background: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.guidatv-detail-img {
-    width: 100%;
-    height: 100%;
-    max-height: 200px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.guidatv-detail-card:hover .guidatv-detail-img {
-    transform: scale(1.02);
-}
-
-.guidatv-detail-img-grad {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, transparent 60%);
-    pointer-events: none;
-}
-
-.guidatv-detail-body {
-    flex: 1;
+.guidatv-stage-main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-width: 0;
+    gap: 10px;
 }
 
-.guidatv-detail-meta {
+.guidatv-stage-meta-row {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 8px;
-    flex-wrap: wrap;
+    gap: 12px;
 }
 
-.detail-time-badge {
-    display: flex;
+.stage-time-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-variant-numeric: tabular-nums;
+}
+
+.stage-live-badge {
+    display: inline-flex;
     align-items: center;
     gap: 6px;
     padding: 4px 10px;
-    background: #1e1e24;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: #ffffff;
-}
-
-.detail-live-badge {
-    padding: 4px 10px;
-    background: #00e676;
-    color: #000000;
+    background: #e30a17;
     border-radius: 6px;
     font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
-.detail-channel-tag {
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.45);
-    background: rgba(255, 255, 255, 0.05);
-    padding: 4px 8px;
-    border-radius: 6px;
+.stage-live-badge .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+    animation: live-pulse 1.2s ease infinite;
 }
 
-.guidatv-detail-title {
-    font-size: 1.4rem;
+.guidatv-stage-title {
+    font-size: 1.8rem;
     font-weight: 800;
     color: #ffffff;
-    margin: 0 0 10px 0;
-    line-height: 1.25;
+    margin: 0;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
 }
 
-.guidatv-detail-desc {
-    font-size: 0.88rem;
-    color: rgba(255, 255, 255, 0.65);
-    line-height: 1.5;
+.guidatv-stage-desc {
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
     margin: 0;
+    max-width: 900px;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-/* TIMELINE PROGRAMMI */
+/* PALINSESTO ORIZZONTALE ELEGANTE */
 .guidatv-timeline-section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
 }
 
 .guidatv-timeline-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 4px;
+}
+
+.timeline-header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+}
+
+.timeline-header-left i {
+    color: #e30a17;
+    font-size: 0.9rem;
 }
 
 .timeline-title {
     font-size: 0.95rem;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.9);
+    color: #ffffff;
+    letter-spacing: -0.01em;
 }
 
 .timeline-count {
-    font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.76rem;
     font-weight: 600;
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .guidatv-timeline-scroll {
     display: flex;
     gap: 12px;
     overflow-x: auto;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
 
-.guidatv-prog-card {
+.guidatv-schedule-card {
     width: 220px;
+    min-width: 220px;
     flex-shrink: 0;
-    background: #111114;
+    background: #0f0f14;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 14px;
     padding: 14px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.guidatv-prog-card:hover {
-    background: #18181e;
+.guidatv-schedule-card:hover {
+    background: #171720;
+    border-color: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
 }
 
-.guidatv-prog-card.selected {
+.guidatv-schedule-card.selected {
     border-color: #e30a17;
-    background: rgba(227, 10, 23, 0.08);
-    box-shadow: 0 4px 16px rgba(227, 10, 23, 0.2);
+    background: #191419;
+    box-shadow: 0 0 0 1px #e30a17, 0 8px 24px rgba(227, 10, 23, 0.25);
 }
 
-.guidatv-prog-card.live {
-    border-color: rgba(0, 230, 118, 0.5);
+.guidatv-schedule-card.live {
+    border-left: 3px solid #00e676;
 }
 
-.prog-card-top {
+.schedule-card-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.prog-card-time {
+.schedule-time {
     font-size: 0.85rem;
     font-weight: 800;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.9);
+    font-variant-numeric: tabular-nums;
 }
 
-.prog-card-live-dot {
+.schedule-live-dot {
     font-size: 0.65rem;
-    font-weight: 800;
+    font-weight: 900;
     color: #00e676;
-    background: rgba(0, 230, 118, 0.15);
-    padding: 2px 6px;
+    background: rgba(0, 230, 118, 0.12);
+    border: 1px solid rgba(0, 230, 118, 0.3);
+    padding: 1px 6px;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 
-.prog-card-title {
+.schedule-title {
     font-size: 0.88rem;
     font-weight: 700;
     color: #ffffff;
-    line-height: 1.3;
+    line-height: 1.35;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.prog-card-snippet {
-    font-size: 0.75rem;
+.schedule-snippet {
+    font-size: 0.74rem;
     color: rgba(255, 255, 255, 0.45);
-    line-height: 1.4;
+    line-height: 1.45;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
