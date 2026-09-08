@@ -293,7 +293,7 @@
         "ora": "10:30",
         "fine": "11:00",
         "titolo": "UEFA Champions League Magazine",
-        "descrizione": "... 2026/2027 Ep.2 07/09/2026 UEFA Champions League Magazine. - Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
+        "descrizione": "Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
       },
       {
@@ -530,7 +530,7 @@
         "ora": "07:55",
         "fine": "08:25",
         "titolo": "UEFA Champions League Magazine",
-        "descrizione": "... 2026/2027 Ep.2 07/09/2026 UEFA Champions League Magazine. - Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
+        "descrizione": "Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
       },
       {
@@ -558,7 +558,7 @@
         "ora": "14:00",
         "fine": "14:30",
         "titolo": "UEFA Champions League Magazine",
-        "descrizione": "... 2026/2027 Ep.2 07/09/2026 UEFA Champions League Magazine. - Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
+        "descrizione": "Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
       },
       {
@@ -579,7 +579,7 @@
         "ora": "18:05",
         "fine": "18:30",
         "titolo": "UEFA Champions League Magazine",
-        "descrizione": "... 2026/2027 Ep.2 07/09/2026 UEFA Champions League Magazine. - Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
+        "descrizione": "Approfondimento sportivo calcistico dedicato alla UEFA Champions League.",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
       },
       {
@@ -1226,7 +1226,7 @@
         "ora": "21:00",
         "fine": "06:00",
         "titolo": "10a giornata",
-        "descrizione": "ZVEREV-DARDERI (differita); SINIAKOVA/TOWNSEND-BUCSA/MELICHAR-M.; HSIEH/OSTAPENKO-MERTENS/SHNAIDER; BOLELLI/VAVASSORI-KRAJICEK-MEKTIC",
+        "descrizione": "SINIAKOVA/TOWNSEND-BUCSA/MELICHAR-M.; HSIEH/OSTAPENKO-MERTENS/SHNAIDER; BOLELLI/VAVASSORI-KRAJICEK-MEKTIC",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       }
     ]
@@ -1237,7 +1237,7 @@
     "programmi": [
       {
         "ora": "00:05",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "BMW International Open: Giorno 4",
         "descrizione": "... World Tour. - Dal Golfclub Munchen Eichenried di Monaco, Germania.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/818844f9-5340-4087-8ba6-4f4b5e57efea/background/600"
@@ -1250,7 +1250,7 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/98e8acd1-6d73-40ee-ac95-782c6a57bb6c/background/600"
       },
       {
-        "ora": "03:00",
+        "ora": "03:05",
         "fine": "06:00",
         "titolo": "Giorno 4",
         "descrizione": "Dal Shinnecock Hills Golf Club di Southampton, Stati Uniti.",
@@ -1350,7 +1350,7 @@
         "ora": "01:05",
         "fine": "03:00",
         "titolo": "Germania - Corea",
-        "descrizione": "... Hungary - Japan Campionati Mondiali femminili FIBA 2026. - Da Berlino, Germania.",
+        "descrizione": "... Hungary - Japan Campionati Mondiali femminili FIBA 2026. - La Germania padrona di casa si gioca l'accesso ai quarti di finale contro l'outsider Corea della stellina Jihyun Park. La vincente incontrera' il Belgio. Telecronaca di Andrea Solaini.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a84e48f7-840f-45f5-9b13-464909bba210/background/600"
       },
       {
@@ -1364,7 +1364,7 @@
         "ora": "03:30",
         "fine": "05:25",
         "titolo": "Ungheria - Giappone",
-        "descrizione": "... Germany - Republic of Korea Campionati Mondiali femminili FIBA 2026. - Da Berlino, Germania.",
+        "descrizione": "... Mondiali femminili FIBA 2026. - La fase ad eliminazione diretta debutta con la sfida fra l'Ungheria della stella Juhasz e il Giappone argento olimpico a Tokyo. In palio il quarto di finale contro Team USA. TC: Fumagalli-Mastrorilli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e8cd5264-0a73-4e96-ab85-01ec86591e04/background/600"
       },
       {
@@ -1476,7 +1476,7 @@
         "ora": "17:35",
         "fine": "19:45",
         "titolo": "Ungheria - Giappone",
-        "descrizione": "... finale 1: Germany - Republic of Korea Campionati Mondiali femminili FIBA 2026. - Da Berlino, Germania.",
+        "descrizione": "... Campionati Mondiali femminili FIBA 2026. - La fase ad eliminazione diretta debutta con la sfida fra l'Ungheria della stella Juhasz e il Giappone argento olimpico a Tokyo. In palio il quarto di finale contro Team USA. TC: Fumagalli-Mastrorilli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e8cd5264-0a73-4e96-ab85-01ec86591e04/background/600"
       },
       {
@@ -1497,14 +1497,14 @@
         "ora": "20:35",
         "fine": "22:45",
         "titolo": "Germania - Corea",
-        "descrizione": "... finale 2: Hungary - Japan Campionati Mondiali femminili FIBA 2026. - Da Berlino, Germania.",
+        "descrizione": "... finale 2: Hungary - Japan Campionati Mondiali femminili FIBA 2026. - La Germania padrona di casa si gioca l'accesso ai quarti di finale contro l'outsider Corea della stellina Jihyun Park. La vincente incontrera' il Belgio. Telecronaca di Andrea Solaini.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a84e48f7-840f-45f5-9b13-464909bba210/background/600"
       },
       {
         "ora": "22:45",
         "fine": "00:45",
         "titolo": "Ungheria - Giappone",
-        "descrizione": "... Germany - Republic of Korea Campionati Mondiali femminili FIBA 2026. - Da Berlino, Germania.",
+        "descrizione": "... Mondiali femminili FIBA 2026. - La fase ad eliminazione diretta debutta con la sfida fra l'Ungheria della stella Juhasz e il Giappone argento olimpico a Tokyo. In palio il quarto di finale contro Team USA. TC: Fumagalli-Mastrorilli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e8cd5264-0a73-4e96-ab85-01ec86591e04/background/600"
       }
     ]
@@ -2246,25 +2246,32 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "02:45",
-        "titolo": "Ciclismo Mountain Bike: Camp. Mondiali Val Di Sole 2026 Cross Country Olimpico - Prova Elite Uomini",
-        "descrizione": "Ciclismo Mountain Bike: Camp. Mondiali Val di Sole 2026 Cross Country Olimpico - prova Elite Uomini",
+        "ora": "00:15",
+        "fine": "01:45",
+        "titolo": "Ciclismo MTB: Mondiali Val Di Sole 2026 - Cross Country Olimpico - Elite Uomini",
+        "descrizione": "Cross Country Olimpico - Elite Uomini",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "02:45",
-        "fine": "03:55",
-        "titolo": "Beach Soccer Euro League Maschile 1* Giornata Gruppo A: Moldavia - Italia",
-        "descrizione": "Beach Soccer Euro League Maschile 1* giornata Gruppo A: Moldavia - Italia",
+        "ora": "01:45",
+        "fine": "03:00",
+        "titolo": "Beach Soccer - Euro League Superfinal 2026 Uomini - 1a Giornata: Italia - Moldavia",
+        "descrizione": "Nella prima giornata del girone della EBSL Superfinal 2026, l'Italia campione d'Europa in carica affronta la Moldova a Viareggio nel match d'esordio della competizione.",
         "immagine": "https://img-guidatv.org/32/beach-soccer/0.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "06:00",
-        "titolo": "Atletica: Meeting Internazionale Rovereto World Athletics Continental Tour",
-        "descrizione": "Atletica: Meeting Internazionale Rovereto World Athletics Continental Tour",
+        "ora": "03:00",
+        "fine": "05:10",
+        "titolo": "Atletica Leggera - Meeting Internazionale Di Rovereto 2026",
+        "descrizione": "A Rovereto va in scena la 62ª edizione del Palio Città della Quercia, storico meeting internazionale di atletica leggera. In pista e in pedana alcuni dei migliori atleti italiani e stranieri, protagonisti di una serata di gare di alto livello.",
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "06:00",
+        "titolo": "World Rally Championship 2026 - Rally Del Paraguay",
+        "descrizione": "World Rally Championship - Rally del Paraguay",
+        "immagine": "https://img-guidatv.org/32/world-rally-championship-2026-rally-del-paraguay/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2357,25 +2364,32 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "02:45",
-        "titolo": "Ciclismo Mountain Bike: Camp. Mondiali Val Di Sole 2026 Cross Country Olimpico - Prova Elite Uomini",
-        "descrizione": "Ciclismo Mountain Bike: Camp. Mondiali Val di Sole 2026 Cross Country Olimpico - prova Elite Uomini",
+        "ora": "00:15",
+        "fine": "01:45",
+        "titolo": "Ciclismo MTB: Mondiali Val Di Sole 2026 - Cross Country Olimpico - Elite Uomini",
+        "descrizione": "Cross Country Olimpico - Elite Uomini",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "02:45",
-        "fine": "03:55",
-        "titolo": "Beach Soccer Euro League Maschile 1* Giornata Gruppo A: Moldavia - Italia",
-        "descrizione": "Beach Soccer Euro League Maschile 1* giornata Gruppo A: Moldavia - Italia",
+        "ora": "01:45",
+        "fine": "03:00",
+        "titolo": "Beach Soccer - Euro League Superfinal 2026 Uomini - 1a Giornata: Italia - Moldavia",
+        "descrizione": "Nella prima giornata del girone della EBSL Superfinal 2026, l'Italia campione d'Europa in carica affronta la Moldova a Viareggio nel match d'esordio della competizione.",
         "immagine": "https://img-guidatv.org/32/beach-soccer/0.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "06:00",
-        "titolo": "Atletica: Meeting Internazionale Rovereto World Athletics Continental Tour",
-        "descrizione": "Atletica: Meeting Internazionale Rovereto World Athletics Continental Tour",
+        "ora": "03:00",
+        "fine": "05:10",
+        "titolo": "Atletica Leggera - Meeting Internazionale Di Rovereto 2026",
+        "descrizione": "A Rovereto va in scena la 62ª edizione del Palio Città della Quercia, storico meeting internazionale di atletica leggera. In pista e in pedana alcuni dei migliori atleti italiani e stranieri, protagonisti di una serata di gare di alto livello.",
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "06:00",
+        "titolo": "World Rally Championship 2026 - Rally Del Paraguay",
+        "descrizione": "World Rally Championship - Rally del Paraguay",
+        "immagine": "https://img-guidatv.org/32/world-rally-championship-2026-rally-del-paraguay/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2475,31 +2489,24 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/77e727ec-163d-4572-9fae-18663d5003fb/background/600"
       },
       {
-        "ora": "02:55",
-        "fine": "03:45",
+        "ora": "03:15",
+        "fine": "04:05",
         "titolo": "Cucine da incubo",
         "descrizione": "Ep2 di 10 Isola Fiorita - Lo Chef Cannavacciuolo visita il ristorante Isola Fiorita a Milano, gestito da Angelica e dal figlio Francesco. La cucina del ristorante e' un incubo da cui Antonino dovra' salvarli.",
         "immagine": "https://img-guidatv.org/718/cucine-da-incubo/8.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:30",
+        "ora": "04:05",
+        "fine": "04:45",
         "titolo": "MasterChef USA",
         "descrizione": "I restanti chef dovranno affrontare la sfida tag team: preparare un delizioso pasto di tre portate, lavorando insieme per assicurarsi che siano sulla stessa lunghezza d'onda.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
-        "ora": "04:30",
-        "fine": "05:15",
+        "ora": "04:45",
+        "fine": "05:25",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano una sfida difficile a base di pesce. Quando gli chef immuni riescono a scambiare il pesce degli altri concorrenti, la competizione diventa molto accesa.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "05:15",
-        "fine": "06:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "I concorrenti devono soddisfare le esigenze del tifoso medio, incorporando elementi della loro regione. Lo chef vincitore della sfida precedente ha il compito di penalizzare un cuoco.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -2507,6 +2514,13 @@
         "fine": "06:00",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano una sfida difficile a base di pesce. Quando gli chef immuni riescono a scambiare il pesce degli altri concorrenti, la competizione diventa molto accesa.",
+        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "06:15",
+        "titolo": "MasterChef USA",
+        "descrizione": "I concorrenti devono soddisfare le esigenze del tifoso medio, incorporando elementi della loro regione. Lo chef vincitore della sfida precedente ha il compito di penalizzare un cuoco.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -2684,31 +2698,24 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/77e727ec-163d-4572-9fae-18663d5003fb/background/600"
       },
       {
-        "ora": "03:55",
-        "fine": "04:45",
+        "ora": "04:15",
+        "fine": "05:05",
         "titolo": "Cucine da incubo",
         "descrizione": "Ep2 di 10 Isola Fiorita - Lo Chef Cannavacciuolo visita il ristorante Isola Fiorita a Milano, gestito da Angelica e dal figlio Francesco. La cucina del ristorante e' un incubo da cui Antonino dovra' salvarli.",
         "immagine": "https://img-guidatv.org/718/cucine-da-incubo/8.jpg"
       },
       {
-        "ora": "04:45",
-        "fine": "05:30",
+        "ora": "05:05",
+        "fine": "05:45",
         "titolo": "MasterChef USA",
         "descrizione": "I restanti chef dovranno affrontare la sfida tag team: preparare un delizioso pasto di tre portate, lavorando insieme per assicurarsi che siano sulla stessa lunghezza d'onda.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
-        "ora": "05:30",
-        "fine": "06:15",
+        "ora": "05:45",
+        "fine": "06:25",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano una sfida difficile a base di pesce. Quando gli chef immuni riescono a scambiare il pesce degli altri concorrenti, la competizione diventa molto accesa.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "06:15",
-        "fine": "07:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "I concorrenti devono soddisfare le esigenze del tifoso medio, incorporando elementi della loro regione. Lo chef vincitore della sfida precedente ha il compito di penalizzare un cuoco.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -2716,6 +2723,13 @@
         "fine": "07:00",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano una sfida difficile a base di pesce. Quando gli chef immuni riescono a scambiare il pesce degli altri concorrenti, la competizione diventa molto accesa.",
+        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
+      },
+      {
+        "ora": "06:25",
+        "fine": "07:15",
+        "titolo": "MasterChef USA",
+        "descrizione": "I concorrenti devono soddisfare le esigenze del tifoso medio, incorporando elementi della loro regione. Lo chef vincitore della sfida precedente ha il compito di penalizzare un cuoco.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -2886,31 +2900,24 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/77e727ec-163d-4572-9fae-18663d5003fb/background/600"
       },
       {
-        "ora": "03:55",
-        "fine": "04:45",
+        "ora": "04:15",
+        "fine": "05:05",
         "titolo": "Cucine da incubo",
         "descrizione": "Ep2 di 10 Isola Fiorita - Lo Chef Cannavacciuolo visita il ristorante Isola Fiorita a Milano, gestito da Angelica e dal figlio Francesco. La cucina del ristorante e' un incubo da cui Antonino dovra' salvarli.",
         "immagine": "https://img-guidatv.org/718/cucine-da-incubo/8.jpg"
       },
       {
-        "ora": "04:45",
-        "fine": "05:30",
+        "ora": "05:05",
+        "fine": "05:45",
         "titolo": "MasterChef USA",
         "descrizione": "I restanti chef dovranno affrontare la sfida tag team: preparare un delizioso pasto di tre portate, lavorando insieme per assicurarsi che siano sulla stessa lunghezza d'onda.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
-        "ora": "05:30",
-        "fine": "06:15",
+        "ora": "05:45",
+        "fine": "06:25",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano una sfida difficile a base di pesce. Quando gli chef immuni riescono a scambiare il pesce degli altri concorrenti, la competizione diventa molto accesa.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "06:15",
-        "fine": "07:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "I concorrenti devono soddisfare le esigenze del tifoso medio, incorporando elementi della loro regione. Lo chef vincitore della sfida precedente ha il compito di penalizzare un cuoco.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -2918,6 +2925,13 @@
         "fine": "07:00",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano una sfida difficile a base di pesce. Quando gli chef immuni riescono a scambiare il pesce degli altri concorrenti, la competizione diventa molto accesa.",
+        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
+      },
+      {
+        "ora": "06:25",
+        "fine": "07:15",
+        "titolo": "MasterChef USA",
+        "descrizione": "I concorrenti devono soddisfare le esigenze del tifoso medio, incorporando elementi della loro regione. Lo chef vincitore della sfida precedente ha il compito di penalizzare un cuoco.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -3103,27 +3117,27 @@
       },
       {
         "ora": "02:35",
-        "fine": "03:30",
+        "fine": "03:20",
         "titolo": "S.W.A.T.",
         "descrizione": "Un sergente S.W.A.T. della zona, l’ex Marine Daniel Harrelson, viene incaricato di dirigere un’unità tattica specializzata che rappresenta l’ultima tappa delle forze dell’ordine di Los Angeles, nella première di S.W.A.T. Diviso tra la lealtà per il luogo dove è cresciuto e la fedeltà ai suoi fratelli in blu, Hondo ha tutto ciò che serve per essere un leader eccellente e per fare da tramite tra i suoi due mondi.",
         "immagine": "https://img-guidatv.org/serie/5e78d8e6ce1e246c511cba3b_p_4_rs_300.jpg"
       },
       {
-        "ora": "03:30",
-        "fine": "04:15",
+        "ora": "03:20",
+        "fine": "04:05",
         "titolo": "S.W.A.T.",
         "descrizione": "Un sergente S.W.A.T. della zona, l’ex Marine Daniel Harrelson, viene incaricato di dirigere un’unità tattica specializzata che rappresenta l’ultima tappa delle forze dell’ordine di Los Angeles, nella première di S.W.A.T. Diviso tra la lealtà per il luogo dove è cresciuto e la fedeltà ai suoi fratelli in blu, Hondo ha tutto ciò che serve per essere un leader eccellente e per fare da tramite tra i suoi due mondi.",
         "immagine": "https://img-guidatv.org/serie/5e78d8e6ce1e246c511cba3b_p_4_rs_300.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "04:30",
+        "ora": "04:05",
+        "fine": "04:25",
         "titolo": "Hanno ucciso l'uomo ragno - Max incontra Max",
         "descrizione": "L’incontro tra Max Pezzali (quello vero) ed Elia Nuzzolo, l’attore che lo interpreta nella nuova serie Sky sulle origini degli 883, tra ricordi e aneddoti sul set.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d206e7c0-4488-4960-9107-2b9689a85298/background/600"
       },
       {
-        "ora": "04:30",
+        "ora": "04:25",
         "fine": "05:15",
         "titolo": "Lost",
         "descrizione": "48 persone sopravvivono ad un tremendo disastro aereo e si ritrovano dispersi su un'isola dell'Oceano Pacifico che sembra completamente disabitata. Ognuno di loro ha una sua storia, ognuno di loro nasconde dei segreti. Ma tutti quanti sono consapevoli che, se vogliono continuare a vivere, debbono collaborare, superare le avversità e le divisioni personali e sperare in un soccorso che potrebbe anche non arrivare mai. Il gruppo, mentre affronta l'inclemenza del tempo e l'ambiente ostile, scopre, con il passare del tempo, che anche l'isola nasconde dei segreti.",
@@ -3138,7 +3152,7 @@
       },
       {
         "ora": "05:15",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Lost",
         "descrizione": "48 persone sopravvivono ad un tremendo disastro aereo e si ritrovano dispersi su un'isola dell'Oceano Pacifico che sembra completamente disabitata. Ognuno di loro ha una sua storia, ognuno di loro nasconde dei segreti. Ma tutti quanti sono consapevoli che, se vogliono continuare a vivere, debbono collaborare, superare le avversità e le divisioni personali e sperare in un soccorso che potrebbe anche non arrivare mai. Il gruppo, mentre affronta l'inclemenza del tempo e l'ambiente ostile, scopre, con il passare del tempo, che anche l'isola nasconde dei segreti.",
         "immagine": "https://image.tmdb.org/t/p/w300/dJ0uwnXa33OYiDxfQqbzqTfKqzU.jpg"
@@ -3333,20 +3347,20 @@
       },
       {
         "ora": "03:10",
-        "fine": "03:35",
+        "fine": "03:30",
         "titolo": "Friends",
         "descrizione": "Una delle commedie televisive più amate di sempre su un gruppo di sei amici trentenni, la trama si svolge prevalentemente in due appartamenti e un Coffee-Bar: Monica, Rachel, Phoebe, Chandler, Ross e Joey condividono sogni, amori, delusioni e speranze fra gag esilaranti e battute dal ritmo serratissimo.",
         "immagine": "https://image.tmdb.org/t/p/w500/74fn3cA3wEVxkgB7Zah37p4ouFz.jpg"
       },
       {
-        "ora": "03:35",
-        "fine": "04:20",
+        "ora": "03:30",
+        "fine": "04:15",
         "titolo": "Beverly Hills 90210",
         "descrizione": "Beverly Hills 90210 è una serie televisiva trasmessa negli Stati Uniti d'America tra il 1990 ed il 2000. Il 90210 del titolo si riferisce allo Zip Code (termine con cui negli USA si indica il codice di avviamento postale) della città di Beverly Hills nella contea Los Angeles. Il soggetto, all'epoca, fu originale, per la prima volta infatti una serie televisiva si propose di raccontare gli adolescenti per quello che erano affrontando temi delicati come droga, AIDS, sessualità e alcolismo. La serie seguiva le vicissitudini di un gruppo di adolescenti dell'alta borghesia, abitanti nel quartiere VIP di Beverly Hills, a Los Angeles.",
         "immagine": "https://image.tmdb.org/t/p/w300/iW1XCbiDpgM7nZXXKeyz3IX0FzS.jpg"
       },
       {
-        "ora": "04:20",
+        "ora": "04:15",
         "fine": "05:10",
         "titolo": "Downton Abbey",
         "descrizione": "Downton Abbey è la signorile dimora dei conti di Grantham. Qui, durante il regno di Giorgio V, vivono la famiglia aristocratica dei Crawley e i loro numerosi dipendenti.",
@@ -3361,7 +3375,7 @@
       },
       {
         "ora": "05:10",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Downton Abbey",
         "descrizione": "Downton Abbey è la signorile dimora dei conti di Grantham. Qui, durante il regno di Giorgio V, vivono la famiglia aristocratica dei Crawley e i loro numerosi dipendenti.",
         "immagine": "https://image.tmdb.org/t/p/w300/wLOQuC8L552c4tJANu1UAI0CYf2.jpg"
@@ -3939,17 +3953,10 @@
       },
       {
         "ora": "04:35",
-        "fine": "05:30",
+        "fine": "05:35",
         "titolo": "I nostri migliori amici animali",
         "descrizione": "Un giro nel ranch gestito da Albert, il cammello, insieme al suo amico umano Alex. Osserviamo da vicino Herbie, il wallaby, mentre si fa coccolare.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ed9444e7-fbf5-4cb3-9bb0-dfeb6c90e170/background/600"
-      },
-      {
-        "ora": "05:30",
-        "fine": "06:00",
-        "titolo": "Cuccioli",
-        "descrizione": "Ep4 di 6 Fianco a fianco - Ecco alcuni adorabili cuccioli e i loro clan: un koala, due gemelli di alce europea, una piccola lontra asiatica e giovani scimmie urlanti.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/78e604df-26df-46d8-bbc1-e2e3b2c8d205/background/600"
       },
       {
         "ora": "05:35",
@@ -4140,7 +4147,7 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a058dd4a-273c-4e6c-ac39-c7feb56e3058/background/600"
       },
       {
-        "ora": "04:10",
+        "ora": "04:25",
         "fine": "06:00",
         "titolo": "Ogni 72 Ore - Il Caso Matteuzzi",
         "descrizione": "Daniela Collu racconta la storia di Alessandra Matteuzzi, uccisa a Bologna il 23 agosto 2022 dall'ex compagno dopo mesi di stalking e minacce.",
@@ -4336,16 +4343,23 @@
       },
       {
         "ora": "02:50",
-        "fine": "03:45",
+        "fine": "03:35",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep3 di 7 Ivan Graziani - Pigro - Ci sono album che hanno segnato la storia della musica italiana: riapriamo i nastri originali delle canzoni alla scoperta dei loro segreti. Ospiti d'eccezione commenteranno le tracce.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:40",
+        "ora": "03:35",
+        "fine": "04:30",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep1 di 7 Lucio Dalla - Come e' profondo il mare - Ci sono album che hanno segnato la storia della musica italiana: riapriamo i nastri originali delle canzoni alla scoperta dei loro segreti. Ospiti d'eccezione commenteranno le tracce.",
+        "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
+      },
+      {
+        "ora": "04:30",
+        "fine": "05:15",
+        "titolo": "33 giri Italian masters",
+        "descrizione": "Ep4 di 7 Fabrizio De Andre' - Creuza de ma - Ci sono album che hanno segnato la storia della musica italiana: riapriamo i nastri originali delle canzoni alla scoperta dei loro segreti. Ospiti d'eccezione commenteranno le tracce.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
@@ -4356,22 +4370,15 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0841713f-58fe-4de5-be36-6339a00bb13d/background/600"
       },
       {
-        "ora": "04:40",
-        "fine": "05:15",
-        "titolo": "33 giri Italian masters",
-        "descrizione": "Ep4 di 7 Fabrizio De Andre' - Creuza de ma - Ci sono album che hanno segnato la storia della musica italiana: riapriamo i nastri originali delle canzoni alla scoperta dei loro segreti. Ospiti d'eccezione commenteranno le tracce.",
-        "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
-      },
-      {
         "ora": "05:15",
-        "fine": "05:40",
+        "fine": "05:45",
         "titolo": "Echo: Quello che rimane",
         "descrizione": "La storia d Kobe Bryant, uno dei più grandi giocatori di basket di sempre. Scopriamolo dentro e fuori dal campo: la 'mamba mentality', il rapporto con il talento, la solitudine che accompagna chi sceglie di spingersi sempre oltre.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5bfaecbf-a738-4085-8a9d-053a6d301756/background/600"
       },
       {
-        "ora": "05:40",
-        "fine": "06:00",
+        "ora": "05:45",
+        "fine": "06:05",
         "titolo": "The Editor Is In",
         "descrizione": "Ep12 di 12 - Un'incredibile serie in live-action e animazione che racconta la realtà quotidiana di un editor alle prese con collaboratori eccezionali. I sistemi di sicurezza dell'ufficio vanno in tilt.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7aa16b33-48e7-4324-a52b-f88077c44191/background/600"
@@ -7204,13 +7211,13 @@
     "programmi": [
       {
         "ora": "01:00",
-        "fine": "03:10",
+        "fine": "03:05",
         "titolo": "Operazione vendetta",
         "descrizione": "Charlie Heller (Malek) è un brillante ma profondamente introverso decodificatore della CIA che lavora in un ufficio nel seminterrato del quartier generale di Langley e la cui vita viene sconvolta quando sua moglie viene uccisa in un attacco terroristico a Londra. Quando i suoi supervisori si rifiutano di agire, l'uomo prende in mano la situazione e si imbarca in un pericoloso viaggio intorno al mondo per rintracciare i responsabili, usando la sua intelligenza come arma principale per sfuggire ai suoi inseguitori e vendicare la moglie.",
         "immagine": "https://image.tmdb.org/t/p/w300/9IoYsiQEUe50ViywjffKh5pUJqX.jpg"
       },
       {
-        "ora": "03:10",
+        "ora": "03:05",
         "fine": "04:50",
         "titolo": "Un anno di scuola",
         "descrizione": "Settembre 2007, Trieste. Fred, diciottenne svedese esuberante e coraggiosa, arriva in città per frequentare l'ultimo anno di un Istituto Tecnico. Si ritrova ad essere l'unica ragazza in una classe di soli maschi e catalizza l'attenzione di tutti, in particolare quella di tre amici: Antero, affascinante e riservato; Pasini, seduttore istrionico; Mitis, bonaccione protettivo. I tre si appartengono da quando hanno memoria. L'arrivo di Fred sconvolge la loro omogeneità, mettendo a dura prova la loro amicizia. Mentre ognuno di loro la desidera segretamente per sé, Fred vuole essere ammessa nel gruppo, ma le viene chiesto continuamente di sacrificare qualcosa di sé per diventare una di loro.",
@@ -7391,14 +7398,14 @@
     "programmi": [
       {
         "ora": "01:40",
-        "fine": "03:35",
+        "fine": "03:30",
         "titolo": "Mission: Impossible",
         "descrizione": "Una lista, registrata su un floppy disk e del valore di 20 milioni di dollari, rivela le vere identità dei più agguerriti agenti segreti in servizio dopo il 1989. Ethan Hunt e i suoi colleghi dell'IMF le danno la caccia in un giro di dubbie verità, doppi giochi, complotti e tradimenti.",
         "immagine": "https://img-guidatv.org/film_new/m/5e78dda5ce1e246c511cd052/5e78dda5ce1e246c511cd052_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:35",
-        "fine": "05:35",
+        "ora": "03:30",
+        "fine": "05:30",
         "titolo": "Mission: Impossible 2",
         "descrizione": "L'agente speciale Ethan Hunt è alle prese con una crisi internazionale di proporzioni gigantesche.  Al fianco il genio dell'informatica Luther Stickell Ving Rhames e una bellissima ladra Thandie Newton nel cuore, Hunt attraversa l'Australia e la Spagna in una missione che sembra proprio essere impossibile: fermare un gruppo di terroristi tedeschi prima che riescano a mettere in atto il loro piano distruttivo: ossia  il rilascio del virus \"Chimera\".",
         "immagine": "https://img-guidatv.org/film_new/m/5e78ddc4ce1e246c511cd0f0/5e78ddc4ce1e246c511cd0f0_p_3_rs_300.jpg"
@@ -7411,7 +7418,7 @@
         "immagine": "https://img-guidatv.org/film_new/m/5e78deaace1e246c511cd59c/5e78deaace1e246c511cd59c_p_1_rs_300.jpg"
       },
       {
-        "ora": "05:35",
+        "ora": "05:30",
         "fine": "07:25",
         "titolo": "Mission: Impossible",
         "descrizione": "Una lista, registrata su un floppy disk e del valore di 20 milioni di dollari, rivela le vere identità dei più agguerriti agenti segreti in servizio dopo il 1989. Ethan Hunt e i suoi colleghi dell'IMF le danno la caccia in un giro di dubbie verità, doppi giochi, complotti e tradimenti.",
@@ -7613,13 +7620,13 @@
       },
       {
         "ora": "02:20",
-        "fine": "04:10",
+        "fine": "04:05",
         "titolo": "Blu Profondo",
         "descrizione": "Gli esperimenti della dottoressa Susan McAlester stanno per cambiare la storia della medicina. Ma per raggiungere il suo obiettivo, scoprire la chiave per rigenerare il tessuto cerebrale umano, la scienziata ha violato il codice etico, intervenendo a livello genetico sul Dna degli squali mako. Li ha resi più intelligenti. Ma Susan deve fare i conti con i membri del suo gruppo di studio e con il fatto che i finanziatori del progetto sono pronti a tagliare i fondi alla vigilia di un test chiave.",
         "immagine": "https://img-guidatv.org/film_new/b/5e78dd7fce1e246c511ccf95/5e78dd7fce1e246c511ccf95_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:10",
+        "ora": "04:05",
         "fine": "05:50",
         "titolo": "Largo Winch - Il prezzo del denaro",
         "descrizione": "Devastato dal recente rapimento del figlio quindicenne, Largo Winch (Tomer Sisley) assiste impotente al suicidio del suo socio in affari durante una conferenza stampa in diretta. Mentre tutto gli si rivolta contro, e il suo impero inizia a sgretolarsi, scopre che i due eventi potrebbero essere collegati: se troverà i responsabili del suicidio del suo socio, potrà anche ritrovare suo figlio.",
@@ -7814,7 +7821,7 @@
       },
       {
         "ora": "02:40",
-        "fine": "04:10",
+        "fine": "04:05",
         "titolo": "Big Wedding",
         "descrizione": "In The Wedding (precedentemente noto con il titolo Gently Down the Stream) De Niro interpreta Don Griffin, un padre di famiglia che decide, d'accordo con l'ex moglie Ellie (Diane Keaton), di fingere di stare ancora insieme per il bene del figlio adottivo (Ben Barnes), che si sta per sposare, dopo aver saputo che tra gli invitati al matrimonio ci sarà anche la madre biologica del ragazzo, una donna religiosissima e di vedute corte. Ma con un sacerdote come Robin Williams e una ex fidanzata come l'esplosiva Susan Sarandon la cerimonia rischierà di non andare come previsto.",
         "immagine": "https://image.tmdb.org/t/p/w300/ooSGwWVJRp81ErEH7VmTmVwjoMc.jpg"
@@ -7827,7 +7834,7 @@
         "immagine": "https://img-guidatv.org/film_new/i/5e78de63ce1e246c511cd41e/5e78de63ce1e246c511cd41e_p_4_rs_300.jpg"
       },
       {
-        "ora": "04:10",
+        "ora": "04:05",
         "fine": "05:40",
         "titolo": "Come fratelli",
         "descrizione": "Al centro della storia due amiche, alle quali il destino prima regala la gioia di rimanere incinta contemporaneamente, per poi spazzarle via in un tragico incidente. Due mariti incapaci di affrontare la doppia sfida, essere padri e vedovi, decidono di allearsi, e darsi una mano a vicenda nel crescere i figli. Contro ogni pronostico nasce una nuova famiglia, anomala certo, ma che funziona alla grande, e che è destinata a venire sconvolta quando un’altra donna entra nell’equazione delle loro vite.",
@@ -7918,13 +7925,13 @@
       },
       {
         "ora": "02:15",
-        "fine": "04:10",
+        "fine": "04:05",
         "titolo": "Tartarughe all'infinito",
         "descrizione": "La sedicenne Aza Holmes, studentessa liceale americana affetta da disturbo ossessivo compulsivo e ansia, parte alla ricerca di un miliardario fuggitivo, che è anche il padre scomparso di un suo vicino di casa. Lei stessa è in lutto per la recente morte del padre e mentre aiuta il vicino, tra i due sembra sbocciare una relazione.",
         "immagine": "https://image.tmdb.org/t/p/w300/tDKlFXWCvIkP2Xl2nMdI49kzwZx.jpg"
       },
       {
-        "ora": "04:10",
+        "ora": "04:05",
         "fine": "06:05",
         "titolo": "Fuori",
         "descrizione": "Goliarda finisce in carcere per un gesto folle e inaspettato, ma a Rebibbia l’incontro con alcune giovani detenute diventa per lei un'esperienza di rinascita. Una volta uscite di prigione, in una torrida estate romana, le donne continuano a frequentarsi. In questo tempo che sembra sospeso Goliarda stringe una relazione profonda e decisiva per la sua vita, un legame autentico e trascinante che nessuno, lì fuori, riuscirà a comprendere. Questo film racconta un momento della vita di Goliarda Sapienza, una storia di amicizia, di amore e di libertà.",
@@ -16758,13 +16765,13 @@
       },
       {
         "ora": "01:35",
-        "fine": "01:50",
+        "fine": "01:55",
         "titolo": "La famiglia Skrokkiazeppi",
         "descrizione": "Dopo mesi di riparazioni, gli Skrokkiazeppi vanno in giro con la Skrokkiamobile, ma si ritrovano bloccati in un ingorgo. Prekullio, nonna Cikuta e Ortika temono di non arrivare in tempo per risolvere alcune situazioni lasciate in sospeso.",
         "immagine": "https://img-guidatv.org/35/la-famiglia-skrokkiazeppi/0.jpg"
       },
       {
-        "ora": "01:50",
+        "ora": "01:55",
         "fine": "02:05",
         "titolo": "Coop Troop",
         "descrizione": "Costretti all'inattività per una giornata ventosa, i componenti della Coop Troop si rinfacciano le rispettive mancanze. Così, quando arriva una nuova missione, Flo propone che ciascuno la affronti lavorando sui propri difetti. Ma il nuovo approccio non sembra funzionare...",
@@ -17352,13 +17359,13 @@
       },
       {
         "ora": "01:35",
-        "fine": "01:50",
+        "fine": "01:55",
         "titolo": "La famiglia Skrokkiazeppi",
         "descrizione": "Dopo mesi di riparazioni, gli Skrokkiazeppi vanno in giro con la Skrokkiamobile, ma si ritrovano bloccati in un ingorgo. Prekullio, nonna Cikuta e Ortika temono di non arrivare in tempo per risolvere alcune situazioni lasciate in sospeso.",
         "immagine": "https://img-guidatv.org/35/la-famiglia-skrokkiazeppi/0.jpg"
       },
       {
-        "ora": "01:50",
+        "ora": "01:55",
         "fine": "02:05",
         "titolo": "Coop Troop",
         "descrizione": "Costretti all'inattività per una giornata ventosa, i componenti della Coop Troop si rinfacciano le rispettive mancanze. Così, quando arriva una nuova missione, Flo propone che ciascuno la affronti lavorando sui propri difetti. Ma il nuovo approccio non sembra funzionare...",
@@ -17918,20 +17925,20 @@
       },
       {
         "ora": "01:00",
-        "fine": "02:00",
+        "fine": "02:40",
         "titolo": "Cinematografo Speciale Biennale Cinema 2026",
         "descrizione": "Cinque puntate speciali di Cinematografo per la Biennale Cinema 2026 che si svolgerà dal 02 al 12 settembre a Venezia. Un programma di e con Gigi Marzullo.",
         "immagine": "https://img-guidatv.org/1/cinematografo-speciale/7.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "03:15",
+        "ora": "02:40",
+        "fine": "03:20",
         "titolo": "Reazione A Catena",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena/6.jpg"
       },
       {
-        "ora": "03:15",
+        "ora": "03:20",
         "fine": "04:05",
         "titolo": "Il commissario Rex",
         "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex.",
@@ -18134,20 +18141,20 @@
       },
       {
         "ora": "01:00",
-        "fine": "02:00",
+        "fine": "02:40",
         "titolo": "Cinematografo Speciale Biennale Cinema 2026",
         "descrizione": "Cinque puntate speciali di Cinematografo per la Biennale Cinema 2026 che si svolgerà dal 02 al 12 settembre a Venezia. Un programma di e con Gigi Marzullo.",
         "immagine": "https://img-guidatv.org/1/cinematografo-speciale/7.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "03:15",
+        "ora": "02:40",
+        "fine": "03:20",
         "titolo": "Reazione A Catena",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena/6.jpg"
       },
       {
-        "ora": "03:15",
+        "ora": "03:20",
         "fine": "04:05",
         "titolo": "Il commissario Rex",
         "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex.",
@@ -18335,56 +18342,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:52",
+        "ora": "01:50",
         "fine": "01:55",
-        "titolo": "Meteo 2",
-        "descrizione": "Meteo 2",
-        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
-      },
-      {
-        "ora": "01:55",
-        "fine": "02:00",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/2/appuntamento-al-cinema/1.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "03:35",
+        "ora": "01:55",
+        "fine": "03:30",
         "titolo": "Codice Karim",
         "descrizione": "Una spy story ambientata tra Siria e Italia, che spazia dall’action al thriller. Chi è Karim? Un foreign fighter stanco di guerra che vuole solo tornare a casa o è un doppiogiochista che inganna gli uni per servire gli altri? E come può sfuggire allo stretto controllo dei “fratelli” arabi? Gira intorno a lui la vicenda del gruppo terrorista che ha in mente un piano per colpire gli “infedeli”.",
         "immagine": "https://image.tmdb.org/t/p/w300/d0ZsPFyXThqDYE0jw2OUeIMVqAK.jpg"
       },
       {
-        "ora": "03:35",
-        "fine": "04:15",
+        "ora": "03:30",
+        "fine": "04:12",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "05:00",
+        "ora": "04:12",
+        "fine": "04:55",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "05:00",
-        "fine": "05:10",
+        "ora": "04:55",
+        "fine": "05:05",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "05:10",
-        "fine": "05:20",
+        "ora": "05:05",
+        "fine": "05:15",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
-        "ora": "05:20",
+        "ora": "05:15",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18477,8 +18477,8 @@
       {
         "ora": "13:50",
         "fine": "14:00",
-        "titolo": "TG2 Medicina 33",
-        "descrizione": "Direttore Antonio Preziosi A cura di Laura Berti",
+        "titolo": "Tg2 Medicina 33",
+        "descrizione": "Il quotidiano di medicina del Tg2. I migliori specialisti di ogni settore della medicina rispondono alle domande che ciascuno di noi vorrebbe fare. Consigli utili per star bene.",
         "immagine": "https://img-guidatv.org/2/tg2-medicina-33/0.jpg"
       },
       {
@@ -18574,7 +18574,7 @@
       },
       {
         "ora": "23:30",
-        "fine": "01:52",
+        "fine": "01:50",
         "titolo": "Diabolik",
         "descrizione": "Clerville, anni '60. Diabolik, un ladro privo di scrupoli la cui vera identità è sconosciuta, ha inferto un altro colpo alla polizia, sfuggendo con la sua nera Jaguar E-type. Nel frattempo c'è grande attesa in città per l'arrivo di Lady Kant, un'affascinante ereditiera che porterà con sé un famoso diamante rosa. Il gioiello dal valore inestimabile non sfugge all'attenzione di Diabolik che, nel tentativo di rubarlo, rimane incantato dal fascino irresistibile della donna. Ma poi la vita stessa del ladro è in pericolo: l'incorruttibile e determinato Ispettore Ginko e la sua squadra hanno trovato il modo di intrappolare il criminale, e questa volta Diabolik non sarà in grado di uscirne da solo.",
         "immagine": "https://img-guidatv.org/film_new/d/6266ddc8fce4c89998436641/6266ddc8fce4c89998436641_p_1_rs_300.jpg"
@@ -18586,56 +18586,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:52",
+        "ora": "01:50",
         "fine": "01:55",
-        "titolo": "Meteo 2",
-        "descrizione": "Meteo 2",
-        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
-      },
-      {
-        "ora": "01:55",
-        "fine": "02:00",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/2/appuntamento-al-cinema/1.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "03:35",
+        "ora": "01:55",
+        "fine": "03:30",
         "titolo": "Codice Karim",
         "descrizione": "Una spy story ambientata tra Siria e Italia, che spazia dall’action al thriller. Chi è Karim? Un foreign fighter stanco di guerra che vuole solo tornare a casa o è un doppiogiochista che inganna gli uni per servire gli altri? E come può sfuggire allo stretto controllo dei “fratelli” arabi? Gira intorno a lui la vicenda del gruppo terrorista che ha in mente un piano per colpire gli “infedeli”.",
         "immagine": "https://image.tmdb.org/t/p/w300/d0ZsPFyXThqDYE0jw2OUeIMVqAK.jpg"
       },
       {
-        "ora": "03:35",
-        "fine": "04:15",
+        "ora": "03:30",
+        "fine": "04:12",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "05:00",
+        "ora": "04:12",
+        "fine": "04:55",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "05:00",
-        "fine": "05:10",
+        "ora": "04:55",
+        "fine": "05:05",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "05:10",
-        "fine": "05:20",
+        "ora": "05:05",
+        "fine": "05:15",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
-        "ora": "05:20",
+        "ora": "05:15",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18728,8 +18721,8 @@
       {
         "ora": "13:50",
         "fine": "14:00",
-        "titolo": "TG2 Medicina 33",
-        "descrizione": "Direttore Antonio Preziosi A cura di Laura Berti",
+        "titolo": "Tg2 Medicina 33",
+        "descrizione": "Il quotidiano di medicina del Tg2. I migliori specialisti di ogni settore della medicina rispondono alle domande che ciascuno di noi vorrebbe fare. Consigli utili per star bene.",
         "immagine": "https://img-guidatv.org/2/tg2-medicina-33/0.jpg"
       },
       {
@@ -18825,7 +18818,7 @@
       },
       {
         "ora": "23:30",
-        "fine": "01:52",
+        "fine": "01:50",
         "titolo": "Diabolik",
         "descrizione": "Clerville, anni '60. Diabolik, un ladro privo di scrupoli la cui vera identità è sconosciuta, ha inferto un altro colpo alla polizia, sfuggendo con la sua nera Jaguar E-type. Nel frattempo c'è grande attesa in città per l'arrivo di Lady Kant, un'affascinante ereditiera che porterà con sé un famoso diamante rosa. Il gioiello dal valore inestimabile non sfugge all'attenzione di Diabolik che, nel tentativo di rubarlo, rimane incantato dal fascino irresistibile della donna. Ma poi la vita stessa del ladro è in pericolo: l'incorruttibile e determinato Ispettore Ginko e la sua squadra hanno trovato il modo di intrappolare il criminale, e questa volta Diabolik non sarà in grado di uscirne da solo.",
         "immagine": "https://img-guidatv.org/film_new/d/6266ddc8fce4c89998436641/6266ddc8fce4c89998436641_p_1_rs_300.jpg"
@@ -19029,7 +19022,7 @@
         "ora": "20:10",
         "fine": "20:40",
         "titolo": "Il Provinciale - Selinunte, Il Paesaggio Della Solitudine",
-        "descrizione": "Nella seconda puntata Federico Quaranta si dirige verso Selinunte. Una fiorente città greca che visse lo stesso destino di Gibellina, colpita anch’essa da un terremoto catastrofico, ma incapace di rinascere dalla distruzione. Un luogo che da secoli non ha smesso di suggestionare i viaggiatori. Oggi il profilo dei templi, le colonne, i resti della città affacciati sul mare, ma anche la natura solitaria della foce del Belice disegnano in quest’angolo di Sicilia il “paesaggio dell’abbandono”. Tra gli ospiti di puntata Pietrangelo Buttafuoco, che racconta la bellezza di Selinunte, e l’archeologa Sara Millozzi, che guida Federico tra i ruderi della città greca.",
+        "descrizione": "Federico Quaranta si dirige verso Selinunte. Una fiorente città greca che visse lo stesso destino di Gibellina, colpita anch'essa da un terremoto catastrofico, ma incapace di rinascere dalla distruzione. Un luogo che da secoli non ha smesso di suggestionare i viaggiatori. Oggi il profilo dei templi, le colonne, i resti della città affacciati sul mare, ma anche la natura solitaria della foce del Belice disegnano in quest'angolo di Sicilia il \"paesaggio dell'abbandono\". Tra gli ospiti di puntata Pietrangelo Buttafuoco, che racconta la bellezza di Selinunte, e l'archeologa Sara Millozzi, che guida Federico tra i ruderi della città greca.",
         "immagine": "https://img-guidatv.org/3/il-provinciale/8.jpg"
       },
       {
@@ -19050,7 +19043,7 @@
         "ora": "21:20",
         "fine": "00:00",
         "titolo": "Mi Manda Rai Tre - Dimmi Come Mangi",
-        "descrizione": "Puntata speciale di \"Mi manda Rai Tre\": la riedizione rivista, corretta e all'occorrenza aggiornata di molte delle inchieste andate in onda nel corso delle ultime stagioni, accorpate in puntate uniche incentrate sullo stesso argomento.",
+        "descrizione": "Federico Ruffo conduce un viaggio d'inchiesta nel mondo del cibo e della grande distribuzione, senza talk né dibattiti, ma attraverso immagini esclusive, racconto filmato e investigazione sul campo. Undici inchieste svelano alterazioni, frodi, truffe e segreti che riguardano ciò che arriva sulle nostre tavole: dalla carne vecchia rietichettata e venduta come fresca alla Bresaola Igp con carne brasiliana, dai mercati rionali alle cucine dei ristoranti all you can eat, fino a kebab, cibo spazzatura e prezzi e qualità negli Autogrill.",
         "immagine": "https://img-guidatv.org/3/mi-manda-rai-tre-dimmi-come-mangi/0.jpg"
       }
     ]
@@ -19252,7 +19245,7 @@
         "ora": "20:10",
         "fine": "20:40",
         "titolo": "Il Provinciale - Selinunte, Il Paesaggio Della Solitudine",
-        "descrizione": "Nella seconda puntata Federico Quaranta si dirige verso Selinunte. Una fiorente città greca che visse lo stesso destino di Gibellina, colpita anch’essa da un terremoto catastrofico, ma incapace di rinascere dalla distruzione. Un luogo che da secoli non ha smesso di suggestionare i viaggiatori. Oggi il profilo dei templi, le colonne, i resti della città affacciati sul mare, ma anche la natura solitaria della foce del Belice disegnano in quest’angolo di Sicilia il “paesaggio dell’abbandono”. Tra gli ospiti di puntata Pietrangelo Buttafuoco, che racconta la bellezza di Selinunte, e l’archeologa Sara Millozzi, che guida Federico tra i ruderi della città greca.",
+        "descrizione": "Federico Quaranta si dirige verso Selinunte. Una fiorente città greca che visse lo stesso destino di Gibellina, colpita anch'essa da un terremoto catastrofico, ma incapace di rinascere dalla distruzione. Un luogo che da secoli non ha smesso di suggestionare i viaggiatori. Oggi il profilo dei templi, le colonne, i resti della città affacciati sul mare, ma anche la natura solitaria della foce del Belice disegnano in quest'angolo di Sicilia il \"paesaggio dell'abbandono\". Tra gli ospiti di puntata Pietrangelo Buttafuoco, che racconta la bellezza di Selinunte, e l'archeologa Sara Millozzi, che guida Federico tra i ruderi della città greca.",
         "immagine": "https://img-guidatv.org/3/il-provinciale/8.jpg"
       },
       {
@@ -19273,7 +19266,7 @@
         "ora": "21:20",
         "fine": "00:00",
         "titolo": "Mi Manda Rai Tre - Dimmi Come Mangi",
-        "descrizione": "Puntata speciale di \"Mi manda Rai Tre\": la riedizione rivista, corretta e all'occorrenza aggiornata di molte delle inchieste andate in onda nel corso delle ultime stagioni, accorpate in puntate uniche incentrate sullo stesso argomento.",
+        "descrizione": "Federico Ruffo conduce un viaggio d'inchiesta nel mondo del cibo e della grande distribuzione, senza talk né dibattiti, ma attraverso immagini esclusive, racconto filmato e investigazione sul campo. Undici inchieste svelano alterazioni, frodi, truffe e segreti che riguardano ciò che arriva sulle nostre tavole: dalla carne vecchia rietichettata e venduta come fresca alla Bresaola Igp con carne brasiliana, dai mercati rionali alle cucine dei ristoranti all you can eat, fino a kebab, cibo spazzatura e prezzi e qualità negli Autogrill.",
         "immagine": "https://img-guidatv.org/3/mi-manda-rai-tre-dimmi-come-mangi/0.jpg"
       }
     ]
@@ -19308,7 +19301,7 @@
         "fine": "06:04",
         "titolo": "Ieri e oggi in tv special - personaggi",
         "descrizione": "Riviviamo le note e i personaggi degli anni 80 proposti nel popolare programma musicale del periodo.",
-        "immagine": "https://img-guidatv.org/40/ieri-e-oggi-in-tv-special-personaggi/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F306220301004201/images/Mediaset_Italia_Production_-_Main/849/144/ST000000001236-1-header-poster-768x480.jpg"
       },
       {
         "ora": "06:19",
@@ -19385,7 +19378,7 @@
         "fine": "16:52",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801017901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:52",
@@ -19461,7 +19454,7 @@
         "fine": "06:04",
         "titolo": "Ieri e oggi in tv special - personaggi",
         "descrizione": "Riviviamo le note e i personaggi degli anni 80 proposti nel popolare programma musicale del periodo.",
-        "immagine": "https://img-guidatv.org/40/ieri-e-oggi-in-tv-special-personaggi/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F306220301004201/images/Mediaset_Italia_Production_-_Main/849/144/ST000000001236-1-header-poster-768x480.jpg"
       },
       {
         "ora": "06:19",
@@ -19538,7 +19531,7 @@
         "fine": "16:52",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801017901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:52",
@@ -19733,7 +19726,7 @@
         "fine": "13:48",
         "titolo": "X-style festival del cinema di venezia",
         "descrizione": "Il settimanale dedicato alle nuove tendenze della moda, costume, personaggi e lifestyle.",
-        "immagine": "https://img-guidatv.org/41/x-style-festival-del-cinema-di-venezia/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314738501000101/media/24/88/e86981d4-5138-4fc9-a4ae-342b2a4cf120/50767464-d636-47f0-9c92-924ec4620e1d.jpg"
       },
       {
         "ora": "13:48",
@@ -19775,7 +19768,7 @@
         "fine": "18:47",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:47",
@@ -19963,7 +19956,7 @@
         "fine": "13:48",
         "titolo": "X-style festival del cinema di venezia",
         "descrizione": "Il settimanale dedicato alle nuove tendenze della moda, costume, personaggi e lifestyle.",
-        "immagine": "https://img-guidatv.org/41/x-style-festival-del-cinema-di-venezia/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314738501000101/media/24/88/e86981d4-5138-4fc9-a4ae-342b2a4cf120/50767464-d636-47f0-9c92-924ec4620e1d.jpg"
       },
       {
         "ora": "13:48",
@@ -20005,7 +19998,7 @@
         "fine": "18:47",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:47",
@@ -20609,9 +20602,9 @@
       {
         "ora": "20:35",
         "fine": "22:30",
-        "titolo": "In Onda",
-        "descrizione": "Conducono Marianna Aprile e Luca Telese. 28ma Edizione.",
-        "immagine": "https://img-guidatv.org/23/in-onda/9.jpg"
+        "titolo": "In Onda - Speciale Roberto Saviano IN TRINCEA",
+        "descrizione": "Marianna Aprile e Luca Telese con Roberto Saviano, Alessandra Sardoni, Michele Ainis",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/inonda2026_pal_5346.jpg"
       },
       {
         "ora": "22:30",
@@ -20727,9 +20720,9 @@
       {
         "ora": "20:35",
         "fine": "22:30",
-        "titolo": "In Onda",
-        "descrizione": "Conducono Marianna Aprile e Luca Telese. 28ma Edizione.",
-        "immagine": "https://img-guidatv.org/23/in-onda/9.jpg"
+        "titolo": "In Onda - Speciale Roberto Saviano IN TRINCEA",
+        "descrizione": "Marianna Aprile e Luca Telese con Roberto Saviano, Alessandra Sardoni, Michele Ainis",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/inonda2026_pal_5346.jpg"
       },
       {
         "ora": "22:30",
@@ -20845,9 +20838,9 @@
       {
         "ora": "20:35",
         "fine": "22:30",
-        "titolo": "In Onda",
-        "descrizione": "Conducono Marianna Aprile e Luca Telese. 28ma Edizione.",
-        "immagine": "https://img-guidatv.org/23/in-onda/9.jpg"
+        "titolo": "In Onda - Speciale Roberto Saviano IN TRINCEA",
+        "descrizione": "Marianna Aprile e Luca Telese con Roberto Saviano, Alessandra Sardoni, Michele Ainis",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/inonda2026_pal_5346.jpg"
       },
       {
         "ora": "22:30",
@@ -20963,9 +20956,9 @@
       {
         "ora": "20:35",
         "fine": "22:30",
-        "titolo": "In Onda",
-        "descrizione": "Conducono Marianna Aprile e Luca Telese. 28ma Edizione.",
-        "immagine": "https://img-guidatv.org/23/in-onda/9.jpg"
+        "titolo": "In Onda - Speciale Roberto Saviano IN TRINCEA",
+        "descrizione": "Marianna Aprile e Luca Telese con Roberto Saviano, Alessandra Sardoni, Michele Ainis",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/inonda2026_pal_5346.jpg"
       },
       {
         "ora": "22:30",
@@ -21081,9 +21074,9 @@
       {
         "ora": "20:35",
         "fine": "22:30",
-        "titolo": "In Onda",
-        "descrizione": "Conducono Marianna Aprile e Luca Telese. 28ma Edizione.",
-        "immagine": "https://img-guidatv.org/23/in-onda/9.jpg"
+        "titolo": "In Onda - Speciale Roberto Saviano IN TRINCEA",
+        "descrizione": "Marianna Aprile e Luca Telese con Roberto Saviano, Alessandra Sardoni, Michele Ainis",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/inonda2026_pal_5346.jpg"
       },
       {
         "ora": "22:30",
@@ -21114,13 +21107,13 @@
       },
       {
         "ora": "03:00",
-        "fine": "04:10",
+        "fine": "04:05",
         "titolo": "Delitti: famiglie criminali",
         "descrizione": "Ep3 di 5 Il mistero del calciatore - 14 novembre 2017. Andrea La Rosa, 35 anni, ex calciatore, scompare dopo aver incontrato un amico. Un mese dopo il corpo viene ritrovato nel bagagliaio di un'auto.",
         "immagine": "https://img-guidatv.org/45/delitti/6.jpg"
       },
       {
-        "ora": "04:10",
+        "ora": "04:05",
         "fine": "05:05",
         "titolo": "Lady Killer",
         "descrizione": "Francis Maurice Byrd viene trovato morto nella sua casa di Guthrie con quattro ferite da arma da fuoco alla schiena. I video di sorveglianza e i tabulati del telefono cellulare collocano McColm sulla scena del crimine.",
@@ -22728,24 +22721,24 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:53",
-        "fine": "01:45",
+        "ora": "00:54",
+        "fine": "01:46",
         "titolo": "Dolly Parton - Nel Segno Del Country",
         "descrizione": "Con oltre mille canzoni scritte e più di 100 milioni di dischi venduti, Dolly Parton è la cantautrice country più acclamata e idolatrata di tutti i tempi. Considerata una leggenda da pop star del calibro di Taylor Swift e Miley Cyrus, è anche una stella di TikTok e un'icona femminista.",
         "immagine": "https://image.tmdb.org/t/p/w300/uALq2Gg77vX9aCPnMqrkM3SjVnL.jpg"
       },
       {
-        "ora": "01:45",
-        "fine": "01:57",
+        "ora": "01:46",
+        "fine": "01:58",
         "titolo": "Poke Stories. Umbria Jazz Winter. Rhythm And Jazz (Pt.4)",
         "descrizione": "Due gruppi a Umbria Jazz Winter 2025-26: Accordi e disaccordi, un trio che mescola influenze gipsy jazz, melodie mediterranee e ritmi latini con l'energia del rock e sonorità elettroniche. Lovesick, un duo di polistrumentisti che coniuga country americano, rock'n'roll e musica swing.",
         "immagine": "https://img-guidatv.org/31/poke-stories-umbria-jazz-winter-rhythm-and-jazz-pt-4/0.jpg"
       },
       {
-        "ora": "01:57",
+        "ora": "01:58",
         "fine": "01:59",
         "titolo": "Rai News Notte",
-        "descrizione": "- Cronaca, politica, economia, cultura, spettacolo e sport dall'Italia e dal mondo. I fatti del giorno in tre minuti a cura di Rai News, il canale all news della Rai.. -   ITA",
+        "descrizione": "Cronaca, politica, economia, cultura, spettacolo e sport dall'Italia e dal mondo. I fatti del giorno in tre minuti a cura di Rai News, il canale all news della Rai.",
         "immagine": "https://img-guidatv.org/31/rai-news-notte/6.jpg"
       },
       {
@@ -22757,34 +22750,34 @@
       },
       {
         "ora": "02:49",
-        "fine": "03:40",
+        "fine": "03:41",
         "titolo": "Italian Beauty - Ciccio Sultano Chef - Bellezza In Bicicletta: Dai Campi Flegrei Alla Costiera Amalfitana",
         "descrizione": "Bellezza in bicicletta, dai Campi Flegrei al Golfo di Pozzuoli e fino alla Costiera amalfitana in un viaggio su due ruote alla scoperta di un territorio sorprendente, disseminato di preziose rovine romane.",
         "immagine": "https://img-guidatv.org/31/italian-beauty/1.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:32",
+        "ora": "03:41",
+        "fine": "04:33",
         "titolo": "'14-'18 Grande Guerra 100 Anni Dopo",
         "descrizione": "Il 28 giugno 1914, a Sarajevo, viene ucciso l'arciduca Francesco Ferdinando. È l'inizio della crisi. Il 23 luglio l'Austria invia un ultimatum alla Serbia, cinque giorni più tardi scoppia la guerra. L'Italia, rimasta inizialmente neutrale, il 24 maggio 1915 si schiera contro gli ex alleati mitteleuropei: troppo forti il sentimento antiaustriaco della popolazione e la spinta del movimento irredentista per rispettare la firma della Triplice Alleanza. Con la Grande Guerra, in cui fanno per la prima volta la loro comparsa carri armati, gas, aerei e il filo spinato delle trincee, tramonta la speranza di un nuovo secolo di pace e viene meno un mondo, quello della Belle Époque, delle corti sfarzose e delle grandi dinastie.",
         "immagine": "https://img-guidatv.org/31/14-18-grande-guerra-100-anni-dopo/1.jpg"
       },
       {
-        "ora": "04:32",
-        "fine": "04:47",
+        "ora": "04:33",
+        "fine": "04:48",
         "titolo": "I Borghi Di Barbieri - Lonzino Di Fico Dei Colli Esini",
         "descrizione": "Il borgo medievale di Piticchio, arroccato tra i Colli Esini nelle Marche, è un gioiello fortificato circondato da antiche mura che offrono suggestivi percorsi panoramici. La zona è rinomata per la produzione del lonzino di fichi, un tradizionale dolce contadino realizzato con frutti secchi, noci, mandorle, aromi e... - di Barbieri Riccardo con Regia Riccardo Barbieri. Testi Giorgio Grossi. 2026 ITA",
         "immagine": "https://img-guidatv.org/31/i-borghi-di-barbieri-lonzino-di-fico-dei-colli-esini/0.jpg"
       },
       {
-        "ora": "04:47",
-        "fine": "05:03",
+        "ora": "04:48",
+        "fine": "05:04",
         "titolo": "I Borghi Di Barbieri - La Cicerchia Di Serra De' Conti",
         "descrizione": "Serra de' Conti è un borgo medievale marchigiano di origine benedettina, caratterizzato da un'antica e radicata vocazione agricola. In questo territorio è stata salvata dall'estinzione la locale varietà di cicerchia, un legume saporito un tempo pilastro della dieta contadina invernale. - di Barbieri Riccardo con Regia Riccardo Barbieri. Testi Giorgio Grossi. 2026 ITA",
         "immagine": "https://img-guidatv.org/31/i-borghi-di-barbieri-la-cicerchia-di-serra-de-conti/0.jpg"
       },
       {
-        "ora": "05:03",
+        "ora": "05:04",
         "fine": "06:00",
         "titolo": "Serengeti - Conflitto",
         "descrizione": "Una storia di fantasia basata sulla vita reale degli animali della savana africana. La leonessa Kali e sua sorella si godono il tempo con i loro sette cuccioli. Insieme, la caccia è molto più facile e la vita è bella. Ma la loro felicità dura poco perché vengono seguite da Sefu, un leone maschio del branco. -  2019 GBR",
@@ -22953,7 +22946,7 @@
       },
       {
         "ora": "23:09",
-        "fine": "00:53",
+        "fine": "00:54",
         "titolo": "Sole",
         "descrizione": "Ermanno passa i suoi giorni tra piccoli furti e lunghe sedute davanti alle slot machine, in attesa di una svolta nella sua vita. Lena invece arriva in Italia per vendere la bambina che porta in grembo e poter così iniziare una nuova vita. I due fingono di essere una coppia in modo che Fabio, lo zio di Ermanno, sterile e disposto a pagare per avere la figlia che lui e sua moglie Bianca non possono avere, possa ottenere l'affidamento della bambina in maniera veloce attraverso un'adozione tra parenti. Per procedere con l'adozione però, Ermanno e Lena devono essere convincenti agli occhi di tutti. Sole, la bambina, nasce prematura e deve essere allattata al seno prima di essere consegnata a Fabio e Bianca. Lena è in difficoltà e cerca di restare fredda e negare il legame con la figlia. Un muro di silenzio si alza tra lei ed Ermanno, che inizia a prendersi cura della bambina come se fosse sua.",
         "immagine": "https://image.tmdb.org/t/p/w300/4hPvjDq03pGMgZwzfSlXupBGnC5.jpg"
@@ -26007,21 +26000,21 @@
         "fine": "15:59",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801017901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "15:59",
         "fine": "16:13",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801017901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:13",
         "fine": "16:29",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801017901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:29",
@@ -26035,28 +26028,28 @@
         "fine": "17:10",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:10",
         "fine": "17:36",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:36",
         "fine": "17:58",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:58",
         "fine": "18:15",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:15",
@@ -28127,14 +28120,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:25",
-        "fine": "00:30",
+        "ora": "00:20",
+        "fine": "00:25",
         "titolo": "Rai News Notte",
         "descrizione": "Rai News Notte",
         "immagine": "https://img-guidatv.org/24/rai-news-notte/8.jpg"
       },
       {
-        "ora": "00:30",
+        "ora": "00:25",
         "fine": "00:50",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 9 settembre 2026.",
@@ -28373,7 +28366,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:25",
+        "fine": "00:20",
         "titolo": "Non è Mai Troppo Tardi - L'Alfabeto",
         "descrizione": "Un uomo passeggia per le strade di Roma, fra insegne e cartelli, una giungla di caratteri ai suoi occhi incomprensibili. È per adulti non alfabetizzati come lui che il Maestro Manzi tiene il suo corso per conoscere e padroneggiare questi \"strani segni\" del linguaggio umano e vincere così \"la schiavitù dell'ignoranza\".",
         "immagine": "https://img-guidatv.org/24/non-e-mai-troppo-tardi-l-alfabeto/0.jpg"
@@ -28385,14 +28378,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:25",
-        "fine": "00:30",
+        "ora": "00:20",
+        "fine": "00:25",
         "titolo": "Rai News Notte",
         "descrizione": "Rai News Notte",
         "immagine": "https://img-guidatv.org/24/rai-news-notte/8.jpg"
       },
       {
-        "ora": "00:30",
+        "ora": "00:25",
         "fine": "00:50",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 9 settembre 2026.",
@@ -28631,7 +28624,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:25",
+        "fine": "00:20",
         "titolo": "Non è Mai Troppo Tardi - L'Alfabeto",
         "descrizione": "Un uomo passeggia per le strade di Roma, fra insegne e cartelli, una giungla di caratteri ai suoi occhi incomprensibili. È per adulti non alfabetizzati come lui che il Maestro Manzi tiene il suo corso per conoscere e padroneggiare questi \"strani segni\" del linguaggio umano e vincere così \"la schiavitù dell'ignoranza\".",
         "immagine": "https://img-guidatv.org/24/non-e-mai-troppo-tardi-l-alfabeto/0.jpg"
@@ -31870,7 +31863,7 @@
       {
         "ora": "05:00",
         "fine": "05:15",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -32086,7 +32079,7 @@
       {
         "ora": "05:00",
         "fine": "05:15",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
