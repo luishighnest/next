@@ -299,14 +299,13 @@ export default function Navbar({
                             )}
                         </div>
 
-                        {/* ISOLA 2: Navigazione Principale a Capsule al Centro */}
+                        {/* ISOLA 2: Navigazione Principale a Capsule al Centro (Solo Testo Elegante Stile Apple TV) */}
                         <nav className="nav-island nav-island-center" aria-label="Navigazione principale">
                             <Link
                                 href="/home"
                                 className={`nav-link ${activeFilter === "all" ? "active" : ""}`}
                                 onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
                             >
-                                <i className="fas fa-house"></i>
                                 <span className="nav-label">Home</span>
                             </Link>
                             <Link
@@ -314,7 +313,6 @@ export default function Navbar({
                                 className={`nav-link ${activeFilter === "sport" ? "active" : ""}`}
                                 onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
                             >
-                                <i className="fas fa-trophy"></i>
                                 <span className="nav-label">Sport</span>
                             </Link>
                             <Link
@@ -322,7 +320,6 @@ export default function Navbar({
                                 className={`nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
                                 onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
                             >
-                                <i className="fas fa-masks-theater"></i>
                                 <span className="nav-label">Intrattenimento</span>
                             </Link>
                             <Link
@@ -330,7 +327,6 @@ export default function Navbar({
                                 className={`nav-link ${activeFilter === "eventi" ? "active" : ""}`}
                                 onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
                             >
-                                <i className="fas fa-ticket"></i>
                                 <span className="nav-label">Eventi</span>
                             </Link>
                         </nav>

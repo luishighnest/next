@@ -2350,16 +2350,11 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
         gap: 3px;
     }
     .nav-island-center .nav-link {
-        padding: 6px 9px;
-        font-size: 0.8rem;
+        padding: 6px 11px;
+        font-size: 0.78rem;
     }
-    /* Su mobile ultra-compatto visualizza solo le icone eleganti */
     .nav-island-center .nav-label {
-        display: none;
-    }
-    .nav-island-center .nav-link i {
-        font-size: 1.05rem;
-        margin: 0 !important;
+        display: inline-block;
     }
     .nav-island-right .settings-icon-btn,
     .nav-island-right .search-icon-btn {
