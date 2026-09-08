@@ -332,7 +332,12 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                     <div className="guidatv-detail-card">
                                         {selectedProgram.immagine && (
                                             <div className="guidatv-detail-img-box">
-                                                <img src={selectedProgram.immagine} alt={selectedProgram.titolo} className="guidatv-detail-img" />
+                                                <img
+                                                    src={selectedProgram.immagine}
+                                                    alt={selectedProgram.titolo}
+                                                    className="guidatv-detail-img"
+                                                    loading="lazy"
+                                                />
                                                 <div className="guidatv-detail-img-grad"></div>
                                             </div>
                                         )}
@@ -344,6 +349,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                                 {liveProg?.titolo === selectedProgram.titolo && (
                                                     <span className="detail-live-badge">ORA IN ONDA</span>
                                                 )}
+                                                <span className="detail-channel-tag">{selectedChannel?.canale}</span>
                                             </div>
                                             <h2 className="guidatv-detail-title">{selectedProgram.titolo}</h2>
                                             <p className="guidatv-detail-desc">

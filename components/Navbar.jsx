@@ -315,20 +315,9 @@ export default function Navbar({
                                 <i className="fas fa-ticket"></i>
                                 <span className="nav-label">Eventi</span>
                             </Link>
-
-                            <button
-                                type="button"
-                                className={`nav-link nav-link-guidatv ${isGuidaTvOpen ? "active" : ""}`}
-                                onClick={() => setIsGuidaTvOpen(true)}
-                                aria-label="Apri Guida TV"
-                                title="Guida TV EPG (Palinsesto TV)"
-                            >
-                                <i className="fas fa-tv"></i>
-                                <span className="nav-label">Guida TV</span>
-                            </button>
                         </nav>
 
-                        {/* Azioni Interattive Destra Stile tv.apple.com (Cerca + Impostazioni a filo destro) */}
+                        {/* Azioni Interattive Destra Stile tv.apple.com (Cerca + Guida TV + Impostazioni) */}
                         <div className="nav-island nav-island-right">
                             <button
                                 type="button"
@@ -338,6 +327,16 @@ export default function Navbar({
                                 title="Cerca canali, eventi, film..."
                             >
                                 <i className="fas fa-magnifying-glass"></i>
+                            </button>
+
+                            <button
+                                type="button"
+                                className={`guidatv-icon-btn ${isGuidaTvOpen ? "active" : ""}`}
+                                onClick={() => setIsGuidaTvOpen(true)}
+                                aria-label="Guida TV"
+                                title="Guida TV EPG"
+                            >
+                                <i className="fas fa-tv"></i>
                             </button>
 
                             <div className="island-separator"></div>
