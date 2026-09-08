@@ -14,8 +14,10 @@ export default function GuidaTvModal({ isOpen, onClose }) {
     const [loading, setLoading] = useState(true);
     const [activeCategory, setActiveCategory] = useState("Tutti i canali");
     const [searchQuery, setSearchQuery] = useState("");
+    const [isSearchVisible, setIsSearchVisible] = useState(false);
     const [selectedProgram, setSelectedProgram] = useState(null);
     const [selectedChannel, setSelectedChannel] = useState(null);
+    const searchInputRef = useRef(null);
     
     // Inizializza subito con i minuti esatti attuali per calcolare immediatamente il posizionamento
     const [currentMinutes, setCurrentMinutes] = useState(() => {
@@ -250,13 +252,66 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                         })}
                     </div>
 
-                    {/* Orologio attuale grande a destra */}
-                    <div className="ee-epg-clock">
-                        {currentTimeStr || "--:--"}
+                    {/* Destra: Ricerca canali con Lente elegante + Orologio + Tasto Chiudi */}
+                    <div className="ee-header-right-actions">
+                        {isSearchVisible ? (
+                            <div className="ee-search-expanded-bar">
+                                <i className="fas fa-magnifying-glass ee-search-icon"></i>
+                                <input
+                                    ref={searchInputRef}
+                                    type="text"
+                                    placeholder="Cerca canale o programma..."
+                                    value={searchQuery}
+                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                    autoFocus
+                                />
+                                {searchQuery && (
+                                    <button type="button" onClick={() => setSearchQuery("")} className="ee-clear-btn" title="Cancella testo">
+                                        <i className="fas fa-xmark"></i>
+                                    </button>
+                                )}
+                                <button
+                                    type="button"
+                                    className="ee-search-toggle-btn"
+                                    onClick={() => {
+                                        setIsSearchVisible(false);
+                                        setSearchQuery("");
+                                    }}
+                                    title="Chiudi ricerca"
+                                >
+                                    <i className="fas fa-xmark"></i>
+                                </button>
+                            </div>
+                        ) : (
+                            <button
+                                type="button"
+                                className="ee-search-icon-btn"
+                                onClick={() => {
+                                    setIsSearchVisible(true);
+                                    setTimeout(() => {
+                                        if (searchInputRef.current) searchInputRef.current.focus();
+                                    }, 50);
+                                }}
+                                title="Cerca nella Guida TV"
+                                aria-label="Cerca"
+                            >
+                                <i className="fas fa-magnifying-glass"></i>
+                            </button>
+                        )}
+
+                        {/* Orologio attuale grande a destra stile TV */}
+                        <div className="ee-epg-clock">
+                            {currentTimeStr || "--:--"}
+                        </div>
+
+                        {/* Tasto Chiudi Guida TV */}
+                        <button type="button" className="ee-close-screen-btn" onClick={onClose} title="Chiudi Guida TV">
+                            <i className="fas fa-xmark"></i>
+                        </button>
                     </div>
                 </div>
 
-                {/* 2. CATEGORIES FILTER BAR */}
+                {/* 2. CATEGORIES FILTER BAR (Identica alla foto, pulita e continua su tutta la larghezza) */}
                 <div className="ee-epg-categories-bar">
                     <div className="ee-categories-list">
                         {categories.map((cat) => {
@@ -274,26 +329,6 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                             );
                         })}
                     </div>
-
-                    {/* Ricerca veloce canale */}
-                    <div className="ee-search-input-wrap">
-                        <i className="fas fa-magnifying-glass"></i>
-                        <input
-                            type="text"
-                            placeholder="Cerca canale o programma..."
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                        />
-                        {searchQuery && (
-                            <button type="button" onClick={() => setSearchQuery("")} className="ee-clear-btn">
-                                <i className="fas fa-xmark"></i>
-                            </button>
-                        )}
-                    </div>
-
-                    <button type="button" className="ee-close-screen-btn" onClick={onClose} title="Chiudi Guida TV">
-                        <i className="fas fa-xmark"></i>
-                    </button>
                 </div>
 
                 {/* 3. MAIN TIMELINE GRID CONTAINER */}

@@ -8368,41 +8368,88 @@ body:has(.sky-app) {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
-.ee-search-input-wrap {
+/* Azioni a destra dell'Header: Lente Cerca + Orologio + Tasto Chiudi */
+.ee-header-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
+}
+
+.ee-search-icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #111116;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.ee-search-icon-btn:hover {
+    background: #1a1a24;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.35);
+    transform: scale(1.05);
+}
+
+.ee-search-expanded-bar {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #000000;
-    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: #111116;
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 999px;
     padding: 6px 14px;
-    width: 240px;
-    transition: all 0.2s ease;
+    width: 260px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    animation: ee-search-expand 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.ee-search-input-wrap:focus-within {
-    border-color: rgba(255, 255, 255, 0.45);
-    background: #0d0d12;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+@keyframes ee-search-expand {
+    from { opacity: 0; transform: scaleX(0.8); }
+    to { opacity: 1; transform: scaleX(1); }
 }
 
-.ee-search-input-wrap i {
-    color: rgba(255, 255, 255, 0.5);
+.ee-search-expanded-bar .ee-search-icon {
+    color: rgba(255, 255, 255, 0.45);
     font-size: 0.82rem;
 }
 
-.ee-search-input-wrap input {
+.ee-search-expanded-bar input {
     background: transparent;
     border: none;
     outline: none;
     color: #ffffff;
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     width: 100%;
     font-family: inherit;
 }
 
-.ee-search-input-wrap input::placeholder {
-    color: rgba(255, 255, 255, 0.4);
+.ee-search-expanded-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.ee-search-toggle-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.15s ease;
+}
+
+.ee-search-toggle-btn:hover {
+    color: #ffffff;
 }
 
 .ee-clear-btn {
@@ -8414,22 +8461,24 @@ body:has(.sky-app) {
 }
 
 .ee-close-screen-btn {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    background: #141418;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #111116;
+    border: 1px solid rgba(255, 255, 255, 0.12);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 0.95rem;
     transition: all 0.2s ease;
 }
 
 .ee-close-screen-btn:hover {
     background: #e30a17;
-    transform: scale(1.08);
+    border-color: #e30a17;
+    transform: scale(1.06);
 }
 
 /* 3. TIMELINE GRID CONTAINER */
