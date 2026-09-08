@@ -8169,3 +8169,707 @@ body:has(.sky-app) {
         height: 180px;
     }
 }
+
+/* ==========================================================================
+   EE TV / SKY Q TIMELINE GRID EPG - REPLICA FEDELE AL MOCKUP
+   ========================================================================== */
+.ee-epg-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    box-sizing: border-box;
+    animation: ee-fade-in 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes ee-fade-in {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.ee-epg-screen {
+    width: 100%;
+    max-width: 1560px;
+    height: 92vh;
+    background: #09090b;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 32px 100px rgba(0, 0, 0, 0.95), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+    font-family: inherit;
+}
+
+/* 1. TOP HEADER: Brand + Days Tape + Big Clock */
+.ee-epg-top-header {
+    height: 72px;
+    background: #000000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    gap: 24px;
+}
+
+.ee-epg-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ee-brand-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #111115;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #00e5ff;
+}
+
+.ee-brand-pill i {
+    color: #00e5ff;
+    font-size: 0.88rem;
+}
+
+/* Nastro dei giorni (Mer 01, Gio 02, Oggi 07, Ven 08...) */
+.ee-days-tape {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.ee-day-item {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 4px 6px;
+    color: rgba(255, 255, 255, 0.45);
+    transition: all 0.2s ease;
+}
+
+.ee-day-name {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.ee-day-number {
+    font-size: 1.05rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+
+.ee-day-item:hover {
+    color: #ffffff;
+}
+
+.ee-day-item.selected,
+.ee-day-item.is-today {
+    color: #ffffff;
+}
+
+.ee-day-item.is-today .ee-day-name {
+    color: #00e5ff;
+    font-weight: 900;
+}
+
+.ee-day-item.is-today .ee-day-number {
+    font-size: 1.45rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+}
+
+/* Orologio digitale stile TV */
+.ee-epg-clock {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    font-variant-numeric: tabular-nums;
+}
+
+/* 2. CATEGORIES FILTER BAR */
+.ee-epg-categories-bar {
+    height: 52px;
+    background: #08080a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    gap: 16px;
+}
+
+.ee-categories-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    overflow-x: auto;
+}
+
+.ee-category-pill {
+    background: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.84rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.ee-cat-radio-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+.ee-category-pill:hover {
+    color: #ffffff;
+}
+
+.ee-category-pill.active {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.ee-category-pill.active .ee-cat-radio-dot {
+    border-color: #00e5ff;
+    background: #00e5ff;
+    box-shadow: 0 0 10px #00e5ff;
+}
+
+.ee-search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #111116;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 999px;
+    padding: 4px 12px;
+    width: 220px;
+}
+
+.ee-search-input-wrap i {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.78rem;
+}
+
+.ee-search-input-wrap input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.ee-search-input-wrap input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.ee-clear-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 0.75rem;
+}
+
+.ee-close-screen-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #141418;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ee-close-screen-btn:hover {
+    background: #e30a17;
+    transform: scale(1.08);
+}
+
+/* 3. TIMELINE GRID CONTAINER */
+.ee-epg-grid-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    background: #070709;
+}
+
+/* Header Orari in alto alla griglia */
+.ee-epg-time-header-row {
+    height: 40px;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    background: #0d0d12;
+    z-index: 10;
+}
+
+.ee-corner-cell {
+    width: 220px;
+    min-width: 220px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    background: #0d0d12;
+    z-index: 12;
+}
+
+.ee-corner-label {
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.ee-time-ruler-wrapper {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.ee-time-ruler {
+    position: relative;
+    height: 100%;
+}
+
+.ee-time-slot {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.ee-time-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.75);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+}
+
+/* Corpo Canali & Timeline */
+.ee-epg-body-row {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.ee-epg-scroll-viewport {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+/* Indicatore ORA ATTUALE verticale Cyan (Stile esatto dalla foto) */
+.ee-current-time-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    z-index: 30;
+    pointer-events: none;
+    transition: left 0.5s ease;
+}
+
+.ee-marker-head {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00e5ff;
+    position: absolute;
+    top: -5px;
+    left: -4px;
+    box-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+}
+
+.ee-marker-line {
+    width: 2px;
+    height: 100%;
+    background: #00e5ff;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.8);
+}
+
+.ee-channels-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ee-channel-row {
+    display: flex;
+    height: 60px;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    position: relative;
+}
+
+.ee-channel-row:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Sticky Channel Left Tab (Stile EE con numero canale e logo in nero) */
+.ee-channel-cell-sticky {
+    width: 220px;
+    min-width: 220px;
+    position: sticky;
+    left: 0;
+    z-index: 20;
+    background: #0a0a0e;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    gap: 16px;
+    cursor: pointer;
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.6);
+    transition: background 0.18s ease;
+}
+
+.ee-channel-cell-sticky:hover {
+    background: #14141c;
+}
+
+.ee-ch-num {
+    font-size: 0.84rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+    font-variant-numeric: tabular-nums;
+    min-width: 28px;
+}
+
+.ee-ch-badge {
+    flex: 1;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.ee-ch-logo {
+    max-height: 28px;
+    max-width: 110px;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+}
+
+.ee-ch-fallback-name {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Timeline Programmi */
+.ee-programs-timeline {
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+
+.ee-program-block {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 4px;
+    background: #121217;
+    border-left: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 4px 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.18s ease;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.ee-program-block:hover {
+    background: #1e1e28;
+    z-index: 5;
+    border-color: rgba(0, 229, 255, 0.5);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Programma in onda con highlight cyan come da mockup */
+.ee-program-block.is-live {
+    background: rgba(0, 229, 255, 0.08);
+    border-left: 3px solid #00e5ff;
+}
+
+.ee-program-block.selected {
+    background: #17242e;
+    border: 1px solid #00e5ff !important;
+    box-shadow: 0 0 0 1px #00e5ff, 0 4px 16px rgba(0, 229, 255, 0.25);
+    z-index: 6;
+}
+
+.ee-prog-inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ee-prog-title-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ee-play-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #00e5ff;
+    color: #00e5ff;
+    font-size: 0.5rem;
+    flex-shrink: 0;
+}
+
+.ee-prog-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2;
+}
+
+/* 4. BANNER PROGRAMMA SELEZIONATO IN BASSO */
+.ee-selected-program-banner {
+    background: #0f0f15;
+    border-top: 1px solid rgba(0, 229, 255, 0.3);
+    padding: 14px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.6);
+    animation: ee-fade-in 0.2s ease;
+    z-index: 25;
+}
+
+.ee-banner-meta {
+    flex: 1;
+    min-width: 0;
+}
+
+.ee-banner-top-line {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.ee-banner-ch {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #00e5ff;
+    letter-spacing: 0.05em;
+}
+
+.ee-banner-time {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ee-banner-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+}
+
+.ee-banner-desc {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 950px;
+}
+
+.ee-banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ee-watch-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    background: #00e5ff;
+    color: #000000;
+    border: none;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0, 229, 255, 0.4);
+    transition: all 0.2s ease;
+}
+
+.ee-watch-btn:hover {
+    background: #ffffff;
+    transform: translateY(-1px) scale(1.02);
+}
+
+.ee-dismiss-banner-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* 5. BOTTOM FOOTER TELECOMANDO (EE Quick Keys) */
+.ee-epg-footer {
+    height: 48px;
+    background: #040406;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    padding: 0 28px;
+    gap: 28px;
+    overflow-x: auto;
+}
+
+.ee-footer-key,
+.ee-footer-btn-key {
+    background: transparent;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.18s ease;
+}
+
+.ee-footer-btn-key:hover {
+    color: #ffffff;
+}
+
+.ee-key-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.62rem;
+    font-weight: 900;
+}
+
+.ee-key-circle.info {
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ee-key-circle.green {
+    background: #00e676;
+    box-shadow: 0 0 8px #00e676;
+}
+
+.ee-key-circle.blue {
+    background: #00e5ff;
+    box-shadow: 0 0 8px #00e5ff;
+}
+
+.ee-key-circle.arrow {
+    color: #ffffff;
+    font-size: 0.68rem;
+}
+
+.ee-loading-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.ee-spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top-color: #00e5ff;
+    border-radius: 50%;
+    animation: vidstack-spin 0.8s linear infinite;
+}
+

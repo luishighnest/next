@@ -4,19 +4,39 @@ import { useRouter } from "next/navigation";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug } from "@/lib/slug";
 
+// 1 minuto = 5 pixel (30 min = 150px, 1 ora = 300px, 24 ore = 7200px)
+const PX_PER_MINUTE = 5;
+const SLOT_DURATION_MINUTES = 30;
+
 export default function GuidaTvModal({ isOpen, onClose }) {
     const router = useRouter();
     const [guideData, setGuideData] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [activeCategory, setActiveCategory] = useState("Tutti");
+    const [activeCategory, setActiveCategory] = useState("Tutti i canali");
     const [searchQuery, setSearchQuery] = useState("");
-    const [selectedChannel, setSelectedChannel] = useState(null);
     const [selectedProgram, setSelectedProgram] = useState(null);
-    const [selectedTimeFilter, setSelectedTimeFilter] = useState("all");
+    const [selectedChannel, setSelectedChannel] = useState(null);
+    const [currentMinutes, setCurrentMinutes] = useState(0);
+    const [currentTimeStr, setCurrentTimeStr] = useState("");
+    const [selectedDayOffset, setSelectedDayOffset] = useState(0); // 0 = Oggi
 
-    const listRef = useRef(null);
-    const timelineRef = useRef(null);
+    const headerTimelineRef = useRef(null);
+    const gridTimelineRef = useRef(null);
 
+    // Aggiorna l'orario corrente ogni 30 secondi
+    useEffect(() => {
+        function updateTime() {
+            const now = new Date();
+            const mins = now.getHours() * 60 + now.getMinutes();
+            setCurrentMinutes(mins);
+            setCurrentTimeStr(now.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" }));
+        }
+        updateTime();
+        const interval = setInterval(updateTime, 30000);
+        return () => clearInterval(interval);
+    }, []);
+
+    // Caricamento dati EPG
     useEffect(() => {
         if (!isOpen) return;
 
@@ -29,13 +49,8 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                     const parsed = JSON.parse(cached);
                     if (Array.isArray(parsed) && parsed.length > 0) {
                         setGuideData(parsed);
-                        if (isMounted) {
-                            setSelectedChannel(parsed[0]);
-                            const cur = getLiveProgram(parsed[0]?.programmi);
-                            setSelectedProgram(cur || parsed[0]?.programmi?.[0] || null);
-                            setLoading(false);
-                            return;
-                        }
+                        if (isMounted) setLoading(false);
+                        return;
                     }
                 }
 
@@ -43,12 +58,9 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                 const json = await res.json();
                 if (isMounted && Array.isArray(json)) {
                     setGuideData(json);
-                    setSelectedChannel(json[0] || null);
-                    const cur = getLiveProgram(json[0]?.programmi);
-                    setSelectedProgram(cur || json[0]?.programmi?.[0] || null);
                     try {
                         sessionStorage.setItem("nmdz_guide_cache", JSON.stringify(json));
-                    } catch(e) {}
+                    } catch (e) {}
                 }
             } catch (err) {
                 console.error("Errore caricamento Guida TV:", err);
@@ -60,6 +72,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         fetchGuide();
     }, [isOpen]);
 
+    // Blocco scroll del body quando la modale è aperta
     useEffect(() => {
         if (isOpen) {
             const origOverflow = document.body.style.overflow;
@@ -70,6 +83,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         }
     }, [isOpen]);
 
+    // Chiusura con tasto Esc
     useEffect(() => {
         if (!isOpen) return;
         const handleKeyDown = (e) => {
@@ -79,74 +93,82 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, [isOpen, onClose]);
 
-    const categories = useMemo(() => {
-        if (!guideData.length) return ["Tutti"];
-        const set = new Set(["Tutti"]);
-        guideData.forEach(c => {
-            if (c.categoria) set.add(c.categoria);
-        });
-        return Array.from(set);
-    }, [guideData]);
+    // Generatore nastro dei giorni (-2 a +6 giorni da oggi)
+    const daysList = useMemo(() => {
+        const list = [];
+        const today = new Date();
+        for (let i = -2; i <= 6; i++) {
+            const d = new Date();
+            d.setDate(today.getDate() + i);
+            const dayName = d.toLocaleDateString("it-IT", { weekday: "short" }).toUpperCase().replace(".", "");
+            const dayNum = String(d.getDate()).padStart(2, "0");
+            list.push({
+                offset: i,
+                label: i === 0 ? "OGGI" : dayName,
+                num: dayNum,
+                isToday: i === 0
+            });
+        }
+        return list;
+    }, []);
 
+    // Categorie EPG standard
+    const categories = useMemo(() => {
+        return ["Tutti i canali", "Sport", "Cinema", "Intrattenimento", "Bambini", "Nazionale"];
+    }, []);
+
+    // Canali filtrati
     const filteredChannels = useMemo(() => {
         return guideData.filter(ch => {
-            const matchesCat = activeCategory === "Tutti" || ch.categoria === activeCategory;
-            const matchesSearch = !searchQuery || ch.canale.toLowerCase().includes(searchQuery.toLowerCase()) || 
+            const matchesCat = activeCategory === "Tutti i canali" || ch.categoria === activeCategory;
+            const matchesSearch = !searchQuery || ch.canale.toLowerCase().includes(searchQuery.toLowerCase()) ||
                 (ch.programmi || []).some(p => p.titolo?.toLowerCase().includes(searchQuery.toLowerCase()));
             return matchesCat && matchesSearch;
         });
     }, [guideData, activeCategory, searchQuery]);
 
-    function getLiveProgram(programmi) {
-        if (!Array.isArray(programmi) || !programmi.length) return null;
-        const now = new Date();
-        const nowMins = now.getHours() * 60 + now.getMinutes();
-
-        let liveIdx = -1;
-        for (let i = 0; i < programmi.length; i++) {
-            const p = programmi[i];
-            const [h, m] = (p.ora || "00:00").split(":").map(Number);
-            const pMins = (h || 0) * 60 + (m || 0);
-            if (pMins > nowMins) {
-                liveIdx = i > 0 ? i - 1 : 0;
-                break;
-            }
-        }
-        if (liveIdx === -1) liveIdx = programmi.length - 1;
-        return programmi[liveIdx];
+    // Converte "HH:MM" in minuti
+    function timeToMins(str) {
+        if (!str) return 0;
+        const [h, m] = str.split(":").map(Number);
+        return (h || 0) * 60 + (m || 0);
     }
 
-    function getProgProgress(prog, nextProg) {
-        if (!prog) return 0;
-        const now = new Date();
-        let nowMins = now.getHours() * 60 + now.getMinutes();
-        const [sh, sm] = (prog.ora || "00:00").split(":").map(Number);
-        const startMins = (sh || 0) * 60 + (sm || 0);
-        let endMins = 24 * 60;
-        if (nextProg) {
-            const [eh, em] = (nextProg.ora || "00:00").split(":").map(Number);
-            endMins = (eh || 0) * 60 + (em || 0);
-            if (endMins <= startMins) endMins += 24 * 60;
-        }
-        if (nowMins < startMins) nowMins += 24 * 60;
-        if (nowMins >= startMins && endMins > startMins) {
-            const pct = Math.round(((nowMins - startMins) / (endMins - startMins)) * 100);
-            return Math.min(Math.max(pct, 0), 100);
-        }
-        return 0;
-    }
-
+    // Scroll iniziale automatico all'ora corrente
     useEffect(() => {
-        if (filteredChannels.length > 0) {
-            if (!selectedChannel || !filteredChannels.some(c => c.canale === selectedChannel.canale)) {
-                const first = filteredChannels[0];
-                setSelectedChannel(first);
-                const cur = getLiveProgram(first.programmi);
-                setSelectedProgram(cur || first.programmi?.[0] || null);
+        if (!loading && gridTimelineRef.current && currentMinutes > 0) {
+            const scrollTo = Math.max(0, (currentMinutes - 20) * PX_PER_MINUTE);
+            gridTimelineRef.current.scrollLeft = scrollTo;
+            if (headerTimelineRef.current) {
+                headerTimelineRef.current.scrollLeft = scrollTo;
             }
         }
-    }, [filteredChannels, selectedChannel]);
+    }, [loading, isOpen]);
 
+    // Sincronizzazione scroll orizzontale tra Header Orari e Griglia
+    const handleGridScroll = (e) => {
+        if (headerTimelineRef.current) {
+            headerTimelineRef.current.scrollLeft = e.target.scrollLeft;
+        }
+    };
+
+    // Salta a ORA IN ONDA
+    const handleJumpToNow = () => {
+        if (gridTimelineRef.current) {
+            const scrollTo = Math.max(0, (currentMinutes - 20) * PX_PER_MINUTE);
+            gridTimelineRef.current.scrollTo({ left: scrollTo, behavior: "smooth" });
+        }
+    };
+
+    // Navigazione orizzontale a step (+2 ore / -2 ore)
+    const handleScrollStep = (direction) => {
+        if (gridTimelineRef.current) {
+            const delta = direction * 120 * PX_PER_MINUTE;
+            gridTimelineRef.current.scrollBy({ left: delta, behavior: "smooth" });
+        }
+    };
+
+    // Avvia riproduzione canale
     const handleWatchChannel = (channelName) => {
         onClose();
         const slug = createSlug(channelName || "");
@@ -155,261 +177,299 @@ export default function GuidaTvModal({ isOpen, onClose }) {
 
     if (!isOpen) return null;
 
-    const channelPrograms = (selectedChannel?.programmi || []).filter(p => {
-        if (selectedTimeFilter === "all") return true;
-        const [h] = (p.ora || "00:00").split(":").map(Number);
-        if (selectedTimeFilter === "serata") return h >= 20 && h <= 23;
-        if (selectedTimeFilter === "notte") return h >= 23 || h < 6;
-        if (selectedTimeFilter === "pomeriggio") return h >= 13 && h < 20;
-        if (selectedTimeFilter === "mattina") return h >= 6 && h < 13;
-        return true;
-    });
+    // Genera gli slot orari dell'header per le 24 ore (48 blocchi da 30 min)
+    const timeSlots = [];
+    for (let m = 0; m < 24 * 60; m += SLOT_DURATION_MINUTES) {
+        const hh = String(Math.floor(m / 60)).padStart(2, "0");
+        const mm = String(m % 60).padStart(2, "0");
+        timeSlots.push({
+            minute: m,
+            label: `${hh}:${mm}`
+        });
+    }
 
-    const liveProg = getLiveProgram(selectedChannel?.programmi);
+    const totalWidthPx = 24 * 60 * PX_PER_MINUTE; // 7200px
+    const nowIndicatorLeftPx = currentMinutes * PX_PER_MINUTE;
 
     return (
-        <div className="guidatv-backdrop" onClick={onClose}>
-            <div className="guidatv-modal" onClick={(e) => e.stopPropagation()}>
-                <div className="guidatv-header">
-                    <div className="guidatv-header-left">
-                        <div className="guidatv-badge">
-                            <i className="fas fa-tv"></i>
-                            <span>GUIDA TV EPG</span>
-                        </div>
-                        <div className="guidatv-clock">
-                            {new Date().toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" })}
+        <div className="ee-epg-backdrop" onClick={onClose}>
+            <div className="ee-epg-screen" onClick={(e) => e.stopPropagation()}>
+                {/* 1. TOP HEADER: Logo/Badge + Nastro Giorni + Orologio EE */}
+                <div className="ee-epg-top-header">
+                    <div className="ee-epg-brand">
+                        <div className="ee-brand-pill">
+                            <i className="fas fa-satellite-dish"></i>
+                            <span>LIVE EPG</span>
                         </div>
                     </div>
 
-                    <div className="guidatv-search-box">
+                    {/* Nastro dei giorni (Mer 01, Gio 02, Oggi 07...) */}
+                    <div className="ee-days-tape">
+                        {daysList.map((day) => {
+                            const isSelected = selectedDayOffset === day.offset;
+                            return (
+                                <button
+                                    key={day.offset}
+                                    type="button"
+                                    className={`ee-day-item ${isSelected ? "selected" : ""} ${day.isToday ? "is-today" : ""}`}
+                                    onClick={() => setSelectedDayOffset(day.offset)}
+                                >
+                                    <span className="ee-day-name">{day.label}</span>
+                                    <span className="ee-day-number">{day.num}</span>
+                                </button>
+                            );
+                        })}
+                    </div>
+
+                    {/* Orologio attuale grande a destra */}
+                    <div className="ee-epg-clock">
+                        {currentTimeStr || "--:--"}
+                    </div>
+                </div>
+
+                {/* 2. CATEGORIES FILTER BAR */}
+                <div className="ee-epg-categories-bar">
+                    <div className="ee-categories-list">
+                        {categories.map((cat) => {
+                            const isActive = activeCategory === cat;
+                            return (
+                                <button
+                                    key={cat}
+                                    type="button"
+                                    className={`ee-category-pill ${isActive ? "active" : ""}`}
+                                    onClick={() => setActiveCategory(cat)}
+                                >
+                                    <span className="ee-cat-radio-dot"></span>
+                                    <span>{cat}</span>
+                                </button>
+                            );
+                        })}
+                    </div>
+
+                    {/* Ricerca veloce canale */}
+                    <div className="ee-search-input-wrap">
                         <i className="fas fa-magnifying-glass"></i>
                         <input
                             type="text"
                             placeholder="Cerca canale o programma..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            autoFocus
                         />
                         {searchQuery && (
-                            <button type="button" onClick={() => setSearchQuery("")}>
+                            <button type="button" onClick={() => setSearchQuery("")} className="ee-clear-btn">
                                 <i className="fas fa-xmark"></i>
                             </button>
                         )}
                     </div>
 
-                    <button
-                        type="button"
-                        className="guidatv-close-btn"
-                        onClick={onClose}
-                        title="Chiudi Guida TV"
-                    >
+                    <button type="button" className="ee-close-screen-btn" onClick={onClose} title="Chiudi Guida TV">
                         <i className="fas fa-xmark"></i>
                     </button>
                 </div>
 
-                <div className="guidatv-filter-bar">
-                    <div className="guidatv-categories">
-                        {categories.map(cat => (
-                            <button
-                                key={cat}
-                                type="button"
-                                className={"guidatv-cat-pill " + (activeCategory === cat ? "active" : "")}
-                                onClick={() => setActiveCategory(cat)}
-                            >
-                                {cat}
-                            </button>
-                        ))}
+                {/* 3. MAIN TIMELINE GRID CONTAINER */}
+                <div className="ee-epg-grid-container">
+                    {/* Header degli Orari (Sopra la griglia) */}
+                    <div className="ee-epg-time-header-row">
+                        <div className="ee-corner-cell">
+                            <span className="ee-corner-label">CANALE</span>
+                        </div>
+
+                        <div className="ee-time-ruler-wrapper" ref={headerTimelineRef}>
+                            <div className="ee-time-ruler" style={{ width: `${totalWidthPx}px` }}>
+                                {timeSlots.map((slot) => (
+                                    <div
+                                        key={slot.minute}
+                                        className="ee-time-slot"
+                                        style={{
+                                            left: `${slot.minute * PX_PER_MINUTE}px`,
+                                            width: `${SLOT_DURATION_MINUTES * PX_PER_MINUTE}px`
+                                        }}
+                                    >
+                                        <span className="ee-time-label">{slot.label}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="guidatv-time-filters">
-                        <span className="guidatv-filter-label">Fascia:</span>
-                        <button
-                            type="button"
-                            className={"guidatv-time-pill " + (selectedTimeFilter === "all" ? "active" : "")}
-                            onClick={() => setSelectedTimeFilter("all")}
-                        >
-                            Tutto
-                        </button>
-                        <button
-                            type="button"
-                            className={"guidatv-time-pill " + (selectedTimeFilter === "serata" ? "active" : "")}
-                            onClick={() => setSelectedTimeFilter("serata")}
-                        >
-                            Prima Serata
-                        </button>
-                        <button
-                            type="button"
-                            className={"guidatv-time-pill " + (selectedTimeFilter === "pomeriggio" ? "active" : "")}
-                            onClick={() => setSelectedTimeFilter("pomeriggio")}
-                        >
-                            Pomeriggio
-                        </button>
+                    {/* Corpo canali e palinsesto */}
+                    <div className="ee-epg-body-row">
+                        {loading ? (
+                            <div className="ee-loading-state">
+                                <div className="ee-spinner"></div>
+                                <span>Caricamento Guida TV EPG...</span>
+                            </div>
+                        ) : (
+                            <div
+                                className="ee-epg-scroll-viewport"
+                                ref={gridTimelineRef}
+                                onScroll={handleGridScroll}
+                            >
+                                {/* Cursore verticale ORA ATTUALE (Cyan Neon come da foto) */}
+                                {selectedDayOffset === 0 && (
+                                    <div
+                                        className="ee-current-time-marker"
+                                        style={{ left: `${nowIndicatorLeftPx}px` }}
+                                    >
+                                        <div className="ee-marker-head"></div>
+                                        <div className="ee-marker-line"></div>
+                                    </div>
+                                )}
+
+                                {/* Lista Canali con i blocchi del palinsesto */}
+                                <div className="ee-channels-container" style={{ width: `${totalWidthPx}px` }}>
+                                    {filteredChannels.map((ch, idx) => {
+                                        const channelNumber = String(idx + 1).padStart(3, "0");
+                                        const logo = getChannelLogoUrl({ title: ch.canale });
+                                        const programmi = ch.programmi || [];
+
+                                        return (
+                                            <div key={ch.canale + idx} className="ee-channel-row">
+                                                {/* Colonna Canale fissa a sinistra (Sticky) */}
+                                                <div
+                                                    className="ee-channel-cell-sticky"
+                                                    onClick={() => handleWatchChannel(ch.canale)}
+                                                    title={`Guarda ${ch.canale}`}
+                                                >
+                                                    <span className="ee-ch-num">{channelNumber}</span>
+                                                    <div className="ee-ch-badge">
+                                                        {logo ? (
+                                                            <img src={logo} alt={ch.canale} className="ee-ch-logo" />
+                                                        ) : (
+                                                            <span className="ee-ch-fallback-name">{ch.canale}</span>
+                                                        )}
+                                                    </div>
+                                                </div>
+
+                                                {/* Timeline orizzontale dei programmi del canale */}
+                                                <div className="ee-programs-timeline">
+                                                    {programmi.map((prog, pIdx) => {
+                                                        const startMins = timeToMins(prog.ora);
+                                                        let endMins = prog.fine ? timeToMins(prog.fine) : 0;
+
+                                                        if (endMins <= startMins && prog.fine) {
+                                                            endMins += 24 * 60;
+                                                        } else if (!prog.fine) {
+                                                            const nextProg = programmi[pIdx + 1];
+                                                            if (nextProg) {
+                                                                const nextStart = timeToMins(nextProg.ora);
+                                                                endMins = nextStart <= startMins ? nextStart + 24 * 60 : nextStart;
+                                                            } else {
+                                                                endMins = Math.min(startMins + 60, 24 * 60);
+                                                            }
+                                                        }
+
+                                                        const durationMins = Math.max(endMins - startMins, 15);
+                                                        const leftPx = startMins * PX_PER_MINUTE;
+                                                        const widthPx = durationMins * PX_PER_MINUTE;
+
+                                                        const isNow = selectedDayOffset === 0 && currentMinutes >= startMins && currentMinutes < endMins;
+                                                        const isSelected = selectedProgram?.titolo === prog.titolo && selectedChannel?.canale === ch.canale;
+
+                                                        return (
+                                                            <div
+                                                                key={prog.ora + pIdx}
+                                                                className={`ee-program-block ${isNow ? "is-live" : ""} ${isSelected ? "selected" : ""}`}
+                                                                style={{
+                                                                    left: `${leftPx}px`,
+                                                                    width: `${widthPx}px`
+                                                                }}
+                                                                onClick={() => {
+                                                                    setSelectedProgram(prog);
+                                                                    setSelectedChannel(ch);
+                                                                }}
+                                                                onDoubleClick={() => handleWatchChannel(ch.canale)}
+                                                                title={`${prog.ora} - ${prog.fine || ""} | ${prog.titolo}\n(Doppio click per guardare)`}
+                                                            >
+                                                                <div className="ee-prog-inner">
+                                                                    <div className="ee-prog-title-row">
+                                                                        {isNow && (
+                                                                            <span className="ee-play-icon">
+                                                                                <i className="fas fa-play"></i>
+                                                                            </span>
+                                                                        )}
+                                                                        <span className="ee-prog-title">{prog.titolo}</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
 
-                <div className="guidatv-content">
-                    {loading ? (
-                        <div className="guidatv-loading">
-                            <div className="guidatv-spinner"></div>
-                            <span>Caricamento Guida TV in corso...</span>
+                {/* 4. PROGRAM DETAIL POPUP / BANNER IN BASSO SE SELEZIONATO */}
+                {selectedProgram && selectedChannel && (
+                    <div className="ee-selected-program-banner">
+                        <div className="ee-banner-meta">
+                            <div className="ee-banner-top-line">
+                                <span className="ee-banner-ch">{selectedChannel.canale}</span>
+                                <span className="ee-banner-time">
+                                    <i className="fa-regular fa-clock"></i> {selectedProgram.ora} {selectedProgram.fine ? `- ${selectedProgram.fine}` : ""}
+                                </span>
+                            </div>
+                            <h3 className="ee-banner-title">{selectedProgram.titolo}</h3>
+                            {selectedProgram.descrizione && (
+                                <p className="ee-banner-desc">{selectedProgram.descrizione}</p>
+                            )}
                         </div>
-                    ) : (
-                        <>
-                            <div className="guidatv-channel-list" ref={listRef}>
-                                {filteredChannels.map((ch, idx) => {
-                                    const isSel = selectedChannel?.canale === ch.canale;
-                                    const curr = getLiveProgram(ch.programmi);
-                                    const logo = getChannelLogoUrl({ title: ch.canale });
-                                    const pct = getProgProgress(curr, null);
 
-                                    return (
-                                        <div
-                                            key={ch.canale + idx}
-                                            className={"guidatv-ch-row " + (isSel ? "active" : "")}
-                                            onClick={() => {
-                                                setSelectedChannel(ch);
-                                                setSelectedProgram(curr || ch.programmi?.[0] || null);
-                                            }}
-                                        >
-                                            <div className="guidatv-ch-logo-wrap">
-                                                <img src={logo} alt={ch.canale} className="guidatv-ch-logo" />
-                                            </div>
-                                            <div className="guidatv-ch-info">
-                                                <div className="guidatv-ch-name-row">
-                                                    <span className="guidatv-ch-name">{ch.canale}</span>
-                                                    <span className="guidatv-ch-cat">{ch.categoria}</span>
-                                                </div>
-                                                <div className="guidatv-ch-curr-prog">
-                                                    <span className="live-dot-pulse"></span>
-                                                    <span className="prog-time">{curr?.ora || "--:--"}</span>
-                                                    <span className="prog-title">{curr?.titolo || "Nessun dato"}</span>
-                                                </div>
-                                                {pct > 0 && (
-                                                    <div className="guidatv-prog-bar">
-                                                        <div className="guidatv-prog-fill" style={{ width: pct + "%" }}></div>
-                                                    </div>
-                                                )}
-                                            </div>
-                                            <button
-                                                type="button"
-                                                className="guidatv-quick-play-btn"
-                                                title={"Guarda " + ch.canale}
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    handleWatchChannel(ch.canale);
-                                                }}
-                                            >
-                                                <i className="fas fa-play"></i>
-                                            </button>
-                                        </div>
-                                    );
-                                })}
-                            </div>
+                        <div className="ee-banner-actions">
+                            <button
+                                type="button"
+                                className="ee-watch-btn"
+                                onClick={() => handleWatchChannel(selectedChannel.canale)}
+                            >
+                                <i className="fas fa-play"></i>
+                                <span>Guarda Canale</span>
+                            </button>
+                            <button
+                                type="button"
+                                className="ee-dismiss-banner-btn"
+                                onClick={() => {
+                                    setSelectedProgram(null);
+                                    setSelectedChannel(null);
+                                }}
+                            >
+                                <i className="fas fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                )}
 
-                            <div className="guidatv-program-panel">
-                                {/* Cinema Hero Stage del canale e programma selezionato (Coerente con Sky/Eventi) */}
-                                <div className="guidatv-cinema-stage">
-                                    <div className="guidatv-stage-backdrop">
-                                        {selectedProgram?.immagine && (
-                                            <img
-                                                src={selectedProgram.immagine}
-                                                alt=""
-                                                className="guidatv-stage-bg-img"
-                                                loading="lazy"
-                                            />
-                                        )}
-                                        <div className="guidatv-stage-overlay-grad"></div>
-                                    </div>
+                {/* 5. BOTTOM FOOTER TELECOMANDO (EE Quick Keys) */}
+                <div className="ee-epg-footer">
+                    <div className="ee-footer-key">
+                        <span className="ee-key-circle info">ⓘ</span>
+                        <span className="ee-key-label">INFO</span>
+                    </div>
 
-                                    <div className="guidatv-stage-content">
-                                        <div className="guidatv-stage-top">
-                                            <div className="guidatv-stage-channel-badge">
-                                                <div className="guidatv-stage-logo-wrap">
-                                                    <img
-                                                        src={getChannelLogoUrl({ title: selectedChannel?.canale })}
-                                                        alt=""
-                                                        className="guidatv-stage-logo"
-                                                    />
-                                                </div>
-                                                <div className="guidatv-stage-channel-meta">
-                                                    <span className="guidatv-stage-ch-name">{selectedChannel?.canale || "Seleziona Canale"}</span>
-                                                    <span className="guidatv-stage-ch-cat">{selectedChannel?.categoria || "Live TV"}</span>
-                                                </div>
-                                            </div>
+                    <button type="button" className="ee-footer-btn-key" onClick={handleJumpToNow}>
+                        <span className="ee-key-circle green"></span>
+                        <span className="ee-key-label">ON NOW</span>
+                    </button>
 
-                                            <button
-                                                type="button"
-                                                className="guidatv-hero-play-btn"
-                                                onClick={() => handleWatchChannel(selectedChannel?.canale)}
-                                            >
-                                                <i className="fas fa-play"></i>
-                                                <span>Guarda Canale</span>
-                                            </button>
-                                        </div>
+                    <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(-1)}>
+                        <span className="ee-key-circle arrow">◀◀</span>
+                        <span className="ee-key-label">-2 ORE</span>
+                    </button>
 
-                                        {selectedProgram && (
-                                            <div className="guidatv-stage-main">
-                                                <div className="guidatv-stage-meta-row">
-                                                    <span className="stage-time-pill">
-                                                        <i className="fa-regular fa-clock"></i>
-                                                        {selectedProgram.ora} {selectedProgram.fine ? `- ${selectedProgram.fine}` : ""}
-                                                    </span>
-                                                    {liveProg?.titolo === selectedProgram.titolo && (
-                                                        <span className="stage-live-badge">
-                                                            <span className="dot"></span>IN ONDA
-                                                        </span>
-                                                    )}
-                                                </div>
+                    <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(1)}>
+                        <span className="ee-key-circle arrow">▶▶</span>
+                        <span className="ee-key-label">+2 ORE</span>
+                    </button>
 
-                                                <h1 className="guidatv-stage-title">{selectedProgram.titolo}</h1>
-
-                                                {selectedProgram.descrizione && (
-                                                    <p className="guidatv-stage-desc">
-                                                        {selectedProgram.descrizione}
-                                                    </p>
-                                                )}
-                                            </div>
-                                        )}
-                                    </div>
-                                </div>
-
-                                {/* Timeline orizzontale coerente con le card eventi del sito */}
-                                <div className="guidatv-timeline-section">
-                                    <div className="guidatv-timeline-header">
-                                        <div className="timeline-header-left">
-                                            <i className="fas fa-calendar-day"></i>
-                                            <span className="timeline-title">Palinsesto Giornaliero</span>
-                                        </div>
-                                        <span className="timeline-count">{channelPrograms.length} programmi</span>
-                                    </div>
-
-                                    <div className="guidatv-timeline-scroll" ref={timelineRef}>
-                                        {channelPrograms.map((prog, pIdx) => {
-                                            const isSelected = selectedProgram?.titolo === prog.titolo && selectedProgram?.ora === prog.ora;
-                                            const isLive = liveProg?.titolo === prog.titolo && liveProg?.ora === prog.ora;
-
-                                            return (
-                                                <div
-                                                    key={prog.ora + pIdx}
-                                                    className={"guidatv-schedule-card " + (isSelected ? "selected " : "") + (isLive ? "live" : "")}
-                                                    onClick={() => setSelectedProgram(prog)}
-                                                >
-                                                    <div className="schedule-card-header">
-                                                        <span className="schedule-time">{prog.ora}</span>
-                                                        {isLive && <span className="schedule-live-dot">LIVE</span>}
-                                                    </div>
-                                                    <div className="schedule-title">{prog.titolo}</div>
-                                                    {prog.descrizione && (
-                                                        <div className="schedule-snippet">{prog.descrizione}</div>
-                                                    )}
-                                                </div>
-                                            );
-                                        })}
-                                    </div>
-                                </div>
-                            </div>
-                        </>
-                    )}
+                    <div className="ee-footer-key">
+                        <span className="ee-key-circle blue"></span>
+                        <span className="ee-key-label">DOPPIO CLICK: GUARDA CANALE</span>
+                    </div>
                 </div>
             </div>
         </div>
