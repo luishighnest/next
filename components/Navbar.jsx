@@ -29,8 +29,18 @@ export default function Navbar({
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const [isGuidaTvOpen, setIsGuidaTvOpen] = useState(false);
     const [isNavHidden, setIsNavHidden] = useState(false);
+    const [siteTime, setSiteTime] = useState("");
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
+
+    useEffect(() => {
+        function updateSiteClock() {
+            setSiteTime(new Date().toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" }));
+        }
+        updateSiteClock();
+        const t = setInterval(updateSiteClock, 10000);
+        return () => clearInterval(t);
+    }, []);
 
     // La navbar ha la STESSA identica dimensione, struttura e posizione della Home su tutte le sezioni (Home, Sky, Evento)
     const isSkyPage = pathname ? pathname.startsWith("/sky") : false;
@@ -266,20 +276,28 @@ export default function Navbar({
                     </div>
                 ) : (
                     <div className="home-header-islands">
-                        {/* Logo Vettoriale Stile tv.apple.com (SOLO il logo, trasparente, a filo sinistro) */}
-                        <Link
-                            href="/home"
-                            className="apple-tv-brand-wordmark"
-                            title="NMDZ - Home"
-                            aria-label="NMDZ Home"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                handleCloseSearch();
-                                handleNavClick("all");
-                            }}
-                        >
-                            <img src="/logos/nmdz_monogram.png" alt="Logo" className="brand-wordmark-symbol" />
-                        </Link>
+                        {/* Logo Vettoriale Stile tv.apple.com + Orario Attuale del sito */}
+                        <div className="nav-brand-clock-group">
+                            <Link
+                                href="/home"
+                                className="apple-tv-brand-wordmark"
+                                title="NMDZ - Home"
+                                aria-label="NMDZ Home"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleCloseSearch();
+                                    handleNavClick("all");
+                                }}
+                            >
+                                <img src="/logos/nmdz_monogram.png" alt="Logo" className="brand-wordmark-symbol" />
+                            </Link>
+
+                            {siteTime && (
+                                <div className="nav-site-clock" title="Orario attuale">
+                                    {siteTime}
+                                </div>
+                            )}
+                        </div>
 
                         {/* ISOLA 2: Navigazione Principale a Capsule al Centro */}
                         <nav className="nav-island nav-island-center" aria-label="Navigazione principale">

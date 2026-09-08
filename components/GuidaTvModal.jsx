@@ -333,57 +333,88 @@ export default function GuidaTvModal({ isOpen, onClose }) {
 
                                                 {/* Timeline orizzontale dei programmi del canale */}
                                                 <div className="ee-programs-timeline">
-                                                    {programmi.map((prog, pIdx) => {
-                                                        const startMins = timeToMins(prog.ora);
-                                                        let endMins = prog.fine ? timeToMins(prog.fine) : 0;
-
-                                                        if (endMins <= startMins && prog.fine) {
-                                                            endMins += 24 * 60;
-                                                        } else if (!prog.fine) {
-                                                            const nextProg = programmi[pIdx + 1];
-                                                            if (nextProg) {
-                                                                const nextStart = timeToMins(nextProg.ora);
-                                                                endMins = nextStart <= startMins ? nextStart + 24 * 60 : nextStart;
-                                                            } else {
-                                                                endMins = Math.min(startMins + 60, 24 * 60);
+                                                    {(() => {
+                                                        // Trova in anticipo l'indice del programma in onda per questo canale
+                                                        let liveIndex = -1;
+                                                        if (selectedDayOffset === 0) {
+                                                            for (let i = 0; i < programmi.length; i++) {
+                                                                const p = programmi[i];
+                                                                const s = timeToMins(p.ora);
+                                                                let e = p.fine ? timeToMins(p.fine) : 0;
+                                                                if (e <= s && p.fine) e += 24 * 60;
+                                                                else if (!p.fine) {
+                                                                    const next = programmi[i + 1];
+                                                                    e = next ? timeToMins(next.ora) : s + 60;
+                                                                    if (e <= s) e += 24 * 60;
+                                                                }
+                                                                if (currentMinutes >= s && currentMinutes < e) {
+                                                                    liveIndex = i;
+                                                                    break;
+                                                                }
+                                                            }
+                                                            // Fallback: se non ancora trovato, trova l'ultimo iniziato
+                                                            if (liveIndex === -1 && programmi.length > 0) {
+                                                                for (let i = programmi.length - 1; i >= 0; i--) {
+                                                                    if (timeToMins(programmi[i].ora) <= currentMinutes) {
+                                                                        liveIndex = i;
+                                                                        break;
+                                                                    }
+                                                                }
                                                             }
                                                         }
 
-                                                        const durationMins = Math.max(endMins - startMins, 15);
-                                                        const leftPx = startMins * PX_PER_MINUTE;
-                                                        const widthPx = durationMins * PX_PER_MINUTE;
+                                                        return programmi.map((prog, pIdx) => {
+                                                            const startMins = timeToMins(prog.ora);
+                                                            let endMins = prog.fine ? timeToMins(prog.fine) : 0;
 
-                                                        const isNow = selectedDayOffset === 0 && currentMinutes >= startMins && currentMinutes < endMins;
-                                                        const isSelected = selectedProgram?.titolo === prog.titolo && selectedChannel?.canale === ch.canale;
+                                                            if (endMins <= startMins && prog.fine) {
+                                                                endMins += 24 * 60;
+                                                            } else if (!prog.fine) {
+                                                                const nextProg = programmi[pIdx + 1];
+                                                                if (nextProg) {
+                                                                    const nextStart = timeToMins(nextProg.ora);
+                                                                    endMins = nextStart <= startMins ? nextStart + 24 * 60 : nextStart;
+                                                                } else {
+                                                                    endMins = Math.min(startMins + 60, 24 * 60);
+                                                                }
+                                                            }
 
-                                                        return (
-                                                            <div
-                                                                key={prog.ora + pIdx}
-                                                                className={`ee-program-block ${isNow ? "is-live" : ""} ${isSelected ? "selected" : ""}`}
-                                                                style={{
-                                                                    left: `${leftPx}px`,
-                                                                    width: `${widthPx}px`
-                                                                }}
-                                                                onClick={() => {
-                                                                    setSelectedProgram(prog);
-                                                                    setSelectedChannel(ch);
-                                                                }}
-                                                                onDoubleClick={() => handleWatchChannel(ch.canale)}
-                                                                title={`${prog.ora} - ${prog.fine || ""} | ${prog.titolo}\n(Doppio click per guardare)`}
-                                                            >
-                                                                <div className="ee-prog-inner">
-                                                                    <div className="ee-prog-title-row">
-                                                                        {isNow && (
-                                                                            <span className="ee-play-icon">
-                                                                                <i className="fas fa-play"></i>
-                                                                            </span>
-                                                                        )}
-                                                                        <span className="ee-prog-title">{prog.titolo}</span>
+                                                            const durationMins = Math.max(endMins - startMins, 15);
+                                                            const leftPx = startMins * PX_PER_MINUTE;
+                                                            const widthPx = durationMins * PX_PER_MINUTE;
+
+                                                            const isNow = selectedDayOffset === 0 && pIdx === liveIndex;
+                                                            const isSelected = selectedProgram?.titolo === prog.titolo && selectedChannel?.canale === ch.canale;
+
+                                                            return (
+                                                                <div
+                                                                    key={prog.ora + pIdx}
+                                                                    className={`ee-program-block ${isNow ? "is-live" : ""} ${isSelected ? "selected" : ""}`}
+                                                                    style={{
+                                                                        left: `${leftPx}px`,
+                                                                        width: `${widthPx}px`
+                                                                    }}
+                                                                    onClick={() => {
+                                                                        setSelectedProgram(prog);
+                                                                        setSelectedChannel(ch);
+                                                                    }}
+                                                                    onDoubleClick={() => handleWatchChannel(ch.canale)}
+                                                                    title={`${prog.ora} - ${prog.fine || ""} | ${prog.titolo}\n(Doppio click per guardare)`}
+                                                                >
+                                                                    <div className="ee-prog-inner">
+                                                                        <div className="ee-prog-title-row">
+                                                                            {isNow && (
+                                                                                <span className="ee-play-icon">
+                                                                                    <i className="fas fa-play"></i>
+                                                                                </span>
+                                                                            )}
+                                                                            <span className="ee-prog-title">{prog.titolo}</span>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        );
-                                                    })}
+                                                            );
+                                                        });
+                                                    })()}
                                                 </div>
                                             </div>
                                         );
@@ -435,10 +466,25 @@ export default function GuidaTvModal({ isOpen, onClose }) {
 
                 {/* 5. BOTTOM FOOTER TELECOMANDO (EE Quick Keys) */}
                 <div className="ee-epg-footer">
-                    <div className="ee-footer-key">
-                        <span className="ee-key-circle info">ⓘ</span>
-                        <span className="ee-key-label">INFO</span>
-                    </div>
+                    <button
+                        type="button"
+                        className="ee-footer-btn-key"
+                        onClick={() => {
+                            if (selectedProgram) {
+                                // Chiude o apre il toggle
+                                setSelectedProgram(null);
+                            } else if (filteredChannels.length > 0) {
+                                const ch = filteredChannels[0];
+                                setSelectedChannel(ch);
+                                setSelectedProgram(ch.programmi?.[0] || null);
+                            }
+                        }}
+                    >
+                        <span className="ee-key-circle info">
+                            <i className="fas fa-info"></i>
+                        </span>
+                        <span className="ee-key-label">{selectedProgram ? "CHIUDI INFO" : "INFO PROGRAMMA"}</span>
+                    </button>
 
                     <button type="button" className="ee-footer-btn-key" onClick={handleJumpToNow}>
                         <span className="ee-key-circle green"></span>
