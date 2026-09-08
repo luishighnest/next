@@ -70,7 +70,7 @@ export async function GET(request) {
                 return NextResponse.json({ error: "Missing id" }, { status: 400 });
             }
 
-            const data = await tmdbFetch(`/${type}/${id}?append_to_response=credits,recommendations,similar`);
+            const data = await tmdbFetch(`/${type}/${id}?append_to_response=credits,videos,recommendations,similar`);
             return NextResponse.json({
                 success: true,
                 details: data
