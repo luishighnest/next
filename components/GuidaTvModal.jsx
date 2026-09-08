@@ -191,11 +191,17 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         }
     };
 
-    // Avvia riproduzione canale
+    // Avvia riproduzione canale in modo istantaneo e fluido
     const handleWatchChannel = (channelName) => {
+        if (!channelName) return;
+        const slug = createSlug(channelName);
+        const targetUrl = "/sky?ch=" + slug;
+        
+        // Chiude la modale all'istante
         onClose();
-        const slug = createSlug(channelName || "");
-        router.push("/sky?ch=" + slug);
+        
+        // Navigazione immediata
+        router.push(targetUrl);
     };
 
     if (!isOpen) return null;
@@ -342,6 +348,10 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                                 <div
                                                     className="ee-channel-cell-sticky"
                                                     onClick={() => handleWatchChannel(ch.canale)}
+                                                    onMouseEnter={() => {
+                                                        const slug = createSlug(ch.canale);
+                                                        router.prefetch("/sky?ch=" + slug);
+                                                    }}
                                                     title={`Guarda ${ch.canale}`}
                                                 >
                                                     <span className="ee-ch-num">{channelNumber}</span>

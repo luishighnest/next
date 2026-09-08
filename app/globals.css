@@ -8618,24 +8618,39 @@ body:has(.sky-app) {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
-/* Programma in onda con casella CHIARAMENTE evidenziata in BIANCO */
+/* Programma in onda con casella TUTTA BIANCA E TESTO NERO */
 .ee-program-block.is-live {
-    background: rgba(255, 255, 255, 0.09) !important;
-    border: 1.5px solid #ffffff !important;
-    box-shadow: 0 0 14px rgba(255, 255, 255, 0.35), inset 0 0 10px rgba(255, 255, 255, 0.05);
+    background: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.6), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
     z-index: 4;
 }
 
 .ee-program-block.is-live .ee-prog-title {
-    font-weight: 800;
-    color: #ffffff;
+    font-weight: 800 !important;
+    color: #000000 !important;
+}
+
+.ee-program-block.is-live .ee-play-icon {
+    border-color: #000000 !important;
+    background: #000000 !important;
+    color: #ffffff !important;
 }
 
 .ee-program-block.selected {
-    background: #1c1c24 !important;
+    background: #202028 !important;
     border: 1.5px solid #ffffff !important;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), 0 4px 18px rgba(0, 0, 0, 0.8);
     z-index: 6;
+}
+
+.ee-program-block.selected.is-live {
+    background: #ffffff !important;
+    box-shadow: 0 0 0 2px #e30a17, 0 0 20px rgba(255, 255, 255, 0.8) !important;
+}
+
+.ee-program-block.selected.is-live .ee-prog-title {
+    color: #000000 !important;
 }
 
 .ee-prog-inner {
