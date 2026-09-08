@@ -16,6 +16,11 @@ export default function VodInfoView({ id, initialType = "movie" }) {
     const [similarItems, setSimilarItems] = useState([]);
     const [showTrailerModal, setShowTrailerModal] = useState(false);
 
+    // Ref per carosello orizzontale episodi Apple TV
+    const episodesScrollRef = useRef(null);
+    const [canScrollEpLeft, setCanScrollEpLeft] = useState(false);
+    const [canScrollEpRight, setCanScrollEpRight] = useState(true);
+
     // Recupera dati preliminari da sessionStorage per rendering istantaneo
     const [previewItem, setPreviewItem] = useState(() => {
         if (typeof window !== "undefined") {
@@ -123,7 +128,34 @@ export default function VodInfoView({ id, initialType = "movie" }) {
         return () => { isMounted = false; };
     }, [id, isMovie, selectedSeason]);
 
-    // Dati principali
+    // Gestione scorrimento frecce per carosello episodi
+    const checkEpisodeScroll = () => {
+        const el = episodesScrollRef.current;
+        if (!el) return;
+        setCanScrollEpLeft(el.scrollLeft > 10);
+        setCanScrollEpRight(el.scrollLeft + el.clientWidth < el.scrollWidth - 10);
+    };
+
+    useEffect(() => {
+        const el = episodesScrollRef.current;
+        if (!el) return;
+        checkEpisodeScroll();
+        el.addEventListener("scroll", checkEpisodeScroll);
+        window.addEventListener("resize", checkEpisodeScroll);
+        return () => {
+            el.removeEventListener("scroll", checkEpisodeScroll);
+            window.removeEventListener("resize", checkEpisodeScroll);
+        };
+    }, [seasonData]);
+
+    const scrollEpisodes = (dir) => {
+        const el = episodesScrollRef.current;
+        if (!el) return;
+        const step = el.clientWidth * 0.8;
+        el.scrollBy({ left: dir === "left" ? -step : step, behavior: "smooth" });
+    };
+
+    // Dati principali TMDB
     const title = details?.title || details?.name || previewItem?.title || "Dettagli Titolo";
     const tagline = details?.tagline || "";
     const overview = details?.overview || previewItem?.desc || "Nessuna sinossi disponibile.";
@@ -137,23 +169,19 @@ export default function VodInfoView({ id, initialType = "movie" }) {
     // Trailer ufficiale YouTube
     const trailerVideo = (details?.videos?.results || []).find(v => v.site === "YouTube" && (v.type === "Trailer" || v.type === "Teaser"));
 
-    // Cast & Crew completi (stile Apple TV)
+    // Cast & Crew reali
     const cast = (details?.credits?.cast || []).slice(0, 10);
     const directors = (details?.credits?.crew || []).filter(c => c.job === "Director" || c.job === "Creator");
     const directorName = directors.length > 0 ? directors.map(d => d.name).join(", ") : null;
     const writers = (details?.credits?.crew || []).filter(c => c.job === "Screenplay" || c.job === "Writer").slice(0, 3);
     const writerName = writers.length > 0 ? writers.map(w => w.name).join(", ") : null;
 
-    // Immagini ad altissima definizione
+    // Immagini
     const backdropUrl = details?.backdrop_path 
         ? `https://image.tmdb.org/t/p/original${details.backdrop_path}` 
         : (previewItem?.backdrop || previewItem?.image || "");
-    const posterUrl = details?.poster_path 
-        ? `https://image.tmdb.org/t/p/w500${details.poster_path}` 
-        : (previewItem?.poster || previewItem?.image || "");
 
     const seasonsList = (details?.seasons || []).filter(s => s.season_number > 0);
-
     const playHref = isMovie ? `/vod/${id}` : `/vod/${id}/1/1`;
 
     return (
@@ -166,7 +194,7 @@ export default function VodInfoView({ id, initialType = "movie" }) {
 
             {/* HERO STAGE CINEMATOGRAFICO APPLE TV+ */}
             <div className="atv-hero">
-                {/* Backdrop Gigante a tutta larghezza con parallasse morbida */}
+                {/* Backdrop Gigante a tutta larghezza */}
                 {backdropUrl && (
                     <div 
                         className="atv-hero-art" 
@@ -174,35 +202,27 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                     />
                 )}
 
-                {/* Gradienti multidirezionali Apple TV (sfumatura cinema profonda) */}
+                {/* Gradienti multidirezionali Apple TV */}
                 <div className="atv-grad-top" />
                 <div className="atv-grad-bottom" />
                 <div className="atv-grad-left" />
 
-                {/* Contenuto Hero Apple TV in basso a sinistra */}
+                {/* Contenuto Hero Apple TV posizionato a sinistra */}
                 <div className="atv-hero-content">
-                    {/* Pulsante Torna Indietro VisionOS */}
-                    <div className="atv-nav-back-wrap">
-                        <Link href="/vod" className="atv-back-pill">
-                            <span className="material-symbols-rounded">arrow_back</span>
-                            <span>Torna a VOD</span>
-                        </Link>
-                    </div>
-
                     <div className="atv-hero-lockup">
-                        {/* Riga Categoria & Badge Tech Apple (4K, HDR, Atmos) */}
-                        <div className="atv-hero-badges">
+                        {/* Metadati Reali TMDB con stile Apple TV (DOT separators) */}
+                        <div className="atv-hero-meta-line">
                             <span className={`atv-type-badge ${isMovie ? "type-movie" : "type-tv"}`}>
                                 {isMovie ? "FILM" : "SERIE TV"}
                             </span>
                             {year && <span className="atv-meta-dot">•</span>}
-                            {year && <span className="atv-meta-text">{year}</span>}
+                            {year && <span className="atv-meta-val">{year}</span>}
                             {runtime && <span className="atv-meta-dot">•</span>}
-                            {runtime && <span className="atv-meta-text">{runtime}</span>}
+                            {runtime && <span className="atv-meta-val">{runtime}</span>}
                             {!isMovie && seasonsList.length > 0 && (
                                 <>
                                     <span className="atv-meta-dot">•</span>
-                                    <span className="atv-meta-text">
+                                    <span className="atv-meta-val">
                                         {seasonsList.length} {seasonsList.length === 1 ? "Stagione" : "Stagioni"}
                                     </span>
                                 </>
@@ -210,21 +230,16 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                             {rating && (
                                 <>
                                     <span className="atv-meta-dot">•</span>
-                                    <span className="atv-rating-chip">
-                                        <span className="material-symbols-rounded atv-star">star</span>
-                                        <span className="atv-score">{rating}</span>
-                                        {voteCount && <span className="atv-votes">({voteCount})</span>}
+                                    <span className="atv-rating-val">
+                                        <span className="material-symbols-rounded atv-star-icon">star</span>
+                                        <span>{rating}</span>
+                                        {voteCount && <span className="atv-votes-num">({voteCount})</span>}
                                     </span>
                                 </>
                             )}
-
-                            {/* Apple TV Tech Specs Badges */}
-                            <span className="atv-spec-badge">4K ULTRA HD</span>
-                            <span className="atv-spec-badge">HDR10</span>
-                            <span className="atv-spec-badge">DOLBY ATMOS</span>
                         </div>
 
-                        {/* Titolo Principale Monumentale */}
+                        {/* Titolo Monumentale Apple TV */}
                         <h1 className="atv-hero-title">{title}</h1>
 
                         {/* Tagline Ufficiale */}
@@ -232,7 +247,7 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                             <p className="atv-hero-tagline">"{tagline}"</p>
                         )}
 
-                        {/* Generi in chip VisionOS con Liquid Glass */}
+                        {/* Generi in chip VisionOS */}
                         {genres.length > 0 && (
                             <div className="atv-genres-row">
                                 {genres.map(g => (
@@ -246,66 +261,84 @@ export default function VodInfoView({ id, initialType = "movie" }) {
 
                         {/* BARRA AZIONI PRINCIPALI (Stile Apple TV+ "How to Watch") */}
                         <div className="atv-actions-bar">
-                            <Link href={playHref} className="atv-btn-play-hero">
-                                <span className="material-symbols-rounded atv-play-sym">play_arrow</span>
-                                <span className="atv-btn-txt">{isMovie ? "Guarda film" : "Guarda S1 E1"}</span>
+                            <Link href={playHref} className="atv-btn-play-primary">
+                                <span className="material-symbols-rounded atv-play-icon">play_arrow</span>
+                                <span>{isMovie ? "Riproduci film" : "Riproduci S1 E1"}</span>
                             </Link>
 
                             {trailerVideo && (
                                 <button
                                     type="button"
-                                    className="atv-btn-trailer-hero"
+                                    className="atv-btn-trailer-glass"
                                     onClick={() => setShowTrailerModal(true)}
                                 >
-                                    <span className="material-symbols-rounded atv-trailer-sym">play_circle</span>
-                                    <span className="atv-btn-txt">Trailer</span>
+                                    <span className="material-symbols-rounded atv-trailer-icon">play_circle</span>
+                                    <span>Trailer</span>
                                 </button>
                             )}
-
-                            <Link href="/vod" className="atv-btn-icon-hero" title="Esplora altri titoli">
-                                <span className="material-symbols-rounded">grid_view</span>
-                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* SEZIONE EPISODI (PER LE SERIE TV - STILE APPLE TV GRID 16:9) */}
+            {/* SEZIONE EPISODI (PER LE SERIE TV - CAROSELLO ORIZZONTALE APPLE TV) */}
             {!isMovie && (
                 <section className="atv-episodes-section">
                     <div className="atv-container">
-                        <div className="atv-section-heading-row">
-                            <div className="atv-section-title-box">
+                        {/* Header con Titolo, Selettore Stagione Dropdown/Pillole e Frecce Navigazione */}
+                        <div className="atv-episodes-header-bar">
+                            <div className="atv-episodes-title-group">
                                 <h2 className="atv-section-title">Episodi</h2>
-                                {seasonData?.episodes && (
-                                    <span className="atv-badge-count">{seasonData.episodes.length} disponibili</span>
+                                {seasonsList.length > 1 ? (
+                                    <div className="atv-season-dropdown-wrap">
+                                        <select
+                                            className="atv-season-select-native"
+                                            value={selectedSeason}
+                                            onChange={(e) => setSelectedSeason(Number(e.target.value))}
+                                        >
+                                            {seasonsList.map(s => (
+                                                <option key={s.id} value={s.season_number}>
+                                                    {s.name || `Stagione ${s.season_number}`}
+                                                </option>
+                                            ))}
+                                        </select>
+                                        <span className="material-symbols-rounded atv-dropdown-arrow">expand_more</span>
+                                    </div>
+                                ) : (
+                                    <span className="atv-single-season-label">Stagione 1</span>
                                 )}
                             </div>
 
-                            {/* Selettore Stagioni con Pillole Glass */}
-                            {seasonsList.length > 1 && (
-                                <div className="atv-season-selector-bar">
-                                    {seasonsList.map(s => (
-                                        <button
-                                            key={s.id}
-                                            type="button"
-                                            className={`atv-season-btn ${selectedSeason === s.season_number ? "active" : ""}`}
-                                            onClick={() => setSelectedSeason(s.season_number)}
-                                        >
-                                            {s.name || `Stagione ${s.season_number}`}
-                                        </button>
-                                    ))}
-                                </div>
-                            )}
+                            {/* Controlli Scorrimento Orizzontale Apple TV */}
+                            <div className="atv-carousel-nav-btns">
+                                <button
+                                    type="button"
+                                    className={`atv-nav-arrow ${!canScrollEpLeft ? "disabled" : ""}`}
+                                    onClick={() => scrollEpisodes("left")}
+                                    aria-label="Episodi precedenti"
+                                    disabled={!canScrollEpLeft}
+                                >
+                                    <span className="material-symbols-rounded">chevron_left</span>
+                                </button>
+                                <button
+                                    type="button"
+                                    className={`atv-nav-arrow ${!canScrollEpRight ? "disabled" : ""}`}
+                                    onClick={() => scrollEpisodes("right")}
+                                    aria-label="Episodi successivi"
+                                    disabled={!canScrollEpRight}
+                                >
+                                    <span className="material-symbols-rounded">chevron_right</span>
+                                </button>
+                            </div>
                         </div>
 
                         {loadingSeason ? (
-                            <div className="atv-loading-box">
+                            <div className="atv-episodes-loading">
                                 <div className="ee-spinner" />
                                 <span>Caricamento episodi della Stagione {selectedSeason}...</span>
                             </div>
                         ) : seasonData?.episodes && seasonData.episodes.length > 0 ? (
-                            <div className="atv-episodes-grid">
+                            <div className="atv-episodes-scroller" ref={episodesScrollRef}>
                                 {seasonData.episodes.map(ep => {
                                     const epThumb = ep.still_path 
                                         ? `https://image.tmdb.org/t/p/w780${ep.still_path}` 
@@ -316,35 +349,36 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                                         <Link 
                                             key={ep.id} 
                                             href={epPlayUrl} 
-                                            className="atv-ep-card"
-                                            title={`Riproduci Episodio ${ep.episode_number}: ${ep.name || ""}`}
+                                            className="atv-ep-item"
+                                            title={`Guarda Episodio ${ep.episode_number}: ${ep.name || ""}`}
                                         >
-                                            {/* Thumbnail 16:9 con Glow, play icon ed ep number */}
-                                            <div className="atv-ep-thumb-wrap">
+                                            {/* Miniatura 16:9 widescreen */}
+                                            <div className="atv-ep-thumb-card">
                                                 {epThumb ? (
-                                                    <img src={epThumb} alt={ep.name} className="atv-ep-thumb" loading="lazy" />
+                                                    <img src={epThumb} alt={ep.name} className="atv-ep-img" loading="lazy" />
                                                 ) : (
-                                                    <div className="atv-ep-thumb-ph">
+                                                    <div className="atv-ep-ph">
                                                         <span className="material-symbols-rounded">tv</span>
                                                     </div>
                                                 )}
-                                                <div className="atv-ep-vignette" />
-                                                <div className="atv-ep-play-circle">
-                                                    <span className="material-symbols-rounded">play_arrow</span>
+                                                <div className="atv-ep-hover-overlay">
+                                                    <div className="atv-ep-play-btn-circle">
+                                                        <span className="material-symbols-rounded">play_arrow</span>
+                                                    </div>
                                                 </div>
-                                                <span className="atv-ep-num-pill">
+                                                <div className="atv-ep-index-badge">
                                                     EP {ep.episode_number}
-                                                </span>
+                                                </div>
                                             </div>
 
-                                            {/* Informazioni Episodio Apple TV */}
-                                            <div className="atv-ep-info">
-                                                <div className="atv-ep-header">
-                                                    <h3 className="atv-ep-title">{ep.episode_number}. {ep.name || `Episodio ${ep.episode_number}`}</h3>
-                                                    {ep.runtime && <span className="atv-ep-runtime">{ep.runtime} min</span>}
+                                            {/* Informazioni testuali Episodio Apple TV */}
+                                            <div className="atv-ep-caption">
+                                                <div className="atv-ep-title-row">
+                                                    <h3 className="atv-ep-name">{ep.episode_number}. {ep.name || `Episodio ${ep.episode_number}`}</h3>
+                                                    {ep.runtime && <span className="atv-ep-duration">{ep.runtime}m</span>}
                                                 </div>
                                                 {ep.overview && (
-                                                    <p className="atv-ep-synopsis">{ep.overview}</p>
+                                                    <p className="atv-ep-overview">{ep.overview}</p>
                                                 )}
                                             </div>
                                         </Link>
@@ -352,13 +386,13 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                                 })}
                             </div>
                         ) : (
-                            <div className="atv-empty-notice">Nessun episodio disponibile per questa stagione.</div>
+                            <div className="atv-empty-episodes">Nessun episodio disponibile per questa stagione.</div>
                         )}
                     </div>
                 </section>
             )}
 
-            {/* SEZIONE CAST & CREW (STILE APPLE TV CON AVATAR CIRCOLARI) */}
+            {/* SEZIONE CAST & CREW (AVATAR ROTONDI APPLE TV) */}
             {cast.length > 0 && (
                 <section className="atv-cast-section">
                     <div className="atv-container">
@@ -403,7 +437,7 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                 </section>
             )}
 
-            {/* SEZIONE DETTAGLI TECNICI & INFORMAZIONI (STILE APPLE TV TABELLARE) */}
+            {/* SEZIONE DETTAGLI TECNICI & INFORMAZIONI TMDB */}
             <section className="atv-specs-section">
                 <div className="atv-container">
                     <h2 className="atv-section-title" style={{ marginBottom: "20px" }}>Informazioni</h2>
@@ -436,14 +470,6 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                                 <span className="atv-spec-v">{writerName}</span>
                             </div>
                         )}
-                        <div className="atv-spec-item">
-                            <span className="atv-spec-k">Qualità video</span>
-                            <span className="atv-spec-v">4K Ultra HD • HDR10</span>
-                        </div>
-                        <div className="atv-spec-item">
-                            <span className="atv-spec-k">Audio</span>
-                            <span className="atv-spec-v">Dolby Atmos • Stereo 5.1</span>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -459,7 +485,7 @@ export default function VodInfoView({ id, initialType = "movie" }) {
                 </div>
             )}
 
-            {/* MODALE TRAILER YOUTUBE UFFICIALE (SE DISPONIBILE) */}
+            {/* MODALE TRAILER YOUTUBE UFFICIALE */}
             {showTrailerModal && trailerVideo && (
                 <div className="atv-trailer-backdrop" onClick={() => setShowTrailerModal(false)}>
                     <div className="atv-trailer-modal" onClick={(e) => e.stopPropagation()}>
