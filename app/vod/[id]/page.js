@@ -85,6 +85,7 @@ export default function MoviePlayerPage() {
             <iframe
                 src={playerSrc}
                 className="vod-fullscreen-iframe"
+                referrerPolicy="no-referrer"
                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
                 allowFullScreen
                 title={movieTitle}
