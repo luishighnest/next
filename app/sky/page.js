@@ -39,7 +39,10 @@ function buildExtUrl(ch) {
     if (!baseUrl) return "";
     const tech = getTechSettings();
     const extId = tech.extensionId || DEFAULT_EXT_ID;
-    const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
+    const isTsStream = baseUrl.toLowerCase().includes(".ts");
+    const extPrefix = isTsStream
+        ? `chrome-extension://${extId}/iptv/player.html#`
+        : `chrome-extension://${extId}/pages/player.html#`;
 
     const parts = [];
     const rawKey = ch.kid_key || "";
@@ -61,7 +64,7 @@ function buildExtUrl(ch) {
         try { parts.push("headers=" + btoa(JSON.stringify({ "User-Agent": uaVal }))); } catch(e) {}
     }
     const sep = baseUrl.includes("?") ? "&" : "?";
-    return extPrefix + baseUrl + sep + parts.join("&");
+    return extPrefix + baseUrl + (parts.length > 0 ? sep + parts.join("&") : "");
 }
 
 function parseChannelList(json, sourceName) {

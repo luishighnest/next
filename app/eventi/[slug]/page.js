@@ -265,11 +265,11 @@ export default function EventoPlayerPage() {
     const getIframeUrl = () => {
         if (!selectedSource || !selectedSource.url) return "";
         const tech = getTechSettings();
-        const extId = tech.extensionId || DEFAULT_EXT_ID;
-        // In iframe src i browser Chromium permettono SOLO chrome-extension:// (extension:// non è un protocollo URI riconosciuto per iframe embedded)
-        const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
-
         const rawUrl = selectedSource.url.trim();
+        const isTsStream = rawUrl.toLowerCase().includes(".ts");
+        const extPrefix = isTsStream
+            ? `chrome-extension://${extId}/iptv/player.html#`
+            : `chrome-extension://${extId}/pages/player.html#`;
 
         // Se l'URL è già una URL di estensione, normalizzala a chrome-extension:// per l'iframe
         if (rawUrl.startsWith("chrome-extension://") || rawUrl.startsWith("extension://")) {
