@@ -267,9 +267,12 @@ export default function EventoPlayerPage() {
         const tech = getTechSettings();
         const rawUrl = selectedSource.url.trim();
         const isTsStream = rawUrl.toLowerCase().includes(".ts");
-        const extPrefix = isTsStream
-            ? `chrome-extension://${extId}/iptv/player.html#`
-            : `chrome-extension://${extId}/pages/player.html#`;
+        if (isTsStream) {
+            const origin = typeof window !== "undefined" ? window.location.origin : "https://next-zeta-smoky.vercel.app";
+            const m3uUrl = `${origin}/api/m3u?url=${encodeURIComponent(rawUrl)}&title=${encodeURIComponent(channel?.title || "Stream")}`;
+            return `chrome-extension://${extId}/iptv/player.html#${m3uUrl}`;
+        }
+        const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
 
         // Se l'URL è già una URL di estensione, normalizzala a chrome-extension:// per l'iframe
         if (rawUrl.startsWith("chrome-extension://") || rawUrl.startsWith("extension://")) {

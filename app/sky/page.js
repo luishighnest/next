@@ -40,9 +40,12 @@ function buildExtUrl(ch) {
     const tech = getTechSettings();
     const extId = tech.extensionId || DEFAULT_EXT_ID;
     const isTsStream = baseUrl.toLowerCase().includes(".ts");
-    const extPrefix = isTsStream
-        ? `chrome-extension://${extId}/iptv/player.html#`
-        : `chrome-extension://${extId}/pages/player.html#`;
+    if (isTsStream) {
+        const origin = typeof window !== "undefined" ? window.location.origin : "https://next-zeta-smoky.vercel.app";
+        const m3uUrl = `${origin}/api/m3u?url=${encodeURIComponent(baseUrl)}&title=${encodeURIComponent(ch.name || "Sky Sport F1")}`;
+        return `chrome-extension://${extId}/iptv/player.html#${m3uUrl}`;
+    }
+    const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
 
     const parts = [];
     const rawKey = ch.kid_key || "";
