@@ -92,7 +92,7 @@
         "fine": "13:20",
         "titolo": "Quarto di finale: Stati Uniti - Ungheria",
         "descrizione": "... - France Campionati Mondiali femminili FIBA 2026. - Da Berlino, Germania.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/39251d52-e209-417f-bdb0-290f39768323/background/600"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0c6378d7-82da-47d7-94b1-0c06ff65e976/background/600"
       },
       {
         "ora": "13:20",
@@ -1642,7 +1642,7 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/52fc2816-9cf5-43b3-9b25-f831b895307f/background/600"
       },
       {
-        "ora": "05:00",
+        "ora": "05:05",
         "fine": "06:00",
         "titolo": "Francia: Gara 2",
         "descrizione": "Nono Round della stagione 2026. Dal circuito di Magny Cours, gara 2 della World Superbike. Telecronaca Vercellesi - Temporali",
@@ -1910,7 +1910,7 @@
         "fine": "13:20",
         "titolo": "Quarto di finale: Stati Uniti - Ungheria",
         "descrizione": "... Ungheria Basket Fiba Mondiale - La stellina ungherese Juhasz prova a mettersi sulla strada di Caitlin Clark e di Team Usa: e' sfida tra la bella sorpresa e i grandi favoriti del Mondiale. Telecronaca: Fumagalli-Tava.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/39251d52-e209-417f-bdb0-290f39768323/background/600"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0c6378d7-82da-47d7-94b1-0c06ff65e976/background/600"
       },
       {
         "ora": "13:20",
@@ -1949,13 +1949,13 @@
       },
       {
         "ora": "17:15",
-        "fine": "17:35",
+        "fine": "17:30",
         "titolo": "2016 Is The New 2026: Intervista A Costanza Verona",
         "descrizione": "... Costanza Verona. - 2016 Is The New 2026 - Intervista A Costanza Verona",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3081c96c-7ad4-4e82-859c-837e3066611d/background/600"
       },
       {
-        "ora": "17:35",
+        "ora": "17:30",
         "fine": "19:45",
         "titolo": "Quarto di finale: Belgio - Germania",
         "descrizione": "..- Germania Basket Fiba Mondiale - Le padrone di casa si giocano l'accesso in semifinale contro le campionesse d'Europa in carica guidate da sua maesta' Emma Meesseman. Telecronaca di Davide Fumagalli e Alessandra Tava.",
@@ -1994,7 +1994,7 @@
         "fine": "01:10",
         "titolo": "Quarto di finale: Stati Uniti - Ungheria",
         "descrizione": "... Ungheria Basket Fiba Mondiale - La stellina ungherese Juhasz prova a mettersi sulla strada di Caitlin Clark e di Team Usa: e' sfida tra la bella sorpresa e i grandi favoriti del Mondiale. Telecronaca: Fumagalli-Tava.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/39251d52-e209-417f-bdb0-290f39768323/background/600"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0c6378d7-82da-47d7-94b1-0c06ff65e976/background/600"
       }
     ]
   },
@@ -2543,6 +2543,19 @@
     ]
   },
   {
+    "canale": "Sky Sport 257",
+    "categoria": "Sport",
+    "programmi": [
+      {
+        "ora": "21:30",
+        "fine": "03:00",
+        "titolo": "12a giornata",
+        "descrizione": "Tennis Grand Slam Us Open 2026 12a Giornata. Dalle ore 21:45",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+      }
+    ]
+  },
+  {
     "canale": "SuperTennis",
     "categoria": "Sport",
     "programmi": [
@@ -2611,9 +2624,16 @@
       },
       {
         "ora": "08:15",
-        "fine": "11:05",
+        "fine": "10:50",
         "titolo": "US Open 2026 - Singolare maschile - Ep. 59 - Frances Tiafoe vs Alex Michelsen US OPEN 2026 # 13",
         "descrizione": "Frances Tiafoe vs Alex Michelsen US OPEN 2026",
+        "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
+      },
+      {
+        "ora": "10:50",
+        "fine": "11:05",
+        "titolo": "Best of US Open 2026",
+        "descrizione": "A New York si gioca l'ultimo Slam dell'anno",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
@@ -2625,15 +2645,15 @@
       },
       {
         "ora": "13:30",
-        "fine": "14:15",
+        "fine": "15:05",
         "titolo": "SUPERTENNIS TODAY - USOPEN",
         "descrizione": "Il nostro studio di continuita' Live dall'Arthur Ashe Stadium",
         "immagine": "https://img-guidatv.org/54/supertennis-today-usopen/0.jpg"
       },
       {
-        "ora": "14:15",
+        "ora": "15:05",
         "fine": "16:40",
-        "titolo": "US Open 2026 - Singolare maschile - Ep. 63 - Alexander Zverev vs  Botic Van De Zandschulp US OPEN 2026 # 1",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 63 - Alexander Zverev vs  Botic Van De Zandschulp US OPEN 2026 # 4",
         "descrizione": "Alexander Zverev vs  Botic Van De Zandschulp US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
@@ -2819,31 +2839,31 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "01:00",
-        "titolo": "Motocross MXGP. Mondiale GP Turchia MXGP - Gara 2",
+        "fine": "00:50",
+        "titolo": "Mondiale Motocross 2026 - GP Di Turchia: MXGP (Gara 2)",
         "descrizione": "Rombano i motori del motocross mondiale 2026. Venti le tappe di MXGP e MX2 che toccano i cinque continenti del pianeta, con tappe italiane in Trentino, Sardegna e a Montevarchi per il GP Italia.",
-        "immagine": "https://img-guidatv.org/32/motocross/0.jpg"
+        "immagine": "https://img-guidatv.org/immagini/motocross.jpeg"
       },
       {
-        "ora": "01:00",
-        "fine": "02:00",
-        "titolo": "Motocross MXGP. Mondiale GP Turchia: MX2 Gara 2",
+        "ora": "00:50",
+        "fine": "01:40",
+        "titolo": "Mondiale Motocross 2026 - GP Di Turchia: MX2 (Gara 2)",
         "descrizione": "Rombano i motori del motocross mondiale 2026. Venti le tappe di MXGP e MX2 che toccano i cinque continenti del pianeta, con tappe italiane in Trentino, Sardegna e a Montevarchi per il GP Italia.",
-        "immagine": "https://img-guidatv.org/32/motocross/0.jpg"
+        "immagine": "https://img-guidatv.org/immagini/motocross.jpeg"
       },
       {
-        "ora": "02:00",
-        "fine": "03:20",
-        "titolo": "Beach Soccer Euro League Femminile Italia - Spagna",
-        "descrizione": "Tra rovesciate e colpi al volo, si gioca sulle spiagge di tutto il mondo una delle varianti più spettacolari del calcio.",
+        "ora": "01:40",
+        "fine": "03:00",
+        "titolo": "Beach Soccer - Euro League Superfinal 2026 Donne - 2a Giornata: Italia - Spagna",
+        "descrizione": "Nella seconda giornata della Women's Euro Beach Soccer League Superfinal 2026, l'Italia affronta la Spagna a Viareggio in una sfida importante per il cammino delle Azzurre nella fase a gironi.",
         "immagine": "https://img-guidatv.org/32/beach-soccer/0.jpg"
       },
       {
-        "ora": "03:20",
+        "ora": "03:00",
         "fine": "06:00",
-        "titolo": "Pallavolo Femminile: Camp. Europei Istanbul 2026 Eventuali Finalissima Italia",
-        "descrizione": "Pallavolo Femminile: Camp. Europei Istanbul 2026 eventuali Finalissima Italia",
-        "immagine": "https://img-guidatv.org/32/pallavolo-femm/6.jpg"
+        "titolo": "Europei Femminili Di Pallavolo 2026 - Finale: Italia - Turchia",
+        "descrizione": "Italia contro Turchia, Velasco contro Santarelli. Questa partita è il rematch della finale mondiale dello scorso anno, la tensione agonistica e il tasso tecnico saranno sicuramente gli stessi.",
+        "immagine": "https://img-guidatv.org/32/europei-femminili-di-pallavolo-2026-finale-italia-turchia/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2944,31 +2964,31 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "01:00",
-        "titolo": "Motocross MXGP. Mondiale GP Turchia MXGP - Gara 2",
+        "fine": "00:50",
+        "titolo": "Mondiale Motocross 2026 - GP Di Turchia: MXGP (Gara 2)",
         "descrizione": "Rombano i motori del motocross mondiale 2026. Venti le tappe di MXGP e MX2 che toccano i cinque continenti del pianeta, con tappe italiane in Trentino, Sardegna e a Montevarchi per il GP Italia.",
-        "immagine": "https://img-guidatv.org/32/motocross/0.jpg"
+        "immagine": "https://img-guidatv.org/immagini/motocross.jpeg"
       },
       {
-        "ora": "01:00",
-        "fine": "02:00",
-        "titolo": "Motocross MXGP. Mondiale GP Turchia: MX2 Gara 2",
+        "ora": "00:50",
+        "fine": "01:40",
+        "titolo": "Mondiale Motocross 2026 - GP Di Turchia: MX2 (Gara 2)",
         "descrizione": "Rombano i motori del motocross mondiale 2026. Venti le tappe di MXGP e MX2 che toccano i cinque continenti del pianeta, con tappe italiane in Trentino, Sardegna e a Montevarchi per il GP Italia.",
-        "immagine": "https://img-guidatv.org/32/motocross/0.jpg"
+        "immagine": "https://img-guidatv.org/immagini/motocross.jpeg"
       },
       {
-        "ora": "02:00",
-        "fine": "03:20",
-        "titolo": "Beach Soccer Euro League Femminile Italia - Spagna",
-        "descrizione": "Tra rovesciate e colpi al volo, si gioca sulle spiagge di tutto il mondo una delle varianti più spettacolari del calcio.",
+        "ora": "01:40",
+        "fine": "03:00",
+        "titolo": "Beach Soccer - Euro League Superfinal 2026 Donne - 2a Giornata: Italia - Spagna",
+        "descrizione": "Nella seconda giornata della Women's Euro Beach Soccer League Superfinal 2026, l'Italia affronta la Spagna a Viareggio in una sfida importante per il cammino delle Azzurre nella fase a gironi.",
         "immagine": "https://img-guidatv.org/32/beach-soccer/0.jpg"
       },
       {
-        "ora": "03:20",
+        "ora": "03:00",
         "fine": "06:00",
-        "titolo": "Pallavolo Femminile: Camp. Europei Istanbul 2026 Eventuali Finalissima Italia",
-        "descrizione": "Pallavolo Femminile: Camp. Europei Istanbul 2026 eventuali Finalissima Italia",
-        "immagine": "https://img-guidatv.org/32/pallavolo-femm/6.jpg"
+        "titolo": "Europei Femminili Di Pallavolo 2026 - Finale: Italia - Turchia",
+        "descrizione": "Italia contro Turchia, Velasco contro Santarelli. Questa partita è il rematch della finale mondiale dello scorso anno, la tensione agonistica e il tasso tecnico saranno sicuramente gli stessi.",
+        "immagine": "https://img-guidatv.org/32/europei-femminili-di-pallavolo-2026-finale-italia-turchia/0.jpg"
       },
       {
         "ora": "06:00",
@@ -3661,13 +3681,13 @@
       },
       {
         "ora": "03:05",
-        "fine": "03:45",
+        "fine": "03:50",
         "titolo": "S.W.A.T.",
         "descrizione": "Un sergente S.W.A.T. della zona, l’ex Marine Daniel Harrelson, viene incaricato di dirigere un’unità tattica specializzata che rappresenta l’ultima tappa delle forze dell’ordine di Los Angeles, nella première di S.W.A.T. Diviso tra la lealtà per il luogo dove è cresciuto e la fedeltà ai suoi fratelli in blu, Hondo ha tutto ciò che serve per essere un leader eccellente e per fare da tramite tra i suoi due mondi.",
         "immagine": "https://img-guidatv.org/serie/5e78d8e6ce1e246c511cba3b_p_4_rs_300.jpg"
       },
       {
-        "ora": "03:45",
+        "ora": "03:50",
         "fine": "04:30",
         "titolo": "S.W.A.T.",
         "descrizione": "Un sergente S.W.A.T. della zona, l’ex Marine Daniel Harrelson, viene incaricato di dirigere un’unità tattica specializzata che rappresenta l’ultima tappa delle forze dell’ordine di Los Angeles, nella première di S.W.A.T. Diviso tra la lealtà per il luogo dove è cresciuto e la fedeltà ai suoi fratelli in blu, Hondo ha tutto ciò che serve per essere un leader eccellente e per fare da tramite tra i suoi due mondi.",
@@ -3922,14 +3942,14 @@
         "fine": "06:00",
         "titolo": "Downton Abbey",
         "descrizione": "Downton Abbey è la signorile dimora dei conti di Grantham. Qui, durante il regno di Giorgio V, vivono la famiglia aristocratica dei Crawley e i loro numerosi dipendenti.",
-        "immagine": "https://image.tmdb.org/t/p/w300/wLOQuC8L552c4tJANu1UAI0CYf2.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/uqNm8DZR5Llx02sRqKwHGzKWvf3.jpg"
       },
       {
         "ora": "05:10",
         "fine": "06:05",
         "titolo": "Downton Abbey",
         "descrizione": "Downton Abbey è la signorile dimora dei conti di Grantham. Qui, durante il regno di Giorgio V, vivono la famiglia aristocratica dei Crawley e i loro numerosi dipendenti.",
-        "immagine": "https://image.tmdb.org/t/p/w300/wLOQuC8L552c4tJANu1UAI0CYf2.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/uqNm8DZR5Llx02sRqKwHGzKWvf3.jpg"
       },
       {
         "ora": "06:05",
@@ -3957,14 +3977,14 @@
         "fine": "09:25",
         "titolo": "Downton Abbey",
         "descrizione": "Downton Abbey è la signorile dimora dei conti di Grantham. Qui, durante il regno di Giorgio V, vivono la famiglia aristocratica dei Crawley e i loro numerosi dipendenti.",
-        "immagine": "https://image.tmdb.org/t/p/w300/wLOQuC8L552c4tJANu1UAI0CYf2.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/uqNm8DZR5Llx02sRqKwHGzKWvf3.jpg"
       },
       {
         "ora": "09:25",
         "fine": "10:20",
         "titolo": "Downton Abbey",
         "descrizione": "Downton Abbey è la signorile dimora dei conti di Grantham. Qui, durante il regno di Giorgio V, vivono la famiglia aristocratica dei Crawley e i loro numerosi dipendenti.",
-        "immagine": "https://image.tmdb.org/t/p/w300/wLOQuC8L552c4tJANu1UAI0CYf2.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/uqNm8DZR5Llx02sRqKwHGzKWvf3.jpg"
       },
       {
         "ora": "10:20",
@@ -4013,14 +4033,14 @@
         "fine": "15:20",
         "titolo": "Downton Abbey",
         "descrizione": "Downton Abbey è la signorile dimora dei conti di Grantham. Qui, durante il regno di Giorgio V, vivono la famiglia aristocratica dei Crawley e i loro numerosi dipendenti.",
-        "immagine": "https://image.tmdb.org/t/p/w300/wLOQuC8L552c4tJANu1UAI0CYf2.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/uqNm8DZR5Llx02sRqKwHGzKWvf3.jpg"
       },
       {
         "ora": "15:20",
         "fine": "16:30",
         "titolo": "Downton Abbey",
         "descrizione": "Downton Abbey è la signorile dimora dei conti di Grantham. Qui, durante il regno di Giorgio V, vivono la famiglia aristocratica dei Crawley e i loro numerosi dipendenti.",
-        "immagine": "https://image.tmdb.org/t/p/w300/ilCoT7k9I5YjQntUqDHQqowNg30.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/2mb2WCSL01mcfbA8t6nCaSdG6is.jpg"
       },
       {
         "ora": "16:30",
@@ -4142,7 +4162,7 @@
       },
       {
         "ora": "05:15",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Law & Order: I due volti della giustizia",
         "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi.",
         "immagine": "https://image.tmdb.org/t/p/w300/gZZCZNsc19MG8newzH9bjGTqigb.jpg"
@@ -4908,27 +4928,27 @@
       },
       {
         "ora": "02:30",
-        "fine": "03:30",
+        "fine": "03:20",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep1 di 6 Vasco Rossi - '...Ma cosa vuoi che sia una canzone' - Sky Arte vi porta alla scoperta degli album che hanno segnato la storia della musica italiana. Nella puntata, Vasco Rossi racconta l'album \"...ma cosa vuoi che sia una canzone...\".",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "03:30",
-        "fine": "04:25",
+        "ora": "03:20",
+        "fine": "04:10",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep1 di 6 Lucio Dalla - Ci sono album che hanno segnato la storia della musica italiana: scopriamone i segreti. Nella puntata: l'album omonimo di Lucio Dalla. Tra gli ospiti: Ron e L. Carboni.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "05:05",
+        "ora": "04:10",
+        "fine": "05:00",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep2 di 6 Luca Carboni - Ci sono album che hanno segnato la storia della musica italiana: scopriamone i segreti. Nella puntata Luca Carboni ci racconta il suo album omonimo \"Luca Carboni\".",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "05:05",
+        "ora": "05:00",
         "fine": "06:00",
         "titolo": "Moda - Una Rivoluzione Italiana",
         "descrizione": "S1 Ep4 - La moda reagisce agli eccessi della decade precedente con un’estetica più minimalista. Inclusività è la parola d’ordine di questi anni.",
@@ -7664,14 +7684,14 @@
     "programmi": [
       {
         "ora": "01:10",
-        "fine": "03:55",
+        "fine": "03:50",
         "titolo": "Il gladiatore",
         "descrizione": "Dopo una vittoria contro i Britanni l'imperatore Marco Aurelio (Harris), che disprezza il figlio Commodo (Phoenix), decide che il suo successore sarà il generale Massimo (Crowe), uomo straordinario, amato da tutti. Ma Commodo uccide il padre e ordina la morte del generale e della sua famiglia. Massimo fugge in Africa, diventa gladiatore, torna a Roma dove si fa riconoscere. Diventa l'eroe del Colosseo, idolatrato dal popolo. Tanto che lo stesso Commodo non può farlo uccidere. Lo sfida a un duello nell'arena, dopo averlo vigliaccamente ferito. Massimo uccide finalmente l'orrendo imperatore.",
         "immagine": "https://img-guidatv.org/film_new/i/5e78daddce1e246c511cc33c/5e78daddce1e246c511cc33c_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "05:25",
+        "ora": "03:50",
+        "fine": "05:30",
         "titolo": "L'ultimo turno",
         "descrizione": "Floria è un'infermiera che lavora con passione e professionalità nel reparto di chirurgia di un ospedale. Ogni suo movimento è perfetto. È sempre in ascolto di tutti i pazienti, anche nelle situazioni più stressanti, e si rende sempre disponibile, facendo fronte a ogni emergenza. Ma nella cruda realtà della sua routine quotidiana, in un reparto sovraffollato e a corto di personale, spesso le situazioni sono imprevedibili. Floria si prende cura, fra tanti altri, di una giovane madre gravemente malata e di un anziano signore che attende con apprensione la sua diagnosi. Via via che la notte avanza, il suo lavoro assume sempre più i contorni di una corsa contro il tempo.",
         "immagine": "https://image.tmdb.org/t/p/w300/5rdPS4URp6joVC0gOW5QF5TVkux.jpg"
@@ -7684,7 +7704,7 @@
         "immagine": "https://img-guidatv.org/film_new/t/60253c51b10ad14bfc3e409e/60253c51b10ad14bfc3e409e_p_1_rs_300.jpg"
       },
       {
-        "ora": "05:25",
+        "ora": "05:30",
         "fine": "07:20",
         "titolo": "Benvenuti al Nord",
         "descrizione": "Alberto Colombo, brianzolo impiegato alle poste, ha finalmente ottenuto la promozione e il trasferimento a Milano. Il Sud, in cui è stato benvenuto e benvoluto, sembra adesso un ricordo lontano che Mattia, indolente compagno meridionale, risveglia col suo arrivo improvviso. Perché la relazione con la bella Maria sta naufragando a causa della sua immaturità e di un mutuo procrastinato. Deciso a dimostrare alla consorte di essere un uomo responsabile, Mattia si lascia contagiare dall'operosità milanese finendo per fare brunch e carriera sotto la Madunina. Alberto intanto, promosso direttore e occupato full time, trascura la moglie che finirà per lasciarlo. Sedotti e abbandonati si rimboccheranno le maniche e proveranno a riprendersi la famiglia e una vita migliore in un'Italia senza confini e campanilismi.",
@@ -7873,7 +7893,7 @@
       {
         "ora": "05:00",
         "fine": "05:15",
-        "titolo": "Questo o quello",
+        "titolo": "Questo o quello - Speciale",
         "descrizione": "Francesco Castelnuovo e Gianni Canova si confrontano sulle pellicole dell'adrenalinica saga con Tom Cruise protagonista, disponibili su Sky Cinema e On Demand.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6f400524-5b90-45ef-ae25-b4c63a49ecd1/background/600"
       },
@@ -7990,17 +8010,10 @@
       },
       {
         "ora": "04:00",
-        "fine": "05:35",
+        "fine": "05:40",
         "titolo": "Belle e Sebastien - Next Generation",
         "descrizione": "Sebastien, 10 anni, trascorre con riluttanza le vacanze in montagna con la nonna e la zia. Aiutarle con le pecore non è certo una prospettiva entusiasmante per un ragazzino di città come lui, ma questo senza considerare l'incontro con Belle, un enorme cane maltrattato dal suo padrone. Pronto a tutto pur di combattere l'ingiustizia e proteggere la sua nuova amica, Sebastien trascorrerà l'estate più folle della sua vita.",
         "immagine": "https://image.tmdb.org/t/p/w300/j7LNyXfAXXnM2KlRUcthNtcHeNY.jpg"
-      },
-      {
-        "ora": "05:35",
-        "fine": "07:20",
-        "titolo": "Genitori vs Influencer",
-        "descrizione": "Paolo, professore di filosofia, vedovo, ha cresciuto da solo sua figlia Simone - alla francese - , con cui ha un bellissimo rapporto. Ma quando la ragazza entra ufficialmente nella fase dell’adolescenza, l'idillio si rompe: come ogni teenager che si rispetti, infatti, Simone viene \"rapita\" dallo smartphone, tanto che matura l'idea di voler diventare influencer - come il suo idolo Ele-O-Nora - categoria che Paolo detesta.  Pur di recuperare il rapporto con sua figlia, Paolo inizia una campagna contro l’abuso dei social, con l’aiuto della stessa Simone che diventa la sua web manager.  La fama inaspettata lo trasformerà suo malgrado in un influencer... e gli farà scoprire che i social, anche se vanno maneggiati con cura, possono regalarti una possibilità.",
-        "immagine": "https://image.tmdb.org/t/p/w300/mlqpqrjjZc97e4MQsYLq0wJ5xhW.jpg"
       },
       {
         "ora": "05:40",
@@ -8087,13 +8100,13 @@
     "programmi": [
       {
         "ora": "01:30",
-        "fine": "03:30",
+        "fine": "03:25",
         "titolo": "Uncharted",
         "descrizione": "Basato su una delle serie di videogiochi più vendute e acclamate dalla critica, Uncharted presenta al pubblico il giovane e furbo Nathan Drake nella sua prima avventura alla ricerca del tesoro con l’arguto partner Victor \"Sully\" Sullivan. In un’epica avventura piena di azione che attraversa il mondo intero, i due protagonisti partono alla pericolosa ricerca del \"più grande tesoro mai trovato\", inseguendo indizi che potrebbero condurli al fratello di Nathan, scomparso da tempo.",
         "immagine": "https://img-guidatv.org/film_new/u/63011dcd0883780a94679e3c/63011dcd0883780a94679e3c_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:30",
+        "ora": "03:25",
         "fine": "05:00",
         "titolo": "Interceptor",
         "descrizione": "Nella società del futuro le strade sono come arterie malate dentro cui scorre sangue infetto. Lo Stato tenta di arginare la criminalità con un corpo speciale di poliziotti motorizzati disposti ad accorre e combattere fino alla morte. Uno di questi, Max, si prodiga divedendo il suo tempo fra il servizio e la vita nella casa solitaria dove vive con la moglie Jessie ed il figlio.",
@@ -8392,13 +8405,13 @@
       },
       {
         "ora": "02:30",
-        "fine": "04:30",
+        "fine": "04:25",
         "titolo": "3/19",
         "descrizione": "La vita di Camilla, avvocatessa di successo e una figlia ormai grande, viene sconvolta in una notte di pioggia a Milano.  Un incidente stradale, di cui forse è responsabile, la coinvolge in un'indagine che la porterà molto lontana dai luoghi e dai paesaggi che è abituata a frequentare. Al suo fianco in questa strada misteriosa e incerta, c’è Bruno, direttore dell’obitorio, con cui Camilla ‐ mentre cerca di ricostruire la vita di un estraneo ‐ scopre sé stessa.",
         "immagine": "https://image.tmdb.org/t/p/w300/3WLw8jhwcPlDsJ7EC4ye6G9lfWY.jpg"
       },
       {
-        "ora": "04:30",
+        "ora": "04:25",
         "fine": "06:00",
         "titolo": "Marcel!",
         "descrizione": "La bambina, insonne. La madre, un'artista. Il cane, di nome Marcel. La bambina ama immensamente sua madre, ma sua madre ama Marcel più di ogni altra cosa. Un evento imprevedibile permetterà a questi cerchi d'amore di ricongiungersi?",
@@ -8482,31 +8495,24 @@
       },
       {
         "ora": "01:55",
-        "fine": "03:25",
+        "fine": "03:30",
         "titolo": "Il Principe di Roma",
         "descrizione": "Roma, 1829. Bartolomeo (Marco Giallini) è un uomo ricco e avido che brama il titolo nobiliare più di ogni cosa. Nel tentativo di recuperare il denaro necessario a stringere un accordo segreto con il principe Accoramboni per ottenere in moglie sua figlia, si troverà nel bel mezzo di un sorprendente viaggio a cavallo tra passato, presente e futuro. Accompagnato da compagni d’eccezione dovrà fare i conti con sé stesso e conquistare nuove consapevolezze.",
         "immagine": "https://image.tmdb.org/t/p/w300/fDPHqWaB3GqWJL1MOnf0u8DFu2G.jpg"
       },
       {
-        "ora": "03:25",
-        "fine": "05:05",
+        "ora": "03:30",
+        "fine": "05:10",
         "titolo": "Un Natale per due",
         "descrizione": "Claudio è un determinato tagliatore di teste che, in prossimità del Natale, cerca di risolvere rapidamente una situazione di azienda in crisi a Catania procedendo con i licenziamenti. Il proprietario manifesta perplessità e, trattenendolo in sede, gli fa perdere l’aereo per Torino dove dovrebbe annunciare le sue nozze con Anna, da tempo sua fidanzata. Claudio, che nel frattempo non ha rinunciato a dedicarsi ad altre donne, compresa la giovane amante Stefania, si trova così costretto a raggiungere in auto il Norditalia con Danilo, operaio \"licenziabile\" con genitori da raggiungere a Torino. Il viaggio sarà ricco di imprevisti ed avrà un finale inatteso.",
         "immagine": "https://img-guidatv.org/film_new/u/5e78dd7bce1e246c511ccf81/5e78dd7bce1e246c511ccf81_p_3_rs_300.jpg"
       },
       {
-        "ora": "05:05",
-        "fine": "05:25",
+        "ora": "05:10",
+        "fine": "05:30",
         "titolo": "Speciale - I Delitti Del Barlume - Le Nuove Storie",
         "descrizione": "- Speciale - I Delitti Del Barlume -... (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025)",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/62924bed-4fbd-4a9b-8e72-2719e4420a50/background/600"
-      },
-      {
-        "ora": "05:25",
-        "fine": "07:05",
-        "titolo": "2 fantasmi di troppo",
-        "descrizione": "Nunzio e Paolo interpretano, uniti da una grande amicizia, ma anche da un passato fatto di imprese fallimentari, nell’ennesimo tentativo di sbarcare il lunario si indebitano con uno strozzino e devono assolutamente trovare il modo di ripagarlo. Così, sfruttando le abilità tecnologiche di Nunzio, si imbarcano in un folle business nelle vesti di medium improvvisati. Di casa in casa consentono ai loro creduloni clienti di incontrare i propri cari estinti, ovvero degli ologrammi che gli assomigliano, finché un giorno incappano in due veri fantasmi, o per meglio dire due fantasmesse: Gilda e Cettina. Col passare dei giorni, gli iniziali e vani tentativi di liberarsene, lasceranno il posto ad un’insolita storia d’amore.",
-        "immagine": "https://image.tmdb.org/t/p/w300/3x9flLDx9uZv3D16eAiriVLkF4v.jpg"
       },
       {
         "ora": "05:30",
@@ -18398,7 +18404,7 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
+        "ora": "00:02",
         "fine": "01:05",
         "titolo": "Porta A Porta",
         "descrizione": "Giunto alla trentunesima edizione, il programma di Bruno Vespa offre al pubblico grandi novità, pur confermando la linea editoriale legata agli avvenimenti della politica, come ai grandi fatti di cronaca e alle mutazioni della società.",
@@ -18602,7 +18608,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:00",
+        "fine": "00:02",
         "titolo": "TG1 Sera",
         "descrizione": "TG1 Sera",
         "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
@@ -18614,7 +18620,7 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
+        "ora": "00:02",
         "fine": "01:05",
         "titolo": "Porta A Porta",
         "descrizione": "Giunto alla trentunesima edizione, il programma di Bruno Vespa offre al pubblico grandi novità, pur confermando la linea editoriale legata agli avvenimenti della politica, come ai grandi fatti di cronaca e alle mutazioni della società.",
@@ -18818,7 +18824,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:00",
+        "fine": "00:02",
         "titolo": "TG1 Sera",
         "descrizione": "TG1 Sera",
         "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
@@ -18830,7 +18836,7 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:16",
+        "ora": "01:17",
         "fine": "01:20",
         "titolo": "Meteo 2",
         "descrizione": "Meteo 2",
@@ -18845,34 +18851,27 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:38",
+        "fine": "03:36",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "03:38",
-        "fine": "04:21",
+        "ora": "03:36",
+        "fine": "04:19",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "04:21",
-        "fine": "05:05",
+        "ora": "04:19",
+        "fine": "05:10",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "05:05",
-        "fine": "05:15",
-        "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
-      },
-      {
-        "ora": "05:15",
+        "ora": "05:10",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -19057,12 +19056,12 @@
         "ora": "20:55",
         "fine": "23:00",
         "titolo": "Europei Di Pallavolo Maschile 2026 - Gruppo A: Italia - Svezia",
-        "descrizione": "Pallavolo. Campionato Europeo maschile Fase a gruppi: Gruppo A In diretta da Piazza del Plebiscito a Napoli",
+        "descrizione": "Nel Gruppo A degli Europei maschili di pallavolo 2026, l'Italia affronta la Svezia nel suo cammino nella fase a gironi della competizione continentale.",
         "immagine": "https://img-guidatv.org/2/europei-di-pallavolo-maschile-2026-gruppo-a-italia-svezia/0.jpg"
       },
       {
         "ora": "23:00",
-        "fine": "01:16",
+        "fine": "01:17",
         "titolo": "Diabolik - Chi sei?",
         "descrizione": "Catturati da una spietata banda di criminali, Diabolik e Ginko si trovano faccia a faccia. Rinchiusi in una cella, senza via di uscita e certi di andare incontro a una morte inevitabile, Diabolik rivela all'ispettore il suo misterioso passato. Intanto, Eva Kant e Altea sono alla disperata ricerca dei loro uomini. Le strade delle due rivali si incroceranno?",
         "immagine": "https://image.tmdb.org/t/p/w300/uAp4vMYHLo5Pxd0tX4TdXAjAIbQ.jpg"
@@ -19074,7 +19073,7 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:16",
+        "ora": "01:17",
         "fine": "01:20",
         "titolo": "Meteo 2",
         "descrizione": "Meteo 2",
@@ -19089,34 +19088,27 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:38",
+        "fine": "03:36",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "03:38",
-        "fine": "04:21",
+        "ora": "03:36",
+        "fine": "04:19",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "04:21",
-        "fine": "05:05",
+        "ora": "04:19",
+        "fine": "05:10",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "05:05",
-        "fine": "05:15",
-        "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
-      },
-      {
-        "ora": "05:15",
+        "ora": "05:10",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -19301,12 +19293,12 @@
         "ora": "20:55",
         "fine": "23:00",
         "titolo": "Europei Di Pallavolo Maschile 2026 - Gruppo A: Italia - Svezia",
-        "descrizione": "Pallavolo. Campionato Europeo maschile Fase a gruppi: Gruppo A In diretta da Piazza del Plebiscito a Napoli",
+        "descrizione": "Nel Gruppo A degli Europei maschili di pallavolo 2026, l'Italia affronta la Svezia nel suo cammino nella fase a gironi della competizione continentale.",
         "immagine": "https://img-guidatv.org/2/europei-di-pallavolo-maschile-2026-gruppo-a-italia-svezia/0.jpg"
       },
       {
         "ora": "23:00",
-        "fine": "01:16",
+        "fine": "01:17",
         "titolo": "Diabolik - Chi sei?",
         "descrizione": "Catturati da una spietata banda di criminali, Diabolik e Ginko si trovano faccia a faccia. Rinchiusi in una cella, senza via di uscita e certi di andare incontro a una morte inevitabile, Diabolik rivela all'ispettore il suo misterioso passato. Intanto, Eva Kant e Altea sono alla disperata ricerca dei loro uomini. Le strade delle due rivali si incroceranno?",
         "immagine": "https://image.tmdb.org/t/p/w300/uAp4vMYHLo5Pxd0tX4TdXAjAIbQ.jpg"
@@ -19524,7 +19516,7 @@
         "ora": "21:20",
         "fine": "23:30",
         "titolo": "Le cose che non sai",
-        "descrizione": "Eleonora Daniele ci accompagna in un viaggio immersivo nella storia di celebrità tra ricerche, segreti, testimoni, documenti, filmati, fotografie e lettere. Protagonisti della prima puntata, il giornalista e conduttore Massimo Giletti e l'attrice Claudia Gerini",
+        "descrizione": "Questa prima puntata avrà per protagonisti il noto giornalista e conduttore televisivo, Massimo Giletti, e la celebre attrice, cantante e regista, Claudia Gerini. Insieme ad Eleonora Daniele e agli esperti in studio, gli ospiti ripercorreranno il l loro albero genealogico , alla scoperta di aneddoti, rivelazioni ed intrecci con la Grande Storia.",
         "immagine": "https://img-guidatv.org/3/le-cose-che-non-sai/5.jpg"
       },
       {
@@ -19747,7 +19739,7 @@
         "ora": "21:20",
         "fine": "23:30",
         "titolo": "Le cose che non sai",
-        "descrizione": "Eleonora Daniele ci accompagna in un viaggio immersivo nella storia di celebrità tra ricerche, segreti, testimoni, documenti, filmati, fotografie e lettere. Protagonisti della prima puntata, il giornalista e conduttore Massimo Giletti e l'attrice Claudia Gerini",
+        "descrizione": "Questa prima puntata avrà per protagonisti il noto giornalista e conduttore televisivo, Massimo Giletti, e la celebre attrice, cantante e regista, Claudia Gerini. Insieme ad Eleonora Daniele e agli esperti in studio, gli ospiti ripercorreranno il l loro albero genealogico , alla scoperta di aneddoti, rivelazioni ed intrecci con la Grande Storia.",
         "immagine": "https://img-guidatv.org/3/le-cose-che-non-sai/5.jpg"
       },
       {
@@ -19873,7 +19865,7 @@
         "fine": "16:56",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:56",
@@ -20033,7 +20025,7 @@
         "fine": "16:56",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:56",
@@ -20284,7 +20276,7 @@
         "fine": "18:47",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:47",
@@ -20542,7 +20534,7 @@
         "fine": "18:47",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:47",
@@ -21168,7 +21160,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Michele Fina, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
+        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Igor Taruffi, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21293,7 +21285,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Michele Fina, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
+        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Igor Taruffi, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21418,7 +21410,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Michele Fina, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
+        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Igor Taruffi, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21543,7 +21535,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Michele Fina, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
+        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Igor Taruffi, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21668,7 +21660,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Michele Fina, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
+        "descrizione": "Tiziana Panella con Claudio Cerasa, Nadia Urbinati, Manuela Perrone, Igor Taruffi, Stefano Maullu, Costanza Cavalli, Marco Minniti, Annalisa Terranova, Barbara Tibaldi, Alessandra Maiorino, Raffaele Nevi, Lorenzo Cremonesi, Tonia...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -22710,20 +22702,20 @@
       },
       {
         "ora": "00:33",
-        "fine": "02:22",
+        "fine": "02:23",
         "titolo": "Rodeo",
         "descrizione": "Julia, una appassionata di equitazione si unisce ad un gruppo di motociclisti che eseguono acrobazie a tutta velocità e si infiltra nel loro mondo dominato dagli uomini. Ma un incidente mette a dura prova la sua capacità di adattamento.",
         "immagine": "https://image.tmdb.org/t/p/w300/y5M3HqwF09cb2Sh5iE5V0LqRbmv.jpg"
       },
       {
-        "ora": "02:22",
-        "fine": "03:04",
+        "ora": "02:23",
+        "fine": "03:05",
         "titolo": "Trauma",
         "descrizione": "Lanciato sulle orme di un serial killer, Adam, un poliziotto indurito ma ammirato, sopravvive miracolosamente dopo essere stato colpito alla testa. L'unico seguito, soffre di amnesia. Quando scopre una giovane donna legata e terrorizzata nella sua cantina, Adam si trova ad affrontare il più terribile dei dubbi: e se l'assassino che stava inseguendo non fosse altri che lui stesso?",
         "immagine": "https://image.tmdb.org/t/p/w300/ifORB1LLaC992a4ztu1xpps4JaL.jpg"
       },
       {
-        "ora": "03:04",
+        "ora": "03:05",
         "fine": "03:49",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
@@ -22940,20 +22932,20 @@
       },
       {
         "ora": "00:33",
-        "fine": "02:22",
+        "fine": "02:23",
         "titolo": "Rodeo",
         "descrizione": "Julia, una appassionata di equitazione si unisce ad un gruppo di motociclisti che eseguono acrobazie a tutta velocità e si infiltra nel loro mondo dominato dagli uomini. Ma un incidente mette a dura prova la sua capacità di adattamento.",
         "immagine": "https://image.tmdb.org/t/p/w300/y5M3HqwF09cb2Sh5iE5V0LqRbmv.jpg"
       },
       {
-        "ora": "02:22",
-        "fine": "03:04",
+        "ora": "02:23",
+        "fine": "03:05",
         "titolo": "Trauma",
         "descrizione": "Lanciato sulle orme di un serial killer, Adam, un poliziotto indurito ma ammirato, sopravvive miracolosamente dopo essere stato colpito alla testa. L'unico seguito, soffre di amnesia. Quando scopre una giovane donna legata e terrorizzata nella sua cantina, Adam si trova ad affrontare il più terribile dei dubbi: e se l'assassino che stava inseguendo non fosse altri che lui stesso?",
         "immagine": "https://image.tmdb.org/t/p/w300/ifORB1LLaC992a4ztu1xpps4JaL.jpg"
       },
       {
-        "ora": "03:04",
+        "ora": "03:05",
         "fine": "03:49",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
@@ -23406,13 +23398,13 @@
       },
       {
         "ora": "01:47",
-        "fine": "02:38",
+        "fine": "02:39",
         "titolo": "Overland 22 - Dalle Isole Azzorre A Malta",
         "descrizione": "Le ultime tappe nell'arcipelago delle Azzorre porteranno in altri paesaggi mozzafiato caratterizzati da storie e leggende di uomini valorosi che hanno solcato i mari o hanno saputo difendere - le terre. Per immergersi per l'ultima volta nei colori e nei profumi dei prodotti tipici del mercato di Ponta Delgada. Il viaggio proseguirà verso la seconda tappa: l'arcipelago di Malta. Scopriamo le vicende e l'influenza dell'Ordine dei Cavalieri di Malta e poi architetture uniche delle città maltesi tra luoghi religiosi, edifici, bunker ma anche reperti in fondo al mare... - Una produzione Overland Network Realizzazione di Filippo e Beppe Tenti Delegato Rai Milvia Licari 3^ puntata",
         "immagine": "https://img-guidatv.org/31/overland-22/1.jpg"
       },
       {
-        "ora": "02:38",
+        "ora": "02:39",
         "fine": "03:31",
         "titolo": "Italian Beauty - Bologna Frosolone Virgo, Lab Scientifico. L'Arte Che Non Ti Aspetti, Inaspettarte!",
         "descrizione": "Un percorso scanzonato e singolare dentro Bologna, alla ricerca di capolavori e angoli nascosti, fuori dai percorsi turistici convenzionali.",
@@ -23554,9 +23546,9 @@
       {
         "ora": "18:22",
         "fine": "19:12",
-        "titolo": "'14-'18. Grande Guerra Cento Anni Dopo N",
-        "descrizione": "'14-'18. Grande Guerra cento anni dopo Non ancora: L'Italia dalla neutralità all'intervento - DOC. STORIA - Allo scoppio della Prima Guerra Mondiale l'Italia rimane neutrale, anche se parte dell'opinione p - ubblica vorrebbe un intervento immediato nel conflitto, magari a fronte di una restituzione, da parte dell'Austria, di Trento e Trieste. Contrari alla guerra per motivi ideologici sono i socialisti, i cattolici e i liberal -  con Una serie narrata da Carlo Lucarelli. Coordinamento editoriale Pietro Raschillà. produttore esecutivo Roberta Sangermano 2022 ITA",
-        "immagine": "https://img-guidatv.org/31/14-18-grande-guerra-cento-anni-dopo/1.jpg"
+        "titolo": "'14-'18 Grande Guerra 100 Anni Dopo",
+        "descrizione": "Allo scoppio della Prima Guerra Mondiale l'Italia rimane neutrale, anche se l'opinione pubblica si divide fin da subito tra coloro che ritengono la scelta del governo corretta e coloro che, invece, vorrebbero un intervento immediato nel conflitto, magari a fronte di una restituzione, da parte dell'Austria, di Trento e Trieste. Dopo la battaglia della Marna, la situazione precipita e lo spirito nazionalista si rafforza chiedendo a gran voce il passaggio dalla neutralità all'intervento. Radicali, repubblicani, una parte del movimento operaio e i nazionalisti fanno fronte comune, appoggiati da quasi tutti gli intellettuali, chiedendo l'intervento immediato nel conflitto. Il 26 aprile 1915 a Londra viene firmato un patto segreto secondo cui il governo italiano si impegna a mobilitare gli eserciti entro un mese: l'Italia entra in guerra a fianco dell'Intesa.",
+        "immagine": "https://img-guidatv.org/31/14-18-grande-guerra-100-anni-dopo/1.jpg"
       },
       {
         "ora": "19:12",
@@ -23629,20 +23621,20 @@
     "programmi": [
       {
         "ora": "01:45",
-        "fine": "01:50",
+        "fine": "01:48",
         "titolo": "Anica - Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/46/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "01:50",
-        "fine": "03:15",
+        "ora": "01:48",
+        "fine": "03:16",
         "titolo": "Chloe - Tra seduzione e inganno",
         "descrizione": "Catherine, medico, e David, professore di musica, sono una bella coppia con un figlio di 17 anni, Michael: una famiglia che ha tutto, ma è stata spesso messa a dura prova dalle carriere e dall'educazione del figlio. Il giorno del compleanno di David, Catherine gli organizza una festa a sorpresa, ma l'uomo perde il volo da New York per tornare a casa e non arriva in tempo alla sua festa. Lei è costretta a mandare giù il boccone e qualsiasi sospetto, e tornare dai suoi ospiti... L'indomani mattina, quando scopre un sms mandato da una delle studentesse al telefono di David i suoi timori aumentano. Due settimane dopo la festa a sorpresa, Catherine e David sono a cena con amici. La donna si alza per andare in bagno e fa conoscenza con una donna giovane e molto sexy, Chloe...",
         "immagine": "https://img-guidatv.org/film_new/c/5eada975a010a47e836684d6/5eada975a010a47e836684d6_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:15",
+        "ora": "03:16",
         "fine": "05:00",
         "titolo": "Come le foglie al vento (Film)",
         "descrizione": "Due amici, il primo ricchissimo e alcolizzato, il secondo virtuoso e generoso, sono innamorati della stessa donna. Costei sceglie il primo, che si mette a rigare diritto; ma quando lui scopre di non poter avere figli torna di nuovo a bere. Invece la moglie aspetta un bimbo e il sospetto che sia dell'amico rode il marito.",
@@ -23740,20 +23732,20 @@
     "programmi": [
       {
         "ora": "01:45",
-        "fine": "01:50",
+        "fine": "01:48",
         "titolo": "Anica - Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/46/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "01:50",
-        "fine": "03:15",
+        "ora": "01:48",
+        "fine": "03:16",
         "titolo": "Chloe - Tra seduzione e inganno",
         "descrizione": "Catherine, medico, e David, professore di musica, sono una bella coppia con un figlio di 17 anni, Michael: una famiglia che ha tutto, ma è stata spesso messa a dura prova dalle carriere e dall'educazione del figlio. Il giorno del compleanno di David, Catherine gli organizza una festa a sorpresa, ma l'uomo perde il volo da New York per tornare a casa e non arriva in tempo alla sua festa. Lei è costretta a mandare giù il boccone e qualsiasi sospetto, e tornare dai suoi ospiti... L'indomani mattina, quando scopre un sms mandato da una delle studentesse al telefono di David i suoi timori aumentano. Due settimane dopo la festa a sorpresa, Catherine e David sono a cena con amici. La donna si alza per andare in bagno e fa conoscenza con una donna giovane e molto sexy, Chloe...",
         "immagine": "https://img-guidatv.org/film_new/c/5eada975a010a47e836684d6/5eada975a010a47e836684d6_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:15",
+        "ora": "03:16",
         "fine": "05:00",
         "titolo": "Come le foglie al vento (Film)",
         "descrizione": "Due amici, il primo ricchissimo e alcolizzato, il secondo virtuoso e generoso, sono innamorati della stessa donna. Costei sceglie il primo, che si mette a rigare diritto; ma quando lui scopre di non poter avere figli torna di nuovo a bere. Invece la moglie aspetta un bimbo e il sospetto che sia dell'amico rode il marito.",
@@ -26614,21 +26606,21 @@
         "fine": "15:59",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "15:59",
         "fine": "16:13",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:13",
         "fine": "16:29",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:29",
@@ -26642,7 +26634,7 @@
         "fine": "17:07",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:07",
@@ -26656,21 +26648,21 @@
         "fine": "17:39",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:39",
         "fine": "18:02",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:02",
         "fine": "18:14",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:14",
@@ -28812,24 +28804,31 @@
       },
       {
         "ora": "02:15",
-        "fine": "03:10",
+        "fine": "03:05",
         "titolo": "Catilina. Cronaca Di Una Congiura",
         "descrizione": "Cristoforo Gorno, muovendosi tra il Foro, la Curia, le Basiliche, i luoghi di Roma che fanno da palcoscenico alla storia, racconta la nascita della congiura di Catilina e il suo naufragio, tenendo a mente le analogie con la contemporaneità, perché il contesto di disuguaglianze che circonda Catilina... -  con  di e con Cristoforo Gorno Scritto con Giancarlo di Giovine con la collaborazione di Lucia Ciancaglini consulenza storica Maria Teresa d'Alessio produttore esecutivo Alessandra Giorgi regia Fedora Sasso 1968 ITA",
         "immagine": "https://img-guidatv.org/24/catilina-cronaca-di-una-congiura/6.jpg"
       },
       {
-        "ora": "03:10",
-        "fine": "04:00",
+        "ora": "03:05",
+        "fine": "03:55",
         "titolo": "On the road - L'America della Beat Generation",
         "descrizione": "Un'inchiesta in tre puntate dedicata al fenomeno della Beat Generation con interviste ai maggiori esponenti di questo movimento artistico, poetico e letterario. Le interviste sono di Fernanda Pivano.",
         "immagine": "https://img-guidatv.org/24/on-the-road-l-america-della-beat-generation-scandalo-in-famiglia/0.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:50",
+        "ora": "03:55",
+        "fine": "04:45",
         "titolo": "I Giorni Della Nostra Storia - Gli Italiani Nelle Prigioni Di Hitler",
         "descrizione": "In questa puntata, la deportazione dei soldati italiani nei campi di lavoro e di concentramento nazisti fra il 1943 e il 1945. Interviste a reduci ci raccontano la loro esperienza nei campi di concentramento nazisti.",
         "immagine": "https://img-guidatv.org/24/i-giorni-della-nostra-storia-gli-italiani-nelle-prigioni-di-hitler/0.jpg"
+      },
+      {
+        "ora": "04:45",
+        "fine": "04:50",
+        "titolo": "Pillole Argo - La Giovinezza Spezzata. Giovani, Forti E... Perduti",
+        "descrizione": "La giovinezza spezzata. Giovani, forti e... perduti.",
+        "immagine": "https://img-guidatv.org/24/pillole-argo/1.jpg"
       },
       {
         "ora": "04:50",
@@ -28840,13 +28839,13 @@
       },
       {
         "ora": "05:25",
-        "fine": "05:40",
+        "fine": "05:35",
         "titolo": "Come Eravamo - Giovani (Pt.30)",
         "descrizione": "Giovani, moda, canzoni e cronaca negli Sessanta, quando gli italiani abbandonano le piazze e ricercano 'l'evasione'.",
         "immagine": "https://img-guidatv.org/24/come-eravamo/0.jpg"
       },
       {
-        "ora": "05:40",
+        "ora": "05:35",
         "fine": "06:00",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze dell'11 settembre 2026.",
@@ -29077,24 +29076,31 @@
       },
       {
         "ora": "02:15",
-        "fine": "03:10",
+        "fine": "03:05",
         "titolo": "Catilina. Cronaca Di Una Congiura",
         "descrizione": "Cristoforo Gorno, muovendosi tra il Foro, la Curia, le Basiliche, i luoghi di Roma che fanno da palcoscenico alla storia, racconta la nascita della congiura di Catilina e il suo naufragio, tenendo a mente le analogie con la contemporaneità, perché il contesto di disuguaglianze che circonda Catilina... -  con  di e con Cristoforo Gorno Scritto con Giancarlo di Giovine con la collaborazione di Lucia Ciancaglini consulenza storica Maria Teresa d'Alessio produttore esecutivo Alessandra Giorgi regia Fedora Sasso 1968 ITA",
         "immagine": "https://img-guidatv.org/24/catilina-cronaca-di-una-congiura/6.jpg"
       },
       {
-        "ora": "03:10",
-        "fine": "04:00",
+        "ora": "03:05",
+        "fine": "03:55",
         "titolo": "On the road - L'America della Beat Generation",
         "descrizione": "Un'inchiesta in tre puntate dedicata al fenomeno della Beat Generation con interviste ai maggiori esponenti di questo movimento artistico, poetico e letterario. Le interviste sono di Fernanda Pivano.",
         "immagine": "https://img-guidatv.org/24/on-the-road-l-america-della-beat-generation-scandalo-in-famiglia/0.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:50",
+        "ora": "03:55",
+        "fine": "04:45",
         "titolo": "I Giorni Della Nostra Storia - Gli Italiani Nelle Prigioni Di Hitler",
         "descrizione": "In questa puntata, la deportazione dei soldati italiani nei campi di lavoro e di concentramento nazisti fra il 1943 e il 1945. Interviste a reduci ci raccontano la loro esperienza nei campi di concentramento nazisti.",
         "immagine": "https://img-guidatv.org/24/i-giorni-della-nostra-storia-gli-italiani-nelle-prigioni-di-hitler/0.jpg"
+      },
+      {
+        "ora": "04:45",
+        "fine": "04:50",
+        "titolo": "Pillole Argo - La Giovinezza Spezzata. Giovani, Forti E... Perduti",
+        "descrizione": "La giovinezza spezzata. Giovani, forti e... perduti.",
+        "immagine": "https://img-guidatv.org/24/pillole-argo/1.jpg"
       },
       {
         "ora": "04:50",
@@ -29105,13 +29111,13 @@
       },
       {
         "ora": "05:25",
-        "fine": "05:40",
+        "fine": "05:35",
         "titolo": "Come Eravamo - Giovani (Pt.30)",
         "descrizione": "Giovani, moda, canzoni e cronaca negli Sessanta, quando gli italiani abbandonano le piazze e ricercano 'l'evasione'.",
         "immagine": "https://img-guidatv.org/24/come-eravamo/0.jpg"
       },
       {
-        "ora": "05:40",
+        "ora": "05:35",
         "fine": "06:00",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze dell'11 settembre 2026.",
