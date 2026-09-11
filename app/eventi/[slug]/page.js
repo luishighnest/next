@@ -265,6 +265,7 @@ export default function EventoPlayerPage() {
     const getIframeUrl = () => {
         if (!selectedSource || !selectedSource.url) return "";
         const tech = getTechSettings();
+        const extId = tech.extensionId || DEFAULT_EXT_ID;
         const rawUrl = selectedSource.url.trim();
         const isTsStream = rawUrl.toLowerCase().includes(".ts");
         if (isTsStream) {
