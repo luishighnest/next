@@ -404,22 +404,22 @@
       {
         "ora": "14:00",
         "fine": "14:30",
-        "titolo": "Euro Show",
-        "descrizione": "Il meglio del calcio internazionale con tutte le notizie, i gol, le immagini e le voci dei protagonisti di Premier League, Bundesliga.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2c1bb9b8-7294-4ca4-be76-777c72f154b1/background/600"
-      },
-      {
-        "ora": "14:30",
-        "fine": "15:00",
         "titolo": "Sport 24 Today",
         "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
         "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
       },
       {
+        "ora": "14:30",
+        "fine": "15:00",
+        "titolo": "Euro Show",
+        "descrizione": "Il meglio del calcio internazionale con tutte le notizie, i gol, le immagini e le voci dei protagonisti di Premier League, Bundesliga.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2c1bb9b8-7294-4ca4-be76-777c72f154b1/background/600"
+      },
+      {
         "ora": "15:00",
         "fine": "15:30",
-        "titolo": "Sport 24 Calciomercato",
-        "descrizione": "Gli ultimi aggiornamenti sul Calciomercato. Tutte le novita' e le indiscrezioni su trattative e trasferimenti del mercato calciatori in Italia e all'estero. Le notizie esclusive della \"squadra mercato\" di SkySport.",
+        "titolo": "Sport 24 Today",
+        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
         "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
       },
       {
@@ -445,17 +445,17 @@
       },
       {
         "ora": "17:00",
-        "fine": "17:30",
+        "fine": "17:40",
         "titolo": "Sport 24 Today",
         "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
         "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
       },
       {
-        "ora": "17:30",
+        "ora": "17:40",
         "fine": "18:00",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+        "titolo": "Sky Sport Watch 2026 Ep.2 11/09/2026",
+        "descrizione": "Scopriamo il mondo dell'orologeria e il suo rapporto con lo sport e lo stile di vita relativo.",
+        "immagine": "https://img-guidatv.org/929/sky-sport-watch-2026-ep-2-11-09-2026/2.jpg"
       },
       {
         "ora": "18:00",
@@ -856,7 +856,7 @@
       {
         "ora": "00:45",
         "fine": "01:55",
-        "titolo": "GP Spagna: Prove libere 2",
+        "titolo": "GP Madrid: Prove libere 2",
         "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/18a3ed7b-13c4-47d6-b064-db67c67aaf85/background/600"
       },
@@ -870,7 +870,7 @@
       {
         "ora": "02:45",
         "fine": "03:55",
-        "titolo": "GP Spagna: Prove libere 2",
+        "titolo": "GP Madrid: Prove libere 2",
         "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/18a3ed7b-13c4-47d6-b064-db67c67aaf85/background/600"
       },
@@ -884,7 +884,7 @@
       {
         "ora": "04:45",
         "fine": "06:00",
-        "titolo": "GP Spagna: Prove libere 1",
+        "titolo": "GP Madrid: Prove libere 1",
         "descrizione": "Prima sessione di prove su un circuito completamente nuovo: 60 minuti per scoprire la pista di Madrid. Telecronaca di Carlo Vanzini e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/25d16777-c5ba-4d37-bca1-72edd6349e15/background/600"
       },
@@ -933,7 +933,7 @@
       {
         "ora": "09:50",
         "fine": "10:45",
-        "titolo": "Gp Spagna Pl",
+        "titolo": "Gp Madrid prove libere",
         "descrizione": "Segui la gara di Formula 3 in programma.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a09ad968-548b-465b-8f16-c81b8e8bd02e/background/600"
       },
@@ -975,7 +975,7 @@
       {
         "ora": "13:25",
         "fine": "14:35",
-        "titolo": "GP Spagna: Prove libere 1",
+        "titolo": "GP Madrid: Prove libere 1",
         "descrizione": "Prima sessione di prove su un circuito completamente nuovo: 60 minuti per scoprire la pista di Madrid. Telecronaca di Carlo Vanzini e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/25d16777-c5ba-4d37-bca1-72edd6349e15/background/600"
       },
@@ -988,20 +988,13 @@
       },
       {
         "ora": "14:55",
-        "fine": "15:40",
+        "fine": "16:25",
         "titolo": "Madrid: Qualifiche",
         "descrizione": "Segui l'appuntamento con la gara di Formula 2.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/713087a0-599a-44a6-8a8c-319d9b5d55a1/background/600"
       },
       {
-        "ora": "15:40",
-        "fine": "15:55",
-        "titolo": "Budapest",
-        "descrizione": "Seguiamo l'intensa nona tappa del campionato all'Hungaroring, mettendo in luce la serrata lotta per il titolo, le strategie dei piloti e offrendo un accesso esclusivo all'area scuderie poco prima della pausa estiva.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/dd4ad344-8030-4ce1-b4bb-682b71e2e316/background/600"
-      },
-      {
-        "ora": "15:55",
+        "ora": "16:25",
         "fine": "16:45",
         "titolo": "Inside The Team - Un Gp con Kimi",
         "descrizione": "Inside The Team - Un Gp con Kimi",
@@ -1017,7 +1010,7 @@
       {
         "ora": "16:55",
         "fine": "18:05",
-        "titolo": "GP Spagna: Prove libere 2",
+        "titolo": "GP Madrid: Prove libere 2",
         "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/18a3ed7b-13c4-47d6-b064-db67c67aaf85/background/600"
       },
@@ -1052,7 +1045,7 @@
       {
         "ora": "20:25",
         "fine": "21:35",
-        "titolo": "GP Spagna: Prove libere 2",
+        "titolo": "GP Madrid: Prove libere 2",
         "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/18a3ed7b-13c4-47d6-b064-db67c67aaf85/background/600"
       },
@@ -1073,7 +1066,7 @@
       {
         "ora": "23:00",
         "fine": "00:15",
-        "titolo": "GP Spagna: Prove libere 2",
+        "titolo": "GP Madrid: Prove libere 2",
         "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/18a3ed7b-13c4-47d6-b064-db67c67aaf85/background/600"
       }
@@ -1225,13 +1218,13 @@
       },
       {
         "ora": "13:15",
-        "fine": "14:00",
+        "fine": "14:05",
         "titolo": "GP San Marino e Riviera di Rimini: Pre Qualifiche",
         "descrizione": "... Rimini: Pre Qualifiche Moto3. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per le pre qualifiche della Moto3. Telecronaca Triolo-Pasini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e635e7b2-c8fa-4d3b-a22a-4be8bec697fc/background/600"
       },
       {
-        "ora": "14:00",
+        "ora": "14:05",
         "fine": "14:55",
         "titolo": "GP San Marino e Riviera di Rimini: Pre Qualifiche",
         "descrizione": "... Rimini: Pre Qualifiche Moto2. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per le pre qualifiche della Moto2. Telecronaca Triolo-Pasini",
@@ -1413,17 +1406,10 @@
       },
       {
         "ora": "15:50",
-        "fine": "18:00",
+        "fine": "18:30",
         "titolo": "Olanda - Belgio",
         "descrizione": "... Europei di pallavolo maschile. - EuroVolley 2026, day 2 per il gruppo C con la classica Olanda-Belgio. Tc Rudy Palermo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7b197155-d15e-47a9-bfee-14b71d8c4464/background/600"
-      },
-      {
-        "ora": "18:00",
-        "fine": "18:30",
-        "titolo": "The Boat Show",
-        "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3ddb8740-9053-4bc8-98ac-a77ee7855d37/background/600"
       },
       {
         "ora": "18:30",
@@ -1656,13 +1642,13 @@
       },
       {
         "ora": "10:30",
-        "fine": "16:00",
+        "fine": "16:10",
         "titolo": "Amgen Irish Open: Giorno 2",
         "descrizione": "... Golf: DP World Tour. - From Trump International Golf Links & Hotel in Doonbeg, Ireland.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cb40de65-6866-4fbd-b83a-862735cff801/background/600"
       },
       {
-        "ora": "16:00",
+        "ora": "16:10",
         "fine": "18:00",
         "titolo": "19a Giornata",
         "descrizione": "Le partite della TGL Golf League.",
@@ -2241,7 +2227,7 @@
       {
         "ora": "04:40",
         "fine": "06:00",
-        "titolo": "GP Spagna: Prove libere 2",
+        "titolo": "GP Madrid: Prove libere 2",
         "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/18a3ed7b-13c4-47d6-b064-db67c67aaf85/background/600"
       },
@@ -2290,7 +2276,7 @@
       {
         "ora": "13:25",
         "fine": "14:35",
-        "titolo": "GP Spagna: Prove libere 1",
+        "titolo": "GP Madrid: Prove libere 1",
         "descrizione": "Prima sessione di prove su un circuito completamente nuovo: 60 minuti per scoprire la pista di Madrid. Telecronaca di Carlo Vanzini e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/25d16777-c5ba-4d37-bca1-72edd6349e15/background/600"
       },
@@ -2332,7 +2318,7 @@
       {
         "ora": "16:55",
         "fine": "18:05",
-        "titolo": "GP Spagna: Prove libere 2",
+        "titolo": "GP Madrid: Prove libere 2",
         "descrizione": "Seconda sessione di prove sul nuovo circuito di Madrid: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/18a3ed7b-13c4-47d6-b064-db67c67aaf85/background/600"
       },
@@ -2360,7 +2346,7 @@
       {
         "ora": "19:15",
         "fine": "20:30",
-        "titolo": "GP Spagna: Prove libere 1",
+        "titolo": "GP Madrid: Prove libere 1",
         "descrizione": "Prima sessione di prove su un circuito completamente nuovo: 60 minuti per scoprire la pista di Madrid. Telecronaca di Carlo Vanzini e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/25d16777-c5ba-4d37-bca1-72edd6349e15/background/600"
       },
@@ -2513,15 +2499,15 @@
       },
       {
         "ora": "13:30",
-        "fine": "14:20",
+        "fine": "14:55",
         "titolo": "SUPERTENNIS TODAY - USOPEN",
         "descrizione": "Il nostro studio di continuita' Live dall'Arthur Ashe Stadium",
         "immagine": "https://img-guidatv.org/54/supertennis-today-usopen/0.jpg"
       },
       {
-        "ora": "14:20",
+        "ora": "14:55",
         "fine": "15:45",
-        "titolo": "US Open 2026 - Singolare maschile - Ep. 61 - Ben Shelton vs Carlos Alcaraz US OPEN 2026 # 3",
+        "titolo": "US Open 2026 - Singolare maschile",
         "descrizione": "Ben Shelton vs Carlos Alcaraz US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
@@ -2748,7 +2734,14 @@
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
       },
       {
-        "ora": "05:40",
+        "ora": "03:00",
+        "fine": "05:50",
+        "titolo": "Atletica: Ultimate Championship 2026 - 1a Giornata: Semifinali E Finali",
+        "descrizione": "Prima giornata dell'Ultimate Championship 2026 a Budapest, con alcune delle stelle dell'atletica mondiale in gara tra semifinali e finali. In palio i primi titoli della manifestazione nei 5000 metri maschili, 100 ostacoli femminili, 110 ostacoli maschili, salto in alto femminile, salto con l'asta maschile, salto in lungo femminile, martello maschile e staffetta 4x100 mista.",
+        "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
+      },
+      {
+        "ora": "05:50",
         "fine": "06:00",
         "titolo": "Memory",
         "descrizione": "Memory",
@@ -2859,7 +2852,14 @@
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
       },
       {
-        "ora": "05:40",
+        "ora": "03:00",
+        "fine": "05:50",
+        "titolo": "Atletica: Ultimate Championship 2026 - 1a Giornata: Semifinali E Finali",
+        "descrizione": "Prima giornata dell'Ultimate Championship 2026 a Budapest, con alcune delle stelle dell'atletica mondiale in gara tra semifinali e finali. In palio i primi titoli della manifestazione nei 5000 metri maschili, 100 ostacoli femminili, 110 ostacoli maschili, salto in alto femminile, salto con l'asta maschile, salto in lungo femminile, martello maschile e staffetta 4x100 mista.",
+        "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
+      },
+      {
+        "ora": "05:50",
         "fine": "06:00",
         "titolo": "Memory",
         "descrizione": "Memory",
@@ -4043,20 +4043,20 @@
       },
       {
         "ora": "02:15",
-        "fine": "03:40",
+        "fine": "03:45",
         "titolo": "11/9: Corsa contro il tempo",
         "descrizione": "11 settembre, il più grande fallimento della CIA e la lunga caccia al terrorista più ricercato al mondo, Osama Bin Laden.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/98f1938b-9752-4cfe-b6f6-32b746fac5c5/background/600"
       },
       {
-        "ora": "03:40",
-        "fine": "04:55",
+        "ora": "03:45",
+        "fine": "05:00",
         "titolo": "9/11: Un giorno in America",
         "descrizione": "Un aereo dirottato si schianta contro l'edificio più a nord tra le due Torri Gemelle. Un'analisi della cronologia degli eventi di quel giorno, inclusa la corsa contro il tempo per salvare i civili intrappolati nei piani.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8769b967-5739-4398-8c6d-63164cceeda4/background/600"
       },
       {
-        "ora": "04:55",
+        "ora": "05:00",
         "fine": "05:45",
         "titolo": "9/11: Un giorno in America",
         "descrizione": "Le persone che in quel momento si trovano nella Torre Sud, ancora indenne, assistono impotenti a quanto accade nell'edificio gemello, colpito da un aereo dirottato. La priorità di tutti è cercare il modo di salvarsi.",
@@ -4578,22 +4578,29 @@
     "categoria": "Intrattenimento",
     "programmi": [
       {
-        "ora": "01:20",
-        "fine": "01:50",
+        "ora": "00:10",
+        "fine": "01:45",
+        "titolo": "Freddie Mercury: The Show Must Go On",
+        "descrizione": "L'ultimo capitolo della straordinaria vita di Freddie Mercury e il concerto tributo a Wembley, tra lo stigma della malattia e i racconti delle persone sieropositive.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/06baa1e0-1560-4730-a2e8-9aadbde1cf78/background/600"
+      },
+      {
+        "ora": "01:45",
+        "fine": "02:10",
         "titolo": "Echo: Quello che rimane",
         "descrizione": "Si indaga su ciò che resta delle persone dopo la loro scomparsa. Un racconto selettivo e profondo delle tracce lasciate nel presente, tra memorie, parole, opere e risonanze emotive.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7a1c06c9-a3f0-45d8-a27d-2f9f45cc5ba8/background/600"
       },
       {
-        "ora": "01:50",
-        "fine": "02:20",
+        "ora": "02:10",
+        "fine": "02:40",
         "titolo": "Echo: Quello che rimane",
         "descrizione": "Parlare dell'eredità di Papa Francesco significa analizzare un pontificato che ha profondamente scosso e rimodellato la Chiesa Cattolica, traghettandola nel terzo millennio con uno stile radicalmente diverso rispetto al passato.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/19a65f8f-d818-4c47-a19f-c8b09ef5df5d/background/600"
       },
       {
-        "ora": "02:20",
-        "fine": "03:10",
+        "ora": "02:40",
+        "fine": "03:35",
         "titolo": "Indie Jungle",
         "descrizione": "Ep7 di 11 Melancholia - Una serata esclusiva alla scoperta della sonorita' e delle storie dei protagonisti della scena indie italiana. In questa puntata: Melancholia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f4fbcd72-ca31-4e05-8695-dc753701f047/background/600"
@@ -4719,38 +4726,31 @@
       },
       {
         "ora": "18:45",
-        "fine": "19:35",
-        "titolo": "Indie Jungle",
-        "descrizione": "Ep8 di 11 Tutti Fenomeni - Una serata esclusiva alla scoperta della sonorita' e delle storie dei protagonisti della scena indie italiana. In questa puntata: Tutti Fenomeni.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a093cfc9-9fe4-4fde-ac00-9198721d6d02/background/600"
+        "fine": "19:50",
+        "titolo": "Womeness",
+        "descrizione": "Scopriamo l’audace femminilità e i principi immortali di cinque grandi donne del nostro tempo: da Dacia Maraini e Emma Bonino a Sussan Deyhim e Tomaso Binga, fino a Setsuko Klossowska de Rola.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/56679b39-5ab4-4575-9ec5-c429f6e4a85b/background/600"
       },
       {
-        "ora": "19:35",
-        "fine": "21:15",
+        "ora": "19:50",
+        "fine": "21:30",
         "titolo": "David Bowie: Nascita di una star",
         "descrizione": "Cinque anni degli inizi della carriera di Bowie, dalla fine degli anni Sessanta fino alla morte di Ziggy Stardust, annunciata sul palco nel 1973. Interviste d'archivio inedite con alcuni dei primi collaboratori di Bowie",
         "immagine": "https://img-guidatv.org/film_new/d/5ff6f1c5a865d234c39cfd92/5ff6f1c5a865d234c39cfd92_p_1_rs_300.jpg"
       },
       {
-        "ora": "21:15",
-        "fine": "22:55",
+        "ora": "21:30",
+        "fine": "23:05",
         "titolo": "Freddie Mercury: The Show Must Go On",
         "descrizione": "L'ultimo capitolo della straordinaria vita di Freddie Mercury e il concerto tributo a Wembley, tra lo stigma della malattia e i racconti delle persone sieropositive.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/06baa1e0-1560-4730-a2e8-9aadbde1cf78/background/600"
       },
       {
-        "ora": "22:55",
-        "fine": "23:45",
-        "titolo": "Amy Winehouse: Anima ribelle",
-        "descrizione": "A oltre quindici anni dalla morte dell'icona britannica Amy Winehouse, Il volto più autentico e tormentato dell'artista viene svelato dai parenti e dagli amici più stretti.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6f6d2e40-96b5-40a2-973f-e5dd33b3bbc8/background/600"
-      },
-      {
-        "ora": "23:45",
-        "fine": "01:20",
-        "titolo": "Freddie Mercury: The Show Must Go On",
-        "descrizione": "L'ultimo capitolo della straordinaria vita di Freddie Mercury e il concerto tributo a Wembley, tra lo stigma della malattia e i racconti delle persone sieropositive.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/06baa1e0-1560-4730-a2e8-9aadbde1cf78/background/600"
+        "ora": "23:05",
+        "fine": "00:10",
+        "titolo": "Womeness",
+        "descrizione": "Scopriamo l’audace femminilità e i principi immortali di cinque grandi donne del nostro tempo: da Dacia Maraini e Emma Bonino a Sussan Deyhim e Tomaso Binga, fino a Setsuko Klossowska de Rola.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/56679b39-5ab4-4575-9ec5-c429f6e4a85b/background/600"
       }
     ]
   },
@@ -18190,9 +18190,9 @@
       {
         "ora": "20:30",
         "fine": "20:35",
-        "titolo": "Cinque Minuti: L'Ultima Intervista A Emma Bonino - 26",
-        "descrizione": "L'ultima intervista tv di Emma Bonino: un faccia a faccia a casa sua con Bruno Vespa il 19 maggio 2026.",
-        "immagine": "https://img-guidatv.org/1/cinque-minuti-l-ultima-intervista-a-emma-bonino-26/0.jpg"
+        "titolo": "Speciale Cinque Minuti: L'Ultima Intervista A Emma Bonino - 26",
+        "descrizione": "Bruno Vespa torna su Rai 1 con uno speciale di Cinque Minuti per ricordare Emma Bonino nel giorno della sua scomparsa: un faccia a faccia a casa della politica lo scorso 19 maggio 2026.",
+        "immagine": "https://img-guidatv.org/1/speciale-cinque-minuti-l-ultima-intervista-a-emma-bonino-26/0.jpg"
       },
       {
         "ora": "20:35",
@@ -18399,9 +18399,9 @@
       {
         "ora": "20:30",
         "fine": "20:35",
-        "titolo": "Cinque Minuti: L'Ultima Intervista A Emma Bonino - 26",
-        "descrizione": "L'ultima intervista tv di Emma Bonino: un faccia a faccia a casa sua con Bruno Vespa il 19 maggio 2026.",
-        "immagine": "https://img-guidatv.org/1/cinque-minuti-l-ultima-intervista-a-emma-bonino-26/0.jpg"
+        "titolo": "Speciale Cinque Minuti: L'Ultima Intervista A Emma Bonino - 26",
+        "descrizione": "Bruno Vespa torna su Rai 1 con uno speciale di Cinque Minuti per ricordare Emma Bonino nel giorno della sua scomparsa: un faccia a faccia a casa della politica lo scorso 19 maggio 2026.",
+        "immagine": "https://img-guidatv.org/1/speciale-cinque-minuti-l-ultima-intervista-a-emma-bonino-26/0.jpg"
       },
       {
         "ora": "20:35",
@@ -18425,62 +18425,55 @@
     "programmi": [
       {
         "ora": "00:20",
-        "fine": "01:50",
+        "fine": "01:15",
+        "titolo": "Cronaca Di Un Crimine",
+        "descrizione": "1^ Visione Rai - Italia, anni '30: il ritrovamento di tre valigie con i resti smembrati di una donna fa emergere una vicenda di cronaca nera che diventa anche ritratto di un'epoca: controllo sociale, ruolo subordinato della donna e uso degli annunci matrimoniali come spazio di fiducia e inganno.",
+        "immagine": "https://img-guidatv.org/2/cronaca-di-un-crimine/1.jpg"
+      },
+      {
+        "ora": "01:15",
+        "fine": "02:40",
         "titolo": "Paradise. La Finestra Sullo Showbiz",
         "descrizione": "Paradise torna tra Venezia e la Sardegna con la 19esima puntata dedicata a cinema, musica, cultura e attualità. Tra i protagonisti della puntata Lino Banfi, Jerry Calà, Achille Lauro, Marco Masini, Alessandro Preziosi, Monica Guerritore, Mario Martone, Martina Colombari, Giulio Base e Leo Gassmann. Da Poltu Quatu, spazio alla Sardegna, alla Costa Smeralda e ai suoi rapporti internazionali, con Franco Carraro e Giampiero Schiavo. Jerry Calà, Johnny Calà e la band accompagnano musicalmente la serata. Da Venezia, istituzioni, cinema e industria culturale insieme a Federico Mollicone, Luciano Nobili, Antonio Saccone, Manuela Cacciamani, Matteo Zoppas e Nicola Corigliano.",
         "immagine": "https://img-guidatv.org/2/paradise-la-finestra-sullo-showbiz/8.jpg"
       },
       {
-        "ora": "01:50",
-        "fine": "01:55",
+        "ora": "02:40",
+        "fine": "02:45",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/2/appuntamento-al-cinema/1.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "03:35",
+        "ora": "02:45",
+        "fine": "04:25",
         "titolo": "The President's Staff",
         "descrizione": "Il presidente Harry Carrey (Tomas Arana), la carismatica stagista Sandra Porter (Giorgia Würth) e i due tecnici delle fibre ottiche Dan Daleche (Tommy Campbell) e James Truman (Chance Mullen) si ritrovano bloccati nella stanza ovale della Casa Bianca. Un sedicente commando extraterrestre ha comunicato loro via email che la stanza è minata e che è impossibile uscirvi o entrarvi.",
         "immagine": "https://image.tmdb.org/t/p/w300/qcp3Np5AjXVcFjMdRUlnlKx1eK1.jpg"
       },
       {
-        "ora": "03:35",
-        "fine": "04:17",
+        "ora": "04:25",
+        "fine": "05:10",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "04:17",
-        "fine": "05:00",
-        "titolo": "Squadra Speciale Colonia",
-        "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
-        "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
-      },
-      {
-        "ora": "05:00",
-        "fine": "05:15",
-        "titolo": "Zio Gianni",
-        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
-        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
-      },
-      {
-        "ora": "05:15",
+        "ora": "05:10",
         "fine": "05:25",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
         "ora": "05:25",
-        "fine": "05:50",
+        "fine": "05:55",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
         "immagine": "https://image.tmdb.org/t/p/w300/ibwnz5CSqBw1w8MhrOZUI7eiDg3.jpg"
       },
       {
-        "ora": "05:50",
+        "ora": "05:55",
         "fine": "06:00",
         "titolo": "Ritorno a Las Sabinas",
         "descrizione": "Gracia e Paloma ritornano a Las Sabinas per prendersi cura del padre Emilio. Gracia si riavvicina a Miguel, il suo primo amore che ora è fidanzato con Esther; Paloma prende in mano le redini della tenuta e si scontra con Paca Utrera, una ricca possidente legata a Emilio da un terribile segreto. Mentre la donna ordisce un piano ai danni di Manterana, il giovane Óscar muore in condizioni misteriose. Manuela indagherà sull'accaduto contando sull'aiuto di padre Álex, il fratello del defunto.",
@@ -18663,24 +18656,24 @@
       },
       {
         "ora": "21:00",
-        "fine": "21:20",
+        "fine": "21:45",
         "titolo": "TG2 Post",
         "descrizione": "Rubrica informativa del TG2. Direttore Antonio Preziosi",
         "immagine": "https://img-guidatv.org/2/tg2-post/6.jpg"
       },
       {
-        "ora": "21:20",
-        "fine": "23:25",
+        "ora": "21:45",
+        "fine": "22:15",
+        "titolo": "Emma Bonino - Belve 23",
+        "descrizione": "Chi la detesta la stima, chi la ama la venera. La sua è una vita di lotta. La Senatrice, leader radicale, Emma Bonino ospite di Francesca Fagnani si racconta: le sue scelte, la vita privata, la malattia e la guarigione e infine la delusione per la lite con Marco Pannella, il compagno di tante battaglie radicali.",
+        "immagine": "https://img-guidatv.org/2/emma-bonino-belve-23/0.jpg"
+      },
+      {
+        "ora": "22:15",
+        "fine": "00:20",
         "titolo": "L'Ispettore Coliandro",
         "descrizione": "Coliandro è un ispettore in servizio alla questura di Bologna che si ritrova sempre invischiato, suo malgrado, in vicende più grandi di lui. Ma Coliandro non si tira mai indietro, anche se la sua sbadataggine e la sua incapacità investigativa finiscono inevitabilmente per cacciarlo nei guai.",
         "immagine": "https://image.tmdb.org/t/p/w300/uSQYHXMWLs4TPnGwebuF8EvScIU.jpg"
-      },
-      {
-        "ora": "23:25",
-        "fine": "00:20",
-        "titolo": "Cronaca Di Un Crimine",
-        "descrizione": "1^ Visione Rai - Italia, anni '30: il ritrovamento di tre valigie con i resti smembrati di una donna fa emergere una vicenda di cronaca nera che diventa anche ritratto di un'epoca: controllo sociale, ruolo subordinato della donna e uso degli annunci matrimoniali come spazio di fiducia e inganno.",
-        "immagine": "https://img-guidatv.org/2/cronaca-di-un-crimine/1.jpg"
       }
     ]
   },
@@ -18690,62 +18683,55 @@
     "programmi": [
       {
         "ora": "00:20",
-        "fine": "01:50",
+        "fine": "01:15",
+        "titolo": "Cronaca Di Un Crimine",
+        "descrizione": "1^ Visione Rai - Italia, anni '30: il ritrovamento di tre valigie con i resti smembrati di una donna fa emergere una vicenda di cronaca nera che diventa anche ritratto di un'epoca: controllo sociale, ruolo subordinato della donna e uso degli annunci matrimoniali come spazio di fiducia e inganno.",
+        "immagine": "https://img-guidatv.org/2/cronaca-di-un-crimine/1.jpg"
+      },
+      {
+        "ora": "01:15",
+        "fine": "02:40",
         "titolo": "Paradise. La Finestra Sullo Showbiz",
         "descrizione": "Paradise torna tra Venezia e la Sardegna con la 19esima puntata dedicata a cinema, musica, cultura e attualità. Tra i protagonisti della puntata Lino Banfi, Jerry Calà, Achille Lauro, Marco Masini, Alessandro Preziosi, Monica Guerritore, Mario Martone, Martina Colombari, Giulio Base e Leo Gassmann. Da Poltu Quatu, spazio alla Sardegna, alla Costa Smeralda e ai suoi rapporti internazionali, con Franco Carraro e Giampiero Schiavo. Jerry Calà, Johnny Calà e la band accompagnano musicalmente la serata. Da Venezia, istituzioni, cinema e industria culturale insieme a Federico Mollicone, Luciano Nobili, Antonio Saccone, Manuela Cacciamani, Matteo Zoppas e Nicola Corigliano.",
         "immagine": "https://img-guidatv.org/2/paradise-la-finestra-sullo-showbiz/8.jpg"
       },
       {
-        "ora": "01:50",
-        "fine": "01:55",
+        "ora": "02:40",
+        "fine": "02:45",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/2/appuntamento-al-cinema/1.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "03:35",
+        "ora": "02:45",
+        "fine": "04:25",
         "titolo": "The President's Staff",
         "descrizione": "Il presidente Harry Carrey (Tomas Arana), la carismatica stagista Sandra Porter (Giorgia Würth) e i due tecnici delle fibre ottiche Dan Daleche (Tommy Campbell) e James Truman (Chance Mullen) si ritrovano bloccati nella stanza ovale della Casa Bianca. Un sedicente commando extraterrestre ha comunicato loro via email che la stanza è minata e che è impossibile uscirvi o entrarvi.",
         "immagine": "https://image.tmdb.org/t/p/w300/qcp3Np5AjXVcFjMdRUlnlKx1eK1.jpg"
       },
       {
-        "ora": "03:35",
-        "fine": "04:17",
+        "ora": "04:25",
+        "fine": "05:10",
         "titolo": "Squadra Speciale Colonia",
         "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
         "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
-        "ora": "04:17",
-        "fine": "05:00",
-        "titolo": "Squadra Speciale Colonia",
-        "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
-        "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
-      },
-      {
-        "ora": "05:00",
-        "fine": "05:15",
-        "titolo": "Zio Gianni",
-        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
-        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
-      },
-      {
-        "ora": "05:15",
+        "ora": "05:10",
         "fine": "05:25",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
         "ora": "05:25",
-        "fine": "05:50",
+        "fine": "05:55",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
         "immagine": "https://image.tmdb.org/t/p/w300/ibwnz5CSqBw1w8MhrOZUI7eiDg3.jpg"
       },
       {
-        "ora": "05:50",
+        "ora": "05:55",
         "fine": "06:00",
         "titolo": "Ritorno a Las Sabinas",
         "descrizione": "Gracia e Paloma ritornano a Las Sabinas per prendersi cura del padre Emilio. Gracia si riavvicina a Miguel, il suo primo amore che ora è fidanzato con Esther; Paloma prende in mano le redini della tenuta e si scontra con Paca Utrera, una ricca possidente legata a Emilio da un terribile segreto. Mentre la donna ordisce un piano ai danni di Manterana, il giovane Óscar muore in condizioni misteriose. Manuela indagherà sull'accaduto contando sull'aiuto di padre Álex, il fratello del defunto.",
@@ -18928,24 +18914,24 @@
       },
       {
         "ora": "21:00",
-        "fine": "21:20",
+        "fine": "21:45",
         "titolo": "TG2 Post",
         "descrizione": "Rubrica informativa del TG2. Direttore Antonio Preziosi",
         "immagine": "https://img-guidatv.org/2/tg2-post/6.jpg"
       },
       {
-        "ora": "21:20",
-        "fine": "23:25",
+        "ora": "21:45",
+        "fine": "22:15",
+        "titolo": "Emma Bonino - Belve 23",
+        "descrizione": "Chi la detesta la stima, chi la ama la venera. La sua è una vita di lotta. La Senatrice, leader radicale, Emma Bonino ospite di Francesca Fagnani si racconta: le sue scelte, la vita privata, la malattia e la guarigione e infine la delusione per la lite con Marco Pannella, il compagno di tante battaglie radicali.",
+        "immagine": "https://img-guidatv.org/2/emma-bonino-belve-23/0.jpg"
+      },
+      {
+        "ora": "22:15",
+        "fine": "00:20",
         "titolo": "L'Ispettore Coliandro",
         "descrizione": "Coliandro è un ispettore in servizio alla questura di Bologna che si ritrova sempre invischiato, suo malgrado, in vicende più grandi di lui. Ma Coliandro non si tira mai indietro, anche se la sua sbadataggine e la sua incapacità investigativa finiscono inevitabilmente per cacciarlo nei guai.",
         "immagine": "https://image.tmdb.org/t/p/w300/uSQYHXMWLs4TPnGwebuF8EvScIU.jpg"
-      },
-      {
-        "ora": "23:25",
-        "fine": "00:20",
-        "titolo": "Cronaca Di Un Crimine",
-        "descrizione": "1^ Visione Rai - Italia, anni '30: il ritrovamento di tre valigie con i resti smembrati di una donna fa emergere una vicenda di cronaca nera che diventa anche ritratto di un'epoca: controllo sociale, ruolo subordinato della donna e uso degli annunci matrimoniali come spazio di fiducia e inganno.",
-        "immagine": "https://img-guidatv.org/2/cronaca-di-un-crimine/1.jpg"
       }
     ]
   },
@@ -19109,20 +19095,20 @@
       },
       {
         "ora": "15:10",
-        "fine": "16:00",
-        "titolo": "Divine",
-        "descrizione": "Quello tra le donne e il vino è un rapporto simbiotico e viscerale. Il documentario racconta le storie, i sogni e la rinascita di cinque donne eccezionali: Susanna D'Amico, Carla Benini, Joy Kull, Domenica Luppino e Silvia Fuselli.",
-        "immagine": "https://image.tmdb.org/t/p/w300/9JJPrrYCF6dktTp5AEzslwCqCb3.jpg"
+        "fine": "15:45",
+        "titolo": "Biografie - Emma Bonino. Anima Liberale",
+        "descrizione": "Un ritratto di Emma Bonino, leader radicale, ministro, commissario Ue e fondatrice di + Europa.",
+        "immagine": "https://img-guidatv.org/3/biografie-emma-bonino-anima-liberale/0.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:05",
+        "ora": "15:45",
+        "fine": "15:50",
         "titolo": "Gli Imperdibili",
         "descrizione": "Backstage, anteprime, eventi e curiosità dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.",
         "immagine": "https://img-guidatv.org/3/gli-imperdibili/0.jpg"
       },
       {
-        "ora": "16:05",
+        "ora": "15:50",
         "fine": "19:00",
         "titolo": "Geo",
         "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilità del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\".",
@@ -19167,7 +19153,7 @@
         "ora": "20:40",
         "fine": "20:55",
         "titolo": "Il Cavallo E La Torre",
-        "descrizione": "Marco Damilano racconta il fatto del giorno in 10 minuti: la politica, i poteri e le persone dei nostri tempi.",
+        "descrizione": "Marco Damilano ricorda Emma Bonino, protagonista di una lunga stagione della politica italiana ed europea. Le sue battaglie civili, le sue lotte per i diritti.",
         "immagine": "https://img-guidatv.org/3/il-cavallo-e-la-torre/7.jpg"
       },
       {
@@ -19367,20 +19353,20 @@
       },
       {
         "ora": "15:10",
-        "fine": "16:00",
-        "titolo": "Divine",
-        "descrizione": "Quello tra le donne e il vino è un rapporto simbiotico e viscerale. Il documentario racconta le storie, i sogni e la rinascita di cinque donne eccezionali: Susanna D'Amico, Carla Benini, Joy Kull, Domenica Luppino e Silvia Fuselli.",
-        "immagine": "https://image.tmdb.org/t/p/w300/9JJPrrYCF6dktTp5AEzslwCqCb3.jpg"
+        "fine": "15:45",
+        "titolo": "Biografie - Emma Bonino. Anima Liberale",
+        "descrizione": "Un ritratto di Emma Bonino, leader radicale, ministro, commissario Ue e fondatrice di + Europa.",
+        "immagine": "https://img-guidatv.org/3/biografie-emma-bonino-anima-liberale/0.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:05",
+        "ora": "15:45",
+        "fine": "15:50",
         "titolo": "Gli Imperdibili",
         "descrizione": "Backstage, anteprime, eventi e curiosità dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.",
         "immagine": "https://img-guidatv.org/3/gli-imperdibili/0.jpg"
       },
       {
-        "ora": "16:05",
+        "ora": "15:50",
         "fine": "19:00",
         "titolo": "Geo",
         "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilità del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\".",
@@ -19425,7 +19411,7 @@
         "ora": "20:40",
         "fine": "20:55",
         "titolo": "Il Cavallo E La Torre",
-        "descrizione": "Marco Damilano racconta il fatto del giorno in 10 minuti: la politica, i poteri e le persone dei nostri tempi.",
+        "descrizione": "Marco Damilano ricorda Emma Bonino, protagonista di una lunga stagione della politica italiana ed europea. Le sue battaglie civili, le sue lotte per i diritti.",
         "immagine": "https://img-guidatv.org/3/il-cavallo-e-la-torre/7.jpg"
       },
       {
@@ -19506,7 +19492,7 @@
       },
       {
         "ora": "04:33",
-        "fine": "06:31",
+        "fine": "06:30",
         "titolo": "Nel continente nero",
         "descrizione": "Il giovane e brillante manager Alessandro Benini sta illustrando in una importante riunione il suo brevetto su di un codice fonetico per il telefono, quando la madre lo avverte di aver ricevuto da Mombasa la notizia della morte del padre, Alfonso, partito da venti anni e del quale non avevano più saputo nulla. Alessandro, partito per il Kenia con la fidanzata Irene, e raggiunta Malindi (una cittadina sull'Oceano Indiano dove c'è una numerosa colonia di italiani), assiste al funerale del padre e conosce il combattivo missionario locale, il quale, dopo una dura orazione funebre, fa cantare \"Volare\" ad un coro di negretti. Alfonso è morto appunto in un incidente di volo, di notte, perchè le luci del campo d'atterraggio erano spente. Il giovane apprende che il padre possedeva una villa e delle piantagioni, ma aveva anche moltissimi debiti e per questo motivo il capo della polizia locale gli sequestra il passaporto, in attesa che vengano pagati tali debiti.",
         "immagine": "https://image.tmdb.org/t/p/w300/bJyfAXMsgoVhwB9YBD8EyquZ3rA.jpg"
@@ -19680,7 +19666,7 @@
       },
       {
         "ora": "04:33",
-        "fine": "06:31",
+        "fine": "06:30",
         "titolo": "Nel continente nero",
         "descrizione": "Il giovane e brillante manager Alessandro Benini sta illustrando in una importante riunione il suo brevetto su di un codice fonetico per il telefono, quando la madre lo avverte di aver ricevuto da Mombasa la notizia della morte del padre, Alfonso, partito da venti anni e del quale non avevano più saputo nulla. Alessandro, partito per il Kenia con la fidanzata Irene, e raggiunta Malindi (una cittadina sull'Oceano Indiano dove c'è una numerosa colonia di italiani), assiste al funerale del padre e conosce il combattivo missionario locale, il quale, dopo una dura orazione funebre, fa cantare \"Volare\" ad un coro di negretti. Alfonso è morto appunto in un incidente di volo, di notte, perchè le luci del campo d'atterraggio erano spente. Il giovane apprende che il padre possedeva una villa e delle piantagioni, ma aveva anche moltissimi debiti e per questo motivo il capo della polizia locale gli sequestra il passaporto, in attesa che vengano pagati tali debiti.",
         "immagine": "https://image.tmdb.org/t/p/w300/bJyfAXMsgoVhwB9YBD8EyquZ3rA.jpg"
@@ -20004,7 +19990,7 @@
         "fine": "18:48",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:48",
@@ -20255,7 +20241,7 @@
         "fine": "18:48",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:48",
@@ -26376,28 +26362,28 @@
         "fine": "17:09",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:09",
         "fine": "17:34",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:34",
         "fine": "18:00",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:00",
         "fine": "18:21",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:21",
@@ -28511,20 +28497,20 @@
       },
       {
         "ora": "00:05",
-        "fine": "00:25",
+        "fine": "00:30",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 12 settembre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "00:25",
-        "fine": "01:05",
+        "ora": "00:30",
+        "fine": "01:10",
         "titolo": "Passato E Presente - La Voce Delle Donne Nel Secondo Dopoguerra. 1945-1958",
         "descrizione": "$26",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "01:05",
+        "ora": "01:10",
         "fine": "01:55",
         "titolo": "Storia Di Un Italiano - Quarta Puntata",
         "descrizione": "Nuova edizione del celebre programma televisivo ideato e condotto da Alberto Sordi insieme a Giancarlo Governi e Rodolfo Sonego. Il racconto, attraverso brani di film interpretati dal più grande attore del cinema italiano, della storia di costume nazionale del Novecento. 37 puntate, trasmesse dalla Rai tra il 1979 e il 1986.",
@@ -28553,27 +28539,27 @@
       },
       {
         "ora": "04:05",
-        "fine": "04:50",
+        "fine": "04:45",
         "titolo": "I Giorni Della Nostra Storia - Da Salò Al 25 Aprile",
         "descrizione": "La repubblica di Salò e le atrocità naziste. I luoghi di tortura. Milano: un partigiano racconta la sua storia, delle torture subite da parte dei tedeschi nazisti.",
         "immagine": "https://img-guidatv.org/24/i-giorni-della-nostra-storia-da-salo-al-25-aprile/0.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:30",
+        "ora": "04:45",
+        "fine": "05:25",
         "titolo": "Controfagotto: Puntata 8",
         "descrizione": "Luisella Boni sostituisce Ugo Gregoretti e inizia la puntata con un nuovo servizio sull'abitudine degli uomini di importunare le ragazze: a tal proposito alcune donne straniere vengono intervistate sugli insistenti tentativi di approccio degli italiani. La presentatrice introduce poi l'intervista di Ugo Zatterin a Oriana Fallaci sul suo libro sulle donne intitolato provocatoriamente \"Il sesso inutile\". Da ultimo, Piero Angela, inviato a Parigi, intervista Monsieur Raymond Duncan, l'eccentrico fondatore dell'Accademia Duncan.",
         "immagine": "https://img-guidatv.org/24/controfagotto/0.jpg"
       },
       {
-        "ora": "05:30",
-        "fine": "05:40",
+        "ora": "05:25",
+        "fine": "05:35",
         "titolo": "Come Eravamo - Giovani (Pt.31)",
         "descrizione": "Giovani, moda, canzoni e cronaca negli sessanta, quando gli italiani abbandonano le piazze e ricercano 'l'evasione'.",
         "immagine": "https://img-guidatv.org/24/come-eravamo/0.jpg"
       },
       {
-        "ora": "05:40",
+        "ora": "05:35",
         "fine": "06:00",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 12 settembre 2026.",
@@ -28763,6 +28749,13 @@
       },
       {
         "ora": "23:05",
+        "fine": "23:40",
+        "titolo": "Biografie - Emma Bonino. Anima Liberale",
+        "descrizione": "Un ritratto di Emma Bonino, leader radicale, ministro, commissario Ue e fondatrice di + Europa.",
+        "immagine": "https://img-guidatv.org/24/biografie-emma-bonino-anima-liberale/0.jpg"
+      },
+      {
+        "ora": "23:40",
         "fine": "00:00",
         "titolo": "1919. Fiume Città Di Vita",
         "descrizione": "Un Paese stravolto dalla Prima guerra mondiale. Un popolo che piange oltre 650.000 caduti nelle trincee. I politici umiliati al tavolo della pace di Versailles. Un poeta-soldato che trascina le folle ad ogni comizio. Una città che diventa emblema delle rivendicazioni irredentiste e nazionaliste. È in questa Italia che il 12 settembre del 1919 ha inizio l'impresa di Fiume: l'avventura di Gabriele d'Annunzio e di un manipolo di legionari partiti da Ronchi in Friuli, contro il volere del potere costituito, per occupare la città adriatica e annetterla all'Italia, instaurare la Reggenza del Carnaro, fondare un \"mito\" destinato a influenzare la cultura e la politica italiana e internazionale, l'estetica e il lessico, ben oltre il Ventennio fascista.",
@@ -28783,20 +28776,20 @@
       },
       {
         "ora": "00:05",
-        "fine": "00:25",
+        "fine": "00:30",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 12 settembre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "00:25",
-        "fine": "01:05",
+        "ora": "00:30",
+        "fine": "01:10",
         "titolo": "Passato E Presente - La Voce Delle Donne Nel Secondo Dopoguerra. 1945-1958",
         "descrizione": "$26",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "01:05",
+        "ora": "01:10",
         "fine": "01:55",
         "titolo": "Storia Di Un Italiano - Quarta Puntata",
         "descrizione": "Nuova edizione del celebre programma televisivo ideato e condotto da Alberto Sordi insieme a Giancarlo Governi e Rodolfo Sonego. Il racconto, attraverso brani di film interpretati dal più grande attore del cinema italiano, della storia di costume nazionale del Novecento. 37 puntate, trasmesse dalla Rai tra il 1979 e il 1986.",
@@ -28825,27 +28818,27 @@
       },
       {
         "ora": "04:05",
-        "fine": "04:50",
+        "fine": "04:45",
         "titolo": "I Giorni Della Nostra Storia - Da Salò Al 25 Aprile",
         "descrizione": "La repubblica di Salò e le atrocità naziste. I luoghi di tortura. Milano: un partigiano racconta la sua storia, delle torture subite da parte dei tedeschi nazisti.",
         "immagine": "https://img-guidatv.org/24/i-giorni-della-nostra-storia-da-salo-al-25-aprile/0.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:30",
+        "ora": "04:45",
+        "fine": "05:25",
         "titolo": "Controfagotto: Puntata 8",
         "descrizione": "Luisella Boni sostituisce Ugo Gregoretti e inizia la puntata con un nuovo servizio sull'abitudine degli uomini di importunare le ragazze: a tal proposito alcune donne straniere vengono intervistate sugli insistenti tentativi di approccio degli italiani. La presentatrice introduce poi l'intervista di Ugo Zatterin a Oriana Fallaci sul suo libro sulle donne intitolato provocatoriamente \"Il sesso inutile\". Da ultimo, Piero Angela, inviato a Parigi, intervista Monsieur Raymond Duncan, l'eccentrico fondatore dell'Accademia Duncan.",
         "immagine": "https://img-guidatv.org/24/controfagotto/0.jpg"
       },
       {
-        "ora": "05:30",
-        "fine": "05:40",
+        "ora": "05:25",
+        "fine": "05:35",
         "titolo": "Come Eravamo - Giovani (Pt.31)",
         "descrizione": "Giovani, moda, canzoni e cronaca negli sessanta, quando gli italiani abbandonano le piazze e ricercano 'l'evasione'.",
         "immagine": "https://img-guidatv.org/24/come-eravamo/0.jpg"
       },
       {
-        "ora": "05:40",
+        "ora": "05:35",
         "fine": "06:00",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 12 settembre 2026.",
@@ -29035,6 +29028,13 @@
       },
       {
         "ora": "23:05",
+        "fine": "23:40",
+        "titolo": "Biografie - Emma Bonino. Anima Liberale",
+        "descrizione": "Un ritratto di Emma Bonino, leader radicale, ministro, commissario Ue e fondatrice di + Europa.",
+        "immagine": "https://img-guidatv.org/24/biografie-emma-bonino-anima-liberale/0.jpg"
+      },
+      {
+        "ora": "23:40",
         "fine": "00:00",
         "titolo": "1919. Fiume Città Di Vita",
         "descrizione": "Un Paese stravolto dalla Prima guerra mondiale. Un popolo che piange oltre 650.000 caduti nelle trincee. I politici umiliati al tavolo della pace di Versailles. Un poeta-soldato che trascina le folle ad ogni comizio. Una città che diventa emblema delle rivendicazioni irredentiste e nazionaliste. È in questa Italia che il 12 settembre del 1919 ha inizio l'impresa di Fiume: l'avventura di Gabriele d'Annunzio e di un manipolo di legionari partiti da Ronchi in Friuli, contro il volere del potere costituito, per occupare la città adriatica e annetterla all'Italia, instaurare la Reggenza del Carnaro, fondare un \"mito\" destinato a influenzare la cultura e la politica italiana e internazionale, l'estetica e il lessico, ben oltre il Ventennio fascista.",
