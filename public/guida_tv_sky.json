@@ -124,24 +124,24 @@
       },
       {
         "ora": "12:25",
-        "fine": "13:35",
+        "fine": "13:50",
         "titolo": "GP Madrid: Prove libere 3",
         "descrizione": "Al \"Madring\" 60 minuti per le ultime modifiche e per trovare il feeling in vista delle qualifiche. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3e1aeb1a-841a-4fea-aa8b-a2cb4bc442d7/background/600"
       },
       {
-        "ora": "13:35",
-        "fine": "13:50",
+        "ora": "13:50",
+        "fine": "14:10",
         "titolo": "F1 Paddock Live Post Libere",
         "descrizione": "Commenti a caldo, analisi e interviste dopo la sessione di prove libere. Con Davide Camicioli e la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/53d52fdb-6dad-4754-ab3f-ab84eb146d1c/background/600"
       },
       {
-        "ora": "13:50",
+        "ora": "14:10",
         "fine": "14:30",
-        "titolo": "Milito",
-        "descrizione": "Calcio.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/10265735-6fe3-4a96-a031-494b990861c7/background/600"
+        "titolo": "Sky Sport Watch 2026 Ep.2 11/09/2026",
+        "descrizione": "Scopriamo il mondo dell'orologeria e il suo rapporto con lo sport e lo stile di vita relativo.",
+        "immagine": "https://img-guidatv.org/8714/sky-sport-watch-2026-ep-2-11-09-2026/2.jpg"
       },
       {
         "ora": "14:30",
@@ -675,13 +675,13 @@
       },
       {
         "ora": "15:55",
-        "fine": "17:50",
+        "fine": "18:00",
         "titolo": "Chelsea - Hull City",
         "descrizione": "... Premier League. - Dallo Stamford Bridge di Londra, Inghilterra.",
         "immagine": "https://img-guidatv.org/partite/premierleague.jpeg"
       },
       {
-        "ora": "17:50",
+        "ora": "18:00",
         "fine": "20:00",
         "titolo": "Spezia - Livorno",
         "descrizione": "Dallo Stadio Alberto Picco di La Spezia, Italia.",
@@ -815,7 +815,7 @@
       {
         "ora": "22:00",
         "fine": "00:30",
-        "titolo": "Finale Femminile",
+        "titolo": "Sabalenka - Rybakina Finale Femminile",
         "descrizione": "Dall'USTA Billie Jean King National Tennis Center di New York, Stati Uniti.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       }
@@ -932,38 +932,17 @@
       },
       {
         "ora": "13:50",
-        "fine": "14:25",
+        "fine": "14:30",
         "titolo": "F1 Paddock Live Post Libere",
         "descrizione": "Commenti a caldo, analisi e interviste dopo la sessione di prove libere. Con Davide Camicioli e la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/53d52fdb-6dad-4754-ab3f-ab84eb146d1c/background/600"
       },
       {
-        "ora": "14:25",
-        "fine": "14:30",
-        "titolo": "Monza",
-        "descrizione": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6fad1b2f-569b-44b3-89a8-59d6ea50b85f/background/600"
-      },
-      {
         "ora": "14:30",
-        "fine": "15:15",
+        "fine": "15:55",
         "titolo": "Madrid: Sprint Race",
         "descrizione": "Segui l'appuntamento con la gara di Formula 2.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3a542d52-1bfa-4b61-8552-1c981d5e1d43/background/600"
-      },
-      {
-        "ora": "15:15",
-        "fine": "15:30",
-        "titolo": "F1 Warm Up",
-        "descrizione": "l nostro riscaldamento in vista delle qualifiche: i temi principali del weekend analizzati dalla squadra di Sky F1. Conduce Davide Camicioli.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/312e03a7-5099-47d4-88f9-18777813f3fe/background/600"
-      },
-      {
-        "ora": "15:30",
-        "fine": "15:55",
-        "titolo": "F1 Paddock Live Pre Qualifiche",
-        "descrizione": "Analisi, pronostici, notizie dal paddock e gli ultimi preparativi in pit lane: si scalda l'attesa in vista delle qualifiche.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d00ea2ff-12f4-4eea-911f-51c50b66b2d7/background/600"
       },
       {
         "ora": "15:55",
@@ -1197,13 +1176,13 @@
       },
       {
         "ora": "14:30",
-        "fine": "14:55",
+        "fine": "14:50",
         "titolo": "San Marino e Riviera di Rimini",
         "descrizione": "... Rimini MotoGP Paddock Live Sprint. - Le ultime notizie e le interviste prima della gara Sprint attraverso il racconto degli inviati e dei telecronisti di Sky Sport MotoGP.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b6aea64c-a38f-4360-8295-e6074e3589ff/background/600"
       },
       {
-        "ora": "14:55",
+        "ora": "14:50",
         "fine": "15:45",
         "titolo": "GP San Marino e Riviera di Rimini: Sprint Race",
         "descrizione": "... Rimini: Sprint Race MotoGP. - Quattordicesimo appuntamento del mondiale 2026: al Misano World Circuit si accendono i motori per la Sprint della MotoGP. Telecronaca Meda- Sanchini",
@@ -1392,13 +1371,13 @@
       },
       {
         "ora": "15:50",
-        "fine": "17:50",
+        "fine": "17:55",
         "titolo": "Francia - Turchia",
         "descrizione": "... Campionati Europei di pallavolo maschile. - EuroVolley 2026, nella Pool D i bi-campioni olimpici della Francia affrontano la Turchia. Tc Trezzi-Vullo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/fe48bf3a-739e-4e4c-9e98-2e9ec0e7ce0a/background/600"
       },
       {
-        "ora": "17:50",
+        "ora": "17:55",
         "fine": "19:55",
         "titolo": "Catania - Scafatese",
         "descrizione": "Dallo Stadio Massimino di Catania, Italia.",
@@ -1559,13 +1538,13 @@
       },
       {
         "ora": "16:00",
-        "fine": "17:00",
+        "fine": "17:10",
         "titolo": "Cile: Stage 1",
         "descrizione": "... Rally Championship. - Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ec8103e4-1f4c-4ede-b920-155329c170fe/background/600"
       },
       {
-        "ora": "17:00",
+        "ora": "17:10",
         "fine": "17:30",
         "titolo": "Marcialonga - Ep. 3 - Speciale Marcialonga Running 2026 09/09/2026",
         "descrizione": "Migliaia di runners affrontano i percorsi (21 km, 26 km, staffetta) tra Moena e Cavalese, sui luoghi della Marcialonga dello sci di fondo. Commento: Nicola Roggero e Silvia Vaia.",
@@ -2254,27 +2233,20 @@
       },
       {
         "ora": "13:50",
-        "fine": "14:25",
+        "fine": "14:15",
         "titolo": "F1 Paddock Live Post Libere",
         "descrizione": "Commenti a caldo, analisi e interviste dopo la sessione di prove libere. Con Davide Camicioli e la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/53d52fdb-6dad-4754-ab3f-ab84eb146d1c/background/600"
       },
       {
-        "ora": "14:25",
-        "fine": "14:30",
-        "titolo": "Speciale McLaren",
-        "descrizione": "Per celebrare le 1000 gare nella massima competizione automobilistica, la squadra ha fatto scendere in pista le proprie monoposto con un allestimento visivo unico.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8f59f41a-d39a-4b28-a4b8-c51f6f728835/background/600"
-      },
-      {
-        "ora": "14:30",
-        "fine": "15:15",
+        "ora": "14:15",
+        "fine": "15:25",
         "titolo": "Gara: GP Spagna",
         "descrizione": "A Barcellona nona gara stagionale: Piastri guida la classifica con 3 punti su Norris e 25 su Verstappen. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1ba2574b-0c83-440c-abe8-0c21593346bc/background/600"
       },
       {
-        "ora": "15:15",
+        "ora": "15:25",
         "fine": "15:30",
         "titolo": "F1 Warm Up",
         "descrizione": "l nostro riscaldamento in vista delle qualifiche: i temi principali del weekend analizzati dalla squadra di Sky F1. Conduce Davide Camicioli.",
@@ -2552,36 +2524,43 @@
       },
       {
         "ora": "00:15",
-        "fine": "00:30",
+        "fine": "00:25",
         "titolo": "SUPERTENNIS TODAY - USOPEN",
         "descrizione": "Il nostro studio di continuita' Live dall'Arthur Ashe Stadium",
         "immagine": "https://img-guidatv.org/54/supertennis-today-usopen/0.jpg"
       },
       {
-        "ora": "00:30",
-        "fine": "03:15",
-        "titolo": "US Open 2026 - Singolare maschile",
-        "descrizione": "A New York si gioca l'ultimo Slam dell'anno",
+        "ora": "00:25",
+        "fine": "03:25",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 64 - Alexander Zverev vs Karen Khachanov US OPEN 2026 # 1",
+        "descrizione": "Alexander Zverev vs Karen Khachanov US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "05:50",
-        "titolo": "US Open 2026 - Singolare femminile",
-        "descrizione": "A New York si gioca l'ultimo Slam dell'anno",
+        "ora": "03:25",
+        "fine": "05:15",
+        "titolo": "US Open 2026 - Doppio femminile - Ep. 4 - Katerina Siniakova/Taylor Townsend vs Ashlyn Krueger/Robin Montgomery US OPEN 2026 # 1",
+        "descrizione": "Katerina Siniakova/Taylor Townsend vs Ashlyn Krueger/Robin Montgomery US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
-        "ora": "05:50",
-        "fine": "07:55",
+        "ora": "05:15",
+        "fine": "05:25",
         "titolo": "US Open 2026 - Singolare maschile",
-        "descrizione": "A New York si gioca l'ultimo Slam dell'anno",
+        "descrizione": "Ben Shelton vs Carlos Alcaraz US OPEN 2026",
+        "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "07:05",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 61 - Ben Shelton vs Carlos Alcaraz US OPEN 2026 # 1",
+        "descrizione": "Ben Shelton vs Carlos Alcaraz US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
         "ora": "06:00",
         "fine": "08:50",
-        "titolo": "US Open 2026 - Singolare maschile",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 64 - Alexander Zverev vs Karen Khachanov US OPEN 2026 # 1",
         "descrizione": "Alexander Zverev vs Karen Khachanov US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
@@ -2595,7 +2574,7 @@
       {
         "ora": "09:05",
         "fine": "10:40",
-        "titolo": "US Open 2026 - Singolare femminile",
+        "titolo": "US Open 2026 - Singolare femminile - Ep. 44 - Aryna Sabalenka vs Jessica Pegula US OPEN 2026 # 1",
         "descrizione": "Aryna Sabalenka vs Jessica Pegula US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
@@ -2608,15 +2587,15 @@
       },
       {
         "ora": "13:30",
-        "fine": "14:15",
+        "fine": "15:10",
         "titolo": "SUPERTENNIS TODAY - USOPEN",
         "descrizione": "Il nostro studio di continuita' Live dall'Arthur Ashe Stadium",
         "immagine": "https://img-guidatv.org/54/supertennis-today-usopen/0.jpg"
       },
       {
-        "ora": "14:15",
+        "ora": "15:10",
         "fine": "17:40",
-        "titolo": "US Open 2026 - Singolare maschile",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 64 - Alexander Zverev vs Karen Khachanov US OPEN 2026 # 5",
         "descrizione": "Alexander Zverev vs Karen Khachanov US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
@@ -2774,17 +2753,17 @@
     "programmi": [
       {
         "ora": "01:00",
-        "fine": "03:00",
-        "titolo": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 Italia - Giappone",
-        "descrizione": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 Italia - Giappone",
-        "immagine": "https://img-guidatv.org/32/calcio-femminile-camp-mondiali-u20-polonia-2026-italia-giappone/0.jpg"
+        "fine": "02:50",
+        "titolo": "Gruppo D: Italia - Giappone",
+        "descrizione": "Nel Gruppo D dei Mondiali femminili Under 20 2026, l'Italia affronta il Giappone in una sfida importante per il cammino delle Azzurrine nella fase a gironi.",
+        "immagine": "https://img-guidatv.org/32/gruppo-d-italia-giappone/0.jpg"
       },
       {
-        "ora": "03:00",
+        "ora": "02:50",
         "fine": "06:00",
-        "titolo": "Pallavolo Femminile: Camp. Europei Istanbul 2026 Eventuali Finalissima Italia",
-        "descrizione": "Pallavolo Femminile: Camp. Europei Istanbul 2026 eventuali Finalissima Italia",
-        "immagine": "https://img-guidatv.org/32/pallavolo-femm/6.jpg"
+        "titolo": "Europei Femminili Di Pallavolo 2026 - Finale: Italia - Turchia",
+        "descrizione": "Italia contro Turchia, Velasco contro Santarelli. Questa partita è il rematch della finale mondiale dello scorso anno, la tensione agonistica e il tasso tecnico saranno sicuramente gli stessi.",
+        "immagine": "https://img-guidatv.org/32/europei-femminili-di-pallavolo-2026-finale-italia-turchia/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2906,17 +2885,17 @@
     "programmi": [
       {
         "ora": "01:00",
-        "fine": "03:00",
-        "titolo": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 Italia - Giappone",
-        "descrizione": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 Italia - Giappone",
-        "immagine": "https://img-guidatv.org/32/calcio-femminile-camp-mondiali-u20-polonia-2026-italia-giappone/0.jpg"
+        "fine": "02:50",
+        "titolo": "Gruppo D: Italia - Giappone",
+        "descrizione": "Nel Gruppo D dei Mondiali femminili Under 20 2026, l'Italia affronta il Giappone in una sfida importante per il cammino delle Azzurrine nella fase a gironi.",
+        "immagine": "https://img-guidatv.org/32/gruppo-d-italia-giappone/0.jpg"
       },
       {
-        "ora": "03:00",
+        "ora": "02:50",
         "fine": "06:00",
-        "titolo": "Pallavolo Femminile: Camp. Europei Istanbul 2026 Eventuali Finalissima Italia",
-        "descrizione": "Pallavolo Femminile: Camp. Europei Istanbul 2026 eventuali Finalissima Italia",
-        "immagine": "https://img-guidatv.org/32/pallavolo-femm/6.jpg"
+        "titolo": "Europei Femminili Di Pallavolo 2026 - Finale: Italia - Turchia",
+        "descrizione": "Italia contro Turchia, Velasco contro Santarelli. Questa partita è il rematch della finale mondiale dello scorso anno, la tensione agonistica e il tasso tecnico saranno sicuramente gli stessi.",
+        "immagine": "https://img-guidatv.org/32/europei-femminili-di-pallavolo-2026-finale-italia-turchia/0.jpg"
       },
       {
         "ora": "06:00",
@@ -4684,7 +4663,7 @@
         "ora": "18:15",
         "fine": "19:05",
         "titolo": "L'omicidio di Charlie Kirk",
-        "descrizione": "L'assassinio di Charlie Kirk diventa il simbolo di un'America divisa. Il documentario indaga le radici della crescente violenza politica.",
+        "descrizione": "L'assassinio di Charlie Kirk costringe a fare i conti con decenni di polarizzazione politica. Si analizza come i media, il potere e il risentimento abbiano aggravato le divisioni negli Stati Uniti e fatto sembrare inevitabile la violenza.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d8bf95b3-c357-431a-b0c4-90cbfad10fb7/background/600"
       },
       {
@@ -11272,225 +11251,225 @@
     "categoria": "Bambini",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:20",
+        "ora": "00:00",
+        "fine": "00:10",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep32 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:20",
-        "fine": "00:30",
+        "ora": "00:10",
+        "fine": "00:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep33 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:30",
-        "fine": "00:40",
+        "ora": "00:20",
+        "fine": "00:35",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep34 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:40",
-        "fine": "00:50",
+        "ora": "00:35",
+        "fine": "00:45",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep35 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:50",
-        "fine": "01:00",
+        "ora": "00:45",
+        "fine": "00:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep36 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:00",
-        "fine": "01:10",
+        "ora": "00:55",
+        "fine": "01:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep37 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:10",
-        "fine": "01:25",
+        "ora": "01:05",
+        "fine": "01:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep38 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:25",
-        "fine": "01:35",
+        "ora": "01:15",
+        "fine": "01:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep39 di 52 L'affascinante Samurai - Un antico samurai fantasma insegna ai bambini l'autodifesa.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:35",
-        "fine": "01:45",
+        "ora": "01:25",
+        "fine": "01:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep40 di 52 La Mummia - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:45",
-        "fine": "01:55",
+        "ora": "01:40",
+        "fine": "01:50",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep41 di 52 Lo specchio delle anime - Parte 1 - Dracula è tornato con una missione speciale per i bambini.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "02:05",
+        "ora": "01:50",
+        "fine": "02:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep42 di 52 Lo specchio delle anime - Parte 2 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mos",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:05",
-        "fine": "02:15",
+        "ora": "02:00",
+        "fine": "02:10",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep43 di 52 La Banshee - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:30",
+        "ora": "02:10",
+        "fine": "02:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep44 di 52 Spavento divertente - Il mostro più spaventoso del mondo vuole diventare un comico. Ma c'è un problema: non è divertente.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "02:40",
+        "ora": "02:20",
+        "fine": "02:35",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep45 di 52 Safari Jack - Arthur sfida i suoi studenti a riparare la bambola più malvagia che sia mai esistita.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:40",
-        "fine": "02:50",
+        "ora": "02:35",
+        "fine": "02:45",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep46 di 52 La signora Jorgersen - Per evitare di fare i compiti, i ragazzi devono ingaggiare una battaglia disperata con la signora Jorgensen-",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "03:00",
+        "ora": "02:45",
+        "fine": "02:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep47 di 52 La rasatura - Una ciurma di pirati zombie emerge dall'oceano per per sfidare i protettori della città.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "03:10",
+        "ora": "02:55",
+        "fine": "03:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep48 di 52 Scambio di corpo - Continua la guerra degli scherzi tra Edith e Dracula. Ma la macchina di un inventore locale complica la faida. Dracula e Edith si sono scambiati i corpi.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:10",
-        "fine": "03:25",
+        "ora": "03:05",
+        "fine": "03:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep49 di 52 Il gatto di Yule - Per un giorno all'anno, tutti i cacciatori di mostri devono ospitare e coccolare il terrificante gatto Yule islandese, ossessionato dalla moda. Ma dove finisce l'ospitali",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:25",
-        "fine": "03:35",
+        "ora": "03:15",
+        "fine": "03:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep50 di 52 Un oscuro domani - Ernest e Ishaani passano attraverso lo specchio per sperimentare una terrificante visione futura.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:35",
-        "fine": "03:45",
+        "ora": "03:25",
+        "fine": "03:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep51 di 52 L'arrivo del signore oscuro Parte 1 - Dracula decide di attaccare la famiglia Van Alten. Arthur si prepara alla battaglia, ma Dracula ha molti assi nella manica. Lo scontro finale ha inizio",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "03:55",
+        "ora": "03:40",
+        "fine": "03:50",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep52 di 52 L'arrivo del signore oscuro Parte 2 - I nostri eroi cercano disperatamente di evitare lo scontro con l'invincibile Dracula.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "04:05",
+        "ora": "03:50",
+        "fine": "04:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep1 di 52 Benvenuti a Gruselbrook - Tre fratelli, amanti dei mostri, vengono mandati a far visita al loro nonno. Scopriranno che il nonno vive nella città più infestata del mondo.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:05",
-        "fine": "04:15",
+        "ora": "04:00",
+        "fine": "04:10",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep2 di 52 L'addestramento - Entusiasti dall'idea essere addestrati per diventare cacciatori di mostri, Edith e Bo decidono di restare e di compiere il loro destino.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "04:30",
+        "ora": "04:10",
+        "fine": "04:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep3 di 52 Lo slime del tempo - Ernest viene congelato con lo slime del tempo e Arthur, Edith e Bo devono cercare di salvarlo da tutti gli imprevisti che gli capitano.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:30",
-        "fine": "04:40",
+        "ora": "04:20",
+        "fine": "04:30",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep4 di 52 Il Glarbergastling - Durante una sessione di addestramento, un Glarbergastling minaccia la città.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:40",
-        "fine": "04:50",
+        "ora": "04:30",
+        "fine": "04:45",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep5 di 52 Salviamo Lemmy - Ernest, Edith e Bo devono cercare di salvare un criceto posseduto da un demone.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:00",
+        "ora": "04:45",
+        "fine": "04:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep6 di 52 Che spavento! - Nella battaglia per il controllo del televisore, Arthur e i bambini fanno una scommessa. Bo, Edith ed Ernest hanno 24 ore per spaventare il nonno.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:00",
-        "fine": "05:10",
+        "ora": "04:55",
+        "fine": "05:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep7 di 52 Professor Dracula - Edith libera Dracula che, dopo aver parlato con i tre ragazzi, riesce a fuggire.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:10",
-        "fine": "05:20",
+        "ora": "05:05",
+        "fine": "05:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep8 di 52 L'appuntamento - Arthur punisce Ernest, Bo ed Edith per aver fatto scappare Dracula facendo lavare loro la sua macchina.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:20",
-        "fine": "05:35",
+        "ora": "05:15",
+        "fine": "05:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep9 di 52 La dama del lago - Edith, Ernest e Bo aiutano il nonno a cacciare una sirena d'acqua dolce.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:35",
-        "fine": "05:45",
+        "ora": "05:25",
+        "fine": "05:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep10 di 52 Rebecca - Arthur organizza una caccia al fantasma. Ishaani, Edith ed Ernest devono catturare Rebecca, un fantasma che abita in casa loro e che ha la passione per i lampadari.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:45",
-        "fine": "06:00",
+        "ora": "05:40",
+        "fine": "05:50",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep11 di 52 Il troll motociclista - Durante una visita oculistica Arthur lascia che Bo venga rapita da un troll motociclista.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
@@ -11504,80 +11483,122 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:25",
+        "fine": "06:20",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep3 di 26 Volare a tutti i costi / Yeti o non Yeti? - Passando in macchina Alvin vede che hanno installato una struttura per praticare Skydiving. / Dave porta i Chipmunks e le Chipettes in montagna.",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "06:25",
-        "fine": "06:50",
+        "ora": "06:20",
+        "fine": "06:45",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep4 di 26 Il rapimento di Dave / La bestia volante - Durante un temporale i Chipmunks rientrano a casa e non riescono a trovare piu' Dave. / Simon e Theodore devono fare un'importante ricerca.",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "06:50",
-        "fine": "07:15",
+        "ora": "06:45",
+        "fine": "07:05",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep5 di 26 La maledizione di MacBeth / La fantastica Zeela - A scuola fervono i preparativi per il nuovo spettacolo, ma nessuno e' contento. / Simon e' alle prese con il suo robot Geizmo.",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "07:15",
-        "fine": "07:40",
+        "ora": "07:05",
+        "fine": "07:20",
+        "titolo": "Alvinnn!!! and the Chipmunks",
+        "descrizione": "Ep10 di 26 I fuggitivi / Sherlock Chipmunk - Dave decide di farsi un regalo e compra un televisore all'ultima moda, a cui tiene molto. Purtroppo pero', mentre i ragazzi giocano con la palla in casa, il televisore va in mille pezzi.",
+        "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
+      },
+      {
+        "ora": "07:20",
+        "fine": "07:45",
         "titolo": "I puffi",
         "descrizione": "Quattrocchi scopre che Gargamella sta mettendo a punto una pillola per trasformarsi in Puffo. Quando Tempesta e Quattrocchi vengono catturati da quest'ultimo, i due riescono a liberarsi, ma nella fuga però si separano.",
         "immagine": "https://image.tmdb.org/t/p/w300/mQcHOcMDa6VhGupRpWjlbUkQSry.jpg"
       },
       {
-        "ora": "07:40",
-        "fine": "08:05",
+        "ora": "07:45",
+        "fine": "08:10",
         "titolo": "I puffi",
         "descrizione": "Gargamella è buono. Questo credono Zuccone e Begonia dopo essere finiti in una sua trappola. Contadino e Vanitoso trovano uno scrigno contenente un amuleto e lo portano al villaggio.",
         "immagine": "https://image.tmdb.org/t/p/w300/mQcHOcMDa6VhGupRpWjlbUkQSry.jpg"
       },
       {
-        "ora": "08:05",
-        "fine": "08:40",
+        "ora": "08:10",
+        "fine": "08:30",
         "titolo": "I puffi",
         "descrizione": "Un incantesimo priva Tempesta delle sue abilità di guerriera, trasferendole a Bocciolina, che parte alla conquista del bosco. Gargamella escogita un nuovo stratagemma per catturare gli odiati puffi.",
         "immagine": "https://image.tmdb.org/t/p/w300/mQcHOcMDa6VhGupRpWjlbUkQSry.jpg"
       },
       {
-        "ora": "08:40",
-        "fine": "09:05",
+        "ora": "08:30",
+        "fine": "08:45",
+        "titolo": "I puffi",
+        "descrizione": "Il puffo pittore desidera realizzare dei ritratti per l'anniversario del villaggio. Sta per arrivare al villaggio la Fata della Natura.",
+        "immagine": "https://image.tmdb.org/t/p/w300/mQcHOcMDa6VhGupRpWjlbUkQSry.jpg"
+      },
+      {
+        "ora": "08:45",
+        "fine": "09:10",
         "titolo": "I Marsupilami",
         "descrizione": "Ep5 di 26 - Bibi vuole un Marsupilami.// Gli alunni protestano alla mensa della scuola",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
-        "ora": "09:05",
-        "fine": "10:45",
+        "ora": "09:10",
+        "fine": "09:30",
         "titolo": "I Marsupilami",
         "descrizione": "Ep6 di 26 - Marcel imbroglia alla Gara/Il mestolo della Nonnina crea un pasticcio",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
-        "ora": "10:45",
-        "fine": "11:10",
+        "ora": "09:30",
+        "fine": "09:55",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "09:55",
+        "fine": "10:15",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "10:15",
+        "fine": "10:40",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "10:40",
+        "fine": "11:05",
         "titolo": "Lo Show di Patrick Stella",
         "descrizione": "Ep8 di 13 Il Pat-Tathlon/Dalle stelle alle stalle - I Patrick lottano per il controllo dellaTV. / Upturn si trasferisce dagli Stella.",
         "immagine": "https://image.tmdb.org/t/p/w300/hOomPc8x2lDxWRS8ltDE0gHUK7z.jpg"
       },
       {
-        "ora": "11:10",
-        "fine": "11:35",
-        "titolo": "Sasso, Carta, Forbici",
-        "descrizione": "Ep9 di 10 - Il trio guarda l'ultimo film di Moonami. / I ragazzi vengono processati per aver ferito un ragno.",
-        "immagine": "https://image.tmdb.org/t/p/w300/hLpTtTtXu5qTZTGayYLVsiOOoNA.jpg"
+        "ora": "11:05",
+        "fine": "11:30",
+        "titolo": "Alvinnn!!! and the Chipmunks",
+        "descrizione": "Ep18 di 26 Alvin e l'ecologia / Il pettegolo - I Chipmunk e le Chipette si iscrivono ad un concorso dove verra' premiato chi rispetta l'ambiente e non spreca l'energia. Alvin e' molto competitivo e il suo obiettivo e' solo vincere!",
+        "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "11:35",
+        "ora": "11:30",
+        "fine": "11:50",
+        "titolo": "Alvinnn!!! and the Chipmunks",
+        "descrizione": "Ep19 di 26 Il supereroe mascherato / Lo stile di Jeanette - A Theodore piace moltissimo giocare ai supereroi, ma spesso e' costretto a giocare da solo e...",
+        "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
+      },
+      {
+        "ora": "11:50",
         "fine": "12:00",
-        "titolo": "Sasso, Carta, Forbici",
-        "descrizione": "Ep10 di 10 - Carta e Forbici partecipano a una competizione. / Forbici diventa un supercattivo.",
-        "immagine": "https://image.tmdb.org/t/p/w300/hLpTtTtXu5qTZTGayYLVsiOOoNA.jpg"
+        "titolo": "Alvinnn!!! and the Chipmunks",
+        "descrizione": "Alvin e' stato scelto dal suo istruttore per un importante incontro di karate, ma quando Dave scopre chi e' il suo avversario, cerca di convincerlo a desistere.",
+        "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
         "ora": "12:00",
@@ -11609,38 +11630,73 @@
       },
       {
         "ora": "13:35",
-        "fine": "14:00",
+        "fine": "13:55",
         "titolo": "Pinky Malinky - Pinky Malinky",
         "descrizione": "S1 Ep1 Pinky Malinky - Una troupe documentaristica segue Pinky Malinky mentre cerca di risollevare lo spirito della scuola spingendosi a misure ridicole per diventare la nuova mascotte.",
         "immagine": "https://image.tmdb.org/t/p/w300/qXGRafqFfyja23kqY4jpZtWQPLZ.jpg"
       },
       {
-        "ora": "14:00",
-        "fine": "14:25",
+        "ora": "13:55",
+        "fine": "14:20",
         "titolo": "Pinky Malinky - Animaletto domestico / Snack",
         "descrizione": "S1 Ep2 Animaletto domestico / Snack - Pinky si mette in testa di trasformare un gatto selvatico nell'animale domestico perfetto. / Quando scopre che uno snack locale amatissimo sta per essere ritirato...",
         "immagine": "https://image.tmdb.org/t/p/w300/qXGRafqFfyja23kqY4jpZtWQPLZ.jpg"
       },
       {
-        "ora": "14:25",
-        "fine": "15:35",
+        "ora": "14:20",
+        "fine": "14:45",
         "titolo": "Lo Show di Patrick Stella",
         "descrizione": "Patrick Stella gestisce il proprio talk show a casa sua con l'aiuto della sua famiglia.",
         "immagine": "https://image.tmdb.org/t/p/w300/hOomPc8x2lDxWRS8ltDE0gHUK7z.jpg"
       },
       {
-        "ora": "15:35",
-        "fine": "16:00",
+        "ora": "14:45",
+        "fine": "15:05",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "15:05",
+        "fine": "15:30",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "15:30",
+        "fine": "15:55",
         "titolo": "I Marsupilami",
         "descrizione": "Ep3 di 26 - Jade affronta Mr. Best / I Marsupilami salvano lo spettacolo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
-        "ora": "16:00",
-        "fine": "17:15",
+        "ora": "15:55",
+        "fine": "16:15",
         "titolo": "I Marsupilami",
         "descrizione": "Ep4 di 26 - L'album di Mica finisce tra le mani di Acu/Twister costruisce la sua casa.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
+      },
+      {
+        "ora": "16:15",
+        "fine": "16:40",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Lincoln Loud, un ragazzino di 11 anni con ben dieci sorelle, trova modi creativi per sopravvivere nel caos quotidiano di casa sua.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "16:40",
+        "fine": "17:00",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Lincoln Loud, un ragazzino di 11 anni con ben dieci sorelle, trova modi creativi per sopravvivere nel caos quotidiano di casa sua.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "17:00",
+        "fine": "17:15",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Ep16 di 26 Il terrore della classe/Il furto perfetto - Ronnie Anne vuole entrare nell'accademia degli scherzi di Luan./Lily scambia accidentalmente Eunice.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
       },
       {
         "ora": "17:15",
@@ -11665,31 +11721,52 @@
       },
       {
         "ora": "18:25",
-        "fine": "18:50",
+        "fine": "18:45",
         "titolo": "Henry Danger",
         "descrizione": "Ep16 di 22 L'invasione di Toddler - Un cesto regalo si rivela essere una trappola: Toddler si introduce nella Man-Caverna e immobilizza Henry e Capitan Man!",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "18:50",
-        "fine": "19:15",
-        "titolo": "Fuga da New Yoke",
-        "descrizione": "S1 Ep3 Fuga da New Yoke - I ribelli combattono contro il Consiglio del Caos per ottenere il Frammento del Prisma.",
-        "immagine": "https://img-guidatv.org/320/fuga-da-new-yoke/0.jpg"
+        "ora": "18:45",
+        "fine": "19:10",
+        "titolo": "Sonic Prime",
+        "descrizione": "Ep3 di 23 Fuga da New Yoke - I ribelli combattono contro il Consiglio del Caos per ottenere il Frammento del Prisma.",
+        "immagine": "https://image.tmdb.org/t/p/w300/mlDVnjgx89bmGvtXnKYDbowpadV.jpg"
       },
       {
-        "ora": "19:15",
-        "fine": "19:40",
-        "titolo": "La giungla ostile",
-        "descrizione": "S1 Ep4 La giungla ostile - In una dimensione chiamata Bosco-Labirinto, Sonic incontra alter ego dei suoi amici che vivono sugli alberi.",
-        "immagine": "https://img-guidatv.org/320/la-giungla-ostile/0.jpg"
+        "ora": "19:10",
+        "fine": "19:35",
+        "titolo": "Sonic Prime",
+        "descrizione": "Ep4 di 23 La giungla ostile - In una dimensione chiamata Bosco-Labirinto, Sonic incontra alter ego dei suoi amici che vivono sugli alberi.",
+        "immagine": "https://image.tmdb.org/t/p/w300/mlDVnjgx89bmGvtXnKYDbowpadV.jpg"
       },
       {
-        "ora": "19:40",
-        "fine": "20:55",
+        "ora": "19:35",
+        "fine": "19:55",
         "titolo": "Sasso, Carta, Forbici",
         "descrizione": "Ep6 di 10 - Il trio cerca di superare i Rat Bro in bravura. / Forbici esce con una pop star.",
         "immagine": "https://image.tmdb.org/t/p/w300/hLpTtTtXu5qTZTGayYLVsiOOoNA.jpg"
+      },
+      {
+        "ora": "19:55",
+        "fine": "20:20",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "20:20",
+        "fine": "20:30",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "20:30",
+        "fine": "20:55",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
       },
       {
         "ora": "20:55",
@@ -11701,9 +11778,9 @@
       {
         "ora": "21:20",
         "fine": "21:45",
-        "titolo": "I Marsupilami",
-        "descrizione": "Ep11 di 26 - Jade si appassiona alla musica. / Punch è tra i tra i gatti ma Stan lo scopre.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
+        "titolo": "Alvinnn!!! and the Chipmunks",
+        "descrizione": "Ep11 di 26 La bellezza non e' tutto / Ammiratore segreto - I ragazzi decidono di fare una gita in una riserva naturale. Improvvisamente un piccolo animaletto in via d'estinzione si attacca al viso di Brittany e...",
+        "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
         "ora": "21:45",
@@ -11714,20 +11791,27 @@
       },
       {
         "ora": "22:05",
+        "fine": "22:15",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep21 di 52 Torte in volo - Dopo una missione Ernest e Bo suonano per sbaglio il Gong dei Gremlins. Appaiono tre Gremlins che vogliono distruggere l'aereo dei cacciatori di mostri.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "22:15",
         "fine": "22:30",
-        "titolo": "Alvinnn!!! and the Chipmunks",
-        "descrizione": "Ep11 di 26 La bellezza non e' tutto / Ammiratore segreto - I ragazzi decidono di fare una gita in una riserva naturale. Improvvisamente un piccolo animaletto in via d'estinzione si attacca al viso di Brittany e...",
-        "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep19 di 52 La polizia dei mostri - Ernest, Edith e Bo indagano su dei presunti furti che stanno avvenendo nel parco. Scopriranno che i responsabili sono tre elfi che hanno perso casa.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
         "ora": "22:30",
-        "fine": "22:45",
+        "fine": "22:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep24 di 52 Cena con sorpresa - La madre di Ishaani crede che Arthur abbia scoperto il loro segreto. Per dimostrarle che non è così Ernest organizza una cena con le due famiglie.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "22:45",
+        "ora": "22:40",
         "fine": "22:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep25 di 52 La nonna e il lupo mannaro parte 1 - Per capire come spezzare la maledizione di un lupo mannaro, Arthur scongela Tamsyn, la nonna dei tre ragazzi.",
@@ -11742,35 +11826,35 @@
       },
       {
         "ora": "23:05",
-        "fine": "23:20",
+        "fine": "23:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep27 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:20",
-        "fine": "23:30",
+        "ora": "23:15",
+        "fine": "23:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep28 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:30",
-        "fine": "23:45",
+        "ora": "23:25",
+        "fine": "23:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep29 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:45",
-        "fine": "23:55",
+        "ora": "23:40",
+        "fine": "23:50",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep30 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:55",
-        "fine": "00:05",
+        "ora": "23:50",
+        "fine": "00:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep31 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
@@ -17438,33 +17522,33 @@
       {
         "ora": "00:15",
         "fine": "01:50",
-        "titolo": "Indagini del cuore",
-        "descrizione": "Annie sceglie di trascorrere un periodo in un resort per ritrovare se stessa e lasciarsi alle spalle le preoccupazioni quotidiane. Ma la sua vacanza prende una piega inattesa quando si ritrova coinvolta in un'indagine sotto copertura legata al furto di preziosi gioielli. Tra misteri e colpi di scena, nulla va come previsto.",
-        "immagine": "https://image.tmdb.org/t/p/w300/vuYeFhJn6MfrPJ36OF7mT0sE360.jpg"
+        "titolo": "Lea",
+        "descrizione": "Lea è un'infermiera specializzata che, dopo un momento difficile, fa ritorno al reparto di pediatria dell'ospedale di Ferrara. Grazie alla sua grande forza è riuscita a trasformare un grande dolore in un dono speciale che le consente di empatizzare con i piccoli pazienti e i loro familiari, ma la sua vita non è avara di sorprese: tornata a lavoro, infatti, Lea deve misurarsi con la presenza del suo ex marito, nuovo primario del reparto, e l'incontro con un affascinante musicista.",
+        "immagine": "https://image.tmdb.org/t/p/w300/i1L629qIaTBWujdubknVd1v39U8.jpg"
       },
       {
         "ora": "01:50",
-        "fine": "01:55",
+        "fine": "02:05",
         "titolo": "Che Tempo Fa",
         "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare.",
         "immagine": "https://img-guidatv.org/1/che-tempo-fa/6.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "03:25",
+        "ora": "02:05",
+        "fine": "03:35",
         "titolo": "Sottovoce E Dintorni",
         "descrizione": "Gigi Marzullo ripercorre l'itinerario umano, artistico e professionale di personaggi dello sport, dello spettacolo o della cultura.",
         "immagine": "https://img-guidatv.org/1/sottovoce/6.jpg"
       },
       {
-        "ora": "03:25",
-        "fine": "04:40",
+        "ora": "03:35",
+        "fine": "04:50",
         "titolo": "Reazione A Catena Weekend",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena-weekend/0.jpg"
       },
       {
-        "ora": "04:40",
+        "ora": "04:50",
         "fine": "05:30",
         "titolo": "Techetechetè Notte - 26",
         "descrizione": "Il grande spettacolo televisivo e la musica, gli sketch più amati, i protagonisti e i dimenticati, raccontano la Tv e le trasformazioni nell'identità del nostro Paese",
@@ -17689,33 +17773,33 @@
       {
         "ora": "00:15",
         "fine": "01:50",
-        "titolo": "Indagini del cuore",
-        "descrizione": "Annie sceglie di trascorrere un periodo in un resort per ritrovare se stessa e lasciarsi alle spalle le preoccupazioni quotidiane. Ma la sua vacanza prende una piega inattesa quando si ritrova coinvolta in un'indagine sotto copertura legata al furto di preziosi gioielli. Tra misteri e colpi di scena, nulla va come previsto.",
-        "immagine": "https://image.tmdb.org/t/p/w300/vuYeFhJn6MfrPJ36OF7mT0sE360.jpg"
+        "titolo": "Lea",
+        "descrizione": "Lea è un'infermiera specializzata che, dopo un momento difficile, fa ritorno al reparto di pediatria dell'ospedale di Ferrara. Grazie alla sua grande forza è riuscita a trasformare un grande dolore in un dono speciale che le consente di empatizzare con i piccoli pazienti e i loro familiari, ma la sua vita non è avara di sorprese: tornata a lavoro, infatti, Lea deve misurarsi con la presenza del suo ex marito, nuovo primario del reparto, e l'incontro con un affascinante musicista.",
+        "immagine": "https://image.tmdb.org/t/p/w300/i1L629qIaTBWujdubknVd1v39U8.jpg"
       },
       {
         "ora": "01:50",
-        "fine": "01:55",
+        "fine": "02:05",
         "titolo": "Che Tempo Fa",
         "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare.",
         "immagine": "https://img-guidatv.org/1/che-tempo-fa/6.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "03:25",
+        "ora": "02:05",
+        "fine": "03:35",
         "titolo": "Sottovoce E Dintorni",
         "descrizione": "Gigi Marzullo ripercorre l'itinerario umano, artistico e professionale di personaggi dello sport, dello spettacolo o della cultura.",
         "immagine": "https://img-guidatv.org/1/sottovoce/6.jpg"
       },
       {
-        "ora": "03:25",
-        "fine": "04:40",
+        "ora": "03:35",
+        "fine": "04:50",
         "titolo": "Reazione A Catena Weekend",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena-weekend/0.jpg"
       },
       {
-        "ora": "04:40",
+        "ora": "04:50",
         "fine": "05:30",
         "titolo": "Techetechetè Notte - 26",
         "descrizione": "Il grande spettacolo televisivo e la musica, gli sketch più amati, i protagonisti e i dimenticati, raccontano la Tv e le trasformazioni nell'identità del nostro Paese",
@@ -17932,17 +18016,10 @@
     "programmi": [
       {
         "ora": "00:05",
-        "fine": "00:52",
+        "fine": "00:55",
         "titolo": "TG2 Storie. I Racconti Della Settimana",
         "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianità. Direttore Antonio Preziosi Vicedirettore Alfonso Samengo  Curato e condotto da Adriana Pannitteri",
         "immagine": "https://img-guidatv.org/2/tg2-storie/6.jpg"
-      },
-      {
-        "ora": "00:52",
-        "fine": "00:55",
-        "titolo": "Meteo 2",
-        "descrizione": "Meteo 2",
-        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
       },
       {
         "ora": "00:55",
@@ -18141,17 +18218,10 @@
     "programmi": [
       {
         "ora": "00:05",
-        "fine": "00:52",
+        "fine": "00:55",
         "titolo": "TG2 Storie. I Racconti Della Settimana",
         "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianità. Direttore Antonio Preziosi Vicedirettore Alfonso Samengo  Curato e condotto da Adriana Pannitteri",
         "immagine": "https://img-guidatv.org/2/tg2-storie/6.jpg"
-      },
-      {
-        "ora": "00:52",
-        "fine": "00:55",
-        "titolo": "Meteo 2",
-        "descrizione": "Meteo 2",
-        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
       },
       {
         "ora": "00:55",
@@ -18350,66 +18420,66 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "00:25",
+        "titolo": "TG3 Mondo",
+        "descrizione": "A cura di Stefano Pizzetti",
+        "immagine": "https://img-guidatv.org/3/tg-3-mondo/5.jpg"
       },
       {
-        "ora": "00:15",
-        "fine": "00:20",
+        "ora": "00:25",
+        "fine": "00:30",
         "titolo": "TG3 Agenda Del Mondo",
         "descrizione": "A cura di Roberto Balducci",
         "immagine": "https://img-guidatv.org/3/tg-3-agenda-del-mondo/5.jpg"
       },
       {
-        "ora": "00:20",
-        "fine": "00:25",
+        "ora": "00:30",
+        "fine": "00:35",
         "titolo": "Meteo 3",
         "descrizione": "Meteo 3",
         "immagine": "https://img-guidatv.org/3/meteo-3/5.jpg"
       },
       {
-        "ora": "00:25",
-        "fine": "02:30",
+        "ora": "00:35",
+        "fine": "02:35",
         "titolo": "Anna (2023)",
-        "descrizione": "Anna è una giovane sarda che ama pascolare le pecore e produrre formaggio nella terra del padre. La sua vita quotidiana viene sconvolta quando un progetto edilizio minaccia di cementificare i suoi pascoli per costruire un grande albergo. Determinata a non cedere, la ragazza avvia una dura battaglia legale e personale contro tutto e tutti.",
-        "immagine": "https://image.tmdb.org/t/p/w300//dWlysEOCmNAmjmVz3yqSvLeu1ey.jpg"
+        "descrizione": "Anna è una ragazza sarda che ama pascolare le pecore e vendere il formaggio. Abita e lavora la terra di suo padre, fin quando un giorno non vogliono costruirci un grande albergo sopra. Anna intraprenderà una battaglia personale e legale contro tutti e tutto per difendere la sua terra.",
+        "immagine": "https://image.tmdb.org/t/p/w300/dWlysEOCmNAmjmVz3yqSvLeu1ey.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "02:35",
+        "ora": "02:35",
+        "fine": "02:40",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "03:15",
+        "ora": "02:40",
+        "fine": "02:50",
+        "titolo": "Fuori Orario. Cose (Mai) Viste",
+        "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta E LA NAVE VA. FUORI ORARIO VENEZIA 2026 di Fulvio Baglivi, Simona Fina, Lorenzo Esposito, Roberto Turigliatto (3)",
+        "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
+      },
+      {
+        "ora": "02:50",
+        "fine": "03:25",
         "titolo": "Il Taccuino Del Regista - Conversazione Con Aleksandr Sokurov",
         "descrizione": "In attesa che venga distribuito in Italia il magistrale film di Aleksandr Sokurov, Taccuino di un regista (Director's Diary), straordinaria traversata della storia sovietica e mondiale dal 1957 al 1991, viene presentato in prima visione TV la conversazione sul film che Fuori Orario ha realizzata col maestro russo a Venezia durante la Mostra dell'anno scorso e che prosegue idealmente quella  precedente, già trasmessa, dedicata a Fairy Tales.(2025) Di: Fulvio Baglici, Lorenzo Esposito, Roberto Turigliatto",
         "immagine": "https://img-guidatv.org/3/il-taccuino-del-regista-conversazione-con-aleksandr-sokurov/0.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "04:50",
+        "ora": "03:25",
+        "fine": "05:00",
         "titolo": "Le ombre degli avi dimenticati",
         "descrizione": "Ivan perde tragicamente l'adorata Marichka, figlia dell'assassino di suo padre. Dopo un lungo lutto, il ragazzo sposa Palagna: il suo cuore però appartiene sempre a Marichka, e per riconquistarlo Palagna decide di rivolgersi a una strega...",
         "immagine": "https://image.tmdb.org/t/p/w300/1BhXx0mBr4BRelgWi69P6cnvciz.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:53",
+        "ora": "05:00",
+        "fine": "05:58",
         "titolo": "Un couple",
         "descrizione": "Un couple è un film su una lunga relazione tra un uomo e una donna. L'uomo è Leo Tolstoj. La donna è sua moglie, Sofia. I due furono sposati per trentasei anni, ebbero tredici figli, nove dei quali sopravvissero. Entrambi tenevano un diario. Anche se vivevano insieme, nella stessa casa, si scrivevano spesso delle lettere.  La pellicola è stata girata in un bellissimo giardino di Belle Île, un'isola al largo delle coste della Bretagna.",
         "immagine": "https://image.tmdb.org/t/p/w300/iMmRJ3pwrKuH5vBhcdDplzivmIU.jpg"
-      },
-      {
-        "ora": "05:53",
-        "fine": "06:00",
-        "titolo": "Fuori Orario. Cose (Mai) Viste",
-        "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta E LA NAVE VA. FUORI ORARIO VENEZIA 2026 di Fulvio Baglivi, Simona Fina, Lorenzo Esposito, Roberto Turigliatto (3)",
-        "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
         "ora": "06:00",
@@ -18580,66 +18650,66 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "00:25",
+        "titolo": "TG3 Mondo",
+        "descrizione": "A cura di Stefano Pizzetti",
+        "immagine": "https://img-guidatv.org/3/tg-3-mondo/5.jpg"
       },
       {
-        "ora": "00:15",
-        "fine": "00:20",
+        "ora": "00:25",
+        "fine": "00:30",
         "titolo": "TG3 Agenda Del Mondo",
         "descrizione": "A cura di Roberto Balducci",
         "immagine": "https://img-guidatv.org/3/tg-3-agenda-del-mondo/5.jpg"
       },
       {
-        "ora": "00:20",
-        "fine": "00:25",
+        "ora": "00:30",
+        "fine": "00:35",
         "titolo": "Meteo 3",
         "descrizione": "Meteo 3",
         "immagine": "https://img-guidatv.org/3/meteo-3/5.jpg"
       },
       {
-        "ora": "00:25",
-        "fine": "02:30",
+        "ora": "00:35",
+        "fine": "02:35",
         "titolo": "Anna (2023)",
-        "descrizione": "Anna è una giovane sarda che ama pascolare le pecore e produrre formaggio nella terra del padre. La sua vita quotidiana viene sconvolta quando un progetto edilizio minaccia di cementificare i suoi pascoli per costruire un grande albergo. Determinata a non cedere, la ragazza avvia una dura battaglia legale e personale contro tutto e tutti.",
-        "immagine": "https://image.tmdb.org/t/p/w300//dWlysEOCmNAmjmVz3yqSvLeu1ey.jpg"
+        "descrizione": "Anna è una ragazza sarda che ama pascolare le pecore e vendere il formaggio. Abita e lavora la terra di suo padre, fin quando un giorno non vogliono costruirci un grande albergo sopra. Anna intraprenderà una battaglia personale e legale contro tutti e tutto per difendere la sua terra.",
+        "immagine": "https://image.tmdb.org/t/p/w300/dWlysEOCmNAmjmVz3yqSvLeu1ey.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "02:35",
+        "ora": "02:35",
+        "fine": "02:40",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "03:15",
+        "ora": "02:40",
+        "fine": "02:50",
+        "titolo": "Fuori Orario. Cose (Mai) Viste",
+        "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta E LA NAVE VA. FUORI ORARIO VENEZIA 2026 di Fulvio Baglivi, Simona Fina, Lorenzo Esposito, Roberto Turigliatto (3)",
+        "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
+      },
+      {
+        "ora": "02:50",
+        "fine": "03:25",
         "titolo": "Il Taccuino Del Regista - Conversazione Con Aleksandr Sokurov",
         "descrizione": "In attesa che venga distribuito in Italia il magistrale film di Aleksandr Sokurov, Taccuino di un regista (Director's Diary), straordinaria traversata della storia sovietica e mondiale dal 1957 al 1991, viene presentato in prima visione TV la conversazione sul film che Fuori Orario ha realizzata col maestro russo a Venezia durante la Mostra dell'anno scorso e che prosegue idealmente quella  precedente, già trasmessa, dedicata a Fairy Tales.(2025) Di: Fulvio Baglici, Lorenzo Esposito, Roberto Turigliatto",
         "immagine": "https://img-guidatv.org/3/il-taccuino-del-regista-conversazione-con-aleksandr-sokurov/0.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "04:50",
+        "ora": "03:25",
+        "fine": "05:00",
         "titolo": "Le ombre degli avi dimenticati",
         "descrizione": "Ivan perde tragicamente l'adorata Marichka, figlia dell'assassino di suo padre. Dopo un lungo lutto, il ragazzo sposa Palagna: il suo cuore però appartiene sempre a Marichka, e per riconquistarlo Palagna decide di rivolgersi a una strega...",
         "immagine": "https://image.tmdb.org/t/p/w300/1BhXx0mBr4BRelgWi69P6cnvciz.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:53",
+        "ora": "05:00",
+        "fine": "05:58",
         "titolo": "Un couple",
         "descrizione": "Un couple è un film su una lunga relazione tra un uomo e una donna. L'uomo è Leo Tolstoj. La donna è sua moglie, Sofia. I due furono sposati per trentasei anni, ebbero tredici figli, nove dei quali sopravvissero. Entrambi tenevano un diario. Anche se vivevano insieme, nella stessa casa, si scrivevano spesso delle lettere.  La pellicola è stata girata in un bellissimo giardino di Belle Île, un'isola al largo delle coste della Bretagna.",
         "immagine": "https://image.tmdb.org/t/p/w300/iMmRJ3pwrKuH5vBhcdDplzivmIU.jpg"
-      },
-      {
-        "ora": "05:53",
-        "fine": "06:00",
-        "titolo": "Fuori Orario. Cose (Mai) Viste",
-        "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta E LA NAVE VA. FUORI ORARIO VENEZIA 2026 di Fulvio Baglivi, Simona Fina, Lorenzo Esposito, Roberto Turigliatto (3)",
-        "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
         "ora": "06:00",
@@ -21685,14 +21755,14 @@
       },
       {
         "ora": "05:00",
-        "fine": "05:29",
+        "fine": "05:24",
         "titolo": "Stranger Europe - Roma",
         "descrizione": "Mattia Briga nell'episodio di Stranger Europe gioca in casa. Il cantautore romano, insieme a Ema Stokholma vanno alla scoperta della \"città eterna\". I due viaggiatori entrano in un quadro di De Chirico spostandosi, nel quartiere dell'Eur, dal Colosseo quadrato all'obelisco meno nobile. Dal nuovo della città all'antico della tradizione di Testaccio per incontrare Percy Bysshe Shelley, John Keats, Antonio Gramsci. Una visita alle bambole malate dell'ospedale di via di Ripetta e una cena in tram, in giro con luci e musiche. Ema è modella, speaker, conduttrice ma a piazza Barberini serve una dj per ballare. La notte è lunga e dietro ai Mercati Generali ci sono locali per chiudere la giornata.",
         "immagine": "https://img-guidatv.org/30/stranger-europe/6.jpg"
       },
       {
-        "ora": "05:29",
-        "fine": "06:10",
+        "ora": "05:24",
+        "fine": "06:05",
         "titolo": "Coroner",
         "descrizione": "Dopo l'improvvisa morte del marito, Jenny si trasferisce con il figlio adolescente a Toronto, dove prende servizio come medico legale e collabora con il detective McAvoy alla risoluzione di alcuni casi di omicidio.",
         "immagine": "https://image.tmdb.org/t/p/w300/7zEVxcNEDxVtRf29zvjjy6cazm4.jpg"
@@ -21915,14 +21985,14 @@
       },
       {
         "ora": "05:00",
-        "fine": "05:29",
+        "fine": "05:24",
         "titolo": "Stranger Europe - Roma",
         "descrizione": "Mattia Briga nell'episodio di Stranger Europe gioca in casa. Il cantautore romano, insieme a Ema Stokholma vanno alla scoperta della \"città eterna\". I due viaggiatori entrano in un quadro di De Chirico spostandosi, nel quartiere dell'Eur, dal Colosseo quadrato all'obelisco meno nobile. Dal nuovo della città all'antico della tradizione di Testaccio per incontrare Percy Bysshe Shelley, John Keats, Antonio Gramsci. Una visita alle bambole malate dell'ospedale di via di Ripetta e una cena in tram, in giro con luci e musiche. Ema è modella, speaker, conduttrice ma a piazza Barberini serve una dj per ballare. La notte è lunga e dietro ai Mercati Generali ci sono locali per chiudere la giornata.",
         "immagine": "https://img-guidatv.org/30/stranger-europe/6.jpg"
       },
       {
-        "ora": "05:29",
-        "fine": "06:10",
+        "ora": "05:24",
+        "fine": "06:05",
         "titolo": "Coroner",
         "descrizione": "Dopo l'improvvisa morte del marito, Jenny si trasferisce con il figlio adolescente a Toronto, dove prende servizio come medico legale e collabora con il detective McAvoy alla risoluzione di alcuni casi di omicidio.",
         "immagine": "https://image.tmdb.org/t/p/w300/7zEVxcNEDxVtRf29zvjjy6cazm4.jpg"
@@ -27550,8 +27620,8 @@
       {
         "ora": "01:20",
         "fine": "02:20",
-        "titolo": "1919 Fiume Città Di Vita",
-        "descrizione": "Un Paese stravolto dalla Prima guerra mondiale, un popolo che piange oltre 650.000 caduti, una città che diventa emblema delle rivendicazioni nazionaliste.. - Di Fabrizio Marini e Nicola Maranesi  Consulenza storica Francesco Perfetti  A cura di Roberta Sangermano  Produttore esecutivo Germana Mudanò",
+        "titolo": "1919. Fiume Città Di Vita",
+        "descrizione": "Un Paese stravolto dalla Prima guerra mondiale. Un popolo che piange oltre 650.000 caduti nelle trincee. I politici umiliati al tavolo della pace di Versailles. Un poeta-soldato che trascina le folle ad ogni comizio. Una città che diventa emblema delle rivendicazioni irredentiste e nazionaliste. È in questa Italia che il 12 settembre del 1919 ha inizio l'impresa di Fiume: l'avventura di Gabriele d'Annunzio e di un manipolo di legionari partiti da Ronchi in Friuli, contro il volere del potere costituito, per occupare la città adriatica e annetterla all'Italia, instaurare la Reggenza del Carnaro, fondare un \"mito\" destinato a influenzare la cultura e la politica italiana e internazionale, l'estetica e il lessico, ben oltre il Ventennio fascista.",
         "immagine": "https://img-guidatv.org/24/1919-fiume-citta-di-vita/5.jpg"
       },
       {
@@ -27564,16 +27634,16 @@
       {
         "ora": "02:50",
         "fine": "03:40",
-        "titolo": "On The Road L'America Della Beat.Generat",
-        "descrizione": "On the road L'America della Beat.Generation.La fine del viaggio? - Un'inchiesta in tre puntate dedicata al fenomeno della Beat Generation con interviste ai maggiori esponenti di questo movimento artistico, -  poetico e letterario. Le interviste sono di Fernanda Pivano. - (1980) Un programma di Giampiero Tartagni Conduce Beniamino Placido",
-        "immagine": "https://img-guidatv.org/24/on-the-road-l-america-della-beat-generat/0.jpg"
+        "titolo": "On the road - L'America della Beat Generation",
+        "descrizione": "Un'inchiesta in tre puntate dedicata al fenomeno della Beat Generation con interviste ai maggiori esponenti di questo movimento artistico, poetico e letterario. Le interviste sono di Fernanda Pivano.",
+        "immagine": "https://img-guidatv.org/24/on-the-road-l-america-della-beat-generation-la-fine-del-viaggio/0.jpg"
       },
       {
         "ora": "03:40",
         "fine": "04:30",
-        "titolo": "I Giorni Della Nostra Storia. La Tragedi",
-        "descrizione": "I giorni della nostra storia. La tragedia di Cefalonia - Nel racconto di ufficiali e soldati della divisione Acqui riviviamo l'eroica resistenza italiana a Cefalonia, in seguito all'armistizio dell'8 sette - mbre 1943. - (1974) Di Domenico Bernabei e Mino Monicelli",
-        "immagine": "https://img-guidatv.org/24/i-giorni-della-nostra-storia-la-tragedi/0.jpg"
+        "titolo": "I Giorni Della Nostra Storia - La Tragedia Di Cefalonia",
+        "descrizione": "Nel racconto di ufficiali e soldati della divisione Acqui riviviamo l'eroica resistenza italiana a Cefalonia, in seguito all'armistizio dell'8 settembre 1943.",
+        "immagine": "https://img-guidatv.org/24/i-giorni-della-nostra-storia-la-tragedia-di-cefalonia/0.jpg"
       },
       {
         "ora": "04:30",
@@ -27808,8 +27878,8 @@
       {
         "ora": "01:20",
         "fine": "02:20",
-        "titolo": "1919 Fiume Città Di Vita",
-        "descrizione": "Un Paese stravolto dalla Prima guerra mondiale, un popolo che piange oltre 650.000 caduti, una città che diventa emblema delle rivendicazioni nazionaliste.. - Di Fabrizio Marini e Nicola Maranesi  Consulenza storica Francesco Perfetti  A cura di Roberta Sangermano  Produttore esecutivo Germana Mudanò",
+        "titolo": "1919. Fiume Città Di Vita",
+        "descrizione": "Un Paese stravolto dalla Prima guerra mondiale. Un popolo che piange oltre 650.000 caduti nelle trincee. I politici umiliati al tavolo della pace di Versailles. Un poeta-soldato che trascina le folle ad ogni comizio. Una città che diventa emblema delle rivendicazioni irredentiste e nazionaliste. È in questa Italia che il 12 settembre del 1919 ha inizio l'impresa di Fiume: l'avventura di Gabriele d'Annunzio e di un manipolo di legionari partiti da Ronchi in Friuli, contro il volere del potere costituito, per occupare la città adriatica e annetterla all'Italia, instaurare la Reggenza del Carnaro, fondare un \"mito\" destinato a influenzare la cultura e la politica italiana e internazionale, l'estetica e il lessico, ben oltre il Ventennio fascista.",
         "immagine": "https://img-guidatv.org/24/1919-fiume-citta-di-vita/5.jpg"
       },
       {
@@ -27822,16 +27892,16 @@
       {
         "ora": "02:50",
         "fine": "03:40",
-        "titolo": "On The Road L'America Della Beat.Generat",
-        "descrizione": "On the road L'America della Beat.Generation.La fine del viaggio? - Un'inchiesta in tre puntate dedicata al fenomeno della Beat Generation con interviste ai maggiori esponenti di questo movimento artistico, -  poetico e letterario. Le interviste sono di Fernanda Pivano. - (1980) Un programma di Giampiero Tartagni Conduce Beniamino Placido",
-        "immagine": "https://img-guidatv.org/24/on-the-road-l-america-della-beat-generat/0.jpg"
+        "titolo": "On the road - L'America della Beat Generation",
+        "descrizione": "Un'inchiesta in tre puntate dedicata al fenomeno della Beat Generation con interviste ai maggiori esponenti di questo movimento artistico, poetico e letterario. Le interviste sono di Fernanda Pivano.",
+        "immagine": "https://img-guidatv.org/24/on-the-road-l-america-della-beat-generation-la-fine-del-viaggio/0.jpg"
       },
       {
         "ora": "03:40",
         "fine": "04:30",
-        "titolo": "I Giorni Della Nostra Storia. La Tragedi",
-        "descrizione": "I giorni della nostra storia. La tragedia di Cefalonia - Nel racconto di ufficiali e soldati della divisione Acqui riviviamo l'eroica resistenza italiana a Cefalonia, in seguito all'armistizio dell'8 sette - mbre 1943. - (1974) Di Domenico Bernabei e Mino Monicelli",
-        "immagine": "https://img-guidatv.org/24/i-giorni-della-nostra-storia-la-tragedi/0.jpg"
+        "titolo": "I Giorni Della Nostra Storia - La Tragedia Di Cefalonia",
+        "descrizione": "Nel racconto di ufficiali e soldati della divisione Acqui riviviamo l'eroica resistenza italiana a Cefalonia, in seguito all'armistizio dell'8 settembre 1943.",
+        "immagine": "https://img-guidatv.org/24/i-giorni-della-nostra-storia-la-tragedia-di-cefalonia/0.jpg"
       },
       {
         "ora": "04:30",
