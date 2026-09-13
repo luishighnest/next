@@ -58,11 +58,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font-main);
-    background-color: #07080a;
+    background-color: #0b0e15;
     background-image: 
-        radial-gradient(ellipse 90% 55% at 50% -12%, rgba(30, 52, 98, 0.24), transparent 75%),
-        radial-gradient(ellipse 65% 45% at 100% 0%, rgba(55, 24, 95, 0.14), transparent 65%),
-        radial-gradient(ellipse 60% 40% at 0% 25%, rgba(18, 38, 70, 0.10), transparent 60%);
+        radial-gradient(ellipse 75% 45% at 20% -8%, rgba(0, 200, 130, 0.16), transparent 60%),
+        radial-gradient(ellipse 85% 55% at 75% -12%, rgba(0, 115, 230, 0.22), transparent 65%),
+        radial-gradient(ellipse 90% 50% at 50% 15%, rgba(15, 28, 54, 0.4), transparent 75%);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
