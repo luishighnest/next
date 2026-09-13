@@ -105,55 +105,9 @@ export default function Navbar({
             }
         }
 
-        function onWheel(e) {
-            if (isSkyPage) return;
-            const currentScrollY = getScrollY();
-            if (e.deltaY > 8) {
-                if (currentScrollY > 35) {
-                    setIsNavHidden(true);
-                }
-            } else if (e.deltaY < -8) {
-                setIsNavHidden(false);
-            }
-        }
-
-        let touchStartY = 0;
-        function onTouchStart(e) {
-            if (e.touches && e.touches[0]) {
-                touchStartY = e.touches[0].clientY;
-            }
-        }
-
-        function onTouchMove(e) {
-            if (isSkyPage) return;
-            if (!e.touches || !e.touches[0]) return;
-            const currentTouchY = e.touches[0].clientY;
-            const diff = touchStartY - currentTouchY;
-            const currentScrollY = getScrollY();
-
-            if (currentScrollY <= 25) {
-                setIsNavHidden(false);
-            } else if (diff > 8 && currentScrollY > 35) {
-                setIsNavHidden(true);
-            } else if (diff < -8) {
-                setIsNavHidden(false);
-            }
-        }
-
-        window.addEventListener("scroll", onScroll, { passive: true, capture: true });
-        document.addEventListener("scroll", onScroll, { passive: true });
-        window.addEventListener("wheel", onWheel, { passive: true, capture: true });
-        document.addEventListener("wheel", onWheel, { passive: true });
-        window.addEventListener("touchstart", onTouchStart, { passive: true });
-        window.addEventListener("touchmove", onTouchMove, { passive: true, capture: true });
-
+        window.addEventListener("scroll", onScroll, { passive: true });
         return () => {
-            window.removeEventListener("scroll", onScroll, { capture: true });
-            document.removeEventListener("scroll", onScroll);
-            window.removeEventListener("wheel", onWheel, { capture: true });
-            document.removeEventListener("wheel", onWheel);
-            window.removeEventListener("touchstart", onTouchStart);
-            window.removeEventListener("touchmove", onTouchMove, { capture: true });
+            window.removeEventListener("scroll", onScroll);
         };
     }, [isSkyPage, pathname]);
 

@@ -49,11 +49,9 @@ input, textarea {
 
 html {
     overflow-x: hidden;
-    overflow-y: auto !important;
+    overflow-y: scroll;
     scroll-behavior: smooth;
-    min-height: 100%;
-    overscroll-behavior: none !important;
-    overscroll-behavior-y: none !important;
+    overscroll-behavior-y: contain;
 }
 
 html, body {
@@ -66,8 +64,6 @@ html, body {
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    overscroll-behavior: none !important;
-    overscroll-behavior-y: none !important;
 }
 
 body {
@@ -77,10 +73,7 @@ body {
     color: var(--text-primary);
     min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto !important;
     -webkit-font-smoothing: antialiased;
-    overscroll-behavior: none !important;
-    overscroll-behavior-y: none !important;
 }
 
 .app-container {
