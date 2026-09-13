@@ -4687,7 +4687,7 @@ video { outline: none !important; }
     contain: layout style;
 }
 
-/* Locandina: SENZA bordi a riposo (Stile NOW Poster Puro) */
+/* Locandina: SENZA bordi né ombre laterali a riposo (Stile NOW Poster Puro) */
 .now-card {
     position: relative;
     width: 100%;
@@ -4695,7 +4695,7 @@ video { outline: none !important; }
     border-radius: 14px;
     overflow: hidden;
     background: #11141b;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    box-shadow: none; /* Rimosso box-shadow laterale diffuso */
     border: 1px solid transparent; /* Nessun bordo visibile a riposo */
     transform: translateZ(0);
     backface-visibility: hidden;
@@ -4727,18 +4727,16 @@ video { outline: none !important; }
     opacity: 1;
 }
 
-/* All'hover: micro-zoom morbido + bordo sottile satinato con bagliore verde smeraldo */
+/* All'hover: micro-zoom morbido + bordo sottile satinato verde smeraldo, senza ombre laterali pesanti */
 .now-card-wrapper:hover .now-card {
     transform: scale(1.035) translateY(-3px);
     border-color: rgba(0, 229, 155, 0.55);
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.75), 
-                0 0 20px rgba(0, 229, 155, 0.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .now-card-wrapper:hover .now-card.active {
     border-color: #00e59b;
-    box-shadow: 0 16px 36px rgba(0, 229, 155, 0.3), 
-                0 0 20px rgba(0, 229, 155, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .now-card-bg {
