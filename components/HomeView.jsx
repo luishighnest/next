@@ -458,7 +458,7 @@ function HomeViewContent({ defaultTab = "all" }) {
                 <HomeHero categories={categories} />
             )}
 
-            <main className="home-content">
+            <main className={`home-content ${!isSearchOpen && filter === "all" ? "has-hero" : ""}`}>
                 {!isSearchOpen && filter !== "all" && currentSubCategories.length > 0 && (
                     <SubCategoryChips
                         items={currentSubCategories}

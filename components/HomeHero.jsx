@@ -328,17 +328,24 @@ export default function HomeHero({ categories = [] }) {
                         </p>
                     )}
 
-                    {/* Pulsanti Azione NOW */}
+                    {/* Pulsanti Azione NOW TV Autentici: Guarda (bianco puro con play) + Info (glass translucido) */}
                     <div className="now-hero-cta-group">
                         <Link
                             href={current.targetHref}
                             className="now-hero-play-button"
                             onClick={() => handleCardClick(current)}
                         >
-                            <span className="now-hero-play-icon-wrap">
-                                <span className="material-symbols-rounded">play_arrow</span>
-                            </span>
-                            <span className="now-hero-play-text">Guarda ora su {current.channelName}</span>
+                            <span className="material-symbols-rounded now-hero-play-ico">play_arrow</span>
+                            <span className="now-hero-play-label">Guarda</span>
+                        </Link>
+
+                        <Link
+                            href={current.targetHref}
+                            className="now-hero-info-button"
+                            onClick={() => handleCardClick(current)}
+                        >
+                            <span className="material-symbols-rounded now-hero-info-ico">info</span>
+                            <span className="now-hero-info-label">Dettagli</span>
                         </Link>
                     </div>
                 </div>
