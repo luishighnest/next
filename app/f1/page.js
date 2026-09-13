@@ -47,11 +47,10 @@ export default function F1SpecialPage() {
 
         async function initPlayer() {
             try {
-                setStatus("Caricamento canale da sky.json...");
+                setStatus("Lettura configurazione canale...");
                 setIsLoading(true);
                 setErrorMsg(null);
 
-                // 1. Tenta di estrarre F1 aggiornato da sky.json
                 let ch = FALLBACK_F1;
                 try {
                     const skyData = await fetchSecureJson("/sky.json");
@@ -81,59 +80,79 @@ export default function F1SpecialPage() {
                 if (isCancelled) return;
                 setChannelData(ch);
 
-                // 2. Carica Shaka Player
-                setStatus("Caricamento Shaka Player nativo...");
+                setStatus("Avvio Shaka Player nativo...");
                 const shaka = await loadShakaScript();
                 if (!shaka) throw new Error("Shaka Player non disponibile");
 
                 shaka.polyfill.installAll();
                 if (!shaka.Player.isBrowserSupported()) {
-                    throw new Error("Il tuo browser non supporta la riproduzione MSE/EME richiesta da Shaka");
+                    throw new Error("Il tuo browser non supporta MSE/EME per Shaka Player");
                 }
 
                 if (!videoRef.current) return;
 
-                // 3. Inizializza istanza player Shaka
                 if (!playerRef.current) {
                     const player = new shaka.Player(videoRef.current);
                     playerRef.current = player;
 
-                    // Fix per errore 4000 (UNABLE_TO_GUESS_MANIFEST_TYPE):
-                    // Forziamo il Content-Type corretto per il manifest se oscurato da CORS
+                    // Gestione filtri di rete
                     player.getNetworkingEngine().registerResponseFilter((type, response) => {
                         if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
                             if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
                                 response.headers["content-type"] = "application/dash+xml";
+                            }
+                            try {
+                                let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
+                                // Rimuovi Widevine/PlayReady per forzare l'uso esclusivo di ClearKey locale
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
+                            } catch (err) {
+                                console.warn("Errore filtro manifest:", err);
                             }
                         }
                     });
 
                     player.addEventListener("error", (event) => {
                         console.error("Errore Shaka:", event.detail);
-                        setErrorMsg(`Errore stream (${event.detail.code}): ${event.detail.message || "Errore sconosciuto"}`);
+                        const d = event.detail;
+                        let extra = "";
+                        if (d.data && d.data.length > 0) {
+                            extra = ` [URI: ${d.data[0] || ""} - Status: ${d.data[1] || ""}]`;
+                        }
+                        setErrorMsg(`Errore stream ${d.code}: ${d.message || "Errore di rete"}${extra}`);
                     });
                 }
 
                 const player = playerRef.current;
 
-                // 4. Configura ClearKey DRM
+                // Configura ClearKey (sia con trattini che senza)
                 const clearKeys = {};
                 if (ch.key && ch.key.includes(":")) {
                     const pairs = ch.key.split(",");
                     pairs.forEach(pair => {
-                        const [kid, k] = pair.split(":");
-                        if (kid && k) {
-                            clearKeys[kid.trim()] = k.trim();
+                        const [rawKid, rawK] = pair.split(":");
+                        if (rawKid && rawK) {
+                            const cleanKid = rawKid.replace(/-/g, "").trim().toLowerCase();
+                            const cleanK = rawK.replace(/-/g, "").trim().toLowerCase();
+                            clearKeys[cleanKid] = cleanK;
+                            if (cleanKid.length === 32) {
+                                const dashedKid = `${cleanKid.slice(0,8)}-${cleanKid.slice(8,12)}-${cleanKid.slice(12,16)}-${cleanKid.slice(16,20)}-${cleanKid.slice(20)}`;
+                                clearKeys[dashedKid] = cleanK;
+                            }
                         }
                     });
                 }
 
                 player.configure({
                     drm: {
-                        clearKeys: clearKeys
+                        clearKeys: clearKeys,
+                        preferredKeySystems: ["org.w3.clearkey", "webkit-org.w3.clearkey"],
+                        servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 30,
+                        bufferingGoal: 20,
                         rebufferingGoal: 2,
                         bufferBehind: 30,
                         lowLatencyMode: true
@@ -145,7 +164,6 @@ export default function F1SpecialPage() {
                     }
                 });
 
-                // 5. Carica esplicitamente con MIME type 'application/dash+xml' per evitare errore 4000
                 setStatus("Connessione al flusso live...");
                 await player.load(ch.mpd, null, "application/dash+xml");
 
@@ -153,10 +171,8 @@ export default function F1SpecialPage() {
                 setStatus("In riproduzione");
                 setIsLoading(false);
 
-                // Avvia la riproduzione
                 if (videoRef.current) {
                     videoRef.current.play().catch(() => {
-                        console.log("Autoplay con audio bloccato, tentativo muted");
                         if (videoRef.current) {
                             videoRef.current.muted = true;
                             videoRef.current.play().catch(e => console.warn("Play manuale:", e));
@@ -195,7 +211,6 @@ export default function F1SpecialPage() {
             <Navbar activeFilter={null} />
 
             <main style={{ maxWidth: "1500px", margin: "0 auto", padding: "80px 16px 40px 16px" }}>
-                {/* Header speciale F1 */}
                 <div style={{
                     display: "flex",
                     alignItems: "center",
@@ -247,7 +262,7 @@ export default function F1SpecialPage() {
                                     DIRETTA
                                 </span>
                                 <span style={{ color: "#a1a1aa", fontSize: "0.85rem" }}>
-                                    Player Shaka Nativo (sky.json)
+                                    Player Shaka Nativo (ClearKey)
                                 </span>
                             </div>
                         </div>
@@ -273,7 +288,6 @@ export default function F1SpecialPage() {
                     </button>
                 </div>
 
-                {/* Contenitore Video Player Shaka */}
                 <div style={{
                     position: "relative",
                     width: "100%",
@@ -297,7 +311,6 @@ export default function F1SpecialPage() {
                         }}
                     />
 
-                    {/* Overlay di Caricamento */}
                     {isLoading && (
                         <div style={{
                             position: "absolute",
@@ -327,7 +340,6 @@ export default function F1SpecialPage() {
                         </div>
                     )}
 
-                    {/* Overlay di Errore */}
                     {errorMsg && (
                         <div style={{
                             position: "absolute",
@@ -371,7 +383,6 @@ export default function F1SpecialPage() {
                     )}
                 </div>
 
-                {/* Dettagli tecnici sullo stream */}
                 <div style={{
                     marginTop: "16px",
                     padding: "16px",
