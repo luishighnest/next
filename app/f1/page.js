@@ -28,8 +28,11 @@ export default function F1SpecialPage() {
             return new Promise((resolve, reject) => {
                 const existingScript = document.getElementById("shaka-player-script");
                 if (existingScript) {
-                    existingScript.addEventListener("load", () => resolve(window.shaka));
-                    existingScript.addEventListener("error", reject);
+                    if (window.shaka) resolve(window.shaka);
+                    else {
+                        existingScript.addEventListener("load", () => resolve(window.shaka));
+                        existingScript.addEventListener("error", reject);
+                    }
                     return;
                 }
                 const script = document.createElement("script");
@@ -72,7 +75,7 @@ export default function F1SpecialPage() {
                         }
                     }
                 } catch (e) {
-                    console.warn("Uso canale fallback F1 per errore lettura sky.json:", e);
+                    console.warn("Uso canale fallback F1:", e);
                 }
 
                 if (isCancelled) return;
@@ -94,6 +97,16 @@ export default function F1SpecialPage() {
                 if (!playerRef.current) {
                     const player = new shaka.Player(videoRef.current);
                     playerRef.current = player;
+
+                    // Fix per errore 4000 (UNABLE_TO_GUESS_MANIFEST_TYPE):
+                    // Forziamo il Content-Type corretto per il manifest se oscurato da CORS
+                    player.getNetworkingEngine().registerResponseFilter((type, response) => {
+                        if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
+                            if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
+                                response.headers["content-type"] = "application/dash+xml";
+                            }
+                        }
+                    });
 
                     player.addEventListener("error", (event) => {
                         console.error("Errore Shaka:", event.detail);
@@ -132,22 +145,24 @@ export default function F1SpecialPage() {
                     }
                 });
 
-                // 5. Carica lo stream MPD nativo
+                // 5. Carica esplicitamente con MIME type 'application/dash+xml' per evitare errore 4000
                 setStatus("Connessione al flusso live...");
-                await player.load(ch.mpd);
+                await player.load(ch.mpd, null, "application/dash+xml");
 
                 if (isCancelled) return;
                 setStatus("In riproduzione");
                 setIsLoading(false);
 
                 // Avvia la riproduzione
-                videoRef.current.play().catch(() => {
-                    console.log("Autoplay bloccato con audio, tentiamo muted");
-                    if (videoRef.current) {
-                        videoRef.current.muted = true;
-                        videoRef.current.play().catch(e => console.warn("Play manuale richiesto:", e));
-                    }
-                });
+                if (videoRef.current) {
+                    videoRef.current.play().catch(() => {
+                        console.log("Autoplay con audio bloccato, tentativo muted");
+                        if (videoRef.current) {
+                            videoRef.current.muted = true;
+                            videoRef.current.play().catch(e => console.warn("Play manuale:", e));
+                        }
+                    });
+                }
 
             } catch (err) {
                 console.error("Errore initPlayer:", err);
@@ -232,7 +247,7 @@ export default function F1SpecialPage() {
                                     DIRETTA
                                 </span>
                                 <span style={{ color: "#a1a1aa", fontSize: "0.85rem" }}>
-                                    Player Shaka Nativo Base (sky.json)
+                                    Player Shaka Nativo (sky.json)
                                 </span>
                             </div>
                         </div>
