@@ -169,7 +169,16 @@ function HomeViewContent({ defaultTab = "all" }) {
         }
     }, [exploreData]);
 
-    // Cambio tab ultra-fluido: aggiorna lo stato a 0ms e sincronizza l'URL senza smontare la pagina
+    // Sincronizza sempre il filtro se la route pathname cambia esternamente o tramite tasti Indietro/Avanti
+    useEffect(() => {
+        if (!pathname) return;
+        if (pathname === "/sport") setFilter("sport");
+        else if (pathname === "/intrattenimento") setFilter("intrattenimento");
+        else if (pathname === "/eventi") setFilter("eventi");
+        else if (pathname === "/home" || pathname === "/") setFilter("all");
+    }, [pathname]);
+
+    // Cambio tab ultra-fluido: aggiorna lo stato a 0ms e sincronizza l'URL con router.push senza smontare la pagina
     const handleFilterChange = (targetTab) => {
         const cleanTab = (targetTab === "home" || targetTab === "all") ? "all" : targetTab;
         setFilter(cleanTab);
@@ -190,9 +199,7 @@ function HomeViewContent({ defaultTab = "all" }) {
             return;
         }
 
-        if (pathname !== targetPath) {
-            window.history.pushState(null, "", targetPath);
-        }
+        router.push(targetPath, { scroll: false });
     };
 
     // Caricamento resiliente in background (Stale-While-Revalidate): MAI rimettere loading=true se ci sono già dati
@@ -374,8 +381,23 @@ function HomeViewContent({ defaultTab = "all" }) {
         };
     }, [categories]);
 
+    const [subTransitioning, setSubTransitioning] = useState(false);
+
     const handleSelectSubFilter = (subId) => {
-        setSubFilter(subId);
+        if (subFilter === subId) return;
+
+        // Se l'utente ha scrollato in basso, torna morbidamente in cima
+        if (typeof window !== "undefined" && window.scrollY > 120) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        // Transizione fluida morbida
+        setSubTransitioning(true);
+        setTimeout(() => {
+            setSubFilter(subId);
+            setSubTransitioning(false);
+        }, 120);
+
         const targetBase = filter === "all" ? "/home" : `/${filter}`;
         const newUrl = subId === "all" ? targetBase : `${targetBase}?sub=${encodeURIComponent(subId)}`;
         try {
@@ -453,14 +475,16 @@ function HomeViewContent({ defaultTab = "all" }) {
                                 </button>
                             </div>
                         ) : (
-                            filteredSections.map(sec => (
-                                <CarouselSection
-                                    key={sec.title}
-                                    title={sec.title}
-                                    channels={sec.channels}
-                                    onExplore={(title, chs) => setExploreData({ title, channels: chs })}
-                                />
-                            ))
+                            <div className={`home-sections-grid ${subTransitioning ? "sub-fading-out" : "sub-fading-in"}`}>
+                                {filteredSections.map(sec => (
+                                    <CarouselSection
+                                        key={sec.title}
+                                        title={sec.title}
+                                        channels={sec.channels}
+                                        onExplore={(title, chs) => setExploreData({ title, channels: chs })}
+                                    />
+                                ))}
+                            </div>
                         )
                     )
                 )}

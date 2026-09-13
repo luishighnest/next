@@ -2185,6 +2185,36 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     color: #00e59b !important;
 }
 
+/* --- TRANSIZIONE FLUIDA SOTTOCATEGORIE (Stile Premium Streaming) --- */
+.home-sections-grid {
+    width: 100%;
+    min-height: 200px;
+    transition: opacity 0.15s ease, transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.home-sections-grid.sub-fading-out {
+    opacity: 0;
+    transform: translateY(4px);
+}
+
+.home-sections-grid.sub-fading-in {
+    opacity: 1;
+    transform: translateY(0);
+    animation: subCategoryReveal 0.26s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes subCategoryReveal {
+    0% {
+        opacity: 0.15;
+        transform: translateY(6px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Gruppo Destro: Icone Azione minimali stile NOW */
 .dock-group-right {
     display: inline-flex;

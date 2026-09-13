@@ -92,8 +92,21 @@ function VodContent() {
         else router.push(`/${tab}`);
     };
 
+    const [subTransitioning, setSubTransitioning] = useState(false);
+
     const handleSelectSubFilter = (id) => {
-        setSubFilter(id);
+        if (subFilter === id) return;
+
+        if (typeof window !== "undefined" && window.scrollY > 120) {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        setSubTransitioning(true);
+        setTimeout(() => {
+            setSubFilter(id);
+            setSubTransitioning(false);
+        }, 120);
+
         const newUrl = id === "all" ? "/vod" : `/vod?sub=${encodeURIComponent(id)}`;
         try {
             window.history.replaceState(null, "", newUrl);
@@ -184,14 +197,16 @@ function VodContent() {
                         </button>
                     </div>
                 ) : (
-                    filteredSections.map(sec => (
-                        <CarouselSection
-                            key={sec.title}
-                            title={sec.title}
-                            channels={sec.channels}
-                            onExplore={(title, chs) => setExploreData({ title, channels: chs })}
-                        />
-                    ))
+                    <div className={`home-sections-grid ${subTransitioning ? "sub-fading-out" : "sub-fading-in"}`}>
+                        {filteredSections.map(sec => (
+                            <CarouselSection
+                                key={sec.title}
+                                title={sec.title}
+                                channels={sec.channels}
+                                onExplore={(title, chs) => setExploreData({ title, channels: chs })}
+                            />
+                        ))}
+                    </div>
                 )}
             </main>
 
