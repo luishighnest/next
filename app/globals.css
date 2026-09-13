@@ -1924,26 +1924,6 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     filter: drop-shadow(0 0 8px rgba(0, 229, 155, 0.5));
 }
 
-.dock-nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 6px;
-    left: 50%;
-    transform: translateX(-50%) scaleX(0);
-    width: 28px;
-    height: 3px;
-    background: #00e59b;
-    border-radius: 999px;
-    opacity: 0;
-    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
-    box-shadow: 0 0 10px rgba(0, 229, 155, 0.8), 0 0 20px rgba(0, 229, 155, 0.4);
-}
-
-.dock-nav-link.active::after {
-    opacity: 1;
-    transform: translateX(-50%) scaleX(1);
-}
-
 /* Gruppo Destro: Icone Azione minimali stile NOW */
 .dock-group-right {
     display: inline-flex;
