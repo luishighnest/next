@@ -108,9 +108,20 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
 
     const count = channels.length;
     const isTestJsonGroup = channels.some(c => c.isTestJson || (c.group && c.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")));
-    const badgeLabel = isTestJsonGroup
-        ? `${count} ${count === 1 ? "evento" : "eventi"}`
-        : `${count} ${count === 1 ? "canale" : "canali"}`;
+
+    let badgeLabel;
+    if (isVodSection) {
+        const firstVodType = channels[0]?.vodType;
+        const firstGroup = (channels[0]?.group || "").toLowerCase();
+        const isTvSection = firstVodType === "tv" || firstGroup.includes("serie");
+        badgeLabel = isTvSection
+            ? `${count} serie TV`
+            : `${count} film`;
+    } else if (isTestJsonGroup) {
+        badgeLabel = `${count} ${count === 1 ? "evento" : "eventi"}`;
+    } else {
+        badgeLabel = `${count} ${count === 1 ? "canale" : "canali"}`;
+    }
 
     return (
         <div className={`${isRelated ? "" : "home-section"} ${isVodSection ? "vod-carousel-section" : ""}`}>

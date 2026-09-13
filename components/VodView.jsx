@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, Suspense, useDeferredValue } from "react";
+import React, { useState, useEffect, useLayoutEffect, Suspense, useDeferredValue } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
@@ -34,10 +34,15 @@ function VodContent() {
     const initialSections = getCachedVod();
     const [sections, setSections] = useState(initialSections);
     const [loading, setLoading] = useState(() => initialSections.length === 0);
+    const [mounted, setMounted] = useState(false);
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [exploreData, setExploreData] = useState(null);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     // Carica sezioni VOD da /api/vod
     useEffect(() => {
@@ -90,7 +95,7 @@ function VodContent() {
     }, [sections, deferredSearch]);
 
     return (
-        <div className="desktop-home vod-page-container" style={{ display: "block", minHeight: "140vh" }}>
+        <div className={`desktop-home vod-page-container ${mounted ? "is-mounted" : "is-mounting"}`} style={{ display: "block", minHeight: "140vh" }}>
             <Navbar
                 activeFilter="vod"
                 onFilterChange={handleFilterChange}

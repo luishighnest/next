@@ -171,6 +171,7 @@ function HomeViewContent({ defaultTab = "all" }) {
         else if (cleanTab === "intrattenimento") targetPath = "/intrattenimento";
         else if (cleanTab === "eventi") targetPath = "/eventi";
         else if (cleanTab === "vod") {
+            setMounted(false); // triggers is-mounting (opacity: 0) for a clean fade-out
             router.push("/vod");
             return;
         }
