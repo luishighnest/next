@@ -1684,197 +1684,201 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .desktop-home.fade-out { opacity: 0; pointer-events: none; transform: scale(1.02); }
 
 /* ==========================================================================
-   ARCHITETTURA NAVBAR A 3 ISOLE SEPARATE (visionOS / iPadOS Style)
+   ARCHITETTURA NAVBAR STILE NOW / SKY STREAM (Full-Width Header)
    ========================================================================== */
 
-/* Wrapper fixed sopra il contenuto per far "galleggiare" le 3 isole */
+/* Header fisso a tutta larghezza in cima allo schermo */
 .home-header-wrapper {
     position: fixed;
-    top: 18px;
+    top: 0;
     left: 0;
     right: 0;
-    height: 48px;
-    z-index: 10001;
     width: 100%;
+    height: 72px;
+    z-index: 10001;
     pointer-events: none;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
-    will-change: transform, opacity;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                background 0.3s ease, 
+                border-color 0.3s ease, 
+                box-shadow 0.3s ease, 
+                backdrop-filter 0.3s ease;
+    will-change: transform, background;
+    box-sizing: border-box;
+}
+
+/* Modalità in cima alla pagina: totalmente trasparente e senza bordi per fondersi nello sfondo */
+.home-header-wrapper.header-top {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+/* Modalità durante lo scroll: elegante vetro ardesia NOW con micro-bordo */
+.home-header-wrapper.header-scrolled {
+    background: rgba(11, 15, 25, 0.82) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+    backdrop-filter: blur(24px) saturate(190%) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
 }
 
 .home-header-wrapper.nav-hidden {
-    transform: translateY(-160%) !important;
+    transform: translateY(-100%) !important;
     opacity: 0 !important;
     pointer-events: none !important;
 }
 
-/* Griglia / Contenitore delle 3 isole a tutta larghezza con padding simmetrico stile Apple TV */
-.home-header-islands {
+/* Contenitore interno della barra a tutta larghezza con margini allineati ai caroselli */
+.home-header-dock-container {
     width: 100%;
-    max-width: 100%;
-    height: 48px;
+    height: 100%;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 0 48px;
+    padding: 0 8vw;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.home-header-dock {
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    pointer-events: all;
     position: relative;
     box-sizing: border-box;
 }
 
-/* Modalità isola singola centrale su /sky e su /eventi/[slug] (Logo e Cerca/Impostazioni nascosti) */
-.home-header-islands.nav-single-island {
-    justify-content: center !important;
-}
-
-.home-header-islands.nav-single-island .nav-island-center {
-    position: absolute !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    margin: 0 !important;
-}
-
-.home-header-islands.nav-single-island .nav-island-left,
-.home-header-islands.nav-single-island .nav-island-right {
-    display: none !important;
-}
-
-/* Base comune per le 3 isole flottanti in vetro Tinted Smoked Glass visionOS */
-.nav-island {
-    pointer-events: all;
+/* Gruppo Sinistro: Logo e Orologio */
+.dock-group-left {
     display: inline-flex;
     align-items: center;
-    background: rgba(13, 18, 30, 0.68);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    border-radius: 999px;
-    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.6), 0 2px 10px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(28px) saturate(210%);
-    -webkit-backdrop-filter: blur(28px) saturate(210%);
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    box-sizing: border-box;
-}
-
-.nav-island:hover {
-    background: rgba(16, 22, 38, 0.76);
-    border-color: rgba(255, 255, 255, 0.28);
-    box-shadow: 0 14px 44px rgba(0, 0, 0, 0.75), 0 2px 12px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.28);
-}
-
-/* ==========================================================================
-   BRAND WORDMARK VETTORIALE A FILO SINISTRO (Modello tv.apple.com)
-   ========================================================================== */
-.apple-tv-brand-wordmark {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    pointer-events: auto;
-    cursor: pointer;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    padding: 0 !important;
-    height: 48px;
-    transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), transform 0.22s ease;
-    z-index: 10002;
-    user-select: none;
+    gap: 16px;
     flex-shrink: 0;
 }
 
-.apple-tv-brand-wordmark:hover {
-    opacity: 0.72;
+.dock-brand-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.dock-brand-link:hover {
+    opacity: 0.85;
     transform: scale(0.96);
 }
 
-.apple-tv-brand-wordmark:active {
-    opacity: 0.48;
-}
-
-.brand-wordmark-symbol {
-    height: 28px;
-    width: 28px;
-    min-width: 28px;
-    max-width: 28px;
-    object-fit: contain;
+.dock-brand-logo {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
     display: block;
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* ISOLA 2 (CENTRO): Navigazione categorie pura, perfettamente al centro dello schermo */
-.nav-island-center {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5px 6px;
-    height: 48px;
+.dock-site-clock {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.45);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.5px;
+}
+
+/* Divisore verticale stile NOW */
+.dock-divider {
+    width: 1px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 0 16px;
+    flex-shrink: 0;
+}
+
+/* Gruppo Centrale: Navigazione Autentica NOW */
+.dock-group-center {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
+    height: 100%;
 }
 
-.nav-island-center .nav-link {
-    padding: 7px 18px;
-    border-radius: 999px;
-    font-size: 0.88rem;
-    font-weight: 500;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
-    color: rgba(255, 255, 255, 0.65);
-    white-space: nowrap;
-    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-    display: flex;
+.dock-nav-link {
+    position: relative;
+    display: inline-flex;
     align-items: center;
-    gap: 7px;
-    border: 1px solid transparent;
-    background: transparent;
-    cursor: pointer;
+    gap: 8px;
+    height: 100%;
+    padding: 0 16px;
+    color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
-    letter-spacing: 0.01em;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+    transition: color 0.22s ease;
+    cursor: pointer;
     user-select: none;
 }
 
-.nav-island-center .nav-link i {
-    font-size: 0.95rem;
-    line-height: 1;
+.dock-nav-link i.dock-icon {
+    font-size: 0.92rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+    color: rgba(255, 255, 255, 0.5);
 }
 
-.nav-island-center .nav-link:hover {
+.dock-nav-link:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.08);
+}
+.dock-nav-link:hover i.dock-icon {
+    color: #00e59b;
 }
 
-.nav-island-center .nav-link.active {
-    color: #000000 !important;
-    background: #ffffff !important;
+/* Voce attiva stile NOW: barra inferiore verde smeraldo fluorescente con glow */
+.dock-nav-link.active {
+    color: #ffffff !important;
     font-weight: 700;
-    border-color: #ffffff !important;
-    box-shadow: 0 2px 14px rgba(255, 255, 255, 0.28);
 }
 
-.nav-island-center .nav-link.active i {
-    color: #000000 !important;
+.dock-nav-link.active i.dock-icon {
+    color: #00e59b !important;
 }
 
-/* ISOLA 3 (DESTRA): Azioni interattive (Ricerca + Guida TV + Impostazioni) a filo destro - identiche dimensioni isola centrale */
-.nav-island-right {
-    position: relative;
-    padding: 5px 6px;
-    height: 48px;
+.dock-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 12px;
+    height: 3px;
+    background: #00e59b;
+    border-radius: 3px 3px 0 0;
+    opacity: 0;
+    transform: scaleX(0.4);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 0 12px rgba(0, 229, 155, 0.85);
+}
+
+.dock-nav-link.active::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* Gruppo Destro: Icone Azione minimali stile NOW */
+.dock-group-right {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
     flex-shrink: 0;
-    margin-left: auto;
-    z-index: 10002;
 }
 
-.nav-island-right .settings-icon-btn,
-.nav-island-right .search-icon-btn,
-.nav-island-right .guidatv-icon-btn {
-    width: 38px;
-    height: 38px;
-    border-radius: 999px;
+.dock-action-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     background: transparent;
     border: 1px solid transparent;
     color: rgba(255, 255, 255, 0.7);
@@ -1884,52 +1888,28 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     justify-content: center;
     transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     padding: 0;
-    flex-shrink: 0;
     box-sizing: border-box;
 }
 
-.nav-island-right .settings-icon-btn:hover,
-.nav-island-right .search-icon-btn:hover,
-.nav-island-right .guidatv-icon-btn:hover {
+.dock-action-btn:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
-.nav-island-right .guidatv-icon-btn.active {
+.dock-action-btn:active {
+    transform: scale(0.92);
+}
+
+.dock-action-btn.active {
+    background: #00e59b !important;
     color: #000000 !important;
-    background: #ffffff !important;
-    border-color: #ffffff !important;
-    box-shadow: 0 2px 14px rgba(255, 255, 255, 0.28);
+    box-shadow: 0 0 14px rgba(0, 229, 155, 0.6);
 }
 
-.nav-island-right .guidatv-icon-btn.active i {
-    color: #000000 !important;
-}
-
-.nav-island-right .settings-icon-btn:active,
-.nav-island-right .search-icon-btn:active,
-.nav-island-right .guidatv-icon-btn:active {
-    transform: scale(0.94);
-}
-
-.nav-island-right .settings-icon-btn i,
-.nav-island-right .search-icon-btn i,
-.nav-island-right .guidatv-icon-btn i {
-    font-size: 0.95rem;
+.dock-action-btn i {
+    font-size: 1rem;
     line-height: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Separatore sottile interno all'isola destra tra Guida TV e Impostazioni */
-.island-separator,
-.nav-island-right .nav-separator {
-    width: 1px;
-    height: 18px;
-    background: rgba(255, 255, 255, 0.16);
-    margin: 0;
-    flex-shrink: 0;
 }
 
 /* Compatibilità con elementi legacy .home-header */

@@ -29,6 +29,7 @@ export default function Navbar({
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const [isGuidaTvOpen, setIsGuidaTvOpen] = useState(false);
     const [isNavHidden, setIsNavHidden] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const [siteTime, setSiteTime] = useState(() => {
         if (typeof window !== "undefined") {
             return new Date().toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
@@ -56,6 +57,7 @@ export default function Navbar({
     useEffect(() => {
         if (isSkyPage) {
             setIsNavHidden(false);
+            setIsScrolled(false);
             return;
         }
 
@@ -68,6 +70,7 @@ export default function Navbar({
         function updateScroll() {
             if (isSkyPage) {
                 setIsNavHidden(false);
+                setIsScrolled(false);
                 ticking = false;
                 return;
             }
@@ -75,6 +78,8 @@ export default function Navbar({
             const currentScrollY = getScrollY();
             const lastScrollY = lastScrollYRef.current;
             const delta = currentScrollY - lastScrollY;
+
+            setIsScrolled(currentScrollY > 15);
 
             // Se siamo vicini alla cima della pagina, mostra sempre la navbar
             if (currentScrollY <= 25) {
@@ -234,7 +239,7 @@ export default function Navbar({
 
     return (
         <>
-            <div className={`home-header-wrapper ${isHidden ? "nav-hidden" : ""} ${isSearchOpen ? "search-mode-active" : ""}`} id="home-header-wrapper">
+            <div className={`home-header-wrapper ${isHidden ? "nav-hidden" : ""} ${isSearchOpen ? "search-mode-active" : ""} ${isScrolled ? "header-scrolled" : "header-top"}`} id="home-header-wrapper">
                 {isSearchOpen ? (
                     <div className="home-search-fullbar-container" ref={searchWrapperRef}>
                         <div className="home-search-fullbar">
