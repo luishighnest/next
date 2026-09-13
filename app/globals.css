@@ -51,7 +51,8 @@ html {
     overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    overscroll-behavior-y: contain;
+    overscroll-behavior: none;
+    overscroll-behavior-y: none;
 }
 
 html, body {
