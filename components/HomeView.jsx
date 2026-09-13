@@ -7,6 +7,7 @@ import SkeletonSection from "@/components/SkeletonSection";
 import ChannelCard from "@/components/ChannelCard";
 import SearchView from "@/components/SearchView";
 import SubCategoryChips from "@/components/SubCategoryChips";
+import HomeHero from "@/components/HomeHero";
 import { extractSubCategories, extractVodSubCategories } from "@/lib/subcategories";
 import { getTechSettings } from "@/lib/settings";
 
@@ -453,6 +454,10 @@ function HomeViewContent({ defaultTab = "all" }) {
             />
 
             <main className="home-content">
+                {!isSearchOpen && filter === "all" && (
+                    <HomeHero categories={categories} />
+                )}
+
                 {!isSearchOpen && filter !== "all" && currentSubCategories.length > 0 && (
                     <SubCategoryChips
                         items={currentSubCategories}
