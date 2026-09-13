@@ -12,6 +12,7 @@ export default function Navbar({
     onFilterChange,
     activeSubFilter = "all",
     onSubFilterChange,
+    onSelectCategoryAndSub,
     dynamicSubCategories,
     onSearch,
     hideSideIslands,
@@ -100,17 +101,16 @@ export default function Navbar({
 
     const handleSubCategoryClick = (macroTab, subId) => {
         setOpenDropdownNav(null);
-        if (onSubFilterChange && activeFilter === macroTab) {
-            onSubFilterChange(subId);
+        if (onSelectCategoryAndSub) {
+            onSelectCategoryAndSub(macroTab, subId);
         } else {
-            const cleanMacro = macroTab === "home" ? "all" : macroTab;
+            const cleanMacro = (macroTab === "home" || macroTab === "all") ? "all" : macroTab;
             if (onFilterChange) {
                 onFilterChange(cleanMacro);
-                if (onSubFilterChange) {
-                    setTimeout(() => onSubFilterChange(subId), 50);
-                }
+                if (onSubFilterChange) onSubFilterChange(subId);
             } else {
-                router.push(`/${macroTab}?sub=${encodeURIComponent(subId)}`);
+                const target = cleanMacro === "all" ? "/home" : `/${cleanMacro}`;
+                router.push(subId && subId !== "all" ? `${target}?sub=${encodeURIComponent(subId)}` : target);
             }
         }
     };

@@ -149,6 +149,15 @@ function VodContent() {
             .filter(sec => sec.channels.length > 0);
     }, [sections, deferredSearch, subFilter]);
 
+    const handleSelectCategoryAndSub = (macroTab, subId = "all") => {
+        if (macroTab === "vod") {
+            handleSelectSubFilter(subId);
+        } else {
+            const target = macroTab === "home" || macroTab === "all" ? "/home" : `/${macroTab}`;
+            router.push(subId && subId !== "all" ? `${target}?sub=${encodeURIComponent(subId)}` : target);
+        }
+    };
+
     return (
         <div className={`desktop-home vod-page-container ${mounted ? "is-mounted" : "is-mounting"}`} style={{ display: "block", minHeight: "140vh" }}>
             <Navbar
@@ -156,6 +165,7 @@ function VodContent() {
                 onFilterChange={handleFilterChange}
                 activeSubFilter={subFilter}
                 onSubFilterChange={handleSelectSubFilter}
+                onSelectCategoryAndSub={handleSelectCategoryAndSub}
                 isSearchOpen={isSearchOpen}
                 setIsSearchOpen={setIsSearchOpen}
                 searchVal={search}

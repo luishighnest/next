@@ -169,7 +169,7 @@ function HomeViewContent({ defaultTab = "all" }) {
         }
     }, [exploreData]);
 
-    // Gestione popstate (tasti Indietro/Avanti del browser) senza ricaricare la pagina
+    // Gestione popstate (tasti Indietro/Avanti del browser) con sincronizzazione atomica di tab e sub-filter
     useEffect(() => {
         const handlePopState = () => {
             const p = window.location.pathname;
@@ -177,40 +177,48 @@ function HomeViewContent({ defaultTab = "all" }) {
             else if (p === "/intrattenimento") setFilter("intrattenimento");
             else if (p === "/eventi") setFilter("eventi");
             else if (p === "/home" || p === "/") setFilter("all");
-            else if (p === "/vod") router.push("/vod");
-            setSubFilter("all");
+            else if (p === "/vod") {
+                router.push("/vod");
+                return;
+            }
+            const params = new URLSearchParams(window.location.search);
+            setSubFilter(params.get("sub") || "all");
         };
         window.addEventListener("popstate", handlePopState);
         return () => window.removeEventListener("popstate", handlePopState);
     }, []);
 
-    // Cambio tab ultra-fluido: aggiorna lo stato a 0ms senza distruggere né rimontare l'albero di componenti
-    const handleFilterChange = (targetTab) => {
-        const cleanTab = (targetTab === "home" || targetTab === "all") ? "all" : targetTab;
-        if (cleanTab === filter) return;
+    // Selezione atomica a 0ms: illumina il tasto navbar, seleziona la sottocategoria e filtra i caroselli senza scatti
+    const handleSelectCategoryAndSub = (macroTab, subId = "all") => {
+        const cleanTab = (macroTab === "home" || macroTab === "all") ? "all" : macroTab;
+
+        if (cleanTab === "vod") {
+            setMounted(false);
+            const target = subId && subId !== "all" ? `/vod?sub=${encodeURIComponent(subId)}` : "/vod";
+            router.push(target);
+            return;
+        }
 
         setFilter(cleanTab);
-        setSubFilter("all");
+        setSubFilter(subId);
 
         try {
             window.scrollTo({ top: 0, behavior: "instant" });
         } catch(e) {
             window.scrollTo(0, 0);
         }
-        
-        let targetPath = "/home";
-        if (cleanTab === "sport") targetPath = "/sport";
-        else if (cleanTab === "intrattenimento") targetPath = "/intrattenimento";
-        else if (cleanTab === "eventi") targetPath = "/eventi";
-        else if (cleanTab === "vod") {
-            setMounted(false); // triggers is-mounting (opacity: 0) for a clean fade-out
-            router.push("/vod");
-            return;
-        }
 
-        if (typeof window !== "undefined" && window.location.pathname !== targetPath) {
-            window.history.pushState({ tab: cleanTab }, "", targetPath);
+        let targetPath = cleanTab === "all" ? "/home" : `/${cleanTab}`;
+        if (subId && subId !== "all") {
+            targetPath += `?sub=${encodeURIComponent(subId)}`;
         }
+        if (typeof window !== "undefined" && window.location.pathname + window.location.search !== targetPath) {
+            window.history.pushState({ tab: cleanTab, sub: subId }, "", targetPath);
+        }
+    };
+
+    const handleFilterChange = (targetTab) => {
+        handleSelectCategoryAndSub(targetTab, "all");
     };
 
     // Caricamento resiliente in background (Stale-While-Revalidate): MAI rimettere loading=true se ci sono già dati
@@ -435,6 +443,7 @@ function HomeViewContent({ defaultTab = "all" }) {
                 onFilterChange={handleFilterChange}
                 activeSubFilter={subFilter}
                 onSubFilterChange={handleSelectSubFilter}
+                onSelectCategoryAndSub={handleSelectCategoryAndSub}
                 dynamicSubCategories={dynamicSubCategories}
                 isSearchOpen={isSearchOpen}
                 setIsSearchOpen={setIsSearchOpen}
