@@ -2129,8 +2129,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     gap: 7px;
     padding: 7px 16px;
     border-radius: 999px;
-    background: rgba(14, 20, 32, 0.75);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(14, 18, 26, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.72);
     font-size: 0.84rem;
     font-weight: 500;
@@ -2139,28 +2139,24 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     white-space: nowrap;
     user-select: none;
     -webkit-user-select: none;
-    transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    transition: all 0.18s ease;
+    box-shadow: none !important;
 }
 
 .subnav-chip:hover {
     background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.25);
     color: #ffffff;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+    box-shadow: none !important;
 }
 
-/* Chip Attivo: Stile NOW / Obsidian Emerald (Non un blocco verde fosforescente piatto, ma eleganza con bordo neon e glow morbido) */
+/* Chip Attivo: Bordo pulito e netto senza alcun alone esterno */
 .subnav-chip.active {
-    background: linear-gradient(135deg, rgba(0, 229, 155, 0.18) 0%, rgba(10, 24, 20, 0.92) 100%) !important;
-    border-color: rgba(0, 229, 155, 0.65) !important;
+    background: rgba(0, 229, 155, 0.08) !important;
+    border: 1.5px solid #00e59b !important;
     color: #00e59b !important;
     font-weight: 700 !important;
-    box-shadow: 0 0 18px rgba(0, 229, 155, 0.22), inset 0 0 12px rgba(0, 229, 155, 0.1) !important;
-    transform: translateY(-1px);
+    box-shadow: none !important;
 }
 
 .subnav-chip-icon {
