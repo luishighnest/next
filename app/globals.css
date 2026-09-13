@@ -58,7 +58,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: var(--font-main);
-    background-color: var(--bg-base);
+    background-color: #07080a;
+    background-image: 
+        radial-gradient(ellipse 90% 55% at 50% -12%, rgba(30, 52, 98, 0.24), transparent 75%),
+        radial-gradient(ellipse 65% 45% at 100% 0%, rgba(55, 24, 95, 0.14), transparent 65%),
+        radial-gradient(ellipse 60% 40% at 0% 25%, rgba(18, 38, 70, 0.10), transparent 60%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--text-primary);
     min-height: 100vh;
     overflow-x: hidden;
