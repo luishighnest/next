@@ -29,7 +29,12 @@ export default function Navbar({
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
     const [isGuidaTvOpen, setIsGuidaTvOpen] = useState(false);
     const [isNavHidden, setIsNavHidden] = useState(false);
-    const [siteTime, setSiteTime] = useState("");
+    const [siteTime, setSiteTime] = useState(() => {
+        if (typeof window !== "undefined") {
+            return new Date().toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+        }
+        return "00:00";
+    });
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
 
@@ -291,7 +296,7 @@ export default function Navbar({
                                         handleNavClick("all");
                                     }}
                                 >
-                                    <img src="/logos/nmdz_monogram.png" alt="Logo" className="dock-brand-logo" />
+                                    <img src="/logos/nmdz_monogram.png" alt="Logo" className="dock-brand-logo" width={26} height={26} loading="eager" decoding="sync" />
                                 </Link>
 
                                 {siteTime && (

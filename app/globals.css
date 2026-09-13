@@ -10414,3 +10414,76 @@ body:has(.sky-app) {
         height: 32px;
     }
 }
+
+
+/* ==========================================================================
+   STABILIZZAZIONE ASSOLUTA DIMENSIONI NAVBAR DOCK (ZERO LAYOUT SHIFT)
+   ========================================================================== */
+
+.dock-group-left {
+    gap: 8px;
+    padding: 0 4px 0 6px;
+    min-width: 92px !important;
+    width: 92px !important;
+    max-width: 92px !important;
+    flex: 0 0 92px !important;
+    box-sizing: border-box;
+}
+
+.dock-brand-link {
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px !important;
+    min-height: 26px !important;
+    flex-shrink: 0;
+}
+
+.dock-brand-logo {
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px !important;
+    min-height: 26px !important;
+    display: block;
+}
+
+.dock-site-clock {
+    min-width: 48px !important;
+    width: 48px !important;
+    text-align: center !important;
+    display: inline-block !important;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.dock-group-right {
+    gap: 4px;
+    padding: 0 4px;
+    min-width: 124px !important;
+    width: 124px !important;
+    max-width: 124px !important;
+    flex: 0 0 124px !important;
+    justify-content: flex-end !important;
+    box-sizing: border-box;
+}
+
+.dock-group-center {
+    flex-shrink: 0 !important;
+}
+
+.home-header-dock {
+    width: max-content !important;
+    min-width: 820px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 960px) {
+    .dock-group-left {
+        min-width: 32px !important;
+        width: 32px !important;
+        max-width: 32px !important;
+        flex: 0 0 32px !important;
+    }
+    .home-header-dock {
+        min-width: 0 !important;
+    }
+}
