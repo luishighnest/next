@@ -5251,21 +5251,22 @@ html {
             box-sizing: border-box;
         }
 
-        /* Navbar fixed e a scomparsa sullo scroll per la pagina player evento (Identica alla Home per posizione e grandezza) */
+        /* Navbar fixed e a scomparsa sullo scroll per la pagina player evento (Identica alla Home per posizione top: 0 e grandezza) */
         .event-player-page .home-header-wrapper {
             position: fixed !important;
-            top: 18px !important;
+            top: 0 !important;
             left: 0 !important;
             right: 0 !important;
             z-index: 10001 !important;
             width: 100% !important;
+            height: 72px !important;
             pointer-events: none !important;
             transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease !important;
             will-change: transform, opacity;
         }
         
         .event-player-page .home-header-wrapper.nav-hidden {
-            transform: translateY(-160%) !important;
+            transform: translateY(-100%) !important;
             opacity: 0 !important;
             pointer-events: none !important;
         }
