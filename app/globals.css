@@ -10536,9 +10536,9 @@ body:has(.sky-app) {
     margin-right: calc(-50vw + 50%);
     margin-top: 0;
     margin-bottom: 0;
-    min-height: 94vh;
-    height: 96vh;
-    max-height: 980px;
+    min-height: 100vh;
+    height: 100vh;
+    max-height: none;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -10683,11 +10683,11 @@ body:has(.sky-app) {
 }
 
 .now-hero-channel-badge-logo {
-    height: 24px;
+    height: 38px;
     width: auto;
-    max-width: 90px;
+    max-width: 140px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
 }
 
 .now-hero-channel-label {
@@ -10942,34 +10942,34 @@ body:has(.sky-app) {
     color: #ffffff;
 }
 
-/* Frecce laterali di navigazione a sfioramento */
+/* Frecce laterali di navigazione coerenti con il design del sito (.top-nav-btn) */
 .now-hero-nav-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
-    background: rgba(14, 18, 28, 0.45);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 6;
+    z-index: 10;
     opacity: 0;
-    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .now-hero-nav-arrow.prev {
-    left: 24px;
+    left: 28px;
 }
 
 .now-hero-nav-arrow.next {
-    right: 24px;
+    right: 28px;
 }
 
 .now-hero-stage:hover .now-hero-nav-arrow {
@@ -10977,14 +10977,15 @@ body:has(.sky-app) {
 }
 
 .now-hero-nav-arrow:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.6);
     color: #ffffff;
-    transform: translateY(-50%) scale(1.08);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .now-hero-nav-arrow .material-symbols-rounded {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 /* Responsive NOW Hero */

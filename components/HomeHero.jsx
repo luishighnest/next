@@ -84,7 +84,7 @@ export default function HomeHero({ categories = [] }) {
                     if (!ch.programmi || ch.programmi.length === 0) return;
 
                     // FILTRO ESPLICITO: Escludi tutti i canali Sky Sport 251, 252, 253, 254, 255, 256, 257, 258, 259 ecc.
-                    const isSkySportNumbered = /skys*sports*25d+/i.test(name) || /skys*calcios*d+/i.test(name);
+                    const isSkySportNumbered = /sky\s*sport\s*25\d+/i.test(name) || /sky\s*calcio\s*\d+/i.test(name);
                     if (isSkySportNumbered) return;
 
                     // Trova il programma in onda in questo momento
@@ -287,15 +287,16 @@ export default function HomeHero({ categories = [] }) {
                         </span>
                         <span className="now-hero-cat-tag">{current.category}</span>
                         <div className="now-hero-channel-brand">
-                            {current.logoUrl && (
+                            {current.logoUrl ? (
                                 <img
                                     src={current.logoUrl}
                                     alt={current.channelName}
                                     className="now-hero-channel-badge-logo"
                                     loading="eager"
                                 />
+                            ) : (
+                                <span className="now-hero-channel-label">{current.channelName}</span>
                             )}
-                            <span className="now-hero-channel-label">{current.channelName}</span>
                         </div>
                     </div>
 
