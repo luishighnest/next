@@ -156,7 +156,9 @@ export default function HomeHero({ categories = [] }) {
                         progress: progressPct,
                         targetHref,
                         channelObj: matchedChannelObj || { title: ch.canale, name: ch.canale, slug },
-                        logoUrl: getChannelLogoUrl({ title: ch.canale })
+                        logoUrl: getChannelLogoUrl({ title: ch.canale }),
+                        currentProg: prog,
+                        nextProg: nextProg
                     };
 
                     if (cat === "sport") {
@@ -210,6 +212,8 @@ export default function HomeHero({ categories = [] }) {
         return () => { isMounted = false; };
     }, [categories]);
 
+    const [isInfoOpen, setIsInfoOpen] = useState(false);
+
     const nextSlide = useCallback(() => {
         if (heroItems.length <= 1) return;
         setActiveIndex(prev => (prev + 1) % heroItems.length);
@@ -221,7 +225,7 @@ export default function HomeHero({ categories = [] }) {
     }, [heroItems.length]);
 
     useEffect(() => {
-        if (isHovered || heroItems.length <= 1) {
+        if (isHovered || isInfoOpen || heroItems.length <= 1) {
             if (timerRef.current) clearInterval(timerRef.current);
             return;
         }
@@ -231,7 +235,7 @@ export default function HomeHero({ categories = [] }) {
         return () => {
             if (timerRef.current) clearInterval(timerRef.current);
         };
-    }, [isHovered, heroItems.length, nextSlide]);
+    }, [isHovered, isInfoOpen, heroItems.length, nextSlide]);
 
     if (!heroItems || heroItems.length === 0) {
         return null;
@@ -263,14 +267,14 @@ export default function HomeHero({ categories = [] }) {
                             key={item.channelName + idx}
                             className={"now-hero-art-slide " + (isActive ? "active" : "")}
                             style={{
-                                backgroundImage: "url(" + item.progImg + ")",
+                                backgroundImage: `url("${item.progImg}")`,
                                 opacity: isActive ? 1 : 0,
                                 zIndex: isActive ? 1 : 0
                             }}
                         />
                     );
                 })}
-                {/* Gradienti multidirezionali NOW TV: leggibilità perfetta della Navbar e transizione fluida verso il basso */}
+                {/* Maschere di gradiente autentiche NOW TV */}
                 <div className="now-hero-mask-top" />
                 <div className="now-hero-mask-left" />
                 <div className="now-hero-mask-bottom" />
@@ -279,13 +283,8 @@ export default function HomeHero({ categories = [] }) {
             {/* Contenuto Hero Billboard 100% stile NOW */}
             <div className="now-hero-inner">
                 <div className="now-hero-billboard">
-                    {/* Badge e Canale */}
+                    {/* Header NOW: Logo canale in primo piano + Badge Diretta + Categoria */}
                     <div className="now-hero-header-line">
-                        <span className="now-hero-live-pill">
-                            <span className="now-hero-live-pulse" />
-                            DIRETTA TV
-                        </span>
-                        <span className="now-hero-cat-tag">{current.category}</span>
                         <div className="now-hero-channel-brand">
                             {current.logoUrl ? (
                                 <img
@@ -297,6 +296,14 @@ export default function HomeHero({ categories = [] }) {
                             ) : (
                                 <span className="now-hero-channel-label">{current.channelName}</span>
                             )}
+                        </div>
+
+                        <div className="now-hero-badges-wrapper">
+                            <span className="now-hero-live-pill">
+                                <span className="now-hero-live-pulse" />
+                                DIRETTA
+                            </span>
+                            <span className="now-hero-cat-tag">{current.category}</span>
                         </div>
                     </div>
 
@@ -329,7 +336,7 @@ export default function HomeHero({ categories = [] }) {
                         </p>
                     )}
 
-                    {/* Pulsanti Azione NOW TV Autentici: Guarda (bianco puro con play) + Info (glass translucido) */}
+                    {/* Pulsanti Azione NOW TV: Guarda (riproduzione) + Dettagli (apre popup guida TV) */}
                     <div className="now-hero-cta-group">
                         <Link
                             href={current.targetHref}
@@ -340,14 +347,14 @@ export default function HomeHero({ categories = [] }) {
                             <span className="now-hero-play-label">Guarda</span>
                         </Link>
 
-                        <Link
-                            href={current.targetHref}
+                        <button
+                            type="button"
                             className="now-hero-info-button"
-                            onClick={() => handleCardClick(current)}
+                            onClick={() => setIsInfoOpen(true)}
                         >
                             <span className="material-symbols-rounded now-hero-info-ico">info</span>
                             <span className="now-hero-info-label">Dettagli</span>
-                        </Link>
+                        </button>
                     </div>
                 </div>
 
@@ -373,7 +380,7 @@ export default function HomeHero({ categories = [] }) {
                 </div>
             </div>
 
-            {/* Frecce di navigazione a sfioramento laterali */}
+            {/* Frecce di navigazione laterali stile NOW */}
             <button
                 type="button"
                 className="now-hero-nav-arrow prev"
@@ -390,6 +397,87 @@ export default function HomeHero({ categories = [] }) {
             >
                 <span className="material-symbols-rounded">chevron_right</span>
             </button>
+
+            {/* Popup Guida TV Dettagli Programma Attuale e Successivo */}
+            {isInfoOpen && (
+                <div className="now-hero-modal-backdrop" onClick={() => setIsInfoOpen(false)}>
+                    <div className="now-hero-modal-box" onClick={(e) => e.stopPropagation()}>
+                        <div className="now-hero-modal-header">
+                            <div className="now-hero-modal-ch-info">
+                                {current.logoUrl ? (
+                                    <img src={current.logoUrl} alt={current.channelName} className="now-hero-modal-logo" />
+                                ) : (
+                                    <span className="now-hero-modal-ch-name">{current.channelName}</span>
+                                )}
+                                <span className="now-hero-modal-cat-tag">{current.category}</span>
+                            </div>
+                            <button
+                                type="button"
+                                className="now-hero-modal-close-btn"
+                                onClick={() => setIsInfoOpen(false)}
+                                aria-label="Chiudi guida"
+                            >
+                                <span className="material-symbols-rounded">close</span>
+                            </button>
+                        </div>
+
+                        <div className="now-hero-modal-body">
+                            {/* Scheda Programma Attualmente in Onda */}
+                            <div className="now-hero-modal-card now-active-card">
+                                <div className="now-hero-modal-badge-row">
+                                    <span className="now-hero-live-pill small">
+                                        <span className="now-hero-live-pulse" />
+                                        IN ONDA ORA
+                                    </span>
+                                    <span className="now-hero-modal-time">
+                                        <span className="material-symbols-rounded">schedule</span>
+                                        {current.progOraInizio}{current.progOraFine ? " - " + current.progOraFine : ""}
+                                    </span>
+                                </div>
+                                <h3 className="now-hero-modal-title">{current.progTitle}</h3>
+                                {current.progDesc ? (
+                                    <p className="now-hero-modal-desc">{current.progDesc}</p>
+                                ) : (
+                                    <p className="now-hero-modal-desc muted">Nessuna sinossi disponibile per questo evento.</p>
+                                )}
+                            </div>
+
+                            {/* Scheda Programma Successivo */}
+                            <div className="now-hero-modal-card next-card">
+                                <div className="now-hero-modal-badge-row">
+                                    <span className="now-hero-modal-pill-next">A SEGUIRE</span>
+                                    {current.nextProg?.ora && (
+                                        <span className="now-hero-modal-time">
+                                            <span className="material-symbols-rounded">schedule</span>
+                                            {current.nextProg.ora}{current.nextProg.fine ? " - " + current.nextProg.fine : ""}
+                                        </span>
+                                    )}
+                                </div>
+                                <h3 className="now-hero-modal-title">
+                                    {current.nextProg ? current.nextProg.titolo : "Nessun programma successivo registrato"}
+                                </h3>
+                                {current.nextProg?.descrizione && (
+                                    <p className="now-hero-modal-desc">{current.nextProg.descrizione}</p>
+                                )}
+                            </div>
+                        </div>
+
+                        <div className="now-hero-modal-footer">
+                            <Link
+                                href={current.targetHref}
+                                className="now-hero-play-button modal-play"
+                                onClick={() => {
+                                    handleCardClick(current);
+                                    setIsInfoOpen(false);
+                                }}
+                            >
+                                <span className="material-symbols-rounded now-hero-play-ico">play_arrow</span>
+                                <span>Vai alla diretta</span>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
