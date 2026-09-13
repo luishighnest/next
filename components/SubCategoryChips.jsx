@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useRef } from "react";
 
 export default function SubCategoryChips({
@@ -27,6 +27,14 @@ export default function SubCategoryChips({
             <div className="subnav-chips-container" ref={scrollRef}>
                 {allItems.map((item) => {
                     const isActive = activeSubFilter === item.id;
+                    let iconClass = "fas fa-circle-dot";
+                    if (item.id === "all") iconClass = "fas fa-layer-group";
+                    else if (item.id === "movie") iconClass = "fas fa-film";
+                    else if (item.id === "tv") iconClass = "fas fa-tv";
+                    else if (item.id.includes("sky") || item.id.includes("sport") || item.id.includes("calcio")) iconClass = "fas fa-trophy";
+                    else if (item.id.includes("tennis")) iconClass = "fas fa-baseball-bat-ball";
+                    else if (item.id.includes("f1") || item.id.includes("motori")) iconClass = "fas fa-flag-checkered";
+
                     return (
                         <button
                             key={item.id}
@@ -34,7 +42,7 @@ export default function SubCategoryChips({
                             className={`subnav-chip ${isActive ? "active" : ""}`}
                             onClick={() => handleSelect(item.id)}
                         >
-                            {item.icon && <span className="material-symbols-rounded subnav-chip-icon">{item.icon}</span>}
+                            <i className={`${iconClass} subnav-chip-icon`} aria-hidden="true"></i>
                             <span className="subnav-chip-label">{item.label}</span>
                             {typeof item.count === "number" && item.count > 0 && (
                                 <span className="subnav-chip-count">{item.count}</span>
