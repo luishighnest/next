@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 
-export default function SkeletonSection({ cardCount = 6 }) {
+export default function SkeletonSection({ cardCount = 6, isVod = false }) {
     const wrapperRef = useRef(null);
 
     useEffect(() => {
@@ -11,13 +11,13 @@ export default function SkeletonSection({ cardCount = 6 }) {
         const updateCardWidth = () => {
             const w = wrapper.clientWidth;
             if (w > 0) {
-                let numCards = 5;
-                if (window.innerWidth <= 768) {
-                    numCards = 2;
-                } else if (window.innerWidth <= 1100) {
-                    numCards = 3;
-                } else if (window.innerWidth <= 1350) {
-                    numCards = 4;
+                let numCards = isVod ? 6 : 5;
+                if (window.innerWidth <= 600) {
+                    numCards = isVod ? 3 : 2;
+                } else if (window.innerWidth <= 900) {
+                    numCards = isVod ? 4 : 3;
+                } else if (window.innerWidth <= 1200) {
+                    numCards = isVod ? 5 : 4;
                 }
                 const gapCount = numCards - 1;
                 const totalGapSpace = gapCount * 16;
@@ -31,10 +31,10 @@ export default function SkeletonSection({ cardCount = 6 }) {
         updateCardWidth();
 
         return () => resizeObserver.disconnect();
-    }, []);
+    }, [isVod]);
 
     return (
-        <div className="home-section skeleton-section" aria-hidden="true">
+        <div className={`home-section skeleton-section ${isVod ? "vod-carousel-section" : ""}`} aria-hidden="true">
             <div className="category-header-container">
                 <div className="category-header-left" style={{ display: "flex", alignItems: "center" }}>
                     <div className="skeleton-item skeleton-shimmer" style={{ width: "160px", height: "26px", borderRadius: "6px" }} />
@@ -51,7 +51,7 @@ export default function SkeletonSection({ cardCount = 6 }) {
             <div className="carousel-wrapper" ref={wrapperRef}>
                 <div className="home-carousel" style={{ overflow: "hidden" }}>
                     {Array.from({ length: cardCount }).map((_, idx) => (
-                        <div key={idx} className="now-card-wrapper skeleton-card-wrapper">
+                        <div key={idx} className={`now-card-wrapper skeleton-card-wrapper ${isVod ? "vod-poster-card" : ""}`}>
                             <div className="now-card skeleton-card skeleton-shimmer"></div>
                             <div className="now-card-info-external" style={{ marginTop: "10px" }}>
                                 <div className="skeleton-item skeleton-shimmer" style={{ width: "60px", height: "12px", borderRadius: "4px", marginBottom: "8px" }} />

@@ -27,6 +27,8 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
         }
     };
 
+    const isVodSection = channels.some(c => Boolean(c.isVod || c.vodType));
+
     useEffect(() => {
         const wrapper = wrapperRef.current;
         if (!wrapper) return;
@@ -34,13 +36,13 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
         const updateCardWidth = () => {
             const w = wrapper.clientWidth;
             if (w > 0) {
-                let numCards = 5;
-                if (window.innerWidth <= 768) {
-                    numCards = 2;
-                } else if (window.innerWidth <= 1100) {
-                    numCards = 3;
-                } else if (window.innerWidth <= 1350) {
-                    numCards = 4;
+                let numCards = isVodSection ? 6 : 5;
+                if (window.innerWidth <= 600) {
+                    numCards = isVodSection ? 3 : 2;
+                } else if (window.innerWidth <= 900) {
+                    numCards = isVodSection ? 4 : 3;
+                } else if (window.innerWidth <= 1200) {
+                    numCards = isVodSection ? 5 : 4;
                 }
                 const gapCount = numCards - 1;
                 const totalGapSpace = gapCount * 16;
@@ -111,7 +113,7 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
         : `${count} ${count === 1 ? "canale" : "canali"}`;
 
     return (
-        <div className={isRelated ? "" : "home-section"}>
+        <div className={`${isRelated ? "" : "home-section"} ${isVodSection ? "vod-carousel-section" : ""}`}>
             <div className="category-header-container" style={isRelated ? { marginBottom: "16px", marginTop: "28px" } : {}}>
                 <div className="category-header-left">
                     {isRelated ? (

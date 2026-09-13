@@ -104,9 +104,9 @@ function VodContent() {
             <main className="home-content">
                 {loading ? (
                     <div className="skeleton-container" style={{ width: "100%" }}>
-                        <SkeletonSection cardCount={6} />
-                        <SkeletonSection cardCount={6} />
-                        <SkeletonSection cardCount={6} />
+                        <SkeletonSection cardCount={6} isVod={true} />
+                        <SkeletonSection cardCount={6} isVod={true} />
+                        <SkeletonSection cardCount={6} isVod={true} />
                     </div>
                 ) : filteredSections.length === 0 ? (
                     <div style={{ textAlign: "center", padding: "100px 20px", color: "rgba(255,255,255,0.5)" }}>
@@ -141,7 +141,7 @@ function VodContent() {
                         </button>
                     </div>
                     <div className="explore-content-wrapper">
-                        <div id="explore-channels-grid" className="explore-channels-grid">
+                        <div id="explore-channels-grid" className="explore-channels-grid explore-vod-grid">
                             {exploreData.channels.map((ch, idx) => (
                                 <ChannelCard
                                     key={ch.id || (ch.title + idx)}

@@ -3291,12 +3291,30 @@ body:has(.explore-all-overlay) {
         row-gap: 20px;
     }
 }
+/* Modalità locandine verticali per la vista Esplora Tutti di VOD (6 colonne su desktop) */
+.explore-channels-grid.explore-vod-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    gap: 18px;
+    row-gap: 28px;
+}
+
+@media (max-width: 1200px) {
+    .explore-channels-grid.explore-vod-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    }
+}
+
 @media (max-width: 768px) {
     .explore-all-overlay {
         padding: 28px 16px;
     }
     .explore-channels-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        row-gap: 18px;
+    }
+    .explore-channels-grid.explore-vod-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
         gap: 12px;
         row-gap: 18px;
     }
@@ -3309,6 +3327,11 @@ body:has(.explore-all-overlay) {
         grid-template-columns: 1fr;
         gap: 16px;
         row-gap: 20px;
+    }
+    .explore-channels-grid.explore-vod-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px;
+        row-gap: 18px;
     }
 }
 .explore-card-wrapper {
@@ -4331,9 +4354,9 @@ video { outline: none !important; }
     max-width: var(--card-width, 260px);
     min-width: var(--card-width, 260px);
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     cursor: pointer;
-    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     outline: none;
     border-radius: 0;
     display: flex;
@@ -4345,25 +4368,31 @@ video { outline: none !important; }
 }
 
 .now-card-wrapper:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
 }
 
 .now-card {
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    border-radius: 14px;
+    border-radius: 16px;
     overflow: hidden;
-    background: #1a1a1a;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-    border: 2px solid transparent;
+    background: #141416;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 
+                inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     transform: translateZ(0);
     backface-visibility: hidden;
-    transition: border-color 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
-                box-shadow 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Oscuramento immagine al passaggio del mouse */
+/* Card VOD in formato Poster Cinematografico 2:3 */
+.now-card-wrapper.vod-poster-card .now-card {
+    aspect-ratio: 2 / 3 !important;
+}
+
+/* Oscuramento e riflesso al passaggio del mouse */
 .now-card::after {
     content: '';
     position: absolute;
@@ -4371,9 +4400,9 @@ video { outline: none !important; }
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.45) 100%);
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.28s ease;
     z-index: 4;
     pointer-events: none;
 }
@@ -4382,50 +4411,16 @@ video { outline: none !important; }
 }
 
 .now-card-wrapper:hover .now-card {
-    border-color: #ffffff;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
-}
-
-.now-card-play-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.85);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    z-index: 5;
-    transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
-                background-color 0.25s ease,
-                border-color 0.25s ease,
-                box-shadow 0.25s ease,
-                opacity 0.2s ease;
-    pointer-events: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-}
-.now-card-play-btn span {
-    font-size: 1.5rem;
-    margin-left: 3px;
-}
-.now-card-wrapper:hover .now-card-play-btn {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.05);
-    background: rgba(255, 255, 255, 0.28);
-    border-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.75), 
+                0 0 20px rgba(255, 255, 255, 0.08),
+                inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .now-card-wrapper:hover .now-card.active {
     border-color: #0073e6;
+    box-shadow: 0 16px 36px rgba(0, 115, 230, 0.4), 
+                0 0 20px rgba(0, 115, 230, 0.2);
 }
 
 .now-card-bg {
@@ -4440,6 +4435,12 @@ video { outline: none !important; }
     -webkit-user-drag: none;
     user-select: none;
     animation: cardImgFadeIn 0.3s ease-out;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform;
+}
+
+.now-card-wrapper:hover .now-card-bg {
+    transform: scale(1.045);
 }
 
 @keyframes cardImgFadeIn {
@@ -4539,15 +4540,16 @@ video { outline: none !important; }
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.2);
-    z-index: 4;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.18);
+    z-index: 6;
 }
 
 .now-card-progress-bar {
     height: 100%;
-    background: #e50914; /* Colore in linea con la home */
-    transition: width 1s linear;
+    background: linear-gradient(90deg, #ff3b30 0%, #ff5252 100%);
+    box-shadow: 0 0 8px rgba(255, 59, 48, 0.75);
+    transition: width 0.6s ease;
 }
 
 .event-card .now-card-fallback-bg {
@@ -4726,23 +4728,23 @@ video { outline: none !important; }
 /* Badge Orario Eventi in sovrimpressione */
 .now-card-time-badge {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 9px;
+    right: 9px;
     left: auto;
-    background: rgba(15, 15, 15, 0.85);
-    backdrop-filter: blur(12px) saturate(180%);
-    -webkit-backdrop-filter: blur(12px) saturate(180%);
-    color: #ffffff;
-    font-size: 0.7rem;
-    font-weight: 800;
-    padding: 4px 8px;
-    border-radius: 6px;
-    letter-spacing: 0.5px;
+    background: rgba(10, 10, 12, 0.75);
+    backdrop-filter: blur(14px) saturate(180%);
+    -webkit-backdrop-filter: blur(14px) saturate(180%);
+    color: #f1f1f1;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 8px;
+    letter-spacing: 0.4px;
     z-index: 10;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 5px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    gap: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -4751,10 +4753,32 @@ video { outline: none !important; }
     display: inline-block;
     width: 5px;
     height: 5px;
-    background-color: #e30a17; /* Rosso Sky/NOW */
+    background-color: #ff3b30;
     border-radius: 50%;
-    box-shadow: 0 0 6px rgba(227, 10, 23, 0.8);
-    animation: badge-pulse 2.5s ease-in-out infinite;
+    box-shadow: 0 0 8px rgba(255, 59, 48, 0.9);
+    animation: badge-pulse 2s ease-in-out infinite;
+}
+
+.now-card-info-external {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-top: 10px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.now-card-time-ext {
+    display: block !important;
+    width: 100% !important;
+    font-size: 0.82rem !important;
+    color: rgba(255, 255, 255, 0.55) !important;
+    font-weight: 600 !important;
+    margin-bottom: 3px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    letter-spacing: 0.2px !important;
 }
 
 .now-card-title-ext {
@@ -4762,13 +4786,19 @@ video { outline: none !important; }
     width: 100% !important;
     min-width: 0 !important;
     max-width: 100% !important;
-    font-size: 1rem !important;
-    color: #ffffff !important;
-    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    color: rgba(255, 255, 255, 0.96) !important;
+    font-weight: 600 !important;
     white-space: nowrap !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    letter-spacing: -0.15px !important;
+    transition: color 0.2s ease !important;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+.now-card-wrapper:hover .now-card-title-ext {
+    color: #ffffff !important;
 }
 
 /* === ICONA PLAY CENTRALE STILE PREMIUM (Glassmorphism NOW/Apple TV) === */
@@ -4776,32 +4806,36 @@ video { outline: none !important; }
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.85);
-    width: 48px;
-    height: 48px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(12px) saturate(180%);
-    -webkit-backdrop-filter: blur(12px) saturate(180%);
-    border: 1px solid rgba(255, 255, 255, 0.45);
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 50px;
+    height: 50px;
+    background: rgba(20, 20, 24, 0.45);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    font-size: 18px;
+    font-size: 19px;
     opacity: 0;
     z-index: 5;
-    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.25s ease,
+                background-color 0.25s ease,
+                border-color 0.25s ease,
+                box-shadow 0.25s ease;
     pointer-events: none;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
 .now-card-wrapper:hover .now-card-play-icon {
     opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-    background: rgba(255, 255, 255, 0.28);
+    transform: translate(-50%, -50%) scale(1.05);
+    background: rgba(255, 255, 255, 0.22);
     border-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), 0 0 16px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.25);
 }
 
 /* === PANNELLO CANALI (GLASSMORPHISM) === */

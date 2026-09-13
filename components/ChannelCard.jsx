@@ -17,7 +17,8 @@ function getDynamicColor(str) {
 function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const slug = getChannelSlug(channel);
     const progInfo = getCurrentProgramInfo(channel.epg);
-    const cardImgUrl = channel.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
+    const isVod = Boolean(channel.isVod || channel.vodType);
+    const cardImgUrl = (isVod && channel.poster) ? channel.poster : (channel.image || (progInfo && progInfo.immagine ? progInfo.immagine : null));
     const hasImage = Boolean(cardImgUrl);
     const isTestJsonEvent = channel.isTestJson || (channel.group && channel.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel.eventSlug);
     const logoUrl = isTestJsonEvent ? "/logos/dazn.png" : getChannelLogoUrl(channel);
@@ -27,7 +28,6 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         (channel.title && channel.title.toLowerCase().includes("sky"))
     );
 
-    const isVod = Boolean(channel.isVod || channel.vodType);
     const cleanSrc = channel.skySource ? (channel.skySource.includes("sky2") ? "sky2" : "") : "";
     const targetHref = isVod 
         ? `/vod/info/${channel.tmdbId || String(channel.id).replace(/^vod_(movie|tv)_/, "")}?type=${channel.vodType || "movie"}` 
@@ -37,9 +37,6 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const dynColor = getDynamicColor(channel.title);
 
     // Risoluzione della categoria di appartenenza della locandina:
-    // 1. Se passata esplicitamente dal carosello o overlay (es. "SuperTennis", "Eurosport", "Digitale Terrestre")
-    // 2. Se definita in channel.group o category
-    // 3. Fallback intelligente in base al provider o contesto
     const rawCategory = categoryName || channel.group || channel.category || "";
     let categoryLabel = rawCategory;
     if (isVod) {
@@ -74,7 +71,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         <Link
             href={targetHref}
             prefetch={true}
-            className="now-card-wrapper home-card-mode"
+            className={`now-card-wrapper home-card-mode ${isVod ? "vod-poster-card" : ""}`}
             onClick={handleClick}
             style={{ textDecoration: "none", color: "inherit", WebkitTapHighlightColor: "transparent" }}
         >
@@ -91,7 +88,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                             fetchPriority={priority ? "high" : "auto"}
                         />
                         <div className="now-card-top-vignette"></div>
-                        {logoUrl && (
+                        {logoUrl && !isVod && (
                             <img
                                 src={logoUrl}
                                 className="now-card-floating-logo"
@@ -121,9 +118,6 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     <div className="now-card-time-badge">{channel.ora}</div>
                 )}
                 <div className="now-card-vignette"></div>
-                <div className="now-card-play-btn">
-                    <span className="material-symbols-rounded">play_arrow</span>
-                </div>
 
                 {progInfo && (
                     <div className="now-card-progress-container">
@@ -131,7 +125,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </div>
                 )}
                 <div className="now-card-play-icon">
-                    <i className="fa fa-play" aria-hidden="true" style={{ marginLeft: "4px" }}></i>
+                    <i className="fa fa-play" aria-hidden="true" style={{ marginLeft: "3px" }}></i>
                 </div>
             </div>
 
@@ -158,7 +152,7 @@ function arePropsEqual(prevProps, nextProps) {
     if (p.title !== n.title) return false;
     if (p.group !== n.group) return false;
     if (p.ora !== n.ora) return false;
-    if (p.image !== n.image) return false;
+    if (p.image !== n.image || p.poster !== n.poster) return false;
     if (p.url !== n.url || p.mpd !== n.mpd) return false;
     if (p.skySource !== n.skySource) return false;
     if (p.isVod !== n.isVod || p.tmdbId !== n.tmdbId || p.vodType !== n.vodType) return false;
