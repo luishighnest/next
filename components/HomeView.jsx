@@ -6,6 +6,8 @@ import CarouselSection from "@/components/CarouselSection";
 import SkeletonSection from "@/components/SkeletonSection";
 import ChannelCard from "@/components/ChannelCard";
 import SearchView from "@/components/SearchView";
+import SubCategoryChips from "@/components/SubCategoryChips";
+import { extractSubCategories, extractVodSubCategories } from "@/lib/subcategories";
 import { getTechSettings } from "@/lib/settings";
 
 const VALID_TABS = ["sport", "intrattenimento", "eventi"];
@@ -55,6 +57,9 @@ function HomeViewContent({ defaultTab = "all" }) {
     const [loading, setLoading] = useState(() => initialSections.length === 0);
     const [mounted, setMounted] = useState(false);
     const [filter, setFilter] = useState(getInitialFilter);
+    const [subFilter, setSubFilter] = useState(() => {
+        return searchParams.get("sub") || "all";
+    });
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -63,6 +68,14 @@ function HomeViewContent({ defaultTab = "all" }) {
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    // Sincronizza sub-filter se la query string cambia
+    useEffect(() => {
+        const s = searchParams.get("sub");
+        if (s !== null && s !== undefined) {
+            setSubFilter(s || "all");
+        }
+    }, [searchParams]);
 
     // Se la query string contiene ?search=, apre subito la ricerca
     useEffect(() => {
@@ -160,6 +173,7 @@ function HomeViewContent({ defaultTab = "all" }) {
     const handleFilterChange = (targetTab) => {
         const cleanTab = (targetTab === "home" || targetTab === "all") ? "all" : targetTab;
         setFilter(cleanTab);
+        setSubFilter("all");
         try {
             window.scrollTo({ top: 0, behavior: "instant" });
         } catch(e) {
@@ -202,6 +216,7 @@ function HomeViewContent({ defaultTab = "all" }) {
                         memorySections = data.sections;
                         try {
                             localStorage.setItem("nmdz_cached_sections", JSON.stringify(data.sections));
+                            window.dispatchEvent(new CustomEvent("nmdz:sections_updated"));
                         } catch (e) {}
 
                         React.startTransition(() => {
@@ -341,20 +356,60 @@ function HomeViewContent({ defaultTab = "all" }) {
         return list;
     }, [categories, deferredSearch]);
 
-    const filteredSections = categories.filter(sec => shouldShowGroup(sec, filter)).map(sec => {
-        if (!deferredSearch.trim()) return sec;
-        const q = deferredSearch.toLowerCase().trim();
+    const currentSubCategories = React.useMemo(() => {
+        return extractSubCategories(categories, filter);
+    }, [categories, filter]);
+
+    const dynamicSubCategories = React.useMemo(() => {
+        let cachedVod = [];
+        try {
+            const stored = localStorage.getItem("nmdz_cached_vod");
+            if (stored) cachedVod = JSON.parse(stored);
+        } catch(e) {}
         return {
-            ...sec,
-            channels: sec.channels.filter(c => matchesChannel(c, q))
+            sport: extractSubCategories(categories, "sport"),
+            intrattenimento: extractSubCategories(categories, "intrattenimento"),
+            eventi: extractSubCategories(categories, "eventi"),
+            vod: extractVodSubCategories(cachedVod)
         };
-    }).filter(sec => sec.channels.length > 0);
+    }, [categories]);
+
+    const handleSelectSubFilter = (subId) => {
+        setSubFilter(subId);
+        const targetBase = filter === "all" ? "/home" : `/${filter}`;
+        const newUrl = subId === "all" ? targetBase : `${targetBase}?sub=${encodeURIComponent(subId)}`;
+        try {
+            window.history.replaceState(null, "", newUrl);
+        } catch(e) {}
+    };
+
+    const shouldShowSubCategory = (sec, sub) => {
+        if (!sub || sub === "all") return true;
+        const normSec = (sec.title || "").toLowerCase().trim();
+        const normSub = sub.toLowerCase().trim();
+        return normSec === normSub || normSec.includes(normSub) || normSub.includes(normSec);
+    };
+
+    const filteredSections = categories
+        .filter(sec => shouldShowGroup(sec, filter))
+        .filter(sec => shouldShowSubCategory(sec, subFilter))
+        .map(sec => {
+            if (!deferredSearch.trim()) return sec;
+            const q = deferredSearch.toLowerCase().trim();
+            return {
+                ...sec,
+                channels: sec.channels.filter(c => matchesChannel(c, q))
+            };
+        }).filter(sec => sec.channels.length > 0);
 
     return (
         <div className={`desktop-home ${mounted ? "is-mounted" : "is-mounting"}`} style={{ display: "block", minHeight: "140vh" }}>
             <Navbar
                 activeFilter={filter}
                 onFilterChange={handleFilterChange}
+                activeSubFilter={subFilter}
+                onSubFilterChange={handleSelectSubFilter}
+                dynamicSubCategories={dynamicSubCategories}
                 isSearchOpen={isSearchOpen}
                 setIsSearchOpen={setIsSearchOpen}
                 searchVal={search}
@@ -363,6 +418,14 @@ function HomeViewContent({ defaultTab = "all" }) {
             />
 
             <main className="home-content">
+                {!isSearchOpen && filter !== "all" && currentSubCategories.length > 0 && (
+                    <SubCategoryChips
+                        items={currentSubCategories}
+                        activeSubFilter={subFilter}
+                        onSelectSubFilter={handleSelectSubFilter}
+                    />
+                )}
+
                 {isSearchOpen ? (
                     <SearchView
                         search={search}
@@ -377,14 +440,28 @@ function HomeViewContent({ defaultTab = "all" }) {
                             <SkeletonSection cardCount={6} />
                         </div>
                     ) : (
-                        filteredSections.map(sec => (
-                            <CarouselSection
-                                key={sec.title}
-                                title={sec.title}
-                                channels={sec.channels}
-                                onExplore={(title, chs) => setExploreData({ title, channels: chs })}
-                            />
-                        ))
+                        filteredSections.length === 0 ? (
+                            <div className="empty-subfilter-state" style={{ textAlign: "center", padding: "80px 20px", color: "rgba(255,255,255,0.4)" }}>
+                                <span className="material-symbols-rounded" style={{ fontSize: "2.8rem", marginBottom: "8px", opacity: 0.7 }}>filter_list_off</span>
+                                <h3 style={{ fontSize: "1.15rem", color: "#fff", fontWeight: 600 }}>Nessun evento o canale in questa sottocategoria al momento</h3>
+                                <button
+                                    type="button"
+                                    onClick={() => handleSelectSubFilter("all")}
+                                    style={{ marginTop: "14px", padding: "8px 18px", borderRadius: "999px", background: "rgba(0,229,155,0.12)", border: "1px solid rgba(0,229,155,0.4)", color: "#00e59b", fontWeight: 600, cursor: "pointer" }}
+                                >
+                                    Mostra tutti
+                                </button>
+                            </div>
+                        ) : (
+                            filteredSections.map(sec => (
+                                <CarouselSection
+                                    key={sec.title}
+                                    title={sec.title}
+                                    channels={sec.channels}
+                                    onExplore={(title, chs) => setExploreData({ title, channels: chs })}
+                                />
+                            ))
+                        )
                     )
                 )}
             </main>

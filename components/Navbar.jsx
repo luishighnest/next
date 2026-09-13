@@ -5,10 +5,14 @@ import { usePathname, useRouter } from "next/navigation";
 import SettingsModal from "./SettingsModal";
 import SearchView from "./SearchView";
 import GuidaTvModal from "./GuidaTvModal";
+import { extractSubCategories, extractVodSubCategories } from "@/lib/subcategories";
 
 export default function Navbar({
     activeFilter,
     onFilterChange,
+    activeSubFilter = "all",
+    onSubFilterChange,
+    dynamicSubCategories,
     onSearch,
     hideSideIslands,
     isSearchOpen: propIsSearchOpen,
@@ -32,8 +36,80 @@ export default function Navbar({
     const [isScrolled, setIsScrolled] = useState(false);
     const [mounted, setMounted] = useState(false);
     const [siteTime, setSiteTime] = useState("");
+    const [hoveredNav, setHoveredNav] = useState(null);
+    const [cachedSubCategories, setCachedSubCategories] = useState({
+        sport: [],
+        intrattenimento: [],
+        eventi: [],
+        vod: []
+    });
+    const hoverTimeoutRef = useRef(null);
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
+
+    // Carica e aggiorna le sottocategorie disponibili in background
+    useEffect(() => {
+        function refreshSubCategories() {
+            try {
+                let sections = [];
+                const storedSec = localStorage.getItem("nmdz_cached_sections");
+                if (storedSec) sections = JSON.parse(storedSec);
+
+                let vodSec = [];
+                const storedVod = localStorage.getItem("nmdz_cached_vod");
+                if (storedVod) vodSec = JSON.parse(storedVod);
+
+                setCachedSubCategories({
+                    sport: extractSubCategories(sections, "sport"),
+                    intrattenimento: extractSubCategories(sections, "intrattenimento"),
+                    eventi: extractSubCategories(sections, "eventi"),
+                    vod: extractVodSubCategories(vodSec)
+                });
+            } catch (e) {}
+        }
+
+        refreshSubCategories();
+        window.addEventListener("nmdz:sections_updated", refreshSubCategories);
+        window.addEventListener("nmdz:vod_updated", refreshSubCategories);
+        return () => {
+            window.removeEventListener("nmdz:sections_updated", refreshSubCategories);
+            window.removeEventListener("nmdz:vod_updated", refreshSubCategories);
+        };
+    }, []);
+
+    const effectiveSubCategories = dynamicSubCategories || cachedSubCategories;
+
+    const handleMouseEnterNav = (tab) => {
+        if (hoverTimeoutRef.current) {
+            clearTimeout(hoverTimeoutRef.current);
+            hoverTimeoutRef.current = null;
+        }
+        setHoveredNav(tab);
+    };
+
+    const handleMouseLeaveNav = () => {
+        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+        hoverTimeoutRef.current = setTimeout(() => {
+            setHoveredNav(null);
+        }, 180);
+    };
+
+    const handleSubCategoryClick = (macroTab, subId) => {
+        setHoveredNav(null);
+        if (onSubFilterChange && activeFilter === macroTab) {
+            onSubFilterChange(subId);
+        } else {
+            const cleanMacro = macroTab === "home" ? "all" : macroTab;
+            if (onFilterChange) {
+                onFilterChange(cleanMacro);
+                if (onSubFilterChange) {
+                    setTimeout(() => onSubFilterChange(subId), 50);
+                }
+            } else {
+                router.push(`/${macroTab}?sub=${encodeURIComponent(subId)}`);
+            }
+        }
+    };
 
     useEffect(() => {
         setMounted(true);
@@ -264,48 +340,81 @@ export default function Navbar({
                                 </div>
                             </div>
 
-                            {/* SEZIONE 2: NAVIGAZIONE CON ICONE + TITOLO (Perfettamente centrata) */}
+                            {/* SEZIONE 2: NAVIGAZIONE CON ICONE + TITOLO + DROPDOWN DINAMICI */}
                             <nav className="dock-group dock-group-center" aria-label="Navigazione principale">
-                                <Link
-                                    href="/home"
-                                    className={`dock-nav-link ${activeFilter === "all" ? "active" : ""}`}
-                                    onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
-                                >
-                                    <i className="fas fa-house dock-icon"></i>
-                                    <span className="dock-label">Home</span>
-                                </Link>
-                                <Link
-                                    href="/sport"
-                                    className={`dock-nav-link ${activeFilter === "sport" ? "active" : ""}`}
-                                    onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
-                                >
-                                    <i className="fas fa-trophy dock-icon"></i>
-                                    <span className="dock-label">Sport</span>
-                                </Link>
-                                <Link
-                                    href="/intrattenimento"
-                                    className={`dock-nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
-                                    onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
-                                >
-                                    <i className="fas fa-tv dock-icon"></i>
-                                    <span className="dock-label">Intrattenimento</span>
-                                </Link>
-                                <Link
-                                    href="/eventi"
-                                    className={`dock-nav-link ${activeFilter === "eventi" ? "active" : ""}`}
-                                    onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
-                                >
-                                    <i className="fas fa-bolt dock-icon"></i>
-                                    <span className="dock-label">Eventi</span>
-                                </Link>
-                                <Link
-                                    href="/vod"
-                                    className={`dock-nav-link ${activeFilter === "vod" ? "active" : ""}`}
-                                    onClick={(e) => { e.preventDefault(); handleNavClick("vod"); }}
-                                >
-                                    <i className="fas fa-clapperboard dock-icon"></i>
-                                    <span className="dock-label">Vod</span>
-                                </Link>
+                                {[
+                                    { id: "all", path: "/home", label: "Home", icon: "fa-house", hasSub: false },
+                                    { id: "sport", path: "/sport", label: "Sport", icon: "fa-trophy", hasSub: true },
+                                    { id: "intrattenimento", path: "/intrattenimento", label: "Intrattenimento", icon: "fa-tv", hasSub: true },
+                                    { id: "eventi", path: "/eventi", label: "Eventi", icon: "fa-bolt", hasSub: true },
+                                    { id: "vod", path: "/vod", label: "Vod", icon: "fa-clapperboard", hasSub: true }
+                                ].map((item) => {
+                                    const isActive = activeFilter === item.id;
+                                    const subItems = (item.hasSub && effectiveSubCategories[item.id]) ? effectiveSubCategories[item.id] : [];
+                                    const isHovered = hoveredNav === item.id;
+
+                                    return (
+                                        <div
+                                            key={item.id}
+                                            className={`dock-nav-item-wrapper ${isHovered ? "is-hovered" : ""}`}
+                                            onMouseEnter={() => item.hasSub && handleMouseEnterNav(item.id)}
+                                            onMouseLeave={item.hasSub ? handleMouseLeaveNav : undefined}
+                                        >
+                                            <Link
+                                                href={item.path}
+                                                className={`dock-nav-link ${isActive ? "active" : ""}`}
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    handleNavClick(item.id);
+                                                    if (onSubFilterChange) onSubFilterChange("all");
+                                                }}
+                                            >
+                                                <i className={`fas ${item.icon} dock-icon`}></i>
+                                                <span className="dock-label">{item.label}</span>
+                                                {item.hasSub && subItems.length > 0 && (
+                                                    <span className="material-symbols-rounded dock-arrow-icon" aria-hidden="true">
+                                                        keyboard_arrow_down
+                                                    </span>
+                                                )}
+                                            </Link>
+
+                                            {item.hasSub && subItems.length > 0 && (
+                                                <div className={`dock-subnav-dropdown ${isHovered ? "is-open" : ""}`} role="menu">
+                                                    <div className="dock-dropdown-header">
+                                                        <span>{item.label}</span>
+                                                    </div>
+                                                    <div className="dock-dropdown-list">
+                                                        <button
+                                                            type="button"
+                                                            className={`dock-dropdown-item ${isActive && activeSubFilter === "all" ? "active" : ""}`}
+                                                            onClick={() => handleSubCategoryClick(item.id, "all")}
+                                                        >
+                                                            <span className="dock-dropdown-dot"></span>
+                                                            <span className="dock-dropdown-item-label">Tutti</span>
+                                                        </button>
+                                                        {subItems.map(sub => {
+                                                            const isSubActive = isActive && activeSubFilter === sub.id;
+                                                            return (
+                                                                <button
+                                                                    key={sub.id}
+                                                                    type="button"
+                                                                    className={`dock-dropdown-item ${isSubActive ? "active" : ""}`}
+                                                                    onClick={() => handleSubCategoryClick(item.id, sub.id)}
+                                                                >
+                                                                    <span className="dock-dropdown-dot"></span>
+                                                                    <span className="dock-dropdown-item-label">{sub.label}</span>
+                                                                    {typeof sub.count === "number" && sub.count > 0 && (
+                                                                        <span className="dock-dropdown-badge">{sub.count}</span>
+                                                                    )}
+                                                                </button>
+                                                            );
+                                                        })}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+                                    );
+                                })}
                             </nav>
 
                             {/* SEZIONE 3: AZIONI (CERCA, GUIDA TV, IMPOSTAZIONI) */}

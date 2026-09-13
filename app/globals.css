@@ -1924,6 +1924,243 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     filter: drop-shadow(0 0 8px rgba(0, 229, 155, 0.5));
 }
 
+/* --- WRAPPER E DROPDOWN SOTTOCATEGORIE STILE NOW (Mega Menu Hover) --- */
+.dock-nav-item-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.dock-arrow-icon {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.4);
+    margin-left: 1px;
+    transition: transform 0.22s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.2s ease;
+    pointer-events: none;
+}
+
+.dock-nav-item-wrapper.is-hovered .dock-arrow-icon,
+.dock-nav-item-wrapper:hover .dock-arrow-icon {
+    transform: rotate(180deg);
+    color: #00e59b;
+}
+
+.dock-nav-link.active .dock-arrow-icon {
+    color: rgba(0, 229, 155, 0.7);
+}
+
+.dock-subnav-dropdown {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+    min-width: 220px;
+    max-width: 320px;
+    max-height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba(11, 15, 25, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 8px;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.85), 
+                0 0 0 1px rgba(255, 255, 255, 0.05), 
+                0 0 24px rgba(0, 229, 155, 0.12);
+    backdrop-filter: blur(28px) saturate(190%);
+    -webkit-backdrop-filter: blur(28px) saturate(190%);
+    z-index: 10005;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.2s;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+/* Micro-ponte trasparente per evitare che il puntatore del mouse perda il focus passando dal link al menu */
+.dock-subnav-dropdown::before {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    height: 14px;
+    background: transparent;
+}
+
+.dock-subnav-dropdown.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dock-dropdown-header {
+    padding: 6px 12px 6px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    margin-bottom: 4px;
+}
+
+.dock-dropdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.dock-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.86rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
+    white-space: nowrap;
+}
+
+.dock-dropdown-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    transition: background 0.18s ease, transform 0.18s ease;
+    flex-shrink: 0;
+}
+
+.dock-dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+.dock-dropdown-item:hover .dock-dropdown-dot {
+    background: #00e59b;
+    transform: scale(1.4);
+}
+
+.dock-dropdown-item.active {
+    background: rgba(0, 229, 155, 0.12) !important;
+    border-color: rgba(0, 229, 155, 0.3) !important;
+    color: #00e59b !important;
+    font-weight: 700;
+}
+
+.dock-dropdown-item.active .dock-dropdown-dot {
+    background: #00e59b;
+    box-shadow: 0 0 8px rgba(0, 229, 155, 0.8);
+    transform: scale(1.4);
+}
+
+.dock-dropdown-item-label {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dock-dropdown-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2px 7px;
+    border-radius: 999px;
+}
+
+.dock-dropdown-item.active .dock-dropdown-badge {
+    background: rgba(0, 229, 155, 0.2);
+    color: #00e59b;
+}
+
+/* --- BARRA CHIP SOTTOCATEGORIE ORIZZONTALE SOTTO NAVBAR (Stile NOW Sub-Header) --- */
+.subnav-chips-wrapper {
+    width: 100%;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 15;
+}
+
+.subnav-chips-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 4px 2px;
+}
+
+.subnav-chips-container::-webkit-scrollbar {
+    display: none;
+}
+
+.subnav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.86rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: all 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.subnav-chip:hover {
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.subnav-chip.active {
+    background: #00e59b !important;
+    color: #000000 !important;
+    border-color: #00e59b !important;
+    font-weight: 700 !important;
+    box-shadow: 0 0 20px rgba(0, 229, 155, 0.45) !important;
+    transform: translateY(-1px);
+}
+
+.subnav-chip-icon {
+    font-size: 1.1rem;
+}
+
+.subnav-chip-count {
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.subnav-chip.active .subnav-chip-count {
+    background: rgba(0, 0, 0, 0.2);
+    color: #000000;
+}
+
 /* Gruppo Destro: Icone Azione minimali stile NOW */
 .dock-group-right {
     display: inline-flex;
