@@ -189,6 +189,11 @@ function SkyContent() {
         }
         return initialChannels.length === 0;
     });
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     const playerWrapRef = useRef(null);
     const playerZoneRef = useRef(null);
@@ -506,7 +511,7 @@ function SkyContent() {
     }, [selectedChannel, currentSource]);
 
     return (
-        <div className="sky-app">
+        <div className={`sky-app ${mounted ? "is-mounted" : "is-mounting"}`}>
             {/* Header / Navbar Identica alla Home ma neutra senza evidenziare filtri catalogo */}
             <Navbar activeFilter={null} />
 

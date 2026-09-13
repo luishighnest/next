@@ -1697,13 +1697,56 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     height: 72px;
     z-index: 10001;
     pointer-events: none;
+    box-sizing: border-box;
+    will-change: transform, background, opacity;
+}
+
+/* Transizioni abilitate solo quando il componente è montato per evitare salti o flash all'avvio */
+.home-header-wrapper.is-mounting {
+    transition: none !important;
+    opacity: 0;
+}
+
+.home-header-wrapper.is-mounted {
+    opacity: 1;
+    animation: premiumHeaderFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
                 background 0.3s ease, 
                 border-color 0.3s ease, 
                 box-shadow 0.3s ease, 
                 backdrop-filter 0.3s ease;
-    will-change: transform, background;
-    box-sizing: border-box;
+}
+
+@keyframes premiumHeaderFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Transizione armonica unificata per le pagine una volta montate */
+.desktop-home.is-mounting,
+.sky-app.is-mounting,
+.event-player-page.is-mounting {
+    opacity: 0;
+}
+
+.desktop-home.is-mounted,
+.sky-app.is-mounted,
+.event-player-page.is-mounted {
+    opacity: 1;
+    animation: premiumPageFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes premiumPageFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Modalità in cima alla pagina: totalmente trasparente e senza bordi per fondersi nello sfondo */
@@ -1810,6 +1853,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     display: inline-flex;
     align-items: center;
     user-select: none;
+    min-width: 42px;
+    min-height: 18px;
 }
 
 /* Divisore verticale stile NOW */

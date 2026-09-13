@@ -53,11 +53,16 @@ function HomeViewContent({ defaultTab = "all" }) {
     const initialSections = getCachedSections();
     const [categories, setCategories] = useState(initialSections);
     const [loading, setLoading] = useState(() => initialSections.length === 0);
+    const [mounted, setMounted] = useState(false);
     const [filter, setFilter] = useState(getInitialFilter);
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [exploreData, setExploreData] = useState(null);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     // Se la query string contiene ?search=, apre subito la ricerca
     useEffect(() => {
@@ -345,7 +350,7 @@ function HomeViewContent({ defaultTab = "all" }) {
     }).filter(sec => sec.channels.length > 0);
 
     return (
-        <div className="desktop-home" style={{ display: "block", minHeight: "140vh" }}>
+        <div className={`desktop-home ${mounted ? "is-mounted" : "is-mounting"}`} style={{ display: "block", minHeight: "140vh" }}>
             <Navbar
                 activeFilter={filter}
                 onFilterChange={handleFilterChange}

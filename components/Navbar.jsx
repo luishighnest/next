@@ -30,16 +30,13 @@ export default function Navbar({
     const [isGuidaTvOpen, setIsGuidaTvOpen] = useState(false);
     const [isNavHidden, setIsNavHidden] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [siteTime, setSiteTime] = useState(() => {
-        if (typeof window !== "undefined") {
-            return new Date().toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
-        }
-        return "00:00";
-    });
+    const [mounted, setMounted] = useState(false);
+    const [siteTime, setSiteTime] = useState("");
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
 
     useEffect(() => {
+        setMounted(true);
         function updateSiteClock() {
             setSiteTime(new Date().toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" }));
         }
@@ -195,7 +192,7 @@ export default function Navbar({
 
     return (
         <>
-            <div className={`home-header-wrapper ${isHidden ? "nav-hidden" : ""} ${isSearchOpen ? "search-mode-active" : ""} ${isScrolled ? "header-scrolled" : "header-top"}`} id="home-header-wrapper">
+            <div className={`home-header-wrapper ${mounted ? "is-mounted" : "is-mounting"} ${isHidden ? "nav-hidden" : ""} ${isSearchOpen ? "search-mode-active" : ""} ${isScrolled ? "header-scrolled" : "header-top"}`} id="home-header-wrapper">
                 {isSearchOpen ? (
                     <div className="home-search-fullbar-container" ref={searchWrapperRef}>
                         <div className="home-search-fullbar">
@@ -262,11 +259,9 @@ export default function Navbar({
                                     </svg>
                                 </Link>
 
-                                {siteTime && (
-                                    <div className="dock-site-clock" title="Orario attuale">
-                                        {siteTime}
-                                    </div>
-                                )}
+                                <div className="dock-site-clock" title="Orario attuale" suppressHydrationWarning>
+                                    {mounted ? siteTime : ""}
+                                </div>
                             </div>
 
                             {/* SEZIONE 2: NAVIGAZIONE CON ICONE + TITOLO (Perfettamente centrata) */}
