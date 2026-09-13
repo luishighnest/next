@@ -275,7 +275,6 @@ export default function Navbar({
                                 aria-label="Chiudi ricerca"
                                 title="Chiudi ricerca (Esc)"
                             >
-                                <span className="close-text">Chiudi</span>
                                 <i className="fas fa-xmark"></i>
                             </button>
                         </div>

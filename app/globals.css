@@ -2078,33 +2078,37 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .search-fullbar-close-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    color: rgba(255, 255, 255, 0.75);
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.16);
-    border-radius: 999px;
-    color: #ffffff;
-    font-size: 0.88rem;
-    font-weight: 500;
-    padding: 7px 16px;
+    justify-content: center;
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     flex-shrink: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .search-fullbar-close-btn:hover {
-    background: rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.35);
-    transform: scale(1.03);
+    color: #ffffff;
+    transform: scale(1.08);
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.22);
 }
 
 .search-fullbar-close-btn:active {
-    transform: scale(0.96);
+    transform: scale(0.92);
 }
 
 .search-fullbar-close-btn i {
     font-size: 0.95rem;
+    line-height: 1;
 }
 
 /* ==========================================================================
@@ -2394,8 +2398,13 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
         font-size: 0.92rem;
     }
     .search-fullbar-close-btn {
-        padding: 5px 10px;
-        font-size: 0.82rem;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .search-fullbar-close-btn .close-text {
         display: none;
