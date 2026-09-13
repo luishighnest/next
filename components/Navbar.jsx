@@ -276,103 +276,112 @@ export default function Navbar({
                         </div>
                     </div>
                 ) : (
-                    <div className="home-header-islands">
-                        {/* Logo Vettoriale Stile tv.apple.com + Orario Attuale del sito */}
-                        <div className="nav-brand-clock-group">
-                            <Link
-                                href="/home"
-                                className="apple-tv-brand-wordmark"
-                                title="NMDZ - Home"
-                                aria-label="NMDZ Home"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    handleCloseSearch();
-                                    handleNavClick("all");
-                                }}
-                            >
-                                <img src="/logos/nmdz_monogram.png" alt="Logo" className="brand-wordmark-symbol" />
-                            </Link>
+                    <div className="home-header-dock-container">
+                        <header className="home-header-dock" role="banner">
+                            {/* SEZIONE 1: BRAND LOGO + OROLOGIO */}
+                            <div className="dock-group dock-group-left">
+                                <Link
+                                    href="/home"
+                                    className="dock-brand-link"
+                                    title="NMDZ - Home"
+                                    aria-label="NMDZ Home"
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        handleCloseSearch();
+                                        handleNavClick("all");
+                                    }}
+                                >
+                                    <img src="/logos/nmdz_monogram.png" alt="Logo" className="dock-brand-logo" />
+                                </Link>
 
-                            {siteTime && (
-                                <div className="nav-site-clock" title="Orario attuale">
-                                    {siteTime}
-                                </div>
-                            )}
-                        </div>
+                                {siteTime && (
+                                    <div className="dock-site-clock" title="Orario attuale">
+                                        {siteTime}
+                                    </div>
+                                )}
+                            </div>
 
-                        {/* ISOLA 2: Navigazione Principale a Capsule al Centro (Solo Testo Elegante Stile Apple TV) */}
-                        <nav className="nav-island nav-island-center" aria-label="Navigazione principale">
-                            <Link
-                                href="/home"
-                                className={`nav-link ${activeFilter === "all" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
-                            >
-                                <span className="nav-label">Home</span>
-                            </Link>
-                            <Link
-                                href="/sport"
-                                className={`nav-link ${activeFilter === "sport" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
-                            >
-                                <span className="nav-label">Sport</span>
-                            </Link>
-                            <Link
-                                href="/intrattenimento"
-                                className={`nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
-                            >
-                                <span className="nav-label">Intrattenimento</span>
-                            </Link>
-                            <Link
-                                href="/eventi"
-                                className={`nav-link ${activeFilter === "eventi" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
-                            >
-                                <span className="nav-label">Eventi</span>
-                            </Link>
-                            <Link
-                                href="/vod"
-                                className={`nav-link ${activeFilter === "vod" ? "active" : ""}`}
-                                onClick={(e) => { e.preventDefault(); handleNavClick("vod"); }}
-                            >
-                                <span className="nav-label">Vod</span>
-                            </Link>
-                        </nav>
+                            <div className="dock-divider"></div>
 
-                        {/* Azioni Interattive Destra Stile tv.apple.com (Cerca + Guida TV + Impostazioni) */}
-                        <div className="nav-island nav-island-right">
-                            <button
-                                type="button"
-                                className="search-icon-btn"
-                                onClick={handleOpenSearch}
-                                aria-label="Cerca"
-                                title="Cerca canali, eventi, film..."
-                            >
-                                <i className="fas fa-magnifying-glass"></i>
-                            </button>
+                            {/* SEZIONE 2: NAVIGAZIONE CON ICONE + TITOLO */}
+                            <nav className="dock-group dock-group-center" aria-label="Navigazione principale">
+                                <Link
+                                    href="/home"
+                                    className={`dock-nav-link ${activeFilter === "all" ? "active" : ""}`}
+                                    onClick={(e) => { e.preventDefault(); handleNavClick("all"); }}
+                                >
+                                    <i className="fas fa-house dock-icon"></i>
+                                    <span className="dock-label">Home</span>
+                                </Link>
+                                <Link
+                                    href="/sport"
+                                    className={`dock-nav-link ${activeFilter === "sport" ? "active" : ""}`}
+                                    onClick={(e) => { e.preventDefault(); handleNavClick("sport"); }}
+                                >
+                                    <i className="fas fa-trophy dock-icon"></i>
+                                    <span className="dock-label">Sport</span>
+                                </Link>
+                                <Link
+                                    href="/intrattenimento"
+                                    className={`dock-nav-link ${activeFilter === "intrattenimento" ? "active" : ""}`}
+                                    onClick={(e) => { e.preventDefault(); handleNavClick("intrattenimento"); }}
+                                >
+                                    <i className="fas fa-tv dock-icon"></i>
+                                    <span className="dock-label">Intrattenimento</span>
+                                </Link>
+                                <Link
+                                    href="/eventi"
+                                    className={`dock-nav-link ${activeFilter === "eventi" ? "active" : ""}`}
+                                    onClick={(e) => { e.preventDefault(); handleNavClick("eventi"); }}
+                                >
+                                    <i className="fas fa-bolt dock-icon"></i>
+                                    <span className="dock-label">Eventi</span>
+                                </Link>
+                                <Link
+                                    href="/vod"
+                                    className={`dock-nav-link ${activeFilter === "vod" ? "active" : ""}`}
+                                    onClick={(e) => { e.preventDefault(); handleNavClick("vod"); }}
+                                >
+                                    <i className="fas fa-clapperboard dock-icon"></i>
+                                    <span className="dock-label">Vod</span>
+                                </Link>
+                            </nav>
 
-                            <button
-                                type="button"
-                                className={`guidatv-icon-btn ${isGuidaTvOpen ? "active" : ""}`}
-                                onClick={() => setIsGuidaTvOpen(true)}
-                                aria-label="Guida TV"
-                                title="Guida TV EPG"
-                            >
-                                <i className="fas fa-tv"></i>
-                            </button>
+                            <div className="dock-divider"></div>
 
-                            <div className="island-separator"></div>
+                            {/* SEZIONE 3: AZIONI (CERCA, GUIDA TV, IMPOSTAZIONI) */}
+                            <div className="dock-group dock-group-right">
+                                <button
+                                    type="button"
+                                    className="dock-action-btn search-icon-btn"
+                                    onClick={handleOpenSearch}
+                                    aria-label="Cerca"
+                                    title="Cerca canali, eventi, film..."
+                                >
+                                    <i className="fas fa-magnifying-glass"></i>
+                                </button>
 
-                            <button
-                                type="button"
-                                className="settings-icon-btn"
-                                onClick={() => setIsSettingsOpen(true)}
-                                aria-label="Impostazioni"
-                                title="Impostazioni"
-                            >
-                                <i className="fas fa-gear"></i>
-                            </button>
-                        </div>
+                                <button
+                                    type="button"
+                                    className={`dock-action-btn guidatv-icon-btn ${isGuidaTvOpen ? "active" : ""}`}
+                                    onClick={() => setIsGuidaTvOpen(true)}
+                                    aria-label="Guida TV"
+                                    title="Guida TV EPG"
+                                >
+                                    <i className="fas fa-calendar-days"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    className="dock-action-btn settings-icon-btn"
+                                    onClick={() => setIsSettingsOpen(true)}
+                                    aria-label="Impostazioni"
+                                    title="Impostazioni"
+                                >
+                                    <i className="fas fa-gear"></i>
+                                </button>
+                            </div>
+                        </header>
                     </div>
                 )}
             </div>

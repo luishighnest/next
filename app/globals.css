@@ -10130,3 +10130,287 @@ body:has(.sky-app) {
     background: rgba(255, 255, 255, 0.25);
 }
 
+
+
+/* ==========================================================================
+   BARRA DI NAVIGAZIONE DOCK MONOLITICA ULTRA-PREMIUM (Apple / visionOS Style)
+   ========================================================================== */
+
+.home-header-wrapper {
+    position: fixed;
+    top: 16px;
+    left: 0;
+    right: 0;
+    height: 52px;
+    z-index: 10001;
+    width: 100%;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+    will-change: transform, opacity;
+}
+
+.home-header-wrapper.nav-hidden {
+    transform: translateY(-160%) !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* Contenitore centrato per la barra monolitica */
+.home-header-dock-container {
+    width: 100%;
+    max-width: 100%;
+    height: 52px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+/* Struttura della barra dock unica allungata */
+.home-header-dock {
+    pointer-events: all;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    height: 50px;
+    padding: 4px 8px;
+    background: rgba(13, 13, 16, 0.76);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    box-shadow: 
+        0 20px 48px rgba(0, 0, 0, 0.7),
+        0 4px 14px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(32px) saturate(210%);
+    -webkit-backdrop-filter: blur(32px) saturate(210%);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-sizing: border-box;
+    max-width: 1120px;
+    width: auto;
+}
+
+.home-header-dock:hover {
+    border-color: rgba(255, 255, 255, 0.22);
+    box-shadow: 
+        0 24px 56px rgba(0, 0, 0, 0.8),
+        0 6px 18px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+/* Gruppi interni (Sinistra, Centro, Destra) */
+.dock-group {
+    display: inline-flex;
+    align-items: center;
+}
+
+.dock-group-left {
+    gap: 8px;
+    padding: 0 4px 0 6px;
+}
+
+.dock-brand-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.22s ease;
+    flex-shrink: 0;
+}
+
+.dock-brand-link:hover {
+    transform: scale(1.08);
+    opacity: 0.88;
+}
+
+.dock-brand-logo {
+    height: 26px;
+    width: 26px;
+    min-width: 26px;
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.6));
+}
+
+.dock-site-clock {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Mono", Menlo, monospace;
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 3px 8px;
+    border-radius: 999px;
+    letter-spacing: 0.03em;
+    user-select: none;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Separatore verticale sottile tra sezioni */
+.dock-divider {
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.12);
+    margin: 0 3px;
+    flex-shrink: 0;
+}
+
+/* Centro: Navigazione con icona + etichetta */
+.dock-group-center {
+    gap: 4px;
+}
+
+.dock-nav-link {
+    padding: 7px 17px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif;
+    color: rgba(255, 255, 255, 0.72);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    user-select: none;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    letter-spacing: 0.01em;
+}
+
+.dock-icon {
+    font-size: 0.88rem;
+    line-height: 1;
+    opacity: 0.82;
+    transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.22s ease;
+}
+
+.dock-nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-1px);
+}
+
+.dock-nav-link:hover .dock-icon {
+    opacity: 1;
+    transform: scale(1.12);
+}
+
+.dock-nav-link.active {
+    color: #000000 !important;
+    background: #ffffff !important;
+    font-weight: 700;
+    border-color: #ffffff !important;
+    box-shadow: 0 3px 18px rgba(255, 255, 255, 0.32);
+}
+
+.dock-nav-link.active .dock-icon {
+    color: #000000 !important;
+    opacity: 1;
+}
+
+/* Destra: Tasti Azioni */
+.dock-group-right {
+    gap: 4px;
+    padding: 0 4px;
+}
+
+.dock-action-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.72);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.dock-action-btn i {
+    font-size: 0.9rem;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.dock-action-btn:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-1px);
+}
+
+.dock-action-btn:hover i {
+    transform: scale(1.1);
+}
+
+.dock-action-btn:active {
+    transform: scale(0.94);
+}
+
+.dock-action-btn.active {
+    color: #000000 !important;
+    background: #ffffff !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 3px 18px rgba(255, 255, 255, 0.32);
+}
+
+.dock-action-btn.active i {
+    color: #000000 !important;
+}
+
+/* Responsive: Tablet e Mobile */
+@media (max-width: 960px) {
+    .dock-nav-link {
+        padding: 6px 12px;
+        gap: 6px;
+        font-size: 0.82rem;
+    }
+    .dock-icon {
+        font-size: 0.82rem;
+    }
+    .dock-site-clock {
+        display: none;
+    }
+}
+
+@media (max-width: 680px) {
+    .home-header-wrapper {
+        top: 10px;
+    }
+    .home-header-dock-container {
+        padding: 0 8px;
+    }
+    .home-header-dock {
+        width: 100%;
+        max-width: 100%;
+        gap: 4px;
+        padding: 3px 6px;
+        height: 46px;
+    }
+    .dock-divider {
+        display: none;
+    }
+    .dock-nav-link {
+        padding: 7px 10px;
+        border-radius: 999px;
+    }
+    .dock-label {
+        display: none;
+    }
+    .dock-icon {
+        font-size: 0.98rem;
+        opacity: 0.9;
+    }
+    .dock-action-btn {
+        width: 32px;
+        height: 32px;
+    }
+}
