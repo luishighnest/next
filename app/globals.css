@@ -1730,13 +1730,13 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     pointer-events: none !important;
 }
 
-/* Contenitore interno della barra a tutta larghezza con margini allineati ai caroselli */
+/* Contenitore interno della barra a tutta larghezza con elementi spinti alle estremità */
 .home-header-dock-container {
     width: 100%;
     height: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 8vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 24px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
