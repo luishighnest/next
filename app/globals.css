@@ -1908,14 +1908,20 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     color: #00e59b;
 }
 
-/* Voce attiva stile NOW: barra inferiore verde smeraldo fluorescente con glow e taglio compatto (Opzione B) */
+/* Voce attiva stile NOW: testo, icona e barra inferiore verde smeraldo fluorescente con glow */
 .dock-nav-link.active {
-    color: #ffffff !important;
+    color: #00e59b !important;
     font-weight: 700;
+}
+
+.dock-nav-link.active .dock-label {
+    color: #00e59b !important;
+    text-shadow: 0 0 12px rgba(0, 229, 155, 0.35);
 }
 
 .dock-nav-link.active i.dock-icon {
     color: #00e59b !important;
+    filter: drop-shadow(0 0 8px rgba(0, 229, 155, 0.5));
 }
 
 .dock-nav-link::after {
