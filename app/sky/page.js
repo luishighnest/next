@@ -739,7 +739,7 @@ function SkyContent() {
 export default function SkyPage() {
     return (
         <Suspense fallback={
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", background: "#000000" }}>
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh", background: "transparent" }}>
                 <div className="spinner" style={{ width: "40px", height: "40px", border: "3px solid rgba(255,255,255,0.1)", borderTopColor: "#e30a17", borderRadius: "50%", animation: "spin 0.8s linear infinite" }}></div>
             </div>
         }>

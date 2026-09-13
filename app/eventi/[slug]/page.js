@@ -345,7 +345,7 @@ export default function EventoPlayerPage() {
     };
 
     return (
-        <div className="event-player-page" style={{ backgroundColor: "#000000", minHeight: "140vh", color: "#ffffff", paddingBottom: "120px" }}>
+        <div className="event-player-page" style={{ background: "transparent", minHeight: "140vh", color: "#ffffff", paddingBottom: "120px" }}>
             <Navbar activeFilter={null} />
 
             <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "86px 16px 0 16px" }}>
