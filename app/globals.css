@@ -52,6 +52,8 @@ html {
     overflow-y: auto !important;
     scroll-behavior: smooth;
     min-height: 100%;
+    overscroll-behavior: none !important;
+    overscroll-behavior-y: none !important;
 }
 
 html, body {
@@ -64,6 +66,8 @@ html, body {
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    overscroll-behavior: none !important;
+    overscroll-behavior-y: none !important;
 }
 
 body {
@@ -75,6 +79,8 @@ body {
     overflow-x: hidden;
     overflow-y: auto !important;
     -webkit-font-smoothing: antialiased;
+    overscroll-behavior: none !important;
+    overscroll-behavior-y: none !important;
 }
 
 .app-container {
