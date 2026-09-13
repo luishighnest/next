@@ -2099,81 +2099,82 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     color: #00e59b;
 }
 
-/* --- BARRA SOTTOCATEGORIE STILE TASTI NAVBAR (Mini-Dock Obsidian Glass) --- */
+/* --- BARRA SOTTOCATEGORIE STILE TASTI NAVBAR ATTUALE --- */
 .subnav-chips-wrapper {
     width: 100%;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     position: relative;
     z-index: 15;
 }
 
 .subnav-chips-container {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 16px;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 4px 6px;
-    background: rgba(11, 15, 25, 0.78);
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 999px;
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    max-width: 100%;
+    padding: 2px 0;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: 0 !important;
 }
 
 .subnav-chips-container::-webkit-scrollbar {
     display: none;
 }
 
-/* Tasto sottocategoria: Identico a .dock-nav-link */
+/* Tasto sottocategoria: Stile esatto .dock-nav-link della Navbar attuale */
 .subnav-chip {
     position: relative;
     display: inline-flex;
     align-items: center;
     gap: 8px;
     height: 36px;
-    padding: 0 14px;
-    border-radius: 999px;
+    padding: 0 12px;
     background: transparent !important;
     border: none !important;
     color: rgba(255, 255, 255, 0.65);
-    font-size: 0.92rem;
+    text-decoration: none;
+    font-size: 0.95rem;
     font-weight: 600;
     letter-spacing: -0.1px;
     cursor: pointer;
     white-space: nowrap;
     user-select: none;
     -webkit-user-select: none;
-    transition: color 0.2s ease, background 0.2s ease;
+    transition: color 0.22s ease;
     box-shadow: none !important;
     outline: none;
+    border-radius: 0 !important;
 }
 
 .subnav-chip i.subnav-chip-icon {
-    font-size: 0.88rem;
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.92rem;
     transition: transform 0.2s ease, color 0.2s ease;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .subnav-chip:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.07) !important;
+    color: #ffffff !important;
+    background: transparent !important;
 }
 
 .subnav-chip:hover i.subnav-chip-icon {
-    color: #00e59b;
+    color: #00e59b !important;
 }
 
-/* Tasto Sottocategoria Attivo: Identico a .dock-nav-link.active */
+/* Tasto Sottocategoria Attivo: Identico a .dock-nav-link.active della Navbar attuale */
 .subnav-chip.active {
     color: #00e59b !important;
     font-weight: 700 !important;
-    background: rgba(0, 229, 155, 0.1) !important;
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
 .subnav-chip.active .subnav-chip-label {
@@ -2187,24 +2188,23 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .subnav-chip-count {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    padding: 1.5px 6px;
-    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.4);
     background: rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.55);
+    padding: 1px 6px;
+    border-radius: 999px;
     margin-left: 2px;
-    letter-spacing: 0.02em;
     transition: all 0.2s ease;
 }
 
 .subnav-chip:hover .subnav-chip-count {
     color: rgba(255, 255, 255, 0.85);
-    background: rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.14);
 }
 
 .subnav-chip.active .subnav-chip-count {
-    background: rgba(0, 229, 155, 0.22) !important;
+    background: rgba(0, 229, 155, 0.15) !important;
     color: #00e59b !important;
 }
 
