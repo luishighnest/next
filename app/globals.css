@@ -1817,8 +1817,12 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     flex-shrink: 0;
 }
 
-/* Gruppo Centrale: Navigazione Autentica NOW */
+/* Gruppo Centrale: Navigazione Autentica NOW perfettamente centrata a schermo */
 .dock-group-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: inline-flex;
     align-items: center;
     gap: 8px;

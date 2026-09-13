@@ -269,9 +269,7 @@ export default function Navbar({
                                 )}
                             </div>
 
-                            <div className="dock-divider"></div>
-
-                            {/* SEZIONE 2: NAVIGAZIONE CON ICONE + TITOLO */}
+                            {/* SEZIONE 2: NAVIGAZIONE CON ICONE + TITOLO (Perfettamente centrata) */}
                             <nav className="dock-group dock-group-center" aria-label="Navigazione principale">
                                 <Link
                                     href="/home"
@@ -314,8 +312,6 @@ export default function Navbar({
                                     <span className="dock-label">Vod</span>
                                 </Link>
                             </nav>
-
-                            <div className="dock-divider"></div>
 
                             {/* SEZIONE 3: AZIONI (CERCA, GUIDA TV, IMPOSTAZIONI) */}
                             <div className="dock-group dock-group-right">
