@@ -332,12 +332,10 @@ export default function HomeHero({ categories = [] }) {
                         )}
                     </div>
 
-                    {/* 5. Descrizione del programma */}
-                    {current.progDesc && (
-                        <p className="now-hero-synopsis">
-                            {current.progDesc}
-                        </p>
-                    )}
+                    {/* 5. Descrizione del programma: sempre presente su singola riga fissa */}
+                    <p className="now-hero-synopsis">
+                        {current.progDesc || "Tutti gli eventi e i migliori appuntamenti live in onda su questo canale Sky."}
+                    </p>
 
                     {/* 6. Pulsanti Azione NOW TV: Guarda (riproduzione) + Dettagli (apre popup guida TV) */}
                     <div className="now-hero-cta-group">

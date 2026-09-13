@@ -10623,12 +10623,11 @@ body:has(.sky-app) {
 }
 
 .now-hero-billboard {
-    max-width: 760px;
+    max-width: none;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    /* Ancora verticale stabile per non saltare a ogni cambio canale */
-    min-height: 400px;
     justify-content: flex-end;
 }
 
@@ -10636,7 +10635,7 @@ body:has(.sky-app) {
 .now-hero-brand-top {
     display: flex;
     align-items: center;
-    min-height: 58px;
+    height: 54px;
     margin-bottom: 4px;
 }
 
@@ -10664,7 +10663,7 @@ body:has(.sky-app) {
     display: flex;
     align-items: center;
     gap: 10px;
-    min-height: 26px;
+    height: 26px;
 }
 
 .now-hero-live-pill {
@@ -10731,20 +10730,21 @@ body:has(.sky-app) {
     -webkit-backdrop-filter: blur(8px);
 }
 
-/* 3. Titolo Programma: Stile Grandioso NOW TV con altezza bilanciata */
+/* 3. Titolo Programma: Singola riga che non va a capo e continua verso destra */
 .now-hero-heading {
     font-size: 3.4rem;
     font-weight: 900;
-    line-height: 1.08;
+    line-height: 1.1;
     color: #ffffff;
     letter-spacing: -0.035em;
     text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.5);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0;
-    min-height: 44px;
+    height: 3.8rem;
+    width: 100%;
+    max-width: 90vw;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Segoe UI", Roboto, sans-serif;
 }
 
@@ -10753,8 +10753,8 @@ body:has(.sky-app) {
     display: flex;
     align-items: center;
     gap: 16px;
-    flex-wrap: wrap;
-    min-height: 24px;
+    flex-wrap: nowrap;
+    height: 24px;
 }
 
 .now-hero-time-badge {
@@ -10764,6 +10764,7 @@ body:has(.sky-app) {
     font-size: 0.92rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
 }
 
 .now-hero-time-badge .material-symbols-rounded {
@@ -10774,6 +10775,7 @@ body:has(.sky-app) {
 .now-hero-timeline-wrap {
     display: inline-flex;
     align-items: center;
+    flex-shrink: 0;
 }
 
 .now-hero-timeline-track {
@@ -10790,19 +10792,19 @@ body:has(.sky-app) {
     box-shadow: 0 0 8px rgba(0, 229, 155, 0.7);
 }
 
-/* Sinossi Programma: altezza minima per stabilità visiva tra i canali */
+/* Sinossi Programma: Singola riga che non va a capo e continua verso destra */
 .now-hero-synopsis {
     font-size: 1.05rem;
     line-height: 1.48;
     color: rgba(255, 255, 255, 0.78);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
-    max-width: 660px;
-    min-height: 3.1rem;
+    width: 100%;
+    max-width: 85vw;
+    height: 1.6rem;
 }
 
 /* ==========================================================================
