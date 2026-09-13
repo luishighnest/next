@@ -3093,25 +3093,36 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     font-size: 2.2rem;
 }
 .now-card-play-icon {
-    height: 54px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.82);
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background: #e30a17; /* NOW TV Red */
-    border: 3px solid #1a1a1a; /* Bordo nero */
-    color: #ffffff; /* Triangolo bianco */
+    background: rgba(11, 15, 25, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(0, 229, 155, 0.65);
+    color: #00e59b;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    z-index: 5;
-    transition: all 0.2s ease;
+    z-index: 6;
+    transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
     pointer-events: none;
-    box-shadow: 0 0 0 1px #e30a17, 0 4px 10px rgba(0,0,0,0.5); /* Anello esterno rosso */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65), 0 0 16px rgba(0, 229, 155, 0.25);
 }
-.event-play-btn span {
-    font-size: 1.8rem;
-    margin-left: 0; /* Centro esatto */
+
+.now-card-play-icon i {
+    font-size: 1.05rem;
+    color: #00e59b;
+    margin-left: 2px;
 }
-.home-card:hover .event-play-btn {
+
+.now-card-wrapper:hover .now-card-play-icon {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -4667,35 +4678,30 @@ video { outline: none !important; }
     position: relative;
     margin-bottom: 24px;
     cursor: pointer;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     outline: none;
     border-radius: 0;
     display: flex;
     flex-direction: column;
     scroll-snap-align: start;
     scroll-snap-stop: normal;
-    will-change: transform;
     contain: layout style;
 }
 
-.now-card-wrapper:hover {
-    transform: translateY(-5px);
-}
-
+/* Locandina: SENZA bordi a riposo (Stile NOW Poster Puro) */
 .now-card {
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    border-radius: 16px;
+    border-radius: 14px;
     overflow: hidden;
-    background: #141416;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45), 
-                inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #11141b;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    border: 1px solid transparent; /* Nessun bordo visibile a riposo */
     transform: translateZ(0);
     backface-visibility: hidden;
-    transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
-                box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.28s ease,
+                box-shadow 0.28s ease;
 }
 
 /* Card VOD in formato Poster Cinematografico 2:3 */
@@ -4703,7 +4709,7 @@ video { outline: none !important; }
     aspect-ratio: 2 / 3 !important;
 }
 
-/* Oscuramento e riflesso al passaggio del mouse */
+/* Oscuramento cinematografico morbido all'hover per risaltare il Play icon */
 .now-card::after {
     content: '';
     position: absolute;
@@ -4711,9 +4717,9 @@ video { outline: none !important; }
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.45) 100%);
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.6) 100%);
     opacity: 0;
-    transition: opacity 0.28s ease;
+    transition: opacity 0.25s ease;
     z-index: 4;
     pointer-events: none;
 }
@@ -4721,17 +4727,18 @@ video { outline: none !important; }
     opacity: 1;
 }
 
+/* All'hover: micro-zoom morbido + bordo sottile satinato con bagliore verde smeraldo */
 .now-card-wrapper:hover .now-card {
-    border-color: rgba(255, 255, 255, 0.45);
+    transform: scale(1.035) translateY(-3px);
+    border-color: rgba(0, 229, 155, 0.55);
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.75), 
-                0 0 20px rgba(255, 255, 255, 0.08),
-                inset 0 1px 0 rgba(255, 255, 255, 0.35);
+                0 0 20px rgba(0, 229, 155, 0.15);
 }
 
 .now-card-wrapper:hover .now-card.active {
-    border-color: #0073e6;
-    box-shadow: 0 16px 36px rgba(0, 115, 230, 0.4), 
-                0 0 20px rgba(0, 115, 230, 0.2);
+    border-color: #00e59b;
+    box-shadow: 0 16px 36px rgba(0, 229, 155, 0.3), 
+                0 0 20px rgba(0, 229, 155, 0.2);
 }
 
 .now-card-bg {
@@ -4746,12 +4753,12 @@ video { outline: none !important; }
     -webkit-user-drag: none;
     user-select: none;
     animation: cardImgFadeIn 0.3s ease-out;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     will-change: transform;
 }
 
 .now-card-wrapper:hover .now-card-bg {
-    transform: scale(1.045);
+    transform: scale(1.04);
 }
 
 @keyframes cardImgFadeIn {
