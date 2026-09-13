@@ -10629,26 +10629,19 @@ body:has(.sky-app) {
     gap: 16px;
 }
 
-/* Riga Header NOW TV: Logo Canale grande e nitido + Badge Diretta & Categoria */
-.now-hero-header-line {
+/* 1. Logo del Canale in alto: spazioso, nitido, isolato come firma broadcast */
+.now-hero-brand-top {
     display: flex;
     align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-bottom: 4px;
-}
-
-.now-hero-channel-brand {
-    display: inline-flex;
-    align-items: center;
+    margin-bottom: 2px;
 }
 
 .now-hero-channel-badge-logo {
-    height: 40px;
+    height: 44px;
     width: auto;
-    max-width: 150px;
+    max-width: 160px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
+    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.85));
 }
 
 .now-hero-channel-label {
@@ -10657,15 +10650,17 @@ body:has(.sky-app) {
     color: #ffffff;
     letter-spacing: -0.01em;
     background: rgba(255, 255, 255, 0.1);
-    padding: 5px 14px;
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 6px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.now-hero-badges-wrapper {
-    display: inline-flex;
+/* 2. Riga Metadati Sottile: Badge DIRETTA + Dot + Categoria */
+.now-hero-meta-row {
+    display: flex;
     align-items: center;
     gap: 10px;
+    margin-top: 2px;
 }
 
 .now-hero-live-pill {
@@ -10702,19 +10697,20 @@ body:has(.sky-app) {
     50% { opacity: 0.3; transform: scale(0.8); }
 }
 
+.now-hero-meta-dot {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 0.9rem;
+}
+
 .now-hero-cat-tag {
     font-size: 0.82rem;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.75);
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 3px 9px;
-    border-radius: 4px;
 }
 
-/* Titolo Programma: Stile Grandioso NOW TV */
+/* 3. Titolo Programma: Stile Grandioso NOW TV */
 .now-hero-heading {
     font-size: 3.4rem;
     font-weight: 900;
@@ -10730,7 +10726,7 @@ body:has(.sky-app) {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Segoe UI", Roboto, sans-serif;
 }
 
-/* Timeline e Orario EPG */
+/* 4. Timeline e Orario EPG pulito, senza percentuali tecniche */
 .now-hero-schedule-bar {
     display: flex;
     align-items: center;
@@ -10742,26 +10738,25 @@ body:has(.sky-app) {
 .now-hero-time-badge {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 7px;
     font-size: 0.92rem;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.85);
 }
 
 .now-hero-time-badge .material-symbols-rounded {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: #00e59b;
 }
 
 .now-hero-timeline-wrap {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
 }
 
 .now-hero-timeline-track {
-    width: 140px;
-    height: 4px;
+    width: 110px;
+    height: 3px;
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.2);
     overflow: hidden;
@@ -10771,12 +10766,6 @@ body:has(.sky-app) {
     height: 100%;
     background: #00e59b;
     box-shadow: 0 0 8px rgba(0, 229, 155, 0.7);
-}
-
-.now-hero-timeline-pct {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Sinossi Programma */
@@ -10884,15 +10873,23 @@ body:has(.sky-app) {
 }
 
 /* ==========================================================================
-   FOOTER INDICATORI A LINEETTE PROGRESSIVE SOTTILI (Stile NOW TV Originale)
+   FOOTER BILLBOARD: CANALI A SINISTRA + FRECCE DI NAVIGAZIONE A DESTRA
    ========================================================================== */
+.now-hero-footer-bar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+    gap: 20px;
+}
+
 .now-hero-footer-indicators {
     display: flex;
     gap: 16px;
     align-items: flex-end;
     width: 100%;
-    max-width: 580px;
-    margin-top: 4px;
+    max-width: 600px;
 }
 
 .now-hero-indicator-btn {
@@ -10959,13 +10956,17 @@ body:has(.sky-app) {
     color: #ffffff;
 }
 
-/* Frecce laterali di navigazione coerenti con il design del sito (.top-nav-btn) */
+/* Frecce di navigazione in basso a destra (coordinato al design del sito .top-nav-btn) */
+.now-hero-footer-arrows {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2px;
+}
+
 .now-hero-nav-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 44px;
-    height: 44px;
+    width: 38px;
+    height: 38px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
@@ -10976,33 +10977,19 @@ body:has(.sky-app) {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 10;
-    opacity: 0;
     transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.now-hero-nav-arrow.prev {
-    left: 28px;
-}
-
-.now-hero-nav-arrow.next {
-    right: 28px;
-}
-
-.now-hero-stage:hover .now-hero-nav-arrow {
-    opacity: 1;
-}
-
 .now-hero-nav-arrow:hover {
-    background: rgba(255, 255, 255, 0.18);
-    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.65);
     color: #ffffff;
-    transform: translateY(-50%) scale(1.1);
+    transform: scale(1.1);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .now-hero-nav-arrow .material-symbols-rounded {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 
 /* Responsive NOW Hero */

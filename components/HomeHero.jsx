@@ -83,9 +83,10 @@ export default function HomeHero({ categories = [] }) {
                     if (!isSky || !isAllowedCat) return;
                     if (!ch.programmi || ch.programmi.length === 0) return;
 
-                    // FILTRO ESPLICITO: Escludi tutti i canali Sky Sport 251, 252, 253, 254, 255, 256, 257, 258, 259 ecc.
+                    // FILTRO ESPLICITO: Escludi Sky Sport 4K e tutti i canali Sky Sport 251..259 e calcio numerati
+                    const is4K = name.includes("4k");
                     const isSkySportNumbered = /sky\s*sport\s*25\d+/i.test(name) || /sky\s*calcio\s*\d+/i.test(name);
-                    if (isSkySportNumbered) return;
+                    if (is4K || isSkySportNumbered) return;
 
                     // Trova il programma in onda in questo momento
                     let currentIdx = -1;
@@ -283,38 +284,38 @@ export default function HomeHero({ categories = [] }) {
             {/* Contenuto Hero Billboard 100% stile NOW */}
             <div className="now-hero-inner">
                 <div className="now-hero-billboard">
-                    {/* Header NOW: Logo canale in primo piano + Badge Diretta + Categoria */}
-                    <div className="now-hero-header-line">
-                        <div className="now-hero-channel-brand">
-                            {current.logoUrl ? (
-                                <img
-                                    src={current.logoUrl}
-                                    alt={current.channelName}
-                                    className="now-hero-channel-badge-logo"
-                                    loading="eager"
-                                />
-                            ) : (
-                                <span className="now-hero-channel-label">{current.channelName}</span>
-                            )}
-                        </div>
-
-                        <div className="now-hero-badges-wrapper">
-                            <span className="now-hero-live-pill">
-                                <span className="now-hero-live-pulse" />
-                                DIRETTA
-                            </span>
-                            <span className="now-hero-cat-tag">{current.category}</span>
-                        </div>
+                    {/* 1. Logo del Canale in alto ben visibile e isolato */}
+                    <div className="now-hero-brand-top">
+                        {current.logoUrl ? (
+                            <img
+                                src={current.logoUrl}
+                                alt={current.channelName}
+                                className="now-hero-channel-badge-logo"
+                                loading="eager"
+                            />
+                        ) : (
+                            <span className="now-hero-channel-label">{current.channelName}</span>
+                        )}
                     </div>
 
-                    {/* Titolo Principale Programma */}
+                    {/* 2. Riga Metadati: Badge DIRETTA + Categoria */}
+                    <div className="now-hero-meta-row">
+                        <span className="now-hero-live-pill">
+                            <span className="now-hero-live-pulse" />
+                            DIRETTA
+                        </span>
+                        <span className="now-hero-meta-dot">•</span>
+                        <span className="now-hero-cat-tag">{current.category}</span>
+                    </div>
+
+                    {/* 3. Titolo Principale Programma */}
                     <h1 className="now-hero-heading">{current.progTitle}</h1>
 
-                    {/* Orario e Timeline EPG */}
+                    {/* 4. Orario e Timeline EPG pulita (senza percentuale) */}
                     <div className="now-hero-schedule-bar">
                         <div className="now-hero-time-badge">
                             <span className="material-symbols-rounded">schedule</span>
-                            <span>{current.progOraInizio}{current.progOraFine ? " - " + current.progOraFine : ""}</span>
+                            <span>{current.progOraFine ? `Dalle ${current.progOraInizio} alle ${current.progOraFine}` : `Inizio alle ${current.progOraInizio}`}</span>
                         </div>
                         {current.progress > 0 && (
                             <div className="now-hero-timeline-wrap">
@@ -324,19 +325,18 @@ export default function HomeHero({ categories = [] }) {
                                         style={{ width: current.progress + "%" }}
                                     />
                                 </div>
-                                <span className="now-hero-timeline-pct">{current.progress}%</span>
                             </div>
                         )}
                     </div>
 
-                    {/* Descrizione del programma */}
+                    {/* 5. Descrizione del programma */}
                     {current.progDesc && (
                         <p className="now-hero-synopsis">
                             {current.progDesc}
                         </p>
                     )}
 
-                    {/* Pulsanti Azione NOW TV: Guarda (riproduzione) + Dettagli (apre popup guida TV) */}
+                    {/* 6. Pulsanti Azione NOW TV: Guarda (riproduzione) + Dettagli (apre popup guida TV) */}
                     <div className="now-hero-cta-group">
                         <Link
                             href={current.targetHref}
@@ -358,45 +358,49 @@ export default function HomeHero({ categories = [] }) {
                     </div>
                 </div>
 
-                {/* Indicatori a barre tratteggiate stile NOW/Streaming + Miniature fluide */}
-                <div className="now-hero-footer-indicators">
-                    {heroItems.map((item, idx) => {
-                        const isCur = idx === activeIndex;
-                        return (
-                            <button
-                                key={item.channelName + "-indicator-" + idx}
-                                type="button"
-                                className={"now-hero-indicator-btn " + (isCur ? "active" : "")}
-                                onClick={() => setActiveIndex(idx)}
-                                aria-label={"Passa a " + item.channelName}
-                            >
-                                <div className="now-hero-indicator-bar">
-                                    <div className="now-hero-indicator-progress" />
-                                </div>
-                                <span className="now-hero-indicator-channel">{item.channelName.replace("Sky Sport ", "Sky ")}</span>
-                            </button>
-                        );
-                    })}
+                {/* 7. Footer: Canali a sinistra + Frecce di navigazione a destra */}
+                <div className="now-hero-footer-bar">
+                    <div className="now-hero-footer-indicators">
+                        {heroItems.map((item, idx) => {
+                            const isCur = idx === activeIndex;
+                            return (
+                                <button
+                                    key={item.channelName + "-indicator-" + idx}
+                                    type="button"
+                                    className={"now-hero-indicator-btn " + (isCur ? "active" : "")}
+                                    onClick={() => setActiveIndex(idx)}
+                                    aria-label={"Passa a " + item.channelName}
+                                >
+                                    <div className="now-hero-indicator-bar">
+                                        <div className="now-hero-indicator-progress" />
+                                    </div>
+                                    <span className="now-hero-indicator-channel">{item.channelName.replace("Sky Sport ", "Sky ")}</span>
+                                </button>
+                            );
+                        })}
+                    </div>
+
+                    {/* Frecce di navigazione in basso a destra */}
+                    <div className="now-hero-footer-arrows">
+                        <button
+                            type="button"
+                            className="now-hero-nav-arrow"
+                            onClick={prevSlide}
+                            aria-label="Canale precedente"
+                        >
+                            <span className="material-symbols-rounded">chevron_left</span>
+                        </button>
+                        <button
+                            type="button"
+                            className="now-hero-nav-arrow"
+                            onClick={nextSlide}
+                            aria-label="Canale successivo"
+                        >
+                            <span className="material-symbols-rounded">chevron_right</span>
+                        </button>
+                    </div>
                 </div>
             </div>
-
-            {/* Frecce di navigazione laterali stile NOW */}
-            <button
-                type="button"
-                className="now-hero-nav-arrow prev"
-                onClick={prevSlide}
-                aria-label="Precedente"
-            >
-                <span className="material-symbols-rounded">chevron_left</span>
-            </button>
-            <button
-                type="button"
-                className="now-hero-nav-arrow next"
-                onClick={nextSlide}
-                aria-label="Successivo"
-            >
-                <span className="material-symbols-rounded">chevron_right</span>
-            </button>
 
             {/* Popup Guida TV Dettagli Programma Attuale e Successivo */}
             {isInfoOpen && (
