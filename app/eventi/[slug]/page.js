@@ -371,13 +371,15 @@ export default function EventoPlayerPage() {
                             {(() => {
                                 const progInfo = getCurrentProgramInfo(channel?.epg);
                                 const coverImg = channel?.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
-                                const displayImg = coverImg || channel?.logo || "/logos/dazn.png";
+                                const isTestJsonEvent = channel?.isTestJson || (channel?.group && channel?.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel?.eventSlug);
+                                const fallbackLogo = isTestJsonEvent ? "/logos/dazn.png" : (getChannelLogoUrl(channel) || "/logos/dazn.png");
+                                const displayImg = coverImg || channel?.logo || fallbackLogo;
                                 const isFullCover = Boolean(coverImg);
 
                                 return (
-                                    <div className={`event-logo-box ${isFullCover ? "has-cover" : ""}`}>
+                                    <div className={`event-logo-box ${isFullCover ? "has-cover" : "has-logo"}`}>
                                         <img
-                                            className={`event-channel-logo ${isFullCover ? "is-cover-img" : ""}`}
+                                            className={`event-channel-logo ${isFullCover ? "is-cover-img" : "is-logo-img"}`}
                                             src={displayImg}
                                             alt={channel?.title || "Logo"}
                                         />

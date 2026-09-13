@@ -6212,7 +6212,7 @@ body:has(.sky-app) {
             box-sizing: border-box;
         }
 
-        /* --- Sidebar: Canali & EPG (Design Cinema Sky Glass) --- */
+        /* --- Sidebar: Canali & EPG (Design Cinema Sky Glass / Modern Obsidian Glass) --- */
         .sky-sidebar {
             flex: 0 0 390px;
             width: 390px;
@@ -6222,14 +6222,14 @@ body:has(.sky-app) {
             display: flex;
             flex-direction: column;
             gap: 12px;
-            background: linear-gradient(180deg, rgba(14, 14, 18, 0.95) 0%, rgba(8, 8, 10, 0.98) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(11, 15, 25, 0.88) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
             border-radius: 24px;
             padding: 16px;
             box-sizing: border-box;
             box-shadow: 0 20px 48px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(30px);
-            -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(28px) saturate(190%);
+            -webkit-backdrop-filter: blur(28px) saturate(190%);
             position: relative;
         }
 
@@ -6246,9 +6246,9 @@ body:has(.sky-app) {
             transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
         .sky-search:focus-within {
-            border-color: rgba(255, 255, 255, 0.35);
-            background: rgba(255, 255, 255, 0.07);
-            box-shadow: 0 0 24px rgba(255, 255, 255, 0.08);
+            border-color: rgba(0, 229, 155, 0.5);
+            background: rgba(0, 229, 155, 0.06);
+            box-shadow: 0 0 20px rgba(0, 229, 155, 0.15);
         }
         .sky-search .material-symbols-rounded {
             font-size: 1.15rem;
@@ -6257,7 +6257,7 @@ body:has(.sky-app) {
             transition: color 0.2s ease;
         }
         .sky-search:focus-within .material-symbols-rounded {
-            color: #ffffff;
+            color: #00e59b;
         }
         .sky-search input {
             flex: 1;
@@ -6312,10 +6312,10 @@ body:has(.sky-app) {
             background: rgba(255, 255, 255, 0.08);
         }
         .sky-source-btn.active {
-            color: #ffffff !important;
-            background: linear-gradient(135deg, #0070f3 0%, #00a2ff 100%) !important;
-            border-color: rgba(255, 255, 255, 0.2) !important;
-            box-shadow: 0 4px 14px rgba(0, 112, 243, 0.4);
+            color: #000000 !important;
+            background: #00e59b !important;
+            border-color: #00e59b !important;
+            box-shadow: 0 0 16px rgba(0, 229, 155, 0.45);
         }
 
         /* Filtri a pillola dinamici a scorrimento orizzontale */
@@ -6358,10 +6358,11 @@ body:has(.sky-app) {
             background: rgba(255, 255, 255, 0.09);
         }
         .sky-filter-btn.active {
-            color: #000000 !important;
-            background: #ffffff !important;
-            border-color: #ffffff !important;
-            box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);
+            color: #00e59b !important;
+            background: rgba(0, 229, 155, 0.12) !important;
+            border-color: rgba(0, 229, 155, 0.35) !important;
+            box-shadow: 0 0 16px rgba(0, 229, 155, 0.25);
+            font-weight: 700;
         }
         .sky-count {
             color: rgba(255, 255, 255, 0.4);
@@ -6444,9 +6445,9 @@ body:has(.sky-app) {
             opacity: 1;
         }
         .sky-item.active {
-            background: linear-gradient(135deg, rgba(25, 25, 32, 0.95) 0%, rgba(14, 14, 18, 0.98) 100%);
-            border-color: rgba(255, 255, 255, 0.35);
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+            background: linear-gradient(135deg, rgba(0, 229, 155, 0.1) 0%, rgba(14, 18, 25, 0.95) 100%) !important;
+            border-color: rgba(0, 229, 155, 0.4) !important;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(0, 229, 155, 0.2) !important;
             transform: translateY(0);
         }
         .sky-item.active::after {
@@ -6458,8 +6459,8 @@ body:has(.sky-app) {
             width: 3.5px;
             height: 30px;
             border-radius: 0 4px 4px 0;
-            background: #ffffff;
-            box-shadow: 0 0 14px rgba(255, 255, 255, 0.8);
+            background: #00e59b;
+            box-shadow: 0 0 14px rgba(0, 229, 155, 0.8);
         }
 
         .sky-item-thumb-box {
@@ -6713,19 +6714,19 @@ body:has(.sky-app) {
         }
         .revive-btn:hover { background: #d9d9d9; }
 
-        /* Info Deck In Basso (Redesign Cinema fuso come basamento del player) */
+        /* Info Deck In Basso (Redesign Cinema fuso come basamento del player con palette Obsidian Glass) */
         .now-row {
             display: flex;
             align-items: center;
             gap: 16px;
-            background: linear-gradient(180deg, rgba(14, 14, 18, 0.98) 0%, rgba(8, 8, 12, 1) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            background: rgba(11, 15, 25, 0.92) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
             border-radius: 0 0 24px 24px;
             padding: 12px 18px;
             box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
+            backdrop-filter: blur(28px) saturate(190%);
+            -webkit-backdrop-filter: blur(28px) saturate(190%);
             flex-shrink: 0;
             box-sizing: border-box;
             margin: 0 auto;
@@ -6737,7 +6738,7 @@ body:has(.sky-app) {
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.06) 0%, transparent 60%);
+            background: radial-gradient(circle at top right, rgba(0, 229, 155, 0.05) 0%, transparent 60%);
             pointer-events: none;
         }
         
@@ -6745,8 +6746,8 @@ body:has(.sky-app) {
             width: 54px;
             height: 54px;
             border-radius: 14px;
-            background: #000000;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: #080c14;
+            border: 1px solid rgba(255, 255, 255, 0.08);
             position: relative;
             overflow: hidden;
             flex-shrink: 0;
@@ -7093,14 +7094,14 @@ body:has(.sky-app) {
     align-items: center;
     justify-content: space-between;
     gap: 18px;
-    background: rgba(14, 14, 18, 0.94) !important;
+    background: rgba(11, 15, 25, 0.94) !important;
     border: none !important;
     border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
     border-radius: 0;
     padding: 16px 24px;
     box-sizing: border-box;
-    backdrop-filter: blur(28px);
-    -webkit-backdrop-filter: blur(28px);
+    backdrop-filter: blur(28px) saturate(190%);
+    -webkit-backdrop-filter: blur(28px) saturate(190%);
     position: relative;
     margin: 0 !important;
 }
@@ -7114,13 +7115,13 @@ body:has(.sky-app) {
 }
 
 .event-logo-box {
-    width: 64px !important;
+    width: 60px !important;
     height: 52px !important;
-    min-width: 64px !important;
+    min-width: 60px !important;
     min-height: 52px !important;
-    border-radius: 10px !important;
-    background: #0d0d12 !important;
-    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 12px !important;
+    background: #080c14 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -7133,16 +7134,33 @@ body:has(.sky-app) {
     position: relative !important;
 }
 
+.event-logo-box.has-logo {
+    padding: 6px !important;
+}
+
 .event-channel-logo {
+    display: block !important;
+    margin: 0 auto !important;
+    transition: transform 0.2s ease;
+}
+
+.event-channel-logo.is-cover-img {
     width: 100% !important;
     height: 100% !important;
     max-width: 100% !important;
     max-height: 100% !important;
     object-fit: cover !important;
     object-position: center !important;
-    display: block !important;
-    margin: 0 !important;
-    transition: transform 0.2s ease;
+}
+
+.event-channel-logo.is-logo-img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.7));
 }
 
 .event-details {
