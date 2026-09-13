@@ -4,6 +4,25 @@ import Link from "next/link";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug } from "@/lib/slug";
 
+// Funzione di upgrade delle copertine per massima risoluzione (1080p/4K)
+function upgradeImageToHighRes(url) {
+    if (!url || typeof url !== "string") return "";
+    
+    // 1. Immagini Sky CDN (ethaneurope.it.imageservice.sky.com): upgrade da /600 a /1920
+    if (url.includes("imageservice.sky.com")) {
+        return url.replace(/\/background\/\d+$/i, "/background/1920")
+                  .replace(/\/cover\/\d+$/i, "/cover/1920")
+                  .replace(/\/\d+$/i, "/1920");
+    }
+
+    // 2. Immagini TMDB: upgrade da /w300 o /w500 a /original o /w1280
+    if (url.includes("image.tmdb.org")) {
+        return url.replace(/\/w\d+\//i, "/original/");
+    }
+
+    return url;
+}
+
 export default function HomeHero({ categories = [] }) {
     const [heroItems, setHeroItems] = useState([]);
     const [activeIndex, setActiveIndex] = useState(0);
@@ -78,8 +97,11 @@ export default function HomeHero({ categories = [] }) {
                         }
                     }
 
-                    const img = prog?.immagine;
-                    if (!img || !img.startsWith("http")) return;
+                    const rawImg = prog?.immagine;
+                    if (!rawImg || !rawImg.startsWith("http")) return;
+
+                    // Risoluzione elevata per display Retina / 4K / TV
+                    const highResImg = upgradeImageToHighRes(rawImg);
 
                     let matchedChannelObj = null;
                     if (categories && Array.isArray(categories)) {
@@ -107,7 +129,7 @@ export default function HomeHero({ categories = [] }) {
                         progDesc: prog.descrizione || "",
                         progOraInizio: prog.ora || "",
                         progOraFine: nextProg?.ora || "",
-                        progImg: img,
+                        progImg: highResImg,
                         progress: progressPct,
                         targetHref,
                         channelObj: matchedChannelObj || { title: ch.canale, name: ch.canale, slug },
@@ -117,7 +139,7 @@ export default function HomeHero({ categories = [] }) {
 
                 if (!isMounted || candidates.length === 0) return;
 
-                // Shuffle casuale Fisher-Yates: 5 canali sempre diversi ad ogni ricarica
+                // Shuffle Fisher-Yates per avere 5 canali sempre diversi ad ogni ricarica
                 for (let i = candidates.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
@@ -152,7 +174,7 @@ export default function HomeHero({ categories = [] }) {
         }
         timerRef.current = setInterval(() => {
             nextSlide();
-        }, 6000);
+        }, 6500);
         return () => {
             if (timerRef.current) clearInterval(timerRef.current);
         };
@@ -174,18 +196,19 @@ export default function HomeHero({ categories = [] }) {
 
     return (
         <section
-            className="home-hero-container"
+            className="now-hero-stage"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            aria-label="In Evidenza su Sky"
+            aria-label="In primo piano su Sky"
         >
-            <div className="home-hero-backdrop-wrapper">
+            {/* Sfondo a tutto schermo con fade morbido e dissolvenza cinematografica NOW */}
+            <div className="now-hero-art-viewport">
                 {heroItems.map((item, idx) => {
                     const isActive = idx === activeIndex;
                     return (
                         <div
                             key={item.channelName + idx}
-                            className={"home-hero-bg-layer " + (isActive ? "active" : "")}
+                            className={"now-hero-art-slide " + (isActive ? "active" : "")}
                             style={{
                                 backgroundImage: "url(" + item.progImg + ")",
                                 opacity: isActive ? 1 : 0,
@@ -194,113 +217,115 @@ export default function HomeHero({ categories = [] }) {
                         />
                     );
                 })}
-                <div className="home-hero-gradient-overlay" />
-                <div className="home-hero-radial-overlay" />
-                <div className="home-hero-bottom-fade" />
+                {/* Gradienti multidirezionali NOW TV autentici: oscuramento a sinistra per leggibilità e sfumatura fluida in basso */}
+                <div className="now-hero-mask-top" />
+                <div className="now-hero-mask-left" />
+                <div className="now-hero-mask-bottom" />
             </div>
 
-            <div className="home-hero-content-wrapper">
-                <div className="home-hero-info">
-                    <div className="home-hero-meta-row">
-                        <span className="home-hero-live-badge">
-                            <span className="home-hero-live-dot" />
-                            ORA IN ONDA
+            {/* Contenuto Hero stile NOW */}
+            <div className="now-hero-inner">
+                <div className="now-hero-billboard">
+                    {/* Badge e Canale */}
+                    <div className="now-hero-header-line">
+                        <span className="now-hero-live-pill">
+                            <span className="now-hero-live-pulse" />
+                            DIRETTA TV
                         </span>
-                        <span className="home-hero-cat-pill">{current.category}</span>
-                        <span className="home-hero-channel-name">
+                        <span className="now-hero-cat-tag">{current.category}</span>
+                        <div className="now-hero-channel-brand">
                             {current.logoUrl && (
                                 <img
                                     src={current.logoUrl}
                                     alt={current.channelName}
-                                    className="home-hero-channel-logo"
+                                    className="now-hero-channel-badge-logo"
                                     loading="eager"
                                 />
                             )}
-                            {current.channelName}
-                        </span>
+                            <span className="now-hero-channel-label">{current.channelName}</span>
+                        </div>
                     </div>
 
-                    <h1 className="home-hero-title">{current.progTitle}</h1>
+                    {/* Titolo Principale Programma */}
+                    <h1 className="now-hero-heading">{current.progTitle}</h1>
 
-                    <div className="home-hero-time-row">
-                        <span className="home-hero-time-text">
+                    {/* Orario e Timeline EPG */}
+                    <div className="now-hero-schedule-bar">
+                        <div className="now-hero-time-badge">
                             <span className="material-symbols-rounded">schedule</span>
-                            {current.progOraInizio}
-                            {current.progOraFine ? " - " + current.progOraFine : ""}
-                        </span>
+                            <span>{current.progOraInizio}{current.progOraFine ? " - " + current.progOraFine : ""}</span>
+                        </div>
                         {current.progress > 0 && (
-                            <div className="home-hero-prog-track" title={current.progress + "% completato"}>
-                                <div
-                                    className="home-hero-prog-bar"
-                                    style={{ width: current.progress + "%" }}
-                                />
+                            <div className="now-hero-timeline-wrap">
+                                <div className="now-hero-timeline-track">
+                                    <div
+                                        className="now-hero-timeline-fill"
+                                        style={{ width: current.progress + "%" }}
+                                    />
+                                </div>
+                                <span className="now-hero-timeline-pct">{current.progress}%</span>
                             </div>
                         )}
                     </div>
 
+                    {/* Descrizione del programma */}
                     {current.progDesc && (
-                        <p className="home-hero-description">
+                        <p className="now-hero-synopsis">
                             {current.progDesc}
                         </p>
                     )}
 
-                    <div className="home-hero-actions">
+                    {/* Pulsanti Azione NOW */}
+                    <div className="now-hero-cta-group">
                         <Link
                             href={current.targetHref}
-                            className="home-hero-watch-btn"
+                            className="now-hero-play-button"
                             onClick={() => handleCardClick(current)}
                         >
-                            <span className="material-symbols-rounded">play_arrow</span>
-                            Guarda {current.channelName}
+                            <span className="now-hero-play-icon-wrap">
+                                <span className="material-symbols-rounded">play_arrow</span>
+                            </span>
+                            <span className="now-hero-play-text">Guarda ora su {current.channelName}</span>
                         </Link>
                     </div>
                 </div>
 
-                <div className="home-hero-thumbs-rail">
+                {/* Indicatori a barre tratteggiate stile NOW/Streaming + Miniature fluide */}
+                <div className="now-hero-footer-indicators">
                     {heroItems.map((item, idx) => {
-                        const isCurrent = idx === activeIndex;
+                        const isCur = idx === activeIndex;
                         return (
                             <button
-                                key={item.channelName + "-thumb-" + idx}
+                                key={item.channelName + "-indicator-" + idx}
                                 type="button"
-                                className={"home-hero-thumb-card " + (isCurrent ? "active" : "")}
+                                className={"now-hero-indicator-btn " + (isCur ? "active" : "")}
                                 onClick={() => setActiveIndex(idx)}
-                                aria-label={"Seleziona " + item.channelName}
+                                aria-label={"Passa a " + item.channelName}
                             >
-                                <img
-                                    src={item.progImg}
-                                    alt={item.channelName}
-                                    className="home-hero-thumb-img"
-                                    loading="eager"
-                                />
-                                <div className="home-hero-thumb-overlay">
-                                    <div className="home-hero-thumb-channel">
-                                        {item.channelName.replace("Sky Sport ", "Sky ").replace("Sky ", "")}
-                                    </div>
-                                    <div className="home-hero-thumb-title">
-                                        {item.progTitle}
-                                    </div>
+                                <div className="now-hero-indicator-bar">
+                                    <div className="now-hero-indicator-progress" />
                                 </div>
-                                {isCurrent && <div className="home-hero-thumb-active-bar" />}
+                                <span className="now-hero-indicator-channel">{item.channelName.replace("Sky Sport ", "Sky ")}</span>
                             </button>
                         );
                     })}
                 </div>
             </div>
 
+            {/* Frecce di navigazione a sfioramento laterali */}
             <button
                 type="button"
-                className="home-hero-arrow left"
+                className="now-hero-nav-arrow prev"
                 onClick={prevSlide}
-                aria-label="Canale precedente"
+                aria-label="Precedente"
             >
                 <span className="material-symbols-rounded">chevron_left</span>
             </button>
             <button
                 type="button"
-                className="home-hero-arrow right"
+                className="now-hero-nav-arrow next"
                 onClick={nextSlide}
-                aria-label="Canale successivo"
+                aria-label="Successivo"
             >
                 <span className="material-symbols-rounded">chevron_right</span>
             </button>

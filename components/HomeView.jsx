@@ -453,11 +453,12 @@ function HomeViewContent({ defaultTab = "all" }) {
                 onSearch={(s) => setSearch(s)}
             />
 
-            <main className="home-content">
-                {!isSearchOpen && filter === "all" && (
-                    <HomeHero categories={categories} />
-                )}
+            {/* HERO NOW A TUTTO SCHERMO (SOLO NEL TAB HOME/ALL E SE LA RICERCA NON È APERTA) */}
+            {!isSearchOpen && filter === "all" && (
+                <HomeHero categories={categories} />
+            )}
 
+            <main className="home-content">
                 {!isSearchOpen && filter !== "all" && currentSubCategories.length > 0 && (
                     <SubCategoryChips
                         items={currentSubCategories}
