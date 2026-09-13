@@ -4,23 +4,39 @@ import Link from "next/link";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug } from "@/lib/slug";
 
-// Funzione di upgrade delle copertine per massima risoluzione (1080p/4K)
+// Funzione di upgrade delle copertine per massima risoluzione nativa (1080p/4K)
 function upgradeImageToHighRes(url) {
     if (!url || typeof url !== "string") return "";
     
-    // 1. Immagini Sky CDN (ethaneurope.it.imageservice.sky.com): upgrade da /600 a /1920
+    // 1. Immagini Sky CDN ufficiali: upgrade da /600 a /1920 Full HD nativo
     if (url.includes("imageservice.sky.com")) {
         return url.replace(/\/background\/\d+$/i, "/background/1920")
                   .replace(/\/cover\/\d+$/i, "/cover/1920")
                   .replace(/\/\d+$/i, "/1920");
     }
 
-    // 2. Immagini TMDB: upgrade da /w300 o /w500 a /original o /w1280
+    // 2. Immagini TMDB: upgrade da miniature w300/w500 a original / w1280
     if (url.includes("image.tmdb.org")) {
         return url.replace(/\/w\d+\//i, "/original/");
     }
 
     return url;
+}
+
+// Verifica se l'immagine è un backdrop orizzontale in alta definizione adatto alla Hero Billboard
+function isHighQualityHeroImage(url) {
+    if (!url || typeof url !== "string") return false;
+    // Escludi esplicitamente miniature quadrate o a bassa risoluzione note
+    if (url.includes("tennis.jpeg")) return false;
+    if (url.includes("_rs_300")) return false;
+    if (url.includes("/partite/")) return false;
+    if (url.includes("/20/")) return false; // miniature news TG24 standard
+    
+    // Promuovi prioritariamente le immagini ufficiali Sky CDN (1920 HD) e i backdrop TMDB
+    if (url.includes("imageservice.sky.com")) return true;
+    if (url.includes("image.tmdb.org")) return true;
+
+    return false;
 }
 
 export default function HomeHero({ categories = [] }) {
@@ -54,7 +70,9 @@ export default function HomeHero({ categories = [] }) {
 
                 const now = new Date();
                 const nowMinutes = now.getHours() * 60 + now.getMinutes();
-                const candidates = [];
+
+                const primaryHDCandidates = [];
+                const fallbackCandidates = [];
 
                 guideData.forEach(ch => {
                     const cat = (ch.categoria || "").toLowerCase();
@@ -65,6 +83,7 @@ export default function HomeHero({ categories = [] }) {
                     if (!isSky || !isAllowedCat) return;
                     if (!ch.programmi || ch.programmi.length === 0) return;
 
+                    // Trova il programma in onda in questo momento
                     let currentIdx = -1;
                     for (let i = 0; i < ch.programmi.length; i++) {
                         const p = ch.programmi[i];
@@ -100,8 +119,9 @@ export default function HomeHero({ categories = [] }) {
                     const rawImg = prog?.immagine;
                     if (!rawImg || !rawImg.startsWith("http")) return;
 
-                    // Risoluzione elevata per display Retina / 4K / TV
+                    // Risoluzione elevata nativa 1920/original
                     const highResImg = upgradeImageToHighRes(rawImg);
+                    const isHD = isHighQualityHeroImage(rawImg);
 
                     let matchedChannelObj = null;
                     if (categories && Array.isArray(categories)) {
@@ -122,7 +142,7 @@ export default function HomeHero({ categories = [] }) {
                     const cleanSrc = matchedChannelObj?.skySource?.includes("sky2") ? "sky2" : "";
                     const targetHref = "/sky?ch=" + slug + (cleanSrc ? "&src=" + cleanSrc : "");
 
-                    candidates.push({
+                    const item = {
                         channelName: ch.canale,
                         category: ch.categoria || (cat === "sport" ? "Sport" : "Intrattenimento"),
                         progTitle: prog.titolo || ch.canale,
@@ -134,18 +154,27 @@ export default function HomeHero({ categories = [] }) {
                         targetHref,
                         channelObj: matchedChannelObj || { title: ch.canale, name: ch.canale, slug },
                         logoUrl: getChannelLogoUrl({ title: ch.canale })
-                    });
+                    };
+
+                    if (isHD) {
+                        primaryHDCandidates.push(item);
+                    } else {
+                        fallbackCandidates.push(item);
+                    }
                 });
 
-                if (!isMounted || candidates.length === 0) return;
+                // Se abbiamo almeno 5 canali con copertine native HD 1920 (es. Sky Sport Uno, F1, MotoGP, Arena, Documentaries, Atlantic, Serie, Crime, ecc.), usa SOLO quelli
+                let pool = primaryHDCandidates.length >= 5 ? primaryHDCandidates : [...primaryHDCandidates, ...fallbackCandidates];
 
-                // Shuffle Fisher-Yates per avere 5 canali sempre diversi ad ogni ricarica
-                for (let i = candidates.length - 1; i > 0; i--) {
+                if (!isMounted || pool.length === 0) return;
+
+                // Shuffle casuale Fisher-Yates: 5 canali sempre diversi e sempre in altissima definizione
+                for (let i = pool.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+                    [pool[i], pool[j]] = [pool[j], pool[i]];
                 }
 
-                const selected5 = candidates.slice(0, 5);
+                const selected5 = pool.slice(0, 5);
                 setHeroItems(selected5);
                 setActiveIndex(0);
             } catch (err) {
@@ -201,7 +230,7 @@ export default function HomeHero({ categories = [] }) {
             onMouseLeave={() => setIsHovered(false)}
             aria-label="In primo piano su Sky"
         >
-            {/* Sfondo a tutto schermo con fade morbido e dissolvenza cinematografica NOW */}
+            {/* Sfondo maestoso a tutto schermo con dissolvenza cinematografica NOW */}
             <div className="now-hero-art-viewport">
                 {heroItems.map((item, idx) => {
                     const isActive = idx === activeIndex;
@@ -217,13 +246,13 @@ export default function HomeHero({ categories = [] }) {
                         />
                     );
                 })}
-                {/* Gradienti multidirezionali NOW TV autentici: oscuramento a sinistra per leggibilità e sfumatura fluida in basso */}
+                {/* Gradienti multidirezionali NOW TV: leggibilità perfetta della Navbar e transizione fluida verso il basso */}
                 <div className="now-hero-mask-top" />
                 <div className="now-hero-mask-left" />
                 <div className="now-hero-mask-bottom" />
             </div>
 
-            {/* Contenuto Hero stile NOW */}
+            {/* Contenuto Hero Billboard 100% stile NOW */}
             <div className="now-hero-inner">
                 <div className="now-hero-billboard">
                     {/* Badge e Canale */}

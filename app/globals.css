@@ -10532,9 +10532,9 @@ body:has(.sky-app) {
     margin-right: calc(-50vw + 50%);
     margin-top: -16px;
     margin-bottom: 24px;
-    min-height: 82vh;
-    height: 82vh;
-    max-height: 840px;
+    min-height: 90vh;
+    height: 92vh;
+    max-height: 940px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
