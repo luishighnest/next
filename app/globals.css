@@ -10623,44 +10623,48 @@ body:has(.sky-app) {
 }
 
 .now-hero-billboard {
-    max-width: 720px;
+    max-width: 760px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    /* Ancora verticale stabile per non saltare a ogni cambio canale */
+    min-height: 400px;
+    justify-content: flex-end;
 }
 
-/* 1. Logo del Canale in alto: spazioso, nitido, isolato come firma broadcast */
+/* 1. Logo del Canale in alto: spazioso, nitido, isolato e grande come firma broadcast */
 .now-hero-brand-top {
     display: flex;
     align-items: center;
-    margin-bottom: 2px;
+    min-height: 58px;
+    margin-bottom: 4px;
 }
 
 .now-hero-channel-badge-logo {
-    height: 44px;
+    height: 54px;
     width: auto;
-    max-width: 160px;
+    max-width: 200px;
     object-fit: contain;
-    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.85));
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.9));
 }
 
 .now-hero-channel-label {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: #ffffff;
     letter-spacing: -0.01em;
     background: rgba(255, 255, 255, 0.1);
-    padding: 6px 16px;
+    padding: 8px 18px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* 2. Riga Metadati Sottile: Badge DIRETTA + Dot + Categoria */
+/* 2. Riga Metadati Sottile: Badge DIRETTA + Dot + Categoria + Badge Tecnici Broadcast FHD / 5.1 */
 .now-hero-meta-row {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 2px;
+    min-height: 26px;
 }
 
 .now-hero-live-pill {
@@ -10710,11 +10714,28 @@ body:has(.sky-app) {
     text-transform: uppercase;
 }
 
-/* 3. Titolo Programma: Stile Grandioso NOW TV */
+/* Badge specifiche tecniche reali FHD / 5.1 stile NOW / Sky Stream */
+.now-hero-spec-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* 3. Titolo Programma: Stile Grandioso NOW TV con altezza bilanciata */
 .now-hero-heading {
     font-size: 3.4rem;
     font-weight: 900;
-    line-height: 1.05;
+    line-height: 1.08;
     color: #ffffff;
     letter-spacing: -0.035em;
     text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.5);
@@ -10723,6 +10744,7 @@ body:has(.sky-app) {
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin: 0;
+    min-height: 44px;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Segoe UI", Roboto, sans-serif;
 }
 
@@ -10732,7 +10754,7 @@ body:has(.sky-app) {
     align-items: center;
     gap: 16px;
     flex-wrap: wrap;
-    margin-top: -2px;
+    min-height: 24px;
 }
 
 .now-hero-time-badge {
@@ -10768,18 +10790,19 @@ body:has(.sky-app) {
     box-shadow: 0 0 8px rgba(0, 229, 155, 0.7);
 }
 
-/* Sinossi Programma */
+/* Sinossi Programma: altezza minima per stabilità visiva tra i canali */
 .now-hero-synopsis {
     font-size: 1.05rem;
     line-height: 1.48;
     color: rgba(255, 255, 255, 0.78);
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     margin: 0;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
     max-width: 660px;
+    min-height: 3.1rem;
 }
 
 /* ==========================================================================
