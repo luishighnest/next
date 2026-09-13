@@ -77,25 +77,29 @@ export default function Navbar({
         };
     }, []);
 
+    const [openDropdownNav, setOpenDropdownNav] = useState(null);
+
+    // Chiusura al click all'esterno del menu
+    useEffect(() => {
+        function handleClickOutside(e) {
+            if (!e.target.closest(".dock-nav-item-wrapper")) {
+                setOpenDropdownNav(null);
+            }
+        }
+        document.addEventListener("click", handleClickOutside);
+        return () => document.removeEventListener("click", handleClickOutside);
+    }, []);
+
     const effectiveSubCategories = dynamicSubCategories || cachedSubCategories;
 
-    const handleMouseEnterNav = (tab) => {
-        if (hoverTimeoutRef.current) {
-            clearTimeout(hoverTimeoutRef.current);
-            hoverTimeoutRef.current = null;
-        }
-        setHoveredNav(tab);
-    };
-
-    const handleMouseLeaveNav = () => {
-        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
-        hoverTimeoutRef.current = setTimeout(() => {
-            setHoveredNav(null);
-        }, 180);
+    const handleToggleArrow = (e, tab) => {
+        e.preventDefault();
+        e.stopPropagation();
+        setOpenDropdownNav(prev => (prev === tab ? null : tab));
     };
 
     const handleSubCategoryClick = (macroTab, subId) => {
-        setHoveredNav(null);
+        setOpenDropdownNav(null);
         if (onSubFilterChange && activeFilter === macroTab) {
             onSubFilterChange(subId);
         } else {
@@ -356,30 +360,38 @@ export default function Navbar({
                                     return (
                                         <div
                                             key={item.id}
-                                            className={`dock-nav-item-wrapper ${isHovered ? "is-hovered" : ""}`}
-                                            onMouseEnter={() => item.hasSub && handleMouseEnterNav(item.id)}
-                                            onMouseLeave={item.hasSub ? handleMouseLeaveNav : undefined}
+                                            className={`dock-nav-item-wrapper ${openDropdownNav === item.id ? "dropdown-active" : ""}`}
                                         >
                                             <Link
                                                 href={item.path}
                                                 className={`dock-nav-link ${isActive ? "active" : ""}`}
                                                 onClick={(e) => {
                                                     e.preventDefault();
+                                                    setOpenDropdownNav(null);
                                                     handleNavClick(item.id);
                                                     if (onSubFilterChange) onSubFilterChange("all");
                                                 }}
                                             >
                                                 <i className={`fas ${item.icon} dock-icon`}></i>
                                                 <span className="dock-label">{item.label}</span>
-                                                {item.hasSub && subItems.length > 0 && (
-                                                    <span className="material-symbols-rounded dock-arrow-icon" aria-hidden="true">
-                                                        keyboard_arrow_down
-                                                    </span>
-                                                )}
                                             </Link>
 
                                             {item.hasSub && subItems.length > 0 && (
-                                                <div className={`dock-subnav-dropdown ${isHovered ? "is-open" : ""}`} role="menu">
+                                                <button
+                                                    type="button"
+                                                    className={`dock-arrow-btn ${openDropdownNav === item.id ? "is-open" : ""}`}
+                                                    onClick={(e) => handleToggleArrow(e, item.id)}
+                                                    aria-label={`Sottocategorie ${item.label}`}
+                                                    title={`Mostra sottocategorie ${item.label}`}
+                                                >
+                                                    <span className="material-symbols-rounded dock-arrow-icon" aria-hidden="true">
+                                                        keyboard_arrow_down
+                                                    </span>
+                                                </button>
+                                            )}
+
+                                            {item.hasSub && subItems.length > 0 && (
+                                                <div className={`dock-subnav-dropdown ${openDropdownNav === item.id ? "is-open" : ""}`} role="menu">
                                                     <div className="dock-dropdown-header">
                                                         <span>{item.label}</span>
                                                     </div>
