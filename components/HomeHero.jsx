@@ -4,18 +4,18 @@ import Link from "next/link";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug } from "@/lib/slug";
 
-// Funzione di upgrade delle copertine per massima risoluzione nativa (1080p/4K)
+// Upgrade automatico delle copertine per massima risoluzione (Full HD / 4K)
 function upgradeImageToHighRes(url) {
     if (!url || typeof url !== "string") return "";
     
-    // 1. Immagini Sky CDN ufficiali: upgrade da /600 a /1920 Full HD nativo
+    // 1. Sky CDN ufficiale: upgrade da /600 a /1920 Full HD nativo
     if (url.includes("imageservice.sky.com")) {
         return url.replace(/\/background\/\d+$/i, "/background/1920")
                   .replace(/\/cover\/\d+$/i, "/cover/1920")
                   .replace(/\/\d+$/i, "/1920");
     }
 
-    // 2. Immagini TMDB: upgrade da miniature w300/w500 a original / w1280
+    // 2. TMDB: upgrade a original
     if (url.includes("image.tmdb.org")) {
         return url.replace(/\/w\d+\//i, "/original/");
     }
@@ -23,16 +23,14 @@ function upgradeImageToHighRes(url) {
     return url;
 }
 
-// Verifica se l'immagine è un backdrop orizzontale in alta definizione adatto alla Hero Billboard
+// Verifica qualità visiva per evitare miniature sfocate
 function isHighQualityHeroImage(url) {
     if (!url || typeof url !== "string") return false;
-    // Escludi esplicitamente miniature quadrate o a bassa risoluzione note
     if (url.includes("tennis.jpeg")) return false;
     if (url.includes("_rs_300")) return false;
     if (url.includes("/partite/")) return false;
-    if (url.includes("/20/")) return false; // miniature news TG24 standard
+    if (url.includes("/20/")) return false;
     
-    // Promuovi prioritariamente le immagini ufficiali Sky CDN (1920 HD) e i backdrop TMDB
     if (url.includes("imageservice.sky.com")) return true;
     if (url.includes("image.tmdb.org")) return true;
 
@@ -71,8 +69,10 @@ export default function HomeHero({ categories = [] }) {
                 const now = new Date();
                 const nowMinutes = now.getHours() * 60 + now.getMinutes();
 
-                const primaryHDCandidates = [];
-                const fallbackCandidates = [];
+                const sportCandidatesHD = [];
+                const sportCandidatesFallback = [];
+                const entCandidatesHD = [];
+                const entCandidatesFallback = [];
 
                 guideData.forEach(ch => {
                     const cat = (ch.categoria || "").toLowerCase();
@@ -82,6 +82,10 @@ export default function HomeHero({ categories = [] }) {
 
                     if (!isSky || !isAllowedCat) return;
                     if (!ch.programmi || ch.programmi.length === 0) return;
+
+                    // FILTRO ESPLICITO: Escludi tutti i canali Sky Sport 251, 252, 253, 254, 255, 256, 257, 258, 259 ecc.
+                    const isSkySportNumbered = /skys*sports*25d+/i.test(name) || /skys*calcios*d+/i.test(name);
+                    if (isSkySportNumbered) return;
 
                     // Trova il programma in onda in questo momento
                     let currentIdx = -1;
@@ -119,7 +123,6 @@ export default function HomeHero({ categories = [] }) {
                     const rawImg = prog?.immagine;
                     if (!rawImg || !rawImg.startsWith("http")) return;
 
-                    // Risoluzione elevata nativa 1920/original
                     const highResImg = upgradeImageToHighRes(rawImg);
                     const isHD = isHighQualityHeroImage(rawImg);
 
@@ -156,25 +159,46 @@ export default function HomeHero({ categories = [] }) {
                         logoUrl: getChannelLogoUrl({ title: ch.canale })
                     };
 
-                    if (isHD) {
-                        primaryHDCandidates.push(item);
+                    if (cat === "sport") {
+                        if (isHD) sportCandidatesHD.push(item);
+                        else sportCandidatesFallback.push(item);
                     } else {
-                        fallbackCandidates.push(item);
+                        if (isHD) entCandidatesHD.push(item);
+                        else entCandidatesFallback.push(item);
                     }
                 });
 
-                // Se abbiamo almeno 5 canali con copertine native HD 1920 (es. Sky Sport Uno, F1, MotoGP, Arena, Documentaries, Atlantic, Serie, Crime, ecc.), usa SOLO quelli
-                let pool = primaryHDCandidates.length >= 5 ? primaryHDCandidates : [...primaryHDCandidates, ...fallbackCandidates];
+                // Prevalenza marcata di canali SPORT (3 o 4 su 5):
+                const sportPool = sportCandidatesHD.length >= 4 ? sportCandidatesHD : [...sportCandidatesHD, ...sportCandidatesFallback];
+                const entPool = entCandidatesHD.length >= 2 ? entCandidatesHD : [...entCandidatesHD, ...entCandidatesFallback];
 
-                if (!isMounted || pool.length === 0) return;
-
-                // Shuffle casuale Fisher-Yates: 5 canali sempre diversi e sempre in altissima definizione
-                for (let i = pool.length - 1; i > 0; i--) {
+                // Mescola casualmente entrambi i pool
+                for (let i = sportPool.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [pool[i], pool[j]] = [pool[j], pool[i]];
+                    [sportPool[i], sportPool[j]] = [sportPool[j], sportPool[i]];
+                }
+                for (let i = entPool.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [entPool[i], entPool[j]] = [entPool[j], entPool[i]];
                 }
 
-                const selected5 = pool.slice(0, 5);
+                // Seleziona 3 o 4 canali Sport e 1 o 2 canali Intrattenimento per un totale di 5
+                const selectedSport = sportPool.slice(0, 3);
+                const selectedEnt = entPool.slice(0, 2);
+                let selected5 = [...selectedSport, ...selectedEnt];
+
+                if (selected5.length < 5 && sportPool.length > 3) {
+                    selected5.push(sportPool[3]);
+                }
+
+                // Shuffle finale dei 5 canali per alternarli casualmente nello scorrimento
+                for (let i = selected5.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [selected5[i], selected5[j]] = [selected5[j], selected5[i]];
+                }
+
+                if (!isMounted || selected5.length === 0) return;
+
                 setHeroItems(selected5);
                 setActiveIndex(0);
             } catch (err) {
