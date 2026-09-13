@@ -355,7 +355,6 @@ export default function Navbar({
                                 ].map((item) => {
                                     const isActive = activeFilter === item.id;
                                     const subItems = (item.hasSub && effectiveSubCategories[item.id]) ? effectiveSubCategories[item.id] : [];
-                                    const isHovered = hoveredNav === item.id;
 
                                     return (
                                         <div
