@@ -560,9 +560,9 @@ export default function HomeHero({ categories = [] }) {
                                     {item.progTitle}
                                 </h1>
 
-                                {/* 4. Orario e Timeline EPG racchiusi in container/pillola elegante */}
+                                {/* 4. Orario e Timeline EPG: solo testo pulito ed elegante senza badge/pillola */}
                                 <div className="now-hero-schedule-bar">
-                                    <div className="now-hero-time-badge">
+                                    <div className="now-hero-time-text">
                                         <span className="material-symbols-rounded">schedule</span>
                                         <span>{item.progOraFine ? `Dalle ${item.progOraInizio} alle ${item.progOraFine}` : `Inizio alle ${item.progOraInizio}`}</span>
                                     </div>

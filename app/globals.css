@@ -10959,36 +10959,35 @@ body:has(.sky-app) {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Inter", "Segoe UI", Roboto, sans-serif;
 }
 
-/* 4. EPG / Orario e Barra Progresso racchiusi in container pillola (mb 14px) */
+/* 4. EPG / Orario e Barra Progresso: solo testo pulito senza pillola/badge (mb 14px) */
 .now-hero-schedule-bar {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     width: fit-content;
     max-width: 100%;
-    padding: 4px 12px;
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.07);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
+    padding: 0;
+    background: transparent;
+    border: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     margin: 0 0 14px 0;
 }
 
-.now-hero-time-badge {
+.now-hero-time-text {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.80rem;
+    font-size: 0.84rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.72);
     white-space: nowrap;
     letter-spacing: -0.01em;
 }
 
-.now-hero-time-badge .material-symbols-rounded {
-    font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.65);
+.now-hero-time-text .material-symbols-rounded {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.60);
 }
 
 .now-hero-timeline-wrap {
