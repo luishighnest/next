@@ -7303,7 +7303,7 @@ body:has(.sky-app) {
             transition: width 0.3s ease;
         }
 
-        /* Deck Action Controls: Drawer Canali + Zapping */
+        /* Deck Action Controls: Switch Sorgente (Standard / WARP) + Drawer Canali + Zapping */
         .now-deck-actions {
             display: flex;
             align-items: center;
@@ -7311,6 +7311,42 @@ body:has(.sky-app) {
             position: relative;
             z-index: 2;
             flex-shrink: 0;
+        }
+
+        .event-sources-deck {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .event-source-deck-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 999px;
+            color: rgba(255, 255, 255, 0.85);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+            user-select: none;
+        }
+        .event-source-deck-btn:hover {
+            background: rgba(255, 255, 255, 0.18);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-1px);
+        }
+        .event-source-deck-btn.active {
+            background: #ffffff !important;
+            color: #000000 !important;
+            border-color: #ffffff !important;
+            box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
         }
 
         .sky-channels-trigger-btn {

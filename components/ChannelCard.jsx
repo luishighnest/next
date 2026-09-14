@@ -302,7 +302,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         try {
             if (typeof window !== "undefined") {
                 const currentPath = window.location.pathname + (window.location.search || "");
-                if (currentPath && !currentPath.startsWith("/sky") && !currentPath.startsWith("/evento")) {
+                if (currentPath && !currentPath.startsWith("/sky") && !currentPath.startsWith("/eventi") && !currentPath.startsWith("/evento")) {
                     sessionStorage.setItem("nmdz_returnPath", currentPath);
                 }
             }

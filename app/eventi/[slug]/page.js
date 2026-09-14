@@ -1,8 +1,6 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { useParams } from "next/navigation";
-import Navbar from "@/components/Navbar";
-import CarouselSection from "@/components/CarouselSection";
+import React, { useState, useEffect, useRef, useMemo } from "react";
+import { useParams, useRouter } from "next/navigation";
 import MobileEventoView from "@/components/MobileEventoView";
 import { useDeviceState } from "@/components/DeviceProvider";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
@@ -28,6 +26,7 @@ function getInitialSource(ch) {
 }
 
 export default function EventoPlayerPage() {
+    const router = useRouter();
     const { isMobile } = useDeviceState();
     const params = useParams();
     const slug = params?.slug ? String(params.slug).toLowerCase() : "";
@@ -55,6 +54,7 @@ export default function EventoPlayerPage() {
         }
         return null;
     });
+
     const [selectedSource, setSelectedSource] = useState(() => getInitialSource(channel));
     const [relatedSections, setRelatedSections] = useState(() => {
         if (typeof window !== "undefined") {
@@ -70,6 +70,7 @@ export default function EventoPlayerPage() {
         }
         return [];
     });
+
     const [loading, setLoading] = useState(() => !channel);
     const [mounted, setMounted] = useState(false);
     const [iframeLoaded, setIframeLoaded] = useState(false);
@@ -80,8 +81,41 @@ export default function EventoPlayerPage() {
         return "";
     });
 
+    // Stato Drawer Canali a destra (popup nel player come in /sky)
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [searchQuery, setSearchQuery] = useState("");
+    const [activeTab, setActiveTab] = useState("all");
+
+    // Controlli Overlay (auto-hide deck e tasto indietro su inattività mouse)
+    const [isUserActive, setIsUserActive] = useState(true);
+    const idleTimerRef = useRef(null);
+
+    const handleMouseMove = () => {
+        setIsUserActive(true);
+        if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+        idleTimerRef.current = setTimeout(() => {
+            setIsUserActive(false);
+        }, 3500);
+    };
+
+    const handleBack = () => {
+        let target = "/eventi";
+        if (typeof window !== "undefined") {
+            try {
+                const stored = sessionStorage.getItem("nmdz_returnPath");
+                if (stored && !stored.startsWith("/sky") && !stored.startsWith("/eventi") && !stored.startsWith("/evento")) {
+                    target = stored;
+                }
+            } catch(e) {}
+        }
+        router.push(target);
+    };
+
     useEffect(() => {
         setMounted(true);
+        return () => {
+            if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+        };
     }, []);
 
     useEffect(() => {
@@ -280,6 +314,98 @@ export default function EventoPlayerPage() {
         };
     }, [slug]);
 
+    // Costruzione lista unificata e unica di tutti i canali ed eventi correlati per il drawer laterale
+    const allChannelsList = useMemo(() => {
+        const list = [];
+        const seen = new Set();
+        relatedSections.forEach(sec => {
+            (sec.channels || []).forEach(ch => {
+                const key = getChannelSlug(ch) || ch.title || ch.name;
+                if (!seen.has(key)) {
+                    seen.add(key);
+                    list.push({ ...ch, sectionCategory: sec.title });
+                }
+            });
+        });
+        return list;
+    }, [relatedSections]);
+
+    // Categorie disponibili per i filtri a pillola
+    const availableCategories = useMemo(() => {
+        const cats = [];
+        relatedSections.forEach(sec => {
+            if (sec.title && !cats.includes(sec.title)) {
+                cats.push(sec.title);
+            }
+        });
+        return cats;
+    }, [relatedSections]);
+
+    // Filtraggio canali per ricerca e categoria
+    const filteredChannels = useMemo(() => {
+        return allChannelsList.filter(ch => {
+            const title = (ch.title || ch.name || "").toLowerCase();
+            const grp = (ch.group || ch.category || ch.sectionCategory || "").toLowerCase();
+            const matchesSearch = !searchQuery || title.includes(searchQuery.toLowerCase()) || grp.includes(searchQuery.toLowerCase());
+            const matchesCat = activeTab === "all" || (ch.sectionCategory && ch.sectionCategory.toLowerCase() === activeTab.toLowerCase()) || grp.includes(activeTab.toLowerCase());
+            return matchesSearch && matchesCat;
+        });
+    }, [allChannelsList, searchQuery, activeTab]);
+
+    // Selezione canale dal drawer laterale o zapping
+    const handleSelectChannel = (ch) => {
+        if (!ch) return;
+        setChannel(ch);
+        setSelectedSource(getInitialSource(ch));
+        try {
+            sessionStorage.setItem("daznEventChannel", JSON.stringify(ch));
+            sessionStorage.setItem("daznCustomChannel", JSON.stringify(ch));
+        } catch(e) {}
+        const newSlug = getChannelSlug(ch);
+        if (newSlug) {
+            window.history.replaceState(null, "", `/eventi/${newSlug}`);
+        }
+        if (typeof window !== "undefined" && window.innerWidth < 880) {
+            setIsSidebarOpen(false);
+        }
+    };
+
+    // Zapping canali successivi / precedenti
+    const handleNextChannel = () => {
+        const currentList = filteredChannels.length > 0 ? filteredChannels : allChannelsList;
+        if (currentList.length === 0) return;
+        const currentKey = getChannelSlug(channel) || channel?.title;
+        const curIdx = currentList.findIndex(c => (getChannelSlug(c) || c.title) === currentKey);
+        const nextIdx = (curIdx + 1) % currentList.length;
+        handleSelectChannel(currentList[nextIdx]);
+    };
+
+    const handlePrevChannel = () => {
+        const currentList = filteredChannels.length > 0 ? filteredChannels : allChannelsList;
+        if (currentList.length === 0) return;
+        const currentKey = getChannelSlug(channel) || channel?.title;
+        const curIdx = currentList.findIndex(c => (getChannelSlug(c) || c.title) === currentKey);
+        const prevIdx = (curIdx - 1 + currentList.length) % currentList.length;
+        handleSelectChannel(currentList[prevIdx]);
+    };
+
+    // Scorciatoie da tastiera Freccia Su e Freccia Giù per zapping
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+            if (e.key === "ArrowUp") {
+                e.preventDefault();
+                handlePrevChannel();
+            } else if (e.key === "ArrowDown") {
+                e.preventDefault();
+                handleNextChannel();
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [filteredChannels, allChannelsList, channel]);
+
     // Costruzione URL Iframe per estensione Chrome
     const getIframeUrl = () => {
         if (!selectedSource || !selectedSource.url) return "";
@@ -375,149 +501,319 @@ export default function EventoPlayerPage() {
         );
     }
 
-    return (
-        <div className={`event-player-page ${mounted ? "is-mounted" : "is-mounting"}`} style={{ background: "transparent", minHeight: "140vh", color: "#ffffff", paddingBottom: "120px" }}>
-            <Navbar activeFilter={null} />
+    const currentEpg = getCurrentProgramInfo(channel?.epg);
+    const coverImg = channel?.image || (currentEpg && currentEpg.immagine ? currentEpg.immagine : null);
+    const isTestJsonEvent = channel?.isTestJson || (channel?.group && channel?.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel?.eventSlug);
+    const fallbackLogo = isTestJsonEvent ? "/logos/dazn.png" : (getChannelLogoUrl(channel) || "/logos/dazn.png");
+    const displayLogo = channel?.logo || fallbackLogo;
 
-            <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "86px 16px 0 16px" }}>
-                <div className="event-main-stage">
-                    <div className="player-wrapper" style={{ position: "relative", overflow: "hidden" }}>
-                        {Boolean(transPoster || channel?.image) && !iframeLoaded && (
+    return (
+        <div
+            className={`sky-app ${mounted ? "is-mounted" : "is-mounting"}`}
+            onMouseMove={handleMouseMove}
+            onClick={handleMouseMove}
+        >
+            {/* Tasto Minimal solo icona freccia indietro che riporta alla sezione di provenienza */}
+            <button
+                type="button"
+                className={`sky-back-minimal-btn ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}
+                onClick={handleBack}
+                title="Torna indietro"
+                aria-label="Torna indietro"
+            >
+                <span className="material-symbols-rounded">arrow_back</span>
+            </button>
+
+            {/* Layout Principale Fullscreen 100vw x 100vh */}
+            <main className="sky-main">
+                {/* 1. Fullscreen Player Container */}
+                <div className="sky-native-player-container">
+                    {/* Backdrop di preload per eliminare scatti prima dell'avvio */}
+                    {Boolean(transPoster || coverImg) && !iframeLoaded && (
+                        <div className="sky-player-backdrop-preload">
+                            <img
+                                src={transPoster || coverImg}
+                                alt=""
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                    filter: "brightness(0.4) contrast(1.05)"
+                                }}
+                            />
                             <div
                                 style={{
                                     position: "absolute",
                                     inset: 0,
-                                    zIndex: 1,
-                                    pointerEvents: "none",
-                                    overflow: "hidden",
-                                    transition: "opacity 0.4s ease"
+                                    background: "linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%)"
                                 }}
-                            >
-                                <img
-                                    src={transPoster || channel?.image}
-                                    alt=""
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        objectFit: "cover",
-                                        filter: "brightness(0.48) contrast(1.05)"
-                                    }}
-                                />
-                                <div
-                                    style={{
-                                        position: "absolute",
-                                        inset: 0,
-                                        background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.88) 100%)"
-                                    }}
-                                />
-                                <div
-                                    style={{
-                                        position: "absolute",
-                                        top: "50%",
-                                        left: "50%",
-                                        transform: "translate(-50%, -50%)",
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        alignItems: "center",
-                                        gap: "12px"
-                                    }}
-                                >
-                                    <div className="sky-spinner" style={{ width: "40px", height: "40px", borderWidth: "3px" }} />
-                                </div>
-                            </div>
-                        )}
+                            />
+                        </div>
+                    )}
 
-                        <iframe
-                            id="player-frame"
-                            src={getIframeUrl()}
-                            allowFullScreen
-                            allow="autoplay; encrypted-media; fullscreen"
-                            title="Player"
-                            onLoad={() => {
-                                setTimeout(() => setIframeLoaded(true), 250);
-                            }}
-                            style={{
-                                display: "block",
-                                width: "100%",
-                                height: "100%",
-                                border: "none",
-                                background: "#000000",
-                                opacity: iframeLoaded ? 1 : 0.85,
-                                transition: "opacity 0.4s ease-in-out"
-                            }}
+                    {/* Iframe del player estensione con fit fullscreen 100% x 100% */}
+                    <iframe
+                        id="player-frame"
+                        src={getIframeUrl()}
+                        allowFullScreen
+                        allow="autoplay; encrypted-media; fullscreen"
+                        title="Player"
+                        onLoad={() => {
+                            setTimeout(() => setIframeLoaded(true), 250);
+                        }}
+                        style={{
+                            display: "block",
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                            background: "#000000",
+                            opacity: iframeLoaded ? 1 : 0.85,
+                            transition: "opacity 0.4s ease-in-out"
+                        }}
+                    />
+
+                    {/* Overlay Vignetta cinematografica per contrasto UI */}
+                    <div className={`sky-player-vignette ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`} />
+
+                    {/* Spinner di caricamento centrale durante il buffering iniziale */}
+                    {(!iframeLoaded || loading) && (
+                        <div className="sky-native-loader">
+                            <div className="sky-spinner" />
+                            <span className="sky-loader-text">
+                                {loading ? "Caricamento evento..." : "Sintonizzazione diretta in corso..."}
+                            </span>
+                        </div>
+                    )}
+                </div>
+
+                {/* 2. Deck Overlay In Basso (Flottante con info, sorgenti e tasto Canali) */}
+                <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
+                    <div className="now-row">
+                        <div className="now-poster-box">
+                            {coverImg ? (
+                                <img src={coverImg} className="now-poster-img" alt="" />
+                            ) : null}
+                            <img
+                                src={displayLogo}
+                                className="now-logo"
+                                alt=""
+                            />
+                        </div>
+
+                        <div className="now-info">
+                            <div className="now-title-row">
+                                <h2 className="now-title">{channel?.title || "Caricamento evento..."}</h2>
+                            </div>
+                            <div className="now-meta-row">
+                                <span className="live-badge"><span className="dot"></span>LIVE</span>
+                                <span className="now-group">{channel?.group || channel?.category || "EVENTI"}</span>
+                                {channel?.ora && (
+                                    <span className="event-time-badge" style={{ padding: "2px 8px", fontSize: "0.72rem" }}>
+                                        <i className="fa-regular fa-clock" style={{ marginRight: "4px" }}></i>
+                                        <span>Ore {channel.ora}</span>
+                                    </span>
+                                )}
+                            </div>
+                            <div className="now-epg-text">
+                                {currentEpg?.titolo ? `${currentEpg.oraInizio ? currentEpg.oraInizio + " - " : ""}${currentEpg.titolo}` : (channel?.description || "Trasmissione in diretta")}
+                            </div>
+                            {currentEpg && currentEpg.percentuale !== undefined && (
+                                <div className="now-progress-container">
+                                    <div className="now-progress-bar" style={{ width: `${currentEpg.percentuale || 10}%` }}></div>
+                                </div>
+                            )}
+                        </div>
+
+                        {/* Deck Actions: Switch Sorgenti + Tasto Canali + Zapping */}
+                        <div className="now-deck-actions">
+                            {/* Switch Sorgente (Standard vs WARP) */}
+                            {channel?.sources && channel.sources.length > 1 && (
+                                <div className="event-sources-deck">
+                                    {channel.sources.map((s, idx) => {
+                                        const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
+                                        return (
+                                            <button
+                                                key={s.name + idx}
+                                                type="button"
+                                                className={`event-source-deck-btn ${isSelected ? "active" : ""}`}
+                                                onClick={() => setSelectedSource(s)}
+                                                title={`Passa a sorgente ${s.name}`}
+                                            >
+                                                {s.isWarp ? (
+                                                    <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#000000" : "#f38020" }}></i>
+                                                ) : (
+                                                    <i className="fa-solid fa-bolt"></i>
+                                                )}
+                                                <span>{s.name}</span>
+                                            </button>
+                                        );
+                                    })}
+                                </div>
+                            )}
+
+                            {/* Tasto Canali (apre il drawer laterale a destra) */}
+                            <button
+                                type="button"
+                                className="sky-channels-trigger-btn"
+                                onClick={() => setIsSidebarOpen(true)}
+                                title="Mostra tutti gli eventi e canali correlati"
+                            >
+                                <i className="fas fa-list-ul" />
+                                <span>Canali</span>
+                            </button>
+
+                            {/* Controlli Zapping */}
+                            <div className="zap-controls">
+                                <button
+                                    type="button"
+                                    className="zap-btn zap-btn-up"
+                                    onClick={handlePrevChannel}
+                                    title="Evento precedente (Freccia Su ↑)"
+                                    aria-label="Evento precedente"
+                                >
+                                    <span className="material-symbols-rounded">keyboard_arrow_up</span>
+                                </button>
+                                <button
+                                    type="button"
+                                    className="zap-btn zap-btn-down"
+                                    onClick={handleNextChannel}
+                                    title="Evento successivo (Freccia Giù ↓)"
+                                    aria-label="Evento successivo"
+                                >
+                                    <span className="material-symbols-rounded">keyboard_arrow_down</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 3. Backdrop e Drawer Popup Laterale a Destra (nel player) */}
+                <div
+                    className={`sky-sidebar-backdrop ${isSidebarOpen ? "is-open" : ""}`}
+                    onClick={() => setIsSidebarOpen(false)}
+                />
+
+                <aside className={`sky-sidebar-popup ${isSidebarOpen ? "is-open" : ""}`}>
+                    {/* Header Drawer */}
+                    <div className="sky-sidebar-header">
+                        <h3 className="sky-sidebar-header-title">
+                            <i className="fas fa-tv" style={{ color: "#00e59b" }} />
+                            <span>Dirette & Canali</span>
+                        </h3>
+                        <button
+                            type="button"
+                            className="sky-sidebar-close-btn"
+                            onClick={() => setIsSidebarOpen(false)}
+                            aria-label="Chiudi elenco canali"
+                        >
+                            <span className="material-symbols-rounded">close</span>
+                        </button>
+                    </div>
+
+                    {/* Barra di ricerca */}
+                    <div className="sky-search">
+                        <span className="material-symbols-rounded">search</span>
+                        <input
+                            type="text"
+                            placeholder="Cerca evento o canale..."
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
                         />
                     </div>
 
-                    <div className="event-deck">
-                        <div className="event-deck-left">
-                            {(() => {
-                                const progInfo = getCurrentProgramInfo(channel?.epg);
-                                const coverImg = channel?.image || (progInfo && progInfo.immagine ? progInfo.immagine : null);
-                                const isTestJsonEvent = channel?.isTestJson || (channel?.group && channel?.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel?.eventSlug);
-                                const fallbackLogo = isTestJsonEvent ? "/logos/dazn.png" : (getChannelLogoUrl(channel) || "/logos/dazn.png");
-                                const displayImg = coverImg || channel?.logo || fallbackLogo;
-                                const isFullCover = Boolean(coverImg);
+                    {/* Filtri a pillola orizzontali */}
+                    <div className="sky-filters">
+                        <button
+                            type="button"
+                            className={`sky-filter-btn ${activeTab === "all" ? "active" : ""}`}
+                            onClick={() => setActiveTab("all")}
+                            title="Tutti"
+                        >
+                            <i className="fas fa-th-large"></i>
+                        </button>
+                        {availableCategories.map(cat => {
+                            let icon = "fa-trophy";
+                            const cl = cat.toLowerCase();
+                            if (cl.includes("dazn")) icon = "fa-bolt";
+                            else if (cl.includes("eurosport")) icon = "fa-flag-checkered";
+                            else if (cl.includes("supertennis") || cl.includes("tennis")) icon = "fa-baseball";
+                            else if (cl.includes("calcio") || cl.includes("serie a")) icon = "fa-futbol";
+                            else if (cl.includes("basket")) icon = "fa-basketball";
+                            else if (cl.includes("motori") || cl.includes("f1")) icon = "fa-car";
+                            else icon = "fa-tv";
+
+                            return (
+                                <button
+                                    key={cat}
+                                    type="button"
+                                    className={`sky-filter-btn ${activeTab === cat ? "active" : ""}`}
+                                    onClick={() => setActiveTab(cat)}
+                                    title={cat}
+                                >
+                                    <i className={`fas ${icon}`}></i>
+                                </button>
+                            );
+                        })}
+                    </div>
+
+                    {/* Elenco Canali ed Eventi Correlati (Locandine in popup) */}
+                    <div className="sky-list">
+                        {filteredChannels.length === 0 ? (
+                            <div className="sky-empty">Nessun canale o evento trovato.</div>
+                        ) : (
+                            filteredChannels.map((ch, idx) => {
+                                const currentKey = getChannelSlug(channel) || channel?.title;
+                                const itemKey = getChannelSlug(ch) || ch.title;
+                                const active = currentKey && itemKey && (currentKey === itemKey || matchSlug(ch, currentKey));
+
+                                const epg = getCurrentProgramInfo(ch.epg);
+                                const itemPoster = ch.image || (epg && epg.immagine ? epg.immagine : null);
+                                const isItemTestJson = ch.isTestJson || (ch.group && ch.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(ch.eventSlug);
+                                const itemLogo = ch.logo || (isItemTestJson ? "/logos/dazn.png" : getChannelLogoUrl(ch));
 
                                 return (
-                                    <div className={`event-logo-box ${isFullCover ? "has-cover" : "has-logo"}`}>
-                                        <img
-                                            className={`event-channel-logo ${isFullCover ? "is-cover-img" : "is-logo-img"}`}
-                                            src={displayImg}
-                                            alt={channel?.title || "Logo"}
-                                        />
+                                    <div
+                                        key={(ch.title || ch.name) + idx}
+                                        className={`sky-item ${active ? "active" : ""}`}
+                                        onClick={() => handleSelectChannel(ch)}
+                                    >
+                                        <div className="sky-item-thumb-box">
+                                            {itemPoster && (
+                                                <img src={itemPoster} className="sky-item-poster-bg" alt="" />
+                                            )}
+                                            <img
+                                                src={itemLogo || "/logos/dazn.png"}
+                                                className="sky-item-logo-overlay"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div className="sky-item-info">
+                                            <div className="sky-item-header-row">
+                                                <div className="sky-item-name">{ch.title || ch.name}</div>
+                                                {active && <span className="sky-item-live">LIVE</span>}
+                                            </div>
+                                            <div className="sky-item-epg">
+                                                {ch.ora ? (
+                                                    <span className="sky-item-epg-time">Ore {ch.ora}</span>
+                                                ) : epg?.oraInizio ? (
+                                                    <span className="sky-item-epg-time">{epg.oraInizio}</span>
+                                                ) : null}
+                                                <span className="sky-item-epg-title">
+                                                    {ch.group || ch.sectionCategory || epg?.titolo || "In diretta"}
+                                                </span>
+                                            </div>
+                                            {epg && epg.percentuale !== undefined && (
+                                                <div className="sky-item-progress">
+                                                    <div className="sky-item-progress-bar" style={{ width: `${epg.percentuale}%` }}></div>
+                                                </div>
+                                            )}
+                                        </div>
                                     </div>
                                 );
-                            })()}
-                            <div className="event-details">
-                                <div className="event-meta-row">
-                                    <span className="live-badge"><span className="dot"></span>LIVE</span>
-                                    <span className="event-tag">{channel?.group || channel?.category || "EVENTI"}</span>
-                                    {channel?.ora && (
-                                        <span className="event-time-badge">
-                                            <i className="fa-regular fa-clock"></i>
-                                            <span>Ore {channel.ora}</span>
-                                        </span>
-                                    )}
-                                </div>
-                                <h1 className="event-title">{channel?.title || "Caricamento evento..."}</h1>
-                            </div>
-                        </div>
-
-                        {/* Deck Tasti Sorgente (Standard vs WARP) */}
-                        <div className="event-sources-wrapper">
-                            {channel?.sources && channel.sources.map((s, idx) => {
-                                const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
-                                return (
-                                    <button
-                                        key={s.name + idx}
-                                        type="button"
-                                        className={`event-source-btn ${isSelected ? "active" : ""}`}
-                                        onClick={() => setSelectedSource(s)}
-                                    >
-                                        {s.isWarp ? (
-                                            <i className="fa-solid fa-shield-halved" style={{ color: "#f38020" }}></i>
-                                        ) : (
-                                            <i className="fa-solid fa-bolt"></i>
-                                        )}
-                                        <span>{s.name}</span>
-                                    </button>
-                                );
-                            })}
-                        </div>
+                            })
+                        )}
                     </div>
-                </div>
-
-                {/* Sezioni Correlate identiche a evento.html */}
-                <div className="related-section" id="dynamic-categories-container">
-                    {relatedSections.map(sec => (
-                        <CarouselSection
-                            key={sec.title}
-                            title={sec.title}
-                            channels={sec.channels}
-                            isRelated={true}
-                        />
-                    ))}
-                </div>
+                </aside>
             </main>
         </div>
     );
