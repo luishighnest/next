@@ -1,11 +1,9 @@
 "use client";
-import React, { useState, useRef, useCallback } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { getChannelSlug } from "@/lib/slug";
-import { getTechSettings } from "@/lib/settings";
-
-const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
+import { loadShakaScript, parseClearKeys } from "@/lib/shakaLoader";
 
 function getDynamicColor(str) {
     if (!str) return "hsl(210, 80%, 60%)";
@@ -17,55 +15,117 @@ function getDynamicColor(str) {
     return `hsl(${hue}, 80%, 60%)`;
 }
 
-// Costruisce l'URL per l'estensione Chrome (stesso meccanismo di /sky e /eventi)
-function buildPreviewUrl(channel) {
-    const baseUrl = (channel.url || channel.mpd || "").trim();
-    if (!baseUrl || !channel.kid_key) return null;
+// Sub-component dedicato al player Shaka nativo (nessun comando, autoplay mutato)
+function CardShakaVideo({ channel }) {
+    const videoRef = useRef(null);
+    const playerRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
 
-    let extId = DEFAULT_EXT_ID;
-    try {
-        const tech = getTechSettings();
-        if (tech.extensionId) extId = tech.extensionId;
-    } catch(e) {}
+    useEffect(() => {
+        let isCancelled = false;
+        const streamUrl = (channel.url || channel.mpd || "").trim();
+        const rawKey = channel.kid_key || channel.key || "";
 
-    const isTsStream = baseUrl.toLowerCase().includes(".ts");
-    if (isTsStream) return null; // preview non supportato per ts
+        async function initPlayer() {
+            try {
+                const shaka = await loadShakaScript();
+                if (isCancelled || !shaka || !videoRef.current) return;
 
-    const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
-    const parts = [];
+                if (!shaka.Player.isBrowserSupported()) return;
 
-    // ClearKey DRM (ck=)
-    const rawKey = channel.kid_key || "";
-    if (rawKey && rawKey.includes(":")) {
-        const ckObj = {};
-        rawKey.split(",").forEach(pair => {
-            const p = pair.split(":");
-            if (p.length === 2 && p[0].trim() && p[1].trim()) {
-                ckObj[p[0].trim()] = p[1].trim();
+                const player = new shaka.Player(videoRef.current);
+                playerRef.current = player;
+
+                // Gestione filtri MIME e rimozione nodi Widevine per usare ClearKey
+                player.getNetworkingEngine().registerResponseFilter((type, response) => {
+                    if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
+                        if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
+                            response.headers["content-type"] = "application/dash+xml";
+                        }
+                        try {
+                            let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
+                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                            response.data = shaka.util.StringUtils.toUTF8(xmlStr);
+                        } catch (e) {}
+                    }
+                });
+
+                if (channel.ua || channel.dazn_token) {
+                    player.getNetworkingEngine().registerRequestFilter((type, request) => {
+                        if (channel.ua) request.headers["User-Agent"] = channel.ua;
+                        if (channel.dazn_token) request.headers["dazn-token"] = channel.dazn_token;
+                    });
+                }
+
+                const clearKeys = parseClearKeys(rawKey);
+                player.configure({
+                    drm: {
+                        clearKeys: clearKeys,
+                        preferredKeySystems: ["org.w3.clearkey", "webkit-org.w3.clearkey"],
+                        servers: {}
+                    },
+                    streaming: {
+                        bufferingGoal: 5,
+                        rebufferingGoal: 1,
+                        bufferBehind: 5,
+                        lowLatencyMode: true
+                    },
+                    manifest: {
+                        dash: {
+                            ignoreMinBufferTime: true
+                        }
+                    }
+                });
+
+                await player.load(streamUrl, null, "application/dash+xml");
+                if (isCancelled) return;
+
+                if (videoRef.current) {
+                    videoRef.current.muted = true;
+                    videoRef.current.playsInline = true;
+                    try {
+                        await videoRef.current.play();
+                    } catch (err) {}
+                }
+            } catch (err) {}
+        }
+
+        initPlayer();
+
+        return () => {
+            isCancelled = true;
+            if (playerRef.current) {
+                playerRef.current.destroy().catch(() => {});
+                playerRef.current = null;
             }
-        });
-        if (Object.keys(ckObj).length > 0) {
-            try { parts.push("ck=" + encodeURIComponent(btoa(JSON.stringify(ckObj)))); } catch(e) {}
-        }
-    }
+        };
+    }, [channel]);
 
-    // Headers (ua, referer, dazn-token)
-    try {
-        const headersObj = {};
-        if (channel.ua) headersObj["user-agent"] = channel.ua;
-        if (channel.dazn_token) {
-            headersObj["referer"] = "https://www.dazn.com/";
-            headersObj["origin"] = "https://www.dazn.com";
-            headersObj["dazn-token"] = channel.dazn_token;
-        }
-        if (Object.keys(headersObj).length > 0) {
-            const b64 = btoa(unescape(encodeURIComponent(JSON.stringify(headersObj))));
-            parts.push("headers=" + encodeURIComponent(b64));
-        }
-    } catch(e) {}
-
-    const sep = baseUrl.includes("?") ? "&" : "?";
-    return extPrefix + baseUrl + (parts.length > 0 ? sep + parts.join("&") : "");
+    return (
+        <div className={`card-live-preview-overlay${isPlaying ? " is-visible" : ""}`}>
+            <video
+                ref={videoRef}
+                className="card-live-preview-video"
+                autoPlay
+                muted
+                playsInline
+                disablePictureInPicture
+                controls={false}
+                onPlaying={() => setIsPlaying(true)}
+            />
+            {isPlaying && (
+                <div className="card-live-preview-badge">
+                    <span className="card-live-preview-dot" />
+                    LIVE
+                    <span className="card-live-preview-mute">
+                        <i className="fas fa-volume-xmark" />
+                    </span>
+                </div>
+            )}
+        </div>
+    );
 }
 
 function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
@@ -101,40 +161,32 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         else categoryLabel = channel.group || "Eventi";
     }
 
-    // --- HOVER LIVE PREVIEW (2 fasi) ---
-    // Fase 1 (3s): monta l'iframe invisibile → inizia a caricare stream + DRM
-    // Fase 2 (+1.5s): mostra il video (estensione già avviata, controls nascosti)
-    const [previewUrl, setPreviewUrl] = useState(null);
-    const [previewVisible, setPreviewVisible] = useState(false);
+    // --- HOVER LIVE PREVIEW NATIVO SHAKA ---
+    const [isHovered, setIsHovered] = useState(false);
     const hoverTimerRef = useRef(null);
-    const visibleTimerRef = useRef(null);
-    const canPreview = !isVod && Boolean(channel.url || channel.mpd) && Boolean(channel.kid_key);
+    const canPreview = !isVod && Boolean(channel.url || channel.mpd) && Boolean(channel.kid_key || channel.key);
 
-    const handleMouseEnter = useCallback(() => {
+    const handleMouseEnter = () => {
         if (!canPreview) return;
         hoverTimerRef.current = setTimeout(() => {
-            const url = buildPreviewUrl(channel);
-            if (!url) return;
-            setPreviewUrl(url);          // fase 1: iframe invisibile carica in bg
-            visibleTimerRef.current = setTimeout(() => {
-                setPreviewVisible(true); // fase 2: fade-in video
-            }, 1500);
+            setIsHovered(true);
         }, 3000);
-    }, [canPreview, channel]);
+    };
 
-    const handleMouseLeave = useCallback(() => {
-        clearTimeout(hoverTimerRef.current);
-        clearTimeout(visibleTimerRef.current);
-        setPreviewUrl(null);
-        setPreviewVisible(false);
-    }, []);
-    // ------------------------------------
+    const handleMouseLeave = () => {
+        if (hoverTimerRef.current) {
+            clearTimeout(hoverTimerRef.current);
+            hoverTimerRef.current = null;
+        }
+        setIsHovered(false);
+    };
 
     const handleClick = () => {
-        clearTimeout(hoverTimerRef.current);
-        clearTimeout(visibleTimerRef.current);
-        setPreviewUrl(null);
-        setPreviewVisible(false);
+        if (hoverTimerRef.current) {
+            clearTimeout(hoverTimerRef.current);
+            hoverTimerRef.current = null;
+        }
+        setIsHovered(false);
         try {
             if (isVod) {
                 sessionStorage.setItem("nmdz_vodItem", JSON.stringify(channel));
@@ -208,29 +260,12 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </div>
                 )}
 
-                {/* Live Preview Iframe — fase 1: iframe invisibile carica; fase 2: fade-in */}
-                {previewUrl && (
-                    <div className={`card-live-preview-overlay${previewVisible ? " is-visible" : ""}`}>
-                        <iframe
-                            src={previewUrl}
-                            className="card-live-preview-iframe"
-                            allow="autoplay; encrypted-media; fullscreen"
-                            allowFullScreen
-                            title={`Preview ${channel.title}`}
-                        />
-                        {previewVisible && (
-                            <div className="card-live-preview-badge">
-                                <span className="card-live-preview-dot" />
-                                LIVE
-                                <span className="card-live-preview-mute">
-                                    <i className="fas fa-volume-xmark" />
-                                </span>
-                            </div>
-                        )}
-                    </div>
+                {/* Shaka Player Preview (senza comandi, solo video puro con ClearKey) */}
+                {isHovered && canPreview && (
+                    <CardShakaVideo channel={channel} />
                 )}
 
-                {!previewVisible && (
+                {!isHovered && (
                     <div className="now-card-play-icon">
                         <i className="fa fa-play" aria-hidden="true" style={{ marginLeft: "3px" }}></i>
                     </div>

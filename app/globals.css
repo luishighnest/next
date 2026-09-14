@@ -3178,14 +3178,17 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     pointer-events: auto;
 }
 
-.card-live-preview-iframe {
+.card-live-preview-iframe,
+.card-live-preview-video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border: none;
     display: block;
-    pointer-events: none; /* il click naviga normalmente */
+    pointer-events: none; /* il click sulla card naviga normalmente */
+    background: #000;
 }
 
 /* Badge LIVE + mute in basso a sinistra */
