@@ -404,6 +404,9 @@ export default function HomeHero({ categories = [] }) {
                 </div>
             </div>
 
+            {/* Sfumatura cinematografica di transizione tra la Hero e le sezioni sottostanti */}
+            <div className="now-hero-bottom-transition" />
+
             {/* Popup Guida TV Dettagli Programma Attuale e Successivo */}
             {isInfoOpen && (
                 <div className="now-hero-modal-backdrop" onClick={() => setIsInfoOpen(false)}>

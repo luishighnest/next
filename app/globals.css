@@ -10603,9 +10603,36 @@ body:has(.sky-app) {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 280px;
-    background: linear-gradient(to top, #0b0f19 0%, rgba(11, 15, 25, 0.92) 30%, rgba(11, 15, 25, 0.45) 65%, transparent 100%);
+    height: 380px;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(11, 15, 25, 0.2) 20%,
+        rgba(11, 15, 25, 0.7) 60%,
+        #0b0f19 95%,
+        #0b0f19 100%
+    );
     z-index: 3;
+    pointer-events: none;
+}
+
+/* Sfumatura di transizione morbida tra fine Hero e inizio prime sezioni */
+.now-hero-bottom-transition {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(11, 15, 25, 0.85) 45%, #0b0f19 100%);
+    z-index: 4;
+    pointer-events: none;
+}
+
+/* Distanza elegante e respiro tra la Hero a tutto schermo e la prima riga di caroselli */
+.home-content.has-hero {
+    margin-top: 48px;
+    position: relative;
+    z-index: 10;
 }
 
 /* Layout interno del Billboard NOW */
