@@ -271,9 +271,10 @@ export default function EventoPlayerPage() {
                         }
                         try {
                             let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                            if (/urn:uuid:(edef8ba9|9a04f079|5e629af5)/i.test(xmlStr)) {
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]*urn:uuid:(edef8ba9|9a04f079|5e629af5)[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
+                            }
                             response.data = shaka.util.StringUtils.toUTF8(xmlStr);
                         } catch(e) {}
                     }
