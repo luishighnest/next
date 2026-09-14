@@ -15,7 +15,7 @@ function upgradeImageToHighRes(url) {
                   .replace(/\/\d+$/i, "/1920");
     }
 
-    // 2. TMDB: upgrade a original
+    // 2. TMDB: upgrade a original o w780
     if (url.includes("image.tmdb.org")) {
         return url.replace(/\/w\d+\//i, "/original/");
     }
@@ -23,16 +23,27 @@ function upgradeImageToHighRes(url) {
     return url;
 }
 
-// Verifica qualità visiva per evitare miniature sfocate
+// Rileva la tipologia di artwork per applicare il corretto layout adattivo:
+// 1. "sky-hero": Immagini orizzontali ufficiali Sky Image Service (landscape full-bleed cinematografico)
+// 2. "poster": Artwork verticali tipo TMDB / locandine film & serie (non devono essere croppate a landscape)
+// 3. "sport": Grafiche ed eventi sportivi con aspect ratio variabili (img-guidatv, tennis, partite, ecc.)
+function detectArtworkType(url) {
+    if (!url || typeof url !== "string") return "sky-hero";
+    if (url.includes("image.tmdb.org") || url.includes("/t/p/")) return "poster";
+    if (url.includes("imageservice.sky.com")) return "sky-hero";
+    if (url.includes("img-guidatv.org") || url.includes("/partite/") || url.includes("tennis.jpeg") || url.includes("premierleague")) return "sport";
+    return "sky-hero";
+}
+
+// Verifica se l'immagine è valida per la Hero (accettiamo sky, tmdb e sport ad alta risoluzione)
 function isHighQualityHeroImage(url) {
     if (!url || typeof url !== "string") return false;
-    if (url.includes("tennis.jpeg")) return false;
     if (url.includes("_rs_300")) return false;
-    if (url.includes("/partite/")) return false;
     if (url.includes("/20/")) return false;
     
     if (url.includes("imageservice.sky.com")) return true;
     if (url.includes("image.tmdb.org")) return true;
+    if (url.includes("img-guidatv.org") || url.includes("/partite/") || url.includes("tennis.jpeg")) return true;
 
     return false;
 }
@@ -154,6 +165,7 @@ export default function HomeHero({ categories = [] }) {
                         progOraInizio: prog.ora || "",
                         progOraFine: nextProg?.ora || "",
                         progImg: highResImg,
+                        artworkType: detectArtworkType(rawImg),
                         progress: progressPct,
                         targetHref,
                         channelObj: matchedChannelObj || { title: ch.canale, name: ch.canale, slug },
@@ -259,14 +271,73 @@ export default function HomeHero({ categories = [] }) {
             onMouseLeave={() => setIsHovered(false)}
             aria-label="In primo piano su Sky"
         >
-            {/* Sfondo maestoso a tutto schermo con dissolvenza cinematografica NOW */}
+            {/* Sfondo adattivo maestoso a tutto schermo con supporto Sky Hero, Poster TMDB e Sport */}
             <div className="now-hero-art-viewport">
                 {heroItems.map((item, idx) => {
                     const isActive = idx === activeIndex;
+                    const artType = item.artworkType || "sky-hero";
+
+                    if (artType === "poster") {
+                        return (
+                            <div
+                                key={item.channelName + idx}
+                                className={"now-hero-art-slide now-hero-art-slide--poster " + (isActive ? "active" : "")}
+                                style={{
+                                    opacity: isActive ? 1 : 0,
+                                    zIndex: isActive ? 1 : 0
+                                }}
+                            >
+                                {/* Sfondo sfumato/ambientale con la locandina */}
+                                <div
+                                    className="now-hero-poster-ambient-backdrop"
+                                    style={{ backgroundImage: `url("${item.progImg}")` }}
+                                />
+                                {/* Locandina verticale intatta e visibile a destra */}
+                                <div className="now-hero-poster-frame">
+                                    <img
+                                        src={item.progImg}
+                                        alt={item.progTitle}
+                                        className="now-hero-poster-showcase"
+                                        loading={isActive ? "eager" : "lazy"}
+                                    />
+                                </div>
+                            </div>
+                        );
+                    }
+
+                    if (artType === "sport") {
+                        return (
+                            <div
+                                key={item.channelName + idx}
+                                className={"now-hero-art-slide now-hero-art-slide--sport " + (isActive ? "active" : "")}
+                                style={{
+                                    opacity: isActive ? 1 : 0,
+                                    zIndex: isActive ? 1 : 0
+                                }}
+                            >
+                                {/* Sfondo sfumato per non lasciare bande nere nei formati non standard */}
+                                <div
+                                    className="now-hero-sport-ambient-backdrop"
+                                    style={{ backgroundImage: `url("${item.progImg}")` }}
+                                />
+                                {/* Immagine sportiva pulita a destra senza crop aggressivo */}
+                                <div className="now-hero-sport-frame">
+                                    <img
+                                        src={item.progImg}
+                                        alt={item.progTitle}
+                                        className="now-hero-sport-showcase"
+                                        loading={isActive ? "eager" : "lazy"}
+                                    />
+                                </div>
+                            </div>
+                        );
+                    }
+
+                    // Default: "sky-hero" - Landscape full-bleed cinematografico originale Sky
                     return (
                         <div
                             key={item.channelName + idx}
-                            className={"now-hero-art-slide " + (isActive ? "active" : "")}
+                            className={"now-hero-art-slide now-hero-art-slide--sky " + (isActive ? "active" : "")}
                             style={{
                                 backgroundImage: `url("${item.progImg}")`,
                                 opacity: isActive ? 1 : 0,

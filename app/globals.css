@@ -10589,6 +10589,123 @@ body:has(.sky-app) {
     transform: scale(1);
 }
 
+/* ==========================================================================
+   ADAPTIVE HERO ARTWORK STYLES
+   1. Sky Hero (Landscape full-bleed nativo)
+   2. TMDB Poster (Locandina verticale con ambient backdrop sfocato e poster a destra)
+   3. Sport Artwork (Composizione dinamica con ambient backdrop e frame ottimizzato)
+   ========================================================================== */
+
+/* Ambient backdrop per poster e sport non panoramici */
+.now-hero-poster-ambient-backdrop,
+.now-hero-sport-ambient-backdrop {
+    position: absolute;
+    inset: -20px;
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    filter: blur(45px) brightness(0.38) saturate(1.25);
+    transform: scale(1.12);
+    will-change: filter, transform;
+}
+
+.now-hero-sport-ambient-backdrop {
+    filter: blur(35px) brightness(0.4) saturate(1.15);
+}
+
+/* Poster TMDB Frame: collocato sul lato destro del palcoscenico per bilanciare il blocco testi a sinistra */
+.now-hero-poster-frame {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 68vh;
+    max-height: 640px;
+    min-height: 380px;
+    aspect-ratio: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 
+        0 24px 60px rgba(0, 0, 0, 0.75),
+        0 4px 18px rgba(0, 0, 0, 0.5),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease;
+}
+
+.now-hero-poster-showcase {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
+}
+
+/* Sport Frame: mantiene l'artwork pulito, visibile e integro */
+.now-hero-sport-frame {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 54%;
+    height: 68vh;
+    max-height: 580px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 
+        0 24px 60px rgba(0, 0, 0, 0.65),
+        0 6px 20px rgba(0, 0, 0, 0.4),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.now-hero-sport-showcase {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+    border-radius: 16px;
+}
+
+@media (max-width: 1200px) {
+    .now-hero-poster-frame {
+        right: 4%;
+        height: 58vh;
+        max-height: 500px;
+    }
+    .now-hero-sport-frame {
+        right: 4%;
+        max-width: 48%;
+        height: 58vh;
+        max-height: 480px;
+    }
+}
+
+@media (max-width: 900px) {
+    .now-hero-poster-frame {
+        opacity: 0.35;
+        right: 2%;
+        height: 50vh;
+        transform: translateY(-50%) scale(0.9);
+        filter: blur(1px);
+    }
+    .now-hero-sport-frame {
+        opacity: 0.35;
+        right: 2%;
+        max-width: 60%;
+        height: 50vh;
+        transform: translateY(-50%) scale(0.9);
+        filter: blur(1px);
+    }
+}
+
 /* 9. Background / Overlay Cinematografico senza stacchi visibili:
    - top: leggerissimo fade superiore che sfuma dolcemente dietro la navbar
    - left: progressione morbida e naturale dal nero puro a trasparenza graduale verso destra
