@@ -10938,14 +10938,34 @@ body:has(.sky-app) {
     border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-/* 2. Riga Metadati: Badge DIRETTA glassmorphism + micro-badge bordered stile Apple TV (gap 8px, mb 12px) */
+/* 2. Titolo Programma: Editorial, 2.65rem, bold, riga singola forzata con ellipsis, mb 12px */
+.now-hero-heading {
+    font-size: 2.65rem;
+    font-weight: 800;
+    line-height: 1.15;
+    height: 3.1rem;
+    color: #ffffff;
+    letter-spacing: -0.025em;
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0 12px 0;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+/* 3. Riga Metadati & Orario Integrata: Diretta + Orario + Timeline + Badge (gap 10px, mb 16px) */
 .now-hero-meta-row {
     display: flex;
     align-items: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 10px;
     height: auto;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .now-hero-live-pill {
@@ -10993,25 +11013,6 @@ body:has(.sky-app) {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     line-height: 1.2;
-}
-
-/* 3. Titolo Programma: Editorial, 2.65rem, bold, riga singola forzata con ellipsis, mb 16px */
-.now-hero-heading {
-    font-size: 2.65rem;
-    font-weight: 800;
-    line-height: 1.15;
-    height: 3.1rem;
-    color: #ffffff;
-    letter-spacing: -0.025em;
-    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0 0 16px 0;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Inter", "Segoe UI", Roboto, sans-serif;
 }
 
 /* 4. EPG / Orario e Barra Progresso: solo testo pulito senza pillola/badge (mb 14px) */

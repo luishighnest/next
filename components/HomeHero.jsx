@@ -542,30 +542,23 @@ export default function HomeHero({ categories = [] }) {
                                     )}
                                 </div>
 
-                                {/* 2. Riga Metadati Discreta: Badge DIRETTA compatto + Micro-badge Categoria / Risoluzione / Audio */}
+                                {/* 2. Titolo Principale Programma: Protagonista subito sotto il logo canale */}
+                                <h1 className="now-hero-heading whitespace-nowrap overflow-hidden text-ellipsis truncate" title={item.progTitle}>
+                                    {item.progTitle}
+                                </h1>
+
+                                {/* 3. Riga Metadati & Orario Integrata: Diretta + Orario/Timeline + Badge Tecnici */}
                                 <div className="now-hero-meta-row">
                                     <span className="now-hero-live-pill">
                                         <span className="now-hero-live-pulse" />
                                         DIRETTA
                                     </span>
-                                    {item.category && (
-                                        <span className="now-hero-meta-box">{item.category}</span>
-                                    )}
-                                    <span className="now-hero-meta-box">FHD</span>
-                                    <span className="now-hero-meta-box">5.1</span>
-                                </div>
 
-                                {/* 3. Titolo Principale Programma: Elegante, bold, moderno, forzato su riga singola con truncate */}
-                                <h1 className="now-hero-heading whitespace-nowrap overflow-hidden text-ellipsis truncate" title={item.progTitle}>
-                                    {item.progTitle}
-                                </h1>
-
-                                {/* 4. Orario e Timeline EPG: solo testo pulito ed elegante senza badge/pillola */}
-                                <div className="now-hero-schedule-bar">
                                     <div className="now-hero-time-text">
                                         <span className="material-symbols-rounded">schedule</span>
                                         <span>{item.progOraFine ? `Dalle ${item.progOraInizio} alle ${item.progOraFine}` : `Inizio alle ${item.progOraInizio}`}</span>
                                     </div>
+
                                     {item.progress > 0 && (
                                         <div className="now-hero-timeline-wrap">
                                             <div className="now-hero-timeline-track">
@@ -576,9 +569,15 @@ export default function HomeHero({ categories = [] }) {
                                             </div>
                                         </div>
                                     )}
+
+                                    {item.category && (
+                                        <span className="now-hero-meta-box">{item.category}</span>
+                                    )}
+                                    <span className="now-hero-meta-box">FHD</span>
+                                    <span className="now-hero-meta-box">5.1</span>
                                 </div>
 
-                                {/* 5. Descrizione del programma: min-height fissa a 2 righe e line-clamp-2 per bloccare i CTA */}
+                                {/* 4. Descrizione del programma: min-height fissa a 2 righe e line-clamp-2 per bloccare i CTA */}
                                 <p className="now-hero-synopsis min-h-[2.75rem] line-clamp-2">
                                     {item.progDesc || "Tutti gli eventi e i migliori appuntamenti live in onda su questo canale Sky."}
                                 </p>
