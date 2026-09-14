@@ -16,7 +16,53 @@ function getDynamicColor(str) {
     return `hsl(${hue}, 80%, 60%)`;
 }
 
-// Sub-component dedicato al player Shaka nativo (nessun comando, autoplay mutato con audio togglabile)
+// Funzione helper per verificare se uno stream è scaduto tramite timestamp _e~ o orario evento
+function isChannelExpired(channel) {
+    if (!channel) return false;
+    const streamUrl = (channel.url || channel.mpd || "").trim();
+    
+    // 1. Controllo timestamp scadenza Sky/Now token (_e~TIMESTAMP_)
+    const expMatch = streamUrl.match(/_e~([0-9]+)_/);
+    if (expMatch) {
+        const expTs = parseInt(expMatch[1], 10) * 1000;
+        if (!isNaN(expTs) && expTs <= Date.now()) {
+            return true; // Token stream scaduto
+        }
+    }
+
+    // Controlla anche nelle sources
+    if (Array.isArray(channel.sources) && channel.sources.length > 0) {
+        const allExpired = channel.sources.every(s => {
+            const u = (s.url || s.mpd || "").trim();
+            const em = u.match(/_e~([0-9]+)_/);
+            if (em) {
+                const ts = parseInt(em[1], 10) * 1000;
+                return !isNaN(ts) && ts <= Date.now();
+            }
+            return false;
+        });
+        if (allExpired && channel.sources.some(s => (s.url || s.mpd || "").includes("_e~"))) {
+            return true;
+        }
+    }
+
+    // 2. Controllo orario di fine evento (se presente fine programmata)
+    if (channel.end) {
+        try {
+            const endD = new Date(channel.end);
+            if (!isNaN(endD.getTime()) && !channel.end.startsWith("3000")) {
+                // Se l'evento è terminato da più di 15 minuti, consideralo scaduto
+                if (Date.now() - endD.getTime() > 15 * 60 * 1000) {
+                    return true;
+                }
+            }
+        } catch (e) {}
+    }
+
+    return false;
+}
+
+// Sub-component dedicato al player Shaka nativo (funziona per QUALSIASI canale, formato DASH, HLS o ClearKey)
 function CardShakaVideo({ channel, isReadyToDisplay }) {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
@@ -36,8 +82,8 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
     useEffect(() => {
         let isCancelled = false;
         
-        // Estrazione sorgente compatibile (supporta sia canali Sky sia canali test.json / DAZN con sources)
-        let streamUrl = (channel.url || channel.mpd || "").trim();
+        // Estrazione sorgente compatibile per QUALSIASI canale (Sky, Eventi DAZN, Eurosport, SuperTennis, Custom, etc.)
+        let streamUrl = (channel.url || channel.mpd || channel.m3u8 || "").trim();
         let rawKey = channel.kid_key || channel.key || "";
         let rawUa = channel.ua || "";
         let daznToken = channel.dazn_token || "";
@@ -51,6 +97,8 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 if (!daznToken) daznToken = firstValidSource.dazn_token || "";
             }
         }
+
+        if (!streamUrl) return;
 
         // Se URL è formato DAZN WARP (https://.../@JWT/dash/stream.mpd), estrai il token ed estrai l'URL pulito
         const warpMatch = streamUrl.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
@@ -69,11 +117,13 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 const player = new shaka.Player(videoRef.current);
                 playerRef.current = player;
 
-                // Gestione filtri MIME e rimozione nodi Widevine per usare ClearKey
+                // Gestione filtri MIME e rimozione nodi Widevine per usare ClearKey su DASH
                 player.getNetworkingEngine().registerResponseFilter((type, response) => {
                     if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
                         if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
-                            response.headers["content-type"] = "application/dash+xml";
+                            if (streamUrl.includes(".mpd") || (!streamUrl.includes(".m3u8") && !streamUrl.includes(".ts"))) {
+                                response.headers["content-type"] = "application/dash+xml";
+                            }
                         }
                         try {
                             let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
@@ -85,7 +135,7 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                     }
                 });
 
-                // Iniezione headers per test.json / DAZN
+                // Iniezione headers per DAZN o stream protetti
                 player.getNetworkingEngine().registerRequestFilter((type, request) => {
                     if (rawUa) request.headers["User-Agent"] = rawUa;
                     if (daznToken) {
@@ -115,7 +165,11 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                     }
                 });
 
-                await player.load(streamUrl, null, "application/dash+xml");
+                // Riconoscimento MIME type (DASH o HLS)
+                const isHls = streamUrl.includes(".m3u8") || streamUrl.includes("/hls/");
+                const mimeType = isHls ? "application/x-mpegurl" : "application/dash+xml";
+
+                await player.load(streamUrl, null, mimeType);
                 if (isCancelled) return;
 
                 if (videoRef.current) {
@@ -204,15 +258,16 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         else categoryLabel = channel.group || "Eventi";
     }
 
-    // --- HOVER LIVE PREVIEW NATIVO SHAKA ---
+    // --- HOVER LIVE PREVIEW NATIVO SHAKA PER QUALSIASI CANALE (NON VOD E NON SCADUTO) ---
     const [isBuffering, setIsBuffering] = useState(false);
     const [isReadyToDisplay, setIsReadyToDisplay] = useState(false);
     const hoverTimerRef = useRef(null);
 
-    // Controlla disponibilità stream sia a livello radice (Sky) sia dentro sources (test.json / DAZN)
-    const hasDirectStream = Boolean(channel.url || channel.mpd) && Boolean(channel.kid_key || channel.key);
-    const hasSourceStream = Array.isArray(channel.sources) && channel.sources.some(s => (s.url || s.mpd) && (s.kid_key || s.key));
-    const canPreview = !isVod && (hasDirectStream || hasSourceStream);
+    // Controlla disponibilità stream per QUALSIASI canale in qualunque sezione del sito
+    const hasDirectStream = Boolean(channel.url || channel.mpd || channel.m3u8);
+    const hasSourceStream = Array.isArray(channel.sources) && channel.sources.some(s => s.url || s.mpd || s.m3u8);
+    const isExpired = isChannelExpired(channel);
+    const canPreview = !isVod && !isExpired && (hasDirectStream || hasSourceStream);
 
     const handleMouseEnter = () => {
         if (!canPreview) return;
