@@ -198,7 +198,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         if (!canPreview) return;
         hoverTimerRef.current = setTimeout(() => {
             setIsHovered(true);
-        }, 3000);
+        }, 1500);
     };
 
     const handleMouseLeave = () => {
