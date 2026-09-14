@@ -4,6 +4,7 @@ import Link from "next/link";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import ChannelCard from "@/components/ChannelCard";
 import { getCurrentProgramInfo, getChannelLogoUrl } from "@/lib/epg";
+import { getNormalizedSources } from "@/lib/sources";
 
 export default function MobileEventoView({
     channel,
@@ -130,13 +131,13 @@ export default function MobileEventoView({
                     </div>
                 </div>
 
-                {/* 4. Sorgenti Streaming Touch Pills (Standard vs WARP) */}
-                {channel?.sources && channel.sources.length > 0 && (
+                {/* 4. Sorgenti Streaming Touch Pills (Standard vs WARP) - Sempre visibili ed interattivi */}
+                {channel && (
                     <div className="mobile-event-sources-block">
                         <span className="mobile-event-sources-label">Sorgenti disponibili:</span>
                         <div className="mobile-event-sources-pills">
-                            {channel.sources.map((s, idx) => {
-                                const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
+                            {getNormalizedSources(channel).map((s, idx) => {
+                                const isSelected = selectedSource?.isWarp === s.isWarp;
                                 return (
                                     <button
                                         key={s.name + idx}

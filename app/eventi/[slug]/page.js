@@ -10,21 +10,7 @@ import { loadShakaScript, parseClearKeys } from "@/lib/shakaLoader";
 import GuidaTvModal from "@/components/GuidaTvModal";
 import SettingsModal from "@/components/SettingsModal";
 
-function getInitialSource(ch) {
-    if (!ch) return null;
-    if (Array.isArray(ch.sources) && ch.sources.length > 0) return ch.sources[0];
-    if (ch.url) {
-        return {
-            name: "Standard",
-            isWarp: false,
-            url: ch.url,
-            kid_key: ch.kid_key || "",
-            ua: ch.ua || "",
-            dazn_token: ch.dazn_token || ""
-        };
-    }
-    return null;
-}
+import { getNormalizedSources, getInitialSource } from "@/lib/sources";
 
 export default function EventoPlayerPage() {
     const router = useRouter();
@@ -860,11 +846,11 @@ export default function EventoPlayerPage() {
                                     <input type="range" min="0" max="1" step="0.05" value={isMuted ? 0 : volume} onChange={handleVolumeChange} className="sky-volume-slider" />
                                 </div>
 
-                                {/* Switch Sorgente (Standard / WARP) */}
-                                {channel?.sources && channel.sources.length > 1 && (
+                                {/* Switch Sorgente (Standard vs WARP) - Sempre visibile ed interattivo per qualsiasi evento */}
+                                {channel && (
                                     <div className="event-sources-deck">
-                                        {channel.sources.map((s, idx) => {
-                                            const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
+                                        {getNormalizedSources(channel).map((s, idx) => {
+                                            const isSelected = selectedSource?.isWarp === s.isWarp;
                                             return (
                                                 <button
                                                     key={s.name + idx}
