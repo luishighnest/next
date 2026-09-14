@@ -500,6 +500,7 @@ function SkyContent() {
 
     const currentEpg = selectedChannel ? getCurrentProgram(selectedChannel.name) : null;
     const playerSrc = selectedChannel ? buildExtUrl(selectedChannel) : "";
+    const channelLogo = selectedChannel?.logo || transLogo || "";
 
     const selectChannelWithPoster = (nextCh) => {
         if (!nextCh) return;
