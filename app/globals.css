@@ -10527,7 +10527,7 @@ body:has(.sky-app) {
 }
 
 /* ==========================================================================
-   NOW HERO SPOTLIGHT A TUTTO SCHERMO (Autentico Billboard NOW TV / Sky Stream)
+   NOW HERO CINEMATIC BILLBOARD (Streaming UI Premium - NOW & Sky Stream Style)
    ========================================================================== */
 .now-hero-stage {
     position: relative;
@@ -10562,11 +10562,11 @@ body:has(.sky-app) {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center 20%;
+    background-position: center 22%;
     background-repeat: no-repeat;
-    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 6s cubic-bezier(0.1, 0.9, 0.2, 1);
-    transform: scale(1.035);
-    filter: brightness(0.92) contrast(1.05);
+    transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 7s cubic-bezier(0.1, 0.9, 0.2, 1);
+    transform: scale(1.025);
+    filter: brightness(0.92) contrast(1.04);
     will-change: opacity, transform;
 }
 
@@ -10574,17 +10574,17 @@ body:has(.sky-app) {
     transform: scale(1);
 }
 
-/* Maschere di gradiente autentiche NOW TV:
-   - top: sfumatura scura superiore elegante che rende nitidissima la navbar
-   - left: maschera radiale laterale profonda per fare risaltare logo, titolo e sinossi
-   - bottom: sfumatura a salire morbidissima verso il fondo della pagina */
+/* 1. Sistema di Gradient Overlay Professionale:
+   - top: sfuma delicatamente la navbar in alto senza stacchi
+   - left: gradiente orizzontale morbido dal lato sinistro che assicura leggibilità perfetta ma preserva il soggetto/volto a destra
+   - bottom: morbida dissolvenza a salire verso il fondo nero della pagina */
 .now-hero-mask-top {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 180px;
-    background: linear-gradient(180deg, rgba(7, 10, 18, 0.85) 0%, rgba(7, 10, 18, 0.45) 50%, transparent 100%);
+    height: 140px;
+    background: linear-gradient(180deg, rgba(5, 7, 12, 0.75) 0%, rgba(5, 7, 12, 0.25) 60%, transparent 100%);
     z-index: 2;
 }
 
@@ -10592,9 +10592,15 @@ body:has(.sky-app) {
     position: absolute;
     top: 0;
     left: 0;
-    width: 72%;
+    width: 62%;
     height: 100%;
-    background: radial-gradient(ellipse 90% 85% at 0% 55%, rgba(6, 9, 16, 0.96) 0%, rgba(6, 9, 16, 0.82) 42%, rgba(6, 9, 16, 0.25) 75%, transparent 100%);
+    background: linear-gradient(
+        90deg,
+        rgba(5, 7, 12, 0.94) 0%,
+        rgba(5, 7, 12, 0.84) 36%,
+        rgba(5, 7, 12, 0.42) 70%,
+        transparent 100%
+    );
     z-index: 2;
 }
 
@@ -10603,13 +10609,13 @@ body:has(.sky-app) {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 380px;
+    height: 320px;
     background: linear-gradient(
         to bottom,
         transparent 0%,
-        rgba(11, 15, 25, 0.2) 20%,
-        rgba(11, 15, 25, 0.7) 60%,
-        #0b0f19 95%,
+        rgba(5, 7, 12, 0.2) 25%,
+        rgba(5, 7, 12, 0.72) 70%,
+        #0b0f19 96%,
         #0b0f19 100%
     );
     z-index: 3;
@@ -10622,172 +10628,163 @@ body:has(.sky-app) {
     bottom: -1px;
     left: 0;
     width: 100%;
-    height: 120px;
-    background: linear-gradient(to bottom, transparent 0%, rgba(11, 15, 25, 0.85) 45%, #0b0f19 100%);
+    height: 100px;
+    background: linear-gradient(to bottom, transparent 0%, rgba(11, 15, 25, 0.75) 50%, #0b0f19 100%);
     z-index: 4;
     pointer-events: none;
 }
 
 /* Distanza elegante e respiro tra la Hero a tutto schermo e la prima riga di caroselli */
 .home-content.has-hero {
-    margin-top: 48px;
+    margin-top: 40px;
     position: relative;
     z-index: 10;
 }
 
-/* Layout interno del Billboard NOW */
+/* Layout interno del Billboard NOW: Spazioso, allineato, mai dashboard */
 .now-hero-inner {
     position: relative;
     z-index: 5;
     width: 100%;
-    max-width: 1680px;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 0 80px 52px 80px;
+    padding: 0 64px 44px 64px;
     display: flex;
     flex-direction: column;
-    gap: 36px;
+    gap: 32px;
     box-sizing: border-box;
 }
 
 .now-hero-billboard {
-    max-width: none;
-    width: 100%;
+    max-width: 680px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 12px;
     justify-content: flex-end;
 }
 
-/* 1. Logo del Canale in alto: spazioso, nitido, isolato e grande come firma broadcast */
+/* 3. Logo Canale integrato con eleganza */
 .now-hero-brand-top {
     display: flex;
     align-items: center;
-    height: 54px;
-    margin-bottom: 4px;
+    height: 46px;
+    margin-bottom: 2px;
 }
 
 .now-hero-channel-badge-logo {
-    height: 54px;
+    height: 44px;
     width: auto;
-    max-width: 200px;
+    max-width: 170px;
     object-fit: contain;
-    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.9));
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
 }
 
 .now-hero-channel-label {
-    font-size: 1.25rem;
-    font-weight: 800;
+    font-size: 1.1rem;
+    font-weight: 700;
     color: #ffffff;
     letter-spacing: -0.01em;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 8px 18px;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 6px 14px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-/* 2. Riga Metadati Sottile: Badge DIRETTA + Dot + Categoria + Badge Tecnici Broadcast FHD / 5.1 */
+/* 4. Badge DIRETTA compatto + Metadati secondari e discreti */
 .now-hero-meta-row {
     display: flex;
     align-items: center;
-    gap: 10px;
-    height: 26px;
+    gap: 8px;
+    height: 22px;
 }
 
 .now-hero-live-pill {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 4px 10px;
-    border-radius: 4px;
-    background: #e50914;
+    gap: 5px;
+    padding: 2px 7px;
+    border-radius: 3px;
+    background: #d81f26;
     color: #ffffff;
-    font-size: 0.72rem;
+    font-size: 0.65rem;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    box-shadow: 0 2px 8px rgba(229, 9, 20, 0.45);
 }
 
 .now-hero-live-pill.small {
-    padding: 2px 8px;
-    font-size: 0.68rem;
+    padding: 1px 6px;
+    font-size: 0.62rem;
 }
 
 .now-hero-live-pulse {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     background: #ffffff;
-    box-shadow: 0 0 6px #ffffff;
-    animation: nowLivePulse 1.4s ease-in-out infinite;
-}
-
-@keyframes nowLivePulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50% { opacity: 0.3; transform: scale(0.8); }
 }
 
 .now-hero-meta-dot {
-    color: rgba(255, 255, 255, 0.35);
-    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.28);
+    font-size: 0.75rem;
 }
 
 .now-hero-cat-tag {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.75);
-    letter-spacing: 0.05em;
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
 .now-hero-meta-text {
-    font-size: 0.82rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.75);
-    letter-spacing: 0.05em;
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.45);
+    letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
-/* 3. Titolo Programma: Singola riga che non va a capo e continua verso destra */
+/* 2. Titolo Programma: Moderno, cinematografico, bold con tracking leggermente negativo */
 .now-hero-heading {
-    font-size: 3.4rem;
-    font-weight: 900;
-    line-height: 1.1;
+    font-size: 2.65rem;
+    font-weight: 800;
+    line-height: 1.15;
     color: #ffffff;
-    letter-spacing: -0.035em;
-    text-shadow: 0 4px 18px rgba(0, 0, 0, 0.9), 0 0 30px rgba(0, 0, 0, 0.5);
-    white-space: nowrap;
+    letter-spacing: -0.025em;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0;
-    height: 3.8rem;
-    width: 100%;
-    max-width: 90vw;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Segoe UI", Roboto, sans-serif;
+    margin: 4px 0 2px 0;
+    max-width: 660px;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Inter", "Segoe UI", Roboto, sans-serif;
 }
 
-/* 4. Timeline e Orario EPG pulito, senza percentuali tecniche */
+/* 5. Orario e Timeline secondaria e discreta */
 .now-hero-schedule-bar {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     flex-wrap: nowrap;
-    height: 24px;
+    height: 20px;
 }
 
 .now-hero-time-badge {
     display: inline-flex;
     align-items: center;
-    gap: 7px;
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.85);
+    gap: 6px;
+    font-size: 0.84rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
     white-space: nowrap;
 }
 
 .now-hero-time-badge .material-symbols-rounded {
-    font-size: 1.15rem;
-    color: #00e59b;
+    font-size: 1rem;
+    color: #00d586;
+    opacity: 0.9;
 }
 
 .now-hero-timeline-wrap {
@@ -10797,185 +10794,194 @@ body:has(.sky-app) {
 }
 
 .now-hero-timeline-track {
-    width: 110px;
-    height: 3px;
+    width: 80px;
+    height: 2px;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.16);
     overflow: hidden;
 }
 
 .now-hero-timeline-fill {
     height: 100%;
-    background: #00e59b;
-    box-shadow: 0 0 8px rgba(0, 229, 155, 0.7);
+    background: #00d586;
 }
 
-/* Sinossi Programma: Singola riga che non va a capo e continua verso destra */
+/* 6. Descrizione: concisa, max 2 righe, colore attenuato elegante */
 .now-hero-synopsis {
-    font-size: 1.05rem;
-    line-height: 1.48;
-    color: rgba(255, 255, 255, 0.78);
-    white-space: nowrap;
+    font-size: 0.96rem;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.65);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.85);
-    width: 100%;
-    max-width: 85vw;
-    height: 1.6rem;
+    margin: 2px 0 6px 0;
+    max-width: 580px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* ==========================================================================
-   PULSANTI D'AZIONE 100% STILE NOW TV (Solid White Play + Frosted Glass Info)
-   ========================================================================== */
+/* 7. Pulsanti d'Azione (CTA) compatti e raffinati */
 .now-hero-cta-group {
-    margin-top: 10px;
+    margin-top: 8px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
-/* Tasto Principale "Guarda": Bianco solido brillante con testo e icona neri */
+/* Tasto Principale "Guarda": Bianco solido, compatto, border-radius moderno */
 .now-hero-play-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    padding: 13px 34px;
-    border-radius: 999px;
+    gap: 7px;
+    padding: 10px 24px;
+    border-radius: 6px;
     background: #ffffff;
-    color: #0b0f19;
-    font-size: 1.05rem;
-    font-weight: 800;
+    color: #05070c;
+    font-size: 0.92rem;
+    font-weight: 700;
     text-decoration: none;
     letter-spacing: -0.01em;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-    transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), 
-                background-color 0.2s ease, 
-                box-shadow 0.22s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    transition: background-color 0.2s ease, transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     cursor: pointer;
     border: none;
 }
 
 .now-hero-play-ico {
-    font-size: 1.55rem;
-    color: #0b0f19;
+    font-size: 1.3rem;
+    color: #05070c;
     line-height: 1;
 }
 
 .now-hero-play-button:hover {
-    background: #f0f0f0;
+    background: #e8e8e8;
     color: #000000;
-    transform: scale(1.04) translateY(-2px);
-    box-shadow: 0 12px 32px rgba(255, 255, 255, 0.3), 0 6px 16px rgba(0, 0, 0, 0.6);
+    transform: translateY(-1px);
 }
 
 .now-hero-play-button:active {
-    transform: scale(0.97);
+    transform: translateY(0);
 }
 
-/* Tasto Secondario "Dettagli": Vetro satinato trasparente elegante NOW */
+/* Tasto Secondario "Dettagli": Ghost/Secondary pulito con bordo sottile */
 .now-hero-info-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 9px;
-    padding: 13px 26px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.22);
+    gap: 7px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
     color: #ffffff;
-    font-size: 1.05rem;
-    font-weight: 700;
+    font-size: 0.92rem;
+    font-weight: 600;
     text-decoration: none;
     letter-spacing: -0.01em;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
-    transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), 
-                background 0.2s ease, 
-                border-color 0.2s ease;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
     cursor: pointer;
 }
 
 .now-hero-info-ico {
-    font-size: 1.35rem;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.85);
     line-height: 1;
 }
 
 .now-hero-info-button:hover {
-    background: rgba(255, 255, 255, 0.24);
-    border-color: rgba(255, 255, 255, 0.45);
-    color: #ffffff;
-    transform: scale(1.04) translateY(-2px);
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.35);
 }
 
 .now-hero-info-button:active {
-    transform: scale(0.97);
+    transform: translateY(0);
 }
 
 /* ==========================================================================
-   FOOTER BILLBOARD: CANALI A SINISTRA + FRECCE DI NAVIGAZIONE A DESTRA
+   8. CAROUSEL/SELETTORE INFERIORE INTEGRATO NELLA HERO
    ========================================================================== */
 .now-hero-footer-bar {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-top: 4px;
     gap: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    padding-top: 16px;
 }
 
 .now-hero-footer-indicators {
     display: flex;
-    gap: 16px;
-    align-items: flex-end;
-    width: 100%;
-    max-width: 600px;
+    gap: 24px;
+    align-items: center;
+    width: auto;
+    max-width: 800px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.now-hero-footer-indicators::-webkit-scrollbar {
+    display: none;
 }
 
 .now-hero-indicator-btn {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     background: transparent;
     border: none;
-    padding: 6px 0;
+    padding: 4px 0;
     cursor: pointer;
     text-align: left;
     outline: none;
-    opacity: 0.45;
-    transition: opacity 0.22s ease;
+    opacity: 0.55;
+    transition: opacity 0.2s ease;
+    flex-shrink: 0;
 }
 
 .now-hero-indicator-btn:hover {
-    opacity: 0.8;
+    opacity: 0.88;
 }
 
 .now-hero-indicator-btn.active {
     opacity: 1;
 }
 
+.now-hero-indicator-channel {
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    letter-spacing: -0.01em;
+    transition: color 0.2s ease;
+}
+
+.now-hero-indicator-btn.active .now-hero-indicator-channel {
+    color: #ffffff;
+    font-weight: 700;
+}
+
 .now-hero-indicator-bar {
     width: 100%;
-    height: 3px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.25);
+    height: 2px;
+    border-radius: 2px;
+    background: transparent;
     overflow: hidden;
     position: relative;
 }
 
 .now-hero-indicator-btn.active .now-hero-indicator-bar {
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(0, 213, 134, 0.25);
 }
 
 .now-hero-indicator-btn.active .now-hero-indicator-progress {
     width: 100%;
     height: 100%;
-    background: #00e59b;
-    box-shadow: 0 0 10px #00e59b;
+    background: #00d586;
     animation: nowIndicatorFill 6.5s linear;
 }
 
@@ -10984,81 +10990,88 @@ body:has(.sky-app) {
     to { width: 100%; }
 }
 
-.now-hero-indicator-channel {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.75);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    letter-spacing: -0.01em;
-    transition: color 0.2s ease;
-}
-
-.now-hero-indicator-btn.active .now-hero-indicator-channel {
-    color: #ffffff;
-}
-
-/* Frecce di navigazione in basso a destra (coordinato al design del sito .top-nav-btn) */
+/* Frecce laterali di navigazione minimali */
 .now-hero-footer-arrows {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 2px;
+    gap: 8px;
+    flex-shrink: 0;
 }
 
 .now-hero-nav-arrow {
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 
 .now-hero-nav-arrow:hover {
-    background: rgba(255, 255, 255, 0.22);
-    border-color: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.28);
     color: #ffffff;
-    transform: scale(1.1);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 .now-hero-nav-arrow .material-symbols-rounded {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
 }
 
-/* Responsive NOW Hero */
+/* ==========================================================================
+   12. RESPONSIVE HERO DESIGN
+   ========================================================================== */
 @media (max-width: 1024px) {
     .now-hero-stage {
-        min-height: 80vh;
-        height: 82vh;
+        min-height: 84vh;
+        height: 84vh;
     }
     .now-hero-inner {
-        padding: 0 36px 44px 36px;
+        padding: 0 36px 36px 36px;
+        gap: 24px;
     }
     .now-hero-heading {
-        font-size: 2.6rem;
+        font-size: 2.2rem;
+    }
+    .now-hero-mask-left {
+        width: 78%;
     }
 }
 
 @media (max-width: 768px) {
     .now-hero-stage {
-        min-height: 70vh;
+        min-height: 72vh;
         height: 72vh;
     }
+    .now-hero-art-slide {
+        background-position: center 15%;
+    }
+    .now-hero-mask-left {
+        width: 100%;
+        background: linear-gradient(
+            180deg,
+            rgba(5, 7, 12, 0.4) 0%,
+            rgba(5, 7, 12, 0.85) 55%,
+            rgba(5, 7, 12, 0.98) 100%
+        );
+    }
     .now-hero-inner {
-        padding: 0 20px 32px 20px;
+        padding: 0 20px 24px 20px;
+        gap: 18px;
+    }
+    .now-hero-brand-top {
+        height: 38px;
+    }
+    .now-hero-channel-badge-logo {
+        height: 36px;
     }
     .now-hero-heading {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        line-height: 1.2;
     }
     .now-hero-synopsis {
         display: none;
@@ -11066,17 +11079,23 @@ body:has(.sky-app) {
     .now-hero-nav-arrow {
         display: none;
     }
+    .now-hero-footer-bar {
+        padding-top: 10px;
+    }
+    .now-hero-footer-indicators {
+        gap: 16px;
+    }
     .now-hero-cta-group {
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
     .now-hero-play-button,
     .now-hero-info-button {
-        width: 100%;
+        flex: 1;
         justify-content: center;
-        padding: 12px 20px;
-        font-size: 0.96rem;
+        padding: 10px 16px;
+        font-size: 0.88rem;
     }
 }
 

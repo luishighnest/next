@@ -284,7 +284,7 @@ export default function HomeHero({ categories = [] }) {
             {/* Contenuto Hero Billboard 100% stile NOW */}
             <div className="now-hero-inner">
                 <div className="now-hero-billboard">
-                    {/* 1. Logo del Canale in alto ben visibile e isolato */}
+                    {/* 1. Logo del Canale ben integrato */}
                     <div className="now-hero-brand-top">
                         {current.logoUrl ? (
                             <img
@@ -298,7 +298,7 @@ export default function HomeHero({ categories = [] }) {
                         )}
                     </div>
 
-                    {/* 2. Riga Metadati: Badge DIRETTA • Categoria • FHD • 5.1 */}
+                    {/* 2. Riga Metadati Discreta: Badge DIRETTA compatto • Categoria • FHD • 5.1 */}
                     <div className="now-hero-meta-row">
                         <span className="now-hero-live-pill">
                             <span className="now-hero-live-pulse" />
@@ -312,10 +312,10 @@ export default function HomeHero({ categories = [] }) {
                         <span className="now-hero-meta-text">5.1</span>
                     </div>
 
-                    {/* 3. Titolo Principale Programma */}
+                    {/* 3. Titolo Principale Programma: Elegante, bold, moderno */}
                     <h1 className="now-hero-heading">{current.progTitle}</h1>
 
-                    {/* 4. Orario e Timeline EPG pulita (senza percentuale) */}
+                    {/* 4. Orario e Timeline EPG secondaria e discreta */}
                     <div className="now-hero-schedule-bar">
                         <div className="now-hero-time-badge">
                             <span className="material-symbols-rounded">schedule</span>
@@ -333,12 +333,12 @@ export default function HomeHero({ categories = [] }) {
                         )}
                     </div>
 
-                    {/* 5. Descrizione del programma: sempre presente su singola riga fissa */}
+                    {/* 5. Descrizione del programma: elegante, max 2 righe, colore attenuato */}
                     <p className="now-hero-synopsis">
                         {current.progDesc || "Tutti gli eventi e i migliori appuntamenti live in onda su questo canale Sky."}
                     </p>
 
-                    {/* 6. Pulsanti Azione NOW TV: Guarda (riproduzione) + Dettagli (apre popup guida TV) */}
+                    {/* 6. Pulsanti Azione: compatti, moderni, raffinati */}
                     <div className="now-hero-cta-group">
                         <Link
                             href={current.targetHref}
@@ -360,7 +360,7 @@ export default function HomeHero({ categories = [] }) {
                     </div>
                 </div>
 
-                {/* 7. Footer: Canali a sinistra + Frecce di navigazione a destra */}
+                {/* 7. Carousel Selettore Canali Inferiore integrato con frecce minimali */}
                 <div className="now-hero-footer-bar">
                     <div className="now-hero-footer-indicators">
                         {heroItems.map((item, idx) => {
@@ -373,16 +373,16 @@ export default function HomeHero({ categories = [] }) {
                                     onClick={() => setActiveIndex(idx)}
                                     aria-label={"Passa a " + item.channelName}
                                 >
+                                    <span className="now-hero-indicator-channel">{item.channelName.replace("Sky Sport ", "Sky ")}</span>
                                     <div className="now-hero-indicator-bar">
                                         <div className="now-hero-indicator-progress" />
                                     </div>
-                                    <span className="now-hero-indicator-channel">{item.channelName.replace("Sky Sport ", "Sky ")}</span>
                                 </button>
                             );
                         })}
                     </div>
 
-                    {/* Frecce di navigazione in basso a destra */}
+                    {/* Frecce di navigazione minimal in basso a destra */}
                     <div className="now-hero-footer-arrows">
                         <button
                             type="button"
