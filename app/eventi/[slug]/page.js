@@ -846,30 +846,34 @@ export default function EventoPlayerPage() {
                                     <input type="range" min="0" max="1" step="0.05" value={isMuted ? 0 : volume} onChange={handleVolumeChange} className="sky-volume-slider" />
                                 </div>
 
-                                {/* Switch Sorgente (Standard vs WARP) - Sempre visibile ed interattivo per qualsiasi evento */}
-                                {channel && (
-                                    <div className="event-sources-deck">
-                                        {getNormalizedSources(channel).map((s, idx) => {
-                                            const isSelected = selectedSource?.isWarp === s.isWarp;
-                                            return (
-                                                <button
-                                                    key={s.name + idx}
-                                                    type="button"
-                                                    className={`event-source-deck-btn ${isSelected ? "active" : ""}`}
-                                                    onClick={() => setSelectedSource(s)}
-                                                    title={`Passa a sorgente ${s.name}`}
-                                                >
-                                                    {s.isWarp ? (
-                                                        <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#000000" : "#f38020" }}></i>
-                                                    ) : (
-                                                        <i className="fa-solid fa-bolt"></i>
-                                                    )}
-                                                    <span>{s.name}</span>
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                )}
+                                {/* Switch Sorgente (Standard vs WARP) - Mostra solo i flussi reali dell'evento */}
+                                {(() => {
+                                    const realSources = getNormalizedSources(channel);
+                                    if (realSources.length <= 1) return null;
+                                    return (
+                                        <div className="event-sources-deck">
+                                            {realSources.map((s, idx) => {
+                                                const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
+                                                return (
+                                                    <button
+                                                        key={s.name + idx}
+                                                        type="button"
+                                                        className={`event-source-deck-btn ${isSelected ? "active" : ""}`}
+                                                        onClick={() => setSelectedSource(s)}
+                                                        title={`Passa a sorgente ${s.name}`}
+                                                    >
+                                                        {s.isWarp ? (
+                                                            <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#000000" : "#f38020" }}></i>
+                                                        ) : (
+                                                            <i className="fa-solid fa-bolt"></i>
+                                                        )}
+                                                        <span>{s.name}</span>
+                                                    </button>
+                                                );
+                                            })}
+                                        </div>
+                                    );
+                                })()}
                             </div>
 
                             {/* Destra: Guida TV, Impostazioni Video, Canali, Zapping, Fullscreen */}

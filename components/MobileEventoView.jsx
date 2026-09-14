@@ -131,32 +131,36 @@ export default function MobileEventoView({
                     </div>
                 </div>
 
-                {/* 4. Sorgenti Streaming Touch Pills (Standard vs WARP) - Sempre visibili ed interattivi */}
-                {channel && (
-                    <div className="mobile-event-sources-block">
-                        <span className="mobile-event-sources-label">Sorgenti disponibili:</span>
-                        <div className="mobile-event-sources-pills">
-                            {getNormalizedSources(channel).map((s, idx) => {
-                                const isSelected = selectedSource?.isWarp === s.isWarp;
-                                return (
-                                    <button
-                                        key={s.name + idx}
-                                        type="button"
-                                        className={`mobile-source-pill ${isSelected ? "active" : ""}`}
-                                        onClick={() => setSelectedSource(s)}
-                                    >
-                                        {s.isWarp ? (
-                                            <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#06080e" : "#f38020" }}></i>
-                                        ) : (
-                                            <i className="fa-solid fa-bolt" style={{ color: isSelected ? "#06080e" : "#00d586" }}></i>
-                                        )}
-                                        <span>{s.name}</span>
-                                    </button>
-                                );
-                            })}
+                {/* 4. Sorgenti Streaming Touch Pills (Standard vs WARP) - Mostra solo i flussi reali dell'evento */}
+                {(() => {
+                    const realSources = getNormalizedSources(channel);
+                    if (realSources.length <= 1) return null;
+                    return (
+                        <div className="mobile-event-sources-block">
+                            <span className="mobile-event-sources-label">Sorgenti disponibili:</span>
+                            <div className="mobile-event-sources-pills">
+                                {realSources.map((s, idx) => {
+                                    const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
+                                    return (
+                                        <button
+                                            key={s.name + idx}
+                                            type="button"
+                                            className={`mobile-source-pill ${isSelected ? "active" : ""}`}
+                                            onClick={() => setSelectedSource(s)}
+                                        >
+                                            {s.isWarp ? (
+                                                <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#06080e" : "#f38020" }}></i>
+                                            ) : (
+                                                <i className="fa-solid fa-bolt" style={{ color: isSelected ? "#06080e" : "#00d586" }}></i>
+                                            )}
+                                            <span>{s.name}</span>
+                                        </button>
+                                    );
+                                })}
+                            </div>
                         </div>
-                    </div>
-                )}
+                    );
+                })()}
             </div>
 
             {/* 5. Sezioni Correlate Touch-Friendly con Locandine Proporzionate */}
