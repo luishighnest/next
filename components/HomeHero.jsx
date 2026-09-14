@@ -399,24 +399,23 @@ export default function HomeHero({ categories = [] }) {
                         )}
                     </div>
 
-                    {/* 2. Riga Metadati Discreta: Badge DIRETTA compatto • Categoria • FHD • 5.1 */}
+                    {/* 2. Riga Metadati Discreta: Badge DIRETTA compatto + Micro-badge Categoria / Risoluzione / Audio */}
                     <div className="now-hero-meta-row">
                         <span className="now-hero-live-pill">
                             <span className="now-hero-live-pulse" />
                             DIRETTA
                         </span>
-                        <span className="now-hero-meta-dot">•</span>
-                        <span className="now-hero-cat-tag">{current.category}</span>
-                        <span className="now-hero-meta-dot">•</span>
-                        <span className="now-hero-meta-text">FHD</span>
-                        <span className="now-hero-meta-dot">•</span>
-                        <span className="now-hero-meta-text">5.1</span>
+                        {current.category && (
+                            <span className="now-hero-meta-box">{current.category}</span>
+                        )}
+                        <span className="now-hero-meta-box">FHD</span>
+                        <span className="now-hero-meta-box">5.1</span>
                     </div>
 
                     {/* 3. Titolo Principale Programma: Elegante, bold, moderno */}
                     <h1 className="now-hero-heading">{current.progTitle}</h1>
 
-                    {/* 4. Orario e Timeline EPG secondaria e discreta */}
+                    {/* 4. Orario e Timeline EPG racchiusi in container/pillola elegante */}
                     <div className="now-hero-schedule-bar">
                         <div className="now-hero-time-badge">
                             <span className="material-symbols-rounded">schedule</span>
