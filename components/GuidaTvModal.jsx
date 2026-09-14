@@ -361,13 +361,22 @@ export default function GuidaTvModal({ isOpen, onClose }) {
     return (
         <div className="ee-epg-backdrop" onClick={onClose}>
             <div className="ee-epg-screen" onClick={(e) => e.stopPropagation()}>
-                {/* 1. TOP HEADER: Logo/Badge + Nastro Giorni + Orologio EE */}
+                {/* 1. TOP HEADER: Brand + Tasto 'Ora in onda' + Nastro Giorni + Lente + Orologio + Tasto Chiudi */}
                 <div className="ee-epg-top-header">
                     <div className="ee-epg-brand">
                         <div className="ee-brand-pill">
-                            <i className="fas fa-satellite-dish"></i>
-                            <span>LIVE EPG</span>
+                            <span className="now-hero-live-pulse" style={{ width: 6, height: 6, background: "#e50914" }}></span>
+                            <span>GUIDA TV</span>
                         </div>
+                        <button
+                            type="button"
+                            className="ee-jump-now-btn"
+                            onClick={handleJumpToNow}
+                            title="Vai all'orario attuale"
+                        >
+                            <span className="material-symbols-rounded">my_location</span>
+                            <span>In Onda Ora</span>
+                        </button>
                     </div>
 
                     {/* Nastro dei giorni (Mer 01, Gio 02, Oggi 07...) */}
@@ -435,13 +444,13 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                             </button>
                         )}
 
-                        {/* Orologio attuale grande a destra stile TV */}
+                        {/* Orologio attuale a destra */}
                         <div className="ee-epg-clock">
                             {currentTimeStr || "--:--"}
                         </div>
 
                         {/* Tasto Chiudi Guida TV */}
-                        <button type="button" className="ee-close-screen-btn" onClick={onClose} title="Chiudi Guida TV">
+                        <button type="button" className="ee-close-screen-btn" onClick={onClose} title="Chiudi Guida TV (Esc)">
                             <i className="fas fa-xmark"></i>
                         </button>
                     </div>
@@ -645,6 +654,18 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                             </div>
                                         );
                                     })}
+                                    {/* 3.1 INDICATORE VERTICALE DEL TEMPO ATTUALE (Now Line Indicator) */}
+                                    {selectedDayOffset === 0 && (
+                                        <div
+                                            className="ee-now-indicator-line"
+                                            style={{ left: `${nowIndicatorLeftPx}px` }}
+                                        >
+                                            <div className="ee-now-indicator-pill">
+                                                <span className="ee-now-dot"></span>
+                                                <span>{currentTimeStr}</span>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         )}
@@ -690,60 +711,29 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                     </div>
                 )}
 
-                {/* 5. BOTTOM FOOTER TELECOMANDO (EE Quick Keys & PC Shortcuts) */}
+                {/* 5. BOTTOM FOOTER DESKTOP: Controlli rapidi ed eleganti */}
                 <div className="ee-epg-footer">
-                    <button
-                        type="button"
-                        className="ee-footer-btn-key"
-                        onClick={() => {
-                            if (selectedProgram) {
-                                setSelectedProgram(null);
-                            } else if (filteredChannels.length > 0) {
-                                const ch = filteredChannels[0];
-                                setSelectedChannel(ch);
-                                setSelectedProgram(ch.programmi?.[0] || null);
-                            }
-                        }}
-                    >
-                        <span className="ee-key-circle info">
-                            <i className="fas fa-info"></i>
+                    <div className="ee-footer-left">
+                        <button type="button" className="ee-footer-btn-key" onClick={handleJumpToNow}>
+                            <span className="ee-key-circle green"></span>
+                            <span>IN ONDA ORA (O)</span>
+                        </button>
+
+                        <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(-2)}>
+                            <span className="material-symbols-rounded" style={{ fontSize: 14 }}>keyboard_double_arrow_left</span>
+                            <span>-2 ORE</span>
+                        </button>
+
+                        <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(2)}>
+                            <span className="material-symbols-rounded" style={{ fontSize: 14 }}>keyboard_double_arrow_right</span>
+                            <span>+2 ORE</span>
+                        </button>
+                    </div>
+
+                    <div className="ee-footer-right">
+                        <span className="ee-desktop-hint">
+                            <kbd>Shift</kbd> + Rotellina per scorrere il tempo • Doppio click su programma per guardare
                         </span>
-                        <span className="ee-key-label">{selectedProgram ? "CHIUDI INFO" : "INFO (I)"}</span>
-                    </button>
-
-                    <button type="button" className="ee-footer-btn-key" onClick={handleJumpToNow}>
-                        <span className="ee-key-circle green"></span>
-                        <span className="ee-key-label">ON NOW (O)</span>
-                    </button>
-
-                    <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(-2)}>
-                        <span className="ee-key-circle arrow">◀◀</span>
-                        <span className="ee-key-label">-2 ORE</span>
-                    </button>
-
-                    <button type="button" className="ee-footer-btn-key" onClick={() => handleScrollStep(2)}>
-                        <span className="ee-key-circle arrow">▶▶</span>
-                        <span className="ee-key-label">+2 ORE</span>
-                    </button>
-
-                    <div className="ee-footer-key">
-                        <span className="ee-key-badge">Tasti ↑ ↓</span>
-                        <span className="ee-key-label">Cambia Canale</span>
-                    </div>
-
-                    <div className="ee-footer-key">
-                        <span className="ee-key-badge">Tasti ← →</span>
-                        <span className="ee-key-label">Scorri Tempo</span>
-                    </div>
-
-                    <div className="ee-footer-key">
-                        <span className="ee-key-badge">Invio</span>
-                        <span className="ee-key-label">Guarda Canale</span>
-                    </div>
-
-                    <div className="ee-footer-key">
-                        <span className="ee-key-circle blue"></span>
-                        <span className="ee-key-label">Trascina mouse / Shift+Rotella</span>
                     </div>
                 </div>
             </div>

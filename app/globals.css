@@ -8453,30 +8453,30 @@ body:has(.sky-app) {
     position: fixed;
     inset: 0;
     z-index: 99999;
-    background: rgba(0, 0, 0, 0.92);
-    backdrop-filter: blur(25px);
-    -webkit-backdrop-filter: blur(25px);
+    background: rgba(0, 0, 0, 0.94);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    padding: 12px 16px;
     box-sizing: border-box;
-    animation: ee-fade-in 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: ee-fade-in 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes ee-fade-in {
-    from { opacity: 0; transform: scale(0.98); }
+    from { opacity: 0; transform: scale(0.985); }
     to { opacity: 1; transform: scale(1); }
 }
 
 .ee-epg-screen {
     width: 100%;
-    max-width: 1560px;
-    height: 92vh;
-    background: #000000;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    box-shadow: 0 32px 100px rgba(0, 0, 0, 0.98), 0 0 0 1px rgba(255, 255, 255, 0.04);
+    max-width: 1680px;
+    height: 94vh;
+    background: #08080a;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 32px 100px rgba(0, 0, 0, 0.98), 0 0 0 1px rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -8485,16 +8485,16 @@ body:has(.sky-app) {
     font-family: inherit;
 }
 
-/* 1. TOP HEADER: Brand + Days Tape + Big Clock */
+/* 1. TOP HEADER: Brand + Tasto Now + Days Tape + Big Clock + Chiudi */
 .ee-epg-top-header {
-    height: 72px;
-    background: #000000;
+    height: 64px;
+    background: #0d0d12;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 28px;
-    gap: 24px;
+    padding: 0 24px;
+    gap: 20px;
 }
 
 .ee-epg-brand {
@@ -8507,26 +8507,47 @@ body:has(.sky-app) {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #111115;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    padding: 5px 12px;
     border-radius: 999px;
-    font-size: 0.82rem;
+    font-size: 0.80rem;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
     color: #ffffff;
 }
 
-.ee-brand-pill i {
-    color: #e30a17;
-    font-size: 0.88rem;
+.ee-jump-now-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(229, 9, 20, 0.15);
+    border: 1px solid rgba(229, 9, 20, 0.35);
+    color: #ff4d5a;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ee-jump-now-btn:hover {
+    background: #e50914;
+    color: #ffffff;
+    border-color: #e50914;
+    box-shadow: 0 0 14px rgba(229, 9, 20, 0.4);
+}
+
+.ee-jump-now-btn .material-symbols-rounded {
+    font-size: 0.95rem;
 }
 
 /* Nastro dei giorni (Mer 01, Gio 02, Oggi 07, Ven 08...) */
 .ee-days-tape {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 12px;
 }
 
 .ee-day-item {
@@ -8537,140 +8558,151 @@ body:has(.sky-app) {
     flex-direction: column;
     align-items: center;
     gap: 2px;
-    padding: 4px 6px;
-    color: rgba(255, 255, 255, 0.4);
-    transition: all 0.2s ease;
+    padding: 4px 8px;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.45);
+    transition: all 0.18s ease;
 }
 
 .ee-day-name {
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
 
 .ee-day-number {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 600;
     font-variant-numeric: tabular-nums;
 }
 
 .ee-day-item:hover {
     color: #ffffff;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 .ee-day-item.selected,
 .ee-day-item.is-today {
     color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
 }
 
+.ee-day-item.selected .ee-day-name,
 .ee-day-item.is-today .ee-day-name {
-    color: #ffffff;
+    color: #e50914;
     font-weight: 900;
 }
 
+.ee-day-item.selected .ee-day-number,
 .ee-day-item.is-today .ee-day-number {
-    font-size: 1.45rem;
-    font-weight: 900;
+    font-weight: 800;
     color: #ffffff;
-    line-height: 1;
 }
 
 /* Orologio digitale stile TV */
 .ee-epg-clock {
-    font-size: 1.4rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #ffffff;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.02em;
     font-variant-numeric: tabular-nums;
 }
 
 /* 2. CATEGORIES FILTER BAR */
 .ee-epg-categories-bar {
-    height: 52px;
-    background: #050507;
+    height: 46px;
+    background: #09090c;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 24px;
-    gap: 16px;
+    padding: 0 20px;
+    gap: 12px;
 }
 
 .ee-categories-list {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
     overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.ee-categories-list::-webkit-scrollbar {
+    display: none;
 }
 
 .ee-category-pill {
-    background: transparent;
-    border: none;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 6px 12px;
+    gap: 6px;
+    padding: 4px 12px;
     border-radius: 999px;
-    color: rgba(255, 255, 255, 0.55);
-    font-size: 0.84rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.80rem;
     font-weight: 600;
     cursor: pointer;
     white-space: nowrap;
-    transition: all 0.2s ease;
+    transition: all 0.18s ease;
 }
 
 .ee-cat-radio-dot {
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     border: 1.5px solid rgba(255, 255, 255, 0.35);
     background: transparent;
-    transition: all 0.2s ease;
+    transition: all 0.18s ease;
 }
 
 .ee-category-pill:hover {
     color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.18);
 }
 
 .ee-category-pill.active {
     color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.35);
     font-weight: 700;
 }
 
 .ee-category-pill.active .ee-cat-radio-dot {
     border-color: #ffffff;
     background: #ffffff;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
 /* Azioni a destra dell'Header: Lente Cerca + Orologio + Tasto Chiudi */
 .ee-header-right-actions {
     display: flex;
     align-items: center;
-    gap: 18px;
+    gap: 16px;
     flex-shrink: 0;
 }
 
 .ee-search-icon-btn {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
-    background: #111116;
+    background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.12);
     color: rgba(255, 255, 255, 0.75);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .ee-search-icon-btn:hover {
-    background: #1a1a24;
+    background: rgba(255, 255, 255, 0.14);
     color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.35);
+    border-color: rgba(255, 255, 255, 0.3);
     transform: scale(1.05);
 }
 
@@ -8681,8 +8713,8 @@ body:has(.sky-app) {
     background: #111116;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 999px;
-    padding: 6px 14px;
-    width: 260px;
+    padding: 5px 12px;
+    width: 240px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
     animation: ee-search-expand 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -8694,7 +8726,7 @@ body:has(.sky-app) {
 
 .ee-search-expanded-bar .ee-search-icon {
     color: rgba(255, 255, 255, 0.45);
-    font-size: 0.82rem;
+    font-size: 0.80rem;
 }
 
 .ee-search-expanded-bar input {
@@ -8702,7 +8734,7 @@ body:has(.sky-app) {
     border: none;
     outline: none;
     color: #ffffff;
-    font-size: 0.84rem;
+    font-size: 0.82rem;
     width: 100%;
     font-family: inherit;
 }
@@ -8737,23 +8769,23 @@ body:has(.sky-app) {
 }
 
 .ee-close-screen-btn {
-    width: 36px;
-    height: 36px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
-    background: #111116;
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 0.95rem;
+    font-size: 0.90rem;
     transition: all 0.2s ease;
 }
 
 .ee-close-screen-btn:hover {
-    background: #e30a17;
-    border-color: #e30a17;
+    background: #e50914;
+    border-color: #e50914;
     transform: scale(1.06);
 }
 
@@ -8764,15 +8796,15 @@ body:has(.sky-app) {
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    background: #000000;
+    background: #08080a;
 }
 
 /* Header Orari in alto alla griglia */
 .ee-epg-time-header-row {
-    height: 40px;
+    height: 38px;
     display: flex;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    background: #08080a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: #0c0c10;
     z-index: 10;
 }
 
@@ -8783,13 +8815,13 @@ body:has(.sky-app) {
     display: flex;
     align-items: center;
     padding-left: 20px;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
-    background: #08080a;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+    background: #0c0c10;
     z-index: 12;
 }
 
 .ee-corner-label {
-    font-size: 0.72rem;
+    font-size: 0.70rem;
     font-weight: 800;
     letter-spacing: 0.1em;
     color: rgba(255, 255, 255, 0.4);
@@ -8810,19 +8842,19 @@ body:has(.sky-app) {
     position: absolute;
     top: 0;
     bottom: 0;
-    border-left: 1px solid rgba(255, 255, 255, 0.07);
-    padding-left: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    padding-left: 8px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
 }
 
 .ee-time-label {
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.75);
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.65);
     font-variant-numeric: tabular-nums;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
 }
 
 /* Corpo Canali & Timeline */
@@ -8847,9 +8879,9 @@ body:has(.sky-app) {
 
 .ee-channel-row {
     display: flex;
-    height: 60px;
-    min-height: 60px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    height: 56px;
+    min-height: 56px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
 }
 
@@ -8857,39 +8889,39 @@ body:has(.sky-app) {
     background: rgba(255, 255, 255, 0.02);
 }
 
-/* Sticky Channel Left Tab (Stile EE con numero canale e logo in nero OLED) */
+/* Sticky Channel Left Tab */
 .ee-channel-cell-sticky {
     width: 220px;
     min-width: 220px;
     position: sticky;
     left: 0;
     z-index: 20;
-    background: #000000;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    background: #08080b;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
     align-items: center;
     padding: 0 16px;
-    gap: 16px;
+    gap: 14px;
     cursor: pointer;
     box-shadow: 4px 0 16px rgba(0, 0, 0, 0.7);
     transition: background 0.18s ease;
 }
 
 .ee-channel-cell-sticky:hover {
-    background: #0e0e12;
+    background: #121218;
 }
 
 .ee-ch-num {
-    font-size: 0.84rem;
+    font-size: 0.80rem;
     font-weight: 700;
     color: rgba(255, 255, 255, 0.35);
     font-variant-numeric: tabular-nums;
-    min-width: 28px;
+    min-width: 26px;
 }
 
 .ee-ch-badge {
     flex: 1;
-    height: 38px;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -8897,14 +8929,14 @@ body:has(.sky-app) {
 }
 
 .ee-ch-logo {
-    max-height: 28px;
+    max-height: 26px;
     max-width: 110px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.6));
 }
 
 .ee-ch-fallback-name {
-    font-size: 0.82rem;
+    font-size: 0.80rem;
     font-weight: 700;
     color: #ffffff;
     white-space: nowrap;
@@ -8924,9 +8956,9 @@ body:has(.sky-app) {
     top: 4px;
     bottom: 4px;
     border-radius: 6px;
-    background: #0c0c0f;
+    background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-left: 2px solid rgba(255, 255, 255, 0.14);
+    border-left: 2px solid rgba(255, 255, 255, 0.16);
     padding: 4px 10px;
     cursor: pointer;
     overflow: hidden;
@@ -8937,45 +8969,31 @@ body:has(.sky-app) {
 }
 
 .ee-program-block:hover {
-    background: #18181f;
+    background: rgba(255, 255, 255, 0.08);
     z-index: 5;
     border-color: rgba(255, 255, 255, 0.35);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
-/* Programma in onda con casella TUTTA BIANCA E TESTO NERO */
+/* Programma in onda (Stile NOW: accento luminoso rosso/bianco satinato) */
 .ee-program-block.is-live {
-    background: #ffffff !important;
-    border: 1px solid #ffffff !important;
-    box-shadow: 0 0 16px rgba(255, 255, 255, 0.6), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+    background: linear-gradient(90deg, rgba(229, 9, 20, 0.22) 0%, rgba(255, 255, 255, 0.08) 100%) !important;
+    border: 1px solid rgba(229, 9, 20, 0.6) !important;
+    border-left: 3px solid #e50914 !important;
+    box-shadow: 0 0 12px rgba(229, 9, 20, 0.25) !important;
     z-index: 4;
 }
 
 .ee-program-block.is-live .ee-prog-title {
-    font-weight: 800 !important;
-    color: #000000 !important;
-}
-
-.ee-program-block.is-live .ee-play-icon {
-    border-color: #000000 !important;
-    background: #000000 !important;
+    font-weight: 700 !important;
     color: #ffffff !important;
 }
 
 .ee-program-block.selected {
-    background: #202028 !important;
+    background: rgba(255, 255, 255, 0.14) !important;
     border: 1.5px solid #ffffff !important;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), 0 4px 18px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.4), 0 4px 18px rgba(0, 0, 0, 0.8);
     z-index: 6;
-}
-
-.ee-program-block.selected.is-live {
-    background: #ffffff !important;
-    box-shadow: 0 0 0 2px #e30a17, 0 0 20px rgba(255, 255, 255, 0.8) !important;
-}
-
-.ee-program-block.selected.is-live .ee-prog-title {
-    color: #000000 !important;
 }
 
 .ee-prog-inner {
@@ -8996,31 +9014,68 @@ body:has(.sky-app) {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: 1px solid #ffffff;
+    background: #e50914;
     color: #ffffff;
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     flex-shrink: 0;
 }
 
 .ee-prog-title {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #ffffff;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.2;
 }
 
+/* Indicatore verticale del tempo attuale (Now Line) */
+.ee-now-indicator-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #e50914;
+    box-shadow: 0 0 10px #e50914, 0 0 20px rgba(229, 9, 20, 0.5);
+    z-index: 22;
+    pointer-events: none;
+}
+
+.ee-now-indicator-pill {
+    position: sticky;
+    top: 4px;
+    transform: translateX(-50%);
+    background: #e50914;
+    color: #ffffff;
+    padding: 2px 7px;
+    border-radius: 999px;
+    font-size: 0.65rem;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.02em;
+}
+
+.ee-now-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ffffff;
+    animation: livePulseDot 1.2s infinite;
+}
+
 /* 4. BANNER PROGRAMMA SELEZIONATO IN BASSO */
 .ee-selected-program-banner {
-    background: #08080a;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 14px 28px;
+    background: #0d0d12;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 12px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 20px;
     box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.8);
     animation: ee-fade-in 0.2s ease;
     z-index: 25;
@@ -9034,20 +9089,20 @@ body:has(.sky-app) {
 .ee-banner-top-line {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 4px;
+    gap: 10px;
+    margin-bottom: 3px;
 }
 
 .ee-banner-ch {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 800;
     text-transform: uppercase;
-    color: #e30a17;
-    letter-spacing: 0.05em;
+    color: #e50914;
+    letter-spacing: 0.04em;
 }
 
 .ee-banner-time {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 600;
     display: inline-flex;
@@ -9056,15 +9111,15 @@ body:has(.sky-app) {
 }
 
 .ee-banner-title {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 800;
     color: #ffffff;
-    margin: 0 0 4px 0;
+    margin: 0 0 3px 0;
     line-height: 1.2;
 }
 
 .ee-banner-desc {
-    font-size: 0.82rem;
+    font-size: 0.80rem;
     color: rgba(255, 255, 255, 0.6);
     margin: 0;
     line-height: 1.4;
@@ -9078,23 +9133,23 @@ body:has(.sky-app) {
 .ee-banner-actions {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .ee-watch-btn {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    padding: 8px 20px;
-    background: #e30a17;
+    padding: 7px 18px;
+    background: #e50914;
     color: #ffffff;
     border: none;
     border-radius: 999px;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     font-weight: 800;
     font-family: inherit;
     cursor: pointer;
-    box-shadow: 0 4px 16px rgba(227, 10, 23, 0.4);
+    box-shadow: 0 4px 14px rgba(229, 9, 20, 0.4);
     transition: all 0.2s ease;
 }
 
@@ -9104,8 +9159,8 @@ body:has(.sky-app) {
 }
 
 .ee-dismiss-banner-btn {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.08);
     border: none;
@@ -9114,32 +9169,47 @@ body:has(.sky-app) {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 0.18s ease;
 }
 
-/* 5. BOTTOM FOOTER TELECOMANDO (EE Quick Keys) */
+.ee-dismiss-banner-btn:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+/* 5. BOTTOM FOOTER DESKTOP */
 .ee-epg-footer {
-    height: 48px;
-    background: #000000;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    height: 44px;
+    background: #09090c;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
     display: flex;
     align-items: center;
-    padding: 0 28px;
-    gap: 28px;
-    overflow-x: auto;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 20px;
 }
 
-.ee-footer-key,
+.ee-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ee-footer-right {
+    display: flex;
+    align-items: center;
+}
+
 .ee-footer-btn-key {
     background: transparent;
     border: none;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     padding: 0;
     color: rgba(255, 255, 255, 0.65);
-    font-size: 0.74rem;
+    font-size: 0.72rem;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
     cursor: pointer;
     white-space: nowrap;
     transition: color 0.18s ease;
@@ -9149,37 +9219,22 @@ body:has(.sky-app) {
     color: #ffffff;
 }
 
-.ee-key-circle {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
+.ee-desktop-hint {
+    font-size: 0.70rem;
+    color: rgba(255, 255, 255, 0.4);
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    font-size: 0.62rem;
-    font-weight: 900;
+    gap: 6px;
 }
 
-.ee-key-circle.info {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    background: rgba(255, 255, 255, 0.08);
-    color: #ffffff;
-    font-size: 0.6rem;
-}
-
-.ee-key-circle.green {
-    background: #00e676;
-    box-shadow: 0 0 8px rgba(0, 230, 118, 0.5);
-}
-
-.ee-key-circle.blue {
-    background: #ffffff;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-}
-
-.ee-key-circle.arrow {
-    color: #ffffff;
+.ee-desktop-hint kbd {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-family: inherit;
     font-size: 0.68rem;
+    color: #ffffff;
 }
 
 /* Badge per tasti da tastiera PC nel footer */
