@@ -69,33 +69,10 @@ export default function EventoPlayerPage() {
         return "";
     });
 
-    // Shaka Player state
-    const videoRef = useRef(null);
-    const playerRef = useRef(null);
-    const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+    // Stati Player e Contenitore Fullscreen
+    const containerRef = useRef(null);
+    const [isFullscreen, setIsFullscreen] = useState(false);
     const [isVideoBuffering, setIsVideoBuffering] = useState(true);
-    const [isMuted, setIsMuted] = useState(false);
-    const [volume, setVolume] = useState(1);
-
-    // Timeline / DVR state
-    const [currentTime, setCurrentTime] = useState(0);
-    const [duration, setDuration] = useState(0);
-    const [isLiveStream, setIsLiveStream] = useState(true);
-    const [bufferedEnd, setBufferedEnd] = useState(0);
-    const [seekRange, setSeekRange] = useState({ start: 0, end: 0 });
-    const [isAtLiveEdge, setIsAtLiveEdge] = useState(true);
-    const timelineRef = useRef(null);
-    const [isDragging, setIsDragging] = useState(false);
-
-    // Video Settings Popover
-    const [isVideoSettingsOpen, setIsVideoSettingsOpen] = useState(false);
-    const [videoQualities, setVideoQualities] = useState([]);
-    const [isAbrEnabled, setIsAbrEnabled] = useState(true);
-    const [audioTracks, setAudioTracks] = useState([]);
-    const [selectedAudioLang, setSelectedAudioLang] = useState("");
-    const [textTracks, setTextTracks] = useState([]);
-    const [isTextTrackEnabled, setIsTextTrackEnabled] = useState(false);
-    const [selectedTextLang, setSelectedTextLang] = useState("");
 
     // Modali
     const [isGuidaOpen, setIsGuidaOpen] = useState(false);
@@ -114,7 +91,7 @@ export default function EventoPlayerPage() {
         setIsUserActive(true);
         if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
         idleTimerRef.current = setTimeout(() => {
-            if (!isVideoSettingsOpen) setIsUserActive(false);
+            setIsUserActive(false);
         }, 4000);
     };
 
@@ -133,155 +110,41 @@ export default function EventoPlayerPage() {
 
     useEffect(() => {
         setMounted(true);
-        return () => { if (idleTimerRef.current) clearTimeout(idleTimerRef.current); };
+        const handleFsChange = () => {
+            setIsFullscreen(Boolean(document.fullscreenElement));
+        };
+        document.addEventListener("fullscreenchange", handleFsChange);
+        return () => {
+            if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+            document.removeEventListener("fullscreenchange", handleFsChange);
+        };
     }, []);
 
-    // Reset stato video al cambio sorgente
+    // Reset stato al cambio sorgente
     useEffect(() => {
         setHasStartedPlaying(false);
         setIsVideoBuffering(true);
-        setIsVideoPlaying(false);
-        setCurrentTime(0);
-        setDuration(0);
-        setSeekRange({ start: 0, end: 0 });
-        setIsAtLiveEdge(true);
-        setIsVideoSettingsOpen(false);
         setIsUserActive(true);
+        if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
+        idleTimerRef.current = setTimeout(() => {
+            setIsUserActive(false);
+        }, 4000);
     }, [selectedSource, slug]);
-
-    // ─── Shaka Player: inizializzazione e caricamento ───────────────────────
-    const refreshTracks = (playerInstance) => {
-        const player = playerInstance || playerRef.current;
-        if (!player) return;
-        try {
-            const tracks = player.getVariantTracks() || [];
-            const resMap = new Map();
-            tracks.forEach(t => {
-                if (t.height) {
-                    const label = `${t.height}p`;
-                    if (!resMap.has(label) || t.bandwidth > resMap.get(label).bandwidth) {
-                        resMap.set(label, { id: t.id, label, height: t.height, bandwidth: t.bandwidth, active: t.active });
-                    }
-                }
-            });
-            setVideoQualities(Array.from(resMap.values()).sort((a, b) => b.height - a.height));
-            const abrConf = player.getConfiguration();
-            setIsAbrEnabled(abrConf?.abr?.enabled ?? true);
-            const audioLangs = player.getAudioLanguagesAndRoles ? player.getAudioLanguagesAndRoles() : [];
-            setAudioTracks(audioLangs.map((a, i) => ({ id: i, language: a.language || "Principale", role: a.role || "" })));
-            if (player.getAudioLanguages && player.getAudioLanguages().length > 0) {
-                setSelectedAudioLang(player.getAudioLanguages()[0]);
-            }
-            const textTrks = player.getTextTracks() || [];
-            setTextTracks(textTrks);
-            setIsTextTrackEnabled(player.isTextTrackVisible ? player.isTextTrackVisible() : false);
-        } catch(e) {}
-    };
-
-    const handleSelectQuality = (track) => {
-        const player = playerRef.current;
-        if (!player) return;
-        try {
-            if (track === "auto") {
-                player.configure({ abr: { enabled: true } });
-                setIsAbrEnabled(true);
-            } else {
-                player.configure({ abr: { enabled: false } });
-                setIsAbrEnabled(false);
-                const matched = player.getVariantTracks().find(v => v.id === track.id || v.height === track.height);
-                if (matched) player.selectVariantTrack(matched, false);
-            }
-            refreshTracks(player);
-        } catch(e) {}
-    };
-
-    const handleSelectAudio = (lang) => {
-        const player = playerRef.current;
-        if (!player) return;
-        try { player.selectAudioLanguage(lang); setSelectedAudioLang(lang); refreshTracks(player); } catch(e) {}
-    };
-
-    const handleToggleSubtitles = (trackOrDisable) => {
-        const player = playerRef.current;
-        if (!player) return;
-        try {
-            if (trackOrDisable === "off") {
-                player.setTextTrackVisibility(false);
-                setIsTextTrackEnabled(false);
-                setSelectedTextLang("");
-            } else {
-                player.setTextTrackVisibility(true);
-                setIsTextTrackEnabled(true);
-                if (trackOrDisable?.language) {
-                    player.selectTextLanguage(trackOrDisable.language);
-                    setSelectedTextLang(trackOrDisable.language);
-                }
-            }
-        } catch(e) {}
-    };
-
-    // Reset stato iframe al cambio sorgente o evento per transizione pulita
-    useEffect(() => {
-        setIframeLoaded(false);
-        setHasStartedPlaying(false);
-        setIsVideoBuffering(true);
-    }, [selectedSource, slug]);
-
-    // ─── Controlli player ─────────────────────────────────────────────────────
-    const togglePlayPause = () => {
-        if (!videoRef.current) return;
-        if (videoRef.current.paused) videoRef.current.play().catch(() => {});
-        else videoRef.current.pause();
-    };
-
-    const toggleMute = () => {
-        if (!videoRef.current) return;
-        const newMuted = !videoRef.current.muted;
-        videoRef.current.muted = newMuted;
-        setIsMuted(newMuted);
-    };
-
-    const handleVolumeChange = (e) => {
-        const val = parseFloat(e.target.value);
-        setVolume(val);
-        if (videoRef.current) {
-            videoRef.current.volume = val;
-            videoRef.current.muted = val === 0;
-            setIsMuted(val === 0);
-        }
-    };
-
-    const handleGoLive = () => {
-        if (!videoRef.current) return;
-        if (seekRange.end > seekRange.start) {
-            const livePoint = Math.max(seekRange.start, seekRange.end - 3);
-            videoRef.current.currentTime = livePoint;
-            setCurrentTime(livePoint);
-            setIsAtLiveEdge(true);
-        }
-    };
-
-    const handleTimelineClick = (e) => {
-        if (!timelineRef.current || !videoRef.current) return;
-        const rect = timelineRef.current.getBoundingClientRect();
-        const pos = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-        if (seekRange.end > seekRange.start) {
-            const targetTime = seekRange.start + pos * (seekRange.end - seekRange.start);
-            videoRef.current.currentTime = targetTime;
-            setCurrentTime(targetTime);
-            setIsAtLiveEdge(seekRange.end - targetTime < 15);
-        } else if (!isLiveStream && duration > 0) {
-            const seekTarget = pos * duration;
-            videoRef.current.currentTime = seekTarget;
-            setCurrentTime(seekTarget);
-        }
-    };
 
     const toggleFullscreen = () => {
+        const el = containerRef.current || document.documentElement;
         if (!document.fullscreenElement) {
-            document.documentElement.requestFullscreen().catch(() => {});
+            if (el.requestFullscreen) {
+                el.requestFullscreen().catch(() => {});
+            } else if (el.webkitRequestFullscreen) {
+                el.webkitRequestFullscreen();
+            }
         } else {
-            if (document.exitFullscreen) document.exitFullscreen().catch(() => {});
+            if (document.exitFullscreen) {
+                document.exitFullscreen().catch(() => {});
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            }
         }
     };
 
@@ -498,9 +361,7 @@ export default function EventoPlayerPage() {
             if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
             if (e.key === "ArrowUp") { e.preventDefault(); handlePrevChannel(); }
             else if (e.key === "ArrowDown") { e.preventDefault(); handleNextChannel(); }
-            else if (e.key === " " || e.key === "k") { e.preventDefault(); togglePlayPause(); }
-            else if (e.key === "m") toggleMute();
-            else if (e.key === "f") toggleFullscreen();
+            else if (e.key === "f" || e.key === "F") { e.preventDefault(); toggleFullscreen(); }
         };
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
@@ -530,24 +391,10 @@ export default function EventoPlayerPage() {
     const fallbackLogo = isTestJsonEvent ? "/logos/dazn.png" : (getChannelLogoUrl(channel) || "/logos/dazn.png");
     const displayLogo = channel?.logo || fallbackLogo;
 
-    // Calcolo DVR per la timeline
-    const hasDvr = seekRange.end > seekRange.start;
-    const dvrDuration = hasDvr ? (seekRange.end - seekRange.start) : duration;
-    const dvrCurrent = hasDvr ? Math.max(0, currentTime - seekRange.start) : currentTime;
-    const timelinePct = dvrDuration > 0 ? Math.min(100, Math.max(0, (dvrCurrent / dvrDuration) * 100)) : (currentEpg?.percentuale !== undefined ? currentEpg.percentuale : 100);
-    const lagSeconds = hasDvr ? Math.max(0, Math.round(seekRange.end - currentTime)) : 0;
-    const isLiveNow = !hasDvr || lagSeconds < 15;
-
-    const formatTimeshift = (sec) => {
-        if (sec <= 0) return "DIRETTA";
-        const m = Math.floor(sec / 60);
-        const s = sec % 60;
-        return `-${m}:${String(s).padStart(2, "0")}`;
-    };
-
     return (
         <div
-            className={`sky-app ${mounted ? "is-mounted" : "is-mounting"}`}
+            ref={containerRef}
+            className={`sky-app ${mounted ? "is-mounted" : "is-mounting"} ${isFullscreen ? "is-fullscreen" : ""}`}
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
         >
@@ -655,72 +502,15 @@ export default function EventoPlayerPage() {
                             </div>
                         </div>
 
-                        {/* Timeline YT-style con DVR */}
-                        <div
-                            ref={timelineRef}
-                            className="sky-player-timeline-wrapper"
-                            onClick={handleTimelineClick}
-                            title={hasDvr ? "Timeline DVR — clicca per spostarti" : "Timeline diretta"}
-                        >
-                            <div className="sky-player-timeline-track">
-                                <div className="sky-player-timeline-buffer" style={{ width: hasDvr ? "100%" : `${duration > 0 ? (bufferedEnd / duration) * 100 : 0}%` }} />
-                                <div className="sky-player-timeline-fill" style={{ width: `${timelinePct}%` }} />
-                                <div className="sky-player-timeline-thumb" style={{ left: `${timelinePct}%` }} />
-                            </div>
-                            <div className="sky-player-timeline-labels">
-                                <span>
-                                    {hasDvr ? (
-                                        <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
-                                            <i className="fa-solid fa-clock-rotate-left" style={{ fontSize: "0.75rem", color: "#00e59b" }}></i>
-                                            {isLiveNow ? "Inizio buffer (-2h)" : formatTimeshift(lagSeconds)}
-                                        </span>
-                                    ) : (
-                                        currentEpg?.oraInizio || channel?.ora || "In onda ora"
-                                    )}
-                                </span>
-                                <div>
-                                    {hasDvr && !isLiveNow ? (
-                                        <button
-                                            type="button"
-                                            className="sky-timeline-live-btn"
-                                            onClick={(e) => { e.stopPropagation(); handleGoLive(); }}
-                                        >
-                                            <span className="live-dot-pulse" />
-                                            <span>TORNA A LIVE ({formatTimeshift(lagSeconds)})</span>
-                                        </button>
-                                    ) : (
-                                        <span style={{ color: "#e30a17", fontWeight: "800", display: "inline-flex", alignItems: "center", gap: "5px" }}>
-                                            <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#e30a17" }} />
-                                            DIRETTA LIVE
-                                        </span>
-                                    )}
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Barra dei Controlli */}
+                        {/* Barra dei Controlli Inferiori Integrati (senza timeline finta) */}
                         <div className="sky-player-controls-bar">
-                            {/* Sinistra: Play/Pause, Mute/Volume, Switch Sorgente */}
+                            {/* Sinistra: Badge Live & Switch Sorgente (Standard vs WARP) */}
                             <div className="sky-controls-group-left">
-                                <button
-                                    type="button"
-                                    className="sky-modern-btn icon-only"
-                                    onClick={togglePlayPause}
-                                    title={isVideoPlaying ? "Pausa (k)" : "Riproduci (k)"}
-                                >
-                                    <span className="material-symbols-rounded">{isVideoPlaying ? "pause" : "play_arrow"}</span>
-                                </button>
+                                <span style={{ color: "#e30a17", fontWeight: "800", display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", letterSpacing: "0.5px" }}>
+                                    <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#e30a17", display: "inline-block", boxShadow: "0 0 8px rgba(227,10,23,0.8)" }} />
+                                    DIRETTA
+                                </span>
 
-                                <div className="sky-volume-control">
-                                    <button type="button" className="sky-modern-btn icon-only" onClick={toggleMute} title={isMuted ? "Attiva audio (m)" : "Silenzia (m)"}>
-                                        <span className="material-symbols-rounded">
-                                            {isMuted || volume === 0 ? "volume_off" : volume < 0.5 ? "volume_down" : "volume_up"}
-                                        </span>
-                                    </button>
-                                    <input type="range" min="0" max="1" step="0.05" value={isMuted ? 0 : volume} onChange={handleVolumeChange} className="sky-volume-slider" />
-                                </div>
-
-                                {/* Switch Sorgente (Standard vs WARP) - Mostra solo i flussi reali dell'evento */}
                                 {(() => {
                                     const realSources = getNormalizedSources(channel);
                                     if (realSources.length <= 1) return null;
@@ -750,99 +540,21 @@ export default function EventoPlayerPage() {
                                 })()}
                             </div>
 
-                            {/* Destra: Guida TV, Impostazioni Video, Canali, Zapping, Fullscreen */}
+                            {/* Destra: Guida TV, Impostazioni Tecniche, Canali, Zapping, Fullscreen */}
                             <div className="sky-controls-group-right">
                                 <button type="button" className="sky-modern-btn" onClick={() => setIsGuidaOpen(true)} title="Guida TV EPG">
                                     <span className="material-symbols-rounded">calendar_today</span>
                                     <span>Guida TV</span>
                                 </button>
 
-                                {/* Popover Impostazioni Video Stream */}
-                                <div className="sky-settings-popover-wrapper">
-                                    <button
-                                        type="button"
-                                        className={`sky-modern-btn icon-only ${isVideoSettingsOpen ? "active" : ""}`}
-                                        onClick={() => { setIsVideoSettingsOpen(prev => !prev); refreshTracks(); }}
-                                        title="Impostazioni Video (Qualità, Audio, Sottotitoli)"
-                                    >
-                                        <span className="material-symbols-rounded">tune</span>
-                                    </button>
-
-                                    {isVideoSettingsOpen && (
-                                        <div className="sky-video-settings-menu">
-                                            <div className="sky-settings-menu-header">
-                                                <span>Impostazioni Stream</span>
-                                                <button type="button" onClick={() => setIsVideoSettingsOpen(false)} className="sky-settings-menu-close">
-                                                    <span className="material-symbols-rounded">close</span>
-                                                </button>
-                                            </div>
-
-                                            <div className="sky-settings-menu-section">
-                                                <div className="sky-settings-section-title">
-                                                    <span className="material-symbols-rounded">hd</span>
-                                                    <span>Qualità Video</span>
-                                                </div>
-                                                <div className="sky-settings-options-list">
-                                                    <button type="button" className={`sky-settings-option ${isAbrEnabled ? "selected" : ""}`} onClick={() => handleSelectQuality("auto")}>
-                                                        <span>Auto (Adattiva)</span>
-                                                        {isAbrEnabled && <span className="material-symbols-rounded check-icon">check</span>}
-                                                    </button>
-                                                    {videoQualities.map(q => (
-                                                        <button key={q.id || q.label} type="button" className={`sky-settings-option ${!isAbrEnabled && q.active ? "selected" : ""}`} onClick={() => handleSelectQuality(q)}>
-                                                            <span>{q.label}</span>
-                                                            {!isAbrEnabled && q.active && <span className="material-symbols-rounded check-icon">check</span>}
-                                                        </button>
-                                                    ))}
-                                                </div>
-                                            </div>
-
-                                            {audioTracks.length > 0 && (
-                                                <div className="sky-settings-menu-section">
-                                                    <div className="sky-settings-section-title">
-                                                        <span className="material-symbols-rounded">audiotrack</span>
-                                                        <span>Traccia Audio</span>
-                                                    </div>
-                                                    <div className="sky-settings-options-list">
-                                                        {audioTracks.map(a => (
-                                                            <button key={a.id || a.language} type="button" className={`sky-settings-option ${selectedAudioLang === a.language ? "selected" : ""}`} onClick={() => handleSelectAudio(a.language)}>
-                                                                <span>{a.language.toUpperCase()} {a.role ? `(${a.role})` : ""}</span>
-                                                                {selectedAudioLang === a.language && <span className="material-symbols-rounded check-icon">check</span>}
-                                                            </button>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            )}
-
-                                            {textTracks.length > 0 && (
-                                                <div className="sky-settings-menu-section">
-                                                    <div className="sky-settings-section-title">
-                                                        <span className="material-symbols-rounded">subtitles</span>
-                                                        <span>Sottotitoli</span>
-                                                    </div>
-                                                    <div className="sky-settings-options-list">
-                                                        <button type="button" className={`sky-settings-option ${!isTextTrackEnabled ? "selected" : ""}`} onClick={() => handleToggleSubtitles("off")}>
-                                                            <span>Disattivati</span>
-                                                            {!isTextTrackEnabled && <span className="material-symbols-rounded check-icon">check</span>}
-                                                        </button>
-                                                        {textTracks.map(t => (
-                                                            <button key={t.id || t.language} type="button" className={`sky-settings-option ${isTextTrackEnabled && selectedTextLang === t.language ? "selected" : ""}`} onClick={() => handleToggleSubtitles(t)}>
-                                                                <span>{t.language.toUpperCase()}</span>
-                                                                {isTextTrackEnabled && selectedTextLang === t.language && <span className="material-symbols-rounded check-icon">check</span>}
-                                                            </button>
-                                                        ))}
-                                                    </div>
-                                                </div>
-                                            )}
-
-                                            <div className="sky-settings-menu-footer">
-                                                <button type="button" className="sky-settings-ext-btn" onClick={() => { setIsVideoSettingsOpen(false); setIsSettingsOpen(true); }}>
-                                                    <span className="material-symbols-rounded">settings</span>
-                                                    <span>Impostazioni Tecniche Generali</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    )}
-                                </div>
+                                <button
+                                    type="button"
+                                    className="sky-modern-btn icon-only"
+                                    onClick={() => setIsSettingsOpen(true)}
+                                    title="Impostazioni Tecniche Generali"
+                                >
+                                    <span className="material-symbols-rounded">settings</span>
+                                </button>
 
                                 <button type="button" className="sky-channels-trigger-btn" onClick={() => setIsSidebarOpen(true)} title="Mostra tutti gli eventi e canali correlati">
                                     <i className="fas fa-list-ul" />
@@ -858,8 +570,15 @@ export default function EventoPlayerPage() {
                                     </button>
                                 </div>
 
-                                <button type="button" className="sky-modern-btn icon-only" onClick={toggleFullscreen} title="Schermo intero (f)">
-                                    <span className="material-symbols-rounded">fullscreen</span>
+                                <button
+                                    type="button"
+                                    className="sky-modern-btn icon-only"
+                                    onClick={toggleFullscreen}
+                                    title={isFullscreen ? "Esci da schermo intero (f)" : "Schermo intero (f)"}
+                                >
+                                    <span className="material-symbols-rounded">
+                                        {isFullscreen ? "fullscreen_exit" : "fullscreen"}
+                                    </span>
                                 </button>
                             </div>
                         </div>
