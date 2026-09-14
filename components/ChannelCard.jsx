@@ -1,8 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState, useRef, useCallback } from "react";
 import Link from "next/link";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { getChannelSlug } from "@/lib/slug";
+import { getTechSettings } from "@/lib/settings";
+
+const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
 
 function getDynamicColor(str) {
     if (!str) return "hsl(210, 80%, 60%)";
@@ -14,6 +17,57 @@ function getDynamicColor(str) {
     return `hsl(${hue}, 80%, 60%)`;
 }
 
+// Costruisce l'URL per l'estensione Chrome (stesso meccanismo di /sky e /eventi)
+function buildPreviewUrl(channel) {
+    const baseUrl = (channel.url || channel.mpd || "").trim();
+    if (!baseUrl || !channel.kid_key) return null;
+
+    let extId = DEFAULT_EXT_ID;
+    try {
+        const tech = getTechSettings();
+        if (tech.extensionId) extId = tech.extensionId;
+    } catch(e) {}
+
+    const isTsStream = baseUrl.toLowerCase().includes(".ts");
+    if (isTsStream) return null; // preview non supportato per ts
+
+    const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
+    const parts = [];
+
+    // ClearKey DRM (ck=)
+    const rawKey = channel.kid_key || "";
+    if (rawKey && rawKey.includes(":")) {
+        const ckObj = {};
+        rawKey.split(",").forEach(pair => {
+            const p = pair.split(":");
+            if (p.length === 2 && p[0].trim() && p[1].trim()) {
+                ckObj[p[0].trim()] = p[1].trim();
+            }
+        });
+        if (Object.keys(ckObj).length > 0) {
+            try { parts.push("ck=" + encodeURIComponent(btoa(JSON.stringify(ckObj)))); } catch(e) {}
+        }
+    }
+
+    // Headers (ua, referer, dazn-token)
+    try {
+        const headersObj = {};
+        if (channel.ua) headersObj["user-agent"] = channel.ua;
+        if (channel.dazn_token) {
+            headersObj["referer"] = "https://www.dazn.com/";
+            headersObj["origin"] = "https://www.dazn.com";
+            headersObj["dazn-token"] = channel.dazn_token;
+        }
+        if (Object.keys(headersObj).length > 0) {
+            const b64 = btoa(unescape(encodeURIComponent(JSON.stringify(headersObj))));
+            parts.push("headers=" + encodeURIComponent(b64));
+        }
+    } catch(e) {}
+
+    const sep = baseUrl.includes("?") ? "&" : "?";
+    return extPrefix + baseUrl + (parts.length > 0 ? sep + parts.join("&") : "");
+}
+
 function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const slug = getChannelSlug(channel);
     const progInfo = getCurrentProgramInfo(channel.epg);
@@ -23,37 +77,52 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const isTestJsonEvent = channel.isTestJson || (channel.group && channel.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel.eventSlug);
     const logoUrl = isTestJsonEvent ? "/logos/dazn.png" : getChannelLogoUrl(channel);
     const isSky = !isTestJsonEvent && (
-        channel.provider === "SKY" || 
+        channel.provider === "SKY" ||
         (channel.group && (channel.group.includes("Sky") || channel.group === "Sky Cinema" || channel.group === "Sky Bambini")) ||
         (channel.title && channel.title.toLowerCase().includes("sky"))
     );
 
     const cleanSrc = channel.skySource ? (channel.skySource.includes("sky2") ? "sky2" : "") : "";
-    const targetHref = isVod 
-        ? `/vod/info/${channel.tmdbId || String(channel.id).replace(/^vod_(movie|tv)_/, "")}?type=${channel.vodType || "movie"}` 
+    const targetHref = isVod
+        ? `/vod/info/${channel.tmdbId || String(channel.id).replace(/^vod_(movie|tv)_/, "")}?type=${channel.vodType || "movie"}`
         : (isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`);
 
     const isDazn1Channel = (channel.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
     const dynColor = getDynamicColor(channel.title);
 
-    // Risoluzione della categoria di appartenenza della locandina:
     const rawCategory = categoryName || channel.group || channel.category || "";
     let categoryLabel = rawCategory;
     if (isVod) {
         categoryLabel = channel.rating ? `★ ${channel.rating} • ${channel.group || "VOD"}` : (channel.group || "VOD");
     } else if (!categoryLabel || categoryLabel.toUpperCase() === "DAZN") {
-        if (channel.title && channel.title.toLowerCase().includes("supertennis")) {
-            categoryLabel = "SuperTennis";
-        } else if (channel.title && channel.title.toLowerCase().includes("eurosport")) {
-            categoryLabel = "Eurosport";
-        } else if (isSky) {
-            categoryLabel = "Sky";
-        } else {
-            categoryLabel = channel.group || "Eventi";
-        }
+        if (channel.title && channel.title.toLowerCase().includes("supertennis")) categoryLabel = "SuperTennis";
+        else if (channel.title && channel.title.toLowerCase().includes("eurosport")) categoryLabel = "Eurosport";
+        else if (isSky) categoryLabel = "Sky";
+        else categoryLabel = channel.group || "Eventi";
     }
 
+    // --- HOVER LIVE PREVIEW ---
+    const [previewUrl, setPreviewUrl] = useState(null);
+    const hoverTimerRef = useRef(null);
+    const canPreview = !isVod && Boolean(channel.url || channel.mpd) && Boolean(channel.kid_key);
+
+    const handleMouseEnter = useCallback(() => {
+        if (!canPreview) return;
+        hoverTimerRef.current = setTimeout(() => {
+            const url = buildPreviewUrl(channel);
+            if (url) setPreviewUrl(url);
+        }, 3000);
+    }, [canPreview, channel]);
+
+    const handleMouseLeave = useCallback(() => {
+        clearTimeout(hoverTimerRef.current);
+        setPreviewUrl(null);
+    }, []);
+    // --------------------------
+
     const handleClick = () => {
+        clearTimeout(hoverTimerRef.current);
+        setPreviewUrl(null);
         try {
             if (isVod) {
                 sessionStorage.setItem("nmdz_vodItem", JSON.stringify(channel));
@@ -73,6 +142,8 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
             prefetch={true}
             className={`now-card-wrapper home-card-mode ${isVod ? "vod-poster-card" : ""}`}
             onClick={handleClick}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             style={{ textDecoration: "none", color: "inherit", WebkitTapHighlightColor: "transparent" }}
         >
             <div className={`now-card ${!hasImage ? "now-card-no-image" : ""}`}>
@@ -124,9 +195,32 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                         <div className="now-card-progress-bar" style={{ width: `${progInfo.percentuale}%` }}></div>
                     </div>
                 )}
-                <div className="now-card-play-icon">
-                    <i className="fa fa-play" aria-hidden="true" style={{ marginLeft: "3px" }}></i>
-                </div>
+
+                {/* Live Preview Iframe — appare dopo 3s di hover */}
+                {previewUrl && (
+                    <div className="card-live-preview-overlay">
+                        <iframe
+                            src={previewUrl}
+                            className="card-live-preview-iframe"
+                            allow="autoplay; encrypted-media; fullscreen"
+                            allowFullScreen
+                            title={`Preview ${channel.title}`}
+                        />
+                        <div className="card-live-preview-badge">
+                            <span className="card-live-preview-dot" />
+                            LIVE
+                            <span className="card-live-preview-mute">
+                                <i className="fas fa-volume-xmark" />
+                            </span>
+                        </div>
+                    </div>
+                )}
+
+                {!previewUrl && (
+                    <div className="now-card-play-icon">
+                        <i className="fa fa-play" aria-hidden="true" style={{ marginLeft: "3px" }}></i>
+                    </div>
+                )}
             </div>
 
             <div className="now-card-info-external">
@@ -154,10 +248,10 @@ function arePropsEqual(prevProps, nextProps) {
     if (p.ora !== n.ora) return false;
     if (p.image !== n.image || p.poster !== n.poster) return false;
     if (p.url !== n.url || p.mpd !== n.mpd) return false;
+    if (p.kid_key !== n.kid_key) return false;
     if (p.skySource !== n.skySource) return false;
     if (p.isVod !== n.isVod || p.tmdbId !== n.tmdbId || p.vodType !== n.vodType) return false;
-    
-    // Compare epg length / first item progress
+
     const pEpg = p.epg || [];
     const nEpg = n.epg || [];
     if (pEpg.length !== nEpg.length) return false;
@@ -170,3 +264,4 @@ function arePropsEqual(prevProps, nextProps) {
 }
 
 export default React.memo(ChannelCard, arePropsEqual);
+

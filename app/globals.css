@@ -3156,6 +3156,76 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     transform: translate(-50%, -50%) scale(1);
 }
 
+/* ==========================================================================
+   CARD LIVE PREVIEW (hover 3s → iframe canale live)
+   ========================================================================== */
+.card-live-preview-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    border-radius: inherit;
+    overflow: hidden;
+    animation: cardPreviewFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    background: #000;
+}
+
+@keyframes cardPreviewFadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.card-live-preview-iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    pointer-events: none; /* il click naviga normalmente */
+}
+
+/* Badge LIVE + mute in basso a sinistra */
+.card-live-preview-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #ff3b30;
+    pointer-events: none;
+    z-index: 21;
+}
+
+.card-live-preview-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ff3b30;
+    display: inline-block;
+    animation: livePulseDot 1.4s ease-in-out infinite;
+}
+
+@keyframes livePulseDot {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.3; }
+}
+
+.card-live-preview-mute {
+    margin-left: 5px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.7rem;
+}
+
 .home-card img { 
     height: 40%; 
     max-width: 75%; 
