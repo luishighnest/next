@@ -10960,10 +10960,12 @@ body:has(.sky-app) {
     border-radius: 999px;
 }
 
-/* 5. Descrizione: max 2 righe, colore attenuato elegante, mb 24px */
+/* 5. Descrizione: fissa a 2 righe (min-height e line-clamp-2) per bloccare verticalmente i CTA, mb 24px */
 .now-hero-synopsis {
     font-size: 0.92rem;
     line-height: 1.48;
+    min-height: calc(0.92rem * 1.48 * 2); /* ~2.72rem, spazio esatto per 2 righe */
+    max-height: calc(0.92rem * 1.48 * 2);
     color: rgba(255, 255, 255, 0.70);
     display: -webkit-box;
     -webkit-line-clamp: 2;
