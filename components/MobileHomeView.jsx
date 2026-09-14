@@ -1,8 +1,7 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect, useDeferredValue } from "react";
 import MobileHeader from "./MobileHeader";
 import MobileBottomNav from "./MobileBottomNav";
-import MobileHomeHero from "./MobileHomeHero";
 import SubCategoryChips from "./SubCategoryChips";
 import SearchView from "./SearchView";
 import ChannelCard from "./ChannelCard";
@@ -54,12 +53,7 @@ export default function MobileHomeView({
                 isSearchOpen={isSearchOpen}
             />
 
-            {/* 2. Hero Ottimizzata per Mobile (solo su tab all/home e senza ricerca aperta) */}
-            {!isSearchOpen && filter === "all" && (
-                <MobileHomeHero categories={categories} />
-            )}
-
-            {/* 3. Contenuto Principale con Sottocategorie & Sezioni Streaming */}
+            {/* 2. Contenuto Principale con Sottocategorie & Sezioni Streaming */}
             <main className="mobile-main-content">
                 {/* Chip sottocategorie con scorrimento orizzontale touch fluido */}
                 {!isSearchOpen && filter !== "all" && currentSubCategories.length > 0 && (
