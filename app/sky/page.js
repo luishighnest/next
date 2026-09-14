@@ -554,34 +554,6 @@ function SkyContent() {
         };
     }, [currentSource]);
 
-    // Fit player 16:9
-    useEffect(() => {
-        function fitPlayer() {
-            const z = playerZoneRef.current;
-            const wWrap = playerWrapRef.current;
-            const nRow = nowRowRef.current;
-            if (!z || !wWrap) return;
-            const w = z.clientWidth;
-            const h = z.clientHeight;
-            if (!w || !h) return;
-            const r = 16 / 9;
-            let targetW = w;
-            let targetH = w / r;
-            if (targetH > h) {
-                targetH = h;
-                targetW = h * r;
-            }
-            const finalWidth = Math.floor(targetW) + "px";
-            const finalHeight = Math.floor(targetH) + "px";
-            wWrap.style.width = finalWidth;
-            wWrap.style.height = finalHeight;
-            if (nRow) nRow.style.width = finalWidth;
-        }
-
-        fitPlayer();
-        window.addEventListener("resize", fitPlayer);
-        return () => window.removeEventListener("resize", fitPlayer);
-    }, [selectedChannel]);
 
     // Trova programma EPG
     const getCurrentProgram = (channelName) => {
