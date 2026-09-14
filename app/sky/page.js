@@ -482,17 +482,18 @@ function SkyContent() {
                         servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 15,
-                        rebufferingGoal: 4,
-                        bufferBehind: 60,
-                        lowLatencyMode: false,
-                        alwaysStreamFullSegments: true,
+                        bufferingGoal: 1.5,
+                        rebufferingGoal: 0.5,
+                        bufferBehind: 30,
+                        lowLatencyMode: true,
+                        inaccurateManifestTolerance: 0,
+                        alwaysStreamFullSegments: false,
                         retryParameters: {
-                            maxAttempts: 6,
-                            baseDelay: 1000,
-                            backoffFactor: 1.5,
-                            fuzzFactor: 0.5,
-                            timeout: 10000
+                            maxAttempts: 4,
+                            baseDelay: 500,
+                            backoffFactor: 1.2,
+                            fuzzFactor: 0.2,
+                            timeout: 5000
                         }
                     },
                     manifest: {
@@ -500,11 +501,11 @@ function SkyContent() {
                             ignoreMinBufferTime: true
                         },
                         retryParameters: {
-                            maxAttempts: 6,
-                            baseDelay: 1000,
-                            backoffFactor: 1.5,
-                            fuzzFactor: 0.5,
-                            timeout: 10000
+                            maxAttempts: 4,
+                            baseDelay: 500,
+                            backoffFactor: 1.2,
+                            fuzzFactor: 0.2,
+                            timeout: 5000
                         }
                     },
                     abr: {
@@ -765,7 +766,11 @@ function SkyContent() {
                         const stillExists = channelList.find(c => c.slug === prevSelected.slug || c.name === prevSelected.name);
                         if (stillExists) {
                             // Se i parametri chiave non sono cambiati, mantieni esattamente la stessa referenza di memoria prevSelected!
-                            if (prevSelected.url === stillExists.url && prevSelected.kid_key === stillExists.kid_key) {
+                            const prevUrl = (prevSelected.url || prevSelected.mpd || "").trim();
+                            const stillUrl = (stillExists.url || stillExists.mpd || "").trim();
+                            const prevKey = (prevSelected.kid_key || prevSelected.key || "").trim();
+                            const stillKey = (stillExists.kid_key || stillExists.key || "").trim();
+                            if (prevUrl === stillUrl && prevKey === stillKey) {
                                 return prevSelected;
                             }
                             return stillExists;
