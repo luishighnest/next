@@ -159,15 +159,15 @@ export default function Navbar({
             setIsScrolled(currentScrollY > 15);
 
             // Se siamo vicini alla cima della pagina, mostra sempre la navbar
-            if (currentScrollY <= 25) {
+            if (currentScrollY <= 40) {
                 setIsNavHidden(false);
             } 
-            // Se scrolliamo verso il BASSO (con almeno 4px di movimento effettivo)
-            else if (delta > 4 && currentScrollY > 35) {
+            // Se scrolliamo verso il BASSO (con soglia calibrata per evitare scatti nervosi)
+            else if (delta > 8 && currentScrollY > 70) {
                 setIsNavHidden(true);
             } 
-            // Se scrolliamo verso l'ALTO (con almeno 4px di movimento effettivo)
-            else if (delta < -4) {
+            // Se scrolliamo verso l'ALTO
+            else if (delta < -8) {
                 setIsNavHidden(false);
             }
 
