@@ -3165,13 +3165,17 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     z-index: 20;
     border-radius: inherit;
     overflow: hidden;
-    animation: cardPreviewFadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
     background: #000;
+    /* Fase 1: invisibile — l'iframe carica in background senza mostrare i controls */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@keyframes cardPreviewFadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+/* Fase 2: video pronto — fade-in fluido */
+.card-live-preview-overlay.is-visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .card-live-preview-iframe {

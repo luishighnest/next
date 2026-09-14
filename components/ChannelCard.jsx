@@ -101,28 +101,40 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         else categoryLabel = channel.group || "Eventi";
     }
 
-    // --- HOVER LIVE PREVIEW ---
+    // --- HOVER LIVE PREVIEW (2 fasi) ---
+    // Fase 1 (3s): monta l'iframe invisibile → inizia a caricare stream + DRM
+    // Fase 2 (+1.5s): mostra il video (estensione già avviata, controls nascosti)
     const [previewUrl, setPreviewUrl] = useState(null);
+    const [previewVisible, setPreviewVisible] = useState(false);
     const hoverTimerRef = useRef(null);
+    const visibleTimerRef = useRef(null);
     const canPreview = !isVod && Boolean(channel.url || channel.mpd) && Boolean(channel.kid_key);
 
     const handleMouseEnter = useCallback(() => {
         if (!canPreview) return;
         hoverTimerRef.current = setTimeout(() => {
             const url = buildPreviewUrl(channel);
-            if (url) setPreviewUrl(url);
+            if (!url) return;
+            setPreviewUrl(url);          // fase 1: iframe invisibile carica in bg
+            visibleTimerRef.current = setTimeout(() => {
+                setPreviewVisible(true); // fase 2: fade-in video
+            }, 1500);
         }, 3000);
     }, [canPreview, channel]);
 
     const handleMouseLeave = useCallback(() => {
         clearTimeout(hoverTimerRef.current);
+        clearTimeout(visibleTimerRef.current);
         setPreviewUrl(null);
+        setPreviewVisible(false);
     }, []);
-    // --------------------------
+    // ------------------------------------
 
     const handleClick = () => {
         clearTimeout(hoverTimerRef.current);
+        clearTimeout(visibleTimerRef.current);
         setPreviewUrl(null);
+        setPreviewVisible(false);
         try {
             if (isVod) {
                 sessionStorage.setItem("nmdz_vodItem", JSON.stringify(channel));
@@ -196,9 +208,9 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </div>
                 )}
 
-                {/* Live Preview Iframe — appare dopo 3s di hover */}
+                {/* Live Preview Iframe — fase 1: iframe invisibile carica; fase 2: fade-in */}
                 {previewUrl && (
-                    <div className="card-live-preview-overlay">
+                    <div className={`card-live-preview-overlay${previewVisible ? " is-visible" : ""}`}>
                         <iframe
                             src={previewUrl}
                             className="card-live-preview-iframe"
@@ -206,17 +218,19 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                             allowFullScreen
                             title={`Preview ${channel.title}`}
                         />
-                        <div className="card-live-preview-badge">
-                            <span className="card-live-preview-dot" />
-                            LIVE
-                            <span className="card-live-preview-mute">
-                                <i className="fas fa-volume-xmark" />
-                            </span>
-                        </div>
+                        {previewVisible && (
+                            <div className="card-live-preview-badge">
+                                <span className="card-live-preview-dot" />
+                                LIVE
+                                <span className="card-live-preview-mute">
+                                    <i className="fas fa-volume-xmark" />
+                                </span>
+                            </div>
+                        )}
                     </div>
                 )}
 
-                {!previewUrl && (
+                {!previewVisible && (
                     <div className="now-card-play-icon">
                         <i className="fa fa-play" aria-hidden="true" style={{ marginLeft: "3px" }}></i>
                     </div>
