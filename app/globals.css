@@ -10803,28 +10803,30 @@ body:has(.sky-app) {
     box-sizing: border-box;
 }
 
-/* 2. Logo Canale: moderatamente ingrandito, integrato, senza dominare */
+/* 2. Logo Canale: compatto, raffinato e integrato stile NOW (h: 26px, non dominante) */
 .now-hero-brand-top {
     display: flex;
     align-items: center;
-    height: 52px;
+    height: 32px;
     width: 100%;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 
 .now-hero-channel-badge-logo {
-    height: 48px;
+    height: 26px;
     width: auto;
-    max-width: 185px;
+    max-width: 130px;
     object-fit: contain;
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.6));
+    object-position: left center;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.7));
 }
 
 .now-hero-channel-label {
-    font-size: 1.15rem;
+    font-size: 0.82rem;
     font-weight: 700;
-    color: #ffffff;
-    letter-spacing: -0.01em;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
     background: rgba(255, 255, 255, 0.08);
     padding: 6px 14px;
     border-radius: 6px;
