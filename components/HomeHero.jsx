@@ -228,25 +228,57 @@ export default function HomeHero({ categories = [] }) {
     const [isInfoOpen, setIsInfoOpen] = useState(false);
 
     const nextSlide = useCallback(() => {
-        if (heroItems.length <= 1) return;
-        setActiveIndex(prev => (prev + 1) % heroItems.length);
-    }, [heroItems.length]);
+        setHeroItems(items => {
+            if (!items || items.length <= 1) return items;
+            setActiveIndex(prev => (prev + 1) % items.length);
+            return items;
+        });
+    }, []);
 
     const prevSlide = useCallback(() => {
-        if (heroItems.length <= 1) return;
-        setActiveIndex(prev => (prev - 1 + heroItems.length) % heroItems.length);
-    }, [heroItems.length]);
+        setHeroItems(items => {
+            if (!items || items.length <= 1) return items;
+            setActiveIndex(prev => (prev - 1 + items.length) % items.length);
+            return items;
+        });
+    }, []);
 
+    // Timer robusto per il cambio canale automatico (6.5 secondi)
     useEffect(() => {
-        if (isHovered || isInfoOpen || heroItems.length <= 1) {
+        if (heroItems.length <= 1 || isInfoOpen) {
             if (timerRef.current) clearInterval(timerRef.current);
             return;
         }
+
+        // Se l'utente è con il mouse sopra la hero, mettiamo in pausa il timer
+        if (isHovered) {
+            if (timerRef.current) clearInterval(timerRef.current);
+            return;
+        }
+
         timerRef.current = setInterval(() => {
             nextSlide();
         }, 6500);
+
         return () => {
             if (timerRef.current) clearInterval(timerRef.current);
+        };
+    }, [heroItems.length, isInfoOpen, isHovered, activeIndex, nextSlide]);
+
+    // Gestione cambio scheda del browser: ripristina la fluidità quando l'utente torna sulla pagina
+    useEffect(() => {
+        const handleVisibilityChange = () => {
+            if (!document.hidden && !isHovered && !isInfoOpen && heroItems.length > 1) {
+                if (timerRef.current) clearInterval(timerRef.current);
+                timerRef.current = setInterval(() => {
+                    nextSlide();
+                }, 6500);
+            }
+        };
+
+        document.addEventListener("visibilitychange", handleVisibilityChange);
+        return () => {
+            document.removeEventListener("visibilitychange", handleVisibilityChange);
         };
     }, [isHovered, isInfoOpen, heroItems.length, nextSlide]);
 
@@ -267,8 +299,6 @@ export default function HomeHero({ categories = [] }) {
     return (
         <section
             className="now-hero-stage"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
             aria-label="In primo piano su Sky"
         >
             {/* Sfondo adattivo maestoso a tutto schermo con supporto Sky Hero, Poster TMDB e Sport */}
@@ -449,6 +479,9 @@ export default function HomeHero({ categories = [] }) {
                                         <div 
                                             key={isCur ? `progress-${idx}-${activeIndex}` : `idle-${idx}`}
                                             className="now-hero-segment-fill" 
+                                            onAnimationEnd={() => {
+                                                if (isCur) nextSlide();
+                                            }}
                                         />
                                     </div>
                                 </button>
