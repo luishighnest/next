@@ -72,10 +72,21 @@ export default function EventoPlayerPage() {
     });
     const [loading, setLoading] = useState(() => !channel);
     const [mounted, setMounted] = useState(false);
+    const [iframeLoaded, setIframeLoaded] = useState(false);
+    const [transPoster, setTransPoster] = useState(() => {
+        if (typeof window !== "undefined") {
+            try { return sessionStorage.getItem("nmdz_transition_poster") || ""; } catch(e) {}
+        }
+        return "";
+    });
 
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    useEffect(() => {
+        setIframeLoaded(false);
+    }, [selectedSource, slug]);
 
     useEffect(() => {
         let isMounted = true;
@@ -370,14 +381,70 @@ export default function EventoPlayerPage() {
 
             <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "86px 16px 0 16px" }}>
                 <div className="event-main-stage">
-                    <div className="player-wrapper">
+                    <div className="player-wrapper" style={{ position: "relative", overflow: "hidden" }}>
+                        {Boolean(transPoster || channel?.image) && !iframeLoaded && (
+                            <div
+                                style={{
+                                    position: "absolute",
+                                    inset: 0,
+                                    zIndex: 1,
+                                    pointerEvents: "none",
+                                    overflow: "hidden",
+                                    transition: "opacity 0.4s ease"
+                                }}
+                            >
+                                <img
+                                    src={transPoster || channel?.image}
+                                    alt=""
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover",
+                                        filter: "brightness(0.48) contrast(1.05)"
+                                    }}
+                                />
+                                <div
+                                    style={{
+                                        position: "absolute",
+                                        inset: 0,
+                                        background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.88) 100%)"
+                                    }}
+                                />
+                                <div
+                                    style={{
+                                        position: "absolute",
+                                        top: "50%",
+                                        left: "50%",
+                                        transform: "translate(-50%, -50%)",
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        alignItems: "center",
+                                        gap: "12px"
+                                    }}
+                                >
+                                    <div className="sky-spinner" style={{ width: "40px", height: "40px", borderWidth: "3px" }} />
+                                </div>
+                            </div>
+                        )}
+
                         <iframe
                             id="player-frame"
                             src={getIframeUrl()}
                             allowFullScreen
                             allow="autoplay; encrypted-media; fullscreen"
                             title="Player"
-                            style={{ display: "block", width: "100%", height: "100%", border: "none", background: "#000000", transition: "opacity 0.5s ease-in-out" }}
+                            onLoad={() => {
+                                setTimeout(() => setIframeLoaded(true), 250);
+                            }}
+                            style={{
+                                display: "block",
+                                width: "100%",
+                                height: "100%",
+                                border: "none",
+                                background: "#000000",
+                                opacity: iframeLoaded ? 1 : 0.85,
+                                transition: "opacity 0.4s ease-in-out"
+                            }}
                         />
                     </div>
 

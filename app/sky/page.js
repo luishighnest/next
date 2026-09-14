@@ -193,10 +193,28 @@ function SkyContent() {
         return initialChannels.length === 0;
     });
     const [mounted, setMounted] = useState(false);
+    const [iframeLoaded, setIframeLoaded] = useState(false);
+    const [transPoster, setTransPoster] = useState(() => {
+        if (typeof window !== "undefined") {
+            try { return sessionStorage.getItem("nmdz_transition_poster") || ""; } catch(e) {}
+        }
+        return "";
+    });
+    const [transLogo, setTransLogo] = useState(() => {
+        if (typeof window !== "undefined") {
+            try { return sessionStorage.getItem("nmdz_transition_logo") || ""; } catch(e) {}
+        }
+        return "";
+    });
 
     useEffect(() => {
         setMounted(true);
     }, []);
+
+    // Resetta iframeLoaded al cambio canale per transizione fluida
+    useEffect(() => {
+        setIframeLoaded(false);
+    }, [selectedChannel]);
 
     const playerWrapRef = useRef(null);
     const playerZoneRef = useRef(null);
@@ -664,6 +682,53 @@ function SkyContent() {
                 <section className="sky-right">
                     <div className="sky-player-zone" ref={playerZoneRef}>
                         <div className="sky-player-wrap" ref={playerWrapRef}>
+                            {/* Backdrop cinematico di transizione: evita schermate nere prima dell'avvio video */}
+                            {Boolean(transPoster || currentEpg?.immagine || selectedChannel?.image) && !iframeLoaded && (
+                                <div
+                                    className="sky-player-backdrop-preload"
+                                    style={{
+                                        position: "absolute",
+                                        inset: 0,
+                                        zIndex: 1,
+                                        pointerEvents: "none",
+                                        overflow: "hidden",
+                                        transition: "opacity 0.4s ease"
+                                    }}
+                                >
+                                    <img
+                                        src={transPoster || currentEpg?.immagine || selectedChannel?.image}
+                                        alt=""
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            objectFit: "cover",
+                                            filter: "brightness(0.5) contrast(1.05)"
+                                        }}
+                                    />
+                                    <div
+                                        style={{
+                                            position: "absolute",
+                                            inset: 0,
+                                            background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%)"
+                                        }}
+                                    />
+                                    <div
+                                        style={{
+                                            position: "absolute",
+                                            top: "50%",
+                                            left: "50%",
+                                            transform: "translate(-50%, -50%)",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            gap: "12px"
+                                        }}
+                                    >
+                                        <div className="sky-spinner" style={{ width: "38px", height: "38px", borderWidth: "3px" }} />
+                                    </div>
+                                </div>
+                            )}
+
                             {loading && !selectedChannel ? (
                                 <div className="sky-loader">
                                     <div className="sky-spinner"></div>
@@ -676,6 +741,13 @@ function SkyContent() {
                                     allow="autoplay; encrypted-media; fullscreen"
                                     allowFullScreen
                                     title="Sky Player"
+                                    onLoad={() => {
+                                        setTimeout(() => setIframeLoaded(true), 250);
+                                    }}
+                                    style={{
+                                        opacity: iframeLoaded ? 1 : 0.85,
+                                        transition: "opacity 0.4s ease"
+                                    }}
                                 />
                             )}
                         </div>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { getChannelSlug } from "@/lib/slug";
 import { loadShakaScript, parseClearKeys } from "@/lib/shakaLoader";
+import { useTransitionRouter } from "@/components/TransitionProvider";
 
 function getDynamicColor(str) {
     if (!str) return "hsl(210, 80%, 60%)";
@@ -232,13 +233,17 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         setIsReadyToDisplay(false);
     };
 
-    const handleClick = () => {
+    const { startTransitionToPlayer } = useTransitionRouter();
+    const cardContainerRef = useRef(null);
+
+    const handleClick = (e) => {
         if (hoverTimerRef.current) {
             clearTimeout(hoverTimerRef.current);
             hoverTimerRef.current = null;
         }
         setIsBuffering(false);
         setIsReadyToDisplay(false);
+
         try {
             if (isVod) {
                 sessionStorage.setItem("nmdz_vodItem", JSON.stringify(channel));
@@ -249,11 +254,28 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                 sessionStorage.setItem("daznCustomChannel", JSON.stringify(channel));
             }
         } catch(e) {}
+
         if (onCardClick) onCardClick();
+
+        // Se non è un link esterno speciale o VOD, avvia la transizione fluida cinematografica
+        if (!isVod && cardContainerRef.current) {
+            e.preventDefault();
+            const rect = cardContainerRef.current.getBoundingClientRect();
+            startTransitionToPlayer({
+                cardRect: rect,
+                targetHref,
+                posterImg: cardImgUrl || "",
+                logoImg: logoUrl || "",
+                title: progInfo ? progInfo.titolo : channel.title,
+                group: categoryLabel,
+                ora: channel.ora || (progInfo ? progInfo.oraInizio : "")
+            });
+        }
     };
 
     return (
         <Link
+            ref={cardContainerRef}
             href={targetHref}
             prefetch={true}
             className={`now-card-wrapper home-card-mode ${isVod ? "vod-poster-card" : ""}`}

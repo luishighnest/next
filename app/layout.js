@@ -1,5 +1,6 @@
 import "./globals.css";
 import { DeviceProvider } from "@/components/DeviceProvider";
+import { TransitionProvider } from "@/components/TransitionProvider";
 
 export const metadata = {
     title: "NMDZ - Live TV & Sport",
@@ -32,7 +33,9 @@ export default function RootLayout({ children }) {
             </head>
             <body>
                 <DeviceProvider>
-                    {children}
+                    <TransitionProvider>
+                        {children}
+                    </TransitionProvider>
                 </DeviceProvider>
             </body>
         </html>

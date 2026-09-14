@@ -12736,3 +12736,27 @@ body:has(.sky-app) {
     gap: 20px;
 }
 
+/* ============================================================
+   GLOBAL EXPANDING CARD CINEMATIC TRANSITION
+   ============================================================ */
+.global-expanding-transition-portal {
+    opacity: 1;
+    transition: opacity 0.32s cubic-bezier(0.16, 1, 0.3, 1), background 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity;
+}
+
+.global-expanding-transition-portal.is-fading-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.expanding-card-clone {
+    will-change: top, left, width, height, border-radius, transform;
+}
+
+@keyframes livePulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+

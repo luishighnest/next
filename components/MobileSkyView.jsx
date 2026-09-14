@@ -23,6 +23,17 @@ export default function MobileSkyView({
 }) {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const searchInputRef = useRef(null);
+    const [iframeLoaded, setIframeLoaded] = useState(false);
+    const [transPoster, setTransPoster] = useState(() => {
+        if (typeof window !== "undefined") {
+            try { return sessionStorage.getItem("nmdz_transition_poster") || ""; } catch(e) {}
+        }
+        return "";
+    });
+
+    useEffect(() => {
+        setIframeLoaded(false);
+    }, [selectedChannel]);
 
     useEffect(() => {
         if (isSearchOpen && searchInputRef.current) {
@@ -82,7 +93,41 @@ export default function MobileSkyView({
 
             {/* 3. Sticky 16:9 Video Player */}
             <div className="mobile-sky-player-sticky">
-                <div className="mobile-sky-player-wrap">
+                <div className="mobile-sky-player-wrap" style={{ position: "relative", overflow: "hidden" }}>
+                    {Boolean(transPoster || currentEpg?.immagine || selectedChannel?.image) && !iframeLoaded && (
+                        <div
+                            style={{
+                                position: "absolute",
+                                inset: 0,
+                                zIndex: 1,
+                                pointerEvents: "none",
+                                overflow: "hidden",
+                                transition: "opacity 0.4s ease"
+                            }}
+                        >
+                            <img
+                                src={transPoster || currentEpg?.immagine || selectedChannel?.image}
+                                alt=""
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    objectFit: "cover",
+                                    filter: "brightness(0.5) contrast(1.05)"
+                                }}
+                            />
+                            <div
+                                style={{
+                                    position: "absolute",
+                                    top: "50%",
+                                    left: "50%",
+                                    transform: "translate(-50%, -50%)"
+                                }}
+                            >
+                                <div className="sky-spinner" style={{ width: "36px", height: "36px", borderWidth: "3px" }} />
+                            </div>
+                        </div>
+                    )}
+
                     {loading && !selectedChannel ? (
                         <div className="mobile-sky-player-loader">
                             <div className="sky-spinner"></div>
@@ -95,6 +140,13 @@ export default function MobileSkyView({
                             allow="autoplay; encrypted-media; fullscreen"
                             allowFullScreen
                             title={selectedChannel?.name || "Sky Player"}
+                            onLoad={() => {
+                                setTimeout(() => setIframeLoaded(true), 250);
+                            }}
+                            style={{
+                                opacity: iframeLoaded ? 1 : 0.85,
+                                transition: "opacity 0.4s ease"
+                            }}
                         />
                     )}
                 </div>
