@@ -7724,7 +7724,217 @@ body:has(.sky-app) {
             .sky-volume-slider { width: 50px; }
             .sky-channels-trigger-btn span { display: none; }
             .sky-channels-trigger-btn { padding: 0 12px; }
-            .sky-player-overlay-bottom { padding: 16px 16px 20px; }
+            .sky-player-overlay-bottom { padding: 14px 16px 18px; }
+            .sky-controls-group-left, .sky-controls-group-right { gap: 6px; }
+        }
+
+        /* ── YouTube-style Timeline Overrides ──────────────────────────── */
+        .sky-player-timeline-wrapper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 10px 0 4px;
+            user-select: none;
+        }
+        .sky-player-timeline-track {
+            position: relative;
+            width: 100%;
+            height: 4px;
+            background: rgba(255,255,255,0.18);
+            border-radius: 999px;
+            overflow: visible;
+            transition: height 0.15s cubic-bezier(0.2,0.8,0.2,1);
+        }
+        .sky-player-timeline-wrapper:hover .sky-player-timeline-track {
+            height: 6px;
+        }
+        .sky-player-timeline-buffer {
+            position: absolute;
+            left: 0; top: 0;
+            height: 100%;
+            background: rgba(255,255,255,0.28);
+            border-radius: 999px;
+            pointer-events: none;
+        }
+        .sky-player-timeline-fill {
+            position: absolute;
+            left: 0; top: 0;
+            height: 100%;
+            background: #ff0000;
+            border-radius: 999px;
+            pointer-events: none;
+            transition: width 0.22s linear;
+            box-shadow: none;
+        }
+        .sky-player-timeline-thumb {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%) scale(0);
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+            opacity: 0;
+            transition: opacity 0.15s ease, transform 0.15s cubic-bezier(0.2,0.8,0.2,1);
+            pointer-events: none;
+        }
+        .sky-player-timeline-wrapper:hover .sky-player-timeline-thumb {
+            opacity: 1;
+            transform: translate(-50%,-50%) scale(1);
+        }
+        .sky-player-timeline-labels {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.73rem;
+            font-weight: 600;
+            color: rgba(255,255,255,0.6);
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* ── Volume Slider YT-style ─────────────────────────────────────── */
+        .sky-volume-control {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .sky-volume-slider {
+            width: 72px;
+            height: 4px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: rgba(255,255,255,0.22);
+            border-radius: 999px;
+            outline: none;
+            cursor: pointer;
+            accent-color: #ffffff;
+            transition: height 0.15s ease;
+        }
+        .sky-volume-slider:hover { height: 5px; }
+        .sky-volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #ffffff;
+            cursor: pointer;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.6);
+        }
+        .sky-volume-slider::-moz-range-thumb {
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: #ffffff;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* ── Button hover senza translateY ──────────────────────────────── */
+        .sky-modern-btn:hover {
+            background: rgba(255,255,255,0.20);
+            border-color: rgba(255,255,255,0.32);
+            transform: none;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+        }
+
+        /* ── Switch Sorgente (Standard / WARP) ──────────────────────────── */
+        .event-sources-deck {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .event-source-deck-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            height: 34px;
+            padding: 0 14px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.16);
+            color: rgba(255,255,255,0.85);
+            font-family: 'Outfit','Inter',sans-serif;
+            font-size: 0.78rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.18s ease;
+        }
+        .event-source-deck-btn:hover {
+            background: rgba(255,255,255,0.16);
+            border-color: rgba(255,255,255,0.3);
+            color: #ffffff;
+        }
+        .event-source-deck-btn.active {
+            background: #ffffff;
+            border-color: #ffffff;
+            color: #000000;
+            box-shadow: 0 0 12px rgba(255,255,255,0.3);
+        }
+
+        /* ── Preload Logo Box per /evento ───────────────────────────────── */
+        .evento-preload-logo-box {
+            width: 96px;
+            height: 96px;
+            border-radius: 20px;
+            background: rgba(12,16,28,0.9);
+            border: 1.5px solid rgba(255,255,255,0.18);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.85);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            overflow: hidden;
+        }
+        .evento-preload-channel-name {
+            font-family: 'Outfit','Inter',sans-serif;
+            font-weight: 800;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.9);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+        }
+
+        /* ── Overlay bottom con sfumatura più naturale ───────────────────── */
+        .sky-player-overlay-bottom {
+            position: absolute;
+            left: 0; right: 0; bottom: 0;
+            z-index: 30;
+            padding: 40px 4vw 28px;
+            pointer-events: none;
+            background: linear-gradient(180deg,
+                transparent 0%,
+                rgba(0,0,0,0.08) 20%,
+                rgba(0,0,0,0.50) 52%,
+                rgba(0,0,2,0.90) 82%,
+                rgba(0,0,2,0.97) 100%
+            );
+            transition: opacity 0.22s ease, transform 0.22s ease;
+        }
+        .sky-player-overlay-bottom.idle-hidden {
+            opacity: 0;
+            transform: translateY(8px);
+            pointer-events: none !important;
+        }
+
+        /* ── Controls bar ─────────────────────────────────────────────────── */
+        .sky-player-controls-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            width: 100%;
+            padding-top: 2px;
+        }
+        .sky-controls-group-left,
+        .sky-controls-group-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
 /* ============================================================
