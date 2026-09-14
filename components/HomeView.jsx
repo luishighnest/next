@@ -8,6 +8,8 @@ import ChannelCard from "@/components/ChannelCard";
 import SearchView from "@/components/SearchView";
 import SubCategoryChips from "@/components/SubCategoryChips";
 import HomeHero from "@/components/HomeHero";
+import MobileHomeView from "@/components/MobileHomeView";
+import { useDeviceState } from "@/components/DeviceProvider";
 import { extractSubCategories, extractVodSubCategories } from "@/lib/subcategories";
 import { getTechSettings } from "@/lib/settings";
 
@@ -65,6 +67,9 @@ function HomeViewContent({ defaultTab = "all" }) {
     const deferredSearch = useDeferredValue(search);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [exploreData, setExploreData] = useState(null);
+
+    // Rilevamento Device Deterministico
+    const { isMobile } = useDeviceState();
 
     useEffect(() => {
         setMounted(true);
@@ -436,6 +441,25 @@ function HomeViewContent({ defaultTab = "all" }) {
                 channels: sec.channels.filter(c => matchesChannel(c, q))
             };
         }).filter(sec => sec.channels.length > 0);
+
+    // Se l'utente e' su dispositivo Mobile (rilevato in modo deterministico), renderizza la versione Mobile nativa
+    if (isMobile) {
+        return (
+            <MobileHomeView
+                filter={filter}
+                onFilterChange={handleFilterChange}
+                subFilter={subFilter}
+                onSubFilterChange={handleSelectSubFilter}
+                categories={categories}
+                loading={loading}
+                dynamicSubCategories={dynamicSubCategories}
+                search={search}
+                setSearch={setSearch}
+                isSearchOpen={isSearchOpen}
+                setIsSearchOpen={setIsSearchOpen}
+            />
+        );
+    }
 
     return (
         <div className={`desktop-home ${mounted ? "is-mounted" : "is-mounting"}`} style={{ display: "block", minHeight: "140vh" }}>
