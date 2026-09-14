@@ -10791,15 +10791,34 @@ body:has(.sky-app) {
     box-sizing: border-box;
 }
 
-.now-hero-billboard {
+.now-hero-billboard-container {
+    position: relative;
     width: 580px;
+    max-width: 580px;
+    min-width: 580px;
+    margin-top: auto;
+    margin-bottom: 36px;
+    box-sizing: border-box;
+    min-height: 380px;
+}
+
+.now-hero-billboard {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     max-width: 580px;
     min-width: 580px;
     display: flex;
     flex-direction: column;
-    margin-top: auto;
-    margin-bottom: 36px;
     box-sizing: border-box;
+    transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+    transform: translateY(6px);
+    will-change: opacity, transform;
+}
+
+.now-hero-billboard.active {
+    transform: translateY(0);
 }
 
 /* 1. Logo Canale: Visual Anchor aumentato (+25-30% altezza, 32-34px) con gap inferiore dedicato (16px) */

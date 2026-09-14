@@ -48,8 +48,102 @@ function isHighQualityHeroImage(url) {
     return false;
 }
 
+// Helper per precaricare loghi e immagini artwork in background
+function preloadImage(src) {
+    if (!src || typeof window === "undefined") return;
+    const img = new Image();
+    img.src = src;
+}
+
+// Fallback canali predefiniti ad altissima priorità Sport nel caso in cui sia la prima visita assoluta
+const DEFAULT_HERO_ITEMS = [
+    {
+        channelName: "Sky Sport Uno",
+        category: "Sport",
+        progTitle: "Sky Sport Live",
+        progDesc: "I più grandi eventi di sport in diretta esclusiva su Sky Sport Uno.",
+        progOraInizio: "14:00",
+        progOraFine: "16:00",
+        progImg: "https://ethaneurope.it.imageservice.sky.com/pd-image/10265735-6fe3-4a96-a031-494b990861c7/background/1920",
+        artworkType: "sky-hero",
+        progress: 30,
+        targetHref: "/sky?ch=sky-sport-uno",
+        channelObj: { title: "Sky Sport Uno", name: "Sky Sport Uno", slug: "sky-sport-uno" },
+        logoUrl: "/logos/sksportuno.png"
+    },
+    {
+        channelName: "Sky Sport Calcio",
+        category: "Sport",
+        progTitle: "Serie A Enilive & Calcio Internazionale",
+        progDesc: "Tutte le emozioni del grande calcio in diretta esclusiva.",
+        progOraInizio: "15:00",
+        progOraFine: "17:00",
+        progImg: "https://ethaneurope.it.imageservice.sky.com/pd-image/08cb506c-aabd-4112-afc0-4d763f125337/background/1920",
+        artworkType: "sky-hero",
+        progress: 45,
+        targetHref: "/sky?ch=sky-sport-calcio",
+        channelObj: { title: "Sky Sport Calcio", name: "Sky Sport Calcio", slug: "sky-sport-calcio" },
+        logoUrl: "/logos/sksportcalcio.png"
+    },
+    {
+        channelName: "Sky Sport Tennis",
+        category: "Sport",
+        progTitle: "ATP Masters & Grande Slam",
+        progDesc: "Le grandi sfide del circuito mondiale di tennis in diretta su Sky Sport Tennis.",
+        progOraInizio: "16:00",
+        progOraFine: "18:30",
+        progImg: "https://img-guidatv.org/immagini/tennis.jpeg",
+        artworkType: "sport",
+        progress: 50,
+        targetHref: "/sky?ch=sky-sport-tennis",
+        channelObj: { title: "Sky Sport Tennis", name: "Sky Sport Tennis", slug: "sky-sport-tennis" },
+        logoUrl: "/logos/sksporttennis.png"
+    },
+    {
+        channelName: "Sky Sport F1",
+        category: "Sport",
+        progTitle: "Formula 1 Live Weekend",
+        progDesc: "Tutti i gran premi, le qualifiche e le prove libere di F1 in tempo reale.",
+        progOraInizio: "14:30",
+        progOraFine: "16:30",
+        progImg: "https://ethaneurope.it.imageservice.sky.com/pd-image/cbc934a0-9d28-4e52-bf0b-a819db2f1948/background/1920",
+        artworkType: "sky-hero",
+        progress: 20,
+        targetHref: "/sky?ch=sky-sport-f1",
+        channelObj: { title: "Sky Sport F1", name: "Sky Sport F1", slug: "sky-sport-f1" },
+        logoUrl: "/logos/sksportf1.png"
+    },
+    {
+        channelName: "Sky Cinema Uno",
+        category: "Cinema",
+        progTitle: "Prime Visioni & Grandi Successi",
+        progDesc: "I migliori film nazionali e internazionali in prima visione e qualità cinematografica.",
+        progOraInizio: "15:15",
+        progOraFine: "17:15",
+        progImg: "https://img-guidatv.org/film_new/altro/5ec2c31c3b29343e97a8b656/5ec2c31c3b29343e97a8b656_p_1_rs_300.jpg",
+        artworkType: "sky-hero",
+        progress: 15,
+        targetHref: "/sky?ch=sky-cinema-uno",
+        channelObj: { title: "Sky Cinema Uno", name: "Sky Cinema Uno", slug: "sky-cinema-uno" },
+        logoUrl: "/logos/skycinemauno.png"
+    }
+];
+
+// Inizializzatore sincrono dell'Hero: recupera la cache dalla sessione o dal localStorage per 0ms delay
+function getInitialHeroItems() {
+    if (typeof window === "undefined") return DEFAULT_HERO_ITEMS;
+    try {
+        const stored = sessionStorage.getItem("nmdz_hero_items_v3") || localStorage.getItem("nmdz_hero_items_v3");
+        if (stored) {
+            const parsed = JSON.parse(stored);
+            if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+    } catch (e) {}
+    return DEFAULT_HERO_ITEMS;
+}
+
 export default function HomeHero({ categories = [] }) {
-    const [heroItems, setHeroItems] = useState([]);
+    const [heroItems, setHeroItems] = useState(getInitialHeroItems);
     const [activeIndex, setActiveIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
     const timerRef = useRef(null);
@@ -94,10 +188,14 @@ export default function HomeHero({ categories = [] }) {
                     if (!isSky || !isAllowedCat) return;
                     if (!ch.programmi || ch.programmi.length === 0) return;
 
-                    // FILTRO ESPLICITO: Escludi Sky Sport 4K e canali di servizio non adatti alla Hero
+                    // FILTRO RIGOROSO:
+                    // 1. Escludi Sky Sport 4K
+                    // 2. Escludi Sky Sport Golf
+                    // 3. Escludi canali Sky Sport / Calcio 251-259
                     const is4K = name.includes("4k");
-                    const isSkySportNumbered = /sky\s*sport\s*25\d+/i.test(name) || /sky\s*calcio\s*\d+/i.test(name);
-                    if (is4K || isSkySportNumbered) return;
+                    const isGolf = name.includes("golf");
+                    const isSkySportNumbered = /sky\s*(?:sport|calcio)\s*25\d/i.test(name) || /25[1-9]/i.test(name);
+                    if (is4K || isGolf || isSkySportNumbered) return;
 
                     // Trova il programma in onda in questo momento
                     let currentIdx = -1;
@@ -157,6 +255,8 @@ export default function HomeHero({ categories = [] }) {
                     const cleanSrc = matchedChannelObj?.skySource?.includes("sky2") ? "sky2" : "";
                     const targetHref = "/sky?ch=" + slug + (cleanSrc ? "&src=" + cleanSrc : "");
 
+                    const logo = getChannelLogoUrl({ title: ch.canale });
+
                     const item = {
                         channelName: ch.canale,
                         category: ch.categoria || (cat === "sport" ? "Sport" : "Intrattenimento"),
@@ -169,7 +269,7 @@ export default function HomeHero({ categories = [] }) {
                         progress: progressPct,
                         targetHref,
                         channelObj: matchedChannelObj || { title: ch.canale, name: ch.canale, slug },
-                        logoUrl: getChannelLogoUrl({ title: ch.canale }),
+                        logoUrl: logo,
                         currentProg: prog,
                         nextProg: nextProg
                     };
@@ -183,11 +283,11 @@ export default function HomeHero({ categories = [] }) {
                     }
                 });
 
-                // Prevalenza marcata di canali SPORT (3 o 4 su 5):
+                // Prevalenza massima di canali SPORT: 4 canali Sport su 5 totali (o 5 su 5 se ent non sufficienti)
                 const sportPool = sportCandidatesHD.length >= 4 ? sportCandidatesHD : [...sportCandidatesHD, ...sportCandidatesFallback];
-                const entPool = entCandidatesHD.length >= 2 ? entCandidatesHD : [...entCandidatesHD, ...entCandidatesFallback];
+                const entPool = entCandidatesHD.length >= 1 ? entCandidatesHD : [...entCandidatesHD, ...entCandidatesFallback];
 
-                // Mescola casualmente entrambi i pool
+                // Shuffle di entrambi i pool per non mostrare sempre gli stessi canali nell'arco della giornata
                 for (let i = sportPool.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [sportPool[i], sportPool[j]] = [sportPool[j], sportPool[i]];
@@ -197,16 +297,17 @@ export default function HomeHero({ categories = [] }) {
                     [entPool[i], entPool[j]] = [entPool[j], entPool[i]];
                 }
 
-                // Seleziona 3 o 4 canali Sport e 1 o 2 canali Intrattenimento per un totale di 5
-                const selectedSport = sportPool.slice(0, 3);
-                const selectedEnt = entPool.slice(0, 2);
+                // 4 canali SPORT prioritari e 1 canale Cinema/Intrattenimento per varietà
+                const selectedSport = sportPool.slice(0, 4);
+                const selectedEnt = entPool.slice(0, 1);
                 let selected5 = [...selectedSport, ...selectedEnt];
 
-                if (selected5.length < 5 && sportPool.length > 3) {
-                    selected5.push(sportPool[3]);
+                // Se non c'è abbastanza intrattenimento, prendi un 5° canale sport
+                if (selected5.length < 5 && sportPool.length > 4) {
+                    selected5.push(sportPool[4]);
                 }
 
-                // Shuffle finale dei 5 canali per alternarli casualmente nello scorrimento
+                // Mescola i 5 selezionati in modo che lo sport appaia con altissima frequenza
                 for (let i = selected5.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [selected5[i], selected5[j]] = [selected5[j], selected5[i]];
@@ -214,8 +315,19 @@ export default function HomeHero({ categories = [] }) {
 
                 if (!isMounted || selected5.length === 0) return;
 
+                // Precarica subito in background tutti i loghi e gli artwork per eliminare qualsiasi glitch
+                selected5.forEach(it => {
+                    preloadImage(it.logoUrl);
+                    preloadImage(it.progImg);
+                });
+
+                // Salva nella cache persistente così alla ricarica della pagina la hero è presente a 0ms
+                try {
+                    sessionStorage.setItem("nmdz_hero_items_v3", JSON.stringify(selected5));
+                    localStorage.setItem("nmdz_hero_items_v3", JSON.stringify(selected5));
+                } catch (e) {}
+
                 setHeroItems(selected5);
-                setActiveIndex(0);
             } catch (err) {
                 console.error("Errore caricamento canali Hero:", err);
             }
@@ -384,80 +496,97 @@ export default function HomeHero({ categories = [] }) {
 
             {/* Contenuto Hero Billboard 100% stile NOW */}
             <div className="now-hero-inner">
-                <div className="now-hero-billboard">
-                    {/* 1. Logo del Canale ben integrato */}
-                    <div className="now-hero-brand-top">
-                        {current.logoUrl ? (
-                            <img
-                                src={current.logoUrl}
-                                alt={current.channelName}
-                                className="now-hero-channel-badge-logo"
-                                loading="eager"
-                            />
-                        ) : (
-                            <span className="now-hero-channel-label">{current.channelName}</span>
-                        )}
-                    </div>
+                <div className="now-hero-billboard-container">
+                    {heroItems.map((item, idx) => {
+                        const isActive = idx === activeIndex;
+                        return (
+                            <div
+                                key={item.channelName + "-billboard-" + idx}
+                                className={"now-hero-billboard " + (isActive ? "active" : "")}
+                                style={{
+                                    opacity: isActive ? 1 : 0,
+                                    pointerEvents: isActive ? "auto" : "none",
+                                    visibility: isActive ? "visible" : "hidden",
+                                    zIndex: isActive ? 5 : 1
+                                }}
+                            >
+                                {/* 1. Logo del Canale ben integrato */}
+                                <div className="now-hero-brand-top">
+                                    {item.logoUrl ? (
+                                        <img
+                                            src={item.logoUrl}
+                                            alt={item.channelName}
+                                            className="now-hero-channel-badge-logo"
+                                            loading="eager"
+                                            decoding="async"
+                                        />
+                                    ) : (
+                                        <span className="now-hero-channel-label">{item.channelName}</span>
+                                    )}
+                                </div>
 
-                    {/* 2. Riga Metadati Discreta: Badge DIRETTA compatto + Micro-badge Categoria / Risoluzione / Audio */}
-                    <div className="now-hero-meta-row">
-                        <span className="now-hero-live-pill">
-                            <span className="now-hero-live-pulse" />
-                            DIRETTA
-                        </span>
-                        {current.category && (
-                            <span className="now-hero-meta-box">{current.category}</span>
-                        )}
-                        <span className="now-hero-meta-box">FHD</span>
-                        <span className="now-hero-meta-box">5.1</span>
-                    </div>
+                                {/* 2. Riga Metadati Discreta: Badge DIRETTA compatto + Micro-badge Categoria / Risoluzione / Audio */}
+                                <div className="now-hero-meta-row">
+                                    <span className="now-hero-live-pill">
+                                        <span className="now-hero-live-pulse" />
+                                        DIRETTA
+                                    </span>
+                                    {item.category && (
+                                        <span className="now-hero-meta-box">{item.category}</span>
+                                    )}
+                                    <span className="now-hero-meta-box">FHD</span>
+                                    <span className="now-hero-meta-box">5.1</span>
+                                </div>
 
-                    {/* 3. Titolo Principale Programma: Elegante, bold, moderno */}
-                    <h1 className="now-hero-heading">{current.progTitle}</h1>
+                                {/* 3. Titolo Principale Programma: Elegante, bold, moderno */}
+                                <h1 className="now-hero-heading">{item.progTitle}</h1>
 
-                    {/* 4. Orario e Timeline EPG racchiusi in container/pillola elegante */}
-                    <div className="now-hero-schedule-bar">
-                        <div className="now-hero-time-badge">
-                            <span className="material-symbols-rounded">schedule</span>
-                            <span>{current.progOraFine ? `Dalle ${current.progOraInizio} alle ${current.progOraFine}` : `Inizio alle ${current.progOraInizio}`}</span>
-                        </div>
-                        {current.progress > 0 && (
-                            <div className="now-hero-timeline-wrap">
-                                <div className="now-hero-timeline-track">
-                                    <div
-                                        className="now-hero-timeline-fill"
-                                        style={{ width: current.progress + "%" }}
-                                    />
+                                {/* 4. Orario e Timeline EPG racchiusi in container/pillola elegante */}
+                                <div className="now-hero-schedule-bar">
+                                    <div className="now-hero-time-badge">
+                                        <span className="material-symbols-rounded">schedule</span>
+                                        <span>{item.progOraFine ? `Dalle ${item.progOraInizio} alle ${item.progOraFine}` : `Inizio alle ${item.progOraInizio}`}</span>
+                                    </div>
+                                    {item.progress > 0 && (
+                                        <div className="now-hero-timeline-wrap">
+                                            <div className="now-hero-timeline-track">
+                                                <div
+                                                    className="now-hero-timeline-fill"
+                                                    style={{ width: item.progress + "%" }}
+                                                />
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
+
+                                {/* 5. Descrizione del programma: elegante, max 2 righe, colore attenuato */}
+                                <p className="now-hero-synopsis">
+                                    {item.progDesc || "Tutti gli eventi e i migliori appuntamenti live in onda su questo canale Sky."}
+                                </p>
+
+                                {/* 6. Pulsanti Azione: compatti, moderni, raffinati */}
+                                <div className="now-hero-cta-group">
+                                    <Link
+                                        href={item.targetHref}
+                                        className="now-hero-play-button"
+                                        onClick={() => handleCardClick(item)}
+                                    >
+                                        <span className="material-symbols-rounded now-hero-play-ico">play_arrow</span>
+                                        <span className="now-hero-play-label">Guarda</span>
+                                    </Link>
+
+                                    <button
+                                        type="button"
+                                        className="now-hero-info-button"
+                                        onClick={() => setIsInfoOpen(true)}
+                                    >
+                                        <span className="material-symbols-rounded now-hero-info-ico">info</span>
+                                        <span className="now-hero-info-label">Dettagli</span>
+                                    </button>
                                 </div>
                             </div>
-                        )}
-                    </div>
-
-                    {/* 5. Descrizione del programma: elegante, max 2 righe, colore attenuato */}
-                    <p className="now-hero-synopsis">
-                        {current.progDesc || "Tutti gli eventi e i migliori appuntamenti live in onda su questo canale Sky."}
-                    </p>
-
-                    {/* 6. Pulsanti Azione: compatti, moderni, raffinati */}
-                    <div className="now-hero-cta-group">
-                        <Link
-                            href={current.targetHref}
-                            className="now-hero-play-button"
-                            onClick={() => handleCardClick(current)}
-                        >
-                            <span className="material-symbols-rounded now-hero-play-ico">play_arrow</span>
-                            <span className="now-hero-play-label">Guarda</span>
-                        </Link>
-
-                        <button
-                            type="button"
-                            className="now-hero-info-button"
-                            onClick={() => setIsInfoOpen(true)}
-                        >
-                            <span className="material-symbols-rounded now-hero-info-ico">info</span>
-                            <span className="now-hero-info-label">Dettagli</span>
-                        </button>
-                    </div>
+                        );
+                    })}
                 </div>
 
                 {/* 7. Barra Segmentata Cinematografica Stile Apple TV+ con Frecce Minimal */}
