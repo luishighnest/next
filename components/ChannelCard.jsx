@@ -23,8 +23,29 @@ function CardShakaVideo({ channel }) {
 
     useEffect(() => {
         let isCancelled = false;
-        const streamUrl = (channel.url || channel.mpd || "").trim();
-        const rawKey = channel.kid_key || channel.key || "";
+        
+        // Estrazione sorgente compatibile (supporta sia canali Sky sia canali test.json / DAZN con sources)
+        let streamUrl = (channel.url || channel.mpd || "").trim();
+        let rawKey = channel.kid_key || channel.key || "";
+        let rawUa = channel.ua || "";
+        let daznToken = channel.dazn_token || "";
+
+        if (Array.isArray(channel.sources) && channel.sources.length > 0) {
+            const firstValidSource = channel.sources.find(s => s.url || s.mpd) || channel.sources[0];
+            if (firstValidSource) {
+                if (!streamUrl) streamUrl = (firstValidSource.url || firstValidSource.mpd || "").trim();
+                if (!rawKey) rawKey = firstValidSource.kid_key || firstValidSource.key || "";
+                if (!rawUa) rawUa = firstValidSource.ua || "";
+                if (!daznToken) daznToken = firstValidSource.dazn_token || "";
+            }
+        }
+
+        // Se URL è formato DAZN WARP (https://.../@JWT/dash/stream.mpd), estrai il token ed estrai l'URL pulito
+        const warpMatch = streamUrl.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
+        if (warpMatch) {
+            daznToken = warpMatch[2];
+            streamUrl = warpMatch[1] + (warpMatch[3] || "");
+        }
 
         async function initPlayer() {
             try {
@@ -52,12 +73,15 @@ function CardShakaVideo({ channel }) {
                     }
                 });
 
-                if (channel.ua || channel.dazn_token) {
-                    player.getNetworkingEngine().registerRequestFilter((type, request) => {
-                        if (channel.ua) request.headers["User-Agent"] = channel.ua;
-                        if (channel.dazn_token) request.headers["dazn-token"] = channel.dazn_token;
-                    });
-                }
+                // Iniezione headers per test.json / DAZN
+                player.getNetworkingEngine().registerRequestFilter((type, request) => {
+                    if (rawUa) request.headers["User-Agent"] = rawUa;
+                    if (daznToken) {
+                        request.headers["dazn-token"] = daznToken;
+                        request.headers["referer"] = "https://www.dazn.com/";
+                        request.headers["origin"] = "https://www.dazn.com";
+                    }
+                });
 
                 const clearKeys = parseClearKeys(rawKey);
                 player.configure({
@@ -164,7 +188,11 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     // --- HOVER LIVE PREVIEW NATIVO SHAKA ---
     const [isHovered, setIsHovered] = useState(false);
     const hoverTimerRef = useRef(null);
-    const canPreview = !isVod && Boolean(channel.url || channel.mpd) && Boolean(channel.kid_key || channel.key);
+
+    // Controlla disponibilità stream sia a livello radice (Sky) sia dentro sources (test.json / DAZN)
+    const hasDirectStream = Boolean(channel.url || channel.mpd) && Boolean(channel.kid_key || channel.key);
+    const hasSourceStream = Array.isArray(channel.sources) && channel.sources.some(s => (s.url || s.mpd) && (s.kid_key || s.key));
+    const canPreview = !isVod && (hasDirectStream || hasSourceStream);
 
     const handleMouseEnter = () => {
         if (!canPreview) return;
