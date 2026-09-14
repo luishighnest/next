@@ -233,14 +233,26 @@ function SkyContent() {
     const [needsUnmute, setNeedsUnmute] = useState(false);
     const [volume, setVolume] = useState(1);
 
-    // Timeline fluida interattiva
+    // Timeline fluida interattiva e DVR Timeshift (2 ore)
     const [currentTime, setCurrentTime] = useState(0);
     const [duration, setDuration] = useState(0);
     const [isLiveStream, setIsLiveStream] = useState(true);
     const [bufferedEnd, setBufferedEnd] = useState(0);
+    const [seekRange, setSeekRange] = useState({ start: 0, end: 0 });
+    const [isAtLiveEdge, setIsAtLiveEdge] = useState(true);
     const timelineRef = useRef(null);
 
-    // Modali Guida TV e Impostazioni
+    // Menu Impostazioni Video Stream (Qualità, Audio, Sottotitoli)
+    const [isVideoSettingsOpen, setIsVideoSettingsOpen] = useState(false);
+    const [videoQualities, setVideoQualities] = useState([]); // [{ id, height, width, bandwidth, active }]
+    const [isAbrEnabled, setIsAbrEnabled] = useState(true);
+    const [audioTracks, setAudioTracks] = useState([]);
+    const [selectedAudioLang, setSelectedAudioLang] = useState("");
+    const [textTracks, setTextTracks] = useState([]);
+    const [isTextTrackEnabled, setIsTextTrackEnabled] = useState(false);
+    const [selectedTextLang, setSelectedTextLang] = useState("");
+
+    // Modali Guida TV e Impostazioni Tecniche generali
     const [isGuidaOpen, setIsGuidaOpen] = useState(false);
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
@@ -255,7 +267,9 @@ function SkyContent() {
         setIsUserActive(true);
         if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
         idleTimerRef.current = setTimeout(() => {
-            setIsUserActive(false);
+            if (!isVideoSettingsOpen) {
+                setIsUserActive(false);
+            }
         }, 4000);
     };
 
@@ -266,6 +280,111 @@ function SkyContent() {
         };
     }, []);
 
+    // Helper per aggiornare tracce video/audio/sottotitoli da Shaka
+    const refreshTracks = (playerInstance) => {
+        const player = playerInstance || playerRef.current;
+        if (!player) return;
+        try {
+            const tracks = player.getVariantTracks() || [];
+            // Raggruppa varianti per risoluzione
+            const resMap = new Map();
+            tracks.forEach(t => {
+                if (t.height) {
+                    const label = `${t.height}p`;
+                    if (!resMap.has(label) || (t.bandwidth > resMap.get(label).bandwidth)) {
+                        resMap.set(label, {
+                            id: t.id,
+                            label: label,
+                            height: t.height,
+                            width: t.width,
+                            bandwidth: t.bandwidth,
+                            active: t.active
+                        });
+                    }
+                }
+            });
+            const list = Array.from(resMap.values()).sort((a, b) => b.height - a.height);
+            setVideoQualities(list);
+
+            const abrConf = player.getConfiguration();
+            setIsAbrEnabled(abrConf?.abr?.enabled ?? true);
+
+            // Audio tracks
+            const audioLangs = player.getAudioLanguagesAndRoles ? player.getAudioLanguagesAndRoles() : [];
+            const audioList = audioLangs.map((a, i) => ({
+                id: i,
+                language: a.language || "Principale",
+                role: a.role || ""
+            }));
+            setAudioTracks(audioList);
+            if (player.getAudioLanguages && player.getAudioLanguages().length > 0) {
+                setSelectedAudioLang(player.getAudioLanguages()[0]);
+            }
+
+            // Text / Subtitles
+            const textTrks = player.getTextTracks() || [];
+            setTextTracks(textTrks);
+            setIsTextTrackEnabled(player.isTextTrackVisible ? player.isTextTrackVisible() : false);
+        } catch (e) {
+            console.warn("Errore lettura tracce:", e);
+        }
+    };
+
+    const handleSelectQuality = (track) => {
+        const player = playerRef.current;
+        if (!player) return;
+        try {
+            if (track === "auto") {
+                player.configure({ abr: { enabled: true } });
+                setIsAbrEnabled(true);
+            } else {
+                player.configure({ abr: { enabled: false } });
+                setIsAbrEnabled(false);
+                const allVariants = player.getVariantTracks();
+                const matched = allVariants.find(v => v.id === track.id || v.height === track.height);
+                if (matched) {
+                    player.selectVariantTrack(matched, /* clearBuffer */ false);
+                }
+            }
+            refreshTracks(player);
+        } catch (e) {
+            console.error("Errore selezione traccia video:", e);
+        }
+    };
+
+    const handleSelectAudio = (lang) => {
+        const player = playerRef.current;
+        if (!player) return;
+        try {
+            player.selectAudioLanguage(lang);
+            setSelectedAudioLang(lang);
+            refreshTracks(player);
+        } catch (e) {
+            console.error("Errore selezione audio:", e);
+        }
+    };
+
+    const handleToggleSubtitles = (trackOrDisable) => {
+        const player = playerRef.current;
+        if (!player) return;
+        try {
+            if (trackOrDisable === "off") {
+                player.setTextTrackVisibility(false);
+                setIsTextTrackEnabled(false);
+                setSelectedTextLang("");
+            } else {
+                player.setTextTrackVisibility(true);
+                setIsTextTrackEnabled(true);
+                if (trackOrDisable && trackOrDisable.language) {
+                    player.selectTextLanguage(trackOrDisable.language);
+                    setSelectedTextLang(trackOrDisable.language);
+                }
+            }
+        } catch (e) {
+            console.error("Errore gestione sottotitoli:", e);
+        }
+    };
+
     // Resetta stati video al cambio canale per transizione fluida
     useEffect(() => {
         setIframeLoaded(false);
@@ -274,6 +393,9 @@ function SkyContent() {
         setHasStartedPlaying(false);
         setCurrentTime(0);
         setDuration(0);
+        setSeekRange({ start: 0, end: 0 });
+        setIsAtLiveEdge(true);
+        setIsVideoSettingsOpen(false);
         setIsUserActive(true);
         if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
         idleTimerRef.current = setTimeout(() => {
@@ -361,10 +483,11 @@ function SkyContent() {
                         servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 6,
-                        rebufferingGoal: 1.5,
-                        bufferBehind: 6,
-                        lowLatencyMode: true,
+                        bufferingGoal: 15,
+                        rebufferingGoal: 4,
+                        bufferBehind: 60,
+                        lowLatencyMode: false,
+                        alwaysStreamFullSegments: true,
                         retryParameters: {
                             maxAttempts: 6,
                             baseDelay: 1000,
@@ -384,12 +507,23 @@ function SkyContent() {
                             fuzzFactor: 0.5,
                             timeout: 10000
                         }
+                    },
+                    abr: {
+                        enabled: true
                     }
                 });
 
                 // Ascolta eventi player
                 player.addEventListener("buffering", (ev) => {
                     setIsVideoBuffering(ev.buffering);
+                });
+
+                player.addEventListener("adaptation", () => {
+                    refreshTracks(player);
+                });
+
+                player.addEventListener("trackschanged", () => {
+                    refreshTracks(player);
                 });
 
                 player.addEventListener("error", (err) => {
@@ -403,6 +537,8 @@ function SkyContent() {
                 const mimeType = isHls ? "application/x-mpegurl" : "application/dash+xml";
                 await player.load(streamUrl, null, mimeType);
                 if (isCancelled) return;
+
+                refreshTracks(player);
 
                 if (videoRef.current) {
                     videoRef.current.playsInline = true;
@@ -477,12 +613,33 @@ function SkyContent() {
     };
 
     const handleTimelineClick = (e) => {
-        if (!timelineRef.current || !videoRef.current || isLiveStream || duration <= 0) return;
+        if (!timelineRef.current || !videoRef.current) return;
         const rect = timelineRef.current.getBoundingClientRect();
         const pos = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-        const seekTarget = pos * duration;
-        videoRef.current.currentTime = seekTarget;
-        setCurrentTime(seekTarget);
+
+        if (seekRange.end > seekRange.start) {
+            // Stream Live con timeshift DVR (es. 2 ore di buffer)
+            const targetTime = seekRange.start + pos * (seekRange.end - seekRange.start);
+            videoRef.current.currentTime = targetTime;
+            setCurrentTime(targetTime);
+            setIsAtLiveEdge(seekRange.end - targetTime < 15);
+        } else if (!isLiveStream && duration > 0) {
+            // Stream VOD tradizionale
+            const seekTarget = pos * duration;
+            videoRef.current.currentTime = seekTarget;
+            setCurrentTime(seekTarget);
+        }
+    };
+
+    const handleGoLive = () => {
+        if (!videoRef.current) return;
+        if (seekRange.end > seekRange.start) {
+            // Cerca a 2 secondi prima della fine del seekRange per garantire stabilità
+            const livePoint = Math.max(seekRange.start, seekRange.end - 3);
+            videoRef.current.currentTime = livePoint;
+            setCurrentTime(livePoint);
+            setIsAtLiveEdge(true);
+        }
     };
 
     const toggleFullscreen = () => {
@@ -737,18 +894,36 @@ function SkyContent() {
     const currentEpg = selectedChannel ? getCurrentProgram(selectedChannel.name) : null;
     const playerSrc = selectedChannel ? buildExtUrl(selectedChannel) : "";
 
+    const selectChannelWithPoster = (nextCh) => {
+        if (!nextCh) return;
+        const epg = getCurrentProgram(nextCh.name);
+        const newPoster = epg?.immagine || "";
+        const newLogo = nextCh.logo || "";
+        setTransPoster(newPoster);
+        setTransLogo(newLogo);
+        if (typeof window !== "undefined") {
+            try {
+                sessionStorage.setItem("nmdz_transition_poster", newPoster);
+                sessionStorage.setItem("nmdz_transition_logo", newLogo);
+            } catch(e) {}
+        }
+        setHasStartedPlaying(false);
+        setIsVideoBuffering(true);
+        setSelectedChannel(nextCh);
+    };
+
     const handleNextChannel = () => {
         if (filteredChannels.length === 0) return;
         const curIdx = filteredChannels.findIndex(c => c.slug === selectedChannel?.slug);
         const nextIdx = (curIdx + 1) % filteredChannels.length;
-        setSelectedChannel(filteredChannels[nextIdx]);
+        selectChannelWithPoster(filteredChannels[nextIdx]);
     };
 
     const handlePrevChannel = () => {
         if (filteredChannels.length === 0) return;
         const curIdx = filteredChannels.findIndex(c => c.slug === selectedChannel?.slug);
         const prevIdx = (curIdx - 1 + filteredChannels.length) % filteredChannels.length;
-        setSelectedChannel(filteredChannels[prevIdx]);
+        selectChannelWithPoster(filteredChannels[prevIdx]);
     };
 
     // Scorciatoie tastiera per cambiare canale su PC (Tasti Freccia Su e Freccia Giù)
@@ -863,14 +1038,29 @@ function SkyContent() {
                         onWaiting={() => setIsVideoBuffering(true)}
                         onTimeUpdate={() => {
                             if (videoRef.current) {
-                                setCurrentTime(videoRef.current.currentTime);
-                                const d = videoRef.current.duration;
-                                if (d && !isNaN(d) && isFinite(d)) {
-                                    setDuration(d);
-                                    setIsLiveStream(false);
+                                const cur = videoRef.current.currentTime;
+                                setCurrentTime(cur);
+
+                                const player = playerRef.current;
+                                if (player && player.seekRange) {
+                                    try {
+                                        const sr = player.seekRange();
+                                        if (sr && sr.end > sr.start) {
+                                            setSeekRange({ start: sr.start, end: sr.end });
+                                            setIsLiveStream(player.isLive ? player.isLive() : true);
+                                            setIsAtLiveEdge(sr.end - cur < 15);
+                                        }
+                                    } catch (e) {}
                                 } else {
-                                    setIsLiveStream(true);
+                                    const d = videoRef.current.duration;
+                                    if (d && !isNaN(d) && isFinite(d)) {
+                                        setDuration(d);
+                                        setIsLiveStream(false);
+                                    } else {
+                                        setIsLiveStream(true);
+                                    }
                                 }
+
                                 if (videoRef.current.buffered && videoRef.current.buffered.length > 0) {
                                     setBufferedEnd(videoRef.current.buffered.end(videoRef.current.buffered.length - 1));
                                 }
@@ -892,7 +1082,7 @@ function SkyContent() {
                 {/* 2. Deck Overlay In Basso: Design pulito stile Sky Glass / Apple TV senza scatola ovale gigante */}
                 <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
                     <div className="sky-player-modern-deck">
-                        {/* Header Info: Logo, Tag Live, Categoria, Scadenza e Titolo Grande */}
+                        {/* Header Info: Logo con badge ad alto contrasto, Tag Live, Nome Canale Chiarissimo, Titolo e Scadenza */}
                         <div className="sky-player-info-row">
                             <div className="sky-player-meta-left">
                                 <div className="sky-modern-logo-box">
@@ -904,6 +1094,9 @@ function SkyContent() {
                                 </div>
                                 <div className="sky-player-meta-details">
                                     <div className="sky-player-tag-row">
+                                        <div className="sky-channel-name-badge">
+                                            <span className="sky-channel-name-text">{selectedChannel?.name || "Canale Sky"}</span>
+                                        </div>
                                         <span className="live-badge"><span className="dot"></span>LIVE</span>
                                         <span className="now-group">{selectedChannel?.group || "Sky"}</span>
                                         {(() => {
@@ -930,55 +1123,91 @@ function SkyContent() {
                                         })()}
                                     </div>
                                     <h2 className="sky-player-big-title">
-                                        {currentEpg?.titolo || selectedChannel?.name || "Canale Sky"}
+                                        {currentEpg?.titolo || selectedChannel?.name || "Diretta TV"}
                                     </h2>
                                     <div className="sky-player-epg-subtitle">
-                                        {currentEpg ? `${currentEpg.ora} • ${selectedChannel?.name || ""} ${currentEpg.next ? `(Succ: ${currentEpg.next})` : ""}` : (selectedChannel?.name || "Diretta streaming")}
+                                        {currentEpg ? `${currentEpg.ora} ${currentEpg.next ? `• A seguire: ${currentEpg.next}` : ""}` : (selectedChannel?.group || "Diretta streaming")}
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Timeline Fluida e Cliccabile */}
-                        <div
-                            ref={timelineRef}
-                            className="sky-player-timeline-wrapper"
-                            onClick={handleTimelineClick}
-                            title={isLiveStream ? "Trasmissione in diretta" : "Clicca per andare a un punto preciso"}
-                        >
-                            <div className="sky-player-timeline-track">
+                        {/* Timeline Fluida e Cliccabile con supporto DVR Timeshift 2 Ore */}
+                        {(() => {
+                            const hasDvr = seekRange.end > seekRange.start;
+                            const dvrDuration = hasDvr ? (seekRange.end - seekRange.start) : duration;
+                            const dvrCurrent = hasDvr ? Math.max(0, currentTime - seekRange.start) : currentTime;
+                            const pct = dvrDuration > 0 ? Math.min(100, Math.max(0, (dvrCurrent / dvrDuration) * 100)) : (currentEpg ? currentEpg.percent : 100);
+                            
+                            const lagSeconds = hasDvr ? Math.max(0, Math.round(seekRange.end - currentTime)) : 0;
+                            const isLiveNow = !hasDvr || lagSeconds < 15;
+
+                            const formatTimeshift = (sec) => {
+                                if (sec <= 0) return "DIRETTA";
+                                const m = Math.floor(sec / 60);
+                                const s = sec % 60;
+                                return `-${m}:${String(s).padStart(2, "0")}`;
+                            };
+
+                            return (
                                 <div
-                                    className="sky-player-timeline-buffer"
-                                    style={{
-                                        width: isLiveStream ? "100%" : `${duration > 0 ? (bufferedEnd / duration) * 100 : 0}%`
-                                    }}
-                                />
-                                <div
-                                    className="sky-player-timeline-fill"
-                                    style={{
-                                        width: isLiveStream ? `${currentEpg ? currentEpg.percent : 100}%` : `${duration > 0 ? (currentTime / duration) * 100 : 0}%`
-                                    }}
-                                />
-                                <div
-                                    className="sky-player-timeline-thumb"
-                                    style={{
-                                        left: isLiveStream ? `${currentEpg ? currentEpg.percent : 100}%` : `${duration > 0 ? (currentTime / duration) * 100 : 0}%`
-                                    }}
-                                />
-                            </div>
-                            <div className="sky-player-timeline-labels">
-                                <span>
-                                    {isLiveStream
-                                        ? (currentEpg?.ora || "In onda ora")
-                                        : `${Math.floor(currentTime / 60)}:${String(Math.floor(currentTime % 60)).padStart(2, "0")}`
-                                    }
-                                </span>
-                                <span style={{ color: "#e30a17", fontWeight: "800", display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                                    <span style={{ width: "5px", height: "5px", borderRadius: "50%", background: "#e30a17" }} />
-                                    {isLiveStream ? "DIRETTA LIVE" : `${Math.floor(duration / 60)}:${String(Math.floor(duration % 60)).padStart(2, "0")}`}
-                                </span>
-                            </div>
-                        </div>
+                                    ref={timelineRef}
+                                    className="sky-player-timeline-wrapper"
+                                    onClick={handleTimelineClick}
+                                    title={hasDvr ? "Timeline DVR (indietro fino a 2 ore) - Clicca per spostarti nel tempo" : "Timeline"}
+                                >
+                                    <div className="sky-player-timeline-track">
+                                        <div
+                                            className="sky-player-timeline-buffer"
+                                            style={{
+                                                width: hasDvr ? "100%" : `${duration > 0 ? (bufferedEnd / duration) * 100 : 0}%`
+                                            }}
+                                        />
+                                        <div
+                                            className="sky-player-timeline-fill"
+                                            style={{ width: `${pct}%` }}
+                                        />
+                                        <div
+                                            className="sky-player-timeline-thumb"
+                                            style={{ left: `${pct}%` }}
+                                        />
+                                    </div>
+                                    <div className="sky-player-timeline-labels">
+                                        <span>
+                                            {hasDvr ? (
+                                                <span style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+                                                    <i className="fa-solid fa-clock-rotate-left" style={{ fontSize: "0.75rem", color: "#00e59b" }}></i>
+                                                    {isLiveNow ? "Inizio buffer (-2h)" : formatTimeshift(lagSeconds)}
+                                                </span>
+                                            ) : (
+                                                currentEpg?.ora || "In onda ora"
+                                            )}
+                                        </span>
+                                        <div>
+                                            {hasDvr && !isLiveNow ? (
+                                                <button
+                                                    type="button"
+                                                    className="sky-timeline-live-btn"
+                                                    onClick={(e) => {
+                                                        e.stopPropagation();
+                                                        handleGoLive();
+                                                    }}
+                                                    title="Salta al momento in diretta"
+                                                >
+                                                    <span className="live-dot-pulse" />
+                                                    <span>TORNA A LIVE ({formatTimeshift(lagSeconds)})</span>
+                                                </button>
+                                            ) : (
+                                                <span style={{ color: "#e30a17", fontWeight: "800", display: "inline-flex", alignItems: "center", gap: "5px" }}>
+                                                    <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "#e30a17" }} />
+                                                    DIRETTA LIVE
+                                                </span>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })()}
 
                         {/* Barra dei Controlli Inferiori Integrati */}
                         <div className="sky-player-controls-bar">
@@ -1019,7 +1248,7 @@ function SkyContent() {
                                 </div>
                             </div>
 
-                            {/* Gruppo Destra: Guida TV, Impostazioni, Canali, Zapping, Fullscreen */}
+                            {/* Gruppo Destra: Guida TV, Impostazioni Video Stream, Impostazioni Tecniche, Canali, Zapping, Fullscreen */}
                             <div className="sky-controls-group-right">
                                 <button
                                     type="button"
@@ -1031,14 +1260,132 @@ function SkyContent() {
                                     <span>Guida TV</span>
                                 </button>
 
-                                <button
-                                    type="button"
-                                    className="sky-modern-btn icon-only"
-                                    onClick={() => setIsSettingsOpen(true)}
-                                    title="Impostazioni Tecniche & Player"
-                                >
-                                    <span className="material-symbols-rounded">settings</span>
-                                </button>
+                                {/* Popup Impostazioni Video Stream (Qualità, Audio, Sottotitoli) */}
+                                <div className="sky-settings-popover-wrapper">
+                                    <button
+                                        type="button"
+                                        className={`sky-modern-btn icon-only ${isVideoSettingsOpen ? "active" : ""}`}
+                                        onClick={() => {
+                                            setIsVideoSettingsOpen(prev => !prev);
+                                            refreshTracks();
+                                        }}
+                                        title="Impostazioni Video (Qualità, Audio, Sottotitoli)"
+                                    >
+                                        <span className="material-symbols-rounded">tune</span>
+                                    </button>
+
+                                    {isVideoSettingsOpen && (
+                                        <div className="sky-video-settings-menu">
+                                            <div className="sky-settings-menu-header">
+                                                <span>Impostazioni Stream</span>
+                                                <button
+                                                    type="button"
+                                                    onClick={() => setIsVideoSettingsOpen(false)}
+                                                    className="sky-settings-menu-close"
+                                                >
+                                                    <span className="material-symbols-rounded">close</span>
+                                                </button>
+                                            </div>
+
+                                            {/* Sezione Qualità Video */}
+                                            <div className="sky-settings-menu-section">
+                                                <div className="sky-settings-section-title">
+                                                    <span className="material-symbols-rounded">hd</span>
+                                                    <span>Qualità Video</span>
+                                                </div>
+                                                <div className="sky-settings-options-list">
+                                                    <button
+                                                        type="button"
+                                                        className={`sky-settings-option ${isAbrEnabled ? "selected" : ""}`}
+                                                        onClick={() => handleSelectQuality("auto")}
+                                                    >
+                                                        <span>Auto (Adattiva)</span>
+                                                        {isAbrEnabled && <span className="material-symbols-rounded check-icon">check</span>}
+                                                    </button>
+                                                    {videoQualities.map(q => (
+                                                        <button
+                                                            key={q.id || q.label}
+                                                            type="button"
+                                                            className={`sky-settings-option ${!isAbrEnabled && q.active ? "selected" : ""}`}
+                                                            onClick={() => handleSelectQuality(q)}
+                                                        >
+                                                            <span>{q.label}</span>
+                                                            {!isAbrEnabled && q.active && <span className="material-symbols-rounded check-icon">check</span>}
+                                                        </button>
+                                                    ))}
+                                                </div>
+                                            </div>
+
+                                            {/* Sezione Tracce Audio */}
+                                            {audioTracks.length > 0 && (
+                                                <div className="sky-settings-menu-section">
+                                                    <div className="sky-settings-section-title">
+                                                        <span className="material-symbols-rounded">audiotrack</span>
+                                                        <span>Traccia Audio</span>
+                                                    </div>
+                                                    <div className="sky-settings-options-list">
+                                                        {audioTracks.map(a => (
+                                                            <button
+                                                                key={a.id || a.language}
+                                                                type="button"
+                                                                className={`sky-settings-option ${selectedAudioLang === a.language ? "selected" : ""}`}
+                                                                onClick={() => handleSelectAudio(a.language)}
+                                                            >
+                                                                <span>{a.language.toUpperCase()} {a.role ? `(${a.role})` : ""}</span>
+                                                                {selectedAudioLang === a.language && <span className="material-symbols-rounded check-icon">check</span>}
+                                                            </button>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            {/* Sezione Sottotitoli */}
+                                            {textTracks.length > 0 && (
+                                                <div className="sky-settings-menu-section">
+                                                    <div className="sky-settings-section-title">
+                                                        <span className="material-symbols-rounded">subtitles</span>
+                                                        <span>Sottotitoli</span>
+                                                    </div>
+                                                    <div className="sky-settings-options-list">
+                                                        <button
+                                                            type="button"
+                                                            className={`sky-settings-option ${!isTextTrackEnabled ? "selected" : ""}`}
+                                                            onClick={() => handleToggleSubtitles("off")}
+                                                        >
+                                                            <span>Disattivati</span>
+                                                            {!isTextTrackEnabled && <span className="material-symbols-rounded check-icon">check</span>}
+                                                        </button>
+                                                        {textTracks.map(t => (
+                                                            <button
+                                                                key={t.id || t.language}
+                                                                type="button"
+                                                                className={`sky-settings-option ${isTextTrackEnabled && selectedTextLang === t.language ? "selected" : ""}`}
+                                                                onClick={() => handleToggleSubtitles(t)}
+                                                            >
+                                                                <span>{t.language.toUpperCase()}</span>
+                                                                {isTextTrackEnabled && selectedTextLang === t.language && <span className="material-symbols-rounded check-icon">check</span>}
+                                                            </button>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                            )}
+
+                                            <div className="sky-settings-menu-footer">
+                                                <button
+                                                    type="button"
+                                                    className="sky-settings-ext-btn"
+                                                    onClick={() => {
+                                                        setIsVideoSettingsOpen(false);
+                                                        setIsSettingsOpen(true);
+                                                    }}
+                                                >
+                                                    <span className="material-symbols-rounded">settings</span>
+                                                    <span>Impostazioni Tecniche Generali</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    )}
+                                </div>
 
                                 <button
                                     type="button"
@@ -1183,7 +1530,7 @@ function SkyContent() {
                                         key={ch.name + idx}
                                         className={`sky-item ${active ? "active" : ""}`}
                                         onClick={() => {
-                                            setSelectedChannel(ch);
+                                            selectChannelWithPoster(ch);
                                             // Su schermi ridotti chiudi drawer dopo selezione per massima visibilità
                                             if (window.innerWidth < 880) setIsSidebarOpen(false);
                                         }}
