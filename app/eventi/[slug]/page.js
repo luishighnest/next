@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef, useMemo } from "react";
+import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
 import MobileEventoView from "@/components/MobileEventoView";
 import { useDeviceState } from "@/components/DeviceProvider";
@@ -83,17 +83,17 @@ export default function EventoPlayerPage() {
     const [searchQuery, setSearchQuery] = useState("");
     const [activeTab, setActiveTab] = useState("all");
 
-    // Overlay auto-hide
+    // Overlay auto-hide (scompare dopo 3 secondi di inattività mouse, ricompare subito al movimento)
     const [isUserActive, setIsUserActive] = useState(true);
     const idleTimerRef = useRef(null);
 
-    const handleMouseMove = () => {
+    const handleMouseMove = useCallback(() => {
         setIsUserActive(true);
         if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
         idleTimerRef.current = setTimeout(() => {
             setIsUserActive(false);
-        }, 4000);
-    };
+        }, 3000);
+    }, []);
 
     const handleBack = () => {
         let target = "/eventi";
@@ -114,22 +114,28 @@ export default function EventoPlayerPage() {
             setIsFullscreen(Boolean(document.fullscreenElement));
         };
         document.addEventListener("fullscreenchange", handleFsChange);
+
+        window.addEventListener("mousemove", handleMouseMove, { passive: true });
+        window.addEventListener("pointermove", handleMouseMove, { passive: true });
+
+        idleTimerRef.current = setTimeout(() => {
+            setIsUserActive(false);
+        }, 3000);
+
         return () => {
             if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
             document.removeEventListener("fullscreenchange", handleFsChange);
+            window.removeEventListener("mousemove", handleMouseMove);
+            window.removeEventListener("pointermove", handleMouseMove);
         };
-    }, []);
+    }, [handleMouseMove]);
 
     // Reset stato al cambio sorgente
     useEffect(() => {
         setHasStartedPlaying(false);
         setIsVideoBuffering(true);
-        setIsUserActive(true);
-        if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-        idleTimerRef.current = setTimeout(() => {
-            setIsUserActive(false);
-        }, 4000);
-    }, [selectedSource, slug]);
+        handleMouseMove();
+    }, [selectedSource, slug, handleMouseMove]);
 
     const toggleFullscreen = () => {
         const el = containerRef.current || document.documentElement;

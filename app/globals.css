@@ -6621,18 +6621,9 @@ body:has(.sky-app) {
             display: block;
         }
 
-        /* Overlay vignetta cinematografica sui bordi per leggibilità controlli */
+        /* Overlay vignetta sui bordi rimossa per evitare sfumature nere */
         .sky-player-vignette {
-            position: absolute;
-            inset: 0;
-            pointer-events: none;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, transparent 20%, transparent 70%, rgba(0, 0, 0, 0.9) 100%);
-            transition: opacity 0.35s ease;
-            z-index: 2;
-        }
-
-        .sky-player-vignette.idle-hidden {
-            opacity: 0;
+            display: none !important;
         }
 
         /* Backdrop di preload cinematografico per switch istantanei */
@@ -7130,17 +7121,17 @@ body:has(.sky-app) {
         @keyframes live-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
         .sky-empty { text-align: center; color: rgba(255, 255, 255, 0.4); padding: 36px 0; font-size: 0.88rem; }
 
-        /* --- Info Deck / Overlay nel Player (Flottante in basso, posizionato SOPRA i controlli dell'estensione) --- */
+        /* --- Info Deck / Overlay nel Player (Senza sfondi sfumati neri, posizionato SOPRA la timeline) --- */
         .sky-player-overlay-bottom {
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 64px; /* Lascia spazio libero per la barra/timeline dell'estensione Chrome */
+            bottom: 95px; /* Spostato chiaramente sopra la barra e la timeline dell'estensione */
             z-index: 30;
-            padding: 14px 3vw;
-            pointer-events: none; /* Lascia cliccabile l'iframe sotto dove non ci sono i nostri tasti */
+            padding: 0 3vw;
+            pointer-events: none; /* L'intero spazio è trasparente al mouse, i controlli dell'estensione sono cliccabili */
             transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-            background: linear-gradient(180deg, transparent 0%, rgba(2, 4, 8, 0.3) 40%, rgba(1, 2, 5, 0.85) 100%);
+            background: transparent !important; /* Nessun gradiente o sfumatura nera */
         }
 
         .sky-player-overlay-bottom.idle-hidden {
@@ -7153,11 +7144,11 @@ body:has(.sky-app) {
         .sky-player-modern-deck {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
             width: 100%;
             max-width: 1500px;
             margin: 0 auto;
-            pointer-events: none; /* I singoli pulsanti e bottoni avranno pointer-events: auto */
+            pointer-events: none;
         }
 
         /* 1. Header info evento: Logo squadrato minimal + Badge Live + Categoria + Titolo grande */

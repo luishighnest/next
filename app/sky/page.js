@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef, useTransition, Suspense } from "react";
+import React, { useState, useEffect, useRef, useTransition, useCallback, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { useDeviceState } from "@/components/DeviceProvider";
@@ -199,17 +199,17 @@ function SkyContent() {
     // Stato Drawer Canali a destra (popup nel player)
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-    // Controlli Overlay (auto-hide su inattività mouse)
+    // Controlli Overlay (auto-hide dopo 3 secondi di inattività mouse, ricompare subito al movimento)
     const [isUserActive, setIsUserActive] = useState(true);
     const idleTimerRef = useRef(null);
 
-    const handleMouseMove = () => {
+    const handleMouseMove = useCallback(() => {
         setIsUserActive(true);
         if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
         idleTimerRef.current = setTimeout(() => {
             setIsUserActive(false);
-        }, 4000);
-    };
+        }, 3000);
+    }, []);
 
     useEffect(() => {
         setMounted(true);
@@ -217,23 +217,31 @@ function SkyContent() {
             setIsFullscreen(Boolean(document.fullscreenElement));
         };
         document.addEventListener("fullscreenchange", handleFsChange);
+
+        // Ascolta il movimento del mouse su tutta la finestra
+        window.addEventListener("mousemove", handleMouseMove, { passive: true });
+        window.addEventListener("pointermove", handleMouseMove, { passive: true });
+
+        // Avvia il timer di 3 secondi all'inizio
+        idleTimerRef.current = setTimeout(() => {
+            setIsUserActive(false);
+        }, 3000);
+
         return () => {
             if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
             document.removeEventListener("fullscreenchange", handleFsChange);
+            window.removeEventListener("mousemove", handleMouseMove);
+            window.removeEventListener("pointermove", handleMouseMove);
         };
-    }, []);
+    }, [handleMouseMove]);
 
     // Reset stato iframe al cambio canale per transizione pulita
     useEffect(() => {
         setIframeLoaded(false);
         setHasStartedPlaying(false);
         setIsVideoBuffering(true);
-        setIsUserActive(true);
-        if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-        idleTimerRef.current = setTimeout(() => {
-            setIsUserActive(false);
-        }, 4000);
-    }, [selectedChannel]);
+        handleMouseMove();
+    }, [selectedChannel, handleMouseMove]);
 
     const toggleFullscreen = () => {
         const el = containerRef.current || document.documentElement;
