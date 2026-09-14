@@ -431,7 +431,7 @@ export default function HomeHero({ categories = [] }) {
                     </div>
                 </div>
 
-                {/* 7. Carousel Selettore Canali Inferiore integrato con frecce minimali */}
+                {/* 7. Barra Segmentata Cinematografica Stile Apple TV+ con Frecce Minimal */}
                 <div className="now-hero-footer-bar">
                     <div className="now-hero-footer-indicators">
                         {heroItems.map((item, idx) => {
@@ -440,13 +440,16 @@ export default function HomeHero({ categories = [] }) {
                                 <button
                                     key={item.channelName + "-indicator-" + idx}
                                     type="button"
-                                    className={"now-hero-indicator-btn " + (isCur ? "active" : "")}
+                                    className={"now-hero-segment-btn " + (isCur ? "active" : "")}
                                     onClick={() => setActiveIndex(idx)}
                                     aria-label={"Passa a " + item.channelName}
+                                    title={item.channelName + " - " + item.progTitle}
                                 >
-                                    <span className="now-hero-indicator-channel">{item.channelName.replace("Sky Sport ", "Sky ")}</span>
-                                    <div className="now-hero-indicator-bar">
-                                        <div className="now-hero-indicator-progress" />
+                                    <div className="now-hero-segment-track">
+                                        <div 
+                                            key={isCur ? `progress-${idx}-${activeIndex}` : `idle-${idx}`}
+                                            className="now-hero-segment-fill" 
+                                        />
                                     </div>
                                 </button>
                             );
