@@ -132,10 +132,9 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
         let rawUa = src.ua;
         let daznToken = src.dazn_token;
 
-        const warpMatch = streamUrl.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
-        if (warpMatch) {
-            daznToken = warpMatch[2];
-            streamUrl = warpMatch[1] + (warpMatch[3] || "");
+        if (!daznToken && streamUrl.includes("@eyJ")) {
+            const tm = streamUrl.match(/@([A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)/);
+            if (tm) daznToken = tm[1];
         }
 
         async function initPlayer() {
