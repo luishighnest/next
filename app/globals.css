@@ -10713,21 +10713,12 @@ body:has(.sky-app) {
     text-transform: uppercase;
 }
 
-/* Badge specifiche tecniche reali FHD / 5.1 stile NOW / Sky Stream */
-.now-hero-spec-pill {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px 7px;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.09);
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    color: rgba(255, 255, 255, 0.92);
-    font-size: 0.7rem;
-    font-weight: 800;
+.now-hero-meta-text {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.75);
     letter-spacing: 0.05em;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    text-transform: uppercase;
 }
 
 /* 3. Titolo Programma: Singola riga che non va a capo e continua verso destra */

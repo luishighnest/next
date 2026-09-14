@@ -298,7 +298,7 @@ export default function HomeHero({ categories = [] }) {
                         )}
                     </div>
 
-                    {/* 2. Riga Metadati: Badge DIRETTA + Categoria + Badge Tecnici Broadcast FHD / 5.1 */}
+                    {/* 2. Riga Metadati: Badge DIRETTA • Categoria • FHD • 5.1 */}
                     <div className="now-hero-meta-row">
                         <span className="now-hero-live-pill">
                             <span className="now-hero-live-pulse" />
@@ -307,8 +307,9 @@ export default function HomeHero({ categories = [] }) {
                         <span className="now-hero-meta-dot">•</span>
                         <span className="now-hero-cat-tag">{current.category}</span>
                         <span className="now-hero-meta-dot">•</span>
-                        <span className="now-hero-spec-pill">FHD</span>
-                        <span className="now-hero-spec-pill">5.1</span>
+                        <span className="now-hero-meta-text">FHD</span>
+                        <span className="now-hero-meta-dot">•</span>
+                        <span className="now-hero-meta-text">5.1</span>
                     </div>
 
                     {/* 3. Titolo Principale Programma */}
