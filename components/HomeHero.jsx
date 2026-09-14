@@ -159,7 +159,7 @@ function getInitialHeroItems() {
     return DEFAULT_HERO_ITEMS;
 }
 
-export default function HomeHero({ categories = [], isSearchOpen = false }) {
+export default function HomeHero({ categories = [] }) {
     const [heroItems, setHeroItems] = useState(getInitialHeroItems);
     const [activeIndex, setActiveIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
@@ -374,7 +374,7 @@ export default function HomeHero({ categories = [], isSearchOpen = false }) {
 
     // Timer robusto per il cambio canale automatico (6.5 secondi)
     useEffect(() => {
-        if (heroItems.length <= 1 || isInfoOpen || isSearchOpen) {
+        if (heroItems.length <= 1 || isInfoOpen) {
             if (timerRef.current) clearInterval(timerRef.current);
             return;
         }
@@ -392,12 +392,12 @@ export default function HomeHero({ categories = [], isSearchOpen = false }) {
         return () => {
             if (timerRef.current) clearInterval(timerRef.current);
         };
-    }, [heroItems.length, isInfoOpen, isHovered, isSearchOpen, activeIndex, nextSlide]);
+    }, [heroItems.length, isInfoOpen, isHovered, activeIndex, nextSlide]);
 
     // Gestione cambio scheda del browser: ripristina la fluidità quando l'utente torna sulla pagina
     useEffect(() => {
         const handleVisibilityChange = () => {
-            if (!document.hidden && !isHovered && !isInfoOpen && !isSearchOpen && heroItems.length > 1) {
+            if (!document.hidden && !isHovered && !isInfoOpen && heroItems.length > 1) {
                 if (timerRef.current) clearInterval(timerRef.current);
                 timerRef.current = setInterval(() => {
                     nextSlide();
@@ -409,7 +409,7 @@ export default function HomeHero({ categories = [], isSearchOpen = false }) {
         return () => {
             document.removeEventListener("visibilitychange", handleVisibilityChange);
         };
-    }, [isHovered, isInfoOpen, isSearchOpen, heroItems.length, nextSlide]);
+    }, [isHovered, isInfoOpen, heroItems.length, nextSlide]);
 
     if (!heroItems || heroItems.length === 0) {
         return null;
@@ -427,7 +427,7 @@ export default function HomeHero({ categories = [], isSearchOpen = false }) {
 
     return (
         <section
-            className={`now-hero-stage ${isSearchOpen ? "search-hidden" : ""}`}
+            className="now-hero-stage"
             aria-label="In primo piano su Sky"
         >
             {/* Sfondo adattivo maestoso a tutto schermo con supporto Sky Hero, Poster TMDB e Sport */}
