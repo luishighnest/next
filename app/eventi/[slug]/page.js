@@ -254,45 +254,61 @@ export default function EventoPlayerPage() {
                     return;
                 }
 
-                if (playerRef.current) {
-                    try { await playerRef.current.destroy(); } catch(e) {}
-                    playerRef.current = null;
+                let player = playerRef.current;
+                if (player) {
+                    try {
+                        await player.unload();
+                    } catch(e) {
+                        try { await player.destroy(); } catch(err) {}
+                        player = null;
+                    }
                 }
 
-                const player = new shaka.Player(videoRef.current);
-                playerRef.current = player;
+                if (!player) {
+                    player = new shaka.Player(videoRef.current);
+                    playerRef.current = player;
 
-                // Filtri MIME e rimozione DRM Widevine per forzare ClearKey
-                player.getNetworkingEngine().registerResponseFilter((type, response) => {
-                    if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
-                        if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
-                            response.headers["content-type"] = "application/dash+xml";
+                    // Filtri MIME e rimozione DRM Widevine per forzare ClearKey
+                    player.getNetworkingEngine().registerResponseFilter((type, response) => {
+                        if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
+                            if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
+                                response.headers["content-type"] = "application/dash+xml";
+                            }
+                            try {
+                                let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
+                                xmlStr = xmlStr.replace(/<ContentProtection[\s\S]*?<\/ContentProtection>/gi, (match) => {
+                                    if (/9a04f079|edef8ba9|5e629af5/i.test(match)) {
+                                        return "";
+                                    }
+                                    return match;
+                                });
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]*schemeIdUri="urn:uuid:(9a04f079|edef8ba9|5e629af5)[^>]*\/>/gi, "");
+                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
+                            } catch(e) {}
                         }
-                        try {
-                            let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
-                            xmlStr = xmlStr.replace(/<ContentProtection[\s\S]*?<\/ContentProtection>/gi, (match) => {
-                                if (/9a04f079|edef8ba9|5e629af5/i.test(match)) {
-                                    return "";
-                                }
-                                return match;
-                            });
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]*schemeIdUri="urn:uuid:(9a04f079|edef8ba9|5e629af5)[^>]*\/>/gi, "");
-                            response.data = shaka.util.StringUtils.toUTF8(xmlStr);
-                            response.data = shaka.util.StringUtils.toUTF8(xmlStr);
-                        } catch(e) {}
-                    }
-                });
+                    });
 
-                player.getNetworkingEngine().registerRequestFilter((type, request) => {
-                    const tech = getTechSettings();
-                    const effectiveUa = rawUa || tech.customUserAgent || "";
-                    if (effectiveUa) request.headers["User-Agent"] = effectiveUa;
-                    if (daznToken) {
-                        request.headers["dazn-token"] = daznToken;
-                        request.headers["referer"] = "https://www.dazn.com/";
-                        request.headers["origin"] = "https://www.dazn.com";
-                    }
-                });
+                    player.getNetworkingEngine().registerRequestFilter((type, request) => {
+                        const tech = getTechSettings();
+                        const effectiveUa = rawUa || tech.customUserAgent || "";
+                        if (effectiveUa) request.headers["User-Agent"] = effectiveUa;
+                        if (daznToken) {
+                            request.headers["dazn-token"] = daznToken;
+                            request.headers["referer"] = "https://www.dazn.com/";
+                            request.headers["origin"] = "https://www.dazn.com";
+                        }
+                    });
+
+                    player.addEventListener("buffering", (ev) => setIsVideoBuffering(ev.buffering));
+                    player.addEventListener("adaptation", () => refreshTracks(player));
+                    player.addEventListener("trackschanged", () => refreshTracks(player));
+                    player.addEventListener("error", (err) => {
+                        console.error("Shaka error (evento):", err);
+                        if (playerRef.current && !err.detail?.severity) {
+                            try { playerRef.current.retryStreaming(); } catch(e) {}
+                        }
+                    });
+                }
 
                 const clearKeys = parseClearKeys(rawKey);
                 player.configure({
@@ -302,29 +318,19 @@ export default function EventoPlayerPage() {
                         servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 1.5,
+                        bufferingGoal: 1.0,
                         rebufferingGoal: 0.5,
                         bufferBehind: 30,
                         lowLatencyMode: true,
                         inaccurateManifestTolerance: 0,
                         alwaysStreamFullSegments: false,
-                        retryParameters: { maxAttempts: 4, baseDelay: 500, backoffFactor: 1.2, fuzzFactor: 0.2, timeout: 5000 }
+                        retryParameters: { maxAttempts: 3, baseDelay: 400, backoffFactor: 1.2, fuzzFactor: 0.1, timeout: 4000 }
                     },
                     manifest: {
                         dash: { ignoreMinBufferTime: true },
-                        retryParameters: { maxAttempts: 4, baseDelay: 500, backoffFactor: 1.2, fuzzFactor: 0.2, timeout: 5000 }
+                        retryParameters: { maxAttempts: 3, baseDelay: 400, backoffFactor: 1.2, fuzzFactor: 0.1, timeout: 4000 }
                     },
-                    abr: { enabled: true }
-                });
-
-                player.addEventListener("buffering", (ev) => setIsVideoBuffering(ev.buffering));
-                player.addEventListener("adaptation", () => refreshTracks(player));
-                player.addEventListener("trackschanged", () => refreshTracks(player));
-                player.addEventListener("error", (err) => {
-                    console.error("Shaka error (evento):", err);
-                    if (playerRef.current && !err.detail?.severity) {
-                        try { playerRef.current.retryStreaming(); } catch(e) {}
-                    }
+                    abr: { enabled: true, defaultBandwidthEstimate: 5000000 }
                 });
 
                 const isHls = streamUrl.toLowerCase().includes(".m3u8");

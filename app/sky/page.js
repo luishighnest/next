@@ -438,41 +438,68 @@ function SkyContent() {
                     return;
                 }
 
-                if (playerRef.current) {
-                    try { await playerRef.current.destroy(); } catch(e) {}
-                    playerRef.current = null;
+                let player = playerRef.current;
+                if (player) {
+                    try {
+                        await player.unload();
+                    } catch(e) {
+                        try { await player.destroy(); } catch(err) {}
+                        player = null;
+                    }
                 }
 
-                const player = new shaka.Player(videoRef.current);
-                playerRef.current = player;
+                if (!player) {
+                    player = new shaka.Player(videoRef.current);
+                    playerRef.current = player;
 
-                // Gestione filtri MIME e rimozione nodi Widevine per forzare ClearKey
-                player.getNetworkingEngine().registerResponseFilter((type, response) => {
-                    if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
-                        if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
-                            response.headers["content-type"] = "application/dash+xml";
+                    // Gestione filtri MIME e rimozione nodi Widevine per forzare ClearKey
+                    player.getNetworkingEngine().registerResponseFilter((type, response) => {
+                        if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
+                            if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
+                                response.headers["content-type"] = "application/dash+xml";
+                            }
+                            try {
+                                let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
+                            } catch (e) {}
                         }
-                        try {
-                            let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                            response.data = shaka.util.StringUtils.toUTF8(xmlStr);
-                        } catch (e) {}
-                    }
-                });
+                    });
 
-                // Iniezione headers di sistema
-                const tech = getTechSettings();
-                const effectiveUa = rawUa || tech.customUserAgent || "";
-                player.getNetworkingEngine().registerRequestFilter((type, request) => {
-                    if (effectiveUa) request.headers["User-Agent"] = effectiveUa;
-                    if (daznToken) {
-                        request.headers["dazn-token"] = daznToken;
-                        request.headers["referer"] = "https://www.dazn.com/";
-                        request.headers["origin"] = "https://www.dazn.com";
-                    }
-                });
+                    // Iniezione headers di sistema
+                    player.getNetworkingEngine().registerRequestFilter((type, request) => {
+                        const tech = getTechSettings();
+                        const effectiveUa = rawUa || tech.customUserAgent || "";
+                        if (effectiveUa) request.headers["User-Agent"] = effectiveUa;
+                        if (daznToken) {
+                            request.headers["dazn-token"] = daznToken;
+                            request.headers["referer"] = "https://www.dazn.com/";
+                            request.headers["origin"] = "https://www.dazn.com";
+                        }
+                    });
+
+                    // Ascolta eventi player
+                    player.addEventListener("buffering", (ev) => {
+                        setIsVideoBuffering(ev.buffering);
+                    });
+
+                    player.addEventListener("adaptation", () => {
+                        refreshTracks(player);
+                    });
+
+                    player.addEventListener("trackschanged", () => {
+                        refreshTracks(player);
+                    });
+
+                    player.addEventListener("error", (err) => {
+                        console.error("Shaka error:", err);
+                        if (playerRef.current && !err.detail?.severity) {
+                            try { playerRef.current.retryStreaming(); } catch(e) {}
+                        }
+                    });
+                }
 
                 const clearKeys = parseClearKeys(rawKey);
                 player.configure({
@@ -482,18 +509,18 @@ function SkyContent() {
                         servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 1.5,
+                        bufferingGoal: 1.0,
                         rebufferingGoal: 0.5,
                         bufferBehind: 30,
                         lowLatencyMode: true,
                         inaccurateManifestTolerance: 0,
                         alwaysStreamFullSegments: false,
                         retryParameters: {
-                            maxAttempts: 4,
-                            baseDelay: 500,
+                            maxAttempts: 3,
+                            baseDelay: 400,
                             backoffFactor: 1.2,
-                            fuzzFactor: 0.2,
-                            timeout: 5000
+                            fuzzFactor: 0.1,
+                            timeout: 4000
                         }
                     },
                     manifest: {
@@ -501,35 +528,16 @@ function SkyContent() {
                             ignoreMinBufferTime: true
                         },
                         retryParameters: {
-                            maxAttempts: 4,
-                            baseDelay: 500,
+                            maxAttempts: 3,
+                            baseDelay: 400,
                             backoffFactor: 1.2,
-                            fuzzFactor: 0.2,
-                            timeout: 5000
+                            fuzzFactor: 0.1,
+                            timeout: 4000
                         }
                     },
                     abr: {
-                        enabled: true
-                    }
-                });
-
-                // Ascolta eventi player
-                player.addEventListener("buffering", (ev) => {
-                    setIsVideoBuffering(ev.buffering);
-                });
-
-                player.addEventListener("adaptation", () => {
-                    refreshTracks(player);
-                });
-
-                player.addEventListener("trackschanged", () => {
-                    refreshTracks(player);
-                });
-
-                player.addEventListener("error", (err) => {
-                    console.error("Shaka error:", err);
-                    if (playerRef.current && !err.detail?.severity) {
-                        try { playerRef.current.retryStreaming(); } catch(e) {}
+                        enabled: true,
+                        defaultBandwidthEstimate: 5000000
                     }
                 });
 
@@ -723,7 +731,8 @@ function SkyContent() {
                     }
                 } catch(e) {}
 
-                const targetKey = chParam || storedTarget;
+                const currentSelectedSlug = selectedChannel ? (getChannelSlug(selectedChannel) || selectedChannel.name || "") : "";
+                const targetKey = currentSelectedSlug || chParam || storedTarget;
 
                 // 1. Cerca il canale nella sorgente attiva
                 let found = null;
