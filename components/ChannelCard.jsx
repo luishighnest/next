@@ -15,11 +15,22 @@ function getDynamicColor(str) {
     return `hsl(${hue}, 80%, 60%)`;
 }
 
-// Sub-component dedicato al player Shaka nativo (nessun comando, autoplay mutato)
-function CardShakaVideo({ channel }) {
+// Sub-component dedicato al player Shaka nativo (nessun comando, autoplay mutato con audio togglabile)
+function CardShakaVideo({ channel, isReadyToDisplay }) {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isMuted, setIsMuted] = useState(true);
+
+    const toggleMute = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (videoRef.current) {
+            const nextMuted = !videoRef.current.muted;
+            videoRef.current.muted = nextMuted;
+            setIsMuted(nextMuted);
+        }
+    };
 
     useEffect(() => {
         let isCancelled = false;
@@ -91,9 +102,9 @@ function CardShakaVideo({ channel }) {
                         servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 5,
+                        bufferingGoal: 4,
                         rebufferingGoal: 1,
-                        bufferBehind: 5,
+                        bufferBehind: 4,
                         lowLatencyMode: true
                     },
                     manifest: {
@@ -127,8 +138,10 @@ function CardShakaVideo({ channel }) {
         };
     }, [channel]);
 
+    const shouldShow = isPlaying && isReadyToDisplay;
+
     return (
-        <div className={`card-live-preview-overlay${isPlaying ? " is-visible" : ""}`}>
+        <div className={`card-live-preview-overlay${shouldShow ? " is-visible" : ""}`}>
             <video
                 ref={videoRef}
                 className="card-live-preview-video"
@@ -139,13 +152,18 @@ function CardShakaVideo({ channel }) {
                 controls={false}
                 onPlaying={() => setIsPlaying(true)}
             />
-            {isPlaying && (
+            {shouldShow && (
                 <div className="card-live-preview-badge">
                     <span className="card-live-preview-dot" />
                     LIVE
-                    <span className="card-live-preview-mute">
-                        <i className="fas fa-volume-xmark" />
-                    </span>
+                    <button
+                        type="button"
+                        className="card-live-preview-mute-btn"
+                        onClick={toggleMute}
+                        title={isMuted ? "Attiva audio" : "Silenzia audio"}
+                    >
+                        <i className={`fas ${isMuted ? "fa-volume-xmark" : "fa-volume-high"}`} />
+                    </button>
                 </div>
             )}
         </div>
@@ -186,7 +204,8 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     }
 
     // --- HOVER LIVE PREVIEW NATIVO SHAKA ---
-    const [isHovered, setIsHovered] = useState(false);
+    const [isBuffering, setIsBuffering] = useState(false);
+    const [isReadyToDisplay, setIsReadyToDisplay] = useState(false);
     const hoverTimerRef = useRef(null);
 
     // Controlla disponibilità stream sia a livello radice (Sky) sia dentro sources (test.json / DAZN)
@@ -196,8 +215,11 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
 
     const handleMouseEnter = () => {
         if (!canPreview) return;
+        // Inizia a pre-bufferizzare in sottofondo silenziosamente a opacità 0
+        setIsBuffering(true);
         hoverTimerRef.current = setTimeout(() => {
-            setIsHovered(true);
+            // Esattamente a 1.5s fa apparire il video già avviato e fluido
+            setIsReadyToDisplay(true);
         }, 1500);
     };
 
@@ -206,7 +228,8 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
             clearTimeout(hoverTimerRef.current);
             hoverTimerRef.current = null;
         }
-        setIsHovered(false);
+        setIsBuffering(false);
+        setIsReadyToDisplay(false);
     };
 
     const handleClick = () => {
@@ -214,7 +237,8 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
             clearTimeout(hoverTimerRef.current);
             hoverTimerRef.current = null;
         }
-        setIsHovered(false);
+        setIsBuffering(false);
+        setIsReadyToDisplay(false);
         try {
             if (isVod) {
                 sessionStorage.setItem("nmdz_vodItem", JSON.stringify(channel));
@@ -288,12 +312,12 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </div>
                 )}
 
-                {/* Shaka Player Preview (senza comandi, solo video puro con ClearKey) */}
-                {isHovered && canPreview && (
-                    <CardShakaVideo channel={channel} />
+                {/* Shaka Player Preview (pre-bufferizza silenzioso e appare al 1.5s) */}
+                {isBuffering && canPreview && (
+                    <CardShakaVideo channel={channel} isReadyToDisplay={isReadyToDisplay} />
                 )}
 
-                {!isHovered && (
+                {!isReadyToDisplay && (
                     <div className="now-card-play-icon">
                         <i className="fa fa-play" aria-hidden="true" style={{ marginLeft: "3px" }}></i>
                     </div>
