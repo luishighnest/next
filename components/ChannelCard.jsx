@@ -70,20 +70,33 @@ function getFirstStreamSource(channel) {
     if (Array.isArray(channel.sources) && channel.sources.length > 0) {
         const first = channel.sources.find(s => s.url || s.mpd || s.m3u8) || channel.sources[0];
         if (first) {
+            let u = (first.url || first.mpd || first.m3u8 || "").trim();
+            let k = (first.kid_key || first.key || "").trim();
+            if (u.includes("|")) {
+                const parts = u.split("|");
+                u = parts[0].trim();
+                if (!k && parts[1]) k = parts[1].trim();
+            }
             return {
-                url: (first.url || first.mpd || first.m3u8 || "").trim(),
-                kid_key: first.kid_key || first.key || "",
+                url: u,
+                kid_key: k,
                 ua: first.ua || "",
                 dazn_token: first.dazn_token || ""
             };
         }
     }
 
-    const directUrl = (channel.url || channel.mpd || channel.m3u8 || "").trim();
+    let directUrl = (channel.url || channel.mpd || channel.m3u8 || "").trim();
+    let directKey = (channel.kid_key || channel.key || "").trim();
     if (directUrl) {
+        if (directUrl.includes("|")) {
+            const parts = directUrl.split("|");
+            directUrl = parts[0].trim();
+            if (!directKey && parts[1]) directKey = parts[1].trim();
+        }
         return {
             url: directUrl,
-            kid_key: channel.kid_key || channel.key || "",
+            kid_key: directKey,
             ua: channel.ua || "",
             dazn_token: channel.dazn_token || ""
         };

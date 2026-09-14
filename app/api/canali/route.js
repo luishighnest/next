@@ -259,11 +259,21 @@ export async function GET(request) {
                         } catch(e) {}
                     }
 
+                    let rawStreamUrl = (ev.mpd || ev.url || "").trim();
+                    let rawKidKey = (ev.key || ev.kid_key || "").trim();
+                    if (rawStreamUrl.includes("|")) {
+                        const parts = rawStreamUrl.split("|");
+                        rawStreamUrl = parts[0].trim();
+                        if (!rawKidKey && parts[1]) {
+                            rawKidKey = parts[1].trim();
+                        }
+                    }
+
                     const sourceItem = {
                         name: isWarp ? "WARP (Cloudflare)" : "Standard",
                         isWarp: isWarp,
-                        url: ev.mpd || ev.url || "",
-                        kid_key: ev.key || ev.kid_key || "",
+                        url: rawStreamUrl,
+                        kid_key: rawKidKey,
                         ua: ev.ua || "",
                         dazn_token: ev.dazn_token || ""
                     };
@@ -283,8 +293,8 @@ export async function GET(request) {
                             title: cleanTitle,
                             group: groupName,
                             navbar: "eventi",
-                            url: ev.mpd || ev.url || "",
-                            kid_key: ev.key || ev.kid_key || "",
+                            url: rawStreamUrl,
+                            kid_key: rawKidKey,
                             provider: ev.provider || "DAZN",
                             logo: ev.image || "/logos/dazn.png",
                             image: ev.image || "",
