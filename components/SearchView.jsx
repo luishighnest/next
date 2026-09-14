@@ -27,7 +27,8 @@ export default function SearchView({
     onSearchChange,
     categories: propCategories,
     onClose,
-    onSelectChannel
+    onSelectChannel,
+    isClosing = false
 }) {
     const [localCategories, setLocalCategories] = useState([]);
     const categories = (propCategories && propCategories.length > 0) ? propCategories : localCategories;
@@ -93,7 +94,7 @@ export default function SearchView({
     };
 
     return (
-        <div className="search-view-container">
+        <div className={`search-view-container${isClosing ? " is-closing" : ""}`}>
             {!deferredSearch.trim() ? (
                 <div className="search-empty-prompt">
                     <div className="search-prompt-icon">

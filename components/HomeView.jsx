@@ -66,7 +66,19 @@ function HomeViewContent({ defaultTab = "all" }) {
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
+    const [isClosingSearch, setIsClosingSearch] = useState(false);
     const [exploreData, setExploreData] = useState(null);
+
+    // Chiude la ricerca con animazione coordinata: barra + overlay spariscono insieme
+    const handleCloseSearch = () => {
+        if (isClosingSearch) return;
+        setIsClosingSearch(true);
+        setTimeout(() => {
+            setIsSearchOpen(false);
+            setIsClosingSearch(false);
+            setSearch("");
+        }, 200);
+    };
 
     // Rilevamento Device Deterministico
     const { isMobile } = useDeviceState();
@@ -475,15 +487,17 @@ function HomeViewContent({ defaultTab = "all" }) {
                 searchVal={search}
                 setSearchVal={setSearch}
                 onSearch={(s) => setSearch(s)}
+                isClosingSearch={isClosingSearch}
+                onCloseSearch={handleCloseSearch}
             />
 
             {/* HERO NOW A TUTTO SCHERMO (SOLO NEL TAB HOME/ALL E SE LA RICERCA NON È APERTA) */}
-            {!isSearchOpen && filter === "all" && (
+            {!isSearchOpen && !isClosingSearch && filter === "all" && (
                 <HomeHero categories={categories} />
             )}
 
-            <main className={`home-content ${!isSearchOpen && filter === "all" ? "has-hero" : ""}`}>
-                {!isSearchOpen && filter !== "all" && currentSubCategories.length > 0 && (
+            <main className={`home-content ${!isSearchOpen && !isClosingSearch && filter === "all" ? "has-hero" : ""}`}>
+                {!isSearchOpen && !isClosingSearch && filter !== "all" && currentSubCategories.length > 0 && (
                     <SubCategoryChips
                         items={currentSubCategories}
                         activeSubFilter={subFilter}
@@ -491,11 +505,12 @@ function HomeViewContent({ defaultTab = "all" }) {
                     />
                 )}
 
-                {isSearchOpen ? (
+                {(isSearchOpen || isClosingSearch) ? (
                     <SearchView
                         search={search}
                         onSearchChange={(s) => setSearch(s)}
                         categories={categories}
+                        isClosing={isClosingSearch}
                     />
                 ) : (
                     loading ? (

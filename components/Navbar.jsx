@@ -19,7 +19,9 @@ export default function Navbar({
     isSearchOpen: propIsSearchOpen,
     setIsSearchOpen: propSetIsSearchOpen,
     searchVal: propSearchVal,
-    setSearchVal: propSetSearchVal
+    setSearchVal: propSetSearchVal,
+    isClosingSearch: propIsClosingSearch,
+    onCloseSearch: propOnCloseSearch
 }) {
     const pathname = usePathname();
     const router = useRouter();
@@ -44,7 +46,8 @@ export default function Navbar({
         eventi: [],
         vod: []
     });
-    const [isClosingSearch, setIsClosingSearch] = useState(false);
+    const [localIsClosingSearch, setLocalIsClosingSearch] = useState(false);
+    const isClosingSearch = propIsClosingSearch !== undefined ? propIsClosingSearch : localIsClosingSearch;
     const hoverTimeoutRef = useRef(null);
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
@@ -265,13 +268,19 @@ export default function Navbar({
 
     const handleCloseSearch = () => {
         if (isClosingSearch) return;
-        setIsClosingSearch(true);
-        setTimeout(() => {
-            setIsSearchOpen(false);
-            setIsClosingSearch(false);
-            setSearchVal("");
-            if (onSearch) onSearch("");
-        }, 180);
+        if (propOnCloseSearch) {
+            // Parent controls the closing animation (bar + overlay together)
+            propOnCloseSearch();
+        } else {
+            // Standalone fallback (e.g. sky/eventi pages)
+            setLocalIsClosingSearch(true);
+            setTimeout(() => {
+                setIsSearchOpen(false);
+                setLocalIsClosingSearch(false);
+                setSearchVal("");
+                if (onSearch) onSearch("");
+            }, 180);
+        }
     };
 
     const isHidden = isNavHidden && !isSearchOpen;
@@ -301,25 +310,15 @@ export default function Navbar({
                                 }}
                                 autoFocus
                             />
-                            {searchVal && (
-                                <button
-                                    type="button"
-                                    className="search-fullbar-clear-btn"
-                                    onClick={() => handleSearchChange("")}
-                                    aria-label="Cancella testo"
-                                    title="Cancella testo"
-                                >
-                                    <i className="fas fa-circle-xmark"></i>
-                                </button>
-                            )}
+                            {/* Unico pulsante "Annulla": chiude ricerca e svuota il testo in un gesto solo */}
                             <button
                                 type="button"
-                                className="search-fullbar-close-btn"
+                                className="search-fullbar-cancel-btn"
                                 onClick={handleCloseSearch}
-                                aria-label="Chiudi ricerca"
-                                title="Chiudi ricerca (Esc)"
+                                aria-label="Annulla ricerca"
+                                title="Annulla ricerca (Esc)"
                             >
-                                <i className="fas fa-xmark"></i>
+                                Annulla
                             </button>
                         </div>
                     </div>

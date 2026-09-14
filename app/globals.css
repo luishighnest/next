@@ -2447,58 +2447,26 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     color: rgba(255, 255, 255, 0.4);
 }
 
-.search-fullbar-clear-btn {
+/* Pulsante "Annulla" – sostituisce la doppia X: chiude ricerca e svuota il testo in un unico gesto */
+.search-fullbar-cancel-btn {
     background: transparent;
     border: none;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.93rem;
+    font-weight: 500;
+    font-family: inherit;
+    letter-spacing: -0.01em;
     cursor: pointer;
-    padding: 6px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color 0.2s ease, transform 0.2s ease;
+    padding: 4px 6px 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
     flex-shrink: 0;
-}
-
-.search-fullbar-clear-btn:hover {
-    color: #ffffff;
-    transform: scale(1.1);
-}
-
-.search-fullbar-close-btn {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    color: rgba(255, 255, 255, 0.75);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-    flex-shrink: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.search-fullbar-close-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.35);
-    color: #ffffff;
-    transform: scale(1.08);
-    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.22);
-}
-
-.search-fullbar-close-btn:active {
-    transform: scale(0.92);
-}
-
-.search-fullbar-close-btn i {
-    font-size: 0.95rem;
+    transition: color 0.18s ease;
     line-height: 1;
+}
+
+.search-fullbar-cancel-btn:hover {
+    color: #ffffff;
 }
 
 /* ==========================================================================
@@ -2547,9 +2515,19 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     padding-top: 10px;
 }
 
+.search-view-container.is-closing {
+    animation: searchViewFadeOut 0.2s cubic-bezier(0.4, 0, 1, 1) forwards !important;
+    pointer-events: none;
+}
+
 @keyframes searchViewFadeIn {
     from { opacity: 0; transform: translateY(14px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes searchViewFadeOut {
+    from { opacity: 1; transform: translateY(0); }
+    to { opacity: 0; transform: translateY(-8px); }
 }
 
 .search-empty-prompt {
