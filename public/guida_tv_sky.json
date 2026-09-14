@@ -2188,25 +2188,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "14:30",
-        "fine": "17:55",
-        "titolo": "Torres - Ostiamare",
-        "descrizione": "Cod. 416683 - Serie C - 4a giornata. Calcio d'inizio ore 15:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
-      },
-      {
-        "ora": "17:55",
-        "fine": "20:55",
-        "titolo": "Ospitaletto - Juventus Next Gen",
-        "descrizione": "Cod. 416137 - Serie C - 4a giornata. Calcio d'inizio ore 18:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
-      },
-      {
-        "ora": "20:55",
-        "fine": "00:30",
-        "titolo": "Trento - Union Brescia",
-        "descrizione": "Cod. 416148 - Serie C - 4a giornata. Calcio d'inizio ore 21:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
+        "ora": "06:00",
+        "fine": "23:59",
+        "titolo": "Sky Sport 252 - In attesa di trasmissione",
+        "descrizione": "Le trasmissioni riprenderanno in occasione dei prossimi eventi live.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3bb6c796-c876-40d5-b3d1-331f57a2714a/background/1920"
       }
     ]
   },
@@ -2215,25 +2201,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "14:30",
-        "fine": "17:55",
-        "titolo": "Lecco - Giana Erminio",
-        "descrizione": "Cod. 416104 - Serie C - 4a giornata. Calcio d'inizio ore 15:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
-      },
-      {
-        "ora": "17:55",
-        "fine": "20:55",
-        "titolo": "Folgore Caratese - Alcione Milano",
-        "descrizione": "Cod. 416091 - Serie C - 4a giornata. Calcio d'inizio ore 18:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
-      },
-      {
-        "ora": "20:55",
-        "fine": "00:30",
-        "titolo": "Novara - Pergolettese",
-        "descrizione": "Cod. 416126 - Serie C - 4a giornata. Calcio d'inizio ore 21:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
+        "ora": "06:00",
+        "fine": "23:59",
+        "titolo": "Sky Sport 253 - In attesa di trasmissione",
+        "descrizione": "Le trasmissioni riprenderanno in occasione dei prossimi eventi live.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3bb6c796-c876-40d5-b3d1-331f57a2714a/background/1920"
       }
     ]
   },
@@ -2242,25 +2214,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "14:30",
-        "fine": "17:55",
-        "titolo": "Carpi - Cittadella",
-        "descrizione": "Cod. 416375 - Serie C - 4a giornata. Calcio d'inizio ore 15:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
-      },
-      {
-        "ora": "17:55",
-        "fine": "20:55",
-        "titolo": "Lumezzane - Renate",
-        "descrizione": "Cod. 416115 - Serie C - 4a giornata. Calcio d'inizio ore 18:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
-      },
-      {
-        "ora": "20:55",
-        "fine": "00:30",
-        "titolo": "Arzignano - Desenzano",
-        "descrizione": "Cod. 416364 - Serie C - 4a giornata. Calcio d'inizio ore 21:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
+        "ora": "06:00",
+        "fine": "23:59",
+        "titolo": "Sky Sport 254 - In attesa di trasmissione",
+        "descrizione": "Le trasmissioni riprenderanno in occasione dei prossimi eventi live.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3bb6c796-c876-40d5-b3d1-331f57a2714a/background/1920"
       }
     ]
   },
@@ -2269,18 +2227,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "14:30",
-        "fine": "17:25",
-        "titolo": "Treviso - Pro Vercelli",
-        "descrizione": "Cod. 416159 - Serie C - 4a giornata. Calcio d'inizio ore 15:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
-      },
-      {
-        "ora": "17:25",
-        "fine": "21:00",
-        "titolo": "SV 07 Elversberg - FC Bayern Monaco",
-        "descrizione": "Calcio Bundesliga 3a giornata. Calcio d'inizio ore17:30",
-        "immagine": "https://img-guidatv.org/partite/bundesliga.jpeg"
+        "ora": "06:00",
+        "fine": "23:59",
+        "titolo": "Sky Sport 255 - In attesa di trasmissione",
+        "descrizione": "Le trasmissioni riprenderanno in occasione dei prossimi eventi live.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3bb6c796-c876-40d5-b3d1-331f57a2714a/background/1920"
       }
     ]
   },
@@ -2289,11 +2240,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "14:30",
-        "fine": "18:30",
-        "titolo": "Dolomiti Bellunesi - AlbinoLeffe",
-        "descrizione": "Cod. 416386 - Serie C - 4a giornata. Calcio d'inizio ore 15:00.",
-        "immagine": "https://img-guidatv.org/partite/partitaseriec.png"
+        "ora": "06:00",
+        "fine": "23:59",
+        "titolo": "Sky Sport 256 - In attesa di trasmissione",
+        "descrizione": "Le trasmissioni riprenderanno in occasione dei prossimi eventi live.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3bb6c796-c876-40d5-b3d1-331f57a2714a/background/1920"
       }
     ]
   },
@@ -2302,11 +2253,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "15:00",
-        "fine": "19:00",
-        "titolo": "RB Lipsia - Amburgo SV",
-        "descrizione": "Calcio Bundesliga 3a giornata. Calcio d'inizio ore15:30",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f978ce74-cbe1-48bc-84ac-f2482f0e031f/background/600"
+        "ora": "06:00",
+        "fine": "23:59",
+        "titolo": "Sky Sport 257 - In attesa di trasmissione",
+        "descrizione": "Le trasmissioni riprenderanno in occasione dei prossimi eventi live.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3bb6c796-c876-40d5-b3d1-331f57a2714a/background/1920"
       }
     ]
   },
@@ -2315,11 +2266,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "12:30",
-        "fine": "16:30",
-        "titolo": "Manchester Utd - Chelsea",
-        "descrizione": "Calcio Women's Super League 2a giornata. Calcio d'inizio ore 13:00",
-        "immagine": "https://img-guidatv.org/8633/manchester-utd-chelsea/0.jpg"
+        "ora": "06:00",
+        "fine": "23:59",
+        "titolo": "Sky Sport 258 - In attesa di trasmissione",
+        "descrizione": "Le trasmissioni riprenderanno in occasione dei prossimi eventi live.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3bb6c796-c876-40d5-b3d1-331f57a2714a/background/1920"
       }
     ]
   },
@@ -7995,95 +7946,81 @@
     "categoria": "Cinema",
     "programmi": [
       {
-        "ora": "01:10",
-        "fine": "03:00",
-        "titolo": "Di nuovo in gioco",
-        "descrizione": "Un talent scout del mondo del baseball (Clint Eastwood) sta perdendo la vista ma decide comunque di partire per un viaggio on the road insieme alla figlia, con l’intenzione di incontrare una giovane promessa.",
-        "immagine": "https://img-guidatv.org/film_new/d/5e78d8e9ce1e246c511cba48/5e78d8e9ce1e246c511cba48_p_3_rs_300.jpg"
-      },
-      {
         "ora": "03:00",
         "fine": "05:10",
         "titolo": "We Are Marshall",
-        "descrizione": "La sera del 14 novembre 1970 un DC-9 della Southern Airways precipita con a bordo gran parte della squadra di football della Marshall University. La cittadina di Huntington rimane molto scossa per l'accaduto fino all'arrivo di un nuovo coach, Jack Lengyel, che con la sua caparbietà riuscirà a risollevare le sorti della squadra, inculcando la voglia di vivere e combattere ai pochi sopravvissuti, portando avanti con onore gli impegni della squadra.",
-        "immagine": "https://image.tmdb.org/t/p/w300/5PSiExbg6Fm8MiPJOikBCOcZFnd.jpg"
-      },
-      {
-        "ora": "05:05",
-        "fine": "06:55",
-        "titolo": "Nata per te",
-        "descrizione": "Il tribunale di Napoli è alla ricerca di una famiglia per Alba, che ha la sindrome di down e, appena nata, è stata abbandonata in ospedale. Luca, single, omosessuale, cattolico, da sempre mosso da un forte desiderio di paternità, lotta per ottenere l’affidamento di Alba. Quante famiglie “tradizionali” devono dire di no prima che Luca possa essere preso in considerazione? Può una bambina rifiutata dal mondo diventare il premio di una vita?",
-        "immagine": "https://image.tmdb.org/t/p/w300/2Y5bNAxlOuWr3EfvJl8ris7VURN.jpg"
+        "descrizione": "Dal regista di \"Charlie's Angels\", un'emozionante storia vera con Matthew McConaughey. Dopo un tragico incidente, un allenatore fa di tutto per ricostruire la squadra di football (USA 2006)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/f6a5cfe1-56e6-4b3f-98fa-784e98b4d04a/background?territory=IT&md5ChecksumParam=4b98bfb471c03ef50a57c0e587f0cd68"
       },
       {
         "ora": "05:10",
         "fine": "08:05",
         "titolo": "The Wolf of Wall Street",
-        "descrizione": "Basato su una storia vera, The Wolf of Wall Street segue l’impressionante ascesa e la caduta di Jordan Belfort (interpretato dal tre volte candidato all’Academy Award® Leonardo DiCaprio), il broker di New York che conquista una fortuna incredibile truffando milioni di investitori. Il film segue la folle cavalcata di Belfort, un giovane “nuovo arrivato” a Wall Street che si trasforma via via in un corrotto manipolatore dei mercati e in un cowboy della Borsa. Avendo conquistato rapidamente una ricchezza enorme, Jordan la utilizza per comprarsi un’infinita gamma di afrodisiaci: donne, cocaina, automobili, la moglie supermodella e una vita leggendaria fatta di aspirazioni e acquisti senza limiti. Ma mentre la società di Belfort, la Stratton Oakmont, è sulla cresta dell’onda e sguazza nella gratificazione edonistica più estrema, la SEC e l’FBI tengono d’occhio il suo impero contrassegnato dagli eccessi.",
-        "immagine": "https://img-guidatv.org/film_new/altro/5e78dd56ce1e246c511ccec0/5e78dd56ce1e246c511ccec0_p_1_rs_300.jpg"
+        "descrizione": "Golden Globe a Leonardo DiCaprio nel biopic di Martin Scorsese con Margot Robbie. L'incredibile ascesa di Jordan Belfort, un broker attratto dalla sete di potere e da una vita dissoluta (USA 2013)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/71d5fc79-0830-45a8-ac97-0bb45471b4a6/background?territory=IT&md5ChecksumParam=5be1811a7c103a0b4a11dfed85c15c38"
       },
       {
-        "ora": "06:55",
-        "fine": "08:40",
-        "titolo": "The Last Rifleman - Ritorno in Normandia",
-        "descrizione": "Un veterano della Seconda Guerra Mondiale fugge dalla sua casa di cura in Irlanda del Nord e intraprende un viaggio arduo ma stimolante verso la Francia per partecipare al 75° anniversario dello sbarco del D-Day.",
-        "immagine": "https://img-guidatv.org/film_new/t/65f82771a1a720ad0aff5242/65f82771a1a720ad0aff5242_p_1_rs_300.jpg"
+        "ora": "08:05",
+        "fine": "10:10",
+        "titolo": "La verità secondo Maureen K.",
+        "descrizione": "Pellicola biografica con Isabelle Huppert protagonista. Maureen Kernay, sindacalista in un'azienda leader nel campo nucleare, scopre un segreto che potrebbe sconvolgere l'intera nazione (FRA/DEU 2022)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/5a5e496f-1363-4466-a387-cdea5a11faa3/background?territory=IT&md5ChecksumParam=2196ba378a269e07524d4162ea8d6fd4"
       },
       {
-        "ora": "08:40",
-        "fine": "10:55",
-        "titolo": "Il caso Spotlight",
-        "descrizione": "Al “Boston Globe” nell’estate del 2001 arriva da Miami un nuovo direttore, Marty Baron. E’ deciso a far sì che il giornale torni in prima linea su tematiche anche scottanti, liberando dalla routine il team di giornalisti investigativi che è aggregato sotto la sigla di ‘Spotlight’. Il primo argomento di cui vuole che il giornale si occupi è quello relativo a un sacerdote che nel corso di trent’anni ha abusato numerosi giovani senza che contro di lui venissero presi provvedimenti drastici. Baron è convinto che il cardinale di Boston fosse al corrente del problema ma che abbia fatto tutto quanto era in suo potere perché la questione venisse insabbiata. Nasce così un’inchiesta che ha portato letteralmente alla luce un numero molto elevato di abusi di minori in ambito ecclesiale.",
-        "immagine": "https://img-guidatv.org/film_new/i/5e78db8ece1e246c511cc66f/5e78db8ece1e246c511cc66f_p_3_rs_300.jpg"
+        "ora": "10:10",
+        "fine": "12:20",
+        "titolo": "Ennio Doris: C'e' anche domani",
+        "descrizione": "Massimo Ghini interpreta il fondatore di Banca Mediolanum: dall'infanzia a Tombolo fino alle scelte che lo hanno reso l'uomo d'oro della finanza italiana (ITA 2024)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/06583ab7-3e64-47f3-b867-798130d3aaf3/background?territory=IT&md5ChecksumParam=506d60d48b12565d6d2092a7b0e5c2cd"
       },
       {
-        "ora": "10:55",
-        "fine": "12:50",
-        "titolo": "Primavera",
-        "descrizione": "Primi del Settecento. L'Ospedale della Pietà è il più grande orfanotrofio di Venezia, ma è anche un'istituzione che avvia le orfane più brillanti allo studio della musica. La sua orchestra è una delle più apprezzate al mondo. Cecilia ha vent'anni, vive da sempre alla Pietà ed è una straordinaria violinista. L'arte ha dischiuso la sua mente ma non le porte dell'orfanotrofio; può esibirsi solo lì dentro, dietro una grata, per ricchi mecenati. Questo fino a che un vento di primavera scuote improvvisamente la sua vita. Tutto cambia con l'arrivo del nuovo insegnante di violino. Il suo nome è Antonio Vivaldi.",
-        "immagine": "https://image.tmdb.org/t/p/w300/6Giqb3a9ITCKhlkNeWtfzGWOxU0.jpg"
+        "ora": "12:20",
+        "fine": "13:55",
+        "titolo": "Honey Don't!",
+        "descrizione": "Dark comedy corale di Ethan Coen con Margaret Qualley e Chris Evans. Mentre indaga sulla morte sospetta di una coppia, la detective Honey O'Donahue scopre una pericolosa setta (US/GB 2025)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/7cca7245-e624-423a-98e5-0b3e50511a58/HERO_CLEAN_WIDE?territory=IT&version=018d25e3-62b4-3f65-9e34-a6885e874418&w=1920&h=1080&md5ChecksumParam=ad6346967f09fcdf18d1531eb09516c5"
       },
       {
-        "ora": "12:50",
-        "fine": "15:10",
-        "titolo": "Song Sung Blue - Una melodia d'amore",
-        "descrizione": "Ispirato a una storia vera, due musicisti in difficoltà (Hugh Jackman e Kate Hudson) danno vita a una gioiosa tribute band dedicata a Neil Diamond, dimostrando che non è mai troppo tardi per innamorarsi e inseguire i propri sogni.",
-        "immagine": "https://image.tmdb.org/t/p/w300/oTYIe3BHQKCR8NtEHok8HDikIce.jpg"
+        "ora": "13:55",
+        "fine": "17:05",
+        "titolo": "Il miglio verde",
+        "descrizione": "Tom Hanks nel dramma carcerario tratto dal romanzo di Stephen King. 1935: un gigantesco e silenzioso uomo, dotato di poteri curativi, viene condannato a morte per omicidio (USA 1999)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/49a9ab24-efa3-4e99-866a-75dee31cac08/background?territory=IT&md5ChecksumParam=cfe7817e12fbd44b7cb9b12607366ba9"
       },
       {
-        "ora": "15:10",
-        "fine": "17:15",
-        "titolo": "I diari della motocicletta",
-        "descrizione": "1952. Due giovani studenti universitari, Alberto Granado ed Ernesto Guevara partono per un viaggio in moto che li deve portare ad attraversare diversi paesi del continente latinoamericano. Quella che doveva essere un'avventura giovanile si trasforma progressivamente nella presa di coscienza della condizione di indigenza in cui versa gran parte della popolazione. Quel viaggio cambiera' nel profondo i due uomini. Uno di loro diventera' il mitico \"Che\" mentre l'altro, ancora vivente, e' medico a Cuba.",
-        "immagine": "https://image.tmdb.org/t/p/w300/ffUDlxqw0cQYpjVLbJS9pdkQVZS.jpg"
+        "ora": "17:05",
+        "fine": "18:55",
+        "titolo": "Diana - La storia segreta di Lady D",
+        "descrizione": "Naomi Watts interpreta la principessa piu' amata di sempre nel film che ne ricostruisce la favola tragica, fra cronaca e retroscena. Dalla separazione dal Principe Carlo all'amore spezzato per Hasnat Khan, fino alla notte di Parigi in cui Diana perse la vita in un incidente (GBR/FRA 2013)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/5d81bd2d-a52a-4011-b0e8-7ad35595ebf6/background?territory=IT&md5ChecksumParam=916da4bbe8c23a0209e6161cfb7c2276"
       },
       {
-        "ora": "17:15",
-        "fine": "19:30",
-        "titolo": "A beautiful mind",
-        "descrizione": "Il film si ispira alla vita di John Forbes Nash Jr. Di origini medio borghesi, Forbes nacque in una piccola città della Virginia occidentale il 13 giugno 1928 e, per oltre cinquant'anni è stato considerato un mito negli ambienti della ricerca matematica. Grazie al suo studio della teoria dei giochi, negli anni 50 diventò l'astro nascente della \"nuova matematica\". Poco a poco, vittima di una grave forma di schizofrenia, Nash sprofondò in un mondo tutto suo, convinto che le sue allucinazioni fossero realtà. Passò diversi anni in ospedali psichiatrici, ma durante la sua assenza, la teoria dei giochi acquistò un ruolo di importanza fondamentale nei campi dell'economia e degli affari. Nel 1994, Nash aveva riacquistato il pieno controllo della sua vita e ripreso le ricerche. In quello stesso anno venne insignito del Premio Nobel per l'economia.",
-        "immagine": "https://img-guidatv.org/film_new/a/5e78e003ce1e246c511cdc77/5e78e003ce1e246c511cdc77_p_1_rs_300.jpg"
-      },
-      {
-        "ora": "19:30",
+        "ora": "18:55",
         "fine": "21:15",
-        "titolo": "Il piacere è tutto mio",
-        "descrizione": "La storia ruota attorno alla vicenda personale di Nancy Stokes un'insegnante in pensione, vedova, con alle spalle un matrimonio solido e rigoroso a cui però è sempre mancato un po' di brivido. Ormai sola, Nancy decide di cercare quello che nella vita di coppia non ha mai trovato: una soddisfacente esperienza sessuale. Si rivolge così a un'agenzia di gigolò e sceglie di incontrare Leo Grande. Giovane e affascinante, Leo Grande sembra essere tutto quello per cui Nancy è pronta a pagare: un uomo in grado di realizzare le sue fantasie. Ma nel corso di tre incontri in una camera di hotel le dinamiche cambiano: Leo si dimostra non solo come un uomo con cui fare dell'ottimo sesso, ma anche una persona con cui parlare e nonostante la differenza d'età, tra i due nascerà un rapporto di fiducia che porterà Nancy a riscoprire se stessa...",
-        "immagine": "https://image.tmdb.org/t/p/w300/yLmDXwVmxlmID7sXBLrAweVF5Yx.jpg"
+        "titolo": "Captain Phillips - Attacco in mare aperto",
+        "descrizione": "Tom Hanks nel film tratto da una storia vera, nominato a 6 premi Oscar. Il capitano di una nave americana assalita dai pirati si offre come ostaggio per salvare il suo equipaggio (USA 2013)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/f53f207a-5ca1-402b-a860-e72dbcad20d7/background?territory=IT&md5ChecksumParam=f925af3494f6d4a191f5baaf79a54d5d"
       },
       {
         "ora": "21:15",
         "fine": "23:35",
-        "titolo": "La battaglia di Hacksaw Ridge",
-        "descrizione": "L'attacco alla base americana di Pearl Harbor apre un nuovo fronte delle ostilità in Giappone. Desmond Doss, cresciuto sulle montagne della Virginia e in una famiglia vessata da un padre alcolizzato, decide di arruolarsi e di servire il suo Paese. Ma Desmond non è come gli altri. Cristiano avventista e obiettore di coscienza, il ragazzo rifiuta di impugnare il fucile e uccidere un uomo. Fosse anche nemico. In un mondo dilaniato dalla guerra, Desmond ha deciso di rimettere assieme i pezzi. Arruolato come soccorritore medico e spedito sull'isola di Okinawa combatterà contro l'esercito nipponico, contro il pregiudizio dei compagni e contro i fantasmi di dentro che urlano più forte nel clangore della battaglia.",
-        "immagine": "https://img-guidatv.org/film_new/l/5ed53709baa60701bbae787f/5ed53709baa60701bbae787f_p_1_rs_300.jpg"
+        "titolo": "Codice d'onore",
+        "descrizione": "Tom Cruise sfida Jack Nicholson in un dramma giudiziario con Demi Moore e Kevin Bacon. Tre avvocati militari difendono due marines accusati dell'omicidio di un commilitone (USA 1992)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/c707cf29-2581-4c4b-ae53-7b7d517e8ad1/background?territory=IT&md5ChecksumParam=4b5d529db38188629231c34665ed78ba"
       },
       {
         "ora": "23:35",
-        "fine": "01:10",
-        "titolo": "Honey Don't!",
-        "descrizione": "Honey O'Donahue, una detective privata di una cittadina, si immerge in una serie di strani decessi legati a una misteriosa chiesa.",
-        "immagine": "https://image.tmdb.org/t/p/w300/3TtCSSRTbgHrc9oHtUs3FDn6Nal.jpg"
+        "fine": "01:15",
+        "titolo": "A History of Violence",
+        "descrizione": "David Cronenberg dirige Viggo Mortensen in un thriller fra apparenza e realta'. Dopo aver ucciso 2 rapinatori per legittima difesa, un uomo si trova braccato da loschi individui (USA 2005)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/66d01b2c-8343-47a5-8102-c92cc0405657/background?territory=IT&md5ChecksumParam=dfbd9e9f3ce5647664083b704b41011a"
+      },
+      {
+        "ora": "01:15",
+        "fine": "03:00",
+        "titolo": "Crimes of the Future",
+        "descrizione": "Sci-fi di David Cronenberg con Viggo Mortensen e Lea Seydoux. Un performer capace di sviluppare nuovi organi interni esibisce le sue mutazioni in spettacoli d'avanguardia (USA 2022)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/890a1e1e-3ccc-47f8-a91c-2b149c978234/background?territory=IT&md5ChecksumParam=4fdd2edf485a9631df1ebeab16460c7d"
       }
     ]
   },
@@ -29518,6 +29455,109 @@
         "titolo": "Ep. 8",
         "descrizione": "S2 Ep8 Doppio colpo - Kori e Lockie ricevono un doppio smacco. Le insicurezza di Nathan hanno la meglio su di lui e Mike ha una sopresa!",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/1dbd9891-3c33-4d88-8698-082853a427eb/background?territory=IT&md5ChecksumParam=03e93273e09b848d24219c9087bab53b"
+      }
+    ]
+  },
+  {
+    "canale": "Sky Cinema Uno +24",
+    "categoria": "Cinema",
+    "programmi": [
+      {
+        "ora": "03:05",
+        "fine": "04:50",
+        "titolo": "Caddo Lake",
+        "descrizione": "Thriller ricco di suspense con Dylan O'Brien, prodotto da M. Night Shyamalan. Quando la piccola Anna scompare misteriosamente nei pressi di un lago, inizia una disperata ricerca (USA 2024)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/0802dd70-54bb-4696-b527-397d823194cd/background?territory=IT&md5ChecksumParam=370044d7d2d70472229316bb4a2add3f"
+      },
+      {
+        "ora": "04:50",
+        "fine": "07:05",
+        "titolo": "La verità è che non gli piaci abbastanza",
+        "descrizione": "... abbastanza. - Spumeggiante commedia romantica con Jennifer Aniston, Ben Affleck, Jennifer Connelly e Scarlett Johansson. A Baltimora si intrecciano le vicende amorose di un gruppo di donne (USA/NLD 2009)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/55ccf1dd-3f3d-4dc2-aa5f-3d4822bcf178/background?territory=IT&md5ChecksumParam=91e07cc3083696fc899458f745d852c0"
+      },
+      {
+        "ora": "07:05",
+        "fine": "08:55",
+        "titolo": "Il matrimonio del mio migliore amico",
+        "descrizione": "Scatenata commedia romantica con Julia Roberts e Cameron Diaz rivali in amore. Una ragazza scopre di essere innamorata del suo miglior amico che sta per sposarsi e decide di sedurlo (TUR 1997)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/e9fed228-2d84-4e28-88b0-ac4b0017474d/background?territory=IT&md5ChecksumParam=86c00a2aee8a19d20f8b3f5f6a6e25d5"
+      },
+      {
+        "ora": "08:55",
+        "fine": "10:40",
+        "titolo": "Un anno di scuola",
+        "descrizione": "Il racconto dell'adolescenza nel film di Laura Samani premiato nella sezione Orizzonti a Venezia. L'arrivo di una studentessa svedese rompe gli equilibri in un gruppo di tre amici (ITA 2025)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/5a7f9771-db5d-4bc8-ab86-709c65f4a431/HERO_CLEAN_WIDE?territory=IT&version=a2467db1-89c8-396b-a692-164458836ce1&w=1920&h=1080&md5ChecksumParam=93b51e9395effcf8126ca7afd2f1d688"
+      },
+      {
+        "ora": "10:40",
+        "fine": "13:20",
+        "titolo": "Jurassic World - Il dominio",
+        "descrizione": "Il cast delle due spettacolari trilogie si incontra nel sesto capitolo di successo. Dopo la distruzione di Nublar, i dinosauri vagano liberi sulla Terra invasa da locuste giganti (USA 2022)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/be2f04c6-e0fc-4dcf-b6bd-b42f536fd99a/background?territory=IT&md5ChecksumParam=74de451fe982f6dc15f68b3b79fed393"
+      },
+      {
+        "ora": "13:20",
+        "fine": "15:40",
+        "titolo": "The Next Three Days",
+        "descrizione": "Paul Haggis dirige un thriller con Russell Crowe, Elizabeth Banks e Liam Neeson. Un uomo si trasforma in criminale per far evadere la moglie, accusata ingiustamente di omicidio.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/bb0fc616-e873-46c6-bbb0-f3367dc04269/background?territory=IT&md5ChecksumParam=c0c4f66b3842e46e9002e83fd373ea9d"
+      },
+      {
+        "ora": "15:40",
+        "fine": "17:30",
+        "titolo": "Ti Odio, Ti Lascio, Ti...",
+        "descrizione": "Commedia romantica con Vince Vaughn e Jennifer Aniston. Dopo l'ennesimo diverbio, Gary e Brooke decidono di lasciarsi ma nessuno dei due e' intenzionato ad abbandonare il tetto coniugale (USA 2006)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/ce16de8c-5cee-48d2-9bb4-c8a4134cddb7/background?territory=IT&md5ChecksumParam=eacd8d85ceaa89d64aa89c5169543e77"
+      },
+      {
+        "ora": "17:30",
+        "fine": "19:10",
+        "titolo": "Benvenuti in campagna",
+        "descrizione": "Giulia Bevilacqua, Maurizio Lastrico e Andrea Pennacchi nella commedia di Giambattista Avellino. Per fuggire dallo stress cittadino, la famiglia Fontana si trasferisce in campagna (ITA 2025)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/6b2245b6-d3d5-49d0-b322-fd7eb9409c23/HERO_CLEAN_WIDE?territory=IT&version=96025813-6346-31ed-8968-ea9d882c5e2b&w=1920&h=1080&md5ChecksumParam=fe2336fb01af59735896efd7e63019ef"
+      },
+      {
+        "ora": "19:10",
+        "fine": "21:15",
+        "titolo": "The Equalizer 2 - Senza perdono",
+        "descrizione": "Denzel Washington nel secondo capitolo action diretto da Antoine Fuqua. L'ex agente segreto Robert McCall torna a combattere il crimine quando una sua amica viene assassinata (USA 2018)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/82f241cd-070a-3541-8026-e40c81a4f8b4/background?territory=IT&md5ChecksumParam=52b29faac8e6899f10d684742d1452ed"
+      },
+      {
+        "ora": "21:15",
+        "fine": "23:20",
+        "titolo": "Santocielo",
+        "descrizione": "Inviato sulla Terra con il compito di mettere incinta la donna prescelta a partorire un altro figlio di Dio, il goffo angelo Aristide finisce per toccare il grembo di Nicola, un professore di matematica siciliano (ITA 2023)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/492c4c56-b96d-4a1a-9bfa-b485f383723b/background?territory=IT&md5ChecksumParam=b852bfd449427cf80a8653baae8cc41c"
+      },
+      {
+        "ora": "23:20",
+        "fine": "01:00",
+        "titolo": "Sai tenere un segreto?",
+        "descrizione": "Commedia romantica con Alexandra Daddario protagonista. Durante una forte turbolenza in aereo, Emma racconta i suoi segreti piu' inconfessabili all'uomo che le e' seduto accanto (USA 2019)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/705b3883-276c-4ada-bae7-133f9915535c/HERO_CLEAN_WIDE?territory=IT&version=c47983e5-7537-326d-837d-ba7adb2bf703&w=1920&h=1080&md5ChecksumParam=74561bb110dc510c69c8801f6d0048be"
+      },
+      {
+        "ora": "01:00",
+        "fine": "02:55",
+        "titolo": "Operation Fortune",
+        "descrizione": "Action Sky Original di Guy Ritchie con Jason Statham e Hugh Grant. Una spia dell'MI6 e il suo team di agenti reclutano una star di Hollywood per una missione sotto copertura (USA/GBR 2022)",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/104f7013-4bbb-4f1a-a685-3472e4f32d0e/background?territory=IT&md5ChecksumParam=4bce7817b1b8cafdd5b453857af3ae7b"
+      }
+    ]
+  },
+  {
+    "canale": "Sky Sport 259",
+    "categoria": "Sport",
+    "programmi": [
+      {
+        "ora": "06:00",
+        "fine": "23:59",
+        "titolo": "Sky Sport 259 - In attesa di trasmissione",
+        "descrizione": "Le trasmissioni riprenderanno in occasione dei prossimi eventi live.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3bb6c796-c876-40d5-b3d1-331f57a2714a/background/1920"
       }
     ]
   }

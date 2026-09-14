@@ -61,16 +61,16 @@ export default function HomeHero({ categories = [] }) {
             try {
                 let guideData = [];
                 try {
-                    const cached = sessionStorage.getItem("nmdz_guide_cache");
+                    const cached = sessionStorage.getItem("nmdz_guide_cache_v2");
                     if (cached) guideData = JSON.parse(cached);
                 } catch (e) {}
 
                 if (!guideData || guideData.length === 0) {
-                    const res = await fetch("/guida_tv_sky.json", { cache: "force-cache" });
+                    const res = await fetch("/guida_tv_sky.json?t=" + Date.now());
                     if (res.ok) {
                         guideData = await res.json();
                         try {
-                            sessionStorage.setItem("nmdz_guide_cache", JSON.stringify(guideData));
+                            sessionStorage.setItem("nmdz_guide_cache_v2", JSON.stringify(guideData));
                         } catch (e) {}
                     }
                 }
@@ -89,12 +89,12 @@ export default function HomeHero({ categories = [] }) {
                     const cat = (ch.categoria || "").toLowerCase();
                     const name = (ch.canale || "").toLowerCase();
                     const isSky = name.includes("sky");
-                    const isAllowedCat = cat === "sport" || cat === "intrattenimento";
+                    const isAllowedCat = cat === "sport" || cat === "intrattenimento" || cat === "cinema";
 
                     if (!isSky || !isAllowedCat) return;
                     if (!ch.programmi || ch.programmi.length === 0) return;
 
-                    // FILTRO ESPLICITO: Escludi Sky Sport 4K e tutti i canali Sky Sport 251..259 e calcio numerati
+                    // FILTRO ESPLICITO: Escludi Sky Sport 4K e canali di servizio non adatti alla Hero
                     const is4K = name.includes("4k");
                     const isSkySportNumbered = /sky\s*sport\s*25\d+/i.test(name) || /sky\s*calcio\s*\d+/i.test(name);
                     if (is4K || isSkySportNumbered) return;
