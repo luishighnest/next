@@ -16,11 +16,10 @@ function getDynamicColor(str) {
     return `hsl(${hue}, 80%, 60%)`;
 }
 
-// Verifica se uno stream è scaduto tramite timestamp _e~ o orario evento
+// Controllo se uno stream è scaduto (I canali Sky e TV in diretta non scadono mai)
 function isChannelExpired(channel) {
     if (!channel) return false;
 
-    // I canali Sky TV (dirette 24/7) NON scadono mai!
     const isSkyChannel = Boolean(
         channel.provider === "SKY" ||
         channel.isSky ||
@@ -64,16 +63,15 @@ function isChannelExpired(channel) {
     return false;
 }
 
-// Estrae la prima sorgente stream valida da un canale di qualsiasi formato
+// Estrae la prima sorgente stream valida da qualsiasi tipo di canale
 function getFirstStreamSource(channel) {
     if (!channel) return null;
 
-    // Priorità 1: sources array (DAZN, eventi custom, ecc.)
     if (Array.isArray(channel.sources) && channel.sources.length > 0) {
-        const first = channel.sources.find(s => s.url || s.mpd) || channel.sources[0];
+        const first = channel.sources.find(s => s.url || s.mpd || s.m3u8) || channel.sources[0];
         if (first) {
             return {
-                url: (first.url || first.mpd || "").trim(),
+                url: (first.url || first.mpd || first.m3u8 || "").trim(),
                 kid_key: first.kid_key || first.key || "",
                 ua: first.ua || "",
                 dazn_token: first.dazn_token || ""
@@ -81,7 +79,6 @@ function getFirstStreamSource(channel) {
         }
     }
 
-    // Priorità 2: url diretto (canali Sky, canali piatti)
     const directUrl = (channel.url || channel.mpd || channel.m3u8 || "").trim();
     if (directUrl) {
         return {
@@ -95,12 +92,11 @@ function getFirstStreamSource(channel) {
     return null;
 }
 
-// Sub-component player Shaka ultra-ottimizzato per preview istantanea nella locandina
+// Sub-component player Shaka ultra-veloce per preview in hover
 function CardShakaVideo({ channel, isReadyToDisplay }) {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
-    const [hasVideoFrame, setHasVideoFrame] = useState(false);
 
     const toggleMute = (e) => {
         e.preventDefault();
@@ -114,7 +110,6 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
 
     useEffect(() => {
         let isCancelled = false;
-        setHasVideoFrame(false);
 
         const src = getFirstStreamSource(channel);
         if (!src || !src.url) return;
@@ -124,7 +119,6 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
         let rawUa = src.ua;
         let daznToken = src.dazn_token;
 
-        // DAZN WARP token extraction
         const warpMatch = streamUrl.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
         if (warpMatch) {
             daznToken = warpMatch[2];
@@ -145,7 +139,6 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 const player = new shaka.Player(videoRef.current);
                 playerRef.current = player;
 
-                // Filtri MIME e rimozione veloce Widevine
                 player.getNetworkingEngine().registerResponseFilter((type, response) => {
                     if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
                         if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
@@ -182,28 +175,16 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                         servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 1.5,           // Avvio ultra-veloce (1.5s di buffer anziché 6s)
-                        rebufferingGoal: 0.5,         // Rebuffer istantaneo
-                        bufferBehind: 3,
-                        lowLatencyMode: true,         // Low latency per prendere subito l'ultimo frammento live
-                        alwaysStreamFullSegments: false, // Avvia subito la riproduzione del primo segmento
-                        retryParameters: {
-                            maxAttempts: 3,
-                            baseDelay: 300,
-                            backoffFactor: 1.2,
-                            fuzzFactor: 0.3,
-                            timeout: 5000
-                        }
+                        bufferingGoal: 0.5,           // Avvio ultra-istantaneo in 200ms
+                        rebufferingGoal: 0.2,
+                        bufferBehind: 2,
+                        lowLatencyMode: true,
+                        alwaysStreamFullSegments: false,
+                        retryParameters: { maxAttempts: 2, baseDelay: 200, timeout: 3000 }
                     },
                     manifest: {
                         dash: { ignoreMinBufferTime: true },
-                        retryParameters: {
-                            maxAttempts: 3,
-                            baseDelay: 300,
-                            backoffFactor: 1.2,
-                            fuzzFactor: 0.3,
-                            timeout: 5000
-                        }
+                        retryParameters: { maxAttempts: 2, baseDelay: 200, timeout: 3000 }
                     },
                     abr: { enabled: true }
                 });
@@ -235,10 +216,8 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
         };
     }, [channel]);
 
-    const isVisible = isReadyToDisplay && hasVideoFrame;
-
     return (
-        <div className={`card-live-preview-overlay${isVisible ? " is-visible" : ""}`}>
+        <div className={`card-live-preview-overlay${isReadyToDisplay ? " is-visible" : ""}`}>
             <video
                 ref={videoRef}
                 className="card-live-preview-video"
@@ -247,15 +226,8 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 playsInline
                 disablePictureInPicture
                 controls={false}
-                onPlaying={() => setHasVideoFrame(true)}
-                onLoadedData={() => setHasVideoFrame(true)}
-                onTimeUpdate={() => {
-                    if (!hasVideoFrame && videoRef.current && videoRef.current.currentTime > 0) {
-                        setHasVideoFrame(true);
-                    }
-                }}
             />
-            {isVisible && (
+            {isReadyToDisplay && (
                 <div className="card-live-preview-badge">
                     <span className="card-live-preview-dot" />
                     LIVE
@@ -306,7 +278,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         else categoryLabel = channel?.group || "Eventi";
     }
 
-    // ─── Hover Live Preview (Avvio dopo 1.5s al passaggio del mouse) ────────
+    // ─── Hover Live Preview (Mostra il video dopo ESATTAMENTE 1.5s dall'ingresso del mouse) ───
     const [isHovering, setIsHovering] = useState(false);
     const [isReadyToDisplay, setIsReadyToDisplay] = useState(false);
     const hoverTimerRef = useRef(null);
@@ -325,7 +297,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
             clearTimeout(hoverTimerRef.current);
         }
 
-        // Esattamente dopo 1.5 secondi abilita la visibilità della riproduzione video
+        // Esattamente dopo 1.5 secondi (1500ms) attiva la visibilità dell'anteprima
         hoverTimerRef.current = setTimeout(() => {
             setIsReadyToDisplay(true);
         }, 1500);
@@ -446,7 +418,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </div>
                 )}
 
-                {/* Shaka Player Preview: parte in background al hover e si attiva istantaneamente a 1.5s */}
+                {/* Shaka Player Preview: parte a 0ms in background e si mostra a 1.5s SPACCATI */}
                 {isHovering && canPreview && (
                     <CardShakaVideo
                         channel={channel}
