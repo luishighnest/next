@@ -1717,7 +1717,6 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1), 
                 opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
                 background 0.45s ease, 
-                border-color 0.45s ease, 
                 box-shadow 0.45s ease, 
                 backdrop-filter 0.45s ease;
 }
@@ -1756,9 +1755,10 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 /* Modalità in cima alla pagina: totalmente trasparente e senza bordi per fondersi nello sfondo */
 .home-header-wrapper.header-top {
-    background: transparent;
-    border-bottom: 1px solid transparent;
-    box-shadow: none;
+    background: transparent !important;
+    border-bottom: 1px solid transparent !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
 }
@@ -1772,7 +1772,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
 }
 
-/* Modalità Ricerca attiva: altezza naturale, perfettamente centrata, zero ombre scure */
+/* Modalità Ricerca attiva: altezza naturale, perfettamente centrata, zero ombre o linee bianche */
 .home-header-wrapper.search-mode-active {
     height: auto !important;
     min-height: 80px;
@@ -1780,7 +1780,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     align-items: center;
     justify-content: center;
     background: transparent !important;
-    border-bottom: none !important;
+    border-bottom: 1px solid transparent !important;
+    border-color: transparent !important;
     box-shadow: none !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
@@ -2342,17 +2343,48 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: searchFullbarFadeIn 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: searchFullbarFadeIn 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.home-search-fullbar-container.is-closing {
+    animation: searchFullbarFadeOut 0.2s cubic-bezier(0.4, 0, 1, 1) forwards !important;
+    pointer-events: none;
 }
 
 @keyframes searchFullbarFadeIn {
     from {
         opacity: 0;
-        transform: translateY(-6px) scale(0.99);
+        transform: translateY(-8px) scale(0.99);
     }
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes searchFullbarFadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.99);
+    }
+}
+
+.home-header-dock-container.fade-enter {
+    animation: dockFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes dockFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

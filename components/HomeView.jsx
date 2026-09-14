@@ -477,9 +477,9 @@ function HomeViewContent({ defaultTab = "all" }) {
                 onSearch={(s) => setSearch(s)}
             />
 
-            {/* HERO NOW A TUTTO SCHERMO (SOLO NEL TAB HOME/ALL E SE LA RICERCA NON È APERTA) */}
-            {!isSearchOpen && filter === "all" && (
-                <HomeHero categories={categories} />
+            {/* HERO NOW A TUTTO SCHERMO (SOLO NEL TAB HOME/ALL) */}
+            {filter === "all" && (
+                <HomeHero categories={categories} isSearchOpen={isSearchOpen} />
             )}
 
             <main className={`home-content ${!isSearchOpen && filter === "all" ? "has-hero" : ""}`}>

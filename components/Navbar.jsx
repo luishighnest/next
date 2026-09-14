@@ -44,6 +44,7 @@ export default function Navbar({
         eventi: [],
         vod: []
     });
+    const [isClosingSearch, setIsClosingSearch] = useState(false);
     const hoverTimeoutRef = useRef(null);
     const searchWrapperRef = useRef(null);
     const searchInputRef = useRef(null);
@@ -263,9 +264,14 @@ export default function Navbar({
     };
 
     const handleCloseSearch = () => {
-        setIsSearchOpen(false);
-        setSearchVal("");
-        if (onSearch) onSearch("");
+        if (isClosingSearch) return;
+        setIsClosingSearch(true);
+        setTimeout(() => {
+            setIsSearchOpen(false);
+            setIsClosingSearch(false);
+            setSearchVal("");
+            if (onSearch) onSearch("");
+        }, 180);
     };
 
     const isHidden = isNavHidden && !isSearchOpen;
@@ -274,7 +280,7 @@ export default function Navbar({
         <>
             <div className={`home-header-wrapper ${mounted ? "is-mounted" : "is-mounting"} ${isHidden ? "nav-hidden" : ""} ${isSearchOpen ? "search-mode-active" : ""} ${isScrolled ? "header-scrolled" : "header-top"}`} id="home-header-wrapper">
                 {isSearchOpen ? (
-                    <div className="home-search-fullbar-container" ref={searchWrapperRef}>
+                    <div className={`home-search-fullbar-container ${isClosingSearch ? "is-closing" : ""}`} ref={searchWrapperRef}>
                         <div className="home-search-fullbar">
                             <i className="fas fa-magnifying-glass search-fullbar-icon"></i>
                             <input
@@ -318,7 +324,7 @@ export default function Navbar({
                         </div>
                     </div>
                 ) : (
-                    <div className="home-header-dock-container">
+                    <div className="home-header-dock-container fade-enter">
                         <header className="home-header-dock" role="banner">
                             {/* SEZIONE 1: BRAND LOGO + OROLOGIO */}
                             <div className="dock-group dock-group-left">
