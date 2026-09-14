@@ -610,10 +610,10 @@ function SkyContent() {
                 {/* 1. Fullscreen Native Player Shaka */}
                 <div className="sky-native-player-container">
                     {/* Backdrop di preload per eliminare scatti prima dell'avvio: sparisce irreversibilmente al primo frame */}
-                    {Boolean(transPoster || currentEpg?.immagine || selectedChannel?.image) && !hasStartedPlaying && (
+                    {Boolean(transPoster || currentEpg?.immagine) && !hasStartedPlaying && (
                         <div className="sky-player-backdrop-preload">
                             <img
-                                src={transPoster || currentEpg?.immagine || selectedChannel?.image}
+                                src={transPoster || currentEpg?.immagine}
                                 alt=""
                                 style={{
                                     width: "100%",
@@ -632,7 +632,7 @@ function SkyContent() {
                         </div>
                     )}
 
-                    {/* Player Iframe Estensione Chrome per massima compatibilità e zero ritardo */}
+                    {/* Player Iframe Estensione Chrome */}
                     <iframe
                         id="player-frame"
                         src={playerSrc}
@@ -644,62 +644,53 @@ function SkyContent() {
                                 setIframeLoaded(true);
                                 setHasStartedPlaying(true);
                                 setIsVideoBuffering(false);
-                            }, 500);
+                            }, 300);
                         }}
-                        className={`sky-player-video ${iframeLoaded ? "loaded" : ""}`}
                         style={{
+                            display: "block",
                             width: "100%",
                             height: "100%",
                             border: "none",
-                            position: "absolute",
-                            inset: 0,
-                            zIndex: 1
+                            background: "#000000",
+                            opacity: iframeLoaded ? 1 : 0.85,
+                            transition: "opacity 0.4s ease-in-out"
                         }}
                     />
 
-                    {/* Backdrop sfumato per facilitare la lettura della grafica del titolo */}
-                    <div className="sky-player-scrim" />
+                    {/* Vignetta cinematografica */}
+                    <div className={`sky-player-vignette ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`} />
 
-                    {/* Indicatore di caricamento stream ultra-minimal e moderno */}
-                    {isVideoBuffering && !hasStartedPlaying && (
-                        <div className="sky-player-buffering-indicator">
-                            <div className="sky-spinner-minimal" />
-                            <span>Connessione al canale Sky...</span>
+                    {/* Spinner */}
+                    {(isVideoBuffering || loading || !hasStartedPlaying) && (
+                        <div className="sky-native-loader">
+                            <div className="sky-spinner" style={{ width: "52px", height: "52px", borderWidth: "3.5px" }} />
                         </div>
                     )}
+                </div>
 
-                    {/* 2. OVERLAY GRAFICA INTEGRATA */}
-                    <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
-                        {/* Box Info Canale / Programma */}
-                        <div className="sky-player-current-info">
-                            <div className="sky-player-channel-brand">
-                                {channelLogo ? (
-                                    <div className="sky-player-logo-badge">
-                                        <img
-                                            src={channelLogo}
-                                            alt={selectedChannel?.name || "Canale"}
-                                            onError={(e) => {
-                                                e.target.style.display = "none";
-                                            }}
-                                        />
-                                    </div>
-                                ) : (
-                                    <div className="sky-player-logo-fallback">
-                                        {selectedChannel?.name?.slice(0, 3)?.toUpperCase() || "SKY"}
-                                    </div>
-                                )}
-
-                                <div className="sky-player-titles">
-                                    <div className="sky-player-meta-badges">
-                                        <span className="live-status-pill">
-                                            <span className="live-dot" /> LIVE
-                                        </span>
-                                        <span className="channel-num-badge">
-                                            CH {selectedChannel?.channel || selectedChannel?.number || "SKY"}
-                                        </span>
-                                        {selectedChannel?.group && (
-                                            <span className="now-group">{selectedChannel.group}</span>
-                                        )}
+                {/* 2. Deck Overlay Inferiore */}
+                <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
+                    <div className="sky-player-modern-deck">
+                        {/* Header Info */}
+                        <div className="sky-player-info-row">
+                            <div className="sky-player-meta-left">
+                                <div className="sky-modern-logo-box">
+                                    <img
+                                        src={channelLogo || "/logos/sksport.png"}
+                                        className="sky-modern-logo"
+                                        alt=""
+                                        onError={(e) => {
+                                            e.target.style.display = "none";
+                                        }}
+                                    />
+                                </div>
+                                <div className="sky-player-meta-details">
+                                    <div className="sky-player-tag-row">
+                                        <div className="sky-channel-name-badge">
+                                            <span className="sky-channel-name-text">{selectedChannel?.name || "Canale Sky"}</span>
+                                        </div>
+                                        <span className="live-badge"><span className="dot"></span>LIVE</span>
+                                        <span className="now-group">{selectedChannel?.group || "Sky"}</span>
                                         {(() => {
                                             const streamUrl = selectedChannel?.url || selectedChannel?.mpd || "";
                                             const expMatch = streamUrl.match(/_e~([0-9]+)_/);
