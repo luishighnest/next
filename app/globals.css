@@ -6582,23 +6582,6 @@ body:has(.sky-app) {
 }
 
 
-        /* Navbar per Sky App: overlay sottile sopra il video */
-        .sky-app .home-header-wrapper,
-        .sky-app .home-header-wrapper.nav-hidden {
-            position: fixed !important;
-            top: 0 !important;
-            left: 0 !important;
-            right: 0 !important;
-            z-index: 100 !important;
-            width: 100% !important;
-            height: 72px !important;
-            margin-bottom: 0 !important;
-            transform: none !important;
-            opacity: 1 !important;
-            visibility: visible !important;
-            pointer-events: auto !important;
-            transition: opacity 0.35s ease, transform 0.35s ease !important;
-        }
 
         .sky-app {
             position: fixed !important;
@@ -6701,32 +6684,44 @@ body:has(.sky-app) {
             text-shadow: 0 2px 8px rgba(0,0,0,0.8);
         }
 
-        /* Un-mute banner flottante se l'autoplay richiede interazione utente */
-        .sky-unmute-overlay-btn {
-            position: absolute;
-            top: 90px;
-            left: 24px;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(14, 18, 25, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #ffffff;
-            padding: 10px 18px;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            font-weight: 700;
-            cursor: pointer;
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
-            transition: all 0.25s ease;
+        /* Tasto minimal solo icona per tornare indietro */
+        .sky-back-minimal-btn {
+            position: fixed !important;
+            top: 24px !important;
+            left: 24px !important;
+            z-index: 60 !important;
+            width: 46px !important;
+            height: 46px !important;
+            border-radius: 50% !important;
+            background: rgba(14, 18, 25, 0.75) !important;
+            border: 1px solid rgba(255, 255, 255, 0.16) !important;
+            color: #ffffff !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            cursor: pointer !important;
+            backdrop-filter: blur(16px) !important;
+            -webkit-backdrop-filter: blur(16px) !important;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
+            transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s ease, background 0.2s ease, border-color 0.2s ease !important;
+            opacity: 1;
+            pointer-events: auto;
         }
-        .sky-unmute-overlay-btn:hover {
-            background: #e30a17;
-            border-color: #e30a17;
-            transform: scale(1.04);
+        .sky-back-minimal-btn.idle-hidden {
+            opacity: 0 !important;
+            pointer-events: none !important;
+            transform: translateY(-6px) scale(0.95);
+        }
+        .sky-back-minimal-btn:hover {
+            background: rgba(255, 255, 255, 0.15) !important;
+            border-color: rgba(255, 255, 255, 0.35) !important;
+            transform: scale(1.08) !important;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7) !important;
+        }
+        .sky-back-minimal-btn .material-symbols-rounded {
+            font-size: 24px !important;
+            line-height: 1 !important;
+            color: #ffffff !important;
         }
 
         /* --- Drawer Popup Canali a Destra (nel player) --- */

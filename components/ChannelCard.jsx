@@ -300,6 +300,12 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         setIsReadyToDisplay(false);
 
         try {
+            if (typeof window !== "undefined") {
+                const currentPath = window.location.pathname + (window.location.search || "");
+                if (currentPath && !currentPath.startsWith("/sky") && !currentPath.startsWith("/evento")) {
+                    sessionStorage.setItem("nmdz_returnPath", currentPath);
+                }
+            }
             if (isVod) {
                 sessionStorage.setItem("nmdz_vodItem", JSON.stringify(channel));
             } else if (isSky) {

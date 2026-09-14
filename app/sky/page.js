@@ -1,8 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef, useTransition, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
 import MobileSkyView from "@/components/MobileSkyView";
 import { useDeviceState } from "@/components/DeviceProvider";
 import { fetchSecureJson } from "@/lib/crypto";
@@ -109,10 +108,24 @@ let memorySkyChannels = {};
 let memorySkyGuide = null;
 
 function SkyContent() {
+    const router = useRouter();
     const { isMobile } = useDeviceState();
     const searchParams = useSearchParams();
     const chParam = searchParams.get("ch") || "";
     const srcParam = searchParams.get("src") || "";
+
+    const handleBack = () => {
+        let target = "/home";
+        if (typeof window !== "undefined") {
+            try {
+                const stored = sessionStorage.getItem("nmdz_returnPath");
+                if (stored && !stored.startsWith("/sky")) {
+                    target = stored;
+                }
+            } catch(e) {}
+        }
+        router.push(target);
+    };
 
     const [currentSource, setCurrentSource] = useState(() => {
         if (srcParam === "sky2" || srcParam === "sky2.json" || srcParam === "2") return "sky2.json";
@@ -712,10 +725,16 @@ function SkyContent() {
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
         >
-            {/* Header / Navbar Identica alla Home ma con auto-fade durante riproduzione video per immersività */}
-            <div style={{ opacity: isUserActive || isSidebarOpen ? 1 : 0, pointerEvents: isUserActive || isSidebarOpen ? "auto" : "none", transition: "opacity 0.35s ease" }}>
-                <Navbar activeFilter={null} />
-            </div>
+            {/* Tasto Minimal solo icona freccia indietro che riporta alla sezione da cui si proviene */}
+            <button
+                type="button"
+                className={`sky-back-minimal-btn ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}
+                onClick={handleBack}
+                title="Torna indietro"
+                aria-label="Torna indietro"
+            >
+                <span className="material-symbols-rounded">arrow_back</span>
+            </button>
 
             {/* Layout Principale Fullscreen 100vw x 100vh */}
             <main className="sky-main">
@@ -768,18 +787,6 @@ function SkyContent() {
                                 {loading ? "Caricamento canali Sky..." : "Sintonizzazione diretta in corso..."}
                             </span>
                         </div>
-                    )}
-
-                    {/* Unmute Overlay Banner (nel caso l'autoplay richieda interazione utente) */}
-                    {needsUnmute && (
-                        <button
-                            type="button"
-                            className="sky-unmute-overlay-btn"
-                            onClick={handleUnmute}
-                        >
-                            <i className="fas fa-volume-xmark" />
-                            <span>Clicca per attivare l'audio</span>
-                        </button>
                     )}
                 </div>
 
