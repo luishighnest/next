@@ -2,17 +2,14 @@
 import React, { useState, useEffect, useRef, useTransition, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import MobileSkyView from "@/components/MobileSkyView";
 import { useDeviceState } from "@/components/DeviceProvider";
 import { fetchSecureJson } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
-import { loadShakaScript, parseClearKeys } from "@/lib/shakaLoader";
+import { buildExtensionUrl, DEFAULT_EXT_ID } from "@/lib/extensionPlayer";
 import GuidaTvModal from "@/components/GuidaTvModal";
 import SettingsModal from "@/components/SettingsModal";
-
-const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
 
 const SKY_CID_MAP = {
     "skysportuno": "sksportuno.png", "skysport24": "sksport24.png", "skysportarena": "sksportarena.png",
@@ -38,41 +35,7 @@ function cidFromUrl(url) {
     return m ? m[1].toLowerCase() : "";
 }
 
-function buildExtUrl(ch) {
-    const baseUrl = (ch?.url || ch?.mpd || "").trim();
-    if (!baseUrl) return "";
-    const tech = getTechSettings();
-    const extId = tech.extensionId || DEFAULT_EXT_ID;
-    const isTsStream = baseUrl.toLowerCase().includes(".ts");
-    if (isTsStream) {
-        const origin = typeof window !== "undefined" ? window.location.origin : "https://next-zeta-smoky.vercel.app";
-        const m3uUrl = `${origin}/api/m3u?url=${encodeURIComponent(baseUrl)}&title=${encodeURIComponent(ch.name || "Sky Sport F1")}`;
-        return `chrome-extension://${extId}/iptv/player.html#${m3uUrl}`;
-    }
-    const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
-
-    const parts = [];
-    const rawKey = ch.kid_key || "";
-    if (rawKey && rawKey.includes(":")) {
-        const ckObj = {};
-        const pairs = rawKey.split(",");
-        pairs.forEach(pair => {
-            const p = pair.split(":");
-            if (p.length === 2 && p[0].trim() && p[1].trim()) {
-                ckObj[p[0].trim()] = p[1].trim();
-            }
-        });
-        if (Object.keys(ckObj).length > 0) {
-            try { parts.push("ck=" + btoa(JSON.stringify(ckObj))); } catch(e) {}
-        }
-    }
-    const uaVal = tech.customUserAgent || "";
-    if (uaVal) {
-        try { parts.push("headers=" + btoa(JSON.stringify({ "User-Agent": uaVal }))); } catch(e) {}
-    }
-    const sep = baseUrl.includes("?") ? "&" : "?";
-    return extPrefix + baseUrl + (parts.length > 0 ? sep + parts.join("&") : "");
-}
+const buildExtUrl = buildExtensionUrl;
 
 function parseChannelList(json, sourceName) {
     const list = [];
@@ -403,182 +366,12 @@ function SkyContent() {
         }, 4000);
     }, [selectedChannel]);
 
-    // Inizializzazione e caricamento Shaka Player nativo per il canale Sky selezionato
+    // Reset stato iframe al cambio canale per transizione pulita
     useEffect(() => {
-        if (!selectedChannel || isMobile) return;
-        let isCancelled = false;
-
-        let streamUrl = (selectedChannel.url || selectedChannel.mpd || "").trim();
-        let rawKey = selectedChannel.kid_key || selectedChannel.key || "";
-        let rawUa = selectedChannel.ua || "";
-        let daznToken = selectedChannel.dazn_token || "";
-
-        if (Array.isArray(selectedChannel.sources) && selectedChannel.sources.length > 0) {
-            const firstValid = selectedChannel.sources.find(s => s.url || s.mpd) || selectedChannel.sources[0];
-            if (firstValid) {
-                if (!streamUrl) streamUrl = (firstValid.url || firstValid.mpd || "").trim();
-                if (!rawKey) rawKey = firstValid.kid_key || firstValid.key || "";
-                if (!rawUa) rawUa = firstValid.ua || "";
-                if (!daznToken) daznToken = firstValid.dazn_token || "";
-            }
-        }
-
-        if (!daznToken && streamUrl.includes("@eyJ")) {
-            const tm = streamUrl.match(/@([A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)/);
-            if (tm) daznToken = tm[1];
-        }
-
-        async function initShaka() {
-            try {
-                const shaka = await loadShakaScript();
-                if (isCancelled || !shaka || !videoRef.current) return;
-
-                if (!shaka.Player.isBrowserSupported()) {
-                    console.error("Shaka Player non supportato su questo browser");
-                    return;
-                }
-
-                let player = playerRef.current;
-                if (player) {
-                    try {
-                        await player.unload();
-                    } catch(e) {
-                        try { await player.destroy(); } catch(err) {}
-                        player = null;
-                    }
-                }
-
-                if (!player) {
-                    player = new shaka.Player(videoRef.current);
-                    playerRef.current = player;
-
-                    // Gestione filtri MIME e rimozione nodi Widevine per forzare ClearKey
-                    player.getNetworkingEngine().registerResponseFilter((type, response) => {
-                        if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
-                            if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
-                                response.headers["content-type"] = "application/dash+xml";
-                            }
-                            try {
-                                let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
-                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
-                            } catch (e) {}
-                        }
-                    });
-
-                    // Iniezione headers di sistema
-                    player.getNetworkingEngine().registerRequestFilter((type, request) => {
-                        const tech = getTechSettings();
-                        const effectiveUa = rawUa || tech.customUserAgent || "";
-                        if (effectiveUa) request.headers["User-Agent"] = effectiveUa;
-                        if (daznToken) {
-                            request.headers["dazn-token"] = daznToken;
-                            request.headers["referer"] = "https://www.dazn.com/";
-                            request.headers["origin"] = "https://www.dazn.com";
-                        }
-                    });
-
-                    // Ascolta eventi player
-                    player.addEventListener("buffering", (ev) => {
-                        setIsVideoBuffering(ev.buffering);
-                    });
-
-                    player.addEventListener("adaptation", () => {
-                        refreshTracks(player);
-                    });
-
-                    player.addEventListener("trackschanged", () => {
-                        refreshTracks(player);
-                    });
-
-                    player.addEventListener("error", (err) => {
-                        console.error("Shaka error:", err);
-                        if (playerRef.current && !err.detail?.severity) {
-                            try { playerRef.current.retryStreaming(); } catch(e) {}
-                        }
-                    });
-                }
-
-                const clearKeys = parseClearKeys(rawKey);
-                player.configure({
-                    drm: {
-                        clearKeys: clearKeys,
-                        preferredKeySystems: ["org.w3.clearkey", "webkit-org.w3.clearkey"],
-                        servers: {}
-                    },
-                    streaming: {
-                        bufferingGoal: 1.0,
-                        rebufferingGoal: 0.5,
-                        bufferBehind: 30,
-                        lowLatencyMode: true,
-                        inaccurateManifestTolerance: 0,
-                        alwaysStreamFullSegments: false,
-                        retryParameters: {
-                            maxAttempts: 3,
-                            baseDelay: 400,
-                            backoffFactor: 1.2,
-                            fuzzFactor: 0.1,
-                            timeout: 4000
-                        }
-                    },
-                    manifest: {
-                        dash: {
-                            ignoreMinBufferTime: true
-                        },
-                        retryParameters: {
-                            maxAttempts: 3,
-                            baseDelay: 400,
-                            backoffFactor: 1.2,
-                            fuzzFactor: 0.1,
-                            timeout: 4000
-                        }
-                    },
-                    abr: {
-                        enabled: true,
-                        defaultBandwidthEstimate: 5000000
-                    }
-                });
-
-                const isHls = streamUrl.toLowerCase().includes(".m3u8");
-                const mimeType = isHls ? "application/x-mpegurl" : "application/dash+xml";
-                await player.load(streamUrl, null, mimeType);
-                if (isCancelled) return;
-
-                refreshTracks(player);
-
-                if (videoRef.current) {
-                    videoRef.current.playsInline = true;
-                    try {
-                        videoRef.current.muted = false;
-                        await videoRef.current.play();
-                        setIsMuted(false);
-                        setNeedsUnmute(false);
-                    } catch (playErr) {
-                        if (videoRef.current) {
-                            videoRef.current.muted = true;
-                            setIsMuted(true);
-                            setNeedsUnmute(true);
-                            await videoRef.current.play().catch(() => {});
-                        }
-                    }
-                }
-            } catch (err) {
-                console.error("Errore inizializzazione Shaka per Sky:", err);
-            }
-        }
-
-        initShaka();
-
-        return () => {
-            isCancelled = true;
-            if (playerRef.current) {
-                playerRef.current.destroy().catch(() => {});
-                playerRef.current = null;
-            }
-        };
-    }, [selectedChannel, isMobile]);
+        setIframeLoaded(false);
+        setHasStartedPlaying(false);
+        setIsVideoBuffering(true);
+    }, [selectedChannel]);
 
     const handleUnmute = (e) => {
         if (e) {
@@ -1037,47 +830,28 @@ function SkyContent() {
                         </div>
                     )}
 
-                    {/* Elemento video controllato da Shaka Player */}
-                    <video
-                        ref={videoRef}
-                        className="sky-native-video"
-                        autoPlay
-                        playsInline
-                        onPlaying={() => {
-                            setIsVideoPlaying(true);
-                            setHasStartedPlaying(true);
-                            setIsVideoBuffering(false);
+                    {/* Player Iframe Estensione Chrome per massima compatibilità e zero ritardo */}
+                    <iframe
+                        id="player-frame"
+                        src={playerSrc}
+                        allowFullScreen
+                        allow="autoplay; encrypted-media; fullscreen"
+                        title={selectedChannel?.name || "Sky Player"}
+                        onLoad={() => {
+                            setTimeout(() => {
+                                setIframeLoaded(true);
+                                setHasStartedPlaying(true);
+                                setIsVideoBuffering(false);
+                            }, 300);
                         }}
-                        onWaiting={() => setIsVideoBuffering(true)}
-                        onTimeUpdate={() => {
-                            if (videoRef.current) {
-                                const cur = videoRef.current.currentTime;
-                                setCurrentTime(cur);
-
-                                const player = playerRef.current;
-                                if (player && player.seekRange) {
-                                    try {
-                                        const sr = player.seekRange();
-                                        if (sr && sr.end > sr.start) {
-                                            setSeekRange({ start: sr.start, end: sr.end });
-                                            setIsLiveStream(player.isLive ? player.isLive() : true);
-                                            setIsAtLiveEdge(sr.end - cur < 15);
-                                        }
-                                    } catch (e) {}
-                                } else {
-                                    const d = videoRef.current.duration;
-                                    if (d && !isNaN(d) && isFinite(d)) {
-                                        setDuration(d);
-                                        setIsLiveStream(false);
-                                    } else {
-                                        setIsLiveStream(true);
-                                    }
-                                }
-
-                                if (videoRef.current.buffered && videoRef.current.buffered.length > 0) {
-                                    setBufferedEnd(videoRef.current.buffered.end(videoRef.current.buffered.length - 1));
-                                }
-                            }
+                        style={{
+                            display: "block",
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                            background: "#000000",
+                            opacity: iframeLoaded ? 1 : 0.85,
+                            transition: "opacity 0.4s ease-in-out"
                         }}
                     />
 

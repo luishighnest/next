@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "@/components/Navbar";
 import { fetchSecureJson } from "@/lib/crypto";
+import { buildExtensionUrl } from "@/lib/extensionPlayer";
 
 const FALLBACK_F1 = {
     name: "Sky Sport F1",
@@ -79,107 +80,8 @@ export default function F1SpecialPage() {
 
                 if (isCancelled) return;
                 setChannelData(ch);
-
-                setStatus("Avvio Shaka Player nativo...");
-                const shaka = await loadShakaScript();
-                if (!shaka) throw new Error("Shaka Player non disponibile");
-
-                shaka.polyfill.installAll();
-                if (!shaka.Player.isBrowserSupported()) {
-                    throw new Error("Il tuo browser non supporta MSE/EME per Shaka Player");
-                }
-
-                if (!videoRef.current) return;
-
-                if (!playerRef.current) {
-                    const player = new shaka.Player(videoRef.current);
-                    playerRef.current = player;
-
-                    // Gestione filtri di rete
-                    player.getNetworkingEngine().registerResponseFilter((type, response) => {
-                        if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
-                            if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
-                                response.headers["content-type"] = "application/dash+xml";
-                            }
-                            try {
-                                let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
-                                // Rimuovi Widevine/PlayReady per forzare l'uso esclusivo di ClearKey locale
-                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
-                            } catch (err) {
-                                console.warn("Errore filtro manifest:", err);
-                            }
-                        }
-                    });
-
-                    player.addEventListener("error", (event) => {
-                        console.error("Errore Shaka:", event.detail);
-                        const d = event.detail;
-                        let extra = "";
-                        if (d.data && d.data.length > 0) {
-                            extra = ` [URI: ${d.data[0] || ""} - Status: ${d.data[1] || ""}]`;
-                        }
-                        setErrorMsg(`Errore stream ${d.code}: ${d.message || "Errore di rete"}${extra}`);
-                    });
-                }
-
-                const player = playerRef.current;
-
-                // Configura ClearKey (sia con trattini che senza)
-                const clearKeys = {};
-                if (ch.key && ch.key.includes(":")) {
-                    const pairs = ch.key.split(",");
-                    pairs.forEach(pair => {
-                        const [rawKid, rawK] = pair.split(":");
-                        if (rawKid && rawK) {
-                            const cleanKid = rawKid.replace(/-/g, "").trim().toLowerCase();
-                            const cleanK = rawK.replace(/-/g, "").trim().toLowerCase();
-                            clearKeys[cleanKid] = cleanK;
-                            if (cleanKid.length === 32) {
-                                const dashedKid = `${cleanKid.slice(0,8)}-${cleanKid.slice(8,12)}-${cleanKid.slice(12,16)}-${cleanKid.slice(16,20)}-${cleanKid.slice(20)}`;
-                                clearKeys[dashedKid] = cleanK;
-                            }
-                        }
-                    });
-                }
-
-                player.configure({
-                    drm: {
-                        clearKeys: clearKeys,
-                        preferredKeySystems: ["org.w3.clearkey", "webkit-org.w3.clearkey"],
-                        servers: {}
-                    },
-                    streaming: {
-                        bufferingGoal: 20,
-                        rebufferingGoal: 2,
-                        bufferBehind: 30,
-                        lowLatencyMode: true
-                    },
-                    manifest: {
-                        dash: {
-                            ignoreMinBufferTime: true
-                        }
-                    }
-                });
-
-                setStatus("Connessione al flusso live...");
-                await player.load(ch.mpd, null, "application/dash+xml");
-
-                if (isCancelled) return;
                 setStatus("In riproduzione");
                 setIsLoading(false);
-
-                if (videoRef.current) {
-                    videoRef.current.play().catch(() => {
-                        if (videoRef.current) {
-                            videoRef.current.muted = true;
-                            videoRef.current.play().catch(e => console.warn("Play manuale:", e));
-                        }
-                    });
-                }
-
             } catch (err) {
                 console.error("Errore initPlayer:", err);
                 if (!isCancelled) {
@@ -193,10 +95,6 @@ export default function F1SpecialPage() {
 
         return () => {
             isCancelled = true;
-            if (playerRef.current) {
-                playerRef.current.destroy().catch(() => null);
-                playerRef.current = null;
-            }
         };
     }, []);
 
@@ -298,16 +196,18 @@ export default function F1SpecialPage() {
                     border: "1px solid #27272a",
                     boxShadow: "0 10px 40px rgba(0, 0, 0, 0.8)"
                 }}>
-                    <video
-                        ref={videoRef}
-                        controls
-                        autoPlay
-                        playsInline
+                    <iframe
+                        src={buildExtensionUrl(channelData, { title: "Sky Sport F1" })}
+                        allowFullScreen
+                        allow="autoplay; encrypted-media; fullscreen"
+                        title={channelData.name || "Sky Sport F1"}
+                        onLoad={() => setIsLoading(false)}
                         style={{
                             width: "100%",
                             height: "100%",
+                            border: "none",
                             display: "block",
-                            outline: "none"
+                            background: "#000000"
                         }}
                     />
 

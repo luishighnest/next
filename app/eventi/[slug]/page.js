@@ -6,7 +6,7 @@ import { useDeviceState } from "@/components/DeviceProvider";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { matchSlug, getChannelSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
-import { loadShakaScript, parseClearKeys } from "@/lib/shakaLoader";
+import { buildExtensionUrl, DEFAULT_EXT_ID } from "@/lib/extensionPlayer";
 import GuidaTvModal from "@/components/GuidaTvModal";
 import SettingsModal from "@/components/SettingsModal";
 
@@ -61,6 +61,7 @@ export default function EventoPlayerPage() {
     const [loading, setLoading] = useState(() => !channel);
     const [mounted, setMounted] = useState(false);
     const [hasStartedPlaying, setHasStartedPlaying] = useState(false);
+    const [iframeLoaded, setIframeLoaded] = useState(false);
     const [transPoster, setTransPoster] = useState(() => {
         if (typeof window !== "undefined") {
             try { return sessionStorage.getItem("nmdz_transition_poster") || ""; } catch(e) {}
@@ -219,156 +220,12 @@ export default function EventoPlayerPage() {
         } catch(e) {}
     };
 
+    // Reset stato iframe al cambio sorgente o evento per transizione pulita
     useEffect(() => {
-        if (!selectedSource || isMobile) return;
-        let isCancelled = false;
-
-        let streamUrl = (selectedSource.url || "").trim();
-        let rawKey = selectedSource.kid_key || selectedSource.key || "";
-        const rawUa = selectedSource.ua || "";
-        let daznToken = selectedSource.dazn_token || "";
-
-        // Pulizia automatica fondamentale per link di Heroku nel formato URL|KEY
-        if (streamUrl.includes("|")) {
-            const parts = streamUrl.split("|");
-            streamUrl = parts[0].trim();
-            if (!rawKey && parts[1]) {
-                rawKey = parts[1].trim();
-            }
-        }
-
-        if (!daznToken && streamUrl.includes("@eyJ")) {
-            const tm = streamUrl.match(/@([A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)/);
-            if (tm) daznToken = tm[1];
-        }
-
-        if (!streamUrl) return;
-
-        async function initShaka() {
-            try {
-                const shaka = await loadShakaScript();
-                if (isCancelled || !shaka || !videoRef.current) return;
-
-                if (!shaka.Player.isBrowserSupported()) {
-                    console.error("Shaka non supportato su questo browser");
-                    return;
-                }
-
-                let player = playerRef.current;
-                if (player) {
-                    try {
-                        await player.unload();
-                    } catch(e) {
-                        try { await player.destroy(); } catch(err) {}
-                        player = null;
-                    }
-                }
-
-                if (!player) {
-                    player = new shaka.Player(videoRef.current);
-                    playerRef.current = player;
-
-                    // Filtri MIME e rimozione DRM Widevine per forzare ClearKey
-                    player.getNetworkingEngine().registerResponseFilter((type, response) => {
-                        if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
-                            if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
-                                response.headers["content-type"] = "application/dash+xml";
-                            }
-                            try {
-                                let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
-                                xmlStr = xmlStr.replace(/<ContentProtection[\s\S]*?<\/ContentProtection>/gi, (match) => {
-                                    if (/9a04f079|edef8ba9|5e629af5/i.test(match)) {
-                                        return "";
-                                    }
-                                    return match;
-                                });
-                                xmlStr = xmlStr.replace(/<ContentProtection[^>]*schemeIdUri="urn:uuid:(9a04f079|edef8ba9|5e629af5)[^>]*\/>/gi, "");
-                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
-                            } catch(e) {}
-                        }
-                    });
-
-                    player.getNetworkingEngine().registerRequestFilter((type, request) => {
-                        const tech = getTechSettings();
-                        const effectiveUa = rawUa || tech.customUserAgent || "";
-                        if (effectiveUa) request.headers["User-Agent"] = effectiveUa;
-                        if (daznToken) {
-                            request.headers["dazn-token"] = daznToken;
-                            request.headers["referer"] = "https://www.dazn.com/";
-                            request.headers["origin"] = "https://www.dazn.com";
-                        }
-                    });
-
-                    player.addEventListener("buffering", (ev) => setIsVideoBuffering(ev.buffering));
-                    player.addEventListener("adaptation", () => refreshTracks(player));
-                    player.addEventListener("trackschanged", () => refreshTracks(player));
-                    player.addEventListener("error", (err) => {
-                        console.error("Shaka error (evento):", err);
-                        if (playerRef.current && !err.detail?.severity) {
-                            try { playerRef.current.retryStreaming(); } catch(e) {}
-                        }
-                    });
-                }
-
-                const clearKeys = parseClearKeys(rawKey);
-                player.configure({
-                    drm: {
-                        clearKeys,
-                        preferredKeySystems: ["org.w3.clearkey", "webkit-org.w3.clearkey"],
-                        servers: {}
-                    },
-                    streaming: {
-                        bufferingGoal: 1.0,
-                        rebufferingGoal: 0.5,
-                        bufferBehind: 30,
-                        lowLatencyMode: true,
-                        inaccurateManifestTolerance: 0,
-                        alwaysStreamFullSegments: false,
-                        retryParameters: { maxAttempts: 3, baseDelay: 400, backoffFactor: 1.2, fuzzFactor: 0.1, timeout: 4000 }
-                    },
-                    manifest: {
-                        dash: { ignoreMinBufferTime: true },
-                        retryParameters: { maxAttempts: 3, baseDelay: 400, backoffFactor: 1.2, fuzzFactor: 0.1, timeout: 4000 }
-                    },
-                    abr: { enabled: true, defaultBandwidthEstimate: 5000000 }
-                });
-
-                const isHls = streamUrl.toLowerCase().includes(".m3u8");
-                const mimeType = isHls ? "application/x-mpegurl" : "application/dash+xml";
-                await player.load(streamUrl, null, mimeType);
-                if (isCancelled) return;
-
-                refreshTracks(player);
-
-                if (videoRef.current) {
-                    videoRef.current.playsInline = true;
-                    try {
-                        videoRef.current.muted = false;
-                        await videoRef.current.play();
-                        setIsMuted(false);
-                    } catch(playErr) {
-                        if (videoRef.current) {
-                            videoRef.current.muted = true;
-                            setIsMuted(true);
-                            await videoRef.current.play().catch(() => {});
-                        }
-                    }
-                }
-            } catch(err) {
-                console.error("Errore Shaka (evento):", err);
-            }
-        }
-
-        initShaka();
-
-        return () => {
-            isCancelled = true;
-            if (playerRef.current) {
-                playerRef.current.destroy().catch(() => {});
-                playerRef.current = null;
-            }
-        };
-    }, [selectedSource, isMobile]);
+        setIframeLoaded(false);
+        setHasStartedPlaying(false);
+        setIsVideoBuffering(true);
+    }, [selectedSource, slug]);
 
     // ─── Controlli player ─────────────────────────────────────────────────────
     const togglePlayPause = () => {
@@ -649,6 +506,12 @@ export default function EventoPlayerPage() {
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, [filteredChannels, allChannelsList, channel]);
 
+    const playerSrc = selectedSource ? buildExtensionUrl(selectedSource, {
+        title: channel?.title,
+        dazn_token: channel?.dazn_token,
+        isDazn: channel?.isTestJson || (channel?.group && channel?.group.toUpperCase().includes("EVENTI"))
+    }) : "";
+
     if (isMobile) {
         return (
             <MobileEventoView
@@ -656,7 +519,7 @@ export default function EventoPlayerPage() {
                 selectedSource={selectedSource}
                 setSelectedSource={setSelectedSource}
                 relatedSections={relatedSections}
-                getIframeUrl={() => ""}
+                getIframeUrl={() => playerSrc}
             />
         );
     }
@@ -700,7 +563,7 @@ export default function EventoPlayerPage() {
             </button>
 
             <main className="sky-main">
-                {/* 1. Fullscreen Shaka Player */}
+                {/* 1. Fullscreen Player Container con Iframe Estensione */}
                 <div className="sky-native-player-container">
                     {/* Copertina di preload */}
                     {Boolean(transPoster || coverImg) && !hasStartedPlaying && (
@@ -722,37 +585,28 @@ export default function EventoPlayerPage() {
                         </div>
                     )}
 
-                    {/* Elemento video Shaka */}
-                    <video
-                        ref={videoRef}
-                        className="sky-native-video"
-                        autoPlay
-                        playsInline
-                        onPlaying={() => { setIsVideoPlaying(true); setHasStartedPlaying(true); setIsVideoBuffering(false); }}
-                        onWaiting={() => setIsVideoBuffering(true)}
-                        onPause={() => setIsVideoPlaying(false)}
-                        onTimeUpdate={() => {
-                            if (!videoRef.current) return;
-                            const cur = videoRef.current.currentTime;
-                            setCurrentTime(cur);
-                            const player = playerRef.current;
-                            if (player && player.seekRange) {
-                                try {
-                                    const sr = player.seekRange();
-                                    if (sr && sr.end > sr.start) {
-                                        setSeekRange({ start: sr.start, end: sr.end });
-                                        setIsLiveStream(player.isLive ? player.isLive() : true);
-                                        setIsAtLiveEdge(sr.end - cur < 15);
-                                    }
-                                } catch(e) {}
-                            } else {
-                                const d = videoRef.current.duration;
-                                if (d && !isNaN(d) && isFinite(d)) { setDuration(d); setIsLiveStream(false); }
-                                else { setIsLiveStream(true); }
-                            }
-                            if (videoRef.current.buffered?.length > 0) {
-                                setBufferedEnd(videoRef.current.buffered.end(videoRef.current.buffered.length - 1));
-                            }
+                    {/* Player Iframe Estensione Chrome */}
+                    <iframe
+                        id="player-frame"
+                        src={playerSrc}
+                        allowFullScreen
+                        allow="autoplay; encrypted-media; fullscreen"
+                        title={channel?.title || "Player"}
+                        onLoad={() => {
+                            setTimeout(() => {
+                                setIframeLoaded(true);
+                                setHasStartedPlaying(true);
+                                setIsVideoBuffering(false);
+                            }, 300);
+                        }}
+                        style={{
+                            display: "block",
+                            width: "100%",
+                            height: "100%",
+                            border: "none",
+                            background: "#000000",
+                            opacity: iframeLoaded ? 1 : 0.85,
+                            transition: "opacity 0.4s ease-in-out"
                         }}
                     />
 
