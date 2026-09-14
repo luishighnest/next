@@ -341,20 +341,6 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         } catch(e) {}
 
         if (onCardClick) onCardClick();
-
-        if (!isVod && cardContainerRef.current) {
-            e.preventDefault();
-            const rect = cardContainerRef.current.getBoundingClientRect();
-            startTransitionToPlayer({
-                cardRect: rect,
-                targetHref,
-                posterImg: cardImgUrl || "",
-                logoImg: logoUrl || "",
-                title: progInfo ? progInfo.titolo : (channel?.title || ""),
-                group: categoryLabel,
-                ora: channel?.ora || (progInfo ? progInfo.oraInizio : "")
-            });
-        }
     };
 
     return (
