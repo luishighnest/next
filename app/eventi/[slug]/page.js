@@ -224,9 +224,18 @@ export default function EventoPlayerPage() {
         let isCancelled = false;
 
         let streamUrl = (selectedSource.url || "").trim();
-        const rawKey = selectedSource.kid_key || selectedSource.key || "";
+        let rawKey = selectedSource.kid_key || selectedSource.key || "";
         const rawUa = selectedSource.ua || "";
         let daznToken = selectedSource.dazn_token || "";
+
+        // Pulizia automatica fondamentale per link di Heroku nel formato URL|KEY
+        if (streamUrl.includes("|")) {
+            const parts = streamUrl.split("|");
+            streamUrl = parts[0].trim();
+            if (!rawKey && parts[1]) {
+                rawKey = parts[1].trim();
+            }
+        }
 
         const warpMatch = streamUrl.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
         if (warpMatch) {
