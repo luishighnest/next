@@ -5,14 +5,28 @@ import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug } from "@/lib/slug";
 
 // Upgrade automatico delle copertine per massima risoluzione (Full HD / 4K)
+// Upgrade automatico delle copertine per massima risoluzione (Full HD / 4K)
 function upgradeImageToHighRes(url) {
     if (!url || typeof url !== "string") return "";
     
-    // 1. Sky CDN ufficiale: upgrade da /600 a /1920 Full HD nativo
+    // 1. Sky CDN ufficiale (supporta sia /pd-image/ che /uuid/): upgrade Full HD nativo
     if (url.includes("imageservice.sky.com")) {
-        return url.replace(/\/background\/\d+$/i, "/background/1920")
-                  .replace(/\/cover\/\d+$/i, "/cover/1920")
-                  .replace(/\/\d+$/i, "/1920");
+        if (url.includes("/pd-image/")) {
+            return url.replace(/\/background\/\d+$/i, "/background/1920")
+                      .replace(/\/cover\/\d+$/i, "/cover/1920")
+                      .replace(/\/\d+$/i, "/1920");
+        }
+        if (url.includes("/uuid/")) {
+            try {
+                const u = new URL(url);
+                u.searchParams.set("w", "1920");
+                u.searchParams.delete("crop");
+                return u.toString();
+            } catch (e) {
+                return url;
+            }
+        }
+        return url;
     }
 
     // 2. TMDB: upgrade a original o w780
@@ -30,6 +44,9 @@ function upgradeImageToHighRes(url) {
 function detectArtworkType(url) {
     if (!url || typeof url !== "string") return "sky-hero";
     if (url.includes("image.tmdb.org") || url.includes("/t/p/")) return "poster";
+    if (url.includes("COVER_CLEAN_TALL") || url.includes("COVER_TITLE_TALL") || (url.includes("/cover") && !url.includes("COVER_TITLE_WIDE") && !url.includes("HERO_CLEAN_WIDE") && !url.includes("background"))) {
+        return "poster";
+    }
     if (url.includes("imageservice.sky.com")) return "sky-hero";
     if (url.includes("img-guidatv.org") || url.includes("/partite/") || url.includes("tennis.jpeg") || url.includes("premierleague")) return "sport";
     return "sky-hero";
@@ -133,7 +150,7 @@ const DEFAULT_HERO_ITEMS = [
 function getInitialHeroItems() {
     if (typeof window === "undefined") return DEFAULT_HERO_ITEMS;
     try {
-        const stored = sessionStorage.getItem("nmdz_hero_items_v3") || localStorage.getItem("nmdz_hero_items_v3");
+        const stored = sessionStorage.getItem("nmdz_hero_items_v4") || localStorage.getItem("nmdz_hero_items_v4");
         if (stored) {
             const parsed = JSON.parse(stored);
             if (Array.isArray(parsed) && parsed.length > 0) return parsed;
@@ -155,7 +172,7 @@ export default function HomeHero({ categories = [], isSearchOpen = false }) {
             try {
                 let guideData = [];
                 try {
-                    const cached = sessionStorage.getItem("nmdz_guide_cache_v2");
+                    const cached = sessionStorage.getItem("nmdz_guide_cache_v3");
                     if (cached) guideData = JSON.parse(cached);
                 } catch (e) {}
 
@@ -164,7 +181,7 @@ export default function HomeHero({ categories = [], isSearchOpen = false }) {
                     if (res.ok) {
                         guideData = await res.json();
                         try {
-                            sessionStorage.setItem("nmdz_guide_cache_v2", JSON.stringify(guideData));
+                            sessionStorage.setItem("nmdz_guide_cache_v3", JSON.stringify(guideData));
                         } catch (e) {}
                     }
                 }
@@ -323,8 +340,8 @@ export default function HomeHero({ categories = [], isSearchOpen = false }) {
 
                 // Salva nella cache persistente così alla ricarica della pagina la hero è presente a 0ms
                 try {
-                    sessionStorage.setItem("nmdz_hero_items_v3", JSON.stringify(selected5));
-                    localStorage.setItem("nmdz_hero_items_v3", JSON.stringify(selected5));
+                    sessionStorage.setItem("nmdz_hero_items_v4", JSON.stringify(selected5));
+                    localStorage.setItem("nmdz_hero_items_v4", JSON.stringify(selected5));
                 } catch (e) {}
 
                 setHeroItems(selected5);

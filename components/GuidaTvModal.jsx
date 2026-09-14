@@ -54,7 +54,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         async function fetchGuide() {
             setLoading(true);
             try {
-                const cached = typeof window !== "undefined" ? sessionStorage.getItem("nmdz_guide_cache") : null;
+                const cached = typeof window !== "undefined" ? sessionStorage.getItem("nmdz_guide_cache_v3") : null;
                 if (cached) {
                     const parsed = JSON.parse(cached);
                     if (Array.isArray(parsed) && parsed.length > 0) {
@@ -64,12 +64,12 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                     }
                 }
 
-                const res = await fetch("/guida_tv_sky.json", { cache: "force-cache" });
+                const res = await fetch("/guida_tv_sky.json?t=" + Date.now(), { cache: "no-store" });
                 const json = await res.json();
                 if (isMounted && Array.isArray(json)) {
                     setGuideData(json);
                     try {
-                        sessionStorage.setItem("nmdz_guide_cache", JSON.stringify(json));
+                        sessionStorage.setItem("nmdz_guide_cache_v3", JSON.stringify(json));
                     } catch (e) {}
                 }
             } catch (err) {

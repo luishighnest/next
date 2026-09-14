@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
 import { getChannelLogoUrl } from "@/lib/epg";
@@ -19,16 +19,16 @@ export default function MobileHomeHero({ categories = [] }) {
             try {
                 let guideData = [];
                 try {
-                    const cached = sessionStorage.getItem("nmdz_guide_cache");
+                    const cached = sessionStorage.getItem("nmdz_guide_cache_v3");
                     if (cached) guideData = JSON.parse(cached);
                 } catch (e) {}
 
                 if (!guideData || guideData.length === 0) {
-                    const res = await fetch("/guida_tv_sky.json", { cache: "force-cache" });
+                    const res = await fetch("/guida_tv_sky.json?t=" + Date.now(), { cache: "no-store" });
                     if (res.ok) {
                         guideData = await res.json();
                         try {
-                            sessionStorage.setItem("nmdz_guide_cache", JSON.stringify(guideData));
+                            sessionStorage.setItem("nmdz_guide_cache_v3", JSON.stringify(guideData));
                         } catch (e) {}
                     }
                 }
