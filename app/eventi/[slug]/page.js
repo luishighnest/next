@@ -6,6 +6,8 @@ import { useDeviceState } from "@/components/DeviceProvider";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { matchSlug, getChannelSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
+import GuidaTvModal from "@/components/GuidaTvModal";
+import SettingsModal from "@/components/SettingsModal";
 
 const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
 
@@ -74,12 +76,17 @@ export default function EventoPlayerPage() {
     const [loading, setLoading] = useState(() => !channel);
     const [mounted, setMounted] = useState(false);
     const [iframeLoaded, setIframeLoaded] = useState(false);
+    const [hasStartedPlaying, setHasStartedPlaying] = useState(false);
     const [transPoster, setTransPoster] = useState(() => {
         if (typeof window !== "undefined") {
             try { return sessionStorage.getItem("nmdz_transition_poster") || ""; } catch(e) {}
         }
         return "";
     });
+
+    // Modali Guida TV e Impostazioni
+    const [isGuidaOpen, setIsGuidaOpen] = useState(false);
+    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
     // Stato Drawer Canali a destra (popup nel player come in /sky)
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -95,7 +102,7 @@ export default function EventoPlayerPage() {
         if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
         idleTimerRef.current = setTimeout(() => {
             setIsUserActive(false);
-        }, 3500);
+        }, 4000);
     };
 
     const handleBack = () => {
@@ -120,6 +127,7 @@ export default function EventoPlayerPage() {
 
     useEffect(() => {
         setIframeLoaded(false);
+        setHasStartedPlaying(false);
     }, [selectedSource, slug]);
 
     useEffect(() => {
@@ -528,8 +536,8 @@ export default function EventoPlayerPage() {
             <main className="sky-main">
                 {/* 1. Fullscreen Player Container */}
                 <div className="sky-native-player-container">
-                    {/* Backdrop di preload per eliminare scatti prima dell'avvio */}
-                    {Boolean(transPoster || coverImg) && !iframeLoaded && (
+                    {/* Backdrop di preload per eliminare scatti prima dell'avvio: sparisce irreversibilmente al caricamento */}
+                    {Boolean(transPoster || coverImg) && !hasStartedPlaying && (
                         <div className="sky-player-backdrop-preload">
                             <img
                                 src={transPoster || coverImg}
@@ -538,14 +546,14 @@ export default function EventoPlayerPage() {
                                     width: "100%",
                                     height: "100%",
                                     objectFit: "cover",
-                                    filter: "brightness(0.4) contrast(1.05)"
+                                    filter: "brightness(0.55) contrast(1.05)"
                                 }}
                             />
                             <div
                                 style={{
                                     position: "absolute",
                                     inset: 0,
-                                    background: "linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%)"
+                                    background: "linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 40%, rgba(3,5,10,0.92) 85%, rgba(1,2,5,0.98) 100%)"
                                 }}
                             />
                         </div>
@@ -559,7 +567,10 @@ export default function EventoPlayerPage() {
                         allow="autoplay; encrypted-media; fullscreen"
                         title="Player"
                         onLoad={() => {
-                            setTimeout(() => setIframeLoaded(true), 250);
+                            setTimeout(() => {
+                                setIframeLoaded(true);
+                                setHasStartedPlaying(true);
+                            }, 350);
                         }}
                         style={{
                             display: "block",
@@ -575,112 +586,174 @@ export default function EventoPlayerPage() {
                     {/* Overlay Vignetta cinematografica per contrasto UI */}
                     <div className={`sky-player-vignette ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`} />
 
-                    {/* Spinner di caricamento centrale durante il buffering iniziale */}
-                    {(!iframeLoaded || loading) && (
+                    {/* Spinner di caricamento centrale durante il buffering iniziale conforme allo screenshot */}
+                    {(!iframeLoaded || loading || !hasStartedPlaying) && (
                         <div className="sky-native-loader">
-                            <div className="sky-spinner" />
-                            <span className="sky-loader-text">
-                                {loading ? "Caricamento evento..." : "Sintonizzazione diretta in corso..."}
-                            </span>
+                            <div className="sky-spinner" style={{ width: "52px", height: "52px", borderWidth: "3.5px" }} />
                         </div>
                     )}
                 </div>
 
-                {/* 2. Deck Overlay In Basso (Flottante con info, sorgenti e tasto Canali) */}
+                {/* 2. Deck Overlay In Basso: Stile pulito Sky Glass / Apple TV */}
                 <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
-                    <div className="now-row">
-                        <div className="now-poster-box">
-                            {coverImg ? (
-                                <img src={coverImg} className="now-poster-img" alt="" />
-                            ) : null}
-                            <img
-                                src={displayLogo}
-                                className="now-logo"
-                                alt=""
-                            />
+                    <div className="sky-player-modern-deck">
+                        {/* Header Info: Logo, Tag Live, Categoria, Ora e Titolo Grande */}
+                        <div className="sky-player-info-row">
+                            <div className="sky-player-meta-left">
+                                <div className="sky-modern-logo-box">
+                                    <img
+                                        src={displayLogo}
+                                        className="sky-modern-logo"
+                                        alt=""
+                                    />
+                                </div>
+                                <div className="sky-player-meta-details">
+                                    <div className="sky-player-tag-row">
+                                        <span className="live-badge"><span className="dot"></span>LIVE</span>
+                                        <span className="now-group">{channel?.group || channel?.category || "EVENTI"}</span>
+                                        {channel?.ora && (
+                                            <span className="now-expiry-badge">
+                                                <i className="fa-regular fa-clock"></i>
+                                                <span>Ore {channel.ora}</span>
+                                            </span>
+                                        )}
+                                    </div>
+                                    <h2 className="sky-player-big-title">
+                                        {channel?.title || "Caricamento evento..."}
+                                    </h2>
+                                    <div className="sky-player-epg-subtitle">
+                                        {currentEpg?.titolo ? `${currentEpg.oraInizio ? currentEpg.oraInizio + " • " : ""}${currentEpg.titolo}` : (channel?.description || "Trasmissione in diretta")}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div className="now-info">
-                            <div className="now-title-row">
-                                <h2 className="now-title">{channel?.title || "Caricamento evento..."}</h2>
+                        {/* Timeline Fluida e Cliccabile */}
+                        <div
+                            className="sky-player-timeline-wrapper"
+                            title="Trasmissione evento in diretta"
+                        >
+                            <div className="sky-player-timeline-track">
+                                <div
+                                    className="sky-player-timeline-buffer"
+                                    style={{ width: "100%" }}
+                                />
+                                <div
+                                    className="sky-player-timeline-fill"
+                                    style={{
+                                        width: `${currentEpg?.percentuale !== undefined ? currentEpg.percentuale : 100}%`
+                                    }}
+                                />
+                                <div
+                                    className="sky-player-timeline-thumb"
+                                    style={{
+                                        left: `${currentEpg?.percentuale !== undefined ? currentEpg.percentuale : 100}%`
+                                    }}
+                                />
                             </div>
-                            <div className="now-meta-row">
-                                <span className="live-badge"><span className="dot"></span>LIVE</span>
-                                <span className="now-group">{channel?.group || channel?.category || "EVENTI"}</span>
-                                {channel?.ora && (
-                                    <span className="event-time-badge" style={{ padding: "2px 8px", fontSize: "0.72rem" }}>
-                                        <i className="fa-regular fa-clock" style={{ marginRight: "4px" }}></i>
-                                        <span>Ore {channel.ora}</span>
-                                    </span>
+                            <div className="sky-player-timeline-labels">
+                                <span>{currentEpg?.oraInizio || channel?.ora || "In onda ora"}</span>
+                                <span style={{ color: "#e30a17", fontWeight: "800", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                                    <span style={{ width: "5px", height: "5px", borderRadius: "50%", background: "#e30a17" }} />
+                                    DIRETTA LIVE
+                                </span>
+                            </div>
+                        </div>
+
+                        {/* Barra dei Controlli Inferiori Integrati */}
+                        <div className="sky-player-controls-bar">
+                            {/* Gruppo Sinistra: Switch Sorgente (Standard vs WARP) */}
+                            <div className="sky-controls-group-left">
+                                {channel?.sources && channel.sources.length > 1 && (
+                                    <div className="event-sources-deck">
+                                        {channel.sources.map((s, idx) => {
+                                            const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
+                                            return (
+                                                <button
+                                                    key={s.name + idx}
+                                                    type="button"
+                                                    className={`event-source-deck-btn ${isSelected ? "active" : ""}`}
+                                                    onClick={() => setSelectedSource(s)}
+                                                    title={`Passa a sorgente ${s.name}`}
+                                                >
+                                                    {s.isWarp ? (
+                                                        <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#000000" : "#f38020" }}></i>
+                                                    ) : (
+                                                        <i className="fa-solid fa-bolt"></i>
+                                                    )}
+                                                    <span>{s.name}</span>
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
                                 )}
                             </div>
-                            <div className="now-epg-text">
-                                {currentEpg?.titolo ? `${currentEpg.oraInizio ? currentEpg.oraInizio + " - " : ""}${currentEpg.titolo}` : (channel?.description || "Trasmissione in diretta")}
-                            </div>
-                            {currentEpg && currentEpg.percentuale !== undefined && (
-                                <div className="now-progress-container">
-                                    <div className="now-progress-bar" style={{ width: `${currentEpg.percentuale || 10}%` }}></div>
-                                </div>
-                            )}
-                        </div>
 
-                        {/* Deck Actions: Switch Sorgenti + Tasto Canali + Zapping */}
-                        <div className="now-deck-actions">
-                            {/* Switch Sorgente (Standard vs WARP) */}
-                            {channel?.sources && channel.sources.length > 1 && (
-                                <div className="event-sources-deck">
-                                    {channel.sources.map((s, idx) => {
-                                        const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
-                                        return (
-                                            <button
-                                                key={s.name + idx}
-                                                type="button"
-                                                className={`event-source-deck-btn ${isSelected ? "active" : ""}`}
-                                                onClick={() => setSelectedSource(s)}
-                                                title={`Passa a sorgente ${s.name}`}
-                                            >
-                                                {s.isWarp ? (
-                                                    <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#000000" : "#f38020" }}></i>
-                                                ) : (
-                                                    <i className="fa-solid fa-bolt"></i>
-                                                )}
-                                                <span>{s.name}</span>
-                                            </button>
-                                        );
-                                    })}
-                                </div>
-                            )}
-
-                            {/* Tasto Canali (apre il drawer laterale a destra) */}
-                            <button
-                                type="button"
-                                className="sky-channels-trigger-btn"
-                                onClick={() => setIsSidebarOpen(true)}
-                                title="Mostra tutti gli eventi e canali correlati"
-                            >
-                                <i className="fas fa-list-ul" />
-                                <span>Canali</span>
-                            </button>
-
-                            {/* Controlli Zapping */}
-                            <div className="zap-controls">
+                            {/* Gruppo Destra: Guida TV, Impostazioni, Canali, Zapping, Fullscreen */}
+                            <div className="sky-controls-group-right">
                                 <button
                                     type="button"
-                                    className="zap-btn zap-btn-up"
-                                    onClick={handlePrevChannel}
-                                    title="Evento precedente (Freccia Su ↑)"
-                                    aria-label="Evento precedente"
+                                    className="sky-modern-btn"
+                                    onClick={() => setIsGuidaOpen(true)}
+                                    title="Apri Guida TV EPG"
                                 >
-                                    <span className="material-symbols-rounded">keyboard_arrow_up</span>
+                                    <span className="material-symbols-rounded">calendar_today</span>
+                                    <span>Guida TV</span>
                                 </button>
+
                                 <button
                                     type="button"
-                                    className="zap-btn zap-btn-down"
-                                    onClick={handleNextChannel}
-                                    title="Evento successivo (Freccia Giù ↓)"
-                                    aria-label="Evento successivo"
+                                    className="sky-modern-btn icon-only"
+                                    onClick={() => setIsSettingsOpen(true)}
+                                    title="Impostazioni Tecniche & Player"
                                 >
-                                    <span className="material-symbols-rounded">keyboard_arrow_down</span>
+                                    <span className="material-symbols-rounded">settings</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    className="sky-channels-trigger-btn"
+                                    onClick={() => setIsSidebarOpen(true)}
+                                    title="Mostra tutti gli eventi e canali correlati"
+                                >
+                                    <i className="fas fa-list-ul" />
+                                    <span>Canali</span>
+                                </button>
+
+                                <div className="zap-controls">
+                                    <button
+                                        type="button"
+                                        className="zap-btn"
+                                        onClick={handlePrevChannel}
+                                        title="Evento precedente (Freccia Su ↑)"
+                                        aria-label="Evento precedente"
+                                    >
+                                        <span className="material-symbols-rounded">keyboard_arrow_up</span>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        className="zap-btn"
+                                        onClick={handleNextChannel}
+                                        title="Evento successivo (Freccia Giù ↓)"
+                                        aria-label="Evento successivo"
+                                    >
+                                        <span className="material-symbols-rounded">keyboard_arrow_down</span>
+                                    </button>
+                                </div>
+
+                                <button
+                                    type="button"
+                                    className="sky-modern-btn icon-only"
+                                    onClick={() => {
+                                        if (!document.fullscreenElement) {
+                                            document.documentElement.requestFullscreen().catch(() => {});
+                                        } else {
+                                            if (document.exitFullscreen) document.exitFullscreen().catch(() => {});
+                                        }
+                                    }}
+                                    title="Schermo intero"
+                                >
+                                    <span className="material-symbols-rounded">fullscreen</span>
                                 </button>
                             </div>
                         </div>
@@ -815,6 +888,19 @@ export default function EventoPlayerPage() {
                     </div>
                 </aside>
             </main>
+
+            {/* Modale Guida TV EPG */}
+            <GuidaTvModal
+                isOpen={isGuidaOpen}
+                onClose={() => setIsGuidaOpen(false)}
+            />
+
+            {/* Modale Impostazioni Tecniche & Player */}
+            {isSettingsOpen && (
+                <SettingsModal
+                    onClose={() => setIsSettingsOpen(false)}
+                />
+            )}
         </div>
     );
 }

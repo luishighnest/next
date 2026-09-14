@@ -7137,15 +7137,17 @@ body:has(.sky-app) {
         .sky-empty { text-align: center; color: rgba(255, 255, 255, 0.4); padding: 36px 0; font-size: 0.88rem; }
 
         /* --- Info Deck / Overlay nel Player (Flottante in basso con auto-fade) --- */
+        /* --- Info Deck / Overlay nel Player (Cinematografico stile Sky Glass / Apple TV) --- */
         .sky-player-overlay-bottom {
             position: absolute;
             left: 0;
             right: 0;
             bottom: 0;
             z-index: 30;
-            padding: 24px 32px 30px;
+            padding: 20px 4vw 28px;
             pointer-events: none;
             transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            background: linear-gradient(180deg, transparent 0%, rgba(2, 4, 8, 0.4) 30%, rgba(1, 2, 5, 0.94) 100%);
         }
 
         .sky-player-overlay-bottom.idle-hidden {
@@ -7154,118 +7156,109 @@ body:has(.sky-app) {
             pointer-events: none !important;
         }
 
-        .now-row {
+        /* Contenitore unificato dei controlli senza la casella massiccia */
+        .sky-player-modern-deck {
             display: flex;
-            align-items: center;
-            gap: 18px;
-            max-width: 1200px;
+            flex-direction: column;
+            gap: 14px;
+            width: 100%;
+            max-width: 1500px;
             margin: 0 auto;
-            background: rgba(11, 15, 25, 0.88) !important;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
-            padding: 14px 22px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(28px) saturate(190%);
-            -webkit-backdrop-filter: blur(28px) saturate(190%);
             pointer-events: auto;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.25s ease;
         }
-        
-        .now-poster-box {
+
+        /* 1. Header info evento: Logo squadrato minimal + Badge Live + Categoria + Titolo grande */
+        .sky-player-info-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .sky-player-meta-left {
+            display: flex;
+            align-items: flex-end;
+            gap: 18px;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .sky-modern-logo-box {
             width: 58px;
             height: 58px;
-            border-radius: 16px;
-            background: #080c14;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-            overflow: hidden;
-            flex-shrink: 0;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+            min-width: 58px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.45);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        .now-poster-img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.85;
-        }
-        .now-logo {
-            position: relative;
-            z-index: 2;
-            max-width: 44px;
-            max-height: 44px;
-            object-fit: contain;
-            filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.85));
+            overflow: hidden;
+            flex-shrink: 0;
         }
 
-        .now-info {
-            flex: 1;
-            min-width: 0;
+        .sky-modern-logo {
+            max-width: 85%;
+            max-height: 85%;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.9));
+        }
+
+        .sky-player-meta-details {
             display: flex;
             flex-direction: column;
-            gap: 4px;
-            position: relative;
-            z-index: 2;
+            gap: 5px;
+            min-width: 0;
+            flex: 1;
         }
-        .now-title-row { display: flex; align-items: center; gap: 10px; }
-        .now-title {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 800;
-            font-size: 1.35rem;
-            line-height: 1.15;
-            margin: 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            color: #ffffff;
-            letter-spacing: -0.015em;
+
+        .sky-player-tag-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
-        .now-meta-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+
         .live-badge {
             display: inline-flex;
             align-items: center;
-            gap: 4px;
-            font-size: 0.62rem;
+            gap: 5px;
+            font-size: 0.68rem;
             font-weight: 900;
-            letter-spacing: 0.8px;
+            letter-spacing: 0.08em;
             color: #ffffff;
             background: #e30a17;
-            padding: 2px 8px;
-            border-radius: 6px;
+            padding: 2.5px 8px;
+            border-radius: 4px;
             text-transform: uppercase;
-            box-shadow: 0 0 12px rgba(227, 10, 23, 0.5);
+            box-shadow: 0 0 14px rgba(227, 10, 23, 0.6);
         }
         .live-badge .dot {
-            width: 4.5px;
-            height: 4.5px;
+            width: 5px;
+            height: 5px;
             border-radius: 50%;
             background: #ffffff;
             animation: live-pulse 1.2s ease infinite;
         }
+
         .now-group {
-            font-size: 0.74rem;
-            font-weight: 700;
+            font-size: 0.82rem;
+            font-weight: 600;
             letter-spacing: 0.02em;
-            color: rgba(255, 255, 255, 0.7);
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 2px 9px;
-            border-radius: 6px;
+            color: rgba(255, 255, 255, 0.8);
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
         }
+
         .now-expiry-badge {
-            font-size: 0.74rem;
+            font-size: 0.76rem;
             font-weight: 600;
             letter-spacing: 0.02em;
             color: #ffb84d;
-            background: rgba(255, 184, 77, 0.12);
-            border: 1px solid rgba(255, 184, 77, 0.28);
-            padding: 2px 9px;
+            background: rgba(255, 184, 77, 0.14);
+            border: 1px solid rgba(255, 184, 77, 0.3);
+            padding: 2.5px 10px;
             border-radius: 6px;
             display: inline-flex;
             align-items: center;
@@ -7273,103 +7266,223 @@ body:has(.sky-app) {
         }
         .now-expiry-badge.expired {
             color: #ff4d4d;
-            background: rgba(255, 77, 77, 0.14);
-            border-color: rgba(255, 77, 77, 0.3);
+            background: rgba(255, 77, 77, 0.16);
+            border-color: rgba(255, 77, 77, 0.35);
         }
-        .now-epg-text {
-            font-size: 0.86rem;
-            color: rgba(255, 255, 255, 0.85);
+
+        .sky-player-big-title {
+            font-family: 'Outfit', 'Inter', sans-serif;
+            font-weight: 800;
+            font-size: 1.85rem;
+            line-height: 1.15;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            text-shadow: 0 2px 14px rgba(0, 0, 0, 0.9);
+        }
+
+        .sky-player-epg-subtitle {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.7);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             line-height: 1.25;
             font-weight: 500;
         }
-        .now-progress-container {
+
+        /* 2. Timeline Fluida e Cliccabile */
+        .sky-player-timeline-wrapper {
             width: 100%;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.14);
-            border-radius: 99px;
-            overflow: hidden;
-            margin-top: 5px;
-            position: relative;
-        }
-        .now-progress-bar {
-            height: 100%;
-            width: 0%;
-            background: linear-gradient(90deg, #e30a17 0%, #ff4d58 100%);
-            border-radius: 99px;
-            box-shadow: 0 0 10px rgba(227, 10, 23, 0.8);
-            transition: width 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            padding: 6px 0;
+            user-select: none;
         }
 
-        /* Deck Action Controls: Switch Sorgente (Standard / WARP) + Drawer Canali + Zapping */
-        .now-deck-actions {
+        .sky-player-timeline-track {
+            position: relative;
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 999px;
+            overflow: visible;
+            transition: height 0.18s ease;
+        }
+
+        .sky-player-timeline-wrapper:hover .sky-player-timeline-track {
+            height: 8px;
+        }
+
+        .sky-player-timeline-buffer {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 999px;
+            pointer-events: none;
+        }
+
+        .sky-player-timeline-fill {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #e30a17 0%, #ff3b47 100%);
+            border-radius: 999px;
+            box-shadow: 0 0 12px rgba(227, 10, 23, 0.8);
+            pointer-events: none;
+        }
+
+        .sky-player-timeline-thumb {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.15s ease, transform 0.15s ease;
+        }
+
+        .sky-player-timeline-wrapper:hover .sky-player-timeline-thumb {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.15);
+        }
+
+        .sky-player-timeline-labels {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.76rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.65);
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* 3. Barra dei Controlli Inferiori Integrati */
+        .sky-player-controls-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            width: 100%;
+        }
+
+        .sky-controls-group-left,
+        .sky-controls-group-right {
             display: flex;
             align-items: center;
             gap: 10px;
-            position: relative;
-            z-index: 2;
-            flex-shrink: 0;
         }
 
-        .event-sources-deck {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .event-source-deck-btn {
+        .sky-modern-btn {
             display: inline-flex;
             align-items: center;
-            gap: 6px;
-            padding: 8px 14px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            justify-content: center;
+            gap: 8px;
+            height: 40px;
+            padding: 0 16px;
             border-radius: 999px;
-            color: rgba(255, 255, 255, 0.85);
-            font-family: 'Outfit', sans-serif;
-            font-size: 0.82rem;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            color: #ffffff;
+            font-family: 'Outfit', 'Inter', sans-serif;
+            font-size: 0.85rem;
             font-weight: 700;
             cursor: pointer;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
             transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
             user-select: none;
         }
-        .event-source-deck-btn:hover {
-            background: rgba(255, 255, 255, 0.18);
-            color: #ffffff;
-            border-color: rgba(255, 255, 255, 0.3);
-            transform: translateY(-1px);
+
+        .sky-modern-btn:hover {
+            background: rgba(255, 255, 255, 0.22);
+            border-color: rgba(255, 255, 255, 0.35);
+            transform: translateY(-1.5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
         }
-        .event-source-deck-btn.active {
-            background: #ffffff !important;
-            color: #000000 !important;
-            border-color: #ffffff !important;
-            box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+
+        .sky-modern-btn.icon-only {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            border-radius: 50%;
+        }
+
+        .sky-modern-btn.active {
+            background: #ffffff;
+            color: #000000;
+            border-color: #ffffff;
+            box-shadow: 0 0 16px rgba(255, 255, 255, 0.4);
+        }
+
+        .sky-modern-btn .material-symbols-rounded {
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        .sky-volume-control {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+        }
+
+        .sky-volume-slider {
+            width: 80px;
+            height: 5px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 999px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .sky-volume-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ffffff;
+            cursor: pointer;
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
         }
 
         .sky-channels-trigger-btn {
             display: flex;
             align-items: center;
             gap: 8px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: #ffffff;
-            padding: 9px 16px;
+            padding: 0 18px;
+            height: 40px;
             border-radius: 999px;
-            font-size: 0.84rem;
+            font-size: 0.86rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
         }
         .sky-channels-trigger-btn:hover {
             background: #ffffff;
             color: #000000;
             border-color: #ffffff;
-            transform: translateY(-1px);
-            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
+            transform: translateY(-1.5px);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.35);
         }
         .sky-channels-trigger-btn i {
             font-size: 0.95rem;
@@ -7378,18 +7491,18 @@ body:has(.sky-app) {
         .zap-controls {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 4px;
             background: rgba(0, 0, 0, 0.45);
-            padding: 4px 6px;
+            padding: 3px 6px;
             border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.12);
             flex-shrink: 0;
             position: relative;
             z-index: 2;
         }
         .zap-btn {
-            width: 38px;
-            height: 38px;
+            width: 34px;
+            height: 34px;
             border-radius: 50%;
             background: transparent;
             border: 1px solid transparent;
@@ -7411,12 +7524,12 @@ body:has(.sky-app) {
 
         @media (max-width: 880px) {
             .sky-sidebar-popup { width: 100%; max-width: 100vw; }
-            .now-row { gap: 12px; padding: 12px 14px; border-radius: 18px; }
-            .now-title { font-size: 1.15rem; }
-            .now-poster-box { width: 48px; height: 48px; border-radius: 12px; }
-            .now-logo { width: 36px; height: 36px; }
+            .sky-player-big-title { font-size: 1.35rem; }
+            .sky-modern-logo-box { width: 44px; height: 44px; min-width: 44px; }
+            .sky-volume-slider { width: 50px; }
             .sky-channels-trigger-btn span { display: none; }
-            .sky-channels-trigger-btn { padding: 9px 12px; }
+            .sky-channels-trigger-btn { padding: 0 12px; }
+            .sky-player-overlay-bottom { padding: 16px 16px 20px; }
         }
 
 /* ============================================================

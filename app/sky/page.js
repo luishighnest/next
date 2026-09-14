@@ -9,6 +9,8 @@ import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
 import { loadShakaScript, parseClearKeys } from "@/lib/shakaLoader";
+import GuidaTvModal from "@/components/GuidaTvModal";
+import SettingsModal from "@/components/SettingsModal";
 
 const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
 
@@ -225,9 +227,22 @@ function SkyContent() {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+    const [hasStartedPlaying, setHasStartedPlaying] = useState(false);
     const [isVideoBuffering, setIsVideoBuffering] = useState(true);
     const [isMuted, setIsMuted] = useState(false);
     const [needsUnmute, setNeedsUnmute] = useState(false);
+    const [volume, setVolume] = useState(1);
+
+    // Timeline fluida interattiva
+    const [currentTime, setCurrentTime] = useState(0);
+    const [duration, setDuration] = useState(0);
+    const [isLiveStream, setIsLiveStream] = useState(true);
+    const [bufferedEnd, setBufferedEnd] = useState(0);
+    const timelineRef = useRef(null);
+
+    // Modali Guida TV e Impostazioni
+    const [isGuidaOpen, setIsGuidaOpen] = useState(false);
+    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
     // Stato Drawer Canali a destra (popup nel player)
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -241,7 +256,7 @@ function SkyContent() {
         if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
         idleTimerRef.current = setTimeout(() => {
             setIsUserActive(false);
-        }, 3500);
+        }, 4000);
     };
 
     useEffect(() => {
@@ -256,11 +271,14 @@ function SkyContent() {
         setIframeLoaded(false);
         setIsVideoBuffering(true);
         setIsVideoPlaying(false);
+        setHasStartedPlaying(false);
+        setCurrentTime(0);
+        setDuration(0);
         setIsUserActive(true);
         if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
         idleTimerRef.current = setTimeout(() => {
             setIsUserActive(false);
-        }, 3500);
+        }, 4000);
     }, [selectedChannel]);
 
     // Inizializzazione e caricamento Shaka Player nativo per il canale Sky selezionato
@@ -346,11 +364,25 @@ function SkyContent() {
                         bufferingGoal: 6,
                         rebufferingGoal: 1.5,
                         bufferBehind: 6,
-                        lowLatencyMode: true
+                        lowLatencyMode: true,
+                        retryParameters: {
+                            maxAttempts: 6,
+                            baseDelay: 1000,
+                            backoffFactor: 1.5,
+                            fuzzFactor: 0.5,
+                            timeout: 10000
+                        }
                     },
                     manifest: {
                         dash: {
                             ignoreMinBufferTime: true
+                        },
+                        retryParameters: {
+                            maxAttempts: 6,
+                            baseDelay: 1000,
+                            backoffFactor: 1.5,
+                            fuzzFactor: 0.5,
+                            timeout: 10000
                         }
                     }
                 });
@@ -362,21 +394,24 @@ function SkyContent() {
 
                 player.addEventListener("error", (err) => {
                     console.error("Shaka error:", err);
+                    if (playerRef.current && !err.detail?.severity) {
+                        try { playerRef.current.retryStreaming(); } catch(e) {}
+                    }
                 });
 
-                await player.load(streamUrl, null, "application/dash+xml");
+                const isHls = streamUrl.toLowerCase().includes(".m3u8");
+                const mimeType = isHls ? "application/x-mpegurl" : "application/dash+xml";
+                await player.load(streamUrl, null, mimeType);
                 if (isCancelled) return;
 
                 if (videoRef.current) {
                     videoRef.current.playsInline = true;
-                    // Prova ad avviare con audio, se bloccato muta e mostra overlay unmute
                     try {
                         videoRef.current.muted = false;
                         await videoRef.current.play();
                         setIsMuted(false);
                         setNeedsUnmute(false);
                     } catch (playErr) {
-                        // Browser autoplay policy blocca audio: avvia mutato
                         if (videoRef.current) {
                             videoRef.current.muted = true;
                             setIsMuted(true);
@@ -410,6 +445,51 @@ function SkyContent() {
             videoRef.current.muted = false;
             setIsMuted(false);
             setNeedsUnmute(false);
+        }
+    };
+
+    const togglePlayPause = () => {
+        if (!videoRef.current) return;
+        if (videoRef.current.paused) {
+            videoRef.current.play().catch(() => {});
+        } else {
+            videoRef.current.pause();
+        }
+    };
+
+    const toggleMute = () => {
+        if (!videoRef.current) return;
+        const newMuted = !videoRef.current.muted;
+        videoRef.current.muted = newMuted;
+        setIsMuted(newMuted);
+        if (!newMuted) setNeedsUnmute(false);
+    };
+
+    const handleVolumeChange = (e) => {
+        const val = parseFloat(e.target.value);
+        setVolume(val);
+        if (videoRef.current) {
+            videoRef.current.volume = val;
+            videoRef.current.muted = val === 0;
+            setIsMuted(val === 0);
+            if (val > 0) setNeedsUnmute(false);
+        }
+    };
+
+    const handleTimelineClick = (e) => {
+        if (!timelineRef.current || !videoRef.current || isLiveStream || duration <= 0) return;
+        const rect = timelineRef.current.getBoundingClientRect();
+        const pos = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+        const seekTarget = pos * duration;
+        videoRef.current.currentTime = seekTarget;
+        setCurrentTime(seekTarget);
+    };
+
+    const toggleFullscreen = () => {
+        if (!document.fullscreenElement) {
+            document.documentElement.requestFullscreen().catch(() => {});
+        } else {
+            if (document.exitFullscreen) document.exitFullscreen().catch(() => {});
         }
     };
 
@@ -523,11 +603,17 @@ function SkyContent() {
                     }
                 }
 
-                // 3. Seleziona canale
+                // 3. Seleziona canale (NON ricreare l'oggetto se il canale attuale è già valido per non distruggere Shaka!)
                 setSelectedChannel(prevSelected => {
                     if (prevSelected) {
                         const stillExists = channelList.find(c => c.slug === prevSelected.slug || c.name === prevSelected.name);
-                        if (stillExists) return stillExists;
+                        if (stillExists) {
+                            // Se i parametri chiave non sono cambiati, mantieni esattamente la stessa referenza di memoria prevSelected!
+                            if (prevSelected.url === stillExists.url && prevSelected.kid_key === stillExists.kid_key) {
+                                return prevSelected;
+                            }
+                            return stillExists;
+                        }
                     }
                     if (found) return found;
                     if (channelList.length > 0) return channelList[0];
@@ -740,8 +826,8 @@ function SkyContent() {
             <main className="sky-main">
                 {/* 1. Fullscreen Native Player Shaka */}
                 <div className="sky-native-player-container">
-                    {/* Backdrop di preload per eliminare scatti prima dell'avvio */}
-                    {Boolean(transPoster || currentEpg?.immagine || selectedChannel?.image) && !isVideoPlaying && (
+                    {/* Backdrop di preload per eliminare scatti prima dell'avvio: sparisce irreversibilmente al primo frame */}
+                    {Boolean(transPoster || currentEpg?.immagine || selectedChannel?.image) && !hasStartedPlaying && (
                         <div className="sky-player-backdrop-preload">
                             <img
                                 src={transPoster || currentEpg?.immagine || selectedChannel?.image}
@@ -750,14 +836,14 @@ function SkyContent() {
                                     width: "100%",
                                     height: "100%",
                                     objectFit: "cover",
-                                    filter: "brightness(0.4) contrast(1.05)"
+                                    filter: "brightness(0.55) contrast(1.05)"
                                 }}
                             />
                             <div
                                 style={{
                                     position: "absolute",
                                     inset: 0,
-                                    background: "linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.85) 100%)"
+                                    background: "linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 40%, rgba(3,5,10,0.92) 85%, rgba(1,2,5,0.98) 100%)"
                                 }}
                             />
                         </div>
@@ -771,114 +857,227 @@ function SkyContent() {
                         playsInline
                         onPlaying={() => {
                             setIsVideoPlaying(true);
+                            setHasStartedPlaying(true);
                             setIsVideoBuffering(false);
                         }}
                         onWaiting={() => setIsVideoBuffering(true)}
+                        onTimeUpdate={() => {
+                            if (videoRef.current) {
+                                setCurrentTime(videoRef.current.currentTime);
+                                const d = videoRef.current.duration;
+                                if (d && !isNaN(d) && isFinite(d)) {
+                                    setDuration(d);
+                                    setIsLiveStream(false);
+                                } else {
+                                    setIsLiveStream(true);
+                                }
+                                if (videoRef.current.buffered && videoRef.current.buffered.length > 0) {
+                                    setBufferedEnd(videoRef.current.buffered.end(videoRef.current.buffered.length - 1));
+                                }
+                            }
+                        }}
                     />
 
                     {/* Overlay Vignetta cinematografica per contrasto UI */}
                     <div className={`sky-player-vignette ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`} />
 
-                    {/* Spinner di caricamento centrale */}
-                    {(isVideoBuffering || loading) && (
+                    {/* Spinner di caricamento centrale conforme allo screenshot */}
+                    {(isVideoBuffering || loading || !hasStartedPlaying) && (
                         <div className="sky-native-loader">
-                            <div className="sky-spinner" />
-                            <span className="sky-loader-text">
-                                {loading ? "Caricamento canali Sky..." : "Sintonizzazione diretta in corso..."}
-                            </span>
+                            <div className="sky-spinner" style={{ width: "52px", height: "52px", borderWidth: "3.5px" }} />
                         </div>
                     )}
                 </div>
 
-                {/* 2. Deck Overlay In Basso (Mockup Now Row con info programma, barra e zapping) */}
+                {/* 2. Deck Overlay In Basso: Design pulito stile Sky Glass / Apple TV senza scatola ovale gigante */}
                 <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
-                    <div className="now-row">
-                        <div className="now-poster-box">
-                            {currentEpg?.immagine ? (
-                                <img src={currentEpg.immagine} className="now-poster-img" alt="" />
-                            ) : null}
-                            <img
-                                src={selectedChannel?.logo || "/logos/sksport.png"}
-                                className="now-logo"
-                                alt=""
-                            />
-                        </div>
-
-                        <div className="now-info">
-                            <div className="now-title-row">
-                                <h2 className="now-title">{selectedChannel?.name || "Seleziona un canale"}</h2>
-                            </div>
-                            <div className="now-meta-row">
-                                <span className="live-badge"><span className="dot"></span>LIVE</span>
-                                <span className="now-group">{selectedChannel?.group || "Sky"}</span>
-                                {(() => {
-                                    const streamUrl = selectedChannel?.url || selectedChannel?.mpd || "";
-                                    const expMatch = streamUrl.match(/_e~([0-9]+)_/);
-                                    if (!expMatch) return null;
-                                    const expTs = parseInt(expMatch[1], 10) * 1000;
-                                    const expDate = new Date(expTs);
-                                    const now = new Date();
-                                    const diffMin = Math.round((expDate - now) / 60000);
-                                    const timeStr = String(expDate.getHours()).padStart(2, "0") + ":" + String(expDate.getMinutes()).padStart(2, "0");
-                                    let dateStr = "";
-                                    if (expDate.getDate() !== now.getDate()) {
-                                        dateStr = String(expDate.getDate()).padStart(2, "0") + "/" + String(expDate.getMonth() + 1).padStart(2, "0") + " ";
-                                    }
-                                    const isExpired = diffMin <= 0;
-                                    let expiryText = "";
-                                    if (isExpired) {
-                                        expiryText = "Scaduto alle " + timeStr;
-                                    } else if (diffMin < 60) {
-                                        expiryText = "Scade tra " + diffMin + " min (" + timeStr + ")";
-                                    } else {
-                                        expiryText = "Scadenza: " + dateStr + timeStr;
-                                    }
-                                    return (
-                                        <span className={`now-expiry-badge ${isExpired ? "expired" : ""}`} id="nowExpiry" style={{ display: "inline-flex" }}>
-                                            <i className="fa-regular fa-clock" style={{ marginRight: "4px" }}></i>
-                                            <span id="nowExpiryText">{expiryText}</span>
-                                        </span>
-                                    );
-                                })()}
-                            </div>
-                            <div className="now-epg-text">
-                                {currentEpg ? `${currentEpg.ora} - ${currentEpg.titolo} ${currentEpg.next ? `(Succ: ${currentEpg.next})` : ""}` : "Trasmissione in diretta"}
-                            </div>
-                            <div className="now-progress-container">
-                                <div className="now-progress-bar" style={{ width: `${currentEpg ? currentEpg.percent : 10}%` }}></div>
+                    <div className="sky-player-modern-deck">
+                        {/* Header Info: Logo, Tag Live, Categoria, Scadenza e Titolo Grande */}
+                        <div className="sky-player-info-row">
+                            <div className="sky-player-meta-left">
+                                <div className="sky-modern-logo-box">
+                                    <img
+                                        src={selectedChannel?.logo || "/logos/sksport.png"}
+                                        className="sky-modern-logo"
+                                        alt=""
+                                    />
+                                </div>
+                                <div className="sky-player-meta-details">
+                                    <div className="sky-player-tag-row">
+                                        <span className="live-badge"><span className="dot"></span>LIVE</span>
+                                        <span className="now-group">{selectedChannel?.group || "Sky"}</span>
+                                        {(() => {
+                                            const streamUrl = selectedChannel?.url || selectedChannel?.mpd || "";
+                                            const expMatch = streamUrl.match(/_e~([0-9]+)_/);
+                                            if (!expMatch) return null;
+                                            const expTs = parseInt(expMatch[1], 10) * 1000;
+                                            const expDate = new Date(expTs);
+                                            const now = new Date();
+                                            const diffMin = Math.round((expDate - now) / 60000);
+                                            const timeStr = String(expDate.getHours()).padStart(2, "0") + ":" + String(expDate.getMinutes()).padStart(2, "0");
+                                            const isExpired = diffMin <= 0;
+                                            let expiryText = isExpired
+                                                ? "Scaduto alle " + timeStr
+                                                : diffMin < 60
+                                                ? "Scade tra " + diffMin + " min"
+                                                : "Scadenza: " + timeStr;
+                                            return (
+                                                <span className={`now-expiry-badge ${isExpired ? "expired" : ""}`}>
+                                                    <i className="fa-regular fa-clock"></i>
+                                                    <span>{expiryText}</span>
+                                                </span>
+                                            );
+                                        })()}
+                                    </div>
+                                    <h2 className="sky-player-big-title">
+                                        {currentEpg?.titolo || selectedChannel?.name || "Canale Sky"}
+                                    </h2>
+                                    <div className="sky-player-epg-subtitle">
+                                        {currentEpg ? `${currentEpg.ora} • ${selectedChannel?.name || ""} ${currentEpg.next ? `(Succ: ${currentEpg.next})` : ""}` : (selectedChannel?.name || "Diretta streaming")}
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Deck Actions: Tasto Canali + Zapping */}
-                        <div className="now-deck-actions">
-                            <button
-                                type="button"
-                                className="sky-channels-trigger-btn"
-                                onClick={() => setIsSidebarOpen(true)}
-                                title="Apri Guida Canali"
-                            >
-                                <i className="fas fa-list-ul" />
-                                <span>Canali</span>
-                            </button>
+                        {/* Timeline Fluida e Cliccabile */}
+                        <div
+                            ref={timelineRef}
+                            className="sky-player-timeline-wrapper"
+                            onClick={handleTimelineClick}
+                            title={isLiveStream ? "Trasmissione in diretta" : "Clicca per andare a un punto preciso"}
+                        >
+                            <div className="sky-player-timeline-track">
+                                <div
+                                    className="sky-player-timeline-buffer"
+                                    style={{
+                                        width: isLiveStream ? "100%" : `${duration > 0 ? (bufferedEnd / duration) * 100 : 0}%`
+                                    }}
+                                />
+                                <div
+                                    className="sky-player-timeline-fill"
+                                    style={{
+                                        width: isLiveStream ? `${currentEpg ? currentEpg.percent : 100}%` : `${duration > 0 ? (currentTime / duration) * 100 : 0}%`
+                                    }}
+                                />
+                                <div
+                                    className="sky-player-timeline-thumb"
+                                    style={{
+                                        left: isLiveStream ? `${currentEpg ? currentEpg.percent : 100}%` : `${duration > 0 ? (currentTime / duration) * 100 : 0}%`
+                                    }}
+                                />
+                            </div>
+                            <div className="sky-player-timeline-labels">
+                                <span>
+                                    {isLiveStream
+                                        ? (currentEpg?.ora || "In onda ora")
+                                        : `${Math.floor(currentTime / 60)}:${String(Math.floor(currentTime % 60)).padStart(2, "0")}`
+                                    }
+                                </span>
+                                <span style={{ color: "#e30a17", fontWeight: "800", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                                    <span style={{ width: "5px", height: "5px", borderRadius: "50%", background: "#e30a17" }} />
+                                    {isLiveStream ? "DIRETTA LIVE" : `${Math.floor(duration / 60)}:${String(Math.floor(duration % 60)).padStart(2, "0")}`}
+                                </span>
+                            </div>
+                        </div>
 
-                            <div className="zap-controls">
+                        {/* Barra dei Controlli Inferiori Integrati */}
+                        <div className="sky-player-controls-bar">
+                            {/* Gruppo Sinistra: Play/Pause, Mute/Volume */}
+                            <div className="sky-controls-group-left">
                                 <button
                                     type="button"
-                                    className="zap-btn zap-btn-up"
-                                    onClick={handlePrevChannel}
-                                    title="Canale precedente (Freccia Su ↑)"
-                                    aria-label="Canale precedente"
+                                    className="sky-modern-btn icon-only"
+                                    onClick={togglePlayPause}
+                                    title={isVideoPlaying ? "Pausa" : "Riproduci"}
                                 >
-                                    <span className="material-symbols-rounded">keyboard_arrow_up</span>
+                                    <span className="material-symbols-rounded">
+                                        {isVideoPlaying ? "pause" : "play_arrow"}
+                                    </span>
                                 </button>
+
+                                <div className="sky-volume-control">
+                                    <button
+                                        type="button"
+                                        className="sky-modern-btn icon-only"
+                                        onClick={toggleMute}
+                                        title={isMuted ? "Attiva audio" : "Muta audio"}
+                                    >
+                                        <span className="material-symbols-rounded">
+                                            {isMuted || volume === 0 ? "volume_off" : volume < 0.5 ? "volume_down" : "volume_up"}
+                                        </span>
+                                    </button>
+                                    <input
+                                        type="range"
+                                        min="0"
+                                        max="1"
+                                        step="0.05"
+                                        value={isMuted ? 0 : volume}
+                                        onChange={handleVolumeChange}
+                                        className="sky-volume-slider"
+                                        title="Regola volume"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Gruppo Destra: Guida TV, Impostazioni, Canali, Zapping, Fullscreen */}
+                            <div className="sky-controls-group-right">
                                 <button
                                     type="button"
-                                    className="zap-btn zap-btn-down"
-                                    onClick={handleNextChannel}
-                                    title="Canale successivo (Freccia Giù ↓)"
-                                    aria-label="Canale successivo"
+                                    className="sky-modern-btn"
+                                    onClick={() => setIsGuidaOpen(true)}
+                                    title="Apri Guida TV EPG"
                                 >
-                                    <span className="material-symbols-rounded">keyboard_arrow_down</span>
+                                    <span className="material-symbols-rounded">calendar_today</span>
+                                    <span>Guida TV</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    className="sky-modern-btn icon-only"
+                                    onClick={() => setIsSettingsOpen(true)}
+                                    title="Impostazioni Tecniche & Player"
+                                >
+                                    <span className="material-symbols-rounded">settings</span>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    className="sky-channels-trigger-btn"
+                                    onClick={() => setIsSidebarOpen(true)}
+                                    title="Apri Elenco Canali"
+                                >
+                                    <i className="fas fa-list-ul" />
+                                    <span>Canali</span>
+                                </button>
+
+                                <div className="zap-controls">
+                                    <button
+                                        type="button"
+                                        className="zap-btn"
+                                        onClick={handlePrevChannel}
+                                        title="Canale precedente (Freccia Su ↑)"
+                                        aria-label="Canale precedente"
+                                    >
+                                        <span className="material-symbols-rounded">keyboard_arrow_up</span>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        className="zap-btn"
+                                        onClick={handleNextChannel}
+                                        title="Canale successivo (Freccia Giù ↓)"
+                                        aria-label="Canale successivo"
+                                    >
+                                        <span className="material-symbols-rounded">keyboard_arrow_down</span>
+                                    </button>
+                                </div>
+
+                                <button
+                                    type="button"
+                                    className="sky-modern-btn icon-only"
+                                    onClick={toggleFullscreen}
+                                    title="Schermo intero"
+                                >
+                                    <span className="material-symbols-rounded">fullscreen</span>
                                 </button>
                             </div>
                         </div>
@@ -1027,6 +1226,19 @@ function SkyContent() {
                     </div>
                 </aside>
             </main>
+
+            {/* Modale Guida TV EPG */}
+            <GuidaTvModal
+                isOpen={isGuidaOpen}
+                onClose={() => setIsGuidaOpen(false)}
+            />
+
+            {/* Modale Impostazioni Tecniche & Player */}
+            {isSettingsOpen && (
+                <SettingsModal
+                    onClose={() => setIsSettingsOpen(false)}
+                />
+            )}
         </div>
     );
 }

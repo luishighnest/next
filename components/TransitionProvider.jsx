@@ -180,7 +180,7 @@ function ExpandingOverlay({ state, onFinish }) {
                         position: "absolute",
                         inset: 0,
                         background:
-                            "linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 40%, rgba(4,5,8,0.95) 100%)",
+                            "linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 40%, rgba(3,5,10,0.92) 85%, rgba(1,2,5,0.98) 100%)",
                         opacity: isExpanded ? 1 : 0.6,
                         transition: "opacity 0.38s ease"
                     }}
@@ -189,27 +189,38 @@ function ExpandingOverlay({ state, onFinish }) {
                 <div
                     style={{
                         position: "absolute",
-                        bottom: isExpanded ? "12vh" : "12px",
-                        left: isExpanded ? "6vw" : "12px",
-                        right: isExpanded ? "6vw" : "12px",
+                        bottom: isExpanded ? "5vh" : "12px",
+                        left: isExpanded ? "4vw" : "12px",
+                        right: isExpanded ? "4vw" : "12px",
                         display: "flex",
-                        alignItems: "center",
-                        gap: "20px",
+                        alignItems: "flex-end",
+                        gap: "22px",
                         transition: "all 0.38s cubic-bezier(0.16, 1, 0.3, 1)"
                     }}
                 >
                     {logoImg && (
-                        <img
-                            src={logoImg}
-                            alt=""
+                        <div
                             style={{
                                 width: isExpanded ? "64px" : "32px",
                                 height: isExpanded ? "64px" : "32px",
-                                objectFit: "contain",
-                                filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.8))",
+                                flexShrink: 0,
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
                                 transition: "all 0.38s cubic-bezier(0.16, 1, 0.3, 1)"
                             }}
-                        />
+                        >
+                            <img
+                                src={logoImg}
+                                alt=""
+                                style={{
+                                    maxWidth: "100%",
+                                    maxHeight: "100%",
+                                    objectFit: "contain",
+                                    filter: "drop-shadow(0 4px 14px rgba(0,0,0,0.9))"
+                                }}
+                            />
+                        </div>
                     )}
                     <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
                         <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
@@ -217,23 +228,24 @@ function ExpandingOverlay({ state, onFinish }) {
                                 style={{
                                     display: "inline-flex",
                                     alignItems: "center",
-                                    gap: "5px",
-                                    fontSize: isExpanded ? "0.85rem" : "0.7rem",
-                                    fontWeight: "800",
-                                    letterSpacing: "0.08em",
-                                    color: "#ff2a44",
-                                    background: "rgba(255, 42, 68, 0.12)",
-                                    border: "1px solid rgba(255, 42, 68, 0.3)",
+                                    gap: "6px",
+                                    fontSize: isExpanded ? "0.78rem" : "0.65rem",
+                                    fontWeight: "900",
+                                    letterSpacing: "0.06em",
+                                    color: "#ffffff",
+                                    background: "#e30a17",
                                     padding: "2px 8px",
-                                    borderRadius: "4px"
+                                    borderRadius: "4px",
+                                    textTransform: "uppercase",
+                                    boxShadow: "0 0 14px rgba(227, 10, 23, 0.55)"
                                 }}
                             >
                                 <span
                                     style={{
-                                        width: "6px",
-                                        height: "6px",
+                                        width: "5px",
+                                        height: "5px",
                                         borderRadius: "50%",
-                                        background: "#ff2a44",
+                                        background: "#ffffff",
                                         animation: "livePulse 1.4s infinite"
                                     }}
                                 />
@@ -242,9 +254,10 @@ function ExpandingOverlay({ state, onFinish }) {
                             {group && (
                                 <span
                                     style={{
-                                        fontSize: isExpanded ? "0.95rem" : "0.75rem",
+                                        fontSize: isExpanded ? "1rem" : "0.75rem",
                                         fontWeight: "600",
-                                        color: "rgba(255,255,255,0.7)"
+                                        color: "rgba(255,255,255,0.85)",
+                                        textShadow: "0 2px 8px rgba(0,0,0,0.8)"
                                     }}
                                 >
                                     {group}
@@ -254,11 +267,13 @@ function ExpandingOverlay({ state, onFinish }) {
                         <h2
                             style={{
                                 margin: 0,
-                                fontSize: isExpanded ? "1.9rem" : "0.95rem",
+                                fontSize: isExpanded ? "2.3rem" : "0.95rem",
                                 fontWeight: "800",
                                 color: "#ffffff",
-                                textShadow: "0 2px 16px rgba(0,0,0,0.9)",
-                                letterSpacing: "-0.01em",
+                                textShadow: "0 3px 20px rgba(0,0,0,0.95)",
+                                letterSpacing: "-0.02em",
+                                lineHeight: 1.15,
+                                fontFamily: "'Outfit', 'Inter', sans-serif",
                                 transition: "all 0.38s cubic-bezier(0.16, 1, 0.3, 1)"
                             }}
                         >
@@ -280,7 +295,7 @@ function ExpandingOverlay({ state, onFinish }) {
                             gap: "14px"
                         }}
                     >
-                        <div className="sky-spinner" style={{ width: "42px", height: "42px", borderWidth: "3px" }} />
+                        <div className="sky-spinner" style={{ width: "52px", height: "52px", borderWidth: "3.5px" }} />
                     </div>
                 )}
             </div>
