@@ -19,6 +19,18 @@ function getDynamicColor(str) {
 // Verifica se uno stream è scaduto tramite timestamp _e~ o orario evento
 function isChannelExpired(channel) {
     if (!channel) return false;
+
+    // I canali Sky TV (dirette 24/7) NON scadono mai!
+    const isSkyChannel = Boolean(
+        channel.provider === "SKY" ||
+        channel.isSky ||
+        (channel.group && channel.group.toLowerCase().includes("sky")) ||
+        (channel.title && channel.title.toLowerCase().includes("sky"))
+    );
+    if (isSkyChannel) {
+        return false;
+    }
+
     const streamUrl = (channel.url || channel.mpd || "").trim();
 
     const expMatch = streamUrl.match(/_e~([0-9]+)_/);
@@ -83,8 +95,8 @@ function getFirstStreamSource(channel) {
     return null;
 }
 
-// Sub-component player Shaka per preview in hover
-function CardShakaVideo({ channel, isReadyToDisplay, onPlaying }) {
+// Sub-component player Shaka per preview in hover nella locandina
+function CardShakaVideo({ channel, isReadyToDisplay }) {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
@@ -203,7 +215,7 @@ function CardShakaVideo({ channel, isReadyToDisplay, onPlaying }) {
                     await videoRef.current.play();
                 } catch (err) {}
             } catch (err) {
-                // Silenzioso - il preview è opzionale
+                // Silenzioso
             }
         }
 
@@ -228,7 +240,6 @@ function CardShakaVideo({ channel, isReadyToDisplay, onPlaying }) {
                 playsInline
                 disablePictureInPicture
                 controls={false}
-                onPlaying={() => onPlaying && onPlaying()}
             />
             {isReadyToDisplay && (
                 <div className="card-live-preview-badge">
@@ -250,106 +261,70 @@ function CardShakaVideo({ channel, isReadyToDisplay, onPlaying }) {
 
 function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const slug = getChannelSlug(channel);
-    const progInfo = getCurrentProgramInfo(channel.epg);
-    const isVod = Boolean(channel.isVod || channel.vodType);
-    const cardImgUrl = (isVod && channel.poster) ? channel.poster : (channel.image || (progInfo && progInfo.immagine ? progInfo.immagine : null));
+    const progInfo = getCurrentProgramInfo(channel?.epg);
+    const isVod = Boolean(channel?.isVod || channel?.vodType);
+    const cardImgUrl = (isVod && channel?.poster) ? channel.poster : (channel?.image || (progInfo && progInfo.immagine ? progInfo.immagine : null));
     const hasImage = Boolean(cardImgUrl);
-    const isTestJsonEvent = channel.isTestJson || (channel.group && channel.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel.eventSlug);
+    const isTestJsonEvent = channel?.isTestJson || (channel?.group && channel.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel?.eventSlug);
     const logoUrl = isTestJsonEvent ? "/logos/dazn.png" : getChannelLogoUrl(channel);
     const isSky = !isTestJsonEvent && (
-        channel.provider === "SKY" ||
-        (channel.group && (channel.group.includes("Sky") || channel.group === "Sky Cinema" || channel.group === "Sky Bambini")) ||
-        (channel.title && channel.title.toLowerCase().includes("sky"))
+        channel?.provider === "SKY" ||
+        (channel?.group && (channel.group.includes("Sky") || channel.group === "Sky Cinema" || channel.group === "Sky Bambini")) ||
+        (channel?.title && channel.title.toLowerCase().includes("sky"))
     );
 
-    const cleanSrc = channel.skySource ? (channel.skySource.includes("sky2") ? "sky2" : "") : "";
+    const cleanSrc = channel?.skySource ? (channel.skySource.includes("sky2") ? "sky2" : "") : "";
     const targetHref = isVod
-        ? `/vod/info/${channel.tmdbId || String(channel.id).replace(/^vod_(movie|tv)_/, "")}?type=${channel.vodType || "movie"}`
+        ? `/vod/info/${channel?.tmdbId || String(channel?.id).replace(/^vod_(movie|tv)_/, "")}?type=${channel?.vodType || "movie"}`
         : (isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`);
 
-    const isDazn1Channel = (channel.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
-    const dynColor = getDynamicColor(channel.title);
+    const isDazn1Channel = (channel?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
+    const dynColor = getDynamicColor(channel?.title);
 
-    const rawCategory = categoryName || channel.group || channel.category || "";
+    const rawCategory = categoryName || channel?.group || channel?.category || "";
     let categoryLabel = rawCategory;
     if (isVod) {
-        categoryLabel = channel.rating ? `★ ${channel.rating} • ${channel.group || "VOD"}` : (channel.group || "VOD");
+        categoryLabel = channel?.rating ? `★ ${channel.rating} • ${channel?.group || "VOD"}` : (channel?.group || "VOD");
     } else if (!categoryLabel || categoryLabel.toUpperCase() === "DAZN") {
-        if (channel.title && channel.title.toLowerCase().includes("supertennis")) categoryLabel = "SuperTennis";
-        else if (channel.title && channel.title.toLowerCase().includes("eurosport")) categoryLabel = "Eurosport";
+        if (channel?.title && channel.title.toLowerCase().includes("supertennis")) categoryLabel = "SuperTennis";
+        else if (channel?.title && channel.title.toLowerCase().includes("eurosport")) categoryLabel = "Eurosport";
         else if (isSky) categoryLabel = "Sky";
-        else categoryLabel = channel.group || "Eventi";
+        else categoryLabel = channel?.group || "Eventi";
     }
 
-    // ─── Hover Live Preview ─────────────────────────────────────────────────
-    const [isHovering, setIsHovering] = useState(false);      // il mouse è sopra la card
-    const [isReadyToDisplay, setIsReadyToDisplay] = useState(false); // passati 1.5s + video in play
-    const [videoIsPlaying, setVideoIsPlaying] = useState(false);   // Shaka ha avviato il play
+    // ─── Hover Live Preview (Avvio dopo 1.5s al passaggio del mouse) ────────
+    const [isHovering, setIsHovering] = useState(false);
+    const [isReadyToDisplay, setIsReadyToDisplay] = useState(false);
     const hoverTimerRef = useRef(null);
-    const delayPassedRef = useRef(false);  // 1.5s timer scattato
 
-    // Controlla disponibilità stream per qualsiasi canale non scaduto e non VOD
+    // Controlla disponibilità stream (Sky e canali con URL/sources non VOD e non scaduti)
     const src = getFirstStreamSource(channel);
     const isExpired = isChannelExpired(channel);
     const canPreview = !isVod && !isExpired && Boolean(src && src.url);
 
-    const handleMouseEnter = useCallback(() => {
+    const handleMouseEnter = () => {
         if (!canPreview) return;
-        delayPassedRef.current = false;
         setIsHovering(true);
-        setVideoIsPlaying(false);
         setIsReadyToDisplay(false);
-        hoverTimerRef.current = setTimeout(() => {
-            delayPassedRef.current = true;
-            // Mostra il video solo se è già in play — altrimenti attende l'evento onPlaying
-            setIsReadyToDisplay(prev => {
-                if (!prev) {
-                    // Sarà setIsReadyToDisplay(true) in onPlaying se videoIsPlaying diventa true dopo
-                    return false;
-                }
-                return prev;
-            });
-        }, 1500);
-    }, [canPreview]);
 
-    const handleMouseLeave = useCallback(() => {
+        if (hoverTimerRef.current) {
+            clearTimeout(hoverTimerRef.current);
+        }
+
+        // Esattamente dopo 1.5 secondi fa apparire la riproduzione video nella locandina
+        hoverTimerRef.current = setTimeout(() => {
+            setIsReadyToDisplay(true);
+        }, 1500);
+    };
+
+    const handleMouseLeave = () => {
         if (hoverTimerRef.current) {
             clearTimeout(hoverTimerRef.current);
             hoverTimerRef.current = null;
         }
-        delayPassedRef.current = false;
         setIsHovering(false);
-        setVideoIsPlaying(false);
         setIsReadyToDisplay(false);
-    }, []);
-
-    // Callback chiamato da CardShakaVideo quando il video inizia a riprodursi
-    const handleVideoPlaying = useCallback(() => {
-        setVideoIsPlaying(true);
-        // Mostra il video subito se i 1.5s sono già passati, altrimenti aspetta il timer
-        if (delayPassedRef.current) {
-            setIsReadyToDisplay(true);
-        }
-    }, []);
-
-    // Quando scatta il timer 1.5s, se il video è già in play → mostra subito
-    useEffect(() => {
-        if (!isHovering) return;
-        const timer = setTimeout(() => {
-            delayPassedRef.current = true;
-            if (videoIsPlaying) {
-                setIsReadyToDisplay(true);
-            }
-        }, 1500);
-        return () => clearTimeout(timer);
-    }, [isHovering, videoIsPlaying]);
-
-    // Quando videoIsPlaying diventa true e il delay è già passato → mostra
-    useEffect(() => {
-        if (videoIsPlaying && delayPassedRef.current && isHovering) {
-            setIsReadyToDisplay(true);
-        }
-    }, [videoIsPlaying, isHovering]);
+    };
 
     const { startTransitionToPlayer } = useTransitionRouter();
     const cardContainerRef = useRef(null);
@@ -360,7 +335,6 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
             hoverTimerRef.current = null;
         }
         setIsHovering(false);
-        setVideoIsPlaying(false);
         setIsReadyToDisplay(false);
 
         try {
@@ -390,9 +364,9 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                 targetHref,
                 posterImg: cardImgUrl || "",
                 logoImg: logoUrl || "",
-                title: progInfo ? progInfo.titolo : channel.title,
+                title: progInfo ? progInfo.titolo : (channel?.title || ""),
                 group: categoryLabel,
-                ora: channel.ora || (progInfo ? progInfo.oraInizio : "")
+                ora: channel?.ora || (progInfo ? progInfo.oraInizio : "")
             });
         }
     };
@@ -414,7 +388,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                         <img
                             src={cardImgUrl}
                             className="now-card-bg"
-                            alt={channel.title}
+                            alt={channel?.title || "Locandina"}
                             referrerPolicy="no-referrer"
                             loading={priority ? "eager" : "lazy"}
                             decoding="async"
@@ -447,7 +421,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </>
                 )}
 
-                {channel.ora && !isDazn1Channel && (
+                {channel?.ora && !isDazn1Channel && (
                     <div className="now-card-time-badge">{channel.ora}</div>
                 )}
                 <div className="now-card-vignette"></div>
@@ -458,12 +432,11 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </div>
                 )}
 
-                {/* Shaka Player Preview: montato al hover, visibile dopo 1.5s + video in play */}
+                {/* Shaka Player Preview: parte in background al hover e diventa visibile dopo 1.5s */}
                 {isHovering && canPreview && (
                     <CardShakaVideo
                         channel={channel}
                         isReadyToDisplay={isReadyToDisplay}
-                        onPlaying={handleVideoPlaying}
                     />
                 )}
 
@@ -479,7 +452,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     {progInfo ? (progInfo.oraFine ? `${progInfo.oraInizio} - ${progInfo.oraFine}` : progInfo.oraInizio) : categoryLabel}
                 </span>
                 <span className="now-card-title-ext">
-                    {progInfo ? progInfo.titolo : channel.title}
+                    {progInfo ? progInfo.titolo : (channel?.title || "")}
                 </span>
             </div>
         </Link>
