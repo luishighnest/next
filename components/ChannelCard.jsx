@@ -95,7 +95,7 @@ function getFirstStreamSource(channel) {
     return null;
 }
 
-// Sub-component player Shaka per preview in hover nella locandina
+// Sub-component player Shaka ultra-ottimizzato per preview istantanea nella locandina
 function CardShakaVideo({ channel, isReadyToDisplay }) {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
@@ -145,7 +145,7 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 const player = new shaka.Player(videoRef.current);
                 playerRef.current = player;
 
-                // Filtri MIME e rimozione Widevine
+                // Filtri MIME e rimozione veloce Widevine
                 player.getNetworkingEngine().registerResponseFilter((type, response) => {
                     if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
                         if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
@@ -155,10 +155,12 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                         }
                         try {
                             let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                            xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                            response.data = shaka.util.StringUtils.toUTF8(xmlStr);
+                            if (xmlStr.includes("urn:uuid:edef8ba9") || xmlStr.includes("urn:uuid:9a04f079") || xmlStr.includes("urn:uuid:5e629af5")) {
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:9a04f079-9840-4286-ab92-e65be0885f95[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                xmlStr = xmlStr.replace(/<ContentProtection[^>]+urn:uuid:5e629af5-38da-4063-8977-97ffbd9902d4[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
+                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
+                            }
                         } catch (e) {}
                     }
                 });
@@ -180,29 +182,30 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                         servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 6,
-                        rebufferingGoal: 1,
-                        bufferBehind: 5,
-                        lowLatencyMode: false,
-                        alwaysStreamFullSegments: true,
+                        bufferingGoal: 1.5,           // Avvio ultra-veloce (1.5s di buffer anziché 6s)
+                        rebufferingGoal: 0.5,         // Rebuffer istantaneo
+                        bufferBehind: 3,
+                        lowLatencyMode: true,         // Low latency per prendere subito l'ultimo frammento live
+                        alwaysStreamFullSegments: false, // Avvia subito la riproduzione del primo segmento
                         retryParameters: {
-                            maxAttempts: 4,
-                            baseDelay: 500,
-                            backoffFactor: 1.5,
-                            fuzzFactor: 0.5,
-                            timeout: 8000
+                            maxAttempts: 3,
+                            baseDelay: 300,
+                            backoffFactor: 1.2,
+                            fuzzFactor: 0.3,
+                            timeout: 5000
                         }
                     },
                     manifest: {
                         dash: { ignoreMinBufferTime: true },
                         retryParameters: {
-                            maxAttempts: 4,
-                            baseDelay: 500,
-                            backoffFactor: 1.5,
-                            fuzzFactor: 0.5,
-                            timeout: 8000
+                            maxAttempts: 3,
+                            baseDelay: 300,
+                            backoffFactor: 1.2,
+                            fuzzFactor: 0.3,
+                            timeout: 5000
                         }
-                    }
+                    },
+                    abr: { enabled: true }
                 });
 
                 const isHls = streamUrl.includes(".m3u8") || streamUrl.includes("/hls/");
@@ -443,7 +446,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </div>
                 )}
 
-                {/* Shaka Player Preview: parte in background al hover e diventa visibile senza schermata nera appena pronto */}
+                {/* Shaka Player Preview: parte in background al hover e si attiva istantaneamente a 1.5s */}
                 {isHovering && canPreview && (
                     <CardShakaVideo
                         channel={channel}
