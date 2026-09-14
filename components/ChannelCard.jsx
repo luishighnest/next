@@ -161,10 +161,14 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                         }
                         try {
                             let xmlStr = shaka.util.StringUtils.fromUTF8(response.data);
-                            if (/urn:uuid:(edef8ba9|9a04f079|5e629af5)/i.test(xmlStr)) {
-                                xmlStr = xmlStr.replace(/<ContentProtection[^>]*urn:uuid:(edef8ba9|9a04f079|5e629af5)[^>]*>([\s\S]*?<\/ContentProtection>)?/gi, '');
-                                response.data = shaka.util.StringUtils.toUTF8(xmlStr);
-                            }
+                            xmlStr = xmlStr.replace(/<ContentProtection[\s\S]*?<\/ContentProtection>/gi, (match) => {
+                                if (/9a04f079|edef8ba9|5e629af5/i.test(match)) {
+                                    return "";
+                                }
+                                return match;
+                            });
+                            xmlStr = xmlStr.replace(/<ContentProtection[^>]*schemeIdUri="urn:uuid:(9a04f079|edef8ba9|5e629af5)[^>]*\/>/gi, "");
+                            response.data = shaka.util.StringUtils.toUTF8(xmlStr);
                         } catch (e) {}
                     }
                 });
