@@ -10908,18 +10908,18 @@ body:has(.sky-app) {
     line-height: 1.2;
 }
 
-/* 3. Titolo Programma: Editorial, 2.65rem, bold, mb 16px */
+/* 3. Titolo Programma: Editorial, 2.65rem, bold, riga singola forzata con ellipsis, mb 16px */
 .now-hero-heading {
     font-size: 2.65rem;
     font-weight: 800;
-    line-height: 1.14;
+    line-height: 1.15;
+    height: 3.1rem;
     color: #ffffff;
     letter-spacing: -0.025em;
     text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     margin: 0 0 16px 0;
     width: 100%;
     max-width: 100%;
@@ -10979,12 +10979,13 @@ body:has(.sky-app) {
     border-radius: 999px;
 }
 
-/* 5. Descrizione: fissa a 2 righe (min-height e line-clamp-2) per bloccare verticalmente i CTA, mb 24px */
+/* 5. Descrizione: altezza minima fissa (pari a 2 righe esatte) e line-clamp-2 per bloccare verticalmente i CTA, mb 24px */
 .now-hero-synopsis {
     font-size: 0.92rem;
     line-height: 1.48;
-    min-height: calc(0.92rem * 1.48 * 2); /* ~2.72rem, spazio esatto per 2 righe */
+    min-height: calc(0.92rem * 1.48 * 2); /* ~2.72rem, spazio fisso esattamente per 2 righe */
     max-height: calc(0.92rem * 1.48 * 2);
+    height: calc(0.92rem * 1.48 * 2);
     color: rgba(255, 255, 255, 0.70);
     display: -webkit-box;
     -webkit-line-clamp: 2;

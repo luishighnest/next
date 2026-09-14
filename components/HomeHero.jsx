@@ -538,8 +538,10 @@ export default function HomeHero({ categories = [] }) {
                                     <span className="now-hero-meta-box">5.1</span>
                                 </div>
 
-                                {/* 3. Titolo Principale Programma: Elegante, bold, moderno */}
-                                <h1 className="now-hero-heading">{item.progTitle}</h1>
+                                {/* 3. Titolo Principale Programma: Elegante, bold, moderno, forzato su riga singola con truncate */}
+                                <h1 className="now-hero-heading whitespace-nowrap overflow-hidden text-ellipsis truncate" title={item.progTitle}>
+                                    {item.progTitle}
+                                </h1>
 
                                 {/* 4. Orario e Timeline EPG racchiusi in container/pillola elegante */}
                                 <div className="now-hero-schedule-bar">
@@ -559,8 +561,8 @@ export default function HomeHero({ categories = [] }) {
                                     )}
                                 </div>
 
-                                {/* 5. Descrizione del programma: elegante, max 2 righe, colore attenuato */}
-                                <p className="now-hero-synopsis">
+                                {/* 5. Descrizione del programma: min-height fissa a 2 righe e line-clamp-2 per bloccare i CTA */}
+                                <p className="now-hero-synopsis min-h-[2.75rem] line-clamp-2">
                                     {item.progDesc || "Tutti gli eventi e i migliori appuntamenti live in onda su questo canale Sky."}
                                 </p>
 
