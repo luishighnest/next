@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
+import MobileEventoView from "@/components/MobileEventoView";
+import { useDeviceState } from "@/components/DeviceProvider";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { matchSlug, getChannelSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
@@ -26,6 +28,7 @@ function getInitialSource(ch) {
 }
 
 export default function EventoPlayerPage() {
+    const { isMobile } = useDeviceState();
     const params = useParams();
     const slug = params?.slug ? String(params.slug).toLowerCase() : "";
 
@@ -348,6 +351,18 @@ export default function EventoPlayerPage() {
         const sep = mpdUrl.includes("?") ? "&" : "?";
         return extPrefix + mpdUrl + (extraParams.length ? sep + extraParams.join("&") : "");
     };
+
+    if (isMobile) {
+        return (
+            <MobileEventoView
+                channel={channel}
+                selectedSource={selectedSource}
+                setSelectedSource={setSelectedSource}
+                relatedSections={relatedSections}
+                getIframeUrl={getIframeUrl}
+            />
+        );
+    }
 
     return (
         <div className={`event-player-page ${mounted ? "is-mounted" : "is-mounting"}`} style={{ background: "transparent", minHeight: "140vh", color: "#ffffff", paddingBottom: "120px" }}>

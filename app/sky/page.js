@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef, useTransition, Suspense } from "rea
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import MobileSkyView from "@/components/MobileSkyView";
+import { useDeviceState } from "@/components/DeviceProvider";
 import { fetchSecureJson } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
@@ -106,6 +108,7 @@ let memorySkyChannels = {};
 let memorySkyGuide = null;
 
 function SkyContent() {
+    const { isMobile } = useDeviceState();
     const searchParams = useSearchParams();
     const chParam = searchParams.get("ch") || "";
     const srcParam = searchParams.get("src") || "";
@@ -509,6 +512,29 @@ function SkyContent() {
             } catch(e) {}
         }
     }, [selectedChannel, currentSource]);
+
+    if (isMobile) {
+        return (
+            <MobileSkyView
+                channels={channels}
+                selectedChannel={selectedChannel}
+                setSelectedChannel={setSelectedChannel}
+                currentSource={currentSource}
+                setCurrentSource={setCurrentSource}
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+                availableGroups={availableGroups}
+                searchQuery={searchQuery}
+                setSearchQuery={setSearchQuery}
+                filteredChannels={filteredChannels}
+                currentEpg={currentEpg}
+                playerSrc={playerSrc}
+                loading={loading}
+                handlePrevChannel={handlePrevChannel}
+                handleNextChannel={handleNextChannel}
+            />
+        );
+    }
 
     return (
         <div className={`sky-app ${mounted ? "is-mounted" : "is-mounting"}`}>

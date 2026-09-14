@@ -11679,9 +11679,54 @@ body:has(.sky-app) {
 }
 
 .mobile-card-slot {
-    flex: 0 0 160px;
-    width: 160px;
+    flex: 0 0 200px;
+    width: 200px;
     scroll-snap-align: start;
+}
+
+/* Fix locandine schiacciate su Mobile */
+.mobile-card-slot .now-card-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin-bottom: 0 !important;
+}
+
+.mobile-card-slot .now-card {
+    width: 100% !important;
+    aspect-ratio: 16 / 9 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+.mobile-card-slot .now-card-wrapper.vod-poster-card .now-card {
+    aspect-ratio: 2 / 3 !important;
+}
+
+.mobile-card-slot .now-card-bg {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+.mobile-card-slot .now-card-info-external {
+    padding-top: 8px !important;
+}
+
+.mobile-card-slot .now-card-title-ext {
+    font-size: 0.88rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    line-height: 1.25 !important;
+    margin-top: 2px !important;
+}
+
+.mobile-card-slot .now-card-time-ext {
+    font-size: 0.72rem !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-weight: 600 !important;
 }
 
 /* 4. Mobile Bottom Navigation */
@@ -11892,3 +11937,503 @@ body:has(.sky-app) {
     font-weight: 800;
     text-decoration: none;
 }
+
+/* ==========================================================================
+   6. Mobile Sky View & Evento Player View
+   ========================================================================== */
+.mobile-sky-container,
+.mobile-evento-container {
+    width: 100%;
+    min-height: 100dvh;
+    background: #06080e;
+    color: #ffffff;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-sky-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 54px;
+    background: rgba(6, 8, 14, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+.mobile-sky-back-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
+}
+
+.mobile-sky-header-title-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    padding: 0 8px;
+}
+
+.mobile-sky-channel-name {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.01em;
+}
+
+.mobile-sky-live-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #e50914;
+    color: #ffffff;
+    font-size: 0.6rem;
+    font-weight: 900;
+    padding: 2px 6px;
+    border-radius: 3px;
+    letter-spacing: 0.04em;
+    flex-shrink: 0;
+}
+
+.mobile-sky-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.mobile-sky-search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: #0d111d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-sizing: border-box;
+    animation: mobileSearchSlideDown 0.2s ease;
+}
+
+@keyframes mobileSearchSlideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mobile-sky-search-bar input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 0.92rem;
+    font-weight: 500;
+}
+
+.mobile-sky-search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.mobile-sky-search-clear {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 4px;
+}
+
+/* Sticky Player 16:9 Nativo */
+.mobile-sky-player-sticky {
+    position: sticky;
+    top: 54px;
+    width: 100%;
+    z-index: 990;
+    background: #000000;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.mobile-sky-player-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000000;
+    overflow: hidden;
+}
+
+.mobile-sky-player-wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.mobile-sky-player-loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+}
+
+/* Deck Info Canale */
+.mobile-sky-deck {
+    padding: 14px 16px;
+    background: #0a0d17;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-sky-deck-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.mobile-sky-logo-wrap {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.mobile-sky-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.mobile-sky-info-main {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.mobile-sky-row-meta {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mobile-sky-group-badge {
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: #00d586;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.mobile-sky-time-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.mobile-sky-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.25;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mobile-sky-zap-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-shrink: 0;
+}
+
+.mobile-sky-zap-btn {
+    width: 34px;
+    height: 30px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mobile-sky-zap-btn:active {
+    background: rgba(0, 213, 134, 0.25);
+    border-color: #00d586;
+}
+
+.mobile-sky-prog-bar-container {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.mobile-sky-prog-bar-fill {
+    height: 100%;
+    background: #00d586;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.mobile-sky-next-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.76rem;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.mobile-sky-next-label {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    font-size: 0.65rem;
+}
+
+.mobile-sky-next-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Controlli Sorgenti & Categorie */
+.mobile-sky-controls-section {
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mobile-sky-source-pills {
+    display: flex;
+    gap: 8px;
+}
+
+.mobile-source-pill {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 38px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.84rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.mobile-source-pill.active {
+    background: #00d586;
+    color: #06080e;
+    border-color: #00d586;
+    box-shadow: 0 4px 12px rgba(0, 213, 134, 0.3);
+}
+
+.mobile-sky-category-chips {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 2px;
+}
+
+.mobile-sky-category-chips::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-cat-pill {
+    flex: 0 0 auto;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.78rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.mobile-cat-pill.active {
+    background: #ffffff;
+    color: #06080e;
+    border-color: #ffffff;
+}
+
+/* Lista Canali Sky */
+.mobile-sky-channels-list {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 14px;
+    gap: 6px;
+}
+
+.mobile-sky-channel-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.mobile-sky-channel-row:active {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.mobile-sky-channel-row.is-selected {
+    background: rgba(0, 213, 134, 0.08);
+    border-color: rgba(0, 213, 134, 0.4);
+}
+
+.mobile-sky-row-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    background: #000000;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    flex-shrink: 0;
+}
+
+.mobile-sky-row-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.mobile-sky-row-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.mobile-sky-row-title-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.mobile-sky-ch-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mobile-sky-row-live-badge {
+    font-size: 0.58rem;
+    font-weight: 900;
+    color: #00d586;
+    background: rgba(0, 213, 134, 0.15);
+    padding: 1px 5px;
+    border-radius: 3px;
+    flex-shrink: 0;
+}
+
+.mobile-sky-ch-sub {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.mobile-sky-row-action {
+    color: rgba(255, 255, 255, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mobile-sky-channel-row.is-selected .mobile-sky-row-action {
+    color: #00d586;
+}
+
+/* Eventi Mobile Specifics */
+.mobile-event-sources-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.mobile-event-sources-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.mobile-event-sources-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.mobile-event-related-flow {
+    padding: 16px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
