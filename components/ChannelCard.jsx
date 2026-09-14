@@ -100,6 +100,7 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
+    const [hasVideoFrame, setHasVideoFrame] = useState(false);
 
     const toggleMute = (e) => {
         e.preventDefault();
@@ -113,6 +114,7 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
 
     useEffect(() => {
         let isCancelled = false;
+        setHasVideoFrame(false);
 
         const src = getFirstStreamSource(channel);
         if (!src || !src.url) return;
@@ -230,8 +232,10 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
         };
     }, [channel]);
 
+    const isVisible = isReadyToDisplay && hasVideoFrame;
+
     return (
-        <div className={`card-live-preview-overlay${isReadyToDisplay ? " is-visible" : ""}`}>
+        <div className={`card-live-preview-overlay${isVisible ? " is-visible" : ""}`}>
             <video
                 ref={videoRef}
                 className="card-live-preview-video"
@@ -240,8 +244,15 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 playsInline
                 disablePictureInPicture
                 controls={false}
+                onPlaying={() => setHasVideoFrame(true)}
+                onLoadedData={() => setHasVideoFrame(true)}
+                onTimeUpdate={() => {
+                    if (!hasVideoFrame && videoRef.current && videoRef.current.currentTime > 0) {
+                        setHasVideoFrame(true);
+                    }
+                }}
             />
-            {isReadyToDisplay && (
+            {isVisible && (
                 <div className="card-live-preview-badge">
                     <span className="card-live-preview-dot" />
                     LIVE
@@ -311,7 +322,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
             clearTimeout(hoverTimerRef.current);
         }
 
-        // Esattamente dopo 1.5 secondi fa apparire la riproduzione video nella locandina
+        // Esattamente dopo 1.5 secondi abilita la visibilità della riproduzione video
         hoverTimerRef.current = setTimeout(() => {
             setIsReadyToDisplay(true);
         }, 1500);
@@ -432,7 +443,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </div>
                 )}
 
-                {/* Shaka Player Preview: parte in background al hover e diventa visibile dopo 1.5s */}
+                {/* Shaka Player Preview: parte in background al hover e diventa visibile senza schermata nera appena pronto */}
                 {isHovering && canPreview && (
                     <CardShakaVideo
                         channel={channel}

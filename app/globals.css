@@ -3165,11 +3165,11 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     z-index: 20;
     border-radius: inherit;
     overflow: hidden;
-    background: #000;
-    /* Fase 1: invisibile — l'iframe carica in background senza mostrare i controls */
+    background: transparent;
+    /* Fase 1: invisibile — il video carica in background senza mostrare lo sfondo nero */
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* Fase 2: video pronto — fade-in fluido */
@@ -3188,7 +3188,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     border: none;
     display: block;
     pointer-events: none; /* il click sulla card naviga normalmente */
-    background: #000;
+    background: transparent;
 }
 
 /* Badge LIVE + mute in basso a sinistra */
