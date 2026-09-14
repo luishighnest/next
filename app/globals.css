@@ -6581,83 +6581,243 @@ body:has(.sky-app) {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-.sky-app {
-    height: 100dvh;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden !important;
-    background-color: #0b0f19;
-    background-image: 
-        radial-gradient(ellipse 70% 50% at 15% -5%, rgba(0, 225, 140, 0.25) 0%, transparent 60%),
-        radial-gradient(ellipse 75% 55% at 85% -8%, rgba(0, 125, 255, 0.32) 0%, transparent 65%),
-        radial-gradient(ellipse 90% 60% at 50% 20%, rgba(18, 38, 78, 0.55) 0%, transparent 80%),
-        radial-gradient(circle at 50% 100%, rgba(10, 16, 28, 0.9) 0%, transparent 70%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 80px;
-    box-sizing: border-box;
-}
 
-        /* Navbar spacing per Sky App (Identica alla Home per posizione e grandezza, sempre visibile) */
+        /* Navbar per Sky App: overlay sottile sopra il video */
         .sky-app .home-header-wrapper,
         .sky-app .home-header-wrapper.nav-hidden {
             position: fixed !important;
             top: 0 !important;
             left: 0 !important;
             right: 0 !important;
-            z-index: 10001 !important;
+            z-index: 100 !important;
             width: 100% !important;
             height: 72px !important;
             margin-bottom: 0 !important;
             transform: none !important;
             opacity: 1 !important;
             visibility: visible !important;
-            pointer-events: none !important;
+            pointer-events: auto !important;
+            transition: opacity 0.35s ease, transform 0.35s ease !important;
+        }
+
+        .sky-app {
+            position: fixed !important;
+            inset: 0 !important;
+            width: 100vw !important;
+            height: 100vh !important;
+            height: 100dvh !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+            background: #000000 !important;
+            z-index: 1;
         }
 
         .sky-main {
-            flex: 1;
-            height: calc(100dvh - 80px);
-            min-height: 0;
-            display: flex;
-            gap: 16px;
-            width: 100%;
-            max-width: 1920px;
-            margin: 0 auto;
-            padding: 0 24px 16px;
-            box-sizing: border-box;
+            position: absolute !important;
+            inset: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            overflow: hidden !important;
+            display: block !important;
         }
 
-        /* --- Sidebar: Canali & EPG (Design Cinema Sky Glass / Modern Obsidian Glass) --- */
-        .sky-sidebar {
-            flex: 0 0 390px;
-            width: 390px;
-            min-width: 390px;
-            max-width: 390px;
-            min-height: 0;
+        /* --- Fullscreen Native Player Shaka --- */
+        .sky-native-player-container {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            background: #000000;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sky-native-video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: #000000;
+            display: block;
+        }
+
+        /* Overlay vignetta cinematografica sui bordi per leggibilità controlli */
+        .sky-player-vignette {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, transparent 20%, transparent 70%, rgba(0, 0, 0, 0.9) 100%);
+            transition: opacity 0.35s ease;
+            z-index: 2;
+        }
+
+        .sky-player-vignette.idle-hidden {
+            opacity: 0;
+        }
+
+        /* Backdrop di preload cinematografico per switch istantanei */
+        .sky-player-backdrop-preload {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            pointer-events: none;
+            overflow: hidden;
+            background: #000000;
+            transition: opacity 0.4s ease;
+        }
+
+        /* Loader Shaka al centro */
+        .sky-native-loader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            z-index: 3;
+            pointer-events: none;
+        }
+        .sky-spinner {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            border: 3.5px solid rgba(255, 255, 255, 0.15);
+            border-top-color: #e30a17;
+            animation: sky-spin 0.8s linear infinite;
+        }
+        @keyframes sky-spin { to { transform: rotate(360deg); } }
+        .sky-loader-text {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.8);
+            letter-spacing: 0.02em;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+        }
+
+        /* Un-mute banner flottante se l'autoplay richiede interazione utente */
+        .sky-unmute-overlay-btn {
+            position: absolute;
+            top: 90px;
+            left: 24px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(14, 18, 25, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            cursor: pointer;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+            transition: all 0.25s ease;
+        }
+        .sky-unmute-overlay-btn:hover {
+            background: #e30a17;
+            border-color: #e30a17;
+            transform: scale(1.04);
+        }
+
+        /* --- Drawer Popup Canali a Destra (nel player) --- */
+        .sky-sidebar-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            z-index: 40;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .sky-sidebar-backdrop.is-open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .sky-sidebar-popup {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 420px;
+            max-width: 90vw;
+            height: 100%;
+            z-index: 50;
             display: flex;
             flex-direction: column;
             gap: 12px;
-            background: rgba(11, 15, 25, 0.88) !important;
-            border: 1px solid rgba(255, 255, 255, 0.08) !important;
-            border-radius: 24px;
-            padding: 16px;
+            background: rgba(9, 13, 22, 0.92) !important;
+            border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+            padding: 20px 18px 24px;
             box-sizing: border-box;
-            box-shadow: 0 20px 48px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(28px) saturate(190%);
-            -webkit-backdrop-filter: blur(28px) saturate(190%);
-            position: relative;
+            box-shadow: -20px 0 50px rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(32px) saturate(190%);
+            -webkit-backdrop-filter: blur(32px) saturate(190%);
+            transform: translateX(100%);
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .sky-sidebar-popup.is-open {
+            transform: translateX(0);
         }
 
-        /* Search bar premium con effetto vetro */
+        /* Header Drawer Canali */
+        .sky-sidebar-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            flex-shrink: 0;
+        }
+        .sky-sidebar-header-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 0;
+        }
+        .sky-sidebar-close-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .sky-sidebar-close-btn:hover {
+            background: rgba(255, 255, 255, 0.18);
+            color: #ffffff;
+            transform: scale(1.06);
+        }
+
+        /* Search bar */
         .sky-search {
             display: flex;
             align-items: center;
             gap: 10px;
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.09);
             border-radius: 999px;
             padding: 9px 16px;
             flex-shrink: 0;
@@ -6722,9 +6882,7 @@ body:has(.sky-app) {
             user-select: none;
             -webkit-user-select: none;
         }
-        .sky-source-btn * {
-            pointer-events: none;
-        }
+        .sky-source-btn * { pointer-events: none; }
         .sky-source-btn:hover {
             color: #ffffff;
             background: rgba(255, 255, 255, 0.08);
@@ -6768,9 +6926,7 @@ body:has(.sky-app) {
             white-space: nowrap;
             transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
-        .sky-filter-btn i {
-            pointer-events: none;
-        }
+        .sky-filter-btn i { pointer-events: none; }
         .sky-filter-btn:hover {
             color: #ffffff;
             background: rgba(255, 255, 255, 0.09);
@@ -6782,16 +6938,8 @@ body:has(.sky-app) {
             box-shadow: 0 0 16px rgba(0, 229, 155, 0.25);
             font-weight: 700;
         }
-        .sky-count {
-            color: rgba(255, 255, 255, 0.4);
-            font-size: 0.72rem;
-            font-weight: 600;
-            padding: 0 8px 0 2px;
-            white-space: nowrap;
-            flex-shrink: 0;
-        }
 
-        /* Lista canali con scroll elastico e pulito */
+        /* Lista canali */
         .sky-list {
             flex: 1;
             min-height: 0;
@@ -6804,36 +6952,19 @@ body:has(.sky-app) {
             scrollbar-width: thin;
             scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
         }
-
-        /* Scrollbar sottile che appare all'hover */
-        .sky-list::-webkit-scrollbar {
-            width: 4px;
-        }
+        .sky-list::-webkit-scrollbar { width: 4px; }
         .sky-list::-webkit-scrollbar-thumb {
             background: rgba(255, 255, 255, 0.15);
             border-radius: 99px;
         }
 
-        .sky-group-label {
-            font-size: 0.72rem;
-            font-weight: 800;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.4);
-            margin-top: 10px;
-            margin-bottom: 2px;
-            padding-left: 6px;
-        }
-        .sky-group-label:first-child { margin-top: 0; }
-
-        /* Item Canale Sky con supporto locandina HD */
         .sky-item {
             display: flex !important;
             align-items: center !important;
             gap: 12px !important;
             padding: 10px 14px !important;
-            background: rgba(255, 255, 255, 0.02) !important;
-            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.06) !important;
             border-radius: 16px !important;
             cursor: pointer !important;
             transition: all 0.22s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
@@ -6844,29 +6975,16 @@ body:has(.sky-app) {
             min-height: 68px !important;
             box-sizing: border-box !important;
         }
-        .sky-item::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.25s ease;
-            pointer-events: none;
-        }
         .sky-item:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.15);
             transform: translateY(-1px);
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
         }
-        .sky-item:hover::before {
-            opacity: 1;
-        }
         .sky-item.active {
-            background: linear-gradient(135deg, rgba(0, 229, 155, 0.1) 0%, rgba(14, 18, 25, 0.95) 100%) !important;
-            border-color: rgba(0, 229, 155, 0.4) !important;
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(0, 229, 155, 0.2) !important;
-            transform: translateY(0);
+            background: linear-gradient(135deg, rgba(0, 229, 155, 0.12) 0%, rgba(14, 18, 25, 0.95) 100%) !important;
+            border-color: rgba(0, 229, 155, 0.45) !important;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(0, 229, 155, 0.25) !important;
         }
         .sky-item.active::after {
             content: '';
@@ -6896,7 +7014,6 @@ body:has(.sky-app) {
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.22s ease;
         }
         .sky-item-poster-bg {
             position: absolute;
@@ -6909,13 +7026,6 @@ body:has(.sky-app) {
         }
         .sky-item:hover .sky-item-poster-bg {
             transform: scale(1.08);
-        }
-        .sky-item:hover .sky-item-thumb-box {
-            border-color: rgba(255, 255, 255, 0.25);
-        }
-        .sky-item.active .sky-item-thumb-box {
-            border-color: rgba(255, 255, 255, 0.4);
-            box-shadow: 0 0 14px rgba(255, 255, 255, 0.15);
         }
         .sky-item-logo-overlay {
             position: relative;
@@ -7031,142 +7141,53 @@ body:has(.sky-app) {
         @keyframes live-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
         .sky-empty { text-align: center; color: rgba(255, 255, 255, 0.4); padding: 36px 0; font-size: 0.88rem; }
 
-        /* --- Right: Player + Info Deck (Blocco Unico Coeso) --- */
-        .sky-right {
-            flex: 1;
-            min-width: 0;
-            min-height: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 0;
-            height: 100%;
-        }
-        .sky-player-zone {
-            flex: 1;
-            min-height: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
-        .sky-player-wrap {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            background: #000000;
-            border-radius: 16px 16px 0 0;
-            overflow: hidden;
-            transition: width 0.15s ease, height 0.15s ease;
-        }
-        .sky-player-wrap:fullscreen, .sky-player-wrap:-webkit-full-screen {
-            width: 100% !important;
-            height: 100% !important;
-            border-radius: 0;
-            border: none;
-        }
-        #player-frame {
-            width: 100%;
-            height: 100%;
-            border: none;
-            background: #000000;
-            display: block;
-        }
-        .sky-loader {
+        /* --- Info Deck / Overlay nel Player (Flottante in basso con auto-fade) --- */
+        .sky-player-overlay-bottom {
             position: absolute;
-            inset: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            background: #000000;
-            transition: opacity 0.25s ease;
-            z-index: 2;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 30;
+            padding: 24px 32px 30px;
+            pointer-events: none;
+            transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .sky-loader.hidden { opacity: 0; pointer-events: none; }
-        .sky-spinner {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            border: 3px solid rgba(255, 255, 255, 0.12);
-            border-top-color: #ffffff;
-            animation: sky-spin 0.9s linear infinite;
-        }
-        @keyframes sky-spin { to { transform: rotate(360deg); } }
-        .sky-loader-text { font-size: 0.9rem; color: var(--text-secondary, #888); letter-spacing: 0.03em; }
 
-        .sky-ext-tip {
-            position: absolute;
-            left: 14px;
-            right: 14px;
-            bottom: 14px;
-            z-index: 4;
-            display: none;
-            align-items: center;
-            gap: 12px;
-            background: rgba(10, 10, 10, 0.9);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 14px;
-            padding: 12px 16px;
-            font-size: 0.85rem;
-            backdrop-filter: blur(8px);
+        .sky-player-overlay-bottom.idle-hidden {
+            opacity: 0;
+            transform: translateY(16px);
+            pointer-events: none !important;
         }
-        .sky-ext-tip.show { display: flex; }
-        .revive-btn {
-            margin-left: auto;
-            background: #ffffff;
-            color: #000000;
-            border: none;
-            border-radius: 99px;
-            padding: 8px 16px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 700;
-            font-size: 0.82rem;
-            cursor: pointer;
-            flex-shrink: 0;
-        }
-        .revive-btn:hover { background: #d9d9d9; }
 
-        /* Info Deck In Basso (Redesign Cinema fuso come basamento del player con palette Obsidian Glass) */
         .now-row {
             display: flex;
             align-items: center;
-            gap: 16px;
-            background: rgba(11, 15, 25, 0.92) !important;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            border-radius: 0 0 24px 24px;
-            padding: 12px 18px;
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7);
+            gap: 18px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(11, 15, 25, 0.88) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 14px 22px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(28px) saturate(190%);
             -webkit-backdrop-filter: blur(28px) saturate(190%);
-            flex-shrink: 0;
-            box-sizing: border-box;
-            margin: 0 auto;
-            transition: width 0.15s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+            pointer-events: auto;
             position: relative;
             overflow: hidden;
-        }
-        .now-row::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(circle at top right, rgba(0, 229, 155, 0.05) 0%, transparent 60%);
-            pointer-events: none;
+            transition: all 0.25s ease;
         }
         
         .now-poster-box {
-            width: 54px;
-            height: 54px;
-            border-radius: 14px;
+            width: 58px;
+            height: 58px;
+            border-radius: 16px;
             background: #080c14;
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
             overflow: hidden;
             flex-shrink: 0;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -7182,8 +7203,8 @@ body:has(.sky-app) {
         .now-logo {
             position: relative;
             z-index: 2;
-            max-width: 40px;
-            max-height: 40px;
+            max-width: 44px;
+            max-height: 44px;
             object-fit: contain;
             filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.85));
         }
@@ -7193,7 +7214,7 @@ body:has(.sky-app) {
             min-width: 0;
             display: flex;
             flex-direction: column;
-            gap: 3px;
+            gap: 4px;
             position: relative;
             z-index: 2;
         }
@@ -7201,7 +7222,7 @@ body:has(.sky-app) {
         .now-title {
             font-family: 'Outfit', sans-serif;
             font-weight: 800;
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             line-height: 1.15;
             margin: 0;
             overflow: hidden;
@@ -7220,36 +7241,36 @@ body:has(.sky-app) {
             letter-spacing: 0.8px;
             color: #ffffff;
             background: #e30a17;
-            padding: 1.5px 7px;
-            border-radius: 5px;
+            padding: 2px 8px;
+            border-radius: 6px;
             text-transform: uppercase;
-            box-shadow: 0 0 10px rgba(227, 10, 23, 0.4);
+            box-shadow: 0 0 12px rgba(227, 10, 23, 0.5);
         }
         .live-badge .dot {
-            width: 4px;
-            height: 4px;
+            width: 4.5px;
+            height: 4.5px;
             border-radius: 50%;
             background: #ffffff;
             animation: live-pulse 1.2s ease infinite;
         }
         .now-group {
-            font-size: 0.72rem;
+            font-size: 0.74rem;
             font-weight: 700;
             letter-spacing: 0.02em;
-            color: rgba(255, 255, 255, 0.65);
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 2px 8px;
+            color: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2px 9px;
             border-radius: 6px;
         }
         .now-expiry-badge {
-            font-size: 0.72rem;
+            font-size: 0.74rem;
             font-weight: 600;
             letter-spacing: 0.02em;
             color: #ffb84d;
-            background: rgba(255, 184, 77, 0.1);
-            border: 1px solid rgba(255, 184, 77, 0.25);
-            padding: 2px 8px;
+            background: rgba(255, 184, 77, 0.12);
+            border: 1px solid rgba(255, 184, 77, 0.28);
+            padding: 2px 9px;
             border-radius: 6px;
             display: inline-flex;
             align-items: center;
@@ -7257,12 +7278,12 @@ body:has(.sky-app) {
         }
         .now-expiry-badge.expired {
             color: #ff4d4d;
-            background: rgba(255, 77, 77, 0.1);
-            border-color: rgba(255, 77, 77, 0.25);
+            background: rgba(255, 77, 77, 0.14);
+            border-color: rgba(255, 77, 77, 0.3);
         }
         .now-epg-text {
-            font-size: 0.82rem;
-            color: rgba(255, 255, 255, 0.75);
+            font-size: 0.86rem;
+            color: rgba(255, 255, 255, 0.85);
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -7271,11 +7292,11 @@ body:has(.sky-app) {
         }
         .now-progress-container {
             width: 100%;
-            height: 3px;
-            background: rgba(255, 255, 255, 0.1);
+            height: 4px;
+            background: rgba(255, 255, 255, 0.14);
             border-radius: 99px;
             overflow: hidden;
-            margin-top: 4px;
+            margin-top: 5px;
             position: relative;
         }
         .now-progress-bar {
@@ -7283,19 +7304,54 @@ body:has(.sky-app) {
             width: 0%;
             background: linear-gradient(90deg, #e30a17 0%, #ff4d58 100%);
             border-radius: 99px;
-            box-shadow: 0 0 8px rgba(227, 10, 23, 0.7);
+            box-shadow: 0 0 10px rgba(227, 10, 23, 0.8);
             transition: width 0.3s ease;
         }
 
-        /* Zapping Controls Container */
-        .zap-controls {
+        /* Deck Action Controls: Drawer Canali + Zapping */
+        .now-deck-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            position: relative;
+            z-index: 2;
+            flex-shrink: 0;
+        }
+
+        .sky-channels-trigger-btn {
             display: flex;
             align-items: center;
             gap: 8px;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            padding: 9px 16px;
+            border-radius: 999px;
+            font-size: 0.84rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+        }
+        .sky-channels-trigger-btn:hover {
+            background: #ffffff;
+            color: #000000;
+            border-color: #ffffff;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(255, 255, 255, 0.3);
+        }
+        .sky-channels-trigger-btn i {
+            font-size: 0.95rem;
+        }
+
+        .zap-controls {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(0, 0, 0, 0.45);
             padding: 4px 6px;
             border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             flex-shrink: 0;
             position: relative;
             z-index: 2;
@@ -7306,7 +7362,7 @@ body:has(.sky-app) {
             border-radius: 50%;
             background: transparent;
             border: 1px solid transparent;
-            color: rgba(255, 255, 255, 0.75);
+            color: rgba(255, 255, 255, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -7318,107 +7374,18 @@ body:has(.sky-app) {
             border-color: #ffffff;
             color: #000000;
             background: #ffffff;
-            transform: scale(1.06);
+            transform: scale(1.08);
             box-shadow: 0 4px 14px rgba(255, 255, 255, 0.3);
         }
 
-        /* Sheet mobile */
-        .mob-canali-btn {
-            display: none;
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            z-index: 60;
-            width: 58px;
-            height: 58px;
-            border-radius: 50%;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: #ffffff;
-            color: #000000;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-        }
-        .mob-sheet {
-            display: none;
-            position: fixed;
-            left: 0; right: 0; top: 0; bottom: 0;
-            z-index: 70;
-            background: rgba(0, 0, 0, 0.65);
-            backdrop-filter: blur(4px);
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-        .mob-sheet.open { display: flex; }
-        .mob-sheet-body {
-            background: #050505;
-            border-top: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 22px 22px 0 0;
-            padding: 18px 4vw 34px;
-            max-height: 78vh;
-            overflow-y: auto;
-        }
-        .mob-sheet-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
-        .mob-sheet-head h2 { font-family: 'Outfit', sans-serif; font-weight: 800; margin: 0; color: #fff; }
-        .mob-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 10px;
-        }
-        .mob-card {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 9px 12px;
-            border-radius: 12px;
-            background: #0b0b0f;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            cursor: pointer;
-            transition: border-color 0.15s ease, background 0.15s ease;
-        }
-        .mob-card.active { border-color: #fff; background: rgba(255, 255, 255, 0.1); }
-        .mob-card img { width: 30px; height: 30px; object-fit: contain; border-radius: 7px; background: #111; padding: 2px; }
-        .mob-card span { font-size: 0.82rem; font-weight: 600; line-height: 1.15; color: #fff; }
-
-        @media (max-width: 1050px) {
-            .sky-nav-links { display: none; }
-            .sky-sidebar { flex-basis: 330px; }
-        }
         @media (max-width: 880px) {
-            .sky-sidebar { display: none; }
-            .sky-main { flex-direction: column; padding: 6px 2vw 10px; }
-            .sky-right { width: 100%; }
-            .sky-player-wrap { border-radius: 16px; }
-            .mob-canali-btn { display: flex; }
+            .sky-sidebar-popup { width: 100%; max-width: 100vw; }
+            .now-row { gap: 12px; padding: 12px 14px; border-radius: 18px; }
             .now-title { font-size: 1.15rem; }
-            .now-logo { width: 44px; height: 44px; }
-        }
-        @media (max-width: 520px) {
-            .now-row { gap: 10px; padding: 10px 12px; }
-            .zap-btn { width: 40px; height: 40px; }
-        }
-
-        /* Responsive 2K & 4K per sky.html */
-        @media (min-width: 1921px) {
-            html { font-size: 18px; }
-            .sky-main { max-width: 2400px; padding: 2px 40px 20px; }
-            .sky-sidebar { flex: 0 0 460px; width: 460px; min-width: 460px; max-width: 460px; }
-            .now-row { padding: 16px 24px; }
-            .now-title { font-size: 1.45rem; }
-            .now-epg-text { font-size: 0.95rem; }
-            .now-logo { width: 56px; height: 56px; }
-            .zap-btn { width: 44px; height: 44px; }
-        }
-        @media (min-width: 2500px) {
-            html { font-size: 20px; }
-            .sky-main { max-width: 3000px; padding: 2px 60px 24px; }
-            .sky-sidebar { flex: 0 0 540px; width: 540px; min-width: 540px; max-width: 540px; }
-            .now-row { padding: 20px 30px; }
-            .now-title { font-size: 1.65rem; }
-            .now-epg-text { font-size: 1.05rem; }
-            .now-logo { width: 64px; height: 64px; }
-            .zap-btn { width: 50px; height: 50px; }
+            .now-poster-box { width: 48px; height: 48px; border-radius: 12px; }
+            .now-logo { width: 36px; height: 36px; }
+            .sky-channels-trigger-btn span { display: none; }
+            .sky-channels-trigger-btn { padding: 9px 12px; }
         }
 
 /* ============================================================
