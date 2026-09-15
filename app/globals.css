@@ -6795,8 +6795,8 @@ body:has(.sky-app) {
                 min-height: 0;
                 overflow: visible !important;
                 display: grid !important;
-                grid-template-columns: minmax(0, 1fr) minmax(320px, 390px);
-                gap: 18px;
+                grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
+                gap: 12px;
                 align-items: stretch;
             }
 
