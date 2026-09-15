@@ -210,11 +210,6 @@ function SkyContent() {
         setMounted(true);
     }, []);
 
-    // Resetta iframeLoaded al cambio canale per transizione fluida
-    useEffect(() => {
-        setIframeLoaded(false);
-    }, [selectedChannel]);
-
     const playerWrapRef = useRef(null);
     const playerZoneRef = useRef(null);
     const nowRowRef = useRef(null);
@@ -484,6 +479,11 @@ function SkyContent() {
 
     const currentEpg = selectedChannel ? getCurrentProgram(selectedChannel.name) : null;
     const playerSrc = selectedChannel ? buildExtUrl(selectedChannel) : "";
+
+    // Resetta iframeLoaded solo quando cambia davvero lo stream, non a ogni refresh del polling
+    useEffect(() => {
+        setIframeLoaded(false);
+    }, [playerSrc]);
 
     const handleNextChannel = () => {
         if (filteredChannels.length === 0) return;

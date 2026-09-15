@@ -33,7 +33,7 @@ export default function MobileSkyView({
 
     useEffect(() => {
         setIframeLoaded(false);
-    }, [selectedChannel]);
+    }, [playerSrc]);
 
     useEffect(() => {
         if (isSearchOpen && searchInputRef.current) {
