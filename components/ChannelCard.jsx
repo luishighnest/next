@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef, useEffect, useCallback } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { getChannelSlug } from "@/lib/slug";

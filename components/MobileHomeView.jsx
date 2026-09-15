@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useDeferredValue } from "react";
+import { useDeferredValue } from "react";
 import MobileHeader from "./MobileHeader";
 import MobileBottomNav from "./MobileBottomNav";
 import SubCategoryChips from "./SubCategoryChips";

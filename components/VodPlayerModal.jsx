@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 
 export default function VodPlayerModal({ item, isOpen, onClose }) {
     const [details, setDetails] = useState(null);

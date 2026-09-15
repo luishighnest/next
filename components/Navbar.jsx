@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SettingsModal from "./SettingsModal";
@@ -15,7 +15,6 @@ export default function Navbar({
     onSelectCategoryAndSub,
     dynamicSubCategories,
     onSearch,
-    hideSideIslands,
     isSearchOpen: propIsSearchOpen,
     setIsSearchOpen: propSetIsSearchOpen,
     searchVal: propSearchVal,
@@ -130,8 +129,7 @@ export default function Navbar({
     }, []);
 
     // La navbar ha la STESSA identica dimensione, struttura e posizione della Home su tutte le sezioni (Home, Sky, Evento)
-    const isPlayerPage = pathname ? (pathname.startsWith("/sky") || pathname.startsWith("/eventi/")) : false;
-    const shouldHideSides = false;
+const isPlayerPage = pathname ? (pathname.startsWith("/sky") || pathname.startsWith("/eventi/")) : false;
 
     const lastScrollYRef = useRef(0);
 

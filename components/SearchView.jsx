@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, useDeferredValue, useMemo } from "react";
+import { useState, useEffect, useDeferredValue, useMemo } from "react";
 import ChannelCard from "./ChannelCard";
 
 export function matchesChannel(c, q) {

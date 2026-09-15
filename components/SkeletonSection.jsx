@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 export default function SkeletonSection({ cardCount = 6, isVod = false }) {
     const wrapperRef = useRef(null);

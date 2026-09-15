@@ -1,5 +1,5 @@
 "use client";
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import VodInfoView from "@/components/VodInfoView";
 

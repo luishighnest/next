@@ -120,20 +120,6 @@ function HomeViewContent({ defaultTab = "all" }) {
         }
     }, [categories.length]);
 
-    // Sincronizza il filtro istantaneamente sui pulsanti back/forward del browser
-    useEffect(() => {
-        const handlePopState = () => {
-            const p = window.location.pathname;
-            if (p === "/sport") setFilter("sport");
-            else if (p === "/intrattenimento") setFilter("intrattenimento");
-            else if (p === "/eventi") setFilter("eventi");
-            else if (p === "/home" || p === "/") setFilter("all");
-        };
-
-        window.addEventListener("popstate", handlePopState);
-        return () => window.removeEventListener("popstate", handlePopState);
-    }, []);
-
     // Sincronizza il filtro al variare del pathname Next.js
     useEffect(() => {
         if (pathname === "/sport") setFilter("sport");
