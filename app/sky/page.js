@@ -199,6 +199,7 @@ function SkyContent() {
 
     // Stato Drawer Canali a destra (popup nel player)
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isFullscreenChannelsVisible, setIsFullscreenChannelsVisible] = useState(true);
 
     // Controlli Overlay (auto-hide dopo 3 secondi di inattività mouse, ricompare subito al movimento)
     const [isUserActive, setIsUserActive] = useState(true);
@@ -260,7 +261,7 @@ function SkyContent() {
     }, [selectedChannel, handleMouseMove]);
 
     const toggleFullscreen = () => {
-        const el = containerRef.current || document.documentElement;
+        const el = document.querySelector(".embedded-player-page") || containerRef.current || document.documentElement;
         if (!document.fullscreenElement) {
             if (el.requestFullscreen) {
                 el.requestFullscreen().catch(() => {});
@@ -680,6 +681,21 @@ function SkyContent() {
                         }}
                     />
 
+                    {isFullscreen && (
+                        <button
+                            type="button"
+                            className="fullscreen-channels-toggle"
+                            onClick={() => setIsFullscreenChannelsVisible((visible) => !visible)}
+                            aria-label={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
+                            title={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
+                        >
+                            <span className="material-symbols-rounded">
+                                {isFullscreenChannelsVisible ? "view_sidebar" : "view_sidebar"}
+                            </span>
+                            <span>{isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}</span>
+                        </button>
+                    )}
+
                     {/* Vignetta cinematografica */}
                     <div className={`sky-player-vignette ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`} />
 
@@ -809,7 +825,7 @@ function SkyContent() {
                     onClick={() => setIsSidebarOpen(false)}
                 />
 
-                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""}`}>
+                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""} ${!isFullscreenChannelsVisible ? "fullscreen-channels-hidden" : ""}`}>
                     {/* Header Drawer */}
                     <div className="sky-sidebar-header">
                         <h3 className="sky-sidebar-header-title">

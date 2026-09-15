@@ -6832,6 +6832,61 @@ body:has(.sky-app) {
                 background: #000;
             }
 
+            .fullscreen-channels-toggle {
+                display: none;
+            }
+
+            .embedded-player-page:fullscreen {
+                position: fixed !important;
+                inset: 0 !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                min-height: 0 !important;
+                padding: 96px 24px 24px !important;
+                background: #050608 !important;
+            }
+
+            .embedded-player-page:fullscreen .sky-main {
+                height: calc(100vh - 120px) !important;
+                min-height: 0 !important;
+            }
+
+            .embedded-player-page:fullscreen .sky-native-player-container {
+                height: 100% !important;
+                aspect-ratio: auto !important;
+            }
+
+            .embedded-player-page:fullscreen .sky-sidebar-popup.desktop-persistent {
+                height: 100% !important;
+            }
+
+            .embedded-player-page:fullscreen .sky-main:has(.fullscreen-channels-hidden) {
+                grid-template-columns: minmax(0, 1fr) !important;
+            }
+
+            .embedded-player-page:fullscreen .sky-sidebar-popup.fullscreen-channels-hidden {
+                display: none !important;
+            }
+
+            .embedded-player-page:fullscreen .fullscreen-channels-toggle {
+                position: fixed;
+                top: 86px;
+                right: 24px;
+                z-index: 10020;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                min-height: 40px;
+                padding: 0 14px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                border-radius: 10px;
+                color: #fff;
+                background: rgba(12, 16, 24, 0.86);
+                box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+                backdrop-filter: blur(16px);
+            }
+
             .embedded-player-page .sky-sidebar-popup.desktop-persistent {
                 position: relative;
                 top: auto;
