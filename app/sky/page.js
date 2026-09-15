@@ -747,43 +747,33 @@ function SkyContent() {
 
                         {/* Barra dei Controlli Inferiori Integrati (senza timeline finta) */}
                         <div className="sky-player-controls-bar">
-                            {/* Gruppo Sinistra: Badge Live */}
-                            <div className="sky-controls-group-left">
-                                <span style={{ color: "#e30a17", fontWeight: "800", display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", letterSpacing: "0.5px" }}>
-                                    <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#e30a17", display: "inline-block", boxShadow: "0 0 8px rgba(227,10,23,0.8)" }} />
-                                    DIRETTA
-                                </span>
-                            </div>
-
-                            {/* Gruppo Destra: Guida TV, Impostazioni Tecniche, Canali, Zapping, Fullscreen */}
+                            {/* Gruppo Destra: Guida TV, Impostazioni Tecniche, Canali, Zapping */}
                             <div className="sky-controls-group-right">
                                 <button
                                     type="button"
-                                    className="sky-modern-btn"
+                                    className="sky-modern-btn icon-only"
                                     onClick={() => setIsGuidaOpen(true)}
-                                    title="Apri Guida TV EPG"
+                                    title="Guida TV"
                                 >
                                     <span className="material-symbols-rounded">calendar_today</span>
-                                    <span>Guida TV</span>
                                 </button>
 
                                 <button
                                     type="button"
                                     className="sky-modern-btn icon-only"
                                     onClick={() => setIsSettingsOpen(true)}
-                                    title="Impostazioni Tecniche Generali"
+                                    title="Impostazioni"
                                 >
                                     <span className="material-symbols-rounded">settings</span>
                                 </button>
 
                                 <button
                                     type="button"
-                                    className="sky-channels-trigger-btn"
+                                    className="sky-channels-trigger-btn icon-only"
                                     onClick={() => setIsSidebarOpen(true)}
-                                    title="Apri Elenco Canali"
+                                    title="Canali"
                                 >
-                                    <i className="fas fa-list-ul" />
-                                    <span>Canali</span>
+                                    <span className="material-symbols-rounded">format_list_bulleted</span>
                                 </button>
 
                                 <div className="zap-controls">
@@ -806,30 +796,10 @@ function SkyContent() {
                                         <span className="material-symbols-rounded">keyboard_arrow_down</span>
                                     </button>
                                 </div>
-
-                                <button
-                                    type="button"
-                                    className="sky-modern-btn icon-only"
-                                    onClick={toggleFullscreen}
-                                    title={isFullscreen ? "Esci da schermo intero (f)" : "Schermo intero (f)"}
-                                >
-                                    <span className="material-symbols-rounded">
-                                        {isFullscreen ? "fullscreen_exit" : "fullscreen"}
-                                    </span>
-                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                {/* Hitbox invisibile esattamente in basso a destra sovrapposta al tasto Schermo Intero dell'estensione */}
-                <button
-                    type="button"
-                    className="sky-fullscreen-hitbox"
-                    onClick={toggleFullscreen}
-                    title={isFullscreen ? "Esci da schermo intero (f)" : "Schermo intero (f)"}
-                    aria-label="Schermo intero"
-                />
 
                 {/* 3. Backdrop e Drawer Popup Laterale a Destra (nel player) */}
                 <div

@@ -522,13 +522,8 @@ export default function EventoPlayerPage() {
 
                         {/* Barra dei Controlli Inferiori Integrati (senza timeline finta) */}
                         <div className="sky-player-controls-bar">
-                            {/* Sinistra: Badge Live & Switch Sorgente (Standard vs WARP) */}
+                            {/* Sinistra: Switch Sorgente (Standard vs WARP) se presenti più sorgenti */}
                             <div className="sky-controls-group-left">
-                                <span style={{ color: "#e30a17", fontWeight: "800", display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "0.85rem", letterSpacing: "0.5px" }}>
-                                    <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#e30a17", display: "inline-block", boxShadow: "0 0 8px rgba(227,10,23,0.8)" }} />
-                                    DIRETTA
-                                </span>
-
                                 {(() => {
                                     const realSources = getNormalizedSources(channel);
                                     if (realSources.length <= 1) return null;
@@ -545,7 +540,7 @@ export default function EventoPlayerPage() {
                                                         title={`Passa a sorgente ${s.name}`}
                                                     >
                                                         {s.isWarp ? (
-                                                            <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#000000" : "#f38020" }}></i>
+                                                             <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#000000" : "#f38020" }}></i>
                                                         ) : (
                                                             <i className="fa-solid fa-bolt"></i>
                                                         )}
@@ -558,25 +553,23 @@ export default function EventoPlayerPage() {
                                 })()}
                             </div>
 
-                            {/* Destra: Guida TV, Impostazioni Tecniche, Canali, Zapping, Fullscreen */}
+                            {/* Destra: Guida TV, Impostazioni Tecniche, Canali, Zapping */}
                             <div className="sky-controls-group-right">
-                                <button type="button" className="sky-modern-btn" onClick={() => setIsGuidaOpen(true)} title="Guida TV EPG">
+                                <button type="button" className="sky-modern-btn icon-only" onClick={() => setIsGuidaOpen(true)} title="Guida TV">
                                     <span className="material-symbols-rounded">calendar_today</span>
-                                    <span>Guida TV</span>
                                 </button>
 
                                 <button
                                     type="button"
                                     className="sky-modern-btn icon-only"
                                     onClick={() => setIsSettingsOpen(true)}
-                                    title="Impostazioni Tecniche Generali"
+                                    title="Impostazioni"
                                 >
                                     <span className="material-symbols-rounded">settings</span>
                                 </button>
 
-                                <button type="button" className="sky-channels-trigger-btn" onClick={() => setIsSidebarOpen(true)} title="Mostra tutti gli eventi e canali correlati">
-                                    <i className="fas fa-list-ul" />
-                                    <span>Canali</span>
+                                <button type="button" className="sky-channels-trigger-btn icon-only" onClick={() => setIsSidebarOpen(true)} title="Canali">
+                                    <span className="material-symbols-rounded">format_list_bulleted</span>
                                 </button>
 
                                 <div className="zap-controls">
@@ -587,30 +580,10 @@ export default function EventoPlayerPage() {
                                         <span className="material-symbols-rounded">keyboard_arrow_down</span>
                                     </button>
                                 </div>
-
-                                <button
-                                    type="button"
-                                    className="sky-modern-btn icon-only"
-                                    onClick={toggleFullscreen}
-                                    title={isFullscreen ? "Esci da schermo intero (f)" : "Schermo intero (f)"}
-                                >
-                                    <span className="material-symbols-rounded">
-                                        {isFullscreen ? "fullscreen_exit" : "fullscreen"}
-                                    </span>
-                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                {/* Hitbox invisibile esattamente in basso a destra sovrapposta al tasto Schermo Intero dell'estensione */}
-                <button
-                    type="button"
-                    className="sky-fullscreen-hitbox"
-                    onClick={toggleFullscreen}
-                    title={isFullscreen ? "Esci da schermo intero (f)" : "Schermo intero (f)"}
-                    aria-label="Schermo intero"
-                />
 
                 {/* 3. Drawer Canali Correlati */}
                 <div className={`sky-sidebar-backdrop ${isSidebarOpen ? "is-open" : ""}`} onClick={() => setIsSidebarOpen(false)} />
