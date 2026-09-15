@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="player.min.css" media="all">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+        }
+        #player {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        /* Assicuriamo che la skin extension jwplayer riempia completamente */
+        .jwplayer {
+            width: 100% !important;
+            height: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="player"></div>
+    <script src="js/jwplayer.js"></script>
+    <script src="player.min.js"></script>
+    <script>
+        // Forwarding eventi a parent window se incorporato in iframe
+        if (window.parent && window.parent !== window) {
+            window.addEventListener('message', (e) => {
+                if (e.data && e.data.action === 'jw_toggle_play') {
+                    if (window.jwplayer && window.jwplayer('player')) {
+                        window.jwplayer('player').play();
+                    }
+                }
+            });
+            // Quando jwplayer è pronto inoltriamo stato al parent
+            const checkJw = setInterval(() => {
+                if (window.jwplayer && window.jwplayer('player') && window.jwplayer('player').on) {
+                    clearInterval(checkJw);
+                    const jw = window.jwplayer('player');
+                    jw.on('play', () => window.parent.postMessage({ type: 'jw_state', state: 'playing' }, '*'));
+                    jw.on('pause', () => window.parent.postMessage({ type: 'jw_state', state: 'paused' }, '*'));
+                    jw.on('userActive', () => window.parent.postMessage({ type: 'jw_user_active' }, '*'));
+                    jw.on('userInactive', () => window.parent.postMessage({ type: 'jw_user_inactive' }, '*'));
+                }
+            }, 300);
+        }
+    </script>
+</body>
+</html>

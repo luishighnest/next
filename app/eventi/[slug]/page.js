@@ -122,11 +122,23 @@ export default function EventoPlayerPage() {
             setIsUserActive(false);
         }, 3000);
 
+        const handlePlayerMessage = (e) => {
+            if (e.data && typeof e.data === "object") {
+                if (e.data.type === "jw_user_active") {
+                    handleMouseMove();
+                } else if (e.data.type === "jw_user_inactive") {
+                    setIsUserActive(false);
+                }
+            }
+        };
+        window.addEventListener("message", handlePlayerMessage);
+
         return () => {
             if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
             document.removeEventListener("fullscreenchange", handleFsChange);
             window.removeEventListener("mousemove", handleMouseMove);
             window.removeEventListener("pointermove", handleMouseMove);
+            window.removeEventListener("message", handlePlayerMessage);
         };
     }, [handleMouseMove]);
 
