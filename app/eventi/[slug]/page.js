@@ -81,7 +81,6 @@ export default function EventoPlayerPage() {
 
     // Drawer Canali
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [isFullscreenChannelsVisible, setIsFullscreenChannelsVisible] = useState(true);
     const [searchQuery, setSearchQuery] = useState("");
     const [activeTab, setActiveTab] = useState("all");
 
@@ -154,7 +153,7 @@ export default function EventoPlayerPage() {
     }, [selectedSource, slug, handleMouseMove]);
 
     const toggleFullscreen = () => {
-        const el = document.querySelector(".embedded-player-page") || containerRef.current || document.documentElement;
+        const el = containerRef.current || document.documentElement;
         if (!document.fullscreenElement) {
             if (el.requestFullscreen) {
                 el.requestFullscreen().catch(() => {});
@@ -478,18 +477,6 @@ export default function EventoPlayerPage() {
                         }}
                     />
 
-                    {isFullscreen && (
-                        <button
-                            type="button"
-                            className="fullscreen-channels-toggle"
-                            onClick={() => setIsFullscreenChannelsVisible((visible) => !visible)}
-                            aria-label={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
-                            title={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
-                        >
-                            <span className="material-symbols-rounded">view_sidebar</span>
-                            <span>{isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}</span>
-                        </button>
-                    )}
 
                     {/* Vignetta cinematografica */}
                     <div className={`sky-player-vignette ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`} />
@@ -584,6 +571,18 @@ export default function EventoPlayerPage() {
                                     <span className="material-symbols-rounded">settings</span>
                                 </button>
 
+                                <button
+                                    type="button"
+                                    className="sky-modern-btn icon-only"
+                                    onClick={toggleFullscreen}
+                                    title={isFullscreen ? "Esci da schermo intero (F)" : "Schermo intero canale (F)"}
+                                    aria-label={isFullscreen ? "Esci da schermo intero" : "Schermo intero"}
+                                >
+                                    <span className="material-symbols-rounded">
+                                        {isFullscreen ? "fullscreen_exit" : "fullscreen"}
+                                    </span>
+                                </button>
+
                                 <button type="button" className="sky-channels-trigger-btn icon-only" onClick={() => setIsSidebarOpen(true)} title="Canali">
                                     <span className="material-symbols-rounded">format_list_bulleted</span>
                                 </button>
@@ -604,7 +603,7 @@ export default function EventoPlayerPage() {
                 {/* 3. Drawer Canali Correlati */}
                 <div className={`sky-sidebar-backdrop ${isSidebarOpen ? "is-open" : ""}`} onClick={() => setIsSidebarOpen(false)} />
 
-                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""} ${!isFullscreenChannelsVisible ? "fullscreen-channels-hidden" : ""}`}>
+                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""}`}>
                     <div className="sky-sidebar-header">
                         <h3 className="sky-sidebar-header-title">
                             <i className="fas fa-tv" style={{ color: "#00e59b" }} />

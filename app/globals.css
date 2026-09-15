@@ -6774,6 +6774,8 @@ body:has(.sky-app) {
                 overflow: auto !important;
             }
 
+            /* Page wrapper: left padding only so the grid stretches flush to the
+               right edge of the viewport — nothing between sidebar and screen edge. */
             .sky-app.embedded-player-page {
                 position: relative !important;
                 inset: auto !important;
@@ -6781,22 +6783,23 @@ body:has(.sky-app) {
                 height: auto !important;
                 min-height: 100vh !important;
                 overflow: visible !important;
-                padding: 96px 24px 24px !important;
+                padding: 96px 0 0 24px !important;
                 box-sizing: border-box;
                 background: radial-gradient(circle at top left, #1b2435 0%, #090b10 42%, #040506 100%) !important;
             }
 
+            /* Two-column grid: player fills all available space, sidebar is a
+               compact fixed-width companion panel flush to the right viewport edge. */
             .embedded-player-page .sky-main {
                 position: relative !important;
                 inset: auto !important;
                 width: 100% !important;
-                height: auto !important;
-                height: calc(100vh - 120px) !important;
+                height: calc(100vh - 96px) !important;
                 min-height: 0;
                 overflow: visible !important;
                 display: grid !important;
-                grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
-                gap: 12px;
+                grid-template-columns: minmax(0, 1fr) 300px;
+                gap: 0;
                 align-items: stretch;
             }
 
@@ -6807,15 +6810,17 @@ body:has(.sky-app) {
                 width: 100%;
                 height: 100%;
                 aspect-ratio: auto;
-                align-self: start;
-                border: 1px solid rgba(255, 255, 255, 0.12);
-                border-radius: 18px;
+                align-self: stretch;
+                /* rounded only on left / top-right gap side — right edge is the sidebar */
+                border: 1px solid rgba(255, 255, 255, 0.10);
+                border-right: none;
+                border-radius: 18px 0 0 18px;
                 box-shadow: 0 24px 72px rgba(0, 0, 0, 0.46);
+                overflow: hidden;
             }
 
-            /* A normal page has one thing in its video area: the iframe.
-               The legacy cinematic layer and its fullscreen controls belong
-               to the old player experience, not to this layout. */
+            /* Only the raw iframe is visible in the embedded layout. All legacy
+               cinematic overlays and fullscreen controls are suppressed. */
             .embedded-player-page .sky-native-player-container > .sky-back-minimal-btn,
             .embedded-player-page .sky-native-player-container > .sky-player-backdrop-preload,
             .embedded-player-page .sky-native-player-container > .sky-player-vignette,
@@ -6829,79 +6834,37 @@ body:has(.sky-app) {
                 width: 100%;
                 height: 100%;
                 border: 0;
+                border-radius: 0;
                 background: #000;
             }
 
-            .fullscreen-channels-toggle {
-                display: none;
-            }
+            /* Fullscreen is handled natively: the button calls
+               containerRef.current.requestFullscreen() which targets
+               .sky-native-player-container only. The :fullscreen selector
+               defined above (outside this media query) handles the full-screen
+               appearance. The page itself never enters fullscreen mode. */
 
-            .embedded-player-page:fullscreen {
-                position: fixed !important;
-                inset: 0 !important;
-                width: 100vw !important;
-                height: 100vh !important;
-                min-height: 0 !important;
-                padding: 96px 24px 24px !important;
-                background: #050608 !important;
-            }
-
-            .embedded-player-page:fullscreen .sky-main {
-                height: calc(100vh - 120px) !important;
-                min-height: 0 !important;
-            }
-
-            .embedded-player-page:fullscreen .sky-native-player-container {
-                height: 100% !important;
-                aspect-ratio: auto !important;
-            }
-
-            .embedded-player-page:fullscreen .sky-sidebar-popup.desktop-persistent {
-                height: 100% !important;
-            }
-
-            .embedded-player-page:fullscreen .sky-main:has(.fullscreen-channels-hidden) {
-                grid-template-columns: minmax(0, 1fr) !important;
-            }
-
-            .embedded-player-page:fullscreen .sky-sidebar-popup.fullscreen-channels-hidden {
-                display: none !important;
-            }
-
-            .embedded-player-page:fullscreen .fullscreen-channels-toggle {
-                position: fixed;
-                top: 86px;
-                right: 24px;
-                z-index: 10020;
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                min-height: 40px;
-                padding: 0 14px;
-                border: 1px solid rgba(255, 255, 255, 0.18);
-                border-radius: 10px;
-                color: #fff;
-                background: rgba(12, 16, 24, 0.86);
-                box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4);
-                cursor: pointer;
-                backdrop-filter: blur(16px);
-            }
-
+            /* Companion channel-list panel — always visible on desktop,
+               flush to the right viewport edge with rounded left corners. */
             .embedded-player-page .sky-sidebar-popup.desktop-persistent {
                 position: relative;
                 top: auto;
                 right: auto;
                 bottom: auto;
-                width: auto;
+                width: 300px;
                 max-width: none;
-                height: min(100%, calc(100vh - 48px));
+                height: 100%;
                 transform: none;
-                border: 1px solid rgba(255, 255, 255, 0.1) !important;
-                border-radius: 18px;
-                box-shadow: 0 24px 72px rgba(0, 0, 0, 0.34);
-                background: rgba(13, 16, 23, 0.92) !important;
+                border: 1px solid rgba(255, 255, 255, 0.10) !important;
+                border-left: none !important;
+                border-radius: 0 18px 18px 0;
+                box-shadow: -12px 0 40px rgba(0, 0, 0, 0.5);
+                background: rgba(10, 12, 18, 0.96) !important;
+                backdrop-filter: blur(24px) saturate(160%);
+                -webkit-backdrop-filter: blur(24px) saturate(160%);
             }
 
+            /* Close button and backdrop are unnecessary in the persistent layout. */
             .sky-sidebar-popup.desktop-persistent .sky-sidebar-close-btn,
             .sky-sidebar-backdrop {
                 display: none;
