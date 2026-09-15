@@ -18,7 +18,6 @@
             width: 100% !important;
             height: 100% !important;
         }
-        /* Assicuriamo che la skin extension jwplayer riempia completamente */
         .jwplayer {
             width: 100% !important;
             height: 100% !important;
@@ -27,7 +26,16 @@
 </head>
 <body>
     <div id="player"></div>
+    <script>
+        // Configura il percorso base assoluto di JWPlayer in modo che carichi sempre i moduli da /player/js/
+        window.__jwplayer_base = "/player/js/";
+    </script>
     <script src="js/jwplayer.js"></script>
+    <script>
+        if (window.jwplayer && window.jwplayer.defaults) {
+            window.jwplayer.defaults.base = "/player/js/";
+        }
+    </script>
     <script src="player.min.js"></script>
     <script>
         // Forwarding eventi a parent window se incorporato in iframe
@@ -39,7 +47,6 @@
                     }
                 }
             });
-            // Quando jwplayer è pronto inoltriamo stato al parent
             const checkJw = setInterval(() => {
                 if (window.jwplayer && window.jwplayer('player') && window.jwplayer('player').on) {
                     clearInterval(checkJw);
