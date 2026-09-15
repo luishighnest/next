@@ -11,12 +11,12 @@ body, html {
     font-family: -apple-system, BlinkMacSystemFont, 'Outfit', 'Inter', 'Segoe UI', Roboto, sans-serif !important;
 }
 
-/* Controlbar in stile Vidstack (fluttuante, glassmorphism con blur) */
+/* Controlbar in stile Vidstack integrata nel gradiente unico inferiore */
 .jw-skin-extension .jw-controlbar {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-top: none !important;
     padding: 0 16px 8px 16px !important;
     height: 56px !important;
     display: flex !important;

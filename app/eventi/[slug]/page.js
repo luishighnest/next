@@ -417,20 +417,19 @@ export default function EventoPlayerPage() {
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
         >
-            {/* Tasto Minimal Indietro */}
-            <button
-                type="button"
-                className={`sky-back-minimal-btn ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}
-                onClick={handleBack}
-                title="Torna indietro"
-                aria-label="Torna indietro"
-            >
-                <span className="material-symbols-rounded">arrow_back</span>
-            </button>
-
             <main className="sky-main">
                 {/* 1. Fullscreen Player Container Unificato con Iframe Estensione */}
                 <div ref={containerRef} className="sky-native-player-container">
+                    {/* Tasto Minimal Indietro */}
+                    <button
+                        type="button"
+                        className={`sky-back-minimal-btn ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}
+                        onClick={handleBack}
+                        title="Torna indietro"
+                        aria-label="Torna indietro"
+                    >
+                        <span className="material-symbols-rounded">arrow_back</span>
+                    </button>
                     {/* Copertina di preload */}
                     {Boolean(transPoster || coverImg) && !hasStartedPlaying && (
                         <div className="sky-player-backdrop-preload">
@@ -493,12 +492,11 @@ export default function EventoPlayerPage() {
                         {/* Header Info */}
                         <div className="sky-player-info-row">
                             <div className="sky-player-meta-left">
-                                <div className="sky-modern-logo-box">
-                                    <img src={displayLogo} className="sky-modern-logo" alt="" />
-                                </div>
                                 <div className="sky-player-meta-details">
+                                    {/* Linea 1: LOGO + NOME CANALE + LIVE + CATEGORIA + SCADENZA */}
                                     <div className="sky-player-tag-row">
-                                        <div className="sky-channel-name-badge">
+                                        <div className="sky-channel-identity">
+                                            {displayLogo && <img src={displayLogo} className="sky-modern-logo" alt="" />}
                                             <span className="sky-channel-name-text">{channel?.title || "Evento"}</span>
                                         </div>
                                         <span className="live-badge"><span className="dot"></span>LIVE</span>
@@ -510,9 +508,11 @@ export default function EventoPlayerPage() {
                                             </span>
                                         )}
                                     </div>
+                                    {/* Linea 2: TITOLO PROGRAMMA */}
                                     <h2 className="sky-player-big-title">
                                         {currentEpg?.titolo || channel?.title || "Diretta Evento"}
                                     </h2>
+                                    {/* Linea 3: EPG */}
                                     <div className="sky-player-epg-subtitle">
                                         {currentEpg?.oraInizio ? `${currentEpg.oraInizio} • ${channel?.description || "Trasmissione in diretta"}` : (channel?.description || channel?.group || "Trasmissione in diretta")}
                                     </div>

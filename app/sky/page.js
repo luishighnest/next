@@ -616,21 +616,20 @@ function SkyContent() {
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
         >
-            {/* Tasto Minimal solo icona freccia indietro che riporta alla sezione da cui si proviene */}
-            <button
-                type="button"
-                className={`sky-back-minimal-btn ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}
-                onClick={handleBack}
-                title="Torna indietro"
-                aria-label="Torna indietro"
-            >
-                <span className="material-symbols-rounded">arrow_back</span>
-            </button>
-
             {/* Layout Principale Fullscreen 100vw x 100vh */}
             <main className="sky-main">
                 {/* 1. Fullscreen Native Player Container Unificato (include video + custom UI + popups) */}
                 <div ref={containerRef} className="sky-native-player-container">
+                    {/* Tasto Minimal solo icona freccia indietro che riporta alla sezione da cui si proviene */}
+                    <button
+                        type="button"
+                        className={`sky-back-minimal-btn ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}
+                        onClick={handleBack}
+                        title="Torna indietro"
+                        aria-label="Torna indietro"
+                    >
+                        <span className="material-symbols-rounded">arrow_back</span>
+                    </button>
                     {/* Backdrop di preload per eliminare scatti prima dell'avvio: sparisce irreversibilmente al primo frame */}
                     {Boolean(transPoster || currentEpg?.immagine) && !hasStartedPlaying && (
                         <div className="sky-player-backdrop-preload">
@@ -695,19 +694,18 @@ function SkyContent() {
                         {/* Header Info */}
                         <div className="sky-player-info-row">
                             <div className="sky-player-meta-left">
-                                <div className="sky-modern-logo-box">
-                                    <img
-                                        src={channelLogo || "/logos/sksport.png"}
-                                        className="sky-modern-logo"
-                                        alt=""
-                                        onError={(e) => {
-                                            e.target.style.display = "none";
-                                        }}
-                                    />
-                                </div>
                                 <div className="sky-player-meta-details">
+                                    {/* Linea 1: LOGO + NOME CANALE + LIVE + CATEGORIA + SCADENZA */}
                                     <div className="sky-player-tag-row">
-                                        <div className="sky-channel-name-badge">
+                                        <div className="sky-channel-identity">
+                                            <img
+                                                src={channelLogo || "/logos/sksport.png"}
+                                                className="sky-modern-logo"
+                                                alt=""
+                                                onError={(e) => {
+                                                    e.target.style.display = "none";
+                                                }}
+                                            />
                                             <span className="sky-channel-name-text">{selectedChannel?.name || "Canale Sky"}</span>
                                         </div>
                                         <span className="live-badge"><span className="dot"></span>LIVE</span>
@@ -735,9 +733,11 @@ function SkyContent() {
                                             );
                                         })()}
                                     </div>
+                                    {/* Linea 2: TITOLO PROGRAMMA */}
                                     <h2 className="sky-player-big-title">
                                         {currentEpg?.titolo || selectedChannel?.name || "Diretta TV"}
                                     </h2>
+                                    {/* Linea 3: EPG */}
                                     <div className="sky-player-epg-subtitle">
                                         {currentEpg ? `${currentEpg.ora} ${currentEpg.next ? `• A seguire: ${currentEpg.next}` : ""}` : (selectedChannel?.group || "Diretta streaming")}
                                     </div>

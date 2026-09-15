@@ -6683,42 +6683,40 @@ body:has(.sky-app) {
 
         /* Tasto minimal solo icona per tornare indietro */
         .sky-back-minimal-btn {
-            position: fixed !important;
+            position: absolute !important;
             top: 24px !important;
             left: 24px !important;
             z-index: 60 !important;
-            width: 46px !important;
-            height: 46px !important;
-            border-radius: 50% !important;
-            background: rgba(14, 18, 25, 0.75) !important;
-            border: 1px solid rgba(255, 255, 255, 0.16) !important;
-            color: #ffffff !important;
+            width: 44px !important;
+            height: 44px !important;
+            border-radius: 8px !important;
+            background: transparent !important;
+            border: none !important;
+            color: rgba(255, 255, 255, 0.85) !important;
             display: flex !important;
             align-items: center !important;
             justify-content: center !important;
             cursor: pointer !important;
-            backdrop-filter: blur(16px) !important;
-            -webkit-backdrop-filter: blur(16px) !important;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
-            transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s ease, background 0.2s ease, border-color 0.2s ease !important;
+            box-shadow: none !important;
+            transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s ease, color 0.2s ease, background 0.2s ease !important;
             opacity: 1;
             pointer-events: auto;
         }
         .sky-back-minimal-btn.idle-hidden {
             opacity: 0 !important;
             pointer-events: none !important;
-            transform: translateY(-6px) scale(0.95);
+            transform: translateY(-6px);
         }
         .sky-back-minimal-btn:hover {
-            background: rgba(255, 255, 255, 0.15) !important;
-            border-color: rgba(255, 255, 255, 0.35) !important;
+            color: #ffffff !important;
+            background: rgba(255, 255, 255, 0.12) !important;
             transform: scale(1.08) !important;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7) !important;
         }
         .sky-back-minimal-btn .material-symbols-rounded {
-            font-size: 24px !important;
+            font-size: 28px !important;
             line-height: 1 !important;
-            color: #ffffff !important;
+            color: inherit !important;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
         }
 
         /* --- Drawer Popup Canali a Destra (nel player) --- */
@@ -7135,22 +7133,22 @@ body:has(.sky-app) {
         @keyframes live-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
         .sky-empty { text-align: center; color: rgba(255, 255, 255, 0.4); padding: 36px 0; font-size: 0.88rem; }
 
-        /* --- Info Deck / Overlay nel Player (Senza sfondi sfumati neri, posizionato SOPRA la timeline) --- */
+        /* --- Info Deck / Overlay nel Player: UNICA ZONA INFERIORE SFUMATA CON GRADIENTE CONTINUO --- */
         .sky-player-overlay-bottom {
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 76px; /* controlbar bottom:12px + height:56px + 8px gap */
+            bottom: 0;
             z-index: 30;
-            padding: 0 3vw;
-            pointer-events: none; /* L'intero spazio è trasparente al mouse, i controlli dell'estensione sono cliccabili */
+            padding: 90px 20px 72px 20px;
+            pointer-events: none;
             transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-            background: transparent !important; /* Nessun gradiente o sfumatura nera */
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 30%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0.96) 100%) !important;
         }
 
         .sky-player-overlay-bottom.idle-hidden {
             opacity: 0;
-            transform: translateY(16px);
+            transform: translateY(12px);
             pointer-events: none !important;
         }
 
@@ -7158,19 +7156,19 @@ body:has(.sky-app) {
         .sky-player-modern-deck {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 10px;
             width: 100%;
-            max-width: 1500px;
-            margin: 0 auto;
+            max-width: 100%;
+            margin: 0;
             pointer-events: none;
         }
 
-        /* 1. Header info evento: Logo squadrato minimal + Badge Live + Categoria + Titolo grande */
+        /* 1. Header info canale/programma: ancorato a sinistra sopra la timeline */
         .sky-player-info-row {
             display: flex;
             align-items: flex-end;
             justify-content: space-between;
-            gap: 20px;
+            gap: 16px;
             width: 100%;
             pointer-events: auto;
         }
@@ -7178,38 +7176,31 @@ body:has(.sky-app) {
         .sky-player-meta-left {
             display: flex;
             align-items: flex-end;
-            gap: 18px;
+            gap: 0;
             min-width: 0;
             flex: 1;
         }
 
-        .sky-modern-logo-box {
-            width: 62px;
-            height: 62px;
-            min-width: 62px;
-            border-radius: 14px;
-            background: linear-gradient(135deg, rgba(20, 24, 38, 0.95) 0%, rgba(8, 10, 18, 0.98) 100%);
-            border: 1.5px solid rgba(255, 255, 255, 0.22);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 255, 255, 0.05);
-            display: flex;
+        /* Identità canale libera senza contenitore/box */
+        .sky-channel-identity {
+            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            overflow: hidden;
+            gap: 10px;
             flex-shrink: 0;
-            padding: 4px;
         }
 
         .sky-modern-logo {
-            max-width: 90%;
-            max-height: 90%;
+            height: 28px;
+            width: auto;
+            max-width: 90px;
             object-fit: contain;
-            filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.95)) contrast(1.1);
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.9));
         }
 
         .sky-player-meta-details {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 4px;
             min-width: 0;
             flex: 1;
         }
@@ -7219,18 +7210,6 @@ body:has(.sky-app) {
             align-items: center;
             gap: 10px;
             flex-wrap: wrap;
-        }
-
-        .sky-channel-name-badge {
-            display: inline-flex;
-            align-items: center;
-            padding: 3px 10px;
-            border-radius: 6px;
-            background: rgba(0, 0, 0, 0.55);
-            border: 1px solid rgba(255, 255, 255, 0.35);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
         }
 
         .sky-channel-name-text {
@@ -7898,15 +7877,15 @@ body:has(.sky-app) {
             text-shadow: 0 2px 12px rgba(0,0,0,0.9);
         }
 
-        /* ── Overlay bottom con trasparenza naturale sopra i controlli ───────────────────── */
+        /* ── Overlay bottom con gradiente continuo sopra i controlli ───────────────────── */
         .sky-player-overlay-bottom {
             position: absolute;
             left: 0; right: 0;
-            bottom: 76px; /* Spostato chiaramente sopra la barra e la timeline */
+            bottom: 0;
             z-index: 30;
-            padding: 0 3vw;
+            padding: 90px 20px 72px 20px;
             pointer-events: none;
-            background: transparent !important;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 30%, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0.96) 100%) !important;
             transition: opacity 0.22s ease, transform 0.22s ease;
         }
         .sky-player-overlay-bottom.idle-hidden {
