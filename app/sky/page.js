@@ -199,6 +199,7 @@ function SkyContent() {
 
     // Stato Drawer Canali a destra (popup nel player)
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isFullscreenChannelsVisible, setIsFullscreenChannelsVisible] = useState(true);
 
     // Controlli Overlay (auto-hide dopo 3 secondi di inattività mouse, ricompare subito al movimento)
     const [isUserActive, setIsUserActive] = useState(true);
@@ -619,9 +620,9 @@ function SkyContent() {
         >
             <Navbar activeFilter="sky" />
             {/* Layout Principale Fullscreen 100vw x 100vh */}
-            <main className="sky-main">
+            <main ref={containerRef} className="sky-main">
                 {/* 1. Fullscreen Native Player Container Unificato (include video + custom UI + popups) */}
-                <div ref={containerRef} className="sky-native-player-container">
+                <div className="sky-native-player-container">
                     {/* Tasto Minimal solo icona freccia indietro che riporta alla sezione da cui si proviene */}
                     <button
                         type="button"
@@ -782,6 +783,20 @@ function SkyContent() {
                                     </span>
                                 </button>
 
+                                {isFullscreen && (
+                                    <button
+                                        type="button"
+                                        className="sky-modern-btn icon-only"
+                                        onClick={() => setIsFullscreenChannelsVisible(v => !v)}
+                                        title={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
+                                        aria-label={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
+                                    >
+                                        <span className="material-symbols-rounded">
+                                            {isFullscreenChannelsVisible ? "view_sidebar" : "view_sidebar_r"}
+                                        </span>
+                                    </button>
+                                )}
+
                                 <button
                                     type="button"
                                     className="sky-channels-trigger-btn icon-only"
@@ -822,7 +837,7 @@ function SkyContent() {
                     onClick={() => setIsSidebarOpen(false)}
                 />
 
-                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""}`}>
+                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""} ${isFullscreen && !isFullscreenChannelsVisible ? "fullscreen-channels-hidden" : ""}`}>
                     {/* Header Drawer */}
                     <div className="sky-sidebar-header">
                         <h3 className="sky-sidebar-header-title">

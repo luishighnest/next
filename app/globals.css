@@ -6837,12 +6837,62 @@ body:has(.sky-app) {
                 border-radius: 0;
                 background: #000;
             }
+            /* ── FULLSCREEN ──────────────────────────────────────────────────
+               The fullscreen button targets .sky-main (containerRef) so both
+               the player column AND the companion sidebar are visible in full-
+               screen. The navbar lives outside .sky-main and disappears auto-
+               matically. A toggle button (shown only when isFullscreen) lets
+               the user hide/show the sidebar panel.
+               ───────────────────────────────────────────────────────────────── */
 
-            /* Fullscreen is handled natively: the button calls
-               containerRef.current.requestFullscreen() which targets
-               .sky-native-player-container only. The :fullscreen selector
-               defined above (outside this media query) handles the full-screen
-               appearance. The page itself never enters fullscreen mode. */
+            /* The grid stays: player | sidebar, full viewport */
+            .sky-main:fullscreen,
+            .sky-main:-webkit-full-screen {
+                position: fixed !important;
+                inset: 0 !important;
+                width: 100vw !important;
+                height: 100vh !important;
+                padding: 0 !important;
+                background: #050608 !important;
+                display: grid !important;
+                grid-template-columns: minmax(0, 1fr) 300px;
+                gap: 0;
+                align-items: stretch;
+                z-index: 999999;
+            }
+
+            /* In fullscreen reveal the player overlays hidden in embedded mode */
+            .sky-main:fullscreen .sky-native-player-container > .sky-back-minimal-btn,
+            .sky-main:fullscreen .sky-native-player-container > .sky-player-vignette,
+            .sky-main:fullscreen .sky-native-player-container > .sky-native-loader,
+            .sky-main:fullscreen .sky-native-player-container > .sky-player-overlay-bottom {
+                display: flex !important;
+            }
+
+            /* Remove decorative chrome — player fills the fullscreen column */
+            .sky-main:fullscreen .sky-native-player-container {
+                border-radius: 0 !important;
+                border: none !important;
+                box-shadow: none !important;
+            }
+            .sky-main:fullscreen .sky-sidebar-popup.desktop-persistent {
+                border-radius: 0 !important;
+                border: none !important;
+                border-left: 1px solid rgba(255, 255, 255, 0.10) !important;
+                height: 100vh !important;
+            }
+
+            /* When sidebar is toggled off in fullscreen: player takes full width */
+            .sky-main:fullscreen:has(.fullscreen-channels-hidden) {
+                grid-template-columns: 1fr !important;
+            }
+            .sky-main:fullscreen .fullscreen-channels-hidden {
+                display: none !important;
+            }
+            /* Also keep the backdrop out of the way in fullscreen */
+            .sky-main:fullscreen .sky-sidebar-backdrop {
+                display: none !important;
+            }
 
             /* Companion channel-list panel — always visible on desktop,
                flush to the right viewport edge with rounded left corners. */

@@ -81,6 +81,7 @@ export default function EventoPlayerPage() {
 
     // Drawer Canali
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isFullscreenChannelsVisible, setIsFullscreenChannelsVisible] = useState(true);
     const [searchQuery, setSearchQuery] = useState("");
     const [activeTab, setActiveTab] = useState("all");
 
@@ -419,9 +420,9 @@ export default function EventoPlayerPage() {
             onClick={handleMouseMove}
         >
             <Navbar activeFilter="eventi" />
-            <main className="sky-main">
+            <main ref={containerRef} className="sky-main">
                 {/* 1. Fullscreen Player Container Unificato con Iframe Estensione */}
-                <div ref={containerRef} className="sky-native-player-container">
+                <div className="sky-native-player-container">
                     {/* Tasto Minimal Indietro */}
                     <button
                         type="button"
@@ -583,6 +584,20 @@ export default function EventoPlayerPage() {
                                     </span>
                                 </button>
 
+                                {isFullscreen && (
+                                    <button
+                                        type="button"
+                                        className="sky-modern-btn icon-only"
+                                        onClick={() => setIsFullscreenChannelsVisible(v => !v)}
+                                        title={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
+                                        aria-label={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
+                                    >
+                                        <span className="material-symbols-rounded">
+                                            {isFullscreenChannelsVisible ? "view_sidebar" : "view_sidebar_r"}
+                                        </span>
+                                    </button>
+                                )}
+
                                 <button type="button" className="sky-channels-trigger-btn icon-only" onClick={() => setIsSidebarOpen(true)} title="Canali">
                                     <span className="material-symbols-rounded">format_list_bulleted</span>
                                 </button>
@@ -603,7 +618,7 @@ export default function EventoPlayerPage() {
                 {/* 3. Drawer Canali Correlati */}
                 <div className={`sky-sidebar-backdrop ${isSidebarOpen ? "is-open" : ""}`} onClick={() => setIsSidebarOpen(false)} />
 
-                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""}`}>
+                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""} ${isFullscreen && !isFullscreenChannelsVisible ? "fullscreen-channels-hidden" : ""}`}>
                     <div className="sky-sidebar-header">
                         <h3 className="sky-sidebar-header-title">
                             <i className="fas fa-tv" style={{ color: "#00e59b" }} />
