@@ -244,7 +244,7 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 onCanPlay={() => setIsPlaying(true)}
                 onPlaying={() => setIsPlaying(true)}
             />
-            {isReadyToDisplay && (
+            {isReadyToDisplay && isPlaying && (
                 <div className="card-live-preview-badge">
                     <span className="card-live-preview-dot" />
                     LIVE
