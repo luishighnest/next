@@ -111,6 +111,24 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
     const playerRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isForced, setIsForced] = useState(false);
+
+    // Deadline massimo: se a 2s il video non è ancora entrato nel primo frame, forziamo la visualizzazione
+    // (niente nero: sotto il video trasparente resta la locandina finché non arriva il frame reale)
+    useEffect(() => {
+        const t = setTimeout(() => setIsForced(true), 2000);
+        return () => clearTimeout(t);
+    }, []);
+
+    // A 2s, se l'autoplay era fallito, riprova a far partire la riproduzione
+    useEffect(() => {
+        if (!isForced) return;
+        if (videoRef.current && videoRef.current.paused && videoRef.current.readyState > 0) {
+            videoRef.current.play().catch(() => {});
+        }
+    }, [isForced]);
+
+    const isVideoShown = isForced || isPlaying;
 
     const toggleMute = (e) => {
         e.preventDefault();
@@ -235,7 +253,7 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
         <div className={`card-live-preview-overlay${isReadyToDisplay ? " is-visible" : ""}`}>
             <video
                 ref={videoRef}
-                className={`card-live-preview-video${isPlaying ? " is-playing" : ""}`}
+                className={`card-live-preview-video${isVideoShown ? " is-playing" : ""}`}
                 autoPlay
                 muted
                 playsInline
@@ -244,7 +262,7 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 onCanPlay={() => setIsPlaying(true)}
                 onPlaying={() => setIsPlaying(true)}
             />
-            {isReadyToDisplay && isPlaying && (
+            {isReadyToDisplay && isVideoShown && (
                 <div className="card-live-preview-badge">
                     <span className="card-live-preview-dot" />
                     LIVE
