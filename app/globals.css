@@ -6613,6 +6613,20 @@ body:has(.sky-app) {
             justify-content: center;
         }
 
+        .sky-native-player-container:fullscreen,
+        .sky-native-player-container:-webkit-full-screen,
+        .sky-native-player-container:-moz-full-screen,
+        .sky-native-player-container:-ms-fullscreen {
+            width: 100vw !important;
+            height: 100vh !important;
+            max-width: none !important;
+            max-height: none !important;
+            position: fixed !important;
+            inset: 0 !important;
+            z-index: 999999 !important;
+            background: #000000 !important;
+        }
+
         .sky-native-video {
             width: 100%;
             height: 100%;
@@ -7912,20 +7926,15 @@ body:has(.sky-app) {
             text-shadow: 0 2px 12px rgba(0,0,0,0.9);
         }
 
-        /* ── Overlay bottom con sfumatura più naturale ───────────────────── */
+        /* ── Overlay bottom con trasparenza naturale sopra i controlli ───────────────────── */
         .sky-player-overlay-bottom {
             position: absolute;
-            left: 0; right: 0; bottom: 0;
+            left: 0; right: 0;
+            bottom: 95px; /* Spostato chiaramente sopra la barra e la timeline */
             z-index: 30;
-            padding: 40px 4vw 28px;
+            padding: 0 3vw;
             pointer-events: none;
-            background: linear-gradient(180deg,
-                transparent 0%,
-                rgba(0,0,0,0.08) 20%,
-                rgba(0,0,0,0.50) 52%,
-                rgba(0,0,2,0.90) 82%,
-                rgba(0,0,2,0.97) 100%
-            );
+            background: transparent !important;
             transition: opacity 0.22s ease, transform 0.22s ease;
         }
         .sky-player-overlay-bottom.idle-hidden {

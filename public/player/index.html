@@ -38,8 +38,9 @@
     </script>
     <script src="player.min.js"></script>
     <script>
-        // Forwarding eventi a parent window se incorporato in iframe
+        // Forwarding eventi e sincronizzazione con la parent window
         if (window.parent && window.parent !== window) {
+            // Ascolta comandi dal genitore
             window.addEventListener('message', (e) => {
                 if (e.data && e.data.action === 'jw_toggle_play') {
                     if (window.jwplayer && window.jwplayer('player')) {
@@ -47,14 +48,82 @@
                     }
                 }
             });
+
+            // Intercetta click su tasto fullscreen in capture mode per non mandare in fullscreen solo l'iframe
+            document.addEventListener('click', (e) => {
+                const fsBtn = e.target.closest('.jw-icon-fullscreen');
+                if (fsBtn) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+                    window.parent.postMessage({ type: 'jw_toggle_container_fullscreen' }, '*');
+                }
+            }, true);
+
+            // Intercetta doppio click sul video per il fullscreen
+            document.addEventListener('dblclick', (e) => {
+                const videoEl = e.target.closest('video') || e.target.closest('.jw-video') || e.target.closest('.jwplayer');
+                if (videoEl && !e.target.closest('.jw-controlbar')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+                    window.parent.postMessage({ type: 'jw_toggle_container_fullscreen' }, '*');
+                }
+            }, true);
+
+            // Intercetta la scorciatoia F all'interno dell'iframe
+            window.addEventListener('keydown', (e) => {
+                if (e.key === 'f' || e.key === 'F') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    e.stopImmediatePropagation();
+                    window.parent.postMessage({ type: 'jw_toggle_container_fullscreen' }, '*');
+                }
+            }, true);
+
+            // Sincronizza movimento mouse all'interno dell'iframe verso il genitore
+            const notifyParentActive = () => {
+                window.parent.postMessage({ type: 'jw_user_active' }, '*');
+            };
+            window.addEventListener('mousemove', notifyParentActive, { passive: true });
+            window.addEventListener('pointermove', notifyParentActive, { passive: true });
+            window.addEventListener('click', notifyParentActive, { passive: true });
+
+            // Monitora istanze JWPlayer
             const checkJw = setInterval(() => {
                 if (window.jwplayer && window.jwplayer('player') && window.jwplayer('player').on) {
                     clearInterval(checkJw);
                     const jw = window.jwplayer('player');
+
+                    // Override del metodo setFullscreen di JWPlayer per delegare al container genitore
+                    const origSetFullscreen = jw.setFullscreen;
+                    jw.setFullscreen = function(state) {
+                        window.parent.postMessage({ type: 'jw_toggle_container_fullscreen', state: state }, '*');
+                        return this;
+                    };
+
                     jw.on('play', () => window.parent.postMessage({ type: 'jw_state', state: 'playing' }, '*'));
                     jw.on('pause', () => window.parent.postMessage({ type: 'jw_state', state: 'paused' }, '*'));
                     jw.on('userActive', () => window.parent.postMessage({ type: 'jw_user_active' }, '*'));
                     jw.on('userInactive', () => window.parent.postMessage({ type: 'jw_user_inactive' }, '*'));
+
+                    // MutationObserver su #player per monitorare la classe .jw-flag-user-inactive in tempo reale
+                    const playerEl = document.getElementById('player');
+                    if (playerEl) {
+                        const observer = new MutationObserver((mutations) => {
+                            for (const mutation of mutations) {
+                                if (mutation.attributeName === 'class') {
+                                    const isInactive = playerEl.classList.contains('jw-flag-user-inactive');
+                                    if (isInactive) {
+                                        window.parent.postMessage({ type: 'jw_user_inactive' }, '*');
+                                    } else {
+                                        window.parent.postMessage({ type: 'jw_user_active' }, '*');
+                                    }
+                                }
+                            }
+                        });
+                        observer.observe(playerEl, { attributes: true });
+                    }
                 }
             }, 300);
         }

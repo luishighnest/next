@@ -227,13 +227,15 @@ function SkyContent() {
             setIsUserActive(false);
         }, 3000);
 
-        // Ascolta messaggi dall'iframe del player per sincronizzazione controlli e attività
+        // Ascolta messaggi dall'iframe del player per sincronizzazione controlli, attività e fullscreen unificato
         const handlePlayerMessage = (e) => {
             if (e.data && typeof e.data === "object") {
                 if (e.data.type === "jw_user_active") {
                     handleMouseMove();
                 } else if (e.data.type === "jw_user_inactive") {
                     setIsUserActive(false);
+                } else if (e.data.type === "jw_toggle_container_fullscreen") {
+                    toggleFullscreen();
                 }
             }
         };
@@ -610,7 +612,6 @@ function SkyContent() {
 
     return (
         <div
-            ref={containerRef}
             className={`sky-app ${mounted ? "is-mounted" : "is-mounting"} ${isFullscreen ? "is-fullscreen" : ""}`}
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
@@ -628,8 +629,8 @@ function SkyContent() {
 
             {/* Layout Principale Fullscreen 100vw x 100vh */}
             <main className="sky-main">
-                {/* 1. Fullscreen Native Player Shaka */}
-                <div className="sky-native-player-container">
+                {/* 1. Fullscreen Native Player Container Unificato (include video + custom UI + popups) */}
+                <div ref={containerRef} className="sky-native-player-container">
                     {/* Backdrop di preload per eliminare scatti prima dell'avvio: sparisce irreversibilmente al primo frame */}
                     {Boolean(transPoster || currentEpg?.immagine) && !hasStartedPlaying && (
                         <div className="sky-player-backdrop-preload">
@@ -687,11 +688,10 @@ function SkyContent() {
                             <div className="sky-spinner" style={{ width: "52px", height: "52px", borderWidth: "3.5px" }} />
                         </div>
                     )}
-                </div>
 
-                {/* 2. Deck Overlay Inferiore */}
-                <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
-                    <div className="sky-player-modern-deck">
+                    {/* 2. Deck Overlay Inferiore */}
+                    <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
+                        <div className="sky-player-modern-deck">
                         {/* Header Info */}
                         <div className="sky-player-info-row">
                             <div className="sky-player-meta-left">
@@ -972,20 +972,21 @@ function SkyContent() {
                         )}
                     </div>
                 </aside>
-            </main>
 
-            {/* Modale Guida TV EPG */}
-            <GuidaTvModal
-                isOpen={isGuidaOpen}
-                onClose={() => setIsGuidaOpen(false)}
-            />
-
-            {/* Modale Impostazioni Tecniche & Player */}
-            {isSettingsOpen && (
-                <SettingsModal
-                    onClose={() => setIsSettingsOpen(false)}
+                {/* Modale Guida TV EPG */}
+                <GuidaTvModal
+                    isOpen={isGuidaOpen}
+                    onClose={() => setIsGuidaOpen(false)}
                 />
-            )}
+
+                    {/* Modale Impostazioni Tecniche & Player */}
+                    {isSettingsOpen && (
+                        <SettingsModal
+                            onClose={() => setIsSettingsOpen(false)}
+                        />
+                    )}
+                </div>
+            </main>
         </div>
     );
 }

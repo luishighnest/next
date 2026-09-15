@@ -128,6 +128,8 @@ export default function EventoPlayerPage() {
                     handleMouseMove();
                 } else if (e.data.type === "jw_user_inactive") {
                     setIsUserActive(false);
+                } else if (e.data.type === "jw_toggle_container_fullscreen") {
+                    toggleFullscreen();
                 }
             }
         };
@@ -411,7 +413,6 @@ export default function EventoPlayerPage() {
 
     return (
         <div
-            ref={containerRef}
             className={`sky-app ${mounted ? "is-mounted" : "is-mounting"} ${isFullscreen ? "is-fullscreen" : ""}`}
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
@@ -428,8 +429,8 @@ export default function EventoPlayerPage() {
             </button>
 
             <main className="sky-main">
-                {/* 1. Fullscreen Player Container con Iframe Estensione */}
-                <div className="sky-native-player-container">
+                {/* 1. Fullscreen Player Container Unificato con Iframe Estensione */}
+                <div ref={containerRef} className="sky-native-player-container">
                     {/* Copertina di preload */}
                     {Boolean(transPoster || coverImg) && !hasStartedPlaying && (
                         <div className="sky-player-backdrop-preload">
@@ -484,11 +485,10 @@ export default function EventoPlayerPage() {
                             <div className="sky-spinner" style={{ width: "52px", height: "52px", borderWidth: "3.5px" }} />
                         </div>
                     )}
-                </div>
 
-                {/* 2. Deck Overlay Inferiore */}
-                <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
-                    <div className="sky-player-modern-deck">
+                    {/* 2. Deck Overlay Inferiore */}
+                    <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
+                        <div className="sky-player-modern-deck">
 
                         {/* Header Info */}
                         <div className="sky-player-info-row">
@@ -701,10 +701,11 @@ export default function EventoPlayerPage() {
                         )}
                     </div>
                 </aside>
-            </main>
 
-            <GuidaTvModal isOpen={isGuidaOpen} onClose={() => setIsGuidaOpen(false)} />
-            {isSettingsOpen && <SettingsModal onClose={() => setIsSettingsOpen(false)} />}
-        </div>
-    );
+                <GuidaTvModal isOpen={isGuidaOpen} onClose={() => setIsGuidaOpen(false)} />
+                {isSettingsOpen && <SettingsModal onClose={() => setIsSettingsOpen(false)} />}
+            </div>
+        </main>
+    </div>
+);
 }
