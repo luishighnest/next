@@ -7408,9 +7408,11 @@ body:has(.sky-app) {
             display: flex;
             align-items: center;
             justify-content: flex-end; /* Allinea i nostri controlli in basso a destra sopra la timeline */
-            gap: 16px;
+            gap: 14px;
             width: 100%;
             pointer-events: none;
+            position: relative;
+            bottom: 42px; /* Solleva i nostri pulsanti nettamente sopra la barra e i tasti dell'estensione */
         }
 
         .sky-controls-group-left,
