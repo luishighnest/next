@@ -413,7 +413,7 @@ export default function EventoPlayerPage() {
 
     return (
         <div
-            className={`sky-app ${mounted ? "is-mounted" : "is-mounting"} ${isFullscreen ? "is-fullscreen" : ""}`}
+            className={`sky-app embedded-player-page ${mounted ? "is-mounted" : "is-mounting"} ${isFullscreen ? "is-fullscreen" : ""}`}
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
         >
