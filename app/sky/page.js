@@ -1,16 +1,16 @@
 "use client";
-import React, { useState, useEffect, useRef, useTransition, useCallback, Suspense } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import React, { useState, useEffect, useRef, useTransition, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import MobileSkyView from "@/components/MobileSkyView";
 import { useDeviceState } from "@/components/DeviceProvider";
 import { fetchSecureJson } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug, getChannelSlug, matchSlug } from "@/lib/slug";
 import { getTechSettings } from "@/lib/settings";
-import { buildExtensionUrl, DEFAULT_EXT_ID } from "@/lib/extensionPlayer";
-import GuidaTvModal from "@/components/GuidaTvModal";
-import SettingsModal from "@/components/SettingsModal";
+
+const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
 
 const SKY_CID_MAP = {
     "skysportuno": "sksportuno.png", "skysport24": "sksport24.png", "skysportarena": "sksportarena.png",
@@ -36,7 +36,41 @@ function cidFromUrl(url) {
     return m ? m[1].toLowerCase() : "";
 }
 
-const buildExtUrl = buildExtensionUrl;
+function buildExtUrl(ch) {
+    const baseUrl = (ch?.url || ch?.mpd || "").trim();
+    if (!baseUrl) return "";
+    const tech = getTechSettings();
+    const extId = tech.extensionId || DEFAULT_EXT_ID;
+    const isTsStream = baseUrl.toLowerCase().includes(".ts");
+    if (isTsStream) {
+        const origin = typeof window !== "undefined" ? window.location.origin : "https://next-zeta-smoky.vercel.app";
+        const m3uUrl = `${origin}/api/m3u?url=${encodeURIComponent(baseUrl)}&title=${encodeURIComponent(ch.name || "Sky Sport F1")}`;
+        return `chrome-extension://${extId}/iptv/player.html#${m3uUrl}`;
+    }
+    const extPrefix = `chrome-extension://${extId}/pages/player.html#`;
+
+    const parts = [];
+    const rawKey = ch.kid_key || "";
+    if (rawKey && rawKey.includes(":")) {
+        const ckObj = {};
+        const pairs = rawKey.split(",");
+        pairs.forEach(pair => {
+            const p = pair.split(":");
+            if (p.length === 2 && p[0].trim() && p[1].trim()) {
+                ckObj[p[0].trim()] = p[1].trim();
+            }
+        });
+        if (Object.keys(ckObj).length > 0) {
+            try { parts.push("ck=" + btoa(JSON.stringify(ckObj))); } catch(e) {}
+        }
+    }
+    const uaVal = tech.customUserAgent || "";
+    if (uaVal) {
+        try { parts.push("headers=" + btoa(JSON.stringify({ "User-Agent": uaVal }))); } catch(e) {}
+    }
+    const sep = baseUrl.includes("?") ? "&" : "?";
+    return extPrefix + baseUrl + (parts.length > 0 ? sep + parts.join("&") : "");
+}
 
 function parseChannelList(json, sourceName) {
     const list = [];
@@ -74,24 +108,10 @@ let memorySkyChannels = {};
 let memorySkyGuide = null;
 
 function SkyContent() {
-    const router = useRouter();
     const { isMobile } = useDeviceState();
     const searchParams = useSearchParams();
     const chParam = searchParams.get("ch") || "";
     const srcParam = searchParams.get("src") || "";
-
-    const handleBack = () => {
-        let target = "/home";
-        if (typeof window !== "undefined") {
-            try {
-                const stored = sessionStorage.getItem("nmdz_returnPath");
-                if (stored && !stored.startsWith("/sky")) {
-                    target = stored;
-                }
-            } catch(e) {}
-        }
-        router.push(target);
-    };
 
     const [currentSource, setCurrentSource] = useState(() => {
         if (srcParam === "sky2" || srcParam === "sky2.json" || srcParam === "2") return "sky2.json";
@@ -187,95 +207,18 @@ function SkyContent() {
         return "";
     });
 
-    // Stati Player e Contenitore Fullscreen
-    const containerRef = useRef(null);
-    const [isFullscreen, setIsFullscreen] = useState(false);
-    const [hasStartedPlaying, setHasStartedPlaying] = useState(false);
-    const [isVideoBuffering, setIsVideoBuffering] = useState(true);
-
-    // Modali Guida TV e Impostazioni Tecniche generali
-    const [isGuidaOpen, setIsGuidaOpen] = useState(false);
-    const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-
-    // Stato Drawer Canali a destra (popup nel player)
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const [isFullscreenChannelsVisible, setIsFullscreenChannelsVisible] = useState(true);
-
-    // Controlli Overlay (auto-hide dopo 3 secondi di inattività mouse, ricompare subito al movimento)
-    const [isUserActive, setIsUserActive] = useState(true);
-    const idleTimerRef = useRef(null);
-
-    const handleMouseMove = useCallback(() => {
-        setIsUserActive(true);
-        if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-        idleTimerRef.current = setTimeout(() => {
-            setIsUserActive(false);
-        }, 3000);
-    }, []);
-
     useEffect(() => {
         setMounted(true);
-        const handleFsChange = () => {
-            setIsFullscreen(Boolean(document.fullscreenElement));
-        };
-        document.addEventListener("fullscreenchange", handleFsChange);
+    }, []);
 
-        // Ascolta il movimento del mouse su tutta la finestra
-        window.addEventListener("mousemove", handleMouseMove, { passive: true });
-        window.addEventListener("pointermove", handleMouseMove, { passive: true });
-
-        // Avvia il timer di 3 secondi all'inizio
-        idleTimerRef.current = setTimeout(() => {
-            setIsUserActive(false);
-        }, 3000);
-
-        // Ascolta messaggi dall'iframe del player per sincronizzazione controlli, attività e fullscreen unificato
-        const handlePlayerMessage = (e) => {
-            if (e.data && typeof e.data === "object") {
-                if (e.data.type === "jw_user_active") {
-                    handleMouseMove();
-                } else if (e.data.type === "jw_user_inactive") {
-                    setIsUserActive(false);
-                } else if (e.data.type === "jw_toggle_container_fullscreen") {
-                    toggleFullscreen();
-                }
-            }
-        };
-        window.addEventListener("message", handlePlayerMessage);
-
-        return () => {
-            if (idleTimerRef.current) clearTimeout(idleTimerRef.current);
-            document.removeEventListener("fullscreenchange", handleFsChange);
-            window.removeEventListener("mousemove", handleMouseMove);
-            window.removeEventListener("pointermove", handleMouseMove);
-            window.removeEventListener("message", handlePlayerMessage);
-        };
-    }, [handleMouseMove]);
-
-    // Reset stato iframe al cambio canale per transizione pulita
+    // Resetta iframeLoaded al cambio canale per transizione fluida
     useEffect(() => {
         setIframeLoaded(false);
-        setHasStartedPlaying(false);
-        setIsVideoBuffering(true);
-        handleMouseMove();
-    }, [selectedChannel, handleMouseMove]);
+    }, [selectedChannel]);
 
-    const toggleFullscreen = () => {
-        const el = containerRef.current || document.documentElement;
-        if (!document.fullscreenElement) {
-            if (el.requestFullscreen) {
-                el.requestFullscreen().catch(() => {});
-            } else if (el.webkitRequestFullscreen) {
-                el.webkitRequestFullscreen();
-            }
-        } else {
-            if (document.exitFullscreen) {
-                document.exitFullscreen().catch(() => {});
-            } else if (document.webkitExitFullscreen) {
-                document.webkitExitFullscreen();
-            }
-        }
-    };
+    const playerWrapRef = useRef(null);
+    const playerZoneRef = useRef(null);
+    const nowRowRef = useRef(null);
 
     // Reagisci immediatamente al cambio di chParam
     useEffect(() => {
@@ -350,8 +293,7 @@ function SkyContent() {
                     }
                 } catch(e) {}
 
-                const currentSelectedSlug = selectedChannel ? (getChannelSlug(selectedChannel) || selectedChannel.name || "") : "";
-                const targetKey = currentSelectedSlug || chParam || storedTarget;
+                const targetKey = chParam || storedTarget;
 
                 // 1. Cerca il canale nella sorgente attiva
                 let found = null;
@@ -388,21 +330,11 @@ function SkyContent() {
                     }
                 }
 
-                // 3. Seleziona canale (NON ricreare l'oggetto se il canale attuale è già valido per non distruggere Shaka!)
+                // 3. Seleziona canale
                 setSelectedChannel(prevSelected => {
                     if (prevSelected) {
                         const stillExists = channelList.find(c => c.slug === prevSelected.slug || c.name === prevSelected.name);
-                        if (stillExists) {
-                            // Se i parametri chiave non sono cambiati, mantieni esattamente la stessa referenza di memoria prevSelected!
-                            const prevUrl = (prevSelected.url || prevSelected.mpd || "").trim();
-                            const stillUrl = (stillExists.url || stillExists.mpd || "").trim();
-                            const prevKey = (prevSelected.kid_key || prevSelected.key || "").trim();
-                            const stillKey = (stillExists.kid_key || stillExists.key || "").trim();
-                            if (prevUrl === stillUrl && prevKey === stillKey) {
-                                return prevSelected;
-                            }
-                            return stillExists;
-                        }
+                        if (stillExists) return stillExists;
                     }
                     if (found) return found;
                     if (channelList.length > 0) return channelList[0];
@@ -442,6 +374,34 @@ function SkyContent() {
         };
     }, [currentSource]);
 
+    // Fit player 16:9
+    useEffect(() => {
+        function fitPlayer() {
+            const z = playerZoneRef.current;
+            const wWrap = playerWrapRef.current;
+            const nRow = nowRowRef.current;
+            if (!z || !wWrap) return;
+            const w = z.clientWidth;
+            const h = z.clientHeight;
+            if (!w || !h) return;
+            const r = 16 / 9;
+            let targetW = w;
+            let targetH = w / r;
+            if (targetH > h) {
+                targetH = h;
+                targetW = h * r;
+            }
+            const finalWidth = Math.floor(targetW) + "px";
+            const finalHeight = Math.floor(targetH) + "px";
+            wWrap.style.width = finalWidth;
+            wWrap.style.height = finalHeight;
+            if (nRow) nRow.style.width = finalWidth;
+        }
+
+        fitPlayer();
+        window.addEventListener("resize", fitPlayer);
+        return () => window.removeEventListener("resize", fitPlayer);
+    }, [selectedChannel]);
 
     // Trova programma EPG
     const getCurrentProgram = (channelName) => {
@@ -525,41 +485,22 @@ function SkyContent() {
 
     const currentEpg = selectedChannel ? getCurrentProgram(selectedChannel.name) : null;
     const playerSrc = selectedChannel ? buildExtUrl(selectedChannel) : "";
-    const channelLogo = selectedChannel?.logo || transLogo || "";
-
-    const selectChannelWithPoster = (nextCh) => {
-        if (!nextCh) return;
-        const epg = getCurrentProgram(nextCh.name);
-        const newPoster = epg?.immagine || "";
-        const newLogo = nextCh.logo || "";
-        setTransPoster(newPoster);
-        setTransLogo(newLogo);
-        if (typeof window !== "undefined") {
-            try {
-                sessionStorage.setItem("nmdz_transition_poster", newPoster);
-                sessionStorage.setItem("nmdz_transition_logo", newLogo);
-            } catch(e) {}
-        }
-        setHasStartedPlaying(false);
-        setIsVideoBuffering(true);
-        setSelectedChannel(nextCh);
-    };
 
     const handleNextChannel = () => {
         if (filteredChannels.length === 0) return;
         const curIdx = filteredChannels.findIndex(c => c.slug === selectedChannel?.slug);
         const nextIdx = (curIdx + 1) % filteredChannels.length;
-        selectChannelWithPoster(filteredChannels[nextIdx]);
+        setSelectedChannel(filteredChannels[nextIdx]);
     };
 
     const handlePrevChannel = () => {
         if (filteredChannels.length === 0) return;
         const curIdx = filteredChannels.findIndex(c => c.slug === selectedChannel?.slug);
         const prevIdx = (curIdx - 1 + filteredChannels.length) % filteredChannels.length;
-        selectChannelWithPoster(filteredChannels[prevIdx]);
+        setSelectedChannel(filteredChannels[prevIdx]);
     };
 
-    // Scorciatoie tastiera per cambiare canale su PC (Tasti Freccia Su e Freccia Giù, F per fullscreen)
+    // Scorciatoie tastiera per cambiare canale su PC (Tasti Freccia Su e Freccia Giù)
     useEffect(() => {
         const handleKeyDown = (e) => {
             if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
@@ -569,9 +510,6 @@ function SkyContent() {
             } else if (e.key === "ArrowDown") {
                 e.preventDefault();
                 handleNextChannel();
-            } else if (e.key === "f" || e.key === "F") {
-                e.preventDefault();
-                toggleFullscreen();
             }
         };
 
@@ -597,11 +535,15 @@ function SkyContent() {
         return (
             <MobileSkyView
                 channels={channels}
-                guideData={guideData}
                 selectedChannel={selectedChannel}
                 setSelectedChannel={setSelectedChannel}
                 currentSource={currentSource}
                 setCurrentSource={setCurrentSource}
+                activeTab={activeTab}
+                setActiveTab={setActiveTab}
+                availableGroups={availableGroups}
+                searchQuery={searchQuery}
+                setSearchQuery={setSearchQuery}
                 filteredChannels={filteredChannels}
                 currentEpg={currentEpg}
                 playerSrc={playerSrc}
@@ -613,247 +555,14 @@ function SkyContent() {
     }
 
     return (
-        <div
-            className={`sky-app embedded-player-page ${mounted ? "is-mounted" : "is-mounting"} ${isFullscreen ? "is-fullscreen" : ""}`}
-            onMouseMove={handleMouseMove}
-            onClick={handleMouseMove}
-        >
-            <Navbar activeFilter="sky" />
-            {/* Layout Principale Fullscreen 100vw x 100vh */}
-            <main ref={containerRef} className="sky-main">
-                {/* 1. Fullscreen Native Player Container Unificato (include video + custom UI + popups) */}
-                <div className="sky-native-player-container">
-                    {/* Tasto Minimal solo icona freccia indietro che riporta alla sezione da cui si proviene */}
-                    <button
-                        type="button"
-                        className={`sky-back-minimal-btn ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}
-                        onClick={handleBack}
-                        title="Torna indietro"
-                        aria-label="Torna indietro"
-                    >
-                        <span className="material-symbols-rounded">arrow_back</span>
-                    </button>
-                    {/* Backdrop di preload per eliminare scatti prima dell'avvio: sparisce irreversibilmente al primo frame */}
-                    {Boolean(transPoster || currentEpg?.immagine) && !hasStartedPlaying && (
-                        <div className="sky-player-backdrop-preload">
-                            <img
-                                src={transPoster || currentEpg?.immagine}
-                                alt=""
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    objectFit: "cover",
-                                    filter: "brightness(0.55) contrast(1.05)"
-                                }}
-                            />
-                            <div
-                                style={{
-                                    position: "absolute",
-                                    inset: 0,
-                                    background: "linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.1) 40%, rgba(3,5,10,0.92) 85%, rgba(1,2,5,0.98) 100%)"
-                                }}
-                            />
-                        </div>
-                    )}
+        <div className={`sky-app ${mounted ? "is-mounted" : "is-mounting"}`}>
+            {/* Header / Navbar Identica alla Home ma neutra senza evidenziare filtri catalogo */}
+            <Navbar activeFilter={null} />
 
-                    {/* Player Iframe Estensione Chrome */}
-                    <iframe
-                        id="player-frame"
-                        src={playerSrc}
-                        allowFullScreen
-                        allow="autoplay; encrypted-media; fullscreen"
-                        title={selectedChannel?.name || "Sky Player"}
-                        onLoad={() => {
-                            setTimeout(() => {
-                                setIframeLoaded(true);
-                                setHasStartedPlaying(true);
-                                setIsVideoBuffering(false);
-                            }, 300);
-                        }}
-                        style={{
-                            display: "block",
-                            width: "100%",
-                            height: "100%",
-                            border: "none",
-                            background: "#000000",
-                            opacity: iframeLoaded ? 1 : 0.85,
-                            transition: "opacity 0.4s ease-in-out"
-                        }}
-                    />
-
-
-                    {/* Vignetta cinematografica */}
-                    <div className={`sky-player-vignette ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`} />
-
-                    {/* Spinner */}
-                    {(isVideoBuffering || loading || !hasStartedPlaying) && (
-                        <div className="sky-native-loader">
-                            <div className="sky-spinner" style={{ width: "52px", height: "52px", borderWidth: "3.5px" }} />
-                        </div>
-                    )}
-
-                    {/* 2. Deck Overlay Inferiore */}
-                    <div className={`sky-player-overlay-bottom ${!isUserActive && !isSidebarOpen ? "idle-hidden" : ""}`}>
-                        <div className="sky-player-modern-deck">
-                        {/* Header Info */}
-                        <div className="sky-player-info-row">
-                            <div className="sky-player-meta-left">
-                                <div className="sky-player-meta-details">
-                                    {/* Linea 1: LOGO + NOME CANALE + LIVE + CATEGORIA + SCADENZA */}
-                                    <div className="sky-player-tag-row">
-                                        <div className="sky-channel-identity">
-                                            <img
-                                                src={channelLogo || "/logos/sksport.png"}
-                                                className="sky-modern-logo"
-                                                alt=""
-                                                onError={(e) => {
-                                                    e.target.style.display = "none";
-                                                }}
-                                            />
-                                            <span className="sky-channel-name-text">{selectedChannel?.name || "Canale Sky"}</span>
-                                        </div>
-                                        <span className="live-badge"><span className="dot"></span>LIVE</span>
-                                        <span className="now-group">{selectedChannel?.group || "Sky"}</span>
-                                        {(() => {
-                                            const streamUrl = selectedChannel?.url || selectedChannel?.mpd || "";
-                                            const expMatch = streamUrl.match(/_e~([0-9]+)_/);
-                                            if (!expMatch) return null;
-                                            const expTs = parseInt(expMatch[1], 10) * 1000;
-                                            const expDate = new Date(expTs);
-                                            const now = new Date();
-                                            const diffMin = Math.round((expDate - now) / 60000);
-                                            const timeStr = String(expDate.getHours()).padStart(2, "0") + ":" + String(expDate.getMinutes()).padStart(2, "0");
-                                            const isExpired = diffMin <= 0;
-                                            let expiryText = isExpired
-                                                ? "Scaduto alle " + timeStr
-                                                : diffMin < 60
-                                                ? "Scade tra " + diffMin + " min"
-                                                : "Scadenza: " + timeStr;
-                                            return (
-                                                <span className={`now-expiry-badge ${isExpired ? "expired" : ""}`}>
-                                                    <i className="fa-regular fa-clock"></i>
-                                                    <span>{expiryText}</span>
-                                                </span>
-                                            );
-                                        })()}
-                                    </div>
-                                    {/* Linea 2: TITOLO PROGRAMMA */}
-                                    <h2 className="sky-player-big-title">
-                                        {currentEpg?.titolo || selectedChannel?.name || "Diretta TV"}
-                                    </h2>
-                                    {/* Linea 3: EPG */}
-                                    <div className="sky-player-epg-subtitle">
-                                        {currentEpg ? `${currentEpg.ora} ${currentEpg.next ? `• A seguire: ${currentEpg.next}` : ""}` : (selectedChannel?.group || "Diretta streaming")}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Barra dei Controlli Inferiori Integrati (senza timeline finta) */}
-                        <div className="sky-player-controls-bar">
-                            {/* Gruppo Destra: Guida TV, Impostazioni Tecniche, Canali, Zapping */}
-                            <div className="sky-controls-group-right">
-                                <button
-                                    type="button"
-                                    className="sky-modern-btn icon-only"
-                                    onClick={() => setIsGuidaOpen(true)}
-                                    title="Guida TV"
-                                >
-                                    <span className="material-symbols-rounded">calendar_today</span>
-                                </button>
-
-                                <button
-                                    type="button"
-                                    className="sky-modern-btn icon-only"
-                                    onClick={() => setIsSettingsOpen(true)}
-                                    title="Impostazioni"
-                                >
-                                    <span className="material-symbols-rounded">settings</span>
-                                </button>
-
-                                <button
-                                    type="button"
-                                    className="sky-modern-btn icon-only"
-                                    onClick={toggleFullscreen}
-                                    title={isFullscreen ? "Esci da schermo intero (F)" : "Schermo intero canale (F)"}
-                                    aria-label={isFullscreen ? "Esci da schermo intero" : "Schermo intero"}
-                                >
-                                    <span className="material-symbols-rounded">
-                                        {isFullscreen ? "fullscreen_exit" : "fullscreen"}
-                                    </span>
-                                </button>
-
-                                {isFullscreen && (
-                                    <button
-                                        type="button"
-                                        className="sky-modern-btn icon-only"
-                                        onClick={() => setIsFullscreenChannelsVisible(v => !v)}
-                                        title={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
-                                        aria-label={isFullscreenChannelsVisible ? "Nascondi canali" : "Mostra canali"}
-                                    >
-                                        <span className="material-symbols-rounded">
-                                            {isFullscreenChannelsVisible ? "view_sidebar" : "view_sidebar_r"}
-                                        </span>
-                                    </button>
-                                )}
-
-                                <button
-                                    type="button"
-                                    className="sky-channels-trigger-btn icon-only"
-                                    onClick={() => setIsSidebarOpen(true)}
-                                    title="Canali"
-                                >
-                                    <span className="material-symbols-rounded">format_list_bulleted</span>
-                                </button>
-
-                                <div className="zap-controls">
-                                    <button
-                                        type="button"
-                                        className="zap-btn"
-                                        onClick={handlePrevChannel}
-                                        title="Canale precedente (Freccia Su ↑)"
-                                        aria-label="Canale precedente"
-                                    >
-                                        <span className="material-symbols-rounded">keyboard_arrow_up</span>
-                                    </button>
-                                    <button
-                                        type="button"
-                                        className="zap-btn"
-                                        onClick={handleNextChannel}
-                                        title="Canale successivo (Freccia Giù ↓)"
-                                        aria-label="Canale successivo"
-                                    >
-                                        <span className="material-symbols-rounded">keyboard_arrow_down</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* 3. Backdrop e Drawer Popup Laterale a Destra (nel player) */}
-                <div
-                    className={`sky-sidebar-backdrop ${isSidebarOpen ? "is-open" : ""}`}
-                    onClick={() => setIsSidebarOpen(false)}
-                />
-
-                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""} ${isFullscreen && !isFullscreenChannelsVisible ? "fullscreen-channels-hidden" : ""}`}>
-                    {/* Header Drawer */}
-                    <div className="sky-sidebar-header">
-                        <h3 className="sky-sidebar-header-title">
-                            <i className="fas fa-tv" style={{ color: "#00e59b" }} />
-                            <span>Canali TV</span>
-                        </h3>
-                        <button
-                            type="button"
-                            className="sky-sidebar-close-btn"
-                            onClick={() => setIsSidebarOpen(false)}
-                            aria-label="Chiudi elenco canali"
-                        >
-                            <span className="material-symbols-rounded">close</span>
-                        </button>
-                    </div>
-
+            {/* Layout Principale Sky Glass */}
+            <main className="sky-main">
+                {/* Sidebar Canali */}
+                <aside className="sky-sidebar">
                     {/* Search */}
                     <div className="sky-search">
                         <span className="material-symbols-rounded">search</span>
@@ -929,11 +638,7 @@ function SkyContent() {
                                     <div
                                         key={ch.name + idx}
                                         className={`sky-item ${active ? "active" : ""}`}
-                                        onClick={() => {
-                                            selectChannelWithPoster(ch);
-                                            // Su schermi ridotti chiudi drawer dopo selezione per massima visibilità
-                                            if (window.innerWidth < 880) setIsSidebarOpen(false);
-                                        }}
+                                        onClick={() => setSelectedChannel(ch)}
                                     >
                                         <div className="sky-item-thumb-box">
                                             {epg?.immagine && (
@@ -973,19 +678,162 @@ function SkyContent() {
                     </div>
                 </aside>
 
-                {/* Modale Guida TV EPG */}
-                <GuidaTvModal
-                    isOpen={isGuidaOpen}
-                    onClose={() => setIsGuidaOpen(false)}
-                />
+                {/* Sezione Destra: Player + Info Deck */}
+                <section className="sky-right">
+                    <div className="sky-player-zone" ref={playerZoneRef}>
+                        <div className="sky-player-wrap" ref={playerWrapRef}>
+                            {/* Backdrop cinematico di transizione: evita schermate nere prima dell'avvio video */}
+                            {Boolean(transPoster || currentEpg?.immagine || selectedChannel?.image) && !iframeLoaded && (
+                                <div
+                                    className="sky-player-backdrop-preload"
+                                    style={{
+                                        position: "absolute",
+                                        inset: 0,
+                                        zIndex: 1,
+                                        pointerEvents: "none",
+                                        overflow: "hidden",
+                                        transition: "opacity 0.4s ease"
+                                    }}
+                                >
+                                    <img
+                                        src={transPoster || currentEpg?.immagine || selectedChannel?.image}
+                                        alt=""
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            objectFit: "cover",
+                                            filter: "brightness(0.5) contrast(1.05)"
+                                        }}
+                                    />
+                                    <div
+                                        style={{
+                                            position: "absolute",
+                                            inset: 0,
+                                            background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.85) 100%)"
+                                        }}
+                                    />
+                                    <div
+                                        style={{
+                                            position: "absolute",
+                                            top: "50%",
+                                            left: "50%",
+                                            transform: "translate(-50%, -50%)",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            gap: "12px"
+                                        }}
+                                    >
+                                        <div className="sky-spinner" style={{ width: "38px", height: "38px", borderWidth: "3px" }} />
+                                    </div>
+                                </div>
+                            )}
 
-                    {/* Modale Impostazioni Tecniche & Player */}
-                    {isSettingsOpen && (
-                        <SettingsModal
-                            onClose={() => setIsSettingsOpen(false)}
-                        />
-                    )}
-                </div>
+                            {loading && !selectedChannel ? (
+                                <div className="sky-loader">
+                                    <div className="sky-spinner"></div>
+                                    <span className="sky-loader-text">Caricamento canali Sky...</span>
+                                </div>
+                            ) : (
+                                <iframe
+                                    id="player-frame"
+                                    src={playerSrc}
+                                    allow="autoplay; encrypted-media; fullscreen"
+                                    allowFullScreen
+                                    title="Sky Player"
+                                    onLoad={() => {
+                                        setTimeout(() => setIframeLoaded(true), 250);
+                                    }}
+                                    style={{
+                                        opacity: iframeLoaded ? 1 : 0.85,
+                                        transition: "opacity 0.4s ease"
+                                    }}
+                                />
+                            )}
+                        </div>
+                    </div>
+
+                    {/* Now Row / Deck Info */}
+                    <div className="now-row" ref={nowRowRef}>
+                        <div className="now-poster-box">
+                            {currentEpg?.immagine ? (
+                                <img src={currentEpg.immagine} className="now-poster-img" alt="" />
+                            ) : null}
+                            <img
+                                src={selectedChannel?.logo || "/logos/sksport.png"}
+                                className="now-logo"
+                                alt=""
+                            />
+                        </div>
+
+                        <div className="now-info">
+                            <div className="now-title-row">
+                                <h2 className="now-title">{selectedChannel?.name || "Seleziona un canale"}</h2>
+                            </div>
+                            <div className="now-meta-row">
+                                <span className="live-badge"><span className="dot"></span>LIVE</span>
+                                <span className="now-group">{selectedChannel?.group || "Sky"}</span>
+                                {(() => {
+                                    const streamUrl = selectedChannel?.url || selectedChannel?.mpd || "";
+                                    const expMatch = streamUrl.match(/_e~([0-9]+)_/);
+                                    if (!expMatch) return null;
+                                    const expTs = parseInt(expMatch[1], 10) * 1000;
+                                    const expDate = new Date(expTs);
+                                    const now = new Date();
+                                    const diffMin = Math.round((expDate - now) / 60000);
+                                    const timeStr = String(expDate.getHours()).padStart(2, "0") + ":" + String(expDate.getMinutes()).padStart(2, "0");
+                                    let dateStr = "";
+                                    if (expDate.getDate() !== now.getDate()) {
+                                        dateStr = String(expDate.getDate()).padStart(2, "0") + "/" + String(expDate.getMonth() + 1).padStart(2, "0") + " ";
+                                    }
+                                    const isExpired = diffMin <= 0;
+                                    let expiryText = "";
+                                    if (isExpired) {
+                                        expiryText = "Scaduto alle " + timeStr;
+                                    } else if (diffMin < 60) {
+                                        expiryText = "Scade tra " + diffMin + " min (" + timeStr + ")";
+                                    } else {
+                                        expiryText = "Scadenza: " + dateStr + timeStr;
+                                    }
+                                    return (
+                                        <span className={`now-expiry-badge ${isExpired ? "expired" : ""}`} id="nowExpiry" style={{ display: "inline-flex" }}>
+                                            <i className="fa-regular fa-clock" style={{ marginRight: "4px" }}></i>
+                                            <span id="nowExpiryText">{expiryText}</span>
+                                        </span>
+                                    );
+                                })()}
+                            </div>
+                            <div className="now-epg-text">
+                                {currentEpg ? `${currentEpg.ora} - ${currentEpg.titolo} ${currentEpg.next ? `(Succ: ${currentEpg.next})` : ""}` : "Trasmissione in diretta"}
+                            </div>
+                            <div className="now-progress-container">
+                                <div className="now-progress-bar" style={{ width: `${currentEpg ? currentEpg.percent : 10}%` }}></div>
+                            </div>
+                        </div>
+
+                        {/* Zapping Controls con frecce Su / Giù per PC e Telecomando */}
+                        <div className="zap-controls">
+                            <button
+                                type="button"
+                                className="zap-btn zap-btn-up"
+                                onClick={handlePrevChannel}
+                                title="Canale precedente (Freccia Su ↑)"
+                                aria-label="Canale precedente"
+                            >
+                                <span className="material-symbols-rounded">keyboard_arrow_up</span>
+                            </button>
+                            <button
+                                type="button"
+                                className="zap-btn zap-btn-down"
+                                onClick={handleNextChannel}
+                                title="Canale successivo (Freccia Giù ↓)"
+                                aria-label="Canale successivo"
+                            >
+                                <span className="material-symbols-rounded">keyboard_arrow_down</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     );
