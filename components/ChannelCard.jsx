@@ -106,7 +106,7 @@ function getFirstStreamSource(channel) {
 }
 
 // Sub-component player Shaka ultra-veloce per preview in hover
-function CardShakaVideo({ channel, isReadyToDisplay }) {
+function CardShakaVideo({ channel, isReadyToDisplay, onVideoReady }) {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
@@ -240,6 +240,12 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 playsInline
                 disablePictureInPicture
                 controls={false}
+                onCanPlay={() => {
+                    if (onVideoReady) onVideoReady();
+                }}
+                onPlaying={() => {
+                    if (onVideoReady) onVideoReady();
+                }}
             />
             {isReadyToDisplay && (
                 <div className="card-live-preview-badge">
@@ -294,8 +300,12 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
 
     // ─── Hover Live Preview (Mostra il video dopo ESATTAMENTE 1.5s dall'ingresso del mouse) ───
     const [isHovering, setIsHovering] = useState(false);
-    const [isReadyToDisplay, setIsReadyToDisplay] = useState(false);
+    const [isHoverTimerDone, setIsHoverTimerDone] = useState(false);
+    const [isVideoPlaying, setIsVideoPlaying] = useState(false);
     const hoverTimerRef = useRef(null);
+
+    // L'anteprima è visibile SOLO quando sono passati i 1.5s ESATTI E il video ha già il primo frame
+    const isReadyToDisplay = isHoverTimerDone && isVideoPlaying;
 
     // Controlla disponibilità stream (Sky e canali con URL/sources non VOD e non scaduti)
     const src = getFirstStreamSource(channel);
@@ -305,15 +315,16 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const handleMouseEnter = () => {
         if (!canPreview) return;
         setIsHovering(true);
-        setIsReadyToDisplay(false);
+        setIsHoverTimerDone(false);
+        setIsVideoPlaying(false);
 
         if (hoverTimerRef.current) {
             clearTimeout(hoverTimerRef.current);
         }
 
-        // Esattamente dopo 1.5 secondi (1500ms) attiva la visibilità dell'anteprima
+        // Esattamente dopo 1.5 secondi (1500ms) il timer scatta: se il video è già partito, mostra subito
         hoverTimerRef.current = setTimeout(() => {
-            setIsReadyToDisplay(true);
+            setIsHoverTimerDone(true);
         }, 1500);
     };
 
@@ -323,7 +334,8 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
             hoverTimerRef.current = null;
         }
         setIsHovering(false);
-        setIsReadyToDisplay(false);
+        setIsHoverTimerDone(false);
+        setIsVideoPlaying(false);
     };
 
     const { startTransitionToPlayer } = useTransitionRouter();
@@ -335,7 +347,8 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
             hoverTimerRef.current = null;
         }
         setIsHovering(false);
-        setIsReadyToDisplay(false);
+        setIsHoverTimerDone(false);
+        setIsVideoPlaying(false);
 
         try {
             if (typeof window !== "undefined") {
@@ -423,6 +436,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     <CardShakaVideo
                         channel={channel}
                         isReadyToDisplay={isReadyToDisplay}
+                        onVideoReady={() => setIsVideoPlaying(true)}
                     />
                 )}
 
