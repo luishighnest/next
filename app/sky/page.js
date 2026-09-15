@@ -807,7 +807,7 @@ function SkyContent() {
                     onClick={() => setIsSidebarOpen(false)}
                 />
 
-                <aside className={`sky-sidebar-popup ${isSidebarOpen ? "is-open" : ""}`}>
+                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""}`}>
                     {/* Header Drawer */}
                     <div className="sky-sidebar-header">
                         <h3 className="sky-sidebar-header-title">

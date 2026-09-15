@@ -588,7 +588,7 @@ export default function EventoPlayerPage() {
                 {/* 3. Drawer Canali Correlati */}
                 <div className={`sky-sidebar-backdrop ${isSidebarOpen ? "is-open" : ""}`} onClick={() => setIsSidebarOpen(false)} />
 
-                <aside className={`sky-sidebar-popup ${isSidebarOpen ? "is-open" : ""}`}>
+                <aside className={`sky-sidebar-popup desktop-persistent ${isSidebarOpen ? "is-open" : ""}`}>
                     <div className="sky-sidebar-header">
                         <h3 className="sky-sidebar-header-title">
                             <i className="fas fa-tv" style={{ color: "#00e59b" }} />
