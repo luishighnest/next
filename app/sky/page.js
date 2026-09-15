@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef, useTransition, useCallback, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import Navbar from "@/components/Navbar";
 import { useDeviceState } from "@/components/DeviceProvider";
 import { fetchSecureJson } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
@@ -616,6 +617,7 @@ function SkyContent() {
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
         >
+            <Navbar activeFilter="sky" />
             {/* Layout Principale Fullscreen 100vw x 100vh */}
             <main className="sky-main">
                 {/* 1. Fullscreen Native Player Container Unificato (include video + custom UI + popups) */}

@@ -130,13 +130,13 @@ export default function Navbar({
     }, []);
 
     // La navbar ha la STESSA identica dimensione, struttura e posizione della Home su tutte le sezioni (Home, Sky, Evento)
-    const isSkyPage = pathname ? pathname.startsWith("/sky") : false;
+    const isPlayerPage = pathname ? (pathname.startsWith("/sky") || pathname.startsWith("/eventi/")) : false;
     const shouldHideSides = false;
 
     const lastScrollYRef = useRef(0);
 
     useEffect(() => {
-        if (isSkyPage) {
+        if (isPlayerPage) {
             setIsNavHidden(false);
             setIsScrolled(false);
             return;
@@ -149,7 +149,7 @@ export default function Navbar({
         }
 
         function updateScroll() {
-            if (isSkyPage) {
+            if (isPlayerPage) {
                 setIsNavHidden(false);
                 setIsScrolled(false);
                 ticking = false;
@@ -190,7 +190,7 @@ export default function Navbar({
         return () => {
             window.removeEventListener("scroll", onScroll);
         };
-    }, [isSkyPage, pathname]);
+    }, [isPlayerPage, pathname]);
 
     useEffect(() => {
         setIsNavHidden(false);
@@ -198,7 +198,7 @@ export default function Navbar({
         const cur = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || 0;
         lastScrollYRef.current = cur;
         setIsScrolled(cur > 15);
-    }, [pathname, activeFilter, isSkyPage]);
+    }, [pathname, activeFilter, isPlayerPage]);
 
     const handleNavClick = (filter) => {
         const cleanFilter = (filter === "home" || filter === "all") ? "all" : filter;

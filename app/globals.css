@@ -6781,7 +6781,7 @@ body:has(.sky-app) {
                 height: auto !important;
                 min-height: 100vh !important;
                 overflow: visible !important;
-                padding: 24px !important;
+                padding: 96px 24px 24px !important;
                 box-sizing: border-box;
                 background: radial-gradient(circle at top left, #1b2435 0%, #090b10 42%, #040506 100%) !important;
             }
@@ -6791,7 +6791,8 @@ body:has(.sky-app) {
                 inset: auto !important;
                 width: 100% !important;
                 height: auto !important;
-                min-height: calc(100vh - 48px);
+                height: calc(100vh - 120px) !important;
+                min-height: 0;
                 overflow: visible !important;
                 display: grid !important;
                 grid-template-columns: minmax(0, 1fr) minmax(320px, 390px);
@@ -6804,8 +6805,8 @@ body:has(.sky-app) {
                 inset: auto;
                 min-width: 0;
                 width: 100%;
-                height: auto;
-                aspect-ratio: 16 / 9;
+                height: 100%;
+                aspect-ratio: auto;
                 align-self: start;
                 border: 1px solid rgba(255, 255, 255, 0.12);
                 border-radius: 18px;

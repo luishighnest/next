@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef, useMemo, useCallback } from "react";
 import { useParams, useRouter } from "next/navigation";
+import Navbar from "@/components/Navbar";
 import MobileEventoView from "@/components/MobileEventoView";
 import { useDeviceState } from "@/components/DeviceProvider";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
@@ -417,6 +418,7 @@ export default function EventoPlayerPage() {
             onMouseMove={handleMouseMove}
             onClick={handleMouseMove}
         >
+            <Navbar activeFilter="eventi" />
             <main className="sky-main">
                 {/* 1. Fullscreen Player Container Unificato con Iframe Estensione */}
                 <div ref={containerRef} className="sky-native-player-container">
