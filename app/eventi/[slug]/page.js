@@ -591,6 +591,15 @@ export default function EventoPlayerPage() {
                     </div>
                 </div>
 
+                {/* Hitbox invisibile esattamente in basso a destra sovrapposta al tasto Schermo Intero dell'estensione */}
+                <button
+                    type="button"
+                    className="sky-fullscreen-hitbox"
+                    onClick={toggleFullscreen}
+                    title={isFullscreen ? "Esci da schermo intero (f)" : "Schermo intero (f)"}
+                    aria-label="Schermo intero"
+                />
+
                 {/* 3. Drawer Canali Correlati */}
                 <div className={`sky-sidebar-backdrop ${isSidebarOpen ? "is-open" : ""}`} onClick={() => setIsSidebarOpen(false)} />
 

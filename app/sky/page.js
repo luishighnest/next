@@ -809,6 +809,15 @@ function SkyContent() {
                     </div>
                 </div>
 
+                {/* Hitbox invisibile esattamente in basso a destra sovrapposta al tasto Schermo Intero dell'estensione */}
+                <button
+                    type="button"
+                    className="sky-fullscreen-hitbox"
+                    onClick={toggleFullscreen}
+                    title={isFullscreen ? "Esci da schermo intero (f)" : "Schermo intero (f)"}
+                    aria-label="Schermo intero"
+                />
+
                 {/* 3. Backdrop e Drawer Popup Laterale a Destra (nel player) */}
                 <div
                     className={`sky-sidebar-backdrop ${isSidebarOpen ? "is-open" : ""}`}
