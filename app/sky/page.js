@@ -106,6 +106,57 @@ function parseChannelList(json, sourceName) {
 let memorySkyChannels = {};
 let memorySkyGuide = null;
 
+const GUIDE_CACHE_KEY = "nmdz_sky_guide_cache";
+
+function todayKey() {
+    try { return new Date().toLocaleDateString("it-IT", { timeZone: "Europe/Rome" }); } catch(e) { return ""; }
+}
+
+function readGuideCache() {
+    if (typeof window === "undefined") return;
+    try {
+        const saved = localStorage.getItem(GUIDE_CACHE_KEY);
+        if (saved) {
+            const parsed = JSON.parse(saved);
+            if (parsed && parsed.date === todayKey() && Array.isArray(parsed.guide) && parsed.guide.length > 0) {
+                return parsed.guide;
+            }
+        }
+    } catch(e) {}
+    try {
+        const v3 = sessionStorage.getItem("nmdz_guide_cache_v3");
+        if (v3) {
+            const parsed = JSON.parse(v3);
+            if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+    } catch(e) {}
+    try {
+        const sections = localStorage.getItem("nmdz_cached_sections");
+        if (sections) {
+            const parsed = JSON.parse(sections);
+            if (Array.isArray(parsed)) {
+                const guideFromSections = [];
+                parsed.forEach(sec => {
+                    (sec.channels || []).forEach(ch => {
+                        if (Array.isArray(ch.epg) && ch.epg.length > 0) {
+                            guideFromSections.push({ canale: ch.title || ch.name, categoria: ch.group || "", programmi: ch.epg });
+                        }
+                    });
+                });
+                if (guideFromSections.length > 0) return guideFromSections;
+            }
+        }
+    } catch(e) {}
+    return [];
+}
+
+function writeGuideCache(guide) {
+    if (!guide || !Array.isArray(guide) || guide.length === 0) return;
+    try {
+        localStorage.setItem(GUIDE_CACHE_KEY, JSON.stringify({ date: todayKey(), guide }));
+    } catch(e) {}
+}
+
 function SkyContent() {
     const { isMobile } = useDeviceState();
     const searchParams = useSearchParams();
@@ -152,7 +203,7 @@ function SkyContent() {
         }
         return [];
     });
-    const [guideData, setGuideData] = useState(() => memorySkyGuide || []);
+    const [guideData, setGuideData] = useState(() => memorySkyGuide || readGuideCache() || []);
     const [activeTab, setActiveTab] = useState("all");
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedChannel, setSelectedChannel] = useState(() => {
@@ -249,7 +300,8 @@ function SkyContent() {
             }
             try {
                 const ts = Date.now();
-                const res = await fetch(`/api/canali?source=${encodeURIComponent(currentSource)}&t=${ts}`, { cache: "no-store" })
+                const guideParam = isInitial ? "guide=1" : "guide=0";
+                const res = await fetch(`/api/canali?source=${encodeURIComponent(currentSource)}&t=${ts}&${guideParam}`, { cache: "no-store" })
                     .then(r => r.json())
                     .catch(() => null);
 
@@ -259,9 +311,10 @@ function SkyContent() {
                 if (res && Array.isArray(res.channels)) {
                     channelList = res.channels;
                     memorySkyChannels[currentSource] = channelList;
-                    if (Array.isArray(res.guide)) {
+                    if (isInitial && Array.isArray(res.guide) && res.guide.length > 0) {
                         memorySkyGuide = res.guide;
                         setGuideData(res.guide);
+                        writeGuideCache(res.guide);
                     }
                 } else {
                     // Fallback di emergenza
@@ -271,7 +324,11 @@ function SkyContent() {
                     ]);
                     const json = srcData.status === "fulfilled" ? srcData.value : null;
                     const gData = guideRes.status === "fulfilled" ? guideRes.value : [];
-                    if (Array.isArray(gData)) setGuideData(gData);
+                    if (Array.isArray(gData)) {
+                        setGuideData(gData);
+                        memorySkyGuide = gData;
+                        writeGuideCache(gData);
+                    }
                     channelList = parseChannelList(json, currentSource);
                 }
 

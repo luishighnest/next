@@ -130,13 +130,14 @@ export async function GET(request) {
         const sky2Channels = parseSkyList(sky2Data, null, "sky2.json");
 
         // Se è richiesta specificamente una sorgente (per la sezione /sky o per la guida)
+        const skipGuideParam = searchParams.get("guide") === "0";
         if (sourceParam === "sky1" || sourceParam === "sky.json") {
             return NextResponse.json({
                 success: true,
                 source: "sky1",
                 total: sky1Channels.length,
                 channels: sky1Channels,
-                guide: guideData || [],
+                guide: skipGuideParam ? [] : (guideData || []),
                 updatedAt: Date.now()
             }, {
                 headers: { "Cache-Control": "no-store, max-age=0" }
@@ -148,7 +149,7 @@ export async function GET(request) {
                 source: "sky2",
                 total: sky2Channels.length,
                 channels: sky2Channels,
-                guide: guideData || [],
+                guide: skipGuideParam ? [] : (guideData || []),
                 updatedAt: Date.now()
             }, {
                 headers: { "Cache-Control": "no-store, max-age=0" }
