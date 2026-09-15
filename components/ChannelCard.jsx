@@ -212,6 +212,7 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 });
 
                 const clearKeys = parseClearKeys(rawKey);
+                const isHls = streamUrl.includes(".m3u8") || streamUrl.includes("/hls/");
                 player.configure({
                     drm: {
                         clearKeys,
@@ -222,7 +223,13 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                         bufferingGoal: 0.35,          // Minimo assoluto per primo frame in ~150ms
                         rebufferingGoal: 0.15,
                         bufferBehind: 1,
-                        lowLatencyMode: true,
+                        // Live DASH Sky/DT (CMAF ~3.8s non chunked): lowLatencyMode punta al live edge
+                        // e aspetta l'INTERO segmento corrente (fino a ~4s). Agganciandoci a un segmento
+                        // gia' completo (sync 4s indietro) il primo frame arriva subito.
+                        // Gli stream DAZN invece sono LL-DASH chunked con segmenti corti: teniamo la
+                        // low latency per loro.
+                        lowLatencyMode: !isHls,
+                        liveSyncTargetLatency: 4,
                         alwaysStreamFullSegments: false,
                         retryParameters: { maxAttempts: 2, baseDelay: 200, timeout: 2500 }
                     },
@@ -233,7 +240,6 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                     abr: { enabled: true }
                 });
 
-                const isHls = streamUrl.includes(".m3u8") || streamUrl.includes("/hls/");
                 const mimeType = isHls ? "application/x-mpegurl" : "application/dash+xml";
 
                 await player.load(streamUrl, null, mimeType);
