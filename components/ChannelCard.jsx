@@ -120,6 +120,17 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
         return () => clearTimeout(t);
     }, []);
 
+    // Nudge al play a 0.5s / 1s / 1.5s: se lo stream è arrivato ma l'autoplay era stato frenato, lo rilanciamo
+    useEffect(() => {
+        const attempts = [500, 1000, 1500];
+        const timers = attempts.map(ms => setTimeout(() => {
+            if (videoRef.current && videoRef.current.paused && videoRef.current.readyState > 0) {
+                videoRef.current.play().catch(() => {});
+            }
+        }, ms));
+        return () => timers.forEach(t => clearTimeout(t));
+    }, []);
+
     // A 2s, se l'autoplay era fallito, riprova a far partire la riproduzione
     useEffect(() => {
         if (!isForced) return;
@@ -208,16 +219,16 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                         servers: {}
                     },
                     streaming: {
-                        bufferingGoal: 0.5,           // Avvio ultra-istantaneo in 200ms
-                        rebufferingGoal: 0.2,
-                        bufferBehind: 2,
+                        bufferingGoal: 0.35,          // Minimo assoluto per primo frame in ~150ms
+                        rebufferingGoal: 0.15,
+                        bufferBehind: 1,
                         lowLatencyMode: true,
                         alwaysStreamFullSegments: false,
-                        retryParameters: { maxAttempts: 2, baseDelay: 200, timeout: 3000 }
+                        retryParameters: { maxAttempts: 2, baseDelay: 200, timeout: 2500 }
                     },
                     manifest: {
                         dash: { ignoreMinBufferTime: true },
-                        retryParameters: { maxAttempts: 2, baseDelay: 200, timeout: 3000 }
+                        retryParameters: { maxAttempts: 2, baseDelay: 200, timeout: 2500 }
                     },
                     abr: { enabled: true }
                 });
