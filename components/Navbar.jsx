@@ -129,7 +129,7 @@ export default function Navbar({
     }, []);
 
     // La navbar ha la STESSA identica dimensione, struttura e posizione della Home su tutte le sezioni (Home, Sky, Evento)
-const isPlayerPage = pathname ? (pathname.startsWith("/sky") || pathname.startsWith("/eventi/")) : false;
+const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
 
     const lastScrollYRef = useRef(0);
 
