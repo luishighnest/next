@@ -6812,6 +6812,25 @@ body:has(.sky-app) {
                 box-shadow: 0 24px 72px rgba(0, 0, 0, 0.46);
             }
 
+            /* A normal page has one thing in its video area: the iframe.
+               The legacy cinematic layer and its fullscreen controls belong
+               to the old player experience, not to this layout. */
+            .embedded-player-page .sky-native-player-container > .sky-back-minimal-btn,
+            .embedded-player-page .sky-native-player-container > .sky-player-backdrop-preload,
+            .embedded-player-page .sky-native-player-container > .sky-player-vignette,
+            .embedded-player-page .sky-native-player-container > .sky-native-loader,
+            .embedded-player-page .sky-native-player-container > .sky-player-overlay-bottom {
+                display: none !important;
+            }
+
+            .embedded-player-page .sky-native-player-container > iframe {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border: 0;
+                background: #000;
+            }
+
             .embedded-player-page .sky-sidebar-popup.desktop-persistent {
                 position: relative;
                 top: auto;
