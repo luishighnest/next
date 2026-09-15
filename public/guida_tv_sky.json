@@ -1329,24 +1329,10 @@
       },
       {
         "ora": "15:50",
-        "fine": "17:50",
-        "titolo": "Serbia - Olanda",
-        "descrizione": "... Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3f12e2a2-1d22-4745-b1c2-e042ee163f0e/background/600"
-      },
-      {
-        "ora": "17:50",
-        "fine": "18:20",
-        "titolo": "Milito",
-        "descrizione": "Calcio.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/10265735-6fe3-4a96-a031-494b990861c7/background/600"
-      },
-      {
-        "ora": "18:20",
         "fine": "18:50",
-        "titolo": "The Boat Show",
-        "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3ddb8740-9053-4bc8-98ac-a77ee7855d37/background/600"
+        "titolo": "Serbia - Olanda",
+        "descrizione": "... Europei di pallavolo maschile. - Sfida gia' da dentro o fuori nel gruppo C tra Serbia e Olanda. Tc Rudy Palermo",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3f12e2a2-1d22-4745-b1c2-e042ee163f0e/background/600"
       },
       {
         "ora": "18:50",
@@ -1387,7 +1373,7 @@
         "ora": "22:40",
         "fine": "00:30",
         "titolo": "Serbia - Olanda",
-        "descrizione": "... di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
+        "descrizione": "... di pallavolo maschile. - Sfida gia' da dentro o fuori nel gruppo C tra Serbia e Olanda. Tc Rudy Palermo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3f12e2a2-1d22-4745-b1c2-e042ee163f0e/background/600"
       }
     ]
@@ -1814,36 +1800,36 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:25",
-        "fine": "00:55",
+        "ora": "00:35",
+        "fine": "01:10",
         "titolo": "Icarus Ultra 2025 Ep.46 14/09/2026",
-        "descrizione": "... Icarus Ultra. - Avventure, sfide, storie, imprese e tante curiosita' dal mondo degli sport all'aperto: dopo 15 anni alla ricerca del limite, Icarus si spinge oltre per trasformarsi in Icarus Ultra.",
+        "descrizione": "... Icarus Ultra. - A Reggio Calabria, i Tesori del Mediterraneo porta in scena un grande evento che unisce sport, cultura e spettacolo. Protagonista e' la Regata del Mediterraneo, competizione che celebra il rapporto tra la citta' e il mare.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c2c3a072-e3c1-468d-b494-5dc0336dc820/background/600"
       },
       {
-        "ora": "00:55",
-        "fine": "01:55",
+        "ora": "01:10",
+        "fine": "02:05",
         "titolo": "Italia Down Under: Il Tour 2026 Degli Azzurri",
         "descrizione": "... Degli Azzurri. - Ripercorriamo il Nations Championship dell'Italia. Ha viaggiato verso oriente per affrontare il Giappone e poi Nuova Zelanda e Australia. E con la nazionale c'era anche il nostro Moreno Molla...",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8b337a23-66dc-4eae-9637-4d6f28486707/background/600"
       },
       {
-        "ora": "01:55",
-        "fine": "02:10",
+        "ora": "02:05",
+        "fine": "02:25",
         "titolo": "Torre Del Greco",
         "descrizione": "... Evolution Of Sports. - Laura incontra il campione giovanile dei 200m stile rana. L'atleta racconta la sua passione per il nuoto, la sua dedizione e i sacrifici che ha dovuto affrontare per raggiungere il successo.",
         "immagine": "https://img-guidatv.org/11909/torre-del-greco/0.jpg"
       },
       {
-        "ora": "02:10",
-        "fine": "02:30",
+        "ora": "02:25",
+        "fine": "02:45",
         "titolo": "Motonautica On Board 2026 Ep.4 29/08/2026",
         "descrizione": "... 29/08/2026 Motonautica On Board. - Uno sguardo sul mondo della Motonautica per svelare cio' che si cela dietro ogni scia, dalle imbarcazioni piu' veloci alle moto d'acqua. Un'opportunita' unica di conoscere da vicino i veri protagonisti: i piloti, con le loro storie e la loro passione.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5b482b08-1a3b-48bd-8ead-204179c6a978/background/600"
       },
       {
-        "ora": "02:30",
-        "fine": "04:00",
+        "ora": "02:45",
+        "fine": "04:15",
         "titolo": "Cile: Stage 4",
         "descrizione": "Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5d4cc559-a8a5-4e73-a136-0090f5fd9a35/background/600"
@@ -1870,81 +1856,74 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3ddb8740-9053-4bc8-98ac-a77ee7855d37/background/600"
       },
       {
-        "ora": "06:20",
-        "fine": "07:15",
+        "ora": "06:05",
+        "fine": "06:55",
         "titolo": "Campionato Italiano Beach Volley Gold Caorle: Finale Femminile",
         "descrizione": "... Gold Caorle: Finale Femminile Beach Volley. - La finale femminile decreta la vittoria di Valentina Gottardi e Reka Orsi Toth.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4d0c7c08-4571-4d2b-9786-ed3d0d541351/background/600"
       },
       {
-        "ora": "07:15",
-        "fine": "08:05",
+        "ora": "06:55",
+        "fine": "07:50",
         "titolo": "Campionato Italiano Beach Volley Gold Caorle: Finale Maschile",
         "descrizione": "... Gold Caorle: Finale Maschile Beach Volley. - La finale maschile si conclude con il trionfo di Manuel Alfieri e Alex Ranghieri.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/dc5d7407-e0b9-4e8e-83d0-4a54c8a5f36d/background/600"
       },
       {
-        "ora": "08:05",
-        "fine": "08:35",
+        "ora": "07:50",
+        "fine": "08:20",
         "titolo": "Milito",
         "descrizione": "Calcio.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/10265735-6fe3-4a96-a031-494b990861c7/background/600"
       },
       {
-        "ora": "08:35",
-        "fine": "09:30",
+        "ora": "08:20",
+        "fine": "09:15",
         "titolo": "Valencia",
         "descrizione": "Sintesi e highlights della piu' spettacolare competizione velica internazionale dedicata ai catamarani foiling F50.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/45e5d2b3-3afa-413e-ac5e-64d367202a9e/background/600"
       },
       {
-        "ora": "09:30",
-        "fine": "10:00",
+        "ora": "09:15",
+        "fine": "09:45",
         "titolo": "The Boat Show",
         "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3ddb8740-9053-4bc8-98ac-a77ee7855d37/background/600"
       },
       {
-        "ora": "10:00",
-        "fine": "12:25",
+        "ora": "09:45",
+        "fine": "12:10",
         "titolo": "Atletica Brescia Grand Prix",
         "descrizione": "Segui il meglio delle gare di atletica.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c75345eb-26d5-492c-831d-599c6a084b52/background/600"
       },
       {
-        "ora": "12:25",
-        "fine": "13:50",
+        "ora": "12:10",
+        "fine": "13:35",
         "titolo": "Duetto Misto Tecnico Finale",
         "descrizione": "... Europei Parigi 2026 Nuoto Artistico. - Segui le gare dei Campionati Europei di nuoto 2026. Da Parigi, Francia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0f561f3b-c7d7-4999-8f29-abe2743ab8f7/background/600"
       },
       {
-        "ora": "13:50",
-        "fine": "15:35",
+        "ora": "13:35",
+        "fine": "15:30",
         "titolo": "Finlandia - Serbia",
         "descrizione": "... Europei di pallavolo maschile. - EuroVolley 2026, nella Pool C i padroni di casa della Finlandia sfidano la Serbia. Tc Giovanni Cristiano",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1983900d-9e90-491d-9978-44fb0fce530a/background/600"
       },
       {
-        "ora": "15:35",
-        "fine": "17:00",
+        "ora": "15:30",
+        "fine": "18:00",
         "titolo": "Italia - Slovacchia",
         "descrizione": "... Europei di pallavolo maschile. - EuroVolley 2026, al PalaPanini di Modena terza uscita per l'Italia che sfida la Slovacchia. Tc Locatelli-Zorzi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/572dc586-14c2-4894-8408-227cb71b570d/background/600"
       },
       {
-        "ora": "17:00",
-        "fine": "18:35",
-        "titolo": "Cile: Stage 4",
-        "descrizione": "Segui le gare del World Rally Championship.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5d4cc559-a8a5-4e73-a136-0090f5fd9a35/background/600"
-      },
-      {
-        "ora": "18:35",
+        "ora": "18:00",
         "fine": "19:30",
-        "titolo": "Infinitamente Sinner: Ancora Wimbledon",
-        "descrizione": "A un anno dal primo trionfo, Jannik Sinner e' ancora re di Wimbledon: il racconto della nuova impresa londinese, tra backstage, studi e immagini esclusive",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "titolo": "Cile: Stage 4",
+        "descrizione": "Rally Wrc - Segui le gare del World Rally Championship.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5d4cc559-a8a5-4e73-a136-0090f5fd9a35/background/600"
       },
       {
         "ora": "19:30",
@@ -1962,7 +1941,7 @@
       },
       {
         "ora": "22:30",
-        "fine": "00:25",
+        "fine": "00:35",
         "titolo": "Italia - Grecia",
         "descrizione": "... di pallavolo maschile. - EurVolley 2026, seconda uscita per gli azzurri di De Giorgi che affrontano la Grecia. Tc Locatelli-Zorzi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9f7ca4ed-0cc5-4400-a62a-e7ab85f82014/background/600"
@@ -2545,16 +2524,16 @@
       {
         "ora": "00:45",
         "fine": "03:35",
-        "titolo": "Atletica Leggera: Ultimate Championship 3a Giornata: Finali",
-        "descrizione": "Atletica Leggera: Ultimate Championship 3a giornata: Finali",
+        "titolo": "Atletica: Ultimate Championship 2026 - 3a Giornata: Semifinali E Finali",
+        "descrizione": "Si chiude la prima edizione dell'Ultimate Championship con la terza giornata di gare.  Photo credit: World Athletics via Getty Images",
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
       },
       {
         "ora": "03:35",
         "fine": "06:00",
-        "titolo": "Campionati Europei Pallavolo Maschile Svezia - Repubblica Ceca",
-        "descrizione": "Campionati Europei Pallavolo Maschile Svezia - Repubblica Ceca",
-        "immagine": "https://img-guidatv.org/32/campionati-europei-pallavolo-maschile-svezia-repubblica-ceca/0.jpg"
+        "titolo": "Europei Maschili Di Pallavolo 2026 - Gruppo A: Svezia - Cechia",
+        "descrizione": "Nel Gruppo A degli Europei maschili di pallavolo 2026, Svezia e Repubblica Ceca si affrontano in una sfida importante per la classifica e per il cammino nella fase a gironi.",
+        "immagine": "https://img-guidatv.org/32/europei-maschili-di-pallavolo-2026-gruppo-a-svezia-cechia/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2601,37 +2580,44 @@
       {
         "ora": "14:00",
         "fine": "14:35",
-        "titolo": "Rally Mondiali Paraguay",
-        "descrizione": "Rally mondiali Paraguay",
-        "immagine": "https://img-guidatv.org/32/rally/0.jpg"
+        "titolo": "World Rally Championship 2026 - Rally Del Paraguay",
+        "descrizione": "World Rally Championship - Rally del Paraguay",
+        "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
         "ora": "14:35",
+        "fine": "15:47",
+        "titolo": "Beach Soccer: Euro League Superfinal 2026 Uomini - Finale: Spagna - Italia",
+        "descrizione": "Euro League Superfinal Uomini - Finale: Spagna - Italia",
+        "immagine": "https://img-guidatv.org/32/beach-soccer/0.jpg"
+      },
+      {
+        "ora": "15:47",
         "fine": "17:00",
-        "titolo": "Beach Soccer Euro League Maschile E Femminile Finale 1° O 3°",
-        "descrizione": "Beach Soccer Euro League Maschile e Femminile finale 1° o 3°",
+        "titolo": "Beach Soccer: Euro League Superfinal 2026 Donne - Finale: Spagna - Italia",
+        "descrizione": "Euro League Superfinal Donne - Finale: Spagna - Italia",
         "immagine": "https://img-guidatv.org/32/beach-soccer/0.jpg"
       },
       {
         "ora": "17:00",
         "fine": "17:30",
-        "titolo": "Corsa In Montagna. Marcialonga Running Coop",
+        "titolo": "Corsa In Montagna - Marcialonga Running 2026",
         "descrizione": "Gli eventi in diretta sui canali Rai da rivedere su RaiPlay.",
         "immagine": "https://img-guidatv.org/32/corsa/0.jpg"
       },
       {
         "ora": "17:30",
         "fine": "18:40",
-        "titolo": "Pattinaggio A Rotelle. Finali C.To Italiano Corsa Su Strada Vado Ligure",
-        "descrizione": "Pattinaggio a rotelle. Finali C.to Italiano Corsa su strada Vado Ligure",
-        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-finali-c-to-italiano-corsa-su-strada-vado-ligure/0.jpg"
+        "titolo": "Pattinaggio a rotelle",
+        "descrizione": "Campionati Italiani corsa su strada",
+        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-campionati-italiani-corsa-su-strada-2026/0.jpg"
       },
       {
         "ora": "18:40",
         "fine": "19:30",
-        "titolo": "Tiro Con L'Arco. C.Ti Italiani Targa Canegrate",
-        "descrizione": "Tiro con l'Arco. C.ti Italiani Targa Canegrate",
-        "immagine": "https://img-guidatv.org/32/tiro-con-l-arco-c-ti-italiani-targa-canegrate/0.jpg"
+        "titolo": "Tiro Con L'Arco - Campionati Italiani Targa 2026",
+        "descrizione": "Campionati Italiani Targa",
+        "immagine": "https://img-guidatv.org/32/tiro-con-l-arco-campionati-italiani-targa-2026/0.jpg"
       },
       {
         "ora": "19:30",
@@ -2663,16 +2649,16 @@
       {
         "ora": "00:45",
         "fine": "03:35",
-        "titolo": "Atletica Leggera: Ultimate Championship 3a Giornata: Finali",
-        "descrizione": "Atletica Leggera: Ultimate Championship 3a giornata: Finali",
+        "titolo": "Atletica: Ultimate Championship 2026 - 3a Giornata: Semifinali E Finali",
+        "descrizione": "Si chiude la prima edizione dell'Ultimate Championship con la terza giornata di gare.  Photo credit: World Athletics via Getty Images",
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
       },
       {
         "ora": "03:35",
         "fine": "06:00",
-        "titolo": "Campionati Europei Pallavolo Maschile Svezia - Repubblica Ceca",
-        "descrizione": "Campionati Europei Pallavolo Maschile Svezia - Repubblica Ceca",
-        "immagine": "https://img-guidatv.org/32/campionati-europei-pallavolo-maschile-svezia-repubblica-ceca/0.jpg"
+        "titolo": "Europei Maschili Di Pallavolo 2026 - Gruppo A: Svezia - Cechia",
+        "descrizione": "Nel Gruppo A degli Europei maschili di pallavolo 2026, Svezia e Repubblica Ceca si affrontano in una sfida importante per la classifica e per il cammino nella fase a gironi.",
+        "immagine": "https://img-guidatv.org/32/europei-maschili-di-pallavolo-2026-gruppo-a-svezia-cechia/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2719,37 +2705,44 @@
       {
         "ora": "14:00",
         "fine": "14:35",
-        "titolo": "Rally Mondiali Paraguay",
-        "descrizione": "Rally mondiali Paraguay",
-        "immagine": "https://img-guidatv.org/32/rally/0.jpg"
+        "titolo": "World Rally Championship 2026 - Rally Del Paraguay",
+        "descrizione": "World Rally Championship - Rally del Paraguay",
+        "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
         "ora": "14:35",
+        "fine": "15:47",
+        "titolo": "Beach Soccer: Euro League Superfinal 2026 Uomini - Finale: Spagna - Italia",
+        "descrizione": "Euro League Superfinal Uomini - Finale: Spagna - Italia",
+        "immagine": "https://img-guidatv.org/32/beach-soccer/0.jpg"
+      },
+      {
+        "ora": "15:47",
         "fine": "17:00",
-        "titolo": "Beach Soccer Euro League Maschile E Femminile Finale 1° O 3°",
-        "descrizione": "Beach Soccer Euro League Maschile e Femminile finale 1° o 3°",
+        "titolo": "Beach Soccer: Euro League Superfinal 2026 Donne - Finale: Spagna - Italia",
+        "descrizione": "Euro League Superfinal Donne - Finale: Spagna - Italia",
         "immagine": "https://img-guidatv.org/32/beach-soccer/0.jpg"
       },
       {
         "ora": "17:00",
         "fine": "17:30",
-        "titolo": "Corsa In Montagna. Marcialonga Running Coop",
+        "titolo": "Corsa In Montagna - Marcialonga Running 2026",
         "descrizione": "Gli eventi in diretta sui canali Rai da rivedere su RaiPlay.",
         "immagine": "https://img-guidatv.org/32/corsa/0.jpg"
       },
       {
         "ora": "17:30",
         "fine": "18:40",
-        "titolo": "Pattinaggio A Rotelle. Finali C.To Italiano Corsa Su Strada Vado Ligure",
-        "descrizione": "Pattinaggio a rotelle. Finali C.to Italiano Corsa su strada Vado Ligure",
-        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-finali-c-to-italiano-corsa-su-strada-vado-ligure/0.jpg"
+        "titolo": "Pattinaggio a rotelle",
+        "descrizione": "Campionati Italiani corsa su strada",
+        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-campionati-italiani-corsa-su-strada-2026/0.jpg"
       },
       {
         "ora": "18:40",
         "fine": "19:30",
-        "titolo": "Tiro Con L'Arco. C.Ti Italiani Targa Canegrate",
-        "descrizione": "Tiro con l'Arco. C.ti Italiani Targa Canegrate",
-        "immagine": "https://img-guidatv.org/32/tiro-con-l-arco-c-ti-italiani-targa-canegrate/0.jpg"
+        "titolo": "Tiro Con L'Arco - Campionati Italiani Targa 2026",
+        "descrizione": "Campionati Italiani Targa",
+        "immagine": "https://img-guidatv.org/32/tiro-con-l-arco-campionati-italiani-targa-2026/0.jpg"
       },
       {
         "ora": "19:30",
@@ -3345,9 +3338,9 @@
       {
         "ora": "04:55",
         "fine": "05:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Speciale: Avvocato Ligas",
+        "descrizione": "Luca Argentero e il cast presentano l'Avvocato Ligas, penalista anticonvenzionale sempre pronto a rischiare pur di vincere una causa.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/26e14dac-ad9e-4ab8-ab36-000ff1f01348/background/600"
       },
       {
         "ora": "05:00",
@@ -3358,7 +3351,7 @@
       },
       {
         "ora": "05:15",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Accused: Sotto processo",
         "descrizione": "In questa serie di antologie criminali, gli spettatori scoprono come una persona comune è rimasta coinvolta in una situazione straordinaria, rivelando alla fine come una svolta sbagliata porti a un'altra, finché non è troppo tardi per tornare indietro. Raccontato dal punto di vista dell'imputato, ogni episodio si apre in un'aula di tribunale con gli accusati senza conoscere il loro crimine o come sono finiti sotto processo.",
         "immagine": "https://image.tmdb.org/t/p/w300/aNkYvln58BJoNyBUvig417HJWZQ.jpg"
@@ -3797,7 +3790,7 @@
       },
       {
         "ora": "05:20",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Law & Order: I due volti della giustizia",
         "descrizione": "Law & Order è un media franchise creato da Dick Wolf per la NBC Universal e formato da varie serie televisive poliziesco-giudiziarie e un film per la televisione, trasmessi sul network NBC dal 13 settembre 1990. Il franchise Law & Order nel tempo ha ispirato anche una serie di adattamenti televisivi stranieri, un docu-reality e videogiochi ufficiali, oltre a generare una serie di crossover con altre serie tv statunitensi.",
         "immagine": "https://image.tmdb.org/t/p/w300/gZZCZNsc19MG8newzH9bjGTqigb.jpg"
@@ -4584,28 +4577,21 @@
       },
       {
         "ora": "03:05",
-        "fine": "03:20",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "03:20",
-        "fine": "04:15",
+        "fine": "03:50",
         "titolo": "Indie Jungle",
         "descrizione": "Ep10 di 11 Vasco Brondi - Una serata esclusiva alla scoperta della sonorita' e delle storie dei protagonisti della scena indie italiana. In questa puntata: Vasco Brondi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/361455c7-d0ab-4b19-ae22-7709a6fb6963/background/600"
       },
       {
-        "ora": "04:15",
-        "fine": "05:05",
+        "ora": "03:50",
+        "fine": "04:40",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep6 di 6 Enzo Jannacci - Ci vuole orecchio - Ci sono album che hanno segnato la storia della musica italiana: scopriamone i segreti. Nella puntata: l'album \"Ci vuole orecchio\" di Jannacci.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "05:05",
-        "fine": "05:30",
+        "ora": "04:40",
+        "fine": "05:35",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep7 di 7 Fabrizio De Andre' - Le nuvole - Ci sono album che hanno segnato la storia della musica italiana: scopriamone i segreti. Oggi raccontiamo l'album \"Le nuvole\" di Fabrizio De Andre'.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
@@ -4615,6 +4601,13 @@
         "fine": "06:00",
         "titolo": "Gli immortali",
         "descrizione": "Ep2 di 6 Jim Morrison e Volonte' - I cimiteri sono luoghi di storie, da qui Giorgio Porrà racconta le vite di nomi immortali. Nella puntata, due artisti che non amavano apparire: Gian Maria Volonté e Jim Morrison.",
+        "immagine": "https://img-guidatv.org/8473/gli-immortali/0.jpg"
+      },
+      {
+        "ora": "05:35",
+        "fine": "06:00",
+        "titolo": "Gli immortali",
+        "descrizione": "Ep4 di 6 Marinetti e Nuvolari - I cimiteri sono luoghi di storie, da qui Giorgio Porra' ci narra le vite di nomi immortali. Nella puntata, due emblemi del '900 italiano: Tazio Nuvolari e Filippo Tommaso Marinetti.",
         "immagine": "https://img-guidatv.org/8473/gli-immortali/0.jpg"
       },
       {
@@ -12100,8 +12093,8 @@
       {
         "ora": "09:05",
         "fine": "09:25",
-        "titolo": "S1 Ep5 - Tim Rex nello Spazio",
-        "descrizione": "S1 Ep5 La Mucca Lunare/Il Nuvolizzatore/L'Insetto Spaziale - I cuccioli col giocattolo./Kai e Tim alla fiera./Insetto Spaziale scovato.",
+        "titolo": "Tim Rex nello Spazio",
+        "descrizione": "Ep5 di 10 La Mucca Lunare/Il Nuvolizzatore/L'Insetto Spaziale - I cuccioli col giocattolo./Kai e Tim alla fiera./Insetto Spaziale scovato.",
         "immagine": "https://img-guidatv.org/461/tim-rex-nello-spazio/0.jpg"
       },
       {
@@ -12610,8 +12603,8 @@
       {
         "ora": "09:05",
         "fine": "09:25",
-        "titolo": "S1 Ep5 - Tim Rex nello Spazio",
-        "descrizione": "S1 Ep5 La Mucca Lunare/Il Nuvolizzatore/L'Insetto Spaziale - I cuccioli col giocattolo./Kai e Tim alla fiera./Insetto Spaziale scovato.",
+        "titolo": "Tim Rex nello Spazio",
+        "descrizione": "Ep5 di 10 La Mucca Lunare/Il Nuvolizzatore/L'Insetto Spaziale - I cuccioli col giocattolo./Kai e Tim alla fiera./Insetto Spaziale scovato.",
         "immagine": "https://img-guidatv.org/461/tim-rex-nello-spazio/0.jpg"
       },
       {
@@ -14777,7 +14770,7 @@
         "ora": "05:50",
         "fine": "06:00",
         "titolo": "Shaun, vita da pecora",
-        "descrizione": "CARTONI ANIMATI - Shaun è una pecora fuori dal comune, che non solo non segue il gregge, ma anzi lo trascina ogni giorno in nuove imprese.. - di Seamus Malone 2025 GBR",
+        "descrizione": "Shaun è una pecora fuori dal comune, che non solo non segue il gregge, ma anzi lo trascina ogni giorno in nuove imprese.",
         "immagine": "https://image.tmdb.org/t/p/w300/rv8g8QErLtMBOMwyJ3Z6iFKNtaw.jpg"
       },
       {
@@ -15987,7 +15980,7 @@
         "ora": "05:50",
         "fine": "06:00",
         "titolo": "Shaun, vita da pecora",
-        "descrizione": "CARTONI ANIMATI - Shaun è una pecora fuori dal comune, che non solo non segue il gregge, ma anzi lo trascina ogni giorno in nuove imprese.. - di Seamus Malone 2025 GBR",
+        "descrizione": "Shaun è una pecora fuori dal comune, che non solo non segue il gregge, ma anzi lo trascina ogni giorno in nuove imprese.",
         "immagine": "https://image.tmdb.org/t/p/w300/rv8g8QErLtMBOMwyJ3Z6iFKNtaw.jpg"
       },
       {
@@ -18217,7 +18210,7 @@
         "ora": "11:55",
         "fine": "13:30",
         "titolo": "E' Sempre Mezzogiorno",
-        "descrizione": "Antolella Clerici riapre la cucina più green della televisione italiana e torna con i suoi compagni di È sempre mezzogiorno per un nuovo anno di interviste, giochi e sorprese.",
+        "descrizione": "Antonella Clerici riapre la cucina più green della televisione italiana e torna con i suoi compagni di È sempre mezzogiorno per un nuovo anno di interviste, giochi e sorprese.",
         "immagine": "https://img-guidatv.org/1/e-sempre-mezzogiorno/5.jpg"
       },
       {
@@ -18231,7 +18224,7 @@
         "ora": "14:05",
         "fine": "16:00",
         "titolo": "La Volta Buona",
-        "descrizione": "Interviste faccia a faccia, spettacolo, musica, tv, cinema, letteratura e attualità, ogni giorno in diretta con Caterina Balivo e i suoi ospiti.",
+        "descrizione": "Un programma che si distingue per l'approccio leggero con cui vengono trattati i vari temi e per l'eleganza con cui la conduttrice accoglie ospiti di spicco provenienti dal mondo dello spettacolo, della musica e della cultura. Nel corso del pomeriggio, il salotto diventa un luogo di confronto, dove i partecipanti discutono delle ultime notizie di costume e condividono nostalgici ricordi legati al proprio vissuto, al mondo della musica e della televisione. Gli argomenti spaziano da storie personali a esperienze quotidiane, con un focus particolare sulle relazioni e sulle emozioni. Conduce Caterina Balivo. Regia di Daniela Celotto.",
         "immagine": "https://img-guidatv.org/1/la-volta-buona/6.jpg"
       },
       {
@@ -18433,7 +18426,7 @@
         "ora": "11:55",
         "fine": "13:30",
         "titolo": "E' Sempre Mezzogiorno",
-        "descrizione": "Antolella Clerici riapre la cucina più green della televisione italiana e torna con i suoi compagni di È sempre mezzogiorno per un nuovo anno di interviste, giochi e sorprese.",
+        "descrizione": "Antonella Clerici riapre la cucina più green della televisione italiana e torna con i suoi compagni di È sempre mezzogiorno per un nuovo anno di interviste, giochi e sorprese.",
         "immagine": "https://img-guidatv.org/1/e-sempre-mezzogiorno/5.jpg"
       },
       {
@@ -18447,7 +18440,7 @@
         "ora": "14:05",
         "fine": "16:00",
         "titolo": "La Volta Buona",
-        "descrizione": "Interviste faccia a faccia, spettacolo, musica, tv, cinema, letteratura e attualità, ogni giorno in diretta con Caterina Balivo e i suoi ospiti.",
+        "descrizione": "Un programma che si distingue per l'approccio leggero con cui vengono trattati i vari temi e per l'eleganza con cui la conduttrice accoglie ospiti di spicco provenienti dal mondo dello spettacolo, della musica e della cultura. Nel corso del pomeriggio, il salotto diventa un luogo di confronto, dove i partecipanti discutono delle ultime notizie di costume e condividono nostalgici ricordi legati al proprio vissuto, al mondo della musica e della televisione. Gli argomenti spaziano da storie personali a esperienze quotidiane, con un focus particolare sulle relazioni e sulle emozioni. Conduce Caterina Balivo. Regia di Daniela Celotto.",
         "immagine": "https://img-guidatv.org/1/la-volta-buona/6.jpg"
       },
       {
@@ -18550,9 +18543,9 @@
       {
         "ora": "04:30",
         "fine": "05:15",
-        "titolo": "Una famiglia",
-        "descrizione": "Al Gold & Silver Pawn Shop, negozio più famoso degli Stati Uniti, si comprano e vendono oggetti il cui valore è stabilito dalla storia che raccontano. \"Affari di famiglia\" vi porta nel mondo del business dei banchi dei pegni, una delle più antiche forme di finanziamento, nonché la principale forma di credito al consumo negli Stati Uniti fino agli anni ‘50.",
-        "immagine": "https://image.tmdb.org/t/p/w300/nRlufiZvenusehMDRldeD7PeMau.jpg"
+        "titolo": "Squadra Speciale Colonia",
+        "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
+        "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
         "ora": "05:15",
@@ -18670,7 +18663,7 @@
         "ora": "14:00",
         "fine": "15:25",
         "titolo": "Ore 14",
-        "descrizione": "Un faro acceso sui principali avvenimenti del giorno di cronaca e attualità, raccontati con collegamenti in diretta dai luoghi dove i fatti sono avvenuti e commentati da autorevoli opinionisti.",
+        "descrizione": "I casi della puntata: l'omicidio di Martina Carbonaro; il giallo della ricina a Campobasso; il dramma della famiglia morta a Pietralata; le ultime su Garlasco.",
         "immagine": "https://img-guidatv.org/2/ore-14/8.jpg"
       },
       {
@@ -18815,9 +18808,9 @@
       {
         "ora": "04:30",
         "fine": "05:15",
-        "titolo": "Una famiglia",
-        "descrizione": "Al Gold & Silver Pawn Shop, negozio più famoso degli Stati Uniti, si comprano e vendono oggetti il cui valore è stabilito dalla storia che raccontano. \"Affari di famiglia\" vi porta nel mondo del business dei banchi dei pegni, una delle più antiche forme di finanziamento, nonché la principale forma di credito al consumo negli Stati Uniti fino agli anni ‘50.",
-        "immagine": "https://image.tmdb.org/t/p/w300/nRlufiZvenusehMDRldeD7PeMau.jpg"
+        "titolo": "Squadra Speciale Colonia",
+        "descrizione": "Al centro delle vicende vi è una squadra speciale di investigatori della polizia di Colonia. Ogni giorno il gruppo di agenti deve risolvere casi, dare la caccia a criminali, investigare su omicidi mettendo da parte la propria vita personale.",
+        "immagine": "https://image.tmdb.org/t/p/w500/jLwoCyFg0vFze0JIQIhItsAE4yR.jpg"
       },
       {
         "ora": "05:15",
@@ -18935,7 +18928,7 @@
         "ora": "14:00",
         "fine": "15:25",
         "titolo": "Ore 14",
-        "descrizione": "Un faro acceso sui principali avvenimenti del giorno di cronaca e attualità, raccontati con collegamenti in diretta dai luoghi dove i fatti sono avvenuti e commentati da autorevoli opinionisti.",
+        "descrizione": "I casi della puntata: l'omicidio di Martina Carbonaro; il giallo della ricina a Campobasso; il dramma della famiglia morta a Pietralata; le ultime su Garlasco.",
         "immagine": "https://img-guidatv.org/2/ore-14/8.jpg"
       },
       {
@@ -19284,7 +19277,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Lo Stato Delle Cose",
-        "descrizione": "Massimo Giletti racconta i fatti, gli eventi e le storie al centro del dibattito pubblico.",
+        "descrizione": "Ritornano le grandi inchieste de \"Lo stato delle cose\", condotto da Massimo Giletti: alcuni documenti esclusivi, appunti scritti a mano dall'indagato Andrea Sempio, sono al centro del caso Garlasco. E poi il faccia a faccia tra l'avvocata Angela Taccia, legale di Sempio e Antonio De Rensis, avvocato di Stasi. I due legali raccontano come i loro assistiti stiano vivendo questi giorni di attesa: l'uno aspetta l'eventuale rinvio a giudizio, l'altro l'eventuale revisione della sua condanna. Riflettori accesi anche sull'attentato a Sigfrido Ranucci e sul ruolo di Valter Lavitola. Le telecamere sono andate in Africa per rintracciare il suo socio d'affari, ora grande nemico di Lavitola, Benjamin Chimutengo. Ospiti i giornalisti Peter Gomez, Nello Trocchia, Leonardo Zellino e Moreno Pisto. Grande ritorno anche per Michele Santoro e la sua lettura della contemporaneità, italiana e internazionale.",
         "immagine": "https://img-guidatv.org/3/lo-stato-delle-cose/5.jpg"
       }
     ]
@@ -19528,7 +19521,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Lo Stato Delle Cose",
-        "descrizione": "Massimo Giletti racconta i fatti, gli eventi e le storie al centro del dibattito pubblico.",
+        "descrizione": "Ritornano le grandi inchieste de \"Lo stato delle cose\", condotto da Massimo Giletti: alcuni documenti esclusivi, appunti scritti a mano dall'indagato Andrea Sempio, sono al centro del caso Garlasco. E poi il faccia a faccia tra l'avvocata Angela Taccia, legale di Sempio e Antonio De Rensis, avvocato di Stasi. I due legali raccontano come i loro assistiti stiano vivendo questi giorni di attesa: l'uno aspetta l'eventuale rinvio a giudizio, l'altro l'eventuale revisione della sua condanna. Riflettori accesi anche sull'attentato a Sigfrido Ranucci e sul ruolo di Valter Lavitola. Le telecamere sono andate in Africa per rintracciare il suo socio d'affari, ora grande nemico di Lavitola, Benjamin Chimutengo. Ospiti i giornalisti Peter Gomez, Nello Trocchia, Leonardo Zellino e Moreno Pisto. Grande ritorno anche per Michele Santoro e la sua lettura della contemporaneità, italiana e internazionale.",
         "immagine": "https://img-guidatv.org/3/lo-stato-delle-cose/5.jpg"
       }
     ]
@@ -19640,7 +19633,7 @@
         "fine": "16:52",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:52",
@@ -19793,7 +19786,7 @@
         "fine": "16:52",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:52",
@@ -19995,7 +19988,7 @@
         "fine": "18:49",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:49",
@@ -20197,7 +20190,7 @@
         "fine": "18:49",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:49",
@@ -22295,13 +22288,13 @@
       },
       {
         "ora": "02:52",
-        "fine": "03:47",
+        "fine": "03:46",
         "titolo": "Narcos: Messico",
         "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara.",
         "immagine": "https://img-guidatv.org/serie/5e78e032ce1e246c511cdd50_p_5_rs_300.jpg"
       },
       {
-        "ora": "03:47",
+        "ora": "03:46",
         "fine": "04:31",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
@@ -22518,13 +22511,13 @@
       },
       {
         "ora": "02:52",
-        "fine": "03:47",
+        "fine": "03:46",
         "titolo": "Narcos: Messico",
         "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara.",
         "immagine": "https://img-guidatv.org/serie/5e78e032ce1e246c511cdd50_p_5_rs_300.jpg"
       },
       {
-        "ora": "03:47",
+        "ora": "03:46",
         "fine": "04:31",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
@@ -26136,21 +26129,21 @@
         "fine": "16:02",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:02",
         "fine": "16:19",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:19",
         "fine": "16:29",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:29",
@@ -26164,28 +26157,28 @@
         "fine": "17:10",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:10",
         "fine": "17:36",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:36",
         "fine": "17:57",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:57",
         "fine": "18:15",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:15",
@@ -30385,20 +30378,20 @@
       },
       {
         "ora": "03:40",
-        "fine": "04:05",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:55",
+        "titolo": "Affari di famiglia",
+        "descrizione": "Ep8 di 59 - Seguiamo gli affari dei proprietari del 'Gold & Silver Pawn Shop', un negozio dove si comprano e vendono oggetti il cui valore e' stabilito dalla storia che raccontano.",
+        "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "04:05",
-        "fine": "04:50",
+        "ora": "03:55",
+        "fine": "04:45",
         "titolo": "Affari di famiglia",
         "descrizione": "Ep20 di 20 Dagli Alice in Chains - Rick e Chumlee sono a Los Angeles per 'concludere' un accordo su alcune iconiche scenografie di film. Corey e' al settimo cielo per alcuni cimeli degli Alice in Chains.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "04:50",
+        "ora": "04:45",
         "fine": "05:35",
         "titolo": "Affari di famiglia",
         "descrizione": "Ep1 - Rick visita New York per dare un'occhiata a una stesura originale della Dichiarazione d'indipendenza.",
@@ -31257,7 +31250,7 @@
       {
         "ora": "05:00",
         "fine": "05:20",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -31473,7 +31466,7 @@
       {
         "ora": "05:00",
         "fine": "05:20",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
