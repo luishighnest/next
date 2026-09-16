@@ -2805,9 +2805,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 .carousel-btn {
     position: absolute;
-    /* Centro verticale della sola locandina (aspect 4:3): il carosello parte dall'alto
-       del wrapper e la locandina alta 0.75*cardWidth ha centro a 0.375*cardWidth */
-    top: calc(var(--card-width) * 0.375);
+    /* Centro verticale della sola locandina (aspect 16:9): altezza = 9/16 × cardWidth,
+       centro = altezza/2 = 9/32 × cardWidth */
+    top: calc(var(--card-width) * 9 / 32);
     transform: translateY(-50%);
     z-index: 20;
     background: none;
