@@ -41,17 +41,36 @@ function upgradeImageToHighRes(url) {
 // 2. "poster": Artwork verticali tipo TMDB / locandine film & serie (non devono essere croppate a landscape)
 // 3. "sport": Grafiche ed eventi sportivi con aspect ratio variabili (img-guidatv, tennis, partite, ecc.)
 function detectArtworkType(url) {
-    if (!url || typeof url !== "string") return "sky-hero";
-    if (url.includes("image.tmdb.org") || url.includes("/t/p/")) return "poster";
-    if (url.includes("COVER_CLEAN_TALL") || url.includes("COVER_TITLE_TALL") || (url.includes("/cover") && !url.includes("COVER_TITLE_WIDE") && !url.includes("HERO_CLEAN_WIDE") && !url.includes("background"))) {
+    if (!url || typeof url !== "string") return "sport";
+    const up = upgradeImageToHighRes(url);
+    if (up.includes("image.tmdb.org") || up.includes("/t/p/")) return "poster";
+    if (up.includes("COVER_CLEAN_TALL") || up.includes("COVER_TITLE_TALL") || (up.includes("/cover") && !up.includes("COVER_TITLE_WIDE") && !up.includes("HERO_CLEAN_WIDE") && !up.includes("background"))) {
         return "poster";
     }
-    if (url.includes("imageservice.sky.com")) return "sky-hero";
-    if (url.includes("img-guidatv.org") || url.includes("/partite/") || url.includes("tennis.jpeg") || url.includes("premierleague")) return "sport";
-    return "sky-hero";
+    // Horizontal assets verificati ad alta risoluzione -> full-bleed
+    if (isFullBleedWorthy(up)) return "sky-hero";
+    // Tutte le sorgenti a bassa/incerta risoluzione restano nel compositing a frame
+    return "sport";
 }
 
-// Verifica se l'immagine è valida per la Hero (accettiamo sky, tmdb e sport ad alta risoluzione)
+// Certezza di risoluzione per il full-bleed: solo copertine orizzontali che
+// raggiungono davvero ~1600px+ di larghezza (Sky CDN upscalata a 1920, TMDB original).
+// Evita il full-bleed delle miniature guidatv/sport (300-500px) che risulterebbero pixelate.
+function isFullBleedWorthy(url) {
+    if (!url || typeof url !== "string") return false;
+    if (url.includes("_rs_300") || url.includes("/20/")) return false;
+
+    if (url.includes("imageservice.sky.com")) {
+        if (url.includes("/background/1920") || url.includes("/cover/1920") || url.includes("/1920")) return true;
+        return false;
+    }
+    if (url.includes("image.tmdb.org") && url.includes("/original/")) {
+        return true;
+    }
+    return false;
+}
+
+// Verifica se l'immagine è valida per la Hero full-bleed (solo sorgenti veramente HD)
 function isHighQualityHeroImage(url) {
     if (!url || typeof url !== "string") return false;
     if (url.includes("_rs_300")) return false;
@@ -59,8 +78,9 @@ function isHighQualityHeroImage(url) {
     
     if (url.includes("imageservice.sky.com")) return true;
     if (url.includes("image.tmdb.org")) return true;
-    if (url.includes("img-guidatv.org") || url.includes("/partite/") || url.includes("tennis.jpeg")) return true;
 
+    // img-guidatv / sport: finite la maggior parte sotto i 300-500px, non sono
+    // mai full-bleed; restano disponibili solo come fallback (frame + backdrop).
     return false;
 }
 
@@ -137,7 +157,7 @@ const DEFAULT_HERO_ITEMS = [
         progOraInizio: "15:15",
         progOraFine: "17:15",
         progImg: "https://img-guidatv.org/film_new/altro/5ec2c31c3b29343e97a8b656/5ec2c31c3b29343e97a8b656_p_1_rs_300.jpg",
-        artworkType: "sky-hero",
+        artworkType: "sport",
         progress: 15,
         targetHref: "/sky?ch=sky-cinema-uno",
         channelObj: { title: "Sky Cinema Uno", name: "Sky Cinema Uno", slug: "sky-cinema-uno" },
