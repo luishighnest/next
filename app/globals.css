@@ -11065,17 +11065,6 @@ body:has(.sky-app) {
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 4px 10px;
     border-radius: 5px;
-    gap: 6px;
-}
-
-.now-hero-category-tag::before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #00e59b;
-    box-shadow: 0 0 8px rgba(0, 229, 155, 0.8);
-    flex-shrink: 0;
 }
 
 /* 2. Logo del Canale: rimane unico in fila dedicata sotto la categoria */
@@ -11120,7 +11109,7 @@ body:has(.sky-app) {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 0 0 12px 0;
+    margin: 0 0 14px 0;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
