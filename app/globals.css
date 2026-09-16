@@ -1741,35 +1741,21 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .sky-app.is-mounting,
 .event-player-page.is-mounting {
     opacity: 0;
-    transform: translateZ(0);
 }
 
 .desktop-home.is-mounted,
 .sky-app.is-mounted,
 .event-player-page.is-mounted {
     opacity: 1;
-    animation: premiumPageFadeIn 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-    will-change: opacity;
-}
-
-/* Transizione di uscita pagina (Apple TV): fade-out rapido e morbido prima del cambio rotta */
-html.nmdz-leaving .desktop-home.is-mounted,
-html.nmdz-leaving .sky-app.is-mounted,
-html.nmdz-leaving .event-player-page.is-mounted {
-    animation: none;
-    opacity: 0;
-    transition: opacity 0.14s ease-out;
-    pointer-events: none;
+    animation: premiumPageFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes premiumPageFadeIn {
     0% {
         opacity: 0;
-        transform: translateY(10px) scale(0.995);
     }
     100% {
         opacity: 1;
-        transform: none;
     }
 }
 
