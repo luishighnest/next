@@ -11340,11 +11340,11 @@ body:has(.sky-app) {
 }
 
 .now-hero-nav-arrow--left {
-    left: 24px;
+    left: 23px;
 }
 
 .now-hero-nav-arrow--right {
-    right: 24px;
+    right: 25px;
 }
 
 .now-hero-nav-arrow:hover {
