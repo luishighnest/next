@@ -106,7 +106,7 @@ function getFirstStreamSource(channel) {
 }
 
 // Sub-component player Shaka ultra-veloce per preview in hover
-function CardShakaVideo({ channel, isReadyToDisplay }) {
+function CardShakaVideo({ channel, isReadyToDisplay, onVideoStarted }) {
     const videoRef = useRef(null);
     const playerRef = useRef(null);
     const [isMuted, setIsMuted] = useState(true);
@@ -276,10 +276,10 @@ function CardShakaVideo({ channel, isReadyToDisplay }) {
                 playsInline
                 disablePictureInPicture
                 controls={false}
-                onCanPlay={() => setIsPlaying(true)}
-                onPlaying={() => setIsPlaying(true)}
+                onCanPlay={() => { setIsPlaying(true); if (onVideoStarted) onVideoStarted(); }}
+                onPlaying={() => { setIsPlaying(true); if (onVideoStarted) onVideoStarted(); }}
             />
-            {isReadyToDisplay && isVideoShown && (
+            {isReadyToDisplay && isPlaying && (
                 <div className="card-live-preview-badge">
                     <span className="card-live-preview-dot" />
                     LIVE
@@ -333,6 +333,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     // ─── Hover Live Preview (Mostra il video dopo ESATTAMENTE 1.5s dall'ingresso del mouse) ───
     const [isHovering, setIsHovering] = useState(false);
     const [isReadyToDisplay, setIsReadyToDisplay] = useState(false);
+    const [isVideoStarted, setIsVideoStarted] = useState(false);
     const hoverTimerRef = useRef(null);
 
     // Controlla disponibilità stream (Sky e canali con URL/sources non VOD e non scaduti)
@@ -361,6 +362,7 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         }
         setIsHovering(false);
         setIsReadyToDisplay(false);
+        setIsVideoStarted(false);
     };
 
     const { startTransitionToPlayer } = useTransitionRouter();
@@ -460,10 +462,11 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     <CardShakaVideo
                         channel={channel}
                         isReadyToDisplay={isReadyToDisplay}
+                        onVideoStarted={() => setIsVideoStarted(true)}
                     />
                 )}
 
-                {!isReadyToDisplay && (
+                {!isVideoStarted && (
                     <div className="now-card-play-icon">
                         <i className="fa fa-play" aria-hidden="true" style={{ marginLeft: "3px" }}></i>
                     </div>
