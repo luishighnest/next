@@ -2805,7 +2805,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 .carousel-btn {
     position: absolute;
-    top: 50%;
+    /* Centro verticale della sola locandina (aspect 4:3): il carosello parte dall'alto
+       del wrapper e la locandina alta 0.75*cardWidth ha centro a 0.375*cardWidth */
+    top: calc(var(--card-width) * 0.375);
     transform: translateY(-50%);
     z-index: 20;
     background: none;
@@ -2821,11 +2823,11 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .carousel-btn--left {
-    left: -18px;
+    left: -42px;
 }
 
 .carousel-btn--right {
-    right: -18px;
+    right: -42px;
 }
 
 .carousel-btn:hover {
