@@ -2823,11 +2823,11 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .carousel-btn--left {
-    left: -42px;
+    left: -64px;
 }
 
 .carousel-btn--right {
-    right: -42px;
+    right: -64px;
 }
 
 .carousel-btn:hover {
