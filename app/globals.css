@@ -11395,51 +11395,47 @@ body:has(.sky-app) {
     to { width: 100%; }
 }
 
-/* Frecce laterali fluttuanti centrate verticalmente nella hero, fuori dal contenitore */
+/* Frecce laterali semplici: solo chevron cliccabile, centrato verticalmente, no contenitore */
 .now-hero-nav-arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 40;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(10, 14, 22, 0.55);
-    backdrop-filter: blur(14px) saturate(140%);
-    -webkit-backdrop-filter: blur(14px) saturate(140%);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: rgba(255, 255, 255, 0.9);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.85);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 8px;
     cursor: pointer;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
-    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease;
+    transition: color 0.2s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+    opacity: 0.7;
 }
 
 .now-hero-nav-arrow--left {
-    left: 26px;
+    left: 6px;
 }
 
 .now-hero-nav-arrow--right {
-    right: 26px;
+    right: 6px;
 }
 
 .now-hero-nav-arrow:hover {
-    background: rgba(255, 255, 255, 0.16);
-    border-color: rgba(255, 255, 255, 0.35);
     color: #ffffff;
-    transform: translateY(-50%) scale(1.08);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55), 0 0 18px rgba(0, 242, 254, 0.18);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.15);
 }
 
 .now-hero-nav-arrow:active {
-    transform: translateY(-50%) scale(0.96);
+    transform: translateY(-50%) scale(0.95);
+    opacity: 0.8;
 }
 
 .now-hero-nav-arrow .material-symbols-rounded {
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 2.4rem;
+    font-weight: 200;
+    line-height: 1;
 }
 
 /* ==========================================================================
