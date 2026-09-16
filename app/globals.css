@@ -3629,9 +3629,15 @@ body:has(.explore-all-overlay) {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 99999;
-    background: rgba(0, 0, 0, 0.96);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    background-color: #0b0f19 !important;
+    background-image:
+        radial-gradient(ellipse 70% 50% at 15% -5%, rgba(0, 225, 140, 0.25) 0%, transparent 60%),
+        radial-gradient(ellipse 75% 55% at 85% -8%, rgba(0, 125, 255, 0.32) 0%, transparent 65%),
+        radial-gradient(ellipse 90% 60% at 50% 20%, rgba(18, 38, 78, 0.55) 0%, transparent 80%),
+        radial-gradient(circle at 50% 100%, rgba(10, 16, 28, 0.9) 0%, transparent 70%) !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     display: flex;
     flex-direction: column;
     padding: 50px 8vw;
@@ -4128,7 +4134,8 @@ body:has(.explore-all-overlay) {
 }
 
 :root.light-theme .explore-all-overlay {
-    background: var(--bg-base);
+    background-color: var(--bg-base) !important;
+    background-image: none !important;
     scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
 }
 
