@@ -467,7 +467,10 @@ body {
     border-radius: 50%;
     cursor: pointer;
     text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 1px 3px rgba(0,0,0,0.6);
-    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                box-shadow 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     outline: none;
     display: flex;
     align-items: center;
@@ -666,7 +669,10 @@ body {
     transform-origin: right center;
     margin-right: 12px;
     cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                border-color 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     color: rgba(255, 255, 255, 0.85);
     gap: 8px;
     font-family: 'Manrope', sans-serif;
@@ -1735,21 +1741,35 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .sky-app.is-mounting,
 .event-player-page.is-mounting {
     opacity: 0;
+    transform: translateZ(0);
 }
 
 .desktop-home.is-mounted,
 .sky-app.is-mounted,
 .event-player-page.is-mounted {
     opacity: 1;
-    animation: premiumPageFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: premiumPageFadeIn 0.42s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    will-change: opacity;
+}
+
+/* Transizione di uscita pagina (Apple TV): fade-out rapido e morbido prima del cambio rotta */
+html.nmdz-leaving .desktop-home.is-mounted,
+html.nmdz-leaving .sky-app.is-mounted,
+html.nmdz-leaving .event-player-page.is-mounted {
+    animation: none;
+    opacity: 0;
+    transition: opacity 0.14s ease-out;
+    pointer-events: none;
 }
 
 @keyframes premiumPageFadeIn {
     0% {
         opacity: 0;
+        transform: translateY(10px) scale(0.995);
     }
     100% {
         opacity: 1;
+        transform: none;
     }
 }
 
@@ -2062,7 +2082,10 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     font-weight: 500;
     cursor: pointer;
     text-align: left;
-    transition: all 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: background-color 0.18s cubic-bezier(0.2, 0.8, 0.2, 1),
+                color 0.18s cubic-bezier(0.2, 0.8, 0.2, 1),
+                border-color 0.18s cubic-bezier(0.2, 0.8, 0.2, 1),
+                transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
     white-space: nowrap;
 }
 
@@ -2597,7 +2620,11 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     color: rgba(255, 255, 255, 0.88);
     font-size: 0.92rem;
     cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     font-family: inherit;
 }
 
@@ -2799,7 +2826,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+                background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+                color 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     color: #ffffff;
 }
 
@@ -4845,14 +4874,39 @@ video { outline: none !important; }
     border: 1px solid transparent; /* Nessun bordo visibile a riposo */
     transform: translateZ(0);
     backface-visibility: hidden;
+    z-index: 1;
     transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
-                border-color 0.3s ease,
-                box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+                border-color 0.3s ease;
 }
 
 /* Card VOD in formato Poster Cinematografico 2:3 */
 .now-card-wrapper.vod-poster-card .now-card {
     aspect-ratio: 2 / 3 !important;
+}
+
+/* Glow Apple TV all'hover: unico layer con box-shadow STATICO, anima solo l'opacity
+   (compositing GPU, zero repaint per frame) */
+.now-card-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    right: -10px;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 0 28px 56px rgba(0, 0, 0, 0.55), 0 14px 28px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    pointer-events: none;
+    z-index: 0;
+    will-change: opacity;
+}
+.now-card-wrapper.vod-poster-card::before {
+    aspect-ratio: 2 / 3;
+}
+.now-card-wrapper:hover::before {
+    opacity: 1;
 }
 
 /* Oscuramento cinematografico morbido all'hover per risaltare il Play icon */
@@ -4873,16 +4927,14 @@ video { outline: none !important; }
     opacity: 1;
 }
 
-/* All'hover: micro-zoom morbido in stile Apple TV + glow ampio e diffuso dietro la card */
+/* All'hover: micro-zoom morbido in stile Apple TV (solo transform + border, GPU) */
 .now-card-wrapper:hover .now-card {
     transform: scale(1.05) translateY(-6px);
     border-color: rgba(0, 229, 155, 0.55);
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55), 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
 .now-card-wrapper:hover .now-card.active {
     border-color: #00e59b;
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55), 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
 .now-card-bg {
@@ -5228,6 +5280,8 @@ video { outline: none !important; }
     width: 100% !important;
     min-width: 0 !important;
     box-sizing: border-box !important;
+    position: relative;
+    z-index: 2;
 }
 
 .now-card-time-ext {
