@@ -4845,9 +4845,9 @@ video { outline: none !important; }
     border: 1px solid transparent; /* Nessun bordo visibile a riposo */
     transform: translateZ(0);
     backface-visibility: hidden;
-    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1),
-                border-color 0.28s ease,
-                box-shadow 0.28s ease;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+                border-color 0.3s ease,
+                box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* Card VOD in formato Poster Cinematografico 2:3 */
@@ -4873,16 +4873,16 @@ video { outline: none !important; }
     opacity: 1;
 }
 
-/* All'hover: micro-zoom morbido + bordo sottile satinato verde smeraldo, senza ombre laterali pesanti */
+/* All'hover: micro-zoom morbido in stile Apple TV + glow ampio e diffuso dietro la card */
 .now-card-wrapper:hover .now-card {
-    transform: scale(1.035) translateY(-3px);
+    transform: scale(1.05) translateY(-6px);
     border-color: rgba(0, 229, 155, 0.55);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55), 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
 .now-card-wrapper:hover .now-card.active {
     border-color: #00e59b;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55), 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
 .now-card-bg {
@@ -4897,12 +4897,12 @@ video { outline: none !important; }
     -webkit-user-drag: none;
     user-select: none;
     animation: cardImgFadeIn 0.3s ease-out;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: transform;
 }
 
 .now-card-wrapper:hover .now-card-bg {
-    transform: scale(1.04);
+    transform: scale(1.05);
 }
 
 @keyframes cardImgFadeIn {
