@@ -2798,63 +2798,60 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     .carousel-wrapper {
         --card-width: calc((100% - 16px) / 2);
     }
+    .carousel-btn {
+        display: none;
+    }
 }
 
 .carousel-btn {
     position: absolute;
-    top: 0;
-    height: 188px; /* Esatta altezza della casella 4:3 larga 250px */
-    width: 140px;
-    border: none;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 20;
-    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 6px;
+    color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-                background-color 0.3s cubic-bezier(0.25, 1, 0.5, 1),
-                color 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    cursor: pointer;
+    opacity: 0.85;
+    transition: color 0.2s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
+}
+
+.carousel-btn--left {
+    left: -18px;
+}
+
+.carousel-btn--right {
+    right: -18px;
+}
+
+.carousel-btn:hover {
     color: #ffffff;
+    opacity: 1;
+    transform: translateY(-50%) scale(1.15);
 }
 
-.carousel-btn.left { 
-    left: -40px; 
-    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 65%, transparent 100%);
-}
-.carousel-btn.right { 
-    right: -40px; 
-    background: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 65%, transparent 100%);
+.carousel-btn:active {
+    transform: translateY(-50%) scale(0.95);
+    opacity: 0.8;
 }
 
-.carousel-wrapper:hover .carousel-btn { opacity: 1; }
-
-.carousel-btn:hover { 
-    color: #ffffff;
-}
-.carousel-btn.left:hover {
-    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0.98) 65%, transparent 100%);
-}
-.carousel-btn.right:hover {
-    background: linear-gradient(to left, rgba(0,0,0,1) 0%, rgba(0,0,0,0.98) 65%, transparent 100%);
-}
-
-/* Nasconde le frecce quando si 癡 ai bordi del carosello */
+/* Nasconde le frecce quando si è ai bordi del carosello */
 .carousel-btn.arrow-disabled {
     opacity: 0 !important;
     pointer-events: none !important;
+    transform: translateY(-50%) scale(0.9);
 }
 
-.carousel-btn .material-symbols-rounded { 
-    font-size: 3.5rem; 
-    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.8));
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+.carousel-btn .material-symbols-rounded {
+    font-size: 2.6rem;
+    font-weight: 200;
+    line-height: 1;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65), 0 0 12px rgba(0, 0, 0, 0.35);
 }
-.carousel-btn.left .material-symbols-rounded { transform: translateX(-10px); }
-.carousel-btn.right .material-symbols-rounded { transform: translateX(10px); }
-
-.carousel-btn.left:hover .material-symbols-rounded { transform: translateX(-10px) scale(1.15); }
-.carousel-btn.right:hover .material-symbols-rounded { transform: translateX(10px) scale(1.15); }
 
 .home-carousel { 
     display: flex; 
@@ -3555,48 +3552,6 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     background: linear-gradient(90deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.03) 60%, transparent 100%);
 }
 
-/* Nuovi pulsanti di navigazione stile DAZN */
-.carousel-top-nav {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-}
-.top-nav-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.25);
-    color: rgba(255,255,255,0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    z-index: 100; /* Assicura che siano cliccabili */
-    pointer-events: auto;
-}
-.top-nav-btn:hover {
-    border-color: rgba(255,255,255,0.6);
-    color: #fff;
-    background: rgba(255,255,255,0.15);
-    transform: scale(1.1);
-}
-.top-nav-btn.arrow-disabled {
-    opacity: 0.2;
-    pointer-events: none;
-}
-:root.light-theme .top-nav-btn {
-    background: #ffffff !important;
-    border: 1px solid #000000 !important;
-    color: #000000 !important;
-}
-:root.light-theme .top-nav-btn:hover {
-    border-color: #000000 !important;
-    color: #000000 !important;
-    background: #f2f2f2 !important;
-    transform: scale(1.1);
-}
 :root.light-theme .category-header-container::after {
     background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 80%);
 }
@@ -4111,25 +4066,14 @@ body:has(.explore-all-overlay) {
     box-shadow: none;
 }
 
-:root.light-theme .carousel-btn.left {
-    background: linear-gradient(to right, rgba(240,240,245,0.98) 0%, rgba(240,240,245,0.8) 30%, transparent 100%);
-}
-
-:root.light-theme .carousel-btn.right {
-    background: linear-gradient(to left, rgba(240,240,245,0.98) 0%, rgba(240,240,245,0.8) 30%, transparent 100%);
-}
-
-:root.light-theme .carousel-btn.left:hover {
-    background: linear-gradient(to right, rgba(240,240,245,1) 0%, rgba(240,240,245,0.9) 30%, transparent 100%);
-}
-
-:root.light-theme .carousel-btn.right:hover {
-    background: linear-gradient(to left, rgba(240,240,245,1) 0%, rgba(240,240,245,0.9) 30%, transparent 100%);
+:root.light-theme .carousel-btn--left,
+:root.light-theme .carousel-btn--right {
+    background: none;
 }
 
 :root.light-theme .carousel-btn .material-symbols-rounded {
-    color: #000000;
-    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
+    color: rgba(0, 0, 0, 0.85);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
 }
 
 :root.light-theme #stats-panel {
@@ -4717,18 +4661,10 @@ body:not(.light-theme) .home-ch-badge,
     color: #333 !important;
 }
 
-/* 2. Carousel Buttons gradient fix (fade to white, not grey) */
-:root.light-theme .carousel-btn.left {
-    background: linear-gradient(to right, rgba(240,240,245,1) 0%, rgba(240,240,245,0.9) 65%, transparent 100%) !important;
-}
-:root.light-theme .carousel-btn.right {
-    background: linear-gradient(to left, rgba(240,240,245,1) 0%, rgba(240,240,245,0.9) 65%, transparent 100%) !important;
-}
-:root.light-theme .carousel-btn.left:hover {
-    background: linear-gradient(to right, rgba(240,240,245,1) 0%, rgba(240,240,245,0.98) 65%, transparent 100%) !important;
-}
-:root.light-theme .carousel-btn.right:hover {
-    background: linear-gradient(to left, rgba(240,240,245,1) 0%, rgba(240,240,245,0.98) 65%, transparent 100%) !important;
+/* 2. Carousel buttons light theme: solo chevron scuro, nessun gradiente */
+:root.light-theme .carousel-btn--left,
+:root.light-theme .carousel-btn--right {
+    background: none !important;
 }
 
 /* 3. Scrollbars for light theme */
@@ -5619,13 +5555,6 @@ body.in-iframe #center-play-pause-icon { font-size: 3.5rem; }
     .related-title {
         font-size: 1.9rem;
     }
-    .top-nav-btn {
-        width: 38px;
-        height: 38px;
-    }
-    .top-nav-btn span {
-        font-size: 1.3rem;
-    }
     .now-card-info-external {
         height: 60px !important;
         min-height: 60px !important;
@@ -5651,10 +5580,6 @@ body.in-iframe #center-play-pause-icon { font-size: 3.5rem; }
     .category-header-container h2,
     .related-title {
         font-size: 2.2rem;
-    }
-    .top-nav-btn {
-        width: 44px;
-        height: 44px;
     }
     .now-card-info-external {
         height: 68px !important;
@@ -5735,13 +5660,13 @@ html {
 }
 
 /* Pulsanti icone (Search, Settings, Controls, Close) */
-.settings-icon-btn, .search-icon-btn, .top-nav-btn, .btn-back-home, .control-btn {
+.settings-icon-btn, .search-icon-btn, .btn-back-home, .control-btn {
     transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
                 background 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
                 color 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
     cursor: pointer;
 }
-.settings-icon-btn:active, .search-icon-btn:active, .top-nav-btn:active, .btn-back-home:active, .control-btn:active {
+.settings-icon-btn:active, .search-icon-btn:active, .btn-back-home:active, .control-btn:active {
     transform: scale(0.88) !important;
 }
 

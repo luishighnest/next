@@ -40,12 +40,6 @@ export default function SkeletonSection({ cardCount = 6, isVod = false }) {
                     <div className="skeleton-item skeleton-shimmer" style={{ width: "160px", height: "26px", borderRadius: "6px" }} />
                     <div className="skeleton-item skeleton-shimmer" style={{ width: "75px", height: "20px", borderRadius: "10px", marginLeft: "14px" }} />
                 </div>
-                <div className="category-header-right">
-                    <div className="carousel-top-nav" style={{ display: "flex", gap: "8px" }}>
-                        <div className="skeleton-item skeleton-shimmer" style={{ width: "32px", height: "32px", borderRadius: "50%" }} />
-                        <div className="skeleton-item skeleton-shimmer" style={{ width: "32px", height: "32px", borderRadius: "50%" }} />
-                    </div>
-                </div>
             </div>
 
             <div className="carousel-wrapper" ref={wrapperRef}>

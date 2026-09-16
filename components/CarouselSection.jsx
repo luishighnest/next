@@ -149,30 +149,20 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
                             </span>
                         </button>
                     )}
-                    <div className="carousel-top-nav">
-                        <button
-                            ref={btnLeftRef}
-                            type="button"
-                            className="top-nav-btn left"
-                            onClick={() => scroll("left")}
-                            aria-label="Precedente"
-                        >
-                            <span className="material-symbols-rounded">chevron_left</span>
-                        </button>
-                        <button
-                            ref={btnRightRef}
-                            type="button"
-                            className="top-nav-btn right"
-                            onClick={() => scroll("right")}
-                            aria-label="Successivo"
-                        >
-                            <span className="material-symbols-rounded">chevron_right</span>
-                        </button>
-                    </div>
                 </div>
             </div>
 
             <div className="carousel-wrapper" ref={wrapperRef}>
+                <button
+                    ref={btnLeftRef}
+                    type="button"
+                    className="carousel-btn carousel-btn--left"
+                    onClick={() => scroll("left")}
+                    aria-label="Precedente"
+                >
+                    <span className="material-symbols-rounded">chevron_left</span>
+                </button>
+
                 <div className="home-carousel" ref={scrollRef}>
                     {channels.map((ch, idx) => (
                         <ChannelCard
@@ -183,6 +173,16 @@ function CarouselSection({ title, channels, onExplore, isRelated = false }) {
                         />
                     ))}
                 </div>
+
+                <button
+                    ref={btnRightRef}
+                    type="button"
+                    className="carousel-btn carousel-btn--right"
+                    onClick={() => scroll("right")}
+                    aria-label="Successivo"
+                >
+                    <span className="material-symbols-rounded">chevron_right</span>
+                </button>
             </div>
         </div>
     );
