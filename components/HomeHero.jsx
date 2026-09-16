@@ -657,28 +657,26 @@ export default function HomeHero({ categories = [] }) {
                             );
                         })}
                     </div>
-
-                    {/* Frecce di navigazione minimal in basso a destra */}
-                    <div className="now-hero-footer-arrows">
-                        <button
-                            type="button"
-                            className="now-hero-nav-arrow"
-                            onClick={prevSlide}
-                            aria-label="Canale precedente"
-                        >
-                            <span className="material-symbols-rounded">chevron_left</span>
-                        </button>
-                        <button
-                            type="button"
-                            className="now-hero-nav-arrow"
-                            onClick={nextSlide}
-                            aria-label="Canale successivo"
-                        >
-                            <span className="material-symbols-rounded">chevron_right</span>
-                        </button>
-                    </div>
                 </div>
             </div>
+
+            {/* Frecce laterali centrate verticalmente, fuori dal contenitore */}
+            <button
+                type="button"
+                className="now-hero-nav-arrow now-hero-nav-arrow--left"
+                onClick={prevSlide}
+                aria-label="Canale precedente"
+            >
+                <span className="material-symbols-rounded">chevron_left</span>
+            </button>
+            <button
+                type="button"
+                className="now-hero-nav-arrow now-hero-nav-arrow--right"
+                onClick={nextSlide}
+                aria-label="Canale successivo"
+            >
+                <span className="material-symbols-rounded">chevron_right</span>
+            </button>
 
             {/* Sfumatura cinematografica di transizione tra la Hero e le sezioni sottostanti */}
             <div className="now-hero-bottom-transition" />
