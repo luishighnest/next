@@ -11056,15 +11056,14 @@ body:has(.sky-app) {
 .now-hero-category-tag {
     display: inline-flex;
     align-items: center;
-    font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.68);
+    color: rgba(255, 255, 255, 0.85);
     background: rgba(255, 255, 255, 0.10);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 4px 10px;
-    border-radius: 5px;
+    padding: 5px 12px;
+    border-radius: 6px;
 }
 
 /* 2. Logo del Canale: rimane unico in fila dedicata sotto la categoria */
@@ -11395,7 +11394,7 @@ body:has(.sky-app) {
     to { width: 100%; }
 }
 
-/* Frecce laterali semplici: solo chevron cliccabile, centrato verticalmente, no contenitore */
+/* Frecce laterali semplici: solo chevron cliccabile, ancorate ai bordi dello schermo, no contenitore */
 .now-hero-nav-arrow {
     position: absolute;
     top: 50%;
@@ -11403,22 +11402,22 @@ body:has(.sky-app) {
     z-index: 40;
     background: none;
     border: none;
-    color: rgba(255, 255, 255, 0.85);
+    padding: 4px;
+    color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 8px;
     cursor: pointer;
     transition: color 0.2s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s ease;
-    opacity: 0.7;
+    opacity: 0.85;
 }
 
 .now-hero-nav-arrow--left {
-    left: 6px;
+    left: 24px;
 }
 
 .now-hero-nav-arrow--right {
-    right: 6px;
+    right: 24px;
 }
 
 .now-hero-nav-arrow:hover {
@@ -11436,6 +11435,7 @@ body:has(.sky-app) {
     font-size: 2.4rem;
     font-weight: 200;
     line-height: 1;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65), 0 0 12px rgba(0, 0, 0, 0.35);
 }
 
 /* ==========================================================================
@@ -11500,8 +11500,8 @@ body:has(.sky-app) {
         height: 38px;
     }
     .now-hero-category-tag {
-        font-size: 0.66rem;
-        padding: 3px 8px;
+        font-size: 0.72rem;
+        padding: 4px 10px;
     }
     .now-hero-heading {
         font-size: 1.75rem;
