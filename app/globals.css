@@ -11043,13 +11043,48 @@ body:has(.sky-app) {
     transform: translateY(0);
 }
 
-/* 1. Logo Canale: Visual Anchor aumentato (+25-30% altezza, 32-34px) con gap inferiore dedicato (16px) */
+/* 1. Sopratitolo Categoria: piccolo, chiaro, sopra il logo (gerarchia Apple TV) */
 .now-hero-brand-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.now-hero-category-tag {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.68);
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 4px 10px;
+    border-radius: 5px;
+    gap: 6px;
+}
+
+.now-hero-category-tag::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #00e59b;
+    box-shadow: 0 0 8px rgba(0, 229, 155, 0.8);
+    flex-shrink: 0;
+}
+
+/* 2. Logo del Canale: rimane unico in fila dedicata sotto la categoria */
+.now-hero-logo-row {
     display: flex;
     align-items: center;
     height: 34px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .now-hero-channel-badge-logo {
@@ -11092,7 +11127,7 @@ body:has(.sky-app) {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Inter", "Segoe UI", Roboto, sans-serif;
 }
 
-/* 3. Riga Metadati & Orario Integrata: Diretta + Orario + Timeline + Badge (gap 10px, mb 16px) */
+/* 3. Riga Metadati & Orario Integrata: Diretta + Orario + Timeline + Spec tecniche (gap 10px, mb 16px) */
 .now-hero-meta-row {
     display: flex;
     align-items: center;
@@ -11134,20 +11169,20 @@ body:has(.sky-app) {
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
 }
 
-/* Micro-badge rettangolari con bordo sottile (SPORT, FHD, 5.1) */
-.now-hero-meta-box {
+/* Micro-badge rettangolari con bordo sottile (non più usato per categoria: ora è sopra-titolo) */
+
+/* Spec tecniche (FHD, 5.1): testo sottile de-enfatizzato, niente bordi, subordinato a DIRETTA */
+.now-hero-spec-text {
     display: inline-flex;
     align-items: center;
-    padding: 2px 7px;
-    border-radius: 4px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: rgba(255, 255, 255, 0.82);
-    font-size: 0.68rem;
-    font-weight: 600;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.72rem;
+    font-weight: 500;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     line-height: 1.2;
+    padding-left: 10px;
+    border-left: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 /* 4. EPG / Orario e Barra Progresso: solo testo pulito senza pillola/badge (mb 14px) */
@@ -11213,7 +11248,7 @@ body:has(.sky-app) {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin: 0 0 24px 0;
+    margin: 0 0 28px 0;
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
@@ -11342,7 +11377,7 @@ body:has(.sky-app) {
     background: rgba(255, 255, 255, 0.22);
     overflow: hidden;
     position: relative;
-    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease;
+    transition: background-color 0.25s ease;
 }
 
 .now-hero-segment-btn:hover .now-hero-segment-track {
@@ -11350,9 +11385,8 @@ body:has(.sky-app) {
 }
 
 .now-hero-segment-btn.active .now-hero-segment-track {
-    width: 66px;
-    background: rgba(255, 255, 255, 0.28);
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+    width: 44px;
+    background: rgba(255, 255, 255, 0.30);
 }
 
 .now-hero-segment-fill {
@@ -11365,7 +11399,6 @@ body:has(.sky-app) {
 .now-hero-segment-btn.active .now-hero-segment-fill {
     animation: nowSegmentFill 6.5s linear forwards;
     background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
-    box-shadow: 0 0 8px rgba(0, 242, 254, 0.6);
 }
 
 @keyframes nowSegmentFill {
@@ -11457,10 +11490,18 @@ body:has(.sky-app) {
         gap: 12px;
     }
     .now-hero-brand-top {
+        margin-bottom: 8px;
+    }
+    .now-hero-logo-row {
         height: 40px;
+        margin-bottom: 10px;
     }
     .now-hero-channel-badge-logo {
         height: 38px;
+    }
+    .now-hero-category-tag {
+        font-size: 0.66rem;
+        padding: 3px 8px;
     }
     .now-hero-heading {
         font-size: 1.75rem;

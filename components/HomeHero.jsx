@@ -546,8 +546,15 @@ export default function HomeHero({ categories = [] }) {
                                     zIndex: isActive ? 5 : 1
                                 }}
                             >
-                                {/* 1. Logo del Canale ben integrato */}
+                                {/* 1. Sopratitolo Categoria: gerarchia chiara sopra il logo */}
                                 <div className="now-hero-brand-top">
+                                    {item.category && (
+                                        <span className="now-hero-category-tag">{item.category}</span>
+                                    )}
+                                </div>
+
+                                {/* 2. Logo del Canale ben integrato */}
+                                <div className="now-hero-logo-row">
                                     {item.logoUrl ? (
                                         <img
                                             src={item.logoUrl}
@@ -561,12 +568,12 @@ export default function HomeHero({ categories = [] }) {
                                     )}
                                 </div>
 
-                                {/* 2. Titolo Principale Programma: Protagonista subito sotto il logo canale */}
+                                {/* 3. Titolo Principale Programma: Protagonista subito sotto il logo canale */}
                                 <h1 className="now-hero-heading whitespace-nowrap overflow-hidden text-ellipsis truncate" title={item.progTitle}>
                                     {item.progTitle}
                                 </h1>
 
-                                {/* 3. Riga Metadati & Orario Integrata: Diretta + Orario/Timeline + Badge Tecnici */}
+                                {/* 4. Riga Metadati & Orario: [DIRETTA] + Orario + Timeline + spec tecniche */}
                                 <div className="now-hero-meta-row">
                                     <span className="now-hero-live-pill">
                                         <span className="now-hero-live-pulse" />
@@ -589,11 +596,8 @@ export default function HomeHero({ categories = [] }) {
                                         </div>
                                     )}
 
-                                    {item.category && (
-                                        <span className="now-hero-meta-box">{item.category}</span>
-                                    )}
-                                    <span className="now-hero-meta-box">FHD</span>
-                                    <span className="now-hero-meta-box">5.1</span>
+                                    <span className="now-hero-spec-text">FHD</span>
+                                    <span className="now-hero-spec-text">5.1</span>
                                 </div>
 
                                 {/* 4. Descrizione del programma: min-height fissa a 2 righe e line-clamp-2 per bloccare i CTA */}
