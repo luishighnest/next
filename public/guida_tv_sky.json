@@ -179,10 +179,17 @@
     "programmi": [
       {
         "ora": "00:00",
+        "fine": "00:30",
+        "titolo": "News Line",
+        "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/13d01356-fee9-4aea-8fcc-082ab2d3d981/background/600"
+      },
+      {
+        "ora": "00:30",
         "fine": "01:00",
-        "titolo": "After Party: La notte dei campioni",
-        "descrizione": "After Party: La notte dei campioni",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c4790de7-348b-4727-aa2a-56464e2f622e/background/600"
+        "titolo": "News Line",
+        "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/13d01356-fee9-4aea-8fcc-082ab2d3d981/background/600"
       },
       {
         "ora": "01:00",
@@ -452,13 +459,13 @@
       },
       {
         "ora": "20:00",
-        "fine": "21:00",
+        "fine": "20:55",
         "titolo": "Sky Calcio Show",
         "descrizione": "Dai prepartita fino alle analisi della tarda serata. In studio Federica Masolin con Fabio Capello, Paolo Condo', Alessandro Costacurta, Paolo Di Canio e Alessandro Florenzi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/dd754a16-6e90-471d-8573-9d210e2ab672/background/600"
       },
       {
-        "ora": "21:00",
+        "ora": "20:55",
         "fine": "21:30",
         "titolo": "Sport 24 Today",
         "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
@@ -750,13 +757,13 @@
       },
       {
         "ora": "03:00",
-        "fine": "04:00",
+        "fine": "03:55",
         "titolo": "GP Italia: Gara",
         "descrizione": "A Monza la gara piu' veloce dell'anno: grande attesa per i padroni di casa, le due Ferrari e il leader del mondiale Antonelli. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/834de743-77dd-4f15-80db-350dba84112f/background/600"
       },
       {
-        "ora": "04:00",
+        "ora": "03:55",
         "fine": "05:00",
         "titolo": "GP Olanda Sprint Race",
         "descrizione": "A Zandvoort prima gara del weekend sulla distanza di 100km: chi conquistera' gli 8 punti in palio per il vincitore? Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
@@ -1322,20 +1329,13 @@
       },
       {
         "ora": "15:50",
-        "fine": "17:50",
+        "fine": "18:40",
         "titolo": "Danimarca - Serbia",
         "descrizione": "... Campionati Europei di pallavolo maschile. - Nel Gruppo C la rivelazione Danimarca incrocia la Serbia. Tc Maurizio Trezzi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/541f6c47-0f5c-4e05-b30a-4bf1e394126d/background/600"
       },
       {
-        "ora": "17:50",
-        "fine": "18:20",
-        "titolo": "Icarus Ultra 2025 Ep.46 14/09/2026",
-        "descrizione": "... Icarus Ultra. - A Reggio Calabria, i Tesori del Mediterraneo porta in scena un grande evento che unisce sport, cultura e spettacolo. Protagonista e' la Regata del Mediterraneo, competizione che celebra il rapporto tra la citta' e il mare.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c2c3a072-e3c1-468d-b494-5dc0336dc820/background/600"
-      },
-      {
-        "ora": "18:20",
+        "ora": "18:40",
         "fine": "18:50",
         "titolo": "Milito",
         "descrizione": "Calcio.",
@@ -1620,13 +1620,13 @@
     "programmi": [
       {
         "ora": "01:15",
-        "fine": "03:30",
+        "fine": "03:25",
         "titolo": "Bourg-en-Bresse - Besiktas Gain",
         "descrizione": "I francesi, capaci di vincere gara 1 ad Istanbul, si giocano in casa la possibilita' di conquistare uno storico titolo contro i grandi favoriti della vigilia. TC: Solaini-Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3cbcb734-8a1f-4927-b13f-f5d5d9c9d151/background/600"
       },
       {
-        "ora": "03:30",
+        "ora": "03:25",
         "fine": "06:00",
         "titolo": "Oklahoma City - San Antonio",
         "descrizione": "Gara-7, non c'e' futuro: 48 minuti per decidere chi, tra Thunder e Spurs, sfidera' i Knicks in finale NBA. Telecronaca di Flavio Tranquillo e Davide Pessina",
@@ -2079,20 +2079,20 @@
       },
       {
         "ora": "01:05",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "Milan - Benfica",
         "descrizione": "Rossoneri imbattuti nei 6 precedenti con 4 vittorie (comprese le 2 finali vinte di Coppa dei Campioni nel 1963 e 1960) e 2 pareggi entrambi in Portogallo. TC: Borghi-Montolivo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b64c0217-ae46-4149-98e2-a90f46399464/background/600"
       },
       {
-        "ora": "03:00",
-        "fine": "04:00",
+        "ora": "03:05",
+        "fine": "04:05",
         "titolo": "GP Italia: Gara",
         "descrizione": "A Monza la gara piu' veloce dell'anno: grande attesa per i padroni di casa, le due Ferrari e il leader del mondiale Antonelli. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/834de743-77dd-4f15-80db-350dba84112f/background/600"
       },
       {
-        "ora": "04:00",
+        "ora": "04:05",
         "fine": "06:00",
         "titolo": "Milan - Benfica",
         "descrizione": "Rossoneri imbattuti nei 6 precedenti con 4 vittorie (comprese le 2 finali vinte di Coppa dei Campioni nel 1963 e 1960) e 2 pareggi entrambi in Portogallo. TC: Borghi-Montolivo",
@@ -2369,11 +2369,18 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:10",
-        "fine": "01:05",
+        "ora": "00:05",
+        "fine": "00:50",
         "titolo": "LIVE WTA 500 Guadalajara",
         "descrizione": "Altra tappa del calendario dei tornei WTA 500",
         "immagine": "https://img-guidatv.org/54/live-wta-500-guadalajara/5.jpg"
+      },
+      {
+        "ora": "00:50",
+        "fine": "01:05",
+        "titolo": "TIE-BREAK 2026",
+        "descrizione": "Tie Break - Shelton vs Alcaraz 5 set US OPEN 2026",
+        "immagine": "https://img-guidatv.org/54/tie-break-2026/0.jpg"
       },
       {
         "ora": "01:05",
@@ -2384,29 +2391,36 @@
       },
       {
         "ora": "02:55",
-        "fine": "04:50",
+        "fine": "03:05",
+        "titolo": "TIE-BREAK 2026",
+        "descrizione": "Tie Break - Tiafoe vs Medvedev US OPEN 2026",
+        "immagine": "https://img-guidatv.org/54/tie-break-2026/0.jpg"
+      },
+      {
+        "ora": "03:05",
+        "fine": "05:00",
         "titolo": "LIVE WTA 500 Guadalajara",
         "descrizione": "Altra tappa del calendario dei tornei WTA 500",
         "immagine": "https://img-guidatv.org/54/live-wta-500-guadalajara/5.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "07:20",
-        "titolo": "US Open 2026 - Singolare femminile",
-        "descrizione": "A New York si gioca l'ultimo Slam dell'anno",
+        "ora": "05:00",
+        "fine": "06:50",
+        "titolo": "US Open 2026 - Singolare femminile - Ep. 45 - Elena Rybakina vs Coco Gauff US OPEN 2026 # 2",
+        "descrizione": "Elena Rybakina vs Coco Gauff US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
         "ora": "07:40",
-        "fine": "11:15",
+        "fine": "09:20",
         "titolo": "WTA 250 Sao Paulo 2026 - Ep. 1 - Lucrezia Stefanini vs Nadia Podoroska WTA 250 Sao Paulo # 1",
         "descrizione": "Lucrezia Stefanini vs Nadia Podoroska WTA 250 Sao Paulo",
         "immagine": "https://img-guidatv.org/54/wta-250-sao-paulo-2026-ep-1-lucrezia-stefanini-vs-nadia-podoroska-wta-250-sao-paulo-1/0.jpg"
       },
       {
-        "ora": "11:15",
+        "ora": "09:20",
         "fine": "11:40",
-        "titolo": "US Open 2026 - Singolare femminile",
+        "titolo": "US Open 2026 - Singolare femminile - Ep. 40 - Aryna Sabalenka vs Linda Noskova US OPEN 2026 # 1",
         "descrizione": "Aryna Sabalenka vs Linda Noskova US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
@@ -2419,27 +2433,48 @@
       },
       {
         "ora": "13:30",
-        "fine": "13:40",
+        "fine": "15:10",
         "titolo": "Supertennis TG",
         "descrizione": "Supertennis TG - L'informazione dall'Italia e dal mondo.",
         "immagine": "https://img-guidatv.org/54/supertennis-tg/6.jpg"
       },
       {
-        "ora": "13:40",
-        "fine": "14:35",
-        "titolo": "US Open 2026 - Singolare maschile - Ep. 60 - Ben Shelton vs Carlos Alcaraz US OPEN 2026 # 9",
-        "descrizione": "Ben Shelton vs Carlos Alcaraz US OPEN 2026",
-        "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
-      },
-      {
-        "ora": "14:35",
+        "ora": "15:10",
         "fine": "16:00",
-        "titolo": "US Open 2026 - Singolare maschile - Ep. 61 - Ben Shelton vs Carlos Alcaraz US OPEN 2026 # 1",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 61 - Ben Shelton vs Carlos Alcaraz US OPEN 2026 # 4",
         "descrizione": "Ben Shelton vs Carlos Alcaraz US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
         "ora": "16:00",
+        "fine": "16:20",
+        "titolo": "LIVE WTA 250 Sao Paulo",
+        "descrizione": "Altra tappa  del calendario dei tornei WTA 250",
+        "immagine": "https://img-guidatv.org/54/live-wta-250-sao-paulo/5.jpg"
+      },
+      {
+        "ora": "16:20",
+        "fine": "16:35",
+        "titolo": "LIVE WTA 250 Sao Paulo",
+        "descrizione": "Altra tappa  del calendario dei tornei WTA 250",
+        "immagine": "https://img-guidatv.org/54/live-wta-250-sao-paulo/5.jpg"
+      },
+      {
+        "ora": "16:35",
+        "fine": "16:50",
+        "titolo": "LIVE WTA 250 Sao Paulo",
+        "descrizione": "Altra tappa  del calendario dei tornei WTA 250",
+        "immagine": "https://img-guidatv.org/54/live-wta-250-sao-paulo/5.jpg"
+      },
+      {
+        "ora": "16:50",
+        "fine": "17:05",
+        "titolo": "LIVE WTA 250 Sao Paulo",
+        "descrizione": "Altra tappa  del calendario dei tornei WTA 250",
+        "immagine": "https://img-guidatv.org/54/live-wta-250-sao-paulo/5.jpg"
+      },
+      {
+        "ora": "17:05",
         "fine": "17:50",
         "titolo": "LIVE WTA 250 Sao Paulo",
         "descrizione": "Altra tappa  del calendario dei tornei WTA 250",
@@ -2482,7 +2517,7 @@
       },
       {
         "ora": "22:05",
-        "fine": "00:10",
+        "fine": "00:05",
         "titolo": "LIVE WTA 500 Guadalajara",
         "descrizione": "Altra tappa del calendario dei tornei WTA 500",
         "immagine": "https://img-guidatv.org/54/live-wta-500-guadalajara/5.jpg"
@@ -2641,24 +2676,31 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "02:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "02:45",
-        "fine": "04:45",
-        "titolo": "Ciclismo: Giro D'Abruzzo 2° Giornata",
-        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
+        "fine": "02:10",
+        "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 1a Tappa: Cupello - Casalincontrada",
+        "descrizione": "Il Giro d'Abruzzo 2026 prende il via con la prima tappa da Cupello a Casalincontrada. Una frazione inaugurale sulle strade abruzzesi che apre la corsa e dà il via alla sfida per la classifica generale.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "04:45",
+        "ora": "02:10",
+        "fine": "04:10",
+        "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 2a Tappa: Popoli Terme - Caramanico Terme",
+        "descrizione": "Il Giro d'Abruzzo 2026 prosegue con la seconda tappa da Popoli Terme a Caramanico Terme. Una frazione impegnativa nel cuore dell'Abruzzo, con un percorso adatto a fare selezione e a incidere sulla classifica generale.",
+        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+      },
+      {
+        "ora": "04:10",
+        "fine": "05:15",
+        "titolo": "Pattinaggio A Rotelle - Campionati Italiani Corsa Su Strada 2026",
+        "descrizione": "Tra corsa su pista e artistico, freestyle e roller derby, i migliori atleti italiani di confrontano su pattini a rotelle.",
+        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-campionati-italiani-corsa-su-strada-2026/0.jpg"
+      },
+      {
+        "ora": "05:15",
         "fine": "06:00",
-        "titolo": "Pattinaggio A Rotelle. Finali C.To Italiano Corsa Su Strada Vado Ligure",
-        "descrizione": "Pattinaggio a rotelle. Finali C.to Italiano Corsa su strada Vado Ligure",
-        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-finali-c-to-italiano-corsa-su-strada-vado-ligure/0.jpg"
+        "titolo": "Ciclismo MTB: Mondiali Marathon 2026 - Valle Di Primiero",
+        "descrizione": "I migliori specialisti della mountain bike sulle lunghe distanze si sfidano nei Campionati del Mondo UCI Marathon 2026. Un percorso impegnativo e selettivo assegna le maglie iridate della disciplina, tra resistenza, tecnica e grandi dislivelli.",
+        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2759,24 +2801,31 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "02:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "02:45",
-        "fine": "04:45",
-        "titolo": "Ciclismo: Giro D'Abruzzo 2° Giornata",
-        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
+        "fine": "02:10",
+        "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 1a Tappa: Cupello - Casalincontrada",
+        "descrizione": "Il Giro d'Abruzzo 2026 prende il via con la prima tappa da Cupello a Casalincontrada. Una frazione inaugurale sulle strade abruzzesi che apre la corsa e dà il via alla sfida per la classifica generale.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "04:45",
+        "ora": "02:10",
+        "fine": "04:10",
+        "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 2a Tappa: Popoli Terme - Caramanico Terme",
+        "descrizione": "Il Giro d'Abruzzo 2026 prosegue con la seconda tappa da Popoli Terme a Caramanico Terme. Una frazione impegnativa nel cuore dell'Abruzzo, con un percorso adatto a fare selezione e a incidere sulla classifica generale.",
+        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+      },
+      {
+        "ora": "04:10",
+        "fine": "05:15",
+        "titolo": "Pattinaggio A Rotelle - Campionati Italiani Corsa Su Strada 2026",
+        "descrizione": "Tra corsa su pista e artistico, freestyle e roller derby, i migliori atleti italiani di confrontano su pattini a rotelle.",
+        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-campionati-italiani-corsa-su-strada-2026/0.jpg"
+      },
+      {
+        "ora": "05:15",
         "fine": "06:00",
-        "titolo": "Pattinaggio A Rotelle. Finali C.To Italiano Corsa Su Strada Vado Ligure",
-        "descrizione": "Pattinaggio a rotelle. Finali C.to Italiano Corsa su strada Vado Ligure",
-        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-finali-c-to-italiano-corsa-su-strada-vado-ligure/0.jpg"
+        "titolo": "Ciclismo MTB: Mondiali Marathon 2026 - Valle Di Primiero",
+        "descrizione": "I migliori specialisti della mountain bike sulle lunghe distanze si sfidano nei Campionati del Mondo UCI Marathon 2026. Un percorso impegnativo e selettivo assegna le maglie iridate della disciplina, tra resistenza, tecnica e grandi dislivelli.",
+        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "06:00",
@@ -3901,7 +3950,7 @@
       },
       {
         "ora": "04:35",
-        "fine": "05:25",
+        "fine": "05:30",
         "titolo": "La signora in giallo",
         "descrizione": "Un'insegnante d'inglese in pensione, Jessica B. Fletcher, dopo essere rimasta vedova intorno ai cinquant'anni del marito Frank, diventa quasi per caso una scrittrice di successo. Nonostante la fama e la fortuna ottenute, Jessica continua a vivere una vita semplice e salutare, risiedendo nel piccolo paese di Cabot Cove, sulla costa del Maine, e coltivando le sue vecchie amicizie, che la portano spesso in giro per il mondo. La signora Fletcher avrà a che fare con una serie di omicidi che ne risvegliano l'insaziabile curiosità, portandola a risolvere i casi della più varia natura.",
         "immagine": "https://image.tmdb.org/t/p/w300/fHu2unKVJ7RXMCaxT3eEaWECjl.jpg"
@@ -3914,8 +3963,8 @@
         "immagine": "https://image.tmdb.org/t/p/w300/fHu2unKVJ7RXMCaxT3eEaWECjl.jpg"
       },
       {
-        "ora": "05:25",
-        "fine": "06:00",
+        "ora": "05:30",
+        "fine": "06:05",
         "titolo": "Speciale: Rotta per Nord Sud Ovest Est",
         "descrizione": "Un racconto corale dietro le quinte della serie. Attori, registi e capi reparto svelano il set, le scelte creative e il successo del progetto.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aa6276a1-a11c-4ad2-9601-7ae4141a1ce9/background/600"
@@ -4667,28 +4716,28 @@
       },
       {
         "ora": "02:10",
-        "fine": "03:15",
+        "fine": "03:05",
         "titolo": "Indie Jungle",
         "descrizione": "Ep1 di 13 Ditonellapiaga -Un viaggio nella musica dal vivo con i protagonisti della scena indie italiana. In questo episodio: Ditonellapiaga.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/14a3a535-d134-485f-af01-52d68dfef93f/background/600"
       },
       {
-        "ora": "03:15",
-        "fine": "04:10",
+        "ora": "03:05",
+        "fine": "04:00",
         "titolo": "Indie Jungle",
         "descrizione": "Ep2 di 13 Giorgio Poi - Un viaggio nella musica dal vivo con i protagonisti della scena indie italiana. In questo episodio: Giorgio Poi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f869708d-7144-4f13-953c-8f902b4a5ed3/background/600"
       },
       {
-        "ora": "04:10",
-        "fine": "05:00",
+        "ora": "04:00",
+        "fine": "04:50",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep3 di 8 Alice - Il sole nella pioggia - Viaggio alla scoperta degli album che hanno segnato la storia della musica italiana. Nella puntata Alice ci racconta \"Il sole nella pioggia\".",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "05:00",
-        "fine": "05:30",
+        "ora": "04:50",
+        "fine": "05:40",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep4 di 8 Edoardo Bennato - Burattino senza fili - Viaggio alla scoperta degli album che hanno segnato la storia della musica italiana. Nella puntata Edoardo Bennato racconta \"Burattino senza fili\".",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
@@ -4701,7 +4750,7 @@
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "05:30",
+        "ora": "05:40",
         "fine": "06:00",
         "titolo": "The Editor Is In",
         "descrizione": "Ep12 di 12 - Un'incredibile serie in live-action e animazione che racconta la realtà quotidiana di un editor alle prese con collaboratori eccezionali. I sistemi di sicurezza dell'ufficio vanno in tilt.",
@@ -7015,7 +7064,7 @@
         "fine": "00:00",
         "titolo": "Stand Up Comedy (Italy)",
         "descrizione": "Ep1 di 14 - In questo episodio: Giorgia Fumo, Carmine Del Grosso, Alessandro Ciacci, Daniele Tinti.",
-        "immagine": "https://img-guidatv.org/318/stand-up-comedy-italy/1.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/35e1dc6b-f0e2-4867-a94e-82e5ea1ca759/background/600"
       }
     ]
   },
@@ -7434,7 +7483,7 @@
         "fine": "00:00",
         "titolo": "Stand Up Comedy (Italy)",
         "descrizione": "Ep1 di 14 - In questo episodio: Giorgia Fumo, Carmine Del Grosso, Alessandro Ciacci, Daniele Tinti.",
-        "immagine": "https://img-guidatv.org/318/stand-up-comedy-italy/1.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/35e1dc6b-f0e2-4867-a94e-82e5ea1ca759/background/600"
       }
     ]
   },
@@ -7653,7 +7702,7 @@
       {
         "ora": "04:35",
         "fine": "04:50",
-        "titolo": "Questo o quello",
+        "titolo": "Questo o quello - Speciale",
         "descrizione": "Francesco Castelnuovo e Gianni Canova si sfidano sui film della collezione dedicata al celebre supereroe della DC Comics.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c53abcc6-08c6-48c8-af05-fc27cd6d5c16/background/600"
       },
@@ -8172,13 +8221,13 @@
       },
       {
         "ora": "04:40",
-        "fine": "04:55",
+        "fine": "04:50",
         "titolo": "Questo o quello - Speciale",
         "descrizione": "Francesco Castelnuovo e Gianni Canova si confrontano sui film della spettacolare saga action Fast & Furious, disponibile su Sky Cinema e On Demand.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/fdd217b2-2ac3-4f71-abbe-0768081ce69f/background/600"
       },
       {
-        "ora": "04:55",
+        "ora": "04:50",
         "fine": "06:55",
         "titolo": "The Son",
         "descrizione": "La vita di Peter con la sua nuova compagna Emma e il loro bambino viene sconvolta quando l'ex moglie Kate si presenta con il figlio adolescente Nicholas.",
@@ -8269,31 +8318,24 @@
       },
       {
         "ora": "01:55",
-        "fine": "03:25",
+        "fine": "03:30",
         "titolo": "The Parenting",
         "descrizione": "I fidanzati Josh e Rohan organizzano una fuga nel fine settimana per presentare i loro genitori, solo per scoprire che la casa in cui hanno affittato è la casa di un poltergeist vecchio di 400 anni.",
         "immagine": "https://image.tmdb.org/t/p/w300/5lMu14IMuHo0hKYCwCIogt7IioX.jpg"
       },
       {
-        "ora": "03:25",
-        "fine": "03:45",
+        "ora": "03:30",
+        "fine": "03:50",
         "titolo": "Speciale - I Delitti Del Barlume - Le Nuove Storie",
         "descrizione": "- Speciale - I Delitti Del Barlume -... (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025) (ITA 2025)",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/62924bed-4fbd-4a9b-8e72-2719e4420a50/background/600"
       },
       {
-        "ora": "03:45",
-        "fine": "05:30",
+        "ora": "03:50",
+        "fine": "05:35",
         "titolo": "Ghostbusters - Acchiappafantasmi",
         "descrizione": "Peter Venkman, Raymond Stantz ed Egon Spengler sono tre ricercatori esperti di fenomeni paranormali espulsi dall'Università. Non resta loro che mettersi in proprio e fondare un'impresa specializzata come 'acchiappafantasmi'. La prima cliente è Dana Barrett che nel proprio appartamento di West Central Park è stata oggetto di visite terrificanti di cui non sa darsi una spiegazione. È solo l'inizio di un'avventura che porterà i ghostbusters a dover cercare di salvare la città da una minaccia che proviene dall'antichità.",
         "immagine": "https://img-guidatv.org/film_new/g/5e78dbbcce1e246c511cc73c/5e78dbbcce1e246c511cc73c_p_1_rs_300.jpg"
-      },
-      {
-        "ora": "05:30",
-        "fine": "07:25",
-        "titolo": "Moschettieri del re: La penultima missione",
-        "descrizione": "1650 (o suppergiù). Dopo trent'anni di onorata attività al servizio della casa reale i quattro moschettieri hanno abbandonato il moschetto e sono invecchiati: D'Artagnan fa il maialaro e ha il gomito dello spadaccino, più un ginocchio fesso; Athos si diletta con incontri erotici bisex ma ha un braccio arrugginito e un alluce valgo; Aramis fa l'abate in un monastero e non tocca più le armi; e Porthos, dimagrito e depresso (ma lui precisa: \"Triste e infelice\"), è schiavo dell'oppio e del vino. Ciò nonostante quando la regina Anna d'Austria, che governa una Francia devastata dalle guerre di religione al posto del dissennato figlio Luigi XIV, li convoca per affidare loro un'ultima missione, i moschettieri risalgono a cavallo, di nuovo tutti per uno, e uno per tutti.",
-        "immagine": "https://img-guidatv.org/film_new/m/5e78da02ce1e246c511cbf4a/5e78da02ce1e246c511cbf4a_p_1_rs_300.jpg"
       },
       {
         "ora": "05:35",
@@ -14599,10 +14641,10 @@
       },
       {
         "ora": "00:45",
-        "fine": "01:20",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:00",
+        "titolo": "Piripinguini",
+        "descrizione": "I Piripinguini partecipano a una caccia al tesoro sul ghiacciaio, ma per ottenere gli indizi devono pagare il \"Capitano Krill\" con del pesce. Sentendo che c'è qualcosa di sospetto, Pancake decide di indagare e scopre che non tutto è come sembra, ma riuscirà ad avvertire la banda prima che abbia dato via tutti i suoi preziosi spratti?",
+        "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
       },
       {
         "ora": "01:00",
@@ -14648,10 +14690,10 @@
       },
       {
         "ora": "01:50",
-        "fine": "02:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:00",
+        "titolo": "Barbapapà - Una grande famiglia felice",
+        "descrizione": "Barbabravo capta una musica dolcissima proveniente da Marte. La famiglia decide di costruire un razzo per andare nello spazio a scoprire il mistero della melodia.",
+        "immagine": "https://img-guidatv.org/28/barbapapa-una-grande-famiglia-felice-bada/0.jpg"
       },
       {
         "ora": "02:00",
@@ -14662,7 +14704,7 @@
       },
       {
         "ora": "02:05",
-        "fine": "02:20",
+        "fine": "02:15",
         "titolo": "Nina & Olga",
         "descrizione": "Nina e Teo sono allo skate park con papà. Olga vorrebbe unirsi a loro e andare sullo skate, ma ci sono troppi genitori e bambini che potrebbero vederla. Olga è molto delusa e Nina ha una grande idea: faranno lo skate park nel Mondo di Sopra! Olga sarà al settimo cielo, perché Nina e Teo hanno realizzato il suo sogno impossibile.",
         "immagine": "https://img-guidatv.org/28/nina-olga/0.jpg"
@@ -14676,10 +14718,10 @@
       },
       {
         "ora": "02:20",
-        "fine": "02:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:30",
+        "titolo": "Nina & Olga",
+        "descrizione": "Nina sta giocando con Olga in giardino, quando inizia a grandinare. Volano nel Mondo di Sopra e scoprono che il Bigio sta grandinando perché è molto triste: non è in grado di partecipare all'annuale concorso d'arte. Nina e Olga lo aiuteranno a trovare una forma d'arte davvero speciale che gli permetta di esprimersi, e lui vincerà il concorso.",
+        "immagine": "https://img-guidatv.org/28/nina-olga/0.jpg"
       },
       {
         "ora": "02:30",
@@ -14711,7 +14753,7 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "Dixiland",
         "descrizione": "Dixi è un elefantino pieno di contentezza, grazia e buon umore. È poetico, dolce, imprevedibile, sognante, sensibile, giocherellone, amichevole, curioso, diretto, esuberante, timido, buffo, allegro...",
         "immagine": "https://img-guidatv.org/28/dixiland/1.jpg"
@@ -14753,10 +14795,10 @@
       },
       {
         "ora": "03:30",
-        "fine": "03:50",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:35",
+        "titolo": "Molang",
+        "descrizione": "Molang e Piu Piu mentre lavorano in cucina vengono investiti da forte raffica di vento…Piu Piu non può fare a meno di guardare il suo riflesso...",
+        "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "03:35",
@@ -14774,7 +14816,7 @@
       },
       {
         "ora": "03:45",
-        "fine": "03:55",
+        "fine": "03:50",
         "titolo": "Molang",
         "descrizione": "Una simpatica creatura atterra nel giardino di Molang e Piu Piu…",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -14788,10 +14830,10 @@
       },
       {
         "ora": "03:55",
-        "fine": "04:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:00",
+        "titolo": "Molang",
+        "descrizione": "Quando Molang e Piu Piu vanno alla conquista del Far West, arrivano ultimi... ma sanno come rimanere al primo posto nel cuore dei loro amici.",
+        "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "04:00",
@@ -14844,7 +14886,7 @@
       },
       {
         "ora": "05:20",
-        "fine": "05:35",
+        "fine": "05:30",
         "titolo": "Gigantosaurus",
         "descrizione": "Quando Tiny sradica accidentalmente un alberello, decide d, tenerlo nella tana e rimetterlo in salute. Tutto l'amore e l'attenzione che Tiny dà a \"Woody\", porta i suoi frutti! L'albero cresce e cresce ... e cresce! Presto sarà troppo grande per rimanere nella tana. Gli altri minidino  le consigliano di piantare l'albero da qualche parte in modo che possa distendere le sue radici e crescere fino al suo pieno potenziale, ma Tiny è troppo affezionata all'albero. Solo quando si mette nei guai con Giganto, Tiny si rende conto che deve \"liberare\" l'albero!",
         "immagine": "https://image.tmdb.org/t/p/w300/9QE0FexhD5IZ6IaTyHLYzRMYUot.jpg"
@@ -15761,7 +15803,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:05",
+        "fine": "00:00",
         "titolo": "Molang",
         "descrizione": "Molang e Piu Piu incontrano un cucciolo di mammut nella savana. Lo adottano e lo chiamano Loulou. Ma la tribù non è d'accordo…",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -15809,10 +15851,10 @@
       },
       {
         "ora": "00:45",
-        "fine": "01:20",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:00",
+        "titolo": "Piripinguini",
+        "descrizione": "I Piripinguini partecipano a una caccia al tesoro sul ghiacciaio, ma per ottenere gli indizi devono pagare il \"Capitano Krill\" con del pesce. Sentendo che c'è qualcosa di sospetto, Pancake decide di indagare e scopre che non tutto è come sembra, ma riuscirà ad avvertire la banda prima che abbia dato via tutti i suoi preziosi spratti?",
+        "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
       },
       {
         "ora": "01:00",
@@ -15858,10 +15900,10 @@
       },
       {
         "ora": "01:50",
-        "fine": "02:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:00",
+        "titolo": "Barbapapà - Una grande famiglia felice",
+        "descrizione": "Barbabravo capta una musica dolcissima proveniente da Marte. La famiglia decide di costruire un razzo per andare nello spazio a scoprire il mistero della melodia.",
+        "immagine": "https://img-guidatv.org/28/barbapapa-una-grande-famiglia-felice-bada/0.jpg"
       },
       {
         "ora": "02:00",
@@ -15872,7 +15914,7 @@
       },
       {
         "ora": "02:05",
-        "fine": "02:20",
+        "fine": "02:15",
         "titolo": "Nina & Olga",
         "descrizione": "Nina e Teo sono allo skate park con papà. Olga vorrebbe unirsi a loro e andare sullo skate, ma ci sono troppi genitori e bambini che potrebbero vederla. Olga è molto delusa e Nina ha una grande idea: faranno lo skate park nel Mondo di Sopra! Olga sarà al settimo cielo, perché Nina e Teo hanno realizzato il suo sogno impossibile.",
         "immagine": "https://img-guidatv.org/28/nina-olga/0.jpg"
@@ -15886,10 +15928,10 @@
       },
       {
         "ora": "02:20",
-        "fine": "02:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:30",
+        "titolo": "Nina & Olga",
+        "descrizione": "Nina sta giocando con Olga in giardino, quando inizia a grandinare. Volano nel Mondo di Sopra e scoprono che il Bigio sta grandinando perché è molto triste: non è in grado di partecipare all'annuale concorso d'arte. Nina e Olga lo aiuteranno a trovare una forma d'arte davvero speciale che gli permetta di esprimersi, e lui vincerà il concorso.",
+        "immagine": "https://img-guidatv.org/28/nina-olga/0.jpg"
       },
       {
         "ora": "02:30",
@@ -15921,7 +15963,7 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "Dixiland",
         "descrizione": "Dixi è un elefantino pieno di contentezza, grazia e buon umore. È poetico, dolce, imprevedibile, sognante, sensibile, giocherellone, amichevole, curioso, diretto, esuberante, timido, buffo, allegro...",
         "immagine": "https://img-guidatv.org/28/dixiland/1.jpg"
@@ -15963,10 +16005,10 @@
       },
       {
         "ora": "03:30",
-        "fine": "03:50",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:35",
+        "titolo": "Molang",
+        "descrizione": "Molang e Piu Piu mentre lavorano in cucina vengono investiti da forte raffica di vento…Piu Piu non può fare a meno di guardare il suo riflesso...",
+        "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "03:35",
@@ -15984,7 +16026,7 @@
       },
       {
         "ora": "03:45",
-        "fine": "03:55",
+        "fine": "03:50",
         "titolo": "Molang",
         "descrizione": "Una simpatica creatura atterra nel giardino di Molang e Piu Piu…",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -15998,10 +16040,10 @@
       },
       {
         "ora": "03:55",
-        "fine": "04:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:00",
+        "titolo": "Molang",
+        "descrizione": "Quando Molang e Piu Piu vanno alla conquista del Far West, arrivano ultimi... ma sanno come rimanere al primo posto nel cuore dei loro amici.",
+        "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "04:00",
@@ -16054,7 +16096,7 @@
       },
       {
         "ora": "05:20",
-        "fine": "05:35",
+        "fine": "05:30",
         "titolo": "Gigantosaurus",
         "descrizione": "Quando Tiny sradica accidentalmente un alberello, decide d, tenerlo nella tana e rimetterlo in salute. Tutto l'amore e l'attenzione che Tiny dà a \"Woody\", porta i suoi frutti! L'albero cresce e cresce ... e cresce! Presto sarà troppo grande per rimanere nella tana. Gli altri minidino  le consigliano di piantare l'albero da qualche parte in modo che possa distendere le sue radici e crescere fino al suo pieno potenziale, ma Tiny è troppo affezionata all'albero. Solo quando si mette nei guai con Giganto, Tiny si rende conto che deve \"liberare\" l'albero!",
         "immagine": "https://image.tmdb.org/t/p/w300/9QE0FexhD5IZ6IaTyHLYzRMYUot.jpg"
@@ -16971,7 +17013,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:05",
+        "fine": "00:00",
         "titolo": "Molang",
         "descrizione": "Molang e Piu Piu incontrano un cucciolo di mammut nella savana. Lo adottano e lo chiamano Loulou. Ma la tribù non è d'accordo…",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -17005,7 +17047,7 @@
       },
       {
         "ora": "01:10",
-        "fine": "01:10",
+        "fine": "01:20",
         "titolo": "Gormiti",
         "descrizione": "A seguito di un'avaria di Iskador, Riff, Trek, Aoki ed Eron finiscono su un'isola sperduta, nella quale si nasconde un frammento. Si occuperà Torak di cercarlo, ma nel frat-tempo, la ricerca dei Gormiti viene interrotta dall'arrivo di Krobok, un Eklypsion, anche lui alla ricerca del frammento. I Gormiti, con uno stratagemma, riescono ad allontanare l'Eklypsion dal luogo in cui è nascosto il frammento, ma presto Krobok si renderà conto dell'inganno e tornerà indietro per scontrarsi con Torak e sottrargli il frammento.",
         "immagine": "https://image.tmdb.org/t/p/w300/pCiaMxGrgo5Booppfi2Luns8YBl.jpg"
@@ -17033,7 +17075,7 @@
       },
       {
         "ora": "02:00",
-        "fine": "02:20",
+        "fine": "02:10",
         "titolo": "Coop Troop",
         "descrizione": "Albert ha chiesto a Crystal di aiutarlo a vincere la sua insicurezza. La seduta psicoterapeutica, però, ottiene effetti sconcertanti. Il roditore, non solo vince le sue paure, ma acquista una personalità tracotante e aggressiva. Si proclama sceriffo della città e spadroneggia su tutti gli animali, che ne sono assolutamente terrorizzati. Urge l'intervento della Coop Troop...",
         "immagine": "https://image.tmdb.org/t/p/w300/17TNmKGRnWWSZ396myZunf0jt8t.jpg"
@@ -17061,10 +17103,10 @@
       },
       {
         "ora": "02:35",
-        "fine": "03:55",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:55",
+        "titolo": "Super Happy Magic Forest",
+        "descrizione": "Durante la missione per fermare Balthazar il Favoloso dall'assorbire tutti i raggi del sole, gli eroi notano che qualcosa non va in Hoofius. Continua a inciampare e ha perso ogni fiducia in se stesso. Per aiutarlo e completare la missione, gli eroi lo portano sulla Montagna degli Eroi per ritrovare il suo smalto.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yLl6DGBMJMvDyZgfKmZsQ2Lw94v.jpg"
       },
       {
         "ora": "02:55",
@@ -17110,7 +17152,7 @@
       },
       {
         "ora": "04:00",
-        "fine": "04:25",
+        "fine": "04:20",
         "titolo": "OGM Travels",
         "descrizione": "Una tranquilla giornata di relax senza clienti si trasforma in una tragedia quando Johnson scopre che Elvis da anni \"smaltisce\" le gomme da masticare facendole smaterializzare dalla Doccia Quantica. Johnson non transige: dovranno andare in quel luogo a verificare i danni fatti. Ma a complicare le cose arriva Lester, che affida loro, suo cugino Chester.",
         "immagine": "https://image.tmdb.org/t/p/w300/j4CRjpk8DDF9KVQ173DWAAmrttf.jpg"
@@ -17146,9 +17188,9 @@
       {
         "ora": "05:00",
         "fine": "05:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Coop Troop",
+        "descrizione": "Esther si presenta al pollaio chiedendo di far parte della Coop Troop. Flo e gli altri la accolgono generosamente ma, fin dagli inizi, la collaborazione non sembra funzionare al meglio. Esther vuole assumere mansioni che spettano ad altri, è restia ad adeguarsi al lavoro di squadra e finisce addirittura per impossessarsi della pollauto...",
+        "immagine": "https://image.tmdb.org/t/p/w300/17TNmKGRnWWSZ396myZunf0jt8t.jpg"
       },
       {
         "ora": "05:15",
@@ -17613,7 +17655,7 @@
       },
       {
         "ora": "01:10",
-        "fine": "01:10",
+        "fine": "01:20",
         "titolo": "Gormiti",
         "descrizione": "A seguito di un'avaria di Iskador, Riff, Trek, Aoki ed Eron finiscono su un'isola sperduta, nella quale si nasconde un frammento. Si occuperà Torak di cercarlo, ma nel frat-tempo, la ricerca dei Gormiti viene interrotta dall'arrivo di Krobok, un Eklypsion, anche lui alla ricerca del frammento. I Gormiti, con uno stratagemma, riescono ad allontanare l'Eklypsion dal luogo in cui è nascosto il frammento, ma presto Krobok si renderà conto dell'inganno e tornerà indietro per scontrarsi con Torak e sottrargli il frammento.",
         "immagine": "https://image.tmdb.org/t/p/w300/pCiaMxGrgo5Booppfi2Luns8YBl.jpg"
@@ -17641,7 +17683,7 @@
       },
       {
         "ora": "02:00",
-        "fine": "02:20",
+        "fine": "02:10",
         "titolo": "Coop Troop",
         "descrizione": "Albert ha chiesto a Crystal di aiutarlo a vincere la sua insicurezza. La seduta psicoterapeutica, però, ottiene effetti sconcertanti. Il roditore, non solo vince le sue paure, ma acquista una personalità tracotante e aggressiva. Si proclama sceriffo della città e spadroneggia su tutti gli animali, che ne sono assolutamente terrorizzati. Urge l'intervento della Coop Troop...",
         "immagine": "https://image.tmdb.org/t/p/w300/17TNmKGRnWWSZ396myZunf0jt8t.jpg"
@@ -17669,10 +17711,10 @@
       },
       {
         "ora": "02:35",
-        "fine": "03:55",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:55",
+        "titolo": "Super Happy Magic Forest",
+        "descrizione": "Durante la missione per fermare Balthazar il Favoloso dall'assorbire tutti i raggi del sole, gli eroi notano che qualcosa non va in Hoofius. Continua a inciampare e ha perso ogni fiducia in se stesso. Per aiutarlo e completare la missione, gli eroi lo portano sulla Montagna degli Eroi per ritrovare il suo smalto.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yLl6DGBMJMvDyZgfKmZsQ2Lw94v.jpg"
       },
       {
         "ora": "02:55",
@@ -17718,7 +17760,7 @@
       },
       {
         "ora": "04:00",
-        "fine": "04:25",
+        "fine": "04:20",
         "titolo": "OGM Travels",
         "descrizione": "Una tranquilla giornata di relax senza clienti si trasforma in una tragedia quando Johnson scopre che Elvis da anni \"smaltisce\" le gomme da masticare facendole smaterializzare dalla Doccia Quantica. Johnson non transige: dovranno andare in quel luogo a verificare i danni fatti. Ma a complicare le cose arriva Lester, che affida loro, suo cugino Chester.",
         "immagine": "https://image.tmdb.org/t/p/w300/j4CRjpk8DDF9KVQ173DWAAmrttf.jpg"
@@ -17754,9 +17796,9 @@
       {
         "ora": "05:00",
         "fine": "05:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Coop Troop",
+        "descrizione": "Esther si presenta al pollaio chiedendo di far parte della Coop Troop. Flo e gli altri la accolgono generosamente ma, fin dagli inizi, la collaborazione non sembra funzionare al meglio. Esther vuole assumere mansioni che spettano ad altri, è restia ad adeguarsi al lavoro di squadra e finisce addirittura per impossessarsi della pollauto...",
+        "immagine": "https://image.tmdb.org/t/p/w300/17TNmKGRnWWSZ396myZunf0jt8t.jpg"
       },
       {
         "ora": "05:15",
@@ -18200,7 +18242,7 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "01:35",
+        "fine": "01:30",
         "titolo": "Porta A Porta",
         "descrizione": "Giunto alla trentunesima edizione, il programma di Bruno Vespa offre al pubblico grandi novità, pur confermando la linea editoriale legata agli avvenimenti della politica, come ai grandi fatti di cronaca e alle mutazioni della società.",
         "immagine": "https://img-guidatv.org/1/porta-a-porta/0.jpg"
@@ -18423,7 +18465,7 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "01:35",
+        "fine": "01:30",
         "titolo": "Porta A Porta",
         "descrizione": "Giunto alla trentunesima edizione, il programma di Bruno Vespa offre al pubblico grandi novità, pur confermando la linea editoriale legata agli avvenimenti della politica, come ai grandi fatti di cronaca e alle mutazioni della società.",
         "immagine": "https://img-guidatv.org/1/porta-a-porta/0.jpg"
@@ -18646,27 +18688,27 @@
     "programmi": [
       {
         "ora": "00:30",
-        "fine": "01:41",
+        "fine": "01:44",
         "titolo": "Radio2 Social Club",
         "descrizione": "Luca Barbarossa ed Ema Stokholma aprono le porte di via Asiago a Roma ad importanti ospiti musicali della scena nazionale ed internazionale che si esibiscono dal vivo accompagnati dalla Social Band e dalla voce di Frances Alina Ascione.",
         "immagine": "https://img-guidatv.org/2/radio2-social-club/6.jpg"
       },
       {
-        "ora": "01:41",
-        "fine": "03:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "ora": "01:44",
+        "fine": "01:45",
+        "titolo": "Meteo 2",
+        "descrizione": "Meteo 2",
+        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
       },
       {
         "ora": "01:45",
-        "fine": "02:29",
+        "fine": "02:31",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
         "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
       },
       {
-        "ora": "02:29",
+        "ora": "02:31",
         "fine": "03:15",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
@@ -18674,27 +18716,27 @@
       },
       {
         "ora": "03:15",
-        "fine": "04:40",
+        "fine": "04:35",
         "titolo": "L'isola del vero amore",
         "descrizione": "Maddie, storica dell'arte, viene incaricata da un ricco imprenditore di ritrovare la leggendaria \"Pietra degli amanti\", in cambio della quale promette di finanziare il suo museo. La donna si reca dunque su un'isola caraibica...",
         "immagine": "https://img-guidatv.org/film_new/c/60bdb4e1fe318b727ba300bf/60bdb4e1fe318b727ba300bf_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:40",
-        "fine": "04:55",
+        "ora": "04:35",
+        "fine": "04:45",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "04:55",
-        "fine": "05:05",
+        "ora": "04:45",
+        "fine": "04:55",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
-        "ora": "05:05",
+        "ora": "04:55",
         "fine": "05:20",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18911,27 +18953,27 @@
     "programmi": [
       {
         "ora": "00:30",
-        "fine": "01:41",
+        "fine": "01:44",
         "titolo": "Radio2 Social Club",
         "descrizione": "Luca Barbarossa ed Ema Stokholma aprono le porte di via Asiago a Roma ad importanti ospiti musicali della scena nazionale ed internazionale che si esibiscono dal vivo accompagnati dalla Social Band e dalla voce di Frances Alina Ascione.",
         "immagine": "https://img-guidatv.org/2/radio2-social-club/6.jpg"
       },
       {
-        "ora": "01:41",
-        "fine": "03:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "ora": "01:44",
+        "fine": "01:45",
+        "titolo": "Meteo 2",
+        "descrizione": "Meteo 2",
+        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
       },
       {
         "ora": "01:45",
-        "fine": "02:29",
+        "fine": "02:31",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
         "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
       },
       {
-        "ora": "02:29",
+        "ora": "02:31",
         "fine": "03:15",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
@@ -18939,27 +18981,27 @@
       },
       {
         "ora": "03:15",
-        "fine": "04:40",
+        "fine": "04:35",
         "titolo": "L'isola del vero amore",
         "descrizione": "Maddie, storica dell'arte, viene incaricata da un ricco imprenditore di ritrovare la leggendaria \"Pietra degli amanti\", in cambio della quale promette di finanziare il suo museo. La donna si reca dunque su un'isola caraibica...",
         "immagine": "https://img-guidatv.org/film_new/c/60bdb4e1fe318b727ba300bf/60bdb4e1fe318b727ba300bf_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:40",
-        "fine": "04:55",
+        "ora": "04:35",
+        "fine": "04:45",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "04:55",
-        "fine": "05:05",
+        "ora": "04:45",
+        "fine": "04:55",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
-        "ora": "05:05",
+        "ora": "04:55",
         "fine": "05:20",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -19183,34 +19225,27 @@
       },
       {
         "ora": "01:00",
-        "fine": "01:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:05",
+        "titolo": "Meteo 3",
+        "descrizione": "Meteo 3",
+        "immagine": "https://img-guidatv.org/3/meteo-3/5.jpg"
       },
       {
         "ora": "01:05",
-        "fine": "01:20",
-        "titolo": "SVista",
-        "descrizione": "Il racconto per immagini della settimana interpretate con un linguaggio irriverente e onirico, un editoriale in 10 minuti attraverso suoni e colori ideato e realizzato da Alexander Jakhnagiev, fondatore e direttore dell'Agenzia VISTA.",
-        "immagine": "https://img-guidatv.org/3/svista/5.jpg"
-      },
-      {
-        "ora": "01:15",
-        "fine": "01:45",
+        "fine": "01:35",
         "titolo": "Protestantesimo - Arghillà. Dove Ricomincia La Speranza - 26",
         "descrizione": "Ad Arghillà, nella periferia di Reggio Calabria, in un quartiere segnato da degrado, povertà ed esclusione sociale, c'è chi ha deciso di non arrendersi. Grazie al progetto F.A.T.A Comunità e a una rete di associazioni sostenute dall'otto per mille della Chiesa Valdese, nascono percorsi di inclusione, tutela dei diritti e partecipazione. Dall'accesso all'acqua e all'energia al lavoro, dall'ambiente alla dignità delle persone, una comunità prova a riscrivere il proprio futuro. Una realtà che torna a sperare. Conduce Federica Tourn.",
         "immagine": "https://img-guidatv.org/3/protestantesimo/7.jpg"
       },
       {
-        "ora": "01:45",
-        "fine": "02:20",
+        "ora": "01:35",
+        "fine": "02:10",
         "titolo": "Sulla Via Di Damasco",
         "descrizione": "$26",
         "immagine": "https://img-guidatv.org/3/sulla-via-di-damasco/1.jpg"
       },
       {
-        "ora": "02:20",
+        "ora": "02:10",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -19416,7 +19451,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Mi Manda Rai Tre - Furbetti D'Italia",
-        "descrizione": "Federico Ruffo conduce lo storico programma di Rai3 dedicato all'approfondimento di temi come la sanità, la scuola, le infrastrutture, i servizi, i diritti negati e la burocrazia.",
+        "descrizione": "Federico Ruffo conduce un viaggio d'inchiesta nell'Italia dei \"furbetti\", tra comportamenti scorretti, irregolarità e regole aggirate. Dagli aeroporti alle università, dal mercato immobiliare alla mobilità urbana, reportage, controlli e testimonianze fanno luce su merci irregolari, concorsi universitari, affitti fuori regola, veicoli in sharing e comportamenti scorretti sulle strade.",
         "immagine": "https://img-guidatv.org/3/mi-manda-rai-tre-furbetti-d-italia/0.jpg"
       }
     ]
@@ -19434,34 +19469,27 @@
       },
       {
         "ora": "01:00",
-        "fine": "01:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:05",
+        "titolo": "Meteo 3",
+        "descrizione": "Meteo 3",
+        "immagine": "https://img-guidatv.org/3/meteo-3/5.jpg"
       },
       {
         "ora": "01:05",
-        "fine": "01:20",
-        "titolo": "SVista",
-        "descrizione": "Il racconto per immagini della settimana interpretate con un linguaggio irriverente e onirico, un editoriale in 10 minuti attraverso suoni e colori ideato e realizzato da Alexander Jakhnagiev, fondatore e direttore dell'Agenzia VISTA.",
-        "immagine": "https://img-guidatv.org/3/svista/5.jpg"
-      },
-      {
-        "ora": "01:15",
-        "fine": "01:45",
+        "fine": "01:35",
         "titolo": "Protestantesimo - Arghillà. Dove Ricomincia La Speranza - 26",
         "descrizione": "Ad Arghillà, nella periferia di Reggio Calabria, in un quartiere segnato da degrado, povertà ed esclusione sociale, c'è chi ha deciso di non arrendersi. Grazie al progetto F.A.T.A Comunità e a una rete di associazioni sostenute dall'otto per mille della Chiesa Valdese, nascono percorsi di inclusione, tutela dei diritti e partecipazione. Dall'accesso all'acqua e all'energia al lavoro, dall'ambiente alla dignità delle persone, una comunità prova a riscrivere il proprio futuro. Una realtà che torna a sperare. Conduce Federica Tourn.",
         "immagine": "https://img-guidatv.org/3/protestantesimo/7.jpg"
       },
       {
-        "ora": "01:45",
-        "fine": "02:20",
+        "ora": "01:35",
+        "fine": "02:10",
         "titolo": "Sulla Via Di Damasco",
         "descrizione": "$26",
         "immagine": "https://img-guidatv.org/3/sulla-via-di-damasco/1.jpg"
       },
       {
-        "ora": "02:20",
+        "ora": "02:10",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -19667,7 +19695,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Mi Manda Rai Tre - Furbetti D'Italia",
-        "descrizione": "Federico Ruffo conduce lo storico programma di Rai3 dedicato all'approfondimento di temi come la sanità, la scuola, le infrastrutture, i servizi, i diritti negati e la burocrazia.",
+        "descrizione": "Federico Ruffo conduce un viaggio d'inchiesta nell'Italia dei \"furbetti\", tra comportamenti scorretti, irregolarità e regole aggirate. Dagli aeroporti alle università, dal mercato immobiliare alla mobilità urbana, reportage, controlli e testimonianze fanno luce su merci irregolari, concorsi universitari, affitti fuori regola, veicoli in sharing e comportamenti scorretti sulle strade.",
         "immagine": "https://img-guidatv.org/3/mi-manda-rai-tre-furbetti-d-italia/0.jpg"
       }
     ]
@@ -19793,7 +19821,7 @@
         "fine": "16:53",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018501/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:53",
@@ -19960,7 +19988,7 @@
         "fine": "16:53",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018501/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:53",
@@ -20204,7 +20232,7 @@
         "fine": "18:44",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000801/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:44",
@@ -20441,7 +20469,7 @@
         "fine": "18:44",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000801/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:44",
@@ -20601,7 +20629,7 @@
         "fine": "13:50",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/0.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:50",
@@ -20817,7 +20845,7 @@
         "fine": "13:50",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/0.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:50",
@@ -20976,7 +21004,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Paolo Mieli, Marcello Sorgi, Andrea Orlando, Marco Lisei, Francesco Maria Del Vigo, Matteo Renzi, Chiara Geloni, Debora Serracchiani, Susanna Ceccardi, Michele Silenzi, Greta Cristini, Francesco Semprini, Luigi...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21011,7 +21039,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Monica Guerzoni, Corrado Formigli, Italo Bocchino, Tito Boeri",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21094,7 +21122,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Paolo Mieli, Marcello Sorgi, Andrea Orlando, Marco Lisei, Francesco Maria Del Vigo, Matteo Renzi, Chiara Geloni, Debora Serracchiani, Susanna Ceccardi, Michele Silenzi, Greta Cristini, Francesco Semprini, Luigi...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21129,7 +21157,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Monica Guerzoni, Corrado Formigli, Italo Bocchino, Tito Boeri",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21212,7 +21240,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Paolo Mieli, Marcello Sorgi, Andrea Orlando, Marco Lisei, Francesco Maria Del Vigo, Matteo Renzi, Chiara Geloni, Debora Serracchiani, Susanna Ceccardi, Michele Silenzi, Greta Cristini, Francesco Semprini, Luigi...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21247,7 +21275,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Monica Guerzoni, Corrado Formigli, Italo Bocchino, Tito Boeri",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21330,7 +21358,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Paolo Mieli, Marcello Sorgi, Andrea Orlando, Marco Lisei, Francesco Maria Del Vigo, Matteo Renzi, Chiara Geloni, Debora Serracchiani, Susanna Ceccardi, Michele Silenzi, Greta Cristini, Francesco Semprini, Luigi...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21365,7 +21393,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Monica Guerzoni, Corrado Formigli, Italo Bocchino, Tito Boeri",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21448,7 +21476,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Paolo Mieli, Marcello Sorgi, Andrea Orlando, Marco Lisei, Francesco Maria Del Vigo, Matteo Renzi, Chiara Geloni, Debora Serracchiani, Susanna Ceccardi, Michele Silenzi, Greta Cristini, Francesco Semprini, Luigi...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21483,7 +21511,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Monica Guerzoni, Corrado Formigli, Italo Bocchino, Tito Boeri",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21515,20 +21543,20 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:55",
+        "fine": "04:00",
         "titolo": "Mostri Senza Nome - Genova",
         "descrizione": "Il corpo di Sebastiana Melis, un'infermiera di 69 anni in pensione, viene trovato in una pozza di sangue nel suo appartamento a Marassi. L'assassinio resta un mistero anche oggi.",
         "immagine": "https://image.tmdb.org/t/p/w300/guZHW23QfFOBJ1N9iJFsb1Gshtf.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "04:45",
+        "ora": "04:00",
+        "fine": "04:50",
         "titolo": "Lady Killer",
         "descrizione": "Sono delicate, generose, vanitose ed innamorate, ma quando vengono ferite diventano vendicative e pericolose. In ogni episodio affrontiamo il caso di una donna diventata di colpo una feroce assassina.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3fedcd2f-3f05-41d1-b818-fd880f442d46/background/600"
       },
       {
-        "ora": "04:45",
+        "ora": "04:50",
         "fine": "05:30",
         "titolo": "Lady Killer",
         "descrizione": "Lady Killer",
@@ -22475,39 +22503,25 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:44",
-        "fine": "02:56",
+        "ora": "01:46",
+        "fine": "03:09",
         "titolo": "Mandrake",
         "descrizione": "Madre single, Cathy lavora come agente di sorveglianza che si occupa di riabilitare detenuti che hanno scontato la pena. Il suo ultimo caso è quello più difficile della sua carriera, ilcaso di \"Bloody\" Mary Laidlaw, che ha scontato una pena detentiva di vent'anni per aver ucciso il marito con un'ascia. Mary viveva in una comunità rurale dove la superstizione e le credenze popolari sono radicate nella cultura del posto. I cittadini erano convinti che Mary fosse una \"strega\" e temono il suo ritorno adesso che è uscita di prigione.",
         "immagine": "https://image.tmdb.org/t/p/w300/lZiXgVXQG5YJBy5ReWcy875g7Un.jpg"
       },
       {
-        "ora": "01:46",
-        "fine": "04:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "02:56",
-        "fine": "03:46",
+        "ora": "03:09",
+        "fine": "03:58",
         "titolo": "Narcos: Messico",
         "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara.",
         "immagine": "https://img-guidatv.org/serie/5e78e032ce1e246c511cdd50_p_5_rs_300.jpg"
       },
       {
-        "ora": "03:46",
-        "fine": "04:30",
+        "ora": "03:58",
+        "fine": "05:00",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
         "immagine": "https://img-guidatv.org/serie/5e78dae0ce1e246c511cc34a_p_2_rs_300.jpg"
-      },
-      {
-        "ora": "04:30",
-        "fine": "05:00",
-        "titolo": "Stranger Tape In Town",
-        "descrizione": "Ema Stokholma ci conduce nei luoghi urbani della nuova scena musicale rap e Trap italiana, alla scoperta dei luoghi \"speciali\" dei suoi ospiti che hanno una stretta affinità con la loro storia artistica e vita privata. La conduttrice è andata a Torino per incontrare Shade e Rosa Chemical",
-        "immagine": "https://img-guidatv.org/30/stranger-tape-in-town/6.jpg"
       },
       {
         "ora": "05:00",
@@ -22698,39 +22712,25 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:44",
-        "fine": "02:56",
+        "ora": "01:46",
+        "fine": "03:09",
         "titolo": "Mandrake",
         "descrizione": "Madre single, Cathy lavora come agente di sorveglianza che si occupa di riabilitare detenuti che hanno scontato la pena. Il suo ultimo caso è quello più difficile della sua carriera, ilcaso di \"Bloody\" Mary Laidlaw, che ha scontato una pena detentiva di vent'anni per aver ucciso il marito con un'ascia. Mary viveva in una comunità rurale dove la superstizione e le credenze popolari sono radicate nella cultura del posto. I cittadini erano convinti che Mary fosse una \"strega\" e temono il suo ritorno adesso che è uscita di prigione.",
         "immagine": "https://image.tmdb.org/t/p/w300/lZiXgVXQG5YJBy5ReWcy875g7Un.jpg"
       },
       {
-        "ora": "01:46",
-        "fine": "04:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "02:56",
-        "fine": "03:46",
+        "ora": "03:09",
+        "fine": "03:58",
         "titolo": "Narcos: Messico",
         "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara.",
         "immagine": "https://img-guidatv.org/serie/5e78e032ce1e246c511cdd50_p_5_rs_300.jpg"
       },
       {
-        "ora": "03:46",
-        "fine": "04:30",
+        "ora": "03:58",
+        "fine": "05:00",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
         "immagine": "https://img-guidatv.org/serie/5e78dae0ce1e246c511cc34a_p_2_rs_300.jpg"
-      },
-      {
-        "ora": "04:30",
-        "fine": "05:00",
-        "titolo": "Stranger Tape In Town",
-        "descrizione": "Ema Stokholma ci conduce nei luoghi urbani della nuova scena musicale rap e Trap italiana, alla scoperta dei luoghi \"speciali\" dei suoi ospiti che hanno una stretta affinità con la loro storia artistica e vita privata. La conduttrice è andata a Torino per incontrare Shade e Rosa Chemical",
-        "immagine": "https://img-guidatv.org/30/stranger-tape-in-town/6.jpg"
       },
       {
         "ora": "05:00",
@@ -22957,7 +22957,7 @@
       },
       {
         "ora": "05:59",
-        "fine": "06:17",
+        "fine": "06:30",
         "titolo": "Belli dentro",
         "descrizione": "Belli dentro è una sitcom italiana che parla della vita in carcere di alcuni detenuti. La serie è stata ideata dai detenuti del Carcere di San Vittore di Milano e della redazione di ildue.it, che ne hanno anche scritto gli episodi sotto la guida della giornalista e direttrice di \"Magazine 2\" (rivista di San Vittore), Emilia Patruno. Il primo episodio è andato in onda il 13 febbraio 2005 su Canale 5.\n\nLa serie narra in modo umoristico e parodistico la vita quotidiana dei detenuti.\n\nDalla seconda stagione la sitcom è stata registrata all'interno dello Zelig di Viale Monza a Milano, con in studio un pubblico \"vero\", non più tramite le risate registrate. Si tratta di una innovazione che fino ad allora nessun programma di questo genere aveva ancora adottato.\n\nDalla terza stagione le registrazioni sono state fatte presso il Teatro 5",
         "immagine": "https://img-guidatv.org/serie/5e78d81ece1e246c511cb6a6_p_1_rs_300.jpg"
@@ -23075,7 +23075,7 @@
       },
       {
         "ora": "05:59",
-        "fine": "06:17",
+        "fine": "06:30",
         "titolo": "Belli dentro",
         "descrizione": "Belli dentro è una sitcom italiana che parla della vita in carcere di alcuni detenuti. La serie è stata ideata dai detenuti del Carcere di San Vittore di Milano e della redazione di ildue.it, che ne hanno anche scritto gli episodi sotto la guida della giornalista e direttrice di \"Magazine 2\" (rivista di San Vittore), Emilia Patruno. Il primo episodio è andato in onda il 13 febbraio 2005 su Canale 5.\n\nLa serie narra in modo umoristico e parodistico la vita quotidiana dei detenuti.\n\nDalla seconda stagione la sitcom è stata registrata all'interno dello Zelig di Viale Monza a Milano, con in studio un pubblico \"vero\", non più tramite le risate registrate. Si tratta di una innovazione che fino ad allora nessun programma di questo genere aveva ancora adottato.\n\nDalla terza stagione le registrazioni sono state fatte presso il Teatro 5",
         "immagine": "https://img-guidatv.org/serie/5e78d81ece1e246c511cb6a6_p_1_rs_300.jpg"
@@ -23159,9 +23159,9 @@
       {
         "ora": "00:58",
         "fine": "01:44",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Rock Legends: Prince",
+        "descrizione": "La storia dell'impareggiabile compositore e polistrumentista scomparso il 21 aprile 2016 all'età di 57 anni.",
+        "immagine": "https://img-guidatv.org/31/rock-legends-prince/1.jpg"
       },
       {
         "ora": "01:44",
@@ -23173,13 +23173,13 @@
       {
         "ora": "01:46",
         "fine": "02:38",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Il Mondo Con Gli Occhi Di Overland - Afghanistan: Un Anno Dopo Il Ritorno Dei Talebani",
+        "descrizione": "$24",
+        "immagine": "https://img-guidatv.org/31/il-mondo-con-gli-occhi-di-overland/1.jpg"
       },
       {
         "ora": "02:38",
-        "fine": "03:42",
+        "fine": "03:31",
         "titolo": "Italian Beauty - Perugia Lo Chef Castelli. L'Arte Che Non Ti Aspetti",
         "descrizione": "Perugia Lo Chef Castelli. L'Arte che non ti aspetti a Perugia, città legata alle acque, con il suo Acquedotto e il suo Pozzo, e all'artigianato d'eccellenza, con i grandi maestri della tessitura e del vetro. Oggi a Perugia c'è anche l'arte contemporanea. Nella rubrica Chef Life, uno chef appassionato: E. Scarello",
         "immagine": "https://img-guidatv.org/31/italian-beauty/1.jpg"
@@ -23200,7 +23200,7 @@
       },
       {
         "ora": "04:42",
-        "fine": "04:58",
+        "fine": "05:02",
         "titolo": "I Borghi Di Barbieri - I Culurgiones Di Arbatax",
         "descrizione": "Ad Arbatax, in Sardegna, quando c'è da far festa, a tavola si tira fuori l'armeria pesante della tradizione: ecco che intere famiglie, interi paesini partecipano alla preparazione classica dei culurgiones, tipici ravioli a spiga, ripieni di patate, menta e caprino sardo.",
         "immagine": "https://img-guidatv.org/31/i-borghi-di-barbieri-i-culurgiones-di-arbatax/0.jpg"
@@ -23589,13 +23589,13 @@
     "programmi": [
       {
         "ora": "01:05",
-        "fine": "05:20",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:00",
+        "titolo": "Storie Italiane",
+        "descrizione": "Eleonora Daniele approfondisce i temi di stretta attualità e i principali casi di cronaca con i protagonisti che raccontano in prima persona le loro esperienze.",
+        "immagine": "https://img-guidatv.org/25/storie-italiane/0.jpg"
       },
       {
-        "ora": "03:05",
+        "ora": "03:00",
         "fine": "03:50",
         "titolo": "Doc Martin",
         "descrizione": "Un sonnolento ma variopinto villaggio della Cornovaglia fa da sfondo alle vicende del Dottor Martin, fornendo uno spaccato di vita agreste, bucolico e zuccherino, fatto di buoni sentimenti e valori sociali condivisi. Un umorismo tipicamente British condisce le situazioni di una salsa agrodolce, in particolare la storia d’amore tra il protagonista e la maestra del paese",
@@ -24623,7 +24623,7 @@
         "fine": "00:53",
         "titolo": "Caduta libera",
         "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
-        "immagine": "https://img-guidatv.org/12/caduta-libera/6.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314704301001001/media/12/12/84195f64-2ae6-4d63-becd-65115ba196a9/c86fd4b6-57d4-45e9-a3de-4ecd76ed5b29.jpg"
       }
     ]
   },
@@ -24797,7 +24797,7 @@
         "fine": "00:53",
         "titolo": "Caduta libera",
         "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
-        "immagine": "https://img-guidatv.org/12/caduta-libera/6.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314704301001001/media/12/12/84195f64-2ae6-4d63-becd-65115ba196a9/c86fd4b6-57d4-45e9-a3de-4ecd76ed5b29.jpg"
       }
     ]
   },
@@ -26219,7 +26219,7 @@
         "fine": "14:15",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-2026/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314686001004601/media/22/86/3737884b-ae0b-43cb-9af9-16473d20a478/26dcb11c-4d2e-444d-802c-e1830a6aa81e.jpg"
       },
       {
         "ora": "14:15",
@@ -26254,21 +26254,21 @@
         "fine": "16:02",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018501/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:02",
         "fine": "16:19",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018501/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:19",
         "fine": "16:29",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018501/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:29",
@@ -26282,28 +26282,28 @@
         "fine": "17:08",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000801/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:08",
         "fine": "17:33",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000801/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:33",
         "fine": "17:50",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000801/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:50",
         "fine": "18:13",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101000801/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:13",
@@ -26390,10 +26390,10 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "01:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "00:30",
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "00:30",
@@ -26419,9 +26419,9 @@
       {
         "ora": "02:00",
         "fine": "02:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "02:30",
@@ -26433,9 +26433,9 @@
       {
         "ora": "02:45",
         "fine": "03:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "BASTA LA SALUTE",
+        "descrizione": "Il settimanale di sanità e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanità. Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute dà voce a medici, ricercatori, associazioni",
+        "immagine": "https://img-guidatv.org/4/basta-la-salute/10.png"
       },
       {
         "ora": "03:00",
@@ -26447,9 +26447,9 @@
       {
         "ora": "03:15",
         "fine": "04:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "RASSEGNA STAMPA",
+        "descrizione": "RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "04:00",
@@ -26907,10 +26907,10 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "01:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "00:30",
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "00:30",
@@ -26936,9 +26936,9 @@
       {
         "ora": "02:00",
         "fine": "02:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "02:30",
@@ -26950,9 +26950,9 @@
       {
         "ora": "02:45",
         "fine": "03:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "BASTA LA SALUTE",
+        "descrizione": "Il settimanale di sanità e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanità. Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute dà voce a medici, ricercatori, associazioni",
+        "immagine": "https://img-guidatv.org/4/basta-la-salute/10.png"
       },
       {
         "ora": "03:00",
@@ -26964,9 +26964,9 @@
       {
         "ora": "03:15",
         "fine": "04:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "RASSEGNA STAMPA",
+        "descrizione": "RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "04:00",
@@ -27424,10 +27424,10 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "01:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "00:30",
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "00:30",
@@ -27453,9 +27453,9 @@
       {
         "ora": "02:00",
         "fine": "02:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "02:30",
@@ -27467,9 +27467,9 @@
       {
         "ora": "02:45",
         "fine": "03:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "BASTA LA SALUTE",
+        "descrizione": "Il settimanale di sanità e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanità. Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute dà voce a medici, ricercatori, associazioni",
+        "immagine": "https://img-guidatv.org/4/basta-la-salute/10.png"
       },
       {
         "ora": "03:00",
@@ -27481,9 +27481,9 @@
       {
         "ora": "03:15",
         "fine": "04:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "RASSEGNA STAMPA",
+        "descrizione": "RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "04:00",
@@ -27955,13 +27955,13 @@
       },
       {
         "ora": "00:50",
-        "fine": "01:25",
+        "fine": "01:30",
         "titolo": "Passato E Presente - Brutalismo, La Via Italiana",
         "descrizione": "$29",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "01:25",
+        "ora": "01:30",
         "fine": "02:25",
         "titolo": "Rivisitare Nazareth",
         "descrizione": "Nel 680 d.C. il vescovo franco Arculfo reduce da un avventuroso viaggio in Terra Santa, si ritrova nell'isola di Jona, a largo della costa occidentale della Scozia. Qui incontra il monaco irlandese Adamnano a - cui racconta di essere stato anche al villaggio di Nazareth, dove la Sacra Famiglia avrebbe vissuto a lungo. Il documentario Rivisitare Nazareth partendo da questo dato storico ricostruisce le ultime indagini archeologiche su quella che viene definita come la possibile dimora natale di Gesù. -  Introduce il prof. Giuseppe Albertoni",
@@ -27969,10 +27969,10 @@
       },
       {
         "ora": "02:25",
-        "fine": "04:40",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:20",
+        "titolo": "Le Montagne Della Luce - Le Negai Dio Senza Cielo (Pt.4)",
+        "descrizione": "Andato in onda in sei puntate a partire dal 5 maggio del 1976, Le montagne della luce, sottotitolo \"Diario africano di un viaggio nel cuore delle tenebre\", è il racconto di un viaggio tra le montagne dell'Africa, ideato e realizzato da Giorgio Moser, con l'alpinista, partigiano e scrittore Stefano Maestri.",
+        "immagine": "https://img-guidatv.org/24/le-montagne-della-luce-le-negai-dio-senza-cielo/0.jpg"
       },
       {
         "ora": "03:20",
@@ -28146,7 +28146,7 @@
         "ora": "19:40",
         "fine": "20:00",
         "titolo": "Dante, La Voce Che Parla Di Noi. La Forza Delle Donne",
-        "descrizione": "Dante, la voce che parla di noi La forza delle donne Prima TV per Rai - In questa puntata, Aldo Cazzullo, attraverso la voce di Alessandro Preziosi, rivela il ruolo che le donne, secondo Dante, rivestono n - on solo in vita ma anche dopo la Morte. Un ruolo fondamentale che parla di amore, cura, ma soprattutto di salvezza.",
+        "descrizione": "In questa puntata, Aldo Cazzullo, attraverso la voce di Alessandro Preziosi, rivela il ruolo che le donne, secondo Dante, rivestono n on solo in vita ma anche dopo la Morte. Un ruolo fondamentale che parla di amore, cura, ma soprattutto di salvezza.",
         "immagine": "https://img-guidatv.org/24/dante-la-voce-che-parla-di-noi-la-forza-delle-donne/0.jpg"
       },
       {
@@ -28186,7 +28186,7 @@
       },
       {
         "ora": "23:25",
-        "fine": "00:30",
+        "fine": "00:25",
         "titolo": "La Bussola E La Clessidra - La Via Del Guerriero - Sigurd Bjornson. L'Esilio Vichingo",
         "descrizione": "Combattenti celti, legionari romani, predoni vichinghi, cavalieri templari, highlander scozzesi, guerrieri mongoli. La nuova serie de La Bussola e la Clessidra, con il professor Alessandro Barbero, è dedicata ad alcuni dei più grandi guerrieri dell'antichità e alle loro tecniche di combattimento.",
         "immagine": "https://img-guidatv.org/24/la-bussola-e-la-clessidra/6.jpg"
@@ -28213,13 +28213,13 @@
       },
       {
         "ora": "00:50",
-        "fine": "01:25",
+        "fine": "01:30",
         "titolo": "Passato E Presente - Brutalismo, La Via Italiana",
         "descrizione": "$29",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "01:25",
+        "ora": "01:30",
         "fine": "02:25",
         "titolo": "Rivisitare Nazareth",
         "descrizione": "Nel 680 d.C. il vescovo franco Arculfo reduce da un avventuroso viaggio in Terra Santa, si ritrova nell'isola di Jona, a largo della costa occidentale della Scozia. Qui incontra il monaco irlandese Adamnano a - cui racconta di essere stato anche al villaggio di Nazareth, dove la Sacra Famiglia avrebbe vissuto a lungo. Il documentario Rivisitare Nazareth partendo da questo dato storico ricostruisce le ultime indagini archeologiche su quella che viene definita come la possibile dimora natale di Gesù. -  Introduce il prof. Giuseppe Albertoni",
@@ -28227,10 +28227,10 @@
       },
       {
         "ora": "02:25",
-        "fine": "04:40",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:20",
+        "titolo": "Le Montagne Della Luce - Le Negai Dio Senza Cielo (Pt.4)",
+        "descrizione": "Andato in onda in sei puntate a partire dal 5 maggio del 1976, Le montagne della luce, sottotitolo \"Diario africano di un viaggio nel cuore delle tenebre\", è il racconto di un viaggio tra le montagne dell'Africa, ideato e realizzato da Giorgio Moser, con l'alpinista, partigiano e scrittore Stefano Maestri.",
+        "immagine": "https://img-guidatv.org/24/le-montagne-della-luce-le-negai-dio-senza-cielo/0.jpg"
       },
       {
         "ora": "03:20",
@@ -28404,7 +28404,7 @@
         "ora": "19:40",
         "fine": "20:00",
         "titolo": "Dante, La Voce Che Parla Di Noi. La Forza Delle Donne",
-        "descrizione": "Dante, la voce che parla di noi La forza delle donne Prima TV per Rai - In questa puntata, Aldo Cazzullo, attraverso la voce di Alessandro Preziosi, rivela il ruolo che le donne, secondo Dante, rivestono n - on solo in vita ma anche dopo la Morte. Un ruolo fondamentale che parla di amore, cura, ma soprattutto di salvezza.",
+        "descrizione": "In questa puntata, Aldo Cazzullo, attraverso la voce di Alessandro Preziosi, rivela il ruolo che le donne, secondo Dante, rivestono n on solo in vita ma anche dopo la Morte. Un ruolo fondamentale che parla di amore, cura, ma soprattutto di salvezza.",
         "immagine": "https://img-guidatv.org/24/dante-la-voce-che-parla-di-noi-la-forza-delle-donne/0.jpg"
       },
       {
@@ -28444,7 +28444,7 @@
       },
       {
         "ora": "23:25",
-        "fine": "00:30",
+        "fine": "00:25",
         "titolo": "La Bussola E La Clessidra - La Via Del Guerriero - Sigurd Bjornson. L'Esilio Vichingo",
         "descrizione": "Combattenti celti, legionari romani, predoni vichinghi, cavalieri templari, highlander scozzesi, guerrieri mongoli. La nuova serie de La Bussola e la Clessidra, con il professor Alessandro Barbero, è dedicata ad alcuni dei più grandi guerrieri dell'antichità e alle loro tecniche di combattimento.",
         "immagine": "https://img-guidatv.org/24/la-bussola-e-la-clessidra/6.jpg"
@@ -28471,23 +28471,23 @@
       },
       {
         "ora": "01:25",
-        "fine": "02:55",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:20",
+        "titolo": "Di Là Dal Fiume E Tra Gli Alberi Aurelia",
+        "descrizione": "Di là dal fiume e tra gli alberi Aurelia - Bianco e nero - Guido Morandini, percorrendo l'Aurelia, ci rivela un tratto di Toscana poco battuto, compreso tra l'Arno e il Magra, dove acqua e marmo sono gli e - lementi fondanti del territorio. - un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Francesco Zippel a cura di Gemma Giorgini",
+        "immagine": "https://img-guidatv.org/34/di-la-dal-fiume-e-tra-gli-alberi/1.jpg"
       },
       {
         "ora": "02:20",
         "fine": "02:55",
         "titolo": "Progetto Scienza STEM",
-        "descrizione": "$2d",
+        "descrizione": "$2a",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
         "ora": "02:55",
         "fine": "03:55",
         "titolo": "Progetto Scienza 2022 Newton",
-        "descrizione": "$2a",
+        "descrizione": "$2b",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2022/6.png"
       },
       {
@@ -28500,22 +28500,22 @@
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "L' Archipendolo",
+        "descrizione": "L' archipendolo Ep. 1 Il Primo Cinquecento - L'architettura dei primi decenni del XVI secolo e il nuovo linguaggio architettonico che si sviluppa a partire da Bramante, grazie ad artisti geniali come Raffa - ello, Baldassare Peruzzi e Giulio Romano.",
+        "immagine": "https://img-guidatv.org/34/l-archipendolo/1.jpg"
       },
       {
         "ora": "05:00",
         "fine": "05:25",
         "titolo": "Memex Nautilus Particelle Elementari, Ma",
-        "descrizione": "$2b",
+        "descrizione": "$2c",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
         "ora": "05:25",
         "fine": "06:00",
         "titolo": "Progetto Scienza Newton",
-        "descrizione": "$2c",
+        "descrizione": "$2d",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-newton/7.jpg"
       },
       {
@@ -28701,23 +28701,23 @@
       },
       {
         "ora": "01:25",
-        "fine": "02:55",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:20",
+        "titolo": "Di Là Dal Fiume E Tra Gli Alberi Aurelia",
+        "descrizione": "Di là dal fiume e tra gli alberi Aurelia - Bianco e nero - Guido Morandini, percorrendo l'Aurelia, ci rivela un tratto di Toscana poco battuto, compreso tra l'Arno e il Magra, dove acqua e marmo sono gli e - lementi fondanti del territorio. - un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Francesco Zippel a cura di Gemma Giorgini",
+        "immagine": "https://img-guidatv.org/34/di-la-dal-fiume-e-tra-gli-alberi/1.jpg"
       },
       {
         "ora": "02:20",
         "fine": "02:55",
         "titolo": "Progetto Scienza STEM",
-        "descrizione": "$2d",
+        "descrizione": "$2a",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
         "ora": "02:55",
         "fine": "03:55",
         "titolo": "Progetto Scienza 2022 Newton",
-        "descrizione": "$2a",
+        "descrizione": "$2b",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2022/6.png"
       },
       {
@@ -28730,22 +28730,22 @@
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "L' Archipendolo",
+        "descrizione": "L' archipendolo Ep. 1 Il Primo Cinquecento - L'architettura dei primi decenni del XVI secolo e il nuovo linguaggio architettonico che si sviluppa a partire da Bramante, grazie ad artisti geniali come Raffa - ello, Baldassare Peruzzi e Giulio Romano.",
+        "immagine": "https://img-guidatv.org/34/l-archipendolo/1.jpg"
       },
       {
         "ora": "05:00",
         "fine": "05:25",
         "titolo": "Memex Nautilus Particelle Elementari, Ma",
-        "descrizione": "$2b",
+        "descrizione": "$2c",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
         "ora": "05:25",
         "fine": "06:00",
         "titolo": "Progetto Scienza Newton",
-        "descrizione": "$2c",
+        "descrizione": "$2d",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-newton/7.jpg"
       },
       {
