@@ -13,12 +13,16 @@ const DEFAULT_EXT_ID = "opmeopcambhfimffbomjgemehjkbbmji";
 
 function getInitialSource(ch) {
     if (!ch) return null;
-    if (Array.isArray(ch.sources) && ch.sources.length > 0) return ch.sources[0];
-    if (ch.url) {
+    if (Array.isArray(ch.sources) && ch.sources.length > 0) {
+        const valid = ch.sources.find(s => Boolean(s.url && s.url.trim()));
+        if (valid) return valid;
+    }
+    if (ch.url && ch.url.trim()) {
+        const isWarp = Boolean(ch.isTestJson || ch.isCustom || ch.url.includes("@eyj") || ch.url.includes("token=eyj"));
         return {
-            name: "Standard",
-            isWarp: false,
-            url: ch.url,
+            name: isWarp ? "WARP (Cloudflare)" : "Standard",
+            isWarp: isWarp,
+            url: ch.url.trim(),
             kid_key: ch.kid_key || "",
             ua: ch.ua || "",
             dazn_token: ch.dazn_token || ""
@@ -206,7 +210,9 @@ export default function EventoPlayerPage() {
 
                 if (foundCh && isMounted) {
                     setChannel(prev => {
-                        if (prev && prev.title === foundCh.title && prev.sources?.length === foundCh.sources?.length) {
+                        const prevHasStream = Boolean(prev?.url || (prev?.sources && prev.sources.some(s => s.url)));
+                        const newHasStream = Boolean(foundCh?.url || (foundCh?.sources && foundCh.sources.some(s => s.url)));
+                        if (prev && prev.title === foundCh.title && prevHasStream === newHasStream && prev.sources?.length === foundCh.sources?.length) {
                             return prev;
                         }
                         return foundCh;
@@ -226,7 +232,7 @@ export default function EventoPlayerPage() {
                                 return stillMatches;
                             }
                         }
-                        // Solo se non abbiamo ancora una sorgente valida
+                        // Solo se non abbiamo ancora una sorgente valida o se prima era vuota
                         return getInitialSource(foundCh);
                     });
                     setLoading(false);

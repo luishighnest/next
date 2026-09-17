@@ -295,23 +295,26 @@ export async function GET(request) {
                         }
                     }
 
-                    const sourceItem = {
+                    const hasValidStream = Boolean(rawStreamUrl);
+                    const sourceItem = hasValidStream ? {
                         name: "WARP (Cloudflare)",
                         isWarp: true,
                         url: rawStreamUrl,
                         kid_key: rawKidKey,
                         ua: ev.ua || "",
                         dazn_token: ev.dazn_token || ""
-                    };
+                    } : null;
 
                     const groupKey = groupName + ":::" + cleanTitle.toLowerCase();
                     if (groupedMap.has(groupKey)) {
                         const existing = groupedMap.get(groupKey);
-                        existing.sources.push(sourceItem);
-                        if (!existing.url || existing.url.includes(".m3u8")) {
-                            existing.url = sourceItem.url;
-                            existing.kid_key = sourceItem.kid_key;
-                            existing.ua = sourceItem.ua;
+                        if (sourceItem) {
+                            existing.sources.push(sourceItem);
+                            if (!existing.url || existing.url.includes(".m3u8")) {
+                                existing.url = sourceItem.url;
+                                existing.kid_key = sourceItem.kid_key;
+                                existing.ua = sourceItem.ua;
+                            }
                         }
                     } else {
                         const chObj = {
@@ -327,7 +330,7 @@ export async function GET(request) {
                             ora: timeStr,
                             ua: ev.ua || "",
                             dazn_token: ev.dazn_token || "",
-                            sources: [sourceItem],
+                            sources: sourceItem ? [sourceItem] : [],
                             isCustom: true,
                             isTestJson: true,
                             slug: createSlug(cleanTitle)
