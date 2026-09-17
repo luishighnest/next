@@ -4,6 +4,7 @@ import { isStreamWarp } from "@/lib/crypto";
 import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug } from "@/lib/slug";
 import { runScrape24H } from "@/lib/scraper";
+import { syncDaznLiveEvents } from "@/lib/sync-dazn-live";
 
 export const dynamic = "force-dynamic";
 
@@ -13,6 +14,29 @@ const CACHE_TTL_MS = 8000;
 
 let isBackgroundScraping = false;
 let lastStaleCheckTime = 0;
+
+let isDaznLiveSyncing = false;
+let lastDaznLiveSyncTime = 0;
+
+function checkAndTriggerBackgroundDaznLiveUpdate() {
+    const now = Date.now();
+    // Non controllare piu di una volta ogni 60 secondi
+    if (now - lastDaznLiveSyncTime < 60 * 1000 || isDaznLiveSyncing) {
+        return;
+    }
+    lastDaznLiveSyncTime = now;
+
+    (async () => {
+        isDaznLiveSyncing = true;
+        try {
+            await syncDaznLiveEvents();
+        } catch (e) {
+            console.error("[Auto-Sync DAZN Live] Errore sync:", e);
+        } finally {
+            isDaznLiveSyncing = false;
+        }
+    })();
+}
 
 function checkAndTriggerBackgroundGuidaUpdate() {
     const now = Date.now();
@@ -62,6 +86,7 @@ function normalizeEpg(str) {
 
 export async function GET(request) {
     checkAndTriggerBackgroundGuidaUpdate();
+    checkAndTriggerBackgroundDaznLiveUpdate();
     const { searchParams } = new URL(request.url);
     const sourceParam = searchParams.get("source") || "";
     const tabFilter = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
