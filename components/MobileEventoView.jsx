@@ -11,7 +11,9 @@ export default function MobileEventoView({
     selectedSource,
     setSelectedSource,
     relatedSections = [],
-    getIframeUrl
+    getIframeUrl,
+    onRequestContent,
+    requestStatus = "idle"
 }) {
     const [iframeLoaded, setIframeLoaded] = React.useState(false);
     const [transPoster, setTransPoster] = React.useState(() => {
@@ -171,8 +173,62 @@ export default function MobileEventoView({
                     </div>
                 </div>
 
-                {/* 4. Sorgenti Streaming Touch Pills (Standard vs WARP) - Mostra solo i flussi reali dell'evento */}
+                {/* 4. Sorgenti Streaming Touch Pills oppure Pulsante Richiedi Contenuto */}
                 {(() => {
+                    const hasStream = Boolean(selectedSource && selectedSource.url);
+                    if (!hasStream) {
+                        return (
+                            <div className="mobile-event-sources-block" style={{ marginTop: "12px" }}>
+                                <button
+                                    type="button"
+                                    onClick={onRequestContent}
+                                    disabled={requestStatus === "sending" || requestStatus === "sent"}
+                                    style={{
+                                        display: "inline-flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        gap: "8px",
+                                        width: "100%",
+                                        padding: "12px 16px",
+                                        fontWeight: "600",
+                                        fontSize: "14px",
+                                        borderRadius: "10px",
+                                        cursor: requestStatus === "sent" ? "default" : "pointer",
+                                        background: requestStatus === "sent" ? "#00d586" : (requestStatus === "error" ? "#ef4444" : "rgba(255,255,255,0.08)"),
+                                        color: requestStatus === "sent" ? "#06080e" : "#ffffff",
+                                        border: "1px solid rgba(255,255,255,0.16)",
+                                        transition: "all 0.25s ease"
+                                    }}
+                                >
+                                    {requestStatus === "sending" && (
+                                        <>
+                                            <div className="sky-spinner" style={{ width: "16px", height: "16px", borderWidth: "2px" }} />
+                                            <span>Invio richiesta...</span>
+                                        </>
+                                    )}
+                                    {requestStatus === "sent" && (
+                                        <>
+                                            <i className="fa-solid fa-check"></i>
+                                            <span>Richiesta inviata!</span>
+                                        </>
+                                    )}
+                                    {requestStatus === "error" && (
+                                        <>
+                                            <i className="fa-solid fa-triangle-exclamation"></i>
+                                            <span>Riprova più tardi</span>
+                                        </>
+                                    )}
+                                    {requestStatus === "idle" && (
+                                        <>
+                                            <i className="fa-solid fa-bell text-warning"></i>
+                                            <span>Richiedi Contenuto</span>
+                                        </>
+                                    )}
+                                </button>
+                            </div>
+                        );
+                    }
+
                     const realSources = getNormalizedSources(channel).filter(s => Boolean(s && s.url));
                     if (realSources.length <= 1) return null;
                     return (
