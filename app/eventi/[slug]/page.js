@@ -409,7 +409,7 @@ export default function EventoPlayerPage() {
         <div className={`event-player-page ${mounted ? "is-mounted" : "is-mounting"}`} style={{ background: "transparent", minHeight: "140vh", color: "#ffffff", paddingBottom: "120px" }}>
             <Navbar activeFilter={null} />
 
-            <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "86px 16px 0 16px" }}>
+            <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "76px 16px 0 16px" }}>
                 <div className="event-main-stage">
                     <div className="player-wrapper" style={{ position: "relative", overflow: "hidden" }}>
                         {/* Se l'evento NON ha ancora uno stream estratto: mostra la copertina dell'evento SENZA alcuna rotellina di caricamento */}

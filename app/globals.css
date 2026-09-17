@@ -5720,7 +5720,8 @@ html {
         
         /* Stage Player compatto e concentrato - Blocco unico coeso SENZA righe laterali */
         .event-main-stage {
-            max-width: 860px;
+            width: 100%;
+            max-width: min(840px, calc((100vh - 210px) * (16 / 9)));
             margin: 0 auto;
             padding: 0 !important;
             display: flex;
@@ -7467,7 +7468,9 @@ body:has(.sky-app) {
 }
 
 .event-main-stage {
-    max-width: 960px;
+    /* Dimensione bilanciata e centrata: non supera mai l'altezza dello schermo, garantendo iframe + deck sempre visibili insieme */
+    width: 100%;
+    max-width: min(840px, calc((100vh - 210px) * (16 / 9)));
     margin: 0 auto;
     padding: 0 !important;
     display: flex;
