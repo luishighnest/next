@@ -281,7 +281,7 @@ export async function GET(request) {
                     if (ev.start && !isDazn1) {
                         try {
                             const d = new Date(ev.start);
-                            timeStr = `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+                            timeStr = d.toLocaleTimeString('it-IT', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false });
                         } catch(e) {}
                     }
 
@@ -296,8 +296,8 @@ export async function GET(request) {
                     }
 
                     const sourceItem = {
-                        name: isWarp ? "WARP (Cloudflare)" : "Standard",
-                        isWarp: isWarp,
+                        name: "WARP (Cloudflare)",
+                        isWarp: true,
                         url: rawStreamUrl,
                         kid_key: rawKidKey,
                         ua: ev.ua || "",
@@ -308,7 +308,7 @@ export async function GET(request) {
                     if (groupedMap.has(groupKey)) {
                         const existing = groupedMap.get(groupKey);
                         existing.sources.push(sourceItem);
-                        if (!isWarp && (!existing.url || existing.url.includes(".m3u8"))) {
+                        if (!existing.url || existing.url.includes(".m3u8")) {
                             existing.url = sourceItem.url;
                             existing.kid_key = sourceItem.kid_key;
                             existing.ua = sourceItem.ua;
@@ -338,18 +338,11 @@ export async function GET(request) {
 
                 const deduplicatedItems = Array.from(groupedMap.values());
                 deduplicatedItems.forEach(c => {
-                    const warps = c.sources.filter(s => s.isWarp);
-                    const stds = c.sources.filter(s => !s.isWarp);
-                    let stdCount = 0;
                     let warpCount = 0;
                     c.sources.forEach(s => {
-                        if (s.isWarp) {
-                            warpCount++;
-                            s.name = warps.length > 1 ? `WARP ${warpCount}` : "WARP (Cloudflare)";
-                        } else {
-                            stdCount++;
-                            s.name = stds.length > 1 ? `Standard ${stdCount}` : "Standard";
-                        }
+                        s.isWarp = true;
+                        warpCount++;
+                        s.name = c.sources.length > 1 ? `WARP ${warpCount}` : "WARP (Cloudflare)";
                     });
                     orderedChannels.push(c);
                 });
