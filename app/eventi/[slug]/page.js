@@ -375,6 +375,8 @@ export default function EventoPlayerPage() {
         );
     }
 
+    const hasStream = Boolean(selectedSource && selectedSource.url);
+
     return (
         <div className={`event-player-page ${mounted ? "is-mounted" : "is-mounting"}`} style={{ background: "transparent", minHeight: "140vh", color: "#ffffff", paddingBottom: "120px" }}>
             <Navbar activeFilter={null} />
@@ -382,70 +384,111 @@ export default function EventoPlayerPage() {
             <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "86px 16px 0 16px" }}>
                 <div className="event-main-stage">
                     <div className="player-wrapper" style={{ position: "relative", overflow: "hidden" }}>
-                        {Boolean(transPoster || channel?.image) && !iframeLoaded && (
+                        {/* Se l'evento NON ha ancora uno stream estratto: mostra la copertina dell'evento SENZA alcuna rotellina di caricamento */}
+                        {!hasStream ? (
                             <div
                                 style={{
-                                    position: "absolute",
-                                    inset: 0,
-                                    zIndex: 1,
-                                    pointerEvents: "none",
+                                    position: "relative",
+                                    width: "100%",
+                                    height: "100%",
                                     overflow: "hidden",
-                                    transition: "opacity 0.4s ease"
+                                    background: "#0a0d14",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    justifyContent: "center"
                                 }}
                             >
-                                <img
-                                    src={transPoster || channel?.image}
-                                    alt=""
-                                    style={{
-                                        width: "100%",
-                                        height: "100%",
-                                        objectFit: "cover",
-                                        filter: "brightness(0.48) contrast(1.05)"
-                                    }}
-                                />
+                                {(transPoster || channel?.image) ? (
+                                    <img
+                                        src={transPoster || channel?.image}
+                                        alt={channel?.title || "Copertina"}
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            objectFit: "cover"
+                                        }}
+                                    />
+                                ) : (
+                                    <div style={{ color: "rgba(255,255,255,0.6)", fontSize: "16px", fontWeight: "500" }}>
+                                        {channel?.title || "Evento in attesa di inizio"}
+                                    </div>
+                                )}
                                 <div
                                     style={{
                                         position: "absolute",
                                         inset: 0,
-                                        background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.88) 100%)"
+                                        background: "linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.7) 100%)"
                                     }}
                                 />
-                                <div
-                                    style={{
-                                        position: "absolute",
-                                        top: "50%",
-                                        left: "50%",
-                                        transform: "translate(-50%, -50%)",
-                                        display: "flex",
-                                        flexDirection: "column",
-                                        alignItems: "center",
-                                        gap: "12px"
-                                    }}
-                                >
-                                    <div className="sky-spinner" style={{ width: "40px", height: "40px", borderWidth: "3px" }} />
-                                </div>
                             </div>
-                        )}
+                        ) : (
+                            <>
+                                {Boolean(transPoster || channel?.image) && !iframeLoaded && (
+                                    <div
+                                        style={{
+                                            position: "absolute",
+                                            inset: 0,
+                                            zIndex: 1,
+                                            pointerEvents: "none",
+                                            overflow: "hidden",
+                                            transition: "opacity 0.4s ease"
+                                        }}
+                                    >
+                                        <img
+                                            src={transPoster || channel?.image}
+                                            alt=""
+                                            style={{
+                                                width: "100%",
+                                                height: "100%",
+                                                objectFit: "cover",
+                                                filter: "brightness(0.48) contrast(1.05)"
+                                            }}
+                                        />
+                                        <div
+                                            style={{
+                                                position: "absolute",
+                                                inset: 0,
+                                                background: "linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.88) 100%)"
+                                            }}
+                                        />
+                                        <div
+                                            style={{
+                                                position: "absolute",
+                                                top: "50%",
+                                                left: "50%",
+                                                transform: "translate(-50%, -50%)",
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                alignItems: "center",
+                                                gap: "12px"
+                                            }}
+                                        >
+                                            <div className="sky-spinner" style={{ width: "40px", height: "40px", borderWidth: "3px" }} />
+                                        </div>
+                                    </div>
+                                )}
 
-                        <iframe
-                            id="player-frame"
-                            src={getIframeUrl()}
-                            allowFullScreen
-                            allow="autoplay; encrypted-media; fullscreen"
-                            title="Player"
-                            onLoad={() => {
-                                setTimeout(() => setIframeLoaded(true), 250);
-                            }}
-                            style={{
-                                display: "block",
-                                width: "100%",
-                                height: "100%",
-                                border: "none",
-                                background: "#000000",
-                                opacity: iframeLoaded ? 1 : 0.85,
-                                transition: "opacity 0.4s ease-in-out"
-                            }}
-                        />
+                                <iframe
+                                    id="player-frame"
+                                    src={getIframeUrl()}
+                                    allowFullScreen
+                                    allow="autoplay; encrypted-media; fullscreen"
+                                    title="Player"
+                                    onLoad={() => {
+                                        setTimeout(() => setIframeLoaded(true), 250);
+                                    }}
+                                    style={{
+                                        display: "block",
+                                        width: "100%",
+                                        height: "100%",
+                                        border: "none",
+                                        background: "#000000",
+                                        opacity: iframeLoaded ? 1 : 0.85,
+                                        transition: "opacity 0.4s ease-in-out"
+                                    }}
+                                />
+                            </>
+                        )}
                     </div>
 
                     <div className="event-deck">
@@ -485,7 +528,7 @@ export default function EventoPlayerPage() {
 
                         {/* Deck Tasti Sorgente (Standard vs WARP) */}
                         <div className="event-sources-wrapper">
-                            {channel?.sources && channel.sources.map((s, idx) => {
+                            {channel?.sources && channel.sources.filter(s => Boolean(s && s.url)).map((s, idx) => {
                                 const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
                                 return (
                                     <button
