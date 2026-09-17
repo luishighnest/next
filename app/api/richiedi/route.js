@@ -7,7 +7,7 @@ const NTFY_TOPIC = process.env.NTFY_TOPIC || "nmdz_live_richieste";
 
 export async function POST(request) {
     try {
-        const body = await request.getjson ? await request.json() : {};
+        const body = await request.json().catch(() => ({}));
         const title = (body.title || "Evento Sconosciuto").trim();
         const category = (body.category || body.group || "Live TV / Sport").trim();
         const time = (body.time || body.ora || "").trim();
