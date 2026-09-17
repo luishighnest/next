@@ -156,7 +156,7 @@ export default function EventoPlayerPage() {
             } catch(e) {}
 
             try {
-                const res = await fetch(`/api/canali`)
+                const res = await fetch(`/api/canali?t=${Date.now()}`, { cache: "no-store" })
                     .then(r => r.json())
                     .catch(() => null);
 
@@ -209,6 +209,13 @@ export default function EventoPlayerPage() {
                 }
 
                 if (foundCh && isMounted) {
+                    try {
+                        if (typeof window !== "undefined" && (foundCh.url || foundCh.sources?.some(s => s.url))) {
+                            sessionStorage.setItem("daznEventChannel", JSON.stringify(foundCh));
+                            sessionStorage.setItem("daznCustomChannel", JSON.stringify(foundCh));
+                        }
+                    } catch(e) {}
+
                     setChannel(prev => {
                         const prevHasStream = Boolean(prev?.url || (prev?.sources && prev.sources.some(s => s.url)));
                         const newHasStream = Boolean(foundCh?.url || (foundCh?.sources && foundCh.sources.some(s => s.url)));
