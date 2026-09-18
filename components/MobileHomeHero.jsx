@@ -122,7 +122,12 @@ export default function MobileHomeHero({ categories = [] }) {
                 const skyCandidates = [];
                 if (guideData && Array.isArray(guideData)) {
                     for (const ch of guideData) {
+                        const cat = (ch.categoria || "").toLowerCase();
                         const chName = (ch.canale || "").toLowerCase();
+                        
+                        // ESCLUDI TASSATIVAMENTE SKY CINEMA E CATEGORIA CINEMA
+                        if (cat === "cinema" || chName.includes("cinema")) continue;
+
                         const is4k = chName.includes("4k");
                         const isGolf = chName.includes("golf");
                         const isNumberedSport = /\b(25[1-9]|26[0-9]|calcio\s*[1-9])\b/i.test(chName) || /sky\s*(?:sport|calcio)\s*25\d/i.test(chName);
@@ -181,30 +186,32 @@ export default function MobileHomeHero({ categories = [] }) {
                 }
 
                 // 3. Regole di selezione esatte (totale 5 contenuti):
-                // - Se 0 o 1 evento live test.json: MASSIMO 2 da test.json, il resto (3) da Sky
-                // - Se 2 o più eventi live test.json: MASSIMO 3 da test.json (precedenza ai live), il resto (2) da Sky
+                // - Se 2 eventi live: tutti e due in hero (SOLO 2 su 5, + 3 Sky)
+                // - Se 3 eventi live: 3 in hero (SOLO 3 su 5, + 2 Sky)
+                // - Se 4 o più eventi live: MASSIMO 3 di test.json in hero (+ 2 Sky)
+                // - Se 1 evento live: 1 live + 1 VOD (se c'è, max 2 su 5, + 3 Sky)
+                // - Se 0 eventi live: massimo 2 VOD (+ 3 Sky)
+                // I contenuti di test.json devono essere SEMPRE i primi 2 o 3 dei 5!
                 const numLiveTest = liveTestPool.length;
                 let selectedTest = [];
 
-                if (numLiveTest <= 1) {
-                    if (numLiveTest === 1) {
-                        selectedTest.push(liveTestPool[0]);
-                        if (vodTestPool.length > 0) selectedTest.push(vodTestPool[0]);
-                    } else {
-                        selectedTest.push(...vodTestPool.slice(0, 2));
-                    }
+                if (numLiveTest >= 4) {
+                    selectedTest = liveTestPool.slice(0, 3);
+                } else if (numLiveTest === 3) {
+                    selectedTest = liveTestPool.slice(0, 3);
+                } else if (numLiveTest === 2) {
+                    selectedTest = liveTestPool.slice(0, 2);
+                } else if (numLiveTest === 1) {
+                    selectedTest.push(liveTestPool[0]);
+                    if (vodTestPool.length > 0) selectedTest.push(vodTestPool[0]);
                 } else {
-                    const takeLive = Math.min(3, numLiveTest);
-                    selectedTest.push(...liveTestPool.slice(0, takeLive));
-                    if (selectedTest.length < 3 && vodTestPool.length > 0) {
-                        const neededVod = 3 - selectedTest.length;
-                        selectedTest.push(...vodTestPool.slice(0, neededVod));
-                    }
+                    selectedTest.push(...vodTestPool.slice(0, 2));
                 }
 
                 const neededSky = Math.max(0, 5 - selectedTest.length);
                 const selectedSky = skyCandidates.slice(0, neededSky);
 
+                // Composizione finale: SEMPRE prima i 2/3 di test.json, poi i canali Sky (totale 5)
                 let final5 = [...selectedTest, ...selectedSky];
                 if (final5.length < 5) {
                     const remainingNeeded = 5 - final5.length;

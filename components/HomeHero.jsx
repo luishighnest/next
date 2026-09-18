@@ -167,7 +167,7 @@ export default function HomeHero({ categories = [] }) {
                                 progOraInizio: c.ora || "",
                                 progOraFine: "",
                                 progImg: upgradeImageToHighRes(evImg),
-                                artworkType: detectArtworkType(evImg),
+                                artworkType: "sky-hero", // Locandine test.json a TUTTO schermo a riempire la hero
                                 progress: c.isLiveNow ? 50 : 0,
                                 targetHref: evTargetHref,
                                 channelObj: c,
@@ -203,7 +203,7 @@ export default function HomeHero({ categories = [] }) {
                     [vodTestPool[i], vodTestPool[j]] = [vodTestPool[j], vodTestPool[i]];
                 }
 
-                // 2. Caricamento Guida TV Sky per i canali Sky Live
+                // 2. Caricamento Guida TV Sky per i canali Sky Live (NO CINEMA)
                 let guideData = null;
                 try {
                     const cached = sessionStorage.getItem("nmdz_guide_cache_v3");
@@ -235,7 +235,12 @@ export default function HomeHero({ categories = [] }) {
                         const cat = (ch.categoria || "").toLowerCase();
                         const name = (ch.canale || "").toLowerCase();
                         const isSky = name.includes("sky");
-                        const isAllowedCat = cat === "sport" || cat === "intrattenimento" || cat === "cinema";
+                        
+                        // ESCLUDI TASSATIVAMENTE SKY CINEMA E CATEGORIA CINEMA
+                        const isCinema = cat === "cinema" || name.includes("cinema");
+                        if (isCinema) return;
+
+                        const isAllowedCat = cat === "sport" || cat === "intrattenimento";
 
                         if (!isSky || !isAllowedCat) return;
                         if (!ch.programmi || ch.programmi.length === 0) return;
@@ -341,41 +346,44 @@ export default function HomeHero({ categories = [] }) {
                 }
 
                 // 3. Regole di selezione esatte (totale 5 contenuti):
-                // - Se 0 o 1 evento live test.json: MASSIMO 2 da test.json, il resto (3) da Sky
-                // - Se 2 o più eventi live test.json: MASSIMO 3 da test.json (precedenza ai live), il resto (2) da Sky
+                // Regole test.json:
+                // - Se 2 eventi live: tutti e due in hero (SOLO 2 su 5, + 3 Sky)
+                // - Se 3 eventi live: 3 in hero (SOLO 3 su 5, + 2 Sky)
+                // - Se 4 o più eventi live: MASSIMO 3 di test.json in hero (+ 2 Sky)
+                // - Se 1 evento live: 1 live + 1 VOD (se c'è, max 2 su 5, + 3 Sky)
+                // - Se 0 eventi live: massimo 2 VOD (+ 3 Sky)
+                // I contenuti di test.json devono essere SEMPRE i primi 2 o 3 dei 5!
                 const numLiveTest = liveTestPool.length;
                 let selectedTest = [];
 
-                if (numLiveTest <= 1) {
-                    // Massimo 2 da test.json
-                    if (numLiveTest === 1) {
-                        selectedTest.push(liveTestPool[0]);
-                        if (vodTestPool.length > 0) {
-                            selectedTest.push(vodTestPool[0]);
-                        }
-                    } else {
-                        // 0 live: massimo 2 VOD
-                        selectedTest.push(...vodTestPool.slice(0, 2));
+                if (numLiveTest >= 4) {
+                    // 4 o più eventi live: MASSIMO 3 di test.json
+                    selectedTest = liveTestPool.slice(0, 3);
+                } else if (numLiveTest === 3) {
+                    // Se ci sono 3 eventi: 3 solo 3 su 5
+                    selectedTest = liveTestPool.slice(0, 3);
+                } else if (numLiveTest === 2) {
+                    // Se ci sono 2 eventi: tutti e due in hero ma SOLO 2 su 5
+                    selectedTest = liveTestPool.slice(0, 2);
+                } else if (numLiveTest === 1) {
+                    // 1 evento live: 1 live + 1 VOD (se disponibile)
+                    selectedTest.push(liveTestPool[0]);
+                    if (vodTestPool.length > 0) {
+                        selectedTest.push(vodTestPool[0]);
                     }
                 } else {
-                    // 2 o più live test.json: massimo 3 da test.json
-                    // I live hanno la precedenza assoluta
-                    const takeLive = Math.min(3, numLiveTest);
-                    selectedTest.push(...liveTestPool.slice(0, takeLive));
-                    if (selectedTest.length < 3 && vodTestPool.length > 0) {
-                        const neededVod = 3 - selectedTest.length;
-                        selectedTest.push(...vodTestPool.slice(0, neededVod));
-                    }
+                    // 0 live: massimo 2 VOD
+                    selectedTest.push(...vodTestPool.slice(0, 2));
                 }
 
                 // Quanti canali Sky servono per raggiungere esattamente 5 elementi?
                 const neededSky = Math.max(0, 5 - selectedTest.length);
                 const selectedSky = skyPool.slice(0, neededSky);
 
-                // Composizione finale di 5 elementi: test.json + Sky
+                // Composizione finale: SEMPRE prima i 2/3 di test.json, poi i canali Sky (totale 5)
                 let final5 = [...selectedTest, ...selectedSky];
 
-                // Nel raro caso in cui manchino elementi per arrivare a 5 (es. pochissimi Sky o test.json), riempi fino a 5
+                // Fallback di riempimento solo se mancassero canali per arrivare a 5
                 if (final5.length < 5) {
                     const remainingNeeded = 5 - final5.length;
                     const remainingSky = skyPool.filter(s => !final5.some(f => f.channelName === s.channelName));
