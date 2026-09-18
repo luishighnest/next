@@ -15,95 +15,9 @@ export default function MobileHomeHero({ categories = [] }) {
     useEffect(() => {
         let isMounted = true;
 
-        async function loadMobileHero() {
+        function loadMobileHero() {
             try {
-                let guideData = [];
-                try {
-                    const cached = sessionStorage.getItem("nmdz_guide_cache_v3");
-                    if (cached) guideData = JSON.parse(cached);
-                } catch (e) {}
-
-                if (!guideData || guideData.length === 0) {
-                    const res = await fetch("/guida_tv_sky.json?t=" + Date.now(), { cache: "no-store" });
-                    if (res.ok) {
-                        guideData = await res.json();
-                        try {
-                            sessionStorage.setItem("nmdz_guide_cache_v3", JSON.stringify(guideData));
-                        } catch (e) {}
-                    }
-                }
-
-                if (!guideData || !Array.isArray(guideData) || guideData.length === 0) return;
-
-                const now = new Date();
-                const nowMinutes = now.getHours() * 60 + now.getMinutes();
-
-                const candidates = [];
-
-                for (const ch of guideData) {
-                    const chName = (ch.canale || "").toLowerCase();
-                    const is4k = chName.includes("4k");
-                    const isNumberedSport = /\b(25[1-9]|26[0-9]|calcio\s*[1-9])\b/i.test(chName);
-                    if (is4k || isNumberedSport) continue;
-
-                    if (!ch.programmi || ch.programmi.length === 0) continue;
-
-                    let currentIdx = -1;
-                    for (let i = 0; i < ch.programmi.length; i++) {
-                        const p = ch.programmi[i];
-                        const [hh, mm] = (p.ora || "0:00").split(":").map(Number);
-                        const pMin = (hh || 0) * 60 + (mm || 0);
-                        if (pMin > nowMinutes) {
-                            currentIdx = i > 0 ? i - 1 : 0;
-                            break;
-                        }
-                    }
-                    if (currentIdx === -1) currentIdx = ch.programmi.length - 1;
-
-                    const prog = ch.programmi[currentIdx];
-                    const nextProg = currentIdx < ch.programmi.length - 1 ? ch.programmi[currentIdx + 1] : null;
-
-                    const rawImg = prog?.immagine;
-                    if (!rawImg || !rawImg.startsWith("http")) continue;
-
-                    let matchedChannelObj = null;
-                    if (categories && Array.isArray(categories)) {
-                        for (const sec of categories) {
-                            for (const c of (sec.channels || [])) {
-                                const cTitle = (c.title || c.name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                                const guideTitle = (ch.canale || "").toLowerCase().replace(/[^a-z0-9]/g, "");
-                                if (cTitle === guideTitle || cTitle.includes(guideTitle) || guideTitle.includes(cTitle)) {
-                                    matchedChannelObj = c;
-                                    break;
-                                }
-                            }
-                            if (matchedChannelObj) break;
-                        }
-                    }
-
-                    const slug = createSlug(ch.canale);
-                    const cleanSrc = matchedChannelObj?.skySource?.includes("sky2") ? "sky2" : "";
-                    const targetHref = "/sky?ch=" + slug + (cleanSrc ? "&src=" + cleanSrc : "");
-
-                    candidates.push({
-                        channelName: ch.canale,
-                        category: ch.categoria || (chName.includes("sport") ? "Sport" : "Intrattenimento"),
-                        progTitle: prog.titolo || ch.canale,
-                        progDesc: prog.descrizione || "",
-                        progOraInizio: prog.ora || "",
-                        progOraFine: nextProg?.ora || "",
-                        progImg: rawImg,
-                        targetHref,
-                        channelObj: matchedChannelObj || { title: ch.canale, name: ch.canale, slug },
-                        logoUrl: getChannelLogoUrl({ title: ch.canale }),
-                        currentProg: prog,
-                        nextProg
-                    });
-
-                    if (candidates.length >= 10) break;
-                }
-
-                // Estrazione di Eventi Live e VOD da test.json (tramite categories)
+                // Estrazione di Eventi Live e VOD esclusivamente da test.json (tramite categories)
                 const testJsonLive = [];
                 const testJsonVod = [];
 
@@ -111,7 +25,7 @@ export default function MobileHomeHero({ categories = [] }) {
                     for (const sec of categories) {
                         for (const c of (sec.channels || [])) {
                             if (!c.isTestJson) continue;
-                            const evImg = c.image || c.logo;
+                            const evImg = c.image;
                             if (!evImg || typeof evImg !== "string" || !evImg.startsWith("http")) continue;
 
                             const evTitle = c.title || c.name || "Evento";
@@ -133,7 +47,7 @@ export default function MobileHomeHero({ categories = [] }) {
                                 progImg: evImg,
                                 targetHref: evTargetHref,
                                 channelObj: c,
-                                logoUrl: c.logo && c.logo.startsWith("http") ? c.logo : (isVod ? "" : "/logos/dazn.png"),
+                                logoUrl: "/logos/dazn.png",
                                 currentProg: {
                                     titolo: evTitle,
                                     descrizione: c.schedule ? `${c.schedule} • Disponibile in streaming` : "",
@@ -153,48 +67,39 @@ export default function MobileHomeHero({ categories = [] }) {
                     }
                 }
 
-                // Candidati VOD da test.json
-                const vodCandidates = [...testJsonVod];
+                // Shuffle pool
+                const livePool = [...testJsonLive];
+                const vodPool = [...testJsonVod];
 
-                // Shuffle pool Live Sky e Live test.json
-                for (let i = candidates.length - 1; i > 0; i--) {
+                for (let i = livePool.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+                    [livePool[i], livePool[j]] = [livePool[j], livePool[i]];
                 }
-                for (let i = testJsonLive.length - 1; i > 0; i--) {
+                for (let i = vodPool.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [testJsonLive[i], testJsonLive[j]] = [testJsonLive[j], testJsonLive[i]];
-                }
-                for (let i = vodCandidates.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [vodCandidates[i], vodCandidates[j]] = [vodCandidates[j], vodCandidates[i]];
+                    [vodPool[i], vodPool[j]] = [vodPool[j], vodPool[i]];
                 }
 
-                // Live pool con DAZN live da test.json prioritario + Sky live
-                const liveCandidates = [...testJsonLive, ...candidates];
-
+                const numLive = livePool.length;
                 let selected = [];
-                const numLiveAvailable = liveCandidates.length;
 
-                if (numLiveAvailable === 0) {
-                    // Solo VOD: max 2 su 5
-                    selected = vodCandidates.slice(0, 2);
-                } else if (numLiveAvailable === 1) {
-                    // 1 live: 1 live e 1 VOD
-                    selected.push(liveCandidates[0]);
-                    if (vodCandidates.length > 0) selected.push(vodCandidates[0]);
+                if (numLive === 0) {
+                    // 0 eventi live: MASSIMO 2 VOD su 5
+                    selected = vodPool.slice(0, 2);
+                } else if (numLive === 1) {
+                    // 1 evento live: 1 live + 1 VOD (totale 2)
+                    selected.push(livePool[0]);
+                    if (vodPool.length > 0) selected.push(vodPool[0]);
                 } else {
-                    // Gli eventi live hanno sempre la precedenza
-                    // Massimo 2-3 locandine fisse su 5 di VOD da test.json se ci sono slot disponibili
-                    const maxVodCount = Math.min(3, vodCandidates.length);
-                    const minLiveNeeded = Math.max(1, 5 - maxVodCount);
-                    const chosenLiveCount = Math.min(numLiveAvailable, Math.max(minLiveNeeded, 5 - Math.min(maxVodCount, 2)));
+                    // 2 o più eventi live: precedenza ai live, massimo 3 VOD su 5
+                    const maxVod = Math.min(3, vodPool.length);
+                    const liveCount = Math.min(numLive, 5 - maxVod);
+                    selected.push(...livePool.slice(0, liveCount));
 
-                    selected.push(...liveCandidates.slice(0, chosenLiveCount));
                     const remainingSlots = 5 - selected.length;
-                    if (remainingSlots > 0 && vodCandidates.length > 0) {
-                        const maxVodToAdd = Math.min(remainingSlots, Math.min(3, vodCandidates.length));
-                        selected.push(...vodCandidates.slice(0, maxVodToAdd));
+                    const vodToAdd = Math.min(remainingSlots, maxVod);
+                    if (vodToAdd > 0) {
+                        selected.push(...vodPool.slice(0, vodToAdd));
                     }
                 }
 
