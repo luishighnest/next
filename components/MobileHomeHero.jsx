@@ -103,71 +103,94 @@ export default function MobileHomeHero({ categories = [] }) {
                     if (candidates.length >= 10) break;
                 }
 
-                // Recupero VOD da localStorage o /api/vod per slot VOD nella Hero Mobile
-                let vodCandidates = [];
-                try {
-                    let rawVodList = [];
-                    const cachedVod = localStorage.getItem("nmdz_cached_vod");
-                    if (cachedVod) {
-                        try { rawVodList = JSON.parse(cachedVod); } catch(e) {}
-                    }
-                    if (!rawVodList || rawVodList.length === 0) {
-                        const vRes = await fetch("/api/vod?t=" + Date.now(), { cache: "no-store" }).catch(() => null);
-                        if (vRes && vRes.ok) {
-                            const vData = await vRes.json().catch(() => null);
-                            if (Array.isArray(vData?.sections)) rawVodList = vData.sections;
-                            else if (Array.isArray(vData)) rawVodList = vData;
-                        }
-                    }
+                // Estrazione di Eventi Live e VOD da test.json (tramite categories)
+                const testJsonLive = [];
+                const testJsonVod = [];
 
-                    if (Array.isArray(rawVodList) && rawVodList.length > 0) {
-                        for (const sec of rawVodList) {
-                            for (const c of (sec.channels || [])) {
-                                const vImg = c.image || c.poster || c.banner || c.progImg || "";
-                                if (!vImg || !vImg.startsWith("http")) continue;
+                if (categories && Array.isArray(categories)) {
+                    for (const sec of categories) {
+                        for (const c of (sec.channels || [])) {
+                            if (!c.isTestJson) continue;
+                            const evImg = c.image || c.logo;
+                            if (!evImg || typeof evImg !== "string" || !evImg.startsWith("http")) continue;
 
-                                const vTitle = c.title || c.name || "Film VOD";
-                                const vDesc = c.desc || c.descrizione || c.overview || "Disponibile On Demand in streaming ad alta definizione.";
-                                const vId = c.tmdbId || String(c.id || "").replace(/^vod_(movie|tv)_/, "");
-                                const vType = c.vodType || (c.type === "tv" ? "tv" : "movie");
-                                const vHref = `/vod/info/${vId}?type=${vType}`;
+                            const evTitle = c.title || c.name || "Evento";
+                            const evSlug = c.slug || createSlug(evTitle);
+                            const evTargetHref = `/eventi/${evSlug}`;
+                            const isVod = Boolean(
+                                c.isEventVod ||
+                                (c.tile_type && (c.tile_type.toLowerCase() === "catchup" || c.tile_type.toLowerCase() === "ondemand")) ||
+                                (c.group && c.group.toLowerCase().includes("vod"))
+                            );
 
-                                vodCandidates.push({
-                                    channelName: c.group || "Cinema On Demand",
-                                    category: "VOD",
-                                    progTitle: vTitle,
-                                    progDesc: vDesc,
-                                    progOraInizio: "",
-                                    progOraFine: "",
-                                    progImg: vImg,
-                                    targetHref: vHref,
-                                    channelObj: c,
-                                    logoUrl: "",
-                                    currentProg: { titolo: vTitle, descrizione: vDesc },
-                                    nextProg: null,
-                                    isVodItem: true
-                                });
-                                if (vodCandidates.length >= 6) break;
+                            const heroEventItem = {
+                                channelName: c.group || (isVod ? "Eventi VOD" : "DAZN Live"),
+                                category: isVod ? "VOD" : "Sport",
+                                progTitle: evTitle,
+                                progDesc: c.schedule ? `${c.schedule} • Disponibile in streaming` : (isVod ? "Replay / On Demand disponibile in streaming" : "Diretta sportiva disponibile in streaming"),
+                                progOraInizio: c.ora || "",
+                                progOraFine: "",
+                                progImg: evImg,
+                                targetHref: evTargetHref,
+                                channelObj: c,
+                                logoUrl: c.logo && c.logo.startsWith("http") ? c.logo : (isVod ? "" : "/logos/dazn.png"),
+                                currentProg: {
+                                    titolo: evTitle,
+                                    descrizione: c.schedule ? `${c.schedule} • Disponibile in streaming` : "",
+                                    ora: c.ora || ""
+                                },
+                                nextProg: null,
+                                isVodItem: isVod,
+                                isTestJson: true
+                            };
+
+                            if (isVod) {
+                                testJsonVod.push(heroEventItem);
+                            } else {
+                                testJsonLive.push(heroEventItem);
                             }
-                            if (vodCandidates.length >= 6) break;
                         }
                     }
-                } catch(e) {}
+                }
+
+                // Candidati VOD da test.json
+                const vodCandidates = [...testJsonVod];
+
+                // Shuffle pool Live Sky e Live test.json
+                for (let i = candidates.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+                }
+                for (let i = testJsonLive.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [testJsonLive[i], testJsonLive[j]] = [testJsonLive[j], testJsonLive[i]];
+                }
+                for (let i = vodCandidates.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [vodCandidates[i], vodCandidates[j]] = [vodCandidates[j], vodCandidates[i]];
+                }
+
+                // Live pool con DAZN live da test.json prioritario + Sky live
+                const liveCandidates = [...testJsonLive, ...candidates];
 
                 let selected = [];
-                const numLiveAvailable = candidates.length;
+                const numLiveAvailable = liveCandidates.length;
 
                 if (numLiveAvailable === 0) {
                     // Solo VOD: max 2 su 5
                     selected = vodCandidates.slice(0, 2);
                 } else if (numLiveAvailable === 1) {
                     // 1 live: 1 live e 1 VOD
-                    selected.push(candidates[0]);
+                    selected.push(liveCandidates[0]);
                     if (vodCandidates.length > 0) selected.push(vodCandidates[0]);
                 } else {
-                    // Gli eventi live hanno la precedenza
-                    const targetLiveCount = Math.min(numLiveAvailable, Math.max(2, 5 - Math.min(vodCandidates.length, 3)));
-                    selected.push(...candidates.slice(0, targetLiveCount));
+                    // Gli eventi live hanno sempre la precedenza
+                    // Massimo 2-3 locandine fisse su 5 di VOD da test.json se ci sono slot disponibili
+                    const maxVodCount = Math.min(3, vodCandidates.length);
+                    const minLiveNeeded = Math.max(1, 5 - maxVodCount);
+                    const chosenLiveCount = Math.min(numLiveAvailable, Math.max(minLiveNeeded, 5 - Math.min(maxVodCount, 2)));
+
+                    selected.push(...liveCandidates.slice(0, chosenLiveCount));
                     const remainingSlots = 5 - selected.length;
                     if (remainingSlots > 0 && vodCandidates.length > 0) {
                         const maxVodToAdd = Math.min(remainingSlots, Math.min(3, vodCandidates.length));

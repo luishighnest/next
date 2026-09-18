@@ -319,60 +319,62 @@ export default function HomeHero({ categories = [] }) {
                     }
                 });
 
-                // Recupero VOD da localStorage o /api/vod per slot VOD nella Hero
-                let vodCandidates = [];
-                try {
-                    let rawVodList = [];
-                    const cachedVod = localStorage.getItem("nmdz_cached_vod");
-                    if (cachedVod) {
-                        try { rawVodList = JSON.parse(cachedVod); } catch(e) {}
-                    }
-                    if (!rawVodList || rawVodList.length === 0) {
-                        const vRes = await fetch("/api/vod?t=" + Date.now(), { cache: "no-store" }).catch(() => null);
-                        if (vRes && vRes.ok) {
-                            const vData = await vRes.json().catch(() => null);
-                            if (Array.isArray(vData?.sections)) rawVodList = vData.sections;
-                            else if (Array.isArray(vData)) rawVodList = vData;
-                        }
-                    }
+                // Estrazione di Eventi Live e VOD da test.json (tramite categories)
+                const testJsonLive = [];
+                const testJsonVod = [];
 
-                    if (Array.isArray(rawVodList) && rawVodList.length > 0) {
-                        for (const sec of rawVodList) {
-                            for (const c of (sec.channels || [])) {
-                                const vImg = c.image || c.poster || c.banner || c.progImg || "";
-                                if (!vImg || !vImg.startsWith("http")) continue;
+                if (categories && Array.isArray(categories)) {
+                    for (const sec of categories) {
+                        for (const c of (sec.channels || [])) {
+                            if (!c.isTestJson) continue;
+                            const evImg = c.image || c.logo;
+                            if (!evImg || typeof evImg !== "string" || !evImg.startsWith("http")) continue;
 
-                                const vTitle = c.title || c.name || "Film VOD";
-                                const vDesc = c.desc || c.descrizione || c.overview || "Disponibile On Demand in streaming ad alta definizione.";
-                                const vId = c.tmdbId || String(c.id || "").replace(/^vod_(movie|tv)_/, "");
-                                const vType = c.vodType || (c.type === "tv" ? "tv" : "movie");
-                                const vHref = `/vod/info/${vId}?type=${vType}`;
+                            const evTitle = c.title || c.name || "Evento";
+                            const evSlug = c.slug || createSlug(evTitle);
+                            const evTargetHref = `/eventi/${evSlug}`;
+                            const isVod = Boolean(
+                                c.isEventVod ||
+                                (c.tile_type && (c.tile_type.toLowerCase() === "catchup" || c.tile_type.toLowerCase() === "ondemand")) ||
+                                (c.group && c.group.toLowerCase().includes("vod"))
+                            );
 
-                                vodCandidates.push({
-                                    channelName: c.group || "Cinema On Demand",
-                                    category: "VOD",
-                                    progTitle: vTitle,
-                                    progDesc: vDesc,
-                                    progOraInizio: "",
-                                    progOraFine: "",
-                                    progImg: upgradeImageToHighRes(vImg),
-                                    artworkType: detectArtworkType(vImg),
-                                    progress: 0,
-                                    targetHref: vHref,
-                                    channelObj: c,
-                                    logoUrl: "",
-                                    currentProg: { titolo: vTitle, descrizione: vDesc },
-                                    nextProg: null,
-                                    isVodItem: true
-                                });
-                                if (vodCandidates.length >= 10) break;
+                            const heroEventItem = {
+                                channelName: c.group || (isVod ? "Eventi VOD" : "DAZN Live"),
+                                category: isVod ? "VOD" : "Sport",
+                                progTitle: evTitle,
+                                progDesc: c.schedule ? `${c.schedule} • Disponibile in streaming` : (isVod ? "Replay / On Demand disponibile in streaming" : "Diretta sportiva disponibile in streaming"),
+                                progOraInizio: c.ora || "",
+                                progOraFine: "",
+                                progImg: upgradeImageToHighRes(evImg),
+                                artworkType: detectArtworkType(evImg),
+                                progress: c.isLiveNow ? 50 : 0,
+                                targetHref: evTargetHref,
+                                channelObj: c,
+                                logoUrl: c.logo && c.logo.startsWith("http") ? c.logo : (isVod ? "" : "/logos/dazn.png"),
+                                currentProg: {
+                                    titolo: evTitle,
+                                    descrizione: c.schedule ? `${c.schedule} • Disponibile in streaming` : "",
+                                    ora: c.ora || ""
+                                },
+                                nextProg: null,
+                                isVodItem: isVod,
+                                isTestJson: true
+                            };
+
+                            if (isVod) {
+                                testJsonVod.push(heroEventItem);
+                            } else {
+                                testJsonLive.push(heroEventItem);
                             }
-                            if (vodCandidates.length >= 10) break;
                         }
                     }
-                } catch(e) {}
+                }
 
-                // Shuffle pool Live (Sport + Intrattenimento)
+                // Candidati VOD da test.json
+                const vodCandidates = [...testJsonVod];
+
+                // Shuffle pool Live Sky (Sport + Intrattenimento)
                 const sportPool = sportCandidatesHD.length >= 4 ? sportCandidatesHD : [...sportCandidatesHD, ...sportCandidatesFallback];
                 const entPool = entCandidatesHD.length >= 1 ? entCandidatesHD : [...entCandidatesHD, ...entCandidatesFallback];
 
@@ -384,23 +386,28 @@ export default function HomeHero({ categories = [] }) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [entPool[i], entPool[j]] = [entPool[j], entPool[i]];
                 }
+                for (let i = testJsonLive.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [testJsonLive[i], testJsonLive[j]] = [testJsonLive[j], testJsonLive[i]];
+                }
                 for (let i = vodCandidates.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [vodCandidates[i], vodCandidates[j]] = [vodCandidates[j], vodCandidates[i]];
                 }
 
-                // Costruzione unificata candidati Live (precedenza assoluta ai Live)
-                const liveCandidates = [];
-                // Priorità Sport
-                liveCandidates.push(...sportPool);
-                // Aggiunta eventuale Intrattenimento
-                liveCandidates.push(...entPool);
+                // Costruzione unificata candidati Live (DAZN live da test.json + Sky Sport live + Sky intrattenimento)
+                // Gli eventi live hanno precedenza assoluta
+                const liveCandidates = [
+                    ...testJsonLive,
+                    ...sportPool,
+                    ...entPool
+                ];
 
                 let selected5 = [];
                 const numLiveAvailable = liveCandidates.length;
 
                 if (numLiveAvailable === 0) {
-                    // SE CI SONO SOLO VOD: MASSIMO 2 SU 5
+                    // SE NON CI SONO EVENTI LIVE, SE CI SONO SOLO VOD: MASSIMO 2 SU 5
                     selected5 = vodCandidates.slice(0, 2);
                 } else if (numLiveAvailable === 1) {
                     // SE C'È SOLO UN EVENTO LIVE: 1 EVENTO LIVE E 1 VOD
@@ -409,17 +416,20 @@ export default function HomeHero({ categories = [] }) {
                         selected5.push(vodCandidates[0]);
                     }
                 } else {
-                    // EVENTI LIVE HANNO SEMPRE LA PRECEDENZA
-                    // Massimo 2-3 VOD fissi su 5 se non ci sono abbastanza eventi live
-                    const targetLiveCount = Math.min(numLiveAvailable, Math.max(2, 5 - Math.min(vodCandidates.length, 3)));
-                    const chosenLive = liveCandidates.slice(0, targetLiveCount);
+                    // GLI EVENTI LIVE HANNO SEMPRE LA PRECEDENZA
+                    // Massimo 2-3 locandine fisse su 5 di VOD da test.json se ci sono slot disponibili
+                    const maxVodCount = Math.min(3, vodCandidates.length);
+                    const minLiveNeeded = Math.max(1, 5 - maxVodCount);
+                    const chosenLiveCount = Math.min(numLiveAvailable, Math.max(minLiveNeeded, 5 - Math.min(maxVodCount, 2)));
+                    
+                    const chosenLive = liveCandidates.slice(0, chosenLiveCount);
                     selected5.push(...chosenLive);
 
-                    // Calcola quanti VOD inserire (massimo 2-3, completando fino a max 5 elementi totali)
+                    // Aggiungi VOD di test.json (massimo 2-3 per completare fino a 5)
                     const remainingSlots = 5 - selected5.length;
                     if (remainingSlots > 0 && vodCandidates.length > 0) {
-                        const maxVodToAdd = Math.min(remainingSlots, Math.min(3, vodCandidates.length));
-                        selected5.push(...vodCandidates.slice(0, maxVodToAdd));
+                        const vodToAdd = Math.min(remainingSlots, Math.min(3, vodCandidates.length));
+                        selected5.push(...vodCandidates.slice(0, vodToAdd));
                     }
                 }
 
@@ -433,8 +443,8 @@ export default function HomeHero({ categories = [] }) {
 
                 // Salva nella cache persistente così alla ricarica della pagina la hero è presente a 0ms
                 try {
-                    sessionStorage.setItem("nmdz_hero_items_v5", JSON.stringify(selected5));
-                    localStorage.setItem("nmdz_hero_items_v5", JSON.stringify(selected5));
+                    sessionStorage.setItem("nmdz_hero_items_v6", JSON.stringify(selected5));
+                    localStorage.setItem("nmdz_hero_items_v6", JSON.stringify(selected5));
                 } catch (e) {}
 
                 setHeroItems(selected5);
