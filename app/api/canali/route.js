@@ -332,8 +332,12 @@ export async function GET(request) {
 
                     const isVodEvent = Boolean(
                         ev.is_vod ||
-                        (ev.tile_type && (ev.tile_type.toLowerCase() === "catchup" || ev.tile_type.toLowerCase() === "ondemand")) ||
-                        (groupName && groupName.toLowerCase().includes("vod"))
+                        (ev.type && ev.type.toLowerCase() === "vod") ||
+                        (ev.tile_type && (ev.tile_type.toLowerCase() === "catchup" || ev.tile_type.toLowerCase() === "ondemand" || ev.tile_type.toLowerCase() === "vod")) ||
+                        (groupName && groupName.toLowerCase().includes("vod")) ||
+                        (ev.mpd && (ev.mpd.includes("-vod.") || ev.mpd.includes("/vod/"))) ||
+                        (ev.url && (ev.url.includes("-vod.") || ev.url.includes("/vod/"))) ||
+                        (ev.end && new Date(ev.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1)
                     );
 
                     let rawStreamUrl = (ev.mpd || ev.url || "").trim();

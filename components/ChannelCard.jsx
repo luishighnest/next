@@ -316,13 +316,16 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         ? `/vod/info/${channel?.tmdbId || String(channel?.id).replace(/^vod_(movie|tv)_/, "")}?type=${channel?.vodType || "movie"}`
         : (isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`);
 
+    const isDazn1Channel = (channel?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
+
     const isEventVod = Boolean(
         channel?.isEventVod ||
-        (channel?.tile_type && (channel.tile_type.toLowerCase() === "catchup" || channel.tile_type.toLowerCase() === "ondemand")) ||
-        (channel?.group && channel.group.toLowerCase().includes("vod"))
+        (channel?.type && channel.type.toLowerCase() === "vod") ||
+        (channel?.tile_type && (channel.tile_type.toLowerCase() === "catchup" || channel.tile_type.toLowerCase() === "ondemand" || channel.tile_type.toLowerCase() === "vod")) ||
+        (channel?.group && channel.group.toLowerCase().includes("vod")) ||
+        (channel?.url && (channel.url.includes("-vod.") || channel.url.includes("/vod/"))) ||
+        (channel?.end && new Date(channel.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1Channel)
     );
-
-    const isDazn1Channel = (channel?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
     const dynColor = getDynamicColor(channel?.title);
 
     const rawCategory = categoryName || channel?.group || channel?.category || "";
