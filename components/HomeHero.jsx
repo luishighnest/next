@@ -116,14 +116,35 @@ export default function HomeHero({ categories = [] }) {
     useEffect(() => {
         let isMounted = true;
 
-        function initHeroChannels() {
+        async function initHeroChannels() {
             try {
+                let sectionsList = categories;
+                if (!sectionsList || !Array.isArray(sectionsList) || sectionsList.length === 0) {
+                    try {
+                        const localCached = localStorage.getItem("nmdz_cached_sections");
+                        if (localCached) {
+                            const parsed = JSON.parse(localCached);
+                            if (Array.isArray(parsed) && parsed.length > 0) sectionsList = parsed;
+                        }
+                    } catch(e) {}
+                }
+
+                if (!sectionsList || sectionsList.length === 0) {
+                    try {
+                        const res = await fetch(`/api/canali?t=${Date.now()}`, { cache: "no-store" });
+                        if (res.ok) {
+                            const data = await res.json();
+                            if (Array.isArray(data?.sections)) sectionsList = data.sections;
+                        }
+                    } catch(e) {}
+                }
+
                 // Estrazione di Eventi Live e VOD esclusivamente da test.json (tramite categories)
                 const testJsonLive = [];
                 const testJsonVod = [];
 
-                if (categories && Array.isArray(categories)) {
-                    for (const sec of categories) {
+                if (sectionsList && Array.isArray(sectionsList)) {
+                    for (const sec of sectionsList) {
                         for (const c of (sec.channels || [])) {
                             if (!c.isTestJson) continue;
                             const evImg = c.image;
