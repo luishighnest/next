@@ -139,7 +139,7 @@ export default function HomeHero({ categories = [] }) {
                     } catch(e) {}
                 }
 
-                // Estrazione di Eventi Live e VOD esclusivamente da test.json (tramite categories)
+                // 1. Estrazione di Eventi Live e VOD da test.json (tramite categories)
                 const testJsonLive = [];
                 const testJsonVod = [];
 
@@ -171,7 +171,7 @@ export default function HomeHero({ categories = [] }) {
                                 progress: c.isLiveNow ? 50 : 0,
                                 targetHref: evTargetHref,
                                 channelObj: c,
-                                logoUrl: "/logos/dazn.png",
+                                logoUrl: "/logos/dazn.png", // Logo DAZN per test.json
                                 currentProg: {
                                     titolo: evTitle,
                                     descrizione: c.schedule ? `${c.schedule} • Disponibile in streaming` : "",
@@ -191,59 +191,212 @@ export default function HomeHero({ categories = [] }) {
                     }
                 }
 
-                // Shuffle pool per variare i contenuti
-                const livePool = [...testJsonLive];
-                const vodPool = [...testJsonVod];
-
-                for (let i = livePool.length - 1; i > 0; i--) {
+                // Shuffle pool test.json
+                const liveTestPool = [...testJsonLive];
+                const vodTestPool = [...testJsonVod];
+                for (let i = liveTestPool.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [livePool[i], livePool[j]] = [livePool[j], livePool[i]];
+                    [liveTestPool[i], liveTestPool[j]] = [liveTestPool[j], liveTestPool[i]];
                 }
-                for (let i = vodPool.length - 1; i > 0; i--) {
+                for (let i = vodTestPool.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [vodPool[i], vodPool[j]] = [vodPool[j], vodPool[i]];
+                    [vodTestPool[i], vodTestPool[j]] = [vodTestPool[j], vodTestPool[i]];
                 }
 
-                const numLive = livePool.length;
-                let selected = [];
+                // 2. Caricamento Guida TV Sky per i canali Sky Live
+                let guideData = null;
+                try {
+                    const cached = sessionStorage.getItem("nmdz_guide_cache_v3");
+                    if (cached) guideData = JSON.parse(cached);
+                } catch (e) {}
 
-                if (numLive === 0) {
-                    // 0 eventi live: MASSIMO 2 VOD su 5
-                    selected = vodPool.slice(0, 2);
-                } else if (numLive === 1) {
-                    // 1 evento live: 1 live + 1 VOD (totale 2)
-                    selected.push(livePool[0]);
-                    if (vodPool.length > 0) {
-                        selected.push(vodPool[0]);
+                if (!guideData || guideData.length === 0) {
+                    try {
+                        const res = await fetch("/guida_tv_sky.json?t=" + Date.now(), { cache: "no-store" });
+                        if (res.ok) {
+                            guideData = await res.json();
+                            try {
+                                sessionStorage.setItem("nmdz_guide_cache_v3", JSON.stringify(guideData));
+                            } catch (e) {}
+                        }
+                    } catch (e) {}
+                }
+
+                const skySportHD = [];
+                const skySportFallback = [];
+                const skyEntHD = [];
+                const skyEntFallback = [];
+
+                if (guideData && Array.isArray(guideData)) {
+                    const now = new Date();
+                    const nowMinutes = now.getHours() * 60 + now.getMinutes();
+
+                    guideData.forEach(ch => {
+                        const cat = (ch.categoria || "").toLowerCase();
+                        const name = (ch.canale || "").toLowerCase();
+                        const isSky = name.includes("sky");
+                        const isAllowedCat = cat === "sport" || cat === "intrattenimento" || cat === "cinema";
+
+                        if (!isSky || !isAllowedCat) return;
+                        if (!ch.programmi || ch.programmi.length === 0) return;
+
+                        // Escludi 4K, Golf e canali numerati 251-259
+                        const is4K = name.includes("4k");
+                        const isGolf = name.includes("golf");
+                        const isSkySportNumbered = /sky\s*(?:sport|calcio)\s*25\d/i.test(name) || /25[1-9]/i.test(name);
+                        if (is4K || isGolf || isSkySportNumbered) return;
+
+                        let currentIdx = -1;
+                        for (let i = 0; i < ch.programmi.length; i++) {
+                            const p = ch.programmi[i];
+                            const [hh, mm] = (p.ora || "0:00").split(":").map(Number);
+                            const pMin = (hh || 0) * 60 + (mm || 0);
+                            if (pMin > nowMinutes) {
+                                currentIdx = i > 0 ? i - 1 : 0;
+                                break;
+                            }
+                        }
+                        if (currentIdx === -1) currentIdx = ch.programmi.length - 1;
+
+                        const prog = ch.programmi[currentIdx];
+                        const nextProg = currentIdx < ch.programmi.length - 1 ? ch.programmi[currentIdx + 1] : null;
+
+                        let progressPct = 0;
+                        if (prog) {
+                            const [sH, sM] = (prog.ora || "0:00").split(":").map(Number);
+                            const sMin = (sH || 0) * 60 + (sM || 0);
+                            let eMin = 24 * 60;
+                            if (nextProg) {
+                                const [eH, eM] = (nextProg.ora || "0:00").split(":").map(Number);
+                                eMin = (eH || 0) * 60 + (eM || 0);
+                                if (eMin <= sMin) eMin += 24 * 60;
+                            }
+                            let curAdjusted = nowMinutes;
+                            if (curAdjusted < sMin) curAdjusted += 24 * 60;
+                            if (curAdjusted >= sMin && eMin > sMin) {
+                                progressPct = Math.min(100, Math.max(0, Math.round(((curAdjusted - sMin) / (eMin - sMin)) * 100)));
+                            }
+                        }
+
+                        const rawImg = prog?.immagine;
+                        if (!rawImg || !rawImg.startsWith("http")) return;
+
+                        const highResImg = upgradeImageToHighRes(rawImg);
+                        const isHD = isHighQualityHeroImage(rawImg);
+
+                        let matchedChannelObj = null;
+                        if (sectionsList && Array.isArray(sectionsList)) {
+                            for (const sec of sectionsList) {
+                                for (const c of (sec.channels || [])) {
+                                    const cTitle = (c.title || c.name || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                                    const guideTitle = (ch.canale || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+                                    if (cTitle === guideTitle || cTitle.includes(guideTitle) || guideTitle.includes(cTitle)) {
+                                        matchedChannelObj = c;
+                                        break;
+                                    }
+                                }
+                                if (matchedChannelObj) break;
+                            }
+                        }
+
+                        const slug = createSlug(ch.canale);
+                        const cleanSrc = matchedChannelObj?.skySource?.includes("sky2") ? "sky2" : "";
+                        const targetHref = "/sky?ch=" + slug + (cleanSrc ? "&src=" + cleanSrc : "");
+                        const logo = getChannelLogoUrl({ title: ch.canale });
+
+                        const item = {
+                            channelName: ch.canale,
+                            category: ch.categoria || (cat === "sport" ? "Sport" : "Intrattenimento"),
+                            progTitle: prog?.titolo || ch.canale,
+                            progDesc: prog?.descrizione || "",
+                            progOraInizio: prog?.ora || "",
+                            progOraFine: nextProg?.ora || "",
+                            progImg: highResImg,
+                            artworkType: detectArtworkType(rawImg),
+                            progress: progressPct,
+                            targetHref,
+                            channelObj: matchedChannelObj || { title: ch.canale, name: ch.canale, slug },
+                            logoUrl: logo,
+                            currentProg: prog,
+                            nextProg: nextProg,
+                            isVodItem: false,
+                            isTestJson: false
+                        };
+
+                        if (cat === "sport") {
+                            if (isHD) skySportHD.push(item);
+                            else skySportFallback.push(item);
+                        } else {
+                            if (isHD) skyEntHD.push(item);
+                            else skyEntFallback.push(item);
+                        }
+                    });
+                }
+
+                // Shuffle pool Sky
+                const skyPool = [...skySportHD, ...skySportFallback, ...skyEntHD, ...skyEntFallback];
+                for (let i = skyPool.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [skyPool[i], skyPool[j]] = [skyPool[j], skyPool[i]];
+                }
+
+                // 3. Regole di selezione esatte (totale 5 contenuti):
+                // - Se 0 o 1 evento live test.json: MASSIMO 2 da test.json, il resto (3) da Sky
+                // - Se 2 o più eventi live test.json: MASSIMO 3 da test.json (precedenza ai live), il resto (2) da Sky
+                const numLiveTest = liveTestPool.length;
+                let selectedTest = [];
+
+                if (numLiveTest <= 1) {
+                    // Massimo 2 da test.json
+                    if (numLiveTest === 1) {
+                        selectedTest.push(liveTestPool[0]);
+                        if (vodTestPool.length > 0) {
+                            selectedTest.push(vodTestPool[0]);
+                        }
+                    } else {
+                        // 0 live: massimo 2 VOD
+                        selectedTest.push(...vodTestPool.slice(0, 2));
                     }
                 } else {
-                    // 2 o più eventi live: gli eventi live hanno la precedenza, massimo 3 VOD su 5
-                    const maxVod = Math.min(3, vodPool.length);
-                    const liveCount = Math.min(numLive, 5 - maxVod);
-                    selected.push(...livePool.slice(0, liveCount));
-
-                    const remainingSlots = 5 - selected.length;
-                    const vodToAdd = Math.min(remainingSlots, maxVod);
-                    if (vodToAdd > 0) {
-                        selected.push(...vodPool.slice(0, vodToAdd));
+                    // 2 o più live test.json: massimo 3 da test.json
+                    // I live hanno la precedenza assoluta
+                    const takeLive = Math.min(3, numLiveTest);
+                    selectedTest.push(...liveTestPool.slice(0, takeLive));
+                    if (selectedTest.length < 3 && vodTestPool.length > 0) {
+                        const neededVod = 3 - selectedTest.length;
+                        selectedTest.push(...vodTestPool.slice(0, neededVod));
                     }
                 }
 
-                if (!isMounted || selected.length === 0) return;
+                // Quanti canali Sky servono per raggiungere esattamente 5 elementi?
+                const neededSky = Math.max(0, 5 - selectedTest.length);
+                const selectedSky = skyPool.slice(0, neededSky);
+
+                // Composizione finale di 5 elementi: test.json + Sky
+                let final5 = [...selectedTest, ...selectedSky];
+
+                // Nel raro caso in cui manchino elementi per arrivare a 5 (es. pochissimi Sky o test.json), riempi fino a 5
+                if (final5.length < 5) {
+                    const remainingNeeded = 5 - final5.length;
+                    const remainingSky = skyPool.filter(s => !final5.some(f => f.channelName === s.channelName));
+                    final5.push(...remainingSky.slice(0, remainingNeeded));
+                }
+
+                if (!isMounted || final5.length === 0) return;
 
                 // Precarica in background tutti gli artwork
-                selected.forEach(it => {
+                final5.forEach(it => {
                     if (it.logoUrl) preloadImage(it.logoUrl);
                     if (it.progImg) preloadImage(it.progImg);
                 });
 
                 // Salva nella cache persistente
                 try {
-                    sessionStorage.setItem("nmdz_hero_items_v7", JSON.stringify(selected));
-                    localStorage.setItem("nmdz_hero_items_v7", JSON.stringify(selected));
+                    sessionStorage.setItem("nmdz_hero_items_v7", JSON.stringify(final5));
+                    localStorage.setItem("nmdz_hero_items_v7", JSON.stringify(final5));
                 } catch (e) {}
 
-                setHeroItems(selected);
+                setHeroItems(final5);
             } catch (err) {
                 console.error("Errore caricamento canali Hero:", err);
             }
