@@ -124,13 +124,13 @@
       },
       {
         "ora": "14:55",
-        "fine": "16:15",
+        "fine": "16:25",
         "titolo": "GP Austria: Pre Qualifiche",
         "descrizione": "... MotoGP. - Quindicesimo appuntamento del mondiale 2026: al Red Bull Ring, in Austria, si accendono i motori per le pre qualifiche della MotoGP. Telecronaca Meda- Sanchini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/221bdd63-faef-4227-9a28-9a7e183175f5/background/600"
       },
       {
-        "ora": "16:15",
+        "ora": "16:25",
         "fine": "18:05",
         "titolo": "Semifinale 1 Olympiacos - Fenerbahce",
         "descrizione": "... Fenerbahce Eurolega Supercup. - Nella prima semifinale si sfidano le squadre che hanno vinto le ultime due edizioni di Eurolega, i turchi nel 2025, i greci nel 2026. Si gioca ad ad Abu Dhabi. Telecronaca: Fumagalli-Pessina.",
@@ -642,7 +642,7 @@
         "ora": "20:00",
         "fine": "20:40",
         "titolo": "Sky Friday Night Football Prepartita",
-        "descrizione": "... Football... (Diretta). - La presentazione del match di Serie A, le immagini e le interviste ai protagonisti. Nello studio di Giorgia Cenni, anche calcio internazionale e le news di tutti gli sport di Sky.",
+        "descrizione": "... Prepartita Friday Night Football. - La presentazione del match di Serie A, le immagini e le interviste ai protagonisti. Nello studio di Giorgia Cenni, anche calcio internazionale e le news di tutti gli sport di Sky.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cb652254-8529-46cd-939f-a22b7d12c0c0/background/600"
       },
       {
@@ -656,7 +656,7 @@
         "ora": "22:45",
         "fine": "00:00",
         "titolo": "Sky Friday Night Football Postpartita",
-        "descrizione": "... (Diretta) (Diretta). - Immagini, interviste, commenti sulla partita Serie A e sul calcio internazionale e le ultime news di tutti gli sport di Sky, nello studio condotto da Giorgia Cenni.",
+        "descrizione": "... Postpartita. - Immagini, interviste, commenti sulla partita Serie A e sul calcio internazionale e le ultime news di tutti gli sport di Sky, nello studio condotto da Giorgia Cenni.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0fe9ed24-b925-4ca9-937e-081aef7c27a5/background/600"
       }
     ]
@@ -665,6 +665,13 @@
     "canale": "Sky Sport Tennis",
     "categoria": "Sport",
     "programmi": [
+      {
+        "ora": "01:00",
+        "fine": "03:00",
+        "titolo": "1a Semifinale",
+        "descrizione": "... 500 Guadalajara. - WTA 500 Guadalajara",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+      },
       {
         "ora": "03:00",
         "fine": "05:00",
@@ -681,13 +688,6 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:30",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "07:30",
         "fine": "09:30",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
@@ -716,20 +716,20 @@
       },
       {
         "ora": "14:00",
-        "fine": "14:30",
+        "fine": "14:25",
         "titolo": "Tennis Us Open The Insider 2026 Ep.15 13/09/2026",
         "descrizione": "... Ep.15 13/09/2026 The Insider: US Open. - ... Ep.15 13/09/2026 Tennis The Insider. - Tennis The Insider",
         "immagine": "https://img-guidatv.org/11237/tennis-us-open/6.jpg"
       },
       {
-        "ora": "14:30",
-        "fine": "15:15",
+        "ora": "14:25",
+        "fine": "15:10",
         "titolo": "Sky Tennis Club 2026 Ep.8 15/09/2026",
         "descrizione": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
         "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
-        "ora": "15:15",
+        "ora": "15:10",
         "fine": "17:30",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
@@ -744,7 +744,7 @@
       },
       {
         "ora": "18:00",
-        "fine": "03:00",
+        "fine": "01:00",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
@@ -1085,13 +1085,13 @@
       },
       {
         "ora": "14:55",
-        "fine": "16:15",
+        "fine": "16:25",
         "titolo": "GP Austria: Pre Qualifiche",
         "descrizione": "... MotoGP. - Quindicesimo appuntamento del mondiale 2026: al Red Bull Ring, in Austria, si accendono i motori per le pre qualifiche della MotoGP. Telecronaca Meda- Sanchini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/221bdd63-faef-4227-9a28-9a7e183175f5/background/600"
       },
       {
-        "ora": "16:15",
+        "ora": "16:25",
         "fine": "16:45",
         "titolo": "MotoGP Paddock Live Show",
         "descrizione": "Il meglio della giornata in pista: gli highlights, i temi del giorno e tutti gli approfondimenti direttamente dal paddock.",
@@ -1481,13 +1481,13 @@
       },
       {
         "ora": "08:30",
-        "fine": "19:00",
+        "fine": "19:20",
         "titolo": "BMW PGA Championship: Giorno 2",
         "descrizione": "... Giorno 2 Golf: DP World Tour. - Dal Wentworth Club di Virginia Water, Inghilterra.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1bfa6507-d997-43af-a528-d53ab4830c5a/background/600"
       },
       {
-        "ora": "19:00",
+        "ora": "19:20",
         "fine": "19:30",
         "titolo": "English Challenge",
         "descrizione": "Il meglio dell'azione del Challenge Tour Series.",
@@ -1613,20 +1613,20 @@
       },
       {
         "ora": "15:55",
-        "fine": "18:00",
+        "fine": "18:30",
         "titolo": "Semifinale 1 Olympiacos - Fenerbahce",
         "descrizione": "... Fenerbahce Eurolega Supercup. - Nella prima semifinale si sfidano le squadre che hanno vinto le ultime due edizioni di Eurolega, i turchi nel 2025, i greci nel 2026. Si gioca ad ad Abu Dhabi. Telecronaca: Fumagalli-Pessina.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ccb0a717-d7cf-43e3-abbd-f8aa446fc48d/background/600"
       },
       {
-        "ora": "18:00",
-        "fine": "18:30",
+        "ora": "18:30",
+        "fine": "18:35",
         "titolo": "Speciale Basket Mondiale Femminile: Andrea Capobianco",
         "descrizione": "... Andrea Capobianco. - Scopriamo insieme il percorso della Nazionale Italiana di Pallacanestro Femminile e la figura del Commissario Tecnico Andrea Capobianco, in vista del Mondiale di pallacanestro femminile.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3248cab5-d6f5-4634-b24d-c5b4036890fc/background/600"
       },
       {
-        "ora": "18:30",
+        "ora": "18:35",
         "fine": "18:55",
         "titolo": "Beli Vs USA A 20 Anni Dalla Partita...",
         "descrizione": "Sapporo, 2006: Marco Belinelli sfida la squadra statunitense al Mondiale e lascia il suo biglietto da visita all'NBA. A 20 anni dai fatti, Belinelli ci racconta quella notte indimenticabile.",
@@ -1717,48 +1717,48 @@
       },
       {
         "ora": "07:00",
-        "fine": "07:30",
-        "titolo": "The Boat Show",
-        "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1220f0e7-c7cd-4104-a98e-07f2ac826cff/background/600"
+        "fine": "07:15",
+        "titolo": "La giovane Italia",
+        "descrizione": "Alla scoperta dei giovani talenti maschili e femminili del nostro calcio attraverso i racconti e le conduzioni dei protagonisti dei settori giovanili italiani.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d2f72057-bedc-470f-8b6a-47dfd47bb15d/background/600"
       },
       {
-        "ora": "07:30",
-        "fine": "09:05",
+        "ora": "07:15",
+        "fine": "08:50",
         "titolo": "Cile: Stage 4",
         "descrizione": "... Championship. - Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5d4cc559-a8a5-4e73-a136-0090f5fd9a35/background/600"
       },
       {
-        "ora": "09:05",
-        "fine": "09:35",
+        "ora": "08:50",
+        "fine": "09:15",
         "titolo": "Kristianstad: Svezia",
         "descrizione": "... European Championship. - La proa e' servita a decretare i campioni per le categorie OK, OKJunior e Academy Senior.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e2f84143-54ac-4cef-a96a-638fad9c313d/background/600"
       },
       {
-        "ora": "09:35",
-        "fine": "11:20",
+        "ora": "09:15",
+        "fine": "11:25",
         "titolo": "Paris Major: Finale Maschile",
         "descrizione": "... Padel. - Seguiamo le gare del Premier Padel Major.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/691e5c14-13d3-48e9-9c8a-7a8ca97e22d8/background/600"
       },
       {
-        "ora": "11:20",
-        "fine": "12:25",
+        "ora": "11:25",
+        "fine": "12:15",
         "titolo": "Valencia",
         "descrizione": "La squadra statunitense di SailGP ha conquistato la vittoria nella prima edizione dello Spain Sail Grand Prix a Valencia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/45e5d2b3-3afa-413e-ac5e-64d367202a9e/background/600"
       },
       {
-        "ora": "12:25",
-        "fine": "14:05",
+        "ora": "12:15",
+        "fine": "14:10",
         "titolo": "Slovacchia - Grecia",
         "descrizione": "... Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/fc3c4af5-dde9-43fa-8e1b-c1f789f899cc/background/600"
       },
       {
-        "ora": "14:05",
+        "ora": "14:10",
         "fine": "17:00",
         "titolo": "Italia - Slovenia",
         "descrizione": "... di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
@@ -1766,13 +1766,13 @@
       },
       {
         "ora": "17:00",
-        "fine": "19:30",
+        "fine": "19:25",
         "titolo": "Atletica Brescia Grand Prix",
         "descrizione": "Segui il meglio delle gare di atletica.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c75345eb-26d5-492c-831d-599c6a084b52/background/600"
       },
       {
-        "ora": "19:30",
+        "ora": "19:25",
         "fine": "19:55",
         "titolo": "Laureus Spirit Of Sport Ep.19 04/09/2026",
         "descrizione": "... 04/09/2026 Laureus Spirit of Sport. - Interviste esclusive con i piu' grandi nomi dello sport, approfondimenti, analisi.",
@@ -2095,7 +2095,7 @@
         "ora": "20:00",
         "fine": "20:40",
         "titolo": "Sky Friday Night Football Prepartita",
-        "descrizione": "... Football... (Diretta). - La presentazione del match di Serie A, le immagini e le interviste ai protagonisti. Nello studio di Giorgia Cenni, anche calcio internazionale e le news di tutti gli sport di Sky.",
+        "descrizione": "... Prepartita Friday Night Football. - La presentazione del match di Serie A, le immagini e le interviste ai protagonisti. Nello studio di Giorgia Cenni, anche calcio internazionale e le news di tutti gli sport di Sky.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cb652254-8529-46cd-939f-a22b7d12c0c0/background/600"
       },
       {
@@ -2109,7 +2109,7 @@
         "ora": "22:45",
         "fine": "00:00",
         "titolo": "Sky Friday Night Football Postpartita",
-        "descrizione": "... (Diretta) (Diretta). - Immagini, interviste, commenti sulla partita Serie A e sul calcio internazionale e le ultime news di tutti gli sport di Sky, nello studio condotto da Giorgia Cenni.",
+        "descrizione": "... Postpartita. - Immagini, interviste, commenti sulla partita Serie A e sul calcio internazionale e le ultime news di tutti gli sport di Sky, nello studio condotto da Giorgia Cenni.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0fe9ed24-b925-4ca9-937e-081aef7c27a5/background/600"
       }
     ]
@@ -2201,31 +2201,24 @@
       },
       {
         "ora": "08:55",
-        "fine": "10:50",
+        "fine": "09:10",
         "titolo": "Tennis Parade.",
         "descrizione": "La classifica dei colpi piu spettacolari del mese accompagnati dalle hit musicali del momento",
         "immagine": "https://img-guidatv.org/54/tennis-parade/5.jpg"
       },
       {
-        "ora": "10:50",
-        "fine": "11:15",
+        "ora": "09:10",
+        "fine": "11:05",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
         "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
       },
       {
-        "ora": "11:15",
-        "fine": "11:30",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "11:30",
+        "ora": "11:05",
         "fine": "12:45",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+        "titolo": "WTA 500 Guadalajara 2026",
+        "descrizione": "Altra tappa del calendario dei tornei WTA 250",
+        "immagine": "https://img-guidatv.org/54/wta-500-guadalajara-2026/0.jpg"
       },
       {
         "ora": "12:45",
@@ -2243,27 +2236,69 @@
       },
       {
         "ora": "14:55",
-        "fine": "15:05",
+        "fine": "15:10",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "15:05",
-        "fine": "17:00",
+        "ora": "15:10",
+        "fine": "15:20",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
         "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
       },
       {
-        "ora": "17:00",
-        "fine": "17:15",
+        "ora": "15:20",
+        "fine": "15:35",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "15:35",
+        "fine": "15:50",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "15:50",
+        "fine": "16:05",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "16:05",
+        "fine": "16:20",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "16:20",
+        "fine": "16:35",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "16:35",
+        "fine": "17:05",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "17:05",
+        "fine": "17:25",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "17:15",
+        "ora": "17:25",
         "fine": "19:10",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
@@ -2471,32 +2506,25 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:10",
-        "fine": "02:10",
-        "titolo": "Ciclismo: Giro D'Abruzzo 3° Giornata",
-        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
+        "ora": "01:05",
+        "fine": "03:00",
+        "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 3a Tappa: Oricola-Piana Del Cavaliere - San Benedetto Dei Marsi",
+        "descrizione": "Il Giro d'Abruzzo 2026 prosegue con la terza tappa da Oricola-Piana del Cavaliere a San Benedetto dei Marsi.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "02:10",
-        "fine": "04:10",
-        "titolo": "Ciclismo: Giro D'Abruzzo 4° Giornata",
-        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
+        "ora": "03:00",
+        "fine": "05:00",
+        "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 4a Tappa: Silvi - Controguerra",
+        "descrizione": "Il Giro d'Abruzzo 2026 si chiude con la quarta tappa da Silvi a Controguerra. Una frazione conclusiva che può risultare decisiva per l'assegnazione della classifica generale.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "04:10",
-        "fine": "05:10",
-        "titolo": "Rally. C.To Italiano Sparco: Rally Lazio Cassino - Gara 1",
-        "descrizione": "Rally. C.to Italiano Sparco: Rally Lazio Cassino - gara 1",
-        "immagine": "https://img-guidatv.org/32/rally/0.jpg"
-      },
-      {
-        "ora": "05:10",
+        "ora": "05:00",
         "fine": "06:00",
-        "titolo": "Pattinaggio A Rotelle. Finali C.To Italiano Corsa Su Strada Vado Ligure",
-        "descrizione": "Pattinaggio a rotelle. Finali C.to Italiano Corsa su strada Vado Ligure",
-        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-finali-c-to-italiano-corsa-su-strada-vado-ligure/0.jpg"
+        "titolo": "Campionato Italiano Assoluto Rally 2026 - Rally Del Lazio Cassino (Gara 1)",
+        "descrizione": "Prima giornata di gara al Rally del Lazio Cassino 2026, sesto appuntamento del Campionato Italiano Assoluto Rally Sparco.",
+        "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
         "ora": "06:00",
@@ -2528,20 +2556,13 @@
       },
       {
         "ora": "12:45",
-        "fine": "15:35",
+        "fine": "15:45",
         "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 4a Tappa: Silvi - Controguerra",
         "descrizione": "Il Giro d'Abruzzo 2026 si chiude con la quarta tappa da Silvi a Controguerra. Una frazione conclusiva che può risultare decisiva per l'assegnazione della classifica generale.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "15:35",
-        "fine": "15:50",
-        "titolo": "Memory",
-        "descrizione": "Memory",
-        "immagine": "https://img-guidatv.org/32/memory/0.jpg"
-      },
-      {
-        "ora": "15:50",
+        "ora": "15:45",
         "fine": "18:20",
         "titolo": "Pallavolo - Trofeo Mimmo Fusco 2026 - 1a Giornata: Qualificazioni",
         "descrizione": "Prima giornata del Trofeo Mimmo Fusco 2026 all’Opiquad Arena di Monza. UYBA Busto Arsizio, VBC Cremonese e Club Italia si sfidano nella fase di qualificazione del triangolare per conquistare l’accesso alla finalissima di sabato.",
@@ -2589,32 +2610,25 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:10",
-        "fine": "02:10",
-        "titolo": "Ciclismo: Giro D'Abruzzo 3° Giornata",
-        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
+        "ora": "01:05",
+        "fine": "03:00",
+        "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 3a Tappa: Oricola-Piana Del Cavaliere - San Benedetto Dei Marsi",
+        "descrizione": "Il Giro d'Abruzzo 2026 prosegue con la terza tappa da Oricola-Piana del Cavaliere a San Benedetto dei Marsi.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "02:10",
-        "fine": "04:10",
-        "titolo": "Ciclismo: Giro D'Abruzzo 4° Giornata",
-        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
+        "ora": "03:00",
+        "fine": "05:00",
+        "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 4a Tappa: Silvi - Controguerra",
+        "descrizione": "Il Giro d'Abruzzo 2026 si chiude con la quarta tappa da Silvi a Controguerra. Una frazione conclusiva che può risultare decisiva per l'assegnazione della classifica generale.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "04:10",
-        "fine": "05:10",
-        "titolo": "Rally. C.To Italiano Sparco: Rally Lazio Cassino - Gara 1",
-        "descrizione": "Rally. C.to Italiano Sparco: Rally Lazio Cassino - gara 1",
-        "immagine": "https://img-guidatv.org/32/rally/0.jpg"
-      },
-      {
-        "ora": "05:10",
+        "ora": "05:00",
         "fine": "06:00",
-        "titolo": "Pattinaggio A Rotelle. Finali C.To Italiano Corsa Su Strada Vado Ligure",
-        "descrizione": "Pattinaggio a rotelle. Finali C.to Italiano Corsa su strada Vado Ligure",
-        "immagine": "https://img-guidatv.org/32/pattinaggio-a-rotelle-finali-c-to-italiano-corsa-su-strada-vado-ligure/0.jpg"
+        "titolo": "Campionato Italiano Assoluto Rally 2026 - Rally Del Lazio Cassino (Gara 1)",
+        "descrizione": "Prima giornata di gara al Rally del Lazio Cassino 2026, sesto appuntamento del Campionato Italiano Assoluto Rally Sparco.",
+        "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
         "ora": "06:00",
@@ -2646,20 +2660,13 @@
       },
       {
         "ora": "12:45",
-        "fine": "15:35",
+        "fine": "15:45",
         "titolo": "Ciclismo - Giro D'Abruzzo 2026 - 4a Tappa: Silvi - Controguerra",
         "descrizione": "Il Giro d'Abruzzo 2026 si chiude con la quarta tappa da Silvi a Controguerra. Una frazione conclusiva che può risultare decisiva per l'assegnazione della classifica generale.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "15:35",
-        "fine": "15:50",
-        "titolo": "Memory",
-        "descrizione": "Memory",
-        "immagine": "https://img-guidatv.org/32/memory/0.jpg"
-      },
-      {
-        "ora": "15:50",
+        "ora": "15:45",
         "fine": "18:20",
         "titolo": "Pallavolo - Trofeo Mimmo Fusco 2026 - 1a Giornata: Qualificazioni",
         "descrizione": "Prima giornata del Trofeo Mimmo Fusco 2026 all’Opiquad Arena di Monza. UYBA Busto Arsizio, VBC Cremonese e Club Italia si sfidano nella fase di qualificazione del triangolare per conquistare l’accesso alla finalissima di sabato.",
@@ -17841,7 +17848,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
+        "ora": "00:05",
+        "fine": "00:10",
+        "titolo": "TG1 Sera",
+        "descrizione": "TG1 Sera",
+        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
+      },
+      {
+        "ora": "00:10",
         "fine": "00:50",
         "titolo": "BYD Music Awards",
         "descrizione": "In diretta dall'Arena di Verona, Carlo Conti e Vanessa Incontrada conducono BYD Music Awards, l'evento musicale più importante dell'estate, con la consegna dei premi e riconoscimenti speciali ai vincitori di questa edizione: i maggiori protagonisti della musica e dello spettacolo italiano si esibiscono con uno show dal vivo sul palco dell'Arena di Verona alla presenza del pubblico.",
@@ -18031,7 +18045,7 @@
       },
       {
         "ora": "21:40",
-        "fine": "00:00",
+        "fine": "00:05",
         "titolo": "BYD Music Awards",
         "descrizione": "In diretta dall'Arena di Verona, Carlo Conti e Vanessa Incontrada conducono BYD Music Awards, l'evento musicale più importante dell'estate, con la consegna dei premi e riconoscimenti speciali ai vincitori di questa edizione: i maggiori protagonisti della musica e dello spettacolo italiano si esibiscono con uno show dal vivo sul palco dell'Arena di Verona alla presenza del pubblico.",
         "immagine": "https://img-guidatv.org/1/byd-music-awards/5.jpg"
@@ -18043,7 +18057,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
+        "ora": "00:05",
+        "fine": "00:10",
+        "titolo": "TG1 Sera",
+        "descrizione": "TG1 Sera",
+        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
+      },
+      {
+        "ora": "00:10",
         "fine": "00:50",
         "titolo": "BYD Music Awards",
         "descrizione": "In diretta dall'Arena di Verona, Carlo Conti e Vanessa Incontrada conducono BYD Music Awards, l'evento musicale più importante dell'estate, con la consegna dei premi e riconoscimenti speciali ai vincitori di questa edizione: i maggiori protagonisti della musica e dello spettacolo italiano si esibiscono con uno show dal vivo sul palco dell'Arena di Verona alla presenza del pubblico.",
@@ -18233,7 +18254,7 @@
       },
       {
         "ora": "21:40",
-        "fine": "00:00",
+        "fine": "00:05",
         "titolo": "BYD Music Awards",
         "descrizione": "In diretta dall'Arena di Verona, Carlo Conti e Vanessa Incontrada conducono BYD Music Awards, l'evento musicale più importante dell'estate, con la consegna dei premi e riconoscimenti speciali ai vincitori di questa edizione: i maggiori protagonisti della musica e dello spettacolo italiano si esibiscono con uno show dal vivo sul palco dell'Arena di Verona alla presenza del pubblico.",
         "immagine": "https://img-guidatv.org/1/byd-music-awards/5.jpg"
@@ -18246,10 +18267,17 @@
     "programmi": [
       {
         "ora": "00:20",
-        "fine": "01:50",
+        "fine": "01:49",
         "titolo": "Paradise. La Finestra Sullo Showbiz",
         "descrizione": "Il Late Night Show all'Italiana su spettacolo, cultura e costume, con interviste ai protagonisti e collegamenti dai grandi eventi, per raccontare l'Italia che amiamo e che è amata nel mondo.",
         "immagine": "https://img-guidatv.org/2/paradise-la-finestra-sullo-showbiz/8.jpg"
+      },
+      {
+        "ora": "01:49",
+        "fine": "01:50",
+        "titolo": "Meteo 2",
+        "descrizione": "Meteo 2",
+        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
       },
       {
         "ora": "01:50",
@@ -18267,20 +18295,20 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:44",
+        "fine": "03:41",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
         "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
       },
       {
-        "ora": "03:44",
-        "fine": "04:26",
+        "ora": "03:41",
+        "fine": "04:24",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
         "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
       },
       {
-        "ora": "04:26",
+        "ora": "04:24",
         "fine": "05:10",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
@@ -18290,8 +18318,8 @@
         "ora": "05:10",
         "fine": "05:20",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
         "ora": "05:20",
@@ -18511,10 +18539,17 @@
     "programmi": [
       {
         "ora": "00:20",
-        "fine": "01:50",
+        "fine": "01:49",
         "titolo": "Paradise. La Finestra Sullo Showbiz",
         "descrizione": "Il Late Night Show all'Italiana su spettacolo, cultura e costume, con interviste ai protagonisti e collegamenti dai grandi eventi, per raccontare l'Italia che amiamo e che è amata nel mondo.",
         "immagine": "https://img-guidatv.org/2/paradise-la-finestra-sullo-showbiz/8.jpg"
+      },
+      {
+        "ora": "01:49",
+        "fine": "01:50",
+        "titolo": "Meteo 2",
+        "descrizione": "Meteo 2",
+        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
       },
       {
         "ora": "01:50",
@@ -18532,20 +18567,20 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:44",
+        "fine": "03:41",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
         "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
       },
       {
-        "ora": "03:44",
-        "fine": "04:26",
+        "ora": "03:41",
+        "fine": "04:24",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
         "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
       },
       {
-        "ora": "04:26",
+        "ora": "04:24",
         "fine": "05:10",
         "titolo": "Ultima Traccia: Berlino",
         "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
@@ -18555,8 +18590,8 @@
         "ora": "05:10",
         "fine": "05:20",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
         "ora": "05:20",
@@ -19442,7 +19477,7 @@
         "fine": "16:56",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018701/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:56",
@@ -19616,7 +19651,7 @@
         "fine": "16:56",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018701/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:56",
@@ -19804,7 +19839,7 @@
         "fine": "13:43",
         "titolo": "X-Style Milano Beauty Week",
         "descrizione": "Milano Beauty Week anima palazzi storici, tram e vie del centro. Gli eventi tra bellezza, benessere, colori, gioia e condivisione.",
-        "immagine": "https://img-guidatv.org/41/x-style-milano-beauty-week/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314738601000301/media/24/88/e86981d4-5138-4fc9-a4ae-342b2a4cf120/50767464-d636-47f0-9c92-924ec4620e1d.jpg"
       },
       {
         "ora": "13:43",
@@ -19853,7 +19888,7 @@
         "fine": "18:44",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001001/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:44",
@@ -20055,7 +20090,7 @@
         "fine": "13:43",
         "titolo": "X-Style Milano Beauty Week",
         "descrizione": "Milano Beauty Week anima palazzi storici, tram e vie del centro. Gli eventi tra bellezza, benessere, colori, gioia e condivisione.",
-        "immagine": "https://img-guidatv.org/41/x-style-milano-beauty-week/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314738601000301/media/24/88/e86981d4-5138-4fc9-a4ae-342b2a4cf120/50767464-d636-47f0-9c92-924ec4620e1d.jpg"
       },
       {
         "ora": "13:43",
@@ -20104,7 +20139,7 @@
         "fine": "18:44",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001001/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:44",
@@ -20723,7 +20758,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Michela Ponzani, Gad Lerner, Franco Bernabè",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -20834,7 +20869,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Michela Ponzani, Gad Lerner, Franco Bernabè",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -20945,7 +20980,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Michela Ponzani, Gad Lerner, Franco Bernabè",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21056,7 +21091,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Michela Ponzani, Gad Lerner, Franco Bernabè",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21167,7 +21202,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Michela Ponzani, Gad Lerner, Franco Bernabè",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21326,7 +21361,7 @@
       {
         "ora": "15:35",
         "fine": "17:20",
-        "titolo": "Destinazione Paradiso",
+        "titolo": "Destinazione paradiso",
         "descrizione": "Hannah Holt e Josh Wyatt si sono appena alzati in piedi sull'altare e si sono incontrati al parco. Continueranno a incrociarsi mentre atterrano nello stesso resort per la loro luna di miele.",
         "immagine": "https://image.tmdb.org/t/p/w300/q5hbXUl8O2A8PKDCe6bJcKTeiPk.jpg"
       },
@@ -22152,14 +22187,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:37",
-        "fine": "00:40",
+        "ora": "00:40",
+        "fine": "00:43",
         "titolo": "Anica Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/30/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "00:40",
+        "ora": "00:43",
         "fine": "02:27",
         "titolo": "L'alba dei morti viventi (2004)",
         "descrizione": "La popolazione mondiale è stata colpita da un misterioso flagello e un esercito di zombie spinti da un'insaziabile fame di carne umana sta per prendere il sopravvento. Dopo essere fuggita dalla sua casa nel Winsconsin, Ana Clark si unisce ad un gruppo di sopravvissuti che comprende un agente di polizia, lo stoico Kenneth, il timido e riservato Michael e Andre, un duro abituato a tutto e con la moglie incinta. Il gruppo trova rifugio in un centro commerciale abbandonato che si trasforma in una vera e propria fortezza.",
@@ -22167,13 +22202,13 @@
       },
       {
         "ora": "02:27",
-        "fine": "03:21",
+        "fine": "03:22",
         "titolo": "Narcos: Messico",
         "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara.",
         "immagine": "https://img-guidatv.org/serie/5e78e032ce1e246c511cdd50_p_5_rs_300.jpg"
       },
       {
-        "ora": "03:21",
+        "ora": "03:22",
         "fine": "04:06",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
@@ -22357,13 +22392,13 @@
       {
         "ora": "21:21",
         "fine": "22:52",
-        "titolo": "The Weapon",
+        "titolo": "The weapon",
         "descrizione": "Dallas è una macchina per uccidere guidata da un solo uomo, in preda a una misteriosa furia. I suoi attacchi alle bande di motociclisti e ai laboratori di metanfetamine fanno infuriare il boss della mafia di Las Vegas che tiene in ostaggio la fidanzata di Dallas. Ma per chi lavora Dallas? Nemmeno la tortura lo farà parlare, e non si fermerà finché non verrà fatta giustizia.",
         "immagine": "https://image.tmdb.org/t/p/w300/slQYCDzCMM8SBh9Xa3aPeM2fekA.jpg"
       },
       {
         "ora": "22:52",
-        "fine": "00:37",
+        "fine": "00:40",
         "titolo": "The Predator",
         "descrizione": "Dai confini dello spazio inesplorato, la caccia arriva nelle strade di una piccola città nella terrificante reinvenzione della serie di Predator nel progetto registico di Shane Black. Geneticamente modificati, attraverso la combinazione dei DNA di specie diverse, i cacciatori più letali dell'universo sono adesso ancora più pericolosi, più forti, più intelligenti. Quando un ragazzino innesca accidentalmente il loro ritorno sulla Terra, solo un gruppo di ex soldati e una disillusa insegnante di scienze può impedire la fine della razza umana.",
         "immagine": "https://img-guidatv.org/film_new/altro/5e78d93cce1e246c511cbbcf/5e78d93cce1e246c511cbbcf_p_1_rs_300.jpg"
@@ -22375,14 +22410,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:37",
-        "fine": "00:40",
+        "ora": "00:40",
+        "fine": "00:43",
         "titolo": "Anica Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/30/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "00:40",
+        "ora": "00:43",
         "fine": "02:27",
         "titolo": "L'alba dei morti viventi (2004)",
         "descrizione": "La popolazione mondiale è stata colpita da un misterioso flagello e un esercito di zombie spinti da un'insaziabile fame di carne umana sta per prendere il sopravvento. Dopo essere fuggita dalla sua casa nel Winsconsin, Ana Clark si unisce ad un gruppo di sopravvissuti che comprende un agente di polizia, lo stoico Kenneth, il timido e riservato Michael e Andre, un duro abituato a tutto e con la moglie incinta. Il gruppo trova rifugio in un centro commerciale abbandonato che si trasforma in una vera e propria fortezza.",
@@ -22390,13 +22425,13 @@
       },
       {
         "ora": "02:27",
-        "fine": "03:21",
+        "fine": "03:22",
         "titolo": "Narcos: Messico",
         "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara.",
         "immagine": "https://img-guidatv.org/serie/5e78e032ce1e246c511cdd50_p_5_rs_300.jpg"
       },
       {
-        "ora": "03:21",
+        "ora": "03:22",
         "fine": "04:06",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
@@ -22580,13 +22615,13 @@
       {
         "ora": "21:21",
         "fine": "22:52",
-        "titolo": "The Weapon",
+        "titolo": "The weapon",
         "descrizione": "Dallas è una macchina per uccidere guidata da un solo uomo, in preda a una misteriosa furia. I suoi attacchi alle bande di motociclisti e ai laboratori di metanfetamine fanno infuriare il boss della mafia di Las Vegas che tiene in ostaggio la fidanzata di Dallas. Ma per chi lavora Dallas? Nemmeno la tortura lo farà parlare, e non si fermerà finché non verrà fatta giustizia.",
         "immagine": "https://image.tmdb.org/t/p/w300/slQYCDzCMM8SBh9Xa3aPeM2fekA.jpg"
       },
       {
         "ora": "22:52",
-        "fine": "00:37",
+        "fine": "00:40",
         "titolo": "The Predator",
         "descrizione": "Dai confini dello spazio inesplorato, la caccia arriva nelle strade di una piccola città nella terrificante reinvenzione della serie di Predator nel progetto registico di Shane Black. Geneticamente modificati, attraverso la combinazione dei DNA di specie diverse, i cacciatori più letali dell'universo sono adesso ancora più pericolosi, più forti, più intelligenti. Quando un ragazzino innesca accidentalmente il loro ritorno sulla Terra, solo un gruppo di ex soldati e una disillusa insegnante di scienze può impedire la fine della razza umana.",
         "immagine": "https://img-guidatv.org/film_new/altro/5e78d93cce1e246c511cbbcf/5e78d93cce1e246c511cbbcf_p_1_rs_300.jpg"
@@ -23724,28 +23759,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "02:46",
-        "fine": "03:32",
+        "ora": "02:43",
+        "fine": "02:55",
+        "titolo": "Grande Fratello Vip Live",
+        "descrizione": "Le telecamere di Grande Fratello si accendono per seguire la vita quotidiana degli inquilini della casa piu' spiata d'Italia.",
+        "immagine": "https://img-guidatv.org/29/grande-fratello-vip-live/5.png"
+      },
+      {
+        "ora": "02:55",
+        "fine": "03:39",
         "titolo": "Love Is In The Air",
         "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
         "immagine": "https://image.tmdb.org/t/p/w300/flOKUAIxmWUiCzeRzsifUT8esWT.jpg"
       },
       {
-        "ora": "03:32",
-        "fine": "04:18",
+        "ora": "03:39",
+        "fine": "04:23",
         "titolo": "Love Is In The Air",
         "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
         "immagine": "https://image.tmdb.org/t/p/w300/flOKUAIxmWUiCzeRzsifUT8esWT.jpg"
       },
       {
-        "ora": "04:18",
-        "fine": "05:08",
+        "ora": "04:23",
+        "fine": "05:10",
         "titolo": "Terra Amara",
         "descrizione": "La storia d'amore di Zuleyha, cresciuta senza padre e che lavora con Yilmaz come tessitrice ausiliaria per guadagnare soldi per suo fratello, un giocatore d'azzardo. La vita di questi due giovani, accecati dall'amore di una normale notte, si trasformerà in un oscuro incubo. Questo incubo li porterà prima da Istanbul e lontano, e poi nella tenuta della famiglia Yaman. Nel primo episodio della serie, Yilmaz e Zuleyha hanno deciso di lavorare nella tenuta di Yaman. Tuttavia, a causa di una delle bugie di Zuleyha, le vite di tutti loro cambieranno radicalmente.",
         "immagine": "https://img-guidatv.org/serie/62f51a7882e80003c2d7ebf4_p_4_rs_300.jpg"
       },
       {
-        "ora": "05:08",
+        "ora": "05:10",
         "fine": "06:00",
         "titolo": "Tempesta d'amore",
         "descrizione": "Tempesta d'amore (Sturm der Liebe) è una soap opera tedesca trasmessa dal 26 settembre 2005 sull'emittente nazionale Das Erste e creata da Bea Schimdt.",
@@ -23858,7 +23900,7 @@
       },
       {
         "ora": "22:59",
-        "fine": "02:46",
+        "fine": "02:43",
         "titolo": "Grande Fratello Vip",
         "descrizione": "La casa del Grande Fratello e' pronta ad ospitare nuovi inquilini. Ilary Blasi conduce la nuova edizione, affiancata dalle due opinioniste, Cesara Buonamici e Selvaggia Lucarelli.",
         "immagine": "https://img-guidatv.org/29/grande-fratello-vip/11.png"
@@ -23870,28 +23912,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "02:46",
-        "fine": "03:32",
+        "ora": "02:43",
+        "fine": "02:55",
+        "titolo": "Grande Fratello Vip Live",
+        "descrizione": "Le telecamere di Grande Fratello si accendono per seguire la vita quotidiana degli inquilini della casa piu' spiata d'Italia.",
+        "immagine": "https://img-guidatv.org/29/grande-fratello-vip-live/5.png"
+      },
+      {
+        "ora": "02:55",
+        "fine": "03:39",
         "titolo": "Love Is In The Air",
         "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
         "immagine": "https://image.tmdb.org/t/p/w300/flOKUAIxmWUiCzeRzsifUT8esWT.jpg"
       },
       {
-        "ora": "03:32",
-        "fine": "04:18",
+        "ora": "03:39",
+        "fine": "04:23",
         "titolo": "Love Is In The Air",
         "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
         "immagine": "https://image.tmdb.org/t/p/w300/flOKUAIxmWUiCzeRzsifUT8esWT.jpg"
       },
       {
-        "ora": "04:18",
-        "fine": "05:08",
+        "ora": "04:23",
+        "fine": "05:10",
         "titolo": "Terra Amara",
         "descrizione": "La storia d'amore di Zuleyha, cresciuta senza padre e che lavora con Yilmaz come tessitrice ausiliaria per guadagnare soldi per suo fratello, un giocatore d'azzardo. La vita di questi due giovani, accecati dall'amore di una normale notte, si trasformerà in un oscuro incubo. Questo incubo li porterà prima da Istanbul e lontano, e poi nella tenuta della famiglia Yaman. Nel primo episodio della serie, Yilmaz e Zuleyha hanno deciso di lavorare nella tenuta di Yaman. Tuttavia, a causa di una delle bugie di Zuleyha, le vite di tutti loro cambieranno radicalmente.",
         "immagine": "https://img-guidatv.org/serie/62f51a7882e80003c2d7ebf4_p_4_rs_300.jpg"
       },
       {
-        "ora": "05:08",
+        "ora": "05:10",
         "fine": "06:00",
         "titolo": "Tempesta d'amore",
         "descrizione": "Tempesta d'amore (Sturm der Liebe) è una soap opera tedesca trasmessa dal 26 settembre 2005 sull'emittente nazionale Das Erste e creata da Bea Schimdt.",
@@ -24004,7 +24053,7 @@
       },
       {
         "ora": "22:59",
-        "fine": "02:46",
+        "fine": "02:43",
         "titolo": "Grande Fratello Vip",
         "descrizione": "La casa del Grande Fratello e' pronta ad ospitare nuovi inquilini. Ilary Blasi conduce la nuova edizione, affiancata dalle due opinioniste, Cesara Buonamici e Selvaggia Lucarelli.",
         "immagine": "https://img-guidatv.org/29/grande-fratello-vip/11.png"
@@ -25686,21 +25735,21 @@
         "fine": "16:03",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018701/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:03",
         "fine": "16:19",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018701/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:19",
         "fine": "16:31",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018701/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:31",
@@ -25714,28 +25763,28 @@
         "fine": "17:08",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001001/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:08",
         "fine": "17:34",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001001/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:34",
         "fine": "17:55",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001001/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:55",
         "fine": "18:21",
         "titolo": "Dentro la notizia 26/27",
         "descrizione": "Dentro la notizia 26/27",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia-26-27/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001001/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:21",
@@ -30572,27 +30621,27 @@
     "programmi": [
       {
         "ora": "01:35",
-        "fine": "03:50",
+        "fine": "03:40",
         "titolo": "La favorita",
         "descrizione": "Inghilterra, 18esimo secolo. La regina Anna è una creatura fragile dalla salute precaria e il temperamento capriccioso. Facile alle lusinghe e sensibile ai piaceri della carne, si lascia pesantemente influenzare dalle persone a lei più vicine, anche in tema di politica internazionale. E il principale ascendente su di lei è esercitato da Lady Sarah, astuta nobildonna dal carattere di ferro con un'agenda politica ben precisa: portare avanti la guerra in corso contro la Francia per negoziare da un punto di forza - anche a costo di raddoppiare le tasse sui sudditi del Regno. Il più diretto rivale di Lady Sarah è l'ambizioso politico Robert Harley, che farebbe qualunque cosa pur di accaparrarsi i favori della regina. Ma non sarà lui a contendere a Lady Sarah il ruolo di Favorita: giunge infatti a corte Abigail Masham, lontana parente di Lady Sarah, molto più in basso nel sistema di caste inglese.",
         "immagine": "https://img-guidatv.org/film_new/l/5e78dcb5ce1e246c511ccbcc/5e78dcb5ce1e246c511ccbcc_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:50",
-        "fine": "04:35",
+        "ora": "03:40",
+        "fine": "04:25",
         "titolo": "Affari di famiglia",
         "descrizione": "Ep14 Dai Samurai ai Rolling Stones - Seguiamo gli affari dei proprietari del 'Gold & Silver Pawn Shop', un negozio dove si comprano e vendono oggetti il cui valore e' stabilito dalla storia che raccontano.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "04:35",
-        "fine": "05:20",
+        "ora": "04:25",
+        "fine": "05:15",
         "titolo": "Affari di famiglia",
         "descrizione": "Ep15 Jimi Hendrix - Seguiamo gli affari dei proprietari del 'Gold & Silver Pawn Shop', un negozio dove si comprano e vendono oggetti il cui valore e' stabilito dalla storia che raccontano.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "05:20",
+        "ora": "05:15",
         "fine": "06:00",
         "titolo": "Affari di famiglia",
         "descrizione": "Ep16 Galleria fotografica - Seguiamo gli affari dei proprietari del 'Gold & Silver Pawn Shop', un negozio dove si comprano e vendono oggetti il cui valore e' stabilito dalla storia che raccontano.",
@@ -30865,14 +30914,14 @@
       {
         "ora": "01:20",
         "fine": "02:20",
-        "titolo": "Siamo tutti fuori (R)",
+        "titolo": "Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
         "immagine": "https://img-guidatv.org/90/siamo-tutti-fuori/0.jpg"
       },
       {
         "ora": "02:20",
         "fine": "02:40",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30886,7 +30935,7 @@
       {
         "ora": "02:45",
         "fine": "04:10",
-        "titolo": "Prima Ora (R)",
+        "titolo": "Prima Ora",
         "descrizione": "Porta d'ingresso alla fascia informativa serale della RSI con ospiti e servizi. Notizie di attualità, cultura e sport dalla Svizzera e dal mondo.",
         "immagine": "https://img-guidatv.org/90/prima-ora/5.jpg"
       },
@@ -30900,7 +30949,7 @@
       {
         "ora": "05:00",
         "fine": "05:20",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30914,7 +30963,7 @@
       {
         "ora": "05:25",
         "fine": "05:55",
-        "titolo": "Il Quotidiano (R)",
+        "titolo": "Il Quotidiano",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30928,7 +30977,7 @@
       {
         "ora": "06:15",
         "fine": "07:15",
-        "titolo": "Siamo tutti fuori (R)",
+        "titolo": "Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
         "immagine": "https://img-guidatv.org/90/siamo-tutti-fuori/0.jpg"
       },
@@ -30949,16 +30998,16 @@
       {
         "ora": "08:05",
         "fine": "08:30",
-        "titolo": "L'Uomo Di Casa",
-        "descrizione": "Mike Baxter è un padre felicemente sposato con tre figlie che si ritrova a essere l’intruso maschio mentre cerca di mantenere la virilità in una casa piena di donne. Per sfuggire ai drammi femminili di casa sua. Mike si rifugia nel caldo e virile abbraccio del suo lavoro all’Outdoor Man, un negozio di articoli sportivi dove lavora come direttore del marketing. Si diletta anche con il vlog dell’Outdoor Man, che usa come pulpito per divulgare le sue opinioni, che spesso non hanno nulla a che vedere con la merce del negozio. Invece di vendere mountain bike o kayak, in qualche modo Mike finisce a blaterare di ambiente, sanità, politica internazionale o qualsiasi altro argomento gli venga in mente.",
-        "immagine": "https://image.tmdb.org/t/p/w300/ofUvbcwxcA0E7qYUlhBx4gZmAzX.jpg"
+        "titolo": "L'uomo di casa - Basta carne",
+        "descrizione": "Mike Baxter, direttore marketing di un noto marchio di negozi sportivi, è un uomo all'antica e di sani principi. Nella vita quotidiana si trova alle prese con una famiglia composta quasi esclusivamente da donne: la moglie Vanessa e le tre figlie Mandy, Eve e Kristin.",
+        "immagine": "https://img-guidatv.org/90/l-uomo-di-casa-basta-carne/0.png"
       },
       {
         "ora": "08:30",
         "fine": "08:50",
-        "titolo": "L'Uomo Di Casa",
-        "descrizione": "Mike Baxter è un padre felicemente sposato con tre figlie che si ritrova a essere l’intruso maschio mentre cerca di mantenere la virilità in una casa piena di donne. Per sfuggire ai drammi femminili di casa sua. Mike si rifugia nel caldo e virile abbraccio del suo lavoro all’Outdoor Man, un negozio di articoli sportivi dove lavora come direttore del marketing. Si diletta anche con il vlog dell’Outdoor Man, che usa come pulpito per divulgare le sue opinioni, che spesso non hanno nulla a che vedere con la merce del negozio. Invece di vendere mountain bike o kayak, in qualche modo Mike finisce a blaterare di ambiente, sanità, politica internazionale o qualsiasi altro argomento gli venga in mente.",
-        "immagine": "https://image.tmdb.org/t/p/w300/ofUvbcwxcA0E7qYUlhBx4gZmAzX.jpg"
+        "titolo": "L'uomo di casa - Nonna tata",
+        "descrizione": "Mike Baxter, direttore marketing di un noto marchio di negozi sportivi, è un uomo all'antica e di sani principi. Nella vita quotidiana si trova alle prese con una famiglia composta quasi esclusivamente da donne: la moglie Vanessa e le tre figlie Mandy, Eve e Kristin.",
+        "immagine": "https://img-guidatv.org/90/l-uomo-di-casa-nonna-tata/0.png"
       },
       {
         "ora": "08:50",
@@ -30977,23 +31026,23 @@
       {
         "ora": "10:30",
         "fine": "11:15",
-        "titolo": "Seaside Hotel",
+        "titolo": "Seaside Hotel - Amore",
         "descrizione": "Affacciato sul Mare del Nord, un piccolo ma elegante hotel accoglie ogni estate i suoi ricchi ed esigenti ospiti. Dietro il lusso si nascondono però passioni proibite, rivalità ed intrighi, specchio di una società in piena trasformazione.",
-        "immagine": "https://image.tmdb.org/t/p/w300/azIpMrZAbWFxNOhdCBx5tFTj2Br.jpg"
+        "immagine": "https://img-guidatv.org/90/seaside-hotel-amore/0.jpg"
       },
       {
         "ora": "11:15",
         "fine": "12:05",
-        "titolo": "Walker, Texas Ranger",
-        "descrizione": "I texas ranger rappresentano un baluardo di giustizia per tutta la comunità, assediata da criminali senza scrupoli. Walker e la sua squadra si impegnano per proteggere i cittadini onesti.",
-        "immagine": "https://image.tmdb.org/t/p/w300/Ab6rpYeP8u5CrvvKnrjyO026rou.jpg"
+        "titolo": "Walker, Texas Ranger - Terra consacrata",
+        "descrizione": "Cordell Walker, un Texas Ranger, combatte il crimine grazie alle sue abilità nelle arti marziali e al suo infallibile istinto, affiancato dal fidato partner James Trivette.",
+        "immagine": "https://img-guidatv.org/90/walker-texas-ranger-terra-consacrata/0.jpg"
       },
       {
         "ora": "12:05",
         "fine": "12:30",
-        "titolo": "Single Parents",
-        "descrizione": "La serie inizia quando un gruppo di amici (tutti genitori single) incontra Will, un uomo divorziato di 30 anni che è così concentrato nel crescere sua figlia da aver perso di vista l'uomo nascosto dietro al papà.",
-        "immagine": "https://image.tmdb.org/t/p/w300/qL2MIOtTNLEKXGFZ0oKBqwbujIi.jpg"
+        "titolo": "Single Parents - Pronti per il pigiama party",
+        "descrizione": "Un gruppo di genitori single forma il proprio sistema di supporto mentre crescono i propri figli e lottano per iniziare nuove relazioni.",
+        "immagine": "https://img-guidatv.org/90/single-parents-pronti-per-il-pigiama-party/0.png"
       },
       {
         "ora": "12:30",
@@ -31019,7 +31068,7 @@
       {
         "ora": "14:20",
         "fine": "15:10",
-        "titolo": "Le Sorelle McLeod",
+        "titolo": "Le sorelle McLeod - Furto di massa",
         "descrizione": "Dopo la morte della madre, Tess Silverman si reca a \"Drover's Run\", la fattoria dove ha trascorso i primi anni della sua vita. \"Drover's Run\" è una proprietà rurale di bestiame nell'Australia meridionale, dove vive l'unica famiglia rimasta, il padre Jack e la sorella Claire, che non vede da 20 anni.",
         "immagine": "https://img-guidatv.org/serie/5e78e09ace1e246c511cdf44_p_9_rs_300.jpg"
       },
@@ -31096,8 +31145,8 @@
       {
         "ora": "20:40",
         "fine": "22:10",
-        "titolo": "Patti Chiari",
-        "descrizione": "Settimanale di inchiesta e informazione sui diritti dei cittadini e dei consumatori\nwww.rsi/pattichiari\nA cura di Lorenzo Mammone",
+        "titolo": "Patti Chiari - Test-shock sulla cocaina",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/90/patti-chiari/1.jpg"
       },
       {
@@ -31137,14 +31186,14 @@
       {
         "ora": "01:20",
         "fine": "02:20",
-        "titolo": "Siamo tutti fuori (R)",
+        "titolo": "Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
         "immagine": "https://img-guidatv.org/90/siamo-tutti-fuori/0.jpg"
       },
       {
         "ora": "02:20",
         "fine": "02:40",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -31158,7 +31207,7 @@
       {
         "ora": "02:45",
         "fine": "04:10",
-        "titolo": "Prima Ora (R)",
+        "titolo": "Prima Ora",
         "descrizione": "Porta d'ingresso alla fascia informativa serale della RSI con ospiti e servizi. Notizie di attualità, cultura e sport dalla Svizzera e dal mondo.",
         "immagine": "https://img-guidatv.org/90/prima-ora/5.jpg"
       },
@@ -31172,7 +31221,7 @@
       {
         "ora": "05:00",
         "fine": "05:20",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -31186,7 +31235,7 @@
       {
         "ora": "05:25",
         "fine": "05:55",
-        "titolo": "Il Quotidiano (R)",
+        "titolo": "Il Quotidiano",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -31200,7 +31249,7 @@
       {
         "ora": "06:15",
         "fine": "07:15",
-        "titolo": "Siamo tutti fuori (R)",
+        "titolo": "Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
         "immagine": "https://img-guidatv.org/90/siamo-tutti-fuori/0.jpg"
       },
@@ -31221,16 +31270,16 @@
       {
         "ora": "08:05",
         "fine": "08:30",
-        "titolo": "L'Uomo Di Casa",
-        "descrizione": "Mike Baxter è un padre felicemente sposato con tre figlie che si ritrova a essere l’intruso maschio mentre cerca di mantenere la virilità in una casa piena di donne. Per sfuggire ai drammi femminili di casa sua. Mike si rifugia nel caldo e virile abbraccio del suo lavoro all’Outdoor Man, un negozio di articoli sportivi dove lavora come direttore del marketing. Si diletta anche con il vlog dell’Outdoor Man, che usa come pulpito per divulgare le sue opinioni, che spesso non hanno nulla a che vedere con la merce del negozio. Invece di vendere mountain bike o kayak, in qualche modo Mike finisce a blaterare di ambiente, sanità, politica internazionale o qualsiasi altro argomento gli venga in mente.",
-        "immagine": "https://image.tmdb.org/t/p/w300/ofUvbcwxcA0E7qYUlhBx4gZmAzX.jpg"
+        "titolo": "L'uomo di casa - Basta carne",
+        "descrizione": "Mike Baxter, direttore marketing di un noto marchio di negozi sportivi, è un uomo all'antica e di sani principi. Nella vita quotidiana si trova alle prese con una famiglia composta quasi esclusivamente da donne: la moglie Vanessa e le tre figlie Mandy, Eve e Kristin.",
+        "immagine": "https://img-guidatv.org/90/l-uomo-di-casa-basta-carne/0.png"
       },
       {
         "ora": "08:30",
         "fine": "08:50",
-        "titolo": "L'Uomo Di Casa",
-        "descrizione": "Mike Baxter è un padre felicemente sposato con tre figlie che si ritrova a essere l’intruso maschio mentre cerca di mantenere la virilità in una casa piena di donne. Per sfuggire ai drammi femminili di casa sua. Mike si rifugia nel caldo e virile abbraccio del suo lavoro all’Outdoor Man, un negozio di articoli sportivi dove lavora come direttore del marketing. Si diletta anche con il vlog dell’Outdoor Man, che usa come pulpito per divulgare le sue opinioni, che spesso non hanno nulla a che vedere con la merce del negozio. Invece di vendere mountain bike o kayak, in qualche modo Mike finisce a blaterare di ambiente, sanità, politica internazionale o qualsiasi altro argomento gli venga in mente.",
-        "immagine": "https://image.tmdb.org/t/p/w300/ofUvbcwxcA0E7qYUlhBx4gZmAzX.jpg"
+        "titolo": "L'uomo di casa - Nonna tata",
+        "descrizione": "Mike Baxter, direttore marketing di un noto marchio di negozi sportivi, è un uomo all'antica e di sani principi. Nella vita quotidiana si trova alle prese con una famiglia composta quasi esclusivamente da donne: la moglie Vanessa e le tre figlie Mandy, Eve e Kristin.",
+        "immagine": "https://img-guidatv.org/90/l-uomo-di-casa-nonna-tata/0.png"
       },
       {
         "ora": "08:50",
@@ -31249,23 +31298,23 @@
       {
         "ora": "10:30",
         "fine": "11:15",
-        "titolo": "Seaside Hotel",
+        "titolo": "Seaside Hotel - Amore",
         "descrizione": "Affacciato sul Mare del Nord, un piccolo ma elegante hotel accoglie ogni estate i suoi ricchi ed esigenti ospiti. Dietro il lusso si nascondono però passioni proibite, rivalità ed intrighi, specchio di una società in piena trasformazione.",
-        "immagine": "https://image.tmdb.org/t/p/w300/azIpMrZAbWFxNOhdCBx5tFTj2Br.jpg"
+        "immagine": "https://img-guidatv.org/90/seaside-hotel-amore/0.jpg"
       },
       {
         "ora": "11:15",
         "fine": "12:05",
-        "titolo": "Walker, Texas Ranger",
-        "descrizione": "I texas ranger rappresentano un baluardo di giustizia per tutta la comunità, assediata da criminali senza scrupoli. Walker e la sua squadra si impegnano per proteggere i cittadini onesti.",
-        "immagine": "https://image.tmdb.org/t/p/w300/Ab6rpYeP8u5CrvvKnrjyO026rou.jpg"
+        "titolo": "Walker, Texas Ranger - Terra consacrata",
+        "descrizione": "Cordell Walker, un Texas Ranger, combatte il crimine grazie alle sue abilità nelle arti marziali e al suo infallibile istinto, affiancato dal fidato partner James Trivette.",
+        "immagine": "https://img-guidatv.org/90/walker-texas-ranger-terra-consacrata/0.jpg"
       },
       {
         "ora": "12:05",
         "fine": "12:30",
-        "titolo": "Single Parents",
-        "descrizione": "La serie inizia quando un gruppo di amici (tutti genitori single) incontra Will, un uomo divorziato di 30 anni che è così concentrato nel crescere sua figlia da aver perso di vista l'uomo nascosto dietro al papà.",
-        "immagine": "https://image.tmdb.org/t/p/w300/qL2MIOtTNLEKXGFZ0oKBqwbujIi.jpg"
+        "titolo": "Single Parents - Pronti per il pigiama party",
+        "descrizione": "Un gruppo di genitori single forma il proprio sistema di supporto mentre crescono i propri figli e lottano per iniziare nuove relazioni.",
+        "immagine": "https://img-guidatv.org/90/single-parents-pronti-per-il-pigiama-party/0.png"
       },
       {
         "ora": "12:30",
@@ -31291,7 +31340,7 @@
       {
         "ora": "14:20",
         "fine": "15:10",
-        "titolo": "Le Sorelle McLeod",
+        "titolo": "Le sorelle McLeod - Furto di massa",
         "descrizione": "Dopo la morte della madre, Tess Silverman si reca a \"Drover's Run\", la fattoria dove ha trascorso i primi anni della sua vita. \"Drover's Run\" è una proprietà rurale di bestiame nell'Australia meridionale, dove vive l'unica famiglia rimasta, il padre Jack e la sorella Claire, che non vede da 20 anni.",
         "immagine": "https://img-guidatv.org/serie/5e78e09ace1e246c511cdf44_p_9_rs_300.jpg"
       },
@@ -31368,8 +31417,8 @@
       {
         "ora": "20:40",
         "fine": "22:10",
-        "titolo": "Patti Chiari",
-        "descrizione": "Settimanale di inchiesta e informazione sui diritti dei cittadini e dei consumatori\nwww.rsi/pattichiari\nA cura di Lorenzo Mammone",
+        "titolo": "Patti Chiari - Test-shock sulla cocaina",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/90/patti-chiari/1.jpg"
       },
       {
