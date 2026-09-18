@@ -162,7 +162,31 @@ export default function MobileEventoView({
                     </div>
                     <div className="mobile-sky-info-main">
                         <div className="mobile-sky-row-meta">
+                            {(() => {
+                                const isEventVod = Boolean(
+                                    channel?.isEventVod ||
+                                    (channel?.tile_type && (channel.tile_type.toLowerCase() === "catchup" || channel.tile_type.toLowerCase() === "ondemand")) ||
+                                    (channel?.group && channel.group.toLowerCase().includes("vod"))
+                                );
+                                if (isEventVod) {
+                                    return (
+                                        <span className="mobile-sky-group-badge" style={{ background: "rgba(14, 116, 144, 0.4)", color: "#38bdf8", border: "1px solid rgba(56, 189, 248, 0.3)" }}>
+                                            REPLAY
+                                        </span>
+                                    );
+                                }
+                                return (
+                                    <span className="mobile-sky-group-badge" style={{ background: "rgba(227, 10, 23, 0.2)", color: "#ff4d4d", border: "1px solid rgba(227, 10, 23, 0.4)" }}>
+                                        LIVE
+                                    </span>
+                                );
+                            })()}
                             <span className="mobile-sky-group-badge">{channel?.group || channel?.category || "EVENTI"}</span>
+                            {channel?.data && (
+                                <span className="mobile-sky-time-badge">
+                                    <i className="fa-regular fa-calendar"></i> {channel.data}
+                                </span>
+                            )}
                             {channel?.ora && (
                                 <span className="mobile-sky-time-badge">
                                     <i className="fa-regular fa-clock"></i> Ore {channel.ora}

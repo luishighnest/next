@@ -280,13 +280,61 @@ export async function GET(request) {
                     }
 
                     let timeStr = "";
+                    let dateStr = "";
+                    let scheduleLabel = "";
+                    let isLiveNow = false;
+
                     const isDazn1 = cleanTitle.toUpperCase().replace(/\s+/g, "").includes("DAZN1") || (ev.end && ev.end.startsWith("3000"));
+
                     if (ev.start && !isDazn1) {
                         try {
-                            const d = new Date(ev.start);
-                            timeStr = d.toLocaleTimeString('it-IT', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false });
+                            const startD = new Date(ev.start);
+                            if (!isNaN(startD.getTime())) {
+                                timeStr = startD.toLocaleTimeString('it-IT', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false });
+                                
+                                const nowD = new Date();
+                                const startRome = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                const nowRome = nowD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+
+                                const tomorrowD = new Date(nowD.getTime() + 24 * 60 * 60 * 1000);
+                                const tomorrowRome = tomorrowD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+
+                                const yesterdayD = new Date(nowD.getTime() - 24 * 60 * 60 * 1000);
+                                const yesterdayRome = yesterdayD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+
+                                if (startRome === nowRome) {
+                                    dateStr = "Oggi";
+                                } else if (startRome === tomorrowRome) {
+                                    dateStr = "Domani";
+                                } else if (startRome === yesterdayRome) {
+                                    dateStr = "Ieri";
+                                } else {
+                                    const dName = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', weekday: 'short' });
+                                    const mName = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: 'numeric', month: 'short' });
+                                    dateStr = dName.charAt(0).toUpperCase() + dName.slice(1) + " " + mName;
+                                }
+
+                                scheduleLabel = dateStr ? `${dateStr} • ${timeStr}` : timeStr;
+
+                                if (ev.end) {
+                                    const endD = new Date(ev.end);
+                                    if (!isNaN(endD.getTime())) {
+                                        isLiveNow = (nowD >= startD && nowD <= endD);
+                                    } else {
+                                        isLiveNow = (nowD >= startD);
+                                    }
+                                } else {
+                                    isLiveNow = (nowD >= startD);
+                                }
+                            }
                         } catch(e) {}
                     }
+
+                    const isVodEvent = Boolean(
+                        ev.is_vod ||
+                        (ev.tile_type && (ev.tile_type.toLowerCase() === "catchup" || ev.tile_type.toLowerCase() === "ondemand")) ||
+                        (groupName && groupName.toLowerCase().includes("vod"))
+                    );
 
                     let rawStreamUrl = (ev.mpd || ev.url || "").trim();
                     let rawKidKey = (ev.key || ev.kid_key || "").trim();
@@ -331,6 +379,13 @@ export async function GET(request) {
                             logo: ev.image || "/logos/dazn.png",
                             image: ev.image || "",
                             ora: timeStr,
+                            data: dateStr,
+                            schedule: scheduleLabel,
+                            start: ev.start || "",
+                            end: ev.end || "",
+                            isLiveNow: isLiveNow,
+                            isEventVod: isVodEvent,
+                            tile_type: ev.tile_type || (isVodEvent ? "CatchUp" : "Live"),
                             ua: ev.ua || "",
                             dazn_token: ev.dazn_token || "",
                             sources: sourceItem ? [sourceItem] : [],

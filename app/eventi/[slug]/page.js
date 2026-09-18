@@ -554,11 +554,31 @@ export default function EventoPlayerPage() {
                             })()}
                             <div className="event-details">
                                 <div className="event-meta-row">
-                                    <span className="live-badge"><span className="dot"></span>LIVE</span>
+                                    {(() => {
+                                        const isEventVod = Boolean(
+                                            channel?.isEventVod ||
+                                            (channel?.tile_type && (channel.tile_type.toLowerCase() === "catchup" || channel.tile_type.toLowerCase() === "ondemand")) ||
+                                            (channel?.group && channel.group.toLowerCase().includes("vod"))
+                                        );
+                                        if (isEventVod) {
+                                            return (
+                                                <span className="live-badge" style={{ background: "rgba(14, 116, 144, 0.4)", color: "#38bdf8", border: "1px solid rgba(56, 189, 248, 0.3)" }}>
+                                                    <span className="dot" style={{ background: "#38bdf8", boxShadow: "0 0 8px #38bdf8", animation: "none" }}></span>REPLAY
+                                                </span>
+                                            );
+                                        }
+                                        return <span className="live-badge"><span className="dot"></span>LIVE</span>;
+                                    })()}
                                     <span className="event-tag">{channel?.group || channel?.category || "EVENTI"}</span>
+                                    {channel?.data && (
+                                        <span className="event-time-badge">
+                                            <i className="fa-regular fa-calendar" style={{ marginRight: "4px" }}></i>
+                                            <span>{channel.data}</span>
+                                        </span>
+                                    )}
                                     {channel?.ora && (
                                         <span className="event-time-badge">
-                                            <i className="fa-regular fa-clock"></i>
+                                            <i className="fa-regular fa-clock" style={{ marginRight: "4px" }}></i>
                                             <span>Ore {channel.ora}</span>
                                         </span>
                                     )}

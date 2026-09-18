@@ -316,6 +316,12 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         ? `/vod/info/${channel?.tmdbId || String(channel?.id).replace(/^vod_(movie|tv)_/, "")}?type=${channel?.vodType || "movie"}`
         : (isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`);
 
+    const isEventVod = Boolean(
+        channel?.isEventVod ||
+        (channel?.tile_type && (channel.tile_type.toLowerCase() === "catchup" || channel.tile_type.toLowerCase() === "ondemand")) ||
+        (channel?.group && channel.group.toLowerCase().includes("vod"))
+    );
+
     const isDazn1Channel = (channel?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
     const dynColor = getDynamicColor(channel?.title);
 
@@ -323,11 +329,15 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     let categoryLabel = rawCategory;
     if (isVod) {
         categoryLabel = channel?.rating ? `★ ${channel.rating} • ${channel?.group || "VOD"}` : (channel?.group || "VOD");
+    } else if (isEventVod) {
+        categoryLabel = channel?.schedule ? `Replay • ${channel.schedule}` : (channel?.group ? `Replay • ${channel.group}` : "Replay / VOD");
     } else if (!categoryLabel || categoryLabel.toUpperCase() === "DAZN") {
         if (channel?.title && channel.title.toLowerCase().includes("supertennis")) categoryLabel = "SuperTennis";
         else if (channel?.title && channel.title.toLowerCase().includes("eurosport")) categoryLabel = "Eurosport";
         else if (isSky) categoryLabel = "Sky";
-        else categoryLabel = channel?.group || "Eventi";
+        else categoryLabel = channel?.schedule ? `${channel.group || "Eventi"} • ${channel.schedule}` : (channel?.group || "Eventi");
+    } else if (channel?.schedule && isTestJsonEvent) {
+        categoryLabel = `${categoryLabel} • ${channel.schedule}`;
     }
 
     // ─── Hover Live Preview (Mostra il video dopo ESATTAMENTE 1.5s dall'ingresso del mouse) ───
@@ -446,8 +456,17 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
                     </>
                 )}
 
-                {channel?.ora && !isDazn1Channel && (
-                    <div className="now-card-time-badge">{channel.ora}</div>
+                {/* Badge Sovrimpressione: LIVE con data/ora oppure REPLAY/VOD */}
+                {!isDazn1Channel && !isVod && (
+                    isEventVod ? (
+                        <div className="now-card-time-badge vod-badge">
+                            REPLAY{channel?.data ? ` • ${channel.data}` : ""}
+                        </div>
+                    ) : (channel?.ora ? (
+                        <div className="now-card-time-badge">
+                            {channel.schedule || `${channel.data ? `${channel.data} ` : ""}${channel.ora}`}
+                        </div>
+                    ) : null)
                 )}
                 <div className="now-card-vignette"></div>
 
@@ -496,6 +515,9 @@ function arePropsEqual(prevProps, nextProps) {
     if (p.title !== n.title) return false;
     if (p.group !== n.group) return false;
     if (p.ora !== n.ora) return false;
+    if (p.data !== n.data) return false;
+    if (p.schedule !== n.schedule) return false;
+    if (p.isEventVod !== n.isEventVod) return false;
     if (p.image !== n.image || p.poster !== n.poster) return false;
     if (p.url !== n.url || p.mpd !== n.mpd) return false;
     if (p.kid_key !== n.kid_key) return false;
