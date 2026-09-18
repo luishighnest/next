@@ -67,7 +67,19 @@ export default function EventoPlayerPage() {
                 if (cached) {
                     const parsed = JSON.parse(cached);
                     if (Array.isArray(parsed)) {
-                        return parsed.filter(s => s.channels?.some(c => c.isTestJson) || s.navbar === "eventi");
+                        const eventSecs = parsed.filter(s => s.channels?.some(c => c.isTestJson) || s.navbar === "eventi");
+                        return eventSecs.map(s => ({
+                            ...s,
+                            channels: (s.channels || []).filter(c => {
+                                if (slug && matchSlug(c, slug)) return false;
+                                if (channel) {
+                                    if (c.title && channel.title && c.title.trim().toLowerCase() === channel.title.trim().toLowerCase()) return false;
+                                    if (c.id && channel.id && String(c.id).trim().toLowerCase() === String(channel.id).trim().toLowerCase()) return false;
+                                    if (c.url && channel.url && c.url.trim() === channel.url.trim()) return false;
+                                }
+                                return true;
+                            })
+                        })).filter(s => s.channels.length > 0);
                     }
                 }
             } catch(e) {}
@@ -247,20 +259,34 @@ export default function EventoPlayerPage() {
 
                 // Costruisci le sezioni correlate
                 const sections = [];
-                const currentPlayingTitle = foundCh?.title || "";
-                const currentPlayingGroup = foundCh?.group || "";
+                const currentPlayingTitle = (foundCh?.title || "").trim().toLowerCase();
+                const currentPlayingGroup = (foundCh?.group || "").trim().toLowerCase();
+                const currentPlayingId = foundCh?.id ? String(foundCh.id).trim().toLowerCase() : "";
+                const currentPlayingUrl = (foundCh?.url || "").trim();
+                const currentPlayingSlug = getChannelSlug(foundCh);
+
+                const isCurrentPlaying = (c) => {
+                    if (!c) return false;
+                    if (currentPlayingTitle && c.title && c.title.trim().toLowerCase() === currentPlayingTitle) return true;
+                    if (currentPlayingTitle && c.name && c.name.trim().toLowerCase() === currentPlayingTitle) return true;
+                    if (currentPlayingId && c.id && String(c.id).trim().toLowerCase() === currentPlayingId) return true;
+                    if (currentPlayingUrl && c.url && c.url.trim() === currentPlayingUrl) return true;
+                    if (currentPlayingSlug && getChannelSlug(c) === currentPlayingSlug) return true;
+                    if (slug && matchSlug(c, slug)) return true;
+                    return false;
+                };
 
                 if (res && Array.isArray(res.sections)) {
-                    // 0. Se il canale appartiene a una categoria TV (es. Eurosport, SuperTennis), mostra prima quella categoria (escludendo Digitale Terrestre)
+                    // 0. Se il canale appartiene a una categoria TV o sportiva specifica, mostra prima quella categoria (escludendo Digitale Terrestre)
                     const EXCLUDED_CATEGORIES = ["digitale terrestre", "rai", "mediaset", "discovery"];
                     const sameCatSec = res.sections.find(sec => {
                         if (EXCLUDED_CATEGORIES.some(ex => sec.title.toLowerCase().includes(ex))) return false;
-                        return (currentPlayingGroup && sec.title.toLowerCase() === currentPlayingGroup.toLowerCase()) ||
-                               (sec.channels || []).some(c => c.title === currentPlayingTitle);
+                        return (currentPlayingGroup && sec.title.toLowerCase() === currentPlayingGroup) ||
+                               (sec.channels || []).some(c => isCurrentPlaying(c));
                     });
 
                     if (sameCatSec) {
-                        const filtered = (sameCatSec.channels || []).filter(c => c.title !== currentPlayingTitle);
+                        const filtered = (sameCatSec.channels || []).filter(c => !isCurrentPlaying(c));
                         if (filtered.length > 0) {
                             sections.push({
                                 title: sameCatSec.title,
@@ -269,10 +295,10 @@ export default function EventoPlayerPage() {
                         }
                     }
 
-                    // 1. Aggiungi tutte le altre sezioni (escludendo il canale attualmente in riproduzione)
+                    // 1. Aggiungi tutte le altre sezioni (escludendo sempre l'evento attualmente in riproduzione)
                     res.sections.forEach(sec => {
                         if (sameCatSec && sec.title === sameCatSec.title) return;
-                        const filtered = (sec.channels || []).filter(c => c.title !== currentPlayingTitle);
+                        const filtered = (sec.channels || []).filter(c => !isCurrentPlaying(c));
                         if (filtered.length > 0) {
                             sections.push({
                                 title: sec.title,
@@ -659,16 +685,30 @@ export default function EventoPlayerPage() {
                     </div>
                 </div>
 
-                {/* Sezioni Correlate identiche a evento.html */}
+                {/* Sezioni Correlate: mostrate senza l'evento attualmente in riproduzione */}
                 <div className="related-section" id="dynamic-categories-container">
-                    {relatedSections.map(sec => (
-                        <CarouselSection
-                            key={sec.title}
-                            title={sec.title}
-                            channels={sec.channels}
-                            isRelated={true}
-                        />
-                    ))}
+                    {relatedSections
+                        .map(sec => ({
+                            ...sec,
+                            channels: (sec.channels || []).filter(c => {
+                                const curTitle = (channel?.title || "").trim().toLowerCase();
+                                const curSlug = getChannelSlug(channel);
+                                if (curTitle && c.title && c.title.trim().toLowerCase() === curTitle) return false;
+                                if (curTitle && c.name && c.name.trim().toLowerCase() === curTitle) return false;
+                                if (curSlug && getChannelSlug(c) === curSlug) return false;
+                                if (slug && matchSlug(c, slug)) return false;
+                                return true;
+                            })
+                        }))
+                        .filter(sec => sec.channels.length > 0)
+                        .map(sec => (
+                            <CarouselSection
+                                key={sec.title}
+                                title={sec.title}
+                                channels={sec.channels}
+                                isRelated={true}
+                            />
+                        ))}
                 </div>
             </main>
         </div>

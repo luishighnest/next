@@ -5,6 +5,7 @@ import MobileBottomNav from "@/components/MobileBottomNav";
 import ChannelCard from "@/components/ChannelCard";
 import { getCurrentProgramInfo, getChannelLogoUrl } from "@/lib/epg";
 import { getNormalizedSources } from "@/lib/sources";
+import { getChannelSlug, matchSlug } from "@/lib/slug";
 
 export default function MobileEventoView({
     channel,
@@ -286,25 +287,39 @@ export default function MobileEventoView({
             {/* 5. Sezioni Correlate Touch-Friendly con Locandine Proporzionate */}
             {relatedSections.length > 0 && (
                 <div className="mobile-event-related-flow">
-                    {relatedSections.map((sec) => (
-                        <section key={sec.title} className="mobile-section-block">
-                            <div className="mobile-section-header">
-                                <h2 className="mobile-section-title">{sec.title}</h2>
-                                <span className="mobile-section-count">{sec.channels?.length || 0}</span>
-                            </div>
-                            <div className="mobile-horizontal-scroll">
-                                {(sec.channels || []).map((relCh, i) => (
-                                    <div key={(relCh.id || relCh.title) + i} className="mobile-card-slot">
-                                        <ChannelCard
-                                            channel={relCh}
-                                            categoryName={sec.title}
-                                            priority={i < 2}
-                                        />
-                                    </div>
-                                ))}
-                            </div>
-                        </section>
-                    ))}
+                    {relatedSections
+                        .map(sec => ({
+                            ...sec,
+                            channels: (sec.channels || []).filter(relCh => {
+                                const curTitle = (channel?.title || "").trim().toLowerCase();
+                                const curSlug = getChannelSlug(channel);
+                                if (curTitle && relCh.title && relCh.title.trim().toLowerCase() === curTitle) return false;
+                                if (curTitle && relCh.name && relCh.name.trim().toLowerCase() === curTitle) return false;
+                                if (curSlug && getChannelSlug(relCh) === curSlug) return false;
+                                if (curSlug && matchSlug(relCh, curSlug)) return false;
+                                return true;
+                            })
+                        }))
+                        .filter(sec => sec.channels.length > 0)
+                        .map((sec) => (
+                            <section key={sec.title} className="mobile-section-block">
+                                <div className="mobile-section-header">
+                                    <h2 className="mobile-section-title">{sec.title}</h2>
+                                    <span className="mobile-section-count">{sec.channels?.length || 0}</span>
+                                </div>
+                                <div className="mobile-horizontal-scroll">
+                                    {(sec.channels || []).map((relCh, i) => (
+                                        <div key={(relCh.id || relCh.title) + i} className="mobile-card-slot">
+                                            <ChannelCard
+                                                channel={relCh}
+                                                categoryName={sec.title}
+                                                priority={i < 2}
+                                            />
+                                        </div>
+                                    ))}
+                                </div>
+                            </section>
+                        ))}
                 </div>
             )}
 
