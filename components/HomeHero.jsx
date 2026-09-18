@@ -319,11 +319,63 @@ export default function HomeHero({ categories = [] }) {
                     }
                 });
 
-                // Prevalenza massima di canali SPORT: 4 canali Sport su 5 totali (o 5 su 5 se ent non sufficienti)
+                // Recupero VOD da localStorage o /api/vod per slot VOD nella Hero
+                let vodCandidates = [];
+                try {
+                    let rawVodList = [];
+                    const cachedVod = localStorage.getItem("nmdz_cached_vod");
+                    if (cachedVod) {
+                        try { rawVodList = JSON.parse(cachedVod); } catch(e) {}
+                    }
+                    if (!rawVodList || rawVodList.length === 0) {
+                        const vRes = await fetch("/api/vod?t=" + Date.now(), { cache: "no-store" }).catch(() => null);
+                        if (vRes && vRes.ok) {
+                            const vData = await vRes.json().catch(() => null);
+                            if (Array.isArray(vData?.sections)) rawVodList = vData.sections;
+                            else if (Array.isArray(vData)) rawVodList = vData;
+                        }
+                    }
+
+                    if (Array.isArray(rawVodList) && rawVodList.length > 0) {
+                        for (const sec of rawVodList) {
+                            for (const c of (sec.channels || [])) {
+                                const vImg = c.image || c.poster || c.banner || c.progImg || "";
+                                if (!vImg || !vImg.startsWith("http")) continue;
+
+                                const vTitle = c.title || c.name || "Film VOD";
+                                const vDesc = c.desc || c.descrizione || c.overview || "Disponibile On Demand in streaming ad alta definizione.";
+                                const vId = c.tmdbId || String(c.id || "").replace(/^vod_(movie|tv)_/, "");
+                                const vType = c.vodType || (c.type === "tv" ? "tv" : "movie");
+                                const vHref = `/vod/info/${vId}?type=${vType}`;
+
+                                vodCandidates.push({
+                                    channelName: c.group || "Cinema On Demand",
+                                    category: "VOD",
+                                    progTitle: vTitle,
+                                    progDesc: vDesc,
+                                    progOraInizio: "",
+                                    progOraFine: "",
+                                    progImg: upgradeImageToHighRes(vImg),
+                                    artworkType: detectArtworkType(vImg),
+                                    progress: 0,
+                                    targetHref: vHref,
+                                    channelObj: c,
+                                    logoUrl: "",
+                                    currentProg: { titolo: vTitle, descrizione: vDesc },
+                                    nextProg: null,
+                                    isVodItem: true
+                                });
+                                if (vodCandidates.length >= 10) break;
+                            }
+                            if (vodCandidates.length >= 10) break;
+                        }
+                    }
+                } catch(e) {}
+
+                // Shuffle pool Live (Sport + Intrattenimento)
                 const sportPool = sportCandidatesHD.length >= 4 ? sportCandidatesHD : [...sportCandidatesHD, ...sportCandidatesFallback];
                 const entPool = entCandidatesHD.length >= 1 ? entCandidatesHD : [...entCandidatesHD, ...entCandidatesFallback];
 
-                // Shuffle di entrambi i pool per non mostrare sempre gli stessi canali nell'arco della giornata
                 for (let i = sportPool.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [sportPool[i], sportPool[j]] = [sportPool[j], sportPool[i]];
@@ -332,35 +384,57 @@ export default function HomeHero({ categories = [] }) {
                     const j = Math.floor(Math.random() * (i + 1));
                     [entPool[i], entPool[j]] = [entPool[j], entPool[i]];
                 }
-
-                // 4 canali SPORT prioritari e 1 canale Cinema/Intrattenimento per varietà
-                const selectedSport = sportPool.slice(0, 4);
-                const selectedEnt = entPool.slice(0, 1);
-                let selected5 = [...selectedSport, ...selectedEnt];
-
-                // Se non c'è abbastanza intrattenimento, prendi un 5° canale sport
-                if (selected5.length < 5 && sportPool.length > 4) {
-                    selected5.push(sportPool[4]);
+                for (let i = vodCandidates.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [vodCandidates[i], vodCandidates[j]] = [vodCandidates[j], vodCandidates[i]];
                 }
 
-                // Mescola i 5 selezionati in modo che lo sport appaia con altissima frequenza
-                for (let i = selected5.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [selected5[i], selected5[j]] = [selected5[j], selected5[i]];
+                // Costruzione unificata candidati Live (precedenza assoluta ai Live)
+                const liveCandidates = [];
+                // Priorità Sport
+                liveCandidates.push(...sportPool);
+                // Aggiunta eventuale Intrattenimento
+                liveCandidates.push(...entPool);
+
+                let selected5 = [];
+                const numLiveAvailable = liveCandidates.length;
+
+                if (numLiveAvailable === 0) {
+                    // SE CI SONO SOLO VOD: MASSIMO 2 SU 5
+                    selected5 = vodCandidates.slice(0, 2);
+                } else if (numLiveAvailable === 1) {
+                    // SE C'È SOLO UN EVENTO LIVE: 1 EVENTO LIVE E 1 VOD
+                    selected5.push(liveCandidates[0]);
+                    if (vodCandidates.length > 0) {
+                        selected5.push(vodCandidates[0]);
+                    }
+                } else {
+                    // EVENTI LIVE HANNO SEMPRE LA PRECEDENZA
+                    // Massimo 2-3 VOD fissi su 5 se non ci sono abbastanza eventi live
+                    const targetLiveCount = Math.min(numLiveAvailable, Math.max(2, 5 - Math.min(vodCandidates.length, 3)));
+                    const chosenLive = liveCandidates.slice(0, targetLiveCount);
+                    selected5.push(...chosenLive);
+
+                    // Calcola quanti VOD inserire (massimo 2-3, completando fino a max 5 elementi totali)
+                    const remainingSlots = 5 - selected5.length;
+                    if (remainingSlots > 0 && vodCandidates.length > 0) {
+                        const maxVodToAdd = Math.min(remainingSlots, Math.min(3, vodCandidates.length));
+                        selected5.push(...vodCandidates.slice(0, maxVodToAdd));
+                    }
                 }
 
                 if (!isMounted || selected5.length === 0) return;
 
                 // Precarica subito in background tutti i loghi e gli artwork per eliminare qualsiasi glitch
                 selected5.forEach(it => {
-                    preloadImage(it.logoUrl);
-                    preloadImage(it.progImg);
+                    if (it.logoUrl) preloadImage(it.logoUrl);
+                    if (it.progImg) preloadImage(it.progImg);
                 });
 
                 // Salva nella cache persistente così alla ricarica della pagina la hero è presente a 0ms
                 try {
-                    sessionStorage.setItem("nmdz_hero_items_v4", JSON.stringify(selected5));
-                    localStorage.setItem("nmdz_hero_items_v4", JSON.stringify(selected5));
+                    sessionStorage.setItem("nmdz_hero_items_v5", JSON.stringify(selected5));
+                    localStorage.setItem("nmdz_hero_items_v5", JSON.stringify(selected5));
                 } catch (e) {}
 
                 setHeroItems(selected5);
@@ -573,19 +647,33 @@ export default function HomeHero({ categories = [] }) {
                                     {item.progTitle}
                                 </h1>
 
-                                {/* 4. Riga Metadati & Orario: [DIRETTA] + Orario + Timeline + spec tecniche */}
+                                 {/* 4. Riga Metadati & Orario: [DIRETTA] o [ON DEMAND] + Orario + Timeline + spec tecniche */}
                                 <div className="now-hero-meta-row">
-                                    <span className="now-hero-live-pill">
-                                        <span className="now-hero-live-pulse" />
-                                        DIRETTA
-                                    </span>
+                                    {item.isVodItem ? (
+                                        <span className="now-hero-live-pill" style={{ background: "rgba(0, 229, 155, 0.2)", color: "#00e59b", borderColor: "rgba(0, 229, 155, 0.4)" }}>
+                                            <span className="material-symbols-rounded" style={{ fontSize: "1rem", marginRight: "4px" }}>movie</span>
+                                            ON DEMAND
+                                        </span>
+                                    ) : (
+                                        <span className="now-hero-live-pill">
+                                            <span className="now-hero-live-pulse" />
+                                            DIRETTA
+                                        </span>
+                                    )}
 
-                                    <div className="now-hero-time-text">
-                                        <span className="material-symbols-rounded">schedule</span>
-                                        <span>{item.progOraFine ? `Dalle ${item.progOraInizio} alle ${item.progOraFine}` : `Inizio alle ${item.progOraInizio}`}</span>
-                                    </div>
+                                    {item.progOraInizio ? (
+                                        <div className="now-hero-time-text">
+                                            <span className="material-symbols-rounded">schedule</span>
+                                            <span>{item.progOraFine ? `Dalle ${item.progOraInizio} alle ${item.progOraFine}` : `Inizio alle ${item.progOraInizio}`}</span>
+                                        </div>
+                                    ) : (
+                                        <div className="now-hero-time-text">
+                                            <span className="material-symbols-rounded">play_circle</span>
+                                            <span>Disponibile subito</span>
+                                        </div>
+                                    )}
 
-                                    {item.progress > 0 && (
+                                    {!item.isVodItem && item.progress > 0 && (
                                         <div className="now-hero-timeline-wrap">
                                             <div className="now-hero-timeline-track">
                                                 <div
@@ -602,7 +690,7 @@ export default function HomeHero({ categories = [] }) {
 
                                 {/* 4. Descrizione del programma: min-height fissa a 2 righe e line-clamp-2 per bloccare i CTA */}
                                 <p className="now-hero-synopsis min-h-[2.75rem] line-clamp-2">
-                                    {item.progDesc || "Tutti gli eventi e i migliori appuntamenti live in onda su questo canale Sky."}
+                                    {item.progDesc || (item.isVodItem ? "Disponibile On Demand in alta qualità streaming." : "Tutti gli eventi e i migliori appuntamenti live in onda su questo canale Sky.")}
                                 </p>
 
                                 {/* 6. Pulsanti Azione: compatti, moderni, raffinati */}
@@ -705,44 +793,53 @@ export default function HomeHero({ categories = [] }) {
                         </div>
 
                         <div className="now-hero-modal-body">
-                            {/* Scheda Programma Attualmente in Onda */}
+                            {/* Scheda Programma Attualmente in Onda o VOD */}
                             <div className="now-hero-modal-card now-active-card">
                                 <div className="now-hero-modal-badge-row">
-                                    <span className="now-hero-live-pill small">
-                                        <span className="now-hero-live-pulse" />
-                                        IN ONDA ORA
-                                    </span>
+                                    {current.isVodItem ? (
+                                        <span className="now-hero-live-pill small" style={{ background: "rgba(0, 229, 155, 0.2)", color: "#00e59b", borderColor: "rgba(0, 229, 155, 0.4)" }}>
+                                            <span className="material-symbols-rounded" style={{ fontSize: "0.9rem", marginRight: "4px" }}>movie</span>
+                                            TITOLO ON DEMAND
+                                        </span>
+                                    ) : (
+                                        <span className="now-hero-live-pill small">
+                                            <span className="now-hero-live-pulse" />
+                                            IN ONDA ORA
+                                        </span>
+                                    )}
                                     <span className="now-hero-modal-time">
-                                        <span className="material-symbols-rounded">schedule</span>
-                                        {current.progOraInizio}{current.progOraFine ? " - " + current.progOraFine : ""}
+                                        <span className="material-symbols-rounded">{current.isVodItem ? "play_circle" : "schedule"}</span>
+                                        {current.isVodItem ? "Disponibile On Demand" : `${current.progOraInizio}${current.progOraFine ? " - " + current.progOraFine : ""}`}
                                     </span>
                                 </div>
                                 <h3 className="now-hero-modal-title">{current.progTitle}</h3>
                                 {current.progDesc ? (
                                     <p className="now-hero-modal-desc">{current.progDesc}</p>
                                 ) : (
-                                    <p className="now-hero-modal-desc muted">Nessuna sinossi disponibile per questo evento.</p>
+                                    <p className="now-hero-modal-desc muted">Nessuna sinossi disponibile per questo contenuto.</p>
                                 )}
                             </div>
 
-                            {/* Scheda Programma Successivo */}
-                            <div className="now-hero-modal-card next-card">
-                                <div className="now-hero-modal-badge-row">
-                                    <span className="now-hero-modal-pill-next">A SEGUIRE</span>
-                                    {current.nextProg?.ora && (
-                                        <span className="now-hero-modal-time">
-                                            <span className="material-symbols-rounded">schedule</span>
-                                            {current.nextProg.ora}{current.nextProg.fine ? " - " + current.nextProg.fine : ""}
-                                        </span>
+                            {/* Scheda Programma Successivo (se canale live) */}
+                            {!current.isVodItem && (
+                                <div className="now-hero-modal-card next-card">
+                                    <div className="now-hero-modal-badge-row">
+                                        <span className="now-hero-modal-pill-next">A SEGUIRE</span>
+                                        {current.nextProg?.ora && (
+                                            <span className="now-hero-modal-time">
+                                                <span className="material-symbols-rounded">schedule</span>
+                                                {current.nextProg.ora}{current.nextProg.fine ? " - " + current.nextProg.fine : ""}
+                                            </span>
+                                        )}
+                                    </div>
+                                    <h3 className="now-hero-modal-title">
+                                        {current.nextProg ? current.nextProg.titolo : "Nessun programma successivo registrato"}
+                                    </h3>
+                                    {current.nextProg?.descrizione && (
+                                        <p className="now-hero-modal-desc">{current.nextProg.descrizione}</p>
                                     )}
                                 </div>
-                                <h3 className="now-hero-modal-title">
-                                    {current.nextProg ? current.nextProg.titolo : "Nessun programma successivo registrato"}
-                                </h3>
-                                {current.nextProg?.descrizione && (
-                                    <p className="now-hero-modal-desc">{current.nextProg.descrizione}</p>
-                                )}
-                            </div>
+                            )}
                         </div>
 
                         <div className="now-hero-modal-footer">
@@ -755,7 +852,7 @@ export default function HomeHero({ categories = [] }) {
                                 }}
                             >
                                 <span className="material-symbols-rounded now-hero-play-ico">play_arrow</span>
-                                <span>Vai alla diretta</span>
+                                <span>{current.isVodItem ? "Scheda Film / Guarda" : "Vai alla diretta"}</span>
                             </Link>
                         </div>
                     </div>

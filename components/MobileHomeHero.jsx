@@ -100,11 +100,83 @@ export default function MobileHomeHero({ categories = [] }) {
                         nextProg
                     });
 
-                    if (candidates.length >= 6) break;
+                    if (candidates.length >= 10) break;
                 }
 
-                if (isMounted && candidates.length > 0) {
-                    setHeroItems(candidates);
+                // Recupero VOD da localStorage o /api/vod per slot VOD nella Hero Mobile
+                let vodCandidates = [];
+                try {
+                    let rawVodList = [];
+                    const cachedVod = localStorage.getItem("nmdz_cached_vod");
+                    if (cachedVod) {
+                        try { rawVodList = JSON.parse(cachedVod); } catch(e) {}
+                    }
+                    if (!rawVodList || rawVodList.length === 0) {
+                        const vRes = await fetch("/api/vod?t=" + Date.now(), { cache: "no-store" }).catch(() => null);
+                        if (vRes && vRes.ok) {
+                            const vData = await vRes.json().catch(() => null);
+                            if (Array.isArray(vData?.sections)) rawVodList = vData.sections;
+                            else if (Array.isArray(vData)) rawVodList = vData;
+                        }
+                    }
+
+                    if (Array.isArray(rawVodList) && rawVodList.length > 0) {
+                        for (const sec of rawVodList) {
+                            for (const c of (sec.channels || [])) {
+                                const vImg = c.image || c.poster || c.banner || c.progImg || "";
+                                if (!vImg || !vImg.startsWith("http")) continue;
+
+                                const vTitle = c.title || c.name || "Film VOD";
+                                const vDesc = c.desc || c.descrizione || c.overview || "Disponibile On Demand in streaming ad alta definizione.";
+                                const vId = c.tmdbId || String(c.id || "").replace(/^vod_(movie|tv)_/, "");
+                                const vType = c.vodType || (c.type === "tv" ? "tv" : "movie");
+                                const vHref = `/vod/info/${vId}?type=${vType}`;
+
+                                vodCandidates.push({
+                                    channelName: c.group || "Cinema On Demand",
+                                    category: "VOD",
+                                    progTitle: vTitle,
+                                    progDesc: vDesc,
+                                    progOraInizio: "",
+                                    progOraFine: "",
+                                    progImg: vImg,
+                                    targetHref: vHref,
+                                    channelObj: c,
+                                    logoUrl: "",
+                                    currentProg: { titolo: vTitle, descrizione: vDesc },
+                                    nextProg: null,
+                                    isVodItem: true
+                                });
+                                if (vodCandidates.length >= 6) break;
+                            }
+                            if (vodCandidates.length >= 6) break;
+                        }
+                    }
+                } catch(e) {}
+
+                let selected = [];
+                const numLiveAvailable = candidates.length;
+
+                if (numLiveAvailable === 0) {
+                    // Solo VOD: max 2 su 5
+                    selected = vodCandidates.slice(0, 2);
+                } else if (numLiveAvailable === 1) {
+                    // 1 live: 1 live e 1 VOD
+                    selected.push(candidates[0]);
+                    if (vodCandidates.length > 0) selected.push(vodCandidates[0]);
+                } else {
+                    // Gli eventi live hanno la precedenza
+                    const targetLiveCount = Math.min(numLiveAvailable, Math.max(2, 5 - Math.min(vodCandidates.length, 3)));
+                    selected.push(...candidates.slice(0, targetLiveCount));
+                    const remainingSlots = 5 - selected.length;
+                    if (remainingSlots > 0 && vodCandidates.length > 0) {
+                        const maxVodToAdd = Math.min(remainingSlots, Math.min(3, vodCandidates.length));
+                        selected.push(...vodCandidates.slice(0, maxVodToAdd));
+                    }
+                }
+
+                if (isMounted && selected.length > 0) {
+                    setHeroItems(selected);
                 }
             } catch (err) {
                 console.error("Mobile Hero load err:", err);
@@ -199,10 +271,17 @@ export default function MobileHomeHero({ categories = [] }) {
                     )}
 
                     <div className="mobile-hero-badges">
-                        <span className="mobile-live-tag">
-                            <span className="mobile-live-dot" />
-                            DIRETTA
-                        </span>
+                        {current.isVodItem ? (
+                            <span className="mobile-live-tag" style={{ background: "rgba(0, 229, 155, 0.2)", color: "#00e59b" }}>
+                                <span className="material-symbols-rounded" style={{ fontSize: "0.85rem", marginRight: "3px" }}>movie</span>
+                                ON DEMAND
+                            </span>
+                        ) : (
+                            <span className="mobile-live-tag">
+                                <span className="mobile-live-dot" />
+                                DIRETTA
+                            </span>
+                        )}
                         <span className="mobile-meta-dot">•</span>
                         <span className="mobile-cat-tag">{current.category}</span>
                     </div>
@@ -213,9 +292,9 @@ export default function MobileHomeHero({ categories = [] }) {
 
                 {/* Info Programmazione EPG */}
                 <div className="mobile-hero-epg-row">
-                    <span className="material-symbols-rounded mobile-epg-icon">schedule</span>
+                    <span className="material-symbols-rounded mobile-epg-icon">{current.isVodItem ? "play_circle" : "schedule"}</span>
                     <span className="mobile-epg-text">
-                        {current.progOraFine ? `Dalle ${current.progOraInizio} alle ${current.progOraFine}` : `Inizio ${current.progOraInizio}`}
+                        {current.isVodItem ? "Disponibile subito" : (current.progOraFine ? `Dalle ${current.progOraInizio} alle ${current.progOraFine}` : `Inizio ${current.progOraInizio}`)}
                     </span>
                 </div>
 
@@ -280,12 +359,14 @@ export default function MobileHomeHero({ categories = [] }) {
                         </div>
                         <div className="mobile-sheet-body">
                             <div className="mobile-sheet-prog-item active">
-                                <span className="mobile-sheet-badge">In Onda</span>
-                                <div className="mobile-sheet-time">{current.progOraInizio} - {current.progOraFine || "Fine"}</div>
+                                <span className="mobile-sheet-badge">{current.isVodItem ? "On Demand" : "In Onda"}</span>
+                                <div className="mobile-sheet-time">
+                                    {current.isVodItem ? "Disponibile subito in streaming" : `${current.progOraInizio} - ${current.progOraFine || "Fine"}`}
+                                </div>
                                 <div className="mobile-sheet-title">{current.progTitle}</div>
                                 {current.progDesc && <p className="mobile-sheet-desc">{current.progDesc}</p>}
                             </div>
-                            {current.nextProg && (
+                            {!current.isVodItem && current.nextProg && (
                                 <div className="mobile-sheet-prog-item next">
                                     <span className="mobile-sheet-badge secondary">Successivo</span>
                                     <div className="mobile-sheet-time">{current.nextProg.ora}</div>
@@ -303,7 +384,7 @@ export default function MobileHomeHero({ categories = [] }) {
                                 onClick={() => setIsInfoOpen(false)}
                             >
                                 <span className="material-symbols-rounded">play_arrow</span>
-                                <span>Guarda la diretta</span>
+                                <span>{current.isVodItem ? "Guarda film" : "Guarda la diretta"}</span>
                             </Link>
                         </div>
                     </div>
