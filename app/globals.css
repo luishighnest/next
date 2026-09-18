@@ -8557,95 +8557,93 @@ body:has(.sky-app) {
     100% { transform: scale(0.95); opacity: 0.8; }
 }
 
-.gtv-category-pills {
+/* Category Links in Stile Navbar (senza contenitore o box capsule) */
+.gtv-category-nav {
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 16px;
+    margin-left: 6px;
 }
 
-.gtv-cat-pill {
-    padding: 6px 14px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+.gtv-nav-item {
+    background: transparent;
+    border: none;
+    padding: 8px 4px;
+    font-size: 0.84rem;
+    font-weight: 600;
     color: rgba(255, 255, 255, 0.65);
-    font-size: 0.78rem;
-    font-weight: 700;
     cursor: pointer;
-    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
-    white-space: nowrap;
-}
-
-.gtv-cat-pill:hover {
-    background: rgba(255, 255, 255, 0.09);
-    color: #ffffff;
-}
-
-.gtv-cat-pill.active {
-    background: #ffffff;
-    border-color: #ffffff;
-    color: #000000;
-    font-weight: 800;
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
-}
-
-/* Day selector */
-.gtv-days-track {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 4px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.gtv-day-btn {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 52px;
-    height: 42px;
-    padding: 0 8px;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    background: transparent;
-    color: rgba(255, 255, 255, 0.6);
-    cursor: pointer;
-    transition: all 0.15s ease;
+    transition: color 0.18s ease;
+    white-space: nowrap;
+    text-decoration: none;
+    letter-spacing: 0.01em;
 }
 
-.gtv-day-btn:hover {
-    background: rgba(255, 255, 255, 0.08);
+.gtv-nav-item:hover {
     color: #ffffff;
 }
 
-.gtv-day-btn.selected {
-    background: rgba(255, 255, 255, 0.15);
-    border-color: rgba(255, 255, 255, 0.25);
-    color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.gtv-day-btn.is-today .gtv-day-lbl {
-    color: #ff4d5a;
-    font-weight: 800;
-}
-
-.gtv-day-lbl {
-    font-size: 0.64rem;
+.gtv-nav-item.active {
+    color: #00e59b;
     font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 1;
-    margin-bottom: 2px;
-    text-transform: uppercase;
 }
 
-.gtv-day-n {
-    font-size: 0.85rem;
+.gtv-nav-active-bar {
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    right: 0;
+    height: 2.5px;
+    background: #00e59b;
+    border-radius: 999px;
+    box-shadow: 0 0 10px rgba(0, 229, 155, 0.8);
+    animation: gtv-nav-line 0.2s ease forwards;
+}
+
+@keyframes gtv-nav-line {
+    from { transform: scaleX(0); opacity: 0; }
+    to { transform: scaleX(1); opacity: 1; }
+}
+
+/* Day indicator - SOLO OGGI */
+.gtv-day-single-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.78rem;
     font-weight: 800;
-    line-height: 1;
+    color: #ffffff;
+    user-select: none;
+    letter-spacing: 0.05em;
+}
+
+.gtv-day-single-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ff4d5a;
+    box-shadow: 0 0 8px #ff4d5a;
+    animation: gtv-pulse 1.8s infinite;
+}
+
+.gtv-day-single-lbl {
+    color: #ff4d5a;
+    font-weight: 900;
+}
+
+.gtv-day-single-date {
+    color: rgba(255, 255, 255, 0.85);
+    font-variant-numeric: tabular-nums;
+    padding-left: 2px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 /* Topbar Right: Search, Clock, Close */
@@ -9015,23 +9013,26 @@ body:has(.sky-app) {
 
 /* CHANNEL HERO CARD */
 .gtv-channel-hero {
-    background: linear-gradient(135deg, #121520 0%, #0c0e14 100%);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, #131622 0%, #0a0c12 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 16px;
-    padding: 24px;
+    padding: 22px 24px;
     position: relative;
-    overflow: hidden;
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.65);
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .gtv-hero-bg-accent {
     position: absolute;
     top: -60px;
     right: -60px;
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(circle, rgba(229, 9, 20, 0.15) 0%, transparent 70%);
+    width: 280px;
+    height: 280px;
+    background: radial-gradient(circle, rgba(229, 9, 20, 0.18) 0%, transparent 70%);
     pointer-events: none;
+    z-index: 1;
 }
 
 .gtv-hero-content {
@@ -9039,7 +9040,8 @@ body:has(.sky-app) {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
+    width: 100%;
 }
 
 .gtv-hero-header {
@@ -9047,6 +9049,7 @@ body:has(.sky-app) {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .gtv-hero-brand-group {
@@ -9058,13 +9061,14 @@ body:has(.sky-app) {
 .gtv-hero-logo-box {
     width: 90px;
     height: 52px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 6px;
+    flex-shrink: 0;
 }
 
 .gtv-hero-logo {
@@ -9115,8 +9119,8 @@ body:has(.sky-app) {
 }
 
 .gtv-live-dot-pulse {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: #e50914;
     box-shadow: 0 0 6px #e50914;
@@ -9124,7 +9128,7 @@ body:has(.sky-app) {
 }
 
 .gtv-hero-channel-name {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     font-weight: 800;
     color: #ffffff;
     margin: 0;
@@ -9145,6 +9149,7 @@ body:has(.sky-app) {
     cursor: pointer;
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     box-shadow: 0 6px 24px rgba(229, 9, 20, 0.45);
+    flex-shrink: 0;
 }
 
 .gtv-hero-play-btn span {
@@ -9159,44 +9164,107 @@ body:has(.sky-app) {
 
 /* Program Focus Card */
 .gtv-hero-program-card {
-    background: rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #ff4d5a;
     border-radius: 12px;
-    padding: 18px 20px;
+    padding: 16px 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .gtv-hero-prog-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.gtv-hero-prog-badge-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gtv-hero-badge-live-now {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px;
+    background: rgba(229, 9, 20, 0.2);
+    border: 1px solid rgba(229, 9, 20, 0.4);
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: #ff4d5a;
+    letter-spacing: 0.05em;
+}
+
+.gtv-hero-badge-selected {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 10px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.04em;
+}
+
+.gtv-hero-badge-selected span.material-symbols-rounded {
+    font-size: 14px;
 }
 
 .gtv-prog-time-chip {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: #ff4d5a;
+    font-size: 0.84rem;
+    font-weight: 800;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 3px 10px;
+    border-radius: 6px;
     font-variant-numeric: tabular-nums;
 }
 
 .gtv-prog-time-chip span.material-symbols-rounded {
     font-size: 16px;
+    color: #ff4d5a;
 }
 
 .gtv-prog-day-label {
     font-size: 0.72rem;
-    font-weight: 700;
+    font-weight: 800;
     color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
+.gtv-hero-prog-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.gtv-hero-prog-main {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
 .gtv-hero-prog-title {
-    font-size: 1.18rem;
+    font-size: 1.25rem;
     font-weight: 800;
     color: #ffffff;
     margin: 0;
@@ -9204,8 +9272,8 @@ body:has(.sky-app) {
 }
 
 .gtv-hero-prog-desc {
-    font-size: 0.84rem;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.75);
     line-height: 1.5;
     margin: 0;
 }
@@ -9216,13 +9284,13 @@ body:has(.sky-app) {
 }
 
 .gtv-hero-thumbnail-box {
-    margin-top: 6px;
-    width: 100%;
-    max-width: 380px;
-    height: 180px;
+    width: 220px;
+    min-width: 220px;
+    height: 120px;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    flex-shrink: 0;
 }
 
 .gtv-hero-thumb {

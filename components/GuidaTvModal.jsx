@@ -108,23 +108,18 @@ export default function GuidaTvModal({ isOpen, onClose }) {
         return (h || 0) * 60 + (m || 0);
     }
 
-    // Nastro giorni: da -2 a +6
+    // Solo giorno "OGGI"
     const daysList = useMemo(() => {
-        const list = [];
         const today = new Date();
-        for (let i = -2; i <= 6; i++) {
-            const d = new Date();
-            d.setDate(today.getDate() + i);
-            const dayName = d.toLocaleDateString("it-IT", { weekday: "short" }).toUpperCase().replace(".", "");
-            const dayNum = String(d.getDate()).padStart(2, "0");
-            list.push({
-                offset: i,
-                label: i === 0 ? "OGGI" : dayName,
+        const dayNum = String(today.getDate()).padStart(2, "0");
+        return [
+            {
+                offset: 0,
+                label: "OGGI",
                 num: dayNum,
-                isToday: i === 0
-            });
-        }
-        return list;
+                isToday: true
+            }
+        ];
     }, []);
 
     // Categorie
@@ -135,7 +130,6 @@ export default function GuidaTvModal({ isOpen, onClose }) {
     // Trova programma in onda per un canale
     const getLiveProgram = useCallback((programmi) => {
         if (!programmi || programmi.length === 0) return null;
-        if (selectedDayOffset !== 0) return programmi[0] || null;
 
         for (let i = 0; i < programmi.length; i++) {
             const p = programmi[i];
@@ -158,7 +152,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
             }
         }
         return { program: programmi[0], index: 0, startMins: 0, endMins: 60 };
-    }, [currentMinutes, selectedDayOffset]);
+    }, [currentMinutes]);
 
     // Canali filtrati con calcolo immediato del programma in onda
     const filteredChannels = useMemo(() => {
@@ -177,7 +171,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                     liveProgram: liveInfo?.program || null,
                     liveIndex: liveInfo?.index ?? -1,
                     liveProgress: (() => {
-                        if (!liveInfo || selectedDayOffset !== 0) return 0;
+                        if (!liveInfo) return 0;
                         const total = liveInfo.endMins - liveInfo.startMins;
                         if (total <= 0) return 0;
                         const elapsed = currentMinutes - liveInfo.startMins;
@@ -185,7 +179,7 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                     })()
                 };
             });
-    }, [guideData, activeCategory, searchQuery, getLiveProgram, currentMinutes, selectedDayOffset]);
+    }, [guideData, activeCategory, searchQuery, getLiveProgram, currentMinutes]);
 
     // Sincronizza il canale selezionato se la lista cambia o se nullo
     useEffect(() => {
@@ -251,6 +245,13 @@ export default function GuidaTvModal({ isOpen, onClose }) {
 
     const currentChannelLogo = selectedChannel ? getChannelLogoUrl({ title: selectedChannel.canale }) : null;
     const currentChannelLive = selectedChannel ? getLiveProgram(selectedChannel.programmi) : null;
+    const displayedProgram = selectedProgram || currentChannelLive?.program || selectedChannel?.programmi?.[0] || null;
+    const isLiveDisplayed = Boolean(
+        currentChannelLive?.program &&
+        displayedProgram &&
+        displayedProgram.titolo === currentChannelLive.program.titolo &&
+        displayedProgram.ora === currentChannelLive.program.ora
+    );
 
     return (
         <div className="gtv-modal-overlay" onClick={onClose}>
@@ -264,40 +265,30 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                             <span>GUIDA TV EPG</span>
                         </div>
 
-                        {/* Category Pills */}
-                        <div className="gtv-category-pills">
+                        {/* Category Navbar Links (senza contenitore / pillole) */}
+                        <nav className="gtv-category-nav">
                             {categories.map((cat) => {
                                 const isActive = activeCategory === cat;
                                 return (
                                     <button
                                         key={cat}
                                         type="button"
-                                        className={`gtv-cat-pill ${isActive ? "active" : ""}`}
+                                        className={`gtv-nav-item ${isActive ? "active" : ""}`}
                                         onClick={() => setActiveCategory(cat)}
                                     >
-                                        {cat}
+                                        <span>{cat}</span>
+                                        {isActive && <span className="gtv-nav-active-bar" />}
                                     </button>
                                 );
                             })}
-                        </div>
+                        </nav>
                     </div>
 
-                    {/* Day selector */}
-                    <div className="gtv-days-track">
-                        {daysList.map((day) => {
-                            const isSelected = selectedDayOffset === day.offset;
-                            return (
-                                <button
-                                    key={day.offset}
-                                    type="button"
-                                    className={`gtv-day-btn ${isSelected ? "selected" : ""} ${day.isToday ? "is-today" : ""}`}
-                                    onClick={() => setSelectedDayOffset(day.offset)}
-                                >
-                                    <span className="gtv-day-lbl">{day.label}</span>
-                                    <span className="gtv-day-n">{day.num}</span>
-                                </button>
-                            );
-                        })}
+                    {/* Day selector - SOLO OGGI */}
+                    <div className="gtv-day-single-pill" title="Palinsesto di Oggi">
+                        <span className="gtv-day-single-dot"></span>
+                        <span className="gtv-day-single-lbl">OGGI</span>
+                        <span className="gtv-day-single-date">{daysList[0]?.num}</span>
                     </div>
 
                     {/* Right utilities: Search, Live Clock, Close */}
@@ -480,32 +471,44 @@ export default function GuidaTvModal({ isOpen, onClose }) {
                                             </button>
                                         </div>
 
-                                        {/* Program focus preview card */}
-                                        {selectedProgram && (
+                                        {/* Program focus preview card (Programma In Onda / Selezionato) */}
+                                        {displayedProgram && (
                                             <div className="gtv-hero-program-card">
                                                 <div className="gtv-hero-prog-header">
-                                                    <span className="gtv-prog-time-chip">
-                                                        <span className="material-symbols-rounded">schedule</span>
-                                                        <span>{selectedProgram.ora} {selectedProgram.fine ? `– ${selectedProgram.fine}` : ""}</span>
-                                                    </span>
-                                                    <span className="gtv-prog-day-label">
-                                                        {daysList.find(d => d.offset === selectedDayOffset)?.label || "Oggi"}
-                                                    </span>
+                                                    <div className="gtv-hero-prog-badge-group">
+                                                        <span className="gtv-prog-time-chip">
+                                                            <span className="material-symbols-rounded">schedule</span>
+                                                            <span>{displayedProgram.ora} {displayedProgram.fine ? `– ${displayedProgram.fine}` : ""}</span>
+                                                        </span>
+                                                        {isLiveDisplayed ? (
+                                                            <span className="gtv-hero-badge-live-now">
+                                                                <span className="gtv-live-dot-pulse"></span>
+                                                                <span>PROGRAMMA IN ONDA ORA</span>
+                                                            </span>
+                                                        ) : (
+                                                            <span className="gtv-hero-badge-selected">
+                                                                <span className="material-symbols-rounded">info</span>
+                                                                <span>PROGRAMMA SELEZIONATO</span>
+                                                            </span>
+                                                        )}
+                                                    </div>
+                                                    <span className="gtv-prog-day-label">OGGI</span>
                                                 </div>
 
-                                                <h3 className="gtv-hero-prog-title">{selectedProgram.titolo}</h3>
-
-                                                {selectedProgram.descrizione ? (
-                                                    <p className="gtv-hero-prog-desc">{selectedProgram.descrizione}</p>
-                                                ) : (
-                                                    <p className="gtv-hero-prog-desc gtv-placeholder-desc">Nessuna descrizione aggiuntiva fornita per questo programma.</p>
-                                                )}
-
-                                                {selectedProgram.immagine && (
-                                                    <div className="gtv-hero-thumbnail-box">
-                                                        <img src={selectedProgram.immagine} alt={selectedProgram.titolo} className="gtv-hero-thumb" />
+                                                <div className="gtv-hero-prog-body">
+                                                    <div className="gtv-hero-prog-main">
+                                                        <h3 className="gtv-hero-prog-title">{displayedProgram.titolo}</h3>
+                                                        <p className={`gtv-hero-prog-desc ${!displayedProgram.descrizione ? "gtv-placeholder-desc" : ""}`}>
+                                                            {displayedProgram.descrizione || "Nessuna descrizione aggiuntiva fornita per questo programma."}
+                                                        </p>
                                                     </div>
-                                                )}
+
+                                                    {displayedProgram.immagine && (
+                                                        <div className="gtv-hero-thumbnail-box">
+                                                            <img src={displayedProgram.immagine} alt={displayedProgram.titolo} className="gtv-hero-thumb" />
+                                                        </div>
+                                                    )}
+                                                </div>
                                             </div>
                                         )}
                                     </div>
