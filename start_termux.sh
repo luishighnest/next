@@ -1,15 +1,15 @@
-﻿#!/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
 
-echo "[1/3] Avvio server Next.js..."
-npm run dev -- -H 0.0.0.0 -p 3000 > /dev/null 2>&1 &
+echo "[1/3] Avvio server Next.js (production mode)..."
+npm run start -- -H 0.0.0.0 -p 3000 > /dev/null 2>&1 &
 PID_NEXT=$!
-sleep 5
+sleep 4
 
 echo "[2/3] Avvio Cloudflare Tunnel..."
 rm -f tunnel.log
-cloudflared tunnel --url http://localhost:3000 --logfile tunnel.log > /dev/null 2>&1 &
+cloudflared tunnel --url http://127.0.0.1:3000 --logfile tunnel.log > /dev/null 2>&1 &
 PID_TUNNEL=$!
 
 echo "[3/3] Attendo link Cloudflare..."

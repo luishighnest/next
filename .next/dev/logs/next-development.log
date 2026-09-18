@@ -1,0 +1,152 @@
+{"timestamp":"00:00:05.394","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:15.995","source":"Server","level":"WARN","message":"Errore lettura Redis stream:guida_date: SyntaxError: Unexpected non-whitespace character after JSON at position 2 (line 1 column 3)"}
+{"timestamp":"00:00:16.003","source":"Server","level":"LOG","message":"[Auto-Update Guida] Guida non aggiornata per oggi (null vs 16/09/2026). Avvio scraping in background..."}
+{"timestamp":"00:00:16.008","source":"Server","level":"LOG","message":"[00:54:08] Avvio aggiornamento Guida TV 24H per la data: 16/09/2026..."}
+{"timestamp":"00:00:16.011","source":"Server","level":"LOG","message":"[SKY-OFFICIAL] Avvio download palinsesto 24H per tutti i canali Sky direttamente da apid.sky.it..."}
+{"timestamp":"00:00:16.838","source":"Server","level":"LOG","message":"[SKY-OFFICIAL] Ricevuti in totale 1402 eventi ufficiali da Sky!"}
+{"timestamp":"00:00:16.866","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Uno            -> 20 programmi (20 copertine ufficiali Sky)"}
+{"timestamp":"00:00:16.910","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 24             -> 45 programmi (45 copertine ufficiali Sky)"}
+{"timestamp":"00:00:16.933","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Calcio         -> 22 programmi (22 copertine ufficiali Sky)"}
+{"timestamp":"00:00:16.944","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Tennis         -> 10 programmi (10 copertine ufficiali Sky)"}
+{"timestamp":"00:00:16.976","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport F1             -> 34 programmi (34 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.009","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport MotoGP         -> 34 programmi (34 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.033","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Arena          -> 23 programmi (23 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.052","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Max            -> 19 programmi (19 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.064","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Golf           -> 13 programmi (13 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.084","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Basket         -> 20 programmi (20 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.107","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Mix            -> 26 programmi (26 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.126","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport Legend         -> 17 programmi (17 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.144","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 4K             -> 16 programmi (16 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.147","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 251            -> 2 programmi (2 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.152","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 252            -> 2 programmi (2 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.157","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 253            -> 2 programmi (2 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.161","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 254            -> 2 programmi (2 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.162","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 255            -> 1 programmi (1 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.165","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 256            -> 1 programmi (1 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.166","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 257            -> 1 programmi (1 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.166","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 258            -> 1 programmi (1 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.167","source":"Server","level":"LOG","message":"[OK-SKY] Sky Sport 259            -> 1 programmi (1 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.190","source":"Server","level":"LOG","message":"[OK-SKY] Sky Uno                  -> 25 programmi (25 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.219","source":"Server","level":"LOG","message":"[OK-SKY] Sky Atlantic             -> 28 programmi (28 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.247","source":"Server","level":"LOG","message":"[OK-SKY] Sky Serie                -> 30 programmi (30 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.272","source":"Server","level":"LOG","message":"[OK-SKY] Sky Investigation        -> 27 programmi (27 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.295","source":"Server","level":"LOG","message":"[OK-SKY] Sky Documentaries        -> 24 programmi (24 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.346","source":"Server","level":"LOG","message":"[OK-SKY] Sky Nature               -> 28 programmi (28 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.373","source":"Server","level":"LOG","message":"[OK-SKY] Sky Crime                -> 27 programmi (27 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.433","source":"Server","level":"LOG","message":"[OK-SKY] Sky Arte                 -> 31 programmi (31 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.481","source":"Server","level":"LOG","message":"[OK-SKY] Sky Adventure            -> 32 programmi (32 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.580","source":"Server","level":"LOG","message":"[OK-SKY] Sky TG24                 -> 63 programmi (63 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.642","source":"Server","level":"LOG","message":"[OK-SKY] History Channel          -> 26 programmi (26 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.726","source":"Server","level":"LOG","message":"[OK-SKY] Comedy Central           -> 57 programmi (57 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.785","source":"Server","level":"LOG","message":"[OK-SKY] MTV                      -> 35 programmi (35 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.815","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Uno           -> 13 programmi (13 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.843","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Due           -> 11 programmi (11 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.852","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Stories       -> 11 programmi (11 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.865","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Collection    -> 11 programmi (11 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.877","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Family        -> 15 programmi (15 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.891","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Action        -> 11 programmi (11 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.904","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Suspense      -> 13 programmi (13 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.915","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Romance       -> 12 programmi (12 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.932","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Drama         -> 13 programmi (13 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.945","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Comedy        -> 15 programmi (15 copertine ufficiali Sky)"}
+{"timestamp":"00:00:17.957","source":"Server","level":"LOG","message":"[OK-SKY] Sky Cinema Uno +24       -> 12 programmi (12 copertine ufficiali Sky)"}
+{"timestamp":"00:00:18.075","source":"Server","level":"LOG","message":"[OK-SKY] Cartoon Network          -> 113 programmi (113 copertine ufficiali Sky)"}
+{"timestamp":"00:00:18.224","source":"Server","level":"LOG","message":"[OK-SKY] Boomerang                -> 120 programmi (120 copertine ufficiali Sky)"}
+{"timestamp":"00:00:18.333","source":"Server","level":"LOG","message":"[OK-SKY] DeAKids                  -> 93 programmi (93 copertine ufficiali Sky)"}
+{"timestamp":"00:00:18.435","source":"Server","level":"LOG","message":"[OK-SKY] Nickelodeon              -> 73 programmi (73 copertine ufficiali Sky)"}
+{"timestamp":"00:00:18.541","source":"Server","level":"LOG","message":"[OK-SKY] Nick Jr                  -> 73 programmi (73 copertine ufficiali Sky)"}
+{"timestamp":"00:00:18.644","source":"Server","level":"LOG","message":"[OK-SKY] Super!                   -> 62 programmi (62 copertine ufficiali Sky)"}
+{"timestamp":"00:00:18.645","source":"Server","level":"LOG","message":"[SKY-OFFICIAL] Scaricati 52 canali Sky ufficiali con copertine native 1080p!"}
+{"timestamp":"00:00:18.646","source":"Server","level":"LOG","message":"[DTT] Avvio scraping per 87 canali del Digitale Terrestre e canali terzi da guidatv.org..."}
+{"timestamp":"00:00:19.753","source":"Server","level":"LOG","message":"[OK-DTT] SuperTennis              -> 16 programmi (16 locandine HD)"}
+{"timestamp":"00:00:19.754","source":"Server","level":"LOG","message":"[OK-DTT] Sportitalia              -> 23 programmi (23 locandine HD)"}
+{"timestamp":"00:00:19.756","source":"Server","level":"LOG","message":"[OK-DTT] Rai Sport                -> 15 programmi (15 locandine HD)"}
+{"timestamp":"00:00:19.757","source":"Server","level":"LOG","message":"[OK-DTT] Rai Sport + HD           -> 15 programmi (15 locandine HD)"}
+{"timestamp":"00:00:19.758","source":"Server","level":"LOG","message":"[OK-DTT] Sky Uno +                -> 25 programmi (25 locandine HD)"}
+{"timestamp":"00:00:19.758","source":"Server","level":"LOG","message":"[OK-DTT] Sky Uno +1               -> 25 programmi (25 locandine HD)"}
+{"timestamp":"00:00:20.430","source":"Server","level":"LOG","message":"[--DTT] Sky Collection           -> Non disponibile"}
+{"timestamp":"00:00:20.431","source":"Server","level":"LOG","message":"[OK-DTT] Sky TG 24                -> 63 programmi (63 locandine HD)"}
+{"timestamp":"00:00:20.431","source":"Server","level":"LOG","message":"[OK-DTT] History                  -> 28 programmi (28 locandine HD)"}
+{"timestamp":"00:00:20.432","source":"Server","level":"LOG","message":"[OK-DTT] Sky History              -> 28 programmi (28 locandine HD)"}
+{"timestamp":"00:00:20.433","source":"Server","level":"LOG","message":"[OK-DTT] Sky Comedy Central       -> 56 programmi (56 locandine HD)"}
+{"timestamp":"00:00:20.433","source":"Server","level":"LOG","message":"[--DTT] Sky Mtv                  -> Non disponibile"}
+{"timestamp":"00:00:22.229","source":"Server","level":"LOG","message":"[OK-DTT] Nick Jr.                 -> 73 programmi (73 locandine HD)"}
+{"timestamp":"00:00:22.230","source":"Server","level":"LOG","message":"[OK-DTT] K2                       -> 78 programmi (78 locandine HD)"}
+{"timestamp":"00:00:22.231","source":"Server","level":"LOG","message":"[OK-DTT] Frisbee                  -> 87 programmi (87 locandine HD)"}
+{"timestamp":"00:00:22.231","source":"Server","level":"LOG","message":"[OK-DTT] Rai Yoyo                 -> 171 programmi (171 locandine HD)"}
+{"timestamp":"00:00:22.232","source":"Server","level":"LOG","message":"[OK-DTT] Rai yoyo                 -> 171 programmi (171 locandine HD)"}
+{"timestamp":"00:00:22.232","source":"Server","level":"LOG","message":"[OK-DTT] Rai Gulp                 -> 83 programmi (83 locandine HD)"}
+{"timestamp":"00:00:23.118","source":"Server","level":"LOG","message":"[OK-DTT] Rai Gulp HD              -> 83 programmi (83 locandine HD)"}
+{"timestamp":"00:00:23.118","source":"Server","level":"LOG","message":"[OK-DTT] Rai 1                    -> 29 programmi (29 locandine HD)"}
+{"timestamp":"00:00:23.119","source":"Server","level":"LOG","message":"[OK-DTT] Rai 1 HD                 -> 29 programmi (29 locandine HD)"}
+{"timestamp":"00:00:23.119","source":"Server","level":"LOG","message":"[OK-DTT] Rai 2                    -> 35 programmi (35 locandine HD)"}
+{"timestamp":"00:00:23.120","source":"Server","level":"LOG","message":"[OK-DTT] Rai 2 HD                 -> 35 programmi (35 locandine HD)"}
+{"timestamp":"00:00:23.120","source":"Server","level":"LOG","message":"[OK-DTT] Rai 3                    -> 33 programmi (33 locandine HD)"}
+{"timestamp":"00:00:24.040","source":"Server","level":"LOG","message":"[OK-DTT] Rai 3 HD                 -> 33 programmi (33 locandine HD)"}
+{"timestamp":"00:00:24.041","source":"Server","level":"LOG","message":"[OK-DTT] Rete 4                   -> 24 programmi (24 locandine HD)"}
+{"timestamp":"00:00:24.042","source":"Server","level":"LOG","message":"[OK-DTT] Rete 4 HD                -> 24 programmi (24 locandine HD)"}
+{"timestamp":"00:00:24.042","source":"Server","level":"LOG","message":"[OK-DTT] Canale 5                 -> 30 programmi (30 locandine HD)"}
+{"timestamp":"00:00:24.043","source":"Server","level":"LOG","message":"[OK-DTT] Canale 5 HD              -> 30 programmi (30 locandine HD)"}
+{"timestamp":"00:00:24.043","source":"Server","level":"LOG","message":"[OK-DTT] Italia 1                 -> 30 programmi (30 locandine HD)"}
+{"timestamp":"00:00:24.658","source":"Server","level":"LOG","message":"[OK-DTT] Italia 1 HD              -> 30 programmi (30 locandine HD)"}
+{"timestamp":"00:00:24.659","source":"Server","level":"LOG","message":"[OK-DTT] LA7                      -> 16 programmi (16 locandine HD)"}
+{"timestamp":"00:00:24.659","source":"Server","level":"LOG","message":"[OK-DTT] La 7 HD                  -> 16 programmi (16 locandine HD)"}
+{"timestamp":"00:00:24.660","source":"Server","level":"LOG","message":"[OK-DTT] LA7d                     -> 16 programmi (16 locandine HD)"}
+{"timestamp":"00:00:24.660","source":"Server","level":"LOG","message":"[OK-DTT] LA7d HD                  -> 16 programmi (16 locandine HD)"}
+{"timestamp":"00:00:24.661","source":"Server","level":"LOG","message":"[OK-DTT] La 7d HD                 -> 16 programmi (16 locandine HD)"}
+{"timestamp":"00:00:25.996","source":"Server","level":"LOG","message":"[OK-DTT] TV8                      -> 26 programmi (26 locandine HD)"}
+{"timestamp":"00:00:25.997","source":"Server","level":"LOG","message":"[OK-DTT] Nove                     -> 24 programmi (24 locandine HD)"}
+{"timestamp":"00:00:25.998","source":"Server","level":"LOG","message":"[OK-DTT] NOVE                     -> 24 programmi (24 locandine HD)"}
+{"timestamp":"00:00:25.998","source":"Server","level":"LOG","message":"[OK-DTT] 20 Mediaset              -> 29 programmi (29 locandine HD)"}
+{"timestamp":"00:00:25.999","source":"Server","level":"LOG","message":"[OK-DTT] Mediaset 20              -> 29 programmi (29 locandine HD)"}
+{"timestamp":"00:00:25.999","source":"Server","level":"LOG","message":"[OK-DTT] Rai 4                    -> 29 programmi (29 locandine HD)"}
+{"timestamp":"00:00:26.676","source":"Server","level":"LOG","message":"[OK-DTT] Rai 4 HD                 -> 29 programmi (29 locandine HD)"}
+{"timestamp":"00:00:26.677","source":"Server","level":"LOG","message":"[OK-DTT] Iris                     -> 14 programmi (14 locandine HD)"}
+{"timestamp":"00:00:26.677","source":"Server","level":"LOG","message":"[OK-DTT] IRIS HD                  -> 14 programmi (14 locandine HD)"}
+{"timestamp":"00:00:26.677","source":"Server","level":"LOG","message":"[OK-DTT] Rai 5                    -> 29 programmi (29 locandine HD)"}
+{"timestamp":"00:00:26.678","source":"Server","level":"LOG","message":"[OK-DTT] Rai Movie                -> 14 programmi (14 locandine HD)"}
+{"timestamp":"00:00:26.679","source":"Server","level":"LOG","message":"[OK-DTT] Rai Movie HD             -> 14 programmi (14 locandine HD)"}
+{"timestamp":"00:00:27.385","source":"Server","level":"LOG","message":"[OK-DTT] Rai Premium              -> 25 programmi (25 locandine HD)"}
+{"timestamp":"00:00:27.386","source":"Server","level":"LOG","message":"[OK-DTT] TwentySeven              -> 24 programmi (24 locandine HD)"}
+{"timestamp":"00:00:27.389","source":"Server","level":"LOG","message":"[OK-DTT] 27 TwentySeven           -> 24 programmi (24 locandine HD)"}
+{"timestamp":"00:00:27.390","source":"Server","level":"LOG","message":"[OK-DTT] La5                      -> 23 programmi (23 locandine HD)"}
+{"timestamp":"00:00:27.390","source":"Server","level":"LOG","message":"[OK-DTT] La 5 HD                  -> 23 programmi (23 locandine HD)"}
+{"timestamp":"00:00:27.393","source":"Server","level":"LOG","message":"[OK-DTT] Mediaset Extra           -> 23 programmi (23 locandine HD)"}
+{"timestamp":"00:00:28.082","source":"Server","level":"LOG","message":"[OK-DTT] Mediaset Extra HD        -> 23 programmi (23 locandine HD)"}
+{"timestamp":"00:00:28.082","source":"Server","level":"LOG","message":"[OK-DTT] Focus                    -> 26 programmi (26 locandine HD)"}
+{"timestamp":"00:00:28.083","source":"Server","level":"LOG","message":"[OK-DTT] Focus HD                 -> 26 programmi (26 locandine HD)"}
+{"timestamp":"00:00:28.083","source":"Server","level":"LOG","message":"[OK-DTT] Top Crime                -> 28 programmi (28 locandine HD)"}
+{"timestamp":"00:00:28.083","source":"Server","level":"LOG","message":"[--DTT] Cine34 HD                -> Non disponibile"}
+{"timestamp":"00:00:28.084","source":"Server","level":"LOG","message":"[OK-DTT] Italia 2                 -> 47 programmi (47 locandine HD)"}
+{"timestamp":"00:00:29.251","source":"Server","level":"LOG","message":"[OK-DTT] Italia 2 HD              -> 47 programmi (47 locandine HD)"}
+{"timestamp":"00:00:29.252","source":"Server","level":"LOG","message":"[OK-DTT] TGCOM24                  -> 46 programmi (46 locandine HD)"}
+{"timestamp":"00:00:29.252","source":"Server","level":"LOG","message":"[OK-DTT] Rai News                 -> 98 programmi (98 locandine HD)"}
+{"timestamp":"00:00:29.253","source":"Server","level":"LOG","message":"[OK-DTT] Rai News 24              -> 98 programmi (98 locandine HD)"}
+{"timestamp":"00:00:29.253","source":"Server","level":"LOG","message":"[OK-DTT] Rai News 24 HD           -> 98 programmi (98 locandine HD)"}
+{"timestamp":"00:00:29.256","source":"Server","level":"LOG","message":"[OK-DTT] Rai Storia               -> 42 programmi (42 locandine HD)"}
+{"timestamp":"00:00:29.999","source":"Server","level":"LOG","message":"[OK-DTT] Rai Storia HD            -> 42 programmi (42 locandine HD)"}
+{"timestamp":"00:00:29.999","source":"Server","level":"LOG","message":"[OK-DTT] Rai Scuola               -> 35 programmi (35 locandine HD)"}
+{"timestamp":"00:00:30.000","source":"Server","level":"LOG","message":"[OK-DTT] Rai Scuola HD            -> 35 programmi (35 locandine HD)"}
+{"timestamp":"00:00:30.001","source":"Server","level":"LOG","message":"[OK-DTT] Motor Trend              -> 22 programmi (22 locandine HD)"}
+{"timestamp":"00:00:30.001","source":"Server","level":"LOG","message":"[OK-DTT] Motor Trend HD           -> 22 programmi (22 locandine HD)"}
+{"timestamp":"00:00:30.007","source":"Server","level":"LOG","message":"[OK-DTT] Giallo                   -> 18 programmi (18 locandine HD)"}
+{"timestamp":"00:00:30.544","source":"Server","level":"LOG","message":"[OK-DTT] GIALLO HD                -> 18 programmi (18 locandine HD)"}
+{"timestamp":"00:00:30.545","source":"Server","level":"LOG","message":"[OK-DTT] HGTV                     -> 33 programmi (33 locandine HD)"}
+{"timestamp":"00:00:30.548","source":"Server","level":"LOG","message":"[OK-DTT] HGTV Italia HD           -> 33 programmi (33 locandine HD)"}
+{"timestamp":"00:00:30.549","source":"Server","level":"LOG","message":"[--DTT] Food Network             -> Non disponibile"}
+{"timestamp":"00:00:30.549","source":"Server","level":"LOG","message":"[--DTT] Food Network HD          -> Non disponibile"}
+{"timestamp":"00:00:30.550","source":"Server","level":"LOG","message":"[OK-DTT] Real Time                -> 22 programmi (22 locandine HD)"}
+{"timestamp":"00:00:31.129","source":"Server","level":"LOG","message":"[OK-DTT] Real Time HD             -> 22 programmi (22 locandine HD)"}
+{"timestamp":"00:00:31.130","source":"Server","level":"LOG","message":"[OK-DTT] DMAX                     -> 23 programmi (23 locandine HD)"}
+{"timestamp":"00:00:31.131","source":"Server","level":"LOG","message":"[OK-DTT] DMAX HD                  -> 23 programmi (23 locandine HD)"}
+{"timestamp":"00:00:31.132","source":"Server","level":"LOG","message":"[OK-DTT] Cielo                    -> 28 programmi (28 locandine HD)"}
+{"timestamp":"00:00:31.133","source":"Server","level":"LOG","message":"[OK-DTT] DeeJay TV HD             -> 12 programmi (12 locandine HD)"}
+{"timestamp":"00:00:31.133","source":"Server","level":"LOG","message":"[OK-DTT] RSI La1                  -> 35 programmi (35 locandine HD)"}
+{"timestamp":"00:00:31.563","source":"Server","level":"LOG","message":"[OK-DTT] RSI LA 1 HD              -> 35 programmi (35 locandine HD)"}
+{"timestamp":"00:00:31.564","source":"Server","level":"LOG","message":"[OK-DTT] RSI La2                  -> 32 programmi (32 locandine HD)"}
+{"timestamp":"00:00:31.564","source":"Server","level":"LOG","message":"[OK-DTT] RSI LA 2 HD              -> 32 programmi (32 locandine HD)"}
+{"timestamp":"00:00:33.414","source":"Server","level":"LOG","message":"\n[OK] Guida TV 24H salvata con successo in: C:\\Users\\alecl\\Desktop\\next\\public\\guida_tv_sky.json"}
+{"timestamp":"00:00:33.415","source":"Server","level":"LOG","message":"Sincronizzazione Guida TV su Upstash Redis Cloud..."}
+{"timestamp":"00:00:36.740","source":"Server","level":"LOG","message":"[OK] Guida TV sincronizzata su Upstash Redis Cloud!"}
+{"timestamp":"00:00:37.490","source":"Server","level":"LOG","message":"[OK] Totale canali uniti in Redis: 132 (nuovi: 134)"}
+{"timestamp":"00:00:37.492","source":"Server","level":"LOG","message":"[Auto-Update Guida] Scraping background completato con successo: {}"}
