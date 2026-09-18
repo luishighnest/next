@@ -191,17 +191,53 @@ export default function HomeHero({ categories = [] }) {
                     }
                 }
 
-                // Shuffle pool test.json
-                const liveTestPool = [...testJsonLive];
-                const vodTestPool = [...testJsonVod];
-                for (let i = liveTestPool.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [liveTestPool[i], liveTestPool[j]] = [liveTestPool[j], liveTestPool[i]];
+                // Helper per riconoscere eventi / vod prioritari: Liga, Serie A, Serie B
+                function isPriorityLeague(item) {
+                    const str = `${item.channelName} ${item.progTitle} ${item.progDesc} ${item.channelObj?.group || ""}`.toLowerCase();
+                    // Match accurato per Liga, Serie A e Serie B
+                    const hasLiga = /\bliga\b|\blaliga\b/i.test(str);
+                    const hasSerieA = /\bserie\s*a\b/i.test(str);
+                    const hasSerieB = /\bserie\s*b\b/i.test(str);
+                    return hasLiga || hasSerieA || hasSerieB;
                 }
-                for (let i = vodTestPool.length - 1; i > 0; i--) {
+
+                // Suddivisione testJsonLive in Prioritari (Liga, Serie A, Serie B) e Altri
+                const livePriority = [];
+                const liveOther = [];
+                testJsonLive.forEach(item => {
+                    if (isPriorityLeague(item)) livePriority.push(item);
+                    else liveOther.push(item);
+                });
+
+                // Shuffle sia prioritari che altri per renderli SEMPRE interscambiabili ad ogni ricarica del sito
+                for (let i = livePriority.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [vodTestPool[i], vodTestPool[j]] = [vodTestPool[j], vodTestPool[i]];
+                    [livePriority[i], livePriority[j]] = [livePriority[j], livePriority[i]];
                 }
+                for (let i = liveOther.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [liveOther[i], liveOther[j]] = [liveOther[j], liveOther[i]];
+                }
+
+                // Pool live ordinato: prima SEMPRE la precedenza a Liga, Serie A e Serie B, poi gli altri
+                const liveTestPool = [...livePriority, ...liveOther];
+
+                // Suddivisione testJsonVod in Prioritari e Altri
+                const vodPriority = [];
+                const vodOther = [];
+                testJsonVod.forEach(item => {
+                    if (isPriorityLeague(item)) vodPriority.push(item);
+                    else vodOther.push(item);
+                });
+                for (let i = vodPriority.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [vodPriority[i], vodPriority[j]] = [vodPriority[j], vodPriority[i]];
+                }
+                for (let i = vodOther.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [vodOther[i], vodOther[j]] = [vodOther[j], vodOther[i]];
+                }
+                const vodTestPool = [...vodPriority, ...vodOther];
 
                 // 2. Caricamento Guida TV Sky per i canali Sky Live (NO CINEMA)
                 let guideData = null;
@@ -347,17 +383,18 @@ export default function HomeHero({ categories = [] }) {
 
                 // 3. Regole di selezione esatte (totale 5 contenuti):
                 // Regole test.json:
-                // - Se 2 eventi live: tutti e due in hero (SOLO 2 su 5, + 3 Sky)
-                // - Se 3 eventi live: 3 in hero (SOLO 3 su 5, + 2 Sky)
-                // - Se 4 o più eventi live: MASSIMO 3 di test.json in hero (+ 2 Sky)
-                // - Se 1 evento live: 1 live + 1 VOD (se c'è, max 2 su 5, + 3 Sky)
-                // - Se 0 eventi live: massimo 2 VOD (+ 3 Sky)
+                // - Precedenza assoluta agli eventi/vod di: Liga, Serie A, Serie B (interscambiabili ad ogni ricarica se piu di 1)
+                // - Se ci sono 2 eventi live: tutti e due in hero (SOLO 2 su 5, + 3 Sky)
+                // - Se ci sono 3 eventi live: 3 in hero (SOLO 3 su 5, + 2 Sky)
+                // - Se ci sono 4 o più eventi live: MASSIMO 3 di test.json in hero (+ 2 Sky)
+                // - Se c'è 1 evento live: 1 live + 1 VOD (se presente, max 2 su 5, + 3 Sky)
+                // - Se ci sono 0 eventi live: massimo 2 VOD (dando precedenza a Liga, Serie A e Serie B, + 3 Sky)
                 // I contenuti di test.json devono essere SEMPRE i primi 2 o 3 dei 5!
                 const numLiveTest = liveTestPool.length;
                 let selectedTest = [];
 
                 if (numLiveTest >= 4) {
-                    // 4 o più eventi live: MASSIMO 3 di test.json
+                    // 4 o più eventi live: MASSIMO 3 di test.json (con precedenza a Liga, Serie A, Serie B)
                     selectedTest = liveTestPool.slice(0, 3);
                 } else if (numLiveTest === 3) {
                     // Se ci sono 3 eventi: 3 solo 3 su 5
@@ -366,13 +403,13 @@ export default function HomeHero({ categories = [] }) {
                     // Se ci sono 2 eventi: tutti e due in hero ma SOLO 2 su 5
                     selectedTest = liveTestPool.slice(0, 2);
                 } else if (numLiveTest === 1) {
-                    // 1 evento live: 1 live + 1 VOD (se disponibile)
+                    // 1 evento live: 1 live + 1 VOD (se disponibile, con precedenza campionati)
                     selectedTest.push(liveTestPool[0]);
                     if (vodTestPool.length > 0) {
                         selectedTest.push(vodTestPool[0]);
                     }
                 } else {
-                    // 0 live: massimo 2 VOD
+                    // 0 live: massimo 2 VOD (con precedenza campionati)
                     selectedTest.push(...vodTestPool.slice(0, 2));
                 }
 

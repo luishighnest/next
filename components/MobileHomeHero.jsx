@@ -88,17 +88,49 @@ export default function MobileHomeHero({ categories = [] }) {
                     }
                 }
 
-                // Shuffle pool test.json
-                const liveTestPool = [...testJsonLive];
-                const vodTestPool = [...testJsonVod];
-                for (let i = liveTestPool.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [liveTestPool[i], liveTestPool[j]] = [liveTestPool[j], liveTestPool[i]];
+                // Helper per riconoscere eventi / vod prioritari: Liga, Serie A, Serie B
+                function isPriorityLeague(item) {
+                    const str = `${item.channelName} ${item.progTitle} ${item.progDesc} ${item.channelObj?.group || ""}`.toLowerCase();
+                    const hasLiga = /\bliga\b|\blaliga\b/i.test(str);
+                    const hasSerieA = /\bserie\s*a\b/i.test(str);
+                    const hasSerieB = /\bserie\s*b\b/i.test(str);
+                    return hasLiga || hasSerieA || hasSerieB;
                 }
-                for (let i = vodTestPool.length - 1; i > 0; i--) {
+
+                // Suddivisione testJsonLive in Prioritari (Liga, Serie A, Serie B) e Altri
+                const livePriority = [];
+                const liveOther = [];
+                testJsonLive.forEach(item => {
+                    if (isPriorityLeague(item)) livePriority.push(item);
+                    else liveOther.push(item);
+                });
+
+                for (let i = livePriority.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
-                    [vodTestPool[i], vodTestPool[j]] = [vodTestPool[j], vodTestPool[i]];
+                    [livePriority[i], livePriority[j]] = [livePriority[j], livePriority[i]];
                 }
+                for (let i = liveOther.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [liveOther[i], liveOther[j]] = [liveOther[j], liveOther[i]];
+                }
+                const liveTestPool = [...livePriority, ...liveOther];
+
+                // Suddivisione testJsonVod in Prioritari e Altri
+                const vodPriority = [];
+                const vodOther = [];
+                testJsonVod.forEach(item => {
+                    if (isPriorityLeague(item)) vodPriority.push(item);
+                    else vodOther.push(item);
+                });
+                for (let i = vodPriority.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [vodPriority[i], vodPriority[j]] = [vodPriority[j], vodPriority[i]];
+                }
+                for (let i = vodOther.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [vodOther[i], vodOther[j]] = [vodOther[j], vodOther[i]];
+                }
+                const vodTestPool = [...vodPriority, ...vodOther];
 
                 // 2. Caricamento Guida TV Sky per canali Sky Live
                 let guideData = null;
