@@ -63,6 +63,8 @@ function HomeViewContent({ defaultTab = "all" }) {
     const [subFilter, setSubFilter] = useState(() => {
         return searchParams.get("sub") || "all";
     });
+    const [eventiLiveSubFilter, setEventiLiveSubFilter] = useState("all");
+    const [eventiVodSubFilter, setEventiVodSubFilter] = useState("all");
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -428,6 +430,83 @@ function HomeViewContent({ defaultTab = "all" }) {
         return normSec === normSub || normSec.includes(normSub) || normSub.includes(normSec);
     };
 
+    // Helper per determinare se un canale evento è VOD/Replay
+    const isChannelVod = (c) => {
+        return Boolean(
+            c?.isEventVod ||
+            (c?.tile_type && (c.tile_type.toLowerCase() === "catchup" || c.tile_type.toLowerCase() === "ondemand")) ||
+            (c?.group && c.group.toLowerCase().includes("vod"))
+        );
+    };
+
+    // Estrazione sezioni e categorie separate per tab EVENTI (LIVE sopra, VOD sotto)
+    const { eventiLiveSections, eventiVodSections, eventiLiveSubCategories, eventiVodSubCategories } = React.useMemo(() => {
+        if (filter !== "eventi") {
+            return { eventiLiveSections: [], eventiVodSections: [], eventiLiveSubCategories: [], eventiVodSubCategories: [] };
+        }
+
+        const rawEventSecs = categories.filter(sec => shouldShowGroup(sec, "eventi"));
+        const q = deferredSearch.trim().toLowerCase();
+
+        const liveSecs = [];
+        const vodSecs = [];
+
+        rawEventSecs.forEach(sec => {
+            let chs = sec.channels || [];
+            if (q) {
+                chs = chs.filter(c => matchesChannel(c, q));
+            }
+            const liveChs = chs.filter(c => !isChannelVod(c));
+            const vodChs = chs.filter(c => isChannelVod(c));
+
+            if (liveChs.length > 0) {
+                liveSecs.push({
+                    ...sec,
+                    channels: liveChs
+                });
+            }
+            if (vodChs.length > 0) {
+                vodSecs.push({
+                    ...sec,
+                    channels: vodChs
+                });
+            }
+        });
+
+        // Categorie / chips disponibili per LIVE
+        const liveChips = liveSecs.map(sec => ({
+            id: sec.title.toLowerCase().trim(),
+            label: sec.title,
+            count: sec.channels.length
+        }));
+
+        // Categorie / chips disponibili per VOD
+        const vodChips = vodSecs.map(sec => ({
+            id: sec.title.toLowerCase().trim(),
+            label: sec.title,
+            count: sec.channels.length
+        }));
+
+        return {
+            eventiLiveSections: liveSecs,
+            eventiVodSections: vodSecs,
+            eventiLiveSubCategories: liveChips,
+            eventiVodSubCategories: vodChips
+        };
+    }, [categories, filter, deferredSearch]);
+
+    // Sezioni filtrate LIVE per Eventi
+    const filteredEventiLiveSections = React.useMemo(() => {
+        if (filter !== "eventi") return [];
+        return eventiLiveSections.filter(sec => shouldShowSubCategory(sec, eventiLiveSubFilter));
+    }, [eventiLiveSections, filter, eventiLiveSubFilter]);
+
+    // Sezioni filtrate VOD per Eventi
+    const filteredEventiVodSections = React.useMemo(() => {
+        if (filter !== "eventi") return [];
+        return eventiVodSections.filter(sec => shouldShowSubCategory(sec, eventiVodSubFilter));
+    }, [eventiVodSections, filter, eventiVodSubFilter]);
+
     const filteredSections = categories
         .filter(sec => shouldShowGroup(sec, filter))
         .filter(sec => shouldShowSubCategory(sec, subFilter))
@@ -448,6 +527,14 @@ function HomeViewContent({ defaultTab = "all" }) {
                 onFilterChange={handleFilterChange}
                 subFilter={subFilter}
                 onSubFilterChange={handleSelectSubFilter}
+                eventiLiveSubFilter={eventiLiveSubFilter}
+                onEventiLiveSubFilterChange={setEventiLiveSubFilter}
+                eventiVodSubFilter={eventiVodSubFilter}
+                onEventiVodSubFilterChange={setEventiVodSubFilter}
+                eventiLiveSections={filteredEventiLiveSections}
+                eventiVodSections={filteredEventiVodSections}
+                eventiLiveSubCategories={eventiLiveSubCategories}
+                eventiVodSubCategories={eventiVodSubCategories}
                 categories={categories}
                 loading={loading}
                 dynamicSubCategories={dynamicSubCategories}
@@ -483,7 +570,7 @@ function HomeViewContent({ defaultTab = "all" }) {
             )}
 
             <main className={`home-content ${!isSearchOpen && !isClosingSearch && filter === "all" ? "has-hero" : ""}`}>
-                {!isSearchOpen && !isClosingSearch && filter !== "all" && currentSubCategories.length > 0 && (
+                {!isSearchOpen && !isClosingSearch && filter !== "all" && filter !== "eventi" && currentSubCategories.length > 0 && (
                     <SubCategoryChips
                         items={currentSubCategories}
                         activeSubFilter={subFilter}
@@ -504,6 +591,118 @@ function HomeViewContent({ defaultTab = "all" }) {
                             <SkeletonSection cardCount={6} />
                             <SkeletonSection cardCount={6} />
                             <SkeletonSection cardCount={6} />
+                        </div>
+                    ) : filter === "eventi" ? (
+                        /* =======================================================
+                           SEPARAZIONE COMPLETA: EVENTI LIVE (SOPRA) & VOD (SOTTO)
+                           ======================================================= */
+                        <div className="eventi-split-container" style={{ width: "100%" }}>
+                            {/* --- BLOCCO 1: EVENTI LIVE (DIRETTA) --- */}
+                            <section className="eventi-block live-block">
+                                <div className="eventi-block-header">
+                                    <div className="eventi-block-title-group">
+                                        <span className="eventi-block-badge live">
+                                            <span className="eventi-live-pulse-dot"></span>
+                                            DIRETTA LIVE
+                                        </span>
+                                        <h2 className="eventi-block-title">Eventi in Diretta</h2>
+                                    </div>
+                                </div>
+
+                                {/* Barra Categorie Esclusiva per LIVE */}
+                                {eventiLiveSubCategories.length > 0 && (
+                                    <div style={{ marginBottom: "20px" }}>
+                                        <SubCategoryChips
+                                            items={eventiLiveSubCategories}
+                                            activeSubFilter={eventiLiveSubFilter}
+                                            onSelectSubFilter={(id) => setEventiLiveSubFilter(id)}
+                                            allLabel="Tutti i Live"
+                                        />
+                                    </div>
+                                )}
+
+                                {filteredEventiLiveSections.length === 0 ? (
+                                    <div className="empty-subfilter-state" style={{ textAlign: "center", padding: "40px 20px", color: "rgba(255,255,255,0.4)" }}>
+                                        <span className="material-symbols-rounded" style={{ fontSize: "2.4rem", marginBottom: "8px", opacity: 0.7 }}>live_tv</span>
+                                        <h3 style={{ fontSize: "1.05rem", color: "#fff", fontWeight: 600 }}>Nessun evento Live disponibile per questa selezione</h3>
+                                        {eventiLiveSubFilter !== "all" && (
+                                            <button
+                                                type="button"
+                                                onClick={() => setEventiLiveSubFilter("all")}
+                                                style={{ marginTop: "12px", padding: "6px 16px", borderRadius: "999px", background: "rgba(239,68,68,0.12)", border: "1px solid rgba(239,68,68,0.4)", color: "#ef4444", fontWeight: 600, cursor: "pointer", fontSize: "0.85rem" }}
+                                            >
+                                                Mostra tutti i live
+                                            </button>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <div className="home-sections-grid">
+                                        {filteredEventiLiveSections.map(sec => (
+                                            <CarouselSection
+                                                key={`live_${sec.title}`}
+                                                title={sec.title}
+                                                channels={sec.channels}
+                                                onExplore={(title, chs) => setExploreData({ title: `${title} (Live)`, channels: chs })}
+                                            />
+                                        ))}
+                                    </div>
+                                )}
+                            </section>
+
+                            {/* Separatore visivo pulito ed elegante */}
+                            <div className="eventi-block-divider"></div>
+
+                            {/* --- BLOCCO 2: REPLAY & ON DEMAND (VOD) --- */}
+                            <section className="eventi-block vod-block">
+                                <div className="eventi-block-header">
+                                    <div className="eventi-block-title-group">
+                                        <span className="eventi-block-badge vod">
+                                            <i className="fas fa-rotate-left" style={{ fontSize: "0.75rem" }}></i>
+                                            REPLAY & VOD
+                                        </span>
+                                        <h2 className="eventi-block-title">Eventi On Demand & Replay</h2>
+                                    </div>
+                                </div>
+
+                                {/* Barra Categorie Esclusiva per VOD */}
+                                {eventiVodSubCategories.length > 0 && (
+                                    <div style={{ marginBottom: "20px" }}>
+                                        <SubCategoryChips
+                                            items={eventiVodSubCategories}
+                                            activeSubFilter={eventiVodSubFilter}
+                                            onSelectSubFilter={(id) => setEventiVodSubFilter(id)}
+                                            allLabel="Tutti i Replay"
+                                        />
+                                    </div>
+                                )}
+
+                                {filteredEventiVodSections.length === 0 ? (
+                                    <div className="empty-subfilter-state" style={{ textAlign: "center", padding: "40px 20px", color: "rgba(255,255,255,0.4)" }}>
+                                        <span className="material-symbols-rounded" style={{ fontSize: "2.4rem", marginBottom: "8px", opacity: 0.7 }}>replay</span>
+                                        <h3 style={{ fontSize: "1.05rem", color: "#fff", fontWeight: 600 }}>Nessun evento On Demand disponibile per questa selezione</h3>
+                                        {eventiVodSubFilter !== "all" && (
+                                            <button
+                                                type="button"
+                                                onClick={() => setEventiVodSubFilter("all")}
+                                                style={{ marginTop: "12px", padding: "6px 16px", borderRadius: "999px", background: "rgba(0,229,155,0.12)", border: "1px solid rgba(0,229,155,0.4)", color: "#00e59b", fontWeight: 600, cursor: "pointer", fontSize: "0.85rem" }}
+                                            >
+                                                Mostra tutti i replay
+                                            </button>
+                                        )}
+                                    </div>
+                                ) : (
+                                    <div className="home-sections-grid">
+                                        {filteredEventiVodSections.map(sec => (
+                                            <CarouselSection
+                                                key={`vod_${sec.title}`}
+                                                title={sec.title}
+                                                channels={sec.channels}
+                                                onExplore={(title, chs) => setExploreData({ title: `${title} (Replay)`, channels: chs })}
+                                            />
+                                        ))}
+                                    </div>
+                                )}
+                            </section>
                         </div>
                     ) : (
                         filteredSections.length === 0 ? (
