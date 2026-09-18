@@ -579,32 +579,42 @@ export default function HomeHero({ categories = [] }) {
                                     zIndex: isActive ? 5 : 1
                                 }}
                             >
-                                {/* 1. Sopratitolo Categoria: gerarchia chiara sopra il logo */}
+                                {/* 1. Sopratitolo Categoria */}
                                 <div className="now-hero-brand-top">
                                     {item.category && (
                                         <span className="now-hero-category-tag">{item.category}</span>
                                     )}
                                 </div>
 
-                                {/* 2. Logo del Canale ben integrato */}
-                                <div className="now-hero-logo-row">
+                                {/* 2. Logo a sinistra e Titolo Programma sullo stesso livello (non sopra), senza "..." e senza andare a capo */}
+                                <div className="now-hero-title-row flex items-center gap-4 mb-3 w-max max-w-none">
                                     {item.logoUrl ? (
                                         <img
                                             src={item.logoUrl}
                                             alt={item.channelName}
-                                            className="now-hero-channel-badge-logo"
+                                            className="now-hero-channel-badge-logo h-10 md:h-12 w-auto max-w-[170px] object-contain flex-shrink-0"
                                             loading="eager"
                                             decoding="async"
                                         />
                                     ) : (
-                                        <span className="now-hero-channel-label">{item.channelName}</span>
+                                        <span className="now-hero-channel-label flex-shrink-0">{item.channelName}</span>
                                     )}
-                                </div>
 
-                                {/* 3. Titolo Principale Programma: Protagonista subito sotto il logo canale */}
-                                <h1 className="now-hero-heading whitespace-nowrap overflow-hidden text-ellipsis truncate" title={item.progTitle}>
-                                    {item.progTitle}
-                                </h1>
+                                    <h1 
+                                        className="now-hero-heading" 
+                                        style={{ 
+                                            whiteSpace: "nowrap", 
+                                            overflow: "visible", 
+                                            textOverflow: "clip", 
+                                            margin: 0,
+                                            width: "auto",
+                                            maxWidth: "none"
+                                        }}
+                                        title={item.progTitle}
+                                    >
+                                        {item.progTitle}
+                                    </h1>
+                                </div>
 
                                  {/* 4. Riga Metadati & Orario: [DIRETTA] o [ON DEMAND] + Orario + Timeline + spec tecniche */}
                                 <div className="now-hero-meta-row">

@@ -11038,21 +11038,20 @@ body:has(.sky-app) {
     border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-/* 2. Titolo Programma: Editorial, 2.65rem, bold, riga singola forzata con ellipsis, mb 12px */
+/* 2. Titolo Programma: Editorial, 2.65rem, bold, riga singola senza '...' per intero verso destra */
 .now-hero-heading {
     font-size: 2.65rem;
     font-weight: 800;
     line-height: 1.15;
-    height: 3.1rem;
     color: #ffffff;
     letter-spacing: -0.025em;
     text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0 0 14px 0;
-    width: 100%;
-    max-width: 100%;
+    overflow: visible;
+    text-overflow: clip;
+    margin: 0;
+    width: auto;
+    max-width: none;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Inter", "Segoe UI", Roboto, sans-serif;
 }
@@ -11884,15 +11883,14 @@ body:has(.sky-app) {
 }
 
 .mobile-hero-title {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
     font-weight: 800;
     line-height: 1.15;
     color: #ffffff;
-    margin: 2px 0;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    margin: 0;
+    white-space: nowrap;
+    overflow: visible;
+    text-overflow: clip;
     letter-spacing: -0.02em;
 }
 

@@ -294,19 +294,8 @@ export default function MobileHomeHero({ categories = [] }) {
 
             {/* Contenuto Touch-Friendly */}
             <div className="mobile-hero-content">
-                {/* Brand & Meta */}
+                {/* Badges Categoria & Diretta / On Demand */}
                 <div className="mobile-hero-top-row">
-                    {current.logoUrl ? (
-                        <img
-                            src={current.logoUrl}
-                            alt={current.channelName}
-                            className="mobile-hero-logo"
-                            loading="eager"
-                        />
-                    ) : (
-                        <span className="mobile-hero-ch-badge">{current.channelName}</span>
-                    )}
-
                     <div className="mobile-hero-badges">
                         {current.isVodItem ? (
                             <span className="mobile-live-tag" style={{ background: "rgba(0, 229, 155, 0.2)", color: "#00e59b" }}>
@@ -324,8 +313,34 @@ export default function MobileHomeHero({ categories = [] }) {
                     </div>
                 </div>
 
-                {/* Titolo Principale */}
-                <h1 className="mobile-hero-title">{current.progTitle}</h1>
+                {/* Riga con Logo a sinistra e Titolo sullo stesso livello (non sopra), senza '...' per intero verso destra */}
+                <div className="mobile-hero-title-row flex items-center gap-3 overflow-x-auto no-scrollbar py-1" style={{ width: "100%", scrollbarWidth: "none" }}>
+                    {current.logoUrl ? (
+                        <img
+                            src={current.logoUrl}
+                            alt={current.channelName}
+                            className="mobile-hero-logo flex-shrink-0"
+                            style={{ height: "30px", width: "auto", maxWidth: "90px", objectFit: "contain" }}
+                            loading="eager"
+                        />
+                    ) : (
+                        <span className="mobile-hero-ch-badge flex-shrink-0">{current.channelName}</span>
+                    )}
+
+                    <h1 
+                        className="mobile-hero-title"
+                        style={{
+                            whiteSpace: "nowrap",
+                            overflow: "visible",
+                            textOverflow: "clip",
+                            display: "inline-block",
+                            margin: 0,
+                            flexShrink: 0
+                        }}
+                    >
+                        {current.progTitle}
+                    </h1>
+                </div>
 
                 {/* Info Programmazione EPG */}
                 <div className="mobile-hero-epg-row">
