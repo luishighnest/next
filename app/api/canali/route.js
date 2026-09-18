@@ -275,6 +275,9 @@ export async function GET(request) {
                     if (cleanTitle.toUpperCase().replace(/\s+/g, "") === "DAZN") {
                         cleanTitle = "DAZN 1";
                     }
+                    if (cleanTitle.toUpperCase().replace(/\s+/g, "") === "EUROSPORT") {
+                        cleanTitle = "Eurosport 1";
+                    }
 
                     let timeStr = "";
                     const isDazn1 = cleanTitle.toUpperCase().replace(/\s+/g, "").includes("DAZN1") || (ev.end && ev.end.startsWith("3000"));
