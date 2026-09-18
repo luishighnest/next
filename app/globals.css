@@ -11008,22 +11008,27 @@ body:has(.sky-app) {
     border-radius: 6px;
 }
 
-/* 2. Logo del Canale: rimane unico in fila dedicata sotto la categoria */
-.now-hero-logo-row {
-    display: flex;
-    align-items: center;
-    height: 34px;
-    width: 100%;
-    margin-bottom: 14px;
+/* 2. Logo a sinistra e Titolo Programma sullo stesso livello (riga orizzontale) */
+.now-hero-title-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 16px !important;
+    margin-bottom: 14px !important;
+    width: max-content !important;
+    max-width: none !important;
 }
 
 .now-hero-channel-badge-logo {
-    height: 32px;
-    width: auto;
-    max-width: 160px;
-    object-fit: contain;
-    object-position: left center;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.75));
+    height: 42px !important;
+    width: auto !important;
+    max-width: 160px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.75)) !important;
+    flex-shrink: 0 !important;
+    display: block !important;
+    margin: 0 !important;
 }
 
 .now-hero-channel-label {
@@ -11038,7 +11043,7 @@ body:has(.sky-app) {
     border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
-/* 2. Titolo Programma: Editorial, 2.65rem, bold, riga singola senza '...' per intero verso destra */
+/* Titolo Programma: riga singola senza '...' per intero verso destra sullo stesso livello del logo */
 .now-hero-heading {
     font-size: 2.65rem;
     font-weight: 800;
@@ -11046,13 +11051,14 @@ body:has(.sky-app) {
     color: #ffffff;
     letter-spacing: -0.025em;
     text-shadow: 0 2px 14px rgba(0, 0, 0, 0.8);
-    white-space: nowrap;
-    overflow: visible;
-    text-overflow: clip;
-    margin: 0;
-    width: auto;
-    max-width: none;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    margin: 0 !important;
+    width: auto !important;
+    max-width: none !important;
     box-sizing: border-box;
+    display: inline-block !important;
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Outfit", "Inter", "Segoe UI", Roboto, sans-serif;
 }
 

@@ -98,7 +98,7 @@ const DEFAULT_HERO_ITEMS = [];
 function getInitialHeroItems() {
     if (typeof window === "undefined") return DEFAULT_HERO_ITEMS;
     try {
-        const stored = sessionStorage.getItem("nmdz_hero_items_v7") || localStorage.getItem("nmdz_hero_items_v7");
+        const stored = sessionStorage.getItem("nmdz_hero_items_v8") || localStorage.getItem("nmdz_hero_items_v8");
         if (stored) {
             const parsed = JSON.parse(stored);
             if (Array.isArray(parsed) && parsed.length > 0) return parsed;
@@ -437,8 +437,8 @@ export default function HomeHero({ categories = [] }) {
 
                 // Salva nella cache persistente
                 try {
-                    sessionStorage.setItem("nmdz_hero_items_v7", JSON.stringify(final5));
-                    localStorage.setItem("nmdz_hero_items_v7", JSON.stringify(final5));
+                    sessionStorage.setItem("nmdz_hero_items_v8", JSON.stringify(final5));
+                    localStorage.setItem("nmdz_hero_items_v8", JSON.stringify(final5));
                 } catch (e) {}
 
                 setHeroItems(final5);
@@ -632,17 +632,37 @@ export default function HomeHero({ categories = [] }) {
                                 </div>
 
                                 {/* 2. Logo a sinistra e Titolo Programma sullo stesso livello (non sopra), senza "..." e senza andare a capo */}
-                                <div className="now-hero-title-row flex items-center gap-4 mb-3 w-max max-w-none">
+                                <div 
+                                    className="now-hero-title-row flex items-center gap-4 mb-3 w-max max-w-none"
+                                    style={{
+                                        display: "flex",
+                                        flexDirection: "row",
+                                        alignItems: "center",
+                                        gap: "16px",
+                                        marginBottom: "14px",
+                                        width: "max-content",
+                                        maxWidth: "none"
+                                    }}
+                                >
                                     {item.logoUrl ? (
                                         <img
                                             src={item.logoUrl}
                                             alt={item.channelName}
                                             className="now-hero-channel-badge-logo h-10 md:h-12 w-auto max-w-[170px] object-contain flex-shrink-0"
+                                            style={{
+                                                height: "42px",
+                                                width: "auto",
+                                                maxWidth: "160px",
+                                                objectFit: "contain",
+                                                flexShrink: 0,
+                                                margin: 0,
+                                                display: "block"
+                                            }}
                                             loading="eager"
                                             decoding="async"
                                         />
                                     ) : (
-                                        <span className="now-hero-channel-label flex-shrink-0">{item.channelName}</span>
+                                        <span className="now-hero-channel-label flex-shrink-0" style={{ flexShrink: 0, margin: 0 }}>{item.channelName}</span>
                                     )}
 
                                     <h1 
