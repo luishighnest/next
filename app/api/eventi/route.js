@@ -106,35 +106,96 @@ export async function POST(request) {
 
         const evName = (newEvent.name || newEvent.title).trim();
         const evUrl = (newEvent.mpd || newEvent.url || "").trim();
+        const evKey = (newEvent.key || newEvent.kid_key || "").trim();
 
-        // Controlla se esiste già un evento identico (stesso titolo e stesso url) per aggiornarlo
-        const existingIdx = eventi[category].findIndex(e => {
-            const eName = (e.name || e.title || "").trim();
-            const eUrl = (e.mpd || e.url || "").trim();
-            return (eName === evName && eUrl === evUrl) || (eName === evName && e.isWarp === newEvent.isWarp);
-        });
+        // Normalizzazione avanzata per il confronto del titolo
+        const normalizeEv = (s) => {
+            if (!s) return "";
+            return s.toLowerCase()
+                .replace(/[\(\[\{].*?[\)\]\}]/g, " ")
+                .replace(/\s*\(WARP\)\s*/gi, " ")
+                .replace(/\s*\(HLS\)\s*/gi, " ")
+                .replace(/\s*\(\d+\)\s*$/g, " ")
+                .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+                .replace(/[^a-z0-9]/g, "")
+                .trim();
+        };
+
+        const targetNorm = normalizeEv(evName);
+
+        // Cerca se esiste un evento corrispondente nella categoria richiesta o in qualsiasi categoria
+        let targetCat = category;
+        let existingIdx = -1;
+
+        // 1. Cerca prima nella categoria specificata
+        if (Array.isArray(eventi[category])) {
+            existingIdx = eventi[category].findIndex(e => {
+                const eName = (e.name || e.title || "").trim();
+                const eNorm = normalizeEv(eName);
+                if (targetNorm && eNorm === targetNorm) return true;
+                const eUrl = (e.mpd || e.url || "").trim();
+                return (eName === evName && eUrl === evUrl) || (eName === evName);
+            });
+        }
+
+        // 2. Se non trovato nella categoria, cerca in tutte le altre categorie di eventi
+        if (existingIdx === -1) {
+            for (const cat of Object.keys(eventi)) {
+                if (cat === category || !Array.isArray(eventi[cat])) continue;
+                const idx = eventi[cat].findIndex(e => {
+                    const eName = (e.name || e.title || "").trim();
+                    const eNorm = normalizeEv(eName);
+                    return Boolean(targetNorm && eNorm === targetNorm);
+                });
+                if (idx !== -1) {
+                    targetCat = cat;
+                    existingIdx = idx;
+                    break;
+                }
+            }
+        }
+
+        const existingEvent = (existingIdx !== -1 && eventi[targetCat]) ? eventi[targetCat][existingIdx] : null;
+
+        const isVodDetected = Boolean(
+            newEvent.is_vod ||
+            (newEvent.type && newEvent.type.toLowerCase() === "vod") ||
+            (newEvent.tile_type && (newEvent.tile_type.toLowerCase() === "catchup" || newEvent.tile_type.toLowerCase() === "ondemand" || newEvent.tile_type.toLowerCase() === "vod")) ||
+            (targetCat && targetCat.toLowerCase().includes("vod")) ||
+            (evUrl && (evUrl.includes("-vod.") || evUrl.includes("/vod/"))) ||
+            (existingEvent && (existingEvent.is_vod || (existingEvent.type && existingEvent.type.toLowerCase() === "vod") || (existingEvent.tile_type && existingEvent.tile_type.toLowerCase() === "catchup")))
+        );
 
         const entryToSave = {
             name: evName,
             title: evName,
-            mpd: newEvent.mpd || newEvent.url || "",
-            url: newEvent.mpd || newEvent.url || "",
-            key: newEvent.key || newEvent.kid_key || "",
-            kid_key: newEvent.key || newEvent.kid_key || "",
-            image: newEvent.image || "",
-            start: newEvent.start || "",
-            end: newEvent.end || "",
-            ora: newEvent.ora || "",
-            ua: newEvent.ua || "",
-            dazn_token: newEvent.dazn_token || "",
-            type: newEvent.type || "evento",
-            provider: newEvent.provider || "DAZN",
+            mpd: evUrl || existingEvent?.mpd || existingEvent?.url || "",
+            url: evUrl || existingEvent?.mpd || existingEvent?.url || "",
+            key: evKey || existingEvent?.key || existingEvent?.kid_key || "",
+            kid_key: evKey || existingEvent?.key || existingEvent?.kid_key || "",
+            image: newEvent.image || existingEvent?.image || "",
+            start: newEvent.start || existingEvent?.start || "",
+            end: newEvent.end || existingEvent?.end || "",
+            ora: newEvent.ora || existingEvent?.ora || "",
+            ua: newEvent.ua || existingEvent?.ua || "",
+            dazn_token: newEvent.dazn_token || existingEvent?.dazn_token || "",
+            type: isVodDetected ? "vod" : (newEvent.type || existingEvent?.type || "evento"),
+            is_vod: isVodDetected,
+            tile_type: isVodDetected ? "CatchUp" : (newEvent.tile_type || existingEvent?.tile_type || "Live"),
+            provider: newEvent.provider || existingEvent?.provider || "DAZN",
             slug: createSlug(evName)
         };
 
-        if (existingIdx !== -1) {
-            eventi[category][existingIdx] = entryToSave;
+        if (existingIdx !== -1 && eventi[targetCat]) {
+            // Aggiorna l'evento esistente completando i parametri reali
+            eventi[targetCat][existingIdx] = {
+                ...existingEvent,
+                ...entryToSave
+            };
         } else {
+            if (!Array.isArray(eventi[category])) {
+                eventi[category] = [];
+            }
             eventi[category].push(entryToSave);
         }
 
