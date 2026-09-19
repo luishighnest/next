@@ -117,13 +117,13 @@
       },
       {
         "ora": "13:35",
-        "fine": "14:30",
+        "fine": "14:50",
         "titolo": "GP Austria: Qualifiche",
         "descrizione": "Quindicesimo appuntamento del mondiale 2026: al Red Bull Ring, in Austria, si accendono i motori per le qualifiche della Moto2. Telecronaca Triolo-Pasini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c7ab5292-d77e-44fa-8c76-e481cb8c3e76/background/600"
       },
       {
-        "ora": "14:30",
+        "ora": "14:50",
         "fine": "14:55",
         "titolo": "Austria",
         "descrizione": "... Live Sprint. - Le ultime notizie e le interviste prima della gara Sprint attraverso il racconto degli inviati e dei telecronisti di Sky Sport MotoGP.",
@@ -647,27 +647,27 @@
       },
       {
         "ora": "13:25",
-        "fine": "15:30",
+        "fine": "15:45",
         "titolo": "Tottenham - Aston Villa",
         "descrizione": "... Premier League. - Il Tottenham di De Zerbi cerca la prima vittoria e il primo gol della stagione contro l'Aston Villa, sconfitto in tre nelle prime quattro uscite. Telecronaca di Federico Zancan",
         "immagine": "https://img-guidatv.org/partite/premierleague.jpeg"
       },
       {
-        "ora": "15:30",
-        "fine": "15:40",
+        "ora": "15:45",
+        "fine": "15:55",
         "titolo": "Milan - Benfica",
         "descrizione": "Rossoneri imbattuti nei 6 precedenti con 4 vittorie (comprese le 2 finali vinte di Coppa dei Campioni nel 1963 e 1960) e 2 pareggi entrambi in Portogallo. TC: Borghi-Montolivo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b64c0217-ae46-4149-98e2-a90f46399464/background/600"
       },
       {
         "ora": "15:55",
-        "fine": "17:55",
+        "fine": "18:05",
         "titolo": "Brighton - Arsenal",
         "descrizione": "... League. - Reduci da un successo rispettivamente contro Coventry e Sunderland. Gunners a punteggio pieno. Imbattuti nelle ultime 6 gare a Brighton, 4 vittorie e 2 pari. TC: Massimo Marianella",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/de2e232b-0974-4a5a-848d-b9e3f4033a3c/background/600"
       },
       {
-        "ora": "17:55",
+        "ora": "18:05",
         "fine": "20:00",
         "titolo": "Finale: Juventus - Roma",
         "descrizione": "Juventus in finale dopo l'1-0 all'Inter, Roma dopo il 7-1 al Sassuolo. A Viareggio si replica la finale del 2025 quando la Juve si aggiudico' la coppa battendo 3-2 le giallorosse",
@@ -840,7 +840,7 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:00",
+        "ora": "00:05",
         "fine": "02:15",
         "titolo": "Milwaukee Mile 250",
         "descrizione": "secondo appuntamento consecutivo con lo spettacolo dell'ovale e con la fatica di monoposto e piloti",
@@ -953,48 +953,41 @@
       },
       {
         "ora": "14:45",
-        "fine": "15:45",
+        "fine": "15:55",
         "titolo": "Zandvoort: Gara 1",
         "descrizione": "... Challenge Europe powered by AWS. - Dal Circuito di Zandvoort, Paesi Bassi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2619ba6a-05aa-4300-85b3-15db546cb4f6/background/600"
       },
       {
-        "ora": "15:45",
-        "fine": "16:30",
+        "ora": "15:55",
+        "fine": "16:50",
         "titolo": "Inside The Team - Un Gp con Kimi",
         "descrizione": "Inside The Team - Un Gp con Kimi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/59bb332e-1c30-4f19-bc9b-dd78dabec831/background/600"
       },
       {
-        "ora": "16:30",
-        "fine": "16:45",
-        "titolo": "Speciale F1 21/05/2026 - Ep. 42 - Speciale F1 21/05/2026",
-        "descrizione": "... Powertrains. - Nel 2026 la Red Bull ha esordito, in partnership con Ford, come motorista: alla scoperta del lavoro di ricerca e di sviluppo della Power Unit di Milton Keynes con Mara Sangiorgio.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d78eab7f-9d9c-404a-837b-a79043cd3199/background/600"
-      },
-      {
-        "ora": "16:45",
-        "fine": "17:00",
+        "ora": "16:50",
+        "fine": "17:10",
         "titolo": "Crazy Race",
         "descrizione": "Crazy Race",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4ceafeef-905d-4d80-8229-f4e57d0b9746/background/600"
       },
       {
-        "ora": "17:00",
-        "fine": "18:00",
+        "ora": "17:10",
+        "fine": "18:10",
         "titolo": "GP Austria: Gara",
         "descrizione": "Ottava gara del mondiale in casa della Red Bull. Antonelli guida la classifica con 41 punti su Hamilton e 50 su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aeb0c188-4fd2-426a-8e68-9e4bcfb5e666/background/600"
       },
       {
-        "ora": "18:00",
-        "fine": "20:15",
+        "ora": "18:10",
+        "fine": "20:20",
         "titolo": "Milwaukee Mile 250",
         "descrizione": "secondo appuntamento consecutivo con lo spettacolo dell'ovale e con la fatica di monoposto e piloti",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2c0c167c-efa4-4611-afdf-02eb6be1eae7/background/600"
       },
       {
-        "ora": "20:15",
+        "ora": "20:20",
         "fine": "20:30",
         "titolo": "Il nuovo Max",
         "descrizione": "Il nuovo Max",
@@ -1009,20 +1002,20 @@
       },
       {
         "ora": "20:45",
-        "fine": "21:00",
+        "fine": "21:05",
         "titolo": "Fil Rouge",
         "descrizione": "Fil Rouge",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/55b7c0a8-f9f9-4b86-944e-eacd7f2c3582/background/600"
       },
       {
-        "ora": "21:00",
-        "fine": "22:00",
+        "ora": "21:05",
+        "fine": "22:05",
         "titolo": "GP Barcellona: Gara",
         "descrizione": "A Barcellona settima gara del mondiale: tutti a caccia di Kimi Antonelli, dominatore del mondiale e reduce da 5 vittorie consecutive. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d68f1756-5674-47cf-8987-1c9ee2e5bfc2/background/600"
       },
       {
-        "ora": "22:00",
+        "ora": "22:05",
         "fine": "22:30",
         "titolo": "Discover Kimi",
         "descrizione": "Alle origini del nuovo talento italiano della F1: in questo episodio il percorso di Antonelli nella massima categoria. Gli alti e bassi dell'anno da rookie, prima della definitiva esplosione del 2026.",
@@ -1044,7 +1037,7 @@
       },
       {
         "ora": "23:05",
-        "fine": "00:00",
+        "fine": "00:05",
         "titolo": "GP Madrid: Gara",
         "descrizione": "Prima storica gara sul nuovo circuito di Madrid. Antonelli comanda la classifica con 66 punti su Russell, Ferrari in cerca di riscatto. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1373d8e8-2a1a-42d3-9a24-0df14c528af8/background/600"
@@ -1211,13 +1204,13 @@
       },
       {
         "ora": "13:35",
-        "fine": "14:30",
+        "fine": "14:50",
         "titolo": "GP Austria: Qualifiche",
         "descrizione": "Quindicesimo appuntamento del mondiale 2026: al Red Bull Ring, in Austria, si accendono i motori per le qualifiche della Moto2. Telecronaca Triolo-Pasini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c7ab5292-d77e-44fa-8c76-e481cb8c3e76/background/600"
       },
       {
-        "ora": "14:30",
+        "ora": "14:50",
         "fine": "14:55",
         "titolo": "Austria",
         "descrizione": "... Live Sprint. - Le ultime notizie e le interviste prima della gara Sprint attraverso il racconto degli inviati e dei telecronisti di Sky Sport MotoGP.",
@@ -1379,9 +1372,9 @@
       {
         "ora": "08:30",
         "fine": "09:15",
-        "titolo": "Sky Tennis Club 2026 Ep.8 15/09/2026",
+        "titolo": "Non annunciato",
         "descrizione": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
-        "immagine": "https://img-guidatv.org/7507/sky-tennis-club/6.jpg"
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
         "ora": "09:15",
@@ -1566,24 +1559,17 @@
       },
       {
         "ora": "15:30",
-        "fine": "17:00",
+        "fine": "17:20",
         "titolo": "Ginevra: Giorno 1",
         "descrizione": "Le gare del SailGP.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8d96cbda-e35b-4835-bbc8-3f165f611aa7/background/600"
       },
       {
-        "ora": "17:00",
-        "fine": "18:00",
+        "ora": "17:20",
+        "fine": "18:25",
         "titolo": "Zandvoort: Gara 1",
         "descrizione": "... Europe powered by AWS. - Dal Circuito di Zandvoort, Paesi Bassi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2619ba6a-05aa-4300-85b3-15db546cb4f6/background/600"
-      },
-      {
-        "ora": "18:00",
-        "fine": "18:25",
-        "titolo": "Sky Tennis Club 2026 Ep.8 15/09/2026",
-        "descrizione": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
-        "immagine": "https://img-guidatv.org/8693/sky-tennis-club/5.jpg"
       },
       {
         "ora": "18:25",
@@ -1670,13 +1656,13 @@
       },
       {
         "ora": "10:00",
-        "fine": "18:30",
+        "fine": "18:45",
         "titolo": "BMW PGA Championship: Giorno 3",
         "descrizione": "... Giorno 3 Golf: DP World Tour. - Dal Wentworth Club di Virginia Water, Inghilterra.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/29758890-9ad4-4e6b-b9f9-1f6917092c45/background/600"
       },
       {
-        "ora": "18:30",
+        "ora": "18:45",
         "fine": "19:00",
         "titolo": "English Challenge",
         "descrizione": "Il meglio dell'azione del Challenge Tour Series.",
@@ -1733,20 +1719,20 @@
       {
         "ora": "01:30",
         "fine": "03:30",
-        "titolo": "Finale 1°/2° Posto",
-        "descrizione": "Le partite dell'Eurolega Supercup di basket.",
+        "titolo": "Olympiacos - Real Madrid",
+        "descrizione": "... Supercup. - La nuovissima Supercup vede la sua prima finale ripetere la partita che ha assegnato l'ultimo titolo. L'Olympiacos, campione in carica, sfida il nuovo Real di coach Martinez. TC: Solaini-Pessina.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2305cdc3-5f19-450b-ba78-b523a46df99f/background/600"
       },
       {
         "ora": "03:30",
         "fine": "05:30",
-        "titolo": "Finale 3°/4° Posto",
-        "descrizione": "Le partite dell'Eurolega Supercup di basket.",
+        "titolo": "Dubai Basketball - Fenerbahce",
+        "descrizione": "... Eurolega Supercup. - Perse le combattute semifinali contro Real e Olympiacos, Dubai e Fenerbahce si giocano la finalina della prima Supercup nella storia di Eurolega. Telecronaca di Giovanni Poggi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9800a884-d8f5-4126-8f16-8a862f653c03/background/600"
       },
       {
         "ora": "03:50",
-        "fine": "06:05",
+        "fine": "06:00",
         "titolo": "Semifinale 2 Real Madrid - Dubai Basketball",
         "descrizione": "... Basketball Eurolega Supercup. - La squadra di casa ospita il nuovo Real di coach Pedro Martinez, finalista dell'ultima Eurolega. Nella sfida anche il duello italiano fra Abi Abass e Gabriele Procida. Telecronaca: Solaini-Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b6b1e6b7-584c-4416-be23-3be61298ea78/background/600"
@@ -1766,28 +1752,42 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/61e5d2fe-5bc3-430d-be06-ce5b7a16ffb3/background/600"
       },
       {
-        "ora": "06:05",
-        "fine": "08:15",
+        "ora": "06:00",
+        "fine": "08:00",
         "titolo": "Semifinale 1 Olympiacos - Fenerbahce",
         "descrizione": "... Eurolega Supercup. - Nella prima semifinale si sfidano le squadre che hanno vinto le ultime due edizioni di Eurolega, i turchi nel 2025, i greci nel 2026. Si gioca ad ad Abu Dhabi. Telecronaca: Fumagalli-Pessina.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ccb0a717-d7cf-43e3-abbd-f8aa446fc48d/background/600"
       },
       {
+        "ora": "08:00",
+        "fine": "08:15",
+        "titolo": "When Basketball Meets Business: Ettore Messina A New York",
+        "descrizione": "... Ettore Messina A New York. - Ettore Messina A New York 03/06/2026.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/791791a2-e0eb-41ed-89eb-3d2d2a4a36d2/background/600"
+      },
+      {
         "ora": "08:15",
-        "fine": "10:30",
+        "fine": "08:30",
+        "titolo": "Il Maestro, La Pallacanestro Di Zelimir Obradovic",
+        "descrizione": "... Zelimir Obradovic. - L'allenatore piu' vincente nella storia dell'Eurolega racconta se' stesso e la sua pallacanestro a margine di un clinic tenutosi a Roma. Intervista di Geri De Rosa, montaggio di Andrea Rappazzo.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f8fb280a-9bda-43fa-b257-661331cc4abc/background/600"
+      },
+      {
+        "ora": "08:30",
+        "fine": "10:45",
         "titolo": "Semifinale 2 Real Madrid - Dubai Basketball",
         "descrizione": "... Basketball Eurolega Supercup. - La squadra di casa ospita il nuovo Real di coach Pedro Martinez, finalista dell'ultima Eurolega. Nella sfida anche il duello italiano fra Abi Abass e Gabriele Procida. Telecronaca: Solaini-Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b6b1e6b7-584c-4416-be23-3be61298ea78/background/600"
       },
       {
-        "ora": "10:30",
-        "fine": "12:40",
+        "ora": "10:45",
+        "fine": "12:45",
         "titolo": "Semifinale 1 Olympiacos - Fenerbahce",
         "descrizione": "... Eurolega Supercup. - Nella prima semifinale si sfidano le squadre che hanno vinto le ultime due edizioni di Eurolega, i turchi nel 2025, i greci nel 2026. Si gioca ad ad Abu Dhabi. Telecronaca: Fumagalli-Pessina.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ccb0a717-d7cf-43e3-abbd-f8aa446fc48d/background/600"
       },
       {
-        "ora": "12:40",
+        "ora": "12:45",
         "fine": "14:55",
         "titolo": "Semifinale 2 Real Madrid - Dubai Basketball",
         "descrizione": "... Basketball Eurolega Supercup. - La squadra di casa ospita il nuovo Real di coach Pedro Martinez, finalista dell'ultima Eurolega. Nella sfida anche il duello italiano fra Abi Abass e Gabriele Procida. Telecronaca: Solaini-Meneghin.",
@@ -1797,28 +1797,28 @@
         "ora": "14:55",
         "fine": "15:55",
         "titolo": "LBA Awards",
-        "descrizione": "LBA Awards",
+        "descrizione": "Nella sede di Sky, di fronte ad un pubblico di stelle del basket, LBA alla vigilia della nuova stagione consegna i premi relativi all'annata 2025-26. Conducono Giulia Cicchine' e Matteo Soragna.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b165cc05-6128-4012-98a2-6675cb07dd99/background/600"
       },
       {
         "ora": "15:55",
-        "fine": "17:55",
-        "titolo": "Finale 3°/4° Posto",
-        "descrizione": "... Eurolega Supercup. - Le partite dell'Eurolega Supercup di basket.",
+        "fine": "18:30",
+        "titolo": "Dubai Basketball - Fenerbahce",
+        "descrizione": "... Fenerbahce Eurolega Supercup. - Perse le combattute semifinali contro Real e Olympiacos, Dubai e Fenerbahce si giocano la finalina della prima Supercup nella storia di Eurolega. Telecronaca di Giovanni Poggi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9800a884-d8f5-4126-8f16-8a862f653c03/background/600"
       },
       {
-        "ora": "17:55",
+        "ora": "18:30",
         "fine": "18:55",
         "titolo": "LBA Awards",
-        "descrizione": "LBA Awards",
+        "descrizione": "Nella sede di Sky, di fronte ad un pubblico di stelle del basket, LBA alla vigilia della nuova stagione consegna i premi relativi all'annata 2025-26. Conducono Giulia Cicchine' e Matteo Soragna.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b165cc05-6128-4012-98a2-6675cb07dd99/background/600"
       },
       {
         "ora": "18:55",
         "fine": "21:00",
-        "titolo": "Finale 1°/2° Posto",
-        "descrizione": "... Eurolega Supercup. - Le partite dell'Eurolega Supercup di basket.",
+        "titolo": "Olympiacos - Real Madrid",
+        "descrizione": "... Eurolega Supercup. - La nuovissima Supercup vede la sua prima finale ripetere la partita che ha assegnato l'ultimo titolo. L'Olympiacos, campione in carica, sfida il nuovo Real di coach Martinez. TC: Solaini-Pessina.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2305cdc3-5f19-450b-ba78-b523a46df99f/background/600"
       },
       {
@@ -2226,13 +2226,13 @@
       },
       {
         "ora": "15:55",
-        "fine": "17:55",
+        "fine": "18:05",
         "titolo": "Brighton - Arsenal",
         "descrizione": "... League. - Reduci da un successo rispettivamente contro Coventry e Sunderland. Gunners a punteggio pieno. Imbattuti nelle ultime 6 gare a Brighton, 4 vittorie e 2 pari. TC: Massimo Marianella",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/de2e232b-0974-4a5a-848d-b9e3f4033a3c/background/600"
       },
       {
-        "ora": "17:55",
+        "ora": "18:05",
         "fine": "18:25",
         "titolo": "Roma - Atalanta",
         "descrizione": "Entrambe a punteggio pieno. Roma ancora a porta chiusa. Atalanta con una sola sconfitta (2022) nelle ultime 12 sfide all'Olimpico, 5 vittorie e 6 pareggi. TC: Compagnoni-Serena",
@@ -2442,55 +2442,27 @@
       },
       {
         "ora": "08:50",
-        "fine": "11:05",
+        "fine": "09:05",
         "titolo": "TIE-BREAK 2026 - Stag. 2023 Ep. 29 - Tie Break - Shelton vs Alcaraz 5 set US OPEN 2026",
         "descrizione": "Tie Break - Shelton vs Alcaraz 5 set US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/tie-break-2026/0.jpg"
       },
       {
+        "ora": "09:05",
+        "fine": "10:50",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "10:50",
+        "fine": "11:05",
+        "titolo": "New York Stories, - Ep. 3 - New York Storie - Pete Sampras: L'ultimo ballo a New York",
+        "descrizione": "Giorgio Spalluto racconta l'ultimo trionfo di Pete Sampras agli Us Open. Il successo del 2002 fu il perfetto saluto al tennis, di uno dei piu' grandi campioni della storia del tennis.",
+        "immagine": "https://img-guidatv.org/54/new-york-stories/6.jpg"
+      },
+      {
         "ora": "11:05",
-        "fine": "11:20",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "11:20",
-        "fine": "11:35",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "11:35",
-        "fine": "11:50",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "11:50",
-        "fine": "12:05",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "12:05",
-        "fine": "12:20",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "12:20",
-        "fine": "12:30",
-        "titolo": "Supertennis Today",
-        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
-        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
-      },
-      {
-        "ora": "12:30",
         "fine": "12:50",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
@@ -2498,20 +2470,6 @@
       },
       {
         "ora": "12:50",
-        "fine": "13:05",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "13:05",
-        "fine": "14:45",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "14:45",
         "fine": "15:00",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
@@ -2519,20 +2477,62 @@
       },
       {
         "ora": "15:00",
-        "fine": "15:50",
+        "fine": "15:25",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
         "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
       },
       {
-        "ora": "15:50",
-        "fine": "16:05",
+        "ora": "15:25",
+        "fine": "15:30",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "15:30",
+        "fine": "15:45",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
+        "ora": "15:45",
+        "fine": "16:05",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
         "ora": "16:05",
+        "fine": "16:20",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "16:20",
+        "fine": "16:35",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "16:35",
+        "fine": "16:50",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "16:50",
+        "fine": "17:15",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "17:15",
         "fine": "17:50",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
@@ -2684,25 +2684,18 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:40",
-        "fine": "02:50",
-        "titolo": "Softball: Campionato Italiano Serie A1 Finale Gara 1",
-        "descrizione": "Softball: Campionato Italiano Serie A1 Finale gara 1",
-        "immagine": "https://img-guidatv.org/32/softball-campionato-italiano-serie-a1-finale-gara-1/0.jpg"
+        "ora": "02:05",
+        "fine": "04:05",
+        "titolo": "Softball: Campionato Italiano Serie A1 - Finale: Forlì - Bollate (Gara 1)",
+        "descrizione": "Italposa Forlì e Quick Mill Bollate si affrontano in Gara 1 delle Italian Softball Series 2026, primo atto della finale che assegna lo Scudetto di Serie A1.",
+        "immagine": "https://img-guidatv.org/32/softball-campionato-italiano-serie-a1-finale-forli-bollate-gara-1/0.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "05:00",
-        "titolo": "Softball: Campionato Italiano Serie A1 Finale Gara 2",
-        "descrizione": "Softball: Campionato Italiano Serie A1 Finale gara 2",
-        "immagine": "https://img-guidatv.org/32/softball-campionato-italiano-serie-a1-finale-gara-2/0.jpg"
-      },
-      {
-        "ora": "05:00",
+        "ora": "04:05",
         "fine": "06:00",
-        "titolo": "Atletica: Mondiali Su Strada Copenaghen - 1a G.Ta",
-        "descrizione": "I meeting internazionali e tutto il meglio delle gare di Atletica Leggera in onda sui canali Rai, da rivedere su RaiPlay.",
-        "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
+        "titolo": "Softball: Campionato Italiano Serie A1 - Finale: Bollate - Forlì (Gara 2)",
+        "descrizione": "Secondo confronto della finale Scudetto di Serie A1 tra Italposa Forlì e Quick Mill Bollate, protagoniste di Gara 2 delle Italian Softball Series 2026.",
+        "immagine": "https://img-guidatv.org/32/softball-campionato-italiano-serie-a1-finale-bollate-forli-gara-2/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2802,25 +2795,18 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:40",
-        "fine": "02:50",
-        "titolo": "Softball: Campionato Italiano Serie A1 Finale Gara 1",
-        "descrizione": "Softball: Campionato Italiano Serie A1 Finale gara 1",
-        "immagine": "https://img-guidatv.org/32/softball-campionato-italiano-serie-a1-finale-gara-1/0.jpg"
+        "ora": "02:05",
+        "fine": "04:05",
+        "titolo": "Softball: Campionato Italiano Serie A1 - Finale: Forlì - Bollate (Gara 1)",
+        "descrizione": "Italposa Forlì e Quick Mill Bollate si affrontano in Gara 1 delle Italian Softball Series 2026, primo atto della finale che assegna lo Scudetto di Serie A1.",
+        "immagine": "https://img-guidatv.org/32/softball-campionato-italiano-serie-a1-finale-forli-bollate-gara-1/0.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "05:00",
-        "titolo": "Softball: Campionato Italiano Serie A1 Finale Gara 2",
-        "descrizione": "Softball: Campionato Italiano Serie A1 Finale gara 2",
-        "immagine": "https://img-guidatv.org/32/softball-campionato-italiano-serie-a1-finale-gara-2/0.jpg"
-      },
-      {
-        "ora": "05:00",
+        "ora": "04:05",
         "fine": "06:00",
-        "titolo": "Atletica: Mondiali Su Strada Copenaghen - 1a G.Ta",
-        "descrizione": "I meeting internazionali e tutto il meglio delle gare di Atletica Leggera in onda sui canali Rai, da rivedere su RaiPlay.",
-        "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
+        "titolo": "Softball: Campionato Italiano Serie A1 - Finale: Bollate - Forlì (Gara 2)",
+        "descrizione": "Secondo confronto della finale Scudetto di Serie A1 tra Italposa Forlì e Quick Mill Bollate, protagoniste di Gara 2 delle Italian Softball Series 2026.",
+        "immagine": "https://img-guidatv.org/32/softball-campionato-italiano-serie-a1-finale-bollate-forli-gara-2/0.jpg"
       },
       {
         "ora": "06:00",
@@ -4106,9 +4092,9 @@
       {
         "ora": "21:30",
         "fine": "22:00",
-        "titolo": "Roberto Baggio: Pallone d'oro 1993",
-        "descrizione": "90/10",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/82d7c312-29b5-4a51-a08f-1d3d714ceadf/background/600"
+        "titolo": "La Grande Inter",
+        "descrizione": "... Storie di Champions. - La storia di una grande squadra e una finale indimenticabile per raccontare le storie di due grandi uomini: Sandro Mazzola ed Helenio Herrera.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9ceedc4d-20b6-4445-bbaa-21fbc25120db/background/600"
       },
       {
         "ora": "22:00",
@@ -4127,9 +4113,9 @@
       {
         "ora": "23:05",
         "fine": "23:40",
-        "titolo": "I Signori Del Calcio 2012/2013 Franco Baresi",
-        "descrizione": "... Franco Baresi I Signori del Calcio Story. - Sei scudetti e tre Coppe dei Campioni con la maglia del Milan sono solo alcuni dei trofei vinti dall'ex capitano rossonero, considerato dai piu' uno dei migliori calciatori del XX secolo.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9975a4a5-0f4f-46f5-9b03-9d5e2f6bbe30/background/600"
+        "titolo": "La Grande Inter",
+        "descrizione": "... Storie di Champions. - La storia di una grande squadra e una finale indimenticabile per raccontare le storie di due grandi uomini: Sandro Mazzola ed Helenio Herrera.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9ceedc4d-20b6-4445-bbaa-21fbc25120db/background/600"
       },
       {
         "ora": "23:40",
@@ -16815,7 +16801,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
+        "ora": "00:05",
+        "fine": "00:10",
+        "titolo": "TG1 Sera",
+        "descrizione": "TG1 Sera",
+        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
+      },
+      {
+        "ora": "00:10",
         "fine": "00:50",
         "titolo": "BYD Music Awards",
         "descrizione": "L'evento musicale più importante dell'estate, con la consegna dei premi e riconoscimenti speciali ai vincitori di questa edizione: i maggiori protagonisti della musica e dello spettacolo italiano si esibiscono con uno show dal vivo sul palco dell'Arena di Verona alla presenza del pubblico",
@@ -16844,6 +16837,13 @@
       },
       {
         "ora": "04:00",
+        "fine": "04:45",
+        "titolo": "Il commissario Rex",
+        "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex.",
+        "immagine": "https://image.tmdb.org/t/p/w300/iqpkxQLqxF7ZQUL6e4nAfLfprif.jpg"
+      },
+      {
+        "ora": "04:45",
         "fine": "05:15",
         "titolo": "Techetechetè Notte - 26",
         "descrizione": "Il grande spettacolo televisivo e la musica, gli sketch più amati, i protagonisti e i dimenticati, raccontano la Tv e le trasformazioni nell'identità del nostro Paese",
@@ -17061,7 +17061,7 @@
       },
       {
         "ora": "21:30",
-        "fine": "00:00",
+        "fine": "00:05",
         "titolo": "BYD Music Awards",
         "descrizione": "In diretta dall'Arena di Verona, Carlo Conti e Vanessa Incontrada conducono BYD Music Awards, l'evento musicale più importante dell'estate, con la consegna dei premi e riconoscimenti speciali ai vincitori di questa edizione: i maggiori protagonisti della musica e dello spettacolo italiano si esibiscono con uno show dal vivo sul palco dell'Arena di Verona alla presenza del pubblico.",
         "immagine": "https://img-guidatv.org/1/byd-music-awards/5.jpg"
@@ -17073,7 +17073,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
+        "ora": "00:05",
+        "fine": "00:10",
+        "titolo": "TG1 Sera",
+        "descrizione": "TG1 Sera",
+        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
+      },
+      {
+        "ora": "00:10",
         "fine": "00:50",
         "titolo": "BYD Music Awards",
         "descrizione": "L'evento musicale più importante dell'estate, con la consegna dei premi e riconoscimenti speciali ai vincitori di questa edizione: i maggiori protagonisti della musica e dello spettacolo italiano si esibiscono con uno show dal vivo sul palco dell'Arena di Verona alla presenza del pubblico",
@@ -17102,6 +17109,13 @@
       },
       {
         "ora": "04:00",
+        "fine": "04:45",
+        "titolo": "Il commissario Rex",
+        "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex.",
+        "immagine": "https://image.tmdb.org/t/p/w300/iqpkxQLqxF7ZQUL6e4nAfLfprif.jpg"
+      },
+      {
+        "ora": "04:45",
         "fine": "05:15",
         "titolo": "Techetechetè Notte - 26",
         "descrizione": "Il grande spettacolo televisivo e la musica, gli sketch più amati, i protagonisti e i dimenticati, raccontano la Tv e le trasformazioni nell'identità del nostro Paese",
@@ -17319,7 +17333,7 @@
       },
       {
         "ora": "21:30",
-        "fine": "00:00",
+        "fine": "00:05",
         "titolo": "BYD Music Awards",
         "descrizione": "In diretta dall'Arena di Verona, Carlo Conti e Vanessa Incontrada conducono BYD Music Awards, l'evento musicale più importante dell'estate, con la consegna dei premi e riconoscimenti speciali ai vincitori di questa edizione: i maggiori protagonisti della musica e dello spettacolo italiano si esibiscono con uno show dal vivo sul palco dell'Arena di Verona alla presenza del pubblico.",
         "immagine": "https://img-guidatv.org/1/byd-music-awards/5.jpg"
@@ -17331,57 +17345,50 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:47",
-        "titolo": "TG2 Storie. I Racconti Della Settimana",
-        "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianità. Direttore Antonio Preziosi Vicedirettore Alfonso Samengo  Curato e condotto da Adriana Pannitteri",
+        "ora": "00:40",
+        "fine": "01:40",
+        "titolo": "Sabato Al 90°",
+        "descrizione": "SPORT. - Supervisione di Marco Mazzocchi A cura di Paolo Ciotti Conduce Paola Ferrari In studio a Roma Marco Tardelli e Stefano Sorrentino. In studio a Milano Fulvio Collovati e Domenico Marocchino Regia di Annarita Cardinali",
+        "immagine": "https://img-guidatv.org/2/sabato-al-90/0.jpg"
+      },
+      {
+        "ora": "01:40",
+        "fine": "02:20",
+        "titolo": "TG2 - Storie. I Racconti Della Settimana",
+        "descrizione": "SPECIALE - Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianità.. - Direttore Antonio Preziosi Vicedirettore Alfonso Samengo  Curato e condotto da Adriana Pannitteri",
         "immagine": "https://img-guidatv.org/2/tg2-storie/6.jpg"
       },
       {
-        "ora": "00:47",
-        "fine": "00:55",
-        "titolo": "Meteo 2",
-        "descrizione": "Meteo 2",
-        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
-      },
-      {
-        "ora": "00:55",
-        "fine": "01:20",
-        "titolo": "TG2 Mizar",
-        "descrizione": "Le pagine della cultura italiana, i musei, le opere, i protagonisti. Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia Curato e Condotto da Adriano Monti Buzzetti",
-        "immagine": "https://img-guidatv.org/2/tg-2-mizar/5.jpg"
-      },
-      {
-        "ora": "01:20",
-        "fine": "01:25",
-        "titolo": "TG2 CinematinéE",
-        "descrizione": "I film della settimana, i consigli, le classifiche i protagonisti dello spettacolo si presentano al pubblico della notte. Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura di Cinzia Terlizzi",
-        "immagine": "https://img-guidatv.org/2/tg-2-cinematinee/5.jpg"
-      },
-      {
-        "ora": "01:25",
-        "fine": "01:30",
-        "titolo": "TG2 Achab Libri",
-        "descrizione": "Le novità in libreria, le classifiche e le segnalazioni per una buona lettura: ospite ogni settimana un autore. Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura di Carola Carulli",
-        "immagine": "https://img-guidatv.org/2/tg-2-achab-libri/5.jpg"
-      },
-      {
-        "ora": "01:30",
-        "fine": "02:20",
-        "titolo": "TG2 Dossier",
-        "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale",
-        "immagine": "https://img-guidatv.org/2/tg2-dossier/6.jpg"
-      },
-      {
         "ora": "02:20",
-        "fine": "02:25",
+        "fine": "04:10",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/2/appuntamento-al-cinema/1.jpg"
       },
       {
-        "ora": "02:25",
-        "fine": "06:00",
+        "ora": "02:30",
+        "fine": "02:35",
+        "titolo": "Meteo 2",
+        "descrizione": "Meteo 2",
+        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
+      },
+      {
+        "ora": "02:35",
+        "fine": "03:00",
+        "titolo": "TG2 Mizar",
+        "descrizione": "RUBRICA - Le pagine della cultura italiana, i musei, le opere, i protagonisti. . - Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura della Redazione Cultura",
+        "immagine": "https://img-guidatv.org/2/tg-2-mizar/5.jpg"
+      },
+      {
+        "ora": "03:00",
+        "fine": "03:10",
+        "titolo": "TG2 Cinematinee'",
+        "descrizione": "RUBRICA - I film della settimana, i consigli, le classifiche i protagonisti dello spettacolo si presentano al pubblico della notte.. - Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura di Cinzia Terlizzi",
+        "immagine": "https://img-guidatv.org/2/tg-2-cinematinee/5.jpg"
+      },
+      {
+        "ora": "04:10",
+        "fine": "06:05",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
         "immagine": "https://img-guidatv.org/2/rainew/5.jpg"
@@ -17575,57 +17582,50 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:47",
-        "titolo": "TG2 Storie. I Racconti Della Settimana",
-        "descrizione": "Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianità. Direttore Antonio Preziosi Vicedirettore Alfonso Samengo  Curato e condotto da Adriana Pannitteri",
+        "ora": "00:40",
+        "fine": "01:40",
+        "titolo": "Sabato Al 90°",
+        "descrizione": "SPORT. - Supervisione di Marco Mazzocchi A cura di Paolo Ciotti Conduce Paola Ferrari In studio a Roma Marco Tardelli e Stefano Sorrentino. In studio a Milano Fulvio Collovati e Domenico Marocchino Regia di Annarita Cardinali",
+        "immagine": "https://img-guidatv.org/2/sabato-al-90/0.jpg"
+      },
+      {
+        "ora": "01:40",
+        "fine": "02:20",
+        "titolo": "TG2 - Storie. I Racconti Della Settimana",
+        "descrizione": "SPECIALE - Le storie e i protagonisti di fatti di cronaca e di costume che si raccontano nella loro quotidianità.. - Direttore Antonio Preziosi Vicedirettore Alfonso Samengo  Curato e condotto da Adriana Pannitteri",
         "immagine": "https://img-guidatv.org/2/tg2-storie/6.jpg"
       },
       {
-        "ora": "00:47",
-        "fine": "00:55",
-        "titolo": "Meteo 2",
-        "descrizione": "Meteo 2",
-        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
-      },
-      {
-        "ora": "00:55",
-        "fine": "01:20",
-        "titolo": "TG2 Mizar",
-        "descrizione": "Le pagine della cultura italiana, i musei, le opere, i protagonisti. Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia Curato e Condotto da Adriano Monti Buzzetti",
-        "immagine": "https://img-guidatv.org/2/tg-2-mizar/5.jpg"
-      },
-      {
-        "ora": "01:20",
-        "fine": "01:25",
-        "titolo": "TG2 CinematinéE",
-        "descrizione": "I film della settimana, i consigli, le classifiche i protagonisti dello spettacolo si presentano al pubblico della notte. Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura di Cinzia Terlizzi",
-        "immagine": "https://img-guidatv.org/2/tg-2-cinematinee/5.jpg"
-      },
-      {
-        "ora": "01:25",
-        "fine": "01:30",
-        "titolo": "TG2 Achab Libri",
-        "descrizione": "Le novità in libreria, le classifiche e le segnalazioni per una buona lettura: ospite ogni settimana un autore. Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura di Carola Carulli",
-        "immagine": "https://img-guidatv.org/2/tg-2-achab-libri/5.jpg"
-      },
-      {
-        "ora": "01:30",
-        "fine": "02:20",
-        "titolo": "TG2 Dossier",
-        "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale",
-        "immagine": "https://img-guidatv.org/2/tg2-dossier/6.jpg"
-      },
-      {
         "ora": "02:20",
-        "fine": "02:25",
+        "fine": "04:10",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/2/appuntamento-al-cinema/1.jpg"
       },
       {
-        "ora": "02:25",
-        "fine": "06:00",
+        "ora": "02:30",
+        "fine": "02:35",
+        "titolo": "Meteo 2",
+        "descrizione": "Meteo 2",
+        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
+      },
+      {
+        "ora": "02:35",
+        "fine": "03:00",
+        "titolo": "TG2 Mizar",
+        "descrizione": "RUBRICA - Le pagine della cultura italiana, i musei, le opere, i protagonisti. . - Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura della Redazione Cultura",
+        "immagine": "https://img-guidatv.org/2/tg-2-mizar/5.jpg"
+      },
+      {
+        "ora": "03:00",
+        "fine": "03:10",
+        "titolo": "TG2 Cinematinee'",
+        "descrizione": "RUBRICA - I film della settimana, i consigli, le classifiche i protagonisti dello spettacolo si presentano al pubblico della notte.. - Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura di Cinzia Terlizzi",
+        "immagine": "https://img-guidatv.org/2/tg-2-cinematinee/5.jpg"
+      },
+      {
+        "ora": "04:10",
+        "fine": "06:05",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
         "immagine": "https://img-guidatv.org/2/rainew/5.jpg"
@@ -17841,41 +17841,48 @@
       },
       {
         "ora": "00:35",
-        "fine": "01:55",
+        "fine": "01:45",
         "titolo": "Un Paese Ci Vuole. Zavattini, Luzzara E Il Po",
         "descrizione": "Reading di poesie di Cesare Zavattini, scrittore, poeta, drammaturgo, regista e padre del neorealismo italiano, dedicate a Luzzara, suo paese natale e al fiume Po, distante meno di un chilometro.",
         "immagine": "https://img-guidatv.org/3/un-paese-ci-vuole-zavattini-luzzara-e-il-po/0.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "02:05",
+        "ora": "01:45",
+        "fine": "01:50",
+        "titolo": "Appuntamento Al Cinema",
+        "descrizione": "APPUNTAMENTO CINEMA.",
+        "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
+      },
+      {
+        "ora": "01:50",
+        "fine": "02:00",
         "titolo": "Fuori Orario. Cose (Mai) Viste",
         "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta STATI PROGRESSIVI DI MAGNETISMO di Lorenzo Esposito",
         "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
-        "ora": "02:05",
-        "fine": "03:50",
+        "ora": "02:00",
+        "fine": "03:45",
         "titolo": "Cure",
         "descrizione": "La capitale nipponica è sconvolta da omicidi rituali: le vittime hanno una X incisa sul petto e i killer vengono trovati in stato confusionale sulla scena. Il detective Takabe e lo psicologo Sakuma seguono la scia di sangue fino a Mamiya, un giovane enigmatico che sembra manipolare la mente altrui. Disponibile anche in lingua originale.",
         "immagine": "https://image.tmdb.org/t/p/w300/3KbmPXaXQ3YwQMhvwtssl2CkGKR.jpg"
       },
       {
-        "ora": "03:50",
-        "fine": "05:15",
+        "ora": "03:45",
+        "fine": "05:10",
         "titolo": "Il segreto del medaglione",
         "descrizione": "Una bambina viene ingiustamente accusata del furto di un medaglione e la sua psiche ne è segnata irrimediabilmente. La sua vita sarà tristemente scandita dalle manie nevrotiche, poi un caso riporta a galla all'improvviso tutto il rimosso.",
         "immagine": "https://image.tmdb.org/t/p/w300/cXLu24UbSyD3YMNXGRG5DGRXiXM.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:51",
+        "ora": "05:10",
+        "fine": "05:44",
         "titolo": "Un medico di campagna",
         "descrizione": "Il viaggio di un medico verso un malato grave in un villaggio distante dieci miglia.",
         "immagine": "https://image.tmdb.org/t/p/w300/wHSdSFgrEkG13ZXifgHgH8y6foe.jpg"
       },
       {
-        "ora": "05:51",
+        "ora": "05:44",
         "fine": "06:00",
         "titolo": "Fuori Orario. Cose (Mai) Viste",
         "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta STATI PROGRESSIVI DI MAGNETISMO di Lorenzo Esposito",
@@ -18071,41 +18078,48 @@
       },
       {
         "ora": "00:35",
-        "fine": "01:55",
+        "fine": "01:45",
         "titolo": "Un Paese Ci Vuole. Zavattini, Luzzara E Il Po",
         "descrizione": "Reading di poesie di Cesare Zavattini, scrittore, poeta, drammaturgo, regista e padre del neorealismo italiano, dedicate a Luzzara, suo paese natale e al fiume Po, distante meno di un chilometro.",
         "immagine": "https://img-guidatv.org/3/un-paese-ci-vuole-zavattini-luzzara-e-il-po/0.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "02:05",
+        "ora": "01:45",
+        "fine": "01:50",
+        "titolo": "Appuntamento Al Cinema",
+        "descrizione": "APPUNTAMENTO CINEMA.",
+        "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
+      },
+      {
+        "ora": "01:50",
+        "fine": "02:00",
         "titolo": "Fuori Orario. Cose (Mai) Viste",
         "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta STATI PROGRESSIVI DI MAGNETISMO di Lorenzo Esposito",
         "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
-        "ora": "02:05",
-        "fine": "03:50",
+        "ora": "02:00",
+        "fine": "03:45",
         "titolo": "Cure",
         "descrizione": "La capitale nipponica è sconvolta da omicidi rituali: le vittime hanno una X incisa sul petto e i killer vengono trovati in stato confusionale sulla scena. Il detective Takabe e lo psicologo Sakuma seguono la scia di sangue fino a Mamiya, un giovane enigmatico che sembra manipolare la mente altrui. Disponibile anche in lingua originale.",
         "immagine": "https://image.tmdb.org/t/p/w300/3KbmPXaXQ3YwQMhvwtssl2CkGKR.jpg"
       },
       {
-        "ora": "03:50",
-        "fine": "05:15",
+        "ora": "03:45",
+        "fine": "05:10",
         "titolo": "Il segreto del medaglione",
         "descrizione": "Una bambina viene ingiustamente accusata del furto di un medaglione e la sua psiche ne è segnata irrimediabilmente. La sua vita sarà tristemente scandita dalle manie nevrotiche, poi un caso riporta a galla all'improvviso tutto il rimosso.",
         "immagine": "https://image.tmdb.org/t/p/w300/cXLu24UbSyD3YMNXGRG5DGRXiXM.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:51",
+        "ora": "05:10",
+        "fine": "05:44",
         "titolo": "Un medico di campagna",
         "descrizione": "Il viaggio di un medico verso un malato grave in un villaggio distante dieci miglia.",
         "immagine": "https://image.tmdb.org/t/p/w300/wHSdSFgrEkG13ZXifgHgH8y6foe.jpg"
       },
       {
-        "ora": "05:51",
+        "ora": "05:44",
         "fine": "06:00",
         "titolo": "Fuori Orario. Cose (Mai) Viste",
         "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta STATI PROGRESSIVI DI MAGNETISMO di Lorenzo Esposito",
@@ -18771,7 +18785,7 @@
         "fine": "10:13",
         "titolo": "Super partes c5,",
         "descrizione": "Comunicazione politica",
-        "immagine": "https://img-guidatv.org/41/super-partes-c-5/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314203301001201/media/16/80/1b37d021-ddc3-454a-b887-cc6bd8eeedc4/930feaf4-d40b-44b4-aa15-2e5c437b8923.jpg"
       },
       {
         "ora": "10:13",
@@ -18806,7 +18820,7 @@
         "fine": "13:44",
         "titolo": "X-Style Milano Beauty Week",
         "descrizione": "Milano Beauty Week anima palazzi storici, tram e vie del centro. Gli eventi tra bellezza, benessere, colori, gioia e condivisione.",
-        "immagine": "https://img-guidatv.org/41/x-style-milano-beauty-week/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314738601000401/media/24/88/e86981d4-5138-4fc9-a4ae-342b2a4cf120/50767464-d636-47f0-9c92-924ec4620e1d.jpg"
       },
       {
         "ora": "13:44",
@@ -19015,7 +19029,7 @@
         "fine": "10:13",
         "titolo": "Super partes c5,",
         "descrizione": "Comunicazione politica",
-        "immagine": "https://img-guidatv.org/41/super-partes-c-5/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314203301001201/media/16/80/1b37d021-ddc3-454a-b887-cc6bd8eeedc4/930feaf4-d40b-44b4-aa15-2e5c437b8923.jpg"
       },
       {
         "ora": "10:13",
@@ -19050,7 +19064,7 @@
         "fine": "13:44",
         "titolo": "X-Style Milano Beauty Week",
         "descrizione": "Milano Beauty Week anima palazzi storici, tram e vie del centro. Gli eventi tra bellezza, benessere, colori, gioia e condivisione.",
-        "immagine": "https://img-guidatv.org/41/x-style-milano-beauty-week/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314738601000401/media/24/88/e86981d4-5138-4fc9-a4ae-342b2a4cf120/50767464-d636-47f0-9c92-924ec4620e1d.jpg"
       },
       {
         "ora": "13:44",
@@ -20362,13 +20376,13 @@
       },
       {
         "ora": "13:35",
-        "fine": "14:30",
+        "fine": "14:50",
         "titolo": "GP Austria: Qualifiche",
         "descrizione": "Quindicesimo appuntamento del mondiale 2026: al Red Bull Ring, in Austria, si accendono i motori per le qualifiche della Moto2. Telecronaca Triolo-Pasini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c7ab5292-d77e-44fa-8c76-e481cb8c3e76/background/600"
       },
       {
-        "ora": "14:30",
+        "ora": "14:50",
         "fine": "14:55",
         "titolo": "Austria",
         "descrizione": "... Live Sprint. - Le ultime notizie e le interviste prima della gara Sprint attraverso il racconto degli inviati e dei telecronisti di Sky Sport MotoGP.",
@@ -22137,8 +22151,8 @@
         "ora": "05:10",
         "fine": "06:45",
         "titolo": "Mia per sempre",
-        "descrizione": "La ritrovata felicità tra Mia e Johnny svanisce quando Michele mente sulla paternità di Torton. Deluso, Johnny torna in Irlanda e sposa Donna. Ignara di tutto, Mia si allontana da Michele, accusandolo della vendita di alcune sue foto private, e si affida all'impresario Spiz.",
-        "immagine": "https://img-guidatv.org/25/mia-per-sempre-episodio-3/0.jpg"
+        "descrizione": "Terminati gli studi a Cork, Mia O' Sullivan torna nel suo paese natale nel Sud dell'Irlanda, dove vive una storia clandestina con Johnny Ryan. Quando lei rimane incinta, lui la abbandona. Mia accetta allora la corte del fotografo italiano Michele e si trasferisce a Roma, entrando nella moda. Ma l'amore per Johnny resta.",
+        "immagine": "https://image.tmdb.org/t/p/w300/4Fh5LpeztCD7COgr5Hk7n0j5kgL.jpg"
       },
       {
         "ora": "07:00",
@@ -26675,11 +26689,81 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "03:05",
+        "ora": "00:10",
+        "fine": "00:15",
+        "titolo": "Rai News Notte",
+        "descrizione": "Rai News Notte",
+        "immagine": "https://img-guidatv.org/24/rai-news-notte/8.jpg"
+      },
+      {
+        "ora": "00:15",
+        "fine": "00:35",
+        "titolo": "Il Giorno E La Storia",
+        "descrizione": "Persone, eventi e ricorrenze del 20 settembre 2026..",
+        "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
+      },
+      {
+        "ora": "00:35",
+        "fine": "01:10",
+        "titolo": "Passato E Presente - Enrico Cernuschi Patriota, Banchiere, Collezionista D'Arte",
+        "descrizione": "Una vita straordinaria, quella di Enrico Cernuschi, degna di un romanzo d'appendice ottocentesco, piena di ideali, battaglie, sconfitte, fughe, cambiamenti improvvisi, contraddizioni e incredibili successi. Giovane patriota rivoluzionario, guida la rivolta dei milanesi contro gli oppressori austriaci nelle cinque giornate di Milano del 1848, e l'anno dopo partecipa alla breve e drammatica esperienza della Repubblica Romana. Esiliato a Parigi, entra nel mondo della finanza, diventa un potente banchiere e uno degli uomini più ricchi di Francia, fonda la Banque de Paris, la futura Paribas. E, infine, viaggia in Oriente dove colleziona tesori artistici per poi fondare, al ritorno a Parigi, un museo che dona alla città. Un personaggio straordinario che ha attraversato il Risorgimento Italiano, la Primavera dei Popoli, il Secondo Impero, la Comune e la Seconda Repubblica Francese, sempre da protagonista. In studio, con Paolo Mieli, la professoressa Elena Bacchin.",
+        "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
+      },
+      {
+        "ora": "01:10",
+        "fine": "02:00",
+        "titolo": "Illuminate - Mariangela Melato, Il Gioco Della Verità",
+        "descrizione": "A guidare il racconto del docu-film è l'attrice Elena Sofia Ricci, che si reca dove negli anni '80 incontrò per la prima volta la grande attrice milanese, una cantina nel Quartiere Monti di Roma: un piccolo teatro-off che Mariangela, già famosa, frequentava in mezzo a giovani attori, facendo con loro il gioco della verità. Da qui parte si parte con la narrazione, per scoprire qualcosa di più su una delle più grandi attrici di sempre, in occasione dell'ottantesimo anniversario della nascita, insieme alle persone che l'hanno conosciuta bene: la sorella Anna Melato, Renzo Arbore, Pupi Avati, Gabriele Lavia, Massimo Ranieri, Lina Wertmüller, Luca Barbareschi, Annabella Cerliani, Felice Laudadio, Giampiero Solari, Renato Scarpa e l'amica e assistente Giovanna Guida.",
+        "immagine": "https://img-guidatv.org/24/illuminate-mariangela-melato-il-gioco-della-verita/0.jpg"
+      },
+      {
+        "ora": "02:00",
+        "fine": "02:30",
+        "titolo": "Cortoreale - Gli Anni E Gli Autori Del Documentario Italiano - Florestano Vancini",
+        "descrizione": "Due documentari realizzati dal regista Florestano Vancini e commentati dallo storico del documentario Marco Bertozzi.",
+        "immagine": "https://img-guidatv.org/24/cortoreale/0.png"
+      },
+      {
+        "ora": "02:30",
+        "fine": "03:25",
+        "titolo": "Il Diario Australiano",
+        "descrizione": "Dacia Maraini racconta un viaggio nel continente australiano e la visita di alcuni siti archeologici, con pitture rupestri e tombe aborigene.",
+        "immagine": "https://img-guidatv.org/24/il-diario-australiano/0.jpg"
+      },
+      {
+        "ora": "03:25",
+        "fine": "03:35",
+        "titolo": "Le Donne E Il Regime",
+        "descrizione": "L'idea e la visione che il Regime fascista ha della donna italiana, sono quelle da una parte ereditate dalla cultura cattolica, di donna come madre e sposa esemplare, dall'altra però introduce una novità. Mobilita le donne italiane, come con gli uomini, in molteplici iniziative, attività e istituzioni, contribuendo a disegnare un'immagine moderna. A guidarci nel racconto la storica Alessandra Tarquini.",
+        "immagine": "https://img-guidatv.org/24/le-donne-e-il-regime/0.jpg"
+      },
+      {
+        "ora": "03:35",
+        "fine": "04:20",
         "titolo": "Thrilling",
         "descrizione": "Las Vegas, la città dei casinò. L'intervista a Joe Conforte, un italiano che vive nella città dove ha fatto fortuna..",
-        "immagine": "https://img-guidatv.org/24/thrilling/5.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w500/fkePRPg2prgGAjB9wdfimqDsQkc.jpg"
+      },
+      {
+        "ora": "04:20",
+        "fine": "04:40",
+        "titolo": "W La Storia - Curarsi",
+        "descrizione": "I ragazzi di tre scuole di Torino, Roma, e Napoli, insieme a storici, antropologi ed esperti ripercorrono la storia della medicina.",
+        "immagine": "https://img-guidatv.org/24/w-la-storia/6.jpg"
+      },
+      {
+        "ora": "04:40",
+        "fine": "05:40",
+        "titolo": "Ieri E Oggi - 1978. Iva Zanicchi, Christian De Sica",
+        "descrizione": "I personaggi dello spettacolo si rivedono nelle loro partecipazioni televisive del passato, nella storica trasmissione 'Ieri e oggi', curata da Leone Mancini e Lino Procacci. In questa puntata del 1978 sono ospiti di Enrico Maria Salerno Iva Zanicchi e Christian De Sica.",
+        "immagine": "https://img-guidatv.org/24/ieri-e-oggi/0.jpg"
+      },
+      {
+        "ora": "05:40",
+        "fine": "06:00",
+        "titolo": "Il Giorno E La Storia",
+        "descrizione": "Persone, eventi e ricorrenze del 20 settembre 2026..",
+        "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
         "ora": "06:00",
@@ -26865,7 +26949,7 @@
       },
       {
         "ora": "22:40",
-        "fine": "00:00",
+        "fine": "00:10",
         "titolo": "India",
         "descrizione": "Uno spettacolare viaggio in India partendo dal Rajasthan, la regione più aspra e desertica, lontana dalle vie di comunicazione e dai grandi fiumi sacri. Il viaggio prosegue nel Tamil Nadu, dove si trova l'antichissima città di Madurai, situata nell'India Meridionale e termina nelle lagune del Kerala.",
         "immagine": "https://image.tmdb.org/t/p/w300/mW8cZkNpRunwrlYJ02aZVPQah9p.jpg"
@@ -26877,11 +26961,81 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "03:05",
+        "ora": "00:10",
+        "fine": "00:15",
+        "titolo": "Rai News Notte",
+        "descrizione": "Rai News Notte",
+        "immagine": "https://img-guidatv.org/24/rai-news-notte/8.jpg"
+      },
+      {
+        "ora": "00:15",
+        "fine": "00:35",
+        "titolo": "Il Giorno E La Storia",
+        "descrizione": "Persone, eventi e ricorrenze del 20 settembre 2026..",
+        "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
+      },
+      {
+        "ora": "00:35",
+        "fine": "01:10",
+        "titolo": "Passato E Presente - Enrico Cernuschi Patriota, Banchiere, Collezionista D'Arte",
+        "descrizione": "Una vita straordinaria, quella di Enrico Cernuschi, degna di un romanzo d'appendice ottocentesco, piena di ideali, battaglie, sconfitte, fughe, cambiamenti improvvisi, contraddizioni e incredibili successi. Giovane patriota rivoluzionario, guida la rivolta dei milanesi contro gli oppressori austriaci nelle cinque giornate di Milano del 1848, e l'anno dopo partecipa alla breve e drammatica esperienza della Repubblica Romana. Esiliato a Parigi, entra nel mondo della finanza, diventa un potente banchiere e uno degli uomini più ricchi di Francia, fonda la Banque de Paris, la futura Paribas. E, infine, viaggia in Oriente dove colleziona tesori artistici per poi fondare, al ritorno a Parigi, un museo che dona alla città. Un personaggio straordinario che ha attraversato il Risorgimento Italiano, la Primavera dei Popoli, il Secondo Impero, la Comune e la Seconda Repubblica Francese, sempre da protagonista. In studio, con Paolo Mieli, la professoressa Elena Bacchin.",
+        "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
+      },
+      {
+        "ora": "01:10",
+        "fine": "02:00",
+        "titolo": "Illuminate - Mariangela Melato, Il Gioco Della Verità",
+        "descrizione": "A guidare il racconto del docu-film è l'attrice Elena Sofia Ricci, che si reca dove negli anni '80 incontrò per la prima volta la grande attrice milanese, una cantina nel Quartiere Monti di Roma: un piccolo teatro-off che Mariangela, già famosa, frequentava in mezzo a giovani attori, facendo con loro il gioco della verità. Da qui parte si parte con la narrazione, per scoprire qualcosa di più su una delle più grandi attrici di sempre, in occasione dell'ottantesimo anniversario della nascita, insieme alle persone che l'hanno conosciuta bene: la sorella Anna Melato, Renzo Arbore, Pupi Avati, Gabriele Lavia, Massimo Ranieri, Lina Wertmüller, Luca Barbareschi, Annabella Cerliani, Felice Laudadio, Giampiero Solari, Renato Scarpa e l'amica e assistente Giovanna Guida.",
+        "immagine": "https://img-guidatv.org/24/illuminate-mariangela-melato-il-gioco-della-verita/0.jpg"
+      },
+      {
+        "ora": "02:00",
+        "fine": "02:30",
+        "titolo": "Cortoreale - Gli Anni E Gli Autori Del Documentario Italiano - Florestano Vancini",
+        "descrizione": "Due documentari realizzati dal regista Florestano Vancini e commentati dallo storico del documentario Marco Bertozzi.",
+        "immagine": "https://img-guidatv.org/24/cortoreale/0.png"
+      },
+      {
+        "ora": "02:30",
+        "fine": "03:25",
+        "titolo": "Il Diario Australiano",
+        "descrizione": "Dacia Maraini racconta un viaggio nel continente australiano e la visita di alcuni siti archeologici, con pitture rupestri e tombe aborigene.",
+        "immagine": "https://img-guidatv.org/24/il-diario-australiano/0.jpg"
+      },
+      {
+        "ora": "03:25",
+        "fine": "03:35",
+        "titolo": "Le Donne E Il Regime",
+        "descrizione": "L'idea e la visione che il Regime fascista ha della donna italiana, sono quelle da una parte ereditate dalla cultura cattolica, di donna come madre e sposa esemplare, dall'altra però introduce una novità. Mobilita le donne italiane, come con gli uomini, in molteplici iniziative, attività e istituzioni, contribuendo a disegnare un'immagine moderna. A guidarci nel racconto la storica Alessandra Tarquini.",
+        "immagine": "https://img-guidatv.org/24/le-donne-e-il-regime/0.jpg"
+      },
+      {
+        "ora": "03:35",
+        "fine": "04:20",
         "titolo": "Thrilling",
         "descrizione": "Las Vegas, la città dei casinò. L'intervista a Joe Conforte, un italiano che vive nella città dove ha fatto fortuna..",
-        "immagine": "https://img-guidatv.org/24/thrilling/5.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w500/fkePRPg2prgGAjB9wdfimqDsQkc.jpg"
+      },
+      {
+        "ora": "04:20",
+        "fine": "04:40",
+        "titolo": "W La Storia - Curarsi",
+        "descrizione": "I ragazzi di tre scuole di Torino, Roma, e Napoli, insieme a storici, antropologi ed esperti ripercorrono la storia della medicina.",
+        "immagine": "https://img-guidatv.org/24/w-la-storia/6.jpg"
+      },
+      {
+        "ora": "04:40",
+        "fine": "05:40",
+        "titolo": "Ieri E Oggi - 1978. Iva Zanicchi, Christian De Sica",
+        "descrizione": "I personaggi dello spettacolo si rivedono nelle loro partecipazioni televisive del passato, nella storica trasmissione 'Ieri e oggi', curata da Leone Mancini e Lino Procacci. In questa puntata del 1978 sono ospiti di Enrico Maria Salerno Iva Zanicchi e Christian De Sica.",
+        "immagine": "https://img-guidatv.org/24/ieri-e-oggi/0.jpg"
+      },
+      {
+        "ora": "05:40",
+        "fine": "06:00",
+        "titolo": "Il Giorno E La Storia",
+        "descrizione": "Persone, eventi e ricorrenze del 20 settembre 2026..",
+        "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
         "ora": "06:00",
@@ -27067,7 +27221,7 @@
       },
       {
         "ora": "22:40",
-        "fine": "00:00",
+        "fine": "00:10",
         "titolo": "India",
         "descrizione": "Uno spettacolare viaggio in India partendo dal Rajasthan, la regione più aspra e desertica, lontana dalle vie di comunicazione e dai grandi fiumi sacri. Il viaggio prosegue nel Tamil Nadu, dove si trova l'antichissima città di Madurai, situata nell'India Meridionale e termina nelle lagune del Kerala.",
         "immagine": "https://image.tmdb.org/t/p/w300/mW8cZkNpRunwrlYJ02aZVPQah9p.jpg"
