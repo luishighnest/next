@@ -131,20 +131,20 @@
       },
       {
         "ora": "13:30",
-        "fine": "13:55",
+        "fine": "13:50",
         "titolo": "MotoGP Grid",
         "descrizione": "Il pregara della MotoGP con le ultime notizie dalla pit lane e dalla griglia grazie al racconto degli inviati di SkySportMotoGPHD.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/111ba4b6-6708-43fc-8927-f1760e16d2f3/background/600"
       },
       {
-        "ora": "13:55",
-        "fine": "15:00",
+        "ora": "13:50",
+        "fine": "15:20",
         "titolo": "GP Austria: Gara",
         "descrizione": "Quindicesimo appuntamento del mondiale 2026: al Red Bull Ring, in Austria, si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d689b564-9bf3-47e8-82db-010270caece6/background/600"
       },
       {
-        "ora": "15:00",
+        "ora": "15:20",
         "fine": "16:00",
         "titolo": "Moto GP Zona Rossa",
         "descrizione": "Le interviste ai protagonisti, i commenti a caldo e le primissime analisi dopo la conclusione della gara della MotoGP.",
@@ -626,13 +626,13 @@
       },
       {
         "ora": "14:55",
-        "fine": "17:00",
+        "fine": "17:10",
         "titolo": "Manchester City - Sunderland",
         "descrizione": "... Sunderland Premier League. - Citizens a punteggio pieno dopo la vittoria nel derby. Sunderland con un punto negli ultimi 2 turni. Non vince a Manchester in massima divisione da 45 anni. TC: Massimo Marianella",
         "immagine": "https://img-guidatv.org/partite/premierleague.jpeg"
       },
       {
-        "ora": "17:00",
+        "ora": "17:10",
         "fine": "17:55",
         "titolo": "Sky Sunday Football Prepartita",
         "descrizione": "La presentazione del match di Serie A, le immagini e le interviste ai protagonisti. Nello studio di Leo Di Bello, anche calcio internazionale e le news di tutti gli sport di Sky.",
@@ -819,21 +819,21 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "02:30",
+        "ora": "00:10",
+        "fine": "02:35",
         "titolo": "Laguna Seca",
         "descrizione": "From WeatherTech Raceway Laguna Seca in Monterey, Calif.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/895a9128-477c-41fe-830d-0015bd4c4a96/background/600"
       },
       {
-        "ora": "02:30",
-        "fine": "02:45",
+        "ora": "02:35",
+        "fine": "02:50",
         "titolo": "Mi Presento: Arvid Lindblad",
         "descrizione": "Parliamo col giovane pilota di Racing Bulls che sta correndo la sua prima stagione di F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5288d6df-ff75-4021-9b79-2c2562861182/background/600"
       },
       {
-        "ora": "02:45",
+        "ora": "02:50",
         "fine": "03:00",
         "titolo": "Speciale McLaren",
         "descrizione": "Per celebrare le 1000 gare nella massima competizione automobilistica, la squadra ha fatto scendere in pista le proprie monoposto con un allestimento visivo unico.",
@@ -946,91 +946,84 @@
       },
       {
         "ora": "14:15",
-        "fine": "15:15",
+        "fine": "15:40",
         "titolo": "Zandvoort: Gara 2",
         "descrizione": "... Challenge Europe powered by AWS. - Dal Circuito di Zandvoort, Paesi Bassi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a2f8b7cd-7972-4af4-a89f-4de9535d3610/background/600"
       },
       {
-        "ora": "15:15",
-        "fine": "16:15",
+        "ora": "15:40",
+        "fine": "16:30",
         "titolo": "GP Barcellona: Gara",
         "descrizione": "A Barcellona settima gara del mondiale: tutti a caccia di Kimi Antonelli, dominatore del mondiale e reduce da 5 vittorie consecutive. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d68f1756-5674-47cf-8987-1c9ee2e5bfc2/background/600"
       },
       {
-        "ora": "16:15",
-        "fine": "16:45",
+        "ora": "16:30",
+        "fine": "17:10",
         "titolo": "Discover Kimi",
         "descrizione": "Alle origini del nuovo talento italiano della F1: in questo episodio il percorso di Antonelli nella massima categoria. Gli alti e bassi dell'anno da rookie, prima della definitiva esplosione del 2026.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cb34037c-bfae-4947-9679-e4b509b12c7d/background/600"
       },
       {
-        "ora": "16:45",
-        "fine": "17:00",
-        "titolo": "Inside F1",
-        "descrizione": "Dietro le quinte della F1: il viaggio nel Media & Technology Centre di Biggin Hill. Con Davide Camicioli e Ivan Capelli.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f76e909e-b9cd-4fbe-924f-43986e869660/background/600"
-      },
-      {
-        "ora": "17:00",
-        "fine": "18:00",
+        "ora": "17:10",
+        "fine": "18:05",
         "titolo": "GP Madrid: Gara",
         "descrizione": "Prima storica gara sul nuovo circuito di Madrid. Antonelli comanda la classifica con 66 punti su Russell, Ferrari in cerca di riscatto. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1373d8e8-2a1a-42d3-9a24-0df14c528af8/background/600"
       },
       {
-        "ora": "18:00",
-        "fine": "20:30",
+        "ora": "18:05",
+        "fine": "20:35",
         "titolo": "Laguna Seca",
         "descrizione": "From WeatherTech Raceway Laguna Seca in Monterey, Calif.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/895a9128-477c-41fe-830d-0015bd4c4a96/background/600"
       },
       {
-        "ora": "20:30",
-        "fine": "20:45",
+        "ora": "20:35",
+        "fine": "20:50",
         "titolo": "Mi Presento: Arvid Lindblad",
         "descrizione": "Parliamo col giovane pilota di Racing Bulls che sta correndo la sua prima stagione di F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5288d6df-ff75-4021-9b79-2c2562861182/background/600"
       },
       {
-        "ora": "20:45",
-        "fine": "21:00",
+        "ora": "20:50",
+        "fine": "21:05",
         "titolo": "Speciale McLaren",
         "descrizione": "Per celebrare le 1000 gare nella massima competizione automobilistica, la squadra ha fatto scendere in pista le proprie monoposto con un allestimento visivo unico.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8f59f41a-d39a-4b28-a4b8-c51f6f728835/background/600"
       },
       {
-        "ora": "21:00",
-        "fine": "22:05",
+        "ora": "21:05",
+        "fine": "22:10",
         "titolo": "GP Monaco: Gara",
         "descrizione": "E' la gara piu' iconica del mondiale: Leclerc gioca in casa, Antonelli viene da 4 successi di fila, Norris e' l'ultimo Re di Monte-Carlo. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/31c9ee61-7460-43f6-b6e1-b3a9761ab834/background/600"
       },
       {
-        "ora": "22:05",
-        "fine": "22:30",
+        "ora": "22:10",
+        "fine": "22:35",
         "titolo": "Discover Kimi",
         "descrizione": "Alle origini del nuovo talento italiano della F1: il legame con la famiglia, le amicizie speciali e il mito di Senna. In questo episodio Antonelli ci svela le sue passioni e ci apre le porte di casa.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3e4aabbc-c130-41ae-8161-3ab3a81d23cd/background/600"
       },
       {
-        "ora": "22:30",
-        "fine": "22:45",
+        "ora": "22:35",
+        "fine": "22:50",
         "titolo": "Madrid",
         "descrizione": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/de273881-4a64-4b50-ab8b-55b4b00401d5/background/600"
       },
       {
-        "ora": "22:45",
-        "fine": "23:05",
+        "ora": "22:50",
+        "fine": "23:10",
         "titolo": "Montreal",
         "descrizione": "Il Campionato FIA di Formula 2 fa il suo storico debutto a Montreal, sul circuito Gilles Villeneuve.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e7389d0a-17c2-4670-a6e5-5249f8f4f51a/background/600"
       },
       {
-        "ora": "23:05",
-        "fine": "00:05",
+        "ora": "23:10",
+        "fine": "00:10",
         "titolo": "GP Canada: Gara",
         "descrizione": "Quinta gara della stagione sul circuito intitolato a Gilles Villeneuve, con Kimi Antonelli leader della classifica. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/31284367-f859-41bd-9208-080be9ad5812/background/600"
@@ -1190,20 +1183,20 @@
       },
       {
         "ora": "13:30",
-        "fine": "13:55",
+        "fine": "13:50",
         "titolo": "MotoGP Grid",
         "descrizione": "Il pregara della MotoGP con le ultime notizie dalla pit lane e dalla griglia grazie al racconto degli inviati di SkySportMotoGPHD.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/111ba4b6-6708-43fc-8927-f1760e16d2f3/background/600"
       },
       {
-        "ora": "13:55",
-        "fine": "15:00",
+        "ora": "13:50",
+        "fine": "15:20",
         "titolo": "GP Austria: Gara",
         "descrizione": "Quindicesimo appuntamento del mondiale 2026: al Red Bull Ring, in Austria, si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d689b564-9bf3-47e8-82db-010270caece6/background/600"
       },
       {
-        "ora": "15:00",
+        "ora": "15:20",
         "fine": "16:00",
         "titolo": "Moto GP Zona Rossa",
         "descrizione": "Le interviste ai protagonisti, i commenti a caldo e le primissime analisi dopo la conclusione della gara della MotoGP.",
@@ -1385,13 +1378,13 @@
       },
       {
         "ora": "15:50",
-        "fine": "17:55",
+        "fine": "18:45",
         "titolo": "Finlandia - Grecia",
         "descrizione": "- Grecia Campionati Europei di pallavolo maschile - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/84c5cc7f-837e-49ea-b717-e6e698ed41ec/background/600"
       },
       {
-        "ora": "17:55",
+        "ora": "18:45",
         "fine": "18:55",
         "titolo": "Zandvoort: Gara 2",
         "descrizione": "... Europe powered by AWS. - Dal Circuito di Zandvoort, Paesi Bassi.",
@@ -1552,17 +1545,10 @@
       },
       {
         "ora": "15:30",
-        "fine": "17:00",
+        "fine": "17:25",
         "titolo": "Ginevra: Giorno 2",
         "descrizione": "Le gare del SailGP.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/de646d6b-98f7-4555-95af-2129a8fb7bbd/background/600"
-      },
-      {
-        "ora": "17:00",
-        "fine": "17:15",
-        "titolo": "Motonautica On Board 2026 Ep.5 18/09/2026",
-        "descrizione": "... 18/09/2026 Motonautica On Board. - Uno sguardo sul mondo della Motonautica per svelare cio' che si cela dietro ogni scia, dalle imbarcazioni piu' veloci alle moto d'acqua. Un'opportunita' unica di conoscere da vicino i veri protagonisti: i piloti, con le loro storie e la loro passione.",
-        "immagine": "https://img-guidatv.org/8693/motonautica-on-board/1.jpg"
       },
       {
         "ora": "17:25",
@@ -1635,13 +1621,13 @@
       },
       {
         "ora": "10:00",
-        "fine": "18:30",
+        "fine": "18:45",
         "titolo": "BMW PGA Championship: Giorno 4",
         "descrizione": "... Giorno 4 Golf: DP World Tour. - Dal Wentworth Club di Virginia Water, Inghilterra.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cbd78d37-0398-4c04-b93c-b1755b6f8769/background/600"
       },
       {
-        "ora": "18:30",
+        "ora": "18:45",
         "fine": "19:00",
         "titolo": "Speciale Golf Battle Twelve 13/08/2026",
         "descrizione": "La sfida a squadre tra il Team59 Italia e il C&S Golf Team Francia, giocata il 29 e 30 luglio 2026 al Golf Club Padova.",
@@ -2240,13 +2226,13 @@
       },
       {
         "ora": "14:55",
-        "fine": "17:00",
+        "fine": "17:10",
         "titolo": "Manchester City - Sunderland",
         "descrizione": "... Sunderland Premier League. - Citizens a punteggio pieno dopo la vittoria nel derby. Sunderland con un punto negli ultimi 2 turni. Non vince a Manchester in massima divisione da 45 anni. TC: Massimo Marianella",
         "immagine": "https://img-guidatv.org/partite/premierleague.jpeg"
       },
       {
-        "ora": "17:00",
+        "ora": "17:10",
         "fine": "17:55",
         "titolo": "Sky Sunday Football Prepartita",
         "descrizione": "La presentazione del match di Serie A, le immagini e le interviste ai protagonisti. Nello studio di Leo Di Bello, anche calcio internazionale e le news di tutti gli sport di Sky.",
@@ -2545,83 +2531,55 @@
       },
       {
         "ora": "10:20",
-        "fine": "12:05",
+        "fine": "12:00",
         "titolo": "Davis Cup 2026 -CZE vs USA",
         "descrizione": "Davis Cup 2026 - Rep. Ceca e Stati Uniti si sfidano per qualificarsi alle Finals 8 di Bologna",
         "immagine": "https://img-guidatv.org/54/davis-cup-2026-cze-vs-usa/0.jpg"
       },
       {
-        "ora": "12:05",
-        "fine": "12:20",
+        "ora": "12:00",
+        "fine": "15:15",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
         "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
       },
       {
-        "ora": "12:20",
-        "fine": "12:35",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "12:35",
-        "fine": "12:50",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "12:50",
-        "fine": "13:05",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "13:05",
-        "fine": "13:45",
-        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
-        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
-        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
-      },
-      {
-        "ora": "13:45",
-        "fine": "14:00",
+        "ora": "15:15",
+        "fine": "16:45",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "14:00",
-        "fine": "15:40",
+        "ora": "16:45",
+        "fine": "17:00",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
         "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
       },
       {
-        "ora": "15:40",
-        "fine": "16:00",
-        "titolo": "Supertennis Today",
-        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
-        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
-      },
-      {
-        "ora": "16:00",
-        "fine": "17:40",
+        "ora": "17:00",
+        "fine": "17:15",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
         "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
       },
       {
-        "ora": "17:40",
-        "fine": "17:55",
-        "titolo": "Supertennis Today",
-        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
-        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
+        "ora": "17:15",
+        "fine": "17:30",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
       },
       {
-        "ora": "17:55",
+        "ora": "17:30",
+        "fine": "17:45",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "17:45",
         "fine": "19:40",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
@@ -2651,9 +2609,9 @@
       {
         "ora": "22:55",
         "fine": "00:20",
-        "titolo": "WTA 500 Guadalajara 2026",
+        "titolo": "WTA 500 Guadalajara 2026 - Ep. 21 - Peyton Stearns vs Iva Jovic WTA 500 Guadalajara Finale # 1",
         "descrizione": "Peyton Stearns vs Iva Jovic WTA 500 Guadalajara Finale",
-        "immagine": "https://img-guidatv.org/54/wta-500-guadalajara-2026/0.jpg"
+        "immagine": "https://img-guidatv.org/54/wta-500-guadalajara-2026-ep-21-peyton-stearns-vs-iva-jovic-wta-500-guadalajara-finale-1/0.jpg"
       }
     ]
   },
@@ -2881,7 +2839,7 @@
         "ora": "23:30",
         "fine": "02:00",
         "titolo": "Europei Di Pallavolo Maschile 2026 - Ottavi Di Finale: Finlandia - Grecia",
-        "descrizione": "Negli ottavi di finale degli Europei maschili di pallavolo 2026, Finlandia e Grecia si affrontano in una sfida a eliminazione diretta che vale l’accesso ai quarti di finale.",
+        "descrizione": "Negli ottavi di finale degli Europei maschili di pallavolo 2026, Finlandia e Grecia si affrontano in una sfida a eliminazione diretta che vale l'accesso ai quarti di finale.",
         "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-ottavi-di-finale-finlandia-grecia/0.jpg"
       }
     ]
@@ -2999,7 +2957,7 @@
         "ora": "23:30",
         "fine": "02:00",
         "titolo": "Europei Di Pallavolo Maschile 2026 - Ottavi Di Finale: Finlandia - Grecia",
-        "descrizione": "Negli ottavi di finale degli Europei maschili di pallavolo 2026, Finlandia e Grecia si affrontano in una sfida a eliminazione diretta che vale l’accesso ai quarti di finale.",
+        "descrizione": "Negli ottavi di finale degli Europei maschili di pallavolo 2026, Finlandia e Grecia si affrontano in una sfida a eliminazione diretta che vale l'accesso ai quarti di finale.",
         "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-ottavi-di-finale-finlandia-grecia/0.jpg"
       }
     ]
@@ -5388,7 +5346,7 @@
         "ora": "20:45",
         "fine": "21:20",
         "titolo": "Vogue World 2026",
-        "descrizione": "Nella storica Galleria Vittorio Emanuele II a Milano, una serie di atti tematici dedicati all'artigianato e all'innovazione italiani, con la partecipazione di alcuni ospiti a sorpresa.",
+        "descrizione": "In occasione della prima edizione italiana di Vogue World abbiamo incontrato le menti creative di questo progetto: Anna Wintour e Francesca Ragazzi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c02f3907-417b-4daf-92b8-9f31b3aec459/background/600"
       },
       {
@@ -5807,7 +5765,7 @@
         "ora": "20:45",
         "fine": "21:20",
         "titolo": "Vogue World 2026",
-        "descrizione": "Nella storica Galleria Vittorio Emanuele II a Milano, una serie di atti tematici dedicati all'artigianato e all'innovazione italiani, con la partecipazione di alcuni ospiti a sorpresa.",
+        "descrizione": "In occasione della prima edizione italiana di Vogue World abbiamo incontrato le menti creative di questo progetto: Anna Wintour e Francesca Ragazzi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c02f3907-417b-4daf-92b8-9f31b3aec459/background/600"
       },
       {
@@ -14284,7 +14242,7 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:15",
+        "fine": "00:05",
         "titolo": "Molang",
         "descrizione": "Piu Piu e Molang, desiderosi di indossare delle magnifiche uniformi, compilano la domanda per entrare a far parte della guardia reale di Buckingham Palace. Ma i due amici ignorano la regola fondamentale della guardia reale: rimanere impassibili qualunque cosa accada.",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -14305,14 +14263,14 @@
       },
       {
         "ora": "00:15",
-        "fine": "00:35",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "00:25",
+        "titolo": "Piripinguini",
+        "descrizione": "Looph costruisce per la super competitiva Nugget un nuovo dispositivo fitness per tenerla occupata, ma il gadget alla moda scatena una vera e propria mania sull'iceberg. Tra corse, salti e gare sui pattini, tutti i Piripinguini vogliono scalare la classifica, per poi venire a scoprire il vincitore a sorpresa.",
+        "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
       },
       {
         "ora": "00:25",
-        "fine": "00:45",
+        "fine": "00:35",
         "titolo": "Piripinguini",
         "descrizione": "Le storie di un misterioso pettegolo sul giornale hanno successo tra i lettori ma creano tensioni tra i Piri. Mentre Looph raccoglie le prove, Brinicle tende una trappola astuta per smascherare l'autore… finché Nugget non suggerisce un uso alternativo per le talentuose capacità di scrittura dell'anonimo reporter.",
         "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
@@ -14326,10 +14284,10 @@
       },
       {
         "ora": "00:45",
-        "fine": "01:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:00",
+        "titolo": "Piripinguini",
+        "descrizione": "Quando la preziosa alga dorata di Pancake, Alastair, scompare, tutti i Piripinguini sono sospettati, ma nessuno confessa il \"crimine\". Pancake diventa detective e interroga uno a uno i suoi amici, finché la verità non si rivela sorprendentemente più vicina del previsto.",
+        "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
       },
       {
         "ora": "01:00",
@@ -14368,10 +14326,10 @@
       },
       {
         "ora": "01:40",
-        "fine": "02:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:50",
+        "titolo": "Barbapapà - Una grande famiglia felice",
+        "descrizione": "Ad Halloween, i barbabebé inventano il gioco del lupo, la cui regola è quella di non farsi toccare dal lupo cattivo, ovvero, uno di loro scelto con il sorteggio. Lo scopo vero, in realtà, è divertirsi con il sentimento della paura.",
+        "immagine": "https://image.tmdb.org/t/p/w300/kCfUwhv6biJ8lnRAVw6TZswZsj2.jpg"
       },
       {
         "ora": "01:50",
@@ -14389,7 +14347,7 @@
       },
       {
         "ora": "02:05",
-        "fine": "02:20",
+        "fine": "02:15",
         "titolo": "Nina & Olga",
         "descrizione": "Nina adora le storie che parlano di regine. Tanto da voler diventare… Regina per un giorno. Teo, Olga e Bigio sono disposti ad assecondarla, anche se sarà meno piacevole e divertente del previsto. Il potere le darà un po' alla testa. Ma per fortuna non ci metterà tanto a capire che governare... non fa per lei. Meglio essere tutti amici, e divertirsi insieme.",
         "immagine": "https://img-guidatv.org/28/nina-olga/0.jpg"
@@ -14417,7 +14375,7 @@
       },
       {
         "ora": "02:35",
-        "fine": "02:50",
+        "fine": "02:45",
         "titolo": "I Ronfi",
         "descrizione": "I Ronfi vengono chiamati a raccolta da Panda per una lezione di Tai-Chi, ma mettono subito a dura prova la pazienza del maestro, appisolandosi di continuo. Intanto, Lupo trama nell'ombra...",
         "immagine": "https://img-guidatv.org/28/i-ronfi/0.jpg"
@@ -14473,35 +14431,35 @@
       },
       {
         "ora": "03:25",
-        "fine": "03:35",
+        "fine": "03:30",
         "titolo": "Dixiland",
         "descrizione": "Dixi è un elefantino pieno di contentezza, grazia e buon umore. È poetico, dolce, imprevedibile, sognante, sensibile, giocherellone, amichevole, curioso, diretto, esuberante, timido, buffo, allegro...",
         "immagine": "https://img-guidatv.org/28/dixiland/1.jpg"
       },
       {
         "ora": "03:30",
-        "fine": "03:40",
+        "fine": "03:35",
         "titolo": "Molang",
         "descrizione": "Molang e Piu Piu trovano un uovo nel cortile della loro fattoria e lo rimettono nel nido di gallina. Quando l'uovo si schiude ne esce un drago e la gallina lo adotta immediatamente.",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "03:35",
-        "fine": "03:45",
+        "fine": "03:40",
         "titolo": "Molang",
         "descrizione": "Molang e Piu Piu desiderano diventare moschettieri alla corte del re. Piu Piu è troppo piccolo per essere ammesso, ma non lascerà che questo lo fermi!",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "03:40",
-        "fine": "03:50",
+        "fine": "03:45",
         "titolo": "Molang",
         "descrizione": "Un mago lascia il castello e dimentica il suo cappello magico. Molang e Piu Piu lo trovano e giocano agli apprendisti…",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "03:45",
-        "fine": "03:55",
+        "fine": "03:50",
         "titolo": "Molang",
         "descrizione": "Dopo che un'onda li ha travolti, Molang e Piu Piu pensano di trovarsi bloccati su un'isola. Ma grazie a un amico scoprono che in realtà sono nella pancia di una balena!",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -14529,10 +14487,10 @@
       },
       {
         "ora": "04:10",
-        "fine": "04:50",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:20",
+        "titolo": "Piripinguini",
+        "descrizione": "Le storie di un misterioso pettegolo sul giornale hanno successo tra i lettori ma creano tensioni tra i Piri. Mentre Looph raccoglie le prove, Brinicle tende una trappola astuta per smascherare l'autore… finché Nugget non suggerisce un uso alternativo per le talentuose capacità di scrittura dell'anonimo reporter.",
+        "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
       },
       {
         "ora": "04:20",
@@ -14550,7 +14508,7 @@
       },
       {
         "ora": "04:40",
-        "fine": "05:00",
+        "fine": "04:50",
         "titolo": "Gigantosaurus",
         "descrizione": "Marsh ammira i quattro piccoli dinosauri. Ognuno di loro ha talenti incredibili che sono come superpoteri. Quale sarà il superpotere di Marsh?",
         "immagine": "https://image.tmdb.org/t/p/w300/9QE0FexhD5IZ6IaTyHLYzRMYUot.jpg"
@@ -14564,10 +14522,10 @@
       },
       {
         "ora": "05:00",
-        "fine": "05:25",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "05:15",
+        "titolo": "Gigantosaurus",
+        "descrizione": "Rocky ha difficoltà a liberarsi delle sue cose mentre i suoi amici fanno le pulizie di primavera.",
+        "immagine": "https://image.tmdb.org/t/p/w300/9QE0FexhD5IZ6IaTyHLYzRMYUot.jpg"
       },
       {
         "ora": "05:15",
@@ -14585,7 +14543,7 @@
       },
       {
         "ora": "05:30",
-        "fine": "05:45",
+        "fine": "05:40",
         "titolo": "Shaun, vita da pecora",
         "descrizione": "Il fattore si  diletta come apicoltore estraendo miele dall'alveare. Dopo essersi sfilato la tuta protettiva, uno sciame di api se ne impossessa per dare ordini a  Bitzer. Grazie all'intervento di Shaun le api saranno costrette a scappare via.",
         "immagine": "https://image.tmdb.org/t/p/w300/rv8g8QErLtMBOMwyJ3Z6iFKNtaw.jpg"
@@ -15502,7 +15460,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:05",
+        "fine": "00:00",
         "titolo": "Molang",
         "descrizione": "Molang e Piu Piu  aiutano un moschettiere in una missione pericolosa. Ma quando il coraggioso moschettiere perde gli occhiali tocca a Molang e Piu Piu proteggerlo...",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -15515,7 +15473,7 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:15",
+        "fine": "00:05",
         "titolo": "Molang",
         "descrizione": "Piu Piu e Molang, desiderosi di indossare delle magnifiche uniformi, compilano la domanda per entrare a far parte della guardia reale di Buckingham Palace. Ma i due amici ignorano la regola fondamentale della guardia reale: rimanere impassibili qualunque cosa accada.",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -15536,14 +15494,14 @@
       },
       {
         "ora": "00:15",
-        "fine": "00:35",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "00:25",
+        "titolo": "Piripinguini",
+        "descrizione": "Looph costruisce per la super competitiva Nugget un nuovo dispositivo fitness per tenerla occupata, ma il gadget alla moda scatena una vera e propria mania sull'iceberg. Tra corse, salti e gare sui pattini, tutti i Piripinguini vogliono scalare la classifica, per poi venire a scoprire il vincitore a sorpresa.",
+        "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
       },
       {
         "ora": "00:25",
-        "fine": "00:45",
+        "fine": "00:35",
         "titolo": "Piripinguini",
         "descrizione": "Le storie di un misterioso pettegolo sul giornale hanno successo tra i lettori ma creano tensioni tra i Piri. Mentre Looph raccoglie le prove, Brinicle tende una trappola astuta per smascherare l'autore… finché Nugget non suggerisce un uso alternativo per le talentuose capacità di scrittura dell'anonimo reporter.",
         "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
@@ -15557,10 +15515,10 @@
       },
       {
         "ora": "00:45",
-        "fine": "01:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:00",
+        "titolo": "Piripinguini",
+        "descrizione": "Quando la preziosa alga dorata di Pancake, Alastair, scompare, tutti i Piripinguini sono sospettati, ma nessuno confessa il \"crimine\". Pancake diventa detective e interroga uno a uno i suoi amici, finché la verità non si rivela sorprendentemente più vicina del previsto.",
+        "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
       },
       {
         "ora": "01:00",
@@ -15599,10 +15557,10 @@
       },
       {
         "ora": "01:40",
-        "fine": "02:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:50",
+        "titolo": "Barbapapà - Una grande famiglia felice",
+        "descrizione": "Ad Halloween, i barbabebé inventano il gioco del lupo, la cui regola è quella di non farsi toccare dal lupo cattivo, ovvero, uno di loro scelto con il sorteggio. Lo scopo vero, in realtà, è divertirsi con il sentimento della paura.",
+        "immagine": "https://image.tmdb.org/t/p/w300/kCfUwhv6biJ8lnRAVw6TZswZsj2.jpg"
       },
       {
         "ora": "01:50",
@@ -15620,7 +15578,7 @@
       },
       {
         "ora": "02:05",
-        "fine": "02:20",
+        "fine": "02:15",
         "titolo": "Nina & Olga",
         "descrizione": "Nina adora le storie che parlano di regine. Tanto da voler diventare… Regina per un giorno. Teo, Olga e Bigio sono disposti ad assecondarla, anche se sarà meno piacevole e divertente del previsto. Il potere le darà un po' alla testa. Ma per fortuna non ci metterà tanto a capire che governare... non fa per lei. Meglio essere tutti amici, e divertirsi insieme.",
         "immagine": "https://img-guidatv.org/28/nina-olga/0.jpg"
@@ -15648,7 +15606,7 @@
       },
       {
         "ora": "02:35",
-        "fine": "02:50",
+        "fine": "02:45",
         "titolo": "I Ronfi",
         "descrizione": "I Ronfi vengono chiamati a raccolta da Panda per una lezione di Tai-Chi, ma mettono subito a dura prova la pazienza del maestro, appisolandosi di continuo. Intanto, Lupo trama nell'ombra...",
         "immagine": "https://img-guidatv.org/28/i-ronfi/0.jpg"
@@ -15704,35 +15662,35 @@
       },
       {
         "ora": "03:25",
-        "fine": "03:35",
+        "fine": "03:30",
         "titolo": "Dixiland",
         "descrizione": "Dixi è un elefantino pieno di contentezza, grazia e buon umore. È poetico, dolce, imprevedibile, sognante, sensibile, giocherellone, amichevole, curioso, diretto, esuberante, timido, buffo, allegro...",
         "immagine": "https://img-guidatv.org/28/dixiland/1.jpg"
       },
       {
         "ora": "03:30",
-        "fine": "03:40",
+        "fine": "03:35",
         "titolo": "Molang",
         "descrizione": "Molang e Piu Piu trovano un uovo nel cortile della loro fattoria e lo rimettono nel nido di gallina. Quando l'uovo si schiude ne esce un drago e la gallina lo adotta immediatamente.",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "03:35",
-        "fine": "03:45",
+        "fine": "03:40",
         "titolo": "Molang",
         "descrizione": "Molang e Piu Piu desiderano diventare moschettieri alla corte del re. Piu Piu è troppo piccolo per essere ammesso, ma non lascerà che questo lo fermi!",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "03:40",
-        "fine": "03:50",
+        "fine": "03:45",
         "titolo": "Molang",
         "descrizione": "Un mago lascia il castello e dimentica il suo cappello magico. Molang e Piu Piu lo trovano e giocano agli apprendisti…",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
       },
       {
         "ora": "03:45",
-        "fine": "03:55",
+        "fine": "03:50",
         "titolo": "Molang",
         "descrizione": "Dopo che un'onda li ha travolti, Molang e Piu Piu pensano di trovarsi bloccati su un'isola. Ma grazie a un amico scoprono che in realtà sono nella pancia di una balena!",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -15760,10 +15718,10 @@
       },
       {
         "ora": "04:10",
-        "fine": "04:50",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:20",
+        "titolo": "Piripinguini",
+        "descrizione": "Le storie di un misterioso pettegolo sul giornale hanno successo tra i lettori ma creano tensioni tra i Piri. Mentre Looph raccoglie le prove, Brinicle tende una trappola astuta per smascherare l'autore… finché Nugget non suggerisce un uso alternativo per le talentuose capacità di scrittura dell'anonimo reporter.",
+        "immagine": "https://image.tmdb.org/t/p/w500/oU0G1xS8p9Qc0YQjUe5YegBBM3.jpg"
       },
       {
         "ora": "04:20",
@@ -15781,7 +15739,7 @@
       },
       {
         "ora": "04:40",
-        "fine": "05:00",
+        "fine": "04:50",
         "titolo": "Gigantosaurus",
         "descrizione": "Marsh ammira i quattro piccoli dinosauri. Ognuno di loro ha talenti incredibili che sono come superpoteri. Quale sarà il superpotere di Marsh?",
         "immagine": "https://image.tmdb.org/t/p/w300/9QE0FexhD5IZ6IaTyHLYzRMYUot.jpg"
@@ -15795,10 +15753,10 @@
       },
       {
         "ora": "05:00",
-        "fine": "05:25",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "05:15",
+        "titolo": "Gigantosaurus",
+        "descrizione": "Rocky ha difficoltà a liberarsi delle sue cose mentre i suoi amici fanno le pulizie di primavera.",
+        "immagine": "https://image.tmdb.org/t/p/w300/9QE0FexhD5IZ6IaTyHLYzRMYUot.jpg"
       },
       {
         "ora": "05:15",
@@ -15816,7 +15774,7 @@
       },
       {
         "ora": "05:30",
-        "fine": "05:45",
+        "fine": "05:40",
         "titolo": "Shaun, vita da pecora",
         "descrizione": "Il fattore si  diletta come apicoltore estraendo miele dall'alveare. Dopo essersi sfilato la tuta protettiva, uno sciame di api se ne impossessa per dare ordini a  Bitzer. Grazie all'intervento di Shaun le api saranno costrette a scappare via.",
         "immagine": "https://image.tmdb.org/t/p/w300/rv8g8QErLtMBOMwyJ3Z6iFKNtaw.jpg"
@@ -16733,7 +16691,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:05",
+        "fine": "00:00",
         "titolo": "Molang",
         "descrizione": "Molang e Piu Piu  aiutano un moschettiere in una missione pericolosa. Ma quando il coraggioso moschettiere perde gli occhiali tocca a Molang e Piu Piu proteggerlo...",
         "immagine": "https://img-guidatv.org/28/molang/2.jpg"
@@ -16746,7 +16704,7 @@
     "programmi": [
       {
         "ora": "00:10",
-        "fine": "00:45",
+        "fine": "00:40",
         "titolo": "Spike Team",
         "descrizione": "La fatica, il successo, ma anche i fallimenti di un gruppo di studentesse universitarie che vogliono diventare una grande squadra di pallavolo. Le Spike Team questa volta si preparano ad affrontare le Olimpiadi, dove saranno in concorrenza con le migliori squadre femminili del mondo.",
         "immagine": "https://img-guidatv.org/35/spike-team/1.jpg"
@@ -16760,7 +16718,7 @@
       },
       {
         "ora": "00:45",
-        "fine": "01:10",
+        "fine": "01:05",
         "titolo": "Le tre moschettiere",
         "descrizione": "Rustignac si insinua a corte per rapire il re e mette in giro la voce che il Luigi XIII dà falsi stipendi ai dipendenti. Dopo la rivolta delle guardie, D'Artagnan vuole vederci chiaro e inizia ad indagare.",
         "immagine": "https://image.tmdb.org/t/p/w300/pk97J0U6YeJutLT5MLDGWO8O6wB.jpg"
@@ -16795,10 +16753,10 @@
       },
       {
         "ora": "01:50",
-        "fine": "02:25",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:00",
+        "titolo": "Coop Troop",
+        "descrizione": "La Coop Troop parte in missione per aiutare la tartaruga Agnes a organizzare una festa a sorpresa per il centesimo compleanno del suo compagno Reggie. Ma il festeggiato ha una certa propensione a mettersi nei guai e questo complicherà le cose...",
+        "immagine": "https://image.tmdb.org/t/p/w300/17TNmKGRnWWSZ396myZunf0jt8t.jpg"
       },
       {
         "ora": "02:00",
@@ -16844,7 +16802,7 @@
       },
       {
         "ora": "03:10",
-        "fine": "03:35",
+        "fine": "03:25",
         "titolo": "Boyster - Super Mollusco",
         "descrizione": "Boyster si finge un esperto dello snowboard quando Alicia gli chiede di accompagnarla.",
         "immagine": "https://image.tmdb.org/t/p/w300/g6HlpPYrv1HG7vayyYf0trW0fKH.jpg"
@@ -16858,7 +16816,7 @@
       },
       {
         "ora": "03:35",
-        "fine": "04:00",
+        "fine": "03:50",
         "titolo": "La banda della natura",
         "descrizione": "Piedino e i suoi amici salvano un nido di uccellini.",
         "immagine": "https://img-guidatv.org/35/la-banda-della-natura/5.jpg"
@@ -16886,7 +16844,7 @@
       },
       {
         "ora": "04:25",
-        "fine": "04:40",
+        "fine": "04:45",
         "titolo": "Mortina",
         "descrizione": "Mortina e i suoi amici trovano un uovo al cimitero. Decidono di occuparsene ma si distraggono. Più tardi, tonfi e gemiti scuotono Villa Decadente: sarà forse la creatura uscita dall'uovo? Tra indizi pelosi e provviste divorate, la Squadra del Mistero imparerà che prendersi cura di qualcuno è una responsabilità.",
         "immagine": "https://image.tmdb.org/t/p/w300/m4OcyCHy2xhp1un1E4XvwGDaPkr.jpg"
@@ -16900,10 +16858,10 @@
       },
       {
         "ora": "04:50",
-        "fine": "05:40",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "05:00",
+        "titolo": "Coop Troop",
+        "descrizione": "La Coop Troop viene chiamata dai cuccioli di Sam, disperati perché il loro papà sta litigando con Bertha. I due cani, infatti, si stanno contendendo un osso. Sam vorrebbe regalarlo ai suoi cuccioli per il loro compleanno, Bertha, non vuole lasciargli quell'osso così succulento. La Coop Troop deve cercare di separare i due litiganti e nel frattempo preparare la festa di compleanno dei cuccioli!",
+        "immagine": "https://image.tmdb.org/t/p/w300/17TNmKGRnWWSZ396myZunf0jt8t.jpg"
       },
       {
         "ora": "05:00",
@@ -17326,7 +17284,7 @@
     "programmi": [
       {
         "ora": "00:10",
-        "fine": "00:45",
+        "fine": "00:40",
         "titolo": "Spike Team",
         "descrizione": "La fatica, il successo, ma anche i fallimenti di un gruppo di studentesse universitarie che vogliono diventare una grande squadra di pallavolo. Le Spike Team questa volta si preparano ad affrontare le Olimpiadi, dove saranno in concorrenza con le migliori squadre femminili del mondo.",
         "immagine": "https://img-guidatv.org/35/spike-team/1.jpg"
@@ -17340,7 +17298,7 @@
       },
       {
         "ora": "00:45",
-        "fine": "01:10",
+        "fine": "01:05",
         "titolo": "Le tre moschettiere",
         "descrizione": "Rustignac si insinua a corte per rapire il re e mette in giro la voce che il Luigi XIII dà falsi stipendi ai dipendenti. Dopo la rivolta delle guardie, D'Artagnan vuole vederci chiaro e inizia ad indagare.",
         "immagine": "https://image.tmdb.org/t/p/w300/pk97J0U6YeJutLT5MLDGWO8O6wB.jpg"
@@ -17375,10 +17333,10 @@
       },
       {
         "ora": "01:50",
-        "fine": "02:25",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "02:00",
+        "titolo": "Coop Troop",
+        "descrizione": "La Coop Troop parte in missione per aiutare la tartaruga Agnes a organizzare una festa a sorpresa per il centesimo compleanno del suo compagno Reggie. Ma il festeggiato ha una certa propensione a mettersi nei guai e questo complicherà le cose...",
+        "immagine": "https://image.tmdb.org/t/p/w300/17TNmKGRnWWSZ396myZunf0jt8t.jpg"
       },
       {
         "ora": "02:00",
@@ -17424,7 +17382,7 @@
       },
       {
         "ora": "03:10",
-        "fine": "03:35",
+        "fine": "03:25",
         "titolo": "Boyster - Super Mollusco",
         "descrizione": "Boyster si finge un esperto dello snowboard quando Alicia gli chiede di accompagnarla.",
         "immagine": "https://image.tmdb.org/t/p/w300/g6HlpPYrv1HG7vayyYf0trW0fKH.jpg"
@@ -17438,7 +17396,7 @@
       },
       {
         "ora": "03:35",
-        "fine": "04:00",
+        "fine": "03:50",
         "titolo": "La banda della natura",
         "descrizione": "Piedino e i suoi amici salvano un nido di uccellini.",
         "immagine": "https://img-guidatv.org/35/la-banda-della-natura/5.jpg"
@@ -17466,7 +17424,7 @@
       },
       {
         "ora": "04:25",
-        "fine": "04:40",
+        "fine": "04:45",
         "titolo": "Mortina",
         "descrizione": "Mortina e i suoi amici trovano un uovo al cimitero. Decidono di occuparsene ma si distraggono. Più tardi, tonfi e gemiti scuotono Villa Decadente: sarà forse la creatura uscita dall'uovo? Tra indizi pelosi e provviste divorate, la Squadra del Mistero imparerà che prendersi cura di qualcuno è una responsabilità.",
         "immagine": "https://image.tmdb.org/t/p/w300/m4OcyCHy2xhp1un1E4XvwGDaPkr.jpg"
@@ -17480,10 +17438,10 @@
       },
       {
         "ora": "04:50",
-        "fine": "05:40",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "05:00",
+        "titolo": "Coop Troop",
+        "descrizione": "La Coop Troop viene chiamata dai cuccioli di Sam, disperati perché il loro papà sta litigando con Bertha. I due cani, infatti, si stanno contendendo un osso. Sam vorrebbe regalarlo ai suoi cuccioli per il loro compleanno, Bertha, non vuole lasciargli quell'osso così succulento. La Coop Troop deve cercare di separare i due litiganti e nel frattempo preparare la festa di compleanno dei cuccioli!",
+        "immagine": "https://image.tmdb.org/t/p/w300/17TNmKGRnWWSZ396myZunf0jt8t.jpg"
       },
       {
         "ora": "05:00",
@@ -17921,9 +17879,9 @@
       {
         "ora": "02:30",
         "fine": "03:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Reazione A Catena Weekend",
+        "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
+        "immagine": "https://img-guidatv.org/1/reazione-a-catena-weekend/0.jpg"
       },
       {
         "ora": "03:45",
@@ -18172,9 +18130,9 @@
       {
         "ora": "02:30",
         "fine": "03:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Reazione A Catena Weekend",
+        "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
+        "immagine": "https://img-guidatv.org/1/reazione-a-catena-weekend/0.jpg"
       },
       {
         "ora": "03:45",
@@ -18408,10 +18366,10 @@
     "programmi": [
       {
         "ora": "00:30",
-        "fine": "01:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:09",
+        "titolo": "Domenica Sportiva Extratime",
+        "descrizione": "Servizi, interviste e approfondimenti a tutto campo, cronaca e anticipazioni sugli eventi più importanti dello Sport e sul mondo dei Motori.",
+        "immagine": "https://img-guidatv.org/2/domenica-sportiva-extratime/0.jpg"
       },
       {
         "ora": "01:09",
@@ -18603,10 +18561,10 @@
     "programmi": [
       {
         "ora": "00:30",
-        "fine": "01:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:09",
+        "titolo": "Domenica Sportiva Extratime",
+        "descrizione": "Servizi, interviste e approfondimenti a tutto campo, cronaca e anticipazioni sugli eventi più importanti dello Sport e sul mondo dei Motori.",
+        "immagine": "https://img-guidatv.org/2/domenica-sportiva-extratime/0.jpg"
       },
       {
         "ora": "01:09",
@@ -18820,9 +18778,9 @@
       {
         "ora": "02:00",
         "fine": "02:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Fuori Orario. Cose (Mai) Viste",
+        "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta STATI PROGRESSIVI DI MAGNETISMO (2) di Lorenzo Esposito",
+        "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
         "ora": "02:15",
@@ -18833,10 +18791,10 @@
       },
       {
         "ora": "02:20",
-        "fine": "05:01",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:00",
+        "titolo": "Personal Shopper",
+        "descrizione": "Maureen è una giovane donna americana che vive a Parigi e lavora come personal shopper. Ha l’incarico di scegliere i vestiti ideali, con un budget stratosferico a disposizione, per una star esigente di nome Kyra. Maureen ha anche il dono di comunicare con gli spiriti. Cerca un contatto con l’aldilà per poter salutare definitivamente il fratello gemello Lewis, recentemente scomparso e per riappacificarsi con la sua perdita. Inizierà a ricevere ambigui messaggi inviati da un mittente sconosciuto. Entrerà in contatto con una presenza spettrale ma non è sicura che si tratti di Lewis.",
+        "immagine": "https://image.tmdb.org/t/p/w300/ztQzC2Mrw43SklHnIwQaiOHWkUM.jpg"
       },
       {
         "ora": "04:00",
@@ -19043,9 +19001,9 @@
       {
         "ora": "02:00",
         "fine": "02:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "Fuori Orario. Cose (Mai) Viste",
+        "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta STATI PROGRESSIVI DI MAGNETISMO (2) di Lorenzo Esposito",
+        "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
         "ora": "02:15",
@@ -19056,10 +19014,10 @@
       },
       {
         "ora": "02:20",
-        "fine": "05:01",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:00",
+        "titolo": "Personal Shopper",
+        "descrizione": "Maureen è una giovane donna americana che vive a Parigi e lavora come personal shopper. Ha l’incarico di scegliere i vestiti ideali, con un budget stratosferico a disposizione, per una star esigente di nome Kyra. Maureen ha anche il dono di comunicare con gli spiriti. Cerca un contatto con l’aldilà per poter salutare definitivamente il fratello gemello Lewis, recentemente scomparso e per riappacificarsi con la sua perdita. Inizierà a ricevere ambigui messaggi inviati da un mittente sconosciuto. Entrerà in contatto con una presenza spettrale ma non è sicura che si tratti di Lewis.",
+        "immagine": "https://image.tmdb.org/t/p/w300/ztQzC2Mrw43SklHnIwQaiOHWkUM.jpg"
       },
       {
         "ora": "04:00",
@@ -19352,7 +19310,7 @@
         "fine": "16:35",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000601/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:35",
@@ -19505,7 +19463,7 @@
         "fine": "16:35",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000601/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:35",
@@ -21683,7 +21641,7 @@
         "fine": "18:12",
         "titolo": "Atletico Madrid - Real Madrid",
         "descrizione": "In diretta dallo stadio Metropolitano, il derby di Madrid tra i colchoneros di Diego Simeone e i blancos guidati da Jose' Mourinho.",
-        "immagine": "https://img-guidatv.org/43/atletico-madrid-real-madrid/1.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314167502000101/media/10/10/0292a608-a2de-4d86-84b8-fd2d5ee1118c/c0c05362-d728-421c-aa5a-a9527244a23d.jpg"
       },
       {
         "ora": "18:12",
@@ -21857,7 +21815,7 @@
         "fine": "18:12",
         "titolo": "Atletico Madrid - Real Madrid",
         "descrizione": "In diretta dallo stadio Metropolitano, il derby di Madrid tra i colchoneros di Diego Simeone e i blancos guidati da Jose' Mourinho.",
-        "immagine": "https://img-guidatv.org/43/atletico-madrid-real-madrid/1.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314167502000101/media/10/10/0292a608-a2de-4d86-84b8-fd2d5ee1118c/c0c05362-d728-421c-aa5a-a9527244a23d.jpg"
       },
       {
         "ora": "18:12",
@@ -22479,10 +22437,10 @@
       },
       {
         "ora": "00:30",
-        "fine": "02:02",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:26",
+        "titolo": "Il Mondo Con Gli Occhi Di Overland - Iraq: Tra Storia E Rinascita",
+        "descrizione": "L'Iraq è, probabilmente, nel nostro immaginario collettivo, uno dei Paesi più pericolosi al mondo. Dopo anni di dittatura e le due Guerre del Golfo, il Paese è stato ancora scenario di una guerra devastante, questa volta per mano del fantomatico quanto spietato, Califfato Islamico, l'ISIS.  Fin dai primi momenti del nostro viaggio, la capitale Baghdad, per noi legata solo a guerra e distruzione, ci ha mostrato il suo volto gentile e accogliente. Abbiamo poi visto una delle città più famose della Storia occidentale: Babilonia, sia la parte ricostruita da Saddam, sia quella originale. Un luogo assolutamente magico.  Ma le tracce delle tragedie passate sono ancora presenti: visitare Mosul, devastata dalla folle violenza dell'ISIS è stato un momento molto difficile del viaggio.",
+        "immagine": "https://img-guidatv.org/31/il-mondo-con-gli-occhi-di-overland/1.jpg"
       },
       {
         "ora": "01:26",
@@ -22493,7 +22451,7 @@
       },
       {
         "ora": "02:02",
-        "fine": "03:14",
+        "fine": "03:01",
         "titolo": "L'Altro '900: Elio Vittorini",
         "descrizione": "Narratore, editor, critico letterario e grande coscienza civile nell'Italia della Resistenza e della ricostruzione.",
         "immagine": "https://img-guidatv.org/31/l-altro-900/0.jpg"
@@ -22889,10 +22847,10 @@
     "programmi": [
       {
         "ora": "00:30",
-        "fine": "01:55",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:10",
+        "titolo": "Il paradiso delle signore",
+        "descrizione": "Le storie, gli amori, le speranze e le delusioni che ruotano attorno al primo grande magazzino per signore nella Milano a cavallo tra gli anni Cinquanta e Sessanta.",
+        "immagine": "https://image.tmdb.org/t/p/w300/1XKjPCtprWqjKhTiyYORVwgWePA.jpg"
       },
       {
         "ora": "01:10",
@@ -22910,10 +22868,10 @@
       },
       {
         "ora": "02:35",
-        "fine": "05:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:05",
+        "titolo": "Un'estate in Istria",
+        "descrizione": "Anne, scout calcistica tedesca, arriva in Istria per il matrimonio della sua migliore amica. Tra vecchi amori, nuove scoperte ed un giovane talento, si trova davanti alla necessità di dover fare una scelta...",
+        "immagine": "https://image.tmdb.org/t/p/w300/asd55YMGQhaj7Q9fvWwc2nJYG4b.jpg"
       },
       {
         "ora": "04:05",
@@ -25246,21 +25204,21 @@
         "fine": "15:55",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000601/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "15:55",
         "fine": "16:21",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000601/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:21",
         "fine": "16:30",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000601/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:30",
@@ -25355,9 +25313,9 @@
       {
         "ora": "00:30",
         "fine": "00:57",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS + RASSEGNA STAMPA",
+        "descrizione": "NEWS + RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
       },
       {
         "ora": "00:57",
@@ -25424,7 +25382,7 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:33",
+        "fine": "03:30",
         "titolo": "NEWS+ RASSEGNA STAMPA",
         "descrizione": "NEWS+ RASSEGNA STAMPA",
         "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
@@ -25466,10 +25424,10 @@
       },
       {
         "ora": "04:33",
-        "fine": "05:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:43",
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "04:43",
@@ -25495,9 +25453,9 @@
       {
         "ora": "05:30",
         "fine": "05:57",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS + RASSEGNA STAMPA",
+        "descrizione": "NEWS + RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
       },
       {
         "ora": "05:57",
@@ -25886,9 +25844,9 @@
       {
         "ora": "00:30",
         "fine": "00:57",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS + RASSEGNA STAMPA",
+        "descrizione": "NEWS + RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
       },
       {
         "ora": "00:57",
@@ -25955,7 +25913,7 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:33",
+        "fine": "03:30",
         "titolo": "NEWS+ RASSEGNA STAMPA",
         "descrizione": "NEWS+ RASSEGNA STAMPA",
         "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
@@ -25997,10 +25955,10 @@
       },
       {
         "ora": "04:33",
-        "fine": "05:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:43",
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "04:43",
@@ -26026,9 +25984,9 @@
       {
         "ora": "05:30",
         "fine": "05:57",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS + RASSEGNA STAMPA",
+        "descrizione": "NEWS + RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
       },
       {
         "ora": "05:57",
@@ -26417,9 +26375,9 @@
       {
         "ora": "00:30",
         "fine": "00:57",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS + RASSEGNA STAMPA",
+        "descrizione": "NEWS + RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
       },
       {
         "ora": "00:57",
@@ -26486,7 +26444,7 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:33",
+        "fine": "03:30",
         "titolo": "NEWS+ RASSEGNA STAMPA",
         "descrizione": "NEWS+ RASSEGNA STAMPA",
         "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
@@ -26528,10 +26486,10 @@
       },
       {
         "ora": "04:33",
-        "fine": "05:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:43",
+        "titolo": "NEWS",
+        "descrizione": "NEWS",
+        "immagine": "https://img-guidatv.org/4/news/7.jpg"
       },
       {
         "ora": "04:43",
@@ -26557,9 +26515,9 @@
       {
         "ora": "05:30",
         "fine": "05:57",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "titolo": "NEWS + RASSEGNA STAMPA",
+        "descrizione": "NEWS + RASSEGNA STAMPA",
+        "immagine": "https://img-guidatv.org/4/news-rassegna-stampa/5.jpg"
       },
       {
         "ora": "05:57",
@@ -26954,10 +26912,10 @@
       },
       {
         "ora": "00:45",
-        "fine": "02:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:25",
+        "titolo": "Passato E Presente - IMI. Voci Dalla Prigionia - 17",
+        "descrizione": "$25",
+        "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
         "ora": "01:25",
@@ -26982,10 +26940,10 @@
       },
       {
         "ora": "03:55",
-        "fine": "05:40",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:40",
+        "titolo": "Thrilling - La Spia Che Viene Dal Cielo (Pt.4)",
+        "descrizione": "Documentario di Enzo Biagi del 1972 sullo spionaggio internazionale che vedeva contrapposto il mondo sovietico a quello occidentale e su alcuni famosi casi di spie che hanno fatto la spola tra Unione Sovietica e Inghilterra vendendo notizie riservate su politica e armamenti. Biagi parla con esperti e ex spie di CIA, KGB e M16, che spiegano quali sono le principali occupazioni di una spia politica, come queste si muovono nel mondo diplomatico, quali sono i loro obiettivi e le tecniche a loro disposizione. Si spiegano poi lo spionaggio militare compiuto per mezzo di nuove tecnologie come i satelliti, e lo spionaggio industriale per rubare progetti e brevetti.",
+        "immagine": "https://image.tmdb.org/t/p/w500/fkePRPg2prgGAjB9wdfimqDsQkc.jpg"
       },
       {
         "ora": "04:40",
@@ -27185,7 +27143,7 @@
       },
       {
         "ora": "23:20",
-        "fine": "00:25",
+        "fine": "00:20",
         "titolo": "Gulag",
         "descrizione": "La prima grande produzione su uno degli episodi più tragici e meno rappresentati del secolo scorso: i campi di lavoro sovietici, meglio conosciuti come gulag. Basato su documenti mai resi noti in precedenza, su molte fonti e testimonianze, con l'ausilio di oltre 1000 immagini fotografiche (molte delle quali inedite), la serie racconta la realtà del sistema dei campi di concentramento punitivi del regime.",
         "immagine": "https://img-guidatv.org/24/gulag-1934-1945/5.jpg"
@@ -27212,10 +27170,10 @@
       },
       {
         "ora": "00:45",
-        "fine": "02:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:25",
+        "titolo": "Passato E Presente - IMI. Voci Dalla Prigionia - 17",
+        "descrizione": "$25",
+        "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
         "ora": "01:25",
@@ -27240,10 +27198,10 @@
       },
       {
         "ora": "03:55",
-        "fine": "05:40",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "04:40",
+        "titolo": "Thrilling - La Spia Che Viene Dal Cielo (Pt.4)",
+        "descrizione": "Documentario di Enzo Biagi del 1972 sullo spionaggio internazionale che vedeva contrapposto il mondo sovietico a quello occidentale e su alcuni famosi casi di spie che hanno fatto la spola tra Unione Sovietica e Inghilterra vendendo notizie riservate su politica e armamenti. Biagi parla con esperti e ex spie di CIA, KGB e M16, che spiegano quali sono le principali occupazioni di una spia politica, come queste si muovono nel mondo diplomatico, quali sono i loro obiettivi e le tecniche a loro disposizione. Si spiegano poi lo spionaggio militare compiuto per mezzo di nuove tecnologie come i satelliti, e lo spionaggio industriale per rubare progetti e brevetti.",
+        "immagine": "https://image.tmdb.org/t/p/w500/fkePRPg2prgGAjB9wdfimqDsQkc.jpg"
       },
       {
         "ora": "04:40",
@@ -27443,7 +27401,7 @@
       },
       {
         "ora": "23:20",
-        "fine": "00:25",
+        "fine": "00:20",
         "titolo": "Gulag",
         "descrizione": "La prima grande produzione su uno degli episodi più tragici e meno rappresentati del secolo scorso: i campi di lavoro sovietici, meglio conosciuti come gulag. Basato su documenti mai resi noti in precedenza, su molte fonti e testimonianze, con l'ausilio di oltre 1000 immagini fotografiche (molte delle quali inedite), la serie racconta la realtà del sistema dei campi di concentramento punitivi del regime.",
         "immagine": "https://img-guidatv.org/24/gulag-1934-1945/5.jpg"
@@ -27456,10 +27414,10 @@
     "programmi": [
       {
         "ora": "00:45",
-        "fine": "02:35",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:05",
+        "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
+        "descrizione": "$29",
+        "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
       },
       {
         "ora": "01:05",
@@ -27470,9 +27428,9 @@
       },
       {
         "ora": "02:00",
-        "fine": "02:40",
+        "fine": "02:35",
         "titolo": "Progetto Scienza STEM",
-        "descrizione": "$2c",
+        "descrizione": "$2a",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
@@ -27484,7 +27442,7 @@
       },
       {
         "ora": "03:15",
-        "fine": "03:50",
+        "fine": "03:40",
         "titolo": "Un Giorno Per: Il Lavoro",
         "descrizione": "Oggi parliamo di una legge che fissava a otto le ore lavorative giornaliere. Da allora il 1 maggio si celebra il Lavoro.",
         "immagine": "https://img-guidatv.org/34/un-giorno-per/1.jpg"
@@ -27493,21 +27451,21 @@
         "ora": "03:40",
         "fine": "04:50",
         "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
-        "descrizione": "$2d",
+        "descrizione": "$2b",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
       },
       {
         "ora": "04:50",
         "fine": "05:20",
         "titolo": "Memex Nautilus - Buchi Neri, Non Più Osc",
-        "descrizione": "$29",
+        "descrizione": "$2c",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
         "ora": "05:20",
         "fine": "06:00",
         "titolo": "Progetto Scienza Newton (Pt. 25 )\"Mutazi",
-        "descrizione": "$2a",
+        "descrizione": "$2d",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-newton/7.jpg"
       },
       {
@@ -27686,10 +27644,10 @@
     "programmi": [
       {
         "ora": "00:45",
-        "fine": "02:35",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "01:05",
+        "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
+        "descrizione": "$29",
+        "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
       },
       {
         "ora": "01:05",
@@ -27700,9 +27658,9 @@
       },
       {
         "ora": "02:00",
-        "fine": "02:40",
+        "fine": "02:35",
         "titolo": "Progetto Scienza STEM",
-        "descrizione": "$2c",
+        "descrizione": "$2a",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
@@ -27714,7 +27672,7 @@
       },
       {
         "ora": "03:15",
-        "fine": "03:50",
+        "fine": "03:40",
         "titolo": "Un Giorno Per: Il Lavoro",
         "descrizione": "Oggi parliamo di una legge che fissava a otto le ore lavorative giornaliere. Da allora il 1 maggio si celebra il Lavoro.",
         "immagine": "https://img-guidatv.org/34/un-giorno-per/1.jpg"
@@ -27723,21 +27681,21 @@
         "ora": "03:40",
         "fine": "04:50",
         "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
-        "descrizione": "$2d",
+        "descrizione": "$2b",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
       },
       {
         "ora": "04:50",
         "fine": "05:20",
         "titolo": "Memex Nautilus - Buchi Neri, Non Più Osc",
-        "descrizione": "$29",
+        "descrizione": "$2c",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
         "ora": "05:20",
         "fine": "06:00",
         "titolo": "Progetto Scienza Newton (Pt. 25 )\"Mutazi",
-        "descrizione": "$2a",
+        "descrizione": "$2d",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-newton/7.jpg"
       },
       {
@@ -29777,7 +29735,7 @@
         "ora": "16:50",
         "fine": "19:00",
         "titolo": "Finale Basket Supercoppa 2026",
-        "descrizione": "... 2026 Supercoppa Italiana. - Finale",
+        "descrizione": "... 2026 Supercoppa Italiana. - Ancora loro, come nell'ultima finale scudetto: Olimpia Milano e' Reyer Venezia si giocano il primo titolo della stagione, l'edizione numero 32 della Supercoppa. TC: Geri De Rosa e Andrea Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b9b92be7-1b15-42b5-b3f6-4343c46ef522/background/600"
       },
       {
