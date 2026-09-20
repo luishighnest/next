@@ -337,13 +337,9 @@ function HomeViewContent({ defaultTab = "all" }) {
 
     const shouldShowGroup = (sec, f) => {
         if (f === "all" || f === "home") return true;
-        const isTestJson = sec.navbar === "eventi" || sec.channels.some(c => c.isTestJson);
-        if (isTestJson) {
-            const normName = (sec.title || "").toUpperCase().replace(/\s+/g, "");
-            if (normName === "LIVETV" && f === "eventi") {
-                return false;
-            }
-            return f !== "intrattenimento";
+        const isEventSec = sec.navbar === "eventi" || sec.channels.some(c => c.isTestJson);
+        if (isEventSec) {
+            return f === "eventi";
         }
         return sec.navbar === f;
     };
