@@ -339,7 +339,7 @@ function HomeViewContent({ defaultTab = "all" }) {
         if (f === "all" || f === "home") return true;
         const isEventSec = sec.navbar === "eventi" || sec.channels.some(c => c.isTestJson);
         if (isEventSec) {
-            return f === "eventi";
+            return f === "eventi" || f === "sport";
         }
         return sec.navbar === f;
     };
@@ -462,8 +462,8 @@ function HomeViewContent({ defaultTab = "all" }) {
             if (q) {
                 chs = chs.filter(c => matchesChannel(c, q));
             }
-            const liveChs = chs.filter(c => !isChannelVod(c));
-            const vodChs = chs.filter(c => isChannelVod(c));
+            const liveChs = chs;
+            const vodChs = [];
 
             if (liveChs.length > 0) {
                 liveSecs.push({
@@ -655,6 +655,8 @@ function HomeViewContent({ defaultTab = "all" }) {
                                 )}
                             </section>
 
+                            {filteredEventiVodSections.length > 0 && (
+                            <>
                             {/* Separatore visivo pulito ed elegante */}
                             <div className="eventi-block-divider"></div>
 
@@ -709,6 +711,8 @@ function HomeViewContent({ defaultTab = "all" }) {
                                     </div>
                                 )}
                             </section>
+                            </>
+                            )}
                         </div>
                     ) : (
                         filteredSections.length === 0 ? (

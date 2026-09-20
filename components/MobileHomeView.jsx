@@ -152,6 +152,8 @@ export default function MobileHomeView({
                             )}
                         </div>
 
+                        {eventiVodSections.length > 0 && (
+                        <>
                         {/* Divisore elegante */}
                         <div className="eventi-block-divider" style={{ margin: "24px 0" }}></div>
 
@@ -215,6 +217,8 @@ export default function MobileHomeView({
                                 </div>
                             )}
                         </div>
+                        </>
+                        )}
                     </div>
                 ) : filteredSections.length === 0 ? (
                     <div className="mobile-empty-state">
