@@ -324,16 +324,17 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         : (isSky ? `/sky?ch=${slug}${cleanSrc ? `&src=${cleanSrc}` : ""}` : `/eventi/${slug}`);
 
     const isDazn1Channel = (channel?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
-
-    const isEventVod = Boolean(
-        channel?.isEventVod ||
-        (channel?.type && channel.type.toLowerCase() === "vod") ||
-        (channel?.tile_type && (channel.tile_type.toLowerCase() === "catchup" || channel.tile_type.toLowerCase() === "ondemand" || channel.tile_type.toLowerCase() === "vod")) ||
-        (channel?.group && channel.group.toLowerCase().includes("vod")) ||
-        (channel?.url && (channel.url.includes("-vod.") || channel.url.includes("/vod/"))) ||
-        (channel?.end && new Date(channel.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1Channel) ||
-        (!channel?.end && channel?.start && (Date.now() - new Date(channel.start).getTime()) > 6 * 60 * 60 * 1000 && !isDazn1Channel)
-    );
+    const _tileTypeLower = (channel?.tile_type || "").toLowerCase();
+    const isEventVod = _tileTypeLower === "live" ? false :
+        (_tileTypeLower === "catchup" || _tileTypeLower === "ondemand" || _tileTypeLower === "vod") ? true :
+        Boolean(
+            channel?.isEventVod ||
+            (channel?.type && channel.type.toLowerCase() === "vod") ||
+            (channel?.group && channel.group.toLowerCase().includes("vod")) ||
+            (channel?.url && (channel.url.includes("-vod.") || channel.url.includes("/vod/"))) ||
+            (channel?.end && new Date(channel.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1Channel) ||
+            (!channel?.end && channel?.start && (Date.now() - new Date(channel.start).getTime()) > 6 * 60 * 60 * 1000 && !isDazn1Channel)
+        );
     const dynColor = getDynamicColor(channel?.title);
 
     const rawCategory = categoryName || channel?.group || channel?.category || "";

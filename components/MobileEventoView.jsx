@@ -165,15 +165,17 @@ export default function MobileEventoView({
                         <div className="mobile-sky-row-meta">
                             {(() => {
                                 const isDazn1 = (channel?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
-                                const isEventVod = Boolean(
-                                    channel?.isEventVod ||
-                                    (channel?.type && channel.type.toLowerCase() === "vod") ||
-                                    (channel?.tile_type && (channel.tile_type.toLowerCase() === "catchup" || channel.tile_type.toLowerCase() === "ondemand" || channel.tile_type.toLowerCase() === "vod")) ||
-                                    (channel?.group && channel.group.toLowerCase().includes("vod")) ||
-                                    (channel?.url && (channel.url.includes("-vod.") || channel.url.includes("/vod/"))) ||
-                                    (channel?.end && new Date(channel.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1) ||
-                                    (!channel?.end && channel?.start && (Date.now() - new Date(channel.start).getTime()) > 6 * 60 * 60 * 1000 && !isDazn1)
-                                );
+                                const tileTypeLower = (channel?.tile_type || "").toLowerCase();
+                                const isEventVod = tileTypeLower === "live" ? false :
+                                    (tileTypeLower === "catchup" || tileTypeLower === "ondemand" || tileTypeLower === "vod") ? true :
+                                    Boolean(
+                                        channel?.isEventVod ||
+                                        (channel?.type && channel.type.toLowerCase() === "vod") ||
+                                        (channel?.group && channel.group.toLowerCase().includes("vod")) ||
+                                        (channel?.url && (channel.url.includes("-vod.") || channel.url.includes("/vod/"))) ||
+                                        (channel?.end && new Date(channel.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1) ||
+                                        (!channel?.end && channel?.start && (Date.now() - new Date(channel.start).getTime()) > 6 * 60 * 60 * 1000 && !isDazn1)
+                                    );
                                 if (isEventVod) {
                                     return (
                                         <span className="mobile-sky-group-badge" style={{ background: "rgba(14, 116, 144, 0.4)", color: "#38bdf8", border: "1px solid rgba(56, 189, 248, 0.3)" }}>

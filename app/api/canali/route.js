@@ -256,10 +256,11 @@ export async function GET(request) {
                 if (!Array.isArray(items) || items.length === 0) return;
 
                 if (!customCategoriesList.some(c => c.nome === groupName)) {
+                    const isLiveTVGroup = groupName === "Live TV";
                     customCategoriesList.push({
                         id: groupName.toLowerCase().replace(/[^a-z0-9]/g, "_"),
                         nome: groupName,
-                        navbar: "eventi"
+                        navbar: isLiveTVGroup ? "sport" : "eventi"
                     });
                 }
 
@@ -286,7 +287,64 @@ export async function GET(request) {
 
                     const isDazn1 = cleanTitle.toUpperCase().replace(/\s+/g, "").includes("DAZN1") || (ev.end && ev.end.startsWith("3000"));
 
-                    if (ev.start && !isDazn1) {
+                    // Stabilizza isLiveNow tramite tile_type (metodo script2) — non dipende dall'ora corrente
+                    const tileTypeLower = (ev.tile_type || "").toLowerCase();
+                    if (tileTypeLower === "live") {
+                        // Evento live confermato da script2
+                        isLiveNow = true;
+                        if (ev.start) {
+                            try {
+                                const startD = new Date(ev.start);
+                                if (!isNaN(startD.getTime())) {
+                                    timeStr = startD.toLocaleTimeString('it-IT', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false });
+                                    const nowD = new Date();
+                                    const startRome = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                    const nowRome = nowD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                    const tomorrowD = new Date(nowD.getTime() + 24 * 60 * 60 * 1000);
+                                    const tomorrowRome = tomorrowD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                    const yesterdayD = new Date(nowD.getTime() - 24 * 60 * 60 * 1000);
+                                    const yesterdayRome = yesterdayD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                    if (startRome === nowRome) { dateStr = "Oggi"; }
+                                    else if (startRome === tomorrowRome) { dateStr = "Domani"; }
+                                    else if (startRome === yesterdayRome) { dateStr = "Ieri"; }
+                                    else {
+                                        const dName = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', weekday: 'short' });
+                                        const mName = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: 'numeric', month: 'short' });
+                                        dateStr = dName.charAt(0).toUpperCase() + dName.slice(1) + " " + mName;
+                                    }
+                                    scheduleLabel = dateStr ? `${dateStr} • ${timeStr}` : timeStr;
+                                }
+                            } catch(e) {}
+                        }
+                    } else if (tileTypeLower === "catchup" || tileTypeLower === "ondemand" || tileTypeLower === "vod") {
+                        // VOD/Replay — non è live
+                        isLiveNow = false;
+                        if (ev.start) {
+                            try {
+                                const startD = new Date(ev.start);
+                                if (!isNaN(startD.getTime())) {
+                                    timeStr = startD.toLocaleTimeString('it-IT', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false });
+                                    const nowD = new Date();
+                                    const startRome = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                    const nowRome = nowD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                    const tomorrowD = new Date(nowD.getTime() + 24 * 60 * 60 * 1000);
+                                    const tomorrowRome = tomorrowD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                    const yesterdayD = new Date(nowD.getTime() - 24 * 60 * 60 * 1000);
+                                    const yesterdayRome = yesterdayD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: '2-digit', month: '2-digit', year: 'numeric' });
+                                    if (startRome === nowRome) { dateStr = "Oggi"; }
+                                    else if (startRome === tomorrowRome) { dateStr = "Domani"; }
+                                    else if (startRome === yesterdayRome) { dateStr = "Ieri"; }
+                                    else {
+                                        const dName = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', weekday: 'short' });
+                                        const mName = startD.toLocaleDateString('it-IT', { timeZone: 'Europe/Rome', day: 'numeric', month: 'short' });
+                                        dateStr = dName.charAt(0).toUpperCase() + dName.slice(1) + " " + mName;
+                                    }
+                                    scheduleLabel = dateStr ? `${dateStr} • ${timeStr}` : timeStr;
+                                }
+                            } catch(e) {}
+                        }
+                    } else if (ev.start && !isDazn1) {
+                        // Nessun tile_type stabile: fallback a calcolo start/end
                         try {
                             const startD = new Date(ev.start);
                             if (!isNaN(startD.getTime())) {
@@ -374,11 +432,12 @@ export async function GET(request) {
                             }
                         }
                     } else {
+                        const isLiveTVGroup = groupName === "Live TV";
                         const chObj = {
                             id: cleanTitle,
                             title: cleanTitle,
                             group: groupName,
-                            navbar: "eventi",
+                            navbar: isLiveTVGroup ? "sport" : "eventi",
                             url: rawStreamUrl,
                             kid_key: rawKidKey,
                             provider: ev.provider || "DAZN",
@@ -396,7 +455,7 @@ export async function GET(request) {
                             dazn_token: ev.dazn_token || "",
                             sources: sourceItem ? [sourceItem] : [],
                             isCustom: true,
-                            isTestJson: true,
+                            isTestJson: !isLiveTVGroup,
                             slug: createSlug(cleanTitle)
                         };
                         groupedMap.set(groupKey, chObj);

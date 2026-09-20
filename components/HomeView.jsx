@@ -429,10 +429,15 @@ function HomeViewContent({ defaultTab = "all" }) {
     // Helper per determinare se un canale evento è VOD/Replay
     const isChannelVod = (c) => {
         const isDazn1 = (c?.title || "").toUpperCase().replace(/\s+/g, "").includes("DAZN1");
+        const tileTypeLower = (c?.tile_type || "").toLowerCase();
+        // tile_type "live" → mai VOD (anche se end scaduto)
+        if (tileTypeLower === "live") return false;
+        // tile_type "catchup"/"ondemand"/"vod" → sempre VOD
+        if (tileTypeLower === "catchup" || tileTypeLower === "ondemand" || tileTypeLower === "vod") return true;
+        // fallback ai controlli originali
         return Boolean(
             c?.isEventVod ||
             (c?.type && c.type.toLowerCase() === "vod") ||
-            (c?.tile_type && (c.tile_type.toLowerCase() === "catchup" || c.tile_type.toLowerCase() === "ondemand" || c.tile_type.toLowerCase() === "vod")) ||
             (c?.group && c.group.toLowerCase().includes("vod")) ||
             (c?.url && (c.url.includes("-vod.") || c.url.includes("/vod/"))) ||
             (c?.end && new Date(c.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1) ||
