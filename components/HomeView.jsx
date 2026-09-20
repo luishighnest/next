@@ -439,7 +439,8 @@ function HomeViewContent({ defaultTab = "all" }) {
             (c?.tile_type && (c.tile_type.toLowerCase() === "catchup" || c.tile_type.toLowerCase() === "ondemand" || c.tile_type.toLowerCase() === "vod")) ||
             (c?.group && c.group.toLowerCase().includes("vod")) ||
             (c?.url && (c.url.includes("-vod.") || c.url.includes("/vod/"))) ||
-            (c?.end && new Date(c.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1)
+            (c?.end && new Date(c.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1) ||
+            (!c?.end && c?.start && (Date.now() - new Date(c.start).getTime()) > 6 * 60 * 60 * 1000 && !isDazn1)
         );
     };
 

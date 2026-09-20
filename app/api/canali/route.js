@@ -321,10 +321,11 @@ export async function GET(request) {
                                     if (!isNaN(endD.getTime())) {
                                         isLiveNow = (nowD >= startD && nowD <= endD);
                                     } else {
-                                        isLiveNow = (nowD >= startD);
+                                        isLiveNow = (nowD >= startD && (nowD.getTime() - startD.getTime()) <= 6 * 60 * 60 * 1000);
                                     }
                                 } else {
-                                    isLiveNow = (nowD >= startD);
+                                    // Se manca end, l'evento è live per max 6 ore dall'orario di inizio
+                                    isLiveNow = (nowD >= startD && (nowD.getTime() - startD.getTime()) <= 6 * 60 * 60 * 1000);
                                 }
                             }
                         } catch(e) {}
@@ -337,7 +338,8 @@ export async function GET(request) {
                         (groupName && groupName.toLowerCase().includes("vod")) ||
                         (ev.mpd && (ev.mpd.includes("-vod.") || ev.mpd.includes("/vod/"))) ||
                         (ev.url && (ev.url.includes("-vod.") || ev.url.includes("/vod/"))) ||
-                        (ev.end && new Date(ev.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1)
+                        (ev.end && new Date(ev.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1) ||
+                        (!ev.end && ev.start && (Date.now() - new Date(ev.start).getTime()) > 6 * 60 * 60 * 1000 && !isDazn1)
                     );
 
                     let rawStreamUrl = (ev.mpd || ev.url || "").trim();

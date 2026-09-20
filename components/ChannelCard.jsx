@@ -58,6 +58,13 @@ function isChannelExpired(channel) {
                 if (Date.now() - endD.getTime() > 15 * 60 * 1000) return true;
             }
         } catch (e) {}
+    } else if (channel.start) {
+        try {
+            const startD = new Date(channel.start);
+            if (!isNaN(startD.getTime())) {
+                if (Date.now() - startD.getTime() > 6 * 60 * 60 * 1000) return true;
+            }
+        } catch (e) {}
     }
 
     return false;
@@ -324,7 +331,8 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
         (channel?.tile_type && (channel.tile_type.toLowerCase() === "catchup" || channel.tile_type.toLowerCase() === "ondemand" || channel.tile_type.toLowerCase() === "vod")) ||
         (channel?.group && channel.group.toLowerCase().includes("vod")) ||
         (channel?.url && (channel.url.includes("-vod.") || channel.url.includes("/vod/"))) ||
-        (channel?.end && new Date(channel.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1Channel)
+        (channel?.end && new Date(channel.end).getTime() < (Date.now() - 30 * 60 * 1000) && !isDazn1Channel) ||
+        (!channel?.end && channel?.start && (Date.now() - new Date(channel.start).getTime()) > 6 * 60 * 60 * 1000 && !isDazn1Channel)
     );
     const dynColor = getDynamicColor(channel?.title);
 
