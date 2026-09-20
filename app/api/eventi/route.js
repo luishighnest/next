@@ -17,7 +17,7 @@ export async function GET(request) {
         const category = searchParams.get("category");
         const query = (searchParams.get("q") || searchParams.get("search") || "").toLowerCase().trim();
         const format = searchParams.get("format");
-        const eventi = await getStoreData("eventi") || {};
+        const eventi = await getStoreData("eventi_mpd") || {};
 
         if (category) {
             const list = eventi[category] || [];

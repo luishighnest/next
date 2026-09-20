@@ -106,7 +106,7 @@ export async function GET(request) {
 
     try {
         const [eventiData, sky1Data, sky2Data, catData, guideData] = await Promise.all([
-            getStoreData("eventi"),
+            getStoreData("eventi_mpd"),
             getStoreData("sky1"),
             getStoreData("sky2"),
             getStoreData("categorie"),
@@ -388,6 +388,9 @@ export async function GET(request) {
                             }
                         } catch(e) {}
                     }
+
+                    // Canali lineari 24/7 (end far-future) o DAZN 1: sempre live
+                    if (isDazn1) isLiveNow = true;
 
                     const isVodEvent = Boolean(
                         ev.is_vod ||
