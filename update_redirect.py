@@ -97,6 +97,20 @@ doRedirect();
 </body>
 </html>"""
 
+def git(*args):
+    return subprocess.run(["git", *args], cwd=str(BASE_DIR), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+def push_with_retry(repo_url, attempts=3):
+    # Il ramo main avanza in continuazione (cron Guida TV + altri commit):
+    # allinea il locale con pull --rebase autostash (gestisce worktree sporco) e ritenta.
+    for attempt in range(1, attempts + 1):
+        git("pull", "--rebase", "--autostash", repo_url, "main")
+        push = git("push", repo_url, "HEAD:main")
+        if push.returncode == 0:
+            return True
+        print(f"[redirect] Push in conflitto (tentativo {attempt}/{attempts}), riallineo e ritento...")
+    return False
+
 def update_github_repo_homepage(token, link):
     try:
         url = "https://api.github.com/repos/luishighnest/next"
@@ -143,8 +157,11 @@ def main():
         diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=str(BASE_DIR), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         if diff.returncode != 0:
             subprocess.run(["git", "commit", "-m", "redirect: cloudflare tunnel sync"], cwd=str(BASE_DIR), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            subprocess.run(["git", "push", repo_url, "HEAD:main"], cwd=str(BASE_DIR), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            print("[redirect] index.html pushato con successo.")
+            if push_with_retry(repo_url):
+                print("[redirect] index.html pushato con successo.")
+            else:
+                print("[redirect] Push non riuscito: il ramo main e' avanzato di nuovo (cron/altri commit). "
+                      "Il redirect resta attivo via API homepage GitHub; il push riprovera' al prossimo avvio.")
         return 0
     except Exception as e:
         print(f"[redirect] Errore push: {e}")
