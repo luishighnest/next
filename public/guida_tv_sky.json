@@ -20,9 +20,9 @@
       {
         "ora": "03:15",
         "fine": "04:00",
-        "titolo": "Non annunciato",
-        "descrizione": "Spazio con programmazione da definire dall'emittente televisiva.",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "titolo": "Sky Tennis Club",
+        "descrizione": "Sky Tennis Club Ep. 8",
+        "immagine": "https://img-guidatv.org/8714/sky-tennis-club/5.jpg"
       },
       {
         "ora": "04:00",
@@ -62,9 +62,9 @@
       {
         "ora": "07:20",
         "fine": "08:10",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/8714/sky-tennis-club/5.jpg"
       },
       {
         "ora": "08:10",
@@ -160,9 +160,9 @@
       {
         "ora": "17:10",
         "fine": "17:55",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/8714/sky-tennis-club/5.jpg"
       },
       {
         "ora": "17:55",
@@ -619,7 +619,7 @@
       },
       {
         "ora": "12:20",
-        "fine": "14:40",
+        "fine": "14:50",
         "titolo": "Juventus Next Gen - AlbinoLeffe",
         "descrizione": "... AlbinoLeffe Serie C. - Tutte le partite del campionato di Serie C italiano.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6eecbf6f-e1f4-4211-a5d8-7e4558017d42/background/600"
@@ -682,9 +682,9 @@
       {
         "ora": "01:00",
         "fine": "01:45",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
         "ora": "01:45",
@@ -717,9 +717,9 @@
       {
         "ora": "05:15",
         "fine": "06:00",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
         "ora": "06:00",
@@ -738,9 +738,9 @@
       {
         "ora": "10:00",
         "fine": "10:45",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
         "ora": "10:45",
@@ -752,9 +752,9 @@
       {
         "ora": "12:45",
         "fine": "13:30",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
         "ora": "13:30",
@@ -766,9 +766,9 @@
       {
         "ora": "15:30",
         "fine": "16:15",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
         "ora": "16:15",
@@ -787,9 +787,9 @@
       {
         "ora": "19:40",
         "fine": "20:30",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
         "ora": "20:30",
@@ -801,9 +801,9 @@
       {
         "ora": "22:30",
         "fine": "23:15",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "Sky Tennis Club Ep. 8",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
         "ora": "23:15",
@@ -1364,13 +1364,13 @@
       },
       {
         "ora": "12:20",
-        "fine": "14:25",
+        "fine": "14:40",
         "titolo": "Atalanta U23 - Ravenna",
         "descrizione": "Tutte le partite del campionato di Serie C italiano.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5edfe0ed-170f-431a-a192-42bd329cb92a/background/600"
       },
       {
-        "ora": "14:25",
+        "ora": "14:40",
         "fine": "14:55",
         "titolo": "Da San Siro Al Meazza: 100 Anni Di Passione",
         "descrizione": "... Passione. - 100 anni dello Stadio Meazza: storie e aneddoti attraverso i ricordi di tanti campioni di Milan e Inter protagonisti nella \"Scala del calcio\", che e' stata anche \"Scala del Rock\".",
@@ -1400,9 +1400,9 @@
       {
         "ora": "18:55",
         "fine": "19:15",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "immagine": "https://img-guidatv.org/7507/sky-tennis-club/6.jpg"
       },
       {
         "ora": "19:15",
@@ -1539,9 +1539,9 @@
       {
         "ora": "14:15",
         "fine": "15:00",
-        "titolo": "Non annunciato",
-        "descrizione": "Spazio con programmazione da definire dall'emittente televisiva.",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+        "titolo": "Sky Tennis Club",
+        "descrizione": "Le interviste e le analisi approfondite degli esperti del mondo del tennis",
+        "immagine": "https://img-guidatv.org/8693/sky-tennis-club/5.jpg"
       },
       {
         "ora": "15:00",
@@ -1949,7 +1949,7 @@
       {
         "ora": "12:30",
         "fine": "13:10",
-        "titolo": "Non annunciato",
+        "titolo": "Sky Tennis Club",
         "descrizione": "... Sky Tennis Club. - Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
@@ -2502,29 +2502,29 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:10",
-        "fine": "01:50",
+        "ora": "00:20",
+        "fine": "02:00",
         "titolo": "Davis Cup 2026 -GER vs CRO",
         "descrizione": "Davis Cup 2026 - Germania e Croazia si sfidano per qualificarsi alle Finals 8 di Bologna",
         "immagine": "https://img-guidatv.org/54/davis-cup-2026-ger-vs-cro/0.jpg"
       },
       {
-        "ora": "01:50",
-        "fine": "03:25",
+        "ora": "02:00",
+        "fine": "03:35",
         "titolo": "Davis Cup 2026 -GBR vs ECU",
         "descrizione": "Davis Cup 2026 - Gran Bretagna e Ecuodar si sfidano per qualificarsi alle Finals 8 di Bologna",
         "immagine": "https://img-guidatv.org/54/davis-cup-2026-gbr-vs-ecu/0.jpg"
       },
       {
-        "ora": "03:25",
-        "fine": "05:10",
+        "ora": "03:35",
+        "fine": "05:20",
         "titolo": "Davis Cup 2026 - CHI vs ESP",
         "descrizione": "Davis Cup 2026 - Cile e Spagna si sfidano per qualificarsi alle Finals 8 di Bologna",
         "immagine": "https://img-guidatv.org/54/davis-cup-2026-chi-vs-esp/1.jpg"
       },
       {
-        "ora": "05:10",
-        "fine": "06:55",
+        "ora": "05:20",
+        "fine": "07:05",
         "titolo": "LIVE WTA 500 SINGAPORE",
         "descrizione": "WTA 500 Singapore. In diretta dalla OCBC Arena, ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.",
         "immagine": "https://img-guidatv.org/54/live-wta-500-singapore/0.jpg"
@@ -2545,13 +2545,41 @@
       },
       {
         "ora": "10:20",
-        "fine": "12:00",
+        "fine": "12:05",
         "titolo": "Davis Cup 2026 -CZE vs USA",
         "descrizione": "Davis Cup 2026 - Rep. Ceca e Stati Uniti si sfidano per qualificarsi alle Finals 8 di Bologna",
         "immagine": "https://img-guidatv.org/54/davis-cup-2026-cze-vs-usa/0.jpg"
       },
       {
-        "ora": "12:00",
+        "ora": "12:05",
+        "fine": "12:20",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "12:20",
+        "fine": "12:35",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "12:35",
+        "fine": "12:50",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "12:50",
+        "fine": "13:05",
+        "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
+        "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
+        "immagine": "https://img-guidatv.org/54/live-davis-cup-qualificazioni/5.jpg"
+      },
+      {
+        "ora": "13:05",
         "fine": "13:45",
         "titolo": "LIVE DAVIS CUP QUALIFICAZIONI",
         "descrizione": "Davis Cup - Le nazionali piu' forti si sfidano per qualificarsi alle Finals 8 di Bologna.",
@@ -2622,10 +2650,10 @@
       },
       {
         "ora": "22:55",
-        "fine": "00:10",
-        "titolo": "Davis Cup 2026 -GER vs CRO",
-        "descrizione": "Davis Cup 2026 - Germania e Croazia si sfidano per qualificarsi alle Finals 8 di Bologna",
-        "immagine": "https://img-guidatv.org/54/davis-cup-2026-ger-vs-cro/0.jpg"
+        "fine": "00:20",
+        "titolo": "WTA 500 Guadalajara 2026",
+        "descrizione": "Peyton Stearns vs Iva Jovic WTA 500 Guadalajara Finale",
+        "immagine": "https://img-guidatv.org/54/wta-500-guadalajara-2026/0.jpg"
       }
     ]
   },
@@ -2783,7 +2811,7 @@
         "ora": "08:30",
         "fine": "09:05",
         "titolo": "Tiro Con L'Arco - Campionati Italiani Targa 2026",
-        "descrizione": "Campionati Italiani Targa  Photo credit: Fausto Ercoli",
+        "descrizione": "Campionati Italiani Targa",
         "immagine": "https://img-guidatv.org/32/tiro-con-l-arco-campionati-italiani-targa-2026/0.jpg"
       },
       {
@@ -2796,50 +2824,50 @@
       {
         "ora": "11:30",
         "fine": "12:30",
-        "titolo": "Motocross. Mondiale GP Australia: MXGP",
-        "descrizione": "Rombano i motori del motocross mondiale 2026. Venti le tappe di MXGP e MX2 che toccano i cinque continenti del pianeta, con tappe italiane in Trentino, Sardegna e a Montevarchi per il GP Italia.",
-        "immagine": "https://img-guidatv.org/32/motocross/0.jpg"
+        "titolo": "Mondiale Motocross 2026 - GP Di Australia: MXGP (Gara 2)",
+        "descrizione": "Seconda manche della classe MXGP nel Gran Premio d'Australia, appuntamento del Mondiale Motocross 2026.",
+        "immagine": "https://img-guidatv.org/immagini/motocross.jpeg"
       },
       {
         "ora": "12:30",
         "fine": "13:30",
-        "titolo": "Rally. C.To Italiano Sparco: Rally Lazio Cassino - Gara 2",
-        "descrizione": "Rally. C.to Italiano Sparco: Rally Lazio Cassino - gara 2",
-        "immagine": "https://img-guidatv.org/32/rally/0.jpg"
+        "titolo": "Campionato Italiano Assoluto Rally 2026 - Rally Del Lazio Cassino (Gara 2)",
+        "descrizione": "Seconda giornata di gara al Rally del Lazio Cassino 2026, sesto appuntamento del Campionato Italiano Assoluto Rally Sparco.",
+        "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
         "ora": "13:30",
         "fine": "14:50",
-        "titolo": "Ciclismo. Giro Della Campania Elite Uomi",
-        "descrizione": "Ciclismo. Giro della Campania Elite uomini",
+        "titolo": "Ciclismo - Giro Della Campania 2026",
+        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "14:50",
         "fine": "17:40",
-        "titolo": "Ciclismo. Mondiale Montreal: Cronometro Donne",
-        "descrizione": "Tadej Pogacar difende il titolo mondiale in Ruanda nella prima edizione africana della corsa iridata di ciclismo.",
+        "titolo": "Ciclismo - Mondiali Di Ciclismo Su Strada 2026 - Cronometro Individuale Donne",
+        "descrizione": "Ai Mondiali di ciclismo su strada 2026, le migliori specialiste internazionali si sfidano nella cronometro individuale femminile per conquistare la maglia iridata contro il tempo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "17:40",
         "fine": "18:40",
-        "titolo": "Pugilato: Camp. Internazionale WBC Pesi",
-        "descrizione": "Pugilato: Camp. Internazionale WBC Pesi Bridger: Kogasso vs Ramirez",
+        "titolo": "Pugilato - Titolo WBC Pesi Bridger: Kogasso Vs Ramirez",
+        "descrizione": "A Trinità d'Agultu e Vignola, Jonathan Kogasso affronta l'argentino Kevin Cristopher Ramirez per il titolo WBC International vacante dei pesi Bridger.",
         "immagine": "https://img-guidatv.org/32/pugilato/0.jpg"
       },
       {
         "ora": "18:40",
         "fine": "21:35",
-        "titolo": "Ciclismo. Mondiale Montreal Cronometro Uomini",
-        "descrizione": "Tadej Pogacar difende il titolo mondiale in Ruanda nella prima edizione africana della corsa iridata di ciclismo.",
+        "titolo": "Ciclismo - Mondiali Di Ciclismo Su Strada 2026 - Cronometro Individuale Uomini",
+        "descrizione": "Ai Mondiali di ciclismo su strada 2026, i migliori specialisti internazionali si sfidano nella cronometro individuale maschile per conquistare la maglia iridata contro il tempo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "21:35",
         "fine": "22:55",
-        "titolo": "Ciclismo. Giro Della Campania",
-        "descrizione": "Ciclismo. Giro della Campania",
+        "titolo": "Ciclismo - Giro Della Campania 2026",
+        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
@@ -2852,9 +2880,9 @@
       {
         "ora": "23:30",
         "fine": "02:00",
-        "titolo": "Pallavolo. Europeo Maschile: Ottavo Di Finale",
-        "descrizione": "I campioni del mondo guidati da Ferdinando De Giorgi si presentano ai Campionati Europei di pallavolo maschile con l'obiettivo di conquistare il titolo continentale. Capitan Giannelli e compagni, forti di talento ed esperienza, sono pronti a difendere i colori azzurri e scrivere un nuovo capitolo della storia della pallavolo italiana.",
-        "immagine": "https://img-guidatv.org/32/pallavolo-europeo-maschile-ottavo-di-finale/0.jpg"
+        "titolo": "Europei Di Pallavolo Maschile 2026 - Ottavi Di Finale: Finlandia - Grecia",
+        "descrizione": "Negli ottavi di finale degli Europei maschili di pallavolo 2026, Finlandia e Grecia si affrontano in una sfida a eliminazione diretta che vale l’accesso ai quarti di finale.",
+        "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-ottavi-di-finale-finlandia-grecia/0.jpg"
       }
     ]
   },
@@ -2901,7 +2929,7 @@
         "ora": "08:30",
         "fine": "09:05",
         "titolo": "Tiro Con L'Arco - Campionati Italiani Targa 2026",
-        "descrizione": "Campionati Italiani Targa  Photo credit: Fausto Ercoli",
+        "descrizione": "Campionati Italiani Targa",
         "immagine": "https://img-guidatv.org/32/tiro-con-l-arco-campionati-italiani-targa-2026/0.jpg"
       },
       {
@@ -2914,50 +2942,50 @@
       {
         "ora": "11:30",
         "fine": "12:30",
-        "titolo": "Motocross. Mondiale GP Australia: MXGP",
-        "descrizione": "Rombano i motori del motocross mondiale 2026. Venti le tappe di MXGP e MX2 che toccano i cinque continenti del pianeta, con tappe italiane in Trentino, Sardegna e a Montevarchi per il GP Italia.",
-        "immagine": "https://img-guidatv.org/32/motocross/0.jpg"
+        "titolo": "Mondiale Motocross 2026 - GP Di Australia: MXGP (Gara 2)",
+        "descrizione": "Seconda manche della classe MXGP nel Gran Premio d'Australia, appuntamento del Mondiale Motocross 2026.",
+        "immagine": "https://img-guidatv.org/immagini/motocross.jpeg"
       },
       {
         "ora": "12:30",
         "fine": "13:30",
-        "titolo": "Rally. C.To Italiano Sparco: Rally Lazio Cassino - Gara 2",
-        "descrizione": "Rally. C.to Italiano Sparco: Rally Lazio Cassino - gara 2",
-        "immagine": "https://img-guidatv.org/32/rally/0.jpg"
+        "titolo": "Campionato Italiano Assoluto Rally 2026 - Rally Del Lazio Cassino (Gara 2)",
+        "descrizione": "Seconda giornata di gara al Rally del Lazio Cassino 2026, sesto appuntamento del Campionato Italiano Assoluto Rally Sparco.",
+        "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
         "ora": "13:30",
         "fine": "14:50",
-        "titolo": "Ciclismo. Giro Della Campania Elite Uomi",
-        "descrizione": "Ciclismo. Giro della Campania Elite uomini",
+        "titolo": "Ciclismo - Giro Della Campania 2026",
+        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "14:50",
         "fine": "17:40",
-        "titolo": "Ciclismo. Mondiale Montreal: Cronometro Donne",
-        "descrizione": "Tadej Pogacar difende il titolo mondiale in Ruanda nella prima edizione africana della corsa iridata di ciclismo.",
+        "titolo": "Ciclismo - Mondiali Di Ciclismo Su Strada 2026 - Cronometro Individuale Donne",
+        "descrizione": "Ai Mondiali di ciclismo su strada 2026, le migliori specialiste internazionali si sfidano nella cronometro individuale femminile per conquistare la maglia iridata contro il tempo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "17:40",
         "fine": "18:40",
-        "titolo": "Pugilato: Camp. Internazionale WBC Pesi",
-        "descrizione": "Pugilato: Camp. Internazionale WBC Pesi Bridger: Kogasso vs Ramirez",
+        "titolo": "Pugilato - Titolo WBC Pesi Bridger: Kogasso Vs Ramirez",
+        "descrizione": "A Trinità d'Agultu e Vignola, Jonathan Kogasso affronta l'argentino Kevin Cristopher Ramirez per il titolo WBC International vacante dei pesi Bridger.",
         "immagine": "https://img-guidatv.org/32/pugilato/0.jpg"
       },
       {
         "ora": "18:40",
         "fine": "21:35",
-        "titolo": "Ciclismo. Mondiale Montreal Cronometro Uomini",
-        "descrizione": "Tadej Pogacar difende il titolo mondiale in Ruanda nella prima edizione africana della corsa iridata di ciclismo.",
+        "titolo": "Ciclismo - Mondiali Di Ciclismo Su Strada 2026 - Cronometro Individuale Uomini",
+        "descrizione": "Ai Mondiali di ciclismo su strada 2026, i migliori specialisti internazionali si sfidano nella cronometro individuale maschile per conquistare la maglia iridata contro il tempo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "21:35",
         "fine": "22:55",
-        "titolo": "Ciclismo. Giro Della Campania",
-        "descrizione": "Ciclismo. Giro della Campania",
+        "titolo": "Ciclismo - Giro Della Campania 2026",
+        "descrizione": "I campioni delle due ruote si sfidano nelle principali gare nazionali e internazionali di ciclismo.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
@@ -2970,9 +2998,9 @@
       {
         "ora": "23:30",
         "fine": "02:00",
-        "titolo": "Pallavolo. Europeo Maschile: Ottavo Di Finale",
-        "descrizione": "I campioni del mondo guidati da Ferdinando De Giorgi si presentano ai Campionati Europei di pallavolo maschile con l'obiettivo di conquistare il titolo continentale. Capitan Giannelli e compagni, forti di talento ed esperienza, sono pronti a difendere i colori azzurri e scrivere un nuovo capitolo della storia della pallavolo italiana.",
-        "immagine": "https://img-guidatv.org/32/pallavolo-europeo-maschile-ottavo-di-finale/0.jpg"
+        "titolo": "Europei Di Pallavolo Maschile 2026 - Ottavi Di Finale: Finlandia - Grecia",
+        "descrizione": "Negli ottavi di finale degli Europei maschili di pallavolo 2026, Finlandia e Grecia si affrontano in una sfida a eliminazione diretta che vale l’accesso ai quarti di finale.",
+        "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-ottavi-di-finale-finlandia-grecia/0.jpg"
       }
     ]
   },
@@ -6480,56 +6508,49 @@
       },
       {
         "ora": "03:05",
-        "fine": "03:20",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "03:20",
-        "fine": "03:40",
+        "fine": "03:25",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:00",
+        "ora": "03:25",
+        "fine": "03:45",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
+        "ora": "03:45",
+        "fine": "04:10",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep4 di 20 Episodio 4 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "04:50",
+        "ora": "04:10",
+        "fine": "04:30",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep5 di 20 Episodio 5 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:15",
+        "ora": "04:30",
+        "fine": "04:55",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep6 di 20 Episodio 6 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:35",
+        "ora": "04:55",
+        "fine": "05:15",
         "titolo": "See Dad Run",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
       },
       {
-        "ora": "05:35",
-        "fine": "06:00",
+        "ora": "05:15",
+        "fine": "05:40",
         "titolo": "Un papà da Oscar",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
@@ -6871,56 +6892,49 @@
       },
       {
         "ora": "03:05",
-        "fine": "03:20",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "03:20",
-        "fine": "03:40",
+        "fine": "03:25",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:00",
+        "ora": "03:25",
+        "fine": "03:45",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
+        "ora": "03:45",
+        "fine": "04:10",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep4 di 20 Episodio 4 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "04:50",
+        "ora": "04:10",
+        "fine": "04:30",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep5 di 20 Episodio 5 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:15",
+        "ora": "04:30",
+        "fine": "04:55",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep6 di 20 Episodio 6 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:35",
+        "ora": "04:55",
+        "fine": "05:15",
         "titolo": "See Dad Run",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
       },
       {
-        "ora": "05:35",
-        "fine": "06:00",
+        "ora": "05:15",
+        "fine": "05:40",
         "titolo": "Un papà da Oscar",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
@@ -7292,8 +7306,8 @@
         "ora": "21:15",
         "fine": "23:10",
         "titolo": "Swiped",
-        "descrizione": "La storia di Whitney Wolfe Herd, la donna che ha contribuito a creare due innovative app di incontri di successo. Così facendo, è diventata la più giovane donna miliardaria del mondo.",
-        "immagine": "https://image.tmdb.org/t/p/w300//mEeFRU5ADkyP7JtOFFV8tYMm3zD.jpg"
+        "descrizione": "Whitney Wolfe usa una grinta e un'ingegnosità straordinarie per entrare nel settore tecnologico dominato dagli uomini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/mEeFRU5ADkyP7JtOFFV8tYMm3zD.jpg"
       },
       {
         "ora": "23:10",
@@ -11804,13 +11818,13 @@
       },
       {
         "ora": "02:55",
-        "fine": "03:20",
+        "fine": "03:15",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep10 di 10 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei più piccoli con soluzioni da...",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f4269d42-050e-4450-9fe2-c236b1a544bd/background/600"
       },
       {
-        "ora": "03:20",
+        "ora": "03:15",
         "fine": "03:40",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep1 di 10 L'esploratore/Parky felice/Il temporale - Tim esplora./Tim e Kai aiutano Parky./I Rex sono bloccati per una tempesta.",
@@ -11825,13 +11839,13 @@
       },
       {
         "ora": "04:05",
-        "fine": "04:30",
+        "fine": "04:25",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep3 di 13 Buzzy Croc / Dream House - Buzzy, l'amico di Mister Coccodrillo. / Daisy e Mister Croc costruiscono una casa sull'albero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8fa93dbd-8bcf-4922-b9c4-04f2209cce73/background/600"
       },
       {
-        "ora": "04:30",
+        "ora": "04:25",
         "fine": "04:50",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep4 di 13 Una fatina per amica / Coccodrillo fifone - Mister Coccodrillo perde un dente. / Mister Coccodrillo e Daisy ne capanno spaventoso.",
@@ -12314,13 +12328,13 @@
       },
       {
         "ora": "02:55",
-        "fine": "03:20",
+        "fine": "03:15",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep10 di 10 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei più piccoli con soluzioni da...",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f4269d42-050e-4450-9fe2-c236b1a544bd/background/600"
       },
       {
-        "ora": "03:20",
+        "ora": "03:15",
         "fine": "03:40",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep1 di 10 L'esploratore/Parky felice/Il temporale - Tim esplora./Tim e Kai aiutano Parky./I Rex sono bloccati per una tempesta.",
@@ -12335,13 +12349,13 @@
       },
       {
         "ora": "04:05",
-        "fine": "04:30",
+        "fine": "04:25",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep3 di 13 Buzzy Croc / Dream House - Buzzy, l'amico di Mister Coccodrillo. / Daisy e Mister Croc costruiscono una casa sull'albero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8fa93dbd-8bcf-4922-b9c4-04f2209cce73/background/600"
       },
       {
-        "ora": "04:30",
+        "ora": "04:25",
         "fine": "04:50",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep4 di 13 Una fatina per amica / Coccodrillo fifone - Mister Coccodrillo perde un dente. / Mister Coccodrillo e Daisy ne capanno spaventoso.",
@@ -19268,7 +19282,7 @@
         "fine": "06:41",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001026201/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:41",
@@ -19303,7 +19317,7 @@
         "fine": "12:00",
         "titolo": "Dalla parte degli animali",
         "descrizione": "Tante storie con protagonisti i nostri amici a quattro zampe. Conduce Vittoria Brambilla.",
-        "immagine": "https://img-guidatv.org/40/dalla-parte-degli-animali/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706101000201/media/10/10/1a72ccf7-f796-4634-9197-ff407a323d05/08f31b16-1220-4818-842e-2ea876472892.jpg"
       },
       {
         "ora": "12:00",
@@ -19421,7 +19435,7 @@
         "fine": "06:41",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001026201/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:41",
@@ -19456,7 +19470,7 @@
         "fine": "12:00",
         "titolo": "Dalla parte degli animali",
         "descrizione": "Tante storie con protagonisti i nostri amici a quattro zampe. Conduce Vittoria Brambilla.",
-        "immagine": "https://img-guidatv.org/40/dalla-parte-degli-animali/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706101000201/media/10/10/1a72ccf7-f796-4634-9197-ff407a323d05/08f31b16-1220-4818-842e-2ea876472892.jpg"
       },
       {
         "ora": "12:00",
@@ -19574,7 +19588,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101209701/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19825,7 +19839,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101209701/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -20174,21 +20188,21 @@
         "fine": "13:06",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052501/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:06",
         "fine": "14:02",
         "titolo": "Sport Mediaset XXL",
         "descrizione": "Approfondimento in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-xxl/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314666401000501/media/7/7/f3ffd647-59e9-432d-af8e-f360a8b2be6f/fcd91810-e03d-4e69-9b2c-dd97b995ef57.jpg"
       },
       {
         "ora": "14:02",
         "fine": "14:32",
         "titolo": "E-Planet",
         "descrizione": "Appuntamento con il Magazine Green all'insegna della sostenibilita'.",
-        "immagine": "https://img-guidatv.org/42/e-planet/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314224501003801/media/22/86/2ab6b7f0-1457-4e1f-8f55-f194d4493854/0ea0ef62-0178-410e-beac-ea692c7863ab.jpg"
       },
       {
         "ora": "14:32",
@@ -20404,21 +20418,21 @@
         "fine": "13:06",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052501/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:06",
         "fine": "14:02",
         "titolo": "Sport Mediaset XXL",
         "descrizione": "Approfondimento in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-xxl/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314666401000501/media/7/7/f3ffd647-59e9-432d-af8e-f360a8b2be6f/fcd91810-e03d-4e69-9b2c-dd97b995ef57.jpg"
       },
       {
         "ora": "14:02",
         "fine": "14:32",
         "titolo": "E-Planet",
         "descrizione": "Appuntamento con il Magazine Green all'insegna della sostenibilita'.",
-        "immagine": "https://img-guidatv.org/42/e-planet/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314224501003801/media/22/86/2ab6b7f0-1457-4e1f-8f55-f194d4493854/0ea0ef62-0178-410e-beac-ea692c7863ab.jpg"
       },
       {
         "ora": "14:32",
@@ -21261,28 +21275,28 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:45",
-        "fine": "02:50",
+        "ora": "01:40",
+        "fine": "02:45",
         "titolo": "Nudi e crudi",
         "descrizione": "Una coppia di estranei, un uomo e una donna, si ritrova senza nulla ed esposta ai pericoli e alle intemperie.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "03:55",
+        "ora": "02:45",
+        "fine": "03:45",
         "titolo": "Nudi e crudi",
         "descrizione": "Una coppia di estranei, un uomo e una donna, si ritrova senza nulla ed esposta ai pericoli e alle intemperie.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "05:00",
+        "ora": "03:45",
+        "fine": "04:40",
         "titolo": "Nudi e crudi",
         "descrizione": "L'uomo di montagna Joe e l'ex poliziotto Andrea affrontano i territori inospitali della Namibia. Questa vasta zona ospita pericolose creature, tra cui i mortali ippopotami.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "05:00",
+        "ora": "04:40",
         "fine": "05:30",
         "titolo": "Nudi e crudi",
         "descrizione": "Due survivalisti devono superare 21 giorni senza cibo, acqua o vestiti in uno dei luoghi piu' remoti ed estremi al mondo. Ce la faranno?",
@@ -21297,83 +21311,83 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:30",
         "titolo": "Come fanno gli animali",
         "descrizione": "Come fa il nostro cane a sapere quando siamo malati? E quali animali realizzano i nidi piu' straordinari? Inoltre, scopriamo perche' i polipi hanno il sangue blu.",
         "immagine": "https://image.tmdb.org/t/p/w300/ngA1RnLEsvqf7gc4RFI6XpKK9OP.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "08:05",
+        "ora": "06:30",
+        "fine": "07:40",
         "titolo": "Asia",
         "descrizione": "Un viaggio straordinario alla scoperta dell'Asia.",
         "immagine": "https://img-guidatv.org/17/asia/0.jpg"
       },
       {
-        "ora": "08:05",
-        "fine": "09:10",
+        "ora": "07:40",
+        "fine": "08:40",
         "titolo": "Asia",
         "descrizione": "Un viaggio straordinario alla scoperta dell'Asia.",
         "immagine": "https://img-guidatv.org/17/asia/0.jpg"
       },
       {
-        "ora": "09:10",
-        "fine": "10:15",
+        "ora": "08:40",
+        "fine": "09:45",
         "titolo": "Pianeta Terra",
         "descrizione": "Pianeta Terra è la prima serie naturalistica girata interamente in HD (alta definizione); un viaggio tra i diversi habitat della Terra, alla scoperta delle forme di vita più affascinanti e dei fenomeni naturali più spettacolari. In oltre 4 anni di riprese sono state realizzate sequenze che mostrano luoghi meravigliosi ma inaccessibili, e animali colti in atteggiamenti mai filmati prima. Innovative tecniche di ripresa aerea, e persino dallo spazio, permettono di ammirare fenomeni che interessano aree molto vaste, come l'Himalaya o il bacino del Rio delle Amazzoni.",
         "immagine": "https://image.tmdb.org/t/p/w300/bNcNxUtZ520d5de5s78onoiSiwQ.jpg"
       },
       {
-        "ora": "10:15",
-        "fine": "11:20",
+        "ora": "09:45",
+        "fine": "10:50",
         "titolo": "Pianeta Terra",
         "descrizione": "Pianeta Terra è la prima serie naturalistica girata interamente in HD (alta definizione); un viaggio tra i diversi habitat della Terra, alla scoperta delle forme di vita più affascinanti e dei fenomeni naturali più spettacolari. In oltre 4 anni di riprese sono state realizzate sequenze che mostrano luoghi meravigliosi ma inaccessibili, e animali colti in atteggiamenti mai filmati prima. Innovative tecniche di ripresa aerea, e persino dallo spazio, permettono di ammirare fenomeni che interessano aree molto vaste, come l'Himalaya o il bacino del Rio delle Amazzoni.",
         "immagine": "https://image.tmdb.org/t/p/w300/bNcNxUtZ520d5de5s78onoiSiwQ.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "12:25",
+        "ora": "10:50",
+        "fine": "11:55",
         "titolo": "Pianeta Terra",
         "descrizione": "Pianeta Terra è la prima serie naturalistica girata interamente in HD (alta definizione); un viaggio tra i diversi habitat della Terra, alla scoperta delle forme di vita più affascinanti e dei fenomeni naturali più spettacolari. In oltre 4 anni di riprese sono state realizzate sequenze che mostrano luoghi meravigliosi ma inaccessibili, e animali colti in atteggiamenti mai filmati prima. Innovative tecniche di ripresa aerea, e persino dallo spazio, permettono di ammirare fenomeni che interessano aree molto vaste, come l'Himalaya o il bacino del Rio delle Amazzoni.",
         "immagine": "https://image.tmdb.org/t/p/w300/bNcNxUtZ520d5de5s78onoiSiwQ.jpg"
       },
       {
-        "ora": "12:25",
-        "fine": "13:35",
+        "ora": "11:55",
+        "fine": "13:15",
         "titolo": "Cash or Trash - Chi offre di piu'?",
         "descrizione": "Macinini, fiammiferi, poster iconici e tavoli di design animano un episodio ricco di personalita'. I mercanti valutano tra estetica e funzionalita'.",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-chi-offre-di-piu/6.jpg"
       },
       {
-        "ora": "13:35",
-        "fine": "14:40",
+        "ora": "13:15",
+        "fine": "14:25",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "14:40",
-        "fine": "16:40",
+        "ora": "14:25",
+        "fine": "16:25",
         "titolo": "Osteria Giacobazzi",
         "descrizione": "Giuseppe Giacobazzi torna con un nuovo progetto portando in scena il calore e l'energia delle osterie romagnole.",
         "immagine": "https://img-guidatv.org/17/osteria-giacobazzi/5.jpg"
       },
       {
-        "ora": "16:40",
-        "fine": "18:40",
+        "ora": "16:25",
+        "fine": "18:25",
         "titolo": "Paolo Cevoli - Andavo ai 100 all'ora",
         "descrizione": "Paolo Cevoli presenta un viaggio comico e nostalgico nei ricordi d'infanzia.",
         "immagine": "https://img-guidatv.org/17/paolo-cevoli-andavo-ai-100-all-ora/5.jpg"
       },
       {
-        "ora": "18:40",
-        "fine": "20:15",
+        "ora": "18:25",
+        "fine": "20:05",
         "titolo": "Little Big Italy",
         "descrizione": "Francesco Panella scopre i migliori ristoranti italiani all'estero.",
         "immagine": "https://img-guidatv.org/17/little-big-italy/7.jpg"
       },
       {
-        "ora": "20:15",
+        "ora": "20:05",
         "fine": "21:30",
         "titolo": "Little Big Italy",
         "descrizione": "Francesco Panella scopre i migliori ristoranti italiani all'estero.",
@@ -21381,14 +21395,14 @@
       },
       {
         "ora": "21:30",
-        "fine": "23:45",
+        "fine": "23:40",
         "titolo": "Comedy Match",
         "descrizione": "Alcuni comedians si sfidano a colpi di risate!",
         "immagine": "https://img-guidatv.org/17/comedy-match/6.jpg"
       },
       {
-        "ora": "23:45",
-        "fine": "01:45",
+        "ora": "23:40",
+        "fine": "01:40",
         "titolo": "Comedy Match",
         "descrizione": "Alcuni comedians si sfidano a colpi di risate!",
         "immagine": "https://img-guidatv.org/17/comedy-match/6.jpg"
@@ -21400,28 +21414,28 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:45",
-        "fine": "02:50",
+        "ora": "01:40",
+        "fine": "02:45",
         "titolo": "Nudi e crudi",
         "descrizione": "Una coppia di estranei, un uomo e una donna, si ritrova senza nulla ed esposta ai pericoli e alle intemperie.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "03:55",
+        "ora": "02:45",
+        "fine": "03:45",
         "titolo": "Nudi e crudi",
         "descrizione": "Una coppia di estranei, un uomo e una donna, si ritrova senza nulla ed esposta ai pericoli e alle intemperie.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "05:00",
+        "ora": "03:45",
+        "fine": "04:40",
         "titolo": "Nudi e crudi",
         "descrizione": "L'uomo di montagna Joe e l'ex poliziotto Andrea affrontano i territori inospitali della Namibia. Questa vasta zona ospita pericolose creature, tra cui i mortali ippopotami.",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "05:00",
+        "ora": "04:40",
         "fine": "05:30",
         "titolo": "Nudi e crudi",
         "descrizione": "Due survivalisti devono superare 21 giorni senza cibo, acqua o vestiti in uno dei luoghi piu' remoti ed estremi al mondo. Ce la faranno?",
@@ -21436,83 +21450,83 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:30",
         "titolo": "Come fanno gli animali",
         "descrizione": "Come fa il nostro cane a sapere quando siamo malati? E quali animali realizzano i nidi piu' straordinari? Inoltre, scopriamo perche' i polipi hanno il sangue blu.",
         "immagine": "https://image.tmdb.org/t/p/w300/ngA1RnLEsvqf7gc4RFI6XpKK9OP.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "08:05",
+        "ora": "06:30",
+        "fine": "07:40",
         "titolo": "Asia",
         "descrizione": "Un viaggio straordinario alla scoperta dell'Asia.",
         "immagine": "https://img-guidatv.org/17/asia/0.jpg"
       },
       {
-        "ora": "08:05",
-        "fine": "09:10",
+        "ora": "07:40",
+        "fine": "08:40",
         "titolo": "Asia",
         "descrizione": "Un viaggio straordinario alla scoperta dell'Asia.",
         "immagine": "https://img-guidatv.org/17/asia/0.jpg"
       },
       {
-        "ora": "09:10",
-        "fine": "10:15",
+        "ora": "08:40",
+        "fine": "09:45",
         "titolo": "Pianeta Terra",
         "descrizione": "Pianeta Terra è la prima serie naturalistica girata interamente in HD (alta definizione); un viaggio tra i diversi habitat della Terra, alla scoperta delle forme di vita più affascinanti e dei fenomeni naturali più spettacolari. In oltre 4 anni di riprese sono state realizzate sequenze che mostrano luoghi meravigliosi ma inaccessibili, e animali colti in atteggiamenti mai filmati prima. Innovative tecniche di ripresa aerea, e persino dallo spazio, permettono di ammirare fenomeni che interessano aree molto vaste, come l'Himalaya o il bacino del Rio delle Amazzoni.",
         "immagine": "https://image.tmdb.org/t/p/w300/bNcNxUtZ520d5de5s78onoiSiwQ.jpg"
       },
       {
-        "ora": "10:15",
-        "fine": "11:20",
+        "ora": "09:45",
+        "fine": "10:50",
         "titolo": "Pianeta Terra",
         "descrizione": "Pianeta Terra è la prima serie naturalistica girata interamente in HD (alta definizione); un viaggio tra i diversi habitat della Terra, alla scoperta delle forme di vita più affascinanti e dei fenomeni naturali più spettacolari. In oltre 4 anni di riprese sono state realizzate sequenze che mostrano luoghi meravigliosi ma inaccessibili, e animali colti in atteggiamenti mai filmati prima. Innovative tecniche di ripresa aerea, e persino dallo spazio, permettono di ammirare fenomeni che interessano aree molto vaste, come l'Himalaya o il bacino del Rio delle Amazzoni.",
         "immagine": "https://image.tmdb.org/t/p/w300/bNcNxUtZ520d5de5s78onoiSiwQ.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "12:25",
+        "ora": "10:50",
+        "fine": "11:55",
         "titolo": "Pianeta Terra",
         "descrizione": "Pianeta Terra è la prima serie naturalistica girata interamente in HD (alta definizione); un viaggio tra i diversi habitat della Terra, alla scoperta delle forme di vita più affascinanti e dei fenomeni naturali più spettacolari. In oltre 4 anni di riprese sono state realizzate sequenze che mostrano luoghi meravigliosi ma inaccessibili, e animali colti in atteggiamenti mai filmati prima. Innovative tecniche di ripresa aerea, e persino dallo spazio, permettono di ammirare fenomeni che interessano aree molto vaste, come l'Himalaya o il bacino del Rio delle Amazzoni.",
         "immagine": "https://image.tmdb.org/t/p/w300/bNcNxUtZ520d5de5s78onoiSiwQ.jpg"
       },
       {
-        "ora": "12:25",
-        "fine": "13:35",
+        "ora": "11:55",
+        "fine": "13:15",
         "titolo": "Cash or Trash - Chi offre di piu'?",
         "descrizione": "Macinini, fiammiferi, poster iconici e tavoli di design animano un episodio ricco di personalita'. I mercanti valutano tra estetica e funzionalita'.",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-chi-offre-di-piu/6.jpg"
       },
       {
-        "ora": "13:35",
-        "fine": "14:40",
+        "ora": "13:15",
+        "fine": "14:25",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "14:40",
-        "fine": "16:40",
+        "ora": "14:25",
+        "fine": "16:25",
         "titolo": "Osteria Giacobazzi",
         "descrizione": "Giuseppe Giacobazzi torna con un nuovo progetto portando in scena il calore e l'energia delle osterie romagnole.",
         "immagine": "https://img-guidatv.org/17/osteria-giacobazzi/5.jpg"
       },
       {
-        "ora": "16:40",
-        "fine": "18:40",
+        "ora": "16:25",
+        "fine": "18:25",
         "titolo": "Paolo Cevoli - Andavo ai 100 all'ora",
         "descrizione": "Paolo Cevoli presenta un viaggio comico e nostalgico nei ricordi d'infanzia.",
         "immagine": "https://img-guidatv.org/17/paolo-cevoli-andavo-ai-100-all-ora/5.jpg"
       },
       {
-        "ora": "18:40",
-        "fine": "20:15",
+        "ora": "18:25",
+        "fine": "20:05",
         "titolo": "Little Big Italy",
         "descrizione": "Francesco Panella scopre i migliori ristoranti italiani all'estero.",
         "immagine": "https://img-guidatv.org/17/little-big-italy/7.jpg"
       },
       {
-        "ora": "20:15",
+        "ora": "20:05",
         "fine": "21:30",
         "titolo": "Little Big Italy",
         "descrizione": "Francesco Panella scopre i migliori ristoranti italiani all'estero.",
@@ -21520,14 +21534,14 @@
       },
       {
         "ora": "21:30",
-        "fine": "23:45",
+        "fine": "23:40",
         "titolo": "Comedy Match",
         "descrizione": "Alcuni comedians si sfidano a colpi di risate!",
         "immagine": "https://img-guidatv.org/17/comedy-match/6.jpg"
       },
       {
-        "ora": "23:45",
-        "fine": "01:45",
+        "ora": "23:40",
+        "fine": "01:40",
         "titolo": "Comedy Match",
         "descrizione": "Alcuni comedians si sfidano a colpi di risate!",
         "immagine": "https://img-guidatv.org/17/comedy-match/6.jpg"
@@ -22760,8 +22774,8 @@
         "ora": "21:10",
         "fine": "00:15",
         "titolo": "Gandhi",
-        "descrizione": "In quest'affascinante bibliografia di Richard Attenborough, Sir Ben Kingsley è Mohandas Ghandi, l'uomo che da semplice avvocato si trasforma nel simbolo mondiale di pace e comprensione.",
-        "immagine": "https://image.tmdb.org/t/p/w300//9obOaw1PO4Q6L3Gvw5oHW6ozgAl.jpg"
+        "descrizione": "Vita, attività politica e morte di Mohandas Karamchand Gandhi (1869-1948): studi a Londra, apprendistato in Sudafrica, attività politica, digiuni di protesta, morte violenta per mano di un bramino e solenni funerali. Nell'impersonare il grande apostolo dell'indipendenza dell'India e della non violenza, Kingsley è straordinario. Appartenente alla categoria dei colossi con un'idea, il film è coinvolgente, convincente, un po' didattico. 8 premi Oscar: film, regia, Kingsley, sceneggiatura (John Briley), fotografia, costumi, scenografie, montaggio.",
+        "immagine": "https://image.tmdb.org/t/p/w300/9obOaw1PO4Q6L3Gvw5oHW6ozgAl.jpg"
       }
     ]
   },
@@ -22864,8 +22878,8 @@
         "ora": "21:10",
         "fine": "00:15",
         "titolo": "Gandhi",
-        "descrizione": "In quest'affascinante bibliografia di Richard Attenborough, Sir Ben Kingsley è Mohandas Ghandi, l'uomo che da semplice avvocato si trasforma nel simbolo mondiale di pace e comprensione.",
-        "immagine": "https://image.tmdb.org/t/p/w300//9obOaw1PO4Q6L3Gvw5oHW6ozgAl.jpg"
+        "descrizione": "Vita, attività politica e morte di Mohandas Karamchand Gandhi (1869-1948): studi a Londra, apprendistato in Sudafrica, attività politica, digiuni di protesta, morte violenta per mano di un bramino e solenni funerali. Nell'impersonare il grande apostolo dell'indipendenza dell'India e della non violenza, Kingsley è straordinario. Appartenente alla categoria dei colossi con un'idea, il film è coinvolgente, convincente, un po' didattico. 8 premi Oscar: film, regia, Kingsley, sceneggiatura (John Briley), fotografia, costumi, scenografie, montaggio.",
+        "immagine": "https://image.tmdb.org/t/p/w300/9obOaw1PO4Q6L3Gvw5oHW6ozgAl.jpg"
       }
     ]
   },
@@ -25183,28 +25197,28 @@
         "fine": "12:25",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
-        "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501052501/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "12:25",
         "fine": "12:58",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052501/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "12:58",
         "fine": "13:35",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/10473/tg5/4.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201105001/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "13:35",
         "fine": "14:19",
         "titolo": "Sport Mediaset XXL",
         "descrizione": "Approfondimento in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-xxl/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314666401000501/media/7/7/f3ffd647-59e9-432d-af8e-f360a8b2be6f/fcd91810-e03d-4e69-9b2c-dd97b995ef57.jpg"
       },
       {
         "ora": "14:19",
@@ -25517,8 +25531,8 @@
         "ora": "06:30",
         "fine": "07:00",
         "titolo": "TuttiFrutti",
-        "descrizione": "TUTTIFRUTTI",
-        "immagine": "https://image.tmdb.org/t/p/w300/2QSnzMbZxNpd7Xitjj3UVgZ6asV.jpg"
+        "descrizione": "Fragolina Dolcecuore si diverte un mondo insieme ai suoi amici nella città di Berry Bitty! Insieme a Pandolce, Arancina, Pasticcina e Zenzerella vivranno emozionanti e golosissime avventure!",
+        "immagine": "https://image.tmdb.org/t/p/w300/xweEe66HXnW5LAGanucy5ZOL6fu.jpg"
       },
       {
         "ora": "07:00",
@@ -26048,8 +26062,8 @@
         "ora": "06:30",
         "fine": "07:00",
         "titolo": "TuttiFrutti",
-        "descrizione": "TUTTIFRUTTI",
-        "immagine": "https://image.tmdb.org/t/p/w300/2QSnzMbZxNpd7Xitjj3UVgZ6asV.jpg"
+        "descrizione": "Fragolina Dolcecuore si diverte un mondo insieme ai suoi amici nella città di Berry Bitty! Insieme a Pandolce, Arancina, Pasticcina e Zenzerella vivranno emozionanti e golosissime avventure!",
+        "immagine": "https://image.tmdb.org/t/p/w300/xweEe66HXnW5LAGanucy5ZOL6fu.jpg"
       },
       {
         "ora": "07:00",
@@ -26579,8 +26593,8 @@
         "ora": "06:30",
         "fine": "07:00",
         "titolo": "TuttiFrutti",
-        "descrizione": "TUTTIFRUTTI",
-        "immagine": "https://image.tmdb.org/t/p/w300/2QSnzMbZxNpd7Xitjj3UVgZ6asV.jpg"
+        "descrizione": "Fragolina Dolcecuore si diverte un mondo insieme ai suoi amici nella città di Berry Bitty! Insieme a Pandolce, Arancina, Pasticcina e Zenzerella vivranno emozionanti e golosissime avventure!",
+        "immagine": "https://image.tmdb.org/t/p/w300/xweEe66HXnW5LAGanucy5ZOL6fu.jpg"
       },
       {
         "ora": "07:00",
@@ -28917,140 +28931,133 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "01:25",
+        "ora": "00:45",
+        "fine": "01:40",
         "titolo": "La clinica della pelle",
         "descrizione": "La dottoressa Emma esamina le misteriose protuberanze sul cuoio capelluto di Chris. Inoltre, si occupa del problema di Cinca e di Dave.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "01:25",
-        "fine": "02:20",
+        "ora": "01:40",
+        "fine": "02:45",
         "titolo": "La clinica della pelle",
         "descrizione": "Klaire ha una preoccupante escrescenza sull'inguine, nonostante l'abbia gia' rimossa una volta. Inoltre, Ciaran non si sente a suo agio a causa di strane protuberanze.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "03:15",
+        "ora": "02:45",
+        "fine": "03:45",
         "titolo": "La clinica della pelle",
         "descrizione": "Levi ne ha abbastanza delle escrescenze sul suo corpo. La peluria di Kim sul volto e' fuori controllo, mentre Roger non riesce a godersi la vita a causa di uno sfogo cutaneo.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "04:10",
+        "ora": "03:45",
+        "fine": "04:40",
         "titolo": "La clinica della pelle",
         "descrizione": "L'enorme cisti di Carol rappresenta un'agonia per lei. L'acne di Alfie, 19 anni, gli ha provocato cicatrici sulla schiena e sul petto. Bill ha un preoccupante nodulo sul collo.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "04:10",
-        "fine": "05:05",
+        "ora": "04:40",
+        "fine": "05:30",
         "titolo": "La clinica della pelle",
         "descrizione": "La dottoressa Emma Craythorne aiuta alcune persone a risolvere problemi cutanei e patologie che hanno rovinato la vita dei pazienti.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "05:05",
+        "ora": "05:30",
         "fine": "06:00",
-        "titolo": "La clinica della pelle",
-        "descrizione": "Karmah nasconde il suo viso con una maschera e un cappello a causa della pelle squamosa.",
-        "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
+        "titolo": "Dr. Pimple Popper: la dottoressa schiacciabrufoli",
+        "descrizione": "Dexter ha una massa sulla mascella. Zaria spera che al figlio non escano delle protuberanze sul viso. I gemelli Tracie e Stacie hanno gli stessi bernoccoli sulla testa.",
+        "immagine": "https://img-guidatv.org/37/dr-pimple-popper/0.jpg"
       },
       {
         "ora": "06:00",
-        "fine": "06:45",
-        "titolo": "Il re del bisturi post bariatrico",
-        "descrizione": "Vittima di giudizi sul suo peso oggi si ritorna a vivere e si prende qualche rivincita.",
-        "immagine": "https://img-guidatv.org/37/il-re-del-bisturi-post-bariatrico/5.jpg"
-      },
-      {
-        "ora": "06:45",
-        "fine": "07:40",
+        "fine": "07:00",
         "titolo": "Vite al limite",
         "descrizione": "Per troppo tempo Laura ha usato il cibo per affrontare le sue emozioni. Relegata su una sedia a rotelle, la donna dipende da suo marito e da sua madre per sopravvivere. Riuscira' a cambiare stile di vita?",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
       },
       {
-        "ora": "07:40",
-        "fine": "08:35",
+        "ora": "07:00",
+        "fine": "07:50",
         "titolo": "Vite al limite",
         "descrizione": "Marla pesa cosi' tanto da non riuscire a stare in piedi ed e' costretta a stare a letto. Per salvarsi, dovra' affrontare i suoi reali problemi di salute e capire come abbiano condizionato la sua famiglia.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
       },
       {
-        "ora": "08:35",
-        "fine": "09:30",
+        "ora": "07:50",
+        "fine": "08:50",
         "titolo": "Sepolti in casa",
         "descrizione": "Una donna rivela alla sua famiglia un segreto che e' ancora piu' grave del disturbo dell'accumulo compulsivo. Intanto, un uomo ha riempito di rifiuti ben cinque case.",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "09:30",
-        "fine": "10:25",
+        "ora": "08:50",
+        "fine": "09:45",
         "titolo": "Sepolti in casa",
         "descrizione": "I Servizi Sociali per l'Infanzia portano via i figli a Karen. La donna avra' solo 48 ore a disposizione per ripulire la propria casa, altrimenti perdera' per sempre l'affidamento dei figli.",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "10:25",
-        "fine": "11:20",
+        "ora": "09:45",
+        "fine": "10:40",
         "titolo": "Sepolti in casa",
         "descrizione": "Le storie di persone affette da 'accumulo patologico'. Scopriamo la psicologia che li spinge a riempire la propria casa con enormi quantita' di oggetti inutili. Gli esperti riusciranno ad aiutarli?",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "12:20",
+        "ora": "10:40",
+        "fine": "11:50",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Csaba, Roberto e Tommaso oggi riceveranno una calorosa accoglienza tutta romagnola.",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "12:20",
-        "fine": "13:20",
+        "ora": "11:50",
+        "fine": "12:55",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Saranno mamma e figlia in carriera o due colleghi inseparabili a conquistare i giudici?",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "13:20",
-        "fine": "14:20",
+        "ora": "12:55",
+        "fine": "14:05",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Oggi i giudici saranno ospiti di due coppie di donne tenaci ed energiche. Chi vincera'?",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "14:20",
-        "fine": "16:15",
+        "ora": "14:05",
+        "fine": "16:05",
         "titolo": "Bake Off Italia: dolci in forno",
         "descrizione": "In questa nuova puntata e' protagonista la manualita': i concorrenti devono infatti dimostrare di avere le \"mani d'oro\".",
         "immagine": "https://img-guidatv.org/37/bake-off-italia-dolci-in-forno/14.jpg"
       },
       {
-        "ora": "16:15",
-        "fine": "17:20",
+        "ora": "16:05",
+        "fine": "17:15",
         "titolo": "Casa a prima vista",
         "descrizione": "Chi tra Moira, Corrado e Blasco riuscira' a convincere Emma e il suo papa'?",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "17:20",
-        "fine": "18:25",
+        "ora": "17:15",
+        "fine": "18:20",
         "titolo": "Casa a prima vista",
         "descrizione": "Chi tra Ida, Gianluca e Mariana riuscira' a conquistarle e soddisfare le esigenze di Silvia, Gabriele e Ludovico?",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "18:25",
-        "fine": "19:30",
+        "ora": "18:20",
+        "fine": "19:25",
         "titolo": "Casa a prima vista",
         "descrizione": "Moira, Nico e Matteo riusciranno a trovare la casa dei sogni di una giovane coppia?",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "19:30",
+        "ora": "19:25",
         "fine": "20:30",
         "titolo": "Casa a prima vista",
         "descrizione": "Blasco, Nadia e Corrado riusciranno a trovare una casa a nord di Roma con un budget di 600.000 euro?",
@@ -29058,21 +29065,21 @@
       },
       {
         "ora": "20:30",
-        "fine": "21:50",
+        "fine": "21:55",
         "titolo": "Matrimonio a prima vista Italia",
         "descrizione": "Le lune di miele mettono alla prova intese, paure e nuovi equilibri.",
         "immagine": "https://img-guidatv.org/37/matrimonio-a-prima-vista-italia/10.jpg"
       },
       {
-        "ora": "21:50",
-        "fine": "23:35",
+        "ora": "21:55",
+        "fine": "23:40",
         "titolo": "90 giorni per innamorarsi: prima dei 90 giorni",
         "descrizione": "Elise ha dei sospetti. Forrest e Sheena ricevono notizie preoccupanti riguardo al visto.",
         "immagine": "https://img-guidatv.org/37/90-giorni-per-innamorarsi-prima-dei-90-giorni/9.jpg"
       },
       {
-        "ora": "23:35",
-        "fine": "00:30",
+        "ora": "23:40",
+        "fine": "00:45",
         "titolo": "La clinica della pelle",
         "descrizione": "Stuart ha un naso talmente gonfio che ha difficolta' a respirare. Cio' gli crea imbarazzo.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
@@ -29084,140 +29091,133 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "01:25",
+        "ora": "00:45",
+        "fine": "01:40",
         "titolo": "La clinica della pelle",
         "descrizione": "La dottoressa Emma esamina le misteriose protuberanze sul cuoio capelluto di Chris. Inoltre, si occupa del problema di Cinca e di Dave.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "01:25",
-        "fine": "02:20",
+        "ora": "01:40",
+        "fine": "02:45",
         "titolo": "La clinica della pelle",
         "descrizione": "Klaire ha una preoccupante escrescenza sull'inguine, nonostante l'abbia gia' rimossa una volta. Inoltre, Ciaran non si sente a suo agio a causa di strane protuberanze.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "03:15",
+        "ora": "02:45",
+        "fine": "03:45",
         "titolo": "La clinica della pelle",
         "descrizione": "Levi ne ha abbastanza delle escrescenze sul suo corpo. La peluria di Kim sul volto e' fuori controllo, mentre Roger non riesce a godersi la vita a causa di uno sfogo cutaneo.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "04:10",
+        "ora": "03:45",
+        "fine": "04:40",
         "titolo": "La clinica della pelle",
         "descrizione": "L'enorme cisti di Carol rappresenta un'agonia per lei. L'acne di Alfie, 19 anni, gli ha provocato cicatrici sulla schiena e sul petto. Bill ha un preoccupante nodulo sul collo.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "04:10",
-        "fine": "05:05",
+        "ora": "04:40",
+        "fine": "05:30",
         "titolo": "La clinica della pelle",
         "descrizione": "La dottoressa Emma Craythorne aiuta alcune persone a risolvere problemi cutanei e patologie che hanno rovinato la vita dei pazienti.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
       },
       {
-        "ora": "05:05",
+        "ora": "05:30",
         "fine": "06:00",
-        "titolo": "La clinica della pelle",
-        "descrizione": "Karmah nasconde il suo viso con una maschera e un cappello a causa della pelle squamosa.",
-        "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
+        "titolo": "Dr. Pimple Popper: la dottoressa schiacciabrufoli",
+        "descrizione": "Dexter ha una massa sulla mascella. Zaria spera che al figlio non escano delle protuberanze sul viso. I gemelli Tracie e Stacie hanno gli stessi bernoccoli sulla testa.",
+        "immagine": "https://img-guidatv.org/37/dr-pimple-popper/0.jpg"
       },
       {
         "ora": "06:00",
-        "fine": "06:45",
-        "titolo": "Il re del bisturi post bariatrico",
-        "descrizione": "Vittima di giudizi sul suo peso oggi si ritorna a vivere e si prende qualche rivincita.",
-        "immagine": "https://img-guidatv.org/37/il-re-del-bisturi-post-bariatrico/5.jpg"
-      },
-      {
-        "ora": "06:45",
-        "fine": "07:40",
+        "fine": "07:00",
         "titolo": "Vite al limite",
         "descrizione": "Per troppo tempo Laura ha usato il cibo per affrontare le sue emozioni. Relegata su una sedia a rotelle, la donna dipende da suo marito e da sua madre per sopravvivere. Riuscira' a cambiare stile di vita?",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
       },
       {
-        "ora": "07:40",
-        "fine": "08:35",
+        "ora": "07:00",
+        "fine": "07:50",
         "titolo": "Vite al limite",
         "descrizione": "Marla pesa cosi' tanto da non riuscire a stare in piedi ed e' costretta a stare a letto. Per salvarsi, dovra' affrontare i suoi reali problemi di salute e capire come abbiano condizionato la sua famiglia.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
       },
       {
-        "ora": "08:35",
-        "fine": "09:30",
+        "ora": "07:50",
+        "fine": "08:50",
         "titolo": "Sepolti in casa",
         "descrizione": "Una donna rivela alla sua famiglia un segreto che e' ancora piu' grave del disturbo dell'accumulo compulsivo. Intanto, un uomo ha riempito di rifiuti ben cinque case.",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "09:30",
-        "fine": "10:25",
+        "ora": "08:50",
+        "fine": "09:45",
         "titolo": "Sepolti in casa",
         "descrizione": "I Servizi Sociali per l'Infanzia portano via i figli a Karen. La donna avra' solo 48 ore a disposizione per ripulire la propria casa, altrimenti perdera' per sempre l'affidamento dei figli.",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "10:25",
-        "fine": "11:20",
+        "ora": "09:45",
+        "fine": "10:40",
         "titolo": "Sepolti in casa",
         "descrizione": "Le storie di persone affette da 'accumulo patologico'. Scopriamo la psicologia che li spinge a riempire la propria casa con enormi quantita' di oggetti inutili. Gli esperti riusciranno ad aiutarli?",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "12:20",
+        "ora": "10:40",
+        "fine": "11:50",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Csaba, Roberto e Tommaso oggi riceveranno una calorosa accoglienza tutta romagnola.",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "12:20",
-        "fine": "13:20",
+        "ora": "11:50",
+        "fine": "12:55",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Saranno mamma e figlia in carriera o due colleghi inseparabili a conquistare i giudici?",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "13:20",
-        "fine": "14:20",
+        "ora": "12:55",
+        "fine": "14:05",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Oggi i giudici saranno ospiti di due coppie di donne tenaci ed energiche. Chi vincera'?",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "14:20",
-        "fine": "16:15",
+        "ora": "14:05",
+        "fine": "16:05",
         "titolo": "Bake Off Italia: dolci in forno",
         "descrizione": "In questa nuova puntata e' protagonista la manualita': i concorrenti devono infatti dimostrare di avere le \"mani d'oro\".",
         "immagine": "https://img-guidatv.org/37/bake-off-italia-dolci-in-forno/14.jpg"
       },
       {
-        "ora": "16:15",
-        "fine": "17:20",
+        "ora": "16:05",
+        "fine": "17:15",
         "titolo": "Casa a prima vista",
         "descrizione": "Chi tra Moira, Corrado e Blasco riuscira' a convincere Emma e il suo papa'?",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "17:20",
-        "fine": "18:25",
+        "ora": "17:15",
+        "fine": "18:20",
         "titolo": "Casa a prima vista",
         "descrizione": "Chi tra Ida, Gianluca e Mariana riuscira' a conquistarle e soddisfare le esigenze di Silvia, Gabriele e Ludovico?",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "18:25",
-        "fine": "19:30",
+        "ora": "18:20",
+        "fine": "19:25",
         "titolo": "Casa a prima vista",
         "descrizione": "Moira, Nico e Matteo riusciranno a trovare la casa dei sogni di una giovane coppia?",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "19:30",
+        "ora": "19:25",
         "fine": "20:30",
         "titolo": "Casa a prima vista",
         "descrizione": "Blasco, Nadia e Corrado riusciranno a trovare una casa a nord di Roma con un budget di 600.000 euro?",
@@ -29225,21 +29225,21 @@
       },
       {
         "ora": "20:30",
-        "fine": "21:50",
+        "fine": "21:55",
         "titolo": "Matrimonio a prima vista Italia",
         "descrizione": "Le lune di miele mettono alla prova intese, paure e nuovi equilibri.",
         "immagine": "https://img-guidatv.org/37/matrimonio-a-prima-vista-italia/10.jpg"
       },
       {
-        "ora": "21:50",
-        "fine": "23:35",
+        "ora": "21:55",
+        "fine": "23:40",
         "titolo": "90 giorni per innamorarsi: prima dei 90 giorni",
         "descrizione": "Elise ha dei sospetti. Forrest e Sheena ricevono notizie preoccupanti riguardo al visto.",
         "immagine": "https://img-guidatv.org/37/90-giorni-per-innamorarsi-prima-dei-90-giorni/9.jpg"
       },
       {
-        "ora": "23:35",
-        "fine": "00:30",
+        "ora": "23:40",
+        "fine": "00:45",
         "titolo": "La clinica della pelle",
         "descrizione": "Stuart ha un naso talmente gonfio che ha difficolta' a respirare. Cio' gli crea imbarazzo.",
         "immagine": "https://img-guidatv.org/37/la-clinica-della-pelle/7.jpg"
@@ -29251,39 +29251,25 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:40",
-        "fine": "03:30",
+        "ora": "01:55",
+        "fine": "03:45",
         "titolo": "Border Control Turchia",
         "descrizione": "Seguiamo il lavoro degli agenti che lavorano alle dogane turche.",
         "immagine": "https://img-guidatv.org/44/border-control-turchia/5.jpg"
       },
       {
-        "ora": "03:30",
-        "fine": "04:20",
+        "ora": "03:45",
+        "fine": "04:55",
         "titolo": "Border Security: niente da dichiarare",
         "descrizione": "Gli agenti di servizio lungo le frontiere polacche lavorano costantemente per tentare di fermare le attivita' illegali in entrata nel Paese.",
         "immagine": "https://img-guidatv.org/44/border-security-niente-da-dichiarare/6.jpg"
       },
       {
-        "ora": "04:20",
-        "fine": "05:10",
-        "titolo": "Border Security: niente da dichiarare",
-        "descrizione": "Gli agenti di servizio lungo le frontiere polacche lavorano costantemente per tentare di fermare le attivita' illegali in entrata nel Paese.",
-        "immagine": "https://img-guidatv.org/44/border-security-niente-da-dichiarare/6.jpg"
-      },
-      {
-        "ora": "05:10",
-        "fine": "05:35",
-        "titolo": "Affari in valigia",
-        "descrizione": "Gli acquirenti partecipano ad un'asta della polizia a Stockton, in California. Ci sono diversi oggetti di grande valore da poter scegliere, inclusa una slot machine vintage.",
-        "immagine": "https://img-guidatv.org/44/affari-in-valigia/0.jpg"
-      },
-      {
-        "ora": "05:35",
+        "ora": "04:55",
         "fine": "06:00",
-        "titolo": "Affari in valigia",
-        "descrizione": "Gli acquirenti partecipano ad un'asta su alcune proprieta' a St. Paul, dove lanciano offerte su vari articoli, da pezzi di auto ad una bambola rara, fino al costume di una mascotte di hockey.",
-        "immagine": "https://img-guidatv.org/44/affari-in-valigia/0.jpg"
+        "titolo": "Border Security: niente da dichiarare",
+        "descrizione": "Gli agenti di servizio lungo le frontiere polacche lavorano costantemente per tentare di fermare le attivita' illegali in entrata nel Paese.",
+        "immagine": "https://img-guidatv.org/44/border-security-niente-da-dichiarare/6.jpg"
       },
       {
         "ora": "06:00",
@@ -29294,132 +29280,132 @@
       },
       {
         "ora": "06:25",
-        "fine": "06:50",
+        "fine": "06:55",
         "titolo": "Banco dei pugni",
         "descrizione": "La famiglia e' in fermento mentre si prepara ad uno spot commerciale per il negozio. In seguito, la vendita di una pelliccia di visone si trasforma in qualcosa di interessante.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "06:50",
-        "fine": "07:20",
+        "ora": "06:55",
+        "fine": "07:25",
         "titolo": "Banco dei pugni",
         "descrizione": "Karen decide che il negozio ha bisogno di un rinnovamento in stile feng shui, che renda gli ambienti piu' armoniosi. In seguito, Seth fa un'offerta su alcuni oggetti da baseball.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "07:20",
-        "fine": "07:45",
+        "ora": "07:25",
+        "fine": "07:55",
         "titolo": "Banco dei pugni",
         "descrizione": "Les e Ashley si occupano della vendita di una proprieta'. Seth contratta su un go-kart su misura e Karen fa un'offerta su un oggetto usato in un film.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "07:45",
-        "fine": "08:15",
+        "ora": "07:55",
+        "fine": "08:25",
         "titolo": "Banco dei pugni",
         "descrizione": "Les riceve un invito per parlare ad una scuola di business. Intanto, al negozio viene offerta una collezione di pistole giocattolo e un ventriloquo.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "08:15",
-        "fine": "08:40",
+        "ora": "08:25",
+        "fine": "08:55",
         "titolo": "Banco dei pugni",
         "descrizione": "Ashley si intromette tra due impiegati scatenando una lotta fra loro due. Intanto, Seth tenta di guadagnare su un affare su alcuni oggetti da collezione.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "08:40",
-        "fine": "09:10",
+        "ora": "08:55",
+        "fine": "09:30",
         "titolo": "Banco dei pugni",
         "descrizione": "Les assume qualcuno per spiare lo staff. Intanto, un uomo cerca un anello di fidanzamento ma la sua ricerca scatena il caos nel parcheggio.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "09:10",
-        "fine": "09:40",
+        "ora": "09:30",
+        "fine": "09:55",
         "titolo": "Banco dei pugni",
         "descrizione": "Les tenta di mediare durante una discussione tra Ashley e Karen. Inoltre, una band heavy metal arriva al negozio per cercare una chitarra.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "09:40",
-        "fine": "10:10",
+        "ora": "09:55",
+        "fine": "10:30",
         "titolo": "Banco dei pugni",
         "descrizione": "La vendita di un'automobile sportiva e' a rischio mentre Seth tenta di riparare il veicolo. In seguito, uno strano cliente viene buttato fuori dal negozio.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "10:10",
-        "fine": "10:45",
+        "ora": "10:30",
+        "fine": "11:05",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "10:45",
-        "fine": "11:20",
+        "ora": "11:05",
+        "fine": "11:35",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "11:55",
+        "ora": "11:35",
+        "fine": "12:10",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "11:55",
-        "fine": "12:30",
+        "ora": "12:10",
+        "fine": "12:40",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:05",
+        "ora": "12:40",
+        "fine": "13:15",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "13:05",
-        "fine": "14:05",
+        "ora": "13:15",
+        "fine": "14:15",
         "titolo": "La chiamavano pausa pranzo",
         "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Fabio, venditore di moto, lo porta da Pizza Luigi.",
         "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
       },
       {
-        "ora": "14:05",
-        "fine": "15:05",
+        "ora": "14:15",
+        "fine": "15:15",
         "titolo": "La chiamavano pausa pranzo",
         "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Giuseppe lo porta da Lele Bistrot, a Grottaferrata.",
         "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
       },
       {
-        "ora": "15:05",
-        "fine": "16:00",
+        "ora": "15:15",
+        "fine": "16:10",
         "titolo": "Rimozione forzata",
         "descrizione": "Perez offre a Robbie un prestito per saldare il debito con Christie, Eddie ritorna alla Tremont ma con nuovi accordi. Jerome si innervosisce con il suo investigatore privato.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:55",
+        "ora": "16:10",
+        "fine": "17:00",
         "titolo": "Rimozione forzata",
         "descrizione": "Christie affronta le ripercussioni del rifiuto dell'offerta di Felix. Bernice dirotta un test di guida e il terribile spagnolo di Kosgrove mette lui ed Eddie nei guai.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "18:10",
+        "ora": "17:00",
+        "fine": "18:20",
         "titolo": "Rimozione forzata",
         "descrizione": "Bernice e Davy tentano di recuperare uno yacht. Eddie ha una brutta esperienza con un camion di cartelloni pubblicitari elettronici. Kosgrove accetta inconsapevolmente un drastico cambiamento.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "18:10",
+        "ora": "18:20",
         "fine": "20:10",
         "titolo": "Vado a vivere nel bosco",
         "descrizione": "I Raney devono salvare la fattoria di alcuni proprietari particolarmente testardi.",
@@ -29441,14 +29427,14 @@
       },
       {
         "ora": "22:45",
-        "fine": "23:50",
+        "fine": "23:45",
         "titolo": "Avamposti: la radiomobile",
         "descrizione": "Seguiamo le operazioni del Nucleo Operativo Radiomobile dei Carabinieri.",
         "immagine": "https://img-guidatv.org/44/avamposti-la-radiomobile/5.jpg"
       },
       {
-        "ora": "23:50",
-        "fine": "01:40",
+        "ora": "23:45",
+        "fine": "01:55",
         "titolo": "Border Control Turchia",
         "descrizione": "Seguiamo il lavoro degli agenti che lavorano alle dogane turche.",
         "immagine": "https://img-guidatv.org/44/border-control-turchia/5.jpg"
@@ -29460,39 +29446,25 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:40",
-        "fine": "03:30",
+        "ora": "01:55",
+        "fine": "03:45",
         "titolo": "Border Control Turchia",
         "descrizione": "Seguiamo il lavoro degli agenti che lavorano alle dogane turche.",
         "immagine": "https://img-guidatv.org/44/border-control-turchia/5.jpg"
       },
       {
-        "ora": "03:30",
-        "fine": "04:20",
+        "ora": "03:45",
+        "fine": "04:55",
         "titolo": "Border Security: niente da dichiarare",
         "descrizione": "Gli agenti di servizio lungo le frontiere polacche lavorano costantemente per tentare di fermare le attivita' illegali in entrata nel Paese.",
         "immagine": "https://img-guidatv.org/44/border-security-niente-da-dichiarare/6.jpg"
       },
       {
-        "ora": "04:20",
-        "fine": "05:10",
-        "titolo": "Border Security: niente da dichiarare",
-        "descrizione": "Gli agenti di servizio lungo le frontiere polacche lavorano costantemente per tentare di fermare le attivita' illegali in entrata nel Paese.",
-        "immagine": "https://img-guidatv.org/44/border-security-niente-da-dichiarare/6.jpg"
-      },
-      {
-        "ora": "05:10",
-        "fine": "05:35",
-        "titolo": "Affari in valigia",
-        "descrizione": "Gli acquirenti partecipano ad un'asta della polizia a Stockton, in California. Ci sono diversi oggetti di grande valore da poter scegliere, inclusa una slot machine vintage.",
-        "immagine": "https://img-guidatv.org/44/affari-in-valigia/0.jpg"
-      },
-      {
-        "ora": "05:35",
+        "ora": "04:55",
         "fine": "06:00",
-        "titolo": "Affari in valigia",
-        "descrizione": "Gli acquirenti partecipano ad un'asta su alcune proprieta' a St. Paul, dove lanciano offerte su vari articoli, da pezzi di auto ad una bambola rara, fino al costume di una mascotte di hockey.",
-        "immagine": "https://img-guidatv.org/44/affari-in-valigia/0.jpg"
+        "titolo": "Border Security: niente da dichiarare",
+        "descrizione": "Gli agenti di servizio lungo le frontiere polacche lavorano costantemente per tentare di fermare le attivita' illegali in entrata nel Paese.",
+        "immagine": "https://img-guidatv.org/44/border-security-niente-da-dichiarare/6.jpg"
       },
       {
         "ora": "06:00",
@@ -29503,132 +29475,132 @@
       },
       {
         "ora": "06:25",
-        "fine": "06:50",
+        "fine": "06:55",
         "titolo": "Banco dei pugni",
         "descrizione": "La famiglia e' in fermento mentre si prepara ad uno spot commerciale per il negozio. In seguito, la vendita di una pelliccia di visone si trasforma in qualcosa di interessante.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "06:50",
-        "fine": "07:20",
+        "ora": "06:55",
+        "fine": "07:25",
         "titolo": "Banco dei pugni",
         "descrizione": "Karen decide che il negozio ha bisogno di un rinnovamento in stile feng shui, che renda gli ambienti piu' armoniosi. In seguito, Seth fa un'offerta su alcuni oggetti da baseball.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "07:20",
-        "fine": "07:45",
+        "ora": "07:25",
+        "fine": "07:55",
         "titolo": "Banco dei pugni",
         "descrizione": "Les e Ashley si occupano della vendita di una proprieta'. Seth contratta su un go-kart su misura e Karen fa un'offerta su un oggetto usato in un film.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "07:45",
-        "fine": "08:15",
+        "ora": "07:55",
+        "fine": "08:25",
         "titolo": "Banco dei pugni",
         "descrizione": "Les riceve un invito per parlare ad una scuola di business. Intanto, al negozio viene offerta una collezione di pistole giocattolo e un ventriloquo.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "08:15",
-        "fine": "08:40",
+        "ora": "08:25",
+        "fine": "08:55",
         "titolo": "Banco dei pugni",
         "descrizione": "Ashley si intromette tra due impiegati scatenando una lotta fra loro due. Intanto, Seth tenta di guadagnare su un affare su alcuni oggetti da collezione.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "08:40",
-        "fine": "09:10",
+        "ora": "08:55",
+        "fine": "09:30",
         "titolo": "Banco dei pugni",
         "descrizione": "Les assume qualcuno per spiare lo staff. Intanto, un uomo cerca un anello di fidanzamento ma la sua ricerca scatena il caos nel parcheggio.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "09:10",
-        "fine": "09:40",
+        "ora": "09:30",
+        "fine": "09:55",
         "titolo": "Banco dei pugni",
         "descrizione": "Les tenta di mediare durante una discussione tra Ashley e Karen. Inoltre, una band heavy metal arriva al negozio per cercare una chitarra.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "09:40",
-        "fine": "10:10",
+        "ora": "09:55",
+        "fine": "10:30",
         "titolo": "Banco dei pugni",
         "descrizione": "La vendita di un'automobile sportiva e' a rischio mentre Seth tenta di riparare il veicolo. In seguito, uno strano cliente viene buttato fuori dal negozio.",
         "immagine": "https://img-guidatv.org/44/banco-dei-pugni/0.jpg"
       },
       {
-        "ora": "10:10",
-        "fine": "10:45",
+        "ora": "10:30",
+        "fine": "11:05",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "10:45",
-        "fine": "11:20",
+        "ora": "11:05",
+        "fine": "11:35",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "11:55",
+        "ora": "11:35",
+        "fine": "12:10",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "11:55",
-        "fine": "12:30",
+        "ora": "12:10",
+        "fine": "12:40",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:05",
+        "ora": "12:40",
+        "fine": "13:15",
         "titolo": "Mr. Oro: tutto ha un prezzo",
         "descrizione": "Mr. Oro guida rete di compro oro nel nord Italia. Ogni giorno nuove trattative e colpi di scena",
         "immagine": "https://img-guidatv.org/44/mr-oro-tutto-ha-un-prezzo/6.jpg"
       },
       {
-        "ora": "13:05",
-        "fine": "14:05",
+        "ora": "13:15",
+        "fine": "14:15",
         "titolo": "La chiamavano pausa pranzo",
         "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Fabio, venditore di moto, lo porta da Pizza Luigi.",
         "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
       },
       {
-        "ora": "14:05",
-        "fine": "15:05",
+        "ora": "14:15",
+        "fine": "15:15",
         "titolo": "La chiamavano pausa pranzo",
         "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Giuseppe lo porta da Lele Bistrot, a Grottaferrata.",
         "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
       },
       {
-        "ora": "15:05",
-        "fine": "16:00",
+        "ora": "15:15",
+        "fine": "16:10",
         "titolo": "Rimozione forzata",
         "descrizione": "Perez offre a Robbie un prestito per saldare il debito con Christie, Eddie ritorna alla Tremont ma con nuovi accordi. Jerome si innervosisce con il suo investigatore privato.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:55",
+        "ora": "16:10",
+        "fine": "17:00",
         "titolo": "Rimozione forzata",
         "descrizione": "Christie affronta le ripercussioni del rifiuto dell'offerta di Felix. Bernice dirotta un test di guida e il terribile spagnolo di Kosgrove mette lui ed Eddie nei guai.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "18:10",
+        "ora": "17:00",
+        "fine": "18:20",
         "titolo": "Rimozione forzata",
         "descrizione": "Bernice e Davy tentano di recuperare uno yacht. Eddie ha una brutta esperienza con un camion di cartelloni pubblicitari elettronici. Kosgrove accetta inconsapevolmente un drastico cambiamento.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "18:10",
+        "ora": "18:20",
         "fine": "20:10",
         "titolo": "Vado a vivere nel bosco",
         "descrizione": "I Raney devono salvare la fattoria di alcuni proprietari particolarmente testardi.",
@@ -29650,14 +29622,14 @@
       },
       {
         "ora": "22:45",
-        "fine": "23:50",
+        "fine": "23:45",
         "titolo": "Avamposti: la radiomobile",
         "descrizione": "Seguiamo le operazioni del Nucleo Operativo Radiomobile dei Carabinieri.",
         "immagine": "https://img-guidatv.org/44/avamposti-la-radiomobile/5.jpg"
       },
       {
-        "ora": "23:50",
-        "fine": "01:40",
+        "ora": "23:45",
+        "fine": "01:55",
         "titolo": "Border Control Turchia",
         "descrizione": "Seguiamo il lavoro degli agenti che lavorano alle dogane turche.",
         "immagine": "https://img-guidatv.org/44/border-control-turchia/5.jpg"
@@ -29907,9 +29879,9 @@
       {
         "ora": "00:10",
         "fine": "01:10",
-        "titolo": "Stucky - Tiramisù",
-        "descrizione": "L'ispettore capo Stucky è un detective vecchio stampo, introspettivo, apparentemente distratto e spesso sottovalutato. Indaga su casi di omicidio per la Questura di Treviso facendo ricorso all'empatia, al suo intuito non convenzionale e agli appunti rigorosamente scritti a mano.",
-        "immagine": "https://img-guidatv.org/90/stucky-tiramisu/0.jpg"
+        "titolo": "Stucky",
+        "descrizione": "In forza alla Questura di Treviso, Stucky è un ispettore apparentemente distratto, spesso bistrattato e sottovalutato, che si lascia guidare dal suo istinto, dalla curiosità e da un pensiero fuori dagli schemi.",
+        "immagine": "https://image.tmdb.org/t/p/w300/wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
       },
       {
         "ora": "01:10",
@@ -29921,7 +29893,7 @@
       {
         "ora": "02:55",
         "fine": "03:05",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -29935,7 +29907,7 @@
       {
         "ora": "03:10",
         "fine": "03:20",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -29955,15 +29927,43 @@
       },
       {
         "ora": "05:00",
-        "fine": "06:15",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "fine": "05:10",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:25",
+        "titolo": "Il Quotidiano",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "05:55",
+        "titolo": "Telegiornale",
+        "descrizione": "Le notizie di prima serata",
+        "immagine": "https://img-guidatv.org/90/telegiornale/6.jpg"
+      },
+      {
+        "ora": "05:55",
+        "fine": "06:00",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
         "ora": "06:15",
         "fine": "06:25",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -29977,7 +29977,7 @@
       {
         "ora": "06:30",
         "fine": "06:45",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30103,16 +30103,16 @@
       {
         "ora": "14:35",
         "fine": "15:35",
-        "titolo": "Sorelle e delitti - Piet lo smilzo",
-        "descrizione": "Dopo la morte del padre, le sorelle Viktoria, poliziotta, e Felicitas, scienziata forense, dai caratteri decisamente opposti, si ritrovano a collaborare nelle indagini.",
-        "immagine": "https://img-guidatv.org/90/sorelle-e-delitti-piet-lo-smilzo/0.jpg"
+        "titolo": "Sorelle E Delitti",
+        "descrizione": "Feli e Viktoria si ritrovano dopo la morte del padre. Trasferitasi da Berlino Feli incomincia a lavorare nella scientifica della polizia. Viktoria, invece è un poliziotto. Le due dovranno ricostruire il loro rapporto.",
+        "immagine": "https://image.tmdb.org/t/p/w300/wMQNOJ3lNr0dUf6L3GYwq3yUVbT.jpg"
       },
       {
         "ora": "15:35",
         "fine": "16:20",
-        "titolo": "I sentieri del Devon e della Cornovaglia - con Michael Portillo - Settimo giorno - Cornovaglia del sud",
+        "titolo": "I Sentieri Del Devon E Della Cornovaglia - Con Michael Portillo - Settimo Giorno",
         "descrizione": "Micheal intraprende un lungo percorso a piedi alla scoperta degli splendidi scenari che offrono Devon e Cornovaglia.",
-        "immagine": "https://img-guidatv.org/90/i-sentieri-del-devon-e-della-cornovaglia-con-michael-portillo-settimo-giorno-cornovaglia-del-sud/0.jpg"
+        "immagine": "https://img-guidatv.org/90/i-sentieri-del-devon-e-della-cornovaglia-con-michael-portillo-settimo-giorno/0.jpg"
       },
       {
         "ora": "16:20",
@@ -30201,9 +30201,9 @@
       {
         "ora": "23:05",
         "fine": "00:10",
-        "titolo": "Stucky - Il sole di Tabriz",
-        "descrizione": "L'ispettore capo Stucky è un detective vecchio stampo, introspettivo, apparentemente distratto e spesso sottovalutato. Indaga su casi di omicidio per la Questura di Treviso facendo ricorso all'empatia, al suo intuito non convenzionale e agli appunti rigorosamente scritti a mano.",
-        "immagine": "https://img-guidatv.org/90/stucky-il-sole-di-tabriz/0.jpg"
+        "titolo": "Stucky",
+        "descrizione": "In forza alla Questura di Treviso, Stucky è un ispettore apparentemente distratto, spesso bistrattato e sottovalutato, che si lascia guidare dal suo istinto, dalla curiosità e da un pensiero fuori dagli schemi.",
+        "immagine": "https://image.tmdb.org/t/p/w300/wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
       }
     ]
   },
@@ -30214,9 +30214,9 @@
       {
         "ora": "00:10",
         "fine": "01:10",
-        "titolo": "Stucky - Tiramisù",
-        "descrizione": "L'ispettore capo Stucky è un detective vecchio stampo, introspettivo, apparentemente distratto e spesso sottovalutato. Indaga su casi di omicidio per la Questura di Treviso facendo ricorso all'empatia, al suo intuito non convenzionale e agli appunti rigorosamente scritti a mano.",
-        "immagine": "https://img-guidatv.org/90/stucky-tiramisu/0.jpg"
+        "titolo": "Stucky",
+        "descrizione": "In forza alla Questura di Treviso, Stucky è un ispettore apparentemente distratto, spesso bistrattato e sottovalutato, che si lascia guidare dal suo istinto, dalla curiosità e da un pensiero fuori dagli schemi.",
+        "immagine": "https://image.tmdb.org/t/p/w300/wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
       },
       {
         "ora": "01:10",
@@ -30228,7 +30228,7 @@
       {
         "ora": "02:55",
         "fine": "03:05",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30242,7 +30242,7 @@
       {
         "ora": "03:10",
         "fine": "03:20",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30262,15 +30262,43 @@
       },
       {
         "ora": "05:00",
-        "fine": "06:15",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "fine": "05:10",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:25",
+        "titolo": "Il Quotidiano",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "05:55",
+        "titolo": "Telegiornale",
+        "descrizione": "Le notizie di prima serata",
+        "immagine": "https://img-guidatv.org/90/telegiornale/6.jpg"
+      },
+      {
+        "ora": "05:55",
+        "fine": "06:00",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
         "ora": "06:15",
         "fine": "06:25",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30284,7 +30312,7 @@
       {
         "ora": "06:30",
         "fine": "06:45",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30410,16 +30438,16 @@
       {
         "ora": "14:35",
         "fine": "15:35",
-        "titolo": "Sorelle e delitti - Piet lo smilzo",
-        "descrizione": "Dopo la morte del padre, le sorelle Viktoria, poliziotta, e Felicitas, scienziata forense, dai caratteri decisamente opposti, si ritrovano a collaborare nelle indagini.",
-        "immagine": "https://img-guidatv.org/90/sorelle-e-delitti-piet-lo-smilzo/0.jpg"
+        "titolo": "Sorelle E Delitti",
+        "descrizione": "Feli e Viktoria si ritrovano dopo la morte del padre. Trasferitasi da Berlino Feli incomincia a lavorare nella scientifica della polizia. Viktoria, invece è un poliziotto. Le due dovranno ricostruire il loro rapporto.",
+        "immagine": "https://image.tmdb.org/t/p/w300/wMQNOJ3lNr0dUf6L3GYwq3yUVbT.jpg"
       },
       {
         "ora": "15:35",
         "fine": "16:20",
-        "titolo": "I sentieri del Devon e della Cornovaglia - con Michael Portillo - Settimo giorno - Cornovaglia del sud",
+        "titolo": "I Sentieri Del Devon E Della Cornovaglia - Con Michael Portillo - Settimo Giorno",
         "descrizione": "Micheal intraprende un lungo percorso a piedi alla scoperta degli splendidi scenari che offrono Devon e Cornovaglia.",
-        "immagine": "https://img-guidatv.org/90/i-sentieri-del-devon-e-della-cornovaglia-con-michael-portillo-settimo-giorno-cornovaglia-del-sud/0.jpg"
+        "immagine": "https://img-guidatv.org/90/i-sentieri-del-devon-e-della-cornovaglia-con-michael-portillo-settimo-giorno/0.jpg"
       },
       {
         "ora": "16:20",
@@ -30508,9 +30536,9 @@
       {
         "ora": "23:05",
         "fine": "00:10",
-        "titolo": "Stucky - Il sole di Tabriz",
-        "descrizione": "L'ispettore capo Stucky è un detective vecchio stampo, introspettivo, apparentemente distratto e spesso sottovalutato. Indaga su casi di omicidio per la Questura di Treviso facendo ricorso all'empatia, al suo intuito non convenzionale e agli appunti rigorosamente scritti a mano.",
-        "immagine": "https://img-guidatv.org/90/stucky-il-sole-di-tabriz/0.jpg"
+        "titolo": "Stucky",
+        "descrizione": "In forza alla Questura di Treviso, Stucky è un ispettore apparentemente distratto, spesso bistrattato e sottovalutato, che si lascia guidare dal suo istinto, dalla curiosità e da un pensiero fuori dagli schemi.",
+        "immagine": "https://image.tmdb.org/t/p/w300/wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
       }
     ]
   },
@@ -30521,37 +30549,51 @@
       {
         "ora": "01:00",
         "fine": "02:00",
-        "titolo": "Motomondiale 2026 - Gran Premio d'Austria",
+        "titolo": "Motomondiale 2026 - Gran Premio d'Austria (R)",
         "descrizione": "MotoGP\rda Spielberg (AUT)",
         "immagine": "https://img-guidatv.org/91/motomondiale-2026-gran-premio-d-austria/0.jpg"
       },
       {
         "ora": "02:00",
         "fine": "03:00",
-        "titolo": "Motomondiale 2026 - Gran Premio d'Austria",
+        "titolo": "Motomondiale 2026 - Gran Premio d'Austria (R)",
         "descrizione": "Moto2\rda Spielberg (AUT)",
         "immagine": "https://img-guidatv.org/91/motomondiale-2026-gran-premio-d-austria/0.jpg"
       },
       {
         "ora": "03:00",
         "fine": "04:05",
-        "titolo": "Motomondiale 2026 - Gran Premio d'Austria",
+        "titolo": "Motomondiale 2026 - Gran Premio d'Austria (R)",
         "descrizione": "Moto3\rda Spielberg (AUT)",
         "immagine": "https://img-guidatv.org/91/motomondiale-2026-gran-premio-d-austria/0.jpg"
       },
       {
         "ora": "04:05",
         "fine": "05:00",
-        "titolo": "La domenica sportiva",
+        "titolo": "La domenica sportiva (R)",
         "descrizione": "Le immagini del weekend",
         "immagine": "https://img-guidatv.org/91/la-domenica-sportiva/2.jpg"
       },
       {
         "ora": "05:00",
+        "fine": "05:10",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
+      },
+      {
+        "ora": "05:15",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Quotidiano (R) + Lo Specchio (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Il Quotidiano",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
       {
         "ora": "05:30",
@@ -30563,7 +30605,7 @@
       {
         "ora": "06:15",
         "fine": "06:20",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -30584,7 +30626,7 @@
       {
         "ora": "06:30",
         "fine": "06:45",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
@@ -30598,7 +30640,7 @@
       {
         "ora": "07:05",
         "fine": "07:15",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -30640,7 +30682,7 @@
       {
         "ora": "09:10",
         "fine": "10:55",
-        "titolo": "Calcio: Super League 2026/2027 - Sion - Zurigo",
+        "titolo": "Calcio: Super League 2026/2027 - Sion - Zurigo (R)",
         "descrizione": "da Sion",
         "immagine": "https://img-guidatv.org/91/calcio-super-league/5.jpg"
       },
@@ -30717,7 +30759,7 @@
       {
         "ora": "23:05",
         "fine": "23:25",
-        "titolo": "Ciclismo: Mondiali Canada Montréal 2026 - Cronometro élite femminile",
+        "titolo": "Ciclismo: Mondiali Canada Montréal 2026 - Cronometro élite femminile (R)",
         "descrizione": "da Montréal (CAN)",
         "immagine": "https://img-guidatv.org/91/ciclismo/0.jpg"
       },
@@ -30737,37 +30779,51 @@
       {
         "ora": "01:00",
         "fine": "02:00",
-        "titolo": "Motomondiale 2026 - Gran Premio d'Austria",
+        "titolo": "Motomondiale 2026 - Gran Premio d'Austria (R)",
         "descrizione": "MotoGP\rda Spielberg (AUT)",
         "immagine": "https://img-guidatv.org/91/motomondiale-2026-gran-premio-d-austria/0.jpg"
       },
       {
         "ora": "02:00",
         "fine": "03:00",
-        "titolo": "Motomondiale 2026 - Gran Premio d'Austria",
+        "titolo": "Motomondiale 2026 - Gran Premio d'Austria (R)",
         "descrizione": "Moto2\rda Spielberg (AUT)",
         "immagine": "https://img-guidatv.org/91/motomondiale-2026-gran-premio-d-austria/0.jpg"
       },
       {
         "ora": "03:00",
         "fine": "04:05",
-        "titolo": "Motomondiale 2026 - Gran Premio d'Austria",
+        "titolo": "Motomondiale 2026 - Gran Premio d'Austria (R)",
         "descrizione": "Moto3\rda Spielberg (AUT)",
         "immagine": "https://img-guidatv.org/91/motomondiale-2026-gran-premio-d-austria/0.jpg"
       },
       {
         "ora": "04:05",
         "fine": "05:00",
-        "titolo": "La domenica sportiva",
+        "titolo": "La domenica sportiva (R)",
         "descrizione": "Le immagini del weekend",
         "immagine": "https://img-guidatv.org/91/la-domenica-sportiva/2.jpg"
       },
       {
         "ora": "05:00",
+        "fine": "05:10",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
+      },
+      {
+        "ora": "05:15",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Quotidiano (R) + Lo Specchio (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Il Quotidiano",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
       {
         "ora": "05:30",
@@ -30779,7 +30835,7 @@
       {
         "ora": "06:15",
         "fine": "06:20",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -30800,7 +30856,7 @@
       {
         "ora": "06:30",
         "fine": "06:45",
-        "titolo": "Il Quotidiano",
+        "titolo": "Il Quotidiano (R)",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
@@ -30814,7 +30870,7 @@
       {
         "ora": "07:05",
         "fine": "07:15",
-        "titolo": "TG Notte",
+        "titolo": "TG Notte (R)",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -30856,7 +30912,7 @@
       {
         "ora": "09:10",
         "fine": "10:55",
-        "titolo": "Calcio: Super League 2026/2027 - Sion - Zurigo",
+        "titolo": "Calcio: Super League 2026/2027 - Sion - Zurigo (R)",
         "descrizione": "da Sion",
         "immagine": "https://img-guidatv.org/91/calcio-super-league/5.jpg"
       },
@@ -30933,7 +30989,7 @@
       {
         "ora": "23:05",
         "fine": "23:25",
-        "titolo": "Ciclismo: Mondiali Canada Montréal 2026 - Cronometro élite femminile",
+        "titolo": "Ciclismo: Mondiali Canada Montréal 2026 - Cronometro élite femminile (R)",
         "descrizione": "da Montréal (CAN)",
         "immagine": "https://img-guidatv.org/91/ciclismo/0.jpg"
       },
