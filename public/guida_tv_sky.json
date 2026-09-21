@@ -158,10 +158,17 @@
       },
       {
         "ora": "01:00",
+        "fine": "01:30",
+        "titolo": "News Line",
+        "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/692ef7cb-53d9-459d-9a72-391830eb8348/background/600"
+      },
+      {
+        "ora": "01:30",
         "fine": "02:00",
-        "titolo": "Goleador: L'ora dei gol",
-        "descrizione": "Tutti i gol e le immagini piu' belle della Serie A, della Premier League, della Bundesliga e della Ligue 1. Senza dimenticare le spettacolari coppe europee. In studio Sara Benci.",
-        "immagine": "https://img-guidatv.org/929/goleador-l-ora-dei-gol/6.jpg"
+        "titolo": "News Line",
+        "descrizione": "Tutto quello che è accaduto nel panorama sportivo delle ultime 24 ore, con analisi, notizie, e una lettura dei giornali che troveremo in edicola.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/692ef7cb-53d9-459d-9a72-391830eb8348/background/600"
       },
       {
         "ora": "02:00",
@@ -312,34 +319,27 @@
       },
       {
         "ora": "14:00",
-        "fine": "14:30",
-        "titolo": "Euro Show",
-        "descrizione": "Il meglio del calcio internazionale con tutte le notizie, i gol, le immagini e le voci dei protagonisti di Premier League, Bundesliga.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2c1bb9b8-7294-4ca4-be76-777c72f154b1/background/600"
-      },
-      {
-        "ora": "14:30",
-        "fine": "14:40",
+        "fine": "14:15",
         "titolo": "Reparto Corse Moto GP",
         "descrizione": "Appuntamento settimanale con l'approfondimento dedicato al motomondiale, condotto da Marta Abiye con Paolo Beltramo.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/744532bc-0789-45a8-bfd8-4aa4505f533a/background/600"
       },
       {
-        "ora": "14:40",
-        "fine": "15:00",
+        "ora": "14:15",
+        "fine": "14:45",
         "titolo": "Sport 24 Today",
         "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
         "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
       },
       {
-        "ora": "15:00",
-        "fine": "15:30",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+        "ora": "14:45",
+        "fine": "15:15",
+        "titolo": "Euro Show",
+        "descrizione": "Il meglio del calcio internazionale con tutte le notizie, i gol, le immagini e le voci dei protagonisti di Premier League, Bundesliga.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2c1bb9b8-7294-4ca4-be76-777c72f154b1/background/600"
       },
       {
-        "ora": "15:30",
+        "ora": "15:15",
         "fine": "16:00",
         "titolo": "Sport 24 Today",
         "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
@@ -404,16 +404,16 @@
       {
         "ora": "20:00",
         "fine": "20:30",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+        "titolo": "Campo Aperto",
+        "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e44df0f5-5991-4df7-b4ae-09430f6972c1/background/600"
       },
       {
         "ora": "20:30",
         "fine": "21:00",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+        "titolo": "Campo Aperto",
+        "descrizione": "Tutti gli aggiornamenti dalle squadre di Serie A con collegamenti live, interviste e ospiti in studio.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e44df0f5-5991-4df7-b4ae-09430f6972c1/background/600"
       },
       {
         "ora": "21:00",
@@ -717,7 +717,7 @@
         "ora": "02:45",
         "fine": "03:00",
         "titolo": "Madrid",
-        "descrizione": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
+        "descrizione": "Scopriamo cosa succede durante l'undicesima prova della Formula 2 al Gran Premio di Madrid.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/de273881-4a64-4b50-ab8b-55b4b00401d5/background/600"
       },
       {
@@ -787,7 +787,7 @@
         "ora": "10:30",
         "fine": "10:45",
         "titolo": "Madrid",
-        "descrizione": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
+        "descrizione": "Scopriamo cosa succede durante l'undicesima prova della Formula 2 al Gran Premio di Madrid.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/de273881-4a64-4b50-ab8b-55b4b00401d5/background/600"
       },
       {
@@ -843,7 +843,7 @@
         "ora": "16:30",
         "fine": "16:45",
         "titolo": "Madrid",
-        "descrizione": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
+        "descrizione": "Scopriamo cosa succede durante l'undicesima prova della Formula 2 al Gran Premio di Madrid.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/de273881-4a64-4b50-ab8b-55b4b00401d5/background/600"
       },
       {
@@ -892,7 +892,7 @@
         "ora": "20:45",
         "fine": "21:00",
         "titolo": "Madrid",
-        "descrizione": "Scopriamo se la F2 e' ancora la porta d'accesso alla F1. Anche se troppi campioni restano al palo e tanti arrivano dalle Academy, il campionato cadetto rimane oggi l'ascensore per la serie A.",
+        "descrizione": "Scopriamo cosa succede durante l'undicesima prova della Formula 2 al Gran Premio di Madrid.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/de273881-4a64-4b50-ab8b-55b4b00401d5/background/600"
       },
       {
@@ -1197,7 +1197,7 @@
       {
         "ora": "01:00",
         "fine": "01:30",
-        "titolo": "Icarus Ultra 2025 Ep.47 21/09/2026",
+        "titolo": "Icarus Ultra",
         "descrizione": "... Icarus Ultra. - Avventure, sfide, storie, imprese e tante curiosita' dal mondo degli sport all'aperto: dopo 15 anni alla ricerca del limite, Icarus si spinge oltre per trasformarsi in Icarus Ultra.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cba4d42b-b9ff-49fb-8b60-b3fb00dc2b19/background/600"
       },
@@ -1323,7 +1323,7 @@
       {
         "ora": "18:30",
         "fine": "19:00",
-        "titolo": "Icarus Ultra 2025 Ep.47 21/09/2026",
+        "titolo": "Icarus Ultra",
         "descrizione": "... Icarus Ultra. - Avventure, sfide, storie, imprese e tante curiosita' dal mondo degli sport all'aperto: dopo 15 anni alla ricerca del limite, Icarus si spinge oltre per trasformarsi in Icarus Ultra.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cba4d42b-b9ff-49fb-8b60-b3fb00dc2b19/background/600"
       },
@@ -1378,7 +1378,7 @@
       {
         "ora": "01:30",
         "fine": "02:00",
-        "titolo": "Champions League Remix Ep.1 11/09/2026",
+        "titolo": "Champions League Remix",
         "descrizione": "... 11/09/2026 Champions League Remix. - Rivediamo i gol e i momenti salienti delle partite di Champions League che hanno fatto la storia.",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
       },
@@ -1626,11 +1626,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "01:00",
+        "ora": "01:45",
         "fine": "02:00",
-        "titolo": "LBA Awards",
-        "descrizione": "Nella sede di Sky, di fronte ad un pubblico di stelle del basket, LBA alla vigilia della nuova stagione consegna i premi relativi all'annata 2025-26. Conducono Giulia Cicchine' e Matteo Soragna.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b165cc05-6128-4012-98a2-6675cb07dd99/background/600"
+        "titolo": "Speciale OKC e l'attentato 1995",
+        "descrizione": "Speciale OKC e l'attentato 1995",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9b197922-78a8-4d7d-8b3b-b883bf145737/background/600"
       },
       {
         "ora": "02:00",
@@ -1655,58 +1655,44 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:20",
+        "fine": "08:00",
         "titolo": "Semifinale 1 Derthona Basket - Reyer Venezia",
         "descrizione": "... Venezia Supercoppa Italiana. - La prima semifinale vede in campo la squadra finalista dell'ultima Coppa Italia e quella che ha giocato l'ultima finale playoff. Telecronaca di Geri De Rosa e Andrea Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/93ee1a11-623a-4250-a15f-4e685a2e2053/background/600"
       },
       {
-        "ora": "07:20",
-        "fine": "08:20",
+        "ora": "08:00",
+        "fine": "09:00",
         "titolo": "LBA Awards",
         "descrizione": "Nella sede di Sky, di fronte ad un pubblico di stelle del basket, LBA alla vigilia della nuova stagione consegna i premi relativi all'annata 2025-26. Conducono Giulia Cicchine' e Matteo Soragna.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b165cc05-6128-4012-98a2-6675cb07dd99/background/600"
       },
       {
-        "ora": "08:20",
-        "fine": "10:45",
+        "ora": "09:00",
+        "fine": "11:25",
         "titolo": "Semifinale 2 Olimpia Milano - Virtus Bologna",
         "descrizione": "... Bologna Supercoppa Italiana. - La seconda semifinale e' di grande prestigio: Milano, campione d'Italia in carica, contro la Virtus Bologna, miglior semifinalista degli ultimi playoff. Telecronaca di Davide Fumagalli e Chicca Macchi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b3a7e4ab-fc77-44f4-92a2-24ca8a018d30/background/600"
       },
       {
-        "ora": "10:45",
-        "fine": "13:15",
-        "titolo": "Finale Basket Supercoppa 2026",
-        "descrizione": "... Supercoppa Italiana. - Ancora loro, come nell'ultima finale scudetto: Olimpia Milano e' Reyer Venezia si giocano il primo titolo della stagione, l'edizione numero 32 della Supercoppa. TC: Geri De Rosa e Andrea Meneghin.",
+        "ora": "11:25",
+        "fine": "13:30",
+        "titolo": "Finale Reyer Venezia - Olimpia Milano",
+        "descrizione": "... Milano Supercoppa Italiana. - Ancora loro, come nell'ultima finale scudetto: Olimpia Milano e' Reyer Venezia si giocano il primo titolo della stagione, l'edizione numero 32 della Supercoppa. TC: Geri De Rosa e Andrea Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b9b92be7-1b15-42b5-b3f6-4343c46ef522/background/600"
       },
       {
-        "ora": "13:15",
-        "fine": "13:45",
-        "titolo": "Beli Vs USA A 20 Anni Dalla Partita...",
-        "descrizione": "Sapporo, 2006: Marco Belinelli sfida la squadra statunitense al Mondiale e lascia il suo biglietto da visita all'NBA. A 20 anni dai fatti, Belinelli ci racconta quella notte indimenticabile.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/68a69135-8913-47ec-9cf4-6cb8b28ee9bd/background/600"
-      },
-      {
-        "ora": "13:45",
+        "ora": "13:30",
         "fine": "15:30",
         "titolo": "Semifinale 1 Olympiacos - Fenerbahce",
-        "descrizione": "... Eurolega Supercup. - Nella prima semifinale si sfidano le squadre che hanno vinto le ultime due edizioni di Eurolega, i turchi nel 2025, i greci nel 2026. Si gioca ad ad Abu Dhabi. Telecronaca: Fumagalli-Pessina.",
+        "descrizione": "... Eurolega Supercup. - Nella prima semifinale si sfidano le squadre che hanno vinto le ultime due edizioni di Eurolega, i turchi nel 2025, i greci nel 2026. Si gioca ad ad Abu Dhabi. Telecronaca: Fumagalli-Pessina",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ccb0a717-d7cf-43e3-abbd-f8aa446fc48d/background/600"
       },
       {
         "ora": "15:30",
-        "fine": "16:00",
-        "titolo": "Teo Soragna Incontra Luis Scola",
-        "descrizione": "Matteo Soragna intervista Luis Scola ripercorrendone la carriera attraverso l'NBA, l'Eurolega e i trionfi con la maglia dell'Argentina. Un viaggio a ritroso nelle parole di uno dei protagonisti dell'ultimo quarto di secolo di pallancanestro.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1bde8c3d-12e2-4b00-a021-dedd2c79e9fc/background/600"
-      },
-      {
-        "ora": "16:00",
         "fine": "18:00",
-        "titolo": "Finale Basket Supercoppa 2026",
-        "descrizione": "... Supercoppa Italiana. - Ancora loro, come nell'ultima finale scudetto: Olimpia Milano e' Reyer Venezia si giocano il primo titolo della stagione, l'edizione numero 32 della Supercoppa. TC: Geri De Rosa e Andrea Meneghin.",
+        "titolo": "Finale Reyer Venezia - Olimpia Milano",
+        "descrizione": "... Milano Supercoppa Italiana. - Ancora loro, come nell'ultima finale scudetto: Olimpia Milano e' Reyer Venezia si giocano il primo titolo della stagione, l'edizione numero 32 della Supercoppa. TC: Geri De Rosa e Andrea Meneghin",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b9b92be7-1b15-42b5-b3f6-4343c46ef522/background/600"
       },
       {
@@ -1718,23 +1704,23 @@
       },
       {
         "ora": "19:00",
-        "fine": "21:00",
+        "fine": "20:55",
         "titolo": "Semifinale 1 Derthona Basket - Reyer Venezia",
         "descrizione": "... Venezia Supercoppa Italiana. - La prima semifinale vede in campo la squadra finalista dell'ultima Coppa Italia e quella che ha giocato l'ultima finale playoff. Telecronaca di Geri De Rosa e Andrea Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/93ee1a11-623a-4250-a15f-4e685a2e2053/background/600"
       },
       {
-        "ora": "21:00",
-        "fine": "23:00",
+        "ora": "20:55",
+        "fine": "23:15",
         "titolo": "Semifinale 2 Olimpia Milano - Virtus Bologna",
         "descrizione": "... Bologna Supercoppa Italiana. - La seconda semifinale e' di grande prestigio: Milano, campione d'Italia in carica, contro la Virtus Bologna, miglior semifinalista degli ultimi playoff. Telecronaca di Davide Fumagalli e Chicca Macchi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b3a7e4ab-fc77-44f4-92a2-24ca8a018d30/background/600"
       },
       {
-        "ora": "23:00",
-        "fine": "01:00",
-        "titolo": "Finale Basket Supercoppa 2026",
-        "descrizione": "... Supercoppa Italiana. - Ancora loro, come nell'ultima finale scudetto: Olimpia Milano e' Reyer Venezia si giocano il primo titolo della stagione, l'edizione numero 32 della Supercoppa. TC: Geri De Rosa e Andrea Meneghin.",
+        "ora": "23:15",
+        "fine": "01:45",
+        "titolo": "Finale Reyer Venezia - Olimpia Milano",
+        "descrizione": "... Milano Supercoppa Italiana. - Ancora loro, come nell'ultima finale scudetto: Olimpia Milano e' Reyer Venezia si giocano il primo titolo della stagione, l'edizione numero 32 della Supercoppa. TC: Geri De Rosa e Andrea Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b9b92be7-1b15-42b5-b3f6-4343c46ef522/background/600"
       }
     ]
@@ -1858,7 +1844,7 @@
       {
         "ora": "18:30",
         "fine": "18:45",
-        "titolo": "Motonautica On Board 2026 Ep.5 18/09/2026",
+        "titolo": "Motonautica On Board",
         "descrizione": "... 18/09/2026 Motonautica On Board. - Uno sguardo sul mondo della Motonautica per svelare cio' che si cela dietro ogni scia, dalle imbarcazioni piu' veloci alle moto d'acqua. Un'opportunita' unica di conoscere da vicino i veri protagonisti: i piloti, con le loro storie e la loro passione.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/86c243eb-c20b-4b80-9a84-8ba98837626f/background/600"
       },
@@ -2610,23 +2596,23 @@
       {
         "ora": "14:55",
         "fine": "16:55",
-        "titolo": "Ciclismo. Mondiale Montreal Cronometro U23 Donne",
-        "descrizione": "Tadej Pogacar difende il titolo mondiale in Ruanda nella prima edizione africana della corsa iridata di ciclismo.",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Mondiali Di Ciclismo 2026 - Cronometro Donne U23",
+        "descrizione": "Ai Mondiali di Ciclismo 2026 va in scena la cronometro individuale femminile Under 23, con le migliori giovani specialiste internazionali a caccia della maglia iridata contro il tempo.",
+        "immagine": "https://img-guidatv.org/32/mondiali-di-ciclismo-2026-cronometro-donne-u23/0.jpg"
       },
       {
         "ora": "16:55",
         "fine": "17:55",
-        "titolo": "Automobilismo: Campionato Italiano Sparco Rally Del Lazio - Gara 2",
-        "descrizione": "Automobilismo: Campionato Italiano Sparco Rally del Lazio - gara 2",
+        "titolo": "Campionato Italiano Assoluto Rally 2026 - Rally Del Lazio Cassino (Gara 2)",
+        "descrizione": "Seconda giornata di gara al Rally del Lazio Cassino 2026, sesto appuntamento del Campionato Italiano Assoluto Rally Sparco.",
         "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
         "ora": "17:55",
         "fine": "20:45",
-        "titolo": "Ciclismo. Mondiale Montreal Cronometro U23 Uomini",
-        "descrizione": "Tadej Pogacar difende il titolo mondiale in Ruanda nella prima edizione africana della corsa iridata di ciclismo.",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Mondiali Di Ciclismo 2026 - Cronometro Uomini U23",
+        "descrizione": "Ai Mondiali di Ciclismo 2026 va in scena la cronometro individuale maschile Under 23, con i migliori giovani specialisti internazionali in gara per conquistare la maglia iridata contro il tempo.",
+        "immagine": "https://img-guidatv.org/32/mondiali-di-ciclismo-2026-cronometro-uomini-u23/0.jpg"
       },
       {
         "ora": "20:45",
@@ -2721,23 +2707,23 @@
       {
         "ora": "14:55",
         "fine": "16:55",
-        "titolo": "Ciclismo. Mondiale Montreal Cronometro U23 Donne",
-        "descrizione": "Tadej Pogacar difende il titolo mondiale in Ruanda nella prima edizione africana della corsa iridata di ciclismo.",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Mondiali Di Ciclismo 2026 - Cronometro Donne U23",
+        "descrizione": "Ai Mondiali di Ciclismo 2026 va in scena la cronometro individuale femminile Under 23, con le migliori giovani specialiste internazionali a caccia della maglia iridata contro il tempo.",
+        "immagine": "https://img-guidatv.org/32/mondiali-di-ciclismo-2026-cronometro-donne-u23/0.jpg"
       },
       {
         "ora": "16:55",
         "fine": "17:55",
-        "titolo": "Automobilismo: Campionato Italiano Sparco Rally Del Lazio - Gara 2",
-        "descrizione": "Automobilismo: Campionato Italiano Sparco Rally del Lazio - gara 2",
+        "titolo": "Campionato Italiano Assoluto Rally 2026 - Rally Del Lazio Cassino (Gara 2)",
+        "descrizione": "Seconda giornata di gara al Rally del Lazio Cassino 2026, sesto appuntamento del Campionato Italiano Assoluto Rally Sparco.",
         "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
         "ora": "17:55",
         "fine": "20:45",
-        "titolo": "Ciclismo. Mondiale Montreal Cronometro U23 Uomini",
-        "descrizione": "Tadej Pogacar difende il titolo mondiale in Ruanda nella prima edizione africana della corsa iridata di ciclismo.",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Mondiali Di Ciclismo 2026 - Cronometro Uomini U23",
+        "descrizione": "Ai Mondiali di Ciclismo 2026 va in scena la cronometro individuale maschile Under 23, con i migliori giovani specialisti internazionali in gara per conquistare la maglia iridata contro il tempo.",
+        "immagine": "https://img-guidatv.org/32/mondiali-di-ciclismo-2026-cronometro-uomini-u23/0.jpg"
       },
       {
         "ora": "20:45",
@@ -6616,13 +6602,13 @@
       },
       {
         "ora": "03:05",
-        "fine": "03:20",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:25",
+        "titolo": "Broad City",
+        "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
+        "immagine": "https://image.tmdb.org/t/p/w300/nscPjNHfhgoSYUEDcw442tM92KA.jpg"
       },
       {
-        "ora": "03:20",
+        "ora": "03:25",
         "fine": "03:45",
         "titolo": "Broad City",
         "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
@@ -6631,36 +6617,43 @@
       {
         "ora": "03:45",
         "fine": "04:10",
-        "titolo": "Broad City",
-        "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
-        "immagine": "https://image.tmdb.org/t/p/w300/nscPjNHfhgoSYUEDcw442tM92KA.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep7 di 20 Episodio 7 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "04:10",
         "fine": "04:30",
         "titolo": "Most Ridiculous",
-        "descrizione": "Ep7 di 20 Episodio 7 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
+        "descrizione": "Ep8 di 20 Episodio 8 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "04:30",
         "fine": "04:55",
         "titolo": "Most Ridiculous",
-        "descrizione": "Ep8 di 20 Episodio 8 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
-      },
-      {
-        "ora": "04:55",
-        "fine": "05:20",
-        "titolo": "Most Ridiculous",
         "descrizione": "Ep9 di 20 Episodio 9 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "05:20",
-        "fine": "05:40",
+        "ora": "04:55",
+        "fine": "05:15",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep10 di 20 Episodio 10 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:35",
         "titolo": "Un papà da Oscar",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
+        "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
+      },
+      {
+        "ora": "05:35",
+        "fine": "06:00",
+        "titolo": "See Dad Run",
+        "descrizione": "Ep5 di 20 Papa' ti presento Matthew Pearson - David e Amy non vedono di buon occhio che la figlia Emily esca con Matthew, un ragazzo piu' grande di lei. Quando pero' Matthew si presenta a casa, David.",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
       },
       {
@@ -7042,13 +7035,13 @@
       },
       {
         "ora": "03:05",
-        "fine": "03:20",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:25",
+        "titolo": "Broad City",
+        "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
+        "immagine": "https://image.tmdb.org/t/p/w300/nscPjNHfhgoSYUEDcw442tM92KA.jpg"
       },
       {
-        "ora": "03:20",
+        "ora": "03:25",
         "fine": "03:45",
         "titolo": "Broad City",
         "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
@@ -7057,36 +7050,43 @@
       {
         "ora": "03:45",
         "fine": "04:10",
-        "titolo": "Broad City",
-        "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
-        "immagine": "https://image.tmdb.org/t/p/w300/nscPjNHfhgoSYUEDcw442tM92KA.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep7 di 20 Episodio 7 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "04:10",
         "fine": "04:30",
         "titolo": "Most Ridiculous",
-        "descrizione": "Ep7 di 20 Episodio 7 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
+        "descrizione": "Ep8 di 20 Episodio 8 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "04:30",
         "fine": "04:55",
         "titolo": "Most Ridiculous",
-        "descrizione": "Ep8 di 20 Episodio 8 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
-      },
-      {
-        "ora": "04:55",
-        "fine": "05:20",
-        "titolo": "Most Ridiculous",
         "descrizione": "Ep9 di 20 Episodio 9 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "05:20",
-        "fine": "05:40",
+        "ora": "04:55",
+        "fine": "05:15",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep10 di 20 Episodio 10 - Lo show che passa in rassegna i video piu' demenziali del web con il commento dissacrante di Gabriele Cirilli e Dario Cassini.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:35",
         "titolo": "Un papà da Oscar",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
+        "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
+      },
+      {
+        "ora": "05:35",
+        "fine": "06:00",
+        "titolo": "See Dad Run",
+        "descrizione": "Ep5 di 20 Papa' ti presento Matthew Pearson - David e Amy non vedono di buon occhio che la figlia Emily esca con Matthew, un ragazzo piu' grande di lei. Quando pero' Matthew si presenta a casa, David.",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
       },
       {
@@ -12171,10 +12171,17 @@
       },
       {
         "ora": "04:30",
-        "fine": "05:15",
+        "fine": "04:50",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep6 di 13 L'amica immaginaria / Coccodrillo fuor d'acqua - Lydia conosce l'amica immaginaria di Daisy. / Mister Coccodrillo bada al pesce di Martin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8fa93dbd-8bcf-4922-b9c4-04f2209cce73/background/600"
+      },
+      {
+        "ora": "04:50",
+        "fine": "05:15",
+        "titolo": "Barbapapà: Una grande famiglia felice",
+        "descrizione": "Ep15 di 26 Allarme fucsia / Il barbariciclo - Alcuni macchinari spargono del fertilizzante chimico: bisogna bonificare l'ambiente! / Barbapapa' insegna ai barbabebe' l'importanza del riciclo.",
+        "immagine": "https://img-guidatv.org/461/barbapapa/6.jpg"
       },
       {
         "ora": "05:15",
@@ -12681,10 +12688,17 @@
       },
       {
         "ora": "04:30",
-        "fine": "05:15",
+        "fine": "04:50",
         "titolo": "Mister Coccodrillo",
         "descrizione": "Ep6 di 13 L'amica immaginaria / Coccodrillo fuor d'acqua - Lydia conosce l'amica immaginaria di Daisy. / Mister Coccodrillo bada al pesce di Martin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8fa93dbd-8bcf-4922-b9c4-04f2209cce73/background/600"
+      },
+      {
+        "ora": "04:50",
+        "fine": "05:15",
+        "titolo": "Barbapapà: Una grande famiglia felice",
+        "descrizione": "Ep15 di 26 Allarme fucsia / Il barbariciclo - Alcuni macchinari spargono del fertilizzante chimico: bisogna bonificare l'ambiente! / Barbapapa' insegna ai barbabebe' l'importanza del riciclo.",
+        "immagine": "https://img-guidatv.org/461/barbapapa/6.jpg"
       },
       {
         "ora": "05:15",
@@ -19306,22 +19320,22 @@
       {
         "ora": "08:00",
         "fine": "09:50",
-        "titolo": "Agorà",
-        "descrizione": "Annalisa Bruchi approfondisce i temi di stretta attualità e segue il dibattito politico con ospiti in studio, inviati, servizi, inchieste, collegamenti e contributi video dai social.",
-        "immagine": "https://img-guidatv.org/3/agora/1.jpg"
+        "titolo": "Per Chi Suona La Campanella - Agorà",
+        "descrizione": "Le tensioni internazionali sono al centro della puntata. La libertà di navigazione negli stretti deve fare i conti con una fase segnata da conflitti e crescenti tensioni internazionali. L'attenzione si concentra anche sulla Germania, dove circa 4 milioni di elettori sono chiamati alle urne in Meclemburgo-Pomerania Anteriore e a Berlino per due importanti elezioni regionali, dopo il recente successo dell'AfD. Dalla politica estera si passa a quella interna, con i diversi schieramenti impegnati nelle feste di partito e nella definizione delle future alleanze. Si discute inoltre della proposta della premier Meloni di introdurre un limite alla presenza di studenti stranieri nelle classi. Ospiti: Claudio Borghi, Alessandro Onorato, Carlo Calenda, Salvatore D'Amico, Dario Fabbri, Agnese Pini, Paolo Capitini, Antonio Di Bella, Francesco Pionati, Pietro De Leo, Antonello Caporale, Lorenzo Castellani, Niccolò Carratelli.",
+        "immagine": "https://img-guidatv.org/3/per-chi-suona-la-campanella-agora/0.jpg"
       },
       {
         "ora": "09:50",
         "fine": "10:45",
-        "titolo": "Agorà Extra",
-        "descrizione": "Giulia Di Stefano racconta l'attualità attraverso analisi, interviste e dibattiti con i protagonisti della politica e del giornalismo per comprendere i cambiamenti dell'Italia e del mondo.",
+        "titolo": "Cara Spesa - Agorà Extra",
+        "descrizione": "Al centro della puntata c'è il tema dello spreco alimentare, con un confronto sulle possibili strategie per ridurlo e risparmiare sulla spesa, alleggerendo così il peso del carrello sulle famiglie. Ospiti: Maurizio Casasco, Pasquale Tridico, Alessandro Cecchi Paone, Luigi Scordamaglia, Rosario Trefiletti, Andrea Segrè.",
         "immagine": "https://img-guidatv.org/3/agora-extra/1.jpg"
       },
       {
         "ora": "10:45",
         "fine": "11:55",
         "titolo": "Elisir",
-        "descrizione": "Michele Mirabella, Francesca Parisella e Benedetta Rinaldi presentano nuovi approfondimenti su benessere fisico e psicologico, alimentazione, stili di vita e attualità medico-scientifica, grazie al contributo di esperti e a servizi sempre aggiornati.",
+        "descrizione": "Si parlerà di otite, l'infiammazione o infezione dell'orecchio che è causa di dolori molto intensi. Focus su quali sono le cause e come curarla efficacemente prima che arrivi a causare danni permanenti. Approfondirà questo argomento il professor Alberto Eibenstein, docente di Otorinolaringoiatria all'Università degli Studi dell'Aquila.   A seguire, si parlerà di un minerale molto utilizzato sotto forma di integratore, il magnesio. A cosa serve? Qual è il modo migliore per assumerlo? La professoressa Annalisa Capuano, direttrice del Dipartimento di Medicina Sperimentale all'Università della Campania \"Luigi Vanvitelli\", aiuterà a distinguere i falsi miti dalle verità scientifiche. Infine, nella rubrica \"ABC della salute\" approfondimento sul colesterolo: quali sono i fattori che determinano l'innalzamento dei suoi livelli nel sangue e quali controlli fare e ogni quanto. Ne parlerà in studio il professor Claudio Ferri, ordinario di Medicina Interna all'Università dell'Aquila.",
         "immagine": "https://img-guidatv.org/3/elisir/6.jpg"
       },
       {
@@ -19424,13 +19438,6 @@
       },
       {
         "ora": "16:15",
-        "fine": "17:00",
-        "titolo": "Aspettando Geo",
-        "descrizione": "DOCUMENTARIO - GEO, il programma pomeridiano di Rai Cultura sulla natura, l'ambiente e le culture del mondo, di totale produzione interna, condotto dagli studi di Via Teulada in Roma da Sveva Sagramola ed Emanuele Biggi, in onda tu - tti i giorni in diretta, dal lunedì al venerdì, dalle 16 alle 19.00 su Rai3. - Sveva Sagramola ed Emanuele Biggi Un programma di Marco Castellazzi, Rosario Cutolo, Luigi Felicetti, Chiara Romano, Sveva Sagramola Produttore esecutivo: Sara Mellone Capo progetto: Fausta Vannutelli Coordinamento editoriale: Caterina Manganella  Regia: Michelangelo Pepe",
-        "immagine": "https://img-guidatv.org/3/aspettando-geo/10.jpg"
-      },
-      {
-        "ora": "17:00",
         "fine": "19:00",
         "titolo": "Geo",
         "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilità del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\".",
@@ -19489,7 +19496,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Lo Stato Delle Cose",
-        "descrizione": "Massimo Giletti racconta i fatti, gli eventi e le storie al centro del dibattito pubblico.",
+        "descrizione": "$24",
         "immagine": "https://img-guidatv.org/3/lo-stato-delle-cose/5.jpg"
       }
     ]
@@ -19557,22 +19564,22 @@
       {
         "ora": "08:00",
         "fine": "09:50",
-        "titolo": "Agorà",
-        "descrizione": "Annalisa Bruchi approfondisce i temi di stretta attualità e segue il dibattito politico con ospiti in studio, inviati, servizi, inchieste, collegamenti e contributi video dai social.",
-        "immagine": "https://img-guidatv.org/3/agora/1.jpg"
+        "titolo": "Per Chi Suona La Campanella - Agorà",
+        "descrizione": "Le tensioni internazionali sono al centro della puntata. La libertà di navigazione negli stretti deve fare i conti con una fase segnata da conflitti e crescenti tensioni internazionali. L'attenzione si concentra anche sulla Germania, dove circa 4 milioni di elettori sono chiamati alle urne in Meclemburgo-Pomerania Anteriore e a Berlino per due importanti elezioni regionali, dopo il recente successo dell'AfD. Dalla politica estera si passa a quella interna, con i diversi schieramenti impegnati nelle feste di partito e nella definizione delle future alleanze. Si discute inoltre della proposta della premier Meloni di introdurre un limite alla presenza di studenti stranieri nelle classi. Ospiti: Claudio Borghi, Alessandro Onorato, Carlo Calenda, Salvatore D'Amico, Dario Fabbri, Agnese Pini, Paolo Capitini, Antonio Di Bella, Francesco Pionati, Pietro De Leo, Antonello Caporale, Lorenzo Castellani, Niccolò Carratelli.",
+        "immagine": "https://img-guidatv.org/3/per-chi-suona-la-campanella-agora/0.jpg"
       },
       {
         "ora": "09:50",
         "fine": "10:45",
-        "titolo": "Agorà Extra",
-        "descrizione": "Giulia Di Stefano racconta l'attualità attraverso analisi, interviste e dibattiti con i protagonisti della politica e del giornalismo per comprendere i cambiamenti dell'Italia e del mondo.",
+        "titolo": "Cara Spesa - Agorà Extra",
+        "descrizione": "Al centro della puntata c'è il tema dello spreco alimentare, con un confronto sulle possibili strategie per ridurlo e risparmiare sulla spesa, alleggerendo così il peso del carrello sulle famiglie. Ospiti: Maurizio Casasco, Pasquale Tridico, Alessandro Cecchi Paone, Luigi Scordamaglia, Rosario Trefiletti, Andrea Segrè.",
         "immagine": "https://img-guidatv.org/3/agora-extra/1.jpg"
       },
       {
         "ora": "10:45",
         "fine": "11:55",
         "titolo": "Elisir",
-        "descrizione": "Michele Mirabella, Francesca Parisella e Benedetta Rinaldi presentano nuovi approfondimenti su benessere fisico e psicologico, alimentazione, stili di vita e attualità medico-scientifica, grazie al contributo di esperti e a servizi sempre aggiornati.",
+        "descrizione": "Si parlerà di otite, l'infiammazione o infezione dell'orecchio che è causa di dolori molto intensi. Focus su quali sono le cause e come curarla efficacemente prima che arrivi a causare danni permanenti. Approfondirà questo argomento il professor Alberto Eibenstein, docente di Otorinolaringoiatria all'Università degli Studi dell'Aquila.   A seguire, si parlerà di un minerale molto utilizzato sotto forma di integratore, il magnesio. A cosa serve? Qual è il modo migliore per assumerlo? La professoressa Annalisa Capuano, direttrice del Dipartimento di Medicina Sperimentale all'Università della Campania \"Luigi Vanvitelli\", aiuterà a distinguere i falsi miti dalle verità scientifiche. Infine, nella rubrica \"ABC della salute\" approfondimento sul colesterolo: quali sono i fattori che determinano l'innalzamento dei suoi livelli nel sangue e quali controlli fare e ogni quanto. Ne parlerà in studio il professor Claudio Ferri, ordinario di Medicina Interna all'Università dell'Aquila.",
         "immagine": "https://img-guidatv.org/3/elisir/6.jpg"
       },
       {
@@ -19675,13 +19682,6 @@
       },
       {
         "ora": "16:15",
-        "fine": "17:00",
-        "titolo": "Aspettando Geo",
-        "descrizione": "DOCUMENTARIO - GEO, il programma pomeridiano di Rai Cultura sulla natura, l'ambiente e le culture del mondo, di totale produzione interna, condotto dagli studi di Via Teulada in Roma da Sveva Sagramola ed Emanuele Biggi, in onda tu - tti i giorni in diretta, dal lunedì al venerdì, dalle 16 alle 19.00 su Rai3. - Sveva Sagramola ed Emanuele Biggi Un programma di Marco Castellazzi, Rosario Cutolo, Luigi Felicetti, Chiara Romano, Sveva Sagramola Produttore esecutivo: Sara Mellone Capo progetto: Fausta Vannutelli Coordinamento editoriale: Caterina Manganella  Regia: Michelangelo Pepe",
-        "immagine": "https://img-guidatv.org/3/aspettando-geo/10.jpg"
-      },
-      {
-        "ora": "17:00",
         "fine": "19:00",
         "titolo": "Geo",
         "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilità del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\".",
@@ -19740,7 +19740,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Lo Stato Delle Cose",
-        "descrizione": "Massimo Giletti racconta i fatti, gli eventi e le storie al centro del dibattito pubblico.",
+        "descrizione": "$24",
         "immagine": "https://img-guidatv.org/3/lo-stato-delle-cose/5.jpg"
       }
     ]
@@ -19838,7 +19838,7 @@
         "fine": "13:01",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/40/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002101/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "13:01",
@@ -20005,7 +20005,7 @@
         "fine": "13:01",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/40/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002101/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "13:01",
@@ -20123,7 +20123,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101210501/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -20193,14 +20193,14 @@
         "fine": "10:50",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/41/mattino-cinque-news/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000601/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "10:50",
         "fine": "11:00",
         "titolo": "Tg5 ore 10",
         "descrizione": "Appuntamento con le notizie piu' importanti, nazionali ed internazionali, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/tg-5-ore-10/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202401018801/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "11:00",
@@ -20346,7 +20346,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101210501/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -20416,14 +20416,14 @@
         "fine": "10:50",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/41/mattino-cinque-news/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000601/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "10:50",
         "fine": "11:00",
         "titolo": "Tg5 ore 10",
         "descrizione": "Appuntamento con le notizie piu' importanti, nazionali ed internazionali, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/tg-5-ore-10/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202401018801/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "11:00",
@@ -20660,7 +20660,7 @@
         "fine": "13:00",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:00",
@@ -20674,7 +20674,7 @@
         "fine": "13:53",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:53",
@@ -20911,7 +20911,7 @@
         "fine": "13:00",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:00",
@@ -20925,7 +20925,7 @@
         "fine": "13:53",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:53",
@@ -21032,14 +21032,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:30",
+        "ora": "00:30",
+        "fine": "01:00",
+        "titolo": "Camera con Vista",
+        "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/Camera%20con%20Vista%20Foto.jpg"
+      },
+      {
+        "ora": "01:00",
+        "fine": "01:50",
         "titolo": "TG LA7 Notte",
         "descrizione": "Informazione a cura della redazione del TG LA7.",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/palinsesto_tgla7.jpg"
       },
       {
-        "ora": "00:30",
+        "ora": "01:50",
         "fine": "06:00",
         "titolo": "Camera con Vista",
         "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
@@ -21063,21 +21070,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Giovanna Vitale, Gennaro Sangiuliano, Veronica De Romanis, Vittoria Baldino, Lucio Caracciolo, Cecilia Sala, Costanza Cavalli",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Lavinia Spingardi, Fabio Martini, Beniamino Irdi, Giuseppe Alberto Falci, Daniele Manca",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "Ludovica Ciriello con Flaminia Camiletti, Claudia Fusani, Marino Sinibaldi, Riccardo Molinari, Dario Nardella, Tiziana Ferrario, Tonia Mastrobuoni, Ugo Rossi, Laura Boldrini, Annalisa Camilli, Laura Tecce, Giovanni Sallusti, Luigi...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21091,7 +21098,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Aldo Cazzullo, Francesco Giubilei, Giacomo Salvini, Matteo Orfini, Gianluca Cantalamessa, Rosy Bindi, Antonio Di Bella, Riccardo Magi, Nicola Procaccini, Giovanni Sallusti, Cinzia Sciuto, Lorenzo Cremonesi,...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21138,9 +21145,9 @@
       },
       {
         "ora": "23:00",
-        "fine": "00:05",
-        "titolo": "LA7 DOC",
-        "descrizione": "Un viaggio alla scoperta dei più grandi misteri del nostro tempo",
+        "fine": "00:30",
+        "titolo": "LA7 DOC - Il volto segreto di Pompei",
+        "descrizione": "Pompeii's Secret Underground (Ep.01 e 02) - Documentario, Regia di Oscar Chan UK 2024. Un vivido quadro di una società complessa profondamente divisa da ricchezza, potere e opportunità, che rivela una civiltà molto lontana...",
         "immagine": "https://img-guidatv.org/23/la-doc/6.jpg"
       }
     ]
@@ -21150,14 +21157,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:30",
+        "ora": "00:30",
+        "fine": "01:00",
+        "titolo": "Camera con Vista",
+        "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/Camera%20con%20Vista%20Foto.jpg"
+      },
+      {
+        "ora": "01:00",
+        "fine": "01:50",
         "titolo": "TG LA7 Notte",
         "descrizione": "Informazione a cura della redazione del TG LA7.",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/palinsesto_tgla7.jpg"
       },
       {
-        "ora": "00:30",
+        "ora": "01:50",
         "fine": "06:00",
         "titolo": "Camera con Vista",
         "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
@@ -21181,21 +21195,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Giovanna Vitale, Gennaro Sangiuliano, Veronica De Romanis, Vittoria Baldino, Lucio Caracciolo, Cecilia Sala, Costanza Cavalli",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Lavinia Spingardi, Fabio Martini, Beniamino Irdi, Giuseppe Alberto Falci, Daniele Manca",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "Ludovica Ciriello con Flaminia Camiletti, Claudia Fusani, Marino Sinibaldi, Riccardo Molinari, Dario Nardella, Tiziana Ferrario, Tonia Mastrobuoni, Ugo Rossi, Laura Boldrini, Annalisa Camilli, Laura Tecce, Giovanni Sallusti, Luigi...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21209,7 +21223,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Aldo Cazzullo, Francesco Giubilei, Giacomo Salvini, Matteo Orfini, Gianluca Cantalamessa, Rosy Bindi, Antonio Di Bella, Riccardo Magi, Nicola Procaccini, Giovanni Sallusti, Cinzia Sciuto, Lorenzo Cremonesi,...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21256,9 +21270,9 @@
       },
       {
         "ora": "23:00",
-        "fine": "00:05",
-        "titolo": "LA7 DOC",
-        "descrizione": "Un viaggio alla scoperta dei più grandi misteri del nostro tempo",
+        "fine": "00:30",
+        "titolo": "LA7 DOC - Il volto segreto di Pompei",
+        "descrizione": "Pompeii's Secret Underground (Ep.01 e 02) - Documentario, Regia di Oscar Chan UK 2024. Un vivido quadro di una società complessa profondamente divisa da ricchezza, potere e opportunità, che rivela una civiltà molto lontana...",
         "immagine": "https://img-guidatv.org/23/la-doc/6.jpg"
       }
     ]
@@ -21268,14 +21282,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:30",
+        "ora": "00:30",
+        "fine": "01:00",
+        "titolo": "Camera con Vista",
+        "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/Camera%20con%20Vista%20Foto.jpg"
+      },
+      {
+        "ora": "01:00",
+        "fine": "01:50",
         "titolo": "TG LA7 Notte",
         "descrizione": "Informazione a cura della redazione del TG LA7.",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/palinsesto_tgla7.jpg"
       },
       {
-        "ora": "00:30",
+        "ora": "01:50",
         "fine": "06:00",
         "titolo": "Camera con Vista",
         "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
@@ -21299,21 +21320,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Giovanna Vitale, Gennaro Sangiuliano, Veronica De Romanis, Vittoria Baldino, Lucio Caracciolo, Cecilia Sala, Costanza Cavalli",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Lavinia Spingardi, Fabio Martini, Beniamino Irdi, Giuseppe Alberto Falci, Daniele Manca",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "Ludovica Ciriello con Flaminia Camiletti, Claudia Fusani, Marino Sinibaldi, Riccardo Molinari, Dario Nardella, Tiziana Ferrario, Tonia Mastrobuoni, Ugo Rossi, Laura Boldrini, Annalisa Camilli, Laura Tecce, Giovanni Sallusti, Luigi...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21327,7 +21348,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Aldo Cazzullo, Francesco Giubilei, Giacomo Salvini, Matteo Orfini, Gianluca Cantalamessa, Rosy Bindi, Antonio Di Bella, Riccardo Magi, Nicola Procaccini, Giovanni Sallusti, Cinzia Sciuto, Lorenzo Cremonesi,...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21374,9 +21395,9 @@
       },
       {
         "ora": "23:00",
-        "fine": "00:05",
-        "titolo": "LA7 DOC",
-        "descrizione": "Un viaggio alla scoperta dei più grandi misteri del nostro tempo",
+        "fine": "00:30",
+        "titolo": "LA7 DOC - Il volto segreto di Pompei",
+        "descrizione": "Pompeii's Secret Underground (Ep.01 e 02) - Documentario, Regia di Oscar Chan UK 2024. Un vivido quadro di una società complessa profondamente divisa da ricchezza, potere e opportunità, che rivela una civiltà molto lontana...",
         "immagine": "https://img-guidatv.org/23/la-doc/6.jpg"
       }
     ]
@@ -21386,14 +21407,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:30",
+        "ora": "00:30",
+        "fine": "01:00",
+        "titolo": "Camera con Vista",
+        "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/Camera%20con%20Vista%20Foto.jpg"
+      },
+      {
+        "ora": "01:00",
+        "fine": "01:50",
         "titolo": "TG LA7 Notte",
         "descrizione": "Informazione a cura della redazione del TG LA7.",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/palinsesto_tgla7.jpg"
       },
       {
-        "ora": "00:30",
+        "ora": "01:50",
         "fine": "06:00",
         "titolo": "Camera con Vista",
         "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
@@ -21417,21 +21445,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Giovanna Vitale, Gennaro Sangiuliano, Veronica De Romanis, Vittoria Baldino, Lucio Caracciolo, Cecilia Sala, Costanza Cavalli",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Lavinia Spingardi, Fabio Martini, Beniamino Irdi, Giuseppe Alberto Falci, Daniele Manca",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "Ludovica Ciriello con Flaminia Camiletti, Claudia Fusani, Marino Sinibaldi, Riccardo Molinari, Dario Nardella, Tiziana Ferrario, Tonia Mastrobuoni, Ugo Rossi, Laura Boldrini, Annalisa Camilli, Laura Tecce, Giovanni Sallusti, Luigi...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21445,7 +21473,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Aldo Cazzullo, Francesco Giubilei, Giacomo Salvini, Matteo Orfini, Gianluca Cantalamessa, Rosy Bindi, Antonio Di Bella, Riccardo Magi, Nicola Procaccini, Giovanni Sallusti, Cinzia Sciuto, Lorenzo Cremonesi,...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21492,9 +21520,9 @@
       },
       {
         "ora": "23:00",
-        "fine": "00:05",
-        "titolo": "LA7 DOC",
-        "descrizione": "Un viaggio alla scoperta dei più grandi misteri del nostro tempo",
+        "fine": "00:30",
+        "titolo": "LA7 DOC - Il volto segreto di Pompei",
+        "descrizione": "Pompeii's Secret Underground (Ep.01 e 02) - Documentario, Regia di Oscar Chan UK 2024. Un vivido quadro di una società complessa profondamente divisa da ricchezza, potere e opportunità, che rivela una civiltà molto lontana...",
         "immagine": "https://img-guidatv.org/23/la-doc/6.jpg"
       }
     ]
@@ -21504,14 +21532,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:30",
+        "ora": "00:30",
+        "fine": "01:00",
+        "titolo": "Camera con Vista",
+        "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
+        "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/Camera%20con%20Vista%20Foto.jpg"
+      },
+      {
+        "ora": "01:00",
+        "fine": "01:50",
         "titolo": "TG LA7 Notte",
         "descrizione": "Informazione a cura della redazione del TG LA7.",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/palinsesto_tgla7.jpg"
       },
       {
-        "ora": "00:30",
+        "ora": "01:50",
         "fine": "06:00",
         "titolo": "Camera con Vista",
         "descrizione": "La sintesi della settimana politica senza filtri. Un programma di Alexander Jakhnagiev, prodotto da Agenzia Vista",
@@ -21535,21 +21570,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Giovanna Vitale, Gennaro Sangiuliano, Veronica De Romanis, Vittoria Baldino, Lucio Caracciolo, Cecilia Sala, Costanza Cavalli",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Lavinia Spingardi, Fabio Martini, Beniamino Irdi, Giuseppe Alberto Falci, Daniele Manca",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "Ludovica Ciriello con Flaminia Camiletti, Claudia Fusani, Marino Sinibaldi, Riccardo Molinari, Dario Nardella, Tiziana Ferrario, Tonia Mastrobuoni, Ugo Rossi, Laura Boldrini, Annalisa Camilli, Laura Tecce, Giovanni Sallusti, Luigi...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21563,7 +21598,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Aldo Cazzullo, Francesco Giubilei, Giacomo Salvini, Matteo Orfini, Gianluca Cantalamessa, Rosy Bindi, Antonio Di Bella, Riccardo Magi, Nicola Procaccini, Giovanni Sallusti, Cinzia Sciuto, Lorenzo Cremonesi,...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21610,9 +21645,9 @@
       },
       {
         "ora": "23:00",
-        "fine": "00:05",
-        "titolo": "LA7 DOC",
-        "descrizione": "Un viaggio alla scoperta dei più grandi misteri del nostro tempo",
+        "fine": "00:30",
+        "titolo": "LA7 DOC - Il volto segreto di Pompei",
+        "descrizione": "Pompeii's Secret Underground (Ep.01 e 02) - Documentario, Regia di Oscar Chan UK 2024. Un vivido quadro di una società complessa profondamente divisa da ricchezza, potere e opportunità, che rivela una civiltà molto lontana...",
         "immagine": "https://img-guidatv.org/23/la-doc/6.jpg"
       }
     ]
@@ -21766,7 +21801,7 @@
         "fine": "17:25",
         "titolo": "Un principe a Manhattan",
         "descrizione": "Lucy viene assunta come assistente del Principe Rupert che sta per organizzare un ballo in maschera a Manhattan. Sara' l'inizio del suo amore da favola.",
-        "immagine": "https://image.tmdb.org/t/p/w300//ehAxN7gYBtGkfDLPAMfMuXEL7Uy.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/ehAxN7gYBtGkfDLPAMfMuXEL7Uy.jpg"
       },
       {
         "ora": "17:25",
@@ -23969,7 +24004,7 @@
       },
       {
         "ora": "05:54",
-        "fine": "06:26",
+        "fine": "06:00",
         "titolo": "Camera Cafe'",
         "descrizione": "Camera Café è una sitcom italiana prodotta dal 2003 al 2012 e trasmessa in prima visione da Italia 1. La sitcom è basata sull'omonimo format originale francese Caméra Café. Il titolo della serie deriva da una paronomasia in lingua francese data dall'accostamento e fusione dei termini café (\"caffè\") e caméra cachée (\"telecamera nascosta\").",
         "immagine": "https://img-guidatv.org/serie/5e78d82ece1e246c511cb6f0_p_4_rs_300.jpg"
@@ -24143,7 +24178,7 @@
       },
       {
         "ora": "05:54",
-        "fine": "06:26",
+        "fine": "06:00",
         "titolo": "Camera Cafe'",
         "descrizione": "Camera Café è una sitcom italiana prodotta dal 2003 al 2012 e trasmessa in prima visione da Italia 1. La sitcom è basata sull'omonimo format originale francese Caméra Café. Il titolo della serie deriva da una paronomasia in lingua francese data dall'accostamento e fusione dei termini café (\"caffè\") e caméra cachée (\"telecamera nascosta\").",
         "immagine": "https://img-guidatv.org/serie/5e78d82ece1e246c511cb6f0_p_4_rs_300.jpg"
@@ -24598,14 +24633,14 @@
         "fine": "01:59",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "01:59",
         "fine": "06:02",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "06:02",
@@ -24619,42 +24654,42 @@
         "fine": "12:30",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "12:30",
         "fine": "14:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "14:45",
         "fine": "16:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "16:45",
         "fine": "18:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "18:45",
         "fine": "21:20",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "21:20",
         "fine": "00:00",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       }
     ]
   },
@@ -24667,14 +24702,14 @@
         "fine": "01:59",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "01:59",
         "fine": "06:02",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "06:02",
@@ -24688,42 +24723,42 @@
         "fine": "12:30",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "12:30",
         "fine": "14:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "14:45",
         "fine": "16:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "16:45",
         "fine": "18:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "18:45",
         "fine": "21:20",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "21:20",
         "fine": "00:00",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Grande Fratello Vip Live",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000501/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       }
     ]
   },
@@ -26078,112 +26113,105 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:01",
-        "fine": "00:35",
-        "titolo": "Sport Mediaset Monday Night",
-        "descrizione": "Tutte le notizie sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset. Conduce Benedetta Radaelli.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-monday-night/5.jpg"
-      },
-      {
-        "ora": "00:35",
-        "fine": "00:58",
+        "ora": "00:20",
+        "fine": "00:42",
         "titolo": "Tgcom rassegna stampa 2026",
         "descrizione": "Tgcom rassegna stampa 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom-rassegna-stampa-2026/5.jpg"
       },
       {
-        "ora": "00:58",
-        "fine": "01:23",
+        "ora": "00:42",
+        "fine": "01:07",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "01:23",
-        "fine": "01:53",
+        "ora": "01:07",
+        "fine": "01:32",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "01:53",
-        "fine": "02:08",
+        "ora": "01:32",
+        "fine": "01:47",
         "titolo": "Tgcom rassegna stampa 2026",
         "descrizione": "Tgcom rassegna stampa 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom-rassegna-stampa-2026/5.jpg"
       },
       {
-        "ora": "02:08",
-        "fine": "02:33",
+        "ora": "01:47",
+        "fine": "02:12",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "02:33",
-        "fine": "03:03",
+        "ora": "02:12",
+        "fine": "02:37",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "03:03",
-        "fine": "03:18",
+        "ora": "02:37",
+        "fine": "02:52",
         "titolo": "Tgcom rassegna stampa 2026",
         "descrizione": "Tgcom rassegna stampa 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom-rassegna-stampa-2026/5.jpg"
       },
       {
-        "ora": "03:18",
-        "fine": "03:43",
+        "ora": "02:52",
+        "fine": "03:17",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "03:43",
-        "fine": "04:13",
+        "ora": "03:17",
+        "fine": "03:42",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "04:13",
-        "fine": "04:28",
+        "ora": "03:42",
+        "fine": "03:57",
         "titolo": "Tgcom rassegna stampa 2026",
         "descrizione": "Tgcom rassegna stampa 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom-rassegna-stampa-2026/5.jpg"
       },
       {
-        "ora": "04:28",
-        "fine": "04:53",
+        "ora": "03:57",
+        "fine": "04:22",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "04:53",
-        "fine": "05:23",
+        "ora": "04:22",
+        "fine": "04:47",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "05:23",
-        "fine": "05:38",
+        "ora": "04:47",
+        "fine": "05:02",
         "titolo": "Tgcom rassegna stampa 2026",
         "descrizione": "Tgcom rassegna stampa 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom-rassegna-stampa-2026/5.jpg"
       },
       {
-        "ora": "05:38",
-        "fine": "05:54",
+        "ora": "05:02",
+        "fine": "05:27",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "05:54",
+        "ora": "05:27",
         "fine": "05:59",
         "titolo": "Tgcom24 - Tg meteo",
         "descrizione": "Tgcom24 - Tg meteo",
@@ -26197,28 +26225,28 @@
         "immagine": "https://img-guidatv.org/10473/simulcast-canale-5/5.jpg"
       },
       {
-        "ora": "08:39",
-        "fine": "09:26",
+        "ora": "08:42",
+        "fine": "09:30",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/10473/mattino-cinque-news/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000601/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
-        "ora": "09:26",
-        "fine": "09:49",
+        "ora": "09:30",
+        "fine": "09:43",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/10473/mattino-cinque-news/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000601/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
-        "ora": "09:49",
-        "fine": "10:45",
+        "ora": "09:43",
+        "fine": "10:43",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "10:45",
+        "ora": "10:43",
         "fine": "10:54",
         "titolo": "Tgcom24 - meteo",
         "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
@@ -26226,199 +26254,206 @@
       },
       {
         "ora": "10:54",
-        "fine": "11:27",
+        "fine": "11:41",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/10473/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002101/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
-        "ora": "11:27",
-        "fine": "12:00",
+        "ora": "11:41",
+        "fine": "11:59",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/10473/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002101/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
-        "ora": "12:00",
-        "fine": "12:18",
+        "ora": "11:59",
+        "fine": "12:25",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
-        "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
-      },
-      {
-        "ora": "12:18",
-        "fine": "12:25",
-        "titolo": "Tgcom24 - meteo",
-        "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
-        "immagine": "https://img-guidatv.org/10473/tgcom-24-meteo/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501052701/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "12:25",
-        "fine": "12:58",
+        "fine": "12:57",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
-        "ora": "12:58",
+        "ora": "12:57",
         "fine": "13:36",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/10473/tg5/4.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201105401/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "13:36",
-        "fine": "14:20",
-        "titolo": "Sport Mediaset",
+        "fine": "14:19",
+        "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314686001005101/media/22/86/3737884b-ae0b-43cb-9af9-16473d20a478/26dcb11c-4d2e-444d-802c-e1830a6aa81e.jpg"
       },
       {
-        "ora": "14:20",
-        "fine": "14:38",
+        "ora": "14:19",
+        "fine": "14:37",
         "titolo": "Tgcom24 diretta 2026",
         "descrizione": "Tgcom24 diretta 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "14:38",
-        "fine": "14:44",
+        "ora": "14:37",
+        "fine": "14:42",
         "titolo": "Tgcom24 - meteo",
         "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
         "immagine": "https://img-guidatv.org/10473/tgcom-24-meteo/5.jpg"
       },
       {
-        "ora": "14:44",
-        "fine": "15:03",
+        "ora": "14:42",
+        "fine": "15:02",
         "titolo": "Tgcom24 diretta 2026",
         "descrizione": "Tgcom24 diretta 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "15:03",
-        "fine": "15:23",
+        "ora": "15:02",
+        "fine": "15:22",
         "titolo": "Tgcom24 diretta 2026",
         "descrizione": "Tgcom24 diretta 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "15:23",
-        "fine": "15:38",
+        "ora": "15:22",
+        "fine": "15:32",
         "titolo": "Tgcom24",
         "descrizione": "Tgcom24",
         "immagine": "https://img-guidatv.org/10473/tgcom24/6.jpg"
       },
       {
-        "ora": "15:38",
-        "fine": "15:56",
+        "ora": "15:32",
+        "fine": "15:37",
+        "titolo": "Tgcom24 - Tg meteo",
+        "descrizione": "Tgcom24 - Tg meteo",
+        "immagine": "https://img-guidatv.org/10473/tgcom24-tg-meteo/0.jpg"
+      },
+      {
+        "ora": "15:37",
+        "fine": "15:54",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
         "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
       },
       {
-        "ora": "15:56",
-        "fine": "16:22",
+        "ora": "15:54",
+        "fine": "16:21",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
         "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
       },
       {
-        "ora": "16:22",
-        "fine": "16:45",
+        "ora": "16:21",
+        "fine": "16:43",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
         "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
       },
       {
-        "ora": "16:45",
-        "fine": "17:16",
+        "ora": "16:43",
+        "fine": "17:14",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
         "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
       },
       {
-        "ora": "17:16",
-        "fine": "17:21",
+        "ora": "17:14",
+        "fine": "17:20",
         "titolo": "Tgcom24 - meteo",
         "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
         "immagine": "https://img-guidatv.org/10473/tgcom-24-meteo/5.jpg"
       },
       {
-        "ora": "17:21",
-        "fine": "17:39",
+        "ora": "17:20",
+        "fine": "17:37",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
         "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
       },
       {
-        "ora": "17:39",
-        "fine": "17:49",
+        "ora": "17:37",
+        "fine": "17:48",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
         "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
       },
       {
-        "ora": "17:49",
-        "fine": "18:21",
+        "ora": "17:48",
+        "fine": "18:19",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
         "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
       },
       {
-        "ora": "18:21",
-        "fine": "18:30",
+        "ora": "18:19",
+        "fine": "18:28",
         "titolo": "Studio Aperto Live",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
         "immagine": "https://img-guidatv.org/10473/studio-aperto-live/5.jpg"
       },
       {
-        "ora": "18:30",
-        "fine": "18:58",
+        "ora": "18:28",
+        "fine": "18:56",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
         "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
       },
       {
-        "ora": "18:58",
-        "fine": "19:32",
+        "ora": "18:56",
+        "fine": "19:30",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
         "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
       },
       {
-        "ora": "19:32",
-        "fine": "19:54",
+        "ora": "19:30",
+        "fine": "19:53",
         "titolo": "10 minuti",
         "descrizione": "10 minuti focalizzati sui fatti principali della giornata, con interviste e dibattiti sui temi piu' rilevanti di attualita'.",
         "immagine": "https://img-guidatv.org/10473/10-minuti/5.jpg"
       },
       {
-        "ora": "19:54",
-        "fine": "20:31",
+        "ora": "19:53",
+        "fine": "20:30",
         "titolo": "Simulcast Canale 5",
         "descrizione": "Simulcast Canale 5",
         "immagine": "https://img-guidatv.org/10473/simulcast-canale-5/5.jpg"
       },
       {
-        "ora": "20:31",
-        "fine": "21:29",
+        "ora": "20:30",
+        "fine": "21:28",
         "titolo": "4 di sera",
         "descrizione": "Dibattito quotidiano sui fatti salienti della giornata. Politica, economia, i principali casi di cronaca ed attualita'.",
         "immagine": "https://img-guidatv.org/10473/4-di-sera/5.jpg"
       },
       {
-        "ora": "21:29",
-        "fine": "23:41",
+        "ora": "21:28",
+        "fine": "23:26",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "23:41",
-        "fine": "00:01",
+        "ora": "23:26",
+        "fine": "23:45",
         "titolo": "Tgcom rassegna stampa 2026",
         "descrizione": "Tgcom rassegna stampa 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom-rassegna-stampa-2026/5.jpg"
+      },
+      {
+        "ora": "23:45",
+        "fine": "00:20",
+        "titolo": "Sport Mediaset Monday Night",
+        "descrizione": "Tutte le notizie sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset. Conduce Benedetta Radaelli.",
+        "immagine": "https://img-guidatv.org/10473/sport-mediaset-monday-night/5.jpg"
       }
     ]
   },
@@ -28064,9 +28099,9 @@
       {
         "ora": "06:40",
         "fine": "08:10",
-        "titolo": "India (1959)",
+        "titolo": "India",
         "descrizione": "Un grande affresco sull'India moderna, realizzato da Roberto Rossellini negli anni di Nehru. La vita quotidiana di un paese sospeso tra tradizione e modernità, raccontata attraverso le storie di un conducente di elefanti, un tecnico impegnato nella costruzione di una diga, un vecchio contadino e un uomo con la sua scimmietta.",
-        "immagine": "https://image.tmdb.org/t/p/w300/Al3xTBXGoOS2I2pLGrP6I8BqKKG.jpg"
+        "immagine": "https://img-guidatv.org/24/india/0.jpg"
       },
       {
         "ora": "08:10",
@@ -28099,9 +28134,9 @@
       {
         "ora": "11:10",
         "fine": "12:00",
-        "titolo": "70,La Battaglia Per Roma",
-        "descrizione": "Il 20 settembre 1870, con l'apertura della breccia di Porta Pia, segna una tappa fondamentale per l'unità d'Italia: la presa di Roma.. - Di Giancarlo Mancini Regia di Graziano Conversano  A cura di Martina Cervino  Produttore esecutivo Germana Mudanò",
-        "immagine": "https://img-guidatv.org/24/70-la-battaglia-per-roma/0.jpg"
+        "titolo": "20 Settembre 1870: La Battaglia Per Roma",
+        "descrizione": "A differenza di altri importanti episodi del Risorgimento, quella di Porta Pia è stata una battaglia poco rilevante dal punto di vista militare, durata per poche ore nella mattinata del 20 settembre 1870. Ben più complesso è stato il percorso che ha portato a quella giornata e quindi alla proclamazione di Roma capitale del Regno d'Italia. L'intricata vicenda è raccontata da Nicola Roncalli, erudito dell'epoca, che nelle sue cronache ha lasciato una miniera di preziose informazioni sugli umori e le atmosfere della Roma papalina. Due i principali protagonisti del suo racconto: Pio IX e Vittorio Emanuele II. Infine le interviste esclusive ai professori Alberto Melloni, Angelo Varni e Francesco Margiotta Broglio approfondiscono i principali problemi storici e politici legati alla battaglia.",
+        "immagine": "https://img-guidatv.org/24/20-settembre-1870-la-battaglia-per-roma/0.jpg"
       },
       {
         "ora": "12:00",
@@ -28183,9 +28218,9 @@
       {
         "ora": "19:15",
         "fine": "20:05",
-        "titolo": "Documenti Di Storia E Di Cronaca. Jean J",
-        "descrizione": "Documenti di storia e di cronaca. Jean Jaures, apostolo del pacifismo - Ritratto de leader del Partito Socialista Francese Jean Jaures. - (1968) Di Leandro Castellani",
-        "immagine": "https://img-guidatv.org/24/documenti-di-storia-e-di-cronaca-jean-j/0.jpg"
+        "titolo": "Mille Papaveri Rossi - Documenti Di Storia E Di Cronaca. Jean Jaures, Apostolo Del Pacifismo",
+        "descrizione": "Ritratto de leader del Partito Socialista Francese Jean Jaures.",
+        "immagine": "https://img-guidatv.org/24/mille-papaveri-rossi-documenti-di-storia-e-di-cronaca-jean-jaures-apostolo-del-pacifismo/0.jpg"
       },
       {
         "ora": "20:05",
@@ -28329,9 +28364,9 @@
       {
         "ora": "06:40",
         "fine": "08:10",
-        "titolo": "India (1959)",
+        "titolo": "India",
         "descrizione": "Un grande affresco sull'India moderna, realizzato da Roberto Rossellini negli anni di Nehru. La vita quotidiana di un paese sospeso tra tradizione e modernità, raccontata attraverso le storie di un conducente di elefanti, un tecnico impegnato nella costruzione di una diga, un vecchio contadino e un uomo con la sua scimmietta.",
-        "immagine": "https://image.tmdb.org/t/p/w300/Al3xTBXGoOS2I2pLGrP6I8BqKKG.jpg"
+        "immagine": "https://img-guidatv.org/24/india/0.jpg"
       },
       {
         "ora": "08:10",
@@ -28364,9 +28399,9 @@
       {
         "ora": "11:10",
         "fine": "12:00",
-        "titolo": "70,La Battaglia Per Roma",
-        "descrizione": "Il 20 settembre 1870, con l'apertura della breccia di Porta Pia, segna una tappa fondamentale per l'unità d'Italia: la presa di Roma.. - Di Giancarlo Mancini Regia di Graziano Conversano  A cura di Martina Cervino  Produttore esecutivo Germana Mudanò",
-        "immagine": "https://img-guidatv.org/24/70-la-battaglia-per-roma/0.jpg"
+        "titolo": "20 Settembre 1870: La Battaglia Per Roma",
+        "descrizione": "A differenza di altri importanti episodi del Risorgimento, quella di Porta Pia è stata una battaglia poco rilevante dal punto di vista militare, durata per poche ore nella mattinata del 20 settembre 1870. Ben più complesso è stato il percorso che ha portato a quella giornata e quindi alla proclamazione di Roma capitale del Regno d'Italia. L'intricata vicenda è raccontata da Nicola Roncalli, erudito dell'epoca, che nelle sue cronache ha lasciato una miniera di preziose informazioni sugli umori e le atmosfere della Roma papalina. Due i principali protagonisti del suo racconto: Pio IX e Vittorio Emanuele II. Infine le interviste esclusive ai professori Alberto Melloni, Angelo Varni e Francesco Margiotta Broglio approfondiscono i principali problemi storici e politici legati alla battaglia.",
+        "immagine": "https://img-guidatv.org/24/20-settembre-1870-la-battaglia-per-roma/0.jpg"
       },
       {
         "ora": "12:00",
@@ -28448,9 +28483,9 @@
       {
         "ora": "19:15",
         "fine": "20:05",
-        "titolo": "Documenti Di Storia E Di Cronaca. Jean J",
-        "descrizione": "Documenti di storia e di cronaca. Jean Jaures, apostolo del pacifismo - Ritratto de leader del Partito Socialista Francese Jean Jaures. - (1968) Di Leandro Castellani",
-        "immagine": "https://img-guidatv.org/24/documenti-di-storia-e-di-cronaca-jean-j/0.jpg"
+        "titolo": "Mille Papaveri Rossi - Documenti Di Storia E Di Cronaca. Jean Jaures, Apostolo Del Pacifismo",
+        "descrizione": "Ritratto de leader del Partito Socialista Francese Jean Jaures.",
+        "immagine": "https://img-guidatv.org/24/mille-papaveri-rossi-documenti-di-storia-e-di-cronaca-jean-jaures-apostolo-del-pacifismo/0.jpg"
       },
       {
         "ora": "20:05",
@@ -30994,10 +31029,24 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:15",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:45",
+        "titolo": "Il Quotidiano",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
+      },
+      {
+        "ora": "05:45",
         "fine": "06:15",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "titolo": "Telegiornale",
+        "descrizione": "Le notizie di prima serata",
+        "immagine": "https://img-guidatv.org/90/telegiornale/6.jpg"
       },
       {
         "ora": "06:00",
@@ -31192,8 +31241,8 @@
         "ora": "23:25",
         "fine": "00:55",
         "titolo": "Le indagini di Roy Grace - Alter ego",
-        "descrizione": "A Brighton il detective Roy Grace, tormentato dall'inspiegabile scomparsa della moglie, dedica la sua vita al lavoro e conduce indagini con metodi spesso non convenzionali.",
-        "immagine": "https://image.tmdb.org/t/p/w500//r9hE4eF8IGbcoyl419Nfllkv6Ag.jpg"
+        "descrizione": "La storia del sovrintendente investigativo Roy Grace, che vive a Brighton, un funzionario di polizia che lavora sodo e che ha dedicato la vita al lavoro.",
+        "immagine": "https://image.tmdb.org/t/p/w500/oLzYqJ4a6egBLtyUdPxGbjDtiKf.jpg"
       }
     ]
   },
@@ -31259,10 +31308,24 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:15",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:45",
+        "titolo": "Il Quotidiano",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
+      },
+      {
+        "ora": "05:45",
         "fine": "06:15",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "titolo": "Telegiornale",
+        "descrizione": "Le notizie di prima serata",
+        "immagine": "https://img-guidatv.org/90/telegiornale/6.jpg"
       },
       {
         "ora": "06:00",
@@ -31457,8 +31520,8 @@
         "ora": "23:25",
         "fine": "00:55",
         "titolo": "Le indagini di Roy Grace - Alter ego",
-        "descrizione": "A Brighton il detective Roy Grace, tormentato dall'inspiegabile scomparsa della moglie, dedica la sua vita al lavoro e conduce indagini con metodi spesso non convenzionali.",
-        "immagine": "https://image.tmdb.org/t/p/w500//r9hE4eF8IGbcoyl419Nfllkv6Ag.jpg"
+        "descrizione": "La storia del sovrintendente investigativo Roy Grace, che vive a Brighton, un funzionario di polizia che lavora sodo e che ha dedicato la vita al lavoro.",
+        "immagine": "https://image.tmdb.org/t/p/w500/oLzYqJ4a6egBLtyUdPxGbjDtiKf.jpg"
       }
     ]
   },
@@ -31531,10 +31594,17 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:25",
+        "titolo": "Telegiornale",
+        "descrizione": "Le notizie di prima serata",
+        "immagine": "https://img-guidatv.org/91/telegiornale/7.jpg"
+      },
+      {
+        "ora": "05:25",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
       },
       {
         "ora": "05:30",
@@ -31768,10 +31838,17 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:25",
+        "titolo": "Telegiornale",
+        "descrizione": "Le notizie di prima serata",
+        "immagine": "https://img-guidatv.org/91/telegiornale/7.jpg"
+      },
+      {
+        "ora": "05:25",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
       },
       {
         "ora": "05:30",
