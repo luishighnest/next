@@ -396,14 +396,17 @@ export default function EventoPlayerPage() {
 
         // Usa ESCLUSIVAMENTE lo user agent dell'evento estratto (se presente nel JSON)
         const rawUa = selectedSource.ua ? String(selectedSource.ua).trim() : "";
+        // Referer/Origin personalizzati per sorgente (es. SportzX con header nel link)
+        const customReferer = selectedSource.referer ? String(selectedSource.referer).trim() : "";
+        const customOrigin = selectedSource.origin ? String(selectedSource.origin).trim() : "";
 
         // Costruisci headers con user-agent, referer, origin e dazn-token
         let headersParam = "";
         try {
             const headersObj = {
                 "user-agent": rawUa,
-                "referer": "https://www.dazn.com/",
-                "origin": "https://www.dazn.com"
+                "referer": customReferer || "https://www.dazn.com/",
+                "origin": customOrigin || "https://www.dazn.com"
             };
             if (!rawUa) {
                 delete headersObj["user-agent"];
@@ -416,7 +419,7 @@ export default function EventoPlayerPage() {
             headersParam = "headers=" + encodeURIComponent(b64);
         } catch(e) {
             try { 
-                const fallbackObj = { "referer": "https://www.dazn.com/", "origin": "https://www.dazn.com" };
+                const fallbackObj = { "referer": customReferer || "https://www.dazn.com/", "origin": customOrigin || "https://www.dazn.com" };
                 if (rawUa) fallbackObj["user-agent"] = rawUa;
                 if (daznToken) fallbackObj["dazn-token"] = daznToken;
                 headersParam = "headers=" + encodeURIComponent(btoa(JSON.stringify(fallbackObj))); 

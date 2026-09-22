@@ -5,6 +5,7 @@ import { getChannelLogoUrl } from "@/lib/epg";
 import { createSlug } from "@/lib/slug";
 import { runScrape24H } from "@/lib/scraper";
 import { syncDaznLiveEvents } from "@/lib/sync-dazn-live";
+import { getSportzxChannels, refreshSportzxChannels } from "@/lib/sync-sportzx";
 
 export const dynamic = "force-dynamic";
 
@@ -17,6 +18,29 @@ let lastStaleCheckTime = 0;
 
 let isDaznLiveSyncing = false;
 let lastDaznLiveSyncTime = 0;
+
+let isSportzxSyncing = false;
+let lastSportzxSyncTime = 0;
+
+function checkAndTriggerBackgroundSportzxUpdate() {
+    const now = Date.now();
+    // Non controllare piu di una volta ogni 10 minuti
+    if (now - lastSportzxSyncTime < 10 * 60 * 1000 || isSportzxSyncing) {
+        return;
+    }
+    lastSportzxSyncTime = now;
+
+    (async () => {
+        isSportzxSyncing = true;
+        try {
+            await refreshSportzxChannels();
+        } catch (e) {
+            console.error("[Auto-Sync SportzX] Errore sync:", e);
+        } finally {
+            isSportzxSyncing = false;
+        }
+    })();
+}
 
 function checkAndTriggerBackgroundDaznLiveUpdate() {
     const now = Date.now();
@@ -87,6 +111,7 @@ function normalizeEpg(str) {
 export async function GET(request) {
     checkAndTriggerBackgroundGuidaUpdate();
     checkAndTriggerBackgroundDaznLiveUpdate();
+    checkAndTriggerBackgroundSportzxUpdate();
     const { searchParams } = new URL(request.url);
     const sourceParam = searchParams.get("source") || "";
     const tabFilter = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
@@ -105,12 +130,13 @@ export async function GET(request) {
     }
 
     try {
-        const [eventiData, sky1Data, sky2Data, catData, guideData] = await Promise.all([
+        const [eventiData, sky1Data, sky2Data, catData, guideData, sportzxData] = await Promise.all([
             getStoreData("eventi_mpd"),
             getStoreData("sky1"),
             getStoreData("sky2"),
             getStoreData("categorie"),
-            getStoreData("guida")
+            getStoreData("guida"),
+            getSportzxChannels()
         ]);
 
         // Helper per estrarre lista canali da un oggetto Sky
@@ -478,7 +504,26 @@ export async function GET(request) {
             });
         }
 
-        // 5. Inietta Guida TV (Match preciso prioritario, poi fallback senza HD e alias intelligenti)
+        // 5. Categoria Fissa SportzX (aggiornata via sync)
+        if (sportzxData && Array.isArray(sportzxData) && sportzxData.length > 0) {
+            if (!customCategoriesList.some(c => c.nome === "SportzX")) {
+                customCategoriesList.push({
+                    id: "sportzx",
+                    nome: "SportzX",
+                    navbar: "eventi"
+                });
+            }
+            sportzxData.forEach(c => {
+                if (!c || !c.title) return;
+                orderedChannels.push({
+                    ...c,
+                    group: "SportzX",
+                    navbar: "eventi"
+                });
+            });
+        }
+
+        // 6. Inietta Guida TV (Match preciso prioritario, poi fallback senza HD e alias intelligenti)
         if (guideData && Array.isArray(guideData)) {
             const guideMap = new Map();
             guideData.forEach(epgGroup => {
