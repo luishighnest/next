@@ -1,5 +1,5 @@
 var R=require("../../../chunks/[turbopack]_runtime.js")("server/app/api/canali/route.js")
-R.c("server/chunks/[root-of-the-server]__0wal0-h._.js")
+R.c("server/chunks/[root-of-the-server]__03s0-5y._.js")
 R.c("server/chunks/lib_scraper_0463i-u.js")
 R.c("server/chunks/[root-of-the-server]__0l3yhx4._.js")
 R.c("server/chunks/[root-of-the-server]__0_y-_bw._.js")
