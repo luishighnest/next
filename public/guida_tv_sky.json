@@ -639,13 +639,13 @@
       },
       {
         "ora": "06:00",
-        "fine": "16:30",
+        "fine": "18:00",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "16:30",
+        "ora": "18:00",
         "fine": "19:30",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
@@ -2016,17 +2016,17 @@
       },
       {
         "ora": "03:30",
-        "fine": "03:45",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "03:45",
-        "fine": "04:15",
+        "fine": "04:05",
         "titolo": "Fenerbahce - Roma",
         "descrizione": "Nessun precedente tra le due formazioni. Roma in vantaggio 9 a 2 nei 14 precedenti contro club turchi, 3 pareggi. TC: Compagnoni-Minotti",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
+      },
+      {
+        "ora": "04:05",
+        "fine": "04:20",
+        "titolo": "Cagliari - Inter",
+        "descrizione": "Entrambe reduci da una vittoria rispettivamente contro Parma (0-1) e Monza (4-1). Sardi con un solo successo a Cagliari negli ultimi 11 precedenti, un pari e 9 ko. TC: Zancan-Gobbi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/57b6cbf9-9e74-4aff-b0ec-9db2fd342ff5/background/600"
       },
       {
         "ora": "04:10",
@@ -2036,21 +2036,14 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/35f23685-a0df-45f6-aaab-2093ffc34ee7/background/600"
       },
       {
-        "ora": "04:15",
-        "fine": "04:30",
-        "titolo": "Cagliari - Inter",
-        "descrizione": "Entrambe reduci da una vittoria rispettivamente contro Parma (0-1) e Monza (4-1). Sardi con un solo successo a Cagliari negli ultimi 11 precedenti, un pari e 9 ko. TC: Zancan-Gobbi",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/57b6cbf9-9e74-4aff-b0ec-9db2fd342ff5/background/600"
-      },
-      {
-        "ora": "04:30",
-        "fine": "05:15",
+        "ora": "04:20",
+        "fine": "05:05",
         "titolo": "Ljubo - L'uomo Salvato Dal Tennis - Ep. 1 - 1a parte",
         "descrizione": "... tennis. - Ljubo - L'uomo salvato dal tennis",
         "immagine": "https://img-guidatv.org/10013/ljubo-l-uomo-salvato-dal-tennis/6.jpg"
       },
       {
-        "ora": "05:15",
+        "ora": "05:05",
         "fine": "06:00",
         "titolo": "Ljubo - L'uomo Salvato Dal Tennis - Ep. 2 - 2a parte",
         "descrizione": "... tennis. - Ljubo - L'uomo salvato dal tennis",
@@ -2425,25 +2418,25 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "01:05",
-        "fine": "02:35",
-        "titolo": "Ciclismo: Camp. Mondiali Su Strada MontréAl 2026 Crono Staffetta Mista",
-        "descrizione": "Ciclismo: Camp. Mondiali su strada Montréal 2026 Crono Staffetta Mista",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "ora": "01:15",
+        "fine": "02:40",
+        "titolo": "Mondiale Di Ciclismo 2026 - Cronometro Staffetta Mista (Seconda Parte)",
+        "descrizione": "Seconda parte della cronometro a squadre della staffetta mista ai Mondiali di Ciclismo 2026. Le nazionali, composte da tre uomini e tre donne, si sfidano contro il tempo per conquistare il titolo iridato.",
+        "immagine": "https://img-guidatv.org/32/mondiale-di-ciclismo-2026-cronometro-staffetta-mista-seconda-parte/0.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "04:15",
-        "titolo": "Tiro A Volo: Camp. Italiano Lonato Del Garda Skeet Maschile/Femminile",
-        "descrizione": "Tiro a Volo: Camp. Italiano Lonato del Garda Skeet Maschile/Femminile",
+        "ora": "02:40",
+        "fine": "04:25",
+        "titolo": "Tiro A Volo: Campionato Italiano 2026 - Skeet Uomini E Donne",
+        "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici.",
         "immagine": "https://img-guidatv.org/32/tiro-a-volo/0.jpg"
       },
       {
-        "ora": "04:15",
+        "ora": "04:25",
         "fine": "05:15",
-        "titolo": "Motocross: Campionato Mondiale 2026 - Darwin/AUS GP Australia - MXGP Gara 2",
-        "descrizione": "Motocross: Campionato Mondiale 2026 - Darwin/AUS GP Australia - MXGP gara 2",
-        "immagine": "https://img-guidatv.org/32/motocross/0.jpg"
+        "titolo": "Mondiale Motocross 2026 - GP Di Australia: MXGP (Gara 2)",
+        "descrizione": "Seconda manche della classe MXGP nel Gran Premio d'Australia, appuntamento del Mondiale Motocross 2026.",
+        "immagine": "https://img-guidatv.org/immagini/motocross.jpeg"
       },
       {
         "ora": "05:15",
@@ -2461,13 +2454,13 @@
       },
       {
         "ora": "07:00",
-        "fine": "08:30",
+        "fine": "08:35",
         "titolo": "Il Processo Del Lunedì",
         "descrizione": "L'approfondimento sportivo del lunedì. Dopo le immagini del posticipo della sera, una riflessione su quanto avvenuto nei tre giorni della serie A: immagini, interviste e un occhio attento alle Coppe Europee.",
         "immagine": "https://img-guidatv.org/32/il-processo-del-lunedi/0.jpg"
       },
       {
-        "ora": "08:30",
+        "ora": "08:35",
         "fine": "11:10",
         "titolo": "Mondiali Di Ciclismo 2026 - Cronometro Uomini U23",
         "descrizione": "Ai Mondiali di Ciclismo 2026 va in scena la cronometro individuale maschile Under 23, con i migliori giovani specialisti internazionali in gara per conquistare la maglia iridata contro il tempo.",
@@ -2484,7 +2477,7 @@
         "ora": "12:05",
         "fine": "13:45",
         "titolo": "Tiro A Volo: Campionato Italiano 2026 - Skeet Uomini E Donne",
-        "descrizione": "Campionato Italiano - Skeet Uomini e Donne",
+        "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici.",
         "immagine": "https://img-guidatv.org/32/tiro-a-volo/0.jpg"
       },
       {
@@ -2510,20 +2503,20 @@
       },
       {
         "ora": "16:30",
-        "fine": "17:15",
+        "fine": "17:05",
         "titolo": "Atletica - Campionati Del Mondo Di Corsa Su Strada 2026 - 1a Giornata: 5km Donne E Uomini",
         "descrizione": "Prima giornata dei Mondiali di corsa su strada 2026 a Copenaghen, con le prove dei 5 km maschili e femminili che vedono in gara alcuni dei migliori specialisti internazionali della distanza.",
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
       },
       {
-        "ora": "17:15",
-        "fine": "17:45",
+        "ora": "17:05",
+        "fine": "17:40",
         "titolo": "Corsa In Montagna - Latemar Mountain Race 2026",
         "descrizione": "Gli eventi in diretta sui canali Rai da rivedere su RaiPlay.",
         "immagine": "https://img-guidatv.org/32/corsa/0.jpg"
       },
       {
-        "ora": "17:45",
+        "ora": "17:40",
         "fine": "18:10",
         "titolo": "Magazine UEFA",
         "descrizione": "Al via la quinta edizione della UEFA Nations League. L'Italia di Roberto Mancini è inserita nel Gruppo 1 con Belgio, Francia e Turchia.",
@@ -2552,7 +2545,7 @@
       },
       {
         "ora": "23:05",
-        "fine": "01:05",
+        "fine": "01:15",
         "titolo": "Mondiale Di Ciclismo 2026 - Cronometro Staffetta Mista (Prima Parte)",
         "descrizione": "Prima parte della cronometro a squadre della staffetta mista ai Mondiali di Ciclismo 2026. Le nazionali, composte da tre uomini e tre donne, si sfidano contro il tempo per conquistare il titolo iridato.",
         "immagine": "https://img-guidatv.org/32/mondiale-di-ciclismo-2026-cronometro-staffetta-mista-prima-parte/0.jpg"
@@ -2564,25 +2557,25 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "01:05",
-        "fine": "02:35",
-        "titolo": "Ciclismo: Camp. Mondiali Su Strada MontréAl 2026 Crono Staffetta Mista",
-        "descrizione": "Ciclismo: Camp. Mondiali su strada Montréal 2026 Crono Staffetta Mista",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "ora": "01:15",
+        "fine": "02:40",
+        "titolo": "Mondiale Di Ciclismo 2026 - Cronometro Staffetta Mista (Seconda Parte)",
+        "descrizione": "Seconda parte della cronometro a squadre della staffetta mista ai Mondiali di Ciclismo 2026. Le nazionali, composte da tre uomini e tre donne, si sfidano contro il tempo per conquistare il titolo iridato.",
+        "immagine": "https://img-guidatv.org/32/mondiale-di-ciclismo-2026-cronometro-staffetta-mista-seconda-parte/0.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "04:15",
-        "titolo": "Tiro A Volo: Camp. Italiano Lonato Del Garda Skeet Maschile/Femminile",
-        "descrizione": "Tiro a Volo: Camp. Italiano Lonato del Garda Skeet Maschile/Femminile",
+        "ora": "02:40",
+        "fine": "04:25",
+        "titolo": "Tiro A Volo: Campionato Italiano 2026 - Skeet Uomini E Donne",
+        "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici.",
         "immagine": "https://img-guidatv.org/32/tiro-a-volo/0.jpg"
       },
       {
-        "ora": "04:15",
+        "ora": "04:25",
         "fine": "05:15",
-        "titolo": "Motocross: Campionato Mondiale 2026 - Darwin/AUS GP Australia - MXGP Gara 2",
-        "descrizione": "Motocross: Campionato Mondiale 2026 - Darwin/AUS GP Australia - MXGP gara 2",
-        "immagine": "https://img-guidatv.org/32/motocross/0.jpg"
+        "titolo": "Mondiale Motocross 2026 - GP Di Australia: MXGP (Gara 2)",
+        "descrizione": "Seconda manche della classe MXGP nel Gran Premio d'Australia, appuntamento del Mondiale Motocross 2026.",
+        "immagine": "https://img-guidatv.org/immagini/motocross.jpeg"
       },
       {
         "ora": "05:15",
@@ -2600,13 +2593,13 @@
       },
       {
         "ora": "07:00",
-        "fine": "08:30",
+        "fine": "08:35",
         "titolo": "Il Processo Del Lunedì",
         "descrizione": "L'approfondimento sportivo del lunedì. Dopo le immagini del posticipo della sera, una riflessione su quanto avvenuto nei tre giorni della serie A: immagini, interviste e un occhio attento alle Coppe Europee.",
         "immagine": "https://img-guidatv.org/32/il-processo-del-lunedi/0.jpg"
       },
       {
-        "ora": "08:30",
+        "ora": "08:35",
         "fine": "11:10",
         "titolo": "Mondiali Di Ciclismo 2026 - Cronometro Uomini U23",
         "descrizione": "Ai Mondiali di Ciclismo 2026 va in scena la cronometro individuale maschile Under 23, con i migliori giovani specialisti internazionali in gara per conquistare la maglia iridata contro il tempo.",
@@ -2623,7 +2616,7 @@
         "ora": "12:05",
         "fine": "13:45",
         "titolo": "Tiro A Volo: Campionato Italiano 2026 - Skeet Uomini E Donne",
-        "descrizione": "Campionato Italiano - Skeet Uomini e Donne",
+        "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici.",
         "immagine": "https://img-guidatv.org/32/tiro-a-volo/0.jpg"
       },
       {
@@ -2649,20 +2642,20 @@
       },
       {
         "ora": "16:30",
-        "fine": "17:15",
+        "fine": "17:05",
         "titolo": "Atletica - Campionati Del Mondo Di Corsa Su Strada 2026 - 1a Giornata: 5km Donne E Uomini",
         "descrizione": "Prima giornata dei Mondiali di corsa su strada 2026 a Copenaghen, con le prove dei 5 km maschili e femminili che vedono in gara alcuni dei migliori specialisti internazionali della distanza.",
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
       },
       {
-        "ora": "17:15",
-        "fine": "17:45",
+        "ora": "17:05",
+        "fine": "17:40",
         "titolo": "Corsa In Montagna - Latemar Mountain Race 2026",
         "descrizione": "Gli eventi in diretta sui canali Rai da rivedere su RaiPlay.",
         "immagine": "https://img-guidatv.org/32/corsa/0.jpg"
       },
       {
-        "ora": "17:45",
+        "ora": "17:40",
         "fine": "18:10",
         "titolo": "Magazine UEFA",
         "descrizione": "Al via la quinta edizione della UEFA Nations League. L'Italia di Roberto Mancini è inserita nel Gruppo 1 con Belgio, Francia e Turchia.",
@@ -2691,7 +2684,7 @@
       },
       {
         "ora": "23:05",
-        "fine": "01:05",
+        "fine": "01:15",
         "titolo": "Mondiale Di Ciclismo 2026 - Cronometro Staffetta Mista (Prima Parte)",
         "descrizione": "Prima parte della cronometro a squadre della staffetta mista ai Mondiali di Ciclismo 2026. Le nazionali, composte da tre uomini e tre donne, si sfidano contro il tempo per conquistare il titolo iridato.",
         "immagine": "https://img-guidatv.org/32/mondiale-di-ciclismo-2026-cronometro-staffetta-mista-prima-parte/0.jpg"
@@ -2718,30 +2711,23 @@
       },
       {
         "ora": "04:20",
-        "fine": "04:25",
+        "fine": "04:30",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4e06f80b-0abe-45e3-a918-e3780fb7bda7/background/600"
       },
       {
-        "ora": "04:25",
-        "fine": "04:30",
+        "ora": "04:30",
+        "fine": "04:35",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8944e854-a625-48f3-aa2a-f916841dedc5/background/600"
       },
       {
-        "ora": "04:30",
-        "fine": "05:15",
+        "ora": "04:35",
+        "fine": "05:20",
         "titolo": "MasterChef USA",
         "descrizione": "Le quattro generazioni di chef vengono suddivise in squadre e si preparano a cucinare un pasto sano e sostanzioso per alcuni giocatori di calcio professionisti.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "05:15",
-        "fine": "06:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef ricorrono alle loro abilità di pasticceri quando ricevono il compito di preparare una torta di compleanno celebrativa.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -2913,30 +2899,23 @@
       },
       {
         "ora": "05:20",
-        "fine": "05:25",
+        "fine": "05:30",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4e06f80b-0abe-45e3-a918-e3780fb7bda7/background/600"
       },
       {
-        "ora": "05:25",
-        "fine": "05:30",
+        "ora": "05:30",
+        "fine": "05:35",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8944e854-a625-48f3-aa2a-f916841dedc5/background/600"
       },
       {
-        "ora": "05:30",
-        "fine": "06:15",
+        "ora": "05:35",
+        "fine": "06:20",
         "titolo": "MasterChef USA",
         "descrizione": "Le quattro generazioni di chef vengono suddivise in squadre e si preparano a cucinare un pasto sano e sostanzioso per alcuni giocatori di calcio professionisti.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "06:15",
-        "fine": "07:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef ricorrono alle loro abilità di pasticceri quando ricevono il compito di preparare una torta di compleanno celebrativa.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -3101,30 +3080,23 @@
       },
       {
         "ora": "05:20",
-        "fine": "05:25",
+        "fine": "05:30",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4e06f80b-0abe-45e3-a918-e3780fb7bda7/background/600"
       },
       {
-        "ora": "05:25",
-        "fine": "05:30",
+        "ora": "05:30",
+        "fine": "05:35",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8944e854-a625-48f3-aa2a-f916841dedc5/background/600"
       },
       {
-        "ora": "05:30",
-        "fine": "06:15",
+        "ora": "05:35",
+        "fine": "06:20",
         "titolo": "MasterChef USA",
         "descrizione": "Le quattro generazioni di chef vengono suddivise in squadre e si preparano a cucinare un pasto sano e sostanzioso per alcuni giocatori di calcio professionisti.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "06:15",
-        "fine": "07:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef ricorrono alle loro abilità di pasticceri quando ricevono il compito di preparare una torta di compleanno celebrativa.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -3282,27 +3254,27 @@
       },
       {
         "ora": "02:20",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "S.W.A.T.",
         "descrizione": "Un sergente S.W.A.T. della zona, l’ex Marine Daniel Harrelson, viene incaricato di dirigere un’unità tattica specializzata che rappresenta l’ultima tappa delle forze dell’ordine di Los Angeles, nella première di S.W.A.T. Diviso tra la lealtà per il luogo dove è cresciuto e la fedeltà ai suoi fratelli in blu, Hondo ha tutto ciò che serve per essere un leader eccellente e per fare da tramite tra i suoi due mondi.",
         "immagine": "https://img-guidatv.org/serie/5e78d8e6ce1e246c511cba3b_p_4_rs_300.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "03:45",
+        "ora": "03:05",
+        "fine": "03:50",
         "titolo": "Chicago P.D.",
         "descrizione": "La serie racconta le vicende del Distretto 21 del Dipartimento di Polizia di Chicago, composto da due gruppi differenti: l'Unità di pattuglia, che vigila le pericolose strade della città, e l'Unità di Intelligence, che combatte il crimine organizzato, il traffico di droga e si occupa dei casi di omicidio più complessi.",
         "immagine": "https://image.tmdb.org/t/p/w300/afq2obuEF6h1PTmK4Ayl3ePZuU7.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:30",
+        "ora": "03:50",
+        "fine": "04:35",
         "titolo": "Chicago P.D.",
         "descrizione": "La serie racconta le vicende del Distretto 21 del Dipartimento di Polizia di Chicago, composto da due gruppi differenti: l'Unità di pattuglia, che vigila le pericolose strade della città, e l'Unità di Intelligence, che combatte il crimine organizzato, il traffico di droga e si occupa dei casi di omicidio più complessi.",
         "immagine": "https://image.tmdb.org/t/p/w300/afq2obuEF6h1PTmK4Ayl3ePZuU7.jpg"
       },
       {
-        "ora": "04:30",
+        "ora": "04:35",
         "fine": "05:15",
         "titolo": "Accused: Sotto processo",
         "descrizione": "In questa serie di antologie criminali, gli spettatori scoprono come una persona comune è rimasta coinvolta in una situazione straordinaria, rivelando alla fine come una svolta sbagliata porti a un'altra, finché non è troppo tardi per tornare indietro. Raccontato dal punto di vista dell'imputato, ogni episodio si apre in un'aula di tribunale con gli accusati senza conoscere il loro crimine o come sono finiti sotto processo.",
@@ -3714,17 +3686,24 @@
       },
       {
         "ora": "03:10",
-        "fine": "04:05",
+        "fine": "04:00",
         "titolo": "Delitti ai Tropici",
         "descrizione": "Il comandante della Police Nationale Mélissa Sainte-Rose, originaria della Martinica, viene trasferita dalla Francia continentale a Fort-de-France, dove trova alle sue dipendenze il capitano Gaëlle Crivelli. I rapporti sono tesi tra le due poliziotte, perché totalmente diverse nel loro comportamento, ma complementari per la risoluzione degli omicidi.",
         "immagine": "https://img-guidatv.org/serie/5faed70a46988950a0d77af6_p_4_rs_300.jpg"
       },
       {
-        "ora": "04:05",
-        "fine": "04:30",
+        "ora": "04:00",
+        "fine": "04:25",
         "titolo": "Speciale: Nord Sud Ovest Est, Extended",
         "descrizione": "Un racconto corale dietro le quinte della serie. Attori, registi e capi reparto svelano il set, le scelte creative e il successo del progetto (Versione Extended).",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cdc3e5c5-4722-460b-bdb1-503aaa92a9e6/background/600"
+      },
+      {
+        "ora": "04:25",
+        "fine": "05:15",
+        "titolo": "La signora in giallo",
+        "descrizione": "Un'insegnante d'inglese in pensione, Jessica B. Fletcher, dopo essere rimasta vedova intorno ai cinquant'anni del marito Frank, diventa quasi per caso una scrittrice di successo. Nonostante la fama e la fortuna ottenute, Jessica continua a vivere una vita semplice e salutare, risiedendo nel piccolo paese di Cabot Cove, sulla costa del Maine, e coltivando le sue vecchie amicizie, che la portano spesso in giro per il mondo. La signora Fletcher avrà a che fare con una serie di omicidi che ne risvegliano l'insaziabile curiosità, portandola a risolvere i casi della più varia natura.",
+        "immagine": "https://image.tmdb.org/t/p/w300/fHu2unKVJ7RXMCaxT3eEaWECjl.jpg"
       },
       {
         "ora": "04:30",
@@ -3735,7 +3714,7 @@
       },
       {
         "ora": "05:15",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "La signora in giallo",
         "descrizione": "Un'insegnante d'inglese in pensione, Jessica B. Fletcher, dopo essere rimasta vedova intorno ai cinquant'anni del marito Frank, diventa quasi per caso una scrittrice di successo. Nonostante la fama e la fortuna ottenute, Jessica continua a vivere una vita semplice e salutare, risiedendo nel piccolo paese di Cabot Cove, sulla costa del Maine, e coltivando le sue vecchie amicizie, che la portano spesso in giro per il mondo. La signora Fletcher avrà a che fare con una serie di omicidi che ne risvegliano l'insaziabile curiosità, portandola a risolvere i casi della più varia natura.",
         "immagine": "https://image.tmdb.org/t/p/w300/fHu2unKVJ7RXMCaxT3eEaWECjl.jpg"
@@ -4501,13 +4480,13 @@
       },
       {
         "ora": "03:00",
-        "fine": "03:50",
+        "fine": "03:55",
         "titolo": "Indie Jungle",
         "descrizione": "Ep8 di 13 Bartolini - Un viaggio nella musica dal vivo con i protagonisti della scena indie italiana. In questo episodio: Bartolini.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7db95858-ecad-4031-9653-4896ef2b5521/background/600"
       },
       {
-        "ora": "03:50",
+        "ora": "03:55",
         "fine": "04:40",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep6 di 6 Pino Daniele - Terra mia - Sky Arte vi porta alla scoperta degli album che hanno segnato la storia della musica italiana. Nella puntata scopriamo il disco \"Terra mia\" di Pino Daniele. Tra gli ospiti: Renzo Arbore.",
@@ -4515,7 +4494,7 @@
       },
       {
         "ora": "04:40",
-        "fine": "05:30",
+        "fine": "05:35",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep5 di 8 Teresa De Sio - Teresa De Sio - Ci sono album che hanno segnato la storia della musica italiana. Sky Arte vi porta alla scoperta dei loro segreti. Nella puntata: Teresa De Sio.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
@@ -4528,7 +4507,7 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f8bdf01f-fdb3-403a-a75b-a0e7aec68ab2/background/600"
       },
       {
-        "ora": "05:30",
+        "ora": "05:35",
         "fine": "06:00",
         "titolo": "Retromania di Isabella Ragonese",
         "descrizione": "Ep1 di 5 Il vinile - Isabella Ragonese si muove per l'Italia alla ricerca di segreti e aneddoti sui supporti musicali che si sono susseguiti nel tempo. Nella puntata: il vinile. Ospite: Nada.",
@@ -7770,20 +7749,20 @@
       },
       {
         "ora": "01:40",
-        "fine": "03:20",
+        "fine": "03:25",
         "titolo": "La lezione",
         "descrizione": "Elisabetta (Matilda De Angelis), giovane e talentuosa avvocatessa triestina, difende e fa assolvere un noto docente universitario (Stefano Accorsi) dall’accusa di violenza sessuale. Quando l’uomo, reintegrato ma confinato ai margini dall’ateneo, le chiede di intentare causa contro l’istituzione, il passato di lei riemerge: segnali ambigui e presenze sfuggenti le fanno temere che l’ex compagno violento (Marlon Joubert), condannato per stalking, sia tornato a perseguitarla. Pian piano la tensione cresce inesorabilmente, mentre la linea che separa la realtà dalla paranoia si dissolve. Tratto dall’omonimo romanzo di Marco Franzoso, un film che inizia come un legal thriller, si trasforma in uno psicodramma e assume infine le inaspettate forme di un Kammerspiel.",
         "immagine": "https://image.tmdb.org/t/p/w300/fck83vluL9Gih143i4q1SwIlRKh.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "05:25",
+        "ora": "03:25",
+        "fine": "05:30",
         "titolo": "Allied - Un'ombra nascosta",
         "descrizione": "Nel Marocco del 1942, la spia canadese Max Vatan (Brad Pitt) e la spia francese Marianne Beauséjour (Marion Cottilard) sono complici in una missione: loro malgrado s'innamorano e Marianne accetta di sposare Max e andare a vivere con lui a Londra. Qualche tempo dopo, quando hanno dato luce a una bambina, il trauma: il comando avvisa Max che Marianne potrebbe essere una spia tedesca. Il cuore non accetta. Dove sarà la verità?",
         "immagine": "https://img-guidatv.org/film_new/a/5e78d862ce1e246c511cb7e1/5e78d862ce1e246c511cb7e1_p_1_rs_300.jpg"
       },
       {
-        "ora": "05:25",
+        "ora": "05:30",
         "fine": "07:30",
         "titolo": "Mr Vendetta",
         "descrizione": "Ryu è un ragazzo sordomuto che, per pagare le cure della sorella malata, cerca di vendere un rene: truffato dai trafficanti di organi, su consiglio della sua ragazza Yeong-mi organizza il rapimento della figlia dell'uomo che l'ha licenziato. Per un incidente, la bambina muore affogata, ed il padre, Park Dong-jin, dà la caccia a Ryu e Yeong-mi per vendicarsi.",
@@ -11358,56 +11337,49 @@
     "categoria": "Bambini",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:15",
-        "titolo": "Monster Loving Maniacs",
-        "descrizione": "Ep29 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
-        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
-      },
-      {
-        "ora": "00:15",
-        "fine": "00:25",
+        "ora": "00:10",
+        "fine": "00:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep30 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:25",
-        "fine": "00:35",
+        "ora": "00:20",
+        "fine": "00:30",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep31 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:35",
-        "fine": "00:45",
+        "ora": "00:30",
+        "fine": "00:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep32 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:45",
-        "fine": "01:00",
+        "ora": "00:40",
+        "fine": "00:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep33 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:00",
-        "fine": "01:10",
+        "ora": "00:55",
+        "fine": "01:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep34 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:10",
-        "fine": "01:20",
+        "ora": "01:05",
+        "fine": "01:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep35 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:20",
+        "ora": "01:15",
         "fine": "01:30",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep36 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
@@ -11429,27 +11401,27 @@
       },
       {
         "ora": "01:50",
-        "fine": "02:05",
+        "fine": "02:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep39 di 52 L'affascinante Samurai - Un antico samurai fantasma insegna ai bambini l'autodifesa.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:05",
-        "fine": "02:15",
+        "ora": "02:00",
+        "fine": "02:10",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep40 di 52 La Mummia - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:25",
+        "ora": "02:10",
+        "fine": "02:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep41 di 52 Lo specchio delle anime - Parte 1 - Dracula è tornato con una missione speciale per i bambini.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:25",
+        "ora": "02:20",
         "fine": "02:35",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep42 di 52 Lo specchio delle anime - Parte 2 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mos",
@@ -11464,27 +11436,27 @@
       },
       {
         "ora": "02:45",
-        "fine": "03:00",
+        "fine": "02:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep44 di 52 Spavento divertente - Il mostro più spaventoso del mondo vuole diventare un comico. Ma c'è un problema: non è divertente.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "03:10",
+        "ora": "02:55",
+        "fine": "03:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep45 di 52 Safari Jack - Arthur sfida i suoi studenti a riparare la bambola più malvagia che sia mai esistita.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:10",
-        "fine": "03:20",
+        "ora": "03:05",
+        "fine": "03:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep46 di 52 La signora Jorgersen - Per evitare di fare i compiti, i ragazzi devono ingaggiare una battaglia disperata con la signora Jorgensen-",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:20",
+        "ora": "03:15",
         "fine": "03:30",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep47 di 52 La rasatura - Una ciurma di pirati zombie emerge dall'oceano per per sfidare i protettori della città.",
@@ -11506,27 +11478,27 @@
       },
       {
         "ora": "03:50",
-        "fine": "04:05",
+        "fine": "04:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep50 di 52 Un oscuro domani - Ernest e Ishaani passano attraverso lo specchio per sperimentare una terrificante visione futura.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:05",
-        "fine": "04:15",
+        "ora": "04:00",
+        "fine": "04:10",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep51 di 52 L'arrivo del signore oscuro Parte 1 - Dracula decide di attaccare la famiglia Van Alten. Arthur si prepara alla battaglia, ma Dracula ha molti assi nella manica. Lo scontro finale ha inizio",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "04:25",
+        "ora": "04:10",
+        "fine": "04:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep52 di 52 L'arrivo del signore oscuro Parte 2 - I nostri eroi cercano disperatamente di evitare lo scontro con l'invincibile Dracula.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:20",
         "fine": "04:35",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep1 di 52 Benvenuti a Gruselbrook - Tre fratelli, amanti dei mostri, vengono mandati a far visita al loro nonno. Scopriranno che il nonno vive nella città più infestata del mondo.",
@@ -11548,27 +11520,27 @@
       },
       {
         "ora": "04:55",
-        "fine": "05:10",
+        "fine": "05:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep4 di 52 Il Glarbergastling - Durante una sessione di addestramento, un Glarbergastling minaccia la città.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:10",
-        "fine": "05:20",
+        "ora": "05:05",
+        "fine": "05:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep5 di 52 Salviamo Lemmy - Ernest, Edith e Bo devono cercare di salvare un criceto posseduto da un demone.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:20",
-        "fine": "05:30",
+        "ora": "05:15",
+        "fine": "05:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep6 di 52 Che spavento! - Nella battaglia per il controllo del televisore, Arthur e i bambini fanno una scommessa. Bo, Edith ed Ernest hanno 24 ore per spaventare il nonno.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:30",
+        "ora": "05:25",
         "fine": "05:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep7 di 52 Professor Dracula - Edith libera Dracula che, dopo aver parlato con i tre ragazzi, riesce a fuggire.",
@@ -11590,20 +11562,20 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:25",
+        "fine": "06:20",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep1 di 26 L'orsetto parlante / La nuova preside - Alvin si diverte a impartire ordini a Theodore servendosi del suo orsetto parlante.",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "06:25",
-        "fine": "06:50",
+        "ora": "06:20",
+        "fine": "06:45",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Alvin e' convinto che nei sotterranei della scuola ci siano gli alieni. Convince Simon a fare un sopralluogo...",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "06:50",
+        "ora": "06:45",
         "fine": "07:10",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep22 di 26 L'orto segreto di Janette / Caccia al tesoro - Jeanette vuole creare un orto proprio nella sua scuola. Piccolo particolare: non ha chiesto il permesso alla preside!",
@@ -11611,41 +11583,48 @@
       },
       {
         "ora": "07:10",
-        "fine": "07:25",
+        "fine": "07:20",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "A scuola e' scattato l'allarme antincendio. Miss Smith vuole sapere chi e' stato a farlo scattare e...",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "07:25",
-        "fine": "07:50",
+        "ora": "07:20",
+        "fine": "07:45",
         "titolo": "Henry Danger",
         "descrizione": "Ep9 di 30 Knight and Danger - A causa di un impulso irrefrenabile, Bill Evil apre nuovamente un varco interdimensionale, cosi' il cavaliere Ryker di Astoria si ritrova a Swellview.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "07:50",
-        "fine": "08:15",
+        "ora": "07:45",
+        "fine": "08:05",
         "titolo": "Henry Danger",
         "descrizione": "Ep10 di 30 Braccio rotto e pericoloso - Il notiziario annuncia che Mister Pupu'-al-Parco ha colpito ancora; Ray e' convinto che si tratti di Jasper. Ma c'e' un'altra notizia: Kid Danger si e' rotto il braccio.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "08:15",
-        "fine": "08:35",
+        "ora": "08:05",
+        "fine": "08:30",
         "titolo": "I Thunderman",
         "descrizione": "Phoebe e Max vengono mandati sotto copertura per gestire una nuova minaccia a Secret Shores e portano con sé Chloe per sviluppare il suo talento da supereroe.",
         "immagine": "https://image.tmdb.org/t/p/w300/cj2RFkCpQEoW8gHokDdHTWM3qRb.jpg"
       },
       {
-        "ora": "08:35",
-        "fine": "09:00",
+        "ora": "08:30",
+        "fine": "08:50",
         "titolo": "A casa dei Loud",
         "descrizione": "Ep24 di 26 La giornata del papà/Piccoli inganni - Lori cerca di fare una buona impressione sul padre di Bobby/Lily porta a scuola il raggio restringente di Lisa.",
         "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
       },
       {
-        "ora": "09:00",
+        "ora": "08:50",
+        "fine": "09:05",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Lincoln Loud, un ragazzino di 11 anni con ben dieci sorelle, trova modi creativi per sopravvivere nel caos quotidiano di casa sua.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "09:05",
         "fine": "09:25",
         "titolo": "A casa dei Loud",
         "descrizione": "Ep25 di 26 Una sfilata per due/Vacanza tutto escluso - Leni e Carlota fanno uno stage per una famosa stilista. /I Loud prenotano un soggiorno in un resort all-inclusive.",
@@ -11660,10 +11639,38 @@
       },
       {
         "ora": "09:50",
-        "fine": "11:15",
+        "fine": "10:05",
         "titolo": "Sonic Prime",
-        "descrizione": "Ep15 di 23 - La chiave per ricostruire il Paradox Prism si trova in una delle Prisma-dimensioni.",
+        "descrizione": "Ep15 di 23 Giro di vite - La chiave per ricostruire il Paradox Prism si trova in una delle Prisma-dimensioni.",
         "immagine": "https://image.tmdb.org/t/p/w300/mlDVnjgx89bmGvtXnKYDbowpadV.jpg"
+      },
+      {
+        "ora": "10:05",
+        "fine": "10:30",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "10:30",
+        "fine": "10:50",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "10:50",
+        "fine": "11:05",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "11:05",
+        "fine": "11:15",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
       },
       {
         "ora": "11:15",
@@ -11674,90 +11681,160 @@
       },
       {
         "ora": "11:40",
-        "fine": "12:05",
+        "fine": "12:00",
         "titolo": "I Marsupilami",
         "descrizione": "Ep3 di 26 - Jade affronta Mr. Best / I Marsupilami salvano lo spettacolo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
-        "ora": "12:05",
-        "fine": "12:30",
+        "ora": "12:00",
+        "fine": "12:25",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Kevin vuole organizzare una festa di compleanno. Decide d'invitare tutti i suoi compagni di classe. Ma...",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:55",
+        "ora": "12:25",
+        "fine": "12:50",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Alvin e i suoi fratelli non vedono l'ora di esibirsi in un grande concerto. Ma il loro entusiasmo viene presto smorzato da...",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "13:55",
-        "fine": "14:20",
+        "ora": "12:50",
+        "fine": "13:15",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "13:15",
+        "fine": "13:35",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "13:35",
+        "fine": "13:45",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "13:45",
+        "fine": "14:10",
         "titolo": "Henry Danger",
         "descrizione": "Ep5 di 22 Sfida nei corridoi - Bish, una ragazzina difficile, semina il panico a scuola. Charlotte cerca di affrontarla ma la prepotenza della sua rivale non ha eguali.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "14:20",
-        "fine": "14:45",
+        "ora": "14:10",
+        "fine": "14:35",
         "titolo": "Henry Danger",
         "descrizione": "Ep6 di 22 Riflessi superveloci - A causa di una dichiarazione di Capitan Man, tutti credono che Kid Danger sia affetto da una rara malattia letale, l'ipermobilita'. Piper avvia una campagna di sensibilizzazione e raccolta fondi.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "14:45",
-        "fine": "15:05",
+        "ora": "14:35",
+        "fine": "14:55",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep17 di 26 Una stanza tutta per Alvin / Caccia al carrello - Dave e' stanco dei litigi tra i fratelli. Alvin propone a Dave un patto: una stanza tutta sua in cambio di pace silenzio in casa.",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "15:05",
-        "fine": "15:30",
+        "ora": "14:55",
+        "fine": "15:20",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep18 di 26 Alvin e l'ecologia / Il pettegolo - I Chipmunk e le Chipette si iscrivono ad un concorso dove verra' premiato chi rispetta l'ambiente e non spreca l'energia. Alvin e' molto competitivo e il suo obiettivo e' solo vincere!",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "15:30",
-        "fine": "16:30",
+        "ora": "15:20",
+        "fine": "15:45",
         "titolo": "Pinky Malinky - Ricerca / Individuo",
         "descrizione": "S1 Ep17 Ricerca / Individuo - Dopo aver trovato errori in un'enciclopedia online, Pinky tenta di compiere le imprese a lui attribuite per non essere definito bugiardo. / Pinky aiuta un ragazzo...",
         "immagine": "https://image.tmdb.org/t/p/w300/qXGRafqFfyja23kqY4jpZtWQPLZ.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:25",
+        "ora": "15:45",
+        "fine": "15:55",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Lincoln Loud, un ragazzino di 11 anni con ben dieci sorelle, trova modi creativi per sopravvivere nel caos quotidiano di casa sua.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "15:55",
+        "fine": "16:20",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Lincoln Loud, un ragazzino di 11 anni con ben dieci sorelle, trova modi creativi per sopravvivere nel caos quotidiano di casa sua.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "16:20",
+        "fine": "16:40",
         "titolo": "I Marsupilami",
         "descrizione": "Ep1 di 26 - Jade combina un pasticcio/ I Marsupilami perdono una consegna importante",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
-        "ora": "17:25",
-        "fine": "17:45",
+        "ora": "16:40",
+        "fine": "16:55",
+        "titolo": "I Marsupilami",
+        "descrizione": "Ep9 di 26 - Jade e Mica proteggono tre piccoli Marsupilami tenendoli segreti.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
+      },
+      {
+        "ora": "16:55",
+        "fine": "17:15",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "17:15",
+        "fine": "17:40",
         "titolo": "Lo Show di Patrick Stella",
         "descrizione": "Patrick Stella gestisce il proprio talk show a casa sua con l'aiuto della sua famiglia.",
         "immagine": "https://image.tmdb.org/t/p/w300/hOomPc8x2lDxWRS8ltDE0gHUK7z.jpg"
       },
       {
-        "ora": "17:45",
+        "ora": "17:40",
+        "fine": "18:05",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Ep15 di 26 Salviamo i pantaloni/Il discorso di Stella - Rusty è responsabile del negozio di suo padre/Lincoln e i suoi amici cercano di aiutare Stella a superare la paura di parlare in pubblico.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "18:05",
+        "fine": "18:25",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Ep1 di 13 Summer Camp: The Grate Outdoors / Summer Camp: Don't Lose Your Cool - A casa dei Loud, l'undicenne Lincoln offre uno sguardo dall'interno su come sopravvivere nel caos di una famiglia...",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "18:25",
+        "fine": "18:35",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Ep20 di 26 A scuola di enigmi/Il tenore timido - Il team di Action News risolve una misteriosa serie di scherzi./Gus ha un talento nascosto.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "18:35",
         "fine": "19:00",
-        "titolo": "Sasso, Carta, Forbici",
-        "descrizione": "Ep14 di 20 L'arma segreta di Carta/Lo slittino - Sasso e Forbici scoprono che Carta è un inventore migliore quando si arrabbia. / Forbici si rompe il braccio.",
-        "immagine": "https://image.tmdb.org/t/p/w300/hLpTtTtXu5qTZTGayYLVsiOOoNA.jpg"
+        "titolo": "A casa dei Loud",
+        "descrizione": "Ep2 di 13 Summer Camp: Treasure Haunt / Summer Camp: Brawl of the Wild - A casa dei Loud, l'undicenne Lincoln offre uno sguardo dall'interno su come sopravvivere nel caos di una famiglia numerosa...",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
       },
       {
         "ora": "19:00",
-        "fine": "19:25",
+        "fine": "19:20",
         "titolo": "Lay Lay - Un'amica magica",
         "descrizione": "That Girl Lay Lay segue Lay Lay, la ragazza hype perfetta e la migliore amica che chiunque potrebbe desiderare dalla propria app di affermazione personale.  Lottando per lasciare il segno a scuola e avendo bisogno di una migliore amica con cui parlare, Sadie augura a una star che Lay Lay sia reale e possa aiutarla a insegnarle a distinguersi.  Quando il suo desiderio si avvera e Lay Lay prende magicamente vita, i due amici scoprono che quando sono insieme possono realizzare qualsiasi cosa, navigare nella vita da adolescenti e scoprire chi sono veramente.",
         "immagine": "https://image.tmdb.org/t/p/w300/A8DTEzO26VBnR3pfMV7Hq8ukN4f.jpg"
       },
       {
-        "ora": "19:25",
+        "ora": "19:20",
         "fine": "19:45",
         "titolo": "I Thunderman",
         "descrizione": "Phoebe e Max vengono mandati sotto copertura per gestire una nuova minaccia a Secret Shores e portano con sé Chloe per sviluppare il suo talento da supereroe.",
@@ -11765,17 +11842,24 @@
       },
       {
         "ora": "19:45",
-        "fine": "20:15",
+        "fine": "20:10",
         "titolo": "Henry Danger",
         "descrizione": "Ep12 di 22 Viaggio di compleanno - Il viaggio per il compleanno di Charlotte per andare a vedere lo show dei Boo Man Group viene deviato da Kid Danger e da Capitan Man, a causa di un'emergenza.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "20:15",
-        "fine": "20:40",
+        "ora": "20:10",
+        "fine": "20:30",
         "titolo": "Sonic Prime",
-        "descrizione": "Ep13 di 23 - Il Consiglio del Caos ritorna a New Yoke City più potente che mai.",
+        "descrizione": "Ep13 di 23 Metodi folli - Il Consiglio del Caos ritorna a New Yoke City più potente che mai.",
         "immagine": "https://image.tmdb.org/t/p/w300/mlDVnjgx89bmGvtXnKYDbowpadV.jpg"
+      },
+      {
+        "ora": "20:30",
+        "fine": "20:40",
+        "titolo": "I Marsupilami",
+        "descrizione": "Ep7 di 26 - Stan vuole catturare un Marsupilami. Acu e Mica cercano un ladro di pesci.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
         "ora": "20:40",
@@ -11800,20 +11884,27 @@
       },
       {
         "ora": "21:50",
+        "fine": "22:05",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep1 di 52 Benvenuti a Gruselbrook - Tre fratelli, amanti dei mostri, vengono mandati a far visita al loro nonno. Scopriranno che il nonno vive nella città più infestata del mondo.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "22:05",
         "fine": "22:15",
-        "titolo": "Alvinnn!!! and the Chipmunks",
-        "descrizione": "Ep22 di 26 Ehi, Troll / L'anima della festa - Dave partecipa a una rimpatriata del college e si esibisce con la chitarra. / Bocarter, il compagno di scuola di Alvin, organizza una festa sullo yacht.",
-        "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep2 di 52 L'addestramento - Entusiasti dall'idea essere addestrati per diventare cacciatori di mostri, Edith e Bo decidono di restare e di compiere il loro destino.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
         "ora": "22:15",
-        "fine": "22:30",
+        "fine": "22:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep20 di 52 Il mostro sotto il letto - Bo incontra Muuna, un mostro del letto che sta tentando di lasciare casa Van Alten e decide di darle una mano.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "22:30",
+        "ora": "22:25",
         "fine": "22:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep21 di 52 Torte in volo - Dopo una missione Ernest e Bo suonano per sbaglio il Gong dei Gremlins. Appaiono tre Gremlins che vogliono distruggere l'aereo dei cacciatori di mostri.",
@@ -11821,51 +11912,58 @@
       },
       {
         "ora": "22:40",
-        "fine": "22:55",
+        "fine": "22:50",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep22 di 52 Il demone dei sogni - Una Mare infesta casa Van Alten e tutti tranne Bo rischiano di impazzire per i suoi incubi.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "22:55",
-        "fine": "23:05",
+        "ora": "22:50",
+        "fine": "23:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep23 di 52 Invincibile - Una Manticora minaccia Grusselbrook, ma nello scontro Ernest ha un attacco di panico.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:05",
-        "fine": "23:15",
+        "ora": "23:00",
+        "fine": "23:10",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep24 di 52 Cena con sorpresa - La madre di Ishaani crede che Arthur abbia scoperto il loro segreto. Per dimostrarle che non è così Ernest organizza una cena con le due famiglie.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:15",
-        "fine": "23:30",
+        "ora": "23:10",
+        "fine": "23:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep25 di 52 La nonna e il lupo mannaro parte 1 - Per capire come spezzare la maledizione di un lupo mannaro, Arthur scongela Tamsyn, la nonna dei tre ragazzi.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:30",
-        "fine": "23:40",
+        "ora": "23:25",
+        "fine": "23:35",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep26 di 52 La nonna e il lupo mannaro parte 2 - Tamsyn inizia a conoscere i suoi nipoti e mette le sue abilità magiche per aiutare il lupo mannaro.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:40",
-        "fine": "23:55",
+        "ora": "23:35",
+        "fine": "23:45",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep27 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:55",
-        "fine": "00:05",
+        "ora": "23:45",
+        "fine": "23:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep28 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "23:55",
+        "fine": "00:10",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep29 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       }
     ]
@@ -18174,13 +18272,13 @@
       },
       {
         "ora": "01:35",
-        "fine": "02:50",
+        "fine": "02:55",
         "titolo": "Reazione A Catena",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena/6.jpg"
       },
       {
-        "ora": "02:50",
+        "ora": "02:55",
         "fine": "04:30",
         "titolo": "Provaci ancora Prof!",
         "descrizione": "Camilla Baudino è un'insegnante di lettere che si divide fra il lavoro, la famiglia (composta dal marito Renzo, dalla figlia Livietta e dal cane Potti) e diversi casi di indagine in cui si ritrova coinvolta, e che la vedono collaborare con il commissario di polizia Gaetano Berardi, con cui sviluppa un'intesa particolare.\n\nLe prime quattro stagioni sono ambientate a Roma, le restanti a Torino. Le diverse stagioni della serie vedono dei cambiamenti nella vita professionale e sentimentale di Camilla, che si trasferisce da Roma a Torino e che da moglie di Renzo diventa prima separata e infine si fidanza con Berardi. Parallelamente, anche Renzo intreccia una relazione con una giovane collega spagnola che lo renderà padre di un bambino.",
@@ -18390,13 +18488,13 @@
       },
       {
         "ora": "01:35",
-        "fine": "02:50",
+        "fine": "02:55",
         "titolo": "Reazione A Catena",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena/6.jpg"
       },
       {
-        "ora": "02:50",
+        "ora": "02:55",
         "fine": "04:30",
         "titolo": "Provaci ancora Prof!",
         "descrizione": "Camilla Baudino è un'insegnante di lettere che si divide fra il lavoro, la famiglia (composta dal marito Renzo, dalla figlia Livietta e dal cane Potti) e diversi casi di indagine in cui si ritrova coinvolta, e che la vedono collaborare con il commissario di polizia Gaetano Berardi, con cui sviluppa un'intesa particolare.\n\nLe prime quattro stagioni sono ambientate a Roma, le restanti a Torino. Le diverse stagioni della serie vedono dei cambiamenti nella vita professionale e sentimentale di Camilla, che si trasferisce da Roma a Torino e che da moglie di Renzo diventa prima separata e infine si fidanza con Berardi. Parallelamente, anche Renzo intreccia una relazione con una giovane collega spagnola che lo renderà padre di un bambino.",
@@ -18606,20 +18704,27 @@
       },
       {
         "ora": "02:20",
-        "fine": "03:50",
+        "fine": "03:05",
+        "titolo": "Ultima Traccia: Berlino",
+        "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
+        "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
+      },
+      {
+        "ora": "03:05",
+        "fine": "04:35",
         "titolo": "College",
         "descrizione": "Due scuole vicine tra loro: una è un'Accademia Navale piena di aitanti giovani vestiti di bianco e sempre ben educati, l'altra è un Collegio femminile abitato da signorine a modo. Tra incontri, scherzi, balli ed altro scoppierà l'amore tra i due protagonisti, Federica Moro e Christian Vadim (figlio del regista Roger). I due termineranno per convolare a giuste nozze non prima che lei abbia il tempo per voler mandare tutto a monte per aver visto il fidanzato con una bella signora, che alla fine si rivelerà essere la mamma del cadetto.",
         "immagine": "https://image.tmdb.org/t/p/w300/mquLY5qNL2yynesIVfqyGcKjHUh.jpg"
       },
       {
-        "ora": "03:50",
-        "fine": "04:35",
-        "titolo": "Rex",
-        "descrizione": "Le appassionanti avventure del più famoso pastore tedesco impegnato nella risoluzione di delicati casi polizieschi.",
-        "immagine": "https://img-guidatv.org/serie/5e78d8c1ce1e246c511cb992_p_1_rs_300.jpg"
+        "ora": "04:35",
+        "fine": "04:40",
+        "titolo": "Zio Gianni",
+        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "04:35",
+        "ora": "04:40",
         "fine": "04:50",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
@@ -18629,11 +18734,18 @@
         "ora": "04:50",
         "fine": "05:00",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
         "ora": "05:00",
+        "fine": "05:10",
+        "titolo": "Impazienti",
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
+      },
+      {
+        "ora": "05:10",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18825,7 +18937,7 @@
         "ora": "21:20",
         "fine": "23:55",
         "titolo": "Boss In Incognito",
-        "descrizione": "Con Elettra Lamborghini, andiamo alla scoperta di aziende italiane d'eccellenza e dei loro boss, che hanno accettato la sfida di lavorare per una settimana tra i propri dipendenti sotto mentite spoglie. Protagonista della prima puntata è Camilla Mastromartino, responsabile della comunicazione e rappresentante della terza generazione alla guida di Caffè Motta, che nella sua avventura in incognito, affianca i suoi dipendenti: Danilo la porta nel reparto della logistica, dove imparano a preparare scatole e pedane per le spedizioni; Ugo le mostra il delicato processo di lavorazione del caffè, dal chicco crudo fino alla tostatura; Giovanni la guida in produzione sulla linea delle capsule e con Fausto sale a bordo del furgone per occuparsi delle consegne ai clienti. Ad affiancare Camilla in questa esperienza anche Elettra Lamborghini, che scende in campo per collaborare con Mario al confezionamento dei kit sulla linea delle cialde.",
+        "descrizione": "Con Elettra Lamborghini, andiamo alla scoperta di aziende italiane d'eccellenza e dei loro boss, che hanno accettato la sfida di lavorare per una settimana tra i propri dipendenti sotto mentite spoglie. Protagonista della prima puntata è Camilla Mastromartino, responsabile della comunicazione e rappresentante della terza generazione alla guida di Caffè Motta, che nella sua avventura in incognito affianca i suoi dipendenti: Danilo la porta nel reparto della logistica, dove imparano a preparare scatole e pedane per le spedizioni; Ugo le mostra il delicato processo di lavorazione del caffè, dal chicco crudo fino alla tostatura; Giovanni la guida in produzione sulla linea delle capsule e con Fausto sale a bordo del furgone per occuparsi delle consegne ai clienti. Ad affiancare Camilla in questa esperienza anche Elettra Lamborghini, che scende in campo per collaborare con Mario al confezionamento dei kit sulla linea delle cialde.",
         "immagine": "https://img-guidatv.org/2/boss-in-incognito/10.jpg"
       },
       {
@@ -18857,20 +18969,27 @@
       },
       {
         "ora": "02:20",
-        "fine": "03:50",
+        "fine": "03:05",
+        "titolo": "Ultima Traccia: Berlino",
+        "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
+        "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
+      },
+      {
+        "ora": "03:05",
+        "fine": "04:35",
         "titolo": "College",
         "descrizione": "Due scuole vicine tra loro: una è un'Accademia Navale piena di aitanti giovani vestiti di bianco e sempre ben educati, l'altra è un Collegio femminile abitato da signorine a modo. Tra incontri, scherzi, balli ed altro scoppierà l'amore tra i due protagonisti, Federica Moro e Christian Vadim (figlio del regista Roger). I due termineranno per convolare a giuste nozze non prima che lei abbia il tempo per voler mandare tutto a monte per aver visto il fidanzato con una bella signora, che alla fine si rivelerà essere la mamma del cadetto.",
         "immagine": "https://image.tmdb.org/t/p/w300/mquLY5qNL2yynesIVfqyGcKjHUh.jpg"
       },
       {
-        "ora": "03:50",
-        "fine": "04:35",
-        "titolo": "Rex",
-        "descrizione": "Le appassionanti avventure del più famoso pastore tedesco impegnato nella risoluzione di delicati casi polizieschi.",
-        "immagine": "https://img-guidatv.org/serie/5e78d8c1ce1e246c511cb992_p_1_rs_300.jpg"
+        "ora": "04:35",
+        "fine": "04:40",
+        "titolo": "Zio Gianni",
+        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "04:35",
+        "ora": "04:40",
         "fine": "04:50",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
@@ -18880,11 +18999,18 @@
         "ora": "04:50",
         "fine": "05:00",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
         "ora": "05:00",
+        "fine": "05:10",
+        "titolo": "Impazienti",
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
+      },
+      {
+        "ora": "05:10",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -19076,7 +19202,7 @@
         "ora": "21:20",
         "fine": "23:55",
         "titolo": "Boss In Incognito",
-        "descrizione": "Con Elettra Lamborghini, andiamo alla scoperta di aziende italiane d'eccellenza e dei loro boss, che hanno accettato la sfida di lavorare per una settimana tra i propri dipendenti sotto mentite spoglie. Protagonista della prima puntata è Camilla Mastromartino, responsabile della comunicazione e rappresentante della terza generazione alla guida di Caffè Motta, che nella sua avventura in incognito, affianca i suoi dipendenti: Danilo la porta nel reparto della logistica, dove imparano a preparare scatole e pedane per le spedizioni; Ugo le mostra il delicato processo di lavorazione del caffè, dal chicco crudo fino alla tostatura; Giovanni la guida in produzione sulla linea delle capsule e con Fausto sale a bordo del furgone per occuparsi delle consegne ai clienti. Ad affiancare Camilla in questa esperienza anche Elettra Lamborghini, che scende in campo per collaborare con Mario al confezionamento dei kit sulla linea delle cialde.",
+        "descrizione": "Con Elettra Lamborghini, andiamo alla scoperta di aziende italiane d'eccellenza e dei loro boss, che hanno accettato la sfida di lavorare per una settimana tra i propri dipendenti sotto mentite spoglie. Protagonista della prima puntata è Camilla Mastromartino, responsabile della comunicazione e rappresentante della terza generazione alla guida di Caffè Motta, che nella sua avventura in incognito affianca i suoi dipendenti: Danilo la porta nel reparto della logistica, dove imparano a preparare scatole e pedane per le spedizioni; Ugo le mostra il delicato processo di lavorazione del caffè, dal chicco crudo fino alla tostatura; Giovanni la guida in produzione sulla linea delle capsule e con Fausto sale a bordo del furgone per occuparsi delle consegne ai clienti. Ad affiancare Camilla in questa esperienza anche Elettra Lamborghini, che scende in campo per collaborare con Mario al confezionamento dei kit sulla linea delle cialde.",
         "immagine": "https://img-guidatv.org/2/boss-in-incognito/10.jpg"
       },
       {
@@ -19108,20 +19234,20 @@
       },
       {
         "ora": "01:05",
-        "fine": "01:40",
+        "fine": "01:35",
         "titolo": "Sorgente Di Vita",
         "descrizione": "Attualità e cultura, feste e tradizioni, storia e identità degli ebrei in Italia, in Europa e nel mondo, a cura dell'Unione delle Comunità Ebraiche Italiane.",
         "immagine": "https://img-guidatv.org/3/sorgente-di-vita/0.jpg"
       },
       {
-        "ora": "01:40",
-        "fine": "02:15",
+        "ora": "01:35",
+        "fine": "02:10",
         "titolo": "Sulla Via Di Damasco",
-        "descrizione": "$23",
+        "descrizione": "$24",
         "immagine": "https://img-guidatv.org/3/sulla-via-di-damasco/1.jpg"
       },
       {
-        "ora": "02:15",
+        "ora": "02:10",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -19327,7 +19453,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Filorosso",
-        "descrizione": "Antonino Monteleone racconta i fatti che stanno ridefinendo gli equilibri globali e la vita quotidiana degli italiani: politica, sicurezza, economia, trasformazioni sociali.",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/3/filorosso/8.jpg"
       }
     ]
@@ -19352,20 +19478,20 @@
       },
       {
         "ora": "01:05",
-        "fine": "01:40",
+        "fine": "01:35",
         "titolo": "Sorgente Di Vita",
         "descrizione": "Attualità e cultura, feste e tradizioni, storia e identità degli ebrei in Italia, in Europa e nel mondo, a cura dell'Unione delle Comunità Ebraiche Italiane.",
         "immagine": "https://img-guidatv.org/3/sorgente-di-vita/0.jpg"
       },
       {
-        "ora": "01:40",
-        "fine": "02:15",
+        "ora": "01:35",
+        "fine": "02:10",
         "titolo": "Sulla Via Di Damasco",
-        "descrizione": "$23",
+        "descrizione": "$24",
         "immagine": "https://img-guidatv.org/3/sulla-via-di-damasco/1.jpg"
       },
       {
-        "ora": "02:15",
+        "ora": "02:10",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -19571,7 +19697,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Filorosso",
-        "descrizione": "Antonino Monteleone racconta i fatti che stanno ridefinendo gli equilibri globali e la vita quotidiana degli italiani: politica, sicurezza, economia, trasformazioni sociali.",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/3/filorosso/8.jpg"
       }
     ]
@@ -19676,7 +19802,7 @@
         "fine": "15:32",
         "titolo": "Lo sportello di forum",
         "descrizione": "Programma storico delle reti Mediaset che vede due contendenti affidare la soluzione del loro contrasto al giudizio di un giudice arbitro.",
-        "immagine": "https://img-guidatv.org/40/lo-sportello-di-forum/8.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314514601001201/media/1/1/848367a9-0280-4328-9e50-642e595baea6/f4ff5d7f-085b-4c05-be5d-98f827932e05.jpg"
       },
       {
         "ora": "15:32",
@@ -19690,7 +19816,7 @@
         "fine": "16:49",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:49",
@@ -19836,7 +19962,7 @@
         "fine": "15:32",
         "titolo": "Lo sportello di forum",
         "descrizione": "Programma storico delle reti Mediaset che vede due contendenti affidare la soluzione del loro contrasto al giudizio di un giudice arbitro.",
-        "immagine": "https://img-guidatv.org/40/lo-sportello-di-forum/8.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314514601001201/media/1/1/848367a9-0280-4328-9e50-642e595baea6/f4ff5d7f-085b-4c05-be5d-98f827932e05.jpg"
       },
       {
         "ora": "15:32",
@@ -19850,7 +19976,7 @@
         "fine": "16:49",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:49",
@@ -19901,7 +20027,7 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:06",
+        "ora": "01:10",
         "fine": "01:49",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
@@ -19909,37 +20035,37 @@
       },
       {
         "ora": "01:49",
-        "fine": "03:04",
+        "fine": "02:45",
+        "titolo": "Caduta libera",
+        "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
+        "immagine": "https://img-guidatv.org/41/caduta-libera/7.jpg"
+      },
+      {
+        "ora": "02:45",
+        "fine": "04:02",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000201/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
-        "ora": "03:04",
-        "fine": "03:45",
-        "titolo": "All American",
-        "descrizione": "Due mondi completamente opposti si scontrano quando un giocatore di football del difficile quartiere di Compton viene chiamato a far parte della squadra del liceo di Beverly Hills.",
-        "immagine": "https://image.tmdb.org/t/p/w300/uL1PEgWrQfYlkVWr4uR1eGXFwRW.jpg"
+        "ora": "04:02",
+        "fine": "04:49",
+        "titolo": "Una vita",
+        "descrizione": "Marcos e Aurelio litigano pesantemente in mezzo alla strada. Soledad chiede ad Anabel di avere pazienza con Marcos, ma la giovane sembra sempre orientata verso Aurelio.",
+        "immagine": "https://img-guidatv.org/serie/5e78d81ace1e246c511cb693_p_3_rs_300.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:36",
-        "titolo": "Squadra Antimafia 2 - Palermo oggi",
-        "descrizione": "$23",
-        "immagine": "https://img-guidatv.org/serie/5e78d910ce1e246c511cbb00_p_1_rs_300.jpg"
+        "ora": "04:49",
+        "fine": "05:14",
+        "titolo": "Una vita",
+        "descrizione": "Anabel accetta di sposare Aurelio, ma gli chiede del tempo per cercare di risolvere i dissapori tra i loro genitori, promettendo che se cio' si rivelasse impossibile, fuggira' con lui.",
+        "immagine": "https://img-guidatv.org/serie/5e78d81ace1e246c511cb693_p_3_rs_300.jpg"
       },
       {
-        "ora": "04:36",
-        "fine": "05:16",
-        "titolo": "Squadra Antimafia 2 - Palermo oggi",
-        "descrizione": "$25",
-        "immagine": "https://img-guidatv.org/serie/5e78d910ce1e246c511cbb00_p_1_rs_300.jpg"
-      },
-      {
-        "ora": "05:16",
+        "ora": "05:14",
         "fine": "06:00",
         "titolo": "Squadra Antimafia 2 - Palermo oggi",
-        "descrizione": "$27",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/serie/5e78d910ce1e246c511cbb00_p_1_rs_300.jpg"
       },
       {
@@ -20042,13 +20168,13 @@
       },
       {
         "ora": "13:42",
-        "fine": "13:59",
+        "fine": "14:00",
         "titolo": "Grande Fratello Vip",
         "descrizione": "L'appuntamento quotidiano con la vita nella casa del Grande Fratello.",
         "immagine": "https://img-guidatv.org/41/grande-fratello-vip/20.jpg"
       },
       {
-        "ora": "13:59",
+        "ora": "14:00",
         "fine": "14:19",
         "titolo": "Beautiful",
         "descrizione": "Alla Forrester la crisi esplode: Steffy vuole annunciare il licenziamento di Hope e stop a Hope for the Future. Eric e Katie provano a fermarla.",
@@ -20063,20 +20189,20 @@
       },
       {
         "ora": "14:45",
-        "fine": "16:06",
+        "fine": "16:07",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000201/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
-        "ora": "16:06",
-        "fine": "16:26",
+        "ora": "16:07",
+        "fine": "16:27",
         "titolo": "Tutto per la mia famiglia",
         "descrizione": "La famiglia Eren vive con poco, ma è unita e piena d'affetto. Veli e Hatice crescono con amore i loro quattro figli: Kadir, Omer, Asiye ed Emel affrontando ogni giorno difficoltà economiche e sacrifici. La loro fragile serenità viene spezzata quando Hatice, domestica presso la facoltosa famiglia degli Atakul, si reca alla villa estiva su richiesta di Nebahat e sorprende Akif Atakul e Suzan, moglie del socio di lui, Kenan, in una relazione clandestina.",
         "immagine": "https://image.tmdb.org/t/p/w300/4v7Q667oRKRqLgPEXvQ7xW79bPO.jpg"
       },
       {
-        "ora": "16:26",
+        "ora": "16:27",
         "fine": "16:45",
         "titolo": "Tutto per la mia famiglia",
         "descrizione": "La famiglia Eren vive con poco, ma è unita e piena d'affetto. Veli e Hatice crescono con amore i loro quattro figli: Kadir, Omer, Asiye ed Emel affrontando ogni giorno difficoltà economiche e sacrifici. La loro fragile serenità viene spezzata quando Hatice, domestica presso la facoltosa famiglia degli Atakul, si reca alla villa estiva su richiesta di Nebahat e sorprende Akif Atakul e Suzan, moglie del socio di lui, Kenan, in una relazione clandestina.",
@@ -20084,34 +20210,34 @@
       },
       {
         "ora": "16:45",
-        "fine": "18:42",
+        "fine": "18:41",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
-        "ora": "18:42",
-        "fine": "19:54",
+        "ora": "18:41",
+        "fine": "19:52",
         "titolo": "Caduta libera",
         "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
         "immagine": "https://img-guidatv.org/41/caduta-libera/7.jpg"
       },
       {
-        "ora": "19:54",
-        "fine": "20:00",
+        "ora": "19:52",
+        "fine": "20:01",
         "titolo": "Tg5 Prima Pagina",
         "descrizione": "Sintesi delle notizie principali del giorno.",
         "immagine": "https://img-guidatv.org/41/tg5-prima-pagina/2.jpg"
       },
       {
-        "ora": "20:00",
-        "fine": "20:38",
+        "ora": "20:01",
+        "fine": "20:40",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.\nQUESTO PROGRAMMA E' SOTTOTITOLATO.",
         "immagine": "https://img-guidatv.org/41/tg5/2.jpg"
       },
       {
-        "ora": "20:38",
+        "ora": "20:40",
         "fine": "21:20",
         "titolo": "La ruota della fortuna",
         "descrizione": "Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo!",
@@ -20119,10 +20245,10 @@
       },
       {
         "ora": "21:20",
-        "fine": "01:06",
+        "fine": "01:10",
         "titolo": "Superkaraoke",
         "descrizione": "Dal palco di Ventimiglia una nuova edizione dello show \"canterino\" condotto da Michelle Hunziker e con la partecipazione di tanti amati ospiti.",
-        "immagine": "https://img-guidatv.org/41/superkaraoke/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314743501000301/media/16/80/9b65f9a5-32bf-42d8-b94c-6329f4445e24/68efaab0-716d-4885-995b-f50ecf607ade.jpg"
       }
     ]
   },
@@ -20131,7 +20257,7 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:06",
+        "ora": "01:10",
         "fine": "01:49",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
@@ -20139,37 +20265,37 @@
       },
       {
         "ora": "01:49",
-        "fine": "03:04",
+        "fine": "02:45",
+        "titolo": "Caduta libera",
+        "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
+        "immagine": "https://img-guidatv.org/41/caduta-libera/7.jpg"
+      },
+      {
+        "ora": "02:45",
+        "fine": "04:02",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000201/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
-        "ora": "03:04",
-        "fine": "03:45",
-        "titolo": "All American",
-        "descrizione": "Due mondi completamente opposti si scontrano quando un giocatore di football del difficile quartiere di Compton viene chiamato a far parte della squadra del liceo di Beverly Hills.",
-        "immagine": "https://image.tmdb.org/t/p/w300/uL1PEgWrQfYlkVWr4uR1eGXFwRW.jpg"
+        "ora": "04:02",
+        "fine": "04:49",
+        "titolo": "Una vita",
+        "descrizione": "Marcos e Aurelio litigano pesantemente in mezzo alla strada. Soledad chiede ad Anabel di avere pazienza con Marcos, ma la giovane sembra sempre orientata verso Aurelio.",
+        "immagine": "https://img-guidatv.org/serie/5e78d81ace1e246c511cb693_p_3_rs_300.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:36",
-        "titolo": "Squadra Antimafia 2 - Palermo oggi",
-        "descrizione": "$23",
-        "immagine": "https://img-guidatv.org/serie/5e78d910ce1e246c511cbb00_p_1_rs_300.jpg"
+        "ora": "04:49",
+        "fine": "05:14",
+        "titolo": "Una vita",
+        "descrizione": "Anabel accetta di sposare Aurelio, ma gli chiede del tempo per cercare di risolvere i dissapori tra i loro genitori, promettendo che se cio' si rivelasse impossibile, fuggira' con lui.",
+        "immagine": "https://img-guidatv.org/serie/5e78d81ace1e246c511cb693_p_3_rs_300.jpg"
       },
       {
-        "ora": "04:36",
-        "fine": "05:16",
-        "titolo": "Squadra Antimafia 2 - Palermo oggi",
-        "descrizione": "$25",
-        "immagine": "https://img-guidatv.org/serie/5e78d910ce1e246c511cbb00_p_1_rs_300.jpg"
-      },
-      {
-        "ora": "05:16",
+        "ora": "05:14",
         "fine": "06:00",
         "titolo": "Squadra Antimafia 2 - Palermo oggi",
-        "descrizione": "$27",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/serie/5e78d910ce1e246c511cbb00_p_1_rs_300.jpg"
       },
       {
@@ -20272,13 +20398,13 @@
       },
       {
         "ora": "13:42",
-        "fine": "13:59",
+        "fine": "14:00",
         "titolo": "Grande Fratello Vip",
         "descrizione": "L'appuntamento quotidiano con la vita nella casa del Grande Fratello.",
         "immagine": "https://img-guidatv.org/41/grande-fratello-vip/20.jpg"
       },
       {
-        "ora": "13:59",
+        "ora": "14:00",
         "fine": "14:19",
         "titolo": "Beautiful",
         "descrizione": "Alla Forrester la crisi esplode: Steffy vuole annunciare il licenziamento di Hope e stop a Hope for the Future. Eric e Katie provano a fermarla.",
@@ -20293,20 +20419,20 @@
       },
       {
         "ora": "14:45",
-        "fine": "16:06",
+        "fine": "16:07",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000201/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
-        "ora": "16:06",
-        "fine": "16:26",
+        "ora": "16:07",
+        "fine": "16:27",
         "titolo": "Tutto per la mia famiglia",
         "descrizione": "La famiglia Eren vive con poco, ma è unita e piena d'affetto. Veli e Hatice crescono con amore i loro quattro figli: Kadir, Omer, Asiye ed Emel affrontando ogni giorno difficoltà economiche e sacrifici. La loro fragile serenità viene spezzata quando Hatice, domestica presso la facoltosa famiglia degli Atakul, si reca alla villa estiva su richiesta di Nebahat e sorprende Akif Atakul e Suzan, moglie del socio di lui, Kenan, in una relazione clandestina.",
         "immagine": "https://image.tmdb.org/t/p/w300/4v7Q667oRKRqLgPEXvQ7xW79bPO.jpg"
       },
       {
-        "ora": "16:26",
+        "ora": "16:27",
         "fine": "16:45",
         "titolo": "Tutto per la mia famiglia",
         "descrizione": "La famiglia Eren vive con poco, ma è unita e piena d'affetto. Veli e Hatice crescono con amore i loro quattro figli: Kadir, Omer, Asiye ed Emel affrontando ogni giorno difficoltà economiche e sacrifici. La loro fragile serenità viene spezzata quando Hatice, domestica presso la facoltosa famiglia degli Atakul, si reca alla villa estiva su richiesta di Nebahat e sorprende Akif Atakul e Suzan, moglie del socio di lui, Kenan, in una relazione clandestina.",
@@ -20314,34 +20440,34 @@
       },
       {
         "ora": "16:45",
-        "fine": "18:42",
+        "fine": "18:41",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
-        "ora": "18:42",
-        "fine": "19:54",
+        "ora": "18:41",
+        "fine": "19:52",
         "titolo": "Caduta libera",
         "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
         "immagine": "https://img-guidatv.org/41/caduta-libera/7.jpg"
       },
       {
-        "ora": "19:54",
-        "fine": "20:00",
+        "ora": "19:52",
+        "fine": "20:01",
         "titolo": "Tg5 Prima Pagina",
         "descrizione": "Sintesi delle notizie principali del giorno.",
         "immagine": "https://img-guidatv.org/41/tg5-prima-pagina/2.jpg"
       },
       {
-        "ora": "20:00",
-        "fine": "20:38",
+        "ora": "20:01",
+        "fine": "20:40",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.\nQUESTO PROGRAMMA E' SOTTOTITOLATO.",
         "immagine": "https://img-guidatv.org/41/tg5/2.jpg"
       },
       {
-        "ora": "20:38",
+        "ora": "20:40",
         "fine": "21:20",
         "titolo": "La ruota della fortuna",
         "descrizione": "Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo!",
@@ -20349,10 +20475,10 @@
       },
       {
         "ora": "21:20",
-        "fine": "01:06",
+        "fine": "01:10",
         "titolo": "Superkaraoke",
         "descrizione": "Dal palco di Ventimiglia una nuova edizione dello show \"canterino\" condotto da Michelle Hunziker e con la partecipazione di tanti amati ospiti.",
-        "immagine": "https://img-guidatv.org/41/superkaraoke/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314743501000301/media/16/80/9b65f9a5-32bf-42d8-b94c-6329f4445e24/68efaab0-716d-4885-995b-f50ecf607ade.jpg"
       }
     ]
   },
@@ -20908,7 +21034,7 @@
         "ora": "21:15",
         "fine": "01:00",
         "titolo": "DiMartedì",
-        "descrizione": "L'appuntamento settimanale con la politica e l'attualità. Conduce Giovanni Floris. 13a Edizione.",
+        "descrizione": "Giovanni Floris con Luca e Paolo, Massimo Giannini, Rocco Casalino, Carlo Calenda, Elsa Fornero, Massimo Gramellini, Suor Paola Arosio, Antonio Di Bella, Maurizio Landini, Antonio Padellaro, Giorgio Mottola, Sergio Rizzo, Eliana...",
         "immagine": "https://img-guidatv.org/23/dimartedi/3.jpg"
       }
     ]
@@ -21019,7 +21145,7 @@
         "ora": "21:15",
         "fine": "01:00",
         "titolo": "DiMartedì",
-        "descrizione": "L'appuntamento settimanale con la politica e l'attualità. Conduce Giovanni Floris. 13a Edizione.",
+        "descrizione": "Giovanni Floris con Luca e Paolo, Massimo Giannini, Rocco Casalino, Carlo Calenda, Elsa Fornero, Massimo Gramellini, Suor Paola Arosio, Antonio Di Bella, Maurizio Landini, Antonio Padellaro, Giorgio Mottola, Sergio Rizzo, Eliana...",
         "immagine": "https://img-guidatv.org/23/dimartedi/3.jpg"
       }
     ]
@@ -21130,7 +21256,7 @@
         "ora": "21:15",
         "fine": "01:00",
         "titolo": "DiMartedì",
-        "descrizione": "L'appuntamento settimanale con la politica e l'attualità. Conduce Giovanni Floris. 13a Edizione.",
+        "descrizione": "Giovanni Floris con Luca e Paolo, Massimo Giannini, Rocco Casalino, Carlo Calenda, Elsa Fornero, Massimo Gramellini, Suor Paola Arosio, Antonio Di Bella, Maurizio Landini, Antonio Padellaro, Giorgio Mottola, Sergio Rizzo, Eliana...",
         "immagine": "https://img-guidatv.org/23/dimartedi/3.jpg"
       }
     ]
@@ -21241,7 +21367,7 @@
         "ora": "21:15",
         "fine": "01:00",
         "titolo": "DiMartedì",
-        "descrizione": "L'appuntamento settimanale con la politica e l'attualità. Conduce Giovanni Floris. 13a Edizione.",
+        "descrizione": "Giovanni Floris con Luca e Paolo, Massimo Giannini, Rocco Casalino, Carlo Calenda, Elsa Fornero, Massimo Gramellini, Suor Paola Arosio, Antonio Di Bella, Maurizio Landini, Antonio Padellaro, Giorgio Mottola, Sergio Rizzo, Eliana...",
         "immagine": "https://img-guidatv.org/23/dimartedi/3.jpg"
       }
     ]
@@ -21352,7 +21478,7 @@
         "ora": "21:15",
         "fine": "01:00",
         "titolo": "DiMartedì",
-        "descrizione": "L'appuntamento settimanale con la politica e l'attualità. Conduce Giovanni Floris. 13a Edizione.",
+        "descrizione": "Giovanni Floris con Luca e Paolo, Massimo Giannini, Rocco Casalino, Carlo Calenda, Elsa Fornero, Massimo Gramellini, Suor Paola Arosio, Antonio Di Bella, Maurizio Landini, Antonio Padellaro, Giorgio Mottola, Sergio Rizzo, Eliana...",
         "immagine": "https://img-guidatv.org/23/dimartedi/3.jpg"
       }
     ]
@@ -23137,14 +23263,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:25",
-        "fine": "01:30",
+        "ora": "01:30",
+        "fine": "01:35",
         "titolo": "Anica - Appuntamento Al Cinema",
         "descrizione": "RUBRICA - Rubrica per la promozione della cultura cinematografica in Italia.. -  2026 ITA",
         "immagine": "https://img-guidatv.org/46/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "01:30",
+        "ora": "01:35",
         "fine": "03:10",
         "titolo": "The Hunting Party - I cacciatori",
         "descrizione": "Due giornalisti e un cameraman decidono di intraprendere un viaggio per rintracciare quello che fu il più pericoloso e crudele criminale di guerra in Bosnia. Sul tragitto però, vengono scambiati per un gruppo di agenti segreti in missione e da cacciatori diventano preda.",
@@ -23229,7 +23355,7 @@
       },
       {
         "ora": "23:05",
-        "fine": "01:25",
+        "fine": "01:30",
         "titolo": "Valerian e la città dei mille pianeti",
         "descrizione": "Nell’anno 2740, Valerian e Laureline sono Corpi Speciali incaricati dal governo di mantenere l’ordine in tutto l’universo. Seguendo gli ordini del loro comandante, Valerian e Laureline si imbarcano per una missione nella città intergalattica di Alpha, metropoli in continua espansione e dimora di migliaia di specie diverse provenienti da ogni angolo della Galassia.  Questa importante e storica città, è sotto l’attacco di un nemico sconosciuto.  Valerian e Laureline dovranno combattere contro il tempo per trovare l’origine di questa forza maligna e fermarla prima che distrugga il nostro universo.",
         "immagine": "https://img-guidatv.org/film_new/v/5e78d89fce1e246c511cb8f8/5e78d89fce1e246c511cb8f8_p_1_rs_300.jpg"
@@ -23241,14 +23367,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:25",
-        "fine": "01:30",
+        "ora": "01:30",
+        "fine": "01:35",
         "titolo": "Anica - Appuntamento Al Cinema",
         "descrizione": "RUBRICA - Rubrica per la promozione della cultura cinematografica in Italia.. -  2026 ITA",
         "immagine": "https://img-guidatv.org/46/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "01:30",
+        "ora": "01:35",
         "fine": "03:10",
         "titolo": "The Hunting Party - I cacciatori",
         "descrizione": "Due giornalisti e un cameraman decidono di intraprendere un viaggio per rintracciare quello che fu il più pericoloso e crudele criminale di guerra in Bosnia. Sul tragitto però, vengono scambiati per un gruppo di agenti segreti in missione e da cacciatori diventano preda.",
@@ -23333,7 +23459,7 @@
       },
       {
         "ora": "23:05",
-        "fine": "01:25",
+        "fine": "01:30",
         "titolo": "Valerian e la città dei mille pianeti",
         "descrizione": "Nell’anno 2740, Valerian e Laureline sono Corpi Speciali incaricati dal governo di mantenere l’ordine in tutto l’universo. Seguendo gli ordini del loro comandante, Valerian e Laureline si imbarcano per una missione nella città intergalattica di Alpha, metropoli in continua espansione e dimora di migliaia di specie diverse provenienti da ogni angolo della Galassia.  Questa importante e storica città, è sotto l’attacco di un nemico sconosciuto.  Valerian e Laureline dovranno combattere contro il tempo per trovare l’origine di questa forza maligna e fermarla prima che distrugga il nostro universo.",
         "immagine": "https://img-guidatv.org/film_new/v/5e78d89fce1e246c511cb8f8/5e78d89fce1e246c511cb8f8_p_1_rs_300.jpg"
@@ -24032,7 +24158,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000201/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -24199,7 +24325,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000201/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -25871,21 +25997,21 @@
         "fine": "15:58",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "15:58",
         "fine": "16:22",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:22",
         "fine": "16:36",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018901/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:36",
@@ -25899,7 +26025,7 @@
         "fine": "17:15",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:15",
@@ -25913,21 +26039,21 @@
         "fine": "17:38",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:38",
         "fine": "17:49",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:49",
         "fine": "18:21",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001201/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:21",
@@ -28077,9 +28203,9 @@
       {
         "ora": "03:30",
         "fine": "04:25",
-        "titolo": "Spie",
-        "descrizione": "Mario Carletti, agente segreto 523, l'uomo che nel 1943 fece arrestare Pietro Nenni; un percorso tra le carte ingiallite dell'OVRA e del casellario politico centrale condotto dallo storico Mauro Canali, autore de 'Le spie de - l regime'.",
-        "immagine": "https://image.tmdb.org/t/p/w300/jJBy1DabmJriKJ0a3Xzl79IAvus.jpg"
+        "titolo": "R.A.M.",
+        "descrizione": "Mario Carletti, agente segreto 523, l'uomo che nel 1943 fece arrestare Pietro Nenni; un percorso tra le carte ingiallite dell'OVRA e del casellario politico centrale condotto dallo storico Mauro Canali, autore de 'Le spie del regime'.",
+        "immagine": "https://img-guidatv.org/24/r-a-m-spie-mario-carletti-agente-523/0.jpg"
       },
       {
         "ora": "04:25",
@@ -28342,9 +28468,9 @@
       {
         "ora": "03:30",
         "fine": "04:25",
-        "titolo": "Spie",
-        "descrizione": "Mario Carletti, agente segreto 523, l'uomo che nel 1943 fece arrestare Pietro Nenni; un percorso tra le carte ingiallite dell'OVRA e del casellario politico centrale condotto dallo storico Mauro Canali, autore de 'Le spie de - l regime'.",
-        "immagine": "https://image.tmdb.org/t/p/w300/jJBy1DabmJriKJ0a3Xzl79IAvus.jpg"
+        "titolo": "R.A.M.",
+        "descrizione": "Mario Carletti, agente segreto 523, l'uomo che nel 1943 fece arrestare Pietro Nenni; un percorso tra le carte ingiallite dell'OVRA e del casellario politico centrale condotto dallo storico Mauro Canali, autore de 'Le spie del regime'.",
+        "immagine": "https://img-guidatv.org/24/r-a-m-spie-mario-carletti-agente-523/0.jpg"
       },
       {
         "ora": "04:25",
@@ -31070,10 +31196,17 @@
       },
       {
         "ora": "02:10",
-        "fine": "02:35",
+        "fine": "02:30",
         "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "02:30",
+        "fine": "02:35",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
       },
       {
         "ora": "02:35",
@@ -31342,10 +31475,17 @@
       },
       {
         "ora": "02:10",
-        "fine": "02:35",
+        "fine": "02:30",
         "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "02:30",
+        "fine": "02:35",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
       },
       {
         "ora": "02:35",
@@ -31713,9 +31853,9 @@
       {
         "ora": "09:10",
         "fine": "10:00",
-        "titolo": "Casa Svizzera",
-        "descrizione": "Alice Pedrazzini / Fabrizio Casati",
-        "immagine": "https://img-guidatv.org/91/casa-svizzera/5.png"
+        "titolo": "Casa Svizzera - Il nostro masterchef dell’inclusione",
+        "descrizione": "$24",
+        "immagine": "https://img-guidatv.org/91/casa-svizzera-il-nostro-masterchef-dell-inclusione/0.jpg"
       },
       {
         "ora": "10:00",
@@ -31943,9 +32083,9 @@
       {
         "ora": "09:10",
         "fine": "10:00",
-        "titolo": "Casa Svizzera",
-        "descrizione": "Alice Pedrazzini / Fabrizio Casati",
-        "immagine": "https://img-guidatv.org/91/casa-svizzera/5.png"
+        "titolo": "Casa Svizzera - Il nostro masterchef dell’inclusione",
+        "descrizione": "$24",
+        "immagine": "https://img-guidatv.org/91/casa-svizzera-il-nostro-masterchef-dell-inclusione/0.jpg"
       },
       {
         "ora": "10:00",
