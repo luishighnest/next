@@ -13051,12 +13051,13 @@ body:has(.sky-app) {
 }
 
 /* ============================================================
-   EVENT SOURCES WIDGET (compacto per eventi con molte sorgenti)
+   EVENT SOURCES WIDGET (dropdown a discesa per eventi con molte sorgenti)
    ============================================================ */
 .event-sources-wrapper {
     max-width: 60%;
-    min-width: 240px;
+    min-width: 260px;
     flex-shrink: 1;
+    position: relative;
 }
 
 .event-source-btn {
@@ -13064,109 +13065,53 @@ body:has(.sky-app) {
 }
 
 .event-sources-widget {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    min-width: 0;
+    position: relative;
     width: 100%;
-}
-
-.event-sources-widget-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.event-sources-widget-label {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.45);
-}
-
-.event-sources-widget-count {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 20px;
-    height: 18px;
-    padding: 0 6px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    font-size: 0.62rem;
-    font-weight: 800;
-    color: #ffffff;
-}
-
-.event-sources-widget-current {
-    font-size: 0.72rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.55);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 55%;
-    text-align: right;
-}
-
-/* Pill visibili quando le sorgenti sono poche (<=4) */
-.event-sources-widget-pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
     min-width: 0;
 }
 
-/* Drawer compatto quando le sorgenti sono tante */
-.event-sources-widget-drawer {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    min-width: 0;
-}
-
-.event-sources-widget-toggle {
+/* Toggle principale (sempre visibile) */
+.event-sources-dropdown-toggle {
     display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
-    padding: 8px 12px;
+    padding: 9px 14px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 10px;
-    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    color: rgba(255, 255, 255, 0.85);
     font-family: 'Outfit', sans-serif;
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.event-sources-widget-toggle:hover {
+.event-sources-dropdown-toggle:hover {
     background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.28);
 }
 
-.event-sources-widget-toggle-icon {
+.event-sources-dropdown-toggle.is-open {
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.event-sources-dropdown-toggle-icon {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 26px;
-    height: 26px;
+    width: 28px;
+    height: 28px;
     border-radius: 8px;
     background: rgba(0, 213, 134, 0.15);
     color: #00d586;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     flex-shrink: 0;
 }
 
-.event-sources-widget-toggle-label {
+.event-sources-dropdown-toggle-label {
     flex: 1;
     min-width: 0;
     white-space: nowrap;
@@ -13175,109 +13120,151 @@ body:has(.sky-app) {
     text-align: left;
 }
 
-.event-sources-widget-arrow {
-    font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.4);
-    transition: transform 0.25s ease;
-}
-
-.event-sources-widget-arrow.is-open {
-    transform: rotate(180deg);
-}
-
-/* Scroller orizzontale con frecce per molte sorgenti */
-.event-sources-widget-scroller {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    min-width: 0;
-}
-
-.event-sources-widget-nav {
+.event-sources-dropdown-count {
     flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.6rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.event-sources-widget-nav:hover {
-    background: rgba(255, 255, 255, 0.14);
+    min-width: 22px;
+    height: 20px;
+    padding: 0 7px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    font-size: 0.66rem;
+    font-weight: 800;
     color: #ffffff;
 }
 
-.event-sources-widget-track {
+.event-sources-dropdown-arrow {
+    font-size: 0.72rem;
+    color: rgba(255, 255, 255, 0.45);
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+}
+
+.event-sources-dropdown-arrow.is-open {
+    transform: rotate(180deg);
+}
+
+/* Pannello che scende verso il basso (portal fixed) */
+.event-sources-dropdown {
+    position: fixed;
+    z-index: 9999;
+    background: rgba(14, 18, 28, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 14px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    max-height: 320px;
+    overflow: hidden;
     display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    padding: 3px 1px;
-    min-width: 0;
-    flex: 1;
+    flex-direction: column;
 }
 
-.event-sources-widget-track::-webkit-scrollbar {
-    display: none;
+.event-sources-dropdown.is-open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
-.event-sources-chip {
+.event-sources-dropdown.open-up {
+    transform: translateY(6px);
+}
+
+.event-sources-dropdown.open-up.is-open {
+    transform: translateY(0);
+}
+
+.event-sources-dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 8px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.event-sources-dropdown-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.event-sources-dropdown-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+}
+
+.event-sources-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 9px 12px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.78);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    text-align: left;
+}
+
+.event-sources-dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+}
+
+.event-sources-dropdown-item.active {
+    background: rgba(0, 213, 134, 0.12);
+    border-color: rgba(0, 213, 134, 0.35);
+    color: #ffffff;
+}
+
+.event-sources-dropdown-item-icon {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
-    padding: 6px 13px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 999px;
-    color: rgba(255, 255, 255, 0.75);
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    user-select: none;
-    white-space: nowrap;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #00d586;
+    font-size: 0.68rem;
     flex-shrink: 0;
 }
 
-.event-sources-chip:hover {
-    color: #ffffff;
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-1px);
+.event-sources-dropdown-item.active .event-sources-dropdown-item-icon {
+    background: rgba(0, 213, 134, 0.2);
 }
 
-.event-sources-chip.active {
-    background: #ffffff !important;
-    color: #000000 !important;
-    border-color: #ffffff !important;
-    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);
+.event-sources-dropdown-item-name {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.event-sources-chip i {
-    font-size: 0.7rem;
+.event-sources-dropdown-item-check {
     color: #00d586;
+    font-size: 0.75rem;
+    flex-shrink: 0;
 }
 
-.event-sources-chip.active i {
-    color: #000000 !important;
-}
-
-/* Variante mobile: full-width, drawer sotto il deck */
+/* Variante mobile: full-width, dropdown sotto il deck */
 .event-sources-widget.is-mobile {
     width: 100%;
-}
-
-.event-sources-widget.is-mobile .event-sources-widget-track {
-    flex-wrap: nowrap;
 }
 
 /* Responsive: su schermi stretti il widget non deve invadere il deck */

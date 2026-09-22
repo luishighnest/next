@@ -76,10 +76,10 @@
   },
   {
     "route": "/eventi/[slug]",
-    "firstLoadUncompressedJsBytes": 553504,
+    "firstLoadUncompressedJsBytes": 553835,
     "firstLoadChunkPaths": [
       ".next\\static\\chunks\\1he8jgo6h0-q0.js",
-      ".next\\static\\chunks\\196dc4x-i4oy0.js",
+      ".next\\static\\chunks\\39ym4m5a1ar6k.js",
       ".next\\static\\chunks\\0vhq-ci628uqi.js",
       ".next\\static\\chunks\\310vm2bl3xxpt.js",
       ".next\\static\\chunks\\2mmpezlrfmbu5.js",
