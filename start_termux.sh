@@ -5,16 +5,19 @@ cd "$DIR"
 termux-wake-lock 2>/dev/null
 
 while true; do
-    echo "[1/3] Pulizia vecchi processi..."
+    echo "[0/4] Sincronizzazione con GitHub..."
+    git fetch origin main --quiet 2>/dev/null && git reset --hard origin/main --quiet 2>/dev/null
+
+    echo "[1/4] Pulizia vecchi processi..."
     killall -9 node cloudflared 2>/dev/null
     sleep 1
 
-    echo "[2/3] Avvio server Next.js (production mode)..."
+    echo "[2/4] Avvio server Next.js (production mode)..."
     npm run start -- -H 0.0.0.0 -p 3000 > /dev/null 2>&1 &
     PID_NEXT=$!
     sleep 4
 
-    echo "[3/3] Avvio Cloudflare Tunnel..."
+    echo "[3/4] Avvio Cloudflare Tunnel..."
     rm -f tunnel.log
     cloudflared tunnel --url http://127.0.0.1:3000 --logfile tunnel.log > /dev/null 2>&1 &
     PID_TUNNEL=$!
