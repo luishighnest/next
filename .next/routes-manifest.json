@@ -101,6 +101,12 @@
       "namedRegex": "^/api/eventi(?:/)?$"
     },
     {
+      "page": "/api/img",
+      "regex": "^/api/img(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/img(?:/)?$"
+    },
+    {
       "page": "/api/m3u",
       "regex": "^/api/m3u(?:/)?$",
       "routeKeys": {},

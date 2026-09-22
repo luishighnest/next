@@ -4,6 +4,7 @@
   "/api/canali/route": "/api/canali",
   "/api/cron/guida/route": "/api/cron/guida",
   "/api/eventi/route": "/api/eventi",
+  "/api/img/route": "/api/img",
   "/api/m3u/route": "/api/m3u",
   "/api/proxy/route": "/api/proxy",
   "/api/richiedi/route": "/api/richiedi",

@@ -4,9 +4,19 @@ import Link from "next/link";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import ChannelCard from "@/components/ChannelCard";
 import EventSources from "@/components/EventSources";
+import InlineEventPlayer from "@/components/InlineEventPlayer";
 import { getCurrentProgramInfo, getChannelLogoUrl } from "@/lib/epg";
 import { getNormalizedSources } from "@/lib/sources";
 import { getChannelSlug, matchSlug } from "@/lib/slug";
+
+function isInlinePlayable(source) {
+    if (!source || !source.url) return false;
+    const u = source.url.toLowerCase().split("?")[0];
+    if (u.includes(".mpd") || u.includes("/dash/")) return false;
+    if (u.includes(".m3u8") || u.includes(".m3u") || u.includes("load-playlist") || u.includes("/hls/") || u.includes("/playlist/")) return true;
+    if (source.name && /m3u|hls|playlist|stream/i.test(source.name)) return true;
+    return false;
+}
 
 export default function MobileEventoView({
     channel,
@@ -98,54 +108,65 @@ export default function MobileEventoView({
                         </div>
                     ) : (
                         <>
-                            {Boolean(transPoster || coverImg) && !iframeLoaded && (
-                                <div
-                                    style={{
-                                        position: "absolute",
-                                        inset: 0,
-                                        zIndex: 1,
-                                        pointerEvents: "none",
-                                        overflow: "hidden",
-                                        transition: "opacity 0.4s ease"
-                                    }}
-                                >
-                                    <img
-                                        src={transPoster || coverImg}
-                                        alt=""
+                            {isInlinePlayable(selectedSource) ? (
+                                <InlineEventPlayer
+                                    key={selectedSource.url}
+                                    source={selectedSource}
+                                    title={channel?.title || ""}
+                                    poster={transPoster || coverImg}
+                                />
+                            ) : (
+                                <>
+                                    {Boolean(transPoster || coverImg) && !iframeLoaded && (
+                                        <div
+                                            style={{
+                                                position: "absolute",
+                                                inset: 0,
+                                                zIndex: 1,
+                                                pointerEvents: "none",
+                                                overflow: "hidden",
+                                                transition: "opacity 0.4s ease"
+                                            }}
+                                        >
+                                            <img
+                                                src={transPoster || coverImg}
+                                                alt=""
+                                                style={{
+                                                    width: "100%",
+                                                    height: "100%",
+                                                    objectFit: "cover",
+                                                    filter: "brightness(0.5) contrast(1.05)"
+                                                }}
+                                            />
+                                            <div
+                                                style={{
+                                                    position: "absolute",
+                                                    top: "50%",
+                                                    left: "50%",
+                                                    transform: "translate(-50%, -50%)"
+                                                }}
+                                            >
+                                                <div className="sky-spinner" style={{ width: "36px", height: "36px", borderWidth: "3px" }} />
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    <iframe
+                                        id="mobile-event-iframe"
+                                        src={getIframeUrl()}
+                                        allow="autoplay; encrypted-media; fullscreen"
+                                        allowFullScreen
+                                        title={channel?.title || "Event Player"}
+                                        onLoad={() => {
+                                            setTimeout(() => setIframeLoaded(true), 250);
+                                        }}
                                         style={{
-                                            width: "100%",
-                                            height: "100%",
-                                            objectFit: "cover",
-                                            filter: "brightness(0.5) contrast(1.05)"
+                                            opacity: iframeLoaded ? 1 : 0.85,
+                                            transition: "opacity 0.4s ease"
                                         }}
                                     />
-                                    <div
-                                        style={{
-                                            position: "absolute",
-                                            top: "50%",
-                                            left: "50%",
-                                            transform: "translate(-50%, -50%)"
-                                        }}
-                                    >
-                                        <div className="sky-spinner" style={{ width: "36px", height: "36px", borderWidth: "3px" }} />
-                                    </div>
-                                </div>
+                                </>
                             )}
-
-                            <iframe
-                                id="mobile-event-iframe"
-                                src={getIframeUrl()}
-                                allow="autoplay; encrypted-media; fullscreen"
-                                allowFullScreen
-                                title={channel?.title || "Event Player"}
-                                onLoad={() => {
-                                    setTimeout(() => setIframeLoaded(true), 250);
-                                }}
-                                style={{
-                                    opacity: iframeLoaded ? 1 : 0.85,
-                                    transition: "opacity 0.4s ease"
-                                }}
-                            />
                         </>
                     )}
                 </div>
