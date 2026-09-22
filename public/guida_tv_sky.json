@@ -632,10 +632,17 @@
       },
       {
         "ora": "01:15",
-        "fine": "05:00",
+        "fine": "03:10",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+      },
+      {
+        "ora": "03:10",
+        "fine": "05:00",
+        "titolo": "Programmazione da definire",
+        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
+        "immagine": ""
       },
       {
         "ora": "05:00",
@@ -646,23 +653,30 @@
       },
       {
         "ora": "06:00",
-        "fine": "16:30",
+        "fine": "16:00",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:15",
+        "ora": "16:00",
+        "fine": "18:00",
+        "titolo": "Finale",
+        "descrizione": "... Paolo. - WTA 250 San Paolo",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+      },
+      {
+        "ora": "18:00",
+        "fine": "18:45",
         "titolo": "Sky Tennis Club",
         "descrizione": "Le interviste e le analisi approfondite degli esperti del mondo del tennis.",
         "immagine": "https://img-guidatv.org/11237/sky-tennis-club/6.jpg"
       },
       {
-        "ora": "17:15",
+        "ora": "18:45",
         "fine": "20:30",
-        "titolo": "Tennis: ATP & WTA",
-        "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
+        "titolo": "Finale",
+        "descrizione": "WTA 250 San Paolo",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
@@ -674,9 +688,16 @@
       },
       {
         "ora": "21:15",
-        "fine": "00:30",
+        "fine": "22:45",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+      },
+      {
+        "ora": "22:45",
+        "fine": "00:30",
+        "titolo": "Finale",
+        "descrizione": "WTA 250 San Paolo",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       }
     ]
@@ -1308,20 +1329,20 @@
       },
       {
         "ora": "15:50",
-        "fine": "17:55",
+        "fine": "18:30",
         "titolo": "Ottavi di finale: Belgio - Repubblica Ceca",
         "descrizione": "... Repubblica Ceca Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ed387bb4-84d1-427e-98f9-be2cea28701a/background/600"
       },
       {
-        "ora": "17:55",
-        "fine": "18:30",
+        "ora": "18:30",
+        "fine": "18:45",
         "titolo": "The Boat Show",
         "descrizione": "Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1220f0e7-c7cd-4104-a98e-07f2ac826cff/background/600"
       },
       {
-        "ora": "18:30",
+        "ora": "18:45",
         "fine": "19:00",
         "titolo": "Icarus Ultra",
         "descrizione": "... Icarus Ultra. - Avventure, sfide, storie, imprese e tante curiosita' dal mondo degli sport all'aperto: dopo 15 anni alla ricerca del limite, Icarus si spinge oltre per trasformarsi in Icarus Ultra.",
@@ -2033,7 +2054,7 @@
         "ora": "23:00",
         "fine": "23:45",
         "titolo": "Stories",
-        "descrizione": "Un ciclo di interviste dedicate ai protagonisti del mondo dello spettacolo e dell'intrattenimento. Gli ospiti in studio rispondono a domande sulla propria carriera ed esperienza di vita.",
+        "descrizione": "Tra i protagonisti di “Physical Italia”, Federica Pellegrini si racconta: l’infanzia, l’adolescenza, la prima Olimpiade, il primo passo con il marito, la maternità e tanto altro",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0b4a66b9-84f6-4eb0-8343-962a994cf190/background/600"
       },
       {
@@ -2533,8 +2554,8 @@
       {
         "ora": "02:05",
         "fine": "04:10",
-        "titolo": "Atletica Leggera: Camp. Mondiali Su Stra",
-        "descrizione": "Atletica Leggera: Camp. Mondiali su Strada Copenaghen 2026 2a giornata",
+        "titolo": "Atletica - Campionati Del Mondo Di Corsa Su Strada 2026 - 2a Giornata: Mezza Maratona Donne E Uomini",
+        "descrizione": "Seconda e ultima giornata dei Mondiali di corsa su strada 2026 a Copenaghen, con le prove di mezza maratona femminile e maschile che assegnano gli ultimi titoli iridati della manifestazione.",
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
       },
       {
@@ -2547,8 +2568,8 @@
       {
         "ora": "05:10",
         "fine": "06:00",
-        "titolo": "Automobilismo: Campionato Italiano Sparco Rally Del Lazio - Gara 2",
-        "descrizione": "Automobilismo: Campionato Italiano Sparco Rally del Lazio - gara 2",
+        "titolo": "Campionato Italiano Assoluto Rally 2026 - Rally Del Lazio Cassino (Gara 2)",
+        "descrizione": "Seconda giornata di gara al Rally del Lazio Cassino 2026, sesto appuntamento del Campionato Italiano Assoluto Rally Sparco.",
         "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
@@ -2589,9 +2610,9 @@
       {
         "ora": "14:30",
         "fine": "14:55",
-        "titolo": "Memory - Rai Sport",
-        "descrizione": "Memory",
-        "immagine": "https://img-guidatv.org/32/memory/0.jpg"
+        "titolo": "European Aquatics Championships Parigi 2026 - Le Medaglie Del Nuoto",
+        "descrizione": "Tutte le medaglie vinte dall'Italia nel nuoto agli European Aquatics Championships di Pargi",
+        "immagine": "https://img-guidatv.org/32/european-aquatics-championships-parigi-2026-le-medaglie-del-nuoto/0.jpg"
       },
       {
         "ora": "14:55",
@@ -2624,16 +2645,16 @@
       {
         "ora": "21:50",
         "fine": "23:45",
-        "titolo": "Calcio: Camp. Italiano Serie C 2026/27 Inter U23 - Foggia",
-        "descrizione": "Calcio: Camp. Italiano Serie C 2026/27 Inter U23 - Foggia",
-        "immagine": "https://img-guidatv.org/32/calcio-camp-italiano-serie-c/6.png"
+        "titolo": "Calcio: Serie C 2026-2027 - 6a Giornata: Inter U23 - Foggia (REPLICA)",
+        "descrizione": "Le partite della Lega Pro, con i tre gironi del campionato italiano di calcio e della Coppa Italia di Serie C.",
+        "immagine": "https://img-guidatv.org/32/calcio-serie-c/7.jpg"
       },
       {
         "ora": "23:45",
         "fine": "02:05",
-        "titolo": "Pallavolo Maschile: Camp. Europei Italia 2026 Eventuale Ottavo Di Finale (Con Italia)",
-        "descrizione": "Pallavolo Maschile: Camp. Europei Italia 2026 eventuale Ottavo di Finale (con Italia)",
-        "immagine": "https://img-guidatv.org/32/pallavolo-maschile/0.jpg"
+        "titolo": "Europei Di Maschili Pallavolo 2026 - Ottavi: Italia - Danimarca",
+        "descrizione": "Agli ottavi degli Europei maschili di pallavolo 2026, l'Italia di Fefè De Giorgi affronta la Danimarca in una sfida decisiva per l'accesso ai quarti di finale.",
+        "immagine": "https://img-guidatv.org/32/europei-di-maschili-pallavolo-2026-ottavi-italia-danimarca/0.jpg"
       }
     ]
   },
@@ -2644,8 +2665,8 @@
       {
         "ora": "02:05",
         "fine": "04:10",
-        "titolo": "Atletica Leggera: Camp. Mondiali Su Stra",
-        "descrizione": "Atletica Leggera: Camp. Mondiali su Strada Copenaghen 2026 2a giornata",
+        "titolo": "Atletica - Campionati Del Mondo Di Corsa Su Strada 2026 - 2a Giornata: Mezza Maratona Donne E Uomini",
+        "descrizione": "Seconda e ultima giornata dei Mondiali di corsa su strada 2026 a Copenaghen, con le prove di mezza maratona femminile e maschile che assegnano gli ultimi titoli iridati della manifestazione.",
         "immagine": "https://img-guidatv.org/32/atletica/6.jpg"
       },
       {
@@ -2658,8 +2679,8 @@
       {
         "ora": "05:10",
         "fine": "06:00",
-        "titolo": "Automobilismo: Campionato Italiano Sparco Rally Del Lazio - Gara 2",
-        "descrizione": "Automobilismo: Campionato Italiano Sparco Rally del Lazio - gara 2",
+        "titolo": "Campionato Italiano Assoluto Rally 2026 - Rally Del Lazio Cassino (Gara 2)",
+        "descrizione": "Seconda giornata di gara al Rally del Lazio Cassino 2026, sesto appuntamento del Campionato Italiano Assoluto Rally Sparco.",
         "immagine": "https://img-guidatv.org/immagini/rally.jpeg"
       },
       {
@@ -2700,9 +2721,9 @@
       {
         "ora": "14:30",
         "fine": "14:55",
-        "titolo": "Memory - Rai Sport",
-        "descrizione": "Memory",
-        "immagine": "https://img-guidatv.org/32/memory/0.jpg"
+        "titolo": "European Aquatics Championships Parigi 2026 - Le Medaglie Del Nuoto",
+        "descrizione": "Tutte le medaglie vinte dall'Italia nel nuoto agli European Aquatics Championships di Pargi",
+        "immagine": "https://img-guidatv.org/32/european-aquatics-championships-parigi-2026-le-medaglie-del-nuoto/0.jpg"
       },
       {
         "ora": "14:55",
@@ -2735,16 +2756,16 @@
       {
         "ora": "21:50",
         "fine": "23:45",
-        "titolo": "Calcio: Camp. Italiano Serie C 2026/27 Inter U23 - Foggia",
-        "descrizione": "Calcio: Camp. Italiano Serie C 2026/27 Inter U23 - Foggia",
-        "immagine": "https://img-guidatv.org/32/calcio-camp-italiano-serie-c/6.png"
+        "titolo": "Calcio: Serie C 2026-2027 - 6a Giornata: Inter U23 - Foggia (REPLICA)",
+        "descrizione": "Le partite della Lega Pro, con i tre gironi del campionato italiano di calcio e della Coppa Italia di Serie C.",
+        "immagine": "https://img-guidatv.org/32/calcio-serie-c/7.jpg"
       },
       {
         "ora": "23:45",
         "fine": "02:05",
-        "titolo": "Pallavolo Maschile: Camp. Europei Italia 2026 Eventuale Ottavo Di Finale (Con Italia)",
-        "descrizione": "Pallavolo Maschile: Camp. Europei Italia 2026 eventuale Ottavo di Finale (con Italia)",
-        "immagine": "https://img-guidatv.org/32/pallavolo-maschile/0.jpg"
+        "titolo": "Europei Di Maschili Pallavolo 2026 - Ottavi: Italia - Danimarca",
+        "descrizione": "Agli ottavi degli Europei maschili di pallavolo 2026, l'Italia di Fefè De Giorgi affronta la Danimarca in una sfida decisiva per l'accesso ai quarti di finale.",
+        "immagine": "https://img-guidatv.org/32/europei-di-maschili-pallavolo-2026-ottavi-italia-danimarca/0.jpg"
       }
     ]
   },
@@ -2768,23 +2789,16 @@
       },
       {
         "ora": "04:05",
-        "fine": "04:30",
+        "fine": "04:35",
         "titolo": "Borghese al dente",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4f24493f-a89f-4e8a-89b5-19b07d0b5651/background/600"
       },
       {
-        "ora": "04:30",
-        "fine": "05:15",
+        "ora": "04:35",
+        "fine": "05:20",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano la loro prima Mystery Box, nella quale ricevono una loro foto d'infanzia. Hanno quindi il compito di creare un piatto degno di un ristorante e che metta in risalto i cibi preferiti della loro giovinezza.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "05:15",
-        "fine": "06:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef hanno il compito di creare un piatto straordinario, ponendo al centro dell'attenzione qualcosa di particolarmente gustoso. I concorrenti devono infatti utilizzare una varietà di ingredienti stagionati e fermentati.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -2956,23 +2970,16 @@
       },
       {
         "ora": "05:05",
-        "fine": "05:30",
+        "fine": "05:35",
         "titolo": "Borghese al dente",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4f24493f-a89f-4e8a-89b5-19b07d0b5651/background/600"
       },
       {
-        "ora": "05:30",
-        "fine": "06:15",
+        "ora": "05:35",
+        "fine": "06:20",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano la loro prima Mystery Box, nella quale ricevono una loro foto d'infanzia. Hanno quindi il compito di creare un piatto degno di un ristorante e che metta in risalto i cibi preferiti della loro giovinezza.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "06:15",
-        "fine": "07:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef hanno il compito di creare un piatto straordinario, ponendo al centro dell'attenzione qualcosa di particolarmente gustoso. I concorrenti devono infatti utilizzare una varietà di ingredienti stagionati e fermentati.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -3137,23 +3144,16 @@
       },
       {
         "ora": "05:05",
-        "fine": "05:30",
+        "fine": "05:35",
         "titolo": "Borghese al dente",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4f24493f-a89f-4e8a-89b5-19b07d0b5651/background/600"
       },
       {
-        "ora": "05:30",
-        "fine": "06:15",
+        "ora": "05:35",
+        "fine": "06:20",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef affrontano la loro prima Mystery Box, nella quale ricevono una loro foto d'infanzia. Hanno quindi il compito di creare un piatto degno di un ristorante e che metta in risalto i cibi preferiti della loro giovinezza.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
-      },
-      {
-        "ora": "06:15",
-        "fine": "07:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef hanno il compito di creare un piatto straordinario, ponendo al centro dell'attenzione qualcosa di particolarmente gustoso. I concorrenti devono infatti utilizzare una varietà di ingredienti stagionati e fermentati.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -3318,20 +3318,20 @@
       },
       {
         "ora": "02:40",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "Speciale: Nord Sud Ovest Est, Extended",
         "descrizione": "Un racconto corale dietro le quinte della serie. Attori, registi e capi reparto svelano il set, le scelte creative e il successo del progetto (Versione Extended).",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cdc3e5c5-4722-460b-bdb1-503aaa92a9e6/background/600"
       },
       {
-        "ora": "03:00",
-        "fine": "03:45",
+        "ora": "03:05",
+        "fine": "03:50",
         "titolo": "Chicago P.D.",
         "descrizione": "La serie racconta le vicende del Distretto 21 del Dipartimento di Polizia di Chicago, composto da due gruppi differenti: l'Unità di pattuglia, che vigila le pericolose strade della città, e l'Unità di Intelligence, che combatte il crimine organizzato, il traffico di droga e si occupa dei casi di omicidio più complessi.",
         "immagine": "https://image.tmdb.org/t/p/w300/afq2obuEF6h1PTmK4Ayl3ePZuU7.jpg"
       },
       {
-        "ora": "03:45",
+        "ora": "03:50",
         "fine": "04:30",
         "titolo": "Chicago P.D.",
         "descrizione": "La serie racconta le vicende del Distretto 21 del Dipartimento di Polizia di Chicago, composto da due gruppi differenti: l'Unità di pattuglia, che vigila le pericolose strade della città, e l'Unità di Intelligence, che combatte il crimine organizzato, il traffico di droga e si occupa dei casi di omicidio più complessi.",
@@ -3778,7 +3778,7 @@
       },
       {
         "ora": "04:30",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Capitaine Marleau",
         "descrizione": "Capitaine Marleau ruota intorno a una investigatrice eccezionale. È davvero brillante e non ne sbaglia una. Sembra essere una professionista perfetta, ma siccome la perfezione non esiste, ecco cosa ha di strano. Il Capitano Marleau (interpretata da Corinne Masiero) ha aspetto a dir poco bizzarro. I suoi modi sono eccentrici e rischiano di mettere in discussione la sua bravura che poi dimostra puntualmente sul campo. Il tratto caratteristico del suo look è un berretto da cacciatore che non manca mai e è a dir poco anacronistico.",
         "immagine": "https://img-guidatv.org/serie/5ed92ccc1cc40417c605775a_p_5_rs_300.jpg"
@@ -4363,17 +4363,17 @@
       },
       {
         "ora": "03:20",
-        "fine": "04:00",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
+        "fine": "03:50",
+        "titolo": "Court Cam: processi in diretta",
+        "descrizione": "S3 Ep26 di 32 Una deposizione…intima - Un assassino crolla, un giudice ubriaco si mette alla guida e ne paga lo scotto, una deposizione viene interrotta da una coppia che condivide un momento.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/31b6bf25-702b-4b10-bee6-7b4e272b7374/background/600"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
-        "titolo": "Court Cam: processi in diretta",
-        "descrizione": "S3 Ep25 di 32 In lotta per la vita - Una pugile professionista sopravvive all'incontro della vita, un assassino alle prese con uno sfogo scioccante, un giudice rapper fa cadere microfono e martelletto.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/fca901b2-95a1-424a-b73b-ada8cc2dd0e7/background/600"
+        "ora": "03:50",
+        "fine": "04:55",
+        "titolo": "Omicidi in Paradiso: Massacro a Bali",
+        "descrizione": "Omicidi in Paradiso: Massacro a Bali - Durante una vacanza di lusso a Bali, una figlia e il suo fidanzato ordiscono il brutale omicidio della madre, Sheila von Wiese-Mack.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/61997ee6-1a87-4b69-beb2-5e6426fb7e8a/background/600"
       },
       {
         "ora": "04:25",
@@ -4383,11 +4383,18 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/52494f0c-150e-4862-a9c8-dfd53ec10366/background/600"
       },
       {
-        "ora": "04:50",
+        "ora": "04:55",
+        "fine": "05:25",
+        "titolo": "Online - Connessioni Pericolose",
+        "descrizione": "Ep3 di 7 Bluewhale: la verita' - 'Bluewhale' e' la sfida social che incita gli adolescenti ad affrontare 50 prove in 50 giorni, fino al suicidio, tutto sistematicamente documentato. Il fenomeno ha origine in Russia.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/bf11e8cf-2da3-410d-85df-6829a319d63b/background/600"
+      },
+      {
+        "ora": "05:25",
         "fine": "06:00",
-        "titolo": "Omicidi in Paradiso: Massacro a Bali",
-        "descrizione": "Omicidi in Paradiso: Massacro a Bali - Durante una vacanza di lusso a Bali, una figlia e il suo fidanzato ordiscono il brutale omicidio della madre, Sheila von Wiese-Mack.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/61997ee6-1a87-4b69-beb2-5e6426fb7e8a/background/600"
+        "titolo": "Online - Connessioni Pericolose",
+        "descrizione": "Ep1 di 7 A un passo dalla fine - Trento: una madre riceve un messaggio inquietante dalla figlia. La giovane ha tentato il suicidio. La donna si rivolge alla PolPost per capire cosa ha spinto la figlia a commettere questo gesto.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/17931157-f658-4c7f-97f8-649f7a2306d4/background/600"
       },
       {
         "ora": "06:00",
@@ -5384,7 +5391,7 @@
         "ora": "21:00",
         "fine": "21:45",
         "titolo": "Stories",
-        "descrizione": "Un ciclo di interviste dedicate ai protagonisti del mondo dello spettacolo e dell'intrattenimento. Gli ospiti in studio rispondono a domande sulla propria carriera ed esperienza di vita.",
+        "descrizione": "Tra i protagonisti di “Physical Italia”, Federica Pellegrini si racconta: l’infanzia, l’adolescenza, la prima Olimpiade, il primo passo con il marito, la maternità e tanto altro",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0b4a66b9-84f6-4eb0-8343-962a994cf190/background/600"
       },
       {
@@ -5824,7 +5831,7 @@
         "ora": "21:00",
         "fine": "21:45",
         "titolo": "Stories",
-        "descrizione": "Un ciclo di interviste dedicate ai protagonisti del mondo dello spettacolo e dell'intrattenimento. Gli ospiti in studio rispondono a domande sulla propria carriera ed esperienza di vita.",
+        "descrizione": "Tra i protagonisti di “Physical Italia”, Federica Pellegrini si racconta: l’infanzia, l’adolescenza, la prima Olimpiade, il primo passo con il marito, la maternità e tanto altro",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0b4a66b9-84f6-4eb0-8343-962a994cf190/background/600"
       },
       {
@@ -7530,13 +7537,13 @@
     "programmi": [
       {
         "ora": "01:35",
-        "fine": "03:05",
+        "fine": "03:10",
         "titolo": "Il ritorno di Casanova",
         "descrizione": "Il film narra la storia di un affermato regista italiano che, restio ad accettare lo scorrere del tempo, decide di raccontare il Casanova nel suo ultimo film. Durante le riprese si accorgerà di essere molto simile al personaggio che mette in scena, anche più di quanto potesse immaginare.",
         "immagine": "https://image.tmdb.org/t/p/w300/c4Jo4vgLGK5pByuKHzAtVxmdvMT.jpg"
       },
       {
-        "ora": "03:05",
+        "ora": "03:10",
         "fine": "04:55",
         "titolo": "Monster",
         "descrizione": "La storia vera di Aileen Wuornos, una prostituta condannata a morte per sei omicidi e giustiziata in Florida nel 2002. La donna, si dichiarò colpevole, appellandosi però alla legittima difesa. I media americani la definirono \"il primo serial killer donna\" e la etichettarono come \"mostro\". Premessa: Charlize Theron merita, a meno di soprese clamorose, il premio quale migliore attrice della Berlinale. Perchè la sua è senz'altro una performance fisica che le deve essere costata non poco anche sul piano psicologico ma è soprattutto un esercizio acrobatico senza rete. Perché sarebbe bastato un nulla a lei, alla regista esordiente Patty Jenkins e alla co-star Christina Ricci per trasformare le vicende reali di questa coppia lesbica parzialmente on the road nelle gesta di due novelle Thelma e Louise del crimine.",
@@ -8369,13 +8376,13 @@
     "programmi": [
       {
         "ora": "01:35",
-        "fine": "03:05",
+        "fine": "03:10",
         "titolo": "Il ritorno di Casanova",
         "descrizione": "Il film narra la storia di un affermato regista italiano che, restio ad accettare lo scorrere del tempo, decide di raccontare il Casanova nel suo ultimo film. Durante le riprese si accorgerà di essere molto simile al personaggio che mette in scena, anche più di quanto potesse immaginare.",
         "immagine": "https://image.tmdb.org/t/p/w300/c4Jo4vgLGK5pByuKHzAtVxmdvMT.jpg"
       },
       {
-        "ora": "03:05",
+        "ora": "03:10",
         "fine": "04:55",
         "titolo": "Monster",
         "descrizione": "La storia vera di Aileen Wuornos, una prostituta condannata a morte per sei omicidi e giustiziata in Florida nel 2002. La donna, si dichiarò colpevole, appellandosi però alla legittima difesa. I media americani la definirono \"il primo serial killer donna\" e la etichettarono come \"mostro\". Premessa: Charlize Theron merita, a meno di soprese clamorose, il premio quale migliore attrice della Berlinale. Perchè la sua è senz'altro una performance fisica che le deve essere costata non poco anche sul piano psicologico ma è soprattutto un esercizio acrobatico senza rete. Perché sarebbe bastato un nulla a lei, alla regista esordiente Patty Jenkins e alla co-star Christina Ricci per trasformare le vicende reali di questa coppia lesbica parzialmente on the road nelle gesta di due novelle Thelma e Louise del crimine.",
@@ -18287,27 +18294,27 @@
       },
       {
         "ora": "00:55",
-        "fine": "02:50",
+        "fine": "01:55",
+        "titolo": "Sottovoce E Dintorni",
+        "descrizione": "Gigi Marzullo ripercorre l'itinerario umano, artistico e professionale di personaggi dello sport, dello spettacolo o della cultura.",
+        "immagine": "https://img-guidatv.org/1/sottovoce/6.jpg"
+      },
+      {
+        "ora": "01:55",
+        "fine": "03:10",
         "titolo": "Reazione A Catena",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena/6.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "03:45",
+        "ora": "03:10",
+        "fine": "04:40",
         "titolo": "Provaci ancora Prof!",
         "descrizione": "Camilla Baudino è un'insegnante di lettere che si divide fra il lavoro, la famiglia (composta dal marito Renzo, dalla figlia Livietta e dal cane Potti) e diversi casi di indagine in cui si ritrova coinvolta, e che la vedono collaborare con il commissario di polizia Gaetano Berardi, con cui sviluppa un'intesa particolare.\n\nLe prime quattro stagioni sono ambientate a Roma, le restanti a Torino. Le diverse stagioni della serie vedono dei cambiamenti nella vita professionale e sentimentale di Camilla, che si trasferisce da Roma a Torino e che da moglie di Renzo diventa prima separata e infine si fidanza con Berardi. Parallelamente, anche Renzo intreccia una relazione con una giovane collega spagnola che lo renderà padre di un bambino.",
         "immagine": "https://img-guidatv.org/serie/5e78d93dce1e246c511cbbd0_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:30",
-        "titolo": "Il commissario Rex",
-        "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex.",
-        "immagine": "https://image.tmdb.org/t/p/w300/iqpkxQLqxF7ZQUL6e4nAfLfprif.jpg"
-      },
-      {
-        "ora": "04:30",
+        "ora": "04:40",
         "fine": "05:55",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -18517,27 +18524,27 @@
       },
       {
         "ora": "00:55",
-        "fine": "02:50",
+        "fine": "01:55",
+        "titolo": "Sottovoce E Dintorni",
+        "descrizione": "Gigi Marzullo ripercorre l'itinerario umano, artistico e professionale di personaggi dello sport, dello spettacolo o della cultura.",
+        "immagine": "https://img-guidatv.org/1/sottovoce/6.jpg"
+      },
+      {
+        "ora": "01:55",
+        "fine": "03:10",
         "titolo": "Reazione A Catena",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena/6.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "03:45",
+        "ora": "03:10",
+        "fine": "04:40",
         "titolo": "Provaci ancora Prof!",
         "descrizione": "Camilla Baudino è un'insegnante di lettere che si divide fra il lavoro, la famiglia (composta dal marito Renzo, dalla figlia Livietta e dal cane Potti) e diversi casi di indagine in cui si ritrova coinvolta, e che la vedono collaborare con il commissario di polizia Gaetano Berardi, con cui sviluppa un'intesa particolare.\n\nLe prime quattro stagioni sono ambientate a Roma, le restanti a Torino. Le diverse stagioni della serie vedono dei cambiamenti nella vita professionale e sentimentale di Camilla, che si trasferisce da Roma a Torino e che da moglie di Renzo diventa prima separata e infine si fidanza con Berardi. Parallelamente, anche Renzo intreccia una relazione con una giovane collega spagnola che lo renderà padre di un bambino.",
         "immagine": "https://img-guidatv.org/serie/5e78d93dce1e246c511cbbd0_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:30",
-        "titolo": "Il commissario Rex",
-        "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex.",
-        "immagine": "https://image.tmdb.org/t/p/w300/iqpkxQLqxF7ZQUL6e4nAfLfprif.jpg"
-      },
-      {
-        "ora": "04:30",
+        "ora": "04:40",
         "fine": "05:55",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -18756,8 +18763,8 @@
         "ora": "02:40",
         "fine": "03:25",
         "titolo": "Ultima Traccia: Berlino",
-        "descrizione": "La serie,  ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
-        "immagine": "https://img-guidatv.org/2/ultima-traccia-berlino-crimini-in-famigl/0.jpg"
+        "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
+        "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
       },
       {
         "ora": "03:25",
@@ -18770,8 +18777,8 @@
         "ora": "04:50",
         "fine": "05:00",
         "titolo": "Zio Gianni",
-        "descrizione": "Gianni ha 50 anni e improvvisamente non ha più lavoro, non ha più una moglie, non ha nemmeno una casa. Mentre rimette a posto la sua vita - o almeno ci prova! - l'unica cosa che può fare è andare a vivere con tre studenti poco più che ventenni.",
-        "immagine": "https://img-guidatv.org/2/zio-gianni-l-ex-compagna-di-classe/0.jpg"
+        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
         "ora": "05:00",
@@ -18896,7 +18903,7 @@
         "ora": "14:00",
         "fine": "15:25",
         "titolo": "Ore 14",
-        "descrizione": "Un faro acceso sui principali avvenimenti del giorno di cronaca e attualità, raccontati con collegamenti in diretta dai luoghi dove i fatti sono avvenuti e commentati da autorevoli opinionisti.",
+        "descrizione": "I casi della puntata sono: la vicenda di Roberto Mollo, il 35enne indagato per omicidio per aver ucciso un ladro all'esterno della sua abitazione a Baldissero D'Alba; le indagini sul 13enne che ha accoltellato a Roma la sua professoressa; il giallo dell'omicidio di Noemi Impellizzeri.",
         "immagine": "https://img-guidatv.org/2/ore-14/8.jpg"
       },
       {
@@ -19021,8 +19028,8 @@
         "ora": "02:40",
         "fine": "03:25",
         "titolo": "Ultima Traccia: Berlino",
-        "descrizione": "La serie,  ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
-        "immagine": "https://img-guidatv.org/2/ultima-traccia-berlino-crimini-in-famigl/0.jpg"
+        "descrizione": "La serie è ambientata a Berlino in un'unità fittizia della capitale tedesca chiamata LKAS che funziona in modo indipendente, tenta di chiarire la sorte delle persone scomparse di recente; l'ispettore capo Oliver Radek, la detective Mina Amiri e il commissario Sandra Reiß formano una squadra di investigatori.",
+        "immagine": "https://img-guidatv.org/serie/5eb7b5ff59540c6ff8588780_p_3_rs_300.jpg"
       },
       {
         "ora": "03:25",
@@ -19035,8 +19042,8 @@
         "ora": "04:50",
         "fine": "05:00",
         "titolo": "Zio Gianni",
-        "descrizione": "Gianni ha 50 anni e improvvisamente non ha più lavoro, non ha più una moglie, non ha nemmeno una casa. Mentre rimette a posto la sua vita - o almeno ci prova! - l'unica cosa che può fare è andare a vivere con tre studenti poco più che ventenni.",
-        "immagine": "https://img-guidatv.org/2/zio-gianni-l-ex-compagna-di-classe/0.jpg"
+        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
         "ora": "05:00",
@@ -19161,7 +19168,7 @@
         "ora": "14:00",
         "fine": "15:25",
         "titolo": "Ore 14",
-        "descrizione": "Un faro acceso sui principali avvenimenti del giorno di cronaca e attualità, raccontati con collegamenti in diretta dai luoghi dove i fatti sono avvenuti e commentati da autorevoli opinionisti.",
+        "descrizione": "I casi della puntata sono: la vicenda di Roberto Mollo, il 35enne indagato per omicidio per aver ucciso un ladro all'esterno della sua abitazione a Baldissero D'Alba; le indagini sul 13enne che ha accoltellato a Roma la sua professoressa; il giallo dell'omicidio di Noemi Impellizzeri.",
         "immagine": "https://img-guidatv.org/2/ore-14/8.jpg"
       },
       {
@@ -19852,7 +19859,7 @@
         "fine": "15:29",
         "titolo": "Lo sportello di forum",
         "descrizione": "Programma storico delle reti Mediaset che vede due contendenti affidare la soluzione del loro contrasto al giudizio di un giudice arbitro.",
-        "immagine": "https://img-guidatv.org/40/lo-sportello-di-forum/8.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314514601001101/media/1/1/848367a9-0280-4328-9e50-642e595baea6/f4ff5d7f-085b-4c05-be5d-98f827932e05.jpg"
       },
       {
         "ora": "15:29",
@@ -19866,7 +19873,7 @@
         "fine": "16:47",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018801/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:47",
@@ -20019,7 +20026,7 @@
         "fine": "15:29",
         "titolo": "Lo sportello di forum",
         "descrizione": "Programma storico delle reti Mediaset che vede due contendenti affidare la soluzione del loro contrasto al giudizio di un giudice arbitro.",
-        "immagine": "https://img-guidatv.org/40/lo-sportello-di-forum/8.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314514601001101/media/1/1/848367a9-0280-4328-9e50-642e595baea6/f4ff5d7f-085b-4c05-be5d-98f827932e05.jpg"
       },
       {
         "ora": "15:29",
@@ -20033,7 +20040,7 @@
         "fine": "16:47",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018801/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:47",
@@ -20095,7 +20102,7 @@
         "fine": "03:40",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000101/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "03:40",
@@ -20249,7 +20256,7 @@
         "fine": "16:07",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000101/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:07",
@@ -20263,7 +20270,7 @@
         "fine": "18:42",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001101/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:42",
@@ -20318,7 +20325,7 @@
         "fine": "03:40",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000101/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "03:40",
@@ -20472,7 +20479,7 @@
         "fine": "16:07",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000101/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:07",
@@ -20486,7 +20493,7 @@
         "fine": "18:42",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001101/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:42",
@@ -21133,7 +21140,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Italo Bocchino, Paola Pasqualin, Alessandro De Angelis, Marco Travaglio",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21258,7 +21265,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Italo Bocchino, Paola Pasqualin, Alessandro De Angelis, Marco Travaglio",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21383,7 +21390,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Italo Bocchino, Paola Pasqualin, Alessandro De Angelis, Marco Travaglio",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21508,7 +21515,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Italo Bocchino, Paola Pasqualin, Alessandro De Angelis, Marco Travaglio",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21633,7 +21640,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Italo Bocchino, Paola Pasqualin, Alessandro De Angelis, Marco Travaglio",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -23456,7 +23463,7 @@
       {
         "ora": "13:48",
         "fine": "14:09",
-        "titolo": "Doc",
+        "titolo": "Geo - Il Paese Del Sale - 21",
         "descrizione": "Lungro, in Calabria, è ricordato come il paese del sale per la sua miniera di salgemma che ha dato lavoro a centinaia di minatori fino al 1976 come ad Arturo, 102 anni, che ci racconta di quando giovanissimo ha iniziato a lavorare in miniera.... Ma Lungro è anche uno dei più importanti centri della minoranza etnica e linguistica Albanese di Calabria: gli Arbereshe che scappati dall'Albania per l'invasione turca ottomana, sono arrivati sin qui nella seconda metà del 1400.",
         "immagine": "https://img-guidatv.org/31/geo-il-paese-del-sale-21/0.jpg"
       },
@@ -24446,7 +24453,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000101/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -24606,7 +24613,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000101/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -26341,28 +26348,28 @@
         "fine": "15:54",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018801/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "15:54",
         "fine": "16:21",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018801/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:21",
         "fine": "16:43",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801018801/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:43",
         "fine": "17:14",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001101/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:14",
@@ -26376,21 +26383,21 @@
         "fine": "17:37",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001101/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:37",
         "fine": "17:48",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001101/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:48",
         "fine": "18:19",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001101/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:19",
@@ -28064,9 +28071,9 @@
       {
         "ora": "04:25",
         "fine": "04:35",
-        "titolo": "Sicilia'43:Sbarco Al Museo",
-        "descrizione": "Lo sbarco degli alleati in Sicilia nel 1943 raccontato, ricostruito e rivissuto attraverso il Museo dello Sbarco di Catania. - Un programma di Andrea Branchi, Francesco Censon,Gianluca Miligi  Produttore esecutivo Roberta Sangermano",
-        "immagine": "https://img-guidatv.org/24/sicilia-43-sbarco-al-museo/1.jpg"
+        "titolo": "R.A.M. - Sicilia '43. Sbarco Al Museo",
+        "descrizione": "Lo sbarco degli alleati in Sicilia nel 1943 raccontato, ricostruito e rivissuto attraverso il Museo dello Sbarco di Catania.",
+        "immagine": "https://img-guidatv.org/24/r-a-m-sicilia-43-sbarco-al-museo/0.jpg"
       },
       {
         "ora": "04:35",
@@ -28329,9 +28336,9 @@
       {
         "ora": "04:25",
         "fine": "04:35",
-        "titolo": "Sicilia'43:Sbarco Al Museo",
-        "descrizione": "Lo sbarco degli alleati in Sicilia nel 1943 raccontato, ricostruito e rivissuto attraverso il Museo dello Sbarco di Catania. - Un programma di Andrea Branchi, Francesco Censon,Gianluca Miligi  Produttore esecutivo Roberta Sangermano",
-        "immagine": "https://img-guidatv.org/24/sicilia-43-sbarco-al-museo/1.jpg"
+        "titolo": "R.A.M. - Sicilia '43. Sbarco Al Museo",
+        "descrizione": "Lo sbarco degli alleati in Sicilia nel 1943 raccontato, ricostruito e rivissuto attraverso il Museo dello Sbarco di Catania.",
+        "immagine": "https://img-guidatv.org/24/r-a-m-sicilia-43-sbarco-al-museo/0.jpg"
       },
       {
         "ora": "04:35",
@@ -30681,27 +30688,20 @@
       },
       {
         "ora": "03:50",
-        "fine": "04:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "04:15",
-        "fine": "04:55",
+        "fine": "04:40",
         "titolo": "Affari di famiglia",
         "descrizione": "Un cappello appartenuto al gruppo musicale Devo balza in cima alla top ten di Rick, a poca distanza da una lettera firmata da George Washington.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "04:55",
-        "fine": "05:35",
+        "ora": "04:40",
+        "fine": "05:30",
         "titolo": "Affari di famiglia",
         "descrizione": "Un cliente porta in negozio due figure Lego di Star Wars e Corey scopre se la Forza è davvero con lui. Nel frattempo, Rick dà un'occhiata a una scultura di Jeff Koons.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "05:35",
+        "ora": "05:30",
         "fine": "06:00",
         "titolo": "Affari al buio",
         "descrizione": "Ivy coinvolge i suoi figli in una giornata in spiaggia a Victorville e loro si divertono. Brandi cerca di cancellare i brutti ricordi del campeggio con un buon armadietto.",
