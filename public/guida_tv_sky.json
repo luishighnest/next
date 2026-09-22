@@ -411,9 +411,9 @@
       {
         "ora": "18:00",
         "fine": "18:30",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+        "titolo": "Euro Show",
+        "descrizione": "Il meglio del calcio internazionale con tutte le notizie, i gol, le immagini e le voci dei protagonisti di Premier League, Bundesliga.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2c1bb9b8-7294-4ca4-be76-777c72f154b1/background/600"
       },
       {
         "ora": "18:30",
@@ -460,23 +460,23 @@
       {
         "ora": "21:30",
         "fine": "22:00",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+        "titolo": "Euro Show",
+        "descrizione": "Il meglio del calcio internazionale con tutte le notizie, i gol, le immagini e le voci dei protagonisti di Premier League, Bundesliga.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2c1bb9b8-7294-4ca4-be76-777c72f154b1/background/600"
       },
       {
         "ora": "22:00",
-        "fine": "22:30",
+        "fine": "22:45",
         "titolo": "Sport 24 Today",
         "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
         "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
       },
       {
-        "ora": "22:30",
+        "ora": "22:45",
         "fine": "23:00",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+        "titolo": "Reparto Corse F1",
+        "descrizione": "Davide Camicioli e Matteo Bobbi presentano e analizzano i week end di gara di Formula 1. I momenti principali, le parole dei protagonisti e le prospettive mondiali dei contendenti.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/99037b82-cc19-4906-bfdc-6db680da098f/background/600"
       },
       {
         "ora": "23:00",
@@ -1621,8 +1621,8 @@
       {
         "ora": "11:00",
         "fine": "13:00",
-        "titolo": "Finale, Gara 1: Milano - Venezia",
-        "descrizione": "... Serie A Basket. - Olimpia e Reyer cominciano la serie che assegnera' lo scudetto del basket. Milano in semifinale ha eliminato Brescia, Venezia i campioni in carica della Virtus Bologna. Telecronaca: De Rosa-Meneghin.",
+        "titolo": "Finale: Olimpia Milano - Reyer Venezia",
+        "descrizione": "... Venezia Lega Basket Serie A. - Olimpia e Reyer cominciano la serie che assegnera' lo scudetto del basket. Milano in semifinale ha eliminato Brescia, Venezia i campioni in carica della Virtus Bologna. Telecronaca: De Rosa-Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/96628d59-0bb5-429c-97a0-6032615da811/background/600"
       },
       {
@@ -18647,13 +18647,6 @@
         "immagine": "https://image.tmdb.org/t/p/w300/iH0S1po5UDiWo02AsLQPGe6YlON.jpg"
       },
       {
-        "ora": "06:00",
-        "fine": "06:15",
-        "titolo": "Medici in corsia",
-        "descrizione": "Le storie di una giovane equipe medica guidata dal Dott. Ahrend che, in virtù della sua anzianità, decide di ricominciare da capo la sua vita in una nuova città in una nuova squadra di dottori, fra specializzandi e semplici infermieri.",
-        "immagine": "https://img-guidatv.org/2/medici-in-corsia-aspettative/0.jpg"
-      },
-      {
         "ora": "06:15",
         "fine": "07:05",
         "titolo": "La Grande Vallata",
@@ -18734,7 +18727,7 @@
         "ora": "13:30",
         "fine": "13:50",
         "titolo": "TG2 Costume E Società",
-        "descrizione": "Direttore Antonio Preziosi A cura di Rocco Tolfa Di Francesco Paolo Cozza",
+        "descrizione": "Direttore Antonio Preziosi Di Francesco Paolo Cozza",
         "immagine": "https://img-guidatv.org/2/tg2-costume-e-societa/0.jpg"
       },
       {
@@ -18839,7 +18832,7 @@
         "ora": "23:55",
         "fine": "01:05",
         "titolo": "Porretta Soul Festival 2026",
-        "descrizione": "L'atmosfera, la grande musica e la storia della manifestazione italiana più importante dedicata alla musica soul. Performances dal vivo, dietro le quinte e interviste agli artisti per un piacevole racconto musicale.",
+        "descrizione": "Un viaggio nella musica e nelle immagini di una manifestazione che ha costruito negli anni un ponte tra Emilia-Romagna e Memphis. Tra i momenti proposti, il duetto di Zucchero e Rufus Thomas, Sam Moore con i Memphis Horns, le interviste a Memphis di Isaac Hayes e le immagini dei club della città insieme alla celebre Sun Records. A raccontare il Festival anche le testimonianze di Zucchero, Solomon Burke e Jerry Phillips, figlio di Sam Phillips, fondatore della Sun Records. Il racconto si arricchisce del ricordo di due amici speciali della manifestazione: Bobo Maroni, che vi aveva suonato con la sua band \"Distretto 51\", e Francesco Guccini, che volle leggere una lettera del reverendo Jesse Jackson.",
         "immagine": "https://img-guidatv.org/2/porretta-soul-festival-2026/5.jpg"
       }
     ]
@@ -18905,13 +18898,6 @@
         "immagine": "https://image.tmdb.org/t/p/w300/iH0S1po5UDiWo02AsLQPGe6YlON.jpg"
       },
       {
-        "ora": "06:00",
-        "fine": "06:15",
-        "titolo": "Medici in corsia",
-        "descrizione": "Le storie di una giovane equipe medica guidata dal Dott. Ahrend che, in virtù della sua anzianità, decide di ricominciare da capo la sua vita in una nuova città in una nuova squadra di dottori, fra specializzandi e semplici infermieri.",
-        "immagine": "https://img-guidatv.org/2/medici-in-corsia-aspettative/0.jpg"
-      },
-      {
         "ora": "06:15",
         "fine": "07:05",
         "titolo": "La Grande Vallata",
@@ -18992,7 +18978,7 @@
         "ora": "13:30",
         "fine": "13:50",
         "titolo": "TG2 Costume E Società",
-        "descrizione": "Direttore Antonio Preziosi A cura di Rocco Tolfa Di Francesco Paolo Cozza",
+        "descrizione": "Direttore Antonio Preziosi Di Francesco Paolo Cozza",
         "immagine": "https://img-guidatv.org/2/tg2-costume-e-societa/0.jpg"
       },
       {
@@ -19097,7 +19083,7 @@
         "ora": "23:55",
         "fine": "01:05",
         "titolo": "Porretta Soul Festival 2026",
-        "descrizione": "L'atmosfera, la grande musica e la storia della manifestazione italiana più importante dedicata alla musica soul. Performances dal vivo, dietro le quinte e interviste agli artisti per un piacevole racconto musicale.",
+        "descrizione": "Un viaggio nella musica e nelle immagini di una manifestazione che ha costruito negli anni un ponte tra Emilia-Romagna e Memphis. Tra i momenti proposti, il duetto di Zucchero e Rufus Thomas, Sam Moore con i Memphis Horns, le interviste a Memphis di Isaac Hayes e le immagini dei club della città insieme alla celebre Sun Records. A raccontare il Festival anche le testimonianze di Zucchero, Solomon Burke e Jerry Phillips, figlio di Sam Phillips, fondatore della Sun Records. Il racconto si arricchisce del ricordo di due amici speciali della manifestazione: Bobo Maroni, che vi aveva suonato con la sua band \"Distretto 51\", e Francesco Guccini, che volle leggere una lettera del reverendo Jesse Jackson.",
         "immagine": "https://img-guidatv.org/2/porretta-soul-festival-2026/5.jpg"
       }
     ]
@@ -19165,15 +19151,15 @@
       {
         "ora": "08:00",
         "fine": "09:50",
-        "titolo": "Agorà",
-        "descrizione": "Annalisa Bruchi approfondisce i temi di stretta attualità e segue il dibattito politico con ospiti in studio, inviati, servizi, inchieste, collegamenti e contributi video dai social.",
-        "immagine": "https://img-guidatv.org/3/agora/1.jpg"
+        "titolo": "Banco Di Prova - Agorà",
+        "descrizione": "Le elezioni in Russia e Germania, la crescita dell'AfD e il tema delle possibili interferenze russe nel voto europeo. Spazio poi al dibattito su scuola e immigrazione, al confronto politico tra maggioranza e opposizioni e al caro energia, con i nuovi rincari per famiglie e imprese. Ospiti di Annalisa Bruchi: Fabio Rampelli, Michele Fina, Marco Minniti, Livio Gigliuto, Aldo Cazzullo, Franco Bechis, Rita Lofano e Chiara Geloni.",
+        "immagine": "https://img-guidatv.org/3/banco-di-prova-agora/0.jpg"
       },
       {
         "ora": "09:50",
         "fine": "11:00",
         "titolo": "Agorà Extra",
-        "descrizione": "Giulia Di Stefano racconta l'attualità attraverso analisi, interviste e dibattiti con i protagonisti della politica e del giornalismo per comprendere i cambiamenti dell'Italia e del mondo.",
+        "descrizione": "\"Agorà Extra\" approfondisce il tema del tetto agli studenti stranieri nelle classi. Ospiti di Giulia Di Stefano: Anna Maria Cisint, Luana Zanella, Antonino Monteleone, Karima Moual, Shervin Haravi e Francesco Cancellato.",
         "immagine": "https://img-guidatv.org/3/agora-extra/1.jpg"
       },
       {
@@ -19283,13 +19269,6 @@
       },
       {
         "ora": "16:15",
-        "fine": "17:00",
-        "titolo": "Aspettando Geo",
-        "descrizione": "DOCUMENTARIO - GEO, il programma pomeridiano di Rai Cultura sulla natura, l'ambiente e le culture del mondo, di totale produzione interna, condotto dagli studi di Via Teulada in Roma da Sveva Sagramola ed Emanuele Biggi, in onda tu - tti i giorni in diretta, dal lunedì al venerdì, dalle 16 alle 19.00 su Rai3. - Sveva Sagramola ed Emanuele Biggi Un programma di Marco Castellazzi, Rosario Cutolo, Luigi Felicetti, Chiara Romano, Sveva Sagramola Produttore esecutivo: Sara Mellone Capo progetto: Fausta Vannutelli Coordinamento editoriale: Caterina Manganella  Regia: Michelangelo Pepe",
-        "immagine": "https://img-guidatv.org/3/aspettando-geo/10.jpg"
-      },
-      {
-        "ora": "17:00",
         "fine": "19:00",
         "titolo": "Geo",
         "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilità del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\".",
@@ -19416,15 +19395,15 @@
       {
         "ora": "08:00",
         "fine": "09:50",
-        "titolo": "Agorà",
-        "descrizione": "Annalisa Bruchi approfondisce i temi di stretta attualità e segue il dibattito politico con ospiti in studio, inviati, servizi, inchieste, collegamenti e contributi video dai social.",
-        "immagine": "https://img-guidatv.org/3/agora/1.jpg"
+        "titolo": "Banco Di Prova - Agorà",
+        "descrizione": "Le elezioni in Russia e Germania, la crescita dell'AfD e il tema delle possibili interferenze russe nel voto europeo. Spazio poi al dibattito su scuola e immigrazione, al confronto politico tra maggioranza e opposizioni e al caro energia, con i nuovi rincari per famiglie e imprese. Ospiti di Annalisa Bruchi: Fabio Rampelli, Michele Fina, Marco Minniti, Livio Gigliuto, Aldo Cazzullo, Franco Bechis, Rita Lofano e Chiara Geloni.",
+        "immagine": "https://img-guidatv.org/3/banco-di-prova-agora/0.jpg"
       },
       {
         "ora": "09:50",
         "fine": "11:00",
         "titolo": "Agorà Extra",
-        "descrizione": "Giulia Di Stefano racconta l'attualità attraverso analisi, interviste e dibattiti con i protagonisti della politica e del giornalismo per comprendere i cambiamenti dell'Italia e del mondo.",
+        "descrizione": "\"Agorà Extra\" approfondisce il tema del tetto agli studenti stranieri nelle classi. Ospiti di Giulia Di Stefano: Anna Maria Cisint, Luana Zanella, Antonino Monteleone, Karima Moual, Shervin Haravi e Francesco Cancellato.",
         "immagine": "https://img-guidatv.org/3/agora-extra/1.jpg"
       },
       {
@@ -19534,13 +19513,6 @@
       },
       {
         "ora": "16:15",
-        "fine": "17:00",
-        "titolo": "Aspettando Geo",
-        "descrizione": "DOCUMENTARIO - GEO, il programma pomeridiano di Rai Cultura sulla natura, l'ambiente e le culture del mondo, di totale produzione interna, condotto dagli studi di Via Teulada in Roma da Sveva Sagramola ed Emanuele Biggi, in onda tu - tti i giorni in diretta, dal lunedì al venerdì, dalle 16 alle 19.00 su Rai3. - Sveva Sagramola ed Emanuele Biggi Un programma di Marco Castellazzi, Rosario Cutolo, Luigi Felicetti, Chiara Romano, Sveva Sagramola Produttore esecutivo: Sara Mellone Capo progetto: Fausta Vannutelli Coordinamento editoriale: Caterina Manganella  Regia: Michelangelo Pepe",
-        "immagine": "https://img-guidatv.org/3/aspettando-geo/10.jpg"
-      },
-      {
-        "ora": "17:00",
         "fine": "19:00",
         "titolo": "Geo",
         "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilità del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\".",
@@ -19690,7 +19662,7 @@
         "fine": "13:02",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/40/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002201/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "13:02",
@@ -19850,7 +19822,7 @@
         "fine": "13:02",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/40/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002201/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "13:02",
@@ -19975,7 +19947,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101211301/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -20045,14 +20017,14 @@
         "fine": "10:49",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/41/mattino-cinque-news/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000701/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "10:49",
         "fine": "10:57",
         "titolo": "Tg5 ore 10",
         "descrizione": "Appuntamento con le notizie piu' importanti, nazionali ed internazionali, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/tg-5-ore-10/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202401018901/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "10:57",
@@ -20205,7 +20177,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101211301/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -20275,14 +20247,14 @@
         "fine": "10:49",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/41/mattino-cinque-news/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000701/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "10:49",
         "fine": "10:57",
         "titolo": "Tg5 ore 10",
         "descrizione": "Appuntamento con le notizie piu' importanti, nazionali ed internazionali, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/tg-5-ore-10/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202401018901/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "10:57",
@@ -20491,7 +20463,7 @@
         "fine": "13:00",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052901/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:00",
@@ -20505,7 +20477,7 @@
         "fine": "13:53",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:53",
@@ -20714,7 +20686,7 @@
         "fine": "13:00",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052901/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:00",
@@ -20728,7 +20700,7 @@
         "fine": "13:53",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:53",
@@ -20866,21 +20838,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Gianluigi Paragone, Gianluca Verzelli, Antonello Caporale, Sara Menafra, Paolo Mieli, Michele Silenzi, Piero Ignazi, Fabio Tonacci, Mara Gergolet",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Roberto Morassut, Cinzia Sciuto, Stefano Candiani, Pietro De Leo, Daniela Fumarola",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Mario Sechi, Giacomo Salvini, Ileana Sciarra, Roberto Gasparotti, Davide Marra, Sergej Markov, Fausto Bertinotti, Sandro Iacometti, Marco Grimaldi, Marco Revelli, Susanna Ceccardi, Federico Fubini",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -20894,7 +20866,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Emiliano Fittipaldi, Nathalie Tocci, Gian Marco Centinaio, Marco Furfaro, Giovanna Pancheri, Francesco Maria Del Vigo, Anna Falcone, Lorenzo Pregliasco, Massimo De Manzoni, Sara Kelany, Benedetta Scuderi, Piero...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -20929,7 +20901,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Lina Palmerini, Paolo Gentiloni, Tomaso Montanari",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -20977,21 +20949,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Gianluigi Paragone, Gianluca Verzelli, Antonello Caporale, Sara Menafra, Paolo Mieli, Michele Silenzi, Piero Ignazi, Fabio Tonacci, Mara Gergolet",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Roberto Morassut, Cinzia Sciuto, Stefano Candiani, Pietro De Leo, Daniela Fumarola",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Mario Sechi, Giacomo Salvini, Ileana Sciarra, Roberto Gasparotti, Davide Marra, Sergej Markov, Fausto Bertinotti, Sandro Iacometti, Marco Grimaldi, Marco Revelli, Susanna Ceccardi, Federico Fubini",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21005,7 +20977,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Emiliano Fittipaldi, Nathalie Tocci, Gian Marco Centinaio, Marco Furfaro, Giovanna Pancheri, Francesco Maria Del Vigo, Anna Falcone, Lorenzo Pregliasco, Massimo De Manzoni, Sara Kelany, Benedetta Scuderi, Piero...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21040,7 +21012,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Lina Palmerini, Paolo Gentiloni, Tomaso Montanari",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21088,21 +21060,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Gianluigi Paragone, Gianluca Verzelli, Antonello Caporale, Sara Menafra, Paolo Mieli, Michele Silenzi, Piero Ignazi, Fabio Tonacci, Mara Gergolet",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Roberto Morassut, Cinzia Sciuto, Stefano Candiani, Pietro De Leo, Daniela Fumarola",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Mario Sechi, Giacomo Salvini, Ileana Sciarra, Roberto Gasparotti, Davide Marra, Sergej Markov, Fausto Bertinotti, Sandro Iacometti, Marco Grimaldi, Marco Revelli, Susanna Ceccardi, Federico Fubini",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21116,7 +21088,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Emiliano Fittipaldi, Nathalie Tocci, Gian Marco Centinaio, Marco Furfaro, Giovanna Pancheri, Francesco Maria Del Vigo, Anna Falcone, Lorenzo Pregliasco, Massimo De Manzoni, Sara Kelany, Benedetta Scuderi, Piero...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21151,7 +21123,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Lina Palmerini, Paolo Gentiloni, Tomaso Montanari",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21199,21 +21171,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Gianluigi Paragone, Gianluca Verzelli, Antonello Caporale, Sara Menafra, Paolo Mieli, Michele Silenzi, Piero Ignazi, Fabio Tonacci, Mara Gergolet",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Roberto Morassut, Cinzia Sciuto, Stefano Candiani, Pietro De Leo, Daniela Fumarola",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Mario Sechi, Giacomo Salvini, Ileana Sciarra, Roberto Gasparotti, Davide Marra, Sergej Markov, Fausto Bertinotti, Sandro Iacometti, Marco Grimaldi, Marco Revelli, Susanna Ceccardi, Federico Fubini",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21227,7 +21199,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Emiliano Fittipaldi, Nathalie Tocci, Gian Marco Centinaio, Marco Furfaro, Giovanna Pancheri, Francesco Maria Del Vigo, Anna Falcone, Lorenzo Pregliasco, Massimo De Manzoni, Sara Kelany, Benedetta Scuderi, Piero...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21262,7 +21234,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Lina Palmerini, Paolo Gentiloni, Tomaso Montanari",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21310,21 +21282,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Gerardo Greco con Gianluigi Paragone, Gianluca Verzelli, Antonello Caporale, Sara Menafra, Paolo Mieli, Michele Silenzi, Piero Ignazi, Fabio Tonacci, Mara Gergolet",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Roberto Morassut, Cinzia Sciuto, Stefano Candiani, Pietro De Leo, Daniela Fumarola",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Mario Sechi, Giacomo Salvini, Ileana Sciarra, Roberto Gasparotti, Davide Marra, Sergej Markov, Fausto Bertinotti, Sandro Iacometti, Marco Grimaldi, Marco Revelli, Susanna Ceccardi, Federico Fubini",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21338,7 +21310,7 @@
         "ora": "14:15",
         "fine": "16:40",
         "titolo": "Tagadà",
-        "descrizione": "L'appuntamento quotidiano con Tiziana Panella. Uno spazio di approfondimento tra storie di attualità, cronaca, costume e i loro protagonisti. 12a Edizione.",
+        "descrizione": "Tiziana Panella con Emiliano Fittipaldi, Nathalie Tocci, Gian Marco Centinaio, Marco Furfaro, Giovanna Pancheri, Francesco Maria Del Vigo, Anna Falcone, Lorenzo Pregliasco, Massimo De Manzoni, Sara Kelany, Benedetta Scuderi, Piero...",
         "immagine": "https://img-guidatv.org/23/tagada/1.jpg"
       },
       {
@@ -21373,7 +21345,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Lina Palmerini, Paolo Gentiloni, Tomaso Montanari",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21571,14 +21543,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "03:05",
-        "fine": "04:05",
+        "ora": "00:00",
+        "fine": "03:20",
+        "titolo": "Geopop racconta",
+        "descrizione": "Geopop Racconta analizza i piu' grandi disastri della storia attraverso lo sguardo scientifico di Andrea Moccia, divulgatore e fondatore di Geopop. In questa puntata: perche' esplose Chernobyl?",
+        "immagine": "https://img-guidatv.org/17/geopop-racconta/5.jpg"
+      },
+      {
+        "ora": "03:20",
+        "fine": "04:15",
         "titolo": "Nudi e crudi",
         "descrizione": "Lee e LeAnn arrivano a Indio Maiz dopo che un terribile uragano ha colpito il Nicaragua. Senza riparo e sotto gli alberi pericolanti, sopravvivranno nella desolata foresta pluviale?",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "04:05",
+        "ora": "04:15",
         "fine": "05:05",
         "titolo": "Nudi e crudi",
         "descrizione": "Le abilita' di sopravvivenza di Gary e Karra vengono messe alla prova nella savana del Brasile. Dopo giorni di fame, un frutto acerbo causa a uno di loro una terribile malattia.",
@@ -21593,13 +21572,13 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:50",
+        "fine": "06:55",
         "titolo": "Delitto",
         "descrizione": "Jeffery Locker viene accoltellato. I detective pensano che l'uomo si sia trovato nel posto sbagliato al momento sbagliato. Ma la verita' e' ben diversa.",
         "immagine": "https://img-guidatv.org/17/delitto/5.jpg"
       },
       {
-        "ora": "06:50",
+        "ora": "06:55",
         "fine": "07:20",
         "titolo": "Alta infedelta'",
         "descrizione": "Iris e Alfredo, sposati da vent'anni, decidono di ricominciare a fare sport per spezzare la routine: golf lui, tennis lei. Peccato pero' che l'insegnante di tennis di Iris, Maddi, sia una vecchia fiamma di Alfredo.",
@@ -21635,69 +21614,69 @@
       },
       {
         "ora": "09:20",
-        "fine": "09:55",
+        "fine": "09:50",
         "titolo": "Alta infedelta'",
         "descrizione": "Tra Matteo e Chiara va tutto bene finche' lei non lo porta con se' ad una lezione di tango, dove lui conosce Elena. L'uomo se ne innamora ma Chiara presto scopre tutto.",
         "immagine": "https://img-guidatv.org/17/alta-infedelta/9.jpg"
       },
       {
-        "ora": "09:55",
-        "fine": "10:30",
+        "ora": "09:50",
+        "fine": "10:20",
         "titolo": "Alta infedelta'",
         "descrizione": "Alberto e Claudia sono sposati. Quando lui incontra Giulia, una studentessa che lo adora, sboccia la passione. Ma quando la moglie lo scopre, Alberto ritorna all'ovile.",
         "immagine": "https://img-guidatv.org/17/alta-infedelta/9.jpg"
       },
       {
-        "ora": "10:30",
-        "fine": "11:05",
+        "ora": "10:20",
+        "fine": "10:50",
         "titolo": "Alta infedelta'",
         "descrizione": "Marina e Luca stanno insieme da diverso tempo e vogliono sposarsi. Per ravvivare il rapporto, Luca porta Marina alle terme ma proprio in quel luogo lei conosce un attraente massaggiatore che risvegliera' le sue fantasie.",
         "immagine": "https://img-guidatv.org/17/alta-infedelta/9.jpg"
       },
       {
-        "ora": "11:05",
-        "fine": "12:20",
+        "ora": "10:50",
+        "fine": "12:05",
         "titolo": "Cash or Trash - Chi offre di piu'?",
         "descrizione": "Alcuni mercanti cercano di aggiudicarsi preziosi oggetti.",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-chi-offre-di-piu/6.jpg"
       },
       {
-        "ora": "12:20",
-        "fine": "13:35",
+        "ora": "12:05",
+        "fine": "13:15",
         "titolo": "Cash or Trash - Quando tutto e' iniziato",
         "descrizione": "Paolo Conticini conduce una divertente asta al rialzo in cui cinque mercanti d'arte si contendono 'tesori' proposti da persone comuni. Chi fara' l'affare migliore?",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-quando-tutto-e-iniziato/0.jpg"
       },
       {
-        "ora": "13:35",
-        "fine": "14:40",
+        "ora": "13:15",
+        "fine": "14:20",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "14:40",
-        "fine": "15:45",
+        "ora": "14:20",
+        "fine": "15:30",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "15:45",
-        "fine": "16:45",
+        "ora": "15:30",
+        "fine": "16:35",
         "titolo": "Pagato per uccidere",
         "descrizione": "Un'analisi su alcuni casi di cronaca nera.",
         "immagine": "https://img-guidatv.org/17/pagato-per-uccidere/5.jpg"
       },
       {
-        "ora": "16:45",
-        "fine": "17:45",
+        "ora": "16:35",
+        "fine": "17:35",
         "titolo": "24 ore per morire",
         "descrizione": "In criminologia, le 24 ore prima del delitto sono fondamentali per chiarire lo scenario di un crimine. Bologna, 2006. Vitalina Balani giace priva di vita sul pavimento. Chi e' il colpevole?",
         "immagine": "https://img-guidatv.org/17/24-ore-per-morire/5.jpg"
       },
       {
-        "ora": "17:45",
+        "ora": "17:35",
         "fine": "19:20",
         "titolo": "Little Big Italy",
         "descrizione": "Francesco Panella riparte alla scoperta dei migliori ristoranti italiani all'estero incontrando 3 ristoratori che lo porteranno a mangiare nel loro ristorante del cuore.",
@@ -21705,13 +21684,13 @@
       },
       {
         "ora": "19:20",
-        "fine": "20:35",
+        "fine": "20:40",
         "titolo": "Cash or Trash - Chi offre di piu'?",
         "descrizione": "Alcuni mercanti cercano di aggiudicarsi preziosi oggetti.",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-chi-offre-di-piu/6.jpg"
       },
       {
-        "ora": "20:35",
+        "ora": "20:40",
         "fine": "21:30",
         "titolo": "Cash or Trash - Chi offre di piu'?",
         "descrizione": "Alcuni mercanti cercano di aggiudicarsi preziosi oggetti.",
@@ -21719,16 +21698,9 @@
       },
       {
         "ora": "21:30",
-        "fine": "23:50",
+        "fine": "00:00",
         "titolo": "Geopop racconta",
         "descrizione": "Geopop Racconta analizza i piu' grandi disastri della storia attraverso lo sguardo scientifico di Andrea Moccia, divulgatore e fondatore di Geopop. In questa puntata: cosa successe a Fukushima?",
-        "immagine": "https://img-guidatv.org/17/geopop-racconta/5.jpg"
-      },
-      {
-        "ora": "23:50",
-        "fine": "03:05",
-        "titolo": "Geopop racconta",
-        "descrizione": "Geopop Racconta analizza i piu' grandi disastri della storia attraverso lo sguardo scientifico di Andrea Moccia, divulgatore e fondatore di Geopop. In questa puntata: perche' esplose Chernobyl?",
         "immagine": "https://img-guidatv.org/17/geopop-racconta/5.jpg"
       }
     ]
@@ -21738,14 +21710,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "03:05",
-        "fine": "04:05",
+        "ora": "00:00",
+        "fine": "03:20",
+        "titolo": "Geopop racconta",
+        "descrizione": "Geopop Racconta analizza i piu' grandi disastri della storia attraverso lo sguardo scientifico di Andrea Moccia, divulgatore e fondatore di Geopop. In questa puntata: perche' esplose Chernobyl?",
+        "immagine": "https://img-guidatv.org/17/geopop-racconta/5.jpg"
+      },
+      {
+        "ora": "03:20",
+        "fine": "04:15",
         "titolo": "Nudi e crudi",
         "descrizione": "Lee e LeAnn arrivano a Indio Maiz dopo che un terribile uragano ha colpito il Nicaragua. Senza riparo e sotto gli alberi pericolanti, sopravvivranno nella desolata foresta pluviale?",
         "immagine": "https://img-guidatv.org/17/nudi-e-crudi/10.jpg"
       },
       {
-        "ora": "04:05",
+        "ora": "04:15",
         "fine": "05:05",
         "titolo": "Nudi e crudi",
         "descrizione": "Le abilita' di sopravvivenza di Gary e Karra vengono messe alla prova nella savana del Brasile. Dopo giorni di fame, un frutto acerbo causa a uno di loro una terribile malattia.",
@@ -21760,13 +21739,13 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:50",
+        "fine": "06:55",
         "titolo": "Delitto",
         "descrizione": "Jeffery Locker viene accoltellato. I detective pensano che l'uomo si sia trovato nel posto sbagliato al momento sbagliato. Ma la verita' e' ben diversa.",
         "immagine": "https://img-guidatv.org/17/delitto/5.jpg"
       },
       {
-        "ora": "06:50",
+        "ora": "06:55",
         "fine": "07:20",
         "titolo": "Alta infedelta'",
         "descrizione": "Iris e Alfredo, sposati da vent'anni, decidono di ricominciare a fare sport per spezzare la routine: golf lui, tennis lei. Peccato pero' che l'insegnante di tennis di Iris, Maddi, sia una vecchia fiamma di Alfredo.",
@@ -21802,69 +21781,69 @@
       },
       {
         "ora": "09:20",
-        "fine": "09:55",
+        "fine": "09:50",
         "titolo": "Alta infedelta'",
         "descrizione": "Tra Matteo e Chiara va tutto bene finche' lei non lo porta con se' ad una lezione di tango, dove lui conosce Elena. L'uomo se ne innamora ma Chiara presto scopre tutto.",
         "immagine": "https://img-guidatv.org/17/alta-infedelta/9.jpg"
       },
       {
-        "ora": "09:55",
-        "fine": "10:30",
+        "ora": "09:50",
+        "fine": "10:20",
         "titolo": "Alta infedelta'",
         "descrizione": "Alberto e Claudia sono sposati. Quando lui incontra Giulia, una studentessa che lo adora, sboccia la passione. Ma quando la moglie lo scopre, Alberto ritorna all'ovile.",
         "immagine": "https://img-guidatv.org/17/alta-infedelta/9.jpg"
       },
       {
-        "ora": "10:30",
-        "fine": "11:05",
+        "ora": "10:20",
+        "fine": "10:50",
         "titolo": "Alta infedelta'",
         "descrizione": "Marina e Luca stanno insieme da diverso tempo e vogliono sposarsi. Per ravvivare il rapporto, Luca porta Marina alle terme ma proprio in quel luogo lei conosce un attraente massaggiatore che risvegliera' le sue fantasie.",
         "immagine": "https://img-guidatv.org/17/alta-infedelta/9.jpg"
       },
       {
-        "ora": "11:05",
-        "fine": "12:20",
+        "ora": "10:50",
+        "fine": "12:05",
         "titolo": "Cash or Trash - Chi offre di piu'?",
         "descrizione": "Alcuni mercanti cercano di aggiudicarsi preziosi oggetti.",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-chi-offre-di-piu/6.jpg"
       },
       {
-        "ora": "12:20",
-        "fine": "13:35",
+        "ora": "12:05",
+        "fine": "13:15",
         "titolo": "Cash or Trash - Quando tutto e' iniziato",
         "descrizione": "Paolo Conticini conduce una divertente asta al rialzo in cui cinque mercanti d'arte si contendono 'tesori' proposti da persone comuni. Chi fara' l'affare migliore?",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-quando-tutto-e-iniziato/0.jpg"
       },
       {
-        "ora": "13:35",
-        "fine": "14:40",
+        "ora": "13:15",
+        "fine": "14:20",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "14:40",
-        "fine": "15:45",
+        "ora": "14:20",
+        "fine": "15:30",
         "titolo": "The Cage - Prendi e scappa",
         "descrizione": "Due coppie di concorrenti si sfidano in una gara a tempo per aggiudicarsi i premi di diverso valore racchiusi dentro una enorme gabbia trasparente. Conduce Amadeus con Giulia Salemi.",
         "immagine": "https://img-guidatv.org/17/the-cage-prendi-e-scappa/6.jpg"
       },
       {
-        "ora": "15:45",
-        "fine": "16:45",
+        "ora": "15:30",
+        "fine": "16:35",
         "titolo": "Pagato per uccidere",
         "descrizione": "Un'analisi su alcuni casi di cronaca nera.",
         "immagine": "https://img-guidatv.org/17/pagato-per-uccidere/5.jpg"
       },
       {
-        "ora": "16:45",
-        "fine": "17:45",
+        "ora": "16:35",
+        "fine": "17:35",
         "titolo": "24 ore per morire",
         "descrizione": "In criminologia, le 24 ore prima del delitto sono fondamentali per chiarire lo scenario di un crimine. Bologna, 2006. Vitalina Balani giace priva di vita sul pavimento. Chi e' il colpevole?",
         "immagine": "https://img-guidatv.org/17/24-ore-per-morire/5.jpg"
       },
       {
-        "ora": "17:45",
+        "ora": "17:35",
         "fine": "19:20",
         "titolo": "Little Big Italy",
         "descrizione": "Francesco Panella riparte alla scoperta dei migliori ristoranti italiani all'estero incontrando 3 ristoratori che lo porteranno a mangiare nel loro ristorante del cuore.",
@@ -21872,13 +21851,13 @@
       },
       {
         "ora": "19:20",
-        "fine": "20:35",
+        "fine": "20:40",
         "titolo": "Cash or Trash - Chi offre di piu'?",
         "descrizione": "Alcuni mercanti cercano di aggiudicarsi preziosi oggetti.",
         "immagine": "https://img-guidatv.org/17/cash-or-trash-chi-offre-di-piu/6.jpg"
       },
       {
-        "ora": "20:35",
+        "ora": "20:40",
         "fine": "21:30",
         "titolo": "Cash or Trash - Chi offre di piu'?",
         "descrizione": "Alcuni mercanti cercano di aggiudicarsi preziosi oggetti.",
@@ -21886,16 +21865,9 @@
       },
       {
         "ora": "21:30",
-        "fine": "23:50",
+        "fine": "00:00",
         "titolo": "Geopop racconta",
         "descrizione": "Geopop Racconta analizza i piu' grandi disastri della storia attraverso lo sguardo scientifico di Andrea Moccia, divulgatore e fondatore di Geopop. In questa puntata: cosa successe a Fukushima?",
-        "immagine": "https://img-guidatv.org/17/geopop-racconta/5.jpg"
-      },
-      {
-        "ora": "23:50",
-        "fine": "03:05",
-        "titolo": "Geopop racconta",
-        "descrizione": "Geopop Racconta analizza i piu' grandi disastri della storia attraverso lo sguardo scientifico di Andrea Moccia, divulgatore e fondatore di Geopop. In questa puntata: perche' esplose Chernobyl?",
         "immagine": "https://img-guidatv.org/17/geopop-racconta/5.jpg"
       }
     ]
@@ -23916,21 +23888,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "03:00",
+        "ora": "03:22",
         "fine": "03:43",
-        "titolo": "Love Is In The Air",
-        "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
-        "immagine": "https://image.tmdb.org/t/p/w300/flOKUAIxmWUiCzeRzsifUT8esWT.jpg"
+        "titolo": "Grande Fratello Vip",
+        "descrizione": "L'appuntamento quotidiano con le immagini e il racconto della casa piu' spiata d'Italia.",
+        "immagine": "https://img-guidatv.org/29/grande-fratello-vip/11.png"
       },
       {
         "ora": "03:43",
-        "fine": "04:25",
+        "fine": "04:24",
         "titolo": "Love Is In The Air",
         "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
         "immagine": "https://image.tmdb.org/t/p/w300/flOKUAIxmWUiCzeRzsifUT8esWT.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:24",
         "fine": "05:10",
         "titolo": "Love Is In The Air",
         "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
@@ -24071,9 +24043,9 @@
       },
       {
         "ora": "23:52",
-        "fine": "03:00",
+        "fine": "03:22",
         "titolo": "Grande Fratello Vip",
-        "descrizione": "I concorrenti continuano la loro avventura nella Casa. Tra strategie, emozioni e primi attriti, scopriamo cosa e' successo.",
+        "descrizione": "Tra strategie, emozioni e primi attriti, scopriamo cosa e' successo in casa. In nomination Marina La Rosa, Giancarlo Danto, Federica Morello e Alessandro Roncaccia. Chi verra' salvato?",
         "immagine": "https://img-guidatv.org/29/grande-fratello-vip/11.png"
       }
     ]
@@ -24083,21 +24055,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "03:00",
+        "ora": "03:22",
         "fine": "03:43",
-        "titolo": "Love Is In The Air",
-        "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
-        "immagine": "https://image.tmdb.org/t/p/w300/flOKUAIxmWUiCzeRzsifUT8esWT.jpg"
+        "titolo": "Grande Fratello Vip",
+        "descrizione": "L'appuntamento quotidiano con le immagini e il racconto della casa piu' spiata d'Italia.",
+        "immagine": "https://img-guidatv.org/29/grande-fratello-vip/11.png"
       },
       {
         "ora": "03:43",
-        "fine": "04:25",
+        "fine": "04:24",
         "titolo": "Love Is In The Air",
         "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
         "immagine": "https://image.tmdb.org/t/p/w300/flOKUAIxmWUiCzeRzsifUT8esWT.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:24",
         "fine": "05:10",
         "titolo": "Love Is In The Air",
         "descrizione": "La giovane e bella Eda Yildiz, aspirante architetto, attribuisce all'attraente Serkan la colpa di aver dovuto rinunciare ad un'importante borsa di studio, l'occasione della sua vita. Serkan, per rimediare, le propone di fingersi la sua fidanzata per qualche mese, dietro lauto compenso, affinché lei possa riprendere gli studi e laurearsi. Questo strano sodalizio avrà risvolti inaspettati.",
@@ -24238,9 +24210,9 @@
       },
       {
         "ora": "23:52",
-        "fine": "03:00",
+        "fine": "03:22",
         "titolo": "Grande Fratello Vip",
-        "descrizione": "I concorrenti continuano la loro avventura nella Casa. Tra strategie, emozioni e primi attriti, scopriamo cosa e' successo.",
+        "descrizione": "Tra strategie, emozioni e primi attriti, scopriamo cosa e' successo in casa. In nomination Marina La Rosa, Giancarlo Danto, Federica Morello e Alessandro Roncaccia. Chi verra' salvato?",
         "immagine": "https://img-guidatv.org/29/grande-fratello-vip/11.png"
       }
     ]
@@ -24254,14 +24226,14 @@
         "fine": "02:00",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "02:00",
         "fine": "06:02",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "06:02",
@@ -24275,42 +24247,42 @@
         "fine": "12:30",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "12:30",
         "fine": "14:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "14:45",
         "fine": "16:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "16:45",
         "fine": "18:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "18:45",
         "fine": "21:20",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "21:20",
         "fine": "00:00",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       }
     ]
   },
@@ -24323,14 +24295,14 @@
         "fine": "02:00",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "02:00",
         "fine": "06:02",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "06:02",
@@ -24344,42 +24316,42 @@
         "fine": "12:30",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "12:30",
         "fine": "14:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "14:45",
         "fine": "16:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "16:45",
         "fine": "18:45",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "18:45",
         "fine": "21:20",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       },
       {
         "ora": "21:20",
         "fine": "00:00",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000601/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
       }
     ]
   },
@@ -25787,14 +25759,14 @@
         "fine": "09:27",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/10473/mattino-cinque-news/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000701/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "09:27",
         "fine": "09:50",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/10473/mattino-cinque-news/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000701/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "09:50",
@@ -25815,21 +25787,21 @@
         "fine": "11:30",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/10473/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002201/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "11:30",
         "fine": "12:00",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/10473/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002201/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "12:00",
         "fine": "12:19",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
-        "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501052901/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "12:19",
@@ -25843,21 +25815,21 @@
         "fine": "12:58",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052901/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "12:58",
         "fine": "13:35",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/10473/tg5/4.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201105801/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "13:35",
         "fine": "14:18",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-2026/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314686001005201/media/22/86/3737884b-ae0b-43cb-9af9-16473d20a478/26dcb11c-4d2e-444d-802c-e1830a6aa81e.jpg"
       },
       {
         "ora": "14:18",
@@ -28140,9 +28112,9 @@
       {
         "ora": "07:25",
         "fine": "08:25",
-        "titolo": "1978 Don Lurio, Pino Calvi Pt.93",
-        "descrizione": "I personaggi dello spettacolo si rivedono nelle loro partecipazioni televisive del passato, nella storica trasmissione 'Ieri e oggi', curata da Leone Mancini e Lino Procacci. In questa puntata del 1978 sono ospiti -  di Enrico Maria Salerno Don Lurio e Pino Calvi. - A cura di Leone Mancini e Lino Procacci",
-        "immagine": "https://img-guidatv.org/24/1978-don-lurio-pino-calvi-pt-93/0.jpg"
+        "titolo": "Ieri E Oggi - 1978. Don Lurio, Pino Calvi",
+        "descrizione": "I personaggi dello spettacolo si rivedono nelle loro partecipazioni televisive del passato, nella storica trasmissione 'Ieri e oggi', curata da Leone Mancini e Lino Procacci. In questa puntata del 1978 sono ospiti di Enrico Maria Salerno Don Lurio e Pino Calvi.",
+        "immagine": "https://img-guidatv.org/24/ieri-e-oggi/0.jpg"
       },
       {
         "ora": "08:25",
@@ -28231,9 +28203,9 @@
       {
         "ora": "17:05",
         "fine": "18:35",
-        "titolo": "Cefalonia",
-        "descrizione": "In diversi set dell'isola di Cefalonia, teatro degli eventi, il racconto dell'eccidio che vide la divisione italiana Acqui sterminata da reparti dell'esercito nazista subito dopo l'armistizio dell'8 settem - bre 1943. In apertura e chiusura gli interventi e commenti di Alessandro Barbero. - Di Elio Mazzacane  Con Isabella Insolvibile",
-        "immagine": "https://img-guidatv.org/24/1943/6.jpg"
+        "titolo": "Nel Secolo Breve 1943 - La Resistenza A Cefalonia E Corfù - 23",
+        "descrizione": "In diversi set dell'isola di Cefalonia, teatro degli eventi, dell'eccidio che vide la Divisione italiana Acqui sterminata da reparti dell'esercito nazista subito dopo l'Armistizio dell' 8 settembre 1943. Con Isabella Insolvibile. La storia del più importante episodio della Resistenza dei militari italiani nella Seconda Guerra Mondiale. In apertura e chiusura i commenti di Alessandro Barbero.",
+        "immagine": "https://img-guidatv.org/24/nel-secolo-breve-1943-la-resistenza-a-cefalonia-e-corfu-23/0.jpg"
       },
       {
         "ora": "18:35",
@@ -28405,9 +28377,9 @@
       {
         "ora": "07:25",
         "fine": "08:25",
-        "titolo": "1978 Don Lurio, Pino Calvi Pt.93",
-        "descrizione": "I personaggi dello spettacolo si rivedono nelle loro partecipazioni televisive del passato, nella storica trasmissione 'Ieri e oggi', curata da Leone Mancini e Lino Procacci. In questa puntata del 1978 sono ospiti -  di Enrico Maria Salerno Don Lurio e Pino Calvi. - A cura di Leone Mancini e Lino Procacci",
-        "immagine": "https://img-guidatv.org/24/1978-don-lurio-pino-calvi-pt-93/0.jpg"
+        "titolo": "Ieri E Oggi - 1978. Don Lurio, Pino Calvi",
+        "descrizione": "I personaggi dello spettacolo si rivedono nelle loro partecipazioni televisive del passato, nella storica trasmissione 'Ieri e oggi', curata da Leone Mancini e Lino Procacci. In questa puntata del 1978 sono ospiti di Enrico Maria Salerno Don Lurio e Pino Calvi.",
+        "immagine": "https://img-guidatv.org/24/ieri-e-oggi/0.jpg"
       },
       {
         "ora": "08:25",
@@ -28496,9 +28468,9 @@
       {
         "ora": "17:05",
         "fine": "18:35",
-        "titolo": "Cefalonia",
-        "descrizione": "In diversi set dell'isola di Cefalonia, teatro degli eventi, il racconto dell'eccidio che vide la divisione italiana Acqui sterminata da reparti dell'esercito nazista subito dopo l'armistizio dell'8 settem - bre 1943. In apertura e chiusura gli interventi e commenti di Alessandro Barbero. - Di Elio Mazzacane  Con Isabella Insolvibile",
-        "immagine": "https://img-guidatv.org/24/1943/6.jpg"
+        "titolo": "Nel Secolo Breve 1943 - La Resistenza A Cefalonia E Corfù - 23",
+        "descrizione": "In diversi set dell'isola di Cefalonia, teatro degli eventi, dell'eccidio che vide la Divisione italiana Acqui sterminata da reparti dell'esercito nazista subito dopo l'Armistizio dell' 8 settembre 1943. Con Isabella Insolvibile. La storia del più importante episodio della Resistenza dei militari italiani nella Seconda Guerra Mondiale. In apertura e chiusura i commenti di Alessandro Barbero.",
+        "immagine": "https://img-guidatv.org/24/nel-secolo-breve-1943-la-resistenza-a-cefalonia-e-corfu-23/0.jpg"
       },
       {
         "ora": "18:35",
@@ -29094,48 +29066,41 @@
     "programmi": [
       {
         "ora": "00:15",
-        "fine": "01:55",
+        "fine": "02:10",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote/2.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "03:50",
+        "ora": "02:10",
+        "fine": "04:15",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote/2.jpg"
       },
       {
-        "ora": "03:50",
-        "fine": "04:20",
+        "ora": "04:15",
+        "fine": "04:40",
         "titolo": "Come e' fatto",
         "descrizione": "Passiamo al vaglio altri oggetti di uso quotidiano e scopriamo come nascono i piatti dei giradischi, i motori a vapore, le attrezzature per parchi giochi e le pentole antiaderenti.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "04:20",
-        "fine": "04:45",
+        "ora": "04:40",
+        "fine": "05:05",
         "titolo": "Come e' fatto",
         "descrizione": "Come sono fatte le forche da giardinaggio, le caramelle toffee, le tessere plastificate con microchip e gli stampi per le ciambelle? Scopriamolo insieme.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "04:45",
-        "fine": "05:10",
-        "titolo": "Come e' fatto",
-        "descrizione": "Come sono fatte le borracce in peltro, l'insalata di patate, le pile a combustibile e i rivestimenti esterni in compensato? Scopriamolo insieme.",
-        "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
-      },
-      {
-        "ora": "05:10",
-        "fine": "05:35",
+        "ora": "05:05",
+        "fine": "05:30",
         "titolo": "Come e' fatto",
         "descrizione": "Passiamo al vaglio altri oggetti quotidiani e scopriamo come vengono realizzate le tende da campeggio, le pipe della pace e i cannoni.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "05:35",
+        "ora": "05:30",
         "fine": "06:00",
         "titolo": "Come e' fatto",
         "descrizione": "Come sono fatti gli uccelli robotizzati per la caccia, i pelati, i tabelloni segnapunti e i lassos? Scopriamolo insieme.",
@@ -29143,90 +29108,90 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:35",
+        "fine": "06:30",
         "titolo": "Marchio di fabbrica",
         "descrizione": "Scopriamo come viene realizzato un tradizionale tappeto turco e come viene utilizzata la tecnologia degli elicotteri per l'elisci. Inoltre, come vengono 'accese e spente' le acque delle Cascate del Niagara?",
         "immagine": "https://img-guidatv.org/93/marchio-di-fabbrica/5.jpg"
       },
       {
-        "ora": "06:35",
-        "fine": "08:35",
+        "ora": "06:30",
+        "fine": "08:10",
         "titolo": "Reperti d'assalto",
         "descrizione": "Michael e il suo team cercano mezzi militari dismessi da rimettere a nuovo.",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "08:35",
-        "fine": "09:35",
+        "ora": "08:10",
+        "fine": "09:10",
         "titolo": "I re dell'asfalto",
         "descrizione": "I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "09:35",
-        "fine": "10:35",
+        "ora": "09:10",
+        "fine": "10:10",
         "titolo": "I re dell'asfalto",
         "descrizione": "I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "10:35",
-        "fine": "12:05",
+        "ora": "10:10",
+        "fine": "11:15",
         "titolo": "Vintage Garage",
         "descrizione": "FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.",
         "immagine": "https://image.tmdb.org/t/p/w300/gW8i8h7DdO4FoRgEEuiJMVlJ5zE.jpg"
       },
       {
-        "ora": "12:05",
-        "fine": "13:25",
+        "ora": "11:15",
+        "fine": "12:40",
         "titolo": "Vintage Garage",
         "descrizione": "FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.",
         "immagine": "https://image.tmdb.org/t/p/w300/gW8i8h7DdO4FoRgEEuiJMVlJ5zE.jpg"
       },
       {
-        "ora": "13:25",
-        "fine": "14:45",
+        "ora": "12:40",
+        "fine": "14:05",
         "titolo": "Vintage Garage",
         "descrizione": "FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.",
         "immagine": "https://image.tmdb.org/t/p/w300/gW8i8h7DdO4FoRgEEuiJMVlJ5zE.jpg"
       },
       {
-        "ora": "14:45",
-        "fine": "15:35",
+        "ora": "14:05",
+        "fine": "15:10",
         "titolo": "Iron Garage",
         "descrizione": "Joe Martin riporta in vita e rivende vecchie automobili.",
         "immagine": "https://img-guidatv.org/93/iron-garage/5.jpg"
       },
       {
-        "ora": "15:35",
-        "fine": "16:30",
+        "ora": "15:10",
+        "fine": "16:10",
         "titolo": "Iron Garage",
         "descrizione": "Joe Martin riporta in vita e rivende vecchie automobili.",
         "immagine": "https://img-guidatv.org/93/iron-garage/5.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:40",
+        "ora": "16:10",
+        "fine": "17:20",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "17:40",
-        "fine": "18:50",
+        "ora": "17:20",
+        "fine": "18:40",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "18:50",
-        "fine": "20:35",
+        "ora": "18:40",
+        "fine": "20:30",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote/2.jpg"
       },
       {
-        "ora": "20:35",
+        "ora": "20:30",
         "fine": "22:15",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.",
@@ -29254,48 +29219,41 @@
     "programmi": [
       {
         "ora": "00:15",
-        "fine": "01:55",
+        "fine": "02:10",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote/2.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "03:50",
+        "ora": "02:10",
+        "fine": "04:15",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote/2.jpg"
       },
       {
-        "ora": "03:50",
-        "fine": "04:20",
+        "ora": "04:15",
+        "fine": "04:40",
         "titolo": "Come e' fatto",
         "descrizione": "Passiamo al vaglio altri oggetti di uso quotidiano e scopriamo come nascono i piatti dei giradischi, i motori a vapore, le attrezzature per parchi giochi e le pentole antiaderenti.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "04:20",
-        "fine": "04:45",
+        "ora": "04:40",
+        "fine": "05:05",
         "titolo": "Come e' fatto",
         "descrizione": "Come sono fatte le forche da giardinaggio, le caramelle toffee, le tessere plastificate con microchip e gli stampi per le ciambelle? Scopriamolo insieme.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "04:45",
-        "fine": "05:10",
-        "titolo": "Come e' fatto",
-        "descrizione": "Come sono fatte le borracce in peltro, l'insalata di patate, le pile a combustibile e i rivestimenti esterni in compensato? Scopriamolo insieme.",
-        "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
-      },
-      {
-        "ora": "05:10",
-        "fine": "05:35",
+        "ora": "05:05",
+        "fine": "05:30",
         "titolo": "Come e' fatto",
         "descrizione": "Passiamo al vaglio altri oggetti quotidiani e scopriamo come vengono realizzate le tende da campeggio, le pipe della pace e i cannoni.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "05:35",
+        "ora": "05:30",
         "fine": "06:00",
         "titolo": "Come e' fatto",
         "descrizione": "Come sono fatti gli uccelli robotizzati per la caccia, i pelati, i tabelloni segnapunti e i lassos? Scopriamolo insieme.",
@@ -29303,90 +29261,90 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:35",
+        "fine": "06:30",
         "titolo": "Marchio di fabbrica",
         "descrizione": "Scopriamo come viene realizzato un tradizionale tappeto turco e come viene utilizzata la tecnologia degli elicotteri per l'elisci. Inoltre, come vengono 'accese e spente' le acque delle Cascate del Niagara?",
         "immagine": "https://img-guidatv.org/93/marchio-di-fabbrica/5.jpg"
       },
       {
-        "ora": "06:35",
-        "fine": "08:35",
+        "ora": "06:30",
+        "fine": "08:10",
         "titolo": "Reperti d'assalto",
         "descrizione": "Michael e il suo team cercano mezzi militari dismessi da rimettere a nuovo.",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "08:35",
-        "fine": "09:35",
+        "ora": "08:10",
+        "fine": "09:10",
         "titolo": "I re dell'asfalto",
         "descrizione": "I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "09:35",
-        "fine": "10:35",
+        "ora": "09:10",
+        "fine": "10:10",
         "titolo": "I re dell'asfalto",
         "descrizione": "I camionisti tedeschi, italiani e olandesi condividono le loro esperienze.",
         "immagine": "https://img-guidatv.org/93/i-re-dell-asfalto/0.jpg"
       },
       {
-        "ora": "10:35",
-        "fine": "12:05",
+        "ora": "10:10",
+        "fine": "11:15",
         "titolo": "Vintage Garage",
         "descrizione": "FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.",
         "immagine": "https://image.tmdb.org/t/p/w300/gW8i8h7DdO4FoRgEEuiJMVlJ5zE.jpg"
       },
       {
-        "ora": "12:05",
-        "fine": "13:25",
+        "ora": "11:15",
+        "fine": "12:40",
         "titolo": "Vintage Garage",
         "descrizione": "FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.",
         "immagine": "https://image.tmdb.org/t/p/w300/gW8i8h7DdO4FoRgEEuiJMVlJ5zE.jpg"
       },
       {
-        "ora": "13:25",
-        "fine": "14:45",
+        "ora": "12:40",
+        "fine": "14:05",
         "titolo": "Vintage Garage",
         "descrizione": "FranCois Allain seleziona la migliore officina per restaurare, in pochi giorni, prestigiose auto da rimettere subito sul mercato.",
         "immagine": "https://image.tmdb.org/t/p/w300/gW8i8h7DdO4FoRgEEuiJMVlJ5zE.jpg"
       },
       {
-        "ora": "14:45",
-        "fine": "15:35",
+        "ora": "14:05",
+        "fine": "15:10",
         "titolo": "Iron Garage",
         "descrizione": "Joe Martin riporta in vita e rivende vecchie automobili.",
         "immagine": "https://img-guidatv.org/93/iron-garage/5.jpg"
       },
       {
-        "ora": "15:35",
-        "fine": "16:30",
+        "ora": "15:10",
+        "fine": "16:10",
         "titolo": "Iron Garage",
         "descrizione": "Joe Martin riporta in vita e rivende vecchie automobili.",
         "immagine": "https://img-guidatv.org/93/iron-garage/5.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:40",
+        "ora": "16:10",
+        "fine": "17:20",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "17:40",
-        "fine": "18:50",
+        "ora": "17:20",
+        "fine": "18:40",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "18:50",
-        "fine": "20:35",
+        "ora": "18:40",
+        "fine": "20:30",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote/2.jpg"
       },
       {
-        "ora": "20:35",
+        "ora": "20:30",
         "fine": "22:15",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Tornano Mike Brewer ed Ant Anstead con nuove meravigliose automobili.",
@@ -29413,91 +29371,84 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:15",
-        "fine": "01:20",
+        "ora": "00:25",
+        "fine": "01:40",
         "titolo": "Miss Fisher Delitti e Misteri",
         "descrizione": "La serie Miss Fisher's Murder Mysteries si basa sui racconti dell'autrice australiana Kerry Greenwood. La nostra investigatrice si muove con disinvoltura nei vicoli e nei club di jazz della Melbourne fine anni '20, combattendo l'ingiustizia con la sua pistola dal manico di madreperla e il suo acume affilato. Lasciandosi dietro una scia di ammiratori, la nostra modernissima eroina fa in modo di godersi ogni momento della sua fortunata esistenza.",
         "immagine": "https://image.tmdb.org/t/p/w300/zvt5l9rdJZDZFaNrTDJBV2iHW2q.jpg"
       },
       {
-        "ora": "01:20",
-        "fine": "03:40",
+        "ora": "01:40",
+        "fine": "04:15",
         "titolo": "Shetland",
         "descrizione": "Rimasto vedovo, il detective scozzese Jimmy Perez torna sulle isole Shetland e protegge gli abitanti da una inquietante serie di crimini. Insieme ai propri fidi colleghi, l'uomo lavora ad una serie di casi che turbano la popolazione locale. Telefilm basato sui romanzi della scrittrice Ann Cleeves.",
         "immagine": "https://image.tmdb.org/t/p/w300/Ak2KWUDfhinOTOVgZryxYnT2f5X.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:35",
+        "ora": "04:15",
+        "fine": "05:05",
         "titolo": "Torbidi delitti",
         "descrizione": "Il corpo del 32enne Mark Mueller viene visto affiorare sulle rive del Lago Michigan, suo luogo preferito per la pesca. Gli indizi su cosa e' successo pero' sono molto distanti...",
         "immagine": "https://img-guidatv.org/38/torbidi-delitti/0.jpg"
       },
       {
-        "ora": "04:35",
-        "fine": "05:30",
+        "ora": "05:05",
+        "fine": "06:00",
         "titolo": "Murder comes to town",
         "descrizione": "Murder Comes To Town",
         "immagine": "https://image.tmdb.org/t/p/w300/yvPqYtWVwiu0kHOuVb893FXkHov.jpg"
       },
       {
-        "ora": "05:30",
-        "fine": "06:00",
-        "titolo": "L'investigatore Wolfe",
-        "descrizione": "Una signora benestante assume Wolfe per scoprire se suo marito stia sperperando denaro con le scommesse. Dovra' partecipare arrivamente alle indagini...",
-        "immagine": "https://image.tmdb.org/t/p/w300/6NhVeI20XtSp1lYO0q4sH5l6YO0.jpg"
-      },
-      {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:45",
         "titolo": "Delitti di provincia",
         "descrizione": "Michael Lee Smith e' stato ucciso, spogliato e buttato in una discarica nella sua citta', Berkley nel Michigan. I concittadini sono sconvolti, ma davvero nessuno sa niente?",
         "immagine": "https://img-guidatv.org/38/delitti-di-provincia/6.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "08:00",
+        "ora": "06:45",
+        "fine": "07:45",
         "titolo": "Il delitto della porta accanto",
         "descrizione": "Joliet, Illinois. I vigili del fuoco sono scioccati quando chiamati per un incendio, trovano il corpo di Melissa Plut, 28 anni, strangolata e riversa sul pavimento della sua camera.",
         "immagine": "https://img-guidatv.org/38/il-delitto-della-porta-accanto/0.jpg"
       },
       {
-        "ora": "08:00",
-        "fine": "09:00",
+        "ora": "07:45",
+        "fine": "08:45",
         "titolo": "A Crime to Remember",
         "descrizione": "Il settantaseienne Franklin Bradshaw viene trovato ucciso in un negozio di ricambi per auto. Gli investigatori indagano sulla sua strana storia familiare.",
         "immagine": "https://image.tmdb.org/t/p/w300/wNgUG7iARtOr6jOdgREC6mp0uMD.jpg"
       },
       {
-        "ora": "09:00",
-        "fine": "10:00",
+        "ora": "08:45",
+        "fine": "09:45",
         "titolo": "I misteri di Murdoch",
         "descrizione": "Basata sui romanzi gialli di Maureen Jennings e nominata al Seoul Drama Festival nel 2008 come Best Drama Series, Best Actor e Best Art Director, la serie crime è ambientata in Canada, precisamente a Toronto, nel lontano 1890 e ha per protagonista William Murdoch (Yannick Bisson), un giovane investigatore che, grazie alle sue speciali e originali tecniche di investigazione, come la rilevazione delle impronte digitali, le analisi del sangue e delle tracce lasciate sulla scena del crimine, tecniche decisamente moderne per quell’epoca, riesce a risolvere delitti molto complessi. Ad aiutare l’antenato di un agente di CSI nella risoluzione dei casi sono l’affascinante patologa Julia Ogden (Hélène Joy) e il fedele poliziotto George Crabtree (Johnny Harris). Murdoch però si scontrerà spesso e volentieri con il suo capo, l’ispettore Brackenreid (Thomas Craig) sostenitore dei metodi convenzionali dell’epoca e molto scettico su quelli usati dal giovane investigatore.",
         "immagine": "https://image.tmdb.org/t/p/w500/6f0T3IjuVOIDBinFXoPv3CBUaU7.jpg"
       },
       {
-        "ora": "10:00",
-        "fine": "11:00",
+        "ora": "09:45",
+        "fine": "10:45",
         "titolo": "I misteri di Murdoch",
         "descrizione": "Basata sui romanzi gialli di Maureen Jennings e nominata al Seoul Drama Festival nel 2008 come Best Drama Series, Best Actor e Best Art Director, la serie crime è ambientata in Canada, precisamente a Toronto, nel lontano 1890 e ha per protagonista William Murdoch (Yannick Bisson), un giovane investigatore che, grazie alle sue speciali e originali tecniche di investigazione, come la rilevazione delle impronte digitali, le analisi del sangue e delle tracce lasciate sulla scena del crimine, tecniche decisamente moderne per quell’epoca, riesce a risolvere delitti molto complessi. Ad aiutare l’antenato di un agente di CSI nella risoluzione dei casi sono l’affascinante patologa Julia Ogden (Hélène Joy) e il fedele poliziotto George Crabtree (Johnny Harris). Murdoch però si scontrerà spesso e volentieri con il suo capo, l’ispettore Brackenreid (Thomas Craig) sostenitore dei metodi convenzionali dell’epoca e molto scettico su quelli usati dal giovane investigatore.",
         "immagine": "https://image.tmdb.org/t/p/w500/6f0T3IjuVOIDBinFXoPv3CBUaU7.jpg"
       },
       {
-        "ora": "11:00",
-        "fine": "12:55",
+        "ora": "10:45",
+        "fine": "12:45",
         "titolo": "L'Ispettore Gently",
         "descrizione": "Dramma poliziesco ambientato negli anni '60 su un detective della vecchia scuola che cerca di venire a patti con un momento in cui i confini tra polizia e criminali sono diventati sfocati.",
         "immagine": "https://image.tmdb.org/t/p/w300/sogxDck8Vl8oOPwcSJ27zUMwaRM.jpg"
       },
       {
-        "ora": "12:55",
-        "fine": "14:50",
+        "ora": "12:45",
+        "fine": "14:45",
         "titolo": "L'ispettore Barnaby",
         "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza.",
         "immagine": "https://img-guidatv.org/serie/5e78d865ce1e246c511cb7ec_p_22_rs_300.jpg"
       },
       {
-        "ora": "14:50",
+        "ora": "14:45",
         "fine": "15:50",
         "titolo": "I misteri di Murdoch",
         "descrizione": "Basata sui romanzi gialli di Maureen Jennings e nominata al Seoul Drama Festival nel 2008 come Best Drama Series, Best Actor e Best Art Director, la serie crime è ambientata in Canada, precisamente a Toronto, nel lontano 1890 e ha per protagonista William Murdoch (Yannick Bisson), un giovane investigatore che, grazie alle sue speciali e originali tecniche di investigazione, come la rilevazione delle impronte digitali, le analisi del sangue e delle tracce lasciate sulla scena del crimine, tecniche decisamente moderne per quell’epoca, riesce a risolvere delitti molto complessi. Ad aiutare l’antenato di un agente di CSI nella risoluzione dei casi sono l’affascinante patologa Julia Ogden (Hélène Joy) e il fedele poliziotto George Crabtree (Johnny Harris). Murdoch però si scontrerà spesso e volentieri con il suo capo, l’ispettore Brackenreid (Thomas Craig) sostenitore dei metodi convenzionali dell’epoca e molto scettico su quelli usati dal giovane investigatore.",
@@ -29512,13 +29463,13 @@
       },
       {
         "ora": "16:50",
-        "fine": "19:10",
+        "fine": "19:15",
         "titolo": "Shetland",
         "descrizione": "Rimasto vedovo, il detective scozzese Jimmy Perez torna sulle isole Shetland e protegge gli abitanti da una inquietante serie di crimini. Insieme ai propri fidi colleghi, l'uomo lavora ad una serie di casi che turbano la popolazione locale. Telefilm basato sui romanzi della scrittrice Ann Cleeves.",
         "immagine": "https://image.tmdb.org/t/p/w300/Ak2KWUDfhinOTOVgZryxYnT2f5X.jpg"
       },
       {
-        "ora": "19:10",
+        "ora": "19:15",
         "fine": "21:10",
         "titolo": "L'Ispettore Gently",
         "descrizione": "Dramma poliziesco ambientato negli anni '60 su un detective della vecchia scuola che cerca di venire a patti con un momento in cui i confini tra polizia e criminali sono diventati sfocati.",
@@ -29533,14 +29484,14 @@
       },
       {
         "ora": "22:10",
-        "fine": "23:10",
+        "fine": "23:05",
         "titolo": "Alexa - Vita da detective",
         "descrizione": "La serie segue le avventure dell'intrepida ex agente di polizia e attuale consulente Alexa Crowe, che aiuta la polizia a risolvere una serie di omicidi complessi con l'aiuto della sua eccentrica assistente Madison. Lungo la strada deve vedersela con il fratello criminale condannato Will, così come con le avance romantiche del collega Harry e del proprietario del ristorante Reuben.",
         "immagine": "https://image.tmdb.org/t/p/w300/gHccUnba1ag9MV5WxE0dKu727pL.jpg"
       },
       {
-        "ora": "23:10",
-        "fine": "00:15",
+        "ora": "23:05",
+        "fine": "00:25",
         "titolo": "Miss Fisher Delitti e Misteri",
         "descrizione": "La serie Miss Fisher's Murder Mysteries si basa sui racconti dell'autrice australiana Kerry Greenwood. La nostra investigatrice si muove con disinvoltura nei vicoli e nei club di jazz della Melbourne fine anni '20, combattendo l'ingiustizia con la sua pistola dal manico di madreperla e il suo acume affilato. Lasciandosi dietro una scia di ammiratori, la nostra modernissima eroina fa in modo di godersi ogni momento della sua fortunata esistenza.",
         "immagine": "https://image.tmdb.org/t/p/w300/zvt5l9rdJZDZFaNrTDJBV2iHW2q.jpg"
@@ -29552,91 +29503,84 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:15",
-        "fine": "01:20",
+        "ora": "00:25",
+        "fine": "01:40",
         "titolo": "Miss Fisher Delitti e Misteri",
         "descrizione": "La serie Miss Fisher's Murder Mysteries si basa sui racconti dell'autrice australiana Kerry Greenwood. La nostra investigatrice si muove con disinvoltura nei vicoli e nei club di jazz della Melbourne fine anni '20, combattendo l'ingiustizia con la sua pistola dal manico di madreperla e il suo acume affilato. Lasciandosi dietro una scia di ammiratori, la nostra modernissima eroina fa in modo di godersi ogni momento della sua fortunata esistenza.",
         "immagine": "https://image.tmdb.org/t/p/w300/zvt5l9rdJZDZFaNrTDJBV2iHW2q.jpg"
       },
       {
-        "ora": "01:20",
-        "fine": "03:40",
+        "ora": "01:40",
+        "fine": "04:15",
         "titolo": "Shetland",
         "descrizione": "Rimasto vedovo, il detective scozzese Jimmy Perez torna sulle isole Shetland e protegge gli abitanti da una inquietante serie di crimini. Insieme ai propri fidi colleghi, l'uomo lavora ad una serie di casi che turbano la popolazione locale. Telefilm basato sui romanzi della scrittrice Ann Cleeves.",
         "immagine": "https://image.tmdb.org/t/p/w300/Ak2KWUDfhinOTOVgZryxYnT2f5X.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:35",
+        "ora": "04:15",
+        "fine": "05:05",
         "titolo": "Torbidi delitti",
         "descrizione": "Il corpo del 32enne Mark Mueller viene visto affiorare sulle rive del Lago Michigan, suo luogo preferito per la pesca. Gli indizi su cosa e' successo pero' sono molto distanti...",
         "immagine": "https://img-guidatv.org/38/torbidi-delitti/0.jpg"
       },
       {
-        "ora": "04:35",
-        "fine": "05:30",
+        "ora": "05:05",
+        "fine": "06:00",
         "titolo": "Murder comes to town",
         "descrizione": "Murder Comes To Town",
         "immagine": "https://image.tmdb.org/t/p/w300/yvPqYtWVwiu0kHOuVb893FXkHov.jpg"
       },
       {
-        "ora": "05:30",
-        "fine": "06:00",
-        "titolo": "L'investigatore Wolfe",
-        "descrizione": "Una signora benestante assume Wolfe per scoprire se suo marito stia sperperando denaro con le scommesse. Dovra' partecipare arrivamente alle indagini...",
-        "immagine": "https://image.tmdb.org/t/p/w300/6NhVeI20XtSp1lYO0q4sH5l6YO0.jpg"
-      },
-      {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:45",
         "titolo": "Delitti di provincia",
         "descrizione": "Michael Lee Smith e' stato ucciso, spogliato e buttato in una discarica nella sua citta', Berkley nel Michigan. I concittadini sono sconvolti, ma davvero nessuno sa niente?",
         "immagine": "https://img-guidatv.org/38/delitti-di-provincia/6.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "08:00",
+        "ora": "06:45",
+        "fine": "07:45",
         "titolo": "Il delitto della porta accanto",
         "descrizione": "Joliet, Illinois. I vigili del fuoco sono scioccati quando chiamati per un incendio, trovano il corpo di Melissa Plut, 28 anni, strangolata e riversa sul pavimento della sua camera.",
         "immagine": "https://img-guidatv.org/38/il-delitto-della-porta-accanto/0.jpg"
       },
       {
-        "ora": "08:00",
-        "fine": "09:00",
+        "ora": "07:45",
+        "fine": "08:45",
         "titolo": "A Crime to Remember",
         "descrizione": "Il settantaseienne Franklin Bradshaw viene trovato ucciso in un negozio di ricambi per auto. Gli investigatori indagano sulla sua strana storia familiare.",
         "immagine": "https://image.tmdb.org/t/p/w300/wNgUG7iARtOr6jOdgREC6mp0uMD.jpg"
       },
       {
-        "ora": "09:00",
-        "fine": "10:00",
+        "ora": "08:45",
+        "fine": "09:45",
         "titolo": "I misteri di Murdoch",
         "descrizione": "Basata sui romanzi gialli di Maureen Jennings e nominata al Seoul Drama Festival nel 2008 come Best Drama Series, Best Actor e Best Art Director, la serie crime è ambientata in Canada, precisamente a Toronto, nel lontano 1890 e ha per protagonista William Murdoch (Yannick Bisson), un giovane investigatore che, grazie alle sue speciali e originali tecniche di investigazione, come la rilevazione delle impronte digitali, le analisi del sangue e delle tracce lasciate sulla scena del crimine, tecniche decisamente moderne per quell’epoca, riesce a risolvere delitti molto complessi. Ad aiutare l’antenato di un agente di CSI nella risoluzione dei casi sono l’affascinante patologa Julia Ogden (Hélène Joy) e il fedele poliziotto George Crabtree (Johnny Harris). Murdoch però si scontrerà spesso e volentieri con il suo capo, l’ispettore Brackenreid (Thomas Craig) sostenitore dei metodi convenzionali dell’epoca e molto scettico su quelli usati dal giovane investigatore.",
         "immagine": "https://image.tmdb.org/t/p/w500/6f0T3IjuVOIDBinFXoPv3CBUaU7.jpg"
       },
       {
-        "ora": "10:00",
-        "fine": "11:00",
+        "ora": "09:45",
+        "fine": "10:45",
         "titolo": "I misteri di Murdoch",
         "descrizione": "Basata sui romanzi gialli di Maureen Jennings e nominata al Seoul Drama Festival nel 2008 come Best Drama Series, Best Actor e Best Art Director, la serie crime è ambientata in Canada, precisamente a Toronto, nel lontano 1890 e ha per protagonista William Murdoch (Yannick Bisson), un giovane investigatore che, grazie alle sue speciali e originali tecniche di investigazione, come la rilevazione delle impronte digitali, le analisi del sangue e delle tracce lasciate sulla scena del crimine, tecniche decisamente moderne per quell’epoca, riesce a risolvere delitti molto complessi. Ad aiutare l’antenato di un agente di CSI nella risoluzione dei casi sono l’affascinante patologa Julia Ogden (Hélène Joy) e il fedele poliziotto George Crabtree (Johnny Harris). Murdoch però si scontrerà spesso e volentieri con il suo capo, l’ispettore Brackenreid (Thomas Craig) sostenitore dei metodi convenzionali dell’epoca e molto scettico su quelli usati dal giovane investigatore.",
         "immagine": "https://image.tmdb.org/t/p/w500/6f0T3IjuVOIDBinFXoPv3CBUaU7.jpg"
       },
       {
-        "ora": "11:00",
-        "fine": "12:55",
+        "ora": "10:45",
+        "fine": "12:45",
         "titolo": "L'Ispettore Gently",
         "descrizione": "Dramma poliziesco ambientato negli anni '60 su un detective della vecchia scuola che cerca di venire a patti con un momento in cui i confini tra polizia e criminali sono diventati sfocati.",
         "immagine": "https://image.tmdb.org/t/p/w300/sogxDck8Vl8oOPwcSJ27zUMwaRM.jpg"
       },
       {
-        "ora": "12:55",
-        "fine": "14:50",
+        "ora": "12:45",
+        "fine": "14:45",
         "titolo": "L'ispettore Barnaby",
         "descrizione": "L'ispettore capo Tom Barnaby della polizia di Midsomer e il suo fidato sergente, Gavin Troy, , devono investigare sugli omicidi che avvengono nei villaggi dell'immaginaria contea inglese di Midsomer. Le storie sono ambientate nel presente ed hanno una struttura di \"giallo classico\", in cui l'indagine e le deduzioni prevalgono sull'azione e sulla violenza.",
         "immagine": "https://img-guidatv.org/serie/5e78d865ce1e246c511cb7ec_p_22_rs_300.jpg"
       },
       {
-        "ora": "14:50",
+        "ora": "14:45",
         "fine": "15:50",
         "titolo": "I misteri di Murdoch",
         "descrizione": "Basata sui romanzi gialli di Maureen Jennings e nominata al Seoul Drama Festival nel 2008 come Best Drama Series, Best Actor e Best Art Director, la serie crime è ambientata in Canada, precisamente a Toronto, nel lontano 1890 e ha per protagonista William Murdoch (Yannick Bisson), un giovane investigatore che, grazie alle sue speciali e originali tecniche di investigazione, come la rilevazione delle impronte digitali, le analisi del sangue e delle tracce lasciate sulla scena del crimine, tecniche decisamente moderne per quell’epoca, riesce a risolvere delitti molto complessi. Ad aiutare l’antenato di un agente di CSI nella risoluzione dei casi sono l’affascinante patologa Julia Ogden (Hélène Joy) e il fedele poliziotto George Crabtree (Johnny Harris). Murdoch però si scontrerà spesso e volentieri con il suo capo, l’ispettore Brackenreid (Thomas Craig) sostenitore dei metodi convenzionali dell’epoca e molto scettico su quelli usati dal giovane investigatore.",
@@ -29651,13 +29595,13 @@
       },
       {
         "ora": "16:50",
-        "fine": "19:10",
+        "fine": "19:15",
         "titolo": "Shetland",
         "descrizione": "Rimasto vedovo, il detective scozzese Jimmy Perez torna sulle isole Shetland e protegge gli abitanti da una inquietante serie di crimini. Insieme ai propri fidi colleghi, l'uomo lavora ad una serie di casi che turbano la popolazione locale. Telefilm basato sui romanzi della scrittrice Ann Cleeves.",
         "immagine": "https://image.tmdb.org/t/p/w300/Ak2KWUDfhinOTOVgZryxYnT2f5X.jpg"
       },
       {
-        "ora": "19:10",
+        "ora": "19:15",
         "fine": "21:10",
         "titolo": "L'Ispettore Gently",
         "descrizione": "Dramma poliziesco ambientato negli anni '60 su un detective della vecchia scuola che cerca di venire a patti con un momento in cui i confini tra polizia e criminali sono diventati sfocati.",
@@ -29672,14 +29616,14 @@
       },
       {
         "ora": "22:10",
-        "fine": "23:10",
+        "fine": "23:05",
         "titolo": "Alexa - Vita da detective",
         "descrizione": "La serie segue le avventure dell'intrepida ex agente di polizia e attuale consulente Alexa Crowe, che aiuta la polizia a risolvere una serie di omicidi complessi con l'aiuto della sua eccentrica assistente Madison. Lungo la strada deve vedersela con il fratello criminale condannato Will, così come con le avance romantiche del collega Harry e del proprietario del ristorante Reuben.",
         "immagine": "https://image.tmdb.org/t/p/w300/gHccUnba1ag9MV5WxE0dKu727pL.jpg"
       },
       {
-        "ora": "23:10",
-        "fine": "00:15",
+        "ora": "23:05",
+        "fine": "00:25",
         "titolo": "Miss Fisher Delitti e Misteri",
         "descrizione": "La serie Miss Fisher's Murder Mysteries si basa sui racconti dell'autrice australiana Kerry Greenwood. La nostra investigatrice si muove con disinvoltura nei vicoli e nei club di jazz della Melbourne fine anni '20, combattendo l'ingiustizia con la sua pistola dal manico di madreperla e il suo acume affilato. Lasciandosi dietro una scia di ammiratori, la nostra modernissima eroina fa in modo di godersi ogni momento della sua fortunata esistenza.",
         "immagine": "https://image.tmdb.org/t/p/w300/zvt5l9rdJZDZFaNrTDJBV2iHW2q.jpg"
@@ -29691,217 +29635,196 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "01:00",
-        "titolo": "C'era una volta casa",
-        "descrizione": "Una coppia che ha vissuto sempre sulle isole vuole trasferirsi a Laurel, nel Mississippi.",
-        "immagine": "https://img-guidatv.org/59/c-era-una-volta-casa/6.jpg"
-      },
-      {
         "ora": "01:00",
-        "fine": "01:55",
+        "fine": "02:05",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Lo scultore Nick ha un sacco di lavoro da fare. Intanto, Ted tenta di sistemare il modellino di una giostra e Alex restaura un oggetto da collezione dei Beatles.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "02:50",
+        "ora": "02:05",
+        "fine": "03:10",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Il fabbro Nev e il vetraio Gordon sistemano una lanterna gotica danneggiata. Ted lavora su un aereo arrugginito mentre Alex si occupa di un tavolo enorme.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "03:45",
+        "ora": "03:10",
+        "fine": "04:10",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Alex si occupa di un biliardino malmesso. Martin e' alle prese con una cassa di legno, mentre Craig sistema una sedia scandinava.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:40",
+        "ora": "04:10",
+        "fine": "05:00",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Il lucidatore Alex deve sistemare un enorme orologio. Ruth si occupa di un paio di candele dorate e Cliff lavora su un'imbarcazione secolare.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "04:40",
-        "fine": "05:35",
+        "ora": "05:00",
+        "fine": "06:00",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Ted, esperto di metalli, deve sistemare una luce ferroviaria arrugginita. Alex restaura una giostra di animali, mentre Craig sistema una sedia.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "05:35",
-        "fine": "06:00",
-        "titolo": "A caccia di occasioni",
-        "descrizione": "Kim, giocatore professionista di football americano, e la sua migliore amica Leslie condividono l'amore per i mercatini. I due sfidano i designer Ron e Peter.",
-        "immagine": "https://img-guidatv.org/59/a-caccia-di-occasioni/6.jpg"
-      },
-      {
         "ora": "06:00",
-        "fine": "06:30",
+        "fine": "06:20",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "In Alaska, Wes e Angela sono proprietari di una compagnia di aerotaxi. I due hanno un sogno da un milione di dollari e per realizzarlo sono disposti a tutto.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "06:30",
-        "fine": "06:55",
-        "titolo": "Case impossibili: Alaska",
-        "descrizione": "Ron e Lacey hanno un grande camion e un budget ridotto per la loro nuova casa. La coppia e' disposta a sacrificare lo spazio per il camion pur di trovare un'abitazione vicino Big Lake.",
-        "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
-      },
-      {
-        "ora": "06:55",
-        "fine": "07:20",
+        "ora": "06:20",
+        "fine": "06:50",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Il meccanico Kolin e la sua ragazza Alissa sono alla ricerca di una casa che abbia un accesso sui fantastici sentieri isolati dell'Alaska.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "07:20",
-        "fine": "07:50",
+        "ora": "06:50",
+        "fine": "07:15",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Dal Kansas, Karie si e' trasferita in Alaska per realizzare il suo sogno d'infanzia: costruire una baita in montagna. Per la donna e' arrivato il momento di avverare il suo desiderio.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "07:50",
-        "fine": "08:20",
+        "ora": "07:15",
+        "fine": "07:45",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Gli imprenditori Mike e Lorraine, amanti dei cani da slitta, sono alla ricerca di una proprieta' da un milione di dollari in una citta' dell'Alaska.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "08:20",
-        "fine": "08:50",
+        "ora": "07:45",
+        "fine": "08:10",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Con un budget di 125.000 dollari, il pilota Jaime e la sua ragazza Dusty si mettono in volo verso Seldovia per andare alla ricerca dell'abitazione giusta per loro.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "08:50",
-        "fine": "09:20",
+        "ora": "08:10",
+        "fine": "08:40",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "I neo sposi Jeremy e Danielle desiderano acquistare la loro prima casa nella citta' di Homer, in Alaska. La coppia pero' non dispone di abbastanza denaro. Il loro budget di 150.000 dollari sara' sufficiente?",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "09:20",
-        "fine": "09:45",
+        "ora": "08:40",
+        "fine": "09:10",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "I neo sposi John ed Elise vivono nel centro di Juneau. La coppia pero' desidera allontanarsi da questo luogo troppo affollato per andare alla ricerca del posto ideale in cui rilassarsi.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "09:45",
-        "fine": "10:15",
+        "ora": "09:10",
+        "fine": "09:40",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Brian e Alisa vogliono mettere alla prova il loro stile di vita avventuroso andando alla ricerca di rifugi in alcuni territori isolati vicino Haines, luogo perfetto per vivere grandi avventure in Alaska.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "10:15",
-        "fine": "10:45",
+        "ora": "09:40",
+        "fine": "10:05",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Harry e Genny vivono nel piccolo villaggio di pescatori di Haines e vorrebbero allontanarsi dal loro vicino di casa maleodorante: il conservificio di pesce di Harry.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "10:45",
-        "fine": "11:10",
+        "ora": "10:05",
+        "fine": "10:35",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Nella Foresta Pluviale dell'Alaska di Juneau, Bryan e Amy vorrebbero abbandonare la loro casa-roulotte per trovare un'abitazione piu' grande, purtroppo il loro esiguo budget li costringe a cercare altrove.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "11:10",
-        "fine": "11:35",
+        "ora": "10:35",
+        "fine": "11:00",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Courtney e Brian desiderano acquistare una prima casa sulle Montagne Rocciose del Colorado. Ma il massimo a cui possono aspirare e' una baita rustica, in cui disporre di acqua corrente sarebbe gia' una gran fortuna.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "11:35",
-        "fine": "12:05",
+        "ora": "11:00",
+        "fine": "11:35",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Jon e Mandy amano le escursioni e la mountain bike. La coppia e' alla ricerca di una casa a Black Hawk, la piccola citta' mineraria dell'oro sita nel cuore delle Montagne Rocciose del Colorado.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "12:05",
-        "fine": "12:35",
+        "ora": "11:35",
+        "fine": "12:00",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Stanchi della periferia, Scott e Kim sono pronti a trasferirsi sulle montagne alla ricerca di un po' di solitudine. La coppia visita tre abitazioni alle porte delle Montagne Rocciose.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "12:35",
-        "fine": "13:05",
+        "ora": "12:00",
+        "fine": "12:35",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Frank e JoAnna vogliono acquistare la loro prima casa sulle Montagne Rocciose. JoAnna, amante della citta', sara' pronta per questo grande cambiamento?",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "13:05",
-        "fine": "13:35",
+        "ora": "12:35",
+        "fine": "13:00",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Scott e sua moglie hanno deciso di fare le valigie e di trasferirsi dalla costa del Maine alle vette delle Montagne Rocciose dello Utah. La coppia desidera una casa rustica con numerosi comfort.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "13:35",
-        "fine": "14:05",
+        "ora": "13:00",
+        "fine": "13:35",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "La guida dell'avventura all'aria aperto Matt e sua moglie sognano di trovare una perfetta capanna di legno. La coppia visita tre abitazioni nei pressi di zone selvagge.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "14:05",
-        "fine": "14:35",
+        "ora": "13:35",
+        "fine": "14:00",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Dopo aver unito le loro due famiglie, i neo sposi Oney e Bobbi cercano una casa a poco piu' di un chilometro dalle Montagne Rocciose. Troveranno un posto abbastanza grande in cui poter vivere con i loro sei figli?",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "14:35",
-        "fine": "15:35",
+        "ora": "14:00",
+        "fine": "15:05",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Una coppia ha bisogno di maggiore spazio. Brian e Mika creano spazi stravaganti.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "15:35",
-        "fine": "16:30",
+        "ora": "15:05",
+        "fine": "16:05",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Il bungalow di una coppia e' troppo piccolo. Brian e Mika costruiscono una casa moderna.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:25",
+        "ora": "16:05",
+        "fine": "17:10",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Due insegnanti hanno bisogno dell'aiuto di Brian e Mika per trasformare la loro casa.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "17:25",
-        "fine": "18:20",
+        "ora": "17:10",
+        "fine": "18:10",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Una coppia in attesa chiede aiuto a Brian e Mika per rinnovare la loro abitazione.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "18:20",
-        "fine": "19:15",
+        "ora": "18:10",
+        "fine": "19:10",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Una mamma vuole sistemare la propria casa. Jenn tenta di creare un mix tra stili diversi.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "19:15",
+        "ora": "19:10",
         "fine": "20:10",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Mika e Brian vogliono creare una casa in cui una famiglia possa ospitare i parenti.",
@@ -29930,9 +29853,16 @@
       },
       {
         "ora": "23:00",
-        "fine": "00:00",
+        "fine": "23:55",
         "titolo": "C'era una volta casa",
         "descrizione": "Tre fratelli vogliono una casa abbastanza grande che accolga tutte le loro famiglie.",
+        "immagine": "https://img-guidatv.org/59/c-era-una-volta-casa/6.jpg"
+      },
+      {
+        "ora": "23:55",
+        "fine": "01:00",
+        "titolo": "C'era una volta casa",
+        "descrizione": "Una coppia che ha vissuto sempre sulle isole vuole trasferirsi a Laurel, nel Mississippi.",
         "immagine": "https://img-guidatv.org/59/c-era-una-volta-casa/6.jpg"
       }
     ]
@@ -29942,217 +29872,196 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "01:00",
-        "titolo": "C'era una volta casa",
-        "descrizione": "Una coppia che ha vissuto sempre sulle isole vuole trasferirsi a Laurel, nel Mississippi.",
-        "immagine": "https://img-guidatv.org/59/c-era-una-volta-casa/6.jpg"
-      },
-      {
         "ora": "01:00",
-        "fine": "01:55",
+        "fine": "02:05",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Lo scultore Nick ha un sacco di lavoro da fare. Intanto, Ted tenta di sistemare il modellino di una giostra e Alex restaura un oggetto da collezione dei Beatles.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "01:55",
-        "fine": "02:50",
+        "ora": "02:05",
+        "fine": "03:10",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Il fabbro Nev e il vetraio Gordon sistemano una lanterna gotica danneggiata. Ted lavora su un aereo arrugginito mentre Alex si occupa di un tavolo enorme.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "03:45",
+        "ora": "03:10",
+        "fine": "04:10",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Alex si occupa di un biliardino malmesso. Martin e' alle prese con una cassa di legno, mentre Craig sistema una sedia scandinava.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:40",
+        "ora": "04:10",
+        "fine": "05:00",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Il lucidatore Alex deve sistemare un enorme orologio. Ruth si occupa di un paio di candele dorate e Cliff lavora su un'imbarcazione secolare.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "04:40",
-        "fine": "05:35",
+        "ora": "05:00",
+        "fine": "06:00",
         "titolo": "Chi cerca trova: super restauri",
         "descrizione": "Ted, esperto di metalli, deve sistemare una luce ferroviaria arrugginita. Alex restaura una giostra di animali, mentre Craig sistema una sedia.",
         "immagine": "https://img-guidatv.org/59/chi-cerca-trova-super-restauri/5.jpg"
       },
       {
-        "ora": "05:35",
-        "fine": "06:00",
-        "titolo": "A caccia di occasioni",
-        "descrizione": "Kim, giocatore professionista di football americano, e la sua migliore amica Leslie condividono l'amore per i mercatini. I due sfidano i designer Ron e Peter.",
-        "immagine": "https://img-guidatv.org/59/a-caccia-di-occasioni/6.jpg"
-      },
-      {
         "ora": "06:00",
-        "fine": "06:30",
+        "fine": "06:20",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "In Alaska, Wes e Angela sono proprietari di una compagnia di aerotaxi. I due hanno un sogno da un milione di dollari e per realizzarlo sono disposti a tutto.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "06:30",
-        "fine": "06:55",
-        "titolo": "Case impossibili: Alaska",
-        "descrizione": "Ron e Lacey hanno un grande camion e un budget ridotto per la loro nuova casa. La coppia e' disposta a sacrificare lo spazio per il camion pur di trovare un'abitazione vicino Big Lake.",
-        "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
-      },
-      {
-        "ora": "06:55",
-        "fine": "07:20",
+        "ora": "06:20",
+        "fine": "06:50",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Il meccanico Kolin e la sua ragazza Alissa sono alla ricerca di una casa che abbia un accesso sui fantastici sentieri isolati dell'Alaska.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "07:20",
-        "fine": "07:50",
+        "ora": "06:50",
+        "fine": "07:15",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Dal Kansas, Karie si e' trasferita in Alaska per realizzare il suo sogno d'infanzia: costruire una baita in montagna. Per la donna e' arrivato il momento di avverare il suo desiderio.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "07:50",
-        "fine": "08:20",
+        "ora": "07:15",
+        "fine": "07:45",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Gli imprenditori Mike e Lorraine, amanti dei cani da slitta, sono alla ricerca di una proprieta' da un milione di dollari in una citta' dell'Alaska.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "08:20",
-        "fine": "08:50",
+        "ora": "07:45",
+        "fine": "08:10",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Con un budget di 125.000 dollari, il pilota Jaime e la sua ragazza Dusty si mettono in volo verso Seldovia per andare alla ricerca dell'abitazione giusta per loro.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "08:50",
-        "fine": "09:20",
+        "ora": "08:10",
+        "fine": "08:40",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "I neo sposi Jeremy e Danielle desiderano acquistare la loro prima casa nella citta' di Homer, in Alaska. La coppia pero' non dispone di abbastanza denaro. Il loro budget di 150.000 dollari sara' sufficiente?",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "09:20",
-        "fine": "09:45",
+        "ora": "08:40",
+        "fine": "09:10",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "I neo sposi John ed Elise vivono nel centro di Juneau. La coppia pero' desidera allontanarsi da questo luogo troppo affollato per andare alla ricerca del posto ideale in cui rilassarsi.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "09:45",
-        "fine": "10:15",
+        "ora": "09:10",
+        "fine": "09:40",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Brian e Alisa vogliono mettere alla prova il loro stile di vita avventuroso andando alla ricerca di rifugi in alcuni territori isolati vicino Haines, luogo perfetto per vivere grandi avventure in Alaska.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "10:15",
-        "fine": "10:45",
+        "ora": "09:40",
+        "fine": "10:05",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Harry e Genny vivono nel piccolo villaggio di pescatori di Haines e vorrebbero allontanarsi dal loro vicino di casa maleodorante: il conservificio di pesce di Harry.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "10:45",
-        "fine": "11:10",
+        "ora": "10:05",
+        "fine": "10:35",
         "titolo": "Case impossibili: Alaska",
         "descrizione": "Nella Foresta Pluviale dell'Alaska di Juneau, Bryan e Amy vorrebbero abbandonare la loro casa-roulotte per trovare un'abitazione piu' grande, purtroppo il loro esiguo budget li costringe a cercare altrove.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-alaska/4.jpg"
       },
       {
-        "ora": "11:10",
-        "fine": "11:35",
+        "ora": "10:35",
+        "fine": "11:00",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Courtney e Brian desiderano acquistare una prima casa sulle Montagne Rocciose del Colorado. Ma il massimo a cui possono aspirare e' una baita rustica, in cui disporre di acqua corrente sarebbe gia' una gran fortuna.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "11:35",
-        "fine": "12:05",
+        "ora": "11:00",
+        "fine": "11:35",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Jon e Mandy amano le escursioni e la mountain bike. La coppia e' alla ricerca di una casa a Black Hawk, la piccola citta' mineraria dell'oro sita nel cuore delle Montagne Rocciose del Colorado.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "12:05",
-        "fine": "12:35",
+        "ora": "11:35",
+        "fine": "12:00",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Stanchi della periferia, Scott e Kim sono pronti a trasferirsi sulle montagne alla ricerca di un po' di solitudine. La coppia visita tre abitazioni alle porte delle Montagne Rocciose.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "12:35",
-        "fine": "13:05",
+        "ora": "12:00",
+        "fine": "12:35",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Frank e JoAnna vogliono acquistare la loro prima casa sulle Montagne Rocciose. JoAnna, amante della citta', sara' pronta per questo grande cambiamento?",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "13:05",
-        "fine": "13:35",
+        "ora": "12:35",
+        "fine": "13:00",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Scott e sua moglie hanno deciso di fare le valigie e di trasferirsi dalla costa del Maine alle vette delle Montagne Rocciose dello Utah. La coppia desidera una casa rustica con numerosi comfort.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "13:35",
-        "fine": "14:05",
+        "ora": "13:00",
+        "fine": "13:35",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "La guida dell'avventura all'aria aperto Matt e sua moglie sognano di trovare una perfetta capanna di legno. La coppia visita tre abitazioni nei pressi di zone selvagge.",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "14:05",
-        "fine": "14:35",
+        "ora": "13:35",
+        "fine": "14:00",
         "titolo": "Case impossibili: montagne rocciose",
         "descrizione": "Dopo aver unito le loro due famiglie, i neo sposi Oney e Bobbi cercano una casa a poco piu' di un chilometro dalle Montagne Rocciose. Troveranno un posto abbastanza grande in cui poter vivere con i loro sei figli?",
         "immagine": "https://img-guidatv.org/59/case-impossibili-montagne-rocciose/5.jpg"
       },
       {
-        "ora": "14:35",
-        "fine": "15:35",
+        "ora": "14:00",
+        "fine": "15:05",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Una coppia ha bisogno di maggiore spazio. Brian e Mika creano spazi stravaganti.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "15:35",
-        "fine": "16:30",
+        "ora": "15:05",
+        "fine": "16:05",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Il bungalow di una coppia e' troppo piccolo. Brian e Mika costruiscono una casa moderna.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:25",
+        "ora": "16:05",
+        "fine": "17:10",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Due insegnanti hanno bisogno dell'aiuto di Brian e Mika per trasformare la loro casa.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "17:25",
-        "fine": "18:20",
+        "ora": "17:10",
+        "fine": "18:10",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Una coppia in attesa chiede aiuto a Brian e Mika per rinnovare la loro abitazione.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "18:20",
-        "fine": "19:15",
+        "ora": "18:10",
+        "fine": "19:10",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Una mamma vuole sistemare la propria casa. Jenn tenta di creare un mix tra stili diversi.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "19:15",
+        "ora": "19:10",
         "fine": "20:10",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Mika e Brian vogliono creare una casa in cui una famiglia possa ospitare i parenti.",
@@ -30181,9 +30090,16 @@
       },
       {
         "ora": "23:00",
-        "fine": "00:00",
+        "fine": "23:55",
         "titolo": "C'era una volta casa",
         "descrizione": "Tre fratelli vogliono una casa abbastanza grande che accolga tutte le loro famiglie.",
+        "immagine": "https://img-guidatv.org/59/c-era-una-volta-casa/6.jpg"
+      },
+      {
+        "ora": "23:55",
+        "fine": "01:00",
+        "titolo": "C'era una volta casa",
+        "descrizione": "Una coppia che ha vissuto sempre sulle isole vuole trasferirsi a Laurel, nel Mississippi.",
         "immagine": "https://img-guidatv.org/59/c-era-una-volta-casa/6.jpg"
       }
     ]
@@ -30513,49 +30429,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:50",
-        "fine": "01:45",
+        "ora": "00:00",
+        "fine": "01:10",
+        "titolo": "La chiamavano pausa pranzo",
+        "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Fabio, venditore di moto, lo porta da Pizza Luigi.",
+        "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
+      },
+      {
+        "ora": "01:10",
+        "fine": "02:10",
         "titolo": "La chiamavano pausa pranzo",
         "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Giovanni, camionista, lo porta da Para Magnum.",
         "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
       },
       {
-        "ora": "01:45",
-        "fine": "02:15",
+        "ora": "02:10",
+        "fine": "02:45",
         "titolo": "Man vs. Food",
         "descrizione": "Casey Webb arriva a Savannah per assaggiare i piatti della Georgia, tra cui il miglior pollo fritto dello Stato. Inoltre, affronta un enorme panino con carne di maiale.",
         "immagine": "https://img-guidatv.org/44/man-vs-food/0.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:45",
+        "ora": "02:45",
+        "fine": "03:20",
         "titolo": "Man vs. Food",
         "descrizione": "La crociata culinaria di Casey Webb lo porta ad Atlanta. Qui assaggia un brunch a base di ciambelle, un famoso barbecue e una quantita' enorme di nachos.",
         "immagine": "https://img-guidatv.org/44/man-vs-food/0.jpg"
       },
       {
-        "ora": "02:45",
-        "fine": "03:15",
+        "ora": "03:20",
+        "fine": "03:50",
         "titolo": "Man vs. Food",
         "descrizione": "Casey Webb arriva a Orange County, in California, per assaggiare un enorme hamburger ripassato in una salsa creata con i tre peperoncini piu' piccanti del pianeta!",
         "immagine": "https://img-guidatv.org/44/man-vs-food/0.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "03:45",
+        "ora": "03:50",
+        "fine": "04:30",
         "titolo": "Man vs. Food",
         "descrizione": "L'avventura culinaria di Casey Webb lo porta a Palm Springs, in California. Qui assaggia un enorme sandwich farcito con tre strati di deliziosa carne.",
         "immagine": "https://img-guidatv.org/44/man-vs-food/0.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:40",
-        "titolo": "Colpo di fulmini",
-        "descrizione": "Grazie ad alcuni video, osserviamo fenomeni naturali incredibili.",
-        "immagine": "https://img-guidatv.org/44/colpo-di-fulmini/0.jpg"
-      },
-      {
-        "ora": "04:40",
+        "ora": "04:30",
         "fine": "05:35",
         "titolo": "Colpo di fulmini",
         "descrizione": "Grazie ad alcuni video, osserviamo fenomeni naturali incredibili.",
@@ -30570,34 +30486,34 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:25",
-        "titolo": "Affari in valigia",
-        "descrizione": "Il gruppo torna a lottare a Nashville. L'attenzione dei compratori viene attirata da un eclettico mix di oggetti, tra cui una scatola piena di targhe americane.",
-        "immagine": "https://img-guidatv.org/44/affari-in-valigia/0.jpg"
-      },
-      {
-        "ora": "06:25",
-        "fine": "06:50",
+        "fine": "06:20",
         "titolo": "Affari in valigia",
         "descrizione": "Gli acquirenti sono di nuovo a Nashville, in Tennessee. Billy, Mark, Laurence e Sally sono alla \"Music City Auction\" per aggiudicarsi tutti i grandi oggetti messi in offerta.",
         "immagine": "https://img-guidatv.org/44/affari-in-valigia/0.jpg"
       },
       {
-        "ora": "06:50",
-        "fine": "07:20",
+        "ora": "06:20",
+        "fine": "06:40",
         "titolo": "Affare fatto!",
         "descrizione": "Il furgoncino di Ton e Allen sta cadendo a pezzi e i due decidono di partecipare ad un'asta per salvarlo. Una macina industriale e una Chevy classica basteranno per riparare Betsy?",
         "immagine": "https://img-guidatv.org/44/affare-fatto/10.jpg"
       },
       {
-        "ora": "07:20",
-        "fine": "07:45",
+        "ora": "06:40",
+        "fine": "07:10",
         "titolo": "Affare fatto!",
         "descrizione": "Ton e Allen scoprono dei preziosi oggetti legati alla street art. Se questi dovessero appartenere all'artista 'Risk', potrebbe essere il loro piu' grande affare di sempre.",
         "immagine": "https://img-guidatv.org/44/affare-fatto/10.jpg"
       },
       {
-        "ora": "07:45",
+        "ora": "07:10",
+        "fine": "08:45",
+        "titolo": "Per un pugno di giada",
+        "descrizione": "La famiglia Bunce continua a cercare la preziosa giada.",
+        "immagine": "https://img-guidatv.org/44/per-un-pugno-di-giada/5.jpg"
+      },
+      {
+        "ora": "08:45",
         "fine": "09:30",
         "titolo": "Per un pugno di giada",
         "descrizione": "La famiglia Bunce continua a cercare la preziosa giada.",
@@ -30605,41 +30521,34 @@
       },
       {
         "ora": "09:30",
-        "fine": "10:25",
-        "titolo": "Per un pugno di giada",
-        "descrizione": "La famiglia Bunce continua a cercare la preziosa giada.",
-        "immagine": "https://img-guidatv.org/44/per-un-pugno-di-giada/5.jpg"
-      },
-      {
-        "ora": "10:25",
-        "fine": "11:20",
+        "fine": "10:35",
         "titolo": "L'Eldorado della droga: viaggio in USA",
         "descrizione": "Gli agenti devono fermare i contrabbandieri e i trafficanti di droga.",
         "immagine": "https://img-guidatv.org/44/l-eldorado-della-droga-viaggio-in-usa/4.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "13:15",
+        "ora": "10:35",
+        "fine": "12:35",
         "titolo": "Operazione N.A.S.",
         "descrizione": "Cibo avariato, merci illegali o contraffatte e ancora, medicinali scaduti. Ogni giorno i Carabinieri del N.A.S. difendono la salute dei cittadini con le loro indagini e ispezioni sanitarie.",
         "immagine": "https://img-guidatv.org/44/operazione-n-a-s/5.jpg"
       },
       {
-        "ora": "13:15",
-        "fine": "14:05",
+        "ora": "12:35",
+        "fine": "13:30",
         "titolo": "Storage Wars Canada",
         "descrizione": "Cindy indossa i suoi pantaloni da cougar e tira fuori gli artigli per un'asta nel centro di Toronto. Intanto, Roy soffre la mancanza di sonno.",
         "immagine": "https://img-guidatv.org/44/storage-wars-canada/10.jpg"
       },
       {
-        "ora": "14:05",
-        "fine": "14:55",
+        "ora": "13:30",
+        "fine": "14:25",
         "titolo": "Affari al buio",
         "descrizione": "A Compton, Jarrod e Brandi scoprono un completo unico, mentre Dave e' in difficolta': trovera' una via d'uscita? Nel frattempo, Barry scopre un vecchio GPS, ma si tratta di un oggetto di valore?",
         "immagine": "https://img-guidatv.org/44/affari-al-buio/0.jpg"
       },
       {
-        "ora": "14:55",
+        "ora": "14:25",
         "fine": "15:50",
         "titolo": "Affari al buio",
         "descrizione": "I compratori ritornano a Montebello. Jarrod e Brandi perdono i soldi e un impiegato. Barry scova una dolce unita', mentre Darrell si occupa di un deposito che potrebbe passare alla storia.",
@@ -30647,52 +30556,45 @@
       },
       {
         "ora": "15:50",
-        "fine": "16:55",
+        "fine": "17:05",
         "titolo": "Rimozione forzata",
         "descrizione": "Bernice valuta un'offerta poco legale per rimodernare il suo furgoncino e il primo recupero di Perez con la neo assunta Nikki porta a un inseguimento quasi mortale.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "17:55",
+        "ora": "17:05",
+        "fine": "18:00",
         "titolo": "Rimozione forzata",
         "descrizione": "L'auto di un rapper viene sequestrata, scatenando un pericoloso inseguimento ad alta velocita'. Christie deve soccorrere un cane che e' stato chiuso in macchina durante una giornata afosa.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "17:55",
-        "fine": "19:45",
+        "ora": "18:00",
+        "fine": "19:50",
         "titolo": "I pionieri dell'oro",
         "descrizione": "Alan e Salty sperano di ottenere un tesoro sepolto.",
         "immagine": "https://img-guidatv.org/44/i-pionieri-dell-oro/9.jpg"
       },
       {
-        "ora": "19:45",
-        "fine": "21:40",
+        "ora": "19:50",
+        "fine": "21:45",
         "titolo": "Airport Security: Europa",
         "descrizione": "Gli agenti che lavorano ai confini dei paesi europei tentano di fermare l'arrivo di droga, armi e terroristi sospetti. Il loro lavoro e' individuare il pericolo.",
         "immagine": "https://img-guidatv.org/44/airport-security-europa/7.jpg"
       },
       {
-        "ora": "21:40",
-        "fine": "22:40",
+        "ora": "21:45",
+        "fine": "22:50",
         "titolo": "Giorno di prova",
         "descrizione": "Gabriele Vagnato vive dall'interno un'operazione speciale con il il VII reggimento dei carabinieri.",
         "immagine": "https://img-guidatv.org/44/giorno-di-prova/5.jpg"
       },
       {
-        "ora": "22:40",
-        "fine": "23:50",
+        "ora": "22:50",
+        "fine": "00:00",
         "titolo": "Giorno di prova",
         "descrizione": "Gabriele Vagnato vola in Svizzera per entrare in uno dei bunker sotterranei piu' grandi del mondo.",
         "immagine": "https://img-guidatv.org/44/giorno-di-prova/5.jpg"
-      },
-      {
-        "ora": "23:50",
-        "fine": "00:50",
-        "titolo": "La chiamavano pausa pranzo",
-        "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Fabio, venditore di moto, lo porta da Pizza Luigi.",
-        "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
       }
     ]
   },
@@ -30701,49 +30603,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:50",
-        "fine": "01:45",
+        "ora": "00:00",
+        "fine": "01:10",
+        "titolo": "La chiamavano pausa pranzo",
+        "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Fabio, venditore di moto, lo porta da Pizza Luigi.",
+        "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
+      },
+      {
+        "ora": "01:10",
+        "fine": "02:10",
         "titolo": "La chiamavano pausa pranzo",
         "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Giovanni, camionista, lo porta da Para Magnum.",
         "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
       },
       {
-        "ora": "01:45",
-        "fine": "02:15",
+        "ora": "02:10",
+        "fine": "02:45",
         "titolo": "Man vs. Food",
         "descrizione": "Casey Webb arriva a Savannah per assaggiare i piatti della Georgia, tra cui il miglior pollo fritto dello Stato. Inoltre, affronta un enorme panino con carne di maiale.",
         "immagine": "https://img-guidatv.org/44/man-vs-food/0.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:45",
+        "ora": "02:45",
+        "fine": "03:20",
         "titolo": "Man vs. Food",
         "descrizione": "La crociata culinaria di Casey Webb lo porta ad Atlanta. Qui assaggia un brunch a base di ciambelle, un famoso barbecue e una quantita' enorme di nachos.",
         "immagine": "https://img-guidatv.org/44/man-vs-food/0.jpg"
       },
       {
-        "ora": "02:45",
-        "fine": "03:15",
+        "ora": "03:20",
+        "fine": "03:50",
         "titolo": "Man vs. Food",
         "descrizione": "Casey Webb arriva a Orange County, in California, per assaggiare un enorme hamburger ripassato in una salsa creata con i tre peperoncini piu' piccanti del pianeta!",
         "immagine": "https://img-guidatv.org/44/man-vs-food/0.jpg"
       },
       {
-        "ora": "03:15",
-        "fine": "03:45",
+        "ora": "03:50",
+        "fine": "04:30",
         "titolo": "Man vs. Food",
         "descrizione": "L'avventura culinaria di Casey Webb lo porta a Palm Springs, in California. Qui assaggia un enorme sandwich farcito con tre strati di deliziosa carne.",
         "immagine": "https://img-guidatv.org/44/man-vs-food/0.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:40",
-        "titolo": "Colpo di fulmini",
-        "descrizione": "Grazie ad alcuni video, osserviamo fenomeni naturali incredibili.",
-        "immagine": "https://img-guidatv.org/44/colpo-di-fulmini/0.jpg"
-      },
-      {
-        "ora": "04:40",
+        "ora": "04:30",
         "fine": "05:35",
         "titolo": "Colpo di fulmini",
         "descrizione": "Grazie ad alcuni video, osserviamo fenomeni naturali incredibili.",
@@ -30758,34 +30660,34 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:25",
-        "titolo": "Affari in valigia",
-        "descrizione": "Il gruppo torna a lottare a Nashville. L'attenzione dei compratori viene attirata da un eclettico mix di oggetti, tra cui una scatola piena di targhe americane.",
-        "immagine": "https://img-guidatv.org/44/affari-in-valigia/0.jpg"
-      },
-      {
-        "ora": "06:25",
-        "fine": "06:50",
+        "fine": "06:20",
         "titolo": "Affari in valigia",
         "descrizione": "Gli acquirenti sono di nuovo a Nashville, in Tennessee. Billy, Mark, Laurence e Sally sono alla \"Music City Auction\" per aggiudicarsi tutti i grandi oggetti messi in offerta.",
         "immagine": "https://img-guidatv.org/44/affari-in-valigia/0.jpg"
       },
       {
-        "ora": "06:50",
-        "fine": "07:20",
+        "ora": "06:20",
+        "fine": "06:40",
         "titolo": "Affare fatto!",
         "descrizione": "Il furgoncino di Ton e Allen sta cadendo a pezzi e i due decidono di partecipare ad un'asta per salvarlo. Una macina industriale e una Chevy classica basteranno per riparare Betsy?",
         "immagine": "https://img-guidatv.org/44/affare-fatto/10.jpg"
       },
       {
-        "ora": "07:20",
-        "fine": "07:45",
+        "ora": "06:40",
+        "fine": "07:10",
         "titolo": "Affare fatto!",
         "descrizione": "Ton e Allen scoprono dei preziosi oggetti legati alla street art. Se questi dovessero appartenere all'artista 'Risk', potrebbe essere il loro piu' grande affare di sempre.",
         "immagine": "https://img-guidatv.org/44/affare-fatto/10.jpg"
       },
       {
-        "ora": "07:45",
+        "ora": "07:10",
+        "fine": "08:45",
+        "titolo": "Per un pugno di giada",
+        "descrizione": "La famiglia Bunce continua a cercare la preziosa giada.",
+        "immagine": "https://img-guidatv.org/44/per-un-pugno-di-giada/5.jpg"
+      },
+      {
+        "ora": "08:45",
         "fine": "09:30",
         "titolo": "Per un pugno di giada",
         "descrizione": "La famiglia Bunce continua a cercare la preziosa giada.",
@@ -30793,41 +30695,34 @@
       },
       {
         "ora": "09:30",
-        "fine": "10:25",
-        "titolo": "Per un pugno di giada",
-        "descrizione": "La famiglia Bunce continua a cercare la preziosa giada.",
-        "immagine": "https://img-guidatv.org/44/per-un-pugno-di-giada/5.jpg"
-      },
-      {
-        "ora": "10:25",
-        "fine": "11:20",
+        "fine": "10:35",
         "titolo": "L'Eldorado della droga: viaggio in USA",
         "descrizione": "Gli agenti devono fermare i contrabbandieri e i trafficanti di droga.",
         "immagine": "https://img-guidatv.org/44/l-eldorado-della-droga-viaggio-in-usa/4.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "13:15",
+        "ora": "10:35",
+        "fine": "12:35",
         "titolo": "Operazione N.A.S.",
         "descrizione": "Cibo avariato, merci illegali o contraffatte e ancora, medicinali scaduti. Ogni giorno i Carabinieri del N.A.S. difendono la salute dei cittadini con le loro indagini e ispezioni sanitarie.",
         "immagine": "https://img-guidatv.org/44/operazione-n-a-s/5.jpg"
       },
       {
-        "ora": "13:15",
-        "fine": "14:05",
+        "ora": "12:35",
+        "fine": "13:30",
         "titolo": "Storage Wars Canada",
         "descrizione": "Cindy indossa i suoi pantaloni da cougar e tira fuori gli artigli per un'asta nel centro di Toronto. Intanto, Roy soffre la mancanza di sonno.",
         "immagine": "https://img-guidatv.org/44/storage-wars-canada/10.jpg"
       },
       {
-        "ora": "14:05",
-        "fine": "14:55",
+        "ora": "13:30",
+        "fine": "14:25",
         "titolo": "Affari al buio",
         "descrizione": "A Compton, Jarrod e Brandi scoprono un completo unico, mentre Dave e' in difficolta': trovera' una via d'uscita? Nel frattempo, Barry scopre un vecchio GPS, ma si tratta di un oggetto di valore?",
         "immagine": "https://img-guidatv.org/44/affari-al-buio/0.jpg"
       },
       {
-        "ora": "14:55",
+        "ora": "14:25",
         "fine": "15:50",
         "titolo": "Affari al buio",
         "descrizione": "I compratori ritornano a Montebello. Jarrod e Brandi perdono i soldi e un impiegato. Barry scova una dolce unita', mentre Darrell si occupa di un deposito che potrebbe passare alla storia.",
@@ -30835,52 +30730,45 @@
       },
       {
         "ora": "15:50",
-        "fine": "16:55",
+        "fine": "17:05",
         "titolo": "Rimozione forzata",
         "descrizione": "Bernice valuta un'offerta poco legale per rimodernare il suo furgoncino e il primo recupero di Perez con la neo assunta Nikki porta a un inseguimento quasi mortale.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "17:55",
+        "ora": "17:05",
+        "fine": "18:00",
         "titolo": "Rimozione forzata",
         "descrizione": "L'auto di un rapper viene sequestrata, scatenando un pericoloso inseguimento ad alta velocita'. Christie deve soccorrere un cane che e' stato chiuso in macchina durante una giornata afosa.",
         "immagine": "https://img-guidatv.org/44/rimozione-forzata/1.jpg"
       },
       {
-        "ora": "17:55",
-        "fine": "19:45",
+        "ora": "18:00",
+        "fine": "19:50",
         "titolo": "I pionieri dell'oro",
         "descrizione": "Alan e Salty sperano di ottenere un tesoro sepolto.",
         "immagine": "https://img-guidatv.org/44/i-pionieri-dell-oro/9.jpg"
       },
       {
-        "ora": "19:45",
-        "fine": "21:40",
+        "ora": "19:50",
+        "fine": "21:45",
         "titolo": "Airport Security: Europa",
         "descrizione": "Gli agenti che lavorano ai confini dei paesi europei tentano di fermare l'arrivo di droga, armi e terroristi sospetti. Il loro lavoro e' individuare il pericolo.",
         "immagine": "https://img-guidatv.org/44/airport-security-europa/7.jpg"
       },
       {
-        "ora": "21:40",
-        "fine": "22:40",
+        "ora": "21:45",
+        "fine": "22:50",
         "titolo": "Giorno di prova",
         "descrizione": "Gabriele Vagnato vive dall'interno un'operazione speciale con il il VII reggimento dei carabinieri.",
         "immagine": "https://img-guidatv.org/44/giorno-di-prova/5.jpg"
       },
       {
-        "ora": "22:40",
-        "fine": "23:50",
+        "ora": "22:50",
+        "fine": "00:00",
         "titolo": "Giorno di prova",
         "descrizione": "Gabriele Vagnato vola in Svizzera per entrare in uno dei bunker sotterranei piu' grandi del mondo.",
         "immagine": "https://img-guidatv.org/44/giorno-di-prova/5.jpg"
-      },
-      {
-        "ora": "23:50",
-        "fine": "00:50",
-        "titolo": "La chiamavano pausa pranzo",
-        "descrizione": "Franchino il Criminale e' alla ricerca del miglior posto dove fermarsi per la pausa pranzo. In questa puntata Fabio, venditore di moto, lo porta da Pizza Luigi.",
-        "immagine": "https://img-guidatv.org/44/la-chiamavano-pausa-pranzo/5.png"
       }
     ]
   },
@@ -30890,38 +30778,31 @@
     "programmi": [
       {
         "ora": "01:40",
-        "fine": "03:25",
+        "fine": "03:35",
         "titolo": "Code of Honor",
         "descrizione": "Il colonnello Robert Sikes, ritornato dal Medio Oriente, ha un solo obiettivo: liberare la sua città dal crimine. Fino a quando la sua missione non sarà completata, si scontrerà con bande di strada, mafiosi e politici corrotti, punendo tutti. Il suo ex pupillo William Porter, però, fa squadra con il dipartimento di polizia per assicurarlo alla giustizia e impedirgli di continuare con la sua attività di giustiziere.",
         "immagine": "https://img-guidatv.org/film_new/c/5e78d954ce1e246c511cbc3d/5e78d954ce1e246c511cbc3d_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:25",
-        "fine": "04:10",
+        "ora": "03:35",
+        "fine": "04:20",
         "titolo": "Affari di famiglia",
         "descrizione": "Un Rolex Submariner attira le attenzioni di Rick, mentre Corey è felice per un bastone da hockey firmato da Paul Newman. Chum e Santos intanto si innamorano di una serie di carte collezionabili di Mr. Softee.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "04:10",
-        "fine": "04:55",
+        "ora": "04:20",
+        "fine": "05:05",
         "titolo": "Affari di famiglia",
         "descrizione": "Mentre Chum e Rick si danno da fare in Texas alla ricerca di fossili, Corey gioca con un cannone atomico. Successivamente, Rick controlla la carta di credito di James Bond usata nel film \"Casino Royale\" del 2006.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "04:55",
-        "fine": "05:35",
+        "ora": "05:05",
+        "fine": "06:00",
         "titolo": "Affari di famiglia",
         "descrizione": "Corey sente un brivido lungo la schiena quando un cliente gli porta una lettera di Stephen King. Più tardi ha l'occasione di portarsi via un poster di James Bond. Chum riceve una lezione quando controlla del merchandising firmato da Steve Aoki.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
-      },
-      {
-        "ora": "05:35",
-        "fine": "06:00",
-        "titolo": "Affari al buio",
-        "descrizione": "Laura è sola a Moreno Valley, ed è tutt'altro che discreta sui motivi. Brandi ottiene un bel profitto. L'armadietto delle bambole di Rene riserva un paio di sorprese.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cb4a84c6-98ed-4635-a879-a809092781eb/background/600"
       },
       {
         "ora": "06:00",
@@ -31181,42 +31062,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:00",
-        "fine": "02:00",
+        "ora": "01:15",
+        "fine": "02:10",
         "titolo": "Siamo fuori - Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
         "immagine": "https://img-guidatv.org/90/siamo-fuori/6.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:20",
+        "ora": "02:10",
+        "fine": "02:35",
         "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "02:25",
-        "titolo": "Meteo",
-        "descrizione": "Tutti i colori del tempo",
-        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
-      },
-      {
-        "ora": "02:25",
-        "fine": "03:20",
+        "ora": "02:35",
+        "fine": "03:30",
         "titolo": "Prima Ora",
         "descrizione": "Porta d'ingresso alla fascia informativa serale della RSI con ospiti e servizi. Notizie di attualità, cultura e sport dalla Svizzera e dal mondo.",
         "immagine": "https://img-guidatv.org/90/prima-ora/5.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "03:50",
+        "ora": "03:30",
+        "fine": "04:00",
         "titolo": "Il Quotidiano",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
       {
-        "ora": "03:50",
+        "ora": "04:00",
         "fine": "05:00",
         "titolo": "Telegiornale",
         "descrizione": "Le notizie di prima serata",
@@ -31224,13 +31098,34 @@
       },
       {
         "ora": "05:00",
-        "fine": "06:15",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "fine": "05:20",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
-        "ora": "06:25",
+        "ora": "05:20",
+        "fine": "05:25",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "05:55",
+        "titolo": "Il Quotidiano (R)",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
+      },
+      {
+        "ora": "05:55",
+        "fine": "06:15",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "06:15",
         "fine": "07:15",
         "titolo": "Siamo fuori - Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
@@ -31351,7 +31246,7 @@
       {
         "ora": "16:55",
         "fine": "18:00",
-        "titolo": "Siamo fuori - SIAMO TUTTI FUORI - GIUBIASCO [22.09.26]",
+        "titolo": "Siamo fuori - Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
         "immagine": "https://img-guidatv.org/90/siamo-fuori/6.jpg"
       },
@@ -31399,35 +31294,35 @@
       },
       {
         "ora": "20:40",
-        "fine": "21:50",
+        "fine": "22:05",
         "titolo": "Falò - Ucraina, guerra ai civili - Russia, vivere nell’incertezza",
         "descrizione": "$23",
         "immagine": "https://img-guidatv.org/90/falo/2.png"
       },
       {
-        "ora": "21:50",
-        "fine": "22:45",
+        "ora": "22:05",
+        "fine": "23:00",
         "titolo": "La Folle Storia Della Disney",
         "descrizione": "$24",
         "immagine": "https://img-guidatv.org/90/la-folle-storia-della-disney/0.jpg"
       },
       {
-        "ora": "22:45",
-        "fine": "23:15",
+        "ora": "23:00",
+        "fine": "23:25",
         "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
-        "ora": "23:15",
-        "fine": "23:20",
+        "ora": "23:25",
+        "fine": "23:35",
         "titolo": "Meteo",
         "descrizione": "Tutti i colori del tempo",
         "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
       },
       {
-        "ora": "23:20",
-        "fine": "01:00",
+        "ora": "23:35",
+        "fine": "01:15",
         "titolo": "Mio Padre è Un Sicario",
         "descrizione": "Ritrovatesi invischiate in un’organizzazione criminale, la vita di Ashley e di sua figlia Sarah, sono gravemente in pericolo. L’unico che può trarle in salvo è Matt, il padre di Ashley, che si è ritirato alle isole Cayman per godersi finalmente la vita. Ma l’arrivo delle due scombussolerà ogni cosa. Più tempo Ashley trascorre con il padre, più segreti scopre sul suo passato ma il tempo stringe e intanto sull’isola è sbarcato un nuovo, pericoloso nemico con cui dover fare i conti: il boss della malavita Donnie.",
         "immagine": "https://img-guidatv.org/film_new/m/65df7f4a69ac90a409144ec3/65df7f4a69ac90a409144ec3_p_1_rs_300.jpg"
@@ -31439,42 +31334,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:00",
-        "fine": "02:00",
+        "ora": "01:15",
+        "fine": "02:10",
         "titolo": "Siamo fuori - Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
         "immagine": "https://img-guidatv.org/90/siamo-fuori/6.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:20",
+        "ora": "02:10",
+        "fine": "02:35",
         "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "02:25",
-        "titolo": "Meteo",
-        "descrizione": "Tutti i colori del tempo",
-        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
-      },
-      {
-        "ora": "02:25",
-        "fine": "03:20",
+        "ora": "02:35",
+        "fine": "03:30",
         "titolo": "Prima Ora",
         "descrizione": "Porta d'ingresso alla fascia informativa serale della RSI con ospiti e servizi. Notizie di attualità, cultura e sport dalla Svizzera e dal mondo.",
         "immagine": "https://img-guidatv.org/90/prima-ora/5.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "03:50",
+        "ora": "03:30",
+        "fine": "04:00",
         "titolo": "Il Quotidiano",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
       {
-        "ora": "03:50",
+        "ora": "04:00",
         "fine": "05:00",
         "titolo": "Telegiornale",
         "descrizione": "Le notizie di prima serata",
@@ -31482,13 +31370,34 @@
       },
       {
         "ora": "05:00",
-        "fine": "06:15",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "fine": "05:20",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
-        "ora": "06:25",
+        "ora": "05:20",
+        "fine": "05:25",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "05:55",
+        "titolo": "Il Quotidiano (R)",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
+      },
+      {
+        "ora": "05:55",
+        "fine": "06:15",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "06:15",
         "fine": "07:15",
         "titolo": "Siamo fuori - Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
@@ -31609,7 +31518,7 @@
       {
         "ora": "16:55",
         "fine": "18:00",
-        "titolo": "Siamo fuori - SIAMO TUTTI FUORI - GIUBIASCO [22.09.26]",
+        "titolo": "Siamo fuori - Siamo tutti fuori",
         "descrizione": "in diretta con Carlotta Gallino, Davide Riva e Christian Frapolli",
         "immagine": "https://img-guidatv.org/90/siamo-fuori/6.jpg"
       },
@@ -31657,35 +31566,35 @@
       },
       {
         "ora": "20:40",
-        "fine": "21:50",
+        "fine": "22:05",
         "titolo": "Falò - Ucraina, guerra ai civili - Russia, vivere nell’incertezza",
         "descrizione": "$23",
         "immagine": "https://img-guidatv.org/90/falo/2.png"
       },
       {
-        "ora": "21:50",
-        "fine": "22:45",
+        "ora": "22:05",
+        "fine": "23:00",
         "titolo": "La Folle Storia Della Disney",
         "descrizione": "$24",
         "immagine": "https://img-guidatv.org/90/la-folle-storia-della-disney/0.jpg"
       },
       {
-        "ora": "22:45",
-        "fine": "23:15",
+        "ora": "23:00",
+        "fine": "23:25",
         "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
-        "ora": "23:15",
-        "fine": "23:20",
+        "ora": "23:25",
+        "fine": "23:35",
         "titolo": "Meteo",
         "descrizione": "Tutti i colori del tempo",
         "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
       },
       {
-        "ora": "23:20",
-        "fine": "01:00",
+        "ora": "23:35",
+        "fine": "01:15",
         "titolo": "Mio Padre è Un Sicario",
         "descrizione": "Ritrovatesi invischiate in un’organizzazione criminale, la vita di Ashley e di sua figlia Sarah, sono gravemente in pericolo. L’unico che può trarle in salvo è Matt, il padre di Ashley, che si è ritirato alle isole Cayman per godersi finalmente la vita. Ma l’arrivo delle due scombussolerà ogni cosa. Più tempo Ashley trascorre con il padre, più segreti scopre sul suo passato ma il tempo stringe e intanto sull’isola è sbarcato un nuovo, pericoloso nemico con cui dover fare i conti: il boss della malavita Donnie.",
         "immagine": "https://img-guidatv.org/film_new/m/65df7f4a69ac90a409144ec3/65df7f4a69ac90a409144ec3_p_1_rs_300.jpg"
@@ -31747,13 +31656,20 @@
       },
       {
         "ora": "05:00",
-        "fine": "05:10",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "fine": "05:20",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
       {
-        "ora": "05:10",
+        "ora": "05:20",
+        "fine": "05:25",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
+      },
+      {
+        "ora": "05:25",
         "fine": "05:30",
         "titolo": "A tutto hockey",
         "descrizione": "Sintesi",
@@ -31783,8 +31699,8 @@
       {
         "ora": "08:30",
         "fine": "09:00",
-        "titolo": "Modem",
-        "descrizione": "L'attualità approfondita, in diretta in visualradio, tutte le mattine, da lunedì a venerdì",
+        "titolo": "Modem - Gli Houthi alzano il tiro",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/91/modem/6.jpg"
       },
       {
@@ -31970,13 +31886,20 @@
       },
       {
         "ora": "05:00",
-        "fine": "05:10",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "fine": "05:20",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
       {
-        "ora": "05:10",
+        "ora": "05:20",
+        "fine": "05:25",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
+      },
+      {
+        "ora": "05:25",
         "fine": "05:30",
         "titolo": "A tutto hockey",
         "descrizione": "Sintesi",
@@ -32006,8 +31929,8 @@
       {
         "ora": "08:30",
         "fine": "09:00",
-        "titolo": "Modem",
-        "descrizione": "L'attualità approfondita, in diretta in visualradio, tutte le mattine, da lunedì a venerdì",
+        "titolo": "Modem - Gli Houthi alzano il tiro",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/91/modem/6.jpg"
       },
       {
