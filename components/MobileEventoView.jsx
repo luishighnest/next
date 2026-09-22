@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import MobileBottomNav from "@/components/MobileBottomNav";
 import ChannelCard from "@/components/ChannelCard";
+import EventSources from "@/components/EventSources";
 import { getCurrentProgramInfo, getChannelLogoUrl } from "@/lib/epg";
 import { getNormalizedSources } from "@/lib/sources";
 import { getChannelSlug, matchSlug } from "@/lib/slug";
@@ -262,30 +263,15 @@ export default function MobileEventoView({
                     }
 
                     const realSources = getNormalizedSources(channel).filter(s => Boolean(s && s.url));
-                    if (realSources.length <= 1) return null;
+                    if (realSources.length === 0) return null;
                     return (
                         <div className="mobile-event-sources-block">
-                            <span className="mobile-event-sources-label">Sorgenti disponibili:</span>
-                            <div className="mobile-event-sources-pills">
-                                {realSources.map((s, idx) => {
-                                    const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
-                                    return (
-                                        <button
-                                            key={s.name + idx}
-                                            type="button"
-                                            className={`mobile-source-pill ${isSelected ? "active" : ""}`}
-                                            onClick={() => setSelectedSource(s)}
-                                        >
-                                            {s.isWarp ? (
-                                                <i className="fa-solid fa-shield-halved" style={{ color: isSelected ? "#06080e" : "#f38020" }}></i>
-                                            ) : (
-                                                <i className="fa-solid fa-bolt" style={{ color: isSelected ? "#06080e" : "#00d586" }}></i>
-                                            )}
-                                            <span>{s.name}</span>
-                                        </button>
-                                    );
-                                })}
-                            </div>
+                            <EventSources
+                                channel={channel}
+                                selectedSource={selectedSource}
+                                setSelectedSource={setSelectedSource}
+                                variant="mobile"
+                            />
                         </div>
                     );
                 })()}

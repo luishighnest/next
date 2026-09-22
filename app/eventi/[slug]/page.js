@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import MobileEventoView from "@/components/MobileEventoView";
+import EventSources from "@/components/EventSources";
 import { useDeviceState } from "@/components/DeviceProvider";
 import { getChannelLogoUrl, getCurrentProgramInfo } from "@/lib/epg";
 import { matchSlug, getChannelSlug } from "@/lib/slug";
@@ -623,70 +624,59 @@ export default function EventoPlayerPage() {
                         {/* Deck Tasti: Se non c'è stream, mostra il pulsante Richiedi Contenuto (ntfy) */}
                         <div className="event-sources-wrapper">
                             {!hasStream ? (
-                                <button
-                                    type="button"
-                                    className={`event-source-btn ${requestStatus === 'sent' ? 'active' : ''}`}
-                                    onClick={handleRequestContent}
-                                    disabled={requestStatus === "sending" || requestStatus === "sent"}
-                                    style={{
-                                        display: "inline-flex",
-                                        alignItems: "center",
-                                        gap: "8px",
-                                        padding: "10px 18px",
-                                        fontWeight: "600",
-                                        fontSize: "14px",
-                                        borderRadius: "10px",
-                                        cursor: requestStatus === "sent" ? "default" : "pointer",
-                                        background: requestStatus === "sent" ? "#00d586" : (requestStatus === "error" ? "#ef4444" : "rgba(255,255,255,0.08)"),
-                                        color: requestStatus === "sent" ? "#06080e" : "#ffffff",
-                                        border: "1px solid rgba(255,255,255,0.16)",
-                                        transition: "all 0.25s ease"
-                                    }}
-                                >
-                                    {requestStatus === "sending" && (
-                                        <>
-                                            <div className="sky-spinner" style={{ width: "16px", height: "16px", borderWidth: "2px" }} />
-                                            <span>Invio richiesta...</span>
-                                        </>
-                                    )}
-                                    {requestStatus === "sent" && (
-                                        <>
-                                            <i className="fa-solid fa-check"></i>
-                                            <span>Richiesta inviata!</span>
-                                        </>
-                                    )}
-                                    {requestStatus === "error" && (
-                                        <>
-                                            <i className="fa-solid fa-triangle-exclamation"></i>
-                                            <span>Riprova più tardi</span>
-                                        </>
-                                    )}
-                                    {requestStatus === "idle" && (
-                                        <>
-                                            <i className="fa-solid fa-bell text-warning"></i>
-                                            <span>Richiedi Contenuto</span>
-                                        </>
-                                    )}
-                                </button>
+                                <div className="event-sources-widget">
+                                    <button
+                                        type="button"
+                                        className={`event-source-btn ${requestStatus === 'sent' ? 'active' : ''}`}
+                                        onClick={handleRequestContent}
+                                        disabled={requestStatus === "sending" || requestStatus === "sent"}
+                                        style={{
+                                            display: "inline-flex",
+                                            alignItems: "center",
+                                            gap: "8px",
+                                            padding: "10px 18px",
+                                            fontWeight: "600",
+                                            fontSize: "14px",
+                                            borderRadius: "10px",
+                                            cursor: requestStatus === "sent" ? "default" : "pointer",
+                                            background: requestStatus === "sent" ? "#00d586" : (requestStatus === "error" ? "#ef4444" : "rgba(255,255,255,0.08)"),
+                                            color: requestStatus === "sent" ? "#06080e" : "#ffffff",
+                                            border: "1px solid rgba(255,255,255,0.16)",
+                                            transition: "all 0.25s ease"
+                                        }}
+                                    >
+                                        {requestStatus === "sending" && (
+                                            <>
+                                                <div className="sky-spinner" style={{ width: "16px", height: "16px", borderWidth: "2px" }} />
+                                                <span>Invio richiesta...</span>
+                                            </>
+                                        )}
+                                        {requestStatus === "sent" && (
+                                            <>
+                                                <i className="fa-solid fa-check"></i>
+                                                <span>Richiesta inviata!</span>
+                                            </>
+                                        )}
+                                        {requestStatus === "error" && (
+                                            <>
+                                                <i className="fa-solid fa-triangle-exclamation"></i>
+                                                <span>Riprova più tardi</span>
+                                            </>
+                                        )}
+                                        {requestStatus === "idle" && (
+                                            <>
+                                                <i className="fa-solid fa-bell text-warning"></i>
+                                                <span>Richiedi Contenuto</span>
+                                            </>
+                                        )}
+                                    </button>
+                                </div>
                             ) : (
-                                channel?.sources && channel.sources.filter(s => Boolean(s && s.url)).map((s, idx) => {
-                                    const isSelected = selectedSource?.url === s.url && selectedSource?.isWarp === s.isWarp;
-                                    return (
-                                        <button
-                                            key={s.name + idx}
-                                            type="button"
-                                            className={`event-source-btn ${isSelected ? "active" : ""}`}
-                                            onClick={() => setSelectedSource(s)}
-                                        >
-                                            {s.isWarp ? (
-                                                <i className="fa-solid fa-shield-halved" style={{ color: "#f38020" }}></i>
-                                            ) : (
-                                                <i className="fa-solid fa-bolt"></i>
-                                            )}
-                                            <span>{s.name}</span>
-                                        </button>
-                                    );
-                                })
+                                <EventSources
+                                    channel={channel}
+                                    selectedSource={selectedSource}
+                                    setSelectedSource={setSelectedSource}
+                                />
                             )}
                         </div>
                     </div>

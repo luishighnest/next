@@ -13050,4 +13050,253 @@ body:has(.sky-app) {
     50% { opacity: 0.4; transform: scale(0.85); }
 }
 
+/* ============================================================
+   EVENT SOURCES WIDGET (compacto per eventi con molte sorgenti)
+   ============================================================ */
+.event-sources-wrapper {
+    max-width: 60%;
+    min-width: 240px;
+    flex-shrink: 1;
+}
+
+.event-source-btn {
+    flex-shrink: 0;
+}
+
+.event-sources-widget {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    width: 100%;
+}
+
+.event-sources-widget-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.event-sources-widget-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.event-sources-widget-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    height: 18px;
+    padding: 0 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.62rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.event-sources-widget-current {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.55);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 55%;
+    text-align: right;
+}
+
+/* Pill visibili quando le sorgenti sono poche (<=4) */
+.event-sources-widget-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    min-width: 0;
+}
+
+/* Drawer compatto quando le sorgenti sono tante */
+.event-sources-widget-drawer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+}
+
+.event-sources-widget-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.event-sources-widget-toggle:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.event-sources-widget-toggle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: rgba(0, 213, 134, 0.15);
+    color: #00d586;
+    font-size: 0.72rem;
+    flex-shrink: 0;
+}
+
+.event-sources-widget-toggle-label {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.event-sources-widget-arrow {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.4);
+    transition: transform 0.25s ease;
+}
+
+.event-sources-widget-arrow.is-open {
+    transform: rotate(180deg);
+}
+
+/* Scroller orizzontale con frecce per molte sorgenti */
+.event-sources-widget-scroller {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+}
+
+.event-sources-widget-nav {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.6rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.event-sources-widget-nav:hover {
+    background: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+}
+
+.event-sources-widget-track {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    padding: 3px 1px;
+    min-width: 0;
+    flex: 1;
+}
+
+.event-sources-widget-track::-webkit-scrollbar {
+    display: none;
+}
+
+.event-sources-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 13px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    user-select: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.event-sources-chip:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-1px);
+}
+
+.event-sources-chip.active {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);
+}
+
+.event-sources-chip i {
+    font-size: 0.7rem;
+    color: #00d586;
+}
+
+.event-sources-chip.active i {
+    color: #000000 !important;
+}
+
+/* Variante mobile: full-width, drawer sotto il deck */
+.event-sources-widget.is-mobile {
+    width: 100%;
+}
+
+.event-sources-widget.is-mobile .event-sources-widget-track {
+    flex-wrap: nowrap;
+}
+
+/* Responsive: su schermi stretti il widget non deve invadere il deck */
+@media (max-width: 900px) {
+    .event-sources-wrapper {
+        max-width: 100%;
+        min-width: 0;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .event-deck {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .event-sources-wrapper {
+        width: 100%;
+    }
+}
+
 
