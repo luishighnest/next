@@ -14,7 +14,7 @@
         "ora": "01:55",
         "fine": "04:00",
         "titolo": "Quarti di finale: Belgio - Slovenia",
-        "descrizione": "... Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia",
+        "descrizione": "... Campionati Europei di pallavolo maschile. - A EuroVolley e' il momento dei quarti di finale, la Slovenia affronta il Belgio. Tc Cristiano-Vullo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/976d7df2-0e19-47a5-a5dc-06172ef7b6fa/background/600"
       },
       {
@@ -49,7 +49,7 @@
         "ora": "15:50",
         "fine": "18:00",
         "titolo": "Quarti di finale: Belgio - Slovenia",
-        "descrizione": "... Slovenia Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia",
+        "descrizione": "... Slovenia Campionati Europei di pallavolo maschile. - A EuroVolley e' il momento dei quarti di finale, la Slovenia affronta il Belgio. Tc Cristiano-Vullo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/976d7df2-0e19-47a5-a5dc-06172ef7b6fa/background/600"
       },
       {
@@ -77,21 +77,21 @@
         "ora": "20:30",
         "fine": "20:55",
         "titolo": "Studio Eurovolley Pre 23/09/2026",
-        "descrizione": "... 23/09/2026 Studio Eurovolley. - Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+        "descrizione": "... 23/09/2026 Studio Eurovolley. - Approfondimenti insieme agli ospiti in studio sull'EuroVolley 2026.",
         "immagine": "https://img-guidatv.org/8714/studi/6.jpg"
       },
       {
         "ora": "20:55",
         "fine": "23:00",
         "titolo": "Quarti di finale: Italia - Finlandia",
-        "descrizione": "... Finlandia Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
+        "descrizione": "... Finlandia Campionati Europei di pallavolo maschile. - A EuroVolley 2026, l'Italia si gioca un posto nelle semifinali di Milano nella sfida contro la Finlandia. Tc Locatelli-Zorzi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b0d3bfe1-c813-46af-b931-8bad0711f947/background/600"
       },
       {
         "ora": "23:00",
         "fine": "23:30",
         "titolo": "Studio Eurovolley Post 23/09/2026",
-        "descrizione": "... 23/09/2026 Studio Eurovolley. - Approfondimenti con ospiti in studio sull'EuroVolley 2026 femminile e maschile.",
+        "descrizione": "... 23/09/2026 Studio Eurovolley. - Approfondimenti insieme agli ospiti in studio sull'EuroVolley 2026.",
         "immagine": "https://img-guidatv.org/8714/studi/6.jpg"
       },
       {
@@ -465,16 +465,9 @@
       },
       {
         "ora": "03:30",
-        "fine": "04:00",
+        "fine": "04:10",
         "titolo": "Paolo Maldini",
         "descrizione": "... Remix Champions League. - Le partite piu' significative di 'Paolino' Maldini in Champions League: l'esordio, i primi gol, le 5 Coppe alzate. Tutte con la maglia del Milan, tutte impresse nella storia.",
-        "immagine": "https://img-guidatv.org/partite/championsreplica.png"
-      },
-      {
-        "ora": "04:00",
-        "fine": "06:00",
-        "titolo": "Fenerbahce - Roma",
-        "descrizione": "Nessun precedente tra le due formazioni. Roma in vantaggio 9 a 2 nei 14 precedenti contro club turchi, 3 pareggi. TC: Compagnoni-Minotti",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
       },
       {
@@ -1252,13 +1245,13 @@
       },
       {
         "ora": "15:50",
-        "fine": "18:00",
+        "fine": "18:30",
         "titolo": "Quarti di finale: Belgio - Slovenia",
         "descrizione": "... Slovenia Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/976d7df2-0e19-47a5-a5dc-06172ef7b6fa/background/600"
       },
       {
-        "ora": "18:00",
+        "ora": "18:30",
         "fine": "19:30",
         "titolo": "Aldair. Cuore giallorosso",
         "descrizione": "L'incredibile vita di Aldair: dall'uomo al campione che ha scritto la storia della Roma, che con 13 anni di fedelta' giallorossa, e' diventato leggenda.",
@@ -1328,14 +1321,14 @@
       },
       {
         "ora": "02:05",
-        "fine": "04:00",
+        "fine": "03:55",
         "titolo": "Juventus - Atalanta",
         "descrizione": "Entrambe reduci da un ko rispettivamente contro Sassuolo (3-2) e Cagliari (1-2). Atalanta imbattuta nelle ultime 8 sfide a Torino, 2 vittorie e 6 pari. TC: Compagnoni-Montolivo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/769b9dd3-85d4-4472-b3a6-54bca49a29fb/background/600"
       },
       {
-        "ora": "04:00",
-        "fine": "05:00",
+        "ora": "03:55",
+        "fine": "05:05",
         "titolo": "Enzo Ferrari",
         "descrizione": "L'Uomo, la Rossa, il Mito. Giorgio Porra' racconta Enzo Ferrari: trionfi in pista, dolori privati e la storia di un visionario che ha reso Ferrari sinonimo di velocita' ed eccellenza",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/40372da0-45c6-4ae6-a22e-d405de3107e4/background/600"
@@ -1346,6 +1339,13 @@
         "titolo": "Austria",
         "descrizione": "Collegamenti dal paddock, i commenti dei nostri ospiti in studio, le emozioni delle feste nei box. Questi gli ingredienti della nuova puntata di Race Anatomy",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/69d973bb-5658-4eac-9ca7-6d6378286c8d/background/600"
+      },
+      {
+        "ora": "05:05",
+        "fine": "06:00",
+        "titolo": "Filo d'acqua: La leggenda della Pro Recco",
+        "descrizione": "... Recco. - Filo D'acqua: La Leggenda Della Pro Recco",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/5c4a766a-70dd-4935-92c6-0f55811a7119/background/600"
       },
       {
         "ora": "06:00",
@@ -1400,7 +1400,7 @@
         "ora": "13:45",
         "fine": "14:15",
         "titolo": "Speciale Rugby Urc Preview",
-        "descrizione": "Speciale Rugby Urc Preview",
+        "descrizione": "Seguiamo le partite del torneo che coinvolge le migliori 16 franchigie del rugby internazionale.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/655eb905-4685-4c61-9204-36ac4f0ab043/background/600"
       },
       {
@@ -1463,7 +1463,7 @@
         "ora": "23:00",
         "fine": "23:30",
         "titolo": "Speciale Rugby Urc Preview",
-        "descrizione": "Speciale Rugby Urc Preview",
+        "descrizione": "Seguiamo le partite del torneo che coinvolge le migliori 16 franchigie del rugby internazionale.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/655eb905-4685-4c61-9204-36ac4f0ab043/background/600"
       },
       {
@@ -2197,90 +2197,83 @@
       },
       {
         "ora": "09:20",
-        "fine": "11:20",
+        "fine": "11:10",
         "titolo": "LIVE WTA 500 SINGAPORE",
         "descrizione": "WTA 500 Singapore. In diretta dalla OCBC Arena, ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.",
         "immagine": "https://img-guidatv.org/54/live-wta-500-singapore/5.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "11:35",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "11:35",
-        "fine": "11:50",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "11:50",
-        "fine": "12:05",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:05",
-        "fine": "12:20",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:20",
-        "fine": "12:35",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:35",
-        "fine": "13:05",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "13:05",
-        "fine": "13:20",
+        "ora": "11:10",
+        "fine": "11:25",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "13:20",
-        "fine": "15:15",
+        "ora": "11:25",
+        "fine": "13:10",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
         "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
       },
       {
-        "ora": "15:15",
-        "fine": "15:35",
+        "ora": "13:10",
+        "fine": "15:25",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "15:35",
-        "fine": "17:20",
+        "ora": "15:25",
+        "fine": "15:40",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
         "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
       },
       {
-        "ora": "17:20",
-        "fine": "17:35",
+        "ora": "15:40",
+        "fine": "15:55",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "15:55",
+        "fine": "16:10",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "16:10",
+        "fine": "16:25",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "16:25",
+        "fine": "16:40",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "16:40",
+        "fine": "17:10",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "17:10",
+        "fine": "17:25",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "17:35",
+        "ora": "17:25",
         "fine": "19:15",
         "titolo": "Davis Cup Finals 8 2025- Fin ITA vs ESP - Ep. 2 - Flavio Cobolli vs Jaume Munar Italia vs Spagna Davis Cup Final 8 Bologna Finale # 7",
         "descrizione": "Flavio Cobolli vs Jaume Munar Italia vs Spagna Davis Cup Final 8 Bologna Finale",
@@ -2460,17 +2453,17 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "01:45",
-        "fine": "04:20",
-        "titolo": "Ciclismo: Camp. Mondiali Su Strada MontréAl 2026 Crono Juniores Maschile",
-        "descrizione": "Ciclismo: Camp. Mondiali su strada Montréal 2026 Crono Juniores Maschile",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "ora": "01:40",
+        "fine": "04:10",
+        "titolo": "Europei Di Pallavolo Maschile 2026 - Quarti Di Finale: Italia - Finlandia",
+        "descrizione": "Nei quarti di finale degli Europei maschili di pallavolo 2026, l'Italia affronta la Finlandia in una sfida a eliminazione diretta che vale l'accesso alle semifinali.",
+        "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-quarti-di-finale-italia-finlandia/0.jpg"
       },
       {
-        "ora": "04:20",
+        "ora": "04:10",
         "fine": "06:00",
-        "titolo": "Tiro A Volo: Camp. Italiano Ponso. Fossa Olimpica Maschile/Femminile",
-        "descrizione": "Tiro a Volo: Camp. Italiano Ponso. Fossa Olimpica Maschile/Femminile",
+        "titolo": "Tiro A Volo: Campionati Italiani 2026 - Finali Fossa Olimpica",
+        "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici.",
         "immagine": "https://img-guidatv.org/32/tiro-a-volo/0.jpg"
       },
       {
@@ -2510,17 +2503,10 @@
       },
       {
         "ora": "13:45",
-        "fine": "14:30",
+        "fine": "14:50",
         "titolo": "Diretta Azzurra",
         "descrizione": "La diretta di Rai Sport per seguire da vicino gli atleti azzurri prima e dopo la partita in programma.",
         "immagine": "https://img-guidatv.org/32/diretta-azzurra/0.jpg"
-      },
-      {
-        "ora": "14:30",
-        "fine": "14:50",
-        "titolo": "Memory",
-        "descrizione": "Memory",
-        "immagine": "https://img-guidatv.org/32/memory/0.jpg"
       },
       {
         "ora": "14:50",
@@ -2566,7 +2552,7 @@
       },
       {
         "ora": "23:00",
-        "fine": "01:45",
+        "fine": "01:40",
         "titolo": "Europei Di Pallavolo Maschile 2026 - Quarti Di Finale: Belgio - Slovenia",
         "descrizione": "Nei quarti di finale degli Europei maschili di pallavolo 2026, Belgio e Slovenia si affrontano in una sfida a eliminazione diretta che vale l'accesso alle semifinali.",
         "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-quarti-di-finale-belgio-slovenia/0.jpg"
@@ -2578,17 +2564,17 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "01:45",
-        "fine": "04:20",
-        "titolo": "Ciclismo: Camp. Mondiali Su Strada MontréAl 2026 Crono Juniores Maschile",
-        "descrizione": "Ciclismo: Camp. Mondiali su strada Montréal 2026 Crono Juniores Maschile",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "ora": "01:40",
+        "fine": "04:10",
+        "titolo": "Europei Di Pallavolo Maschile 2026 - Quarti Di Finale: Italia - Finlandia",
+        "descrizione": "Nei quarti di finale degli Europei maschili di pallavolo 2026, l'Italia affronta la Finlandia in una sfida a eliminazione diretta che vale l'accesso alle semifinali.",
+        "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-quarti-di-finale-italia-finlandia/0.jpg"
       },
       {
-        "ora": "04:20",
+        "ora": "04:10",
         "fine": "06:00",
-        "titolo": "Tiro A Volo: Camp. Italiano Ponso. Fossa Olimpica Maschile/Femminile",
-        "descrizione": "Tiro a Volo: Camp. Italiano Ponso. Fossa Olimpica Maschile/Femminile",
+        "titolo": "Tiro A Volo: Campionati Italiani 2026 - Finali Fossa Olimpica",
+        "descrizione": "Sangue freddo e precisione, le doti fondamentali di una delle discipline che ha regalato più medaglie all'Italia ai Giochi Olimpici.",
         "immagine": "https://img-guidatv.org/32/tiro-a-volo/0.jpg"
       },
       {
@@ -2628,17 +2614,10 @@
       },
       {
         "ora": "13:45",
-        "fine": "14:30",
+        "fine": "14:50",
         "titolo": "Diretta Azzurra",
         "descrizione": "La diretta di Rai Sport per seguire da vicino gli atleti azzurri prima e dopo la partita in programma.",
         "immagine": "https://img-guidatv.org/32/diretta-azzurra/0.jpg"
-      },
-      {
-        "ora": "14:30",
-        "fine": "14:50",
-        "titolo": "Memory",
-        "descrizione": "Memory",
-        "immagine": "https://img-guidatv.org/32/memory/0.jpg"
       },
       {
         "ora": "14:50",
@@ -2684,7 +2663,7 @@
       },
       {
         "ora": "23:00",
-        "fine": "01:45",
+        "fine": "01:40",
         "titolo": "Europei Di Pallavolo Maschile 2026 - Quarti Di Finale: Belgio - Slovenia",
         "descrizione": "Nei quarti di finale degli Europei maschili di pallavolo 2026, Belgio e Slovenia si affrontano in una sfida a eliminazione diretta che vale l'accesso alle semifinali.",
         "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-quarti-di-finale-belgio-slovenia/0.jpg"
@@ -2710,24 +2689,24 @@
         "immagine": "https://img-guidatv.org/718/bruno-barbieri-4-hotel/6.jpg"
       },
       {
-        "ora": "03:05",
-        "fine": "05:15",
+        "ora": "03:20",
+        "fine": "05:40",
         "titolo": "X Factor",
         "descrizione": "Cominciano le Audition di X Factor 2026: i concorrenti si giocano il sogno davanti a Francesco Gabbani, Irama, Jake La Furia e Paola Iezzi. Conduce Giorgia.",
         "immagine": "https://img-guidatv.org/718/x-factor/6.png"
-      },
-      {
-        "ora": "05:15",
-        "fine": "06:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef lavorano in squadre per creare un piatto, utilizzando gi ingredienti di una Mystery Box caratterizzata da diversi alimenti della loro generazione.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
         "ora": "05:20",
         "fine": "06:00",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef ricorrono alle loro abilità di pasticceri quando ricevono il compito di preparare una torta di compleanno celebrativa.",
+        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
+      },
+      {
+        "ora": "05:40",
+        "fine": "06:20",
+        "titolo": "MasterChef USA",
+        "descrizione": "Gli chef lavorano in squadre per creare un piatto, utilizzando gi ingredienti di una Mystery Box caratterizzata da diversi alimenti della loro generazione.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -2891,24 +2870,24 @@
         "immagine": "https://img-guidatv.org/718/bruno-barbieri-4-hotel/6.jpg"
       },
       {
-        "ora": "04:05",
-        "fine": "06:15",
+        "ora": "04:20",
+        "fine": "06:40",
         "titolo": "X Factor",
         "descrizione": "Cominciano le Audition di X Factor 2026: i concorrenti si giocano il sogno davanti a Francesco Gabbani, Irama, Jake La Furia e Paola Iezzi. Conduce Giorgia.",
         "immagine": "https://img-guidatv.org/718/x-factor/6.png"
-      },
-      {
-        "ora": "06:15",
-        "fine": "07:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef lavorano in squadre per creare un piatto, utilizzando gi ingredienti di una Mystery Box caratterizzata da diversi alimenti della loro generazione.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
         "ora": "06:20",
         "fine": "07:00",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef ricorrono alle loro abilità di pasticceri quando ricevono il compito di preparare una torta di compleanno celebrativa.",
+        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
+      },
+      {
+        "ora": "06:40",
+        "fine": "07:20",
+        "titolo": "MasterChef USA",
+        "descrizione": "Gli chef lavorano in squadre per creare un piatto, utilizzando gi ingredienti di una Mystery Box caratterizzata da diversi alimenti della loro generazione.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -3065,24 +3044,24 @@
         "immagine": "https://img-guidatv.org/718/bruno-barbieri-4-hotel/6.jpg"
       },
       {
-        "ora": "04:05",
-        "fine": "06:15",
+        "ora": "04:20",
+        "fine": "06:40",
         "titolo": "X Factor",
         "descrizione": "Cominciano le Audition di X Factor 2026: i concorrenti si giocano il sogno davanti a Francesco Gabbani, Irama, Jake La Furia e Paola Iezzi. Conduce Giorgia.",
         "immagine": "https://img-guidatv.org/718/x-factor/6.png"
-      },
-      {
-        "ora": "06:15",
-        "fine": "07:00",
-        "titolo": "MasterChef USA",
-        "descrizione": "Gli chef lavorano in squadre per creare un piatto, utilizzando gi ingredienti di una Mystery Box caratterizzata da diversi alimenti della loro generazione.",
-        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
         "ora": "06:20",
         "fine": "07:00",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef ricorrono alle loro abilità di pasticceri quando ricevono il compito di preparare una torta di compleanno celebrativa.",
+        "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
+      },
+      {
+        "ora": "06:40",
+        "fine": "07:20",
+        "titolo": "MasterChef USA",
+        "descrizione": "Gli chef lavorano in squadre per creare un piatto, utilizzando gi ingredienti di una Mystery Box caratterizzata da diversi alimenti della loro generazione.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
       },
       {
@@ -3240,28 +3219,28 @@
       },
       {
         "ora": "02:30",
-        "fine": "03:10",
+        "fine": "03:15",
         "titolo": "Chicago P.D.",
         "descrizione": "La serie racconta le vicende del Distretto 21 del Dipartimento di Polizia di Chicago, composto da due gruppi differenti: l'Unità di pattuglia, che vigila le pericolose strade della città, e l'Unità di Intelligence, che combatte il crimine organizzato, il traffico di droga e si occupa dei casi di omicidio più complessi.",
         "immagine": "https://image.tmdb.org/t/p/w300/afq2obuEF6h1PTmK4Ayl3ePZuU7.jpg"
       },
       {
-        "ora": "03:10",
-        "fine": "03:40",
+        "ora": "03:15",
+        "fine": "03:45",
         "titolo": "Speciale: Rotta per Nord Sud Ovest Est",
         "descrizione": "Un racconto corale dietro le quinte della serie. Attori, registi e capi reparto svelano il set, le scelte creative e il successo del progetto.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aa6276a1-a11c-4ad2-9601-7ae4141a1ce9/background/600"
       },
       {
-        "ora": "03:40",
-        "fine": "04:30",
+        "ora": "03:45",
+        "fine": "04:35",
         "titolo": "Nightsleeper",
         "descrizione": "Joe Roag è un agente di polizia che si trova a bordo del treno come passeggero, e Abby Aysgarth, direttrice tecnica ad interim del National Cyber Security Centre (NCSC). Quando il treno viene hackerato e dirottato, i due sono costretti a collaborare in una corsa contro il tempo per salvare i passeggeri e scongiurare una catastrofe. Ma contro chi stanno combattendo? Di chi possono fidarsi? C'è qualcuno a bordo che sa più di quanto lasci intendere? E come possono avere la meglio sul misterioso \"Driver\", l'autoproclamato regista dell'operazione, che sembra sempre essere un passo avanti a qualsiasi tentativo di fermarlo?",
         "immagine": "https://image.tmdb.org/t/p/w300/vmoOhO5EgOOITXpYRzBFUrFJ2mN.jpg"
       },
       {
-        "ora": "04:30",
-        "fine": "05:15",
+        "ora": "04:35",
+        "fine": "05:20",
         "titolo": "Accused: Sotto processo",
         "descrizione": "In questa serie di antologie criminali, gli spettatori scoprono come una persona comune è rimasta coinvolta in una situazione straordinaria, rivelando alla fine come una svolta sbagliata porti a un'altra, finché non è troppo tardi per tornare indietro. Raccontato dal punto di vista dell'imputato, ogni episodio si apre in un'aula di tribunale con gli accusati senza conoscere il loro crimine o come sono finiti sotto processo.",
         "immagine": "https://image.tmdb.org/t/p/w300/w0zeTmejqPqVw07jVDkeQqJvxqq.jpg"
@@ -3269,6 +3248,13 @@
       {
         "ora": "05:15",
         "fine": "06:05",
+        "titolo": "Accused: Sotto processo",
+        "descrizione": "In questa serie di antologie criminali, gli spettatori scoprono come una persona comune è rimasta coinvolta in una situazione straordinaria, rivelando alla fine come una svolta sbagliata porti a un'altra, finché non è troppo tardi per tornare indietro. Raccontato dal punto di vista dell'imputato, ogni episodio si apre in un'aula di tribunale con gli accusati senza conoscere il loro crimine o come sono finiti sotto processo.",
+        "immagine": "https://image.tmdb.org/t/p/w300/w0zeTmejqPqVw07jVDkeQqJvxqq.jpg"
+      },
+      {
+        "ora": "05:20",
+        "fine": "06:10",
         "titolo": "Accused: Sotto processo",
         "descrizione": "In questa serie di antologie criminali, gli spettatori scoprono come una persona comune è rimasta coinvolta in una situazione straordinaria, rivelando alla fine come una svolta sbagliata porti a un'altra, finché non è troppo tardi per tornare indietro. Raccontato dal punto di vista dell'imputato, ogni episodio si apre in un'aula di tribunale con gli accusati senza conoscere il loro crimine o come sono finiti sotto processo.",
         "immagine": "https://image.tmdb.org/t/p/w300/w0zeTmejqPqVw07jVDkeQqJvxqq.jpg"
@@ -3693,7 +3679,7 @@
       },
       {
         "ora": "04:10",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Capitaine Marleau",
         "descrizione": "Capitaine Marleau ruota intorno a una investigatrice eccezionale. È davvero brillante e non ne sbaglia una. Sembra essere una professionista perfetta, ma siccome la perfezione non esiste, ecco cosa ha di strano. Il Capitano Marleau (interpretata da Corinne Masiero) ha aspetto a dir poco bizzarro. I suoi modi sono eccentrici e rischiano di mettere in discussione la sua bravura che poi dimostra puntualmente sul campo. Il tratto caratteristico del suo look è un berretto da cacciatore che non manca mai e è a dir poco anacronistico.",
         "immagine": "https://img-guidatv.org/serie/5ed92ccc1cc40417c605775a_p_5_rs_300.jpg"
@@ -4437,21 +4423,21 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/65395acb-bcf4-4805-a78a-39c7ae2bb628/background/600"
       },
       {
-        "ora": "02:50",
-        "fine": "03:45",
+        "ora": "03:15",
+        "fine": "04:10",
         "titolo": "Indie Jungle",
         "descrizione": "Ep10 di 13 Hu - Un viaggio nella musica dal vivo con i protagonisti della scena indie italiana. In questo episodio: Hu.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a5eb7c63-f19a-49e2-bf09-d4891a50afd7/background/600"
       },
       {
-        "ora": "03:45",
-        "fine": "04:40",
+        "ora": "04:10",
+        "fine": "05:05",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep3 di 8 BMS - Banco del Mutuo Soccorso - Ci sono album che hanno segnato la storia della musica italiana. Scopriamo i loro segreti. Nella puntata: il gruppo Banco del Mutuo Soccorso.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "04:40",
+        "ora": "05:05",
         "fine": "06:00",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep1 di 8 Franco Battiato - L'imboscata - Ci sono album che hanno segnato la storia della musica italiana. Sky Arte vi porta alla scoperta dei loro segreti. Nella puntata: L'imboscata di Battiato.",
@@ -5130,9 +5116,9 @@
       {
         "ora": "16:00",
         "fine": "16:30",
-        "titolo": "Generazione Europa",
-        "descrizione": "Generazione Europa - Lo spazio di approfondimento di Sky TG24 dedicato alle nuove sfide dell’Europa unita.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/941f792a-e681-45bf-8014-84ad1874a7bb/background/600"
+        "titolo": "Timeline",
+        "descrizione": "E' l'ora di vederci chiaro. Prendiamoci il tempo per capire meglio fatti e persone. Analizzare. Approfondire. Interagire.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e73667f4-d771-4b0d-9ee3-c896bb78d086/background/600"
       },
       {
         "ora": "16:30",
@@ -5584,9 +5570,9 @@
       {
         "ora": "16:00",
         "fine": "16:30",
-        "titolo": "Generazione Europa",
-        "descrizione": "Generazione Europa - Lo spazio di approfondimento di Sky TG24 dedicato alle nuove sfide dell’Europa unita.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/941f792a-e681-45bf-8014-84ad1874a7bb/background/600"
+        "titolo": "Timeline",
+        "descrizione": "E' l'ora di vederci chiaro. Prendiamoci il tempo per capire meglio fatti e persone. Analizzare. Approfondire. Interagire.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e73667f4-d771-4b0d-9ee3-c896bb78d086/background/600"
       },
       {
         "ora": "16:30",
@@ -7271,13 +7257,13 @@
       },
       {
         "ora": "05:05",
-        "fine": "05:20",
+        "fine": "05:15",
         "titolo": "Questo o quello - Speciale",
         "descrizione": "Francesco Castelnuovo e Gianni Canova si confrontano sui film della spettacolare saga action Fast & Furious, disponibile su Sky Cinema e On Demand.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/fdd217b2-2ac3-4f71-abbe-0768081ce69f/background/600"
       },
       {
-        "ora": "05:20",
+        "ora": "05:15",
         "fine": "07:30",
         "titolo": "The Prestige",
         "descrizione": "Due giovani maghi apprendisti, Robert Angier e Alfred Borden, vengono istruiti e seguiti da Cutter, un ingegnere illusionista ed ex mago, ma durante un numero in cui una donna viene legata e messa in una cassa di vetro piena d'acqua, qualcosa va storto e Angier incolperà l'amico dell'accaduto, tentando di vendicarsi. Inizia così un crudele gioco tra i due uomini su chi sia il migliore e la rivalità si trasformerà pian piano in ossessione.",
@@ -7999,7 +7985,7 @@
       },
       {
         "ora": "03:35",
-        "fine": "05:35",
+        "fine": "05:30",
         "titolo": "Fa' la cosa giusta",
         "descrizione": "L'esplosione di tensioni razziali in un caldo pomeriggio in un quartiere di Brooklyn.",
         "immagine": "https://image.tmdb.org/t/p/w300/wKWR8y50q3DlKDCoM4mznzdd9y9.jpg"
@@ -8012,7 +7998,7 @@
         "immagine": "https://image.tmdb.org/t/p/w300/2KWKSpiotA5W54vEezCpUANiTTZ.jpg"
       },
       {
-        "ora": "05:35",
+        "ora": "05:30",
         "fine": "07:25",
         "titolo": "Elisa",
         "descrizione": "Elisa, una ragazza di buona famiglia è in carcere da 10 anni per avere ucciso brutalmente la sorella. I suoi ricordi confusi si chiariscono nell’incontro con il criminologo Alaoui, che conduce uno studio sui delitti in famiglia. La verità che emerge per Elisa è sconvolgente. Un dolore che forse è l’inizio di una redenzione.",
@@ -18395,49 +18381,56 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:15",
-        "fine": "02:26",
+        "ora": "01:05",
+        "fine": "02:21",
         "titolo": "Radio2 Social Club",
         "descrizione": "Luca Barbarossa ed Ema Stokholma aprono le porte di via Asiago a Roma ad importanti ospiti musicali della scena nazionale ed internazionale che si esibiscono dal vivo accompagnati dalla Social Band e dalla voce di Frances Alina Ascione.",
         "immagine": "https://img-guidatv.org/2/radio2-social-club/6.jpg"
       },
       {
-        "ora": "02:26",
-        "fine": "02:30",
+        "ora": "02:21",
+        "fine": "02:25",
         "titolo": "Meteo 2",
         "descrizione": "Meteo 2",
         "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "04:00",
+        "ora": "02:25",
+        "fine": "03:55",
         "titolo": "Ciao Brother",
         "descrizione": "Angelo, un quarantenne simpatico e un po' truffaldino, si ritrova a dover fuggire a Los Angeles dopo aver venduto dei quadri falsi. Giunto in California senza un soldo e con le carte di credito bloccate, si arrangia come può, dormendo anche per strada. Un giorno, scopre che un ricco imprenditore italoamericano è morto, lasciando un'enorme eredità al figlio George, e nota che il caro estinto gli somiglia moltissimo. Così, Angelo si presenta a casa di George, sostenendo (senza fornire alcuna prova) di essere suo fratello. Tra gag, colpi di scena e situazioni folli, i due fratelli acquisiti finiranno per diventare amici per la pelle.",
         "immagine": "https://img-guidatv.org/film_new/c/612531201bc5e4618fb0ed53/612531201bc5e4618fb0ed53_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:45",
+        "ora": "03:55",
+        "fine": "04:40",
         "titolo": "Rex",
         "descrizione": "Le appassionanti avventure del più famoso pastore tedesco impegnato nella risoluzione di delicati casi polizieschi.",
         "immagine": "https://img-guidatv.org/serie/5e78d8c1ce1e246c511cb992_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:45",
-        "fine": "05:00",
+        "ora": "04:40",
+        "fine": "04:45",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "05:00",
-        "fine": "05:10",
-        "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "ora": "04:45",
+        "fine": "04:55",
+        "titolo": "Zio Gianni",
+        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "05:10",
+        "ora": "04:55",
+        "fine": "05:05",
+        "titolo": "Impazienti",
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
+      },
+      {
+        "ora": "05:05",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18545,7 +18538,7 @@
         "ora": "14:00",
         "fine": "15:25",
         "titolo": "Ore 14",
-        "descrizione": "Un faro acceso sui principali avvenimenti del giorno di cronaca e attualità, raccontati con collegamenti in diretta dai luoghi dove i fatti sono avvenuti e commentati da autorevoli opinionisti.",
+        "descrizione": "I casi della puntata: fermato il 14enne che aveva organizzato via Telegram l'aggressione alla professoressa di italiano a Lamezia Terme; negati i domiciliari a Luca Spada, il \"killer delle ambulanze\" a breve a processo; il giallo sulla morte di Dafne Rebaudo e infine gli ultimi sviluppi sulla morte della piccola Beatrice uccisa a Bordighera.",
         "immagine": "https://img-guidatv.org/2/ore-14/8.jpg"
       },
       {
@@ -18627,7 +18620,7 @@
       },
       {
         "ora": "23:00",
-        "fine": "01:15",
+        "fine": "01:05",
         "titolo": "80 Years Old – Fipav Anniversary 1946 – 2026",
         "descrizione": "Il docufilm che ripercorre i gloriosi 80 anni della Federazione Italiana Pallavolo grazie alle testimonianze di numerosi protagonisti che hanno contribuito a scriverne i suoi momenti indimenticabili.",
         "immagine": "https://img-guidatv.org/2/80-years-old-fipav-anniversary-1946-2026/0.jpg"
@@ -18639,49 +18632,56 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:15",
-        "fine": "02:26",
+        "ora": "01:05",
+        "fine": "02:21",
         "titolo": "Radio2 Social Club",
         "descrizione": "Luca Barbarossa ed Ema Stokholma aprono le porte di via Asiago a Roma ad importanti ospiti musicali della scena nazionale ed internazionale che si esibiscono dal vivo accompagnati dalla Social Band e dalla voce di Frances Alina Ascione.",
         "immagine": "https://img-guidatv.org/2/radio2-social-club/6.jpg"
       },
       {
-        "ora": "02:26",
-        "fine": "02:30",
+        "ora": "02:21",
+        "fine": "02:25",
         "titolo": "Meteo 2",
         "descrizione": "Meteo 2",
         "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "04:00",
+        "ora": "02:25",
+        "fine": "03:55",
         "titolo": "Ciao Brother",
         "descrizione": "Angelo, un quarantenne simpatico e un po' truffaldino, si ritrova a dover fuggire a Los Angeles dopo aver venduto dei quadri falsi. Giunto in California senza un soldo e con le carte di credito bloccate, si arrangia come può, dormendo anche per strada. Un giorno, scopre che un ricco imprenditore italoamericano è morto, lasciando un'enorme eredità al figlio George, e nota che il caro estinto gli somiglia moltissimo. Così, Angelo si presenta a casa di George, sostenendo (senza fornire alcuna prova) di essere suo fratello. Tra gag, colpi di scena e situazioni folli, i due fratelli acquisiti finiranno per diventare amici per la pelle.",
         "immagine": "https://img-guidatv.org/film_new/c/612531201bc5e4618fb0ed53/612531201bc5e4618fb0ed53_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:45",
+        "ora": "03:55",
+        "fine": "04:40",
         "titolo": "Rex",
         "descrizione": "Le appassionanti avventure del più famoso pastore tedesco impegnato nella risoluzione di delicati casi polizieschi.",
         "immagine": "https://img-guidatv.org/serie/5e78d8c1ce1e246c511cb992_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:45",
-        "fine": "05:00",
+        "ora": "04:40",
+        "fine": "04:45",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "05:00",
-        "fine": "05:10",
-        "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "ora": "04:45",
+        "fine": "04:55",
+        "titolo": "Zio Gianni",
+        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "05:10",
+        "ora": "04:55",
+        "fine": "05:05",
+        "titolo": "Impazienti",
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
+      },
+      {
+        "ora": "05:05",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18789,7 +18789,7 @@
         "ora": "14:00",
         "fine": "15:25",
         "titolo": "Ore 14",
-        "descrizione": "Un faro acceso sui principali avvenimenti del giorno di cronaca e attualità, raccontati con collegamenti in diretta dai luoghi dove i fatti sono avvenuti e commentati da autorevoli opinionisti.",
+        "descrizione": "I casi della puntata: fermato il 14enne che aveva organizzato via Telegram l'aggressione alla professoressa di italiano a Lamezia Terme; negati i domiciliari a Luca Spada, il \"killer delle ambulanze\" a breve a processo; il giallo sulla morte di Dafne Rebaudo e infine gli ultimi sviluppi sulla morte della piccola Beatrice uccisa a Bordighera.",
         "immagine": "https://img-guidatv.org/2/ore-14/8.jpg"
       },
       {
@@ -18871,7 +18871,7 @@
       },
       {
         "ora": "23:00",
-        "fine": "01:15",
+        "fine": "01:05",
         "titolo": "80 Years Old – Fipav Anniversary 1946 – 2026",
         "descrizione": "Il docufilm che ripercorre i gloriosi 80 anni della Federazione Italiana Pallavolo grazie alle testimonianze di numerosi protagonisti che hanno contribuito a scriverne i suoi momenti indimenticabili.",
         "immagine": "https://img-guidatv.org/2/80-years-old-fipav-anniversary-1946-2026/0.jpg"
@@ -18898,20 +18898,20 @@
       },
       {
         "ora": "01:05",
-        "fine": "01:40",
+        "fine": "01:35",
         "titolo": "Sorgente Di Vita",
         "descrizione": "Attualità e cultura, feste e tradizioni, storia e identità degli ebrei in Italia, in Europa e nel mondo, a cura dell'Unione delle Comunità Ebraiche Italiane.",
         "immagine": "https://img-guidatv.org/3/sorgente-di-vita/0.jpg"
       },
       {
-        "ora": "01:40",
-        "fine": "02:15",
+        "ora": "01:35",
+        "fine": "02:10",
         "titolo": "Sulla Via Di Damasco",
         "descrizione": "$24",
         "immagine": "https://img-guidatv.org/3/sulla-via-di-damasco/1.jpg"
       },
       {
-        "ora": "02:15",
+        "ora": "02:10",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -19032,8 +19032,8 @@
       {
         "ora": "15:00",
         "fine": "16:00",
-        "titolo": "Camera Dei Deputati. \"Question Time\" Int",
-        "descrizione": "Camera dei Deputati. \"Question Time\" Interrogazioni a risposta immediata - a cura di Rai Parlamento",
+        "titolo": "Rai Parlamento - Question Time",
+        "descrizione": "In diretta dalla Camera dei Deputati \"Question Time\" - Interrogazioni a risposta immediata. A cura di Rai Parlamento",
         "immagine": "https://img-guidatv.org/3/question-time/6.jpg"
       },
       {
@@ -19142,20 +19142,20 @@
       },
       {
         "ora": "01:05",
-        "fine": "01:40",
+        "fine": "01:35",
         "titolo": "Sorgente Di Vita",
         "descrizione": "Attualità e cultura, feste e tradizioni, storia e identità degli ebrei in Italia, in Europa e nel mondo, a cura dell'Unione delle Comunità Ebraiche Italiane.",
         "immagine": "https://img-guidatv.org/3/sorgente-di-vita/0.jpg"
       },
       {
-        "ora": "01:40",
-        "fine": "02:15",
+        "ora": "01:35",
+        "fine": "02:10",
         "titolo": "Sulla Via Di Damasco",
         "descrizione": "$24",
         "immagine": "https://img-guidatv.org/3/sulla-via-di-damasco/1.jpg"
       },
       {
-        "ora": "02:15",
+        "ora": "02:10",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -19276,8 +19276,8 @@
       {
         "ora": "15:00",
         "fine": "16:00",
-        "titolo": "Camera Dei Deputati. \"Question Time\" Int",
-        "descrizione": "Camera dei Deputati. \"Question Time\" Interrogazioni a risposta immediata - a cura di Rai Parlamento",
+        "titolo": "Rai Parlamento - Question Time",
+        "descrizione": "In diretta dalla Camera dei Deputati \"Question Time\" - Interrogazioni a risposta immediata. A cura di Rai Parlamento",
         "immagine": "https://img-guidatv.org/3/question-time/6.jpg"
       },
       {
@@ -19466,7 +19466,7 @@
         "fine": "15:30",
         "titolo": "Lo sportello di forum",
         "descrizione": "Programma storico delle reti Mediaset che vede due contendenti affidare la soluzione del loro contrasto al giudizio di un giudice arbitro.",
-        "immagine": "https://img-guidatv.org/40/lo-sportello-di-forum/8.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314514601001301/media/1/1/848367a9-0280-4328-9e50-642e595baea6/f4ff5d7f-085b-4c05-be5d-98f827932e05.jpg"
       },
       {
         "ora": "15:30",
@@ -19480,7 +19480,7 @@
         "fine": "16:49",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019001/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:49",
@@ -19626,7 +19626,7 @@
         "fine": "15:30",
         "titolo": "Lo sportello di forum",
         "descrizione": "Programma storico delle reti Mediaset che vede due contendenti affidare la soluzione del loro contrasto al giudizio di un giudice arbitro.",
-        "immagine": "https://img-guidatv.org/40/lo-sportello-di-forum/8.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314514601001301/media/1/1/848367a9-0280-4328-9e50-642e595baea6/f4ff5d7f-085b-4c05-be5d-98f827932e05.jpg"
       },
       {
         "ora": "15:30",
@@ -19640,7 +19640,7 @@
         "fine": "16:49",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019001/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:49",
@@ -19709,7 +19709,7 @@
         "fine": "02:59",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000301/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "02:59",
@@ -19877,7 +19877,7 @@
         "fine": "16:05",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000301/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:05",
@@ -19891,7 +19891,7 @@
         "fine": "18:41",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001301/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:41",
@@ -19946,7 +19946,7 @@
         "fine": "02:59",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000301/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "02:59",
@@ -20114,7 +20114,7 @@
         "fine": "16:05",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000301/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:05",
@@ -20128,7 +20128,7 @@
         "fine": "18:41",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001301/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:41",
@@ -20393,7 +20393,7 @@
         "fine": "01:02",
         "titolo": "Come Ti Leggo - Page a' Vu",
         "descrizione": "Gli ospiti vengono raccontati attraverso i libri e i libri attraverso gli ospiti. In questa puntata: Paolo Ruffini e Giulia Salemi. Conduce Sonia Bruganelli",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314501801000101/media/0/0/4d2bff5f-e968-42f5-a5d9-d3d470140ec3/e9537a2a-fe43-4d0c-b75d-31018194eedf.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314501801000101/media/2/2/2f292d13-be0e-48bd-a1fa-0df234a7620a/4aefb21a-64c4-4aee-8eec-ade2c57df49b.jpg"
       }
     ]
   },
@@ -20630,7 +20630,7 @@
         "fine": "01:02",
         "titolo": "Come Ti Leggo - Page a' Vu",
         "descrizione": "Gli ospiti vengono raccontati attraverso i libri e i libri attraverso gli ospiti. In questa puntata: Paolo Ruffini e Giulia Salemi. Conduce Sonia Bruganelli",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314501801000101/media/0/0/4d2bff5f-e968-42f5-a5d9-d3d470140ec3/e9537a2a-fe43-4d0c-b75d-31018194eedf.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314501801000101/media/2/2/2f292d13-be0e-48bd-a1fa-0df234a7620a/4aefb21a-64c4-4aee-8eec-ade2c57df49b.jpg"
       }
     ]
   },
@@ -20726,7 +20726,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Nicola Gratteri, Aldo Cazzullo",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -20837,7 +20837,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Nicola Gratteri, Aldo Cazzullo",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -20948,7 +20948,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Nicola Gratteri, Aldo Cazzullo",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21059,7 +21059,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Nicola Gratteri, Aldo Cazzullo",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21170,7 +21170,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Nicola Gratteri, Aldo Cazzullo",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -22148,21 +22148,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:28",
-        "fine": "02:00",
+        "ora": "00:29",
+        "fine": "01:59",
         "titolo": "Quicksand",
         "descrizione": "Una coppia prossima al divorzio si ritrova intrappolata in una palude di sabbie mobili nel cuore della foresta colombiana. Dopo tanto tempo, sono costretti a mettere da parte le ostilità e a collaborare. La sopravvivenza in un ambiente ostile e la minaccia della palude cambieranno per sempre il loro rapporto. Disponibile anche in lingua originale.",
         "immagine": "https://img-guidatv.org/film_new/q/68ec8fe32b9a4d39fb33d73d/68ec8fe32b9a4d39fb33d73d_p_1_rs_300.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:52",
+        "ora": "01:59",
+        "fine": "02:51",
         "titolo": "Narcos: Messico",
         "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara.",
         "immagine": "https://img-guidatv.org/serie/5e78e032ce1e246c511cdd50_p_5_rs_300.jpg"
       },
       {
-        "ora": "02:52",
+        "ora": "02:51",
         "fine": "03:35",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
@@ -22359,7 +22359,7 @@
       },
       {
         "ora": "22:55",
-        "fine": "00:28",
+        "fine": "00:29",
         "titolo": "Project Silence",
         "descrizione": "A causa dell'improvviso peggioramento delle condizioni meteorologiche, la visibilità sul ponte dell'aeroporto è gravemente compromessa, lasciando le persone bloccate e con il rischio che il ponte crolli a causa di una serie di collisioni a catena ed esplosioni. In mezzo al caos, i soggetti canini \"Echo\" dell'esperimento militare \"Progetto Silenzio\", trasportati in segreto, si liberano e tutti i sopravvissuti umani diventano bersaglio di attacchi implacabili.",
         "immagine": "https://img-guidatv.org/film_new/p/6719e976507048072de7f31c/6719e976507048072de7f31c_p_1_rs_300.jpg"
@@ -22371,21 +22371,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:28",
-        "fine": "02:00",
+        "ora": "00:29",
+        "fine": "01:59",
         "titolo": "Quicksand",
         "descrizione": "Una coppia prossima al divorzio si ritrova intrappolata in una palude di sabbie mobili nel cuore della foresta colombiana. Dopo tanto tempo, sono costretti a mettere da parte le ostilità e a collaborare. La sopravvivenza in un ambiente ostile e la minaccia della palude cambieranno per sempre il loro rapporto. Disponibile anche in lingua originale.",
         "immagine": "https://img-guidatv.org/film_new/q/68ec8fe32b9a4d39fb33d73d/68ec8fe32b9a4d39fb33d73d_p_1_rs_300.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:52",
+        "ora": "01:59",
+        "fine": "02:51",
         "titolo": "Narcos: Messico",
         "descrizione": "Questa nuova e cruda saga targata \"Narcos\" racconta la genesi della narcoguerra messicana negli anni '80 con la storia vera dell'ascesa del cartello di Guadalajara.",
         "immagine": "https://img-guidatv.org/serie/5e78e032ce1e246c511cdd50_p_5_rs_300.jpg"
       },
       {
-        "ora": "02:52",
+        "ora": "02:51",
         "fine": "03:35",
         "titolo": "Fast Forward",
         "descrizione": "Serie poliziesca con protagonista Angelika Schnell, una detective di successo al dipartimento di polizia di Vienna. Angelika è una donna caparbia e dinamica, madre di due gemelli. Le sue giornate sono sempre piene di impegni e di intricati casi di omicidio, che risolve grazie alla sua abilità, al suo forte intuito ed anche per merito del suo ex marito, un anatomopatologo e fedele collaboratore. Nonostante le provocazioni tra di loro, Angelika non perde mai il senso dell'ironia e soprattutto non perde mai la concentrazione sul lavoro; lei sa sempre cosa sta facendo, cosa vuole e non lascia spazio a troppi sentimentalismi.",
@@ -22582,7 +22582,7 @@
       },
       {
         "ora": "22:55",
-        "fine": "00:28",
+        "fine": "00:29",
         "titolo": "Project Silence",
         "descrizione": "A causa dell'improvviso peggioramento delle condizioni meteorologiche, la visibilità sul ponte dell'aeroporto è gravemente compromessa, lasciando le persone bloccate e con il rischio che il ponte crolli a causa di una serie di collisioni a catena ed esplosioni. In mezzo al caos, i soggetti canini \"Echo\" dell'esperimento militare \"Progetto Silenzio\", trasportati in segreto, si liberano e tutti i sopravvissuti umani diventano bersaglio di attacchi implacabili.",
         "immagine": "https://img-guidatv.org/film_new/p/6719e976507048072de7f31c/6719e976507048072de7f31c_p_1_rs_300.jpg"
@@ -23899,7 +23899,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000301/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -24073,7 +24073,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000301/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -25482,98 +25482,98 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:01",
-        "fine": "00:35",
+        "ora": "00:03",
+        "fine": "00:37",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/10473/tg5/4.png"
       },
       {
-        "ora": "00:35",
-        "fine": "00:44",
+        "ora": "00:37",
+        "fine": "00:46",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/10473/tg5/4.png"
       },
       {
-        "ora": "00:44",
-        "fine": "01:06",
+        "ora": "00:46",
+        "fine": "01:08",
         "titolo": "Sport Mediaset - La giornata",
         "descrizione": "Le principali notizie sportive della giornata a cura della redazione giornalistica di Sport Mediaset.",
         "immagine": "https://img-guidatv.org/10473/sport-mediaset-la-giornata/5.jpg"
       },
       {
-        "ora": "01:06",
-        "fine": "01:31",
+        "ora": "01:08",
+        "fine": "01:33",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "01:31",
-        "fine": "01:56",
+        "ora": "01:33",
+        "fine": "01:58",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "01:56",
-        "fine": "02:26",
+        "ora": "01:58",
+        "fine": "02:28",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/10473/tg5/4.png"
       },
       {
-        "ora": "02:26",
-        "fine": "02:31",
+        "ora": "02:28",
+        "fine": "02:33",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/10473/tg5/4.png"
       },
       {
-        "ora": "02:31",
-        "fine": "02:56",
+        "ora": "02:33",
+        "fine": "02:58",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "02:56",
-        "fine": "03:21",
+        "ora": "02:58",
+        "fine": "03:23",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "03:21",
-        "fine": "03:52",
+        "ora": "03:23",
+        "fine": "03:53",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/10473/tg5/4.png"
       },
       {
-        "ora": "03:52",
-        "fine": "03:57",
+        "ora": "03:53",
+        "fine": "03:58",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/10473/tg5/4.png"
       },
       {
-        "ora": "03:57",
-        "fine": "04:22",
+        "ora": "03:58",
+        "fine": "04:23",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "04:22",
-        "fine": "04:47",
+        "ora": "04:23",
+        "fine": "04:48",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "04:47",
+        "ora": "04:48",
         "fine": "05:18",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
@@ -25608,28 +25608,28 @@
         "immagine": "https://img-guidatv.org/10473/simulcast-canale-5/5.jpg"
       },
       {
-        "ora": "08:39",
-        "fine": "09:25",
+        "ora": "08:42",
+        "fine": "09:29",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
         "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000801/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
-        "ora": "09:25",
-        "fine": "09:48",
+        "ora": "09:29",
+        "fine": "09:43",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
         "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401000801/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
-        "ora": "09:48",
-        "fine": "10:45",
+        "ora": "09:43",
+        "fine": "10:43",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "10:45",
+        "ora": "10:43",
         "fine": "10:54",
         "titolo": "Tgcom24 - meteo",
         "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
@@ -25637,13 +25637,13 @@
       },
       {
         "ora": "10:54",
-        "fine": "11:29",
+        "fine": "11:42",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
         "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002301/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
-        "ora": "11:29",
+        "ora": "11:42",
         "fine": "12:00",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
@@ -25651,17 +25651,17 @@
       },
       {
         "ora": "12:00",
-        "fine": "12:19",
+        "fine": "12:18",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
         "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501053101/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
-        "ora": "12:19",
+        "ora": "12:18",
         "fine": "12:25",
-        "titolo": "Tgcom24 - meteo",
-        "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
-        "immagine": "https://img-guidatv.org/10473/tgcom-24-meteo/5.jpg"
+        "titolo": "Tgcom24 '26 - contributo h 12.20",
+        "descrizione": "Tgcom24 '26 - contributo h 12.20",
+        "immagine": "https://img-guidatv.org/10473/tgcom24-26-contributo-h-12-20/2.jpg"
       },
       {
         "ora": "12:25",
@@ -25679,139 +25679,146 @@
       },
       {
         "ora": "13:35",
-        "fine": "14:19",
+        "fine": "14:17",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
         "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314686001005301/media/22/86/3737884b-ae0b-43cb-9af9-16473d20a478/26dcb11c-4d2e-444d-802c-e1830a6aa81e.jpg"
       },
       {
-        "ora": "14:19",
-        "fine": "14:33",
+        "ora": "14:17",
+        "fine": "14:30",
         "titolo": "Tgcom24 diretta 2026",
         "descrizione": "Tgcom24 diretta 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "14:33",
-        "fine": "14:39",
+        "ora": "14:30",
+        "fine": "14:36",
         "titolo": "Tgcom24 - meteo",
         "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
         "immagine": "https://img-guidatv.org/10473/tgcom-24-meteo/5.jpg"
       },
       {
-        "ora": "14:39",
-        "fine": "14:59",
+        "ora": "14:36",
+        "fine": "14:56",
         "titolo": "Tgcom24 diretta 2026",
         "descrizione": "Tgcom24 diretta 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "14:59",
-        "fine": "15:34",
+        "ora": "14:56",
+        "fine": "15:30",
         "titolo": "Tgcom24 diretta 2026",
         "descrizione": "Tgcom24 diretta 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "15:34",
-        "fine": "15:39",
+        "ora": "15:30",
+        "fine": "15:35",
         "titolo": "Tgcom24 - Tg meteo",
         "descrizione": "Tgcom24 - Tg meteo",
         "immagine": "https://img-guidatv.org/10473/tgcom24-tg-meteo/0.jpg"
       },
       {
-        "ora": "15:39",
-        "fine": "16:04",
+        "ora": "15:35",
+        "fine": "16:01",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019001/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
-        "ora": "16:04",
-        "fine": "16:21",
+        "ora": "16:01",
+        "fine": "16:18",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019001/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
-        "ora": "16:21",
-        "fine": "16:38",
+        "ora": "16:18",
+        "fine": "16:35",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019001/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
-        "ora": "16:38",
-        "fine": "16:45",
+        "ora": "16:35",
+        "fine": "16:42",
         "titolo": "Tgcom24 - meteo",
         "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
         "immagine": "https://img-guidatv.org/10473/tgcom-24-meteo/5.jpg"
       },
       {
-        "ora": "16:45",
-        "fine": "17:15",
+        "ora": "16:42",
+        "fine": "17:13",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001301/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
-        "ora": "17:15",
-        "fine": "17:21",
+        "ora": "17:13",
+        "fine": "17:19",
         "titolo": "Tgcom24 - meteo",
         "descrizione": "Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.",
         "immagine": "https://img-guidatv.org/10473/tgcom-24-meteo/5.jpg"
       },
       {
-        "ora": "17:21",
-        "fine": "17:39",
+        "ora": "17:19",
+        "fine": "17:36",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001301/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
-        "ora": "17:39",
-        "fine": "17:49",
+        "ora": "17:36",
+        "fine": "17:47",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001301/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
-        "ora": "17:49",
-        "fine": "18:21",
+        "ora": "17:47",
+        "fine": "18:18",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001301/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
-        "ora": "18:21",
-        "fine": "18:30",
+        "ora": "18:18",
+        "fine": "18:27",
         "titolo": "Studio Aperto Live",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
         "immagine": "https://img-guidatv.org/10473/studio-aperto-live/5.jpg"
       },
       {
-        "ora": "18:30",
-        "fine": "18:58",
+        "ora": "18:27",
+        "fine": "18:55",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
         "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
       },
       {
-        "ora": "18:58",
-        "fine": "19:32",
+        "ora": "18:55",
+        "fine": "19:29",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
         "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
       },
       {
-        "ora": "19:32",
-        "fine": "19:54",
+        "ora": "19:29",
+        "fine": "19:43",
         "titolo": "10 minuti",
         "descrizione": "10 minuti focalizzati sui fatti principali della giornata, con interviste e dibattiti sui temi piu' rilevanti di attualita'.",
         "immagine": "https://img-guidatv.org/10473/10-minuti/5.jpg"
       },
       {
-        "ora": "19:54",
+        "ora": "19:43",
+        "fine": "19:53",
+        "titolo": "Tgcom24",
+        "descrizione": "Tgcom24",
+        "immagine": "https://img-guidatv.org/10473/tgcom24/6.jpg"
+      },
+      {
+        "ora": "19:53",
         "fine": "20:32",
         "titolo": "Simulcast Canale 5",
         "descrizione": "Simulcast Canale 5",
@@ -25826,14 +25833,14 @@
       },
       {
         "ora": "21:32",
-        "fine": "23:31",
+        "fine": "23:33",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
       },
       {
-        "ora": "23:31",
-        "fine": "00:01",
+        "ora": "23:33",
+        "fine": "00:03",
         "titolo": "Tgcom24 diretta roma 2026",
         "descrizione": "Tgcom24 diretta roma 2026",
         "immagine": "https://img-guidatv.org/10473/tgcom24-diretta/6.jpg"
@@ -25952,9 +25959,9 @@
       {
         "ora": "05:48",
         "fine": "06:00",
-        "titolo": "MATTINA 24 + METEO IN DIRETTA",
+        "titolo": "Mattina 24",
         "descrizione": "Adele Grossi  presenta Mattina 24, con la Rassegna Stampa italiana di Roberto Vicaretti e quella internazionale di Paolo Cappelli",
-        "immagine": "https://img-guidatv.org/4/mattina-24-meteo-in-diretta/0.jpg"
+        "immagine": "https://img-guidatv.org/4/mattina-24/5.jpg"
       },
       {
         "ora": "06:00",
@@ -26609,9 +26616,9 @@
       {
         "ora": "05:48",
         "fine": "06:00",
-        "titolo": "MATTINA 24 + METEO IN DIRETTA",
+        "titolo": "Mattina 24",
         "descrizione": "Adele Grossi  presenta Mattina 24, con la Rassegna Stampa italiana di Roberto Vicaretti e quella internazionale di Paolo Cappelli",
-        "immagine": "https://img-guidatv.org/4/mattina-24-meteo-in-diretta/0.jpg"
+        "immagine": "https://img-guidatv.org/4/mattina-24/5.jpg"
       },
       {
         "ora": "06:00",
@@ -27266,9 +27273,9 @@
       {
         "ora": "05:48",
         "fine": "06:00",
-        "titolo": "MATTINA 24 + METEO IN DIRETTA",
+        "titolo": "Mattina 24",
         "descrizione": "Adele Grossi  presenta Mattina 24, con la Rassegna Stampa italiana di Roberto Vicaretti e quella internazionale di Paolo Cappelli",
-        "immagine": "https://img-guidatv.org/4/mattina-24-meteo-in-diretta/0.jpg"
+        "immagine": "https://img-guidatv.org/4/mattina-24/5.jpg"
       },
       {
         "ora": "06:00",
@@ -27824,13 +27831,13 @@
       },
       {
         "ora": "00:50",
-        "fine": "01:10",
+        "fine": "01:15",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 24 settembre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "01:10",
+        "ora": "01:15",
         "fine": "01:50",
         "titolo": "Passato E Presente - Mussolini A Caprera. 1923-1942",
         "descrizione": "Giugno 1923. Benito Mussolini, in qualità di nuovo Capo del Governo, si reca in pellegrinaggio sull'isola di Caprera per rendere omaggio alla tomba dell'Eroe dei due Mondi, Giuseppe Garibaldi. Da allora, e fino alla sua caduta, il Duce cercherà di appropriarsi senza sosta della memoria del Generale, della sua isola e del garibaldinismo per legittimare una continuità tra i valori risorgimentali e quelli del fascismo.  A favorirlo in questa impresa, fra tutti, spicca Ezio Garibaldi, nipote del grande generale, ma che in realtà prenderà ferme distanze dalle politiche persecutorie e antisemite del regime, sancendo il progressivo fallimento del progetto originale di Mussolini. In studio, con Paolo Mieli, la professoressa Paola Salvatori.",
@@ -28082,13 +28089,13 @@
       },
       {
         "ora": "00:50",
-        "fine": "01:10",
+        "fine": "01:15",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 24 settembre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "01:10",
+        "ora": "01:15",
         "fine": "01:50",
         "titolo": "Passato E Presente - Mussolini A Caprera. 1923-1942",
         "descrizione": "Giugno 1923. Benito Mussolini, in qualità di nuovo Capo del Governo, si reca in pellegrinaggio sull'isola di Caprera per rendere omaggio alla tomba dell'Eroe dei due Mondi, Giuseppe Garibaldi. Da allora, e fino alla sua caduta, il Duce cercherà di appropriarsi senza sosta della memoria del Generale, della sua isola e del garibaldinismo per legittimare una continuità tra i valori risorgimentali e quelli del fascismo.  A favorirlo in questa impresa, fra tutti, spicca Ezio Garibaldi, nipote del grande generale, ma che in realtà prenderà ferme distanze dalle politiche persecutorie e antisemite del regime, sancendo il progressivo fallimento del progetto originale di Mussolini. In studio, con Paolo Mieli, la professoressa Paola Salvatori.",
@@ -31447,7 +31454,7 @@
       {
         "ora": "05:00",
         "fine": "05:20",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
@@ -31670,7 +31677,7 @@
       {
         "ora": "05:00",
         "fine": "05:20",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
