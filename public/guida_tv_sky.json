@@ -89,13 +89,13 @@
       },
       {
         "ora": "13:55",
-        "fine": "15:05",
+        "fine": "15:10",
         "titolo": "GP Azerbaijan: Prove libere 2",
         "descrizione": "... libere 2 F1. - Seconda sessione di prove a Baku: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/46309e68-f1f1-447b-b787-014cce883bb1/background/600"
       },
       {
-        "ora": "15:05",
+        "ora": "15:10",
         "fine": "15:30",
         "titolo": "F1 Paddock Live Post Libere",
         "descrizione": "Commenti a caldo, analisi e interviste dopo la sessione di prove libere. Con Davide Camicioli e la squadra di Sky Sport F1.",
@@ -586,7 +586,7 @@
         "ora": "10:50",
         "fine": "11:20",
         "titolo": "UEFA Champions League Remix",
-        "descrizione": "Rivediamo i gol e i momenti salienti delle partite di Champions League che hanno fatto la storia.",
+        "descrizione": "Il meglio della Champions League attraverso le immagini piu' interessanti, i gol e le interviste ai protagonisti. Tutte le storie piu' importanti mixate in un montaggio spettacolare.",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
       },
       {
@@ -656,7 +656,7 @@
         "ora": "20:00",
         "fine": "20:35",
         "titolo": "Prepartita Nations League 24/09/2026",
-        "descrizione": "... 24/09/2026 Prepartita Nations League. - La presentazione della prima giornata con le interviste ai protagonisti, le analisi e gli approfondimenti. In studio Sara Benci con Marco Bucciantini e Alessandro Costacurta",
+        "descrizione": "... 24/09/2026 Prepartita Nations League. - La presentazione della prima giornata con le interviste ai protagonisti, le analisi e gli approfondimenti. In studio Sara Benci con Marco Bucciantini e Alessandro Costacurta.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a402e32c-6cd3-42e1-91a5-57088e5e6c60/background/600"
       },
       {
@@ -702,20 +702,20 @@
       },
       {
         "ora": "06:00",
-        "fine": "16:30",
+        "fine": "16:05",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:00",
+        "ora": "16:05",
+        "fine": "16:35",
         "titolo": "Tennis Atp Tour This Week 2026 23/09/2026",
         "descrizione": "... 23/09/2026 ATP Tour: This Week. - Gli aggiornamenti sul circuito maschile di tennis professionistico. Con informazioni dettagliate sui vari giocatori di punta e sui tornei piu' importanti, accompagnate da analisi approfondite.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "17:00",
+        "ora": "16:35",
         "fine": "19:00",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
@@ -749,60 +749,60 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:35",
+        "ora": "00:15",
+        "fine": "00:50",
         "titolo": "F1 Conf. Stampa Team Principal",
         "descrizione": "I responsabili delle squadre affrontano i temi del weekend rispondendo alle domande sui loro piloti, sugli argomenti di discussione della F1 e sulle aspettative per il Gran Premio.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/73d27f13-229d-4776-82b5-767059b9702d/background/600"
       },
       {
-        "ora": "00:35",
-        "fine": "01:50",
+        "ora": "00:50",
+        "fine": "02:05",
         "titolo": "GP Azerbaijan: Prove libere 2",
         "descrizione": "Seconda sessione di prove a Baku: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/46309e68-f1f1-447b-b787-014cce883bb1/background/600"
       },
       {
-        "ora": "01:50",
-        "fine": "02:20",
+        "ora": "02:05",
+        "fine": "02:30",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "02:20",
-        "fine": "03:15",
+        "ora": "02:30",
+        "fine": "03:45",
         "titolo": "Azerbaijan: Qualifiche",
         "descrizione": "Dal Circuito di Baku, Azerbaijan.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9a3c6efa-4e1f-41a1-a893-d24f964b91ad/background/600"
       },
       {
-        "ora": "03:15",
-        "fine": "03:50",
+        "ora": "03:45",
+        "fine": "04:15",
         "titolo": "F1 Conf. Stampa Team Principal",
         "descrizione": "I responsabili delle squadre affrontano i temi del weekend rispondendo alle domande sui loro piloti, sugli argomenti di discussione della F1 e sulle aspettative per il Gran Premio.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/73d27f13-229d-4776-82b5-767059b9702d/background/600"
       },
       {
-        "ora": "03:50",
-        "fine": "05:00",
+        "ora": "04:15",
+        "fine": "05:25",
         "titolo": "GP Azerbaijan: Prove libere 1",
         "descrizione": "Inizia il weekend di Baku con la prima sessione di prove: 60 minuti per cominciare a prendere confidenza con la pista. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ff894ec1-5631-40fc-a340-a9fee0397f2f/background/600"
       },
       {
-        "ora": "05:00",
-        "fine": "05:30",
-        "titolo": "F1 Paddock Live Show",
-        "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
+        "ora": "05:25",
+        "fine": "05:40",
+        "titolo": "Azerbaigian",
+        "descrizione": "La corsa sul circuito cittadino di Baku e' anticipata di 24 ore, con la gara ufficiale spostata eccezionalmente a sabato 26 settembre 2026 alle ore 13:00 italiane.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e2202e55-ff27-492a-978a-93e1b6b8694c/background/600"
       },
       {
-        "ora": "05:30",
+        "ora": "05:40",
         "fine": "06:00",
-        "titolo": "F1 Conf. Stampa Team Principal",
-        "descrizione": "I responsabili delle squadre affrontano i temi del weekend rispondendo alle domande sui loro piloti, sugli argomenti di discussione della F1 e sulle aspettative per il Gran Premio.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/73d27f13-229d-4776-82b5-767059b9702d/background/600"
+        "titolo": "Speciale F1 21/05/2026 - Ep. 42 - Speciale F1 21/05/2026",
+        "descrizione": "... Powertrains. - Nel 2026 la Red Bull ha esordito, in partnership con Ford, come motorista: alla scoperta del lavoro di ricerca e di sviluppo della Power Unit di Milton Keynes con Mara Sangiorgio.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d78eab7f-9d9c-404a-837b-a79043cd3199/background/600"
       },
       {
         "ora": "05:45",
@@ -897,13 +897,13 @@
       },
       {
         "ora": "13:55",
-        "fine": "15:05",
+        "fine": "15:10",
         "titolo": "GP Azerbaijan: Prove libere 2",
         "descrizione": "... libere 2 F1. - Seconda sessione di prove a Baku: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/46309e68-f1f1-447b-b787-014cce883bb1/background/600"
       },
       {
-        "ora": "15:05",
+        "ora": "15:10",
         "fine": "15:30",
         "titolo": "F1 Paddock Live Post Libere",
         "descrizione": "Commenti a caldo, analisi e interviste dopo la sessione di prove libere. Con Davide Camicioli e la squadra di Sky Sport F1.",
@@ -918,13 +918,13 @@
       },
       {
         "ora": "16:00",
-        "fine": "16:30",
+        "fine": "16:35",
         "titolo": "F1 Conf. Stampa Team Principal",
         "descrizione": "I responsabili delle squadre affrontano i temi del weekend rispondendo alle domande sui loro piloti, sugli argomenti di discussione della F1 e sulle aspettative per il Gran Premio.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/73d27f13-229d-4776-82b5-767059b9702d/background/600"
       },
       {
-        "ora": "16:30",
+        "ora": "16:35",
         "fine": "17:45",
         "titolo": "GP Azerbaijan: Prove libere 2",
         "descrizione": "Seconda sessione di prove a Baku: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
@@ -932,56 +932,56 @@
       },
       {
         "ora": "17:45",
-        "fine": "18:15",
+        "fine": "18:20",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "18:15",
-        "fine": "19:00",
+        "ora": "18:20",
+        "fine": "19:20",
         "titolo": "Azerbaijan: Qualifiche",
         "descrizione": "Dal Circuito di Baku, Azerbaijan.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9a3c6efa-4e1f-41a1-a893-d24f964b91ad/background/600"
       },
       {
-        "ora": "19:00",
-        "fine": "20:15",
+        "ora": "19:20",
+        "fine": "20:30",
         "titolo": "GP Azerbaijan: Prove libere 2",
         "descrizione": "Seconda sessione di prove a Baku: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/46309e68-f1f1-447b-b787-014cce883bb1/background/600"
       },
       {
-        "ora": "20:15",
-        "fine": "20:45",
+        "ora": "20:30",
+        "fine": "21:05",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "20:45",
-        "fine": "21:05",
+        "ora": "21:05",
+        "fine": "21:20",
         "titolo": "Azerbaigian",
         "descrizione": "La corsa sul circuito cittadino di Baku e' anticipata di 24 ore, con la gara ufficiale spostata eccezionalmente a sabato 26 settembre 2026 alle ore 13:00 italiane.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e2202e55-ff27-492a-978a-93e1b6b8694c/background/600"
       },
       {
-        "ora": "21:05",
-        "fine": "22:20",
+        "ora": "21:20",
+        "fine": "22:35",
         "titolo": "GP Azerbaijan: Prove libere 2",
         "descrizione": "Seconda sessione di prove a Baku: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/46309e68-f1f1-447b-b787-014cce883bb1/background/600"
       },
       {
-        "ora": "22:20",
-        "fine": "22:50",
+        "ora": "22:35",
+        "fine": "23:05",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "22:50",
-        "fine": "00:05",
+        "ora": "23:05",
+        "fine": "00:15",
         "titolo": "GP Azerbaijan: Prove libere 2",
         "descrizione": "Seconda sessione di prove a Baku: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/46309e68-f1f1-447b-b787-014cce883bb1/background/600"
@@ -1343,20 +1343,20 @@
       },
       {
         "ora": "14:00",
-        "fine": "15:45",
+        "fine": "15:50",
         "titolo": "Quarti di finale: Belgio - Slovenia",
         "descrizione": "... Campionati Europei di pallavolo maschile. - A EuroVolley e' il momento dei quarti di finale, la Slovenia affronta il Belgio. Tc Cristiano-Vullo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/976d7df2-0e19-47a5-a5dc-06172ef7b6fa/background/600"
       },
       {
-        "ora": "15:45",
-        "fine": "17:55",
+        "ora": "15:50",
+        "fine": "17:50",
         "titolo": "Quarti di finale: Italia - Finlandia",
         "descrizione": "... Campionati Europei di pallavolo maschile. - A EuroVolley 2026, l'Italia si gioca un posto nelle semifinali di Milano nella sfida contro la Finlandia. Tc Locatelli-Zorzi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b0d3bfe1-c813-46af-b931-8bad0711f947/background/600"
       },
       {
-        "ora": "17:55",
+        "ora": "17:50",
         "fine": "19:45",
         "titolo": "Preliminari 2026 Regata Sardegna 3a Giornata",
         "descrizione": "... Giornata America's Cup. - A Cagliari, gli AC40 competono nelle regate preliminari della 38.a Louis Vuitton America's Cup. Tc: Guido Meda, Giovanni Bruno, Flavia Tartaglini.",
@@ -2184,13 +2184,13 @@
       },
       {
         "ora": "13:55",
-        "fine": "15:05",
+        "fine": "15:10",
         "titolo": "GP Azerbaijan: Prove libere 2",
         "descrizione": "... libere 2 F1. - Seconda sessione di prove a Baku: 60 minuti per provare sia il giro da qualifica che il passo gara. Telecronaca di Carlo Vanzini, Vicky Piria e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/46309e68-f1f1-447b-b787-014cce883bb1/background/600"
       },
       {
-        "ora": "15:05",
+        "ora": "15:10",
         "fine": "15:30",
         "titolo": "F1 Paddock Live Post Libere",
         "descrizione": "Commenti a caldo, analisi e interviste dopo la sessione di prove libere. Con Davide Camicioli e la squadra di Sky Sport F1.",
@@ -2252,22 +2252,22 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:20",
-        "fine": "01:35",
+        "ora": "00:15",
+        "fine": "01:30",
         "titolo": "WTA 500 Singapore",
         "descrizione": "WTA 500 Singapore - Ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.",
         "immagine": "https://img-guidatv.org/54/wta-500-singapore/5.jpg"
       },
       {
-        "ora": "01:35",
-        "fine": "05:20",
+        "ora": "01:30",
+        "fine": "05:15",
         "titolo": "WTA 500 Singapore",
         "descrizione": "WTA 500 Singapore - Ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.",
         "immagine": "https://img-guidatv.org/54/wta-500-singapore/5.jpg"
       },
       {
-        "ora": "05:20",
-        "fine": "07:20",
+        "ora": "05:15",
+        "fine": "07:15",
         "titolo": "LIVE WTA 250 Seoul",
         "descrizione": "WTA 500 Seul.- In diretta dal Seoul Olympic Park Tennis Center, va in scena il prestigioso WTA 250 Korea Open.",
         "immagine": "https://img-guidatv.org/54/live-wta-250-seoul/0.jpg"
@@ -2295,48 +2295,13 @@
       },
       {
         "ora": "10:50",
-        "fine": "11:20",
+        "fine": "11:10",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "11:20",
-        "fine": "11:35",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "11:35",
-        "fine": "11:55",
-        "titolo": "Supertennis Today",
-        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
-        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
-      },
-      {
-        "ora": "11:55",
-        "fine": "12:10",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:10",
-        "fine": "12:25",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:25",
-        "fine": "12:40",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:40",
+        "ora": "11:10",
         "fine": "12:55",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
@@ -2345,26 +2310,12 @@
       {
         "ora": "12:55",
         "fine": "13:10",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "13:10",
-        "fine": "13:25",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "13:25",
-        "fine": "13:40",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "13:40",
+        "ora": "13:10",
         "fine": "15:00",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
@@ -2372,20 +2323,55 @@
       },
       {
         "ora": "15:00",
-        "fine": "15:15",
+        "fine": "15:20",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "15:15",
-        "fine": "17:05",
+        "ora": "15:20",
+        "fine": "15:35",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
         "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
       },
       {
-        "ora": "17:05",
+        "ora": "15:35",
+        "fine": "15:50",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "15:50",
+        "fine": "16:05",
+        "titolo": "Supertennis Today",
+        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
+        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
+      },
+      {
+        "ora": "16:05",
+        "fine": "16:25",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "16:25",
+        "fine": "16:40",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "16:40",
+        "fine": "16:45",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "16:45",
         "fine": "17:20",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
@@ -2393,35 +2379,35 @@
       },
       {
         "ora": "17:20",
-        "fine": "19:05",
+        "fine": "20:05",
         "titolo": "BJK CUP Finals 2026 - UKR vs BEL",
-        "descrizione": "BJK Finals 2026 - Ukraina e Belgio si sfidano per un posto in Semifinale alle BJK CUP Finals di Shenzhen.",
+        "descrizione": "Elina Svitolina vs Greet Minnen UKR vs BEL Billie Jean King Cup 2026",
         "immagine": "https://img-guidatv.org/54/bjk-cup-finals/6.jpg"
       },
       {
-        "ora": "19:05",
-        "fine": "20:50",
+        "ora": "20:05",
+        "fine": "20:45",
         "titolo": "BJK CUP Finals 2026 - UKR vs BEL",
-        "descrizione": "BJK Finals 2026 - Ukraina e Belgio si sfidano per un posto in Semifinale alle BJK CUP Finals di Shenzhen.",
+        "descrizione": "Kalinina/Kichenok vs Kempen/Salden UKR vs BEL Billie Jean King Cup 2026",
         "immagine": "https://img-guidatv.org/54/bjk-cup-finals/6.jpg"
       },
       {
-        "ora": "20:50",
-        "fine": "21:10",
+        "ora": "20:45",
+        "fine": "21:05",
         "titolo": "Circolando 2026 - Ep. 1 - Circolando - New Country Tennis Academy Bari",
         "descrizione": "Viaggio alla scoperta dei piu' bei circoli d'Italia. Stefania Chieppa e Giorgio Galimberti ci guidano sui campi tra interviste, sfide, sketch e splendide storie di tennis.",
         "immagine": "https://img-guidatv.org/54/circolando/11.jpg"
       },
       {
-        "ora": "21:10",
-        "fine": "22:55",
+        "ora": "21:05",
+        "fine": "22:50",
         "titolo": "BJK CUP Finals 2026 - CHN vs ITA",
         "descrizione": "L'Italia, capitanata da Tathiana Garbin, si presenta a Shenzhen da bi-campionessa in carica e sfida la Cina padrona di casa.",
         "immagine": "https://img-guidatv.org/54/bjk-cup-finals/6.jpg"
       },
       {
-        "ora": "22:55",
-        "fine": "00:20",
+        "ora": "22:50",
+        "fine": "00:15",
         "titolo": "BJK CUP Finals 2026 - CHN vs ITA",
         "descrizione": "L'Italia, capitanata da Tathiana Garbin, si presenta a Shenzhen da bi-campionessa in carica e sfida la Cina padrona di casa.",
         "immagine": "https://img-guidatv.org/54/bjk-cup-finals/6.jpg"
@@ -2600,18 +2586,18 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:55",
-        "fine": "02:05",
-        "titolo": "Automobilismo. C.To Europeo Formula Regional: Hockenheim Round 8",
-        "descrizione": "Automobilismo. C.to Europeo Formula Regional: Hockenheim Round 8",
-        "immagine": "https://img-guidatv.org/32/automobilismo-c-to-europeo-formula-regional-hockenheim-round-8/0.jpg"
+        "ora": "01:10",
+        "fine": "02:20",
+        "titolo": "Automobilismo: Campionato Europeo Formula Regional 2026 - Hockenheim (Round 8)",
+        "descrizione": "Il Campionato Europeo di Formula Regional 2026 fa tappa a Hockenheim. Sul celebre circuito tedesco i giovani talenti delle monoposto si sfidano in un nuovo appuntamento della stagione.",
+        "immagine": "https://img-guidatv.org/32/automobilismo-campionato-europeo-formula-regional-2026-hockenheim-round-8/0.jpg"
       },
       {
-        "ora": "02:05",
+        "ora": "02:20",
         "fine": "06:00",
-        "titolo": "Ciclismo: Camp. Mondiali Su Strada MontréAl 2026 Prova Under 23 Femminile",
-        "descrizione": "Ciclismo: Camp. Mondiali su strada Montréal 2026 prova Under 23 Femminile",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Mondiali Di Ciclismo 2026 - Corsa In Linea Donne U23",
+        "descrizione": "Ai Mondiali di Ciclismo 2026 di Montréal va in scena la corsa in linea Donne Under 23, con le migliori giovani cicliste internazionali in gara per conquistare la maglia iridata.",
+        "immagine": "https://img-guidatv.org/32/mondiali-di-ciclismo-2026-corsa-in-linea-donne-u23/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2644,7 +2630,7 @@
       {
         "ora": "14:00",
         "fine": "16:55",
-        "titolo": "Canoa",
+        "titolo": "Canoa - Europei Canoa Slalom2026 - 1a Giornata: Finali A Squadre Kayak E Canadese",
         "descrizione": "Prima giornata degli Europei di canoa slalom 2026, con le finali a squadre di kayak e canadese che assegnano i primi titoli continentali.",
         "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
       },
@@ -2690,18 +2676,18 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:55",
-        "fine": "02:05",
-        "titolo": "Automobilismo. C.To Europeo Formula Regional: Hockenheim Round 8",
-        "descrizione": "Automobilismo. C.to Europeo Formula Regional: Hockenheim Round 8",
-        "immagine": "https://img-guidatv.org/32/automobilismo-c-to-europeo-formula-regional-hockenheim-round-8/0.jpg"
+        "ora": "01:10",
+        "fine": "02:20",
+        "titolo": "Automobilismo: Campionato Europeo Formula Regional 2026 - Hockenheim (Round 8)",
+        "descrizione": "Il Campionato Europeo di Formula Regional 2026 fa tappa a Hockenheim. Sul celebre circuito tedesco i giovani talenti delle monoposto si sfidano in un nuovo appuntamento della stagione.",
+        "immagine": "https://img-guidatv.org/32/automobilismo-campionato-europeo-formula-regional-2026-hockenheim-round-8/0.jpg"
       },
       {
-        "ora": "02:05",
+        "ora": "02:20",
         "fine": "06:00",
-        "titolo": "Ciclismo: Camp. Mondiali Su Strada MontréAl 2026 Prova Under 23 Femminile",
-        "descrizione": "Ciclismo: Camp. Mondiali su strada Montréal 2026 prova Under 23 Femminile",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Mondiali Di Ciclismo 2026 - Corsa In Linea Donne U23",
+        "descrizione": "Ai Mondiali di Ciclismo 2026 di Montréal va in scena la corsa in linea Donne Under 23, con le migliori giovani cicliste internazionali in gara per conquistare la maglia iridata.",
+        "immagine": "https://img-guidatv.org/32/mondiali-di-ciclismo-2026-corsa-in-linea-donne-u23/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2734,7 +2720,7 @@
       {
         "ora": "14:00",
         "fine": "16:55",
-        "titolo": "Canoa",
+        "titolo": "Canoa - Europei Canoa Slalom2026 - 1a Giornata: Finali A Squadre Kayak E Canadese",
         "descrizione": "Prima giornata degli Europei di canoa slalom 2026, con le finali a squadre di kayak e canadese che assegnano i primi titoli continentali.",
         "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
       },
@@ -2788,20 +2774,20 @@
       },
       {
         "ora": "03:00",
-        "fine": "04:15",
+        "fine": "04:10",
         "titolo": "Bruno Barbieri - 4 Hotel",
         "descrizione": "Bruno Barbieri arriva nel Monferrato, tra castelli medievali e cantine secolari: qui si scontreranno quattro albergatori che hanno fatto dell’accoglienza la loro bandiera.",
         "immagine": "https://img-guidatv.org/718/bruno-barbieri-4-hotel/6.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "04:30",
+        "ora": "04:10",
+        "fine": "04:35",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2f6e459a-c1a9-425e-8d06-4425d1086a3d/background/600"
       },
       {
-        "ora": "04:30",
+        "ora": "04:35",
         "fine": "05:15",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef devono incorporare la birra Blue Moon nei loro piatti, scegliendo tra tre varietà.",
@@ -2809,7 +2795,7 @@
       },
       {
         "ora": "05:15",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "MasterChef USA",
         "descrizione": "I concorrenti si recano in una cava di pietra per la loro prossima sfida. La prova sul campo consiste nel cucinare un pranzo abbondante per più di 100 lavoratori.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
@@ -2969,20 +2955,20 @@
       },
       {
         "ora": "04:00",
-        "fine": "05:15",
+        "fine": "05:10",
         "titolo": "Bruno Barbieri - 4 Hotel",
         "descrizione": "Bruno Barbieri arriva nel Monferrato, tra castelli medievali e cantine secolari: qui si scontreranno quattro albergatori che hanno fatto dell’accoglienza la loro bandiera.",
         "immagine": "https://img-guidatv.org/718/bruno-barbieri-4-hotel/6.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:30",
+        "ora": "05:10",
+        "fine": "05:35",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2f6e459a-c1a9-425e-8d06-4425d1086a3d/background/600"
       },
       {
-        "ora": "05:30",
+        "ora": "05:35",
         "fine": "06:15",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef devono incorporare la birra Blue Moon nei loro piatti, scegliendo tra tre varietà.",
@@ -2990,7 +2976,7 @@
       },
       {
         "ora": "06:15",
-        "fine": "07:00",
+        "fine": "07:05",
         "titolo": "MasterChef USA",
         "descrizione": "I concorrenti si recano in una cava di pietra per la loro prossima sfida. La prova sul campo consiste nel cucinare un pranzo abbondante per più di 100 lavoratori.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
@@ -3150,20 +3136,20 @@
       },
       {
         "ora": "04:00",
-        "fine": "05:15",
+        "fine": "05:10",
         "titolo": "Bruno Barbieri - 4 Hotel",
         "descrizione": "Bruno Barbieri arriva nel Monferrato, tra castelli medievali e cantine secolari: qui si scontreranno quattro albergatori che hanno fatto dell’accoglienza la loro bandiera.",
         "immagine": "https://img-guidatv.org/718/bruno-barbieri-4-hotel/6.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:30",
+        "ora": "05:10",
+        "fine": "05:35",
         "titolo": "Alessandro Borghese Kitchen Sound",
         "descrizione": "Alessandro Borghese torna a vestire i panni dello chef rock che mescola i suoi sound musicali preferiti agli ingredienti di ricette tradizionali e sperimentazioni innovative.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2f6e459a-c1a9-425e-8d06-4425d1086a3d/background/600"
       },
       {
-        "ora": "05:30",
+        "ora": "05:35",
         "fine": "06:15",
         "titolo": "MasterChef USA",
         "descrizione": "Gli chef devono incorporare la birra Blue Moon nei loro piatti, scegliendo tra tre varietà.",
@@ -3171,7 +3157,7 @@
       },
       {
         "ora": "06:15",
-        "fine": "07:00",
+        "fine": "07:05",
         "titolo": "MasterChef USA",
         "descrizione": "I concorrenti si recano in una cava di pietra per la loro prossima sfida. La prova sul campo consiste nel cucinare un pranzo abbondante per più di 100 lavoratori.",
         "immagine": "https://img-guidatv.org/718/masterchef-usa/1.jpg"
@@ -3373,7 +3359,7 @@
       },
       {
         "ora": "05:15",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "La storia di Val",
         "descrizione": "S2 Ep6 La storia di Val - Una madre divorziata viene processata per l'omicidio del suo ex marito violento, dopo che questi muore in un incidente sospetto nella sua abitazione.",
         "immagine": "https://img-guidatv.org/8456/la-storia-di-val/1.jpg"
@@ -3805,7 +3791,7 @@
       },
       {
         "ora": "04:20",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Capitaine Marleau",
         "descrizione": "Capitaine Marleau ruota intorno a una investigatrice eccezionale. È davvero brillante e non ne sbaglia una. Sembra essere una professionista perfetta, ma siccome la perfezione non esiste, ecco cosa ha di strano. Il Capitano Marleau (interpretata da Corinne Masiero) ha aspetto a dir poco bizzarro. I suoi modi sono eccentrici e rischiano di mettere in discussione la sua bravura che poi dimostra puntualmente sul campo. Il tratto caratteristico del suo look è un berretto da cacciatore che non manca mai e è a dir poco anacronistico.",
         "immagine": "https://img-guidatv.org/serie/5ed92ccc1cc40417c605775a_p_5_rs_300.jpg"
@@ -4591,22 +4577,22 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a5eb7c63-f19a-49e2-bf09-d4891a50afd7/background/600"
       },
       {
-        "ora": "02:45",
-        "fine": "03:40",
+        "ora": "03:05",
+        "fine": "04:00",
         "titolo": "Indie Jungle",
         "descrizione": "Ep11 di 13 Special Edition - In questo episodio speciale di Indie Jungle riviviamo i momenti piu' belli di questa terza stagione attraverso le parole e le performance dei nostri fantastici ospiti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/dbe754ff-7f38-4d64-a031-b54659c2d920/background/600"
       },
       {
-        "ora": "03:40",
-        "fine": "04:05",
+        "ora": "04:00",
+        "fine": "04:30",
         "titolo": "Retromania di Isabella Ragonese",
         "descrizione": "Ep2 di 5 La musicassetta - Isabella Ragonese si muove per l'Italia alla ricerca di segreti e aneddoti sui supporti musicali del recente passato. Nella puntata: la musicassetta. Ospite: Nicola Lagioia.",
         "immagine": "https://img-guidatv.org/8473/retromania-di-isabella-ragonese/0.jpg"
       },
       {
-        "ora": "04:05",
-        "fine": "05:15",
+        "ora": "04:30",
+        "fine": "05:25",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep4 di 8 Bluvertigo - Metallo non metallo - Ci sono album che hanno segnato la storia della musica italiana. Scopriamo i loro segreti. Nella puntata: Bluvertigo - Metallo non metallo.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
@@ -4619,7 +4605,7 @@
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "05:15",
+        "ora": "05:25",
         "fine": "06:00",
         "titolo": "Retromania di Isabella Ragonese",
         "descrizione": "Ep4 di 5 Il videoclip - Isabella Ragonese si muove per l'Italia alla ricerca di segreti e aneddoti sui supporti musicali che si sono susseguiti nel tempo. Nella puntata: il videoclip. Ospite: Linus.",
@@ -7660,17 +7646,10 @@
       },
       {
         "ora": "03:40",
-        "fine": "05:05",
+        "fine": "05:10",
         "titolo": "Madagascar",
         "descrizione": "Un leone, una giraffa, una zebra e un ippopotamo decidono di scappare dallo zoo di New York per girare un po' il mondo, ai loro occhi sconosciuto, ma durante la loro fuga, un gruppo di animalisti li cattura e li spedisce nel loro habitat naturale in Madagascar. I quattro però, non abituati a vivere liberi, non si ambientano tanto facilmente...",
         "immagine": "https://image.tmdb.org/t/p/w300/57mXHA9Y6VHzksVEVJTYbMbE1bu.jpg"
-      },
-      {
-        "ora": "05:05",
-        "fine": "06:40",
-        "titolo": "Madagascar 3: Ricercati in Europa",
-        "descrizione": "Alex il leone, Marty la zebra, Melman la giraffa e Gloria l'ippopotamo, fuggiti dallo zoo di New York City e sbarcati prima in Madagascar e poi nell'Africa centrale, hanno nostalgia della Grande Mela e per questo nuotano fino a Monte Carlo, alla ricerca dell'aeroplano dei pinguini. Sul suolo francese, però, una poliziotta pronta a tutto li elegge a nemico numero uno. Scappare con il treno di un circo è la loro unica speranza: un impresario americano a Londra potrebbe comprare lo show e riportarli tutti a casa. L'esibizione, però, è tutta da inventare.",
-        "immagine": "https://img-guidatv.org/film_new/m/5e78dd42ce1e246c511cce64/5e78dd42ce1e246c511cce64_p_3_rs_300.jpg"
       },
       {
         "ora": "05:10",
@@ -11442,63 +11421,56 @@
     "categoria": "Bambini",
     "programmi": [
       {
-        "ora": "00:05",
-        "fine": "00:15",
-        "titolo": "Monster Loving Maniacs",
-        "descrizione": "Ep9 di 52 La dama del lago - Edith, Ernest e Bo aiutano il nonno a cacciare una sirena d'acqua dolce.",
-        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
-      },
-      {
-        "ora": "00:15",
-        "fine": "00:25",
+        "ora": "00:10",
+        "fine": "00:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep10 di 52 Rebecca - Arthur organizza una caccia al fantasma. Ishaani, Edith ed Ernest devono catturare Rebecca, un fantasma che abita in casa loro e che ha la passione per i lampadari.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:25",
-        "fine": "00:35",
+        "ora": "00:20",
+        "fine": "00:30",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep11 di 52 Il troll motociclista - Durante una visita oculistica Arthur lascia che Bo venga rapita da un troll motociclista.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:35",
-        "fine": "00:45",
+        "ora": "00:30",
+        "fine": "00:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep12 di 52 Il libro dei vampiri - Dracula fa visita ad Edith e la invita a fare ricerche su un suo parente di nome Mortimer.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "00:45",
-        "fine": "01:00",
+        "ora": "00:40",
+        "fine": "00:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep13 di 52 La nave della sventura - Arthur racconta ai ragazzi la storia di come Van Helsing liberò Dracula e di quando lui lo catturò per sbaglio.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:00",
-        "fine": "01:10",
+        "ora": "00:55",
+        "fine": "01:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep14 di 52 Halloween - La sera di Halloween Ernest viene incastrato da Arthur in una missione di caccia.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:10",
-        "fine": "01:20",
+        "ora": "01:05",
+        "fine": "01:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep15 di 52 La porta numero 3 (prima parte) - Ishaani mostra a Ernest cosa si trova dall'altra parte dello specchio e libera la sua altra metà, di nome Shirley.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:20",
-        "fine": "01:30",
+        "ora": "01:15",
+        "fine": "01:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep16 di 52 La porta numero 3 (seconda parte) - Ishaani ed Ernest riescono a chiedere aiuto a Edith. Lei e Bo si impegnano e salvano i ragazzi dal mondo al di là dello specchio.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "01:30",
+        "ora": "01:25",
         "fine": "01:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep17 di 52 \"Operazione \"\"Tiro al vampiro\"\"\" - Inizia l'operazione Tiro al Vampiro e Edith progetta una serie di scherzi per Dracula.",
@@ -11513,34 +11485,34 @@
       },
       {
         "ora": "01:50",
-        "fine": "02:05",
+        "fine": "02:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep19 di 52 La polizia dei mostri - Ernest, Edith e Bo indagano su dei presunti furti che stanno avvenendo nel parco. Scopriranno che i responsabili sono tre elfi che hanno perso casa.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:05",
-        "fine": "02:15",
+        "ora": "02:00",
+        "fine": "02:10",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep20 di 52 Il mostro sotto il letto - Bo incontra Muuna, un mostro del letto che sta tentando di lasciare casa Van Alten e decide di darle una mano.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:25",
+        "ora": "02:10",
+        "fine": "02:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep21 di 52 Torte in volo - Dopo una missione Ernest e Bo suonano per sbaglio il Gong dei Gremlins. Appaiono tre Gremlins che vogliono distruggere l'aereo dei cacciatori di mostri.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:25",
-        "fine": "02:35",
+        "ora": "02:20",
+        "fine": "02:30",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep22 di 52 Il demone dei sogni - Una Mare infesta casa Van Alten e tutti tranne Bo rischiano di impazzire per i suoi incubi.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "02:35",
+        "ora": "02:30",
         "fine": "02:45",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep23 di 52 Invincibile - Una Manticora minaccia Grusselbrook, ma nello scontro Ernest ha un attacco di panico.",
@@ -11548,34 +11520,34 @@
       },
       {
         "ora": "02:45",
-        "fine": "03:00",
+        "fine": "02:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep24 di 52 Cena con sorpresa - La madre di Ishaani crede che Arthur abbia scoperto il loro segreto. Per dimostrarle che non è così Ernest organizza una cena con le due famiglie.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "03:10",
+        "ora": "02:55",
+        "fine": "03:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep25 di 52 La nonna e il lupo mannaro parte 1 - Per capire come spezzare la maledizione di un lupo mannaro, Arthur scongela Tamsyn, la nonna dei tre ragazzi.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:10",
-        "fine": "03:20",
+        "ora": "03:05",
+        "fine": "03:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep26 di 52 La nonna e il lupo mannaro parte 2 - Tamsyn inizia a conoscere i suoi nipoti e mette le sue abilità magiche per aiutare il lupo mannaro.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "03:30",
+        "ora": "03:15",
+        "fine": "03:25",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep27 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:30",
+        "ora": "03:25",
         "fine": "03:40",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep28 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
@@ -11590,27 +11562,27 @@
       },
       {
         "ora": "03:50",
-        "fine": "04:05",
+        "fine": "04:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep30 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:05",
-        "fine": "04:15",
+        "ora": "04:00",
+        "fine": "04:10",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep31 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "04:25",
+        "ora": "04:10",
+        "fine": "04:20",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep32 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:20",
         "fine": "04:35",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep33 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
@@ -11632,20 +11604,20 @@
       },
       {
         "ora": "04:55",
-        "fine": "05:10",
+        "fine": "05:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep36 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:10",
-        "fine": "05:20",
+        "ora": "05:05",
+        "fine": "05:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep37 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "05:20",
+        "ora": "05:15",
         "fine": "05:30",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep38 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
@@ -11702,80 +11674,136 @@
       },
       {
         "ora": "07:25",
-        "fine": "07:50",
+        "fine": "07:45",
         "titolo": "Henry Danger",
         "descrizione": "Ep13 di 30 La stanza segreta - Jasper, Charlotte e Schwoz scoprono che Capitan Man ha una sua stanza segreta. Cosi' decidono di costruirne una tutta per loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "07:50",
-        "fine": "08:15",
+        "ora": "07:45",
+        "fine": "08:10",
         "titolo": "Henry Danger",
         "descrizione": "Ep14 di 30 A cena con Bigfoot - Schwoz porta i suoi amici a cena nei boschi con Bigfoot.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "08:15",
+        "ora": "08:10",
         "fine": "08:35",
         "titolo": "I Thunderman: In missione",
-        "descrizione": "Phoebe e Max vengono mandati sotto copertura per gestire una nuova minaccia a Secret Shores e portano con sé Chloe per sviluppare il suo talento da supereroe.",
+        "descrizione": "Ep2 di 14 The Thundermans: Undercover - Arriva su Nickelodeon l’attesissima serie spin off che segna il ritorno de I Thunderman, con il mitico cast di attori, tanto amati dai ragazzi italiani.",
         "immagine": "https://image.tmdb.org/t/p/w300/cj2RFkCpQEoW8gHokDdHTWM3qRb.jpg"
       },
       {
         "ora": "08:35",
-        "fine": "09:00",
+        "fine": "08:55",
         "titolo": "A casa dei Loud",
         "descrizione": "Ep2 di 20 Un gioco da bambini/La forza dell'abitudine - Luna e la sua band decidono di creare musica per bambini./Leni menziona una fastidiosa abitudine del suo nuovo fidanzato Gavin.",
         "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
       },
       {
-        "ora": "09:00",
-        "fine": "09:25",
+        "ora": "08:55",
+        "fine": "09:05",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Lincoln Loud, un ragazzino di 11 anni con ben dieci sorelle, trova modi creativi per sopravvivere nel caos quotidiano di casa sua.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "09:05",
+        "fine": "09:30",
         "titolo": "A casa dei Loud",
         "descrizione": "Ep3 di 20 Dolci tentazioni/Il giovane illusionista - La mamma sfida Lola a passare una settimana senza mangiare dolci./ Lincoln si sforza di impressionare lo Strepitoso Brailster.",
         "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
       },
       {
-        "ora": "09:25",
-        "fine": "09:50",
+        "ora": "09:30",
+        "fine": "09:55",
         "titolo": "Pinky Malinky - Irritabile / Erbe",
         "descrizione": "S1 Ep18 Irritabile / Erbe - Pinky si sveglia di cattivo umore, ma si impone di combattere il nervosismo affrontando la giornata con positivita' estrema. / Pinky lancia una crociata per salvare le erbe...",
         "immagine": "https://image.tmdb.org/t/p/w300/qXGRafqFfyja23kqY4jpZtWQPLZ.jpg"
       },
       {
-        "ora": "09:50",
-        "fine": "11:15",
+        "ora": "09:55",
+        "fine": "10:15",
         "titolo": "Sonic Prime",
         "descrizione": "Ep17 di 23 - Tails Nine usa i frammenti per costruire la sua fortezza nel Tetro, ma ciò danneggia i Prismamondi.",
         "immagine": "https://image.tmdb.org/t/p/w300/mlDVnjgx89bmGvtXnKYDbowpadV.jpg"
       },
       {
-        "ora": "11:15",
-        "fine": "11:40",
+        "ora": "10:15",
+        "fine": "10:40",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "10:40",
+        "fine": "11:00",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "11:00",
+        "fine": "11:10",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "11:10",
+        "fine": "11:25",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "11:25",
+        "fine": "11:45",
         "titolo": "Lo Show di Patrick Stella",
         "descrizione": "Ep4 di 13 The Patrick Star Show #404 - Patrick si occupa della casa di Nonna Tentacolo./ I Dartfish adottano Plankton.",
         "immagine": "https://image.tmdb.org/t/p/w300/hOomPc8x2lDxWRS8ltDE0gHUK7z.jpg"
       },
       {
-        "ora": "11:40",
-        "fine": "12:05",
+        "ora": "11:45",
+        "fine": "12:10",
         "titolo": "I Marsupilami",
         "descrizione": "Ep5 di 26 - Bibi vuole un Marsupilami.// Gli alunni protestano alla mensa della scuola",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
-        "ora": "12:05",
-        "fine": "12:30",
+        "ora": "12:10",
+        "fine": "12:35",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep20 di 26 Il video virale / I fratelli di Dagarack - Grazie a un video, le Chipettes diventano molto famose a scuola. Alvin e i suoi fratelli vogliono creare un video virale.",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:55",
+        "ora": "12:35",
+        "fine": "13:00",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep21 di 26 Il fratello invisibile / Il desiderio - Simon deve partecipare ad un concorso per giovani inventori. Decide di portare la sua tuta dell'invisibilita'. Ma Alvin gliela ruba!",
         "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
+      },
+      {
+        "ora": "13:00",
+        "fine": "13:20",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "13:20",
+        "fine": "13:45",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "13:45",
+        "fine": "13:55",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
       },
       {
         "ora": "13:55",
@@ -11786,13 +11814,13 @@
       },
       {
         "ora": "14:20",
-        "fine": "14:45",
+        "fine": "14:40",
         "titolo": "Henry Danger",
         "descrizione": "Ep12 di 22 Viaggio di compleanno - Il viaggio per il compleanno di Charlotte per andare a vedere lo show dei Boo Man Group viene deviato da Kid Danger e da Capitan Man, a causa di un'emergenza.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "14:45",
+        "ora": "14:40",
         "fine": "15:05",
         "titolo": "Alvinnn!!! and the Chipmunks",
         "descrizione": "Ep21 di 26 Theozilla / Molla l'osso! - Come ogni anno, la signora Smith prepara la fiera di scienze e stavolta ha pensato che i ragazzi dovranno lavorare in gruppo.",
@@ -11807,10 +11835,17 @@
       },
       {
         "ora": "15:30",
-        "fine": "16:05",
+        "fine": "15:55",
         "titolo": "Pinky Malinky - Canzone / Trofeo",
         "descrizione": "S1 Ep19 Canzone / Trofeo - Pinky, JJ e Babs si spingono all'estremo per rintracciare una canzone che ha generato un momento di pura felicita'. / Pinky promuove una politica scolastica di elogi per...",
         "immagine": "https://image.tmdb.org/t/p/w300/qXGRafqFfyja23kqY4jpZtWQPLZ.jpg"
+      },
+      {
+        "ora": "15:55",
+        "fine": "16:05",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Lincoln organizza una festa di compleanno a tema della sua spia preferita/ Luan viene scelta per una parte importante",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
       },
       {
         "ora": "16:05",
@@ -11821,30 +11856,44 @@
       },
       {
         "ora": "16:30",
-        "fine": "17:25",
+        "fine": "16:55",
         "titolo": "I Marsupilami",
         "descrizione": "Ep3 di 26 - Jade affronta Mr. Best / I Marsupilami salvano lo spettacolo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
-        "ora": "17:25",
-        "fine": "17:45",
+        "ora": "16:55",
+        "fine": "17:15",
+        "titolo": "SpongeBob",
+        "descrizione": "Nel profondo dell'Oceano Pacifico, nella città sotterranea di Bikini Bottom, vive una spugna gialla quadrata chiamata SpongeBob SquarePants. SpongeBob vive in un ananas con la sua lumaca domestica, Gary, ama il suo lavoro di cuoco al Krusty Krab e ha un talento per mettersi nei guai di tutti i tipi senza provarci davvero. Quando non sta dando sui nervi del suo irritabile vicino di casa Squiddi, SpongeBob di solito  può essere trovato nel mezzo di tutti i tipi di situazioni strane con il suo migliore amico, la semplice ma adorabile stella marina, Patrick Stella.",
+        "immagine": "https://img-guidatv.org/serie/5e78d824ce1e246c511cb6c0_p_13_rs_300.jpg"
+      },
+      {
+        "ora": "17:15",
+        "fine": "17:40",
         "titolo": "Lo Show di Patrick Stella",
         "descrizione": "Ep2 di 13 The Patrick Star Show #402 - Patrick presenta uno show di coppie./ Una bestia mangia tutto il gelato.",
         "immagine": "https://image.tmdb.org/t/p/w300/hOomPc8x2lDxWRS8ltDE0gHUK7z.jpg"
       },
       {
-        "ora": "17:45",
-        "fine": "18:10",
-        "titolo": "Sasso, Carta, Forbici",
-        "descrizione": "Ep16 di 20 I buoni propositi/Il Club del Libro di Carta - Carta rimprovera Forbici per non aver fatto i buoni propositi per l'anno nuovo. /Carta crea un club del libro.",
-        "immagine": "https://image.tmdb.org/t/p/w300/hLpTtTtXu5qTZTGayYLVsiOOoNA.jpg"
+        "ora": "17:40",
+        "fine": "18:05",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Ep17 di 26 Sfida con le cheerleader/Colpo di fortuna - Le cheerleader sfidano Lynn e le sue compagne di squadra./ Lori diventa una celebrità a scuola quando fa una buca in uno",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
       },
       {
-        "ora": "18:10",
-        "fine": "18:35",
+        "ora": "18:05",
+        "fine": "18:25",
         "titolo": "A casa dei Loud",
         "descrizione": "Ep5 di 13 - I Loud vogliono che i cugini vivano a Royal Woods. / Lynn è un'allenatrice.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
+      },
+      {
+        "ora": "18:25",
+        "fine": "18:35",
+        "titolo": "A casa dei Loud",
+        "descrizione": "Lincoln Loud, un ragazzino di 11 anni con ben dieci sorelle, trova modi creativi per sopravvivere nel caos quotidiano di casa sua.",
         "immagine": "https://image.tmdb.org/t/p/w300/yNMpzDwIEkhf4GtNBl8bST19cyg.jpg"
       },
       {
@@ -11870,17 +11919,24 @@
       },
       {
         "ora": "19:45",
-        "fine": "20:15",
+        "fine": "20:10",
         "titolo": "Henry Danger",
         "descrizione": "Ep15 di 22 Un trasloco da evitare - Jake, il padre di Henry, sta per ottenere un nuovo lavoro alla fabbrica di patatine Frittle, ma tutta la famiglia dovra' trasferirsi a Bordertown.",
         "immagine": "https://image.tmdb.org/t/p/w300/f3TEP5SROTpL6e520ohhSNbUv1E.jpg"
       },
       {
-        "ora": "20:15",
-        "fine": "20:40",
+        "ora": "20:10",
+        "fine": "20:30",
         "titolo": "Sonic Prime",
-        "descrizione": "Ep15 di 23 - La chiave per ricostruire il Paradox Prism si trova in una delle Prisma-dimensioni.",
+        "descrizione": "Ep15 di 23 Giro di vite - La chiave per ricostruire il Paradox Prism si trova in una delle Prisma-dimensioni.",
         "immagine": "https://image.tmdb.org/t/p/w300/mlDVnjgx89bmGvtXnKYDbowpadV.jpg"
+      },
+      {
+        "ora": "20:30",
+        "fine": "20:40",
+        "titolo": "I Marsupilami",
+        "descrizione": "Ep8 di 26 - Jade e Mica proteggono tre piccoli Marsupilami tenendoli segreti.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6bf458d5-3879-4e1e-99bd-7652efd5220f/background/600"
       },
       {
         "ora": "20:40",
@@ -11905,72 +11961,86 @@
       },
       {
         "ora": "21:50",
-        "fine": "22:15",
-        "titolo": "Alvinnn!!! and the Chipmunks",
-        "descrizione": "Ep2 di 26 Il blog di Alvin / Il gazebo di Dave - Alvin scopre che Theodore ha un canale dove milioni di follower lo guardano. / Dave ha fatto costruire un gazebo in giardino.",
-        "immagine": "https://img-guidatv.org/serie/5e78d870ce1e246c511cb823_p_3_rs_300.jpg"
-      },
-      {
-        "ora": "22:15",
-        "fine": "22:30",
-        "titolo": "Monster Loving Maniacs",
-        "descrizione": "Ep52 di 52 L'arrivo del signore oscuro Parte 2 - I nostri eroi cercano disperatamente di evitare lo scontro con l'invincibile Dracula.",
-        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
-      },
-      {
-        "ora": "22:30",
-        "fine": "22:40",
-        "titolo": "Monster Loving Maniacs",
-        "descrizione": "Ep1 di 52 Benvenuti a Gruselbrook - Tre fratelli, amanti dei mostri, vengono mandati a far visita al loro nonno. Scopriranno che il nonno vive nella città più infestata del mondo.",
-        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
-      },
-      {
-        "ora": "22:40",
-        "fine": "22:55",
-        "titolo": "Monster Loving Maniacs",
-        "descrizione": "Ep2 di 52 L'addestramento - Entusiasti dall'idea essere addestrati per diventare cacciatori di mostri, Edith e Bo decidono di restare e di compiere il loro destino.",
-        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
-      },
-      {
-        "ora": "22:55",
-        "fine": "23:05",
-        "titolo": "Monster Loving Maniacs",
-        "descrizione": "Ep3 di 52 Lo slime del tempo - Ernest viene congelato con lo slime del tempo e Arthur, Edith e Bo devono cercare di salvarlo da tutti gli imprevisti che gli capitano.",
-        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
-      },
-      {
-        "ora": "23:05",
-        "fine": "23:15",
-        "titolo": "Monster Loving Maniacs",
-        "descrizione": "Ep4 di 52 Il Glarbergastling - Durante una sessione di addestramento, un Glarbergastling minaccia la città.",
-        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
-      },
-      {
-        "ora": "23:15",
-        "fine": "23:30",
+        "fine": "22:00",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep5 di 52 Salviamo Lemmy - Ernest, Edith e Bo devono cercare di salvare un criceto posseduto da un demone.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:30",
-        "fine": "23:40",
+        "ora": "22:00",
+        "fine": "22:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep6 di 52 Che spavento! - Nella battaglia per il controllo del televisore, Arthur e i bambini fanno una scommessa. Bo, Edith ed Ernest hanno 24 ore per spaventare il nonno.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:40",
-        "fine": "23:55",
+        "ora": "22:15",
+        "fine": "22:25",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep52 di 52 L'arrivo del signore oscuro Parte 2 - I nostri eroi cercano disperatamente di evitare lo scontro con l'invincibile Dracula.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "22:25",
+        "fine": "22:35",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep1 di 52 Benvenuti a Gruselbrook - Tre fratelli, amanti dei mostri, vengono mandati a far visita al loro nonno. Scopriranno che il nonno vive nella città più infestata del mondo.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "22:35",
+        "fine": "22:50",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep2 di 52 L'addestramento - Entusiasti dall'idea essere addestrati per diventare cacciatori di mostri, Edith e Bo decidono di restare e di compiere il loro destino.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "22:50",
+        "fine": "23:00",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep3 di 52 Lo slime del tempo - Ernest viene congelato con lo slime del tempo e Arthur, Edith e Bo devono cercare di salvarlo da tutti gli imprevisti che gli capitano.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "23:00",
+        "fine": "23:10",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep4 di 52 Il Glarbergastling - Durante una sessione di addestramento, un Glarbergastling minaccia la città.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "23:10",
+        "fine": "23:20",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep5 di 52 Salviamo Lemmy - Ernest, Edith e Bo devono cercare di salvare un criceto posseduto da un demone.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "23:20",
+        "fine": "23:35",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep6 di 52 Che spavento! - Nella battaglia per il controllo del televisore, Arthur e i bambini fanno una scommessa. Bo, Edith ed Ernest hanno 24 ore per spaventare il nonno.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "23:35",
+        "fine": "23:45",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep7 di 52 Professor Dracula - Edith libera Dracula che, dopo aver parlato con i tre ragazzi, riesce a fuggire.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "23:55",
-        "fine": "00:05",
+        "ora": "23:45",
+        "fine": "23:55",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep8 di 52 L'appuntamento - Arthur punisce Ernest, Bo ed Edith per aver fatto scappare Dracula facendo lavare loro la sua macchina.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "23:55",
+        "fine": "00:10",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep9 di 52 La dama del lago - Edith, Ernest e Bo aiutano il nonno a cacciare una sirena d'acqua dolce.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       }
     ]
@@ -18244,13 +18314,13 @@
       },
       {
         "ora": "02:30",
-        "fine": "04:25",
+        "fine": "04:15",
         "titolo": "Provaci ancora Prof!",
         "descrizione": "Camilla Baudino è un'insegnante di lettere che si divide fra il lavoro, la famiglia (composta dal marito Renzo, dalla figlia Livietta e dal cane Potti) e diversi casi di indagine in cui si ritrova coinvolta, e che la vedono collaborare con il commissario di polizia Gaetano Berardi, con cui sviluppa un'intesa particolare.\n\nLe prime quattro stagioni sono ambientate a Roma, le restanti a Torino. Le diverse stagioni della serie vedono dei cambiamenti nella vita professionale e sentimentale di Camilla, che si trasferisce da Roma a Torino e che da moglie di Renzo diventa prima separata e infine si fidanza con Berardi. Parallelamente, anche Renzo intreccia una relazione con una giovane collega spagnola che lo renderà padre di un bambino.",
         "immagine": "https://img-guidatv.org/serie/5e78d93dce1e246c511cbbd0_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:15",
         "fine": "05:55",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -18415,21 +18485,14 @@
         "fine": "23:25",
         "titolo": "Follemente",
         "descrizione": "Quanto conosciamo davvero di noi stessi quando prendiamo una decisione? E se dentro di noi esistessero più versioni del nostro IO, ognuna con qualcosa da dire?  FolleMente è una brillante commedia romantica che va oltre le apparenze, immergendosi nella mente dei due protagonisti, Piero e Lara, svelando i loro pensieri più nascosti e le battaglie interiori che tutti affrontiamo.",
-        "immagine": "https://image.tmdb.org/t/p/w300/sPps037qCts9XDwCaS6j7JsNuEd.jpg"
+        "immagine": "https://img-guidatv.org/film_new/f/6aaca9c166361ed2b263e874/6aaca9c166361ed2b263e874_p_3_rs_300.jpg"
       },
       {
         "ora": "23:25",
-        "fine": "23:52",
+        "fine": "23:55",
         "titolo": "Porta A Porta",
         "descrizione": "Giunto alla trentunesima edizione, il programma di Bruno Vespa offre al pubblico grandi novità, pur confermando la linea editoriale legata agli avvenimenti della politica, come ai grandi fatti di cronaca e alle mutazioni della società.",
         "immagine": "https://img-guidatv.org/1/porta-a-porta/0.jpg"
-      },
-      {
-        "ora": "23:52",
-        "fine": "23:55",
-        "titolo": "TG1 Sera",
-        "descrizione": "TG1 Sera",
-        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
       },
       {
         "ora": "23:55",
@@ -18467,13 +18530,13 @@
       },
       {
         "ora": "02:30",
-        "fine": "04:25",
+        "fine": "04:15",
         "titolo": "Provaci ancora Prof!",
         "descrizione": "Camilla Baudino è un'insegnante di lettere che si divide fra il lavoro, la famiglia (composta dal marito Renzo, dalla figlia Livietta e dal cane Potti) e diversi casi di indagine in cui si ritrova coinvolta, e che la vedono collaborare con il commissario di polizia Gaetano Berardi, con cui sviluppa un'intesa particolare.\n\nLe prime quattro stagioni sono ambientate a Roma, le restanti a Torino. Le diverse stagioni della serie vedono dei cambiamenti nella vita professionale e sentimentale di Camilla, che si trasferisce da Roma a Torino e che da moglie di Renzo diventa prima separata e infine si fidanza con Berardi. Parallelamente, anche Renzo intreccia una relazione con una giovane collega spagnola che lo renderà padre di un bambino.",
         "immagine": "https://img-guidatv.org/serie/5e78d93dce1e246c511cbbd0_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:15",
         "fine": "05:55",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -18638,21 +18701,14 @@
         "fine": "23:25",
         "titolo": "Follemente",
         "descrizione": "Quanto conosciamo davvero di noi stessi quando prendiamo una decisione? E se dentro di noi esistessero più versioni del nostro IO, ognuna con qualcosa da dire?  FolleMente è una brillante commedia romantica che va oltre le apparenze, immergendosi nella mente dei due protagonisti, Piero e Lara, svelando i loro pensieri più nascosti e le battaglie interiori che tutti affrontiamo.",
-        "immagine": "https://image.tmdb.org/t/p/w300/sPps037qCts9XDwCaS6j7JsNuEd.jpg"
+        "immagine": "https://img-guidatv.org/film_new/f/6aaca9c166361ed2b263e874/6aaca9c166361ed2b263e874_p_3_rs_300.jpg"
       },
       {
         "ora": "23:25",
-        "fine": "23:52",
+        "fine": "23:55",
         "titolo": "Porta A Porta",
         "descrizione": "Giunto alla trentunesima edizione, il programma di Bruno Vespa offre al pubblico grandi novità, pur confermando la linea editoriale legata agli avvenimenti della politica, come ai grandi fatti di cronaca e alle mutazioni della società.",
         "immagine": "https://img-guidatv.org/1/porta-a-porta/0.jpg"
-      },
-      {
-        "ora": "23:52",
-        "fine": "23:55",
-        "titolo": "TG1 Sera",
-        "descrizione": "TG1 Sera",
-        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
       },
       {
         "ora": "23:55",
@@ -18669,13 +18725,13 @@
     "programmi": [
       {
         "ora": "00:15",
-        "fine": "01:28",
+        "fine": "01:29",
         "titolo": "Radio2 Social Club",
         "descrizione": "Luca Barbarossa ed Ema Stokholma aprono le porte di via Asiago a Roma ad importanti ospiti musicali della scena nazionale ed internazionale che si esibiscono dal vivo accompagnati dalla Social Band e dalla voce di Frances Alina Ascione.",
         "immagine": "https://img-guidatv.org/2/radio2-social-club/6.jpg"
       },
       {
-        "ora": "01:28",
+        "ora": "01:29",
         "fine": "01:30",
         "titolo": "Meteo 2",
         "descrizione": "Meteo 2",
@@ -18690,13 +18746,13 @@
       },
       {
         "ora": "03:15",
-        "fine": "03:58",
+        "fine": "03:55",
         "titolo": "The Good Doctor",
         "descrizione": "Le vicende di Shaun Murphy, un giovane chirurgo autistico con la Sindrome del savant, proveniente da una cittadina nel Wyoming, Casper, dove ha vissuto un'infanzia travagliata.",
         "immagine": "https://img-guidatv.org/serie/5e78d8c8ce1e246c511cb9b1_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:58",
+        "ora": "03:55",
         "fine": "04:40",
         "titolo": "The Good Doctor",
         "descrizione": "Le vicende di Shaun Murphy, un giovane chirurgo autistico con la Sindrome del savant, proveniente da una cittadina nel Wyoming, Casper, dove ha vissuto un'infanzia travagliata.",
@@ -18704,20 +18760,20 @@
       },
       {
         "ora": "04:40",
-        "fine": "04:55",
+        "fine": "04:45",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "04:55",
-        "fine": "05:05",
+        "ora": "04:45",
+        "fine": "04:55",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
-        "ora": "05:05",
+        "ora": "04:55",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18920,13 +18976,13 @@
     "programmi": [
       {
         "ora": "00:15",
-        "fine": "01:28",
+        "fine": "01:29",
         "titolo": "Radio2 Social Club",
         "descrizione": "Luca Barbarossa ed Ema Stokholma aprono le porte di via Asiago a Roma ad importanti ospiti musicali della scena nazionale ed internazionale che si esibiscono dal vivo accompagnati dalla Social Band e dalla voce di Frances Alina Ascione.",
         "immagine": "https://img-guidatv.org/2/radio2-social-club/6.jpg"
       },
       {
-        "ora": "01:28",
+        "ora": "01:29",
         "fine": "01:30",
         "titolo": "Meteo 2",
         "descrizione": "Meteo 2",
@@ -18941,13 +18997,13 @@
       },
       {
         "ora": "03:15",
-        "fine": "03:58",
+        "fine": "03:55",
         "titolo": "The Good Doctor",
         "descrizione": "Le vicende di Shaun Murphy, un giovane chirurgo autistico con la Sindrome del savant, proveniente da una cittadina nel Wyoming, Casper, dove ha vissuto un'infanzia travagliata.",
         "immagine": "https://img-guidatv.org/serie/5e78d8c8ce1e246c511cb9b1_p_1_rs_300.jpg"
       },
       {
-        "ora": "03:58",
+        "ora": "03:55",
         "fine": "04:40",
         "titolo": "The Good Doctor",
         "descrizione": "Le vicende di Shaun Murphy, un giovane chirurgo autistico con la Sindrome del savant, proveniente da una cittadina nel Wyoming, Casper, dove ha vissuto un'infanzia travagliata.",
@@ -18955,20 +19011,20 @@
       },
       {
         "ora": "04:40",
-        "fine": "04:55",
+        "fine": "04:45",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "04:55",
-        "fine": "05:05",
+        "ora": "04:45",
+        "fine": "04:55",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
-        "ora": "05:05",
+        "ora": "04:55",
         "fine": "05:30",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -19264,7 +19320,7 @@
         "ora": "12:45",
         "fine": "13:20",
         "titolo": "Quante Storie",
-        "descrizione": "Giorgio Zanchini accompagna il pubblico in un viaggio dall’arte alla letteratura, dalla musica alla storia recente, dalla filosofia alla politica, per comprendere le mille facce di un Paese meraviglioso e contraddittorio attraverso i libri e i loro autori.",
+        "descrizione": "Dal secondo dopoguerra a oggi, l'asse tra America e Europa non ha mai vissuto un momento così delicato. Il giornalista Mario Sechi, direttore dell'agenzia Dire, ripercorre a Quante Storie la parabola del Patto Atlantico e spiega perché l'atlantismo non può essere considerata una pratica da rinegoziare in base alle diverse opportunità ma deve imporsi come una scelta di civiltà.",
         "immagine": "https://img-guidatv.org/3/quante-storie/0.jpg"
       },
       {
@@ -19397,7 +19453,7 @@
         "ora": "21:20",
         "fine": "23:25",
         "titolo": "Le Cose Che Non Sai",
-        "descrizione": "Questa terza puntata avrà per protagonisti il regista, attore e conduttore televisivo Luca Barbareschi e lo showman, conduttore e comico Gabriele Corsi. Insieme ad Eleonora Daniele e agli esperti in studio, gli ospiti ripercorreranno il l loro albero genealogico, alla scoperta di aneddoti, rivelazioni ed intrecci con la Grande Storia",
+        "descrizione": "I protagonisti della terza puntata sono l'attore e doppiatore Francesco Pannofino e l'attrice Stefania Sandrelli. Insieme ad Eleonora Daniele e agli esperti in studio, gli ospiti ripercorrono il loro albero genealogico, alla scoperta di aneddoti, rivelazioni ed intrecci con la Grande Storia.",
         "immagine": "https://img-guidatv.org/3/le-cose-che-non-sai/5.jpg"
       },
       {
@@ -19508,7 +19564,7 @@
         "ora": "12:45",
         "fine": "13:20",
         "titolo": "Quante Storie",
-        "descrizione": "Giorgio Zanchini accompagna il pubblico in un viaggio dall’arte alla letteratura, dalla musica alla storia recente, dalla filosofia alla politica, per comprendere le mille facce di un Paese meraviglioso e contraddittorio attraverso i libri e i loro autori.",
+        "descrizione": "Dal secondo dopoguerra a oggi, l'asse tra America e Europa non ha mai vissuto un momento così delicato. Il giornalista Mario Sechi, direttore dell'agenzia Dire, ripercorre a Quante Storie la parabola del Patto Atlantico e spiega perché l'atlantismo non può essere considerata una pratica da rinegoziare in base alle diverse opportunità ma deve imporsi come una scelta di civiltà.",
         "immagine": "https://img-guidatv.org/3/quante-storie/0.jpg"
       },
       {
@@ -19641,7 +19697,7 @@
         "ora": "21:20",
         "fine": "23:25",
         "titolo": "Le Cose Che Non Sai",
-        "descrizione": "Questa terza puntata avrà per protagonisti il regista, attore e conduttore televisivo Luca Barbareschi e lo showman, conduttore e comico Gabriele Corsi. Insieme ad Eleonora Daniele e agli esperti in studio, gli ospiti ripercorreranno il l loro albero genealogico, alla scoperta di aneddoti, rivelazioni ed intrecci con la Grande Storia",
+        "descrizione": "I protagonisti della terza puntata sono l'attore e doppiatore Francesco Pannofino e l'attrice Stefania Sandrelli. Insieme ad Eleonora Daniele e agli esperti in studio, gli ospiti ripercorrono il loro albero genealogico, alla scoperta di aneddoti, rivelazioni ed intrecci con la Grande Storia.",
         "immagine": "https://img-guidatv.org/3/le-cose-che-non-sai/5.jpg"
       },
       {
@@ -19774,7 +19830,7 @@
         "fine": "16:50",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:50",
@@ -19941,7 +19997,7 @@
         "fine": "16:50",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:50",
@@ -20017,7 +20073,7 @@
         "fine": "03:58",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000401/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "03:58",
@@ -20164,7 +20220,7 @@
         "fine": "16:06",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000401/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:06",
@@ -20178,7 +20234,7 @@
         "fine": "18:44",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:44",
@@ -20275,7 +20331,7 @@
         "fine": "03:58",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000401/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "03:58",
@@ -20422,7 +20478,7 @@
         "fine": "16:06",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000401/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:06",
@@ -20436,7 +20492,7 @@
         "fine": "18:44",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:44",
@@ -21048,14 +21104,14 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Luca Josi, Mariolina Sattanino, Beppe Severgnini, Andrea Scanzi",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
         "ora": "21:15",
         "fine": "23:15",
         "titolo": "Piazzapulita",
-        "descrizione": "Programma di approfondimento ed informazione condotto da Corrado Formigli. 17ma Edizione.",
+        "descrizione": "Corrado Formigli con Michele Santoro, Gianni Alemanno, Michela Ponzani, Tonia Mastrobuoni, Italo Bocchino, Stefano Cappellini, Daniela Preziosi, Francesco Vignarca, Nathalie Tocci, Riccardo Ricciardi, Stefano Massini, Antonio...",
         "immagine": "https://img-guidatv.org/23/piazzapulita/5.jpg"
       },
       {
@@ -21166,14 +21222,14 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Luca Josi, Mariolina Sattanino, Beppe Severgnini, Andrea Scanzi",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
         "ora": "21:15",
         "fine": "23:15",
         "titolo": "Piazzapulita",
-        "descrizione": "Programma di approfondimento ed informazione condotto da Corrado Formigli. 17ma Edizione.",
+        "descrizione": "Corrado Formigli con Michele Santoro, Gianni Alemanno, Michela Ponzani, Tonia Mastrobuoni, Italo Bocchino, Stefano Cappellini, Daniela Preziosi, Francesco Vignarca, Nathalie Tocci, Riccardo Ricciardi, Stefano Massini, Antonio...",
         "immagine": "https://img-guidatv.org/23/piazzapulita/5.jpg"
       },
       {
@@ -21284,14 +21340,14 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Luca Josi, Mariolina Sattanino, Beppe Severgnini, Andrea Scanzi",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
         "ora": "21:15",
         "fine": "23:15",
         "titolo": "Piazzapulita",
-        "descrizione": "Programma di approfondimento ed informazione condotto da Corrado Formigli. 17ma Edizione.",
+        "descrizione": "Corrado Formigli con Michele Santoro, Gianni Alemanno, Michela Ponzani, Tonia Mastrobuoni, Italo Bocchino, Stefano Cappellini, Daniela Preziosi, Francesco Vignarca, Nathalie Tocci, Riccardo Ricciardi, Stefano Massini, Antonio...",
         "immagine": "https://img-guidatv.org/23/piazzapulita/5.jpg"
       },
       {
@@ -21402,14 +21458,14 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Luca Josi, Mariolina Sattanino, Beppe Severgnini, Andrea Scanzi",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
         "ora": "21:15",
         "fine": "23:15",
         "titolo": "Piazzapulita",
-        "descrizione": "Programma di approfondimento ed informazione condotto da Corrado Formigli. 17ma Edizione.",
+        "descrizione": "Corrado Formigli con Michele Santoro, Gianni Alemanno, Michela Ponzani, Tonia Mastrobuoni, Italo Bocchino, Stefano Cappellini, Daniela Preziosi, Francesco Vignarca, Nathalie Tocci, Riccardo Ricciardi, Stefano Massini, Antonio...",
         "immagine": "https://img-guidatv.org/23/piazzapulita/5.jpg"
       },
       {
@@ -21520,14 +21576,14 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Luca Josi, Mariolina Sattanino, Beppe Severgnini, Andrea Scanzi",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
         "ora": "21:15",
         "fine": "23:15",
         "titolo": "Piazzapulita",
-        "descrizione": "Programma di approfondimento ed informazione condotto da Corrado Formigli. 17ma Edizione.",
+        "descrizione": "Corrado Formigli con Michele Santoro, Gianni Alemanno, Michela Ponzani, Tonia Mastrobuoni, Italo Bocchino, Stefano Cappellini, Daniela Preziosi, Francesco Vignarca, Nathalie Tocci, Riccardo Ricciardi, Stefano Massini, Antonio...",
         "immagine": "https://img-guidatv.org/23/piazzapulita/5.jpg"
       },
       {
@@ -22505,14 +22561,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:21",
-        "fine": "00:24",
+        "ora": "00:22",
+        "fine": "00:25",
         "titolo": "Anica Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/30/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "00:24",
+        "ora": "00:25",
         "fine": "02:01",
         "titolo": "127 ore",
         "descrizione": "Aron Ralston, 26 anni, entusiasta dello sport e della libertà, si concede una giornata di biking e trekking nel Blue John Canyon dello Utah. Sole, musica, paesaggi mozzafiato e un fortuito incontro con due belle escursioniste che si prestano a tuffi e risate: cosa chiedere di più? Tornato solo, però, scendendo un crepaccio, Aron smuove inavvertitamente un masso vecchio di milioni di anni e si ritrova immobilizzato, con un braccio bloccato tra questo e la roccia, praticamente senza cibo né acqua. Sopravvivrà 5 giorni in condizioni fisiche e psicologiche gravissime, arrivando, per liberarsi, a segarsi il braccio con un coltellino.",
@@ -22709,7 +22765,7 @@
       },
       {
         "ora": "22:42",
-        "fine": "00:21",
+        "fine": "00:22",
         "titolo": "Blood for Dust",
         "descrizione": "L'incosciente Ricky guadagna un sacco di soldi trafficando armi illegali in tutta l'area dei tre stati e ama ostentarlo. Il commesso viaggiatore Cliff, percorre lo stesso territorio in cui Ricky traffica con le armi. Nel disperato tentativo di trovare un po' di sollievo finanziario per la sua famiglia in difficoltà, Cliff accetta di collaborare con Ricky per effettuare consegne di droga e armi da uno stato all'altro per conto di John, un boss di medio livello di un cartello americano. Quando un semplice scambio si trasforma in un bagno di sangue dopo che Ricky uccide tutti in un tentativo di accaparramento di territorio, i due si ritrovano in una situazione di pressione in cui l'improbabile spacciatore Cliff deve lottare con tutte le sue forze per sopravvivere.",
         "immagine": "https://image.tmdb.org/t/p/w300/xmf52xVodOmYJnXnFpKI7VxqLyv.jpg"
@@ -22721,14 +22777,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:21",
-        "fine": "00:24",
+        "ora": "00:22",
+        "fine": "00:25",
         "titolo": "Anica Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/30/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "00:24",
+        "ora": "00:25",
         "fine": "02:01",
         "titolo": "127 ore",
         "descrizione": "Aron Ralston, 26 anni, entusiasta dello sport e della libertà, si concede una giornata di biking e trekking nel Blue John Canyon dello Utah. Sole, musica, paesaggi mozzafiato e un fortuito incontro con due belle escursioniste che si prestano a tuffi e risate: cosa chiedere di più? Tornato solo, però, scendendo un crepaccio, Aron smuove inavvertitamente un masso vecchio di milioni di anni e si ritrova immobilizzato, con un braccio bloccato tra questo e la roccia, praticamente senza cibo né acqua. Sopravvivrà 5 giorni in condizioni fisiche e psicologiche gravissime, arrivando, per liberarsi, a segarsi il braccio con un coltellino.",
@@ -22925,7 +22981,7 @@
       },
       {
         "ora": "22:42",
-        "fine": "00:21",
+        "fine": "00:22",
         "titolo": "Blood for Dust",
         "descrizione": "L'incosciente Ricky guadagna un sacco di soldi trafficando armi illegali in tutta l'area dei tre stati e ama ostentarlo. Il commesso viaggiatore Cliff, percorre lo stesso territorio in cui Ricky traffica con le armi. Nel disperato tentativo di trovare un po' di sollievo finanziario per la sua famiglia in difficoltà, Cliff accetta di collaborare con Ricky per effettuare consegne di droga e armi da uno stato all'altro per conto di John, un boss di medio livello di un cartello americano. Quando un semplice scambio si trasforma in un bagno di sangue dopo che Ricky uccide tutti in un tentativo di accaparramento di territorio, i due si ritrovano in una situazione di pressione in cui l'improbabile spacciatore Cliff deve lottare con tutte le sue forze per sopravvivere.",
         "immagine": "https://image.tmdb.org/t/p/w300/xmf52xVodOmYJnXnFpKI7VxqLyv.jpg"
@@ -23160,55 +23216,55 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "01:33",
+        "fine": "01:32",
         "titolo": "David Bowie: Ziggy Stardust",
         "descrizione": "L'ultimo show in cui David Bowie impersona la figura dell'alieno Ziggy Stardust. Concerto registrato il 3 Luglio 1973 al Hammersmith Odeon di Londra per la regia di D.A. Pennebaker, rimissato da Bowie e Tony Visconti nel 1981.",
         "immagine": "https://img-guidatv.org/31/david-bowie-ziggy-stardust/5.jpg"
       },
       {
-        "ora": "01:33",
-        "fine": "01:35",
+        "ora": "01:32",
+        "fine": "01:34",
         "titolo": "Rai News Notte",
         "descrizione": "Cronaca, politica, economia, cultura, spettacolo e sport dall'Italia e dal mondo. I fatti del giorno in tre minuti a cura di Rai News, il canale all news della Rai.",
         "immagine": "https://img-guidatv.org/31/rai-news-notte/6.jpg"
       },
       {
-        "ora": "01:35",
-        "fine": "02:28",
+        "ora": "01:34",
+        "fine": "02:27",
         "titolo": "Le Strade Di Overland - Uganda: Terra Di Contrasti",
         "descrizione": "Concludiamo il nostro viaggio in Uganda visitando un altro Parco Naturale: quello della Valle di Kidepo, uno dei Parchi ugandesi più belli, ma anche uno dei meno frequentati perché lontano dalle classiche rotte turistiche. Ci troviamo ancora in Karamoja, la regione nel remoto Nord Est considerata la meno sviluppata del Paese, per approfondire l'ammirevole operato di persone straordinarie, tra cui molti italiani. Raggiungiamo un villaggio della tribù Tepes e poi torniamo a Kampala, la capitale: ci rendiamo inevitabilmente rendiamo conto di quante differenze ci siano ancora nel Paese, tra realtà tribali e invece chi è già all'avanguardia. In questo incredibile viaggio in Uganda, abbiamo scoperto un nuovo equilibrio tra comunità di uomini e di animali, e abbiamo conosciuto delle persone magnifiche che continuano a fare la differenza per questo Paese, ugandesi... ma anche italiane.",
         "immagine": "https://img-guidatv.org/31/le-strade-di-overland/1.jpg"
       },
       {
-        "ora": "02:28",
-        "fine": "03:23",
+        "ora": "02:27",
+        "fine": "03:22",
         "titolo": "Isole: Capraia",
         "descrizione": "Capraia è una delle isole dell'arcipelago toscano, il comune insulare più a nord del tirreno. A mezza via tra l'Italia e la Corsica, Capraia è dominata dall'antico castello costruito dal banco di San Giorgio, ed è l'isola più selvaggia del nostro paese.",
         "immagine": "https://img-guidatv.org/31/isole-capraia/5.jpg"
       },
       {
-        "ora": "03:23",
-        "fine": "04:19",
+        "ora": "03:22",
+        "fine": "04:18",
         "titolo": "'14-'18 Grande Guerra 100 Anni Dopo",
         "descrizione": "L'episodio più triste per gli italiani nella Grande Guerra è senz'altro la disfatta di Caporetto, una tragedia che porta l'esercito a un passo dalla sconfitta e che conta 40 mila tra morti e feriti, 300 mila prigionieri e oltre 400 mila civili in fuga dal Friuli e dal Veneto per sfuggire all'occupazione del nemico. Caporetto segna un punto di svolta: cambiano la percezione della guerra, la natura del conflitto e l'opinione di intellettuali e gente comune. Cade il governo e finisce l'era Cadorna. L'Italia è arrivata a un soffio dalla capitolazione ma troverà la forza di ricostruire il proprio esercito e riprendere l'offensiva proprio sulla linea del Piave, sotto il comando del generale Armando Diaz.",
         "immagine": "https://img-guidatv.org/31/14-18-grande-guerra-100-anni-dopo/1.jpg"
       },
       {
-        "ora": "04:19",
-        "fine": "04:37",
+        "ora": "04:18",
+        "fine": "04:36",
         "titolo": "I Borghi Di Barbieri - SI - Il Chinotto Del Savonese",
         "descrizione": "Il \"savonese\", area di produzione del chinotto targato Slow Food, va da Varazze a Pietra Ligure, una collana di paesi allineati come perle preziose in riva al mare di Liguria. Tra questi splendori, oggi visiteremo la magnifica Finale Ligure, coi sui carrugi, il porticciolo e le colline, che ospitano le piantagioni.",
         "immagine": "https://img-guidatv.org/31/i-borghi-di-barbieri-si-il-chinotto-del-savonese/0.jpg"
       },
       {
-        "ora": "04:37",
-        "fine": "04:55",
+        "ora": "04:36",
+        "fine": "04:54",
         "titolo": "I Borghi Di Barbieri - La Cucina Delle Donne Di Rocca Di Mezzo",
         "descrizione": "A meno di un'ora e mezza d'auto da Roma, Rocca di Mezzo, spalanca un universo parallelo di pace e natura. In inverno, poi, quando la neve imbianca i monti abruzzesi, l'incanto è compiuto, e la temperatura scende facilmente a 30 gradi. Ma la tradizione resiste, sotto la nuova veste turistica, così come il grano antico.",
         "immagine": "https://img-guidatv.org/31/i-borghi-di-barbieri-la-cucina-delle-donne-di-rocca-di-mezzo/0.jpg"
       },
       {
-        "ora": "04:55",
+        "ora": "04:54",
         "fine": "06:00",
         "titolo": "Paradisi Da Salvare - Torres Del Paine, Patagonia Selvaggia",
         "descrizione": "All'estremo Sud del Cile, il Parco Nazionale Torres Del Paine offre alcuni dei paesaggi più belli della Patagonia con un fragile equilibrio da preservare. Le sue vaste praterie, infatti, ospitano popolazioni di puma, guanachi, volpi e condor, oggi minacciati dalla siccità, dagli incendi e dal bracconaggio.",
@@ -23383,13 +23439,13 @@
       },
       {
         "ora": "01:20",
-        "fine": "02:55",
+        "fine": "02:50",
         "titolo": "Nerve",
         "descrizione": "Vee Delmonico è una studentessa modello dell’ultimo anno delle superiori, che è stanca di rimanere sempre in disparte. Quando i suoi amici la incoraggiano a partecipare a un popolare social game online chiamato Nerve, Vee decide di iscriversi, anche solo per provare quello che in apparenza le sembra un gioco innocuo e divertente.  E così, Vee viene risucchiata nel vortice adrenalinico della competizione, della fama e dei follower, assieme a un misterioso ragazzo, ma a un certo punto il gioco diventa sempre più inquietante, con sfide via via più rischiose, in un crescendo ansiogeno che porterà alla prova finale dove la posta in gioco sarà altissima.",
         "immagine": "https://img-guidatv.org/film_new/n/5e78e0c3ce1e246c511ce012/5e78e0c3ce1e246c511ce012_p_3_rs_300.jpg"
       },
       {
-        "ora": "02:55",
+        "ora": "02:50",
         "fine": "05:00",
         "titolo": "Gli spostati",
         "descrizione": "Roslyn è a Reno per divorziare. Perce, Guido e Gay invece a Reno ci vivono, catturando cavalli selvaggi e partecipando a rodei. Tutti e tre sono attratti dalla bella Roslyn. Durante una caccia ai mustang, Perce si fa male e Roslyn ne è sconvolta: quel mondo duro e violento le fa vedere sotto un diverso aspetto Gay. Così quando Guido e Gay partecipano ad una nuova caccia a un branco di cavalli selvaggi, aiutata da Perce, la donna libera l'animale che i due hanno con tanta fatica catturato. Gay allora lo ricattura, per liberarlo però a sua volta, in omaggio a Roslyn...",
@@ -23487,13 +23543,13 @@
       },
       {
         "ora": "01:20",
-        "fine": "02:55",
+        "fine": "02:50",
         "titolo": "Nerve",
         "descrizione": "Vee Delmonico è una studentessa modello dell’ultimo anno delle superiori, che è stanca di rimanere sempre in disparte. Quando i suoi amici la incoraggiano a partecipare a un popolare social game online chiamato Nerve, Vee decide di iscriversi, anche solo per provare quello che in apparenza le sembra un gioco innocuo e divertente.  E così, Vee viene risucchiata nel vortice adrenalinico della competizione, della fama e dei follower, assieme a un misterioso ragazzo, ma a un certo punto il gioco diventa sempre più inquietante, con sfide via via più rischiose, in un crescendo ansiogeno che porterà alla prova finale dove la posta in gioco sarà altissima.",
         "immagine": "https://img-guidatv.org/film_new/n/5e78e0c3ce1e246c511ce012/5e78e0c3ce1e246c511ce012_p_3_rs_300.jpg"
       },
       {
-        "ora": "02:55",
+        "ora": "02:50",
         "fine": "05:00",
         "titolo": "Gli spostati",
         "descrizione": "Roslyn è a Reno per divorziare. Perce, Guido e Gay invece a Reno ci vivono, catturando cavalli selvaggi e partecipando a rodei. Tutti e tre sono attratti dalla bella Roslyn. Durante una caccia ai mustang, Perce si fa male e Roslyn ne è sconvolta: quel mondo duro e violento le fa vedere sotto un diverso aspetto Gay. Così quando Guido e Gay partecipano ad una nuova caccia a un branco di cavalli selvaggi, aiutata da Perce, la donna libera l'animale che i due hanno con tanta fatica catturato. Gay allora lo ricattura, per liberarlo però a sua volta, in omaggio a Roslyn...",
@@ -24235,7 +24291,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000401/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -24409,7 +24465,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000401/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -26081,28 +26137,28 @@
         "fine": "16:04",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:04",
         "fine": "16:25",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:25",
         "fine": "16:45",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019101/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:45",
         "fine": "17:15",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:15",
@@ -26116,21 +26172,21 @@
         "fine": "17:38",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:38",
         "fine": "17:49",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:49",
         "fine": "18:21",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001401/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:21",
@@ -26211,9 +26267,9 @@
       {
         "ora": "00:30",
         "fine": "01:00",
-        "titolo": "24 MM 1",
-        "descrizione": "24 MM",
-        "immagine": "https://img-guidatv.org/4/24-mm/5.jpg"
+        "titolo": "Faccia a faccia",
+        "descrizione": "FACCIA A FACCIA",
+        "immagine": "https://img-guidatv.org/4/faccia-a-faccia/5.jpg"
       },
       {
         "ora": "01:00",
@@ -26246,9 +26302,9 @@
       {
         "ora": "02:45",
         "fine": "03:00",
-        "titolo": "SAPORI E COLORI",
-        "descrizione": "SAPORI E COLORI",
-        "immagine": "https://img-guidatv.org/4/sapori-e-colori/5.jpg"
+        "titolo": "BASTA LA SALUTE",
+        "descrizione": "Il settimanale di sanità e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanità. Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute dà voce a medici, ricercatori, associazioni",
+        "immagine": "https://img-guidatv.org/4/basta-la-salute/10.png"
       },
       {
         "ora": "03:00",
@@ -26281,9 +26337,9 @@
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "RASSEGNA + FOCUS REGISTRATO",
-        "descrizione": "RASSEGNA + FOCUS REGISTRATO",
-        "immagine": "https://img-guidatv.org/4/rassegna-focus-registrato/0.jpg"
+        "titolo": "RASSEGNA STAMPA + FOCUS REGISTRATO",
+        "descrizione": "RASSEGNA STAMPA + FOCUS REGISTRATO",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "05:00",
@@ -26302,9 +26358,9 @@
       {
         "ora": "05:48",
         "fine": "06:00",
-        "titolo": "Mattina 24",
+        "titolo": "MATTINA 24 + METEO IN DIRETTA",
         "descrizione": "Adele Grossi  presenta Mattina 24, con la Rassegna Stampa italiana di Roberto Vicaretti e quella internazionale di Paolo Cappelli",
-        "immagine": "https://img-guidatv.org/4/mattina-24/5.jpg"
+        "immagine": "https://img-guidatv.org/4/mattina-24-meteo-in-diretta/0.jpg"
       },
       {
         "ora": "06:00",
@@ -26889,9 +26945,9 @@
       {
         "ora": "00:30",
         "fine": "01:00",
-        "titolo": "24 MM 1",
-        "descrizione": "24 MM",
-        "immagine": "https://img-guidatv.org/4/24-mm/5.jpg"
+        "titolo": "Faccia a faccia",
+        "descrizione": "FACCIA A FACCIA",
+        "immagine": "https://img-guidatv.org/4/faccia-a-faccia/5.jpg"
       },
       {
         "ora": "01:00",
@@ -26924,9 +26980,9 @@
       {
         "ora": "02:45",
         "fine": "03:00",
-        "titolo": "SAPORI E COLORI",
-        "descrizione": "SAPORI E COLORI",
-        "immagine": "https://img-guidatv.org/4/sapori-e-colori/5.jpg"
+        "titolo": "BASTA LA SALUTE",
+        "descrizione": "Il settimanale di sanità e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanità. Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute dà voce a medici, ricercatori, associazioni",
+        "immagine": "https://img-guidatv.org/4/basta-la-salute/10.png"
       },
       {
         "ora": "03:00",
@@ -26959,9 +27015,9 @@
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "RASSEGNA + FOCUS REGISTRATO",
-        "descrizione": "RASSEGNA + FOCUS REGISTRATO",
-        "immagine": "https://img-guidatv.org/4/rassegna-focus-registrato/0.jpg"
+        "titolo": "RASSEGNA STAMPA + FOCUS REGISTRATO",
+        "descrizione": "RASSEGNA STAMPA + FOCUS REGISTRATO",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "05:00",
@@ -26980,9 +27036,9 @@
       {
         "ora": "05:48",
         "fine": "06:00",
-        "titolo": "Mattina 24",
+        "titolo": "MATTINA 24 + METEO IN DIRETTA",
         "descrizione": "Adele Grossi  presenta Mattina 24, con la Rassegna Stampa italiana di Roberto Vicaretti e quella internazionale di Paolo Cappelli",
-        "immagine": "https://img-guidatv.org/4/mattina-24/5.jpg"
+        "immagine": "https://img-guidatv.org/4/mattina-24-meteo-in-diretta/0.jpg"
       },
       {
         "ora": "06:00",
@@ -27567,9 +27623,9 @@
       {
         "ora": "00:30",
         "fine": "01:00",
-        "titolo": "24 MM 1",
-        "descrizione": "24 MM",
-        "immagine": "https://img-guidatv.org/4/24-mm/5.jpg"
+        "titolo": "Faccia a faccia",
+        "descrizione": "FACCIA A FACCIA",
+        "immagine": "https://img-guidatv.org/4/faccia-a-faccia/5.jpg"
       },
       {
         "ora": "01:00",
@@ -27602,9 +27658,9 @@
       {
         "ora": "02:45",
         "fine": "03:00",
-        "titolo": "SAPORI E COLORI",
-        "descrizione": "SAPORI E COLORI",
-        "immagine": "https://img-guidatv.org/4/sapori-e-colori/5.jpg"
+        "titolo": "BASTA LA SALUTE",
+        "descrizione": "Il settimanale di sanità e benessere che porta il telespettatore all'interno di ospedali, luoghi di assistenza, nelle stanze della politica dove si prendono decisioni sulla sanità. Dalla medicina al benessere all'alimentazione alla gestione delle strutture del Servizio Sanitario Nazionale, Basta la Salute dà voce a medici, ricercatori, associazioni",
+        "immagine": "https://img-guidatv.org/4/basta-la-salute/10.png"
       },
       {
         "ora": "03:00",
@@ -27637,9 +27693,9 @@
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "RASSEGNA + FOCUS REGISTRATO",
-        "descrizione": "RASSEGNA + FOCUS REGISTRATO",
-        "immagine": "https://img-guidatv.org/4/rassegna-focus-registrato/0.jpg"
+        "titolo": "RASSEGNA STAMPA + FOCUS REGISTRATO",
+        "descrizione": "RASSEGNA STAMPA + FOCUS REGISTRATO",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "05:00",
@@ -27658,9 +27714,9 @@
       {
         "ora": "05:48",
         "fine": "06:00",
-        "titolo": "Mattina 24",
+        "titolo": "MATTINA 24 + METEO IN DIRETTA",
         "descrizione": "Adele Grossi  presenta Mattina 24, con la Rassegna Stampa italiana di Roberto Vicaretti e quella internazionale di Paolo Cappelli",
-        "immagine": "https://img-guidatv.org/4/mattina-24/5.jpg"
+        "immagine": "https://img-guidatv.org/4/mattina-24-meteo-in-diretta/0.jpg"
       },
       {
         "ora": "06:00",
@@ -28265,20 +28321,20 @@
       },
       {
         "ora": "02:30",
-        "fine": "03:40",
+        "fine": "03:35",
         "titolo": "Napoli 1860. La Fine Dei Borboni - Prima Puntata",
         "descrizione": "Prima puntata della miniserie televisiva del 1970 che ricostruisce, attraverso l'utilizzo della voce narrante e con scene recitate da attori, gli eventi risorgimentali che portano all'unificazione nazionale italiana e alla fine del Regno delle Due Sicilie. Le vicende hanno inizio con lo sbarco dei mille guidati dal generale Giuseppe Garibaldi a Marsala l'11 maggio 1860 e si concludono con l'atto sovrano emanato dal re del Regno delle Due Sicilie Francesco II di Borbone che inaugura il 27 luglio un nuovo Ministero Costituzionale nel disperato tentativo di salvare il proprio regno da un crollo che sembra ormai inevitabile.",
         "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-prima/0.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:45",
-        "titolo": "Testimoni Oculari - Sandro Pertini E La Liberazione Di Milano",
-        "descrizione": "Le fasi delle operazioni militari e partigiane che portarono alla liberazione di Milano dalle truppe fasciste negli ultimi giorni di  - aprile. Pertini, Longo, Pietra e Moizo raccontano gli episodi salienti.",
+        "ora": "03:35",
+        "fine": "04:40",
+        "titolo": "Testimoni Oculari - Sandro Pertini E La Liberazione Di Milano - Prima Parte",
+        "descrizione": "Le fasi delle operazioni militari e partigiane che portarono alla liberazione di Milano dalle truppe fasciste negli ultimi giorni di aprile. Pertini, Longo, Pietra e Moizo raccontano gli episodi salienti.",
         "immagine": "https://img-guidatv.org/24/testimoni-oculari-sandro-pertini-e-la-liberazione-di-milano/0.jpg"
       },
       {
-        "ora": "04:45",
+        "ora": "04:40",
         "fine": "04:55",
         "titolo": "W La Storia - Scrivere",
         "descrizione": "Tablet, smartphone e computer hanno trasformato il nostro modo di scrivere e comunicare. In questa puntata di Viva la Storia le curiosità dei ragazzi dei tre scuole italiane, ci accompagneranno in un fantastico viaggio alla scoperta della storia della scrittura. Dalla scrittura cuneiforme ai geroglifici, dall'invenzione della stampa al misterioso mondo della crittografia, in un affascinante percorso nel bisogno più antico dell'uomo: lasciare traccia del proprio passaggio sulla Terra.",
@@ -28516,20 +28572,20 @@
       },
       {
         "ora": "02:30",
-        "fine": "03:40",
+        "fine": "03:35",
         "titolo": "Napoli 1860. La Fine Dei Borboni - Prima Puntata",
         "descrizione": "Prima puntata della miniserie televisiva del 1970 che ricostruisce, attraverso l'utilizzo della voce narrante e con scene recitate da attori, gli eventi risorgimentali che portano all'unificazione nazionale italiana e alla fine del Regno delle Due Sicilie. Le vicende hanno inizio con lo sbarco dei mille guidati dal generale Giuseppe Garibaldi a Marsala l'11 maggio 1860 e si concludono con l'atto sovrano emanato dal re del Regno delle Due Sicilie Francesco II di Borbone che inaugura il 27 luglio un nuovo Ministero Costituzionale nel disperato tentativo di salvare il proprio regno da un crollo che sembra ormai inevitabile.",
         "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-prima/0.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:45",
-        "titolo": "Testimoni Oculari - Sandro Pertini E La Liberazione Di Milano",
-        "descrizione": "Le fasi delle operazioni militari e partigiane che portarono alla liberazione di Milano dalle truppe fasciste negli ultimi giorni di  - aprile. Pertini, Longo, Pietra e Moizo raccontano gli episodi salienti.",
+        "ora": "03:35",
+        "fine": "04:40",
+        "titolo": "Testimoni Oculari - Sandro Pertini E La Liberazione Di Milano - Prima Parte",
+        "descrizione": "Le fasi delle operazioni militari e partigiane che portarono alla liberazione di Milano dalle truppe fasciste negli ultimi giorni di aprile. Pertini, Longo, Pietra e Moizo raccontano gli episodi salienti.",
         "immagine": "https://img-guidatv.org/24/testimoni-oculari-sandro-pertini-e-la-liberazione-di-milano/0.jpg"
       },
       {
-        "ora": "04:45",
+        "ora": "04:40",
         "fine": "04:55",
         "titolo": "W La Storia - Scrivere",
         "descrizione": "Tablet, smartphone e computer hanno trasformato il nostro modo di scrivere e comunicare. In questa puntata di Viva la Storia le curiosità dei ragazzi dei tre scuole italiane, ci accompagneranno in un fantastico viaggio alla scoperta della storia della scrittura. Dalla scrittura cuneiforme ai geroglifici, dall'invenzione della stampa al misterioso mondo della crittografia, in un affascinante percorso nel bisogno più antico dell'uomo: lasciare traccia del proprio passaggio sulla Terra.",
@@ -31423,7 +31479,7 @@
         "fine": "22:25",
         "titolo": "FolleMente",
         "descrizione": "Quanto conosciamo davvero di noi stessi quando prendiamo una decisione? E se dentro di noi esistessero più versioni del nostro IO, ognuna con qualcosa da dire?  FolleMente è una brillante commedia romantica che va oltre le apparenze, immergendosi nella mente dei due protagonisti, Piero e Lara, svelando i loro pensieri più nascosti e le battaglie interiori che tutti affrontiamo.",
-        "immagine": "https://image.tmdb.org/t/p/w300/sPps037qCts9XDwCaS6j7JsNuEd.jpg"
+        "immagine": "https://img-guidatv.org/film_new/f/6aaca9c166361ed2b263e874/6aaca9c166361ed2b263e874_p_3_rs_300.jpg"
       },
       {
         "ora": "22:25",
@@ -31709,7 +31765,7 @@
         "fine": "22:25",
         "titolo": "FolleMente",
         "descrizione": "Quanto conosciamo davvero di noi stessi quando prendiamo una decisione? E se dentro di noi esistessero più versioni del nostro IO, ognuna con qualcosa da dire?  FolleMente è una brillante commedia romantica che va oltre le apparenze, immergendosi nella mente dei due protagonisti, Piero e Lara, svelando i loro pensieri più nascosti e le battaglie interiori che tutti affrontiamo.",
-        "immagine": "https://image.tmdb.org/t/p/w300/sPps037qCts9XDwCaS6j7JsNuEd.jpg"
+        "immagine": "https://img-guidatv.org/film_new/f/6aaca9c166361ed2b263e874/6aaca9c166361ed2b263e874_p_3_rs_300.jpg"
       },
       {
         "ora": "22:25",
