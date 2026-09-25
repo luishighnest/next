@@ -8,7 +8,7 @@
         "fine": "02:00",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
-        "immagine": "https://img-guidatv.org/8714/cocciaretto/0.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
         "ora": "02:00",
@@ -148,7 +148,7 @@
         "fine": "20:40",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
-        "immagine": "https://img-guidatv.org/8714/cocciaretto/0.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
         "ora": "20:40",
@@ -169,7 +169,7 @@
         "fine": "23:30",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
-        "immagine": "https://img-guidatv.org/8714/cocciaretto/0.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
         "ora": "23:30",
@@ -726,7 +726,7 @@
         "fine": "00:30",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
-        "immagine": "https://img-guidatv.org/11237/cocciaretto/0.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
         "ora": "00:30",
@@ -775,7 +775,7 @@
         "fine": "20:00",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
-        "immagine": "https://img-guidatv.org/11237/cocciaretto/0.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
         "ora": "20:00",
@@ -932,55 +932,48 @@
       },
       {
         "ora": "16:15",
-        "fine": "17:30",
+        "fine": "17:40",
         "titolo": "GP Azerbaijan: Qualifiche",
         "descrizione": "A Baku e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/efdfafbf-f696-44d9-9d9f-554d675c836a/background/600"
       },
       {
-        "ora": "17:30",
-        "fine": "18:45",
+        "ora": "17:40",
+        "fine": "18:55",
         "titolo": "Azerbaijan: Sprint Race",
         "descrizione": "Dal Circuito di Baku, Azerbaijan.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/494fb990-e2a2-44f7-8dd9-991cbc74b525/background/600"
       },
       {
-        "ora": "18:45",
-        "fine": "19:00",
-        "titolo": "Azerbaigian",
-        "descrizione": "La corsa sul circuito cittadino di Baku e' anticipata di 24 ore, con la gara ufficiale spostata eccezionalmente a sabato 26 settembre 2026 alle ore 13:00 italiane.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e2202e55-ff27-492a-978a-93e1b6b8694c/background/600"
-      },
-      {
-        "ora": "19:00",
-        "fine": "20:20",
+        "ora": "18:55",
+        "fine": "20:15",
         "titolo": "GP Azerbaijan: Qualifiche",
         "descrizione": "A Baku e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/efdfafbf-f696-44d9-9d9f-554d675c836a/background/600"
       },
       {
-        "ora": "20:20",
-        "fine": "21:30",
+        "ora": "20:15",
+        "fine": "21:25",
         "titolo": "Azerbaijan: Feature Race 1",
         "descrizione": "Dal Circuito di Baku, Azerbaijan.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2b948652-a456-411e-af57-363ad39b0b8c/background/600"
       },
       {
-        "ora": "21:30",
-        "fine": "22:50",
+        "ora": "21:25",
+        "fine": "22:45",
         "titolo": "GP Azerbaijan: Qualifiche",
         "descrizione": "A Baku e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/efdfafbf-f696-44d9-9d9f-554d675c836a/background/600"
       },
       {
-        "ora": "22:50",
-        "fine": "23:20",
+        "ora": "22:45",
+        "fine": "23:15",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "23:20",
+        "ora": "23:15",
         "fine": "00:35",
         "titolo": "GP Azerbaijan: Qualifiche",
         "descrizione": "A Baku e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
@@ -1134,13 +1127,13 @@
       },
       {
         "ora": "14:55",
-        "fine": "15:55",
+        "fine": "16:00",
         "titolo": "Italia: Prove libere 2",
         "descrizione": "... WorldSBK. - Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ef8403c2-9bef-412e-8f03-b37c469f2f43/background/600"
       },
       {
-        "ora": "15:55",
+        "ora": "16:00",
         "fine": "16:45",
         "titolo": "Italia: Superpole Race",
         "descrizione": "... Supersport. - Segui la gara del campionato mondiale di Supersport.",
@@ -1475,38 +1468,24 @@
       },
       {
         "ora": "14:00",
-        "fine": "16:00",
+        "fine": "17:35",
         "titolo": "Preliminari Napoli: 1a Giornata",
         "descrizione": "... Giornata America's Cup. - Tutte le azioni delle regate dell'America's Cup.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/13f9be22-4ab0-433d-8979-bf061f20a35a/background/600"
       },
       {
-        "ora": "16:00",
-        "fine": "16:30",
+        "ora": "17:35",
+        "fine": "17:55",
         "titolo": "Studio Vela 25/09/2026",
         "descrizione": "... Studio Vela. - Studi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/71eaf3a1-477f-4fff-b857-917af0042e83/background/600"
       },
       {
-        "ora": "16:30",
-        "fine": "17:00",
-        "titolo": "Speciale Rugby Urc Preview",
-        "descrizione": "Seguiamo le partite del torneo che coinvolge le migliori 16 franchigie del rugby internazionale.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/655eb905-4685-4c61-9204-36ac4f0ab043/background/600"
-      },
-      {
-        "ora": "17:00",
-        "fine": "18:45",
+        "ora": "17:55",
+        "fine": "19:05",
         "titolo": "Real Madrid - Inter",
         "descrizione": "... League. - Blancos in vantaggio 10 a 7 nei 19 precedenti europei, 2 pareggi. Il Real ha vinto gli ultimi 4 precedenti di UCL contro l'Inter, 2 in casa e 2 in trasferta. TC: Caressa-Bergomi",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
-      },
-      {
-        "ora": "18:45",
-        "fine": "19:05",
-        "titolo": "La Giovane Italia 2026 Ep. 20 24/09/2026",
-        "descrizione": "... 24/09/2026 La giovane Italia. - Servizi informativi dedicati ai piu' piccoli sportivi italiani e alle realta' giovanili legate al calcio, tra trofei, incontri, e storie.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f97b89d8-1eaa-447c-8ed1-929edeb12fb5/background/600"
       },
       {
         "ora": "19:05",
@@ -1784,7 +1763,7 @@
         "fine": "19:15",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
-        "immagine": "https://img-guidatv.org/8753/cocciaretto/0.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
         "ora": "19:15",
@@ -1812,7 +1791,7 @@
         "fine": "22:45",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
-        "immagine": "https://img-guidatv.org/8753/cocciaretto/0.jpg"
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
         "ora": "22:45",
@@ -1988,24 +1967,10 @@
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "01:30",
-        "fine": "04:05",
-        "titolo": "Sinner - Fritz",
-        "descrizione": "... Open 2024. - Jannik Sinner gioca la sua seconda finale in uno Slam sfidando l'americano Taylor Fritz per il titolo degli US Open. Tc: Pero-Pescosolido.",
-        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
-      },
-      {
-        "ora": "04:05",
-        "fine": "05:00",
-        "titolo": "Natural Born Driver - L'incredibile storia di Ivan Capelli",
-        "descrizione": "Un nuovo linguaggio documentaristico, che unisce immagini di repertorio e illustrazioni, racconta l'incredibile carriera agonistica di Ivan Capelli.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ed9b0295-efac-4483-a4e2-0f64239ccbec/background/600"
-      },
-      {
-        "ora": "05:00",
+        "ora": "04:00",
         "fine": "06:00",
-        "titolo": "Bjorn Borg",
-        "descrizione": "Il mito di Bjorn Borg e' indissolubilmente legato a Wimbledon, dove lo svedese ha dominato per cinque anni. Riviviamo i momenti piu' importanti della sua carriera ai Championships.",
+        "titolo": "Finale",
+        "descrizione": "Commento: Pero-Bertolucci.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
@@ -2266,17 +2231,31 @@
     "programmi": [
       {
         "ora": "00:05",
-        "fine": "01:35",
+        "fine": "02:00",
         "titolo": "BJK CUP Finals 2026 - SF CZE vs ESP",
         "descrizione": "Le Finals della Billie Jean King Cup 2026 entrano nel vivo alla Shenzhen con la prima, attesissima semifinale tra la Repubblica Ceca e la Spagna",
         "immagine": "https://img-guidatv.org/54/bjk-cup-finals/6.jpg"
       },
       {
-        "ora": "01:35",
-        "fine": "07:05",
+        "ora": "02:00",
+        "fine": "03:35",
         "titolo": "WTA 500 Singapore",
         "descrizione": "WTA 500 Singapore - Ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.",
         "immagine": "https://img-guidatv.org/54/wta-500-singapore/5.jpg"
+      },
+      {
+        "ora": "03:35",
+        "fine": "05:05",
+        "titolo": "WTA 500 Singapore",
+        "descrizione": "WTA 500 Singapore - Ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.",
+        "immagine": "https://img-guidatv.org/54/wta-500-singapore/5.jpg"
+      },
+      {
+        "ora": "05:05",
+        "fine": "06:55",
+        "titolo": "LIVE WTA 250 Seoul",
+        "descrizione": "WTA 500 Seul.- In diretta dal Seoul Olympic Park Tennis Center, va in scena il prestigioso WTA 250 Korea Open.",
+        "immagine": "https://img-guidatv.org/54/live-wta-250-seoul/0.jpg"
       },
       {
         "ora": "07:00",
@@ -2294,101 +2273,59 @@
       },
       {
         "ora": "09:10",
-        "fine": "11:10",
+        "fine": "11:00",
         "titolo": "LIVE WTA 500 SINGAPORE",
         "descrizione": "WTA 500 Singapore. In diretta dalla OCBC Arena, ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.",
         "immagine": "https://img-guidatv.org/54/live-wta-500-singapore/5.jpg"
       },
       {
-        "ora": "11:10",
-        "fine": "11:25",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "11:25",
-        "fine": "11:40",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "11:40",
-        "fine": "11:55",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "11:55",
-        "fine": "12:10",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:10",
-        "fine": "12:25",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:25",
-        "fine": "12:40",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:40",
-        "fine": "13:00",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "13:00",
-        "fine": "13:15",
+        "ora": "11:00",
+        "fine": "11:15",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "13:15",
-        "fine": "13:25",
+        "ora": "11:15",
+        "fine": "13:05",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
         "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
       },
       {
-        "ora": "13:25",
-        "fine": "13:40",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "13:40",
-        "fine": "15:05",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "15:05",
-        "fine": "15:20",
+        "ora": "13:05",
+        "fine": "13:20",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "15:20",
+        "ora": "13:20",
+        "fine": "15:50",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "15:50",
+        "fine": "16:10",
+        "titolo": "Supertennis Today",
+        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
+        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
+      },
+      {
+        "ora": "16:10",
+        "fine": "16:25",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "16:25",
         "fine": "16:45",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
       },
       {
         "ora": "16:45",
@@ -2648,11 +2585,18 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "02:15",
+        "ora": "02:20",
+        "fine": "04:50",
+        "titolo": "Europei Di Pallavolo Maschile 2026 - Semifinale: Slovenia - Polonia",
+        "descrizione": "Nella semifinale degli Europei maschili di pallavolo 2026, Slovenia e Polonia si affrontano per conquistare un posto nella finalissima per il titolo continentale.",
+        "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-semifinale-slovenia-polonia/0.jpg"
+      },
+      {
+        "ora": "04:50",
         "fine": "06:00",
-        "titolo": "Canoa: Camp. Europei Canoa Slalom E Kayak Cross Ivrea 2026 2a Giornata: Finali Canadese Maschili/Femminili",
-        "descrizione": "Canoa: Camp. Europei Canoa Slalom e Kayak Cross Ivrea 2026 2a giornata: Finali Canadese Maschili/Femminili",
-        "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
+        "titolo": "Automobilismo: Campionato Europeo Formula Regional 2026 - Hockenheim (Round 8)",
+        "descrizione": "Il Campionato Europeo di Formula Regional 2026 fa tappa a Hockenheim. Sul celebre circuito tedesco i giovani talenti delle monoposto si sfidano in un nuovo appuntamento della stagione.",
+        "immagine": "https://img-guidatv.org/32/automobilismo-campionato-europeo-formula-regional-2026-hockenheim-round-8/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2719,7 +2663,7 @@
       },
       {
         "ora": "23:35",
-        "fine": "02:15",
+        "fine": "02:20",
         "titolo": "Mondiale Di Ciclismo 2026 - Corsa In Linea Juniores Donne",
         "descrizione": "Ai Mondiali di Ciclismo 2026 di Montréal va in scena la corsa in linea Juniores Donne, con le migliori giovani cicliste internazionali in gara per conquistare la maglia iridata.",
         "immagine": "https://img-guidatv.org/32/mondiale-di-ciclismo-2026-corsa-in-linea-juniores-donne/0.jpg"
@@ -2731,11 +2675,18 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "02:15",
+        "ora": "02:20",
+        "fine": "04:50",
+        "titolo": "Europei Di Pallavolo Maschile 2026 - Semifinale: Slovenia - Polonia",
+        "descrizione": "Nella semifinale degli Europei maschili di pallavolo 2026, Slovenia e Polonia si affrontano per conquistare un posto nella finalissima per il titolo continentale.",
+        "immagine": "https://img-guidatv.org/32/europei-di-pallavolo-maschile-2026-semifinale-slovenia-polonia/0.jpg"
+      },
+      {
+        "ora": "04:50",
         "fine": "06:00",
-        "titolo": "Canoa: Camp. Europei Canoa Slalom E Kayak Cross Ivrea 2026 2a Giornata: Finali Canadese Maschili/Femminili",
-        "descrizione": "Canoa: Camp. Europei Canoa Slalom e Kayak Cross Ivrea 2026 2a giornata: Finali Canadese Maschili/Femminili",
-        "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
+        "titolo": "Automobilismo: Campionato Europeo Formula Regional 2026 - Hockenheim (Round 8)",
+        "descrizione": "Il Campionato Europeo di Formula Regional 2026 fa tappa a Hockenheim. Sul celebre circuito tedesco i giovani talenti delle monoposto si sfidano in un nuovo appuntamento della stagione.",
+        "immagine": "https://img-guidatv.org/32/automobilismo-campionato-europeo-formula-regional-2026-hockenheim-round-8/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2802,7 +2753,7 @@
       },
       {
         "ora": "23:35",
-        "fine": "02:15",
+        "fine": "02:20",
         "titolo": "Mondiale Di Ciclismo 2026 - Corsa In Linea Juniores Donne",
         "descrizione": "Ai Mondiali di Ciclismo 2026 di Montréal va in scena la corsa in linea Juniores Donne, con le migliori giovani cicliste internazionali in gara per conquistare la maglia iridata.",
         "immagine": "https://img-guidatv.org/32/mondiale-di-ciclismo-2026-corsa-in-linea-juniores-donne/0.jpg"
@@ -18207,28 +18158,28 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:50",
-        "fine": "00:55",
+        "ora": "00:45",
+        "fine": "00:50",
         "titolo": "Che Tempo Fa",
         "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare.",
         "immagine": "https://img-guidatv.org/1/che-tempo-fa/6.jpg"
       },
       {
-        "ora": "00:55",
-        "fine": "02:25",
+        "ora": "00:50",
+        "fine": "02:20",
         "titolo": "Sottovoce E Dintorni",
         "descrizione": "Gigi Marzullo ripercorre l'itinerario umano, artistico e professionale di personaggi dello sport, dello spettacolo o della cultura.",
         "immagine": "https://img-guidatv.org/1/sottovoce/6.jpg"
       },
       {
-        "ora": "02:25",
-        "fine": "03:40",
+        "ora": "02:20",
+        "fine": "03:35",
         "titolo": "Reazione A Catena",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena/6.jpg"
       },
       {
-        "ora": "03:40",
+        "ora": "03:35",
         "fine": "04:25",
         "titolo": "Il commissario Rex",
         "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex.",
@@ -18328,15 +18279,15 @@
       {
         "ora": "13:30",
         "fine": "14:05",
-        "titolo": "TG 1",
-        "descrizione": "TELEGIORNALE",
-        "immagine": "https://img-guidatv.org/1/tg-1/5.jpg"
+        "titolo": "Tg1 Ore 13:30",
+        "descrizione": "Le edizioni del Tg1 disponibili on demand",
+        "immagine": "https://img-guidatv.org/1/tg1-ore-13-30/0.jpg"
       },
       {
         "ora": "14:05",
         "fine": "16:00",
         "titolo": "La Volta Buona",
-        "descrizione": "Interviste faccia a faccia, spettacolo, musica, tv, cinema, letteratura e attualità, ogni giorno in diretta con Caterina Balivo e i suoi ospiti.",
+        "descrizione": "Un programma che si distingue per l'approccio leggero con cui vengono trattati i vari temi e per l'eleganza con cui la conduttrice accoglie ospiti di spicco provenienti dal mondo dello spettacolo, della musica e della cultura. Nel corso del pomeriggio, il salotto diventa un luogo di confronto, dove i partecipanti discutono delle ultime notizie di costume e condividono nostalgici ricordi legati al proprio vissuto, al mondo della musica e della televisione. Gli argomenti spaziano da storie personali a esperienze quotidiane, con un focus particolare sulle relazioni e sulle emozioni. Conduce Caterina Balivo. Regia di Daniela Celotto.",
         "immagine": "https://img-guidatv.org/1/la-volta-buona/6.jpg"
       },
       {
@@ -18390,7 +18341,7 @@
       },
       {
         "ora": "23:35",
-        "fine": "00:50",
+        "fine": "00:45",
         "titolo": "Tv7",
         "descrizione": "$23",
         "immagine": "https://img-guidatv.org/1/tv-7/5.jpg"
@@ -18402,28 +18353,28 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:50",
-        "fine": "00:55",
+        "ora": "00:45",
+        "fine": "00:50",
         "titolo": "Che Tempo Fa",
         "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare.",
         "immagine": "https://img-guidatv.org/1/che-tempo-fa/6.jpg"
       },
       {
-        "ora": "00:55",
-        "fine": "02:25",
+        "ora": "00:50",
+        "fine": "02:20",
         "titolo": "Sottovoce E Dintorni",
         "descrizione": "Gigi Marzullo ripercorre l'itinerario umano, artistico e professionale di personaggi dello sport, dello spettacolo o della cultura.",
         "immagine": "https://img-guidatv.org/1/sottovoce/6.jpg"
       },
       {
-        "ora": "02:25",
-        "fine": "03:40",
+        "ora": "02:20",
+        "fine": "03:35",
         "titolo": "Reazione A Catena",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena/6.jpg"
       },
       {
-        "ora": "03:40",
+        "ora": "03:35",
         "fine": "04:25",
         "titolo": "Il commissario Rex",
         "descrizione": "Rex è stata una serie televisiva poliziesca di produzione italiana, sequel delle avventure della serie austriaca Il commissario Rex.",
@@ -18523,15 +18474,15 @@
       {
         "ora": "13:30",
         "fine": "14:05",
-        "titolo": "TG 1",
-        "descrizione": "TELEGIORNALE",
-        "immagine": "https://img-guidatv.org/1/tg-1/5.jpg"
+        "titolo": "Tg1 Ore 13:30",
+        "descrizione": "Le edizioni del Tg1 disponibili on demand",
+        "immagine": "https://img-guidatv.org/1/tg1-ore-13-30/0.jpg"
       },
       {
         "ora": "14:05",
         "fine": "16:00",
         "titolo": "La Volta Buona",
-        "descrizione": "Interviste faccia a faccia, spettacolo, musica, tv, cinema, letteratura e attualità, ogni giorno in diretta con Caterina Balivo e i suoi ospiti.",
+        "descrizione": "Un programma che si distingue per l'approccio leggero con cui vengono trattati i vari temi e per l'eleganza con cui la conduttrice accoglie ospiti di spicco provenienti dal mondo dello spettacolo, della musica e della cultura. Nel corso del pomeriggio, il salotto diventa un luogo di confronto, dove i partecipanti discutono delle ultime notizie di costume e condividono nostalgici ricordi legati al proprio vissuto, al mondo della musica e della televisione. Gli argomenti spaziano da storie personali a esperienze quotidiane, con un focus particolare sulle relazioni e sulle emozioni. Conduce Caterina Balivo. Regia di Daniela Celotto.",
         "immagine": "https://img-guidatv.org/1/la-volta-buona/6.jpg"
       },
       {
@@ -18585,7 +18536,7 @@
       },
       {
         "ora": "23:35",
-        "fine": "00:50",
+        "fine": "00:45",
         "titolo": "Tv7",
         "descrizione": "$23",
         "immagine": "https://img-guidatv.org/1/tv-7/5.jpg"
@@ -18598,13 +18549,13 @@
     "programmi": [
       {
         "ora": "00:15",
-        "fine": "01:24",
+        "fine": "01:21",
         "titolo": "Radio2 Social Club",
         "descrizione": "Luca Barbarossa ed Ema Stokholma aprono le porte di via Asiago a Roma ad importanti ospiti musicali della scena nazionale ed internazionale che si esibiscono dal vivo accompagnati dalla Social Band e dalla voce di Frances Alina Ascione.",
         "immagine": "https://img-guidatv.org/2/radio2-social-club/6.jpg"
       },
       {
-        "ora": "01:24",
+        "ora": "01:21",
         "fine": "01:25",
         "titolo": "Meteo 2",
         "descrizione": "Meteo 2",
@@ -18633,27 +18584,27 @@
       },
       {
         "ora": "03:55",
-        "fine": "04:35",
+        "fine": "04:30",
         "titolo": "The Good Doctor",
         "descrizione": "Le vicende di Shaun Murphy, un giovane chirurgo autistico con la Sindrome del savant, proveniente da una cittadina nel Wyoming, Casper, dove ha vissuto un'infanzia travagliata.",
         "immagine": "https://img-guidatv.org/serie/5e78d8c8ce1e246c511cb9b1_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:35",
-        "fine": "04:50",
+        "ora": "04:30",
+        "fine": "04:40",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:00",
+        "ora": "04:40",
+        "fine": "04:50",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
-        "ora": "05:00",
+        "ora": "04:50",
         "fine": "05:25",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18665,6 +18616,13 @@
         "titolo": "Medici in corsia",
         "descrizione": "Mentre l'ospedale è in quarantena, quattro studenti di medicina dovranno lavorare insieme per svolgere anche il lavoro dei loro superiori.",
         "immagine": "https://image.tmdb.org/t/p/w300/iH0S1po5UDiWo02AsLQPGe6YlON.jpg"
+      },
+      {
+        "ora": "06:00",
+        "fine": "06:15",
+        "titolo": "Medici in corsia",
+        "descrizione": "Le storie di una giovane equipe medica guidata dal Dott. Ahrend che, in virtù della sua anzianità, decide di ricominciare da capo la sua vita in una nuova città in una nuova squadra di dottori, fra specializzandi e semplici infermieri.",
+        "immagine": "https://img-guidatv.org/2/medici-in-corsia-quello-che-diamo/0.jpg"
       },
       {
         "ora": "06:15",
@@ -18801,13 +18759,13 @@
       },
       {
         "ora": "19:00",
-        "fine": "19:42",
+        "fine": "19:41",
         "titolo": "Blue Bloods",
         "descrizione": "La serie segue le vicende della famiglia Reagan, che da generazioni lavorano come poliziotti presso il New York City Police Department. Frank Reagan è il capo del dipartimento, ruolo che precedentemente è stato ricoperto da suo padre Henry, è rimasto vedovo con tre figli ormai adulti: Danny, Erin, Jamie, e un altro figlio che è morto. Danny è un detective che svolge il suo lavoro in modo duro e non sempre seguendo il manuale, Erin è un assistente procuratore distrettuale che persegue molti criminali arrestati da Danny e Frank, Jamie invece è un ufficiale fresco di Accademia appena entrato nel corpo di polizia. Henry è il padre di Frank, un commissario di polizia in pensione che fornisce consulenze a suo figlio e ai nipoti.",
         "immagine": "https://img-guidatv.org/serie/5e78d8c7ce1e246c511cb9ac_p_12_rs_300.jpg"
       },
       {
-        "ora": "19:42",
+        "ora": "19:41",
         "fine": "20:30",
         "titolo": "Blue Bloods",
         "descrizione": "La serie segue le vicende della famiglia Reagan, che da generazioni lavorano come poliziotti presso il New York City Police Department. Frank Reagan è il capo del dipartimento, ruolo che precedentemente è stato ricoperto da suo padre Henry, è rimasto vedovo con tre figli ormai adulti: Danny, Erin, Jamie, e un altro figlio che è morto. Danny è un detective che svolge il suo lavoro in modo duro e non sempre seguendo il manuale, Erin è un assistente procuratore distrettuale che persegue molti criminali arrestati da Danny e Frank, Jamie invece è un ufficiale fresco di Accademia appena entrato nel corpo di polizia. Henry è il padre di Frank, un commissario di polizia in pensione che fornisce consulenze a suo figlio e ai nipoti.",
@@ -18849,13 +18807,13 @@
     "programmi": [
       {
         "ora": "00:15",
-        "fine": "01:24",
+        "fine": "01:21",
         "titolo": "Radio2 Social Club",
         "descrizione": "Luca Barbarossa ed Ema Stokholma aprono le porte di via Asiago a Roma ad importanti ospiti musicali della scena nazionale ed internazionale che si esibiscono dal vivo accompagnati dalla Social Band e dalla voce di Frances Alina Ascione.",
         "immagine": "https://img-guidatv.org/2/radio2-social-club/6.jpg"
       },
       {
-        "ora": "01:24",
+        "ora": "01:21",
         "fine": "01:25",
         "titolo": "Meteo 2",
         "descrizione": "Meteo 2",
@@ -18884,27 +18842,27 @@
       },
       {
         "ora": "03:55",
-        "fine": "04:35",
+        "fine": "04:30",
         "titolo": "The Good Doctor",
         "descrizione": "Le vicende di Shaun Murphy, un giovane chirurgo autistico con la Sindrome del savant, proveniente da una cittadina nel Wyoming, Casper, dove ha vissuto un'infanzia travagliata.",
         "immagine": "https://img-guidatv.org/serie/5e78d8c8ce1e246c511cb9b1_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:35",
-        "fine": "04:50",
+        "ora": "04:30",
+        "fine": "04:40",
         "titolo": "Zio Gianni",
         "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
         "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:00",
+        "ora": "04:40",
+        "fine": "04:50",
         "titolo": "Impazienti",
-        "descrizione": "In un incidente automobilistico di leggera entità vengono coinvolte due persone che, per truffare l'assicurazione, fingono di subire pesantemente le conseguenze dell'incidente e si ritrovano in ospedale insieme. I due personaggi sono Alberto Principe (Max Tortora), impiegato assenteista che al momento dello scontro guidava il furgone della ditta che lo aveva appena licenziato, e il milanese Chicco Carloni (Enrico Bertolino), amministratore di alcuni condomini di proprietà del suocero. Nessuno dei due, dicevamo, è ferito, entrambi vogliono incassare a tutti i costi il risarcimento dell'assicurazione. Così si fanno portare in ospedale dove continueranno a litigare.",
-        "immagine": "https://img-guidatv.org/serie/699dcc0921453c6f1dff3ca3_p_3_rs_300.jpg"
+        "descrizione": "Una manovra improvvisa e crash... Un incidente! Per Alberto e Chicco tutto inizia da lì. Nessuna ferita ma un unico obiettivo: incassare a tutti i costi il risarcimento dell'assicurazione. Ma intanto sono costretti a \"convivere\"...",
+        "immagine": "https://img-guidatv.org/2/impazienti/1.jpg"
       },
       {
-        "ora": "05:00",
+        "ora": "04:50",
         "fine": "05:25",
         "titolo": "Piloti",
         "descrizione": "Il commendatore Aurelio Piccione è titolare di una compagnia aerea low-cost denominata \"Piccione AirLines\". Ogni episodio, della durata di 5 minuti, racconta le vicende comiche che si vengono a creare nella cabina di pilotaggio o nell'intero aereo.",
@@ -18916,6 +18874,13 @@
         "titolo": "Medici in corsia",
         "descrizione": "Mentre l'ospedale è in quarantena, quattro studenti di medicina dovranno lavorare insieme per svolgere anche il lavoro dei loro superiori.",
         "immagine": "https://image.tmdb.org/t/p/w300/iH0S1po5UDiWo02AsLQPGe6YlON.jpg"
+      },
+      {
+        "ora": "06:00",
+        "fine": "06:15",
+        "titolo": "Medici in corsia",
+        "descrizione": "Le storie di una giovane equipe medica guidata dal Dott. Ahrend che, in virtù della sua anzianità, decide di ricominciare da capo la sua vita in una nuova città in una nuova squadra di dottori, fra specializzandi e semplici infermieri.",
+        "immagine": "https://img-guidatv.org/2/medici-in-corsia-quello-che-diamo/0.jpg"
       },
       {
         "ora": "06:15",
@@ -19052,13 +19017,13 @@
       },
       {
         "ora": "19:00",
-        "fine": "19:42",
+        "fine": "19:41",
         "titolo": "Blue Bloods",
         "descrizione": "La serie segue le vicende della famiglia Reagan, che da generazioni lavorano come poliziotti presso il New York City Police Department. Frank Reagan è il capo del dipartimento, ruolo che precedentemente è stato ricoperto da suo padre Henry, è rimasto vedovo con tre figli ormai adulti: Danny, Erin, Jamie, e un altro figlio che è morto. Danny è un detective che svolge il suo lavoro in modo duro e non sempre seguendo il manuale, Erin è un assistente procuratore distrettuale che persegue molti criminali arrestati da Danny e Frank, Jamie invece è un ufficiale fresco di Accademia appena entrato nel corpo di polizia. Henry è il padre di Frank, un commissario di polizia in pensione che fornisce consulenze a suo figlio e ai nipoti.",
         "immagine": "https://img-guidatv.org/serie/5e78d8c7ce1e246c511cb9ac_p_12_rs_300.jpg"
       },
       {
-        "ora": "19:42",
+        "ora": "19:41",
         "fine": "20:30",
         "titolo": "Blue Bloods",
         "descrizione": "La serie segue le vicende della famiglia Reagan, che da generazioni lavorano come poliziotti presso il New York City Police Department. Frank Reagan è il capo del dipartimento, ruolo che precedentemente è stato ricoperto da suo padre Henry, è rimasto vedovo con tre figli ormai adulti: Danny, Erin, Jamie, e un altro figlio che è morto. Danny è un detective che svolge il suo lavoro in modo duro e non sempre seguendo il manuale, Erin è un assistente procuratore distrettuale che persegue molti criminali arrestati da Danny e Frank, Jamie invece è un ufficiale fresco di Accademia appena entrato nel corpo di polizia. Henry è il padre di Frank, un commissario di polizia in pensione che fornisce consulenze a suo figlio e ai nipoti.",
@@ -19099,35 +19064,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "01:00",
-        "titolo": "TG3 Linea Notte",
-        "descrizione": "A cura di Guido Torlai",
-        "immagine": "https://img-guidatv.org/3/tg-3-linea-notte/5.png"
-      },
-      {
-        "ora": "01:00",
-        "fine": "01:15",
+        "ora": "00:55",
+        "fine": "01:10",
         "titolo": "TG3 Chi è Di Scena",
         "descrizione": "Rubrica di informazione teatrale e dello spettacolo dal vivo; prosa, danza, arti performative. Servizi intermezzi/approfondimenti d'autore con artisti e drammaturghi. A cura di Giovanni Battista Tomassini",
         "immagine": "https://img-guidatv.org/3/tg-3-chi-e-di-scena/5.jpg"
       },
       {
-        "ora": "01:15",
-        "fine": "01:20",
+        "ora": "01:10",
+        "fine": "01:15",
         "titolo": "Meteo 3",
         "descrizione": "Meteo 3",
         "immagine": "https://img-guidatv.org/3/meteo-3/5.jpg"
       },
       {
-        "ora": "01:20",
-        "fine": "02:30",
+        "ora": "01:15",
+        "fine": "02:15",
         "titolo": "Maps: Musica, Arte, Poesia, Spettacolo - Futuro Mediterraneo. Gibellina E Matera 2026 (Pt.3)",
         "descrizione": "Un viaggio straordinario nel cuore del Mediterraneo. Rachele Renna ci accompagna tra i luoghi più emblematici di Gibellina, Capitale Italiana dell'Arte Contemporanea 2026, e Matera, Capitale Mediterranea della Cultura. Dove la storia incontra il futuro. Un programma di Elena Beccalli, Rachele Renna, Elena Sorrentino, Alessandra Urbani con Chiara Biffi, Alessandra Montico e Mirella Serri. Coordinamento editoriale Anna Lisa Guglielmi. Regia di Stefania Grimaldi.",
         "immagine": "https://img-guidatv.org/3/maps-musica-arte-poesia-spettacolo-futuro-mediterraneo-gibellina-e-matera-2026-pt-3/0.jpg"
       },
       {
-        "ora": "02:30",
+        "ora": "02:15",
+        "fine": "02:20",
+        "titolo": "Appuntamento Al Cinema",
+        "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
+        "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
+      },
+      {
+        "ora": "02:20",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -19378,35 +19343,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "01:00",
-        "titolo": "TG3 Linea Notte",
-        "descrizione": "A cura di Guido Torlai",
-        "immagine": "https://img-guidatv.org/3/tg-3-linea-notte/5.png"
-      },
-      {
-        "ora": "01:00",
-        "fine": "01:15",
+        "ora": "00:55",
+        "fine": "01:10",
         "titolo": "TG3 Chi è Di Scena",
         "descrizione": "Rubrica di informazione teatrale e dello spettacolo dal vivo; prosa, danza, arti performative. Servizi intermezzi/approfondimenti d'autore con artisti e drammaturghi. A cura di Giovanni Battista Tomassini",
         "immagine": "https://img-guidatv.org/3/tg-3-chi-e-di-scena/5.jpg"
       },
       {
-        "ora": "01:15",
-        "fine": "01:20",
+        "ora": "01:10",
+        "fine": "01:15",
         "titolo": "Meteo 3",
         "descrizione": "Meteo 3",
         "immagine": "https://img-guidatv.org/3/meteo-3/5.jpg"
       },
       {
-        "ora": "01:20",
-        "fine": "02:30",
+        "ora": "01:15",
+        "fine": "02:15",
         "titolo": "Maps: Musica, Arte, Poesia, Spettacolo - Futuro Mediterraneo. Gibellina E Matera 2026 (Pt.3)",
         "descrizione": "Un viaggio straordinario nel cuore del Mediterraneo. Rachele Renna ci accompagna tra i luoghi più emblematici di Gibellina, Capitale Italiana dell'Arte Contemporanea 2026, e Matera, Capitale Mediterranea della Cultura. Dove la storia incontra il futuro. Un programma di Elena Beccalli, Rachele Renna, Elena Sorrentino, Alessandra Urbani con Chiara Biffi, Alessandra Montico e Mirella Serri. Coordinamento editoriale Anna Lisa Guglielmi. Regia di Stefania Grimaldi.",
         "immagine": "https://img-guidatv.org/3/maps-musica-arte-poesia-spettacolo-futuro-mediterraneo-gibellina-e-matera-2026-pt-3/0.jpg"
       },
       {
-        "ora": "02:30",
+        "ora": "02:15",
+        "fine": "02:20",
+        "titolo": "Appuntamento Al Cinema",
+        "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
+        "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
+      },
+      {
+        "ora": "02:20",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -19766,7 +19731,7 @@
         "fine": "16:48",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019201/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:48",
@@ -19926,7 +19891,7 @@
         "fine": "16:48",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019201/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:48",
@@ -19995,7 +19960,7 @@
         "fine": "04:28",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000501/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "04:28",
@@ -20135,7 +20100,7 @@
         "fine": "16:05",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000501/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:05",
@@ -20149,7 +20114,7 @@
         "fine": "18:41",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:41",
@@ -20211,7 +20176,7 @@
         "fine": "04:28",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000501/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "04:28",
@@ -20351,7 +20316,7 @@
         "fine": "16:05",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000501/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:05",
@@ -20365,7 +20330,7 @@
         "fine": "18:41",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:41",
@@ -20968,13 +20933,13 @@
       },
       {
         "ora": "16:40",
-        "fine": "17:00",
+        "fine": "17:30",
         "titolo": "Taga Focus",
         "descrizione": "Approfondimento Tagadà a cura di Tiziana Panella",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/taga_focus_dt.jpg"
       },
       {
-        "ora": "17:00",
+        "ora": "17:30",
         "fine": "18:30",
         "titolo": "La Torre di Babele doc",
         "descrizione": "Corrado Augias presenta i grandi documentari La7",
@@ -21072,13 +21037,13 @@
       },
       {
         "ora": "16:40",
-        "fine": "17:00",
+        "fine": "17:30",
         "titolo": "Taga Focus",
         "descrizione": "Approfondimento Tagadà a cura di Tiziana Panella",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/taga_focus_dt.jpg"
       },
       {
-        "ora": "17:00",
+        "ora": "17:30",
         "fine": "18:30",
         "titolo": "La Torre di Babele doc",
         "descrizione": "Corrado Augias presenta i grandi documentari La7",
@@ -21176,13 +21141,13 @@
       },
       {
         "ora": "16:40",
-        "fine": "17:00",
+        "fine": "17:30",
         "titolo": "Taga Focus",
         "descrizione": "Approfondimento Tagadà a cura di Tiziana Panella",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/taga_focus_dt.jpg"
       },
       {
-        "ora": "17:00",
+        "ora": "17:30",
         "fine": "18:30",
         "titolo": "La Torre di Babele doc",
         "descrizione": "Corrado Augias presenta i grandi documentari La7",
@@ -21280,13 +21245,13 @@
       },
       {
         "ora": "16:40",
-        "fine": "17:00",
+        "fine": "17:30",
         "titolo": "Taga Focus",
         "descrizione": "Approfondimento Tagadà a cura di Tiziana Panella",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/taga_focus_dt.jpg"
       },
       {
-        "ora": "17:00",
+        "ora": "17:30",
         "fine": "18:30",
         "titolo": "La Torre di Babele doc",
         "descrizione": "Corrado Augias presenta i grandi documentari La7",
@@ -21384,13 +21349,13 @@
       },
       {
         "ora": "16:40",
-        "fine": "17:00",
+        "fine": "17:30",
         "titolo": "Taga Focus",
         "descrizione": "Approfondimento Tagadà a cura di Tiziana Panella",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/taga_focus_dt.jpg"
       },
       {
-        "ora": "17:00",
+        "ora": "17:30",
         "fine": "18:30",
         "titolo": "La Torre di Babele doc",
         "descrizione": "Corrado Augias presenta i grandi documentari La7",
@@ -23349,8 +23314,8 @@
         "ora": "17:30",
         "fine": "19:10",
         "titolo": "The Bounty Killer",
-        "descrizione": "Un assassino di taglie viene assunto da un proprietario terriero messicano per salvare sua figlia dopo che è stata rapita da una banda di fuorilegge il giorno del suo matrimonio.",
-        "immagine": "https://image.tmdb.org/t/p/w300/pJ4oropHOAxt8fS6jzBh5VtKEyE.jpg"
+        "descrizione": "Vecchio west. Luke Chilson, cacciatore di taglie, dà la caccia al messicano José Faradin, accolto dalla sua comunità come un figlio devoto. Ma dietro l'apparenza si cela un uomo spietato e violento: quando la sua vera natura emerge, persino chi lo aveva protetto sarà costretto a schierarsi contro di lui. Come finirà?",
+        "immagine": "https://img-guidatv.org/46/the-bounty-killer/0.jpg"
       },
       {
         "ora": "19:10",
@@ -23467,8 +23432,8 @@
         "ora": "17:30",
         "fine": "19:10",
         "titolo": "The Bounty Killer",
-        "descrizione": "Un assassino di taglie viene assunto da un proprietario terriero messicano per salvare sua figlia dopo che è stata rapita da una banda di fuorilegge il giorno del suo matrimonio.",
-        "immagine": "https://image.tmdb.org/t/p/w300/pJ4oropHOAxt8fS6jzBh5VtKEyE.jpg"
+        "descrizione": "Vecchio west. Luke Chilson, cacciatore di taglie, dà la caccia al messicano José Faradin, accolto dalla sua comunità come un figlio devoto. Ma dietro l'apparenza si cela un uomo spietato e violento: quando la sua vera natura emerge, persino chi lo aveva protetto sarà costretto a schierarsi contro di lui. Come finirà?",
+        "immagine": "https://img-guidatv.org/46/the-bounty-killer/0.jpg"
       },
       {
         "ora": "19:10",
@@ -24164,7 +24129,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000501/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -24345,7 +24310,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000501/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -26010,28 +25975,28 @@
         "fine": "16:04",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019201/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:04",
         "fine": "16:24",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019201/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:24",
         "fine": "16:45",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019201/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:45",
         "fine": "17:15",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:15",
@@ -26045,21 +26010,21 @@
         "fine": "17:38",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:38",
         "fine": "17:49",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:49",
         "fine": "18:21",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001501/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:21",
@@ -28209,12 +28174,19 @@
       {
         "ora": "02:30",
         "fine": "03:30",
-        "titolo": "Napoli 1860. La Fine Dei Borboni - Seconda Puntata",
-        "descrizione": "Lo sbarco dei Mille del patriota Giuseppe Garibaldi in Sicilia e la reazione del Governo del Regno delle Due Sicilie di Francesco II. Le reazioni contrastanti della classe dirigente e dell'Esercito: le tendenze liberali di alcuni notabili, alcuni Vescovi e parte dell'Esercito, contro le inclinazioni reazionarie del resto della classe dirigente che fa riferimento al Primo Ministro Gennaro Spinelli.",
-        "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-seconda/0.jpg"
+        "titolo": "Napoli 1860. La Fine Dei Borboni Pt. 2",
+        "descrizione": "La fine dei borboni. Lo sbarco dei Mille del patriota Giuseppe Garibaldi in Sicilia e la reazione del Governo del Regno delle Due Sicilie di Francesco II. Le reazioni contrastanti della classe dirigente e de - ll'Esercito: le tendenze liberali di alcuni notabili, alcuni Vescovi e parte dell'Esercito, contro le inclinazioni reazionarie del resto della classe dirigente che fa riferimento al Primo Ministro Gennaro Spinelli. - Di Alessandro Blasetti",
+        "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-pt-2/0.jpg"
       },
       {
         "ora": "03:30",
+        "fine": "04:00",
+        "titolo": "Cesare Terranova",
+        "descrizione": "CesareTerranova ha legato il suo nome ai primi processi contro Cosa Nostra. Fu ucciso in un agguato il 25 settembre 1979. - Produttore esecutivo Roberta Sangermano",
+        "immagine": "https://img-guidatv.org/24/cesare-terranova/0.jpg"
+      },
+      {
+        "ora": "04:00",
         "fine": "04:40",
         "titolo": "Testimoni Oculari - Sandro Pertini E La Liberazione Di Milano - Seconda Parte",
         "descrizione": "Le fasi delle operazioni militari e partigiane che portarono alla liberazione di Milano dalle truppe fasciste negli ultimi giorni di aprile. Pertini, Longo, Pietra e Moizo raccontano gli episodi salienti.",
@@ -28236,13 +28208,13 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:40",
+        "fine": "06:35",
         "titolo": "Passato E Presente - La Battaglia Di Verdun. Il Grande Massacro",
         "descrizione": "$23",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "06:40",
+        "ora": "06:35",
         "fine": "07:30",
         "titolo": "La Grande Sfida - L'Uomo E L'Ambiente 1972-2023",
         "descrizione": "Negli ultimi decenni l'attività antropica, oltre al problema dell'inquinamento, è divenuta una delle principali cause di eventi metereologici estremi, bombe d'acqua, inondazioni, ondate di calore, che hanno messo a dura prova il nostro Pianeta. A partire dagli anni '70 i disastri ambientali sono diventati un tema centrale non solo per la scienza, ma anche per la politica e per l'opinione pubblica. La salvaguardia del mondo in cui viviamo è stato uno dei temi maggiormente dibattuti, perché coinvolge ognuno di noi. In questa puntata racconteremo la storia dell'ambientalismo degli ultimi cinquant'anni, che si intreccia inevitabilmente con quella del nostro Paese. Guidati dal racconto di Carla Oppo, saremo accompagnati in questo viaggio da Giuliano Amato, Giorgio Parisi, Andrea Candela, Andrea Segrè, Emanuele Felice e Agnese Casadei.",
@@ -28250,20 +28222,20 @@
       },
       {
         "ora": "07:30",
-        "fine": "08:25",
+        "fine": "08:20",
         "titolo": "L'Italia Della Repubblica - Tramonto Rosso. La Fine Del PCI",
         "descrizione": "Il 9 novembre 1989 crolla il Muro di Berlino: un evento epocale anche per l'Italia e per il più grande Partito Comunista dell'Europa occidentale.",
         "immagine": "https://img-guidatv.org/24/l-italia-della-repubblica/0.jpg"
       },
       {
-        "ora": "08:25",
-        "fine": "08:35",
+        "ora": "08:20",
+        "fine": "08:30",
         "titolo": "Ritorno Ad Auschwitz",
         "descrizione": "Oświęcim, una cittadina situata nella parte meridionale della Polonia. Più nota purtroppo con il nome di Auschwitz, datogli dai tedeschi nel giugno del 1940, quando costruiscono uno dei campi di concentramento più grandi, dove moriranno circa 4 milioni di persone, per la maggior parte ebrei. La struttura è divisa in tre sezioni principali e si estende su una superficie totale di 42 chilometri quadrati. Comprende inoltre circa quaranta campi minori, distribuiti nei dintorni. Una vera e propria fabbrica di morte. Lo storico Alessandro Barbero ci guida in un approfondimento sul tema della soluzione finale, di come i tedeschi arriveranno ad eliminare circa sei milioni di ebrei. A supporto, dalle Teche Rai, una commovente testimonianza dello scrittore Primo Levi, prigioniero ad Auschwitz tra il 1944 e il 1945, rilasciata durante un viaggio con un gruppo di studenti in quei terribili luoghi, a distanza di quarant'anni dalla sua liberazione, per conto della trasmissione Sorgente di vita.",
         "immagine": "https://img-guidatv.org/24/ritorno-ad-auschwitz/0.jpg"
       },
       {
-        "ora": "08:35",
+        "ora": "08:30",
         "fine": "08:55",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 25 settembre 2026.",
@@ -28271,13 +28243,13 @@
       },
       {
         "ora": "08:55",
-        "fine": "09:35",
+        "fine": "09:30",
         "titolo": "Passato E Presente - La Battaglia Di Verdun. Il Grande Massacro",
         "descrizione": "$24",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "09:35",
+        "ora": "09:30",
         "fine": "10:35",
         "titolo": "La Bussola E La Clessidra - La Via Del Guerriero - Drustan. Il Celta Che Sarebbe Diventato Il Capo",
         "descrizione": "Combattenti celti, legionari romani, predoni vichinghi, cavalieri templari, highlander scozzesi, guerrieri mongoli. La nuova serie de \"La bussola e la Clessidra\", con il professor Alessandro Barbero, è dedicata ad alcuni dei più grandi guerrieri dell'antichità e alle loro tecniche di combattimento.",
@@ -28313,80 +28285,87 @@
       },
       {
         "ora": "13:15",
-        "fine": "14:05",
+        "fine": "14:15",
         "titolo": "Ieri E Oggi - 1978. Monica Vitti, Daniele D'Anza",
         "descrizione": "I personaggi dello spettacolo si rivedono nelle loro partecipazioni televisive del passato, nella storica trasmissione 'Ieri e oggi', curata da Leone Mancini e Lino Procacci. In questa puntata del 1978 sono ospiti di Enrico Maria Salerno Monica Vitti e Daniele D'Anza.",
         "immagine": "https://img-guidatv.org/24/ieri-e-oggi/0.jpg"
       },
       {
-        "ora": "14:05",
-        "fine": "14:15",
+        "ora": "14:15",
+        "fine": "14:20",
         "titolo": "Gli Imperdibili",
         "descrizione": "Backstage, anteprime, eventi e curiosità dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.",
         "immagine": "https://img-guidatv.org/24/gli-imperdibili/0.jpg"
       },
       {
-        "ora": "14:15",
-        "fine": "14:35",
+        "ora": "14:20",
+        "fine": "14:40",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 25 settembre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "14:35",
-        "fine": "15:15",
+        "ora": "14:40",
+        "fine": "15:20",
         "titolo": "Passato E Presente - La Battaglia Di Verdun. Il Grande Massacro",
         "descrizione": "$26",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "15:15",
-        "fine": "16:00",
+        "ora": "15:20",
+        "fine": "16:05",
         "titolo": "Viaggio In Sicilia - Catania Tra Acqua E Fuoco",
         "descrizione": "$27",
         "immagine": "https://img-guidatv.org/24/viaggio-in-sicilia-catania-tra-acqua-e-fuoco/0.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:55",
-        "titolo": "Storie Della TV - Giordani-Ravel. Attenti A Quei Due!",
-        "descrizione": "La lunghissima carriera di Emilio Ravel e Brando Giordani, dal Telegiornale delle origini fino a Tg2 Odeon con la formula del tutto quanto fa spettacolo.",
-        "immagine": "https://img-guidatv.org/24/storie-della-tv-giordani-ravel-attenti-a-quei-due/0.jpg"
+        "ora": "16:05",
+        "fine": "17:05",
+        "titolo": "Giordani-Ravel. Attenti A Quei Due!",
+        "descrizione": "La lunghissima carriera di Emilio Ravel e Brando Giordani, dal Telegiornale delle origini fino a Tg2 Odeon con la formula del tutto quanto fa spettacolo.. - Un programma di Enrico Salvatori Con la collaborazione di Clemente Volpini  Produttore esecutivo Emanuela Capo  Regia di Agostino Pozzi e Matteo Bardelli",
+        "immagine": "https://img-guidatv.org/24/giordani-ravel-attenti-a-quei-due/0.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "18:00",
-        "titolo": "Napoli 1860. La Fine Dei Borboni - Seconda Puntata",
-        "descrizione": "Lo sbarco dei Mille del patriota Giuseppe Garibaldi in Sicilia e la reazione del Governo del Regno delle Due Sicilie di Francesco II. Le reazioni contrastanti della classe dirigente e dell'Esercito: le tendenze liberali di alcuni notabili, alcuni Vescovi e parte dell'Esercito, contro le inclinazioni reazionarie del resto della classe dirigente che fa riferimento al Primo Ministro Gennaro Spinelli.",
-        "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-seconda/0.jpg"
+        "ora": "17:05",
+        "fine": "18:05",
+        "titolo": "Napoli 1860. La Fine Dei Borboni Pt. 2",
+        "descrizione": "La fine dei borboni. Lo sbarco dei Mille del patriota Giuseppe Garibaldi in Sicilia e la reazione del Governo del Regno delle Due Sicilie di Francesco II. Le reazioni contrastanti della classe dirigente e de - ll'Esercito: le tendenze liberali di alcuni notabili, alcuni Vescovi e parte dell'Esercito, contro le inclinazioni reazionarie del resto della classe dirigente che fa riferimento al Primo Ministro Gennaro Spinelli. - Di Alessandro Blasetti",
+        "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-pt-2/0.jpg"
       },
       {
-        "ora": "18:00",
-        "fine": "18:25",
+        "ora": "18:05",
+        "fine": "18:35",
         "titolo": "Le Strade Della Storia: Dentro L'Archeologia - La Scienza Per I Romani",
         "descrizione": "La storia dell'Impero romano, dalla fondazione di Roma fino alla sua espansione, raccontata attraverso alcuni aspetti della società de gli antichi Romani: l'economia, l'arte, la natura e la religione.",
         "immagine": "https://img-guidatv.org/24/le-strade-della-storia-dentro-l-archeologia-la-scienza-per-i-romani/0.jpg"
       },
       {
-        "ora": "18:25",
-        "fine": "19:30",
+        "ora": "18:35",
+        "fine": "19:25",
         "titolo": "Testimoni Oculari - Sandro Pertini E La Liberazione Di Milano - Seconda Parte",
         "descrizione": "Le fasi delle operazioni militari e partigiane che portarono alla liberazione di Milano dalle truppe fasciste negli ultimi giorni di aprile. Pertini, Longo, Pietra e Moizo raccontano gli episodi salienti.",
         "immagine": "https://img-guidatv.org/24/testimoni-oculari-sandro-pertini-e-la-liberazione-di-milano/0.jpg"
       },
       {
-        "ora": "19:30",
-        "fine": "19:35",
+        "ora": "19:25",
+        "fine": "19:30",
         "titolo": "Rai News Giorno",
         "descrizione": "Rai News Giorno",
         "immagine": "https://img-guidatv.org/24/rai-news-giorno/5.jpg"
       },
       {
-        "ora": "19:35",
+        "ora": "19:30",
+        "fine": "20:00",
+        "titolo": "Cesare Terranova",
+        "descrizione": "CesareTerranova ha legato il suo nome ai primi processi contro Cosa Nostra. Fu ucciso in un agguato il 25 settembre 1979. - Produttore esecutivo Roberta Sangermano",
+        "immagine": "https://img-guidatv.org/24/cesare-terranova/0.jpg"
+      },
+      {
+        "ora": "20:00",
         "fine": "20:10",
-        "titolo": "SeDici Storie - Cesare Terranova",
-        "descrizione": "Cesare Terranova ha legato il suo nome ai primi processi contro Cosa Nostra. Fu ucciso in un agguato il 25 settembre 1979.",
-        "immagine": "https://img-guidatv.org/24/sedici-storie/6.jpg"
+        "titolo": "Officina Patrimonio Incontro - Pontecagn",
+        "descrizione": "Officina Patrimonio Incontro - Pontecagnano - Il museo a portata di mano. Gli studenti di un liceo artistico realizzano un progetto di accessibilità, nato in collaborazione con l'Unione Italiana Ciechi e i - povedenti di Salerno. Con grande abilità riproducono in argilla copie tattili che vanno ad affiancare alcuni reperti archeologici originali della collezione del Museo archeologico nazionale di Pontecagnano 'Gli Etruschi di frontiera'. - Un programma di Keti Riccardi Scritto con Andrea Branchi, Amalda Ciani Cuka, Arnaldo Donnini Progetto editoriale Eugenio Farioli Vecchioli A cura di Maria Paola Adone Produttore esecutivo Roberta Pulino Regia di edizione Matteo Minissi, Aldo Silvestri",
+        "immagine": "https://img-guidatv.org/24/officina-patrimonio-incontro-pontecagn/0.jpg"
       },
       {
         "ora": "20:10",
@@ -28404,13 +28383,13 @@
       },
       {
         "ora": "21:15",
-        "fine": "22:15",
+        "fine": "22:10",
         "titolo": "Gulag",
         "descrizione": "La prima grande produzione su uno degli episodi più tragici e meno rappresentati del secolo scorso: i campi di lavoro sovietici, meglio conosciuti come gulag. Basato su documenti mai resi noti in precedenza, su molte fonti e testimonianze, con l'ausilio di oltre 1000 immagini fotografiche (molte delle quali inedite), la serie racconta la realtà del sistema dei campi di concentramento punitivi del regime.",
         "immagine": "https://img-guidatv.org/24/gulag-1945-1957/0.jpg"
       },
       {
-        "ora": "22:15",
+        "ora": "22:10",
         "fine": "23:05",
         "titolo": "Grandi Disastri. 10 Errori Fatali - Boeing 737 Max",
         "descrizione": "I disastri dei voli Lion Air 610 (189 morti il 29 ottobre 2018) e dell'Ethiopian Airlines 302 (157 morti il 10 marzo 2019) causati dal malfunzionamento di un software per il pilota automatico. Introduce la puntata il prof. Gregory Alegi.",
@@ -28460,12 +28439,19 @@
       {
         "ora": "02:30",
         "fine": "03:30",
-        "titolo": "Napoli 1860. La Fine Dei Borboni - Seconda Puntata",
-        "descrizione": "Lo sbarco dei Mille del patriota Giuseppe Garibaldi in Sicilia e la reazione del Governo del Regno delle Due Sicilie di Francesco II. Le reazioni contrastanti della classe dirigente e dell'Esercito: le tendenze liberali di alcuni notabili, alcuni Vescovi e parte dell'Esercito, contro le inclinazioni reazionarie del resto della classe dirigente che fa riferimento al Primo Ministro Gennaro Spinelli.",
-        "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-seconda/0.jpg"
+        "titolo": "Napoli 1860. La Fine Dei Borboni Pt. 2",
+        "descrizione": "La fine dei borboni. Lo sbarco dei Mille del patriota Giuseppe Garibaldi in Sicilia e la reazione del Governo del Regno delle Due Sicilie di Francesco II. Le reazioni contrastanti della classe dirigente e de - ll'Esercito: le tendenze liberali di alcuni notabili, alcuni Vescovi e parte dell'Esercito, contro le inclinazioni reazionarie del resto della classe dirigente che fa riferimento al Primo Ministro Gennaro Spinelli. - Di Alessandro Blasetti",
+        "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-pt-2/0.jpg"
       },
       {
         "ora": "03:30",
+        "fine": "04:00",
+        "titolo": "Cesare Terranova",
+        "descrizione": "CesareTerranova ha legato il suo nome ai primi processi contro Cosa Nostra. Fu ucciso in un agguato il 25 settembre 1979. - Produttore esecutivo Roberta Sangermano",
+        "immagine": "https://img-guidatv.org/24/cesare-terranova/0.jpg"
+      },
+      {
+        "ora": "04:00",
         "fine": "04:40",
         "titolo": "Testimoni Oculari - Sandro Pertini E La Liberazione Di Milano - Seconda Parte",
         "descrizione": "Le fasi delle operazioni militari e partigiane che portarono alla liberazione di Milano dalle truppe fasciste negli ultimi giorni di aprile. Pertini, Longo, Pietra e Moizo raccontano gli episodi salienti.",
@@ -28487,13 +28473,13 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:40",
+        "fine": "06:35",
         "titolo": "Passato E Presente - La Battaglia Di Verdun. Il Grande Massacro",
         "descrizione": "$23",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "06:40",
+        "ora": "06:35",
         "fine": "07:30",
         "titolo": "La Grande Sfida - L'Uomo E L'Ambiente 1972-2023",
         "descrizione": "Negli ultimi decenni l'attività antropica, oltre al problema dell'inquinamento, è divenuta una delle principali cause di eventi metereologici estremi, bombe d'acqua, inondazioni, ondate di calore, che hanno messo a dura prova il nostro Pianeta. A partire dagli anni '70 i disastri ambientali sono diventati un tema centrale non solo per la scienza, ma anche per la politica e per l'opinione pubblica. La salvaguardia del mondo in cui viviamo è stato uno dei temi maggiormente dibattuti, perché coinvolge ognuno di noi. In questa puntata racconteremo la storia dell'ambientalismo degli ultimi cinquant'anni, che si intreccia inevitabilmente con quella del nostro Paese. Guidati dal racconto di Carla Oppo, saremo accompagnati in questo viaggio da Giuliano Amato, Giorgio Parisi, Andrea Candela, Andrea Segrè, Emanuele Felice e Agnese Casadei.",
@@ -28501,20 +28487,20 @@
       },
       {
         "ora": "07:30",
-        "fine": "08:25",
+        "fine": "08:20",
         "titolo": "L'Italia Della Repubblica - Tramonto Rosso. La Fine Del PCI",
         "descrizione": "Il 9 novembre 1989 crolla il Muro di Berlino: un evento epocale anche per l'Italia e per il più grande Partito Comunista dell'Europa occidentale.",
         "immagine": "https://img-guidatv.org/24/l-italia-della-repubblica/0.jpg"
       },
       {
-        "ora": "08:25",
-        "fine": "08:35",
+        "ora": "08:20",
+        "fine": "08:30",
         "titolo": "Ritorno Ad Auschwitz",
         "descrizione": "Oświęcim, una cittadina situata nella parte meridionale della Polonia. Più nota purtroppo con il nome di Auschwitz, datogli dai tedeschi nel giugno del 1940, quando costruiscono uno dei campi di concentramento più grandi, dove moriranno circa 4 milioni di persone, per la maggior parte ebrei. La struttura è divisa in tre sezioni principali e si estende su una superficie totale di 42 chilometri quadrati. Comprende inoltre circa quaranta campi minori, distribuiti nei dintorni. Una vera e propria fabbrica di morte. Lo storico Alessandro Barbero ci guida in un approfondimento sul tema della soluzione finale, di come i tedeschi arriveranno ad eliminare circa sei milioni di ebrei. A supporto, dalle Teche Rai, una commovente testimonianza dello scrittore Primo Levi, prigioniero ad Auschwitz tra il 1944 e il 1945, rilasciata durante un viaggio con un gruppo di studenti in quei terribili luoghi, a distanza di quarant'anni dalla sua liberazione, per conto della trasmissione Sorgente di vita.",
         "immagine": "https://img-guidatv.org/24/ritorno-ad-auschwitz/0.jpg"
       },
       {
-        "ora": "08:35",
+        "ora": "08:30",
         "fine": "08:55",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 25 settembre 2026.",
@@ -28522,13 +28508,13 @@
       },
       {
         "ora": "08:55",
-        "fine": "09:35",
+        "fine": "09:30",
         "titolo": "Passato E Presente - La Battaglia Di Verdun. Il Grande Massacro",
         "descrizione": "$24",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "09:35",
+        "ora": "09:30",
         "fine": "10:35",
         "titolo": "La Bussola E La Clessidra - La Via Del Guerriero - Drustan. Il Celta Che Sarebbe Diventato Il Capo",
         "descrizione": "Combattenti celti, legionari romani, predoni vichinghi, cavalieri templari, highlander scozzesi, guerrieri mongoli. La nuova serie de \"La bussola e la Clessidra\", con il professor Alessandro Barbero, è dedicata ad alcuni dei più grandi guerrieri dell'antichità e alle loro tecniche di combattimento.",
@@ -28564,80 +28550,87 @@
       },
       {
         "ora": "13:15",
-        "fine": "14:05",
+        "fine": "14:15",
         "titolo": "Ieri E Oggi - 1978. Monica Vitti, Daniele D'Anza",
         "descrizione": "I personaggi dello spettacolo si rivedono nelle loro partecipazioni televisive del passato, nella storica trasmissione 'Ieri e oggi', curata da Leone Mancini e Lino Procacci. In questa puntata del 1978 sono ospiti di Enrico Maria Salerno Monica Vitti e Daniele D'Anza.",
         "immagine": "https://img-guidatv.org/24/ieri-e-oggi/0.jpg"
       },
       {
-        "ora": "14:05",
-        "fine": "14:15",
+        "ora": "14:15",
+        "fine": "14:20",
         "titolo": "Gli Imperdibili",
         "descrizione": "Backstage, anteprime, eventi e curiosità dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.",
         "immagine": "https://img-guidatv.org/24/gli-imperdibili/0.jpg"
       },
       {
-        "ora": "14:15",
-        "fine": "14:35",
+        "ora": "14:20",
+        "fine": "14:40",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 25 settembre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "14:35",
-        "fine": "15:15",
+        "ora": "14:40",
+        "fine": "15:20",
         "titolo": "Passato E Presente - La Battaglia Di Verdun. Il Grande Massacro",
         "descrizione": "$26",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "15:15",
-        "fine": "16:00",
+        "ora": "15:20",
+        "fine": "16:05",
         "titolo": "Viaggio In Sicilia - Catania Tra Acqua E Fuoco",
         "descrizione": "$27",
         "immagine": "https://img-guidatv.org/24/viaggio-in-sicilia-catania-tra-acqua-e-fuoco/0.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:55",
-        "titolo": "Storie Della TV - Giordani-Ravel. Attenti A Quei Due!",
-        "descrizione": "La lunghissima carriera di Emilio Ravel e Brando Giordani, dal Telegiornale delle origini fino a Tg2 Odeon con la formula del tutto quanto fa spettacolo.",
-        "immagine": "https://img-guidatv.org/24/storie-della-tv-giordani-ravel-attenti-a-quei-due/0.jpg"
+        "ora": "16:05",
+        "fine": "17:05",
+        "titolo": "Giordani-Ravel. Attenti A Quei Due!",
+        "descrizione": "La lunghissima carriera di Emilio Ravel e Brando Giordani, dal Telegiornale delle origini fino a Tg2 Odeon con la formula del tutto quanto fa spettacolo.. - Un programma di Enrico Salvatori Con la collaborazione di Clemente Volpini  Produttore esecutivo Emanuela Capo  Regia di Agostino Pozzi e Matteo Bardelli",
+        "immagine": "https://img-guidatv.org/24/giordani-ravel-attenti-a-quei-due/0.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "18:00",
-        "titolo": "Napoli 1860. La Fine Dei Borboni - Seconda Puntata",
-        "descrizione": "Lo sbarco dei Mille del patriota Giuseppe Garibaldi in Sicilia e la reazione del Governo del Regno delle Due Sicilie di Francesco II. Le reazioni contrastanti della classe dirigente e dell'Esercito: le tendenze liberali di alcuni notabili, alcuni Vescovi e parte dell'Esercito, contro le inclinazioni reazionarie del resto della classe dirigente che fa riferimento al Primo Ministro Gennaro Spinelli.",
-        "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-seconda/0.jpg"
+        "ora": "17:05",
+        "fine": "18:05",
+        "titolo": "Napoli 1860. La Fine Dei Borboni Pt. 2",
+        "descrizione": "La fine dei borboni. Lo sbarco dei Mille del patriota Giuseppe Garibaldi in Sicilia e la reazione del Governo del Regno delle Due Sicilie di Francesco II. Le reazioni contrastanti della classe dirigente e de - ll'Esercito: le tendenze liberali di alcuni notabili, alcuni Vescovi e parte dell'Esercito, contro le inclinazioni reazionarie del resto della classe dirigente che fa riferimento al Primo Ministro Gennaro Spinelli. - Di Alessandro Blasetti",
+        "immagine": "https://img-guidatv.org/24/napoli-1860-la-fine-dei-borboni-pt-2/0.jpg"
       },
       {
-        "ora": "18:00",
-        "fine": "18:25",
+        "ora": "18:05",
+        "fine": "18:35",
         "titolo": "Le Strade Della Storia: Dentro L'Archeologia - La Scienza Per I Romani",
         "descrizione": "La storia dell'Impero romano, dalla fondazione di Roma fino alla sua espansione, raccontata attraverso alcuni aspetti della società de gli antichi Romani: l'economia, l'arte, la natura e la religione.",
         "immagine": "https://img-guidatv.org/24/le-strade-della-storia-dentro-l-archeologia-la-scienza-per-i-romani/0.jpg"
       },
       {
-        "ora": "18:25",
-        "fine": "19:30",
+        "ora": "18:35",
+        "fine": "19:25",
         "titolo": "Testimoni Oculari - Sandro Pertini E La Liberazione Di Milano - Seconda Parte",
         "descrizione": "Le fasi delle operazioni militari e partigiane che portarono alla liberazione di Milano dalle truppe fasciste negli ultimi giorni di aprile. Pertini, Longo, Pietra e Moizo raccontano gli episodi salienti.",
         "immagine": "https://img-guidatv.org/24/testimoni-oculari-sandro-pertini-e-la-liberazione-di-milano/0.jpg"
       },
       {
-        "ora": "19:30",
-        "fine": "19:35",
+        "ora": "19:25",
+        "fine": "19:30",
         "titolo": "Rai News Giorno",
         "descrizione": "Rai News Giorno",
         "immagine": "https://img-guidatv.org/24/rai-news-giorno/5.jpg"
       },
       {
-        "ora": "19:35",
+        "ora": "19:30",
+        "fine": "20:00",
+        "titolo": "Cesare Terranova",
+        "descrizione": "CesareTerranova ha legato il suo nome ai primi processi contro Cosa Nostra. Fu ucciso in un agguato il 25 settembre 1979. - Produttore esecutivo Roberta Sangermano",
+        "immagine": "https://img-guidatv.org/24/cesare-terranova/0.jpg"
+      },
+      {
+        "ora": "20:00",
         "fine": "20:10",
-        "titolo": "SeDici Storie - Cesare Terranova",
-        "descrizione": "Cesare Terranova ha legato il suo nome ai primi processi contro Cosa Nostra. Fu ucciso in un agguato il 25 settembre 1979.",
-        "immagine": "https://img-guidatv.org/24/sedici-storie/6.jpg"
+        "titolo": "Officina Patrimonio Incontro - Pontecagn",
+        "descrizione": "Officina Patrimonio Incontro - Pontecagnano - Il museo a portata di mano. Gli studenti di un liceo artistico realizzano un progetto di accessibilità, nato in collaborazione con l'Unione Italiana Ciechi e i - povedenti di Salerno. Con grande abilità riproducono in argilla copie tattili che vanno ad affiancare alcuni reperti archeologici originali della collezione del Museo archeologico nazionale di Pontecagnano 'Gli Etruschi di frontiera'. - Un programma di Keti Riccardi Scritto con Andrea Branchi, Amalda Ciani Cuka, Arnaldo Donnini Progetto editoriale Eugenio Farioli Vecchioli A cura di Maria Paola Adone Produttore esecutivo Roberta Pulino Regia di edizione Matteo Minissi, Aldo Silvestri",
+        "immagine": "https://img-guidatv.org/24/officina-patrimonio-incontro-pontecagn/0.jpg"
       },
       {
         "ora": "20:10",
@@ -28655,13 +28648,13 @@
       },
       {
         "ora": "21:15",
-        "fine": "22:15",
+        "fine": "22:10",
         "titolo": "Gulag",
         "descrizione": "La prima grande produzione su uno degli episodi più tragici e meno rappresentati del secolo scorso: i campi di lavoro sovietici, meglio conosciuti come gulag. Basato su documenti mai resi noti in precedenza, su molte fonti e testimonianze, con l'ausilio di oltre 1000 immagini fotografiche (molte delle quali inedite), la serie racconta la realtà del sistema dei campi di concentramento punitivi del regime.",
         "immagine": "https://img-guidatv.org/24/gulag-1945-1957/0.jpg"
       },
       {
-        "ora": "22:15",
+        "ora": "22:10",
         "fine": "23:05",
         "titolo": "Grandi Disastri. 10 Errori Fatali - Boeing 737 Max",
         "descrizione": "I disastri dei voli Lion Air 610 (189 morti il 29 ottobre 2018) e dell'Ethiopian Airlines 302 (157 morti il 10 marzo 2019) causati dal malfunzionamento di un software per il pilota automatico. Introduce la puntata il prof. Gregory Alegi.",
@@ -28681,56 +28674,63 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:45",
+        "ora": "00:05",
         "fine": "01:00",
-        "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
-        "descrizione": "Progetto Scienza 2023 Racconti di Scienza - Profili - p. 04 - Nikola Tesla - Profili è il programma che ci avvicina ai grandi fondatori e innovatori della scienza. Ogni puntata tratteggia il profilo di una -  figura emblematica del suo tempo, che ha dedicato la propria vita alla ricerca, alla scoperta di nuovi codici e teorie per decifrare il nostro mondo. -",
-        "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
+        "titolo": "Racconti Di Scienza",
+        "descrizione": "La divulgazione scientifica si fa racconto. Personaggi, invenzioni, scoperte, errori, innovazione tecnologica...passi in avanti nella conoscenza scientifica che hanno cambiato per sempre il nostro modo di vedere il mondo che ci circonda.  Una serie di puntate speciali che hanno in comune la voglia di condividere ciò che sappiamo in modo spettacolare e coinvolgente.",
+        "immagine": "https://img-guidatv.org/34/racconti-di-scienza/0.jpg"
       },
       {
         "ora": "01:00",
-        "fine": "02:00",
+        "fine": "01:20",
+        "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
+        "descrizione": "Progetto Scienza 2023 Racconti di Scienza - Profili - p. 04 - Nikola Tesla - Profili è il programma che ci avvicina ai grandi fondatori e innovatori della scienza. Ogni puntata tratteggia il profilo di una -  figura emblematica del suo tempo, che ha dedicato la propria vita alla ricerca, alla scoperta di nuovi codici e teorie per decifrare il nostro mondo.",
+        "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
+      },
+      {
+        "ora": "01:20",
+        "fine": "02:10",
         "titolo": "Di Là Dal Fiume E Tra Gli Alberi Valle D",
-        "descrizione": "Di là dal fiume e tra gli alberi Valle d'Aosta, dove i giganti raccolgono fiori - Paolo Severini ci condurrà in un affascinante viaggio in Valle d'Aosta, una regione di confine dal paesaggio di grande sugg - estione, fatto di vette altissime e casette in pietra. -   Un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
+        "descrizione": "Di là dal fiume e tra gli alberi Valle d'Aosta, dove i giganti raccolgono fiori - Paolo Severini ci condurrà in un affascinante viaggio in Valle d'Aosta, una regione di confine dal paesaggio di grande sugg - estione, fatto di vette altissime e casette in pietra. - Un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
         "immagine": "https://img-guidatv.org/34/di-la-dal-fiume-e-tra-gli-alberi/1.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:35",
+        "ora": "02:10",
+        "fine": "02:45",
         "titolo": "Progetto Scienza STEM",
         "descrizione": "$2a",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "03:15",
+        "ora": "02:45",
+        "fine": "03:35",
         "titolo": "Progetto Scienza 2023 Newton - Quello Ch",
-        "descrizione": "Progetto Scienza 2023 Newton - Quello che sappiamo p. 01: Pesca sostenibile - Davide Coero Borga ci accompagna lungo un percorso fatto di luoghi unici, persone preparate e appassionate e di un metodo, quel - lo scientifico, che sta alla base del lavoro dei ricercatori di tutto il mondo. -   un programma di Maria Agostinelli, Giuseppe Cembalo, Davide Coero Borga, Federica De Maria, Mario Ferrari, Diego Garbati, Nicoletta Piu, Alberto Polimanti, Pino Roggero a cura di Eleonora Ottaviani capo progetto Diego Garbati conduce Davide Coero Borga",
+        "descrizione": "Progetto Scienza 2023 Newton - Quello che sappiamo p. 01: Pesca sostenibile - Davide Coero Borga ci accompagna lungo un percorso fatto di luoghi unici, persone preparate e appassionate e di un metodo, quel - lo scientifico, che sta alla base del lavoro dei ricercatori di tutto il mondo. - un programma di Maria Agostinelli, Giuseppe Cembalo, Davide Coero Borga, Federica De Maria, Mario Ferrari, Diego Garbati, Nicoletta Piu, Alberto Polimanti, Pino Roggero a cura di Eleonora Ottaviani capo progetto Diego Garbati conduce Davide Coero Borga",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
       },
       {
-        "ora": "03:15",
-        "fine": "03:45",
+        "ora": "03:35",
+        "fine": "04:05",
         "titolo": "Un Giorno Per: La Donna",
-        "descrizione": "La lotta per l'uguaglianza di genere ha prodotto risultati importanti. Nei Paesi civili i governi lavorano per eliminare le disparità, le discriminazioni e le violenze che le donne continuano a subire. Ma c'è ancora molto -  da fare per garantire un mondo in cui tutte le donne possano vivere liberamente e realizzare appieno il proprio potenziale. -",
+        "descrizione": "La lotta per l'uguaglianza di genere ha prodotto risultati importanti. Nei Paesi civili i governi lavorano per eliminare le disparità, le discriminazioni e le violenze che le donne continuano a subire. Ma c'è ancora molto  - da fare per garantire un mondo in cui tutte le donne possano vivere liberamente e realizzare appieno il proprio potenziale.",
         "immagine": "https://img-guidatv.org/34/un-giorno-per/1.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:15",
+        "ora": "04:05",
+        "fine": "04:35",
         "titolo": "William Blake - La Visione E L'Infinito",
         "descrizione": "William Blake - La Visione e l'infinito Episodio 3 - Un programma di Daniela Delfini, produttore esecutivo Livia Lauriola, regia di David Emmer. Con Sebastiano Pigazzi, Giulia Sessich, Al Mariotti.",
         "immagine": "https://img-guidatv.org/34/william-blake-la-visione-e-l-infinito/0.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "04:45",
+        "ora": "04:35",
+        "fine": "05:05",
         "titolo": "Memex Donne Di Scienza",
-        "descrizione": "Memex Donne di Scienza - p. 06: Marcella Frangipane - Le donne che sono diventate icone dell'universo scientifico non sono certo le sole che hanno operato con successo nel mondo della scienza, ma sono quel - le che hanno aperto la strada alle altre, con la loro volontà, la loro abilità, con talento e protervia, in un mondo a volte apertamente ostile. In questo programma incontriamo le ricercatrici italiane più affermate di oggi e raccontiamo le storie delle grandi protagoniste della scienza del passato. Protagonista di questa puntata è Marcella Frangipane. -   Un programma di Silvia Bencivelli, Francesco Linguiti, Diego Garbati e Armando Traverso - Produttore esecutivo Diego Garbati e Livia Lauriola - Regia di Nicoletta Piu e Giancarlo Russo - Interviste di Silvia Bencivelli - Condotto da Chiara Buratti",
+        "descrizione": "Memex Donne di Scienza - p. 06: Marcella Frangipane - Le donne che sono diventate icone dell'universo scientifico non sono certo le sole che hanno operato con successo nel mondo della scienza, ma sono quel - le che hanno aperto la strada alle altre, con la loro volontà, la loro abilità, con talento e protervia, in un mondo a volte apertamente ostile. In questo programma incontriamo le ricercatrici italiane più affermate di oggi e raccontiamo le storie delle grandi protagoniste della scienza del passato. Protagonista di questa puntata è Marcella Frangipane. - Un programma di Silvia Bencivelli, Francesco Linguiti, Diego Garbati e Armando Traverso - Produttore esecutivo Diego Garbati e Livia Lauriola - Regia di Nicoletta Piu e Giancarlo Russo - Interviste di Silvia Bencivelli - Condotto da Chiara Buratti",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
-        "ora": "04:45",
+        "ora": "05:05",
         "fine": "05:30",
         "titolo": "Memex Nautilus - La Specie Umana - Noi S",
         "descrizione": "$2b",
@@ -28745,41 +28745,41 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:55",
         "titolo": "Racconti Di Scienza",
         "descrizione": "La divulgazione scientifica si fa racconto. Personaggi, invenzioni, scoperte, errori, innovazione tecnologica...passi in avanti nella conoscenza scientifica che hanno cambiato per sempre il nostro modo di vedere il mondo che ci circonda.  Una serie di puntate speciali che hanno in comune la voglia di condividere ciò che sappiamo in modo spettacolare e coinvolgente.",
         "immagine": "https://img-guidatv.org/34/racconti-di-scienza/0.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "07:30",
+        "ora": "06:55",
+        "fine": "07:25",
         "titolo": "Intelligenze Umane",
-        "descrizione": "Intelligenze Umane Ep. 4 - Uomo e AI: un pianeta per due - dIAlogo con Mario Tozzi - Paolo Benanti incontra il geologo e divulgatore televisivo Mario Tozzi per valutare l'impatto delle IA sull'ambiente - e -  della nuova tecnologia in generale. Nel bene e nel male: da un lato le IA ci aiutano a capire meglio il mondo naturale, ad anticipare i terremoti e a comunicare con gli animali, dall'altro i nuovi data center divorano energia, prosciugano le falde e consumano il suolo. Queste tecnologie trasformeranno il nostro pianeta in un paradiso terrestre o in una specie di acquario? -",
+        "descrizione": "Intelligenze Umane Ep. 4 - Uomo e AI: un pianeta per due - dIAlogo con Mario Tozzi - Paolo Benanti incontra il geologo e divulgatore televisivo Mario Tozzi per valutare l'impatto delle IA sull'ambiente - e -  della nuova tecnologia in generale. Nel bene e nel male: da un lato le IA ci aiutano a capire meglio il mondo naturale, ad anticipare i terremoti e a comunicare con gli animali, dall'altro i nuovi data center divorano energia, prosciugano le falde e consumano il suolo. Queste tecnologie trasformeranno il nostro pianeta in un paradiso terrestre o in una specie di acquario?",
         "immagine": "https://img-guidatv.org/34/intelligenze-umane/0.jpg"
       },
       {
-        "ora": "07:30",
-        "fine": "08:00",
+        "ora": "07:25",
+        "fine": "08:05",
         "titolo": "Progetto Scienza 2022 Racconti Di Scienz",
-        "descrizione": "Progetto Scienza 2022 Racconti di Scienza - p. 02 - Il Vesuvio - La scienza è stata raccontata negli anni in numerosi programmi televisivi, con linguaggi diversi e da molti divulgatori di talento. Con la c - onduzione di Anna Pancaldi, Racconti di Scienza presenta un racconto a più voci alla scoperta del Vesuvio. Immagine caratteristica della città di Napoli, il Vesuvio ha plasmato il territorio circostante in epoche diverse e con esiti alterni, spesso devastanti. Oggi è uno dei vulcani più controllati al mondo per il suo incredibile potenziale esplosivo. Eppure gli abitanti che vivono alle sue pendici hanno col Vesuvio un rapporto di fedeltà e riconoscenza per la fertilità del luogo e la ricchezza che ne ricavano. -   Un programma di Daniela Mazzoli, a cura di Eleonora Ottaviani, capo progetto Diego Garbati, regia Alberto Polimanti, conduce Anna Pancaldi",
+        "descrizione": "Progetto Scienza 2022 Racconti di Scienza - p. 02 - Il Vesuvio - La scienza è stata raccontata negli anni in numerosi programmi televisivi, con linguaggi diversi e da molti divulgatori di talento. Con la c - onduzione di Anna Pancaldi, Racconti di Scienza presenta un racconto a più voci alla scoperta del Vesuvio. Immagine caratteristica della città di Napoli, il Vesuvio ha plasmato il territorio circostante in epoche diverse e con esiti alterni, spesso devastanti. Oggi è uno dei vulcani più controllati al mondo per il suo incredibile potenziale esplosivo. Eppure gli abitanti che vivono alle sue pendici hanno col Vesuvio un rapporto di fedeltà e riconoscenza per la fertilità del luogo e la ricchezza che ne ricavano. - Un programma di Daniela Mazzoli, a cura di Eleonora Ottaviani, capo progetto Diego Garbati, regia Alberto Polimanti, conduce Anna Pancaldi",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2022/6.png"
       },
       {
-        "ora": "08:00",
-        "fine": "08:30",
+        "ora": "08:05",
+        "fine": "08:35",
         "titolo": "Un Giorno Per: La Donna",
-        "descrizione": "La lotta per l'uguaglianza di genere ha prodotto risultati importanti. Nei Paesi civili i governi lavorano per eliminare le disparità, le discriminazioni e le violenze che le donne continuano a subire. Ma c'è ancora molto -  da fare per garantire un mondo in cui tutte le donne possano vivere liberamente e realizzare appieno il proprio potenziale. -",
+        "descrizione": "La lotta per l'uguaglianza di genere ha prodotto risultati importanti. Nei Paesi civili i governi lavorano per eliminare le disparità, le discriminazioni e le violenze che le donne continuano a subire. Ma c'è ancora molto  - da fare per garantire un mondo in cui tutte le donne possano vivere liberamente e realizzare appieno il proprio potenziale.",
         "immagine": "https://img-guidatv.org/34/un-giorno-per/1.jpg"
       },
       {
-        "ora": "08:30",
-        "fine": "09:00",
+        "ora": "08:35",
+        "fine": "09:15",
         "titolo": "Memex Nautilus - Buchi Neri, Non Più Osc",
         "descrizione": "$23",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
-        "ora": "09:00",
+        "ora": "09:15",
         "fine": "10:00",
         "titolo": "Racconti Di Scienza",
         "descrizione": "Racconti di Scienza Ep. 12 - Disasters Engineered: Il terremoto di Northridge e il salvataggio dei minatori in Cile",
@@ -28787,104 +28787,104 @@
       },
       {
         "ora": "10:00",
-        "fine": "10:25",
+        "fine": "10:30",
         "titolo": "Progetto Scienza STEM",
         "descrizione": "$24",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
-        "ora": "10:25",
-        "fine": "11:00",
+        "ora": "10:30",
+        "fine": "11:20",
         "titolo": "Progetto Scienza Storie Della Scienza",
         "descrizione": "$25",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-storie-della-scienza/0.jpg"
       },
       {
-        "ora": "11:00",
-        "fine": "11:45",
+        "ora": "11:20",
+        "fine": "12:15",
         "titolo": "Pinguini Una Spia Nel Gruppo",
         "descrizione": "$26",
         "immagine": "https://img-guidatv.org/34/pinguini-una-spia-nel-gruppo/0.jpg"
       },
       {
-        "ora": "11:45",
-        "fine": "12:30",
+        "ora": "12:15",
+        "fine": "13:05",
         "titolo": "Paradisi Da Salvare Canaima, Gli Altipia",
-        "descrizione": "Paradisi da salvare Canaima, gli Altipiani del Venezuela - A Sud del Venezuela, il Parco nazionale Canaima ospita un meraviglioso mix di ambienti naturali, tra foreste tropicali, aride savane e imponenti m - ontagne dalla cima piatta. Purtroppo, però, l'estrazione mineraria illegale, alla periferia del parco, sta minacciando il fragile equilibrio di questo ecosistema. -",
+        "descrizione": "Paradisi da salvare Canaima, gli Altipiani del Venezuela - A Sud del Venezuela, il Parco nazionale Canaima ospita un meraviglioso mix di ambienti naturali, tra foreste tropicali, aride savane e imponenti m - ontagne dalla cima piatta. Purtroppo, però, l'estrazione mineraria illegale, alla periferia del parco, sta minacciando il fragile equilibrio di questo ecosistema.",
         "immagine": "https://img-guidatv.org/34/paradisi-da-salvare-canaima-gli-altipia/0.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:40",
+        "ora": "13:05",
+        "fine": "14:00",
         "titolo": "Di Là Dal Fiume E Tra Gli Alberi Pisa, L",
-        "descrizione": "Di là dal fiume e tra gli alberi Pisa, la spirale aurea - Seguendo la suggestione della sequenza di Fibonacci, Guido Morandini disegna una spirale per raccontare il territorio che da Pisa si estende fino a - l mare. -   un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
+        "descrizione": "Di là dal fiume e tra gli alberi Pisa, la spirale aurea - Seguendo la suggestione della sequenza di Fibonacci, Guido Morandini disegna una spirale per raccontare il territorio che da Pisa si estende fino a - l mare. - un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
         "immagine": "https://img-guidatv.org/34/di-la-dal-fiume-e-tra-gli-alberi/1.jpg"
       },
       {
-        "ora": "13:40",
-        "fine": "14:25",
+        "ora": "14:00",
+        "fine": "14:30",
         "titolo": "Memex Donne Di Scienza",
-        "descrizione": "Memex Donne di Scienza - ep. 14: Maria Cristina Pedicchio - Alla scoperta delle ricercatrici italiane più affermate di oggi e delle grandi protagoniste della scienza del passato. Le donne che sono diventat - e icone dell'universo scientifico non sono certo le sole che hanno operato con successo nel mondo della scienza, ma sono quelle che hanno aperto la strada alle altre, con la loro volontà, la loro abilità, con talento e protervia, in un mondo a volte apertamente ostile. In questo programma incontriamo le ricercatrici italiane più affermate di oggi e raccontiamo le storie delle grandi protagoniste della scienza del passato. Protagonista di questa puntata è Maria Cristina Pedicchio. -   Un programma di Silvia Bencivelli, Francesco Linguiti, Diego Garbati e Armando Traverso - Produttore esecutivo Diego Garbati e Livia Lauriola - Regia di Nicoletta Piu e Giancarlo Russo - Interviste di Silvia Bencivelli - Condotto da Chiara Buratti",
+        "descrizione": "Memex Donne di Scienza - ep. 14: Maria Cristina Pedicchio - Alla scoperta delle ricercatrici italiane più affermate di oggi e delle grandi protagoniste della scienza del passato. Le donne che sono diventat - e icone dell'universo scientifico non sono certo le sole che hanno operato con successo nel mondo della scienza, ma sono quelle che hanno aperto la strada alle altre, con la loro volontà, la loro abilità, con talento e protervia, in un mondo a volte apertamente ostile. In questo programma incontriamo le ricercatrici italiane più affermate di oggi e raccontiamo le storie delle grandi protagoniste della scienza del passato. Protagonista di questa puntata è Maria Cristina Pedicchio. - Un programma di Silvia Bencivelli, Francesco Linguiti, Diego Garbati e Armando Traverso - Produttore esecutivo Diego Garbati e Livia Lauriola - Regia di Nicoletta Piu e Giancarlo Russo - Interviste di Silvia Bencivelli - Condotto da Chiara Buratti",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
-        "ora": "14:25",
-        "fine": "15:25",
+        "ora": "14:30",
+        "fine": "15:15",
         "titolo": "I Meccanismi Della Natura",
         "descrizione": "I meccanismi della natura Ep. 1 - La giungla",
         "immagine": "https://img-guidatv.org/34/i-meccanismi-della-natura/0.jpg"
       },
       {
-        "ora": "15:25",
-        "fine": "16:30",
+        "ora": "15:15",
+        "fine": "16:20",
         "titolo": "Progetto Scienza 2022 \"Newton",
-        "descrizione": "Progetto Scienza 2022 \"Newton - p.23 Le proprietà delle piante\" - Newton è il programma di informazione e approfondimento scientifico condotto da Davide Coero Borga che ci aiuta a capire meglio ciò che sap - piamo e ci porta a scoprire le novità dal mondo della ricerca. -",
+        "descrizione": "Progetto Scienza 2022 \"Newton - p.23 Le proprietà delle piante\" - Newton è il programma di informazione e approfondimento scientifico condotto da Davide Coero Borga che ci aiuta a capire meglio ciò che sap - piamo e ci porta a scoprire le novità dal mondo della ricerca.",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2022/6.png"
       },
       {
-        "ora": "16:30",
-        "fine": "17:30",
+        "ora": "16:20",
+        "fine": "17:15",
         "titolo": "Le Meraviglie Del Pianeta",
-        "descrizione": "Le meraviglie del Pianeta Ep. 2 Storie di uomini e animali - In molte delle meraviglie naturali della Terra gli animali abbondano. Possono rappresentare una minaccia per le popolazioni che vi abitano, oppu - re fornire un mezzo per la loro sopravvivenza, anche se spesso a caro prezzo. -",
+        "descrizione": "Le meraviglie del Pianeta Ep. 2 Storie di uomini e animali - In molte delle meraviglie naturali della Terra gli animali abbondano. Possono rappresentare una minaccia per le popolazioni che vi abitano, oppu - re fornire un mezzo per la loro sopravvivenza, anche se spesso a caro prezzo.",
         "immagine": "https://img-guidatv.org/34/le-meraviglie-del-pianeta/7.jpg"
       },
       {
-        "ora": "17:30",
-        "fine": "18:00",
+        "ora": "17:15",
+        "fine": "17:45",
         "titolo": "William Blake - La Visione E L'Infinito",
         "descrizione": "William Blake - La Visione e l'infinito Episodio 3 - Un programma di Daniela Delfini, produttore esecutivo Livia Lauriola, regia di David Emmer. Con Sebastiano Pigazzi, Giulia Sessich, Al Mariotti.",
         "immagine": "https://img-guidatv.org/34/william-blake-la-visione-e-l-infinito/0.jpg"
       },
       {
-        "ora": "18:00",
-        "fine": "18:15",
+        "ora": "17:45",
+        "fine": "18:10",
         "titolo": "Inglese Dr. Jack Hill And Mr. Speech St.",
-        "descrizione": "Inglese Dr. Jack Hill and Mr. Speech St. 2 Ep.7 Poetic License - Jack Hill è uno scienziato inglese che ha inventato un microchip per parlare le lingue straniere in modo automatico. Decide di sperimentare  - il dispositivo su se stesso e se lo fa impiantare. Sceglie per la sperimentazione la lingua italiana e si trasferisce a Roma. Ma le cose non vanno come previsto e il 'Mr. Speech' - così Jack ha chiamato la sua invenzione - gli dà non pochi problemi. Lo scienziato racconta in un video diario le sue disavventure. -   Un programma di Daniela Delfini Con Mattia Sonnino, Marina Occhionero, Luca Tanganelli Testi di Daniela Delfini Produttore esecutivo Livia Lauriola Regia di Pierluigi Caso",
+        "descrizione": "Inglese Dr. Jack Hill and Mr. Speech St. 2 Ep.7 Poetic License - Jack Hill è uno scienziato inglese che ha inventato un microchip per parlare le lingue straniere in modo automatico. Decide di sperimentare  - il dispositivo su se stesso e se lo fa impiantare. Sceglie per la sperimentazione la lingua italiana e si trasferisce a Roma. Ma le cose non vanno come previsto e il 'Mr. Speech' - così Jack ha chiamato la sua invenzione - gli dà non pochi problemi. Lo scienziato racconta in un video diario le sue disavventure. - Un programma di Daniela Delfini Con Mattia Sonnino, Marina Occhionero, Luca Tanganelli Testi di Daniela Delfini Produttore esecutivo Livia Lauriola Regia di Pierluigi Caso",
         "immagine": "https://img-guidatv.org/34/inglese-dr-jack-hill-and-mr-speech-st/0.jpg"
       },
       {
-        "ora": "18:15",
-        "fine": "18:30",
+        "ora": "18:10",
+        "fine": "18:20",
         "titolo": "Il Cambiamento Globale Artico",
-        "descrizione": "Il cambiamento globale artico Ep. 2 - Eventi estremi - La serie, co-prodotta dal progetto Europeo INTERACT insieme alla BBC Natural History Unit, esplora quattro aspetti cruciali del cambiamento climatico  - in atto e il loro impatto sulle comunità locali e sull'ecosistema globale. Nel secondo episodio: il riscaldamento dell'Artico aumenta la frequenza di disastri naturali, destabilizzando coste e minacciando gli ecosistemi e le comunità locali. Ricercatori e abitanti dell'Artico collaborano per monitorare e imparare ad adattarsi a questi cambiamenti. -",
+        "descrizione": "Il cambiamento globale artico Ep. 2 - Eventi estremi - La serie, co-prodotta dal progetto Europeo INTERACT insieme alla BBC Natural History Unit, esplora quattro aspetti cruciali del cambiamento climatico  - in atto e il loro impatto sulle comunità locali e sull'ecosistema globale. Nel secondo episodio: il riscaldamento dell'Artico aumenta la frequenza di disastri naturali, destabilizzando coste e minacciando gli ecosistemi e le comunità locali. Ricercatori e abitanti dell'Artico collaborano per monitorare e imparare ad adattarsi a questi cambiamenti.",
         "immagine": "https://img-guidatv.org/34/il-cambiamento-globale-artico/0.jpg"
       },
       {
-        "ora": "18:30",
-        "fine": "19:15",
+        "ora": "18:20",
+        "fine": "19:10",
         "titolo": "Pinguini Una Spia Nel Gruppo",
         "descrizione": "$27",
         "immagine": "https://img-guidatv.org/34/pinguini-una-spia-nel-gruppo/0.jpg"
       },
       {
-        "ora": "19:15",
-        "fine": "20:00",
+        "ora": "19:10",
+        "fine": "20:05",
         "titolo": "Paradisi Da Salvare Pantanal, Il Brasile",
-        "descrizione": "Paradisi da salvare Pantanal, il Brasile Selvaggio - Il Pantanal, la più grande zona umida del Brasile è un santuario per giaguari, rettili, tapiri e molte specie di uccelli. Salvare questo ecosistema unic - o nel suo genere e le sue specie, minacciato dai continui incendi boschivi e dallo sviluppo intensivo di agricoltura e allevamento, sta diventando una questione urgente. -",
+        "descrizione": "Paradisi da salvare Pantanal, il Brasile Selvaggio - Il Pantanal, la più grande zona umida del Brasile è un santuario per giaguari, rettili, tapiri e molte specie di uccelli. Salvare questo ecosistema unic - o nel suo genere e le sue specie, minacciato dai continui incendi boschivi e dallo sviluppo intensivo di agricoltura e allevamento, sta diventando una questione urgente.",
         "immagine": "https://img-guidatv.org/34/paradisi-da-salvare-pantanal-il-brasile/0.jpg"
       },
       {
-        "ora": "20:00",
+        "ora": "20:05",
         "fine": "21:00",
         "titolo": "Progetto Scienza Storie Della Scienza",
         "descrizione": "$28",
@@ -28892,38 +28892,31 @@
       },
       {
         "ora": "21:00",
-        "fine": "21:30",
+        "fine": "21:35",
         "titolo": "Memex CambiaMenti",
         "descrizione": "$29",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
-        "ora": "21:30",
-        "fine": "22:25",
+        "ora": "21:35",
+        "fine": "22:20",
         "titolo": "American Genius Farnsworth VS Sarnoff",
-        "descrizione": "American Genius Farnsworth VS Sarnoff - Televisione - Un avvincente documentario che ripercorre la nascita della televisione. l piccolo schermo viene immaginato da un giovane contadino dell'Idaho, Philo Fa - rnsworth, che per tutta la vita cerca di produrlo e di commercializzarlo. Ma l'idea gli viene sottratta da David Sarnoff, magnate delle telecomunicazioni, che comprende subito le potenzialità del nuovo mezzo e non si fa scrupoli a schiacciare Farnsworth, affossandolo con una causa legale. Nonostante tutto Farnsworth vince la causa, ma proprio quando Sarnoff si vede costretto a pagarlo per poter utilizzare il suo brevetto, lo scoppio della seconda guerra mondiale mette fine ai sogni del giovane inventore. -",
+        "descrizione": "American Genius Farnsworth VS Sarnoff - Televisione - Un avvincente documentario che ripercorre la nascita della televisione. l piccolo schermo viene immaginato da un giovane contadino dell'Idaho, Philo Fa - rnsworth, che per tutta la vita cerca di produrlo e di commercializzarlo. Ma l'idea gli viene sottratta da David Sarnoff, magnate delle telecomunicazioni, che comprende subito le potenzialità del nuovo mezzo e non si fa scrupoli a schiacciare Farnsworth, affossandolo con una causa legale. Nonostante tutto Farnsworth vince la causa, ma proprio quando Sarnoff si vede costretto a pagarlo per poter utilizzare il suo brevetto, lo scoppio della seconda guerra mondiale mette fine ai sogni del giovane inventore.",
         "immagine": "https://img-guidatv.org/34/american-genius-farnsworth-vs-sarnoff/0.jpg"
       },
       {
-        "ora": "22:25",
+        "ora": "22:20",
         "fine": "23:20",
         "titolo": "Il Tutto E Il Nulla (1a Parte): Il Tutto",
-        "descrizione": "Jim Al-Khalili ci conduce in un viaggio epico per scoprire la vera dimensione di tutto e la straordinaria scienza dietro lo spazio vuoto. Questo episodio indaga su una domanda molto semplice: perché si fa  - buio di notte? Il viaggio per trovare la risposta lo porterà attraverso storie straordinarie fino ai confini dell'universo conosciuto, per capire come la nostra comprensione dello spazio sia stata modellata dalla matematica e dall'astronomia. -",
+        "descrizione": "Jim Al-Khalili ci conduce in un viaggio epico per scoprire la vera dimensione di tutto e la straordinaria scienza dietro lo spazio vuoto. Questo episodio indaga su una domanda molto semplice: perché si fa  - buio di notte? Il viaggio per trovare la risposta lo porterà attraverso storie straordinarie fino ai confini dell'universo conosciuto, per capire come la nostra comprensione dello spazio sia stata modellata dalla matematica e dall'astronomia.",
         "immagine": "https://img-guidatv.org/34/il-tutto-e-il-nulla/0.jpg"
       },
       {
         "ora": "23:20",
-        "fine": "23:50",
+        "fine": "00:05",
         "titolo": "Habitat",
         "descrizione": "10 puntate di divulgazione sui temi dell'ambiente, della natura, della ricerca scientifica, che, attraverso il racconto di alcuni dei luoghi più importanti per la biodiversità nel nostro Paese, ci portano a scoprire i fondamenti delle scienze naturali e l'importanza degli ecosistemi e dei diversi habitat naturali per il futuro del Pianeta.",
         "immagine": "https://img-guidatv.org/34/habitat/5.jpg"
-      },
-      {
-        "ora": "23:50",
-        "fine": "00:45",
-        "titolo": "Racconti Di Scienza",
-        "descrizione": "La divulgazione scientifica si fa racconto. Personaggi, invenzioni, scoperte, errori, innovazione tecnologica...passi in avanti nella conoscenza scientifica che hanno cambiato per sempre il nostro modo di vedere il mondo che ci circonda.  Una serie di puntate speciali che hanno in comune la voglia di condividere ciò che sappiamo in modo spettacolare e coinvolgente.",
-        "immagine": "https://img-guidatv.org/34/racconti-di-scienza/0.jpg"
       }
     ]
   },
@@ -28932,56 +28925,63 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:45",
+        "ora": "00:05",
         "fine": "01:00",
-        "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
-        "descrizione": "Progetto Scienza 2023 Racconti di Scienza - Profili - p. 04 - Nikola Tesla - Profili è il programma che ci avvicina ai grandi fondatori e innovatori della scienza. Ogni puntata tratteggia il profilo di una -  figura emblematica del suo tempo, che ha dedicato la propria vita alla ricerca, alla scoperta di nuovi codici e teorie per decifrare il nostro mondo. -",
-        "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
+        "titolo": "Racconti Di Scienza",
+        "descrizione": "La divulgazione scientifica si fa racconto. Personaggi, invenzioni, scoperte, errori, innovazione tecnologica...passi in avanti nella conoscenza scientifica che hanno cambiato per sempre il nostro modo di vedere il mondo che ci circonda.  Una serie di puntate speciali che hanno in comune la voglia di condividere ciò che sappiamo in modo spettacolare e coinvolgente.",
+        "immagine": "https://img-guidatv.org/34/racconti-di-scienza/0.jpg"
       },
       {
         "ora": "01:00",
-        "fine": "02:00",
+        "fine": "01:20",
+        "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
+        "descrizione": "Progetto Scienza 2023 Racconti di Scienza - Profili - p. 04 - Nikola Tesla - Profili è il programma che ci avvicina ai grandi fondatori e innovatori della scienza. Ogni puntata tratteggia il profilo di una -  figura emblematica del suo tempo, che ha dedicato la propria vita alla ricerca, alla scoperta di nuovi codici e teorie per decifrare il nostro mondo.",
+        "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
+      },
+      {
+        "ora": "01:20",
+        "fine": "02:10",
         "titolo": "Di Là Dal Fiume E Tra Gli Alberi Valle D",
-        "descrizione": "Di là dal fiume e tra gli alberi Valle d'Aosta, dove i giganti raccolgono fiori - Paolo Severini ci condurrà in un affascinante viaggio in Valle d'Aosta, una regione di confine dal paesaggio di grande sugg - estione, fatto di vette altissime e casette in pietra. -   Un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
+        "descrizione": "Di là dal fiume e tra gli alberi Valle d'Aosta, dove i giganti raccolgono fiori - Paolo Severini ci condurrà in un affascinante viaggio in Valle d'Aosta, una regione di confine dal paesaggio di grande sugg - estione, fatto di vette altissime e casette in pietra. - Un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
         "immagine": "https://img-guidatv.org/34/di-la-dal-fiume-e-tra-gli-alberi/1.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:35",
+        "ora": "02:10",
+        "fine": "02:45",
         "titolo": "Progetto Scienza STEM",
         "descrizione": "$2a",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "03:15",
+        "ora": "02:45",
+        "fine": "03:35",
         "titolo": "Progetto Scienza 2023 Newton - Quello Ch",
-        "descrizione": "Progetto Scienza 2023 Newton - Quello che sappiamo p. 01: Pesca sostenibile - Davide Coero Borga ci accompagna lungo un percorso fatto di luoghi unici, persone preparate e appassionate e di un metodo, quel - lo scientifico, che sta alla base del lavoro dei ricercatori di tutto il mondo. -   un programma di Maria Agostinelli, Giuseppe Cembalo, Davide Coero Borga, Federica De Maria, Mario Ferrari, Diego Garbati, Nicoletta Piu, Alberto Polimanti, Pino Roggero a cura di Eleonora Ottaviani capo progetto Diego Garbati conduce Davide Coero Borga",
+        "descrizione": "Progetto Scienza 2023 Newton - Quello che sappiamo p. 01: Pesca sostenibile - Davide Coero Borga ci accompagna lungo un percorso fatto di luoghi unici, persone preparate e appassionate e di un metodo, quel - lo scientifico, che sta alla base del lavoro dei ricercatori di tutto il mondo. - un programma di Maria Agostinelli, Giuseppe Cembalo, Davide Coero Borga, Federica De Maria, Mario Ferrari, Diego Garbati, Nicoletta Piu, Alberto Polimanti, Pino Roggero a cura di Eleonora Ottaviani capo progetto Diego Garbati conduce Davide Coero Borga",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
       },
       {
-        "ora": "03:15",
-        "fine": "03:45",
+        "ora": "03:35",
+        "fine": "04:05",
         "titolo": "Un Giorno Per: La Donna",
-        "descrizione": "La lotta per l'uguaglianza di genere ha prodotto risultati importanti. Nei Paesi civili i governi lavorano per eliminare le disparità, le discriminazioni e le violenze che le donne continuano a subire. Ma c'è ancora molto -  da fare per garantire un mondo in cui tutte le donne possano vivere liberamente e realizzare appieno il proprio potenziale. -",
+        "descrizione": "La lotta per l'uguaglianza di genere ha prodotto risultati importanti. Nei Paesi civili i governi lavorano per eliminare le disparità, le discriminazioni e le violenze che le donne continuano a subire. Ma c'è ancora molto  - da fare per garantire un mondo in cui tutte le donne possano vivere liberamente e realizzare appieno il proprio potenziale.",
         "immagine": "https://img-guidatv.org/34/un-giorno-per/1.jpg"
       },
       {
-        "ora": "03:45",
-        "fine": "04:15",
+        "ora": "04:05",
+        "fine": "04:35",
         "titolo": "William Blake - La Visione E L'Infinito",
         "descrizione": "William Blake - La Visione e l'infinito Episodio 3 - Un programma di Daniela Delfini, produttore esecutivo Livia Lauriola, regia di David Emmer. Con Sebastiano Pigazzi, Giulia Sessich, Al Mariotti.",
         "immagine": "https://img-guidatv.org/34/william-blake-la-visione-e-l-infinito/0.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "04:45",
+        "ora": "04:35",
+        "fine": "05:05",
         "titolo": "Memex Donne Di Scienza",
-        "descrizione": "Memex Donne di Scienza - p. 06: Marcella Frangipane - Le donne che sono diventate icone dell'universo scientifico non sono certo le sole che hanno operato con successo nel mondo della scienza, ma sono quel - le che hanno aperto la strada alle altre, con la loro volontà, la loro abilità, con talento e protervia, in un mondo a volte apertamente ostile. In questo programma incontriamo le ricercatrici italiane più affermate di oggi e raccontiamo le storie delle grandi protagoniste della scienza del passato. Protagonista di questa puntata è Marcella Frangipane. -   Un programma di Silvia Bencivelli, Francesco Linguiti, Diego Garbati e Armando Traverso - Produttore esecutivo Diego Garbati e Livia Lauriola - Regia di Nicoletta Piu e Giancarlo Russo - Interviste di Silvia Bencivelli - Condotto da Chiara Buratti",
+        "descrizione": "Memex Donne di Scienza - p. 06: Marcella Frangipane - Le donne che sono diventate icone dell'universo scientifico non sono certo le sole che hanno operato con successo nel mondo della scienza, ma sono quel - le che hanno aperto la strada alle altre, con la loro volontà, la loro abilità, con talento e protervia, in un mondo a volte apertamente ostile. In questo programma incontriamo le ricercatrici italiane più affermate di oggi e raccontiamo le storie delle grandi protagoniste della scienza del passato. Protagonista di questa puntata è Marcella Frangipane. - Un programma di Silvia Bencivelli, Francesco Linguiti, Diego Garbati e Armando Traverso - Produttore esecutivo Diego Garbati e Livia Lauriola - Regia di Nicoletta Piu e Giancarlo Russo - Interviste di Silvia Bencivelli - Condotto da Chiara Buratti",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
-        "ora": "04:45",
+        "ora": "05:05",
         "fine": "05:30",
         "titolo": "Memex Nautilus - La Specie Umana - Noi S",
         "descrizione": "$2b",
@@ -28996,41 +28996,41 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:55",
         "titolo": "Racconti Di Scienza",
         "descrizione": "La divulgazione scientifica si fa racconto. Personaggi, invenzioni, scoperte, errori, innovazione tecnologica...passi in avanti nella conoscenza scientifica che hanno cambiato per sempre il nostro modo di vedere il mondo che ci circonda.  Una serie di puntate speciali che hanno in comune la voglia di condividere ciò che sappiamo in modo spettacolare e coinvolgente.",
         "immagine": "https://img-guidatv.org/34/racconti-di-scienza/0.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "07:30",
+        "ora": "06:55",
+        "fine": "07:25",
         "titolo": "Intelligenze Umane",
-        "descrizione": "Intelligenze Umane Ep. 4 - Uomo e AI: un pianeta per due - dIAlogo con Mario Tozzi - Paolo Benanti incontra il geologo e divulgatore televisivo Mario Tozzi per valutare l'impatto delle IA sull'ambiente - e -  della nuova tecnologia in generale. Nel bene e nel male: da un lato le IA ci aiutano a capire meglio il mondo naturale, ad anticipare i terremoti e a comunicare con gli animali, dall'altro i nuovi data center divorano energia, prosciugano le falde e consumano il suolo. Queste tecnologie trasformeranno il nostro pianeta in un paradiso terrestre o in una specie di acquario? -",
+        "descrizione": "Intelligenze Umane Ep. 4 - Uomo e AI: un pianeta per due - dIAlogo con Mario Tozzi - Paolo Benanti incontra il geologo e divulgatore televisivo Mario Tozzi per valutare l'impatto delle IA sull'ambiente - e -  della nuova tecnologia in generale. Nel bene e nel male: da un lato le IA ci aiutano a capire meglio il mondo naturale, ad anticipare i terremoti e a comunicare con gli animali, dall'altro i nuovi data center divorano energia, prosciugano le falde e consumano il suolo. Queste tecnologie trasformeranno il nostro pianeta in un paradiso terrestre o in una specie di acquario?",
         "immagine": "https://img-guidatv.org/34/intelligenze-umane/0.jpg"
       },
       {
-        "ora": "07:30",
-        "fine": "08:00",
+        "ora": "07:25",
+        "fine": "08:05",
         "titolo": "Progetto Scienza 2022 Racconti Di Scienz",
-        "descrizione": "Progetto Scienza 2022 Racconti di Scienza - p. 02 - Il Vesuvio - La scienza è stata raccontata negli anni in numerosi programmi televisivi, con linguaggi diversi e da molti divulgatori di talento. Con la c - onduzione di Anna Pancaldi, Racconti di Scienza presenta un racconto a più voci alla scoperta del Vesuvio. Immagine caratteristica della città di Napoli, il Vesuvio ha plasmato il territorio circostante in epoche diverse e con esiti alterni, spesso devastanti. Oggi è uno dei vulcani più controllati al mondo per il suo incredibile potenziale esplosivo. Eppure gli abitanti che vivono alle sue pendici hanno col Vesuvio un rapporto di fedeltà e riconoscenza per la fertilità del luogo e la ricchezza che ne ricavano. -   Un programma di Daniela Mazzoli, a cura di Eleonora Ottaviani, capo progetto Diego Garbati, regia Alberto Polimanti, conduce Anna Pancaldi",
+        "descrizione": "Progetto Scienza 2022 Racconti di Scienza - p. 02 - Il Vesuvio - La scienza è stata raccontata negli anni in numerosi programmi televisivi, con linguaggi diversi e da molti divulgatori di talento. Con la c - onduzione di Anna Pancaldi, Racconti di Scienza presenta un racconto a più voci alla scoperta del Vesuvio. Immagine caratteristica della città di Napoli, il Vesuvio ha plasmato il territorio circostante in epoche diverse e con esiti alterni, spesso devastanti. Oggi è uno dei vulcani più controllati al mondo per il suo incredibile potenziale esplosivo. Eppure gli abitanti che vivono alle sue pendici hanno col Vesuvio un rapporto di fedeltà e riconoscenza per la fertilità del luogo e la ricchezza che ne ricavano. - Un programma di Daniela Mazzoli, a cura di Eleonora Ottaviani, capo progetto Diego Garbati, regia Alberto Polimanti, conduce Anna Pancaldi",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2022/6.png"
       },
       {
-        "ora": "08:00",
-        "fine": "08:30",
+        "ora": "08:05",
+        "fine": "08:35",
         "titolo": "Un Giorno Per: La Donna",
-        "descrizione": "La lotta per l'uguaglianza di genere ha prodotto risultati importanti. Nei Paesi civili i governi lavorano per eliminare le disparità, le discriminazioni e le violenze che le donne continuano a subire. Ma c'è ancora molto -  da fare per garantire un mondo in cui tutte le donne possano vivere liberamente e realizzare appieno il proprio potenziale. -",
+        "descrizione": "La lotta per l'uguaglianza di genere ha prodotto risultati importanti. Nei Paesi civili i governi lavorano per eliminare le disparità, le discriminazioni e le violenze che le donne continuano a subire. Ma c'è ancora molto  - da fare per garantire un mondo in cui tutte le donne possano vivere liberamente e realizzare appieno il proprio potenziale.",
         "immagine": "https://img-guidatv.org/34/un-giorno-per/1.jpg"
       },
       {
-        "ora": "08:30",
-        "fine": "09:00",
+        "ora": "08:35",
+        "fine": "09:15",
         "titolo": "Memex Nautilus - Buchi Neri, Non Più Osc",
         "descrizione": "$23",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
-        "ora": "09:00",
+        "ora": "09:15",
         "fine": "10:00",
         "titolo": "Racconti Di Scienza",
         "descrizione": "Racconti di Scienza Ep. 12 - Disasters Engineered: Il terremoto di Northridge e il salvataggio dei minatori in Cile",
@@ -29038,104 +29038,104 @@
       },
       {
         "ora": "10:00",
-        "fine": "10:25",
+        "fine": "10:30",
         "titolo": "Progetto Scienza STEM",
         "descrizione": "$24",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
-        "ora": "10:25",
-        "fine": "11:00",
+        "ora": "10:30",
+        "fine": "11:20",
         "titolo": "Progetto Scienza Storie Della Scienza",
         "descrizione": "$25",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-storie-della-scienza/0.jpg"
       },
       {
-        "ora": "11:00",
-        "fine": "11:45",
+        "ora": "11:20",
+        "fine": "12:15",
         "titolo": "Pinguini Una Spia Nel Gruppo",
         "descrizione": "$26",
         "immagine": "https://img-guidatv.org/34/pinguini-una-spia-nel-gruppo/0.jpg"
       },
       {
-        "ora": "11:45",
-        "fine": "12:30",
+        "ora": "12:15",
+        "fine": "13:05",
         "titolo": "Paradisi Da Salvare Canaima, Gli Altipia",
-        "descrizione": "Paradisi da salvare Canaima, gli Altipiani del Venezuela - A Sud del Venezuela, il Parco nazionale Canaima ospita un meraviglioso mix di ambienti naturali, tra foreste tropicali, aride savane e imponenti m - ontagne dalla cima piatta. Purtroppo, però, l'estrazione mineraria illegale, alla periferia del parco, sta minacciando il fragile equilibrio di questo ecosistema. -",
+        "descrizione": "Paradisi da salvare Canaima, gli Altipiani del Venezuela - A Sud del Venezuela, il Parco nazionale Canaima ospita un meraviglioso mix di ambienti naturali, tra foreste tropicali, aride savane e imponenti m - ontagne dalla cima piatta. Purtroppo, però, l'estrazione mineraria illegale, alla periferia del parco, sta minacciando il fragile equilibrio di questo ecosistema.",
         "immagine": "https://img-guidatv.org/34/paradisi-da-salvare-canaima-gli-altipia/0.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:40",
+        "ora": "13:05",
+        "fine": "14:00",
         "titolo": "Di Là Dal Fiume E Tra Gli Alberi Pisa, L",
-        "descrizione": "Di là dal fiume e tra gli alberi Pisa, la spirale aurea - Seguendo la suggestione della sequenza di Fibonacci, Guido Morandini disegna una spirale per raccontare il territorio che da Pisa si estende fino a - l mare. -   un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
+        "descrizione": "Di là dal fiume e tra gli alberi Pisa, la spirale aurea - Seguendo la suggestione della sequenza di Fibonacci, Guido Morandini disegna una spirale per raccontare il territorio che da Pisa si estende fino a - l mare. - un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
         "immagine": "https://img-guidatv.org/34/di-la-dal-fiume-e-tra-gli-alberi/1.jpg"
       },
       {
-        "ora": "13:40",
-        "fine": "14:25",
+        "ora": "14:00",
+        "fine": "14:30",
         "titolo": "Memex Donne Di Scienza",
-        "descrizione": "Memex Donne di Scienza - ep. 14: Maria Cristina Pedicchio - Alla scoperta delle ricercatrici italiane più affermate di oggi e delle grandi protagoniste della scienza del passato. Le donne che sono diventat - e icone dell'universo scientifico non sono certo le sole che hanno operato con successo nel mondo della scienza, ma sono quelle che hanno aperto la strada alle altre, con la loro volontà, la loro abilità, con talento e protervia, in un mondo a volte apertamente ostile. In questo programma incontriamo le ricercatrici italiane più affermate di oggi e raccontiamo le storie delle grandi protagoniste della scienza del passato. Protagonista di questa puntata è Maria Cristina Pedicchio. -   Un programma di Silvia Bencivelli, Francesco Linguiti, Diego Garbati e Armando Traverso - Produttore esecutivo Diego Garbati e Livia Lauriola - Regia di Nicoletta Piu e Giancarlo Russo - Interviste di Silvia Bencivelli - Condotto da Chiara Buratti",
+        "descrizione": "Memex Donne di Scienza - ep. 14: Maria Cristina Pedicchio - Alla scoperta delle ricercatrici italiane più affermate di oggi e delle grandi protagoniste della scienza del passato. Le donne che sono diventat - e icone dell'universo scientifico non sono certo le sole che hanno operato con successo nel mondo della scienza, ma sono quelle che hanno aperto la strada alle altre, con la loro volontà, la loro abilità, con talento e protervia, in un mondo a volte apertamente ostile. In questo programma incontriamo le ricercatrici italiane più affermate di oggi e raccontiamo le storie delle grandi protagoniste della scienza del passato. Protagonista di questa puntata è Maria Cristina Pedicchio. - Un programma di Silvia Bencivelli, Francesco Linguiti, Diego Garbati e Armando Traverso - Produttore esecutivo Diego Garbati e Livia Lauriola - Regia di Nicoletta Piu e Giancarlo Russo - Interviste di Silvia Bencivelli - Condotto da Chiara Buratti",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
-        "ora": "14:25",
-        "fine": "15:25",
+        "ora": "14:30",
+        "fine": "15:15",
         "titolo": "I Meccanismi Della Natura",
         "descrizione": "I meccanismi della natura Ep. 1 - La giungla",
         "immagine": "https://img-guidatv.org/34/i-meccanismi-della-natura/0.jpg"
       },
       {
-        "ora": "15:25",
-        "fine": "16:30",
+        "ora": "15:15",
+        "fine": "16:20",
         "titolo": "Progetto Scienza 2022 \"Newton",
-        "descrizione": "Progetto Scienza 2022 \"Newton - p.23 Le proprietà delle piante\" - Newton è il programma di informazione e approfondimento scientifico condotto da Davide Coero Borga che ci aiuta a capire meglio ciò che sap - piamo e ci porta a scoprire le novità dal mondo della ricerca. -",
+        "descrizione": "Progetto Scienza 2022 \"Newton - p.23 Le proprietà delle piante\" - Newton è il programma di informazione e approfondimento scientifico condotto da Davide Coero Borga che ci aiuta a capire meglio ciò che sap - piamo e ci porta a scoprire le novità dal mondo della ricerca.",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2022/6.png"
       },
       {
-        "ora": "16:30",
-        "fine": "17:30",
+        "ora": "16:20",
+        "fine": "17:15",
         "titolo": "Le Meraviglie Del Pianeta",
-        "descrizione": "Le meraviglie del Pianeta Ep. 2 Storie di uomini e animali - In molte delle meraviglie naturali della Terra gli animali abbondano. Possono rappresentare una minaccia per le popolazioni che vi abitano, oppu - re fornire un mezzo per la loro sopravvivenza, anche se spesso a caro prezzo. -",
+        "descrizione": "Le meraviglie del Pianeta Ep. 2 Storie di uomini e animali - In molte delle meraviglie naturali della Terra gli animali abbondano. Possono rappresentare una minaccia per le popolazioni che vi abitano, oppu - re fornire un mezzo per la loro sopravvivenza, anche se spesso a caro prezzo.",
         "immagine": "https://img-guidatv.org/34/le-meraviglie-del-pianeta/7.jpg"
       },
       {
-        "ora": "17:30",
-        "fine": "18:00",
+        "ora": "17:15",
+        "fine": "17:45",
         "titolo": "William Blake - La Visione E L'Infinito",
         "descrizione": "William Blake - La Visione e l'infinito Episodio 3 - Un programma di Daniela Delfini, produttore esecutivo Livia Lauriola, regia di David Emmer. Con Sebastiano Pigazzi, Giulia Sessich, Al Mariotti.",
         "immagine": "https://img-guidatv.org/34/william-blake-la-visione-e-l-infinito/0.jpg"
       },
       {
-        "ora": "18:00",
-        "fine": "18:15",
+        "ora": "17:45",
+        "fine": "18:10",
         "titolo": "Inglese Dr. Jack Hill And Mr. Speech St.",
-        "descrizione": "Inglese Dr. Jack Hill and Mr. Speech St. 2 Ep.7 Poetic License - Jack Hill è uno scienziato inglese che ha inventato un microchip per parlare le lingue straniere in modo automatico. Decide di sperimentare  - il dispositivo su se stesso e se lo fa impiantare. Sceglie per la sperimentazione la lingua italiana e si trasferisce a Roma. Ma le cose non vanno come previsto e il 'Mr. Speech' - così Jack ha chiamato la sua invenzione - gli dà non pochi problemi. Lo scienziato racconta in un video diario le sue disavventure. -   Un programma di Daniela Delfini Con Mattia Sonnino, Marina Occhionero, Luca Tanganelli Testi di Daniela Delfini Produttore esecutivo Livia Lauriola Regia di Pierluigi Caso",
+        "descrizione": "Inglese Dr. Jack Hill and Mr. Speech St. 2 Ep.7 Poetic License - Jack Hill è uno scienziato inglese che ha inventato un microchip per parlare le lingue straniere in modo automatico. Decide di sperimentare  - il dispositivo su se stesso e se lo fa impiantare. Sceglie per la sperimentazione la lingua italiana e si trasferisce a Roma. Ma le cose non vanno come previsto e il 'Mr. Speech' - così Jack ha chiamato la sua invenzione - gli dà non pochi problemi. Lo scienziato racconta in un video diario le sue disavventure. - Un programma di Daniela Delfini Con Mattia Sonnino, Marina Occhionero, Luca Tanganelli Testi di Daniela Delfini Produttore esecutivo Livia Lauriola Regia di Pierluigi Caso",
         "immagine": "https://img-guidatv.org/34/inglese-dr-jack-hill-and-mr-speech-st/0.jpg"
       },
       {
-        "ora": "18:15",
-        "fine": "18:30",
+        "ora": "18:10",
+        "fine": "18:20",
         "titolo": "Il Cambiamento Globale Artico",
-        "descrizione": "Il cambiamento globale artico Ep. 2 - Eventi estremi - La serie, co-prodotta dal progetto Europeo INTERACT insieme alla BBC Natural History Unit, esplora quattro aspetti cruciali del cambiamento climatico  - in atto e il loro impatto sulle comunità locali e sull'ecosistema globale. Nel secondo episodio: il riscaldamento dell'Artico aumenta la frequenza di disastri naturali, destabilizzando coste e minacciando gli ecosistemi e le comunità locali. Ricercatori e abitanti dell'Artico collaborano per monitorare e imparare ad adattarsi a questi cambiamenti. -",
+        "descrizione": "Il cambiamento globale artico Ep. 2 - Eventi estremi - La serie, co-prodotta dal progetto Europeo INTERACT insieme alla BBC Natural History Unit, esplora quattro aspetti cruciali del cambiamento climatico  - in atto e il loro impatto sulle comunità locali e sull'ecosistema globale. Nel secondo episodio: il riscaldamento dell'Artico aumenta la frequenza di disastri naturali, destabilizzando coste e minacciando gli ecosistemi e le comunità locali. Ricercatori e abitanti dell'Artico collaborano per monitorare e imparare ad adattarsi a questi cambiamenti.",
         "immagine": "https://img-guidatv.org/34/il-cambiamento-globale-artico/0.jpg"
       },
       {
-        "ora": "18:30",
-        "fine": "19:15",
+        "ora": "18:20",
+        "fine": "19:10",
         "titolo": "Pinguini Una Spia Nel Gruppo",
         "descrizione": "$27",
         "immagine": "https://img-guidatv.org/34/pinguini-una-spia-nel-gruppo/0.jpg"
       },
       {
-        "ora": "19:15",
-        "fine": "20:00",
+        "ora": "19:10",
+        "fine": "20:05",
         "titolo": "Paradisi Da Salvare Pantanal, Il Brasile",
-        "descrizione": "Paradisi da salvare Pantanal, il Brasile Selvaggio - Il Pantanal, la più grande zona umida del Brasile è un santuario per giaguari, rettili, tapiri e molte specie di uccelli. Salvare questo ecosistema unic - o nel suo genere e le sue specie, minacciato dai continui incendi boschivi e dallo sviluppo intensivo di agricoltura e allevamento, sta diventando una questione urgente. -",
+        "descrizione": "Paradisi da salvare Pantanal, il Brasile Selvaggio - Il Pantanal, la più grande zona umida del Brasile è un santuario per giaguari, rettili, tapiri e molte specie di uccelli. Salvare questo ecosistema unic - o nel suo genere e le sue specie, minacciato dai continui incendi boschivi e dallo sviluppo intensivo di agricoltura e allevamento, sta diventando una questione urgente.",
         "immagine": "https://img-guidatv.org/34/paradisi-da-salvare-pantanal-il-brasile/0.jpg"
       },
       {
-        "ora": "20:00",
+        "ora": "20:05",
         "fine": "21:00",
         "titolo": "Progetto Scienza Storie Della Scienza",
         "descrizione": "$28",
@@ -29143,38 +29143,31 @@
       },
       {
         "ora": "21:00",
-        "fine": "21:30",
+        "fine": "21:35",
         "titolo": "Memex CambiaMenti",
         "descrizione": "$29",
         "immagine": "https://img-guidatv.org/34/memex/1.jpg"
       },
       {
-        "ora": "21:30",
-        "fine": "22:25",
+        "ora": "21:35",
+        "fine": "22:20",
         "titolo": "American Genius Farnsworth VS Sarnoff",
-        "descrizione": "American Genius Farnsworth VS Sarnoff - Televisione - Un avvincente documentario che ripercorre la nascita della televisione. l piccolo schermo viene immaginato da un giovane contadino dell'Idaho, Philo Fa - rnsworth, che per tutta la vita cerca di produrlo e di commercializzarlo. Ma l'idea gli viene sottratta da David Sarnoff, magnate delle telecomunicazioni, che comprende subito le potenzialità del nuovo mezzo e non si fa scrupoli a schiacciare Farnsworth, affossandolo con una causa legale. Nonostante tutto Farnsworth vince la causa, ma proprio quando Sarnoff si vede costretto a pagarlo per poter utilizzare il suo brevetto, lo scoppio della seconda guerra mondiale mette fine ai sogni del giovane inventore. -",
+        "descrizione": "American Genius Farnsworth VS Sarnoff - Televisione - Un avvincente documentario che ripercorre la nascita della televisione. l piccolo schermo viene immaginato da un giovane contadino dell'Idaho, Philo Fa - rnsworth, che per tutta la vita cerca di produrlo e di commercializzarlo. Ma l'idea gli viene sottratta da David Sarnoff, magnate delle telecomunicazioni, che comprende subito le potenzialità del nuovo mezzo e non si fa scrupoli a schiacciare Farnsworth, affossandolo con una causa legale. Nonostante tutto Farnsworth vince la causa, ma proprio quando Sarnoff si vede costretto a pagarlo per poter utilizzare il suo brevetto, lo scoppio della seconda guerra mondiale mette fine ai sogni del giovane inventore.",
         "immagine": "https://img-guidatv.org/34/american-genius-farnsworth-vs-sarnoff/0.jpg"
       },
       {
-        "ora": "22:25",
+        "ora": "22:20",
         "fine": "23:20",
         "titolo": "Il Tutto E Il Nulla (1a Parte): Il Tutto",
-        "descrizione": "Jim Al-Khalili ci conduce in un viaggio epico per scoprire la vera dimensione di tutto e la straordinaria scienza dietro lo spazio vuoto. Questo episodio indaga su una domanda molto semplice: perché si fa  - buio di notte? Il viaggio per trovare la risposta lo porterà attraverso storie straordinarie fino ai confini dell'universo conosciuto, per capire come la nostra comprensione dello spazio sia stata modellata dalla matematica e dall'astronomia. -",
+        "descrizione": "Jim Al-Khalili ci conduce in un viaggio epico per scoprire la vera dimensione di tutto e la straordinaria scienza dietro lo spazio vuoto. Questo episodio indaga su una domanda molto semplice: perché si fa  - buio di notte? Il viaggio per trovare la risposta lo porterà attraverso storie straordinarie fino ai confini dell'universo conosciuto, per capire come la nostra comprensione dello spazio sia stata modellata dalla matematica e dall'astronomia.",
         "immagine": "https://img-guidatv.org/34/il-tutto-e-il-nulla/0.jpg"
       },
       {
         "ora": "23:20",
-        "fine": "23:50",
+        "fine": "00:05",
         "titolo": "Habitat",
         "descrizione": "10 puntate di divulgazione sui temi dell'ambiente, della natura, della ricerca scientifica, che, attraverso il racconto di alcuni dei luoghi più importanti per la biodiversità nel nostro Paese, ci portano a scoprire i fondamenti delle scienze naturali e l'importanza degli ecosistemi e dei diversi habitat naturali per il futuro del Pianeta.",
         "immagine": "https://img-guidatv.org/34/habitat/5.jpg"
-      },
-      {
-        "ora": "23:50",
-        "fine": "00:45",
-        "titolo": "Racconti Di Scienza",
-        "descrizione": "La divulgazione scientifica si fa racconto. Personaggi, invenzioni, scoperte, errori, innovazione tecnologica...passi in avanti nella conoscenza scientifica che hanno cambiato per sempre il nostro modo di vedere il mondo che ci circonda.  Una serie di puntate speciali che hanno in comune la voglia di condividere ciò che sappiamo in modo spettacolare e coinvolgente.",
-        "immagine": "https://img-guidatv.org/34/racconti-di-scienza/0.jpg"
       }
     ]
   },
