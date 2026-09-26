@@ -1,7 +1,11 @@
 import { NextResponse } from "next/server";
-import sharp from "sharp";
 
 export const dynamic = "force-dynamic";
+
+let sharp = null;
+try {
+    sharp = require("sharp");
+} catch (e) {}
 
 const MEMO_TTL_MS = 3600 * 1000;
 const memo = new Map();
