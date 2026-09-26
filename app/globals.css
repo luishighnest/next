@@ -1912,15 +1912,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .dock-nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 12px;
-    right: 12px;
-    height: 3px;
-    background: #00e59b;
-    border-radius: 3px 3px 0 0;
-    box-shadow: 0 0 10px rgba(0, 229, 155, 0.7);
+    display: none !important;
+    content: none !important;
 }
 
 /* --- WRAPPER E DROPDOWN SOTTOCATEGORIE STILE NOW (Click su Freccia) --- */
