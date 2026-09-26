@@ -322,7 +322,7 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                 ) : (
                     <div className="home-header-dock-container fade-enter">
                         <header className="home-header-dock" role="banner">
-                            {/* SEZIONE 1: BRAND LOGO */}
+                            {/* SEZIONE 1: BRAND LOGO + CATEGORIE AFFIANCATE IN ALTO A SINISTRA */}
                             <div className="dock-group dock-group-left">
                                 <Link
                                     href="/home"
@@ -341,17 +341,15 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                                     </svg>
                                     <span className="dock-brand-text">NMDZ</span>
                                 </Link>
-                            </div>
 
-                            {/* SEZIONE 2: NAVIGAZIONE CATEGORIE SENZA ICONE (CAPS LOCK) */}
-                            <nav className="dock-group dock-group-center" aria-label="Navigazione principale">
-                                {[
-                                    { id: "all", path: "/home", label: "HOME", hasSub: false },
-                                    { id: "sport", path: "/sport", label: "SPORT", hasSub: true },
-                                    { id: "intrattenimento", path: "/intrattenimento", label: "INTRATTENIMENTO", hasSub: true },
-                                    { id: "eventi", path: "/eventi", label: "EVENTI", hasSub: true },
-                                    { id: "vod", path: "/vod", label: "VOD", hasSub: true }
-                                ].map((item) => {
+                                <nav className="dock-group-center" aria-label="Navigazione principale">
+                                    {[
+                                        { id: "all", path: "/home", label: "HOME", hasSub: false },
+                                        { id: "sport", path: "/sport", label: "SPORT", hasSub: true },
+                                        { id: "intrattenimento", path: "/intrattenimento", label: "INTRATTENIMENTO", hasSub: true },
+                                        { id: "eventi", path: "/eventi", label: "EVENTI", hasSub: true },
+                                        { id: "vod", path: "/vod", label: "VOD", hasSub: true }
+                                    ].map((item) => {
                                     const isActive = activeFilter === item.id;
                                     const subItems = (item.hasSub && effectiveSubCategories[item.id]) ? effectiveSubCategories[item.id] : [];
 
@@ -425,6 +423,7 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                                     );
                                 })}
                             </nav>
+                            </div>
 
                             {/* SEZIONE 3: AZIONI (CERCA, GUIDA TV, IMPOSTAZIONI) */}
                             <div className="dock-group dock-group-right">
