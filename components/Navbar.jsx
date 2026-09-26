@@ -323,7 +323,7 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                 ) : (
                     <div className="home-header-dock-container fade-enter">
                         <header className="home-header-dock" role="banner">
-                            {/* SEZIONE 1: BRAND LOGO + OROLOGIO */}
+                            {/* SEZIONE 1: BRAND LOGO */}
                             <div className="dock-group dock-group-left">
                                 <Link
                                     href="/home"
@@ -340,21 +340,18 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                                         <polygon points="3.67,166.42 67.08,220.26 67.08,459.18 3.67,511.97" />
                                         <polygon points="12.2,5.03 221.73,182.93 221.73,456.97 240.23,439.46 240.23,5.03 289.49,5.03 289.49,392.83 240.23,439.46 221.73,456.97 289.49,511.97 289.49,439.46 508.33,270.03 314.16,157.02 314.16,236.42 431.11,304.38 314.16,394.94 314.16,346.06 228.61,427.11 67.08,290.01 67.08,51.81" />
                                     </svg>
+                                    <span className="dock-brand-text">NMDZ</span>
                                 </Link>
-
-                                <div className="dock-site-clock" title="Orario attuale" suppressHydrationWarning>
-                                    {mounted ? siteTime : ""}
-                                </div>
                             </div>
 
-                            {/* SEZIONE 2: NAVIGAZIONE CON ICONE + TITOLO + DROPDOWN DINAMICI */}
+                            {/* SEZIONE 2: NAVIGAZIONE CATEGORIE SENZA ICONE (CAPS LOCK) */}
                             <nav className="dock-group dock-group-center" aria-label="Navigazione principale">
                                 {[
-                                    { id: "all", path: "/home", label: "Home", icon: "fa-house", hasSub: false },
-                                    { id: "sport", path: "/sport", label: "Sport", icon: "fa-trophy", hasSub: true },
-                                    { id: "intrattenimento", path: "/intrattenimento", label: "Intrattenimento", icon: "fa-tv", hasSub: true },
-                                    { id: "eventi", path: "/eventi", label: "Eventi", icon: "fa-bolt", hasSub: true },
-                                    { id: "vod", path: "/vod", label: "Vod", icon: "fa-clapperboard", hasSub: true }
+                                    { id: "all", path: "/home", label: "HOME", hasSub: false },
+                                    { id: "sport", path: "/sport", label: "SPORT", hasSub: true },
+                                    { id: "intrattenimento", path: "/intrattenimento", label: "INTRATTENIMENTO", hasSub: true },
+                                    { id: "eventi", path: "/eventi", label: "EVENTI", hasSub: true },
+                                    { id: "vod", path: "/vod", label: "VOD", hasSub: true }
                                 ].map((item) => {
                                     const isActive = activeFilter === item.id;
                                     const subItems = (item.hasSub && effectiveSubCategories[item.id]) ? effectiveSubCategories[item.id] : [];
@@ -374,7 +371,6 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                                                     if (onSubFilterChange) onSubFilterChange("all");
                                                 }}
                                             >
-                                                <i className={`fas ${item.icon} dock-icon`}></i>
                                                 <span className="dock-label">{item.label}</span>
                                             </Link>
 
