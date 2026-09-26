@@ -377,7 +377,7 @@ export default function EventoPlayerPage() {
             return rawUrl.replace(/^(chrome-extension|extension):\/\/[^/]+/, `chrome-extension://${extId}`);
         }
 
-        // DAZN WARP: URL tipo https://cdn.dazn.com/@JWT/dash/stream.mpd?p=web
+        // DAZN WARP / Query Token: URL tipo https://cdn.dazn.com/@JWT/dash/stream.mpd?p=web o ?dazn-token=...
         // L'estensione si aspetta URL PULITA + JWT come dazn-token negli headers
         let mpdUrl = rawUrl;
         let daznToken = selectedSource.dazn_token || "";
@@ -386,6 +386,11 @@ export default function EventoPlayerPage() {
         if (warpMatch) {
             daznToken = warpMatch[2];
             mpdUrl = warpMatch[1] + (warpMatch[3] || "");
+        } else if (!daznToken) {
+            const daznParamMatch = rawUrl.match(/[?&]dazn-token=([^&]+)/);
+            if (daznParamMatch) {
+                daznToken = decodeURIComponent(daznParamMatch[1]);
+            }
         }
 
         // Costruisci ck= dal kid_key (formato "kid:key" o "kid:key,kid2:key2")
