@@ -6,6 +6,7 @@ import { createSlug } from "@/lib/slug";
 import { runScrape24H } from "@/lib/scraper";
 import { syncDaznLiveEvents } from "@/lib/sync-dazn-live";
 import { getSportzxChannels, refreshSportzxChannels } from "@/lib/sync-sportzx";
+import { getFctv33Channels } from "@/lib/sync-fctv33";
 
 export const dynamic = "force-dynamic";
 
@@ -130,13 +131,14 @@ export async function GET(request) {
     }
 
     try {
-        const [eventiData, sky1Data, sky2Data, catData, guideData, sportzxData] = await Promise.all([
+        const [eventiData, sky1Data, sky2Data, catData, guideData, sportzxData, fctv33Data] = await Promise.all([
             getStoreData("eventi_mpd"),
             getStoreData("sky1"),
             getStoreData("sky2"),
             getStoreData("categorie"),
             getStoreData("guida"),
-            getSportzxChannels()
+            getSportzxChannels(),
+            getFctv33Channels()
         ]);
 
         // Helper per estrarre lista canali da un oggetto Sky
@@ -545,6 +547,25 @@ export async function GET(request) {
                 orderedChannels.push({
                     ...c,
                     group: "SportzX",
+                    navbar: "eventi"
+                });
+            });
+        }
+
+        // 5b. Categoria Fissa FCTV33 Live (dall'API separata stream:fctv33_cached)
+        if (fctv33Data && Array.isArray(fctv33Data) && fctv33Data.length > 0) {
+            if (!customCategoriesList.some(c => c.nome === "FCTV33 Live")) {
+                customCategoriesList.push({
+                    id: "fctv33_live",
+                    nome: "FCTV33 Live",
+                    navbar: "eventi"
+                });
+            }
+            fctv33Data.forEach(c => {
+                if (!c || !c.title) return;
+                orderedChannels.push({
+                    ...c,
+                    group: "FCTV33 Live",
                     navbar: "eventi"
                 });
             });

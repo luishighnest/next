@@ -1,0 +1,1736 @@
+{
+  "source": "FCTV33 / DudeTV Live Streams",
+  "updated_at": "2026-09-26 19:51:04",
+  "total_events": 49,
+  "events": [
+    {
+      "id": 50002,
+      "event_title": "Formula 1",
+      "category": "F1",
+      "startTime": "2026/09/26 10:55:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 30,
+      "channels": [
+        {
+          "name": "SKY SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/1uutehmxgj/out/v1/3f3147d941f540109ed245604087ab84/cenc.mpd",
+          "kid_key": "6da852a2207613c03a164ba3598c5cdf:cc73c95a99827613acc7db72f343101f",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "APPLE TV FHD",
+          "mpd_url": "https://a96aivottlinear-a.akamaihd.net/OTTB/pdx-nitro/live/clients/dash/enc/ffmxrgs6gg/out/v1/b4e22263d7744de5938d9a940bae6755/cenc.mpd",
+          "kid_key": "637d72635e849ddf7d3927a75b6c7566:4e6da254e1e4886817e9987f8fe9cbfb",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "TSN SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cscevwljkq/out/v1/972185041b244140860b7d56398e9aaf/cenc.mpd",
+          "kid_key": "385ceb9714b75e0cef61254f80b31002:18dce92a2891fee68d21ede5173230f8",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "FANCODE - FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+          "kid_key": "1994b1df7dfd2e8a8d7b9bf3fb900285:22a1444b3da18e139191665b3d652835",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "SporTV BR FHD",
+          "mpd_url": "https://otte.live.fly.ww.aiv-cdn.net/gru-nitro/live/clients/dash/enc/6otiglnptp/out/v1/add7499679b0422cb6791f7701f95ecc/cenc.mpd",
+          "kid_key": "902e5ec0e3d05e665daa32fc23f4f59e:7b2322a273843921a43e2c61dac7cae3",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Mixed On Board",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/m4vsyc3qkj/out/v1/8efa8c75056f42f883de887bb2a14b52/cenc.mpd",
+          "kid_key": "90f17a7299852d9977658eb69920fbc6:165431e6578b659fbc8fa8c3135a1172",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Driver Tracker FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/raznosj3n9/out/v1/22a9ebf05a214ed5944576242a51a1a3/cenc.mpd",
+          "kid_key": "6bd55068e192831ff013f039f267c564:8e33799297baf59bc80537a49db25f30",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Driver Data FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/1iymopi0i2/out/v1/f5a0021818c5455dbf1e7b36d2c40bb3/cenc.mpd",
+          "kid_key": "890b9767c66d2b951da8ba8cdd0da465:cbf2e11eb0fc0be46d407034bb68d28a",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "APPLE TV ALT",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/jw2wckkiaa/out/v1/9a5089df42684b10aca83c19be6bbdf0/cenc.mpd",
+          "kid_key": "e106b27c6f3c840e255afe89f723a579:4ef75e04c9009236b0568752056956a7",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "DUDE Tv F1 HD",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/57011/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "RUSSIA FEED",
+          "mpd_url": "https://bl.rutube.ru/livestream/dce5a89ec8856d2116a985eb90fec5f2/index.m3u8?s=uWaNHQy62JEo3ot18uk19A&e=1790505833&scheme=https",
+          "kid_key": "",
+          "user_agent": "Mozilla",
+          "referer": ""
+        },
+        {
+          "name": "SKY F1 Italia [IT]",
+          "mpd_url": "https://g006-lin-it-cmaf-prd-cf.pcdn07.cssott02.com/v~1-0-0_e~1790503662_f~0_g~1_s~bea341b8-3cf3-488e-8fe2-35c1516fc718_u~fe3b84cbbdf5bc565dd1012e5306ba8dc943c4ee57b1c5b2555a972552c5c85df5468f3aaf797d103da27a492f48c64a_k~A_l~70_x~92c277b0e1fc705933a720ec2996cf6d/nowitlin2/Content/CMAF_CTR_H1/Live/channel(GmNkZkEhHwZyLEqoafQKOFLW)/master_2hr-all.mpd",
+          "kid_key": "1118a6477fbf274ef4ab397ae762cb61:31ba7c00dc9667233ecb2a6e7e24ee08",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "P1 Driver FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/0ejkymx0dm/out/v1/26898814c4204757b149e1653d511a84/cenc.mpd",
+          "kid_key": "3a4ff0e45b0fb0f6c00fc66cd259c70b:cc56f0db9ea85e383f085082877b4686",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "P2 Driver FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/gt8ix83g56/out/v1/ee46a44e718740f98194584d442eacc3/cenc.mpd",
+          "kid_key": "0c9800bda869d7f613011d522c501d11:6ca8a2d0d85cc1402fe0e6404102a334",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "P3 Driver FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/liozwj5ioj/out/v1/8d2b1a8a55344b93afde369364594e7c/cenc.mpd",
+          "kid_key": "8e40807bb624b04b1446cd2c9fd0ec06:777e32f84683ed539666e32776874c7f",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Lewis Hamilton CAM",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/4by8ikyb71/out/v1/3ec4d908305a43bc832e8cdc4cc37651/cenc.mpd",
+          "kid_key": "244d3ebf736fbbd1d9f11047e5ad41fe:e774919ed173f74bbadb9df6c8be418c",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Max Verstappen CAM",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/dhuaihfn7d/out/v1/b8640caf324f414bb936b4e1bcb253e1/cenc.mpd",
+          "kid_key": "5e28555f238d7125561a70d5ded440d5:eb4cde89627ce7e0e708780efd12df77",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Charles Leclerc CAM",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/3k08kzg5qg/out/v1/cc5d748630a04fdabd7535d763659e9d/cenc.mpd",
+          "kid_key": "0a5d925d4ca77fee0159c820cc4deb0b:f7c8882a181037a01ef1699ceae4e83d",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Lando Norris CAM",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/gu9nplf0re/out/v1/15b24dbb29e24a64b9f4e6b8e857fbc0/cenc.mpd",
+          "kid_key": "5ebdf77d8ab86f9a433ea2c5f6818406:c4b67549cf599d5dd99af3bafe1ce48e",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Oscar Piastri CAM",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/pdx-nitro/live/clients/dash/enc/ilsmqyvbu9/out/v1/4b03b766915743ab84f5858152abbf57/cenc.mpd",
+          "kid_key": "7919c8a9110f4a263ec6047ff950469b:81f018a4873ef55dc35b82947e32c49d",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "George Russell CAM",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/octudb6zux/out/v1/268ee83730664defba0ea35fc3d20ba4/cenc.mpd",
+          "kid_key": "596c11a1ec02138e48c8fb1c45e94a38:8f7fa08c4bcb789b1ca156e6a5b41365",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Kimi Antonelli CAM",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/xjyaspmwwp/out/v1/2a917dcaf9b44bd5b56662428505c371/cenc.mpd",
+          "kid_key": "c769942d91544ec621fc31d083377aae:0acf854c8a46b88525a6843f9cd94afa",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Sportscast FHD",
+          "mpd_url": "https://live.kinescopecdn.net/on-air/5bf2c07e-3604-42cf-959a-67ed8914ffd5/5b968989-eb20-4f90-bfaf-8f632a35ebe4/master.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "DAZN ESPANOL [FHD]",
+          "mpd_url": "https://embedindia.st/embed/azerbaijan-grand-prix---race-28838",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "SKY SPORTS [FHD]",
+          "mpd_url": "https://embedindia.st/embed/f1/2026/azerbaijan/race",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "APPLE TV [FHD]",
+          "mpd_url": "https://embedindia.st/embed/azerbaijan-grand-prix---race-28836",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "SKY ITALIA [FHD]",
+          "mpd_url": "https://embedindia.st/embed/azerbaijan-grand-prix---race-28840",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "VIAPLAY NL [FHD]",
+          "mpd_url": "https://embedindia.st/embed/azerbaijan-grand-prix---race-28842",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "SKY SPORTS HD",
+          "mpd_url": "https://edgestream3.pro/hls/hbfkazbkaznc49.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "SD SERVER",
+          "mpd_url": "http://193.47.62.59/hls/vlll.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50003,
+      "event_title": "MotoGP",
+      "category": "MotoGP",
+      "startTime": "2026/10/02 01:30:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 7,
+      "channels": [
+        {
+          "name": "TNT SPORTS",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/puehlftk5j/out/v1/f7f0da1ee112481ca0024e6d4dd97f4a/cenc.mpd",
+          "kid_key": "f3df7843080ae743bf865dc5fdf64c68:567c863bc12eb74788ea74888c042e1b",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "FANCODE FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/b3b3fkmrbl/out/v1/1084d5c9a97a4c5b9f9554c88f486646/cenc.mpd",
+          "kid_key": "82dfca238e8c4b430a3269db71965db9:a00b28caf4ac628e77a553d440c0ddca",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "SP0TV FHD",
+          "mpd_url": "https://qp-pldt-live-grp-13-prod.akamaized.net/out/u/dr_spotv2hd.mpd",
+          "kid_key": "7eea72d6075245a99ee3255603d58853:6848ef60575579bf4d415db1032153ed",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "MotoGP FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/wjeweupwyc/out/v1/8197c8e055c94a868623653ac55c10bf/cenc.mpd",
+          "kid_key": "e03f302ec4dabcccca82cc9f76731ec9:53ea1027d2bf2893a552cf15bc0366de",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream1.pro/hls/hbfkazbkaznc49.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "TNT SPORTS HD",
+          "mpd_url": "https://tmaxapp.site/8wirwjs76erftg/tntsports2.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "FANCODE FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/avqlywnuzx/out/v1/aefca6420f944a9482e117f315de535f/cenc.mpd",
+          "kid_key": "MTk5NGIxZGY3ZGZkMmU4YThkN2I5YmYzZmI5MDAyODU6MjJhMTQ0NGIzZGExOGUxMzkxOTE2djViMrQ2NTI4MzU=",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50004,
+      "event_title": "UFC",
+      "category": "UFC",
+      "startTime": "2026/09/26 21:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 15,
+      "channels": [
+        {
+          "name": "PARAMOUNT+ FHD",
+          "mpd_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/gsn1wwbmxw/out/v1/922d8785cef84a62a95b363f573b4e4b/1e932375-c091-45ae-8532-0bf8781d5973-cenc.mpd?aws_sessionId=db0fb409-d7c5-4159-b1fe-771aaba8cd15",
+          "kid_key": "4b9c9e8df5fdd02573897c9e41d90796:ae2b72cef909c8cb469f5b0fa9b61ea0",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "TNT SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/rhf2dwosdt/out/v1/ee550d2a68d846c797e6ce4de2e8b76d/cenc.mpd",
+          "kid_key": "69a5aa835a061ce64a630d1046727e40:d02feac8a999bd06bf4059bf33411749",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "PARAMOUNT+ HD",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/56706/load-playlist-multi?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://ubuntu.fromthyheart.site/dailymotion/live/playlist/25.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "DUDE Tv LIVE",
+          "mpd_url": "https://edgestream3.pro/hls/zeuryuegn48.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online&user-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+        },
+        {
+          "name": "PARAMOUNT+ [FHD]",
+          "mpd_url": "https://embedindia.st/embed/cryptocom-ufc-331-van-vs-pantoja-2-29012",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "PARAMOUNT+ ES [FHD]",
+          "mpd_url": "https://embedindia.st/embed/cryptocom-ufc-331-van-vs-pantoja-2-29013",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "PARAMOUNT+ PT [FHD]",
+          "mpd_url": "https://embedindia.st/embed/cryptocom-ufc-331-van-vs-pantoja-2-29014",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "SD TV (USE VPN)",
+          "mpd_url": "http://193.47.62.192/hls/FEEEEQ.m3u8?",
+          "kid_key": "",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0&Referer=http://www.fawanews.sc/&Origin=http://www.fawanews.sc/",
+          "referer": ""
+        },
+        {
+          "name": "SportsNet FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ccupb3gevq/out/v1/d9d54c61efab463981d1a7d04ceeb44c/cenc.mpd",
+          "kid_key": "60de674d9db66df9ba090e06871d3554:18071eac168232fc3d45549049c1de6b",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "PARAMOUNT+ HD",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/53500/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "PARAMOUNT+ S2",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/53504/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "PARAMOUNT+ BR",
+          "mpd_url": "https://rdcstream.life/live/paramountplus/index.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://playerembed.xyz"
+        },
+        {
+          "name": "SD TV (USE VPN)",
+          "mpd_url": "http://193.47.62.41/hls/suuu.m3u8?",
+          "kid_key": "",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0&Referer=http://www.fawanews.sc/&Origin=http://www.fawanews.sc/",
+          "referer": ""
+        },
+        {
+          "name": "DUDE Tv LIVE",
+          "mpd_url": "https://mainstreams.pro/hls/zeuryuegn48.m3u?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online&user-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+        }
+      ]
+    },
+    {
+      "id": 50005,
+      "event_title": "WWE NXT",
+      "category": "WWE",
+      "startTime": "2026/09/30 00:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv NXT Live",
+          "mpd_url": "https://ubuntu.fromthyheart.site/dailymotion/live/playlist/4.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "NXT LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/wwe/2026-08-04",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50006,
+      "event_title": "WWE",
+      "category": "WWE",
+      "startTime": "2026/10/01 00:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 5,
+      "channels": [
+        {
+          "name": "TSN SPORTS",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/cjglydxghe/out/v1/8977baf175da4b94873194613dd3fe55/cenc.mpd",
+          "kid_key": "85b277daf5aae05833fe43a68f587968:d52d7e9bc0bcd98787efd547ac91eca0",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "tbs SPORTS HD",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/54227/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "Fox Sports Premium",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/dash/enc/fdx74zqzhu/out/v1/7d7a8c6981a842b98a683e9fbfe51d17/cenc.mpd",
+          "kid_key": "9f327d24c66fbd84e15ab5c9ead7c7a4:83837185529c0c4048f81386c2d36426",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "BACKUP HD",
+          "mpd_url": "https://27lftgqlgzmy.windows-devs.top/AccessLog2/83_FHD/apache.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://27lftgqlgzmy.windows-devs.top/"
+        },
+        {
+          "name": "BACKUP SD",
+          "mpd_url": "https://27lftgqlgzmy.windows-devs.top/AccessLog2/108087_HD/apache.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://27lftgqlgzmy.windows-devs.top/"
+        }
+      ]
+    },
+    {
+      "id": 50008,
+      "event_title": "India vs West Indies",
+      "category": "Cricket",
+      "startTime": "2026/09/27 08:30:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://video.twimg.com/amplify_video/1919602814160125952/pl/t5p2RHLI21i-hXga.m3u8?variant_version=1&tag=14",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50009,
+      "event_title": "ONE Friday Fights",
+      "category": "Boxing",
+      "startTime": "2026/10/02 12:30:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 4,
+      "channels": [
+        {
+          "name": "One Fight FHD",
+          "mpd_url": "https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/kkfdbi2d1c/out/v1/a5b9b32dafd5499688240287ef8c9b90/cenc.mpd",
+          "kid_key": "308006101c8fd0262c0f529319b9c127:37683aadc75b1450efa82d62c647984d",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "Server 2",
+          "mpd_url": "https://tglmp02.akamaized.net/out/v1/3170252e3fb0453085f2f4b0f8401a6b/manifest.mpd",
+          "kid_key": "60dc08aae52f4c0b806a8e43f24a12c8:30d5b579966d822b215ec51a91d8a271",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "Server 3",
+          "mpd_url": "https://v4-pan-n79-cdn-01.live.cdn.cgates.lt/live/dash/561402/index.mpd",
+          "kid_key": "a6b967afcb974bb5a549377b4f09befd:87d993257a099324ccd0215475fc61a0",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "Server 4",
+          "mpd_url": "https://fastly.live.brightcove.com/1850722103624061910/ap-southeast-1/6195549636001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoiaTE3dzIxLmVncmVzcy5zYjBmOGsiLCJhY2NvdW50X2lkIjoiNjE5NTU0OTYzNjAwMSIsImVobiI6ImZhc3RseS5saXZlLmJyaWdodGNvdmUuY29tIiwiaXNzIjoiYmxpdmUtcGxheWJhY2stc291cmNlLWFwaSIsInN1YiI6InBhdGhtYXB0b2tlbiIsImF1ZCI6WyI2MTk1NTQ5NjM2MDAxIl0sImp0aSI6IjE4NTA3MjIxMDM2MjQwNjE5MTAifQ.MQrZwY5puqZGRgWL843gOZ-Y7i2jUGB5McfZKwoOB1I/playlist-hls.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50010,
+      "event_title": "WWE Raw",
+      "category": "WWE",
+      "startTime": "2026/09/29 00:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 7,
+      "channels": [
+        {
+          "name": "DUDE Tv WWE",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/54800/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "DUDE Tv RAW",
+          "mpd_url": "https://ubuntu.fromthyheart.site/dailymotion/live/playlist/1.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "WWE RAW [FHD]",
+          "mpd_url": "https://embedindia.st/embed/wwe/2026-08-24",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream2.pro/hls/zeuryuegn48.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://26hrwgorfcmh.windows-devs.top/AccessLog2/83_FHD/apache.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://26hrwgorfcmh.windows-devs.top/"
+        },
+        {
+          "name": "DUDE Tv HD",
+          "mpd_url": "https://26hrwgorfcmh.windows-devs.top/AccessLog2/108085_LQ/apache.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://26hrwgorfcmh.windows-devs.top/"
+        },
+        {
+          "name": "Backup SD",
+          "mpd_url": "https://27lftgqlgzmy.windows-devs.top/AccessLog2/83_FHD/apache.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://27lftgqlgzmy.windows-devs.top/"
+        }
+      ]
+    },
+    {
+      "id": 50011,
+      "event_title": "WWE Smackdown Friday",
+      "category": "WWE",
+      "startTime": "2026/10/03 00:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 8,
+      "channels": [
+        {
+          "name": "DUDE Tv WWE",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/54963/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "WWE LIVE FHD",
+          "mpd_url": "https://ubuntu.fromthyheart.site/dailymotion/live/playlist/4.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "SPX LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/wwe/2026-09-18",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://edgestream6.pro/hls/zeuryuegn48.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "DUDE Tv TV+ HD",
+          "mpd_url": "https://26hrwgorfcmh.windows-devs.top/AccessLog2/83_FHD/apache.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://26hrwgorfcmh.windows-devs.top/"
+        },
+        {
+          "name": "HD QUALITY",
+          "mpd_url": "https://26hrwgorfcmh.windows-devs.top/AccessLog2/108085_HD/apache.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://26hrwgorfcmh.windows-devs.top/"
+        },
+        {
+          "name": "LOW QUALITY",
+          "mpd_url": "https://android-database1.firebase-api.com/AccessLog2/108085_HD/apache.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://android-database1.firebase-api.com"
+        },
+        {
+          "name": "USA TV",
+          "mpd_url": "https://g001-sle-us-cmaf-prd-ak.pcdn03.cssott.com/Content/CMAF_OS1-CTR-4s-v2/Live/channel(12010340-12010340-4445585a62764)/master_2hr.mpd",
+          "kid_key": "58551b13211b37d5b325d67e5c6cabef:3b4c3f8b4236fc57d66cdb54a606fe41",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50032,
+      "event_title": "San Diego Padres",
+      "category": "MLB",
+      "startTime": "2026/09/27 00:40:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv LIVE",
+          "mpd_url": "https://edgestream1.pro/hls/jzabfazkbf27.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-24/laa-sea",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50033,
+      "event_title": "Houston Astros",
+      "category": "MLB",
+      "startTime": "2026/09/27 01:40:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream4.pro/hls/hfzljfahzcax29.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-24/sd-lad",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50034,
+      "event_title": "Seattle Mariners",
+      "category": "MLB",
+      "startTime": "2026/09/27 01:40:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream6.pro/hls/hefbafbakx28.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/ari-sd",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50054,
+      "event_title": "CFL",
+      "category": "CFL",
+      "startTime": "2026/09/26 19:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "TSN SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/lsibpqruq1/out/v1/748887d614a84913ba8bcdf3c82823e6/cenc.mpd",
+          "kid_key": "d3250252765347a0c2603c6cb4869f8c:0c19319460da7e9ed816db46ce839b37",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "TSN4 SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd",
+          "kid_key": "abc5b2883121012850ebda05b528c5ec:e5250924f4b738905f7163a0134587a7",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50060,
+      "event_title": "England vs Sri Lanka",
+      "category": "Cricket",
+      "startTime": "2026/09/27 09:30:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 7,
+      "channels": [
+        {
+          "name": "WILLOW - FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/50fdmgdsle/out/v1/b71c6576530d40c0bbb5b5374a9e869d/cenc.mpd",
+          "kid_key": "1cfa1f2f31922239df0f3f27efd76344:ac949494b59d3b4442b6e999525d341b",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "SKY CRICKET FHD",
+          "mpd_url": "https://bl.rutube.ru/livestream/7c13a51576b9ff2601f08f5d57dd5169/index.m3u8?s=uiXES2ePt7xTpQnbJxn7Dg&e=2074684474&scheme=https",
+          "kid_key": "",
+          "user_agent": "Mozilla",
+          "referer": ""
+        },
+        {
+          "name": "WILLOW - ALT",
+          "mpd_url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/50fdmgdsle/out/v1/b71c6576530d40c0bbb5b5374a9e869d/cenc.mpd",
+          "kid_key": "1cfa1f2f31922239df0f3f27efd76344:ac949494b59d3b4442b6e999525d341b",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "TAPMAD - FHD",
+          "mpd_url": "https://saseries.akamaized.net/hls/live/2110097/2353jkiL-tapmad/master.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://tapmad.com/"
+        },
+        {
+          "name": "SonyLiv",
+          "mpd_url": "https://sonydaimenew.akamaized.net/hls/live/2120300/criclive2409/ENG/std_lrh-800300010.m3u8?hdnea=exp=1790291145~acl=/*~id=26475309875266514221968344653694~hmac=038751f8a3857d072fedcb68258b3743585361245be21946592d695af630dea5",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "SKY CRICKET HD",
+          "mpd_url": "https://papacito.cfd/m3u/now49499404/live.m3u8",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.59/hls/ELLLA.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50062,
+      "event_title": "South Africa vs Australia",
+      "category": "Cricket",
+      "startTime": "2026/09/27 08:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 5,
+      "channels": [
+        {
+          "name": "WILLOW - FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/alfdweafqm/out/v1/a429fd66def345f7baf21a2a43c12dfd/cenc.mpd",
+          "kid_key": "71a0d47149350b92846f380f637114f8:bf5386127fc245e3525c39060550d621",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "SKY CRICKET FHD",
+          "mpd_url": "https://bl.rutube.ru/livestream/7c13a51576b9ff2601f08f5d57dd5169/index.m3u8?s=uiXES2ePt7xTpQnbJxn7Dg&e=2074684474&scheme=https",
+          "kid_key": "",
+          "user_agent": "Mozilla",
+          "referer": ""
+        },
+        {
+          "name": "WILLOW - ALT",
+          "mpd_url": "https://abfjk4haaaaaaaamkitc5445rybm6.bia-cf.live.pv-cdn.net/iad-nitro/live/clients/dash/enc/alfdweafqm/out/v1/a429fd66def345f7baf21a2a43c12dfd/cenc.mpd",
+          "kid_key": "71a0d47149350b92846f380f637114f8:bf5386127fc245e3525c39060550d621",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "TAPMAD - FHD",
+          "mpd_url": "https://saseries.akamaized.net/hls/live/2110097/tapmad123321/master.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://tapmad.com/&origin=https://tapmad.com"
+        },
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.59/hls/RRRRA.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50063,
+      "event_title": "[OLD] BC Lions vs Saskatchewan",
+      "category": "CFL",
+      "startTime": "2026/09/26 02:30:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "TSN SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w0rehjjrwe/out/v1/69a2a7041395406b970598f61680e7cf/cenc.mpd",
+          "kid_key": "14eeabf30c14b7fbf3008c03099ce011:17d2ac8dbc5429bd70af3433aa12158d",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "TSN4 SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd",
+          "kid_key": "abc5b2883121012850ebda05b528c5ec:e5250924f4b738905f7163a0134587a7",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50070,
+      "event_title": "IFA Shield 2026",
+      "category": "Football",
+      "startTime": "2026/09/26 09:30:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "FANCODE (IND)",
+          "mpd_url": "https://dai-fancode.pages.dev/mumbai/4249526_english_hls_a8622be15a66305_1ta-di_h264/index.m3u8",
+          "kid_key": "",
+          "user_agent": "ReactNativeVideo/9.11.1 (Linux;Android 13) AndroidXMedia3/1.6.1&Referer=https://fancode.com/",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50075,
+      "event_title": "Detroit Tigers vs Pittsburgh Pirates",
+      "category": "MLB",
+      "startTime": "2026/09/26 17:10:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream4.pro/hls/ihfazugfyjcazich17.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/chc-bos/game-2",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50076,
+      "event_title": "Blue Jays vs Cincinnati Reds",
+      "category": "MLB",
+      "startTime": "2026/09/26 19:07:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream5.pro/hls/Czajafjihafch18.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streame.center&Origin=https://streame.center"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/pit-det",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50077,
+      "event_title": "San Francisco Giants vs Dodgers",
+      "category": "MLB",
+      "startTime": "2026/09/26 20:05:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream4.pro/hls/bzagLHzach19.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "SPX LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/tb-phi",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50078,
+      "event_title": "Washington Nationals vs Mets",
+      "category": "MLB",
+      "startTime": "2026/09/26 16:35:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream3.pro/hls/jkzahzadach20.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/nym-wsh",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50079,
+      "event_title": "Miami Marlins vs Atlanta Braves",
+      "category": "MLB",
+      "startTime": "2026/09/26 20:10:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 3,
+      "channels": [
+        {
+          "name": "DUDE Tv MLB",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/57010/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream2.pro/hls/bzagLHzach19.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-24/ari-col",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50080,
+      "event_title": "Minnesota Twins vs Texas Rangers",
+      "category": "MLB",
+      "startTime": "2026/09/26 20:10:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream3.pro/hls/ijfnakfidch22.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/cin-tor",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50081,
+      "event_title": "White Sox vs Colorado Rockies",
+      "category": "MLB",
+      "startTime": "2026/09/26 23:10:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream3.pro/hls/jnzkdzjfanch23.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/atl-mia",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50082,
+      "event_title": "Royals vs Cleveland Guardians",
+      "category": "MLB",
+      "startTime": "2026/09/26 23:10:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream5.pro/hls/kjhfzua25.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/col-chw",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50083,
+      "event_title": "Milwaukee Brewers vs Cardinals",
+      "category": "MLB",
+      "startTime": "2026/09/26 23:10:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream6.pro/hls/fskjanach24.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-25/cle-kc",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50084,
+      "event_title": "Phillies vs Tampa Bay Rays",
+      "category": "MLB",
+      "startTime": "2026/09/26 23:15:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://edgestream7.pro/hls/kjhfzua25.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://streamscenter.online/&Origin=https://streamscenter.online"
+        },
+        {
+          "name": "MLB LIVE [FHD]",
+          "mpd_url": "https://embedindia.st/embed/mlb/2026-09-24/hou-ath",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50093,
+      "event_title": "Mexico vs Colombia",
+      "category": "FIFA Friendlies",
+      "startTime": "2026/09/27 01:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "CANAL5 FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ntkdl68eob/out/v1/bd5dfb7676994383881bc6e71877d29d/cenc.mpd",
+          "kid_key": "d695093ea3e66d75a4d213a3e2cbf360:01be3f645e89a067d2786c295f68dde4",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50094,
+      "event_title": "England vs Spain",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 18:45:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "beIN ENGLISH FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/8m8cd46i1t/out/v1/83985c68e4174e90a58a1f2c024be4c9/cenc.mpd?",
+          "kid_key": "0b42be2664d7e811d04f3e504e0924c5:ae24090123b8c72ac5404dc152847cb8",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "FOX SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
+          "kid_key": "09453ce820d65fbc675de3185f9e454c:98cff9600995fa381c76fdacf3c7edae",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50095,
+      "event_title": "Czechia vs Croatia",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 18:45:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 9,
+      "channels": [
+        {
+          "name": "PRIME VIDEO FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/lhr-nitro/live/clients/dash/enc/78yadthwhn/out/v1/7ce475ea35b74693abdf651e2ee2fef3/cenc.mpd?",
+          "kid_key": "62dbac124bbef865507610070019f875:3dca8ca0a86cca296de7f91583d88939",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "beIN ENGLISH FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+          "kid_key": "7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "FOX SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
+          "kid_key": "09453ce820d65fbc675de3185f9e454c:98cff9600995fa381c76fdacf3c7edae",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "RAI 4K [Italy]",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/di5rbsugx5/out/v1/45b59ec03e764604a9bc745f5a40d01d/cenc.mpd?",
+          "kid_key": "b9219e0148df539f6b63b295945987e7:8b18f9117403acdd0d5ad000772f2062",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "DAZN SPORTS HD",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/57058/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://live.vivo155.com/live/hd-en-1-4517795.m3u8?txSecret=d643e4c7474cdbd0f14d89362972f8b8&txTime=6AB6D26C",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://player.787200.com/"
+        },
+        {
+          "name": "SonyLiv (ASIA)",
+          "mpd_url": "https://sonymtmnew-akamaized.pages.dev/hls/live/2120300/Footlive2509/ENG/master.m3u8",
+          "kid_key": "",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:155.0) Gecko/20100101 Firefox/155.0&Referer=https://www.sonyliv.com/&Origin=https://www.sonyliv.com&x-playback-session-id=b55bfb0389d12d9ce40b6bac1e913730-1790360103079",
+          "referer": ""
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://www.rtmpcdn.com/live/dd713707-0e3c-4608-a515-71f8ae0968d0.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        },
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.41/hls/LIIIAAAQ.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50096,
+      "event_title": "North Macedonia vs Switzerland",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 18:45:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "beIN ENGLISH FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+          "kid_key": "335dad778109954503dcbb21dc92015f:24bfd75d436cbf73168a2a2dccd40281",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50097,
+      "event_title": "Slovakia vs Moldova",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 18:45:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://video.twimg.com/amplify_video/1919602814160125952/pl/t5p2RHLI21i-hXga.m3u8?variant_version=1&tag=14",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50098,
+      "event_title": "Albania vs Belarus",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 18:45:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 7,
+      "channels": [
+        {
+          "name": "DAZN SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/iad-nitro/live/clients/dash/enc/l67xzkf5jm/out/v1/345cb778def2457892ea37c2c826d8c5/cenc.mpd?",
+          "kid_key": "544bff94983cbe339bc2d57f05ad61dc:26ab154aba9b1f7aabeac4c48bcd0dc7",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "beIN ENGLISH FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+          "kid_key": "335dad778109954503dcbb21dc92015f:24bfd75d436cbf73168a2a2dccd40281",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "FOX SOCCER+ HD",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/57053/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://live.vivo155.com/live/hd-en-1-4517799.m3u8?txSecret=8371efd438789f9776e310cbf6e420e3&txTime=6AB6D2C1",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://player.787200.com/"
+        },
+        {
+          "name": "SonyLiv (Asia)",
+          "mpd_url": "https://sonymtmnew-akamaized.pages.dev/hls/live/2037142/Footlive2509/ENG/master.m3u8",
+          "kid_key": "",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:155.0) Gecko/20100101 Firefox/155.0&Referer=https://www.sonyliv.com/&Origin=https://www.sonyliv.com&x-playback-session-id=d70b97cc5216366d3abc85b1926731d5-1790360403133",
+          "referer": ""
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://www.rtmpcdn.com/live/97549ec0-bc8d-4970-ac61-af1cf3312f22.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        },
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.55/hls/LIIIAAA.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50099,
+      "event_title": "Iceland vs Estonia",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 16:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "SporTV BR FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w8kwdfmlgs/out/v1/3aa321e477504937a439b602e078eb18/cenc.mpd",
+          "kid_key": "51c0ef23b17297e5c01cd7f36dd0a6ce:8823f713ba6fdb9bbe0a2ad82d309a4b",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50100,
+      "event_title": "Bulgaria vs Luxembourg",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 16:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "beIN ENGLISH FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ghwcl6hv68/out/v1/83536910d8034e9b9895a20fbe1c1687/cenc.mpd",
+          "kid_key": "335dad778109954503dcbb21dc92015f:24bfd75d436cbf73168a2a2dccd40281",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50101,
+      "event_title": "Faroe Islands vs Kazakhstan",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 16:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://video.twimg.com/amplify_video/1919602814160125952/pl/t5p2RHLI21i-hXga.m3u8?variant_version=1&tag=14",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50102,
+      "event_title": "San Marino vs Finland",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 16:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "beIN ENGLISH FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+          "kid_key": "7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50103,
+      "event_title": "Slovenia vs Scotland",
+      "category": "UEFA Nations",
+      "startTime": "2026/09/26 13:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 9,
+      "channels": [
+        {
+          "name": "beIN ENGLISH FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/q4u5nwaogz/out/v1/18de6d3e65934f3a8de4358e69eab86c/cenc.mpd",
+          "kid_key": "7995c724a13748ed970840a8ab5bb9b3:67bdaf1e2175b9ff682fcdf0e2354b1e",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "FOX SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/awxnrqkbo5/out/v1/716529a4091947b0877e6cb80dbd6ccb/cenc.mpd",
+          "kid_key": "09453ce820d65fbc675de3185f9e454c:98cff9600995fa381c76fdacf3c7edae",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "SporTV BR FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/w8kwdfmlgs/out/v1/3aa321e477504937a439b602e078eb18/cenc.mpd",
+          "kid_key": "51c0ef23b17297e5c01cd7f36dd0a6ce:8823f713ba6fdb9bbe0a2ad82d309a4b",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "SPORT1 CZ FHD",
+          "mpd_url": "https://dash2.antik.sk/stream/nvidia_sport_1/playlist_cenc.mpd",
+          "kid_key": "11223344556677889900112233445566:4b80724d0ef86bcb2c21f7999d67739d",
+          "user_agent": "",
+          "referer": ""
+        },
+        {
+          "name": "FOX SPORTS HD",
+          "mpd_url": "https://chatgpt.hereisman.net/playlist/57098/load-playlist?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://gooz.aapmains.net"
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://www.rtmpcdn.com/live/e27fbc8c-02e8-4a1d-aab6-d8178c23903d.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        },
+        {
+          "name": "SonyLiv (ASIA)",
+          "mpd_url": "https://sonymtmnew-akamaized.pages.dev/hls/live/2120299/UNL_slov2609/ENG/master.m3u8",
+          "kid_key": "",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:155.0) Gecko/20100101 Firefox/155.0&Referer=https://www.sonyliv.com/&Origin=https://www.sonyliv.com&x-playback-session-id=08285a6d348ab8885d7ce64e1e76457d-1790426101731",
+          "referer": ""
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://edgestream1.pro/hls/24SDAZFcsqnj24.m3u8",
+          "kid_key": "",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0&Referer=https://streame.center&Origin=https://streame.center",
+          "referer": ""
+        },
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.55/hls/YCCCQQQQ.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50104,
+      "event_title": "USA vs Peru",
+      "category": "FIFA Friendlies",
+      "startTime": "2026/09/26 20:30:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 3,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://live.vivo155.com/live/sd-1-4642689.m3u8?txSecret=47fbac22187b58d1a055a3a07123f495&txTime=6AB6D4F2",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "https://player.787200.com/"
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://www.rtmpcdn.com/live/29557de5-4e27-45dd-8652-8a61e83d497a.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        },
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.50/hls/DTTTA.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50105,
+      "event_title": "Canada vs Chile",
+      "category": "FIFA Friendlies",
+      "startTime": "2026/09/26 23:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "TSN SPORTS FHD",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/ihys8nw4wv/out/v1/fde190f369484bc6b6117cc16cd82a9f/cenc.mpd",
+          "kid_key": "abc5b2883121012850ebda05b528c5ec:e5250924f4b738905f7163a0134587a7",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50106,
+      "event_title": "South Africa vs Guinea",
+      "category": "AFCON",
+      "startTime": "2026/09/26 13:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 3,
+      "channels": [
+        {
+          "name": "beIN SPORTS FHD",
+          "mpd_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/srlimy4gs5/out/v1/2469724fa7754a4da6861d8ba80de958/4d1574fd-a518-4435-bf88-d7a1c0b4a932-cenc.mpd?aws_sessionId=2883e430-ab17-4b9f-b7bb-5d75c9b9b90b",
+          "kid_key": "27759a440e8ad821b800b3de00cd5851:1b8743adee559f27845f55e8b4d639fe",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://www.rtmpcdn.com/live/ab7dc69c-9f26-4d40-8f55-da536b6ec524.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        },
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.44/hls/YCCCQQQ.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50107,
+      "event_title": "Kenya vs Eritrea",
+      "category": "AFCON",
+      "startTime": "2026/09/26 13:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 3,
+      "channels": [
+        {
+          "name": "beIN SPORTS FHD",
+          "mpd_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/ybtffbru41/out/v1/27aac1f9df984d65a9d4b95d234f4468/5d0a3634-30e3-4525-8a19-069cac1ba172-cenc.mpd?aws_sessionId=e3b9f047-75fa-48ef-a27e-c20164359346",
+          "kid_key": "74cbe15488783fab07ff8c702fabafcd:bb607803a49c2d6104f845e7886c971c",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "HD SERVER",
+          "mpd_url": "https://www.rtmpcdn.com/live/d93be377-5c59-4c1c-aa08-ae83409861a5.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        },
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.50/hls/DUUUUAAAA.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50108,
+      "event_title": "Celta Fortuna vs CE Sabadell",
+      "category": "LaLiga 2",
+      "startTime": "2026/09/26 16:30:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://video.twimg.com/amplify_video/1919602814160125952/pl/t5p2RHLI21i-hXga.m3u8?variant_version=1&tag=14",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50109,
+      "event_title": "Tenerife vs Cádiz",
+      "category": "LaLiga 2",
+      "startTime": "2026/09/26 16:30:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://video.twimg.com/amplify_video/1919602814160125952/pl/t5p2RHLI21i-hXga.m3u8?variant_version=1&tag=14",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50110,
+      "event_title": "Granada vs FC Andorra",
+      "category": "LaLiga 2",
+      "startTime": "2026/09/26 14:15:00 +0000",
+      "isLiveNow": false,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "DUDE Tv Live",
+          "mpd_url": "https://video.twimg.com/amplify_video/1919602814160125952/pl/t5p2RHLI21i-hXga.m3u8?variant_version=1&tag=14",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50112,
+      "event_title": "Cambridge vs AFC Wimbledon",
+      "category": "League One 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "startTime": "2026/09/26 14:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "PARAMOUNT+ FHD",
+          "mpd_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/jdubsyou6r/out/v1/a19cdd4e6b1a4d499df5d553aedecf47/2d99c74f-ed89-4d32-89fa-6ad53d82d56c-cenc.mpd?aws_sessionId=e838d6e0-eb9e-4b6b-b589-f8ef2fbda888",
+          "kid_key": "c013d0b856c181196059c29c1dc67d12:d9f8b19d1643cab8136a2391e8fdd6a7",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "CBS NETWORK",
+          "mpd_url": "https://otte.cache.aiv-cdn.net/bom-nitro/live/clients/dash/enc/5qz8wmdome/out/v1/b9323e853dce427eac214b77bd48a204/cenc.mpd",
+          "kid_key": "d9623774ac5c8c351aafe97c5fe70267:5164e6d05164a2d65fa8fcc962aa4861",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        }
+      ]
+    },
+    {
+      "id": 50113,
+      "event_title": "Stockport vs Peterborough",
+      "category": "League One 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "startTime": "2026/09/26 14:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "PARAMOUNT+ FHD",
+          "mpd_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-iad-prod/enc/ipnqdik8d9/out/v1/3e41a3c73f204a7d8821b1dcc81e8c5f/4b3e99e2-0176-4e3f-8cd6-cac572b934f7-cenc.mpd?aws_sessionId=ed165228-287f-4364-a1ef-315953e30a58",
+          "kid_key": "649213f353bf0afb365fff6b1fc473a5:8fca035431d356f360731d2882095c14",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "SD SERVER",
+          "mpd_url": "http://193.47.62.50/hls/UPPPQ.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50114,
+      "event_title": "Wycombe Wanderers vs Reading",
+      "category": "League One 🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+      "startTime": "2026/09/26 14:00:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 2,
+      "channels": [
+        {
+          "name": "PARAMOUNT+ FHD",
+          "mpd_url": "https://otte.live.fly.ww.aiv-cdn.net/pdx-nitro/startover/clients/dash/manipulated-manifest-pdx-prod/enc/upyorh5cgz/out/v1/88afa5b232d6401ab7bd6f9345b22987/282b7c9f-2621-480e-865d-8c26340cb471-cenc.mpd?aws_sessionId=4e833ba8-1bda-4b2c-b3e0-7a3aa41326b5",
+          "kid_key": "111ca67f6b5b61a6902deb53f2b6bb5b:eef347fdca1826776f4bc13265e2cf15",
+          "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",
+          "referer": ""
+        },
+        {
+          "name": "SD SERVER",
+          "mpd_url": "http://193.47.62.50/hls/UPPPQQQ.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    },
+    {
+      "id": 50115,
+      "event_title": "Vietnam vs Philippines",
+      "category": "FIFA ASEAN Cup",
+      "startTime": "2026/09/26 12:30:00 +0000",
+      "isLiveNow": true,
+      "channels_count": 1,
+      "channels": [
+        {
+          "name": "LOW SERVER",
+          "mpd_url": "http://193.47.62.50/hls/FPPPVVAAA.m3u8?",
+          "kid_key": "",
+          "user_agent": "",
+          "referer": "http://www.fawanews.sc/&Origin=http://www.fawanews.sc/"
+        }
+      ]
+    }
+  ]
+}
