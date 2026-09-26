@@ -1821,12 +1821,12 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     box-sizing: border-box;
 }
 
-/* Gruppo Sinistro: Logo */
+/* Gruppo Sinistro: Logo + Tasti Categorie affiancati subito a destra */
 .dock-group-left {
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
+    flex: 1;
+    gap: 0;
     line-height: 1;
 }
 
@@ -1840,6 +1840,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
+    margin-right: 24px;
     transition: opacity 0.2s ease;
     flex-shrink: 0;
 }
@@ -1865,17 +1866,17 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     text-transform: uppercase;
 }
 
-/* Gruppo Centrale: Posizionato affiancato al logo con spaziatura uguale alla foto di riferimento */
+/* Gruppo Centrale: Posizionato SUBITO a destra del logo senza posizionamenti assoluti o margini enormi */
 .dock-group-center {
-    position: relative;
-    left: auto;
-    top: auto;
-    transform: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 32px;
-    height: 100%;
-    margin-left: 64px;
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    height: 100% !important;
+    margin-left: 0 !important;
 }
 
 .dock-nav-link {
