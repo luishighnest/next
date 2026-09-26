@@ -75,13 +75,13 @@
       },
       {
         "ora": "08:55",
-        "fine": "10:30",
+        "fine": "10:35",
         "titolo": "Azerbaijan: Feature Race 2",
         "descrizione": "... Formula 2. - Dal Circuito di Baku, Azerbaijan.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a41ac2d5-2c2e-44b0-82dc-39507f4181c4/background/600"
       },
       {
-        "ora": "10:30",
+        "ora": "10:35",
         "fine": "11:00",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
@@ -431,24 +431,24 @@
       },
       {
         "ora": "17:00",
+        "fine": "17:30",
+        "titolo": "Sport 24 Today",
+        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
+        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+      },
+      {
+        "ora": "17:30",
         "fine": "18:00",
-        "titolo": "Azerbaijan",
-        "descrizione": "Analizziamo insieme il Gran Premio di Formula Uno in Azerbaijan.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a2111ad0-d9d7-422f-b7b8-f22bcefb662a/background/600"
+        "titolo": "Sport 24 Today",
+        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
+        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
       },
       {
         "ora": "18:00",
-        "fine": "18:30",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
-      },
-      {
-        "ora": "18:30",
         "fine": "19:00",
-        "titolo": "Sport 24 Today",
-        "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
-        "immagine": "https://img-guidatv.org/929/sport-24/0.jpg"
+        "titolo": "Azerbaijan",
+        "descrizione": "Analizziamo insieme il Gran Premio di Formula Uno in Azerbaijan.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a2111ad0-d9d7-422f-b7b8-f22bcefb662a/background/600"
       },
       {
         "ora": "19:00",
@@ -466,13 +466,13 @@
       },
       {
         "ora": "20:00",
-        "fine": "20:45",
+        "fine": "20:35",
         "titolo": "Prepartita Nations League",
         "descrizione": "La presentazione della prima giornata con le interviste, le analisi e gli approfondimenti. In studio Sara Benci con Dario Massara, Lorenzo Minotti e Gianfranco Teotino",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2e05cdb3-0f14-4018-b406-a365c7936def/background/600"
       },
       {
-        "ora": "20:45",
+        "ora": "20:35",
         "fine": "21:00",
         "titolo": "Sport 24 Today",
         "descrizione": "Le notizie e i commenti del giorno, le anteprime e l'attualita' con servizi, commenti, interviste e collegamenti.",
@@ -799,13 +799,13 @@
       },
       {
         "ora": "08:55",
-        "fine": "10:25",
+        "fine": "10:35",
         "titolo": "Azerbaijan: Feature Race 2",
         "descrizione": "... Formula 2. - Dal Circuito di Baku, Azerbaijan.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a41ac2d5-2c2e-44b0-82dc-39507f4181c4/background/600"
       },
       {
-        "ora": "10:25",
+        "ora": "10:35",
         "fine": "10:45",
         "titolo": "Il nuovo Max",
         "descrizione": "Il nuovo Max",
@@ -827,13 +827,13 @@
       },
       {
         "ora": "12:55",
-        "fine": "14:45",
+        "fine": "15:00",
         "titolo": "GP Azerbaijan: Gara",
         "descrizione": "A Baku si corre eccezionalmente di sabato. Antonelli, gia' otto vittorie in stagione, guida la classifica con 81 punti su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7bae4f1d-cf65-433e-8746-97b39bcfed7d/background/600"
       },
       {
-        "ora": "14:45",
+        "ora": "15:00",
         "fine": "15:30",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
@@ -994,6 +994,13 @@
       },
       {
         "ora": "06:00",
+        "fine": "06:20",
+        "titolo": "Programmazione da definire",
+        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
+        "immagine": ""
+      },
+      {
+        "ora": "06:20",
         "fine": "06:55",
         "titolo": "Italia: Superpole Race",
         "descrizione": "Le gare della FIM Sportbike World Championship.",
@@ -1043,13 +1050,13 @@
       },
       {
         "ora": "11:10",
-        "fine": "11:40",
+        "fine": "11:45",
         "titolo": "Italia: Superpole",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/16112dff-6229-44db-9dd4-c0dbd83a17b8/background/600"
       },
       {
-        "ora": "11:40",
+        "ora": "11:45",
         "fine": "11:55",
         "titolo": "San Marino E Della Riviera Di Rimini",
         "descrizione": "... Inside Ducati. - Il dietro le quinte del team Ducati Lenovo del gran premio raccontato attraverso le immagini e le parole dei piloti e dei tecnici del team di Borgo Panigale",
@@ -1211,8 +1218,8 @@
       {
         "ora": "00:00",
         "fine": "02:00",
-        "titolo": "Finale 3°/4° Posto",
-        "descrizione": "... Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
+        "titolo": "Slovenia - Finlandia Finale 3°/4° Posto",
+        "descrizione": "... Posto Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8db587b7-120a-4733-b2ac-0f3becd5834b/background/600"
       },
       {
@@ -1288,8 +1295,8 @@
       {
         "ora": "16:50",
         "fine": "19:00",
-        "titolo": "Finale 3°/4° Posto",
-        "descrizione": "... Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
+        "titolo": "Slovenia - Finlandia Finale 3°/4° Posto",
+        "descrizione": "... Finale 3^/4^ Posto Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8db587b7-120a-4733-b2ac-0f3becd5834b/background/600"
       },
       {
@@ -1323,8 +1330,8 @@
       {
         "ora": "20:55",
         "fine": "23:00",
-        "titolo": "Finale 1°/2° Posto",
-        "descrizione": "... Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
+        "titolo": "Polonia - Francia Finale 1°/2° Posto",
+        "descrizione": "... 1^/2^ Posto Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f9d5f1dc-6da8-4ce9-9fbd-a88d957bfcc1/background/600"
       },
       {
@@ -1348,28 +1355,21 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "00:40",
-        "titolo": "2a Giornata",
-        "descrizione": "Sintesi e momenti salienti del torneo di vela Coppa America nella seconda giornata.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/01c5343d-01c1-4f96-9691-76bdc410a26d/background/600"
-      },
-      {
-        "ora": "00:40",
-        "fine": "01:10",
+        "ora": "00:35",
+        "fine": "01:05",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
-        "ora": "01:10",
-        "fine": "02:05",
+        "ora": "01:05",
+        "fine": "02:00",
         "titolo": "Italia: Gara 1",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b866d59d-59f3-4318-af11-06b8273b8906/background/600"
       },
       {
-        "ora": "02:05",
+        "ora": "02:00",
         "fine": "04:00",
         "titolo": "Real Madrid - Inter",
         "descrizione": "... League. - Blancos in vantaggio 10 a 7 nei 19 precedenti europei, 2 pareggi. Il Real ha vinto gli ultimi 4 precedenti di UCL contro l'Inter, 2 in casa e 2 in trasferta. TC: Caressa-Bergomi",
@@ -1461,24 +1461,17 @@
       },
       {
         "ora": "14:00",
-        "fine": "16:00",
+        "fine": "16:30",
         "titolo": "Preliminari Napoli: 2a Giornata",
         "descrizione": "... Giornata America's Cup. - Tutte le azioni delle regate dell'America's Cup.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7cece63d-f559-4901-803a-15d58cff204c/background/600"
       },
       {
-        "ora": "16:00",
-        "fine": "16:30",
+        "ora": "16:30",
+        "fine": "17:00",
         "titolo": "Studio Vela 26/09/2026",
         "descrizione": "... Studio Vela. - ... Studio Vela. - Studi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/221a66da-b69e-403b-9b76-bacad38d8ef0/background/600"
-      },
-      {
-        "ora": "16:30",
-        "fine": "17:00",
-        "titolo": "Icarus Ultra",
-        "descrizione": "Avventure, sfide, storie, imprese e tante curiosita' dal mondo degli sport all'aperto: dopo 15 anni alla ricerca del limite, Icarus si spinge oltre per trasformarsi in Icarus Ultra.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cba4d42b-b9ff-49fb-8b60-b3fb00dc2b19/background/600"
       },
       {
         "ora": "17:00",
@@ -1524,10 +1517,17 @@
       },
       {
         "ora": "23:00",
-        "fine": "00:00",
+        "fine": "23:55",
         "titolo": "Ginevra",
         "descrizione": "Sintesi e momenti salienti della piu' spettacolare gara velica internazionale dedicata ai catamarani foiling F50.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f5a504d5-00b8-4d86-8727-780e5a7c5a77/background/600"
+      },
+      {
+        "ora": "23:55",
+        "fine": "00:35",
+        "titolo": "2a Giornata",
+        "descrizione": "Sintesi e momenti salienti del torneo di vela Coppa America nella seconda giornata.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/01c5343d-01c1-4f96-9691-76bdc410a26d/background/600"
       }
     ]
   },
@@ -2412,13 +2412,41 @@
       },
       {
         "ora": "10:45",
-        "fine": "11:00",
+        "fine": "11:30",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "11:00",
+        "ora": "11:30",
+        "fine": "11:45",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "11:45",
+        "fine": "12:00",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "12:00",
+        "fine": "12:15",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "12:15",
+        "fine": "12:30",
+        "titolo": "LIVE BJK CUP FINALS",
+        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
+        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+      },
+      {
+        "ora": "12:30",
         "fine": "12:45",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
@@ -2426,20 +2454,13 @@
       },
       {
         "ora": "12:45",
-        "fine": "13:05",
-        "titolo": "Supertennis Today",
-        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
-        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
-      },
-      {
-        "ora": "13:05",
-        "fine": "14:50",
+        "fine": "13:10",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
         "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
       },
       {
-        "ora": "14:50",
+        "ora": "13:10",
         "fine": "15:05",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
@@ -2685,18 +2706,18 @@
         "ora": "11:15",
         "fine": "11:45",
         "titolo": "Radiocorsa",
-        "descrizione": "Uno sguardo sul ciclismo, dalle corse dilettantistiche, alle gare professionistiche delle varie categorie (pista, ciclocross, mountain bike, etc.), fino al ricordo degli eventi storici più importanti.",
+        "descrizione": "Uno sguardo sul ciclismo, dalle corse dilettantistiche alle gare professionistiche delle varie categorie (pista, ciclocross, mountain bike), fino al ricordo degli eventi storici più importanti.",
         "immagine": "https://img-guidatv.org/32/radiocorsa/0.png"
       },
       {
         "ora": "11:45",
-        "fine": "13:20",
+        "fine": "13:55",
         "titolo": "38° America'S Cup: Regata Preliminare",
         "descrizione": "Per quattro giorni, nel Golfo di Napoli si sfidano le imbarcazioni AC40 dei principali team internazionali. È la seconda Regata Preliminare ufficiale ed è il primo grande test organizzativo per la città, in vista dell'America's Cup di maggio-luglio 2027.",
         "immagine": "https://img-guidatv.org/32/38-america-s-cup-regata-preliminare/0.jpg"
       },
       {
-        "ora": "13:20",
+        "ora": "13:55",
         "fine": "14:00",
         "titolo": "Gli Imperdibili",
         "descrizione": "Backstage, anteprime, eventi e curiosità dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.",
@@ -2726,9 +2747,9 @@
       {
         "ora": "20:50",
         "fine": "23:30",
-        "titolo": "Finale terzo posto: Italia - Polonia",
-        "descrizione": "Nella finale per il terzo posto dei Mondiali femminili Under 20 2026, Italia e Polonia si affrontano per conquistare la medaglia di bronzo.",
-        "immagine": "https://img-guidatv.org/32/finale-terzo-posto-italia-polonia/0.jpg"
+        "titolo": "Calcio Femminile: Camp. Mondiali U20 Pol",
+        "descrizione": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 Finale 3°/4° posto: ITALIA - Colombia",
+        "immagine": "https://img-guidatv.org/32/calcio-femminile-camp-mondiali-u20-pol/0.jpg"
       },
       {
         "ora": "23:30",
@@ -2782,18 +2803,18 @@
         "ora": "11:15",
         "fine": "11:45",
         "titolo": "Radiocorsa",
-        "descrizione": "Uno sguardo sul ciclismo, dalle corse dilettantistiche, alle gare professionistiche delle varie categorie (pista, ciclocross, mountain bike, etc.), fino al ricordo degli eventi storici più importanti.",
+        "descrizione": "Uno sguardo sul ciclismo, dalle corse dilettantistiche alle gare professionistiche delle varie categorie (pista, ciclocross, mountain bike), fino al ricordo degli eventi storici più importanti.",
         "immagine": "https://img-guidatv.org/32/radiocorsa/0.png"
       },
       {
         "ora": "11:45",
-        "fine": "13:20",
+        "fine": "13:55",
         "titolo": "38° America'S Cup: Regata Preliminare",
         "descrizione": "Per quattro giorni, nel Golfo di Napoli si sfidano le imbarcazioni AC40 dei principali team internazionali. È la seconda Regata Preliminare ufficiale ed è il primo grande test organizzativo per la città, in vista dell'America's Cup di maggio-luglio 2027.",
         "immagine": "https://img-guidatv.org/32/38-america-s-cup-regata-preliminare/0.jpg"
       },
       {
-        "ora": "13:20",
+        "ora": "13:55",
         "fine": "14:00",
         "titolo": "Gli Imperdibili",
         "descrizione": "Backstage, anteprime, eventi e curiosità dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.",
@@ -2823,9 +2844,9 @@
       {
         "ora": "20:50",
         "fine": "23:30",
-        "titolo": "Finale terzo posto: Italia - Polonia",
-        "descrizione": "Nella finale per il terzo posto dei Mondiali femminili Under 20 2026, Italia e Polonia si affrontano per conquistare la medaglia di bronzo.",
-        "immagine": "https://img-guidatv.org/32/finale-terzo-posto-italia-polonia/0.jpg"
+        "titolo": "Calcio Femminile: Camp. Mondiali U20 Pol",
+        "descrizione": "Calcio Femminile: Camp. Mondiali U20 Polonia 2026 Finale 3°/4° posto: ITALIA - Colombia",
+        "immagine": "https://img-guidatv.org/32/calcio-femminile-camp-mondiali-u20-pol/0.jpg"
       },
       {
         "ora": "23:30",
@@ -6424,31 +6445,31 @@
       },
       {
         "ora": "03:40",
-        "fine": "04:00",
+        "fine": "04:05",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep2 Episode 2 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "ora": "04:05",
+        "fine": "04:30",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep2 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:30",
         "fine": "04:50",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep3 Episode 3 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep3 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "04:50",
         "fine": "05:15",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep4 Episode 4 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep4 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "05:15",
@@ -6815,31 +6836,31 @@
       },
       {
         "ora": "03:40",
-        "fine": "04:00",
+        "fine": "04:05",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep2 Episode 2 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "ora": "04:05",
+        "fine": "04:30",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep2 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:30",
         "fine": "04:50",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep3 Episode 3 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep3 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "04:50",
         "fine": "05:15",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep4 Episode 4 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep4 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "05:15",
@@ -7180,8 +7201,8 @@
         "ora": "06:00",
         "fine": "07:40",
         "titolo": "The Rush: Corsa contro il tempo",
-        "descrizione": "Adrenalinico action thriller con Owen Wilson e Alan Ritchson. Un corriere e un medico devono consegnare un fegato per un trapianto, ma un potente boss vuole rubare l'organo.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/451eb269-590c-4d3d-bc61-7548c5af6688/background/600"
+        "descrizione": "Mentre sono impegnati in una corsa contro il tempo per portare a termine la consegna dell'unica speranza per salvare la vita di una bambina in pericolo, un ex soldato e il suo improbabile partner diventano il bersaglio di uno spietato cartello che tenta di ucciderli in tutti i modi.",
+        "immagine": "https://image.tmdb.org/t/p/w300/yBKMAIj7clP42UkFejhGDBBoTpb.jpg"
       },
       {
         "ora": "07:40",
@@ -8909,112 +8930,112 @@
     "categoria": "Bambini",
     "programmi": [
       {
-        "ora": "00:20",
-        "fine": "00:45",
+        "ora": "00:00",
+        "fine": "00:05",
+        "titolo": "Grizzy e i Lemming",
+        "descrizione": "Ep7 Il ritmo della giungla - I Lemming organizzano una gara di ballo con in palio un vasetto di cioccolato. Grizzy, affamato, decide di partecipare in coppia con un pappagallo ballerino.",
+        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
+      },
+      {
+        "ora": "00:05",
+        "fine": "00:15",
+        "titolo": "Grizzy e i Lemming",
+        "descrizione": "Ep8 L'antenato - Grizzy scopre che una strana creatura fossilizzata nell'ambra e' sua antenata. Vorrebbe prenderla, ma i Lemming cercano di impedirglielo, perche' risulta anche antenata loro!",
+        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
+      },
+      {
+        "ora": "00:15",
+        "fine": "00:35",
+        "titolo": "Ben 10: Ultimate Challenge",
+        "descrizione": "Ep7 di 10 - I fan di Ben 10 si sfidano in una gara entusiasmante!",
+        "immagine": "https://img-guidatv.org/472/ben-10-ultimate-challenge/5.jpg"
+      },
+      {
+        "ora": "00:35",
+        "fine": "01:00",
         "titolo": "Ben 10: La Sfida",
         "descrizione": "Ep8 - Due squadre, composte da un adulto e due bambini, si sfidano a colpi di velocita', resistenza e conoscenza della serie tv per ragazzi \"Ben 10\".",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/322892ee-adf1-4533-b2cc-56d7485d67f2/background/600"
       },
       {
-        "ora": "00:45",
-        "fine": "01:10",
+        "ora": "01:00",
+        "fine": "01:20",
         "titolo": "Ben 10: Ultimate Challenge",
         "descrizione": "Ep8 di 10 - I fan di Ben 10 si sfidano in una gara entusiasmante!",
         "immagine": "https://img-guidatv.org/472/ben-10-ultimate-challenge/5.jpg"
       },
       {
-        "ora": "01:10",
-        "fine": "01:35",
+        "ora": "01:20",
+        "fine": "01:45",
         "titolo": "Ben 10: La Sfida",
         "descrizione": "Ep9 - Due squadre, composte da un adulto e due bambini, si sfidano a colpi di velocita', resistenza e conoscenza della serie tv per ragazzi \"Ben 10\".",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/764d5f2a-dab5-4e2f-91ce-2c1993a9308a/background/600"
       },
       {
-        "ora": "01:35",
-        "fine": "02:00",
+        "ora": "01:45",
+        "fine": "02:10",
         "titolo": "Ben 10: Ultimate Challenge",
         "descrizione": "Ep9 di 10 - I fan di Ben 10 si sfidano in una gara entusiasmante!",
         "immagine": "https://img-guidatv.org/472/ben-10-ultimate-challenge/5.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:25",
+        "ora": "02:10",
+        "fine": "02:30",
         "titolo": "Ben 10: La Sfida",
         "descrizione": "Ep10 - Due squadre, composte da un adulto e due bambini, si sfidano a colpi di velocita', resistenza e conoscenza della serie tv per ragazzi \"Ben 10\".",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d27ef94d-92f7-4772-8378-1728022b9ab0/background/600"
       },
       {
-        "ora": "02:25",
-        "fine": "02:50",
+        "ora": "02:30",
+        "fine": "02:55",
         "titolo": "Ben 10: Ultimate Challenge",
         "descrizione": "Ep2 di 10 - I fan di Ben 10 si sfidano in una gara entusiasmante!",
         "immagine": "https://img-guidatv.org/472/ben-10-ultimate-challenge/5.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "03:10",
+        "ora": "02:55",
+        "fine": "03:20",
         "titolo": "Ben 10: La Sfida",
         "descrizione": "Ep1 - Due squadre, composte da un adulto e due bambini, si sfidano a colpi di velocita', resistenza e conoscenza della serie tv per ragazzi \"Ben 10\".",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d27ef94d-92f7-4772-8378-1728022b9ab0/background/600"
       },
       {
-        "ora": "03:10",
-        "fine": "03:35",
+        "ora": "03:20",
+        "fine": "03:40",
         "titolo": "Ben 10: La Sfida",
         "descrizione": "Ep2 - Due squadre, composte da un adulto e due bambini, si sfidano a colpi di velocita', resistenza e conoscenza della serie tv per ragazzi \"Ben 10\".",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d27ef94d-92f7-4772-8378-1728022b9ab0/background/600"
       },
       {
-        "ora": "03:35",
-        "fine": "03:55",
+        "ora": "03:40",
+        "fine": "04:05",
         "titolo": "Ben 10: Ultimate Challenge",
         "descrizione": "Ep1 di 10 - I fan di Ben 10 si sfidano in una gara entusiasmante!",
         "immagine": "https://img-guidatv.org/472/ben-10-ultimate-challenge/5.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "04:15",
+        "ora": "04:05",
+        "fine": "04:25",
         "titolo": "Ben 10: La Sfida",
         "descrizione": "Ep3 - Due squadre, composte da un adulto e due bambini, si sfidano a colpi di velocita', resistenza e conoscenza della serie tv per ragazzi \"Ben 10\".",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d27ef94d-92f7-4772-8378-1728022b9ab0/background/600"
       },
       {
-        "ora": "04:15",
-        "fine": "04:35",
+        "ora": "04:25",
+        "fine": "04:50",
         "titolo": "Ben 10: Ultimate Challenge",
         "descrizione": "Ep1 di 10 - I fan di Ben 10 si sfidano in una gara entusiasmante!",
         "immagine": "https://img-guidatv.org/472/ben-10-ultimate-challenge/5.jpg"
       },
       {
-        "ora": "04:35",
-        "fine": "05:00",
+        "ora": "04:50",
+        "fine": "05:10",
         "titolo": "Ben 10: La Sfida",
         "descrizione": "Ep2 - Due squadre, composte da un adulto e due bambini, si sfidano a colpi di velocita', resistenza e conoscenza della serie tv per ragazzi \"Ben 10\".",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d27ef94d-92f7-4772-8378-1728022b9ab0/background/600"
       },
       {
-        "ora": "05:00",
-        "fine": "05:05",
-        "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
-        "descrizione": "Ep68 Lemming Hood - Ispirati da un libro su Robin Hood, i Lemming si armano di arco e frecce per rubare ai ricchi (Grizzy) e dare ai poveri (loro)!",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
-        "ora": "05:05",
-        "fine": "05:10",
-        "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep20 Caccia digitale - I Lemming girano per la casetta a caccia degli animali virtuali del loro gioco da tablet. Grizzy li sbatte fuori, ma quando il tablet urta qualcosa, gli animali prendono vita!",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
         "ora": "05:10",
-        "fine": "05:15",
-        "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep15 Desideri speciali - Litigando, Grizzy e i Lemming causano un incidente alla slitta di Babbo Natale. I Lemming corrono sul luogo del disastro e mettono le mani sul suo sacco magico.",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
-        "ora": "05:15",
         "fine": "05:35",
         "titolo": "Ben 10: La Sfida",
         "descrizione": "Ep4 - Due squadre, composte da un adulto e due bambini, si sfidano a colpi di velocita', resistenza e conoscenza della serie tv per ragazzi \"Ben 10\".",
@@ -9071,48 +9092,48 @@
       },
       {
         "ora": "06:40",
-        "fine": "07:00",
+        "fine": "07:05",
         "titolo": "La casa delle bambole di Gabby",
         "descrizione": "Gatti adorabili, abilità bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda.",
         "immagine": "https://image.tmdb.org/t/p/w300/i9BtALR0NHy6nQVM9kdaGPxwTfs.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "07:20",
+        "ora": "07:05",
+        "fine": "07:25",
         "titolo": "La casa delle bambole di Gabby",
         "descrizione": "Gatti adorabili, abilità bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda.",
         "immagine": "https://image.tmdb.org/t/p/w300/i9BtALR0NHy6nQVM9kdaGPxwTfs.jpg"
       },
       {
-        "ora": "07:20",
-        "fine": "07:45",
+        "ora": "07:25",
+        "fine": "07:50",
         "titolo": "La casa delle bambole di Gabby",
         "descrizione": "Gatti adorabili, abilità bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda.",
         "immagine": "https://image.tmdb.org/t/p/w300/i9BtALR0NHy6nQVM9kdaGPxwTfs.jpg"
       },
       {
-        "ora": "07:45",
-        "fine": "07:55",
+        "ora": "07:50",
+        "fine": "08:05",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep9 di 52 La chiave in fuga - L'inaugurazione del Quartier Generale dei dino esploratori dello zio Jack viene interrotta da tre compi dispettosi e da un T. Rex arrabbiato.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f43abdeb-197c-4f85-a5fb-42c5bbc4c1e5/background/600"
       },
       {
-        "ora": "07:55",
-        "fine": "08:10",
+        "ora": "08:05",
+        "fine": "08:15",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep10 di 52 Acque bollenti - Durante un collaudo subacqueo, i Dino Rancher devono salvare un uovo dal famelico Pinna Tonante.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/45d4dbee-e1e0-4fca-af4b-560bee06590f/background/600"
       },
       {
-        "ora": "08:10",
-        "fine": "08:20",
+        "ora": "08:15",
+        "fine": "08:25",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep9 di 52 La chiave in fuga - L'inaugurazione del Quartier Generale dei dino esploratori dello zio Jack viene interrotta da tre compi dispettosi e da un T. Rex arrabbiato.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f43abdeb-197c-4f85-a5fb-42c5bbc4c1e5/background/600"
       },
       {
-        "ora": "08:20",
+        "ora": "08:25",
         "fine": "08:40",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep10 di 52 Acque bollenti - Durante un collaudo subacqueo, i Dino Rancher devono salvare un uovo dal famelico Pinna Tonante.",
@@ -9120,83 +9141,76 @@
       },
       {
         "ora": "08:40",
-        "fine": "08:45",
+        "fine": "08:50",
         "titolo": "Baby Lemmings",
         "descrizione": "Ep17 di 78 Venti contrari - E' una giornata ventosa e una lince gioca con una foglia, come se fosse un aquilone. I Baby Lemmings sanno come costruirne di incredibili, ma devono schivare gli attacchi della lince.",
         "immagine": "https://image.tmdb.org/t/p/w300/cVUMZHqo2tI1X7bUcKOkVgSLQuo.jpg"
       },
       {
-        "ora": "08:45",
-        "fine": "08:50",
+        "ora": "08:50",
+        "fine": "08:55",
         "titolo": "Il pupazzetto conteso",
         "descrizione": "S1 Ep5 - Il pupazzetto conteso - La gufetta non riesce a dormire senza il suo pupazzetto, ma disgraziatamente le cade e finisce in mano ai Baby Lemmings, che iniziano a giocarci.",
         "immagine": "https://img-guidatv.org/472/il-pupazzetto-conteso/0.jpg"
       },
       {
-        "ora": "08:50",
-        "fine": "08:55",
+        "ora": "08:55",
+        "fine": "09:00",
         "titolo": "Questione di foglie",
         "descrizione": "S1 Ep16 - Questione di foglie - Un piccolo procione fissato con l'ordine non sopporta che il suolo della foresta sia coperto di foglie, ma deve fare i conti coi Baby Lemmings, che adorano saltarci dentro.",
         "immagine": "https://img-guidatv.org/472/questione-di-foglie/0.jpg"
       },
       {
-        "ora": "08:55",
-        "fine": "09:05",
+        "ora": "09:00",
+        "fine": "09:10",
         "titolo": "Baby Lemmings - Stag. 1 Ep. 9 - Scivolo per nocciole",
         "descrizione": "S1 Ep9 - Scivolo per nocciole - Una scoiattolina cerca di portare le nocciole nella sua tana, ma quando vede che i Baby Lemmings hanno costruito uno scivolo gigante, ne vuole approfittare.",
         "immagine": "https://img-guidatv.org/472/baby-lemmings/0.jpg"
       },
       {
-        "ora": "09:05",
-        "fine": "09:10",
+        "ora": "09:10",
+        "fine": "09:15",
         "titolo": "Un picnic vince su tutto",
         "descrizione": "S1 Ep8 - Un picnic vince su tutto - I Baby Lemmings fanno un picnic, ma si ricoprono letteralmente di succo di lampone. Il cucciolo di procione tenta di lavarli, ma loro si risporcano subito!",
         "immagine": "https://img-guidatv.org/472/un-picnic-vince-su-tutto/0.jpg"
       },
       {
-        "ora": "09:10",
-        "fine": "09:15",
+        "ora": "09:15",
+        "fine": "09:20",
         "titolo": "Festa!",
         "descrizione": "S1 Ep14 - Festa! - Che c'e' di meglio di uno show fatto di foglie e fiori? Peccato che la piccola lince, un po' invidiosa dei Baby Lemmings, cerchi di mandarglielo all'aria!",
         "immagine": "https://img-guidatv.org/472/festa/0.jpg"
       },
       {
-        "ora": "09:15",
-        "fine": "09:20",
+        "ora": "09:20",
+        "fine": "09:30",
         "titolo": "Baby Lemmings",
         "descrizione": "Ep20 di 78 La ninnananna dei fiorellini - I Baby Lemmings scoprono come funziona l'eco e si divertono a far baccano. Peccato che, se non sono intonati, i fiori non sboccino piu'! In piu', c'e' una gufetta che ha bisogno di dormire.",
         "immagine": "https://image.tmdb.org/t/p/w300/cVUMZHqo2tI1X7bUcKOkVgSLQuo.jpg"
       },
       {
-        "ora": "09:20",
-        "fine": "09:30",
+        "ora": "09:30",
+        "fine": "09:35",
         "titolo": "Baby Lemmings",
         "descrizione": "Ep19 di 78 Lo sciame ronzante - Il cucciolo di alce non ama affatto le api che volano raccogliendo il polline. I Baby Lemmings invece le apprezzano tantissimo, soprattutto per il dolcissimo miele che fanno!",
         "immagine": "https://image.tmdb.org/t/p/w300/cVUMZHqo2tI1X7bUcKOkVgSLQuo.jpg"
       },
       {
-        "ora": "09:30",
-        "fine": "09:35",
+        "ora": "09:35",
+        "fine": "09:45",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep31 Una boccia a cinque stelle - Grizzy invidia ai Lemming il pesciolino vivace e affettuoso che hanno adottato, cosi' ne prende uno per se', che pero' e' del tutto inespressivo.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "09:35",
-        "fine": "09:40",
-        "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep32 L'oggetto smarrito - Per impedire ai Lemming di prendere tutti i barattoli di casa per costruire uno scivolo sulla spiaggia, Grizzy perde il suo amato medaglione.",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
-        "ora": "09:40",
-        "fine": "09:45",
+        "ora": "09:45",
+        "fine": "09:50",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep34 Pirati in vista - I Lemming giocano ai pirati su una barca trovata in spiaggia, ma Grizzy decide di rubargliela per andare a pesca.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "09:45",
+        "ora": "09:50",
         "fine": "09:55",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep34 Pirati in vista - I Lemming giocano ai pirati su una barca trovata in spiaggia, ma Grizzy decide di rubargliela per andare a pesca.",
@@ -9204,13 +9218,13 @@
       },
       {
         "ora": "09:55",
-        "fine": "10:00",
+        "fine": "10:05",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep35 Un cesto di granchi - Litigandosi la crema al cioccolato, Grizzy e i Lemming finiscono in una citta' sottomarina di granchi, in cui c'e' un cibo ancor piu' squisito!",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "10:00",
+        "ora": "10:05",
         "fine": "10:10",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep37 La sabbia magica - Mentre Grizzy cerca invano di raggiungere una noce di cocco per dissetarsi, i Lemming scoprono che la sabbia di una conchiglia puo' farli volare!",
@@ -9225,69 +9239,62 @@
       },
       {
         "ora": "10:15",
-        "fine": "10:20",
+        "fine": "10:25",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep38 Sinfonia per Lemming - I Lemming disturbano Grizzy suonando strumenti improvvisati, e quando lui li butta fuori, loro scoprono un ukulele che incanta chi lo ascolta.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "10:20",
-        "fine": "10:25",
+        "ora": "10:25",
+        "fine": "10:35",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep39 Casetta interplanetaria - Grizzy ruba i ventilatori che i Lemming usano come motori di una navicella-giocattolo, ma loro trovano un vero razzo e finiscono tutti nello spazio!",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "10:25",
-        "fine": "10:30",
+        "ora": "10:35",
+        "fine": "10:40",
         "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
         "descrizione": "Ep40 Pronti, partenza, bam! - Piu' palleggi si fanno, piu' punti si accumulano per aggiudicarsi dei premi, ma ne occorrono addirittura mille, per vincere la crema al cioccolato!",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "10:30",
-        "fine": "10:35",
+        "ora": "10:40",
+        "fine": "10:45",
         "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
         "descrizione": "Ep41 Termitator - I Lemming adottano un insetto che si nutre solo di legno, e quando Grizzy scopre che sta divorando casa sua, prende misure drastiche per liberarsene.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "10:35",
-        "fine": "10:50",
-        "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep42 Papa' inconsapevole - Che caldo! In cambio del ventilatore, Grizzy da' ai Lemming un cucciolo di struzzo trovato per caso, ma ai genitori del piccolo l'idea non va giu'.",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
-        "ora": "10:50",
+        "ora": "10:45",
         "fine": "10:55",
         "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep43 Lemming mille luci - I Lemming danno una festa di compleanno piena di luci, ma Grizzy ha giocato troppo ai videogiochi, e ora i suoi occhi sopportano solo il buio.",
+        "descrizione": "Ep42 Papa' inconsapevole - Che caldo! In cambio del ventilatore, Grizzy da' ai Lemming un cucciolo di struzzo trovato per caso, ma ai genitori del piccolo l'idea non va giu'.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
         "ora": "10:55",
         "fine": "11:00",
         "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep44 Nascondino coi Lemming - Grizzy rovina il nascondino ai Lemming rivelando dove sono nascosti, cosi' loro lo sfidano a giocare e trovano in lui un valido avversario.",
+        "descrizione": "Ep43 Lemming mille luci - I Lemming danno una festa di compleanno piena di luci, ma Grizzy ha giocato troppo ai videogiochi, e ora i suoi occhi sopportano solo il buio.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
         "ora": "11:00",
-        "fine": "11:05",
+        "fine": "11:10",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep45 Baccano notturno - Scacciati da Grizzy, i Lemming scoprono una grotta in cui far festa, ma il chiasso che fanno fa volare i pipistrelli di li' dritti in casa dell'orso!",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "11:05",
-        "fine": "11:10",
+        "ora": "11:10",
+        "fine": "11:15",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep46 Un amore di frigorifero - Grizzy e i Lemming si litigano il frigorifero, poi l'orso trova un condizionatore che sembra mettere tutti d'accordo. Almeno all'inizio.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "11:10",
+        "ora": "11:15",
         "fine": "11:20",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep47 La famiglia degli orsi - Grizzy trova un orso bianco in letargo e scopre che appartiene alla sua stessa specie. Se ne prende cura, ma questo rovina le abitudini dei Lemming.",
@@ -9295,48 +9302,48 @@
       },
       {
         "ora": "11:20",
-        "fine": "11:30",
+        "fine": "11:35",
         "titolo": "Batwheels",
         "descrizione": "S1 Ep24 - Il furto di BC - Bullina assume le sembianze di Bibi per intrufolarsi nella Batcaverna e rubare BC.",
         "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
       },
       {
-        "ora": "11:30",
-        "fine": "11:40",
+        "ora": "11:35",
+        "fine": "11:45",
         "titolo": "Batwheels",
         "descrizione": "S1 Ep25 - Il gran premio di Gotham - Le Batwheels partecipano al Gran Premio di Gotham contro la Legione delle Schegge, ma queste ultime imbrogliano la gara pur di vincere.",
         "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
       },
       {
-        "ora": "11:40",
-        "fine": "11:50",
+        "ora": "11:45",
+        "fine": "11:55",
         "titolo": "Batwheels",
         "descrizione": "Ep26 di 40 Freccia Verde a Gotham - Batwing porta in vita il jet di Freccia Verde perche' vuole un'amica con cui volare. Trovera' una migliore amica jet.",
         "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
       },
       {
-        "ora": "11:50",
-        "fine": "12:05",
+        "ora": "11:55",
+        "fine": "12:10",
         "titolo": "Batwheels",
         "descrizione": "S1 Ep27 - L'anteprima rovinata - Pinguino vuole svelare il finale del film durante l'anteprima, ma per fortuna Micia e Bam riescono a fermarlo.",
         "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
       },
       {
-        "ora": "12:05",
-        "fine": "12:30",
+        "ora": "12:10",
+        "fine": "12:35",
         "titolo": "La casa delle bambole di Gabby",
         "descrizione": "Gatti adorabili, abilità bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda.",
         "immagine": "https://image.tmdb.org/t/p/w300/i9BtALR0NHy6nQVM9kdaGPxwTfs.jpg"
       },
       {
-        "ora": "12:30",
-        "fine": "13:00",
+        "ora": "12:35",
+        "fine": "12:55",
         "titolo": "La casa delle bambole di Gabby",
         "descrizione": "Gatti adorabili, abilità bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda.",
         "immagine": "https://image.tmdb.org/t/p/w300/i9BtALR0NHy6nQVM9kdaGPxwTfs.jpg"
       },
       {
-        "ora": "13:00",
+        "ora": "12:55",
         "fine": "13:20",
         "titolo": "La casa delle bambole di Gabby",
         "descrizione": "Gatti adorabili, abilità bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda.",
@@ -9344,13 +9351,13 @@
       },
       {
         "ora": "13:20",
-        "fine": "13:30",
+        "fine": "13:35",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep9 di 52 La chiave in fuga - L'inaugurazione del Quartier Generale dei dino esploratori dello zio Jack viene interrotta da tre compi dispettosi e da un T. Rex arrabbiato.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f43abdeb-197c-4f85-a5fb-42c5bbc4c1e5/background/600"
       },
       {
-        "ora": "13:30",
+        "ora": "13:35",
         "fine": "13:45",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep10 di 52 Acque bollenti - Durante un collaudo subacqueo, i Dino Rancher devono salvare un uovo dal famelico Pinna Tonante.",
@@ -9365,41 +9372,48 @@
       },
       {
         "ora": "13:55",
-        "fine": "14:15",
+        "fine": "14:10",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep10 di 52 Acque bollenti - Durante un collaudo subacqueo, i Dino Rancher devono salvare un uovo dal famelico Pinna Tonante.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/45d4dbee-e1e0-4fca-af4b-560bee06590f/background/600"
       },
       {
-        "ora": "14:15",
-        "fine": "14:25",
+        "ora": "14:10",
+        "fine": "14:20",
         "titolo": "Batwheels",
         "descrizione": "S2 Ep17 - Il Giocattolaio Danzante - Il Giocattolaio ha ideato un nuovo piano che costringera' tutta Gotham a ballare all'infinito. Per fermarlo, Redbird dovra' superare la timidezza nel ballare.",
         "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
       },
       {
-        "ora": "14:25",
-        "fine": "14:40",
+        "ora": "14:20",
+        "fine": "14:30",
+        "titolo": "Batwheels",
+        "descrizione": "Ep34 di 40 I mirtilli surgelati - Neve e Bullina raccolgono dei mirtilli surgelati insieme, ma con scopi diversi. Neve vuole preparare dei gelati per i cittadini, mentre Bullina vuole congelarli.",
+        "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
+      },
+      {
+        "ora": "14:30",
+        "fine": "14:45",
         "titolo": "Batwheels",
         "descrizione": "Ep18 Una notte rumorosa - Bibi e le altre Batwheels aiutano Nightbike a non avere piu' paura dei rumori forti. Nel frattempo, Nightwing e Batgirl devono fare i conti con il Pinguino.",
         "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
       },
       {
-        "ora": "14:40",
-        "fine": "15:25",
+        "ora": "14:45",
+        "fine": "15:35",
         "titolo": "Tom & Jerry e la favola dello Schiaccianoci",
         "descrizione": "in un teatro vuoto, jerry sogna di avere la possibilita' di esibirsi e magicamente il suo sogno si avvera. il topolino viene risucchiato in un regno incantato dove tutto e' possibile: foreste fatte di dolcetti, fiocchi di neve che cantano e giocattoli che prendono vita. jerry si diverte un mondo con i suoi nuovi amici e raggiunge il massimo della felicita' danzando con la ballerina di un carillon. ma sfortunatamente i gatti del vicolo guidati da tom mandano all'aria la festa di jerry, rapiscono la ballerina del carillon e portano la distruzione nel reame incantato. sara' compito di jerry rimettere a posto le cose con l'aiuto di un topolino giallo di nome tuffy e di altri nuovi amici",
         "immagine": "https://image.tmdb.org/t/p/w300/AhcIkzyD6iBUV4nqAQh59EguUmb.jpg"
       },
       {
-        "ora": "15:25",
-        "fine": "15:35",
+        "ora": "15:35",
+        "fine": "15:45",
         "titolo": "Mr.Bean",
         "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
         "immagine": "https://image.tmdb.org/t/p/w300/1V2PSez4pNZ9a4Bbomm7KZiQJ44.jpg"
       },
       {
-        "ora": "15:35",
+        "ora": "15:45",
         "fine": "15:55",
         "titolo": "Mr.Bean",
         "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
@@ -9407,20 +9421,20 @@
       },
       {
         "ora": "15:55",
-        "fine": "16:00",
+        "fine": "16:05",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep51 Festa di lucciole - Con un'eclissi i pannelli solari non funzionano, percio' niente tv, per Grizzy. Le lucciole invece brillano e i Lemming ne approfittano per fare festa.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:05",
+        "ora": "16:05",
+        "fine": "16:10",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep52 Il portachiavi - I Lemming si vedono confiscare un barattolo di crema al cioccolato da Grizzy, che gli lascia solo il portachiavi che c'e' in omaggio sul coperchio.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "16:05",
+        "ora": "16:10",
         "fine": "16:20",
         "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
         "descrizione": "Ep53 Ballando sulla Grande Muraglia - Litigandosi un tappetino da ballo interattivo, Grizzy e i Lemming finiscono sulla Grande Muraglia Cinese, dove si attiva un gioco molto simile.",
@@ -9456,34 +9470,34 @@
       },
       {
         "ora": "16:50",
-        "fine": "16:55",
+        "fine": "17:00",
         "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
         "descrizione": "Ep58 Pronto, Grizzy? Siamo i Lemming! - I Lemming hanno trovato un sacco di cellulari e non fanno che telefonarsi, impedendo a Grizzy di guardare in pace la tv.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "17:00",
+        "ora": "17:00",
+        "fine": "17:05",
         "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
         "descrizione": "Ep59 La cavalletta dell'abbondanza - I Lemming catturano una cavalletta, che messa sulla testa e col massimo della concentrazione, puo'' avverare qualsiasi desiderio!",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "17:00",
-        "fine": "17:10",
+        "ora": "17:05",
+        "fine": "17:15",
         "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
         "descrizione": "Ep60 Suoni e luci - Grizzy si libera delle lanterne cinesi con cui i Lemming stanno giocando, ma loro trovano ne una hi-tech capace di creare molto piu' scompiglio!",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "17:10",
-        "fine": "17:35",
+        "ora": "17:15",
+        "fine": "17:40",
         "titolo": "La casa delle bambole di Gabby",
         "descrizione": "Gatti adorabili, abilità bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda.",
         "immagine": "https://image.tmdb.org/t/p/w300/i9BtALR0NHy6nQVM9kdaGPxwTfs.jpg"
       },
       {
-        "ora": "17:35",
+        "ora": "17:40",
         "fine": "18:00",
         "titolo": "La casa delle bambole di Gabby",
         "descrizione": "Gatti adorabili, abilità bizzarre e magie divertenti! Parti per una serie di avventure animate insieme alla simpatica Gabby e al suo amico Pandy Panda.",
@@ -9505,13 +9519,13 @@
       },
       {
         "ora": "18:35",
-        "fine": "18:50",
+        "fine": "18:45",
         "titolo": "Mr.Bean",
         "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
         "immagine": "https://image.tmdb.org/t/p/w300/1V2PSez4pNZ9a4Bbomm7KZiQJ44.jpg"
       },
       {
-        "ora": "18:50",
+        "ora": "18:45",
         "fine": "19:00",
         "titolo": "Mr.Bean",
         "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
@@ -9519,48 +9533,48 @@
       },
       {
         "ora": "19:00",
-        "fine": "19:05",
+        "fine": "19:10",
         "titolo": "Mr.Bean",
         "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
         "immagine": "https://image.tmdb.org/t/p/w300/1V2PSez4pNZ9a4Bbomm7KZiQJ44.jpg"
       },
       {
-        "ora": "19:05",
-        "fine": "19:15",
+        "ora": "19:10",
+        "fine": "19:20",
         "titolo": "Mr.Bean",
         "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
         "immagine": "https://image.tmdb.org/t/p/w300/1V2PSez4pNZ9a4Bbomm7KZiQJ44.jpg"
       },
       {
-        "ora": "19:15",
-        "fine": "19:25",
+        "ora": "19:20",
+        "fine": "19:30",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep9 di 52 La chiave in fuga - L'inaugurazione del Quartier Generale dei dino esploratori dello zio Jack viene interrotta da tre compi dispettosi e da un T. Rex arrabbiato.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f43abdeb-197c-4f85-a5fb-42c5bbc4c1e5/background/600"
       },
       {
-        "ora": "19:25",
-        "fine": "19:40",
+        "ora": "19:30",
+        "fine": "19:45",
         "titolo": "Dino Ranch: L'isola degli esploratori",
         "descrizione": "Ep10 di 52 Acque bollenti - Durante un collaudo subacqueo, i Dino Rancher devono salvare un uovo dal famelico Pinna Tonante.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/45d4dbee-e1e0-4fca-af4b-560bee06590f/background/600"
       },
       {
-        "ora": "19:40",
-        "fine": "20:55",
+        "ora": "19:45",
+        "fine": "21:05",
         "titolo": "Scooby Doo e il mistero del circo",
         "descrizione": "Quando Scooby e la sua banda sentono dire che un lupo mannaro tormenta un circo itinerante, si travestono da circensi per far luce sul mistero. Le cose presto vanno di male in peggio quando il numero di lupi mannari inizia ad aumentare e i membri della Mystery Inc. capiscono che rischiano di trasformarsi loro stessi in queste bestie mostruose!",
         "immagine": "https://image.tmdb.org/t/p/w300/pPYInp857PYmzO6L2mwZLEcoZEW.jpg"
       },
       {
-        "ora": "20:55",
-        "fine": "21:10",
+        "ora": "21:05",
+        "fine": "21:15",
         "titolo": "Batwheels",
         "descrizione": "Ep40 Sogni d'oro, Gotham - Poison Ivy addormenta tutti gli abitanti di Gotham usando un semplice seme e Bibi deve intervenire: anche i piccoli compiti sono importanti!",
         "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
       },
       {
-        "ora": "21:10",
+        "ora": "21:15",
         "fine": "21:25",
         "titolo": "Batwheels",
         "descrizione": "Ep39 Amici dallo spazio - Lanterna Verde precipita vicino a Gotham con la sua navicella: a bordo c'e' anche Spiffledip, una dolce creatura aliena che il supereroe deve riportare a casa.",
@@ -9582,36 +9596,29 @@
       },
       {
         "ora": "21:45",
-        "fine": "21:55",
+        "fine": "22:00",
         "titolo": "Batwheels",
         "descrizione": "Ep36 Moe contro le Schegge - BC e' in pericolo! Batman e gli altri eroi sono in missione e le Batwheels sono rimaste attaccate a una calamita gigante per colpa della Legione delle Schegge.",
         "immagine": "https://image.tmdb.org/t/p/w300/nDNUuNNoFaZFNjSwWCG5XwaOf9f.jpg"
       },
       {
-        "ora": "21:55",
-        "fine": "22:05",
+        "ora": "22:00",
+        "fine": "22:10",
         "titolo": "Lezione di guida",
         "descrizione": "S4 Ep27 - Lezione di guida - Stanco di accompagnare Mrs Wicket ovunque, Mr Bean decide di insegnarle a guidare e costruisce un'\"auto\" per fare pratica nel suo appartamento.",
         "immagine": "https://img-guidatv.org/472/lezione-di-guida/0.png"
       },
       {
-        "ora": "22:05",
-        "fine": "22:15",
+        "ora": "22:10",
+        "fine": "22:20",
         "titolo": "Mr.Bean",
         "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
         "immagine": "https://image.tmdb.org/t/p/w300/1V2PSez4pNZ9a4Bbomm7KZiQJ44.jpg"
       },
       {
-        "ora": "22:15",
-        "fine": "22:25",
-        "titolo": "Mr. Bean - Il timone sparito",
-        "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
-        "immagine": "https://image.tmdb.org/t/p/w300/1V2PSez4pNZ9a4Bbomm7KZiQJ44.jpg"
-      },
-      {
-        "ora": "22:25",
+        "ora": "22:20",
         "fine": "22:35",
-        "titolo": "Mr.Bean",
+        "titolo": "Mr. Bean - Il timone sparito",
         "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
         "immagine": "https://image.tmdb.org/t/p/w300/1V2PSez4pNZ9a4Bbomm7KZiQJ44.jpg"
       },
@@ -9631,80 +9638,66 @@
       },
       {
         "ora": "22:55",
-        "fine": "23:00",
+        "fine": "23:05",
+        "titolo": "Mr.Bean",
+        "descrizione": "La serie animata segue le numerose e buffe avventure di Mr. Bean, adulto con una mentalità infantile, sempre coinvolto in catastrofi piene d'umorismo e comicità.",
+        "immagine": "https://image.tmdb.org/t/p/w300/1V2PSez4pNZ9a4Bbomm7KZiQJ44.jpg"
+      },
+      {
+        "ora": "23:05",
+        "fine": "23:15",
         "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
         "descrizione": "Ep77 Un delitto quasi perfetto - I Lemming giocano a risolvere finti delitti, e quando la crema al cioccolato di Grizzy fa una brutta fine, scatta l'indagine per trovare il colpevole!",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "23:00",
-        "fine": "23:05",
-        "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
-        "descrizione": "Ep78 Casetta, mia adorata - I Lemming trovano un talismano che da vita agli oggetti inanimati, cosi' scoprono che la casetta vuole tornare in Canada, senza Grizzy e senza di loro!",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
-        "ora": "23:05",
-        "fine": "23:15",
-        "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep1 La stella del giorno - Grizzy inciampa e compie una serie di acrobazie degne di un campione di tuffi, sotto gli occhi stupefatti dei Lemming, che iniziano a trattarlo come un idolo.",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
         "ora": "23:15",
         "fine": "23:20",
-        "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep2 Il labirinto - Grizzy e i Lemming perdono un barattolo di crema al cioccolato in un tempio labirintico. Decisi a recuperarlo, entrano nel labirinto, ma finiscono per perdersi completamente.",
+        "titolo": "Grizzy e i Lemming: Pelosi e dispettosi",
+        "descrizione": "Ep78 Casetta, mia adorata - I Lemming trovano un talismano che da vita agli oggetti inanimati, cosi' scoprono che la casetta vuole tornare in Canada, senza Grizzy e senza di loro!",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
         "ora": "23:20",
         "fine": "23:25",
         "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep3 Il nido accogliente - Le cose iniziano a scomparire dalla casetta come per magia. Grizzy e' convinto che i Lemming siano i colpevoli, ma anche loro sono vittime di furti inspiegabili.",
+        "descrizione": "Ep1 La stella del giorno - Grizzy inciampa e compie una serie di acrobazie degne di un campione di tuffi, sotto gli occhi stupefatti dei Lemming, che iniziano a trattarlo come un idolo.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
         "ora": "23:25",
-        "fine": "23:30",
+        "fine": "23:35",
+        "titolo": "Grizzy e i Lemming",
+        "descrizione": "Ep2 Il labirinto - Grizzy e i Lemming perdono un barattolo di crema al cioccolato in un tempio labirintico. Decisi a recuperarlo, entrano nel labirinto, ma finiscono per perdersi completamente.",
+        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
+      },
+      {
+        "ora": "23:35",
+        "fine": "23:40",
+        "titolo": "Grizzy e i Lemming",
+        "descrizione": "Ep3 Il nido accogliente - Le cose iniziano a scomparire dalla casetta come per magia. Grizzy e' convinto che i Lemming siano i colpevoli, ma anche loro sono vittime di furti inspiegabili.",
+        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
+      },
+      {
+        "ora": "23:40",
+        "fine": "23:45",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep4 Forte volonta' - Una rana ingoia una gemma che le dona il potere di controllare la mente e Grizzy e i Lemming ne approfittano per usarla per i motivi piu' disparati.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "23:30",
-        "fine": "23:35",
+        "ora": "23:45",
+        "fine": "23:55",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep5 L'orientamento desiderato - Un convoglio militare ha un incidente e, nell'impatto, una strana sfera rotola fino a Grizzy. Si tratta di una sorta di bussola che indica dove andare per avverare i desideri.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
       },
       {
-        "ora": "23:35",
-        "fine": "23:45",
+        "ora": "23:55",
+        "fine": "00:00",
         "titolo": "Grizzy e i Lemming",
         "descrizione": "Ep6 Cioccolato da 24 carati - Grizzy trova uno scettro a forma di mano che ricopre d'oro tutto cio' che tocca. Cosi', lo usa per coprire d'oro i Lemming e rubare il loro cioccolato.",
         "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
-        "ora": "23:45",
-        "fine": "23:50",
-        "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep7 Il ritmo della giungla - I Lemming organizzano una gara di ballo con in palio un vasetto di cioccolato. Grizzy, affamato, decide di partecipare in coppia con un pappagallo ballerino.",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
-        "ora": "23:50",
-        "fine": "23:55",
-        "titolo": "Grizzy e i Lemming",
-        "descrizione": "Ep8 L'antenato - Grizzy scopre che una strana creatura fossilizzata nell'ambra e' sua antenata. Vorrebbe prenderla, ma i Lemming cercano di impedirglielo, perche' risulta anche antenata loro!",
-        "immagine": "https://image.tmdb.org/t/p/w300/vpzSerTbEIspXUndYM7MGhhX7dm.jpg"
-      },
-      {
-        "ora": "23:55",
-        "fine": "00:20",
-        "titolo": "Ben 10: Ultimate Challenge",
-        "descrizione": "Ep7 di 10 - I fan di Ben 10 si sfidano in una gara entusiasmante!",
-        "immagine": "https://img-guidatv.org/472/ben-10-ultimate-challenge/5.jpg"
       }
     ]
   },
@@ -17677,7 +17670,7 @@
         "ora": "07:05",
         "fine": "07:55",
         "titolo": "Rai Parlamento Settegiorni",
-        "descrizione": "Rai Parlamento Settegiorni",
+        "descrizione": "Settimanale di approfondimento politico-parlamentare. Inchieste, servizi, interviste sui temi più importanti in discussione al Senato e alla Camera",
         "immagine": "https://img-guidatv.org/1/rai-parlamento-settegiorni/0.jpg"
       },
       {
@@ -17801,24 +17794,24 @@
       },
       {
         "ora": "16:50",
-        "fine": "16:55",
+        "fine": "16:53",
         "titolo": "Gli Imperdibili",
         "descrizione": "Backstage, anteprime, eventi e curiosità dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.",
         "immagine": "https://img-guidatv.org/1/gli-imperdibili/5.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "17:05",
-        "titolo": "TG1",
-        "descrizione": "TG1",
-        "immagine": "https://img-guidatv.org/1/tg-1/5.jpg"
-      },
-      {
-        "ora": "17:05",
-        "fine": "17:10",
+        "ora": "16:53",
+        "fine": "16:55",
         "titolo": "Che Tempo Fa",
         "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare.",
         "immagine": "https://img-guidatv.org/1/che-tempo-fa/6.jpg"
+      },
+      {
+        "ora": "16:55",
+        "fine": "17:10",
+        "titolo": "TG1",
+        "descrizione": "TG1",
+        "immagine": "https://img-guidatv.org/1/tg-1/5.jpg"
       },
       {
         "ora": "17:10",
@@ -17831,7 +17824,7 @@
         "ora": "17:55",
         "fine": "18:40",
         "titolo": "Musica Mia - Franco Califano. Roma Addosso!",
-        "descrizione": "Lorella Boccia e Marco Conidi attraversano l'Italia da Nord a Sud per raccontare attraverso la musica, storie e tradizioni che si tramandano nel tempo e nel suono di ogni luogo.",
+        "descrizione": "$26",
         "immagine": "https://img-guidatv.org/1/musica-mia-franco-califano-roma-addosso/0.jpg"
       },
       {
@@ -17857,17 +17850,10 @@
       },
       {
         "ora": "21:30",
-        "fine": "23:55",
-        "titolo": "Bello Di Mamma…Rai!",
-        "descrizione": "La perdita di un genitore crea smarrimento nel cuore e nella mente di un figlio: Brignano il dolore lo metabolizza sul palcoscenico, tornando con la mente agli insegnamenti dei suoi, sapendo evidenziarne gli anacronismi e gli aspetti più divertenti.",
-        "immagine": "https://img-guidatv.org/1/bello-di-mamma-rai/0.jpg"
-      },
-      {
-        "ora": "23:55",
         "fine": "00:00",
-        "titolo": "TG1 Sera",
-        "descrizione": "TG1 Sera",
-        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
+        "titolo": "Bello Di Mamma...Rai!",
+        "descrizione": "INTRATTENIMENTO - La perdita di un genitore crea smarrimento nel cuore e nella mente di un figlio: Brignano il dolore lo metabolizza sul palcoscenico, tornando con la mente agli insegnamenti dei suoi, sapendo evidenziarne gl - i anacronismi e gli aspetti più divertenti. - Con Enrico Brignano Regia di Cristiano D'Alisera",
+        "immagine": "https://img-guidatv.org/1/bello-di-mamma-rai/0.jpg"
       }
     ]
   },
@@ -17942,7 +17928,7 @@
         "ora": "07:05",
         "fine": "07:55",
         "titolo": "Rai Parlamento Settegiorni",
-        "descrizione": "Rai Parlamento Settegiorni",
+        "descrizione": "Settimanale di approfondimento politico-parlamentare. Inchieste, servizi, interviste sui temi più importanti in discussione al Senato e alla Camera",
         "immagine": "https://img-guidatv.org/1/rai-parlamento-settegiorni/0.jpg"
       },
       {
@@ -18066,24 +18052,24 @@
       },
       {
         "ora": "16:50",
-        "fine": "16:55",
+        "fine": "16:53",
         "titolo": "Gli Imperdibili",
         "descrizione": "Backstage, anteprime, eventi e curiosità dentro lo schermo. È il programma che offre informazione e approfondimento sulla programmazione dei canali che compongono il bouquet Rai.",
         "immagine": "https://img-guidatv.org/1/gli-imperdibili/5.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "17:05",
-        "titolo": "TG1",
-        "descrizione": "TG1",
-        "immagine": "https://img-guidatv.org/1/tg-1/5.jpg"
-      },
-      {
-        "ora": "17:05",
-        "fine": "17:10",
+        "ora": "16:53",
+        "fine": "16:55",
         "titolo": "Che Tempo Fa",
         "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare.",
         "immagine": "https://img-guidatv.org/1/che-tempo-fa/6.jpg"
+      },
+      {
+        "ora": "16:55",
+        "fine": "17:10",
+        "titolo": "TG1",
+        "descrizione": "TG1",
+        "immagine": "https://img-guidatv.org/1/tg-1/5.jpg"
       },
       {
         "ora": "17:10",
@@ -18096,7 +18082,7 @@
         "ora": "17:55",
         "fine": "18:40",
         "titolo": "Musica Mia - Franco Califano. Roma Addosso!",
-        "descrizione": "Lorella Boccia e Marco Conidi attraversano l'Italia da Nord a Sud per raccontare attraverso la musica, storie e tradizioni che si tramandano nel tempo e nel suono di ogni luogo.",
+        "descrizione": "$26",
         "immagine": "https://img-guidatv.org/1/musica-mia-franco-califano-roma-addosso/0.jpg"
       },
       {
@@ -18122,17 +18108,10 @@
       },
       {
         "ora": "21:30",
-        "fine": "23:55",
-        "titolo": "Bello Di Mamma…Rai!",
-        "descrizione": "La perdita di un genitore crea smarrimento nel cuore e nella mente di un figlio: Brignano il dolore lo metabolizza sul palcoscenico, tornando con la mente agli insegnamenti dei suoi, sapendo evidenziarne gli anacronismi e gli aspetti più divertenti.",
-        "immagine": "https://img-guidatv.org/1/bello-di-mamma-rai/0.jpg"
-      },
-      {
-        "ora": "23:55",
         "fine": "00:00",
-        "titolo": "TG1 Sera",
-        "descrizione": "TG1 Sera",
-        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
+        "titolo": "Bello Di Mamma...Rai!",
+        "descrizione": "INTRATTENIMENTO - La perdita di un genitore crea smarrimento nel cuore e nella mente di un figlio: Brignano il dolore lo metabolizza sul palcoscenico, tornando con la mente agli insegnamenti dei suoi, sapendo evidenziarne gl - i anacronismi e gli aspetti più divertenti. - Con Enrico Brignano Regia di Cristiano D'Alisera",
+        "immagine": "https://img-guidatv.org/1/bello-di-mamma-rai/0.jpg"
       }
     ]
   },
@@ -18674,7 +18653,7 @@
         "ora": "10:15",
         "fine": "10:45",
         "titolo": "Punto Europa",
-        "descrizione": "A cura di Rai Parlamento",
+        "descrizione": "I lavori del Parlamento Europeo, tra Strasburgo e Bruxelles. L'impegno dei parlamentari italiani. L'influenza dell'Unione Europea sulla vita degli Stati membri e dei cittadini.",
         "immagine": "https://img-guidatv.org/3/punto-europa/0.jpg"
       },
       {
@@ -18784,13 +18763,13 @@
       },
       {
         "ora": "19:30",
-        "fine": "19:51",
+        "fine": "19:52",
         "titolo": "TG Regione",
         "descrizione": "TG Regione",
         "immagine": "https://img-guidatv.org/3/tg-regione/1.png"
       },
       {
-        "ora": "19:51",
+        "ora": "19:52",
         "fine": "20:00",
         "titolo": "TG Regione Meteo",
         "descrizione": "TG Regione Meteo",
@@ -18911,7 +18890,7 @@
         "ora": "10:15",
         "fine": "10:45",
         "titolo": "Punto Europa",
-        "descrizione": "A cura di Rai Parlamento",
+        "descrizione": "I lavori del Parlamento Europeo, tra Strasburgo e Bruxelles. L'impegno dei parlamentari italiani. L'influenza dell'Unione Europea sulla vita degli Stati membri e dei cittadini.",
         "immagine": "https://img-guidatv.org/3/punto-europa/0.jpg"
       },
       {
@@ -19021,13 +19000,13 @@
       },
       {
         "ora": "19:30",
-        "fine": "19:51",
+        "fine": "19:52",
         "titolo": "TG Regione",
         "descrizione": "TG Regione",
         "immagine": "https://img-guidatv.org/3/tg-regione/1.png"
       },
       {
-        "ora": "19:51",
+        "ora": "19:52",
         "fine": "20:00",
         "titolo": "TG Regione Meteo",
         "descrizione": "TG Regione Meteo",
@@ -19100,7 +19079,7 @@
         "fine": "06:45",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001026801/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:45",
@@ -19114,7 +19093,7 @@
         "fine": "08:28",
         "titolo": "Super partes",
         "descrizione": "Comunicazione politica",
-        "immagine": "https://img-guidatv.org/40/super-partes/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314230001001301/media/16/80/1b37d021-ddc3-454a-b887-cc6bd8eeedc4/930feaf4-d40b-44b4-aa15-2e5c437b8923.jpg"
       },
       {
         "ora": "08:28",
@@ -19288,7 +19267,7 @@
         "fine": "06:45",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001026801/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:45",
@@ -19302,7 +19281,7 @@
         "fine": "08:28",
         "titolo": "Super partes",
         "descrizione": "Comunicazione politica",
-        "immagine": "https://img-guidatv.org/40/super-partes/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314230001001301/media/16/80/1b37d021-ddc3-454a-b887-cc6bd8eeedc4/930feaf4-d40b-44b4-aa15-2e5c437b8923.jpg"
       },
       {
         "ora": "08:28",
@@ -19469,7 +19448,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101214501/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19546,7 +19525,7 @@
         "fine": "10:13",
         "titolo": "Super partes c5,",
         "descrizione": "Comunicazione politica",
-        "immagine": "https://img-guidatv.org/41/super-partes-c-5/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314203301001301/media/16/80/1b37d021-ddc3-454a-b887-cc6bd8eeedc4/930feaf4-d40b-44b4-aa15-2e5c437b8923.jpg"
       },
       {
         "ora": "10:13",
@@ -19692,7 +19671,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101214501/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19769,7 +19748,7 @@
         "fine": "10:13",
         "titolo": "Super partes c5,",
         "descrizione": "Comunicazione politica",
-        "immagine": "https://img-guidatv.org/41/super-partes-c-5/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314203301001301/media/16/80/1b37d021-ddc3-454a-b887-cc6bd8eeedc4/930feaf4-d40b-44b4-aa15-2e5c437b8923.jpg"
       },
       {
         "ora": "10:13",
@@ -20006,14 +19985,14 @@
         "fine": "13:05",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201053701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:05",
         "fine": "13:49",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:49",
@@ -20229,14 +20208,14 @@
         "fine": "13:05",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201053701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:05",
         "fine": "13:49",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:49",
@@ -25008,28 +24987,28 @@
         "fine": "12:25",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
-        "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501053701/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "12:25",
         "fine": "12:58",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201053701/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "12:58",
         "fine": "13:32",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/10473/tg5/4.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201107401/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "13:32",
         "fine": "14:03",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-2026/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314686001005601/media/22/86/3737884b-ae0b-43cb-9af9-16473d20a478/26dcb11c-4d2e-444d-802c-e1830a6aa81e.jpg"
       },
       {
         "ora": "14:03",
@@ -25620,17 +25599,17 @@
       },
       {
         "ora": "16:30",
-        "fine": "16:56",
+        "fine": "16:50",
         "titolo": "POMERIGGIO 24",
         "descrizione": "Sara Mariani presenta Pomeriggio 24, ogni giorno dalle 15:00 alle 17:00 su Rainews24",
         "immagine": "https://img-guidatv.org/4/pomeriggio-24/5.jpg"
       },
       {
-        "ora": "16:56",
+        "ora": "16:50",
         "fine": "17:00",
-        "titolo": "RN-POMERIGGIO 3",
-        "descrizione": "RN-POMERIGGIO 3",
-        "immagine": "https://img-guidatv.org/4/rn-pomeriggio-3/0.jpg"
+        "titolo": "Altri Mondi",
+        "descrizione": "In questa puntata: \"Fire Emblem: Fortune's Weave\" (recensione di Lorenzo Fantoni), \"Se Xbox Piange, Sony non ride\" di Dario Marchetti, \"Silent Hill: Townfall\" (recensione di Fabrizia Malgieri), \"Speedrun\" a cura di Alberto Alessi.",
+        "immagine": "https://img-guidatv.org/4/altri-mondi/5.jpg"
       },
       {
         "ora": "17:00",
@@ -26319,17 +26298,17 @@
       },
       {
         "ora": "16:30",
-        "fine": "16:56",
+        "fine": "16:50",
         "titolo": "POMERIGGIO 24",
         "descrizione": "Sara Mariani presenta Pomeriggio 24, ogni giorno dalle 15:00 alle 17:00 su Rainews24",
         "immagine": "https://img-guidatv.org/4/pomeriggio-24/5.jpg"
       },
       {
-        "ora": "16:56",
+        "ora": "16:50",
         "fine": "17:00",
-        "titolo": "RN-POMERIGGIO 3",
-        "descrizione": "RN-POMERIGGIO 3",
-        "immagine": "https://img-guidatv.org/4/rn-pomeriggio-3/0.jpg"
+        "titolo": "Altri Mondi",
+        "descrizione": "In questa puntata: \"Fire Emblem: Fortune's Weave\" (recensione di Lorenzo Fantoni), \"Se Xbox Piange, Sony non ride\" di Dario Marchetti, \"Silent Hill: Townfall\" (recensione di Fabrizia Malgieri), \"Speedrun\" a cura di Alberto Alessi.",
+        "immagine": "https://img-guidatv.org/4/altri-mondi/5.jpg"
       },
       {
         "ora": "17:00",
@@ -27018,17 +26997,17 @@
       },
       {
         "ora": "16:30",
-        "fine": "16:56",
+        "fine": "16:50",
         "titolo": "POMERIGGIO 24",
         "descrizione": "Sara Mariani presenta Pomeriggio 24, ogni giorno dalle 15:00 alle 17:00 su Rainews24",
         "immagine": "https://img-guidatv.org/4/pomeriggio-24/5.jpg"
       },
       {
-        "ora": "16:56",
+        "ora": "16:50",
         "fine": "17:00",
-        "titolo": "RN-POMERIGGIO 3",
-        "descrizione": "RN-POMERIGGIO 3",
-        "immagine": "https://img-guidatv.org/4/rn-pomeriggio-3/0.jpg"
+        "titolo": "Altri Mondi",
+        "descrizione": "In questa puntata: \"Fire Emblem: Fortune's Weave\" (recensione di Lorenzo Fantoni), \"Se Xbox Piange, Sony non ride\" di Dario Marchetti, \"Silent Hill: Townfall\" (recensione di Fabrizia Malgieri), \"Speedrun\" a cura di Alberto Alessi.",
+        "immagine": "https://img-guidatv.org/4/altri-mondi/5.jpg"
       },
       {
         "ora": "17:00",
@@ -28258,42 +28237,42 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:35",
-        "fine": "01:45",
+        "ora": "00:30",
+        "fine": "01:55",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "01:45",
-        "fine": "02:55",
+        "ora": "01:55",
+        "fine": "03:05",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "02:55",
-        "fine": "04:10",
+        "ora": "03:05",
+        "fine": "04:15",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "04:10",
-        "fine": "04:40",
+        "ora": "04:15",
+        "fine": "04:45",
         "titolo": "Come e' fatto",
         "descrizione": "Monoblocco, frantoi a mascelle e tamburi: da dove provengono e come sono fatti? Progettisti ed artigiani ce lo spiegano.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "04:40",
-        "fine": "05:10",
+        "ora": "04:45",
+        "fine": "05:05",
         "titolo": "Come e' fatto",
         "descrizione": "Accendini, fossili, dischi da hockey e cilindri per alta pressione: mettiamo altri oggetti d'uso quotidiano sotto la lente d'ingrandimento per scoprire come sono fatti.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "05:10",
+        "ora": "05:05",
         "fine": "05:35",
         "titolo": "Come e' fatto",
         "descrizione": "Palloncini, carta da parati, patatine fritte surgelate e lampadine incandescenti: mettiamo altri oggetti d'uso quotidiano sotto la lente d'ingrandimento per scoprire come sono fatti.",
@@ -28308,83 +28287,83 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:35",
+        "fine": "06:25",
         "titolo": "Come e' fatto",
         "descrizione": "Scopriamo come vengono realizzati gli oggetti di uso quotidiano e diversi prodotti, come le tazzine 3D e i fusti di birra in acciaio inox.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "06:35",
-        "fine": "07:10",
+        "ora": "06:25",
+        "fine": "06:45",
         "titolo": "Marchio di fabbrica",
         "descrizione": "Scopriamo come vengono realizzati i colossi che distruggono le automobili. Inoltre, come hanno fatto Lea e Perrins a creare la particolare salsa Worcestershire?",
         "immagine": "https://img-guidatv.org/93/marchio-di-fabbrica/5.jpg"
       },
       {
-        "ora": "07:10",
-        "fine": "08:10",
+        "ora": "06:45",
+        "fine": "07:35",
         "titolo": "Sogni a quattro ruote con Richard Hammond",
         "descrizione": "Mentre alcune preziose auto e moto d'epoca vanno all'asta, Neil e Anthony si mettono al lavoro su un misterioso veicolo degli anni Trenta.",
         "immagine": "https://img-guidatv.org/93/sogni-a-quattro-ruote-con-richard-hammond/5.jpg"
       },
       {
-        "ora": "08:10",
-        "fine": "09:05",
+        "ora": "07:35",
+        "fine": "08:25",
         "titolo": "Sogni a quattro ruote con Richard Hammond",
         "descrizione": "Nel tentativo di aggiudicarsi il lavoro, Richard e la sua squadra iscrivono una delle loro creazioni al piu' prestigioso concorso di auto d'epoca del Regno Unito.",
         "immagine": "https://img-guidatv.org/93/sogni-a-quattro-ruote-con-richard-hammond/5.jpg"
       },
       {
-        "ora": "09:05",
-        "fine": "10:00",
+        "ora": "08:25",
+        "fine": "09:20",
         "titolo": "Sogni a quattro ruote con Richard Hammond",
         "descrizione": "La nuova officina di Richard e' finalmente aperta, ma con quasi un quarto di milione di euro di debito, l'attivita' deve iniziare a fruttare.",
         "immagine": "https://img-guidatv.org/93/sogni-a-quattro-ruote-con-richard-hammond/5.jpg"
       },
       {
-        "ora": "10:00",
-        "fine": "11:50",
+        "ora": "09:20",
+        "fine": "11:05",
         "titolo": "Reperti d'assalto",
         "descrizione": "Il team ripara i danni causati dalla tempesta al tetto.",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "11:50",
-        "fine": "13:35",
+        "ora": "11:05",
+        "fine": "13:00",
         "titolo": "Reperti d'assalto",
         "descrizione": "Michael scova un veicolo: i militari lo hanno diviso in due. Il team lo ripristinera'?",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "13:35",
-        "fine": "14:35",
+        "ora": "13:00",
+        "fine": "14:05",
         "titolo": "Top Gear",
         "descrizione": "Rory Reid prova la nuova Ford Focus RS. Chris Harris riuscira' a domare la Ferrari F12 TDF?",
         "immagine": "https://img-guidatv.org/93/top-gear/0.jpg"
       },
       {
-        "ora": "14:35",
-        "fine": "15:40",
+        "ora": "14:05",
+        "fine": "15:10",
         "titolo": "Top Gear",
         "descrizione": "Chris Evans, Matt LeBlanc e Sabine Schmitz acquistano auto usate e vanno verso Venezia.",
         "immagine": "https://img-guidatv.org/93/top-gear/0.jpg"
       },
       {
-        "ora": "15:40",
-        "fine": "17:25",
+        "ora": "15:10",
+        "fine": "17:10",
         "titolo": "Reperti d'assalto",
         "descrizione": "Un acquirente e' interessato a un veicolo che Michael ha modificato per sua figlia.",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "17:25",
-        "fine": "19:15",
+        "ora": "17:10",
+        "fine": "19:10",
         "titolo": "Reperti d'assalto",
         "descrizione": "Michael ritira una gru dismessa dell'esercito degli Stati Uniti a Siviglia.",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "19:15",
+        "ora": "19:10",
         "fine": "20:15",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Mike ed Elvis affrontano un'enorme sfida: riusciranno a trasformare un'Audi RS6?",
@@ -28406,14 +28385,14 @@
       },
       {
         "ora": "22:15",
-        "fine": "23:25",
+        "fine": "23:20",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "23:25",
-        "fine": "00:35",
+        "ora": "23:20",
+        "fine": "00:30",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
@@ -28425,42 +28404,42 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:35",
-        "fine": "01:45",
+        "ora": "00:30",
+        "fine": "01:55",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "01:45",
-        "fine": "02:55",
+        "ora": "01:55",
+        "fine": "03:05",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "02:55",
-        "fine": "04:10",
+        "ora": "03:05",
+        "fine": "04:15",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "04:10",
-        "fine": "04:40",
+        "ora": "04:15",
+        "fine": "04:45",
         "titolo": "Come e' fatto",
         "descrizione": "Monoblocco, frantoi a mascelle e tamburi: da dove provengono e come sono fatti? Progettisti ed artigiani ce lo spiegano.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "04:40",
-        "fine": "05:10",
+        "ora": "04:45",
+        "fine": "05:05",
         "titolo": "Come e' fatto",
         "descrizione": "Accendini, fossili, dischi da hockey e cilindri per alta pressione: mettiamo altri oggetti d'uso quotidiano sotto la lente d'ingrandimento per scoprire come sono fatti.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "05:10",
+        "ora": "05:05",
         "fine": "05:35",
         "titolo": "Come e' fatto",
         "descrizione": "Palloncini, carta da parati, patatine fritte surgelate e lampadine incandescenti: mettiamo altri oggetti d'uso quotidiano sotto la lente d'ingrandimento per scoprire come sono fatti.",
@@ -28475,83 +28454,83 @@
       },
       {
         "ora": "06:00",
-        "fine": "06:35",
+        "fine": "06:25",
         "titolo": "Come e' fatto",
         "descrizione": "Scopriamo come vengono realizzati gli oggetti di uso quotidiano e diversi prodotti, come le tazzine 3D e i fusti di birra in acciaio inox.",
         "immagine": "https://img-guidatv.org/93/come-e-fatto/3.jpg"
       },
       {
-        "ora": "06:35",
-        "fine": "07:10",
+        "ora": "06:25",
+        "fine": "06:45",
         "titolo": "Marchio di fabbrica",
         "descrizione": "Scopriamo come vengono realizzati i colossi che distruggono le automobili. Inoltre, come hanno fatto Lea e Perrins a creare la particolare salsa Worcestershire?",
         "immagine": "https://img-guidatv.org/93/marchio-di-fabbrica/5.jpg"
       },
       {
-        "ora": "07:10",
-        "fine": "08:10",
+        "ora": "06:45",
+        "fine": "07:35",
         "titolo": "Sogni a quattro ruote con Richard Hammond",
         "descrizione": "Mentre alcune preziose auto e moto d'epoca vanno all'asta, Neil e Anthony si mettono al lavoro su un misterioso veicolo degli anni Trenta.",
         "immagine": "https://img-guidatv.org/93/sogni-a-quattro-ruote-con-richard-hammond/5.jpg"
       },
       {
-        "ora": "08:10",
-        "fine": "09:05",
+        "ora": "07:35",
+        "fine": "08:25",
         "titolo": "Sogni a quattro ruote con Richard Hammond",
         "descrizione": "Nel tentativo di aggiudicarsi il lavoro, Richard e la sua squadra iscrivono una delle loro creazioni al piu' prestigioso concorso di auto d'epoca del Regno Unito.",
         "immagine": "https://img-guidatv.org/93/sogni-a-quattro-ruote-con-richard-hammond/5.jpg"
       },
       {
-        "ora": "09:05",
-        "fine": "10:00",
+        "ora": "08:25",
+        "fine": "09:20",
         "titolo": "Sogni a quattro ruote con Richard Hammond",
         "descrizione": "La nuova officina di Richard e' finalmente aperta, ma con quasi un quarto di milione di euro di debito, l'attivita' deve iniziare a fruttare.",
         "immagine": "https://img-guidatv.org/93/sogni-a-quattro-ruote-con-richard-hammond/5.jpg"
       },
       {
-        "ora": "10:00",
-        "fine": "11:50",
+        "ora": "09:20",
+        "fine": "11:05",
         "titolo": "Reperti d'assalto",
         "descrizione": "Il team ripara i danni causati dalla tempesta al tetto.",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "11:50",
-        "fine": "13:35",
+        "ora": "11:05",
+        "fine": "13:00",
         "titolo": "Reperti d'assalto",
         "descrizione": "Michael scova un veicolo: i militari lo hanno diviso in due. Il team lo ripristinera'?",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "13:35",
-        "fine": "14:35",
+        "ora": "13:00",
+        "fine": "14:05",
         "titolo": "Top Gear",
         "descrizione": "Rory Reid prova la nuova Ford Focus RS. Chris Harris riuscira' a domare la Ferrari F12 TDF?",
         "immagine": "https://img-guidatv.org/93/top-gear/0.jpg"
       },
       {
-        "ora": "14:35",
-        "fine": "15:40",
+        "ora": "14:05",
+        "fine": "15:10",
         "titolo": "Top Gear",
         "descrizione": "Chris Evans, Matt LeBlanc e Sabine Schmitz acquistano auto usate e vanno verso Venezia.",
         "immagine": "https://img-guidatv.org/93/top-gear/0.jpg"
       },
       {
-        "ora": "15:40",
-        "fine": "17:25",
+        "ora": "15:10",
+        "fine": "17:10",
         "titolo": "Reperti d'assalto",
         "descrizione": "Un acquirente e' interessato a un veicolo che Michael ha modificato per sua figlia.",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "17:25",
-        "fine": "19:15",
+        "ora": "17:10",
+        "fine": "19:10",
         "titolo": "Reperti d'assalto",
         "descrizione": "Michael ritira una gru dismessa dell'esercito degli Stati Uniti a Siviglia.",
         "immagine": "https://img-guidatv.org/93/reperti-d-assalto/5.jpg"
       },
       {
-        "ora": "19:15",
+        "ora": "19:10",
         "fine": "20:15",
         "titolo": "Affari a quattro ruote",
         "descrizione": "Mike ed Elvis affrontano un'enorme sfida: riusciranno a trasformare un'Audi RS6?",
@@ -28573,14 +28552,14 @@
       },
       {
         "ora": "22:15",
-        "fine": "23:25",
+        "fine": "23:20",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
       },
       {
-        "ora": "23:25",
-        "fine": "00:35",
+        "ora": "23:20",
+        "fine": "00:30",
         "titolo": "Affari a quattro ruote Francia",
         "descrizione": "Prosegue l'avventura in Francia di \"Affari a quattro ruote\". Gerry trova i piu' bei modelli sul mercato; Aurelien e' l'esperto meccanico. Il loro scopo sara' rivendere l'automobile che hanno sistemato.",
         "immagine": "https://img-guidatv.org/93/affari-a-quattro-ruote-francia/5.jpg"
@@ -28638,7 +28617,7 @@
         "fine": "07:50",
         "titolo": "Delitti e misteri a Gibsons",
         "descrizione": "Gibsons è una pittoresca cittadina costiera situata in un territorio incantevole, dove il detective Karl Alberg si è trasferito dalla frenesia della grande città a causa di alcuni problemi professionali, alla ricerca di una tranquillità illusoria. Tuttavia, Karl si ritroverà coinvolto in una serie di delitti, omicidi, misteri e crimini inquietanti, costretto a mettere in campo tutte le sue abilità investigative e la sua determinazione per risolvere casi sempre complessi e pericolosi.",
-        "immagine": "https://image.tmdb.org/t/p/w300/2Oajif5w3Ml3bOEvPaQxec5ZGpJ.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/rUdr8Pdy1BjH0AHlidTkVtokyGa.jpg"
       },
       {
         "ora": "07:50",
@@ -28777,7 +28756,7 @@
         "fine": "07:50",
         "titolo": "Delitti e misteri a Gibsons",
         "descrizione": "Gibsons è una pittoresca cittadina costiera situata in un territorio incantevole, dove il detective Karl Alberg si è trasferito dalla frenesia della grande città a causa di alcuni problemi professionali, alla ricerca di una tranquillità illusoria. Tuttavia, Karl si ritroverà coinvolto in una serie di delitti, omicidi, misteri e crimini inquietanti, costretto a mettere in campo tutte le sue abilità investigative e la sua determinazione per risolvere casi sempre complessi e pericolosi.",
-        "immagine": "https://image.tmdb.org/t/p/w300/2Oajif5w3Ml3bOEvPaQxec5ZGpJ.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/rUdr8Pdy1BjH0AHlidTkVtokyGa.jpg"
       },
       {
         "ora": "07:50",
@@ -28870,35 +28849,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "01:30",
+        "ora": "00:35",
+        "fine": "01:35",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Due insegnanti hanno bisogno dell'aiuto di Brian e Mika per trasformare la loro casa.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "01:30",
-        "fine": "02:25",
+        "ora": "01:35",
+        "fine": "02:35",
         "titolo": "Donne in affari",
         "descrizione": "Mina e Karen hanno acquistato una casa molto costosa. Le due vogliono realizzare un loft al secondo piano e delle coperture particolari in cucina.",
         "immagine": "https://img-guidatv.org/59/donne-in-affari/6.jpg"
       },
       {
-        "ora": "02:25",
-        "fine": "03:20",
+        "ora": "02:35",
+        "fine": "03:30",
         "titolo": "Donne in affari",
         "descrizione": "Mina e Karen devono sistemare una casa in parte distrutta da un incidente automobilistico. I due pensano a uno stile classico e semplice.",
         "immagine": "https://img-guidatv.org/59/donne-in-affari/6.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "04:15",
+        "ora": "03:30",
+        "fine": "04:25",
         "titolo": "Donne in affari",
         "descrizione": "Mina e Karen acquistano una casa pericolante, ma hanno diverse difficolta'. Le due pensano a un nuovo progetto con delle caratteristiche uniche.",
         "immagine": "https://img-guidatv.org/59/donne-in-affari/6.jpg"
       },
       {
-        "ora": "04:15",
+        "ora": "04:25",
         "fine": "05:10",
         "titolo": "Donne in affari",
         "descrizione": "Mina e Karen si occupano di un'enorme casa nel quartiere di Old Southside. Ma i lavori si fermano quando le due avvertono degli strani rumori nell'attico.",
@@ -28920,20 +28899,27 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:20",
+        "titolo": "A caccia di occasioni",
+        "descrizione": "La sfida e' tra una squadra di amici creativi e una di design blogger per sistemare dei mobili di seconda mano e trasformare vecchi pezzi da esterni. Chi otterra' il premio?",
+        "immagine": "https://img-guidatv.org/59/a-caccia-di-occasioni/6.jpg"
+      },
+      {
+        "ora": "06:20",
+        "fine": "07:05",
         "titolo": "Sogni in costruzione",
         "descrizione": "Un'insegnante e' tornata a Bentonville per acquistare la sua prima casa. Dave e Jenny trasformano la struttura fatiscente in una casa dei sogni tutta colorata.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "08:00",
+        "ora": "07:05",
+        "fine": "08:05",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny acquistano una casa anni '80 iper trasformarla in un'abitazione da affittare.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "08:00",
+        "ora": "08:05",
         "fine": "09:00",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny comprano una baita sul lago, ma il loro piano non va come previsto.",
@@ -28941,83 +28927,83 @@
       },
       {
         "ora": "09:00",
-        "fine": "10:00",
+        "fine": "09:55",
         "titolo": "Sogni in costruzione",
         "descrizione": "Una donna si rifiuta di vivere nella baita del marito. Dave e Jenny intervengono.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "10:00",
-        "fine": "11:00",
+        "ora": "09:55",
+        "fine": "10:50",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny aiutano una donna a trasformare una casa sul lago.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "11:00",
-        "fine": "12:00",
+        "ora": "10:50",
+        "fine": "11:45",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny sistemano una casa devastata da un tornado.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "12:00",
-        "fine": "13:00",
+        "ora": "11:45",
+        "fine": "12:45",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny devono attenersi a indicazioni normative sempre piu' stringenti.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "13:00",
-        "fine": "14:00",
+        "ora": "12:45",
+        "fine": "13:50",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny sorprendono una famiglia di Tulsa con un restyling completo della casa.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "14:00",
-        "fine": "15:00",
+        "ora": "13:50",
+        "fine": "14:50",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny Marrs devono ripensare completamente ogni ambiente di una casa.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "15:00",
-        "fine": "16:00",
+        "ora": "14:50",
+        "fine": "15:50",
         "titolo": "Sogni in costruzione",
         "descrizione": "Un grave deterioramento strutturale del legno di una casa mette a rischio un progetto.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:55",
+        "ora": "15:50",
+        "fine": "16:50",
         "titolo": "Casa su misura",
         "descrizione": "Andrew e Brittany desiderano una casa spaziosa per i loro due cani. Chip e Jo s'inventano un restauro fantastico e una bellissima sorpresa per gli inquilini a quattro zampe.",
         "immagine": "https://img-guidatv.org/59/casa-su-misura/0.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "17:55",
+        "ora": "16:50",
+        "fine": "17:50",
         "titolo": "Casa su misura",
         "descrizione": "Mary e Dustyn cercano casa a Waco, in Texas. Chip e Joanna li aiuteranno a trovare e restaurare un'abitazione con quattro camere e un grande spazio all'aperto per gli ospiti.",
         "immagine": "https://img-guidatv.org/59/casa-su-misura/0.jpg"
       },
       {
-        "ora": "17:55",
-        "fine": "18:50",
+        "ora": "17:50",
+        "fine": "18:45",
         "titolo": "SOS: case impossibili",
         "descrizione": "Mike e Denese devono sistemare la casa di una coppia mantenendo alcuni dettagli storici.",
         "immagine": "https://img-guidatv.org/59/sos-case-impossibili/5.jpg"
       },
       {
-        "ora": "18:50",
-        "fine": "19:50",
+        "ora": "18:45",
+        "fine": "19:45",
         "titolo": "SOS: case impossibili",
         "descrizione": "Mike e Denese cercano di riportare la luce nella casa di una coppia.",
         "immagine": "https://img-guidatv.org/59/sos-case-impossibili/5.jpg"
       },
       {
-        "ora": "19:50",
+        "ora": "19:45",
         "fine": "20:45",
         "titolo": "SOS: case impossibili",
         "descrizione": "La disposizione della spaziosa casa di una coppia in Massachusetts e' un disastro.",
@@ -29026,9 +29012,9 @@
       {
         "ora": "20:45",
         "fine": "21:40",
-        "titolo": "Casa su misura",
-        "descrizione": "Will e Lauren tornano a Waco per crescere le figlie nella loro casa dei sogni. Con un budget ridotto ma una lista dei desideri costosa, ci vogliono Chip e Joanna!",
-        "immagine": "https://img-guidatv.org/59/casa-su-misura/0.jpg"
+        "titolo": "La mia casa da sogno in 100 giorni",
+        "descrizione": "Una giovane famiglia vuole costruire la casa dei sogni su un terreno in Florida. Brian e Mika mescolano lo stile moderno e rustico.",
+        "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
         "ora": "21:40",
@@ -29039,14 +29025,14 @@
       },
       {
         "ora": "22:35",
-        "fine": "23:35",
+        "fine": "23:30",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Una coppia ha bisogno di maggiore spazio. Brian e Mika creano spazi stravaganti.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "23:35",
-        "fine": "00:30",
+        "ora": "23:30",
+        "fine": "00:35",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Il bungalow di una coppia e' troppo piccolo. Brian e Mika costruiscono una casa moderna.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
@@ -29058,35 +29044,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "01:30",
+        "ora": "00:35",
+        "fine": "01:35",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Due insegnanti hanno bisogno dell'aiuto di Brian e Mika per trasformare la loro casa.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "01:30",
-        "fine": "02:25",
+        "ora": "01:35",
+        "fine": "02:35",
         "titolo": "Donne in affari",
         "descrizione": "Mina e Karen hanno acquistato una casa molto costosa. Le due vogliono realizzare un loft al secondo piano e delle coperture particolari in cucina.",
         "immagine": "https://img-guidatv.org/59/donne-in-affari/6.jpg"
       },
       {
-        "ora": "02:25",
-        "fine": "03:20",
+        "ora": "02:35",
+        "fine": "03:30",
         "titolo": "Donne in affari",
         "descrizione": "Mina e Karen devono sistemare una casa in parte distrutta da un incidente automobilistico. I due pensano a uno stile classico e semplice.",
         "immagine": "https://img-guidatv.org/59/donne-in-affari/6.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "04:15",
+        "ora": "03:30",
+        "fine": "04:25",
         "titolo": "Donne in affari",
         "descrizione": "Mina e Karen acquistano una casa pericolante, ma hanno diverse difficolta'. Le due pensano a un nuovo progetto con delle caratteristiche uniche.",
         "immagine": "https://img-guidatv.org/59/donne-in-affari/6.jpg"
       },
       {
-        "ora": "04:15",
+        "ora": "04:25",
         "fine": "05:10",
         "titolo": "Donne in affari",
         "descrizione": "Mina e Karen si occupano di un'enorme casa nel quartiere di Old Southside. Ma i lavori si fermano quando le due avvertono degli strani rumori nell'attico.",
@@ -29108,20 +29094,27 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:20",
+        "titolo": "A caccia di occasioni",
+        "descrizione": "La sfida e' tra una squadra di amici creativi e una di design blogger per sistemare dei mobili di seconda mano e trasformare vecchi pezzi da esterni. Chi otterra' il premio?",
+        "immagine": "https://img-guidatv.org/59/a-caccia-di-occasioni/6.jpg"
+      },
+      {
+        "ora": "06:20",
+        "fine": "07:05",
         "titolo": "Sogni in costruzione",
         "descrizione": "Un'insegnante e' tornata a Bentonville per acquistare la sua prima casa. Dave e Jenny trasformano la struttura fatiscente in una casa dei sogni tutta colorata.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "08:00",
+        "ora": "07:05",
+        "fine": "08:05",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny acquistano una casa anni '80 iper trasformarla in un'abitazione da affittare.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "08:00",
+        "ora": "08:05",
         "fine": "09:00",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny comprano una baita sul lago, ma il loro piano non va come previsto.",
@@ -29129,83 +29122,83 @@
       },
       {
         "ora": "09:00",
-        "fine": "10:00",
+        "fine": "09:55",
         "titolo": "Sogni in costruzione",
         "descrizione": "Una donna si rifiuta di vivere nella baita del marito. Dave e Jenny intervengono.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "10:00",
-        "fine": "11:00",
+        "ora": "09:55",
+        "fine": "10:50",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny aiutano una donna a trasformare una casa sul lago.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "11:00",
-        "fine": "12:00",
+        "ora": "10:50",
+        "fine": "11:45",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny sistemano una casa devastata da un tornado.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "12:00",
-        "fine": "13:00",
+        "ora": "11:45",
+        "fine": "12:45",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny devono attenersi a indicazioni normative sempre piu' stringenti.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "13:00",
-        "fine": "14:00",
+        "ora": "12:45",
+        "fine": "13:50",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny sorprendono una famiglia di Tulsa con un restyling completo della casa.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "14:00",
-        "fine": "15:00",
+        "ora": "13:50",
+        "fine": "14:50",
         "titolo": "Sogni in costruzione",
         "descrizione": "Dave e Jenny Marrs devono ripensare completamente ogni ambiente di una casa.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "15:00",
-        "fine": "16:00",
+        "ora": "14:50",
+        "fine": "15:50",
         "titolo": "Sogni in costruzione",
         "descrizione": "Un grave deterioramento strutturale del legno di una casa mette a rischio un progetto.",
         "immagine": "https://img-guidatv.org/59/sogni-in-costruzione/8.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:55",
+        "ora": "15:50",
+        "fine": "16:50",
         "titolo": "Casa su misura",
         "descrizione": "Andrew e Brittany desiderano una casa spaziosa per i loro due cani. Chip e Jo s'inventano un restauro fantastico e una bellissima sorpresa per gli inquilini a quattro zampe.",
         "immagine": "https://img-guidatv.org/59/casa-su-misura/0.jpg"
       },
       {
-        "ora": "16:55",
-        "fine": "17:55",
+        "ora": "16:50",
+        "fine": "17:50",
         "titolo": "Casa su misura",
         "descrizione": "Mary e Dustyn cercano casa a Waco, in Texas. Chip e Joanna li aiuteranno a trovare e restaurare un'abitazione con quattro camere e un grande spazio all'aperto per gli ospiti.",
         "immagine": "https://img-guidatv.org/59/casa-su-misura/0.jpg"
       },
       {
-        "ora": "17:55",
-        "fine": "18:50",
+        "ora": "17:50",
+        "fine": "18:45",
         "titolo": "SOS: case impossibili",
         "descrizione": "Mike e Denese devono sistemare la casa di una coppia mantenendo alcuni dettagli storici.",
         "immagine": "https://img-guidatv.org/59/sos-case-impossibili/5.jpg"
       },
       {
-        "ora": "18:50",
-        "fine": "19:50",
+        "ora": "18:45",
+        "fine": "19:45",
         "titolo": "SOS: case impossibili",
         "descrizione": "Mike e Denese cercano di riportare la luce nella casa di una coppia.",
         "immagine": "https://img-guidatv.org/59/sos-case-impossibili/5.jpg"
       },
       {
-        "ora": "19:50",
+        "ora": "19:45",
         "fine": "20:45",
         "titolo": "SOS: case impossibili",
         "descrizione": "La disposizione della spaziosa casa di una coppia in Massachusetts e' un disastro.",
@@ -29214,9 +29207,9 @@
       {
         "ora": "20:45",
         "fine": "21:40",
-        "titolo": "Casa su misura",
-        "descrizione": "Will e Lauren tornano a Waco per crescere le figlie nella loro casa dei sogni. Con un budget ridotto ma una lista dei desideri costosa, ci vogliono Chip e Joanna!",
-        "immagine": "https://img-guidatv.org/59/casa-su-misura/0.jpg"
+        "titolo": "La mia casa da sogno in 100 giorni",
+        "descrizione": "Una giovane famiglia vuole costruire la casa dei sogni su un terreno in Florida. Brian e Mika mescolano lo stile moderno e rustico.",
+        "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
         "ora": "21:40",
@@ -29227,14 +29220,14 @@
       },
       {
         "ora": "22:35",
-        "fine": "23:35",
+        "fine": "23:30",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Una coppia ha bisogno di maggiore spazio. Brian e Mika creano spazi stravaganti.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
       },
       {
-        "ora": "23:35",
-        "fine": "00:30",
+        "ora": "23:30",
+        "fine": "00:35",
         "titolo": "La mia casa da sogno in 100 giorni",
         "descrizione": "Il bungalow di una coppia e' troppo piccolo. Brian e Mika costruiscono una casa moderna.",
         "immagine": "https://img-guidatv.org/59/la-mia-casa-da-sogno-in-100-giorni/6.jpg"
@@ -29246,21 +29239,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "02:20",
+        "ora": "00:45",
+        "fine": "02:35",
         "titolo": "Vite al limite",
         "descrizione": "Dopo un incidente, Abi e' rimasto a letto, ma il suo peso e' ormai fuori controllo.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "04:10",
+        "ora": "02:35",
+        "fine": "04:20",
         "titolo": "Vite al limite",
         "descrizione": "Delana si rende conto che ha bisogno dell'aiuto del dottor Now per dimagrire.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
       },
       {
-        "ora": "04:10",
+        "ora": "04:20",
         "fine": "06:00",
         "titolo": "Vite al limite",
         "descrizione": "Gary e' sempre a letto a causa del suo peso e la sua vita e' a rischio.",
@@ -29268,62 +29261,62 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:25",
         "titolo": "Dr. Pimple Popper: la dottoressa schiacciabrufoli",
-        "descrizione": "Ruben e' un personal trainer con un bozzolo sulla testa che gli crea molto imbarazzo. Kaitlin ha dei segni blu delle cicatrici dovuti all'uso di droghe.",
+        "descrizione": "Che'Re e' imbarazzata e depressa a causa del bozzolo che ha sulla guancia. Per anni, Buck ha avuto delle dolorose vesciche piene di liquidi.",
         "immagine": "https://img-guidatv.org/37/dr-pimple-popper/0.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "07:55",
+        "ora": "06:25",
+        "fine": "07:20",
         "titolo": "Dr. Pimple Popper: la dottoressa schiacciabrufoli",
         "descrizione": "Shakisaha ha il lobo dell'orecchio spaccato. Mike, invece, ha un bernoccolo morbido sulla testa. Il rinofima di Dania le ha impedito di godersi appieno la vita.",
         "immagine": "https://img-guidatv.org/37/dr-pimple-popper/0.jpg"
       },
       {
-        "ora": "07:55",
-        "fine": "08:50",
+        "ora": "07:20",
+        "fine": "08:15",
         "titolo": "Sepolti in casa",
         "descrizione": "L'ossessione di Joyce verso l'accumulo sta lacerando la famiglia. Norine, invece, e' entrata nel tunnel dopo il trauma del divorzio. Riusciranno queste due donne a voltare pagina?",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "08:50",
-        "fine": "09:45",
+        "ora": "08:15",
+        "fine": "09:10",
         "titolo": "Sepolti in casa",
         "descrizione": "Debbie ha sviluppato l'ossessione verso l'accumulo dopo la fine del suo matrimonio, causata da una confessione scioccante. Julie lo fa per alleviare il dolore di una malattia.",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "09:45",
-        "fine": "10:40",
+        "ora": "09:10",
+        "fine": "10:10",
         "titolo": "Sepolti in casa",
         "descrizione": "Jahn ha riempito di roba inutile due case e ora e' costretta a fare la doccia in una palestra. La sua famiglia e gli esperti tentano di aiutare la donna a cambiare le sue abitudini estreme.",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "10:40",
-        "fine": "12:10",
+        "ora": "10:10",
+        "fine": "11:45",
         "titolo": "Primo appuntamento",
         "descrizione": "Con una nuova location torna il dating show condotto da Flavio Montrucchio.",
         "immagine": "https://img-guidatv.org/37/primo-appuntamento/6.jpg"
       },
       {
-        "ora": "12:10",
-        "fine": "13:15",
+        "ora": "11:45",
+        "fine": "12:50",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Csaba, Roberto e Tommaso sono pronti a giudicare una sfida ricca di colori.",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "13:15",
-        "fine": "14:15",
+        "ora": "12:50",
+        "fine": "14:00",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Tommaso, Csaba e Roberto sono a Milano per una sfida tra tema \"green\" e \"radical sprint\".",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "14:15",
+        "ora": "14:00",
         "fine": "15:30",
         "titolo": "Matrimonio a prima vista Italia",
         "descrizione": "Discussioni, convivenze e prime tensioni mettono alla prova le tre coppie.",
@@ -29331,13 +29324,13 @@
       },
       {
         "ora": "15:30",
-        "fine": "16:00",
+        "fine": "15:55",
         "titolo": "Live Better for Less, svuota e rinnova",
         "descrizione": "Per un collezionista, ogni rinuncia puo' diventare una sfida davvero difficile.",
         "immagine": "https://img-guidatv.org/37/live-better-for-less-svuota-e-rinnova/0.png"
       },
       {
-        "ora": "16:00",
+        "ora": "15:55",
         "fine": "16:30",
         "titolo": "Live Better for Less, svuota e rinnova",
         "descrizione": "Tra casa e giardino, nascondono un tesoro da vendere per il loro futuro.",
@@ -29352,35 +29345,35 @@
       },
       {
         "ora": "17:35",
-        "fine": "18:35",
+        "fine": "18:45",
         "titolo": "Casa a prima vista",
         "descrizione": "Nadia, Corrado e Blasco sono alla ricerca di un trilocale a Roma con un budget di 550.000 euro.",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "18:35",
-        "fine": "19:40",
+        "ora": "18:45",
+        "fine": "19:45",
         "titolo": "Casa a prima vista",
         "descrizione": "Ida, Mariana e Gianluca sono alla ricerca di un trilocale a Bardonecchia con un budget di 370.000 euro.",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "19:40",
-        "fine": "21:40",
+        "ora": "19:45",
+        "fine": "21:50",
         "titolo": "Bake Off Italia: dolci in forno",
         "descrizione": "e' tutto pronto per \"Bake Off Royal\": chi, in questa puntata, si aggiudichera' il grembiule blu e chi invece dovra' abbandonare il tendone?",
         "immagine": "https://img-guidatv.org/37/bake-off-italia-dolci-in-forno/14.jpg"
       },
       {
-        "ora": "21:40",
-        "fine": "22:40",
+        "ora": "21:50",
+        "fine": "22:45",
         "titolo": "Vite al limite - Storie di rinascita",
         "descrizione": "Due gemelle identiche condividono tutto, anche il loro rapporto con il cibo.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite-storie-di-rinascita/5.jpg"
       },
       {
-        "ora": "22:40",
-        "fine": "00:30",
+        "ora": "22:45",
+        "fine": "00:45",
         "titolo": "Vite al limite",
         "descrizione": "I gemelli 29enni Brandi e Kandi si riavvicinano dopo un'infanzia traumatica, vedendo nel cibo una salvezza. Ma dopo aver perso peso, li aspettano nuove sfide.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
@@ -29392,21 +29385,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "02:20",
+        "ora": "00:45",
+        "fine": "02:35",
         "titolo": "Vite al limite",
         "descrizione": "Dopo un incidente, Abi e' rimasto a letto, ma il suo peso e' ormai fuori controllo.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "04:10",
+        "ora": "02:35",
+        "fine": "04:20",
         "titolo": "Vite al limite",
         "descrizione": "Delana si rende conto che ha bisogno dell'aiuto del dottor Now per dimagrire.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
       },
       {
-        "ora": "04:10",
+        "ora": "04:20",
         "fine": "06:00",
         "titolo": "Vite al limite",
         "descrizione": "Gary e' sempre a letto a causa del suo peso e la sua vita e' a rischio.",
@@ -29414,62 +29407,62 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "06:25",
         "titolo": "Dr. Pimple Popper: la dottoressa schiacciabrufoli",
-        "descrizione": "Ruben e' un personal trainer con un bozzolo sulla testa che gli crea molto imbarazzo. Kaitlin ha dei segni blu delle cicatrici dovuti all'uso di droghe.",
+        "descrizione": "Che'Re e' imbarazzata e depressa a causa del bozzolo che ha sulla guancia. Per anni, Buck ha avuto delle dolorose vesciche piene di liquidi.",
         "immagine": "https://img-guidatv.org/37/dr-pimple-popper/0.jpg"
       },
       {
-        "ora": "07:00",
-        "fine": "07:55",
+        "ora": "06:25",
+        "fine": "07:20",
         "titolo": "Dr. Pimple Popper: la dottoressa schiacciabrufoli",
         "descrizione": "Shakisaha ha il lobo dell'orecchio spaccato. Mike, invece, ha un bernoccolo morbido sulla testa. Il rinofima di Dania le ha impedito di godersi appieno la vita.",
         "immagine": "https://img-guidatv.org/37/dr-pimple-popper/0.jpg"
       },
       {
-        "ora": "07:55",
-        "fine": "08:50",
+        "ora": "07:20",
+        "fine": "08:15",
         "titolo": "Sepolti in casa",
         "descrizione": "L'ossessione di Joyce verso l'accumulo sta lacerando la famiglia. Norine, invece, e' entrata nel tunnel dopo il trauma del divorzio. Riusciranno queste due donne a voltare pagina?",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "08:50",
-        "fine": "09:45",
+        "ora": "08:15",
+        "fine": "09:10",
         "titolo": "Sepolti in casa",
         "descrizione": "Debbie ha sviluppato l'ossessione verso l'accumulo dopo la fine del suo matrimonio, causata da una confessione scioccante. Julie lo fa per alleviare il dolore di una malattia.",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "09:45",
-        "fine": "10:40",
+        "ora": "09:10",
+        "fine": "10:10",
         "titolo": "Sepolti in casa",
         "descrizione": "Jahn ha riempito di roba inutile due case e ora e' costretta a fare la doccia in una palestra. La sua famiglia e gli esperti tentano di aiutare la donna a cambiare le sue abitudini estreme.",
         "immagine": "https://img-guidatv.org/37/sepolti-in-casa/5.jpg"
       },
       {
-        "ora": "10:40",
-        "fine": "12:10",
+        "ora": "10:10",
+        "fine": "11:45",
         "titolo": "Primo appuntamento",
         "descrizione": "Con una nuova location torna il dating show condotto da Flavio Montrucchio.",
         "immagine": "https://img-guidatv.org/37/primo-appuntamento/6.jpg"
       },
       {
-        "ora": "12:10",
-        "fine": "13:15",
+        "ora": "11:45",
+        "fine": "12:50",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Csaba, Roberto e Tommaso sono pronti a giudicare una sfida ricca di colori.",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "13:15",
-        "fine": "14:15",
+        "ora": "12:50",
+        "fine": "14:00",
         "titolo": "Cortesie per gli ospiti",
         "descrizione": "Tommaso, Csaba e Roberto sono a Milano per una sfida tra tema \"green\" e \"radical sprint\".",
         "immagine": "https://img-guidatv.org/37/cortesie-per-gli-ospiti/5.jpg"
       },
       {
-        "ora": "14:15",
+        "ora": "14:00",
         "fine": "15:30",
         "titolo": "Matrimonio a prima vista Italia",
         "descrizione": "Discussioni, convivenze e prime tensioni mettono alla prova le tre coppie.",
@@ -29477,13 +29470,13 @@
       },
       {
         "ora": "15:30",
-        "fine": "16:00",
+        "fine": "15:55",
         "titolo": "Live Better for Less, svuota e rinnova",
         "descrizione": "Per un collezionista, ogni rinuncia puo' diventare una sfida davvero difficile.",
         "immagine": "https://img-guidatv.org/37/live-better-for-less-svuota-e-rinnova/0.png"
       },
       {
-        "ora": "16:00",
+        "ora": "15:55",
         "fine": "16:30",
         "titolo": "Live Better for Less, svuota e rinnova",
         "descrizione": "Tra casa e giardino, nascondono un tesoro da vendere per il loro futuro.",
@@ -29498,35 +29491,35 @@
       },
       {
         "ora": "17:35",
-        "fine": "18:35",
+        "fine": "18:45",
         "titolo": "Casa a prima vista",
         "descrizione": "Nadia, Corrado e Blasco sono alla ricerca di un trilocale a Roma con un budget di 550.000 euro.",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "18:35",
-        "fine": "19:40",
+        "ora": "18:45",
+        "fine": "19:45",
         "titolo": "Casa a prima vista",
         "descrizione": "Ida, Mariana e Gianluca sono alla ricerca di un trilocale a Bardonecchia con un budget di 370.000 euro.",
         "immagine": "https://img-guidatv.org/37/casa-a-prima-vista/6.jpg"
       },
       {
-        "ora": "19:40",
-        "fine": "21:40",
+        "ora": "19:45",
+        "fine": "21:50",
         "titolo": "Bake Off Italia: dolci in forno",
         "descrizione": "e' tutto pronto per \"Bake Off Royal\": chi, in questa puntata, si aggiudichera' il grembiule blu e chi invece dovra' abbandonare il tendone?",
         "immagine": "https://img-guidatv.org/37/bake-off-italia-dolci-in-forno/14.jpg"
       },
       {
-        "ora": "21:40",
-        "fine": "22:40",
+        "ora": "21:50",
+        "fine": "22:45",
         "titolo": "Vite al limite - Storie di rinascita",
         "descrizione": "Due gemelle identiche condividono tutto, anche il loro rapporto con il cibo.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite-storie-di-rinascita/5.jpg"
       },
       {
-        "ora": "22:40",
-        "fine": "00:30",
+        "ora": "22:45",
+        "fine": "00:45",
         "titolo": "Vite al limite",
         "descrizione": "I gemelli 29enni Brandi e Kandi si riavvicinano dopo un'infanzia traumatica, vedendo nel cibo una salvezza. Ma dopo aver perso peso, li aspettano nuove sfide.",
         "immagine": "https://img-guidatv.org/37/vite-al-limite/3.jpg"
@@ -31059,13 +31052,13 @@
       },
       {
         "ora": "07:20",
-        "fine": "07:30",
+        "fine": "07:40",
         "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
       {
-        "ora": "07:30",
+        "ora": "07:40",
         "fine": "07:55",
         "titolo": "A tutto hockey",
         "descrizione": "Sintesi",
@@ -31080,24 +31073,24 @@
       },
       {
         "ora": "08:25",
-        "fine": "08:50",
+        "fine": "09:00",
         "titolo": "La Storia del Regionale",
         "descrizione": "Una trasmissione della TSI diventata proverbiale: il Regionale. Per tanti, tantissimi anni l'appuntamento con l'attualità della Svizzera italiana. Il papà degli attuali Quotidiano e Buonasera. Ripercorriamo la sua storia. Ripercorriamo la nostra storia.",
         "immagine": "https://img-guidatv.org/91/la-storia-del-regionale/6.jpg"
       },
       {
-        "ora": "08:50",
-        "fine": "09:15",
+        "ora": "09:00",
+        "fine": "09:25",
         "titolo": "La Storia del Regionale",
         "descrizione": "Una trasmissione della allora TSI diventata proverbiale: il Regionale. Per tanti, tantissimi anni l'appuntamento con l'attualità della Svizzera italiana. Il papà degli attuali Quotidiano e Buonasera. Ripercorriamo la sua storia. Ripercorriamo la nostra storia.",
         "immagine": "https://img-guidatv.org/91/la-storia-del-regionale/6.jpg"
       },
       {
-        "ora": "09:15",
+        "ora": "09:25",
         "fine": "11:00",
-        "titolo": "Calcio: Qualificazioni Europei 2027 U21 - Svizzera - Lussemburgo",
-        "descrizione": "Calcio: Qualificazioni Europei 2027 U21 - Svizzera - Lussemburgo",
-        "immagine": "https://img-guidatv.org/91/calcio-qualificazioni-europei-2027-u21-svizzera-lussemburgo/0.jpg"
+        "titolo": "Svizzera - Lussemburgo",
+        "descrizione": "Svizzera - Lussemburgo",
+        "immagine": "https://img-guidatv.org/91/svizzera-lussemburgo/0.jpg"
       },
       {
         "ora": "11:00",
@@ -31254,13 +31247,13 @@
       },
       {
         "ora": "07:20",
-        "fine": "07:30",
+        "fine": "07:40",
         "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
       },
       {
-        "ora": "07:30",
+        "ora": "07:40",
         "fine": "07:55",
         "titolo": "A tutto hockey",
         "descrizione": "Sintesi",
@@ -31275,24 +31268,24 @@
       },
       {
         "ora": "08:25",
-        "fine": "08:50",
+        "fine": "09:00",
         "titolo": "La Storia del Regionale",
         "descrizione": "Una trasmissione della TSI diventata proverbiale: il Regionale. Per tanti, tantissimi anni l'appuntamento con l'attualità della Svizzera italiana. Il papà degli attuali Quotidiano e Buonasera. Ripercorriamo la sua storia. Ripercorriamo la nostra storia.",
         "immagine": "https://img-guidatv.org/91/la-storia-del-regionale/6.jpg"
       },
       {
-        "ora": "08:50",
-        "fine": "09:15",
+        "ora": "09:00",
+        "fine": "09:25",
         "titolo": "La Storia del Regionale",
         "descrizione": "Una trasmissione della allora TSI diventata proverbiale: il Regionale. Per tanti, tantissimi anni l'appuntamento con l'attualità della Svizzera italiana. Il papà degli attuali Quotidiano e Buonasera. Ripercorriamo la sua storia. Ripercorriamo la nostra storia.",
         "immagine": "https://img-guidatv.org/91/la-storia-del-regionale/6.jpg"
       },
       {
-        "ora": "09:15",
+        "ora": "09:25",
         "fine": "11:00",
-        "titolo": "Calcio: Qualificazioni Europei 2027 U21 - Svizzera - Lussemburgo",
-        "descrizione": "Calcio: Qualificazioni Europei 2027 U21 - Svizzera - Lussemburgo",
-        "immagine": "https://img-guidatv.org/91/calcio-qualificazioni-europei-2027-u21-svizzera-lussemburgo/0.jpg"
+        "titolo": "Svizzera - Lussemburgo",
+        "descrizione": "Svizzera - Lussemburgo",
+        "immagine": "https://img-guidatv.org/91/svizzera-lussemburgo/0.jpg"
       },
       {
         "ora": "11:00",
