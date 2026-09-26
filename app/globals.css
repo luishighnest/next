@@ -1884,13 +1884,12 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     align-items: center;
     gap: 4px;
     height: 100%;
-    padding: 0 4px;
-    color: rgba(255, 255, 255, 0.78);
+    padding: 0 12px;
+    color: rgba(255, 255, 255, 0.65);
     text-decoration: none;
-    font-family: 'Oswald', 'Bebas Neue', 'Teko', 'Barlow Condensed', sans-serif;
-    font-size: 1.05rem;
-    font-weight: 700;
-    letter-spacing: 1.4px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     text-transform: uppercase;
     transition: color 0.22s ease;
     cursor: pointer;
@@ -1903,12 +1902,24 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 .dock-nav-link.active {
     color: #00e59b !important;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .dock-nav-link.active .dock-label {
     color: #00e59b !important;
-    text-shadow: 0 0 10px rgba(0, 229, 155, 0.4);
+    text-shadow: 0 0 12px rgba(0, 229, 155, 0.35);
+}
+
+.dock-nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 12px;
+    height: 3px;
+    background: #00e59b;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 0 10px rgba(0, 229, 155, 0.7);
 }
 
 /* --- WRAPPER E DROPDOWN SOTTOCATEGORIE STILE NOW (Click su Freccia) --- */
