@@ -58,7 +58,7 @@ function HomeViewContent({ defaultTab = "all" }) {
     const initialSections = getCachedSections();
     const [categories, setCategories] = useState(initialSections);
     const [loading, setLoading] = useState(() => initialSections.length === 0);
-    const [mounted, setMounted] = useState(false);
+    const [mounted, setMounted] = useState(true);
     const [filter, setFilter] = useState(getInitialFilter);
     const [subFilter, setSubFilter] = useState(() => {
         return searchParams.get("sub") || "all";
