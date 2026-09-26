@@ -54,6 +54,11 @@ a:hover { text-decoration: underline; }
 const FALLBACK_URL = "https://intranet-park-franklin-comparative.trycloudflare.com";
 
 async function getLiveUrl() {
+    // Se siamo già sul tunnel cloudflare o su localhost/server locale, non reindirizzare altrove
+    const cur = window.location.origin;
+    if (cur.includes("trycloudflare.com") || cur.includes("localhost") || cur.includes("127.0.0.1") || cur.includes("192.168.")) {
+        return cur + "/home";
+    }
     try {
         const resp = await fetch("https://api.github.com/repos/luishighnest/next?t=" + Date.now(), {
             cache: "no-store",
@@ -65,20 +70,21 @@ async function getLiveUrl() {
                 return data.homepage;
             }
         }
-    } catch (e) {
-        console.warn("Impossibile recuperare homepage live:", e);
-    }
-    return FALLBACK_URL;
+    } catch (e) {}
+    return cur + "/home";
 }
 
 async function doRedirect() {
     const dest = await getLiveUrl();
-    const cleanDest = dest.replace(/\/$/, "");
-    document.getElementById("manualLink").href = cleanDest;
-    setTimeout(() => {
-        document.getElementById("manualBox").style.display = "block";
-    }, 2000);
-    window.location.replace(cleanDest);
+    if (dest && dest !== window.location.href) {
+        document.getElementById("manualLink").href = dest;
+        setTimeout(() => {
+            document.getElementById("manualBox").style.display = "block";
+        }, 2000);
+        window.location.replace(dest);
+    } else {
+        window.location.replace(window.location.origin + "/home");
+    }
 }
 
 doRedirect();
