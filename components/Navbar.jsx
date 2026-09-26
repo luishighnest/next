@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import SettingsModal from "./SettingsModal";
 import SearchView from "./SearchView";
-import GuidaTvModal from "./GuidaTvModal";
 import { extractSubCategories, extractVodSubCategories } from "@/lib/subcategories";
 
 export default function Navbar({
@@ -440,24 +439,14 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                                 </button>
 
                                 <button
-                                    type="button"
-                                    className={`dock-action-btn guidatv-icon-btn ${isGuidaTvOpen ? "active" : ""}`}
-                                    onClick={() => setIsGuidaTvOpen(true)}
-                                    aria-label="Guida TV"
-                                    title="Guida TV EPG"
-                                >
-                                    <i className="fas fa-calendar-days"></i>
-                                </button>
-
-                                <button
-                                    type="button"
-                                    className="dock-action-btn settings-icon-btn"
-                                    onClick={() => setIsSettingsOpen(true)}
-                                    aria-label="Impostazioni"
-                                    title="Impostazioni"
-                                >
-                                    <i className="fas fa-gear"></i>
-                                </button>
+                                     type="button"
+                                     className="dock-action-btn settings-icon-btn"
+                                     onClick={() => setIsSettingsOpen(true)}
+                                     aria-label="Impostazioni"
+                                     title="Impostazioni"
+                                 >
+                                     <i className="fas fa-gear"></i>
+                                 </button>
                             </div>
                         </header>
                     </div>
@@ -483,7 +472,6 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
             )}
 
             {isSettingsOpen && <SettingsModal onClose={() => setIsSettingsOpen(false)} />}
-            <GuidaTvModal isOpen={isGuidaTvOpen} onClose={() => setIsGuidaTvOpen(false)} />
         </>
     );
 }

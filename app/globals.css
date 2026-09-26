@@ -1848,26 +1848,24 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .dock-brand-logo-svg {
-    height: 30px;
-    width: 30px;
-    min-width: 30px;
+    height: 28px;
+    width: 28px;
+    min-width: 28px;
     display: block;
-    color: #e6c875;
+    color: #ffffff;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
     transition: color 0.2s ease;
 }
 
 .dock-brand-text {
-    font-family: 'Oswald', 'Bebas Neue', 'Teko', 'Impact', sans-serif;
-    font-size: 1.55rem;
+    font-size: 1.25rem;
     font-weight: 800;
-    letter-spacing: 1.5px;
-    color: #f7df8b;
+    letter-spacing: 1px;
+    color: #ffffff;
     text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(247, 223, 139, 0.3);
 }
 
-/* Gruppo Centrale: Posizionato subito a destra del logo come nell'immagine di riferimento */
+/* Gruppo Centrale: Posizionato a fianco del logo a sinistra con spaziatura corretta */
 .dock-group-center {
     position: relative;
     left: auto;
@@ -1875,9 +1873,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     transform: none;
     display: inline-flex;
     align-items: center;
-    gap: 28px;
+    gap: 16px;
     height: 100%;
-    margin-left: 48px;
+    margin-left: 20px;
 }
 
 .dock-nav-link {
@@ -1886,23 +1884,16 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     align-items: center;
     gap: 4px;
     height: 100%;
-    padding: 0 4px;
-    color: #e0e0e0;
+    padding: 0 8px;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
-    font-family: 'Oswald', 'Bebas Neue', 'Teko', 'Barlow Condensed', sans-serif;
-    font-size: 1.25rem;
+    font-size: 0.92rem;
     font-weight: 700;
-    letter-spacing: 1.8px;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
-    transition: color 0.22s ease, transform 0.2s ease;
+    transition: color 0.22s ease;
     cursor: pointer;
     user-select: none;
-}
-
-.dock-nav-link i.dock-icon {
-    font-size: 0.92rem;
-    transition: transform 0.2s ease, color 0.2s ease;
-    color: rgba(255, 255, 255, 0.5);
 }
 
 .dock-nav-link:hover {
@@ -1910,12 +1901,13 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .dock-nav-link.active {
-    color: #f7df8b !important;
+    color: #00e59b !important;
+    font-weight: 800;
 }
 
 .dock-nav-link.active .dock-label {
-    color: #f7df8b !important;
-    text-shadow: 0 0 12px rgba(247, 223, 139, 0.4);
+    color: #00e59b !important;
+    text-shadow: 0 0 10px rgba(0, 229, 155, 0.4);
 }
 
 /* --- WRAPPER E DROPDOWN SOTTOCATEGORIE STILE NOW (Click su Freccia) --- */
