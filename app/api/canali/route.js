@@ -110,9 +110,13 @@ function normalizeEpg(str) {
 }
 
 export async function GET(request) {
-    checkAndTriggerBackgroundGuidaUpdate();
-    checkAndTriggerBackgroundDaznLiveUpdate();
-    checkAndTriggerBackgroundSportzxUpdate();
+    setTimeout(() => {
+        try {
+            checkAndTriggerBackgroundGuidaUpdate();
+            checkAndTriggerBackgroundDaznLiveUpdate();
+            checkAndTriggerBackgroundSportzxUpdate();
+        } catch(e) {}
+    }, 0);
     const { searchParams } = new URL(request.url);
     const sourceParam = searchParams.get("source") || "";
     const tabFilter = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
