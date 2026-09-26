@@ -1804,7 +1804,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     height: 100%;
     max-width: 100%;
     margin: 0;
-    padding: 0 24px;
+    padding: 0 48px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -1821,11 +1821,11 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     box-sizing: border-box;
 }
 
-/* Gruppo Sinistro: Logo e Orologio */
+/* Gruppo Sinistro: Logo */
 .dock-group-left {
     display: inline-flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     flex-shrink: 0;
     line-height: 1;
 }
@@ -1840,7 +1840,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     border: none !important;
     box-shadow: none !important;
     padding: 0 !important;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition: opacity 0.2s ease;
     flex-shrink: 0;
 }
 .dock-brand-link:hover {
@@ -1858,14 +1858,14 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .dock-brand-text {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     color: #ffffff;
     text-transform: uppercase;
 }
 
-/* Gruppo Centrale: Posizionato a fianco del logo a sinistra con spaziatura corretta */
+/* Gruppo Centrale: Posizionato affiancato al logo con spaziatura uguale alla foto di riferimento */
 .dock-group-center {
     position: relative;
     left: auto;
@@ -1873,9 +1873,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     transform: none;
     display: inline-flex;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
     height: 100%;
-    margin-left: 20px;
+    margin-left: 64px;
 }
 
 .dock-nav-link {
@@ -1884,12 +1884,13 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     align-items: center;
     gap: 4px;
     height: 100%;
-    padding: 0 8px;
-    color: rgba(255, 255, 255, 0.7);
+    padding: 0 4px;
+    color: rgba(255, 255, 255, 0.78);
     text-decoration: none;
-    font-size: 0.92rem;
+    font-family: 'Oswald', 'Bebas Neue', 'Teko', 'Barlow Condensed', sans-serif;
+    font-size: 1.05rem;
     font-weight: 700;
-    letter-spacing: 0.8px;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
     transition: color 0.22s ease;
     cursor: pointer;
