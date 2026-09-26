@@ -105,7 +105,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "C:\\Users\\alecl\\Desktop\\next",
+    "outputFileTracingRoot": "C:\\Users\\alecl\\Desktop\\PROJECT_HUB\\apps\\site_next",
     "enablePrerenderSourceMaps": true,
     "cacheComponents": false,
     "cacheLife": {
@@ -320,9 +320,9 @@ self.__SERVER_FILES_MANIFEST={
     "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight",
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
-    "repoRoot": "C:\\Users\\alecl\\Desktop\\next",
+    "repoRoot": "C:\\Users\\alecl\\Desktop\\PROJECT_HUB\\apps\\site_next",
     "turbopack": {
-      "root": "C:\\Users\\alecl\\Desktop\\next"
+      "root": "C:\\Users\\alecl\\Desktop\\PROJECT_HUB\\apps\\site_next"
     },
     "distDirRoot": ".next",
     "_originalRewrites": {
@@ -336,7 +336,7 @@ self.__SERVER_FILES_MANIFEST={
       "fallback": []
     }
   },
-  "appDir": "C:\\Users\\alecl\\Desktop\\next",
+  "appDir": "C:\\Users\\alecl\\Desktop\\PROJECT_HUB\\apps\\site_next",
   "relativeAppDir": "",
   "files": [
     ".next\\package.json",
