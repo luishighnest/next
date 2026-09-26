@@ -441,6 +441,7 @@ export async function GET(request) {
                         }
                     }
 
+                    const hasValidStream = Boolean(rawStreamUrl);
                     // Se l'evento possiede già un array di fonti (es. SportzX o FCTV33 con server multipli), lo preserva
                     let eventSources = [];
                     if (Array.isArray(ev.sources) && ev.sources.length > 0) {
