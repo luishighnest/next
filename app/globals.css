@@ -1740,14 +1740,13 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .desktop-home.is-mounting,
 .sky-app.is-mounting,
 .event-player-page.is-mounting {
-    opacity: 0;
+    opacity: 1;
 }
 
 .desktop-home.is-mounted,
 .sky-app.is-mounted,
 .event-player-page.is-mounted {
     opacity: 1;
-    animation: premiumPageFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes premiumPageFadeIn {
