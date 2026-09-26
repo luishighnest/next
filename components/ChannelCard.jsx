@@ -308,11 +308,14 @@ function ChannelCard({ channel, categoryName, priority = false, onCardClick }) {
     const slug = getChannelSlug(channel);
     const progInfo = getCurrentProgramInfo(channel?.epg);
     const isVod = Boolean(channel?.isVod || channel?.vodType);
-    const rawImg = (isVod && channel?.poster) ? channel.poster : (channel?.image || (progInfo && progInfo.immagine ? progInfo.immagine : null) || channel?.logo);
     const isTestJsonEvent = channel?.isTestJson || (channel?.group && channel.group.toUpperCase().replace(/\s+/g, "").includes("EVENTI")) || Boolean(channel?.eventSlug);
     const logoUrl = isTestJsonEvent ? "/logos/dazn.png" : getChannelLogoUrl(channel);
-    const cardImgUrl = rawImg || (channel?.title ? `/api/img?src=${encodeURIComponent("https://raw.githubusercontent.com/luishighnest/script2/main/logo.png")}&title=${encodeURIComponent(channel.title)}` : null);
-    const hasImage = Boolean(cardImgUrl);
+
+    // Priorità immagine: 1. poster/image diretto 2. immagine EPG 3. logo canale 4. generatore poster /api/img
+    const directImg = (isVod && channel?.poster) ? channel.poster : (channel?.image || (progInfo && progInfo.immagine ? progInfo.immagine : null));
+    const rawImg = directImg || (logoUrl && logoUrl !== "/logos/premium_logo_dark.jpg" ? logoUrl : null);
+    const cardImgUrl = rawImg || (channel?.title ? `/api/img?src=${encodeURIComponent("https://raw.githubusercontent.com/luishighnest/script2/main/logo.png")}&title=${encodeURIComponent(channel.title)}` : "/logos/dazn.png");
+    const hasImage = true;
     const isSky = !isTestJsonEvent && (
         channel?.provider === "SKY" ||
         (channel?.group && (channel.group.includes("Sky") || channel.group === "Sky Cinema" || channel.group === "Sky Bambini")) ||
