@@ -59,13 +59,34 @@ export default function InlineEventPlayer({ source, title, poster }) {
                 const player = new shaka.Player(videoRef.current);
                 playerRef.current = player;
 
-                // Headers personalizzati solo per richieste DIRETTE (non proxied);
-                // sul proxy i riferimenti vengono passati come query params.
+                // Filtro risposte per forzare manifest type corretto per MPD senza estensione
+                player.getNetworkingEngine().registerResponseFilter((type, response) => {
+                    if (type === shaka.net.NetworkingEngine.RequestType.MANIFEST) {
+                        if (!response.headers["content-type"] || response.headers["content-type"] === "text/plain") {
+                            if (streamUrl.includes(".mpd") || (!streamUrl.includes(".m3u8") && !streamUrl.includes(".ts"))) {
+                                response.headers["content-type"] = "application/dash+xml";
+                            }
+                        }
+                    }
+                });
+
+                // Headers personalizzati per richieste dirette (User-Agent, Referer, dazn-token)
                 player.getNetworkingEngine().registerRequestFilter((type, request) => {
                     if (request.uri.startsWith("/api/") || request.uri.startsWith(window.location.origin + "/api/")) return;
                     if (source.ua) request.headers["User-Agent"] = source.ua;
                     if (source.referer) request.headers["referer"] = source.referer;
                     if (source.origin) request.headers["origin"] = source.origin;
+
+                    let daznTok = source.dazn_token || "";
+                    if (!daznTok && streamUrl.includes("@eyJ")) {
+                        const tm = streamUrl.match(/@([A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)/);
+                        if (tm) daznTok = tm[1];
+                    }
+                    if (daznTok) {
+                        request.headers["dazn-token"] = daznTok;
+                        if (!source.referer) request.headers["referer"] = "https://www.dazn.com/";
+                        if (!source.origin) request.headers["origin"] = "https://www.dazn.com";
+                    }
                 });
 
                 player.configure({
