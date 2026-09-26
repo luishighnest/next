@@ -439,25 +439,49 @@ export async function GET(request) {
                         }
                     }
 
-                    const hasValidStream = Boolean(rawStreamUrl);
-                    const sourceItem = hasValidStream ? {
-                        name: "WARP (Cloudflare)",
-                        isWarp: true,
-                        url: rawStreamUrl,
-                        kid_key: rawKidKey,
-                        ua: ev.ua || "",
-                        dazn_token: ev.dazn_token || ""
-                    } : null;
+                    // Se l'evento possiede già un array di fonti (es. SportzX o FCTV33 con server multipli), lo preserva
+                    let eventSources = [];
+                    if (Array.isArray(ev.sources) && ev.sources.length > 0) {
+                        eventSources = ev.sources.map((s, idx) => {
+                            let sUrl = (s.url || s.mpd || "").trim();
+                            let sKey = (s.kid_key || s.key || "").trim();
+                            if (sUrl.includes("|")) {
+                                const parts = sUrl.split("|");
+                                sUrl = parts[0].trim();
+                                if (!sKey && parts[1]) sKey = parts[1].trim();
+                            }
+                            return {
+                                name: s.name || `Server ${idx + 1}`,
+                                isWarp: true,
+                                url: sUrl,
+                                kid_key: sKey,
+                                ua: s.ua || ev.ua || "",
+                                referer: s.referer || ev.referer || "",
+                                origin: s.origin || "",
+                                dazn_token: s.dazn_token || ev.dazn_token || ""
+                            };
+                        });
+                    } else if (hasValidStream) {
+                        eventSources = [{
+                            name: "WARP (Cloudflare)",
+                            isWarp: true,
+                            url: rawStreamUrl,
+                            kid_key: rawKidKey,
+                            ua: ev.ua || "",
+                            referer: ev.referer || "",
+                            dazn_token: ev.dazn_token || ""
+                        }];
+                    }
 
                     const groupKey = groupName + ":::" + cleanTitle.toLowerCase();
                     if (groupedMap.has(groupKey)) {
                         const existing = groupedMap.get(groupKey);
-                        if (sourceItem) {
-                            existing.sources.push(sourceItem);
+                        if (eventSources.length > 0) {
+                            eventSources.forEach(s => existing.sources.push(s));
                             if (!existing.url || existing.url.includes(".m3u8")) {
-                                existing.url = sourceItem.url;
-                                existing.kid_key = sourceItem.kid_key;
-                                existing.ua = sourceItem.ua;
+                                existing.url = eventSources[0].url;
+                                existing.kid_key = eventSources[0].kid_key;
+                                existing.ua = eventSources[0].ua;
                             }
                         }
                     } else {
@@ -467,8 +491,8 @@ export async function GET(request) {
                             title: cleanTitle,
                             group: groupName,
                             navbar: isLiveTVGroup ? "sport" : "eventi",
-                            url: rawStreamUrl,
-                            kid_key: rawKidKey,
+                            url: rawStreamUrl || (eventSources[0]?.url || ""),
+                            kid_key: rawKidKey || (eventSources[0]?.kid_key || ""),
                             provider: ev.provider || "DAZN",
                             logo: ev.image || "/logos/dazn.png",
                             image: ev.image || "",
@@ -481,8 +505,9 @@ export async function GET(request) {
                             isEventVod: isVodEvent,
                             tile_type: ev.tile_type || (isVodEvent ? "CatchUp" : "Live"),
                             ua: ev.ua || "",
+                            referer: ev.referer || "",
                             dazn_token: ev.dazn_token || "",
-                            sources: sourceItem ? [sourceItem] : [],
+                            sources: eventSources,
                             isCustom: true,
                             isTestJson: !isLiveTVGroup,
                             slug: createSlug(cleanTitle)
@@ -496,8 +521,10 @@ export async function GET(request) {
                     let warpCount = 0;
                     c.sources.forEach(s => {
                         s.isWarp = true;
-                        warpCount++;
-                        s.name = c.sources.length > 1 ? `WARP ${warpCount}` : "WARP (Cloudflare)";
+                        if (!s.name || s.name === "WARP (Cloudflare)") {
+                            warpCount++;
+                            s.name = c.sources.length > 1 ? `WARP ${warpCount}` : "WARP (Cloudflare)";
+                        }
                     });
                     orderedChannels.push(c);
                 });
