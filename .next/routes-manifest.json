@@ -1,0 +1,200 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [
+      {
+        "source": "/evento/:slug*",
+        "destination": "/eventi/:slug*",
+        "regex": "^/evento(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))?(?:/)?$"
+      }
+    ],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/eventi/[slug]",
+      "regex": "^/eventi/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/eventi/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/vod/info/[id]",
+      "regex": "^/vod/info/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/vod/info/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/vod/[id]",
+      "regex": "^/vod/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/vod/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/vod/[id]/[season]/[episode]",
+      "regex": "^/vod/([^/]+?)/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid",
+        "nxtPseason": "nxtPseason",
+        "nxtPepisode": "nxtPepisode"
+      },
+      "namedRegex": "^/vod/(?<nxtPid>[^/]+?)/(?<nxtPseason>[^/]+?)/(?<nxtPepisode>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/canali",
+      "regex": "^/api/canali(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/canali(?:/)?$"
+    },
+    {
+      "page": "/api/cron/guida",
+      "regex": "^/api/cron/guida(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/cron/guida(?:/)?$"
+    },
+    {
+      "page": "/api/eventi",
+      "regex": "^/api/eventi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/eventi(?:/)?$"
+    },
+    {
+      "page": "/api/img",
+      "regex": "^/api/img(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/img(?:/)?$"
+    },
+    {
+      "page": "/api/m3u",
+      "regex": "^/api/m3u(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/m3u(?:/)?$"
+    },
+    {
+      "page": "/api/proxy",
+      "regex": "^/api/proxy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/proxy(?:/)?$"
+    },
+    {
+      "page": "/api/richiedi",
+      "regex": "^/api/richiedi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/richiedi(?:/)?$"
+    },
+    {
+      "page": "/api/sky",
+      "regex": "^/api/sky(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/sky(?:/)?$"
+    },
+    {
+      "page": "/api/vod",
+      "regex": "^/api/vod(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/vod(?:/)?$"
+    },
+    {
+      "page": "/eventi",
+      "regex": "^/eventi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/eventi(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/home",
+      "regex": "^/home(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/home(?:/)?$"
+    },
+    {
+      "page": "/intrattenimento",
+      "regex": "^/intrattenimento(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/intrattenimento(?:/)?$"
+    },
+    {
+      "page": "/sky",
+      "regex": "^/sky(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sky(?:/)?$"
+    },
+    {
+      "page": "/sport",
+      "regex": "^/sport(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/sport(?:/)?$"
+    },
+    {
+      "page": "/vod",
+      "regex": "^/vod(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/vod(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "/api/img/route": "app/api/img/route.js",
+  "/api/proxy/route": "app/api/proxy/route.js"
+}
