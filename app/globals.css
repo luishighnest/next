@@ -1760,18 +1760,20 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 
 /* Modalità in cima alla pagina: sfumatura scura superiore trasparente che si fonde con l'hero */
 .home-header-wrapper.header-top {
-    background: linear-gradient(180deg, rgba(8, 12, 22, 0.88) 0%, rgba(8, 12, 22, 0.4) 60%, transparent 100%) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+    background: linear-gradient(180deg, rgba(8, 12, 22, 0.88) 0%, rgba(8, 12, 22, 0.35) 60%, transparent 100%) !important;
+    border: none !important;
+    border-bottom: none !important;
     box-shadow: none !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
 }
 
-/* Modalità durante lo scroll: vetro ardesia scuro premium con riflesso sul bordo inferiore */
+/* Modalità durante lo scroll: vetro ardesia scuro premium senza linee o bordi inferiori */
 .home-header-wrapper.header-scrolled {
     background: rgba(9, 13, 23, 0.92) !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.65), 0 0 1px rgba(255, 255, 255, 0.1) !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
     backdrop-filter: blur(28px) saturate(190%) !important;
     -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
 }
@@ -1784,7 +1786,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     align-items: center;
     justify-content: center;
     background: transparent !important;
-    border-bottom: 1px solid transparent !important;
+    border: none !important;
+    border-bottom: none !important;
     border-color: transparent !important;
     box-shadow: none !important;
     backdrop-filter: none !important;
@@ -1807,6 +1810,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     display: flex;
     align-items: center;
     box-sizing: border-box;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 .home-header-dock {
@@ -1818,6 +1824,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     pointer-events: all;
     position: relative;
     box-sizing: border-box;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
 }
 
 /* Gruppo Sinistro: Logo + Tasti Categorie affiancati subito a destra */
@@ -1872,7 +1881,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     -webkit-text-fill-color: transparent;
 }
 
-/* Gruppo Centrale: Posizionato SUBITO a destra del logo senza posizionamenti assoluti o margini enormi */
+/* Gruppo Centrale: Posizionato SUBITO a destra del logo */
 .dock-group-center {
     position: static !important;
     left: auto !important;
@@ -1880,7 +1889,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     transform: none !important;
     display: flex !important;
     align-items: center !important;
-    gap: 6px !important;
+    gap: 8px !important;
     height: 100% !important;
     margin-left: 0 !important;
 }
@@ -1890,15 +1899,16 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     display: inline-flex;
     align-items: center;
     height: 100%;
+    gap: 2px;
 }
 
 .dock-nav-link {
     position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    justify-content: center;
     height: 38px;
-    padding: 0 14px;
+    padding: 0 16px;
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-size: 0.88rem;
@@ -1908,70 +1918,68 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     border-radius: 8px;
     transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
                 background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
-                text-shadow 0.2s ease;
+                border-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.2s ease;
     cursor: pointer;
     user-select: none;
+    box-sizing: border-box;
+}
+
+.dock-nav-link .dock-label {
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
 }
 
 .dock-nav-link:hover {
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.06);
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .dock-nav-link.active {
     color: #00e59b !important;
     font-weight: 700;
-    background: rgba(0, 229, 155, 0.08);
+    background: rgba(0, 229, 155, 0.12) !important;
+    border: 1px solid rgba(0, 229, 155, 0.3) !important;
+    box-shadow: 0 0 16px rgba(0, 229, 155, 0.15) !important;
 }
 
 .dock-nav-link.active .dock-label {
     color: #00e59b !important;
-    text-shadow: 0 0 14px rgba(0, 229, 155, 0.4);
+    text-shadow: 0 0 12px rgba(0, 229, 155, 0.4);
 }
 
+.dock-nav-link::after,
 .dock-nav-link.active::after {
-    display: block !important;
-    content: '' !important;
-    position: absolute;
-    bottom: -2px;
-    left: 14px;
-    right: 14px;
-    height: 2px;
-    background: #00e59b;
-    border-radius: 2px;
-    box-shadow: 0 0 10px rgba(0, 229, 155, 0.8), 0 0 20px rgba(0, 229, 155, 0.4);
+    display: none !important;
+    content: none !important;
 }
 
-/* --- WRAPPER E DROPDOWN SOTTOCATEGORIE STILE STREAMING PREMIUM --- */
-.dock-nav-item-wrapper .dock-nav-link {
-    padding-right: 6px;
-}
-
+/* --- FRECCIA DROPDOWN INDIPENDENTE E AREA INTERATTIVA RISERVATA --- */
 .dock-arrow-btn {
     background: transparent;
-    border: none;
-    padding: 0 6px 0 0px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 0;
+    width: 26px;
+    height: 38px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.45);
-    height: 38px;
-    transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     outline: none;
     user-select: none;
     -webkit-user-select: none;
-    margin-left: -4px;
+    flex-shrink: 0;
 }
 
-.dock-arrow-btn:hover {
-    color: #ffffff;
-}
-
-.dock-arrow-btn.is-open,
-.dock-nav-item-wrapper.dropdown-active .dock-arrow-btn,
-.dock-nav-item-wrapper:hover .dock-arrow-btn {
+.dock-arrow-btn:hover,
+.dock-arrow-btn.is-open {
     color: #00e59b !important;
+    background: rgba(0, 229, 155, 0.1);
+    border-color: rgba(0, 229, 155, 0.25);
 }
 
 .dock-arrow-icon {
@@ -1980,8 +1988,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     pointer-events: none;
 }
 
-.dock-arrow-btn.is-open .dock-arrow-icon,
-.dock-nav-item-wrapper:hover .dock-arrow-icon {
+.dock-arrow-btn.is-open .dock-arrow-icon {
     transform: rotate(180deg);
     color: #00e59b;
 }
@@ -1990,6 +1997,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     color: rgba(0, 229, 155, 0.85);
 }
 
+/* --- POPUP SOTTOCATEGORIE (Attivato SOLO via classe .is-open) --- */
 .dock-subnav-dropdown {
     position: absolute;
     top: calc(100% + 8px);
@@ -1999,7 +2007,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     max-height: 420px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: rgba(10, 14, 24, 0.95);
+    background: rgba(10, 14, 24, 0.96);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 14px;
     padding: 8px;
@@ -2021,8 +2029,7 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
-.dock-subnav-dropdown.is-open,
-.dock-nav-item-wrapper:hover .dock-subnav-dropdown {
+.dock-subnav-dropdown.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;

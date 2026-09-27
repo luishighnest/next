@@ -91,16 +91,28 @@ export default function Navbar({
 
     const effectiveSubCategories = dynamicSubCategories || cachedSubCategories;
 
-    const handleItemMouseEnter = (tab) => {
+    // DROPDOWN HOVER: Si attiva ESCLUSIVAMENTE al passaggio del mouse sopra la freccia o il dropdown stesso
+    const handleArrowMouseEnter = (tabId) => {
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
-        setOpenDropdownNav(tab);
+        setOpenDropdownNav(tabId);
     };
 
-    const handleItemMouseLeave = () => {
+    const handleArrowMouseLeave = () => {
         if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
         hoverTimeoutRef.current = setTimeout(() => {
             setOpenDropdownNav(null);
-        }, 180);
+        }, 200);
+    };
+
+    const handleDropdownMouseEnter = () => {
+        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+    };
+
+    const handleDropdownMouseLeave = () => {
+        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+        hoverTimeoutRef.current = setTimeout(() => {
+            setOpenDropdownNav(null);
+        }, 200);
     };
 
     const handleToggleArrow = (e, tab) => {
@@ -350,8 +362,6 @@ export default function Navbar({
                                             <div
                                                 key={item.id}
                                                 className={`dock-nav-item-wrapper ${isDropdownOpen ? "dropdown-active" : ""}`}
-                                                onMouseEnter={() => item.hasSub && subItems.length > 0 && handleItemMouseEnter(item.id)}
-                                                onMouseLeave={() => item.hasSub && subItems.length > 0 && handleItemMouseLeave()}
                                             >
                                                 <Link
                                                     href={item.path}
@@ -370,6 +380,8 @@ export default function Navbar({
                                                     <button
                                                         type="button"
                                                         className={`dock-arrow-btn ${isDropdownOpen ? "is-open" : ""}`}
+                                                        onMouseEnter={() => handleArrowMouseEnter(item.id)}
+                                                        onMouseLeave={handleArrowMouseLeave}
                                                         onClick={(e) => handleToggleArrow(e, item.id)}
                                                         aria-label={`Sottocategorie ${item.label}`}
                                                         title={`Mostra sottocategorie ${item.label}`}
@@ -381,7 +393,12 @@ export default function Navbar({
                                                 )}
 
                                                 {item.hasSub && subItems.length > 0 && (
-                                                    <div className={`dock-subnav-dropdown ${isDropdownOpen ? "is-open" : ""}`} role="menu">
+                                                    <div
+                                                        className={`dock-subnav-dropdown ${isDropdownOpen ? "is-open" : ""}`}
+                                                        role="menu"
+                                                        onMouseEnter={handleDropdownMouseEnter}
+                                                        onMouseLeave={handleDropdownMouseLeave}
+                                                    >
                                                         <div className="dock-dropdown-header">
                                                             <span>{item.label}</span>
                                                         </div>
@@ -399,6 +416,7 @@ export default function Navbar({
                                                                 return (
                                                                     <button
                                                                         key={sub.id}
+                                                                        type="button"
                                                                         className={`dock-dropdown-item ${isSubActive ? "active" : ""}`}
                                                                         onClick={() => handleSubCategoryClick(item.id, sub.id)}
                                                                     >
