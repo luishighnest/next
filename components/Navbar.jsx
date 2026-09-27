@@ -366,8 +366,7 @@ export default function Navbar({
                                                 <Link
                                                     href={item.path}
                                                     className={`dock-nav-link ${isActive ? "active" : ""}`}
-                                                    onClick={(e) => {
-                                                        e.preventDefault();
+                                                    onClick={() => {
                                                         setOpenDropdownNav(null);
                                                         handleNavClick(item.id);
                                                         if (onSubFilterChange) onSubFilterChange("all");

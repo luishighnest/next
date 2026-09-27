@@ -19851,13 +19851,13 @@
       },
       {
         "ora": "08:30",
-        "fine": "10:30",
+        "fine": "10:10",
         "titolo": "Finale",
         "descrizione": "Korea Open. - WTA 250 Korea Open",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/2192d6b8-f77a-4e00-a209-d41afb85fddd/background?territory=IT&md5ChecksumParam=edc5bd5007e0100d18ab1c441121c52c"
       },
       {
-        "ora": "10:30",
+        "ora": "10:10",
         "fine": "11:00",
         "titolo": "27/09/2026",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
@@ -20582,45 +20582,31 @@
       },
       {
         "ora": "06:00",
-        "fine": "10:10",
+        "fine": "10:35",
         "titolo": "6 Ore del Fuji: Gara",
         "descrizione": "World Endurance Championship Motor Racing. - Il Wec si trasferisce al Fuji per continuare a dare spettacolo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/50564270-8f3a-4835-9593-0bec68d0dc93/background?territory=IT&md5ChecksumParam=9e2e300d00f96a865544cc5fbf54e6fe"
       },
       {
-        "ora": "10:10",
-        "fine": "10:30",
+        "ora": "10:35",
+        "fine": "11:15",
         "titolo": "2a Giornata",
         "descrizione": "Sintesi e momenti salienti del torneo di vela Coppa America nella seconda giornata.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/01c5343d-01c1-4f96-9691-76bdc410a26d/background?territory=IT&md5ChecksumParam=59c29bf164971cbbfb51f2702fd09586"
       },
       {
-        "ora": "10:30",
-        "fine": "11:05",
-        "titolo": "Boat Show 2026 Ep.29 24/09/2026",
-        "descrizione": "Boat Show. - Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/f84013c0-3de2-4aca-b36b-33841b9621e2/background?territory=IT&md5ChecksumParam=2c5e1f232e619954fe3fbb2146f7d028"
-      },
-      {
-        "ora": "11:05",
-        "fine": "12:55",
+        "ora": "11:15",
+        "fine": "13:10",
         "titolo": "Polonia - Francia Finale 1°/2° Posto",
         "descrizione": "Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/f9d5f1dc-6da8-4ce9-9fbd-a88d957bfcc1/HERO_CLEAN_WIDE?territory=IT&version=ad9c9edf-3e13-3c49-9a22-323dc17c2a03&w=1920&h=1080&md5ChecksumParam=444693fbda868891831c9c89f9d38476"
       },
       {
-        "ora": "12:55",
-        "fine": "13:20",
+        "ora": "13:10",
+        "fine": "13:45",
         "titolo": "Totti",
         "descrizione": "90/10",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/a3c245bb-9fcd-432d-a5fe-15cae0de0ecc/background?territory=IT&md5ChecksumParam=e456b1c6768a34a606864c3ca805aab4"
-      },
-      {
-        "ora": "13:20",
-        "fine": "13:45",
-        "titolo": "La Giovane Italia 2026 Ep. 20 24/09/2026",
-        "descrizione": "24/09/2026 La giovane Italia. - Servizi informativi dedicati ai piu' piccoli sportivi italiani e alle realta' giovanili legate al calcio, tra trofei, incontri, e storie.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/f97b89d8-1eaa-447c-8ed1-929edeb12fb5/background?territory=IT&md5ChecksumParam=5d3d5a6286629b4dd41114130b047626"
       },
       {
         "ora": "13:45",
@@ -21131,87 +21117,66 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:55",
-        "titolo": "È stato tutto bello - Storia di Paolino e Pablito",
-        "descrizione": "Paolino e Pablito. - Walter Veltroni racconta in un documentario la vita e la carriera di Paolo Rossi, uno degli eroi della nazionale italiana che trionfo' ai Mondiali di calcio del 1982.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/0f60e77d-6305-4ab3-9331-68250139c18f/background?territory=IT&md5ChecksumParam=ae4f561d8112d6a9f9d54a2da3d471eb"
+        "fine": "09:20",
+        "titolo": "Finale Maschile",
+        "descrizione": "SINNER (Ita) - ALCARAZ (Spa) - Alla sua prima finale a Wimbledon, Jannik Sinner sfida il due volte campione Carlos Alcaraz. Telecr.: Pero-Bertolucci-Ljubicic",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/438a3d67-27d2-4c45-af9f-13f6ef42dc25/background?territory=IT&md5ChecksumParam=046af0ef62bb0cfda466963c4cd3bb7e"
       },
       {
-        "ora": "07:55",
-        "fine": "13:15",
-        "titolo": "Nadal - Coria. Finale - Ep. -1 - Nadal - Coria. Finale",
-        "descrizione": "Foro Italico, 9 maggio 2005: Rafa Nadal, non ancora 19enne, sfida in finale a Roma l'argentino Guillermo Coria.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/856c3086-590a-46c4-9809-06d79128e2b8/background?territory=IT&md5ChecksumParam=84d4c3e5cc087e8cdccf1936ecf45e63"
+        "ora": "09:20",
+        "fine": "12:00",
+        "titolo": "Sinner - Fritz",
+        "descrizione": "Open 2024. - Jannik Sinner gioca la sua seconda finale in uno Slam sfidando l'americano Taylor Fritz per il titolo degli US Open. Tc: Pero-Pescosolido.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/32b28562-e6a4-4aeb-b1f9-22b7599191c1/background?territory=IT&md5ChecksumParam=45b5d637ad32a1e9d620efbd9c1f64a8"
       },
       {
-        "ora": "13:15",
-        "fine": "14:15",
-        "titolo": "Ep. 3",
-        "descrizione": "Gli ospiti di Rino Tommasi e Gianpaolo Ormezzano si confrontano su tifo e sport: Omar Sivori, Filippo Grassia, Gino Bacci e Fabio Bruno.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/69147991-91ad-4f59-b805-706b3fb19151/HERO_CLEAN_WIDE?territory=IT&version=b60cb469-8f2c-31e3-ad2c-f80cc7c0d621&w=1920&h=1080&md5ChecksumParam=ca31a27be0a997bb0e9a63900262586a"
+        "ora": "12:00",
+        "fine": "14:10",
+        "titolo": "Tennis Us Open 1999 Semifinale...",
+        "descrizione": "Singolare Femminile Williams/ Davenport 10/09/99. - Tennis Us Open 1999 Semifinale Singolare Femminile Williams/ Davenport 10/09/99",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/SportCalcio_Background_u6JP1797W.png"
       },
       {
-        "ora": "14:15",
-        "fine": "15:45",
-        "titolo": "Il Processo del 10 Gennaio 1994",
-        "descrizione": "processo di Biscardi. - Aldo Biscardi e Maurizio Mosca ospitano il direttore generale dell'Inter Piero Boschi e il sindaco di Napoli Antonio Bassolino per analizzare le rispettive crisi societarie",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/91082388-a577-4ac2-9e62-8e7e90e182ff/background?territory=IT&md5ChecksumParam=6f4c6424f52629fc1c7f986400f690a6"
+        "ora": "14:10",
+        "fine": "16:00",
+        "titolo": "Tennis Torneo Atp Tour Di Lione 1994 Finale Maschile 23/10/94",
+        "descrizione": "Finale Maschile 23/10/94. - Tennis Torneo Atp Tour Di Lione 1994 Finale Maschile 23/10/94",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/SportCalcio_Background_u6JP1797W.png"
       },
       {
-        "ora": "15:45",
-        "fine": "16:15",
-        "titolo": "Open - The First Serve - Flavia Pennetta e Fabio Fognini",
-        "descrizione": "Pennetta e Fabio Fognini. - Open - The First Serve - Flavia Pennetta e Fabio Fognini",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/6765012d-2ec4-484b-a2e9-7182a6facb2e/background?territory=IT&md5ChecksumParam=5daeb15d4e504a81ab2469950a37b258"
+        "ora": "16:00",
+        "fine": "19:30",
+        "titolo": "Finale Maschile",
+        "descrizione": "SINNER (Ita) - ALCARAZ (Spa) - Alla sua prima finale a Wimbledon, Jannik Sinner sfida il due volte campione Carlos Alcaraz. Telecr.: Pero-Bertolucci-Ljubicic",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/438a3d67-27d2-4c45-af9f-13f6ef42dc25/background?territory=IT&md5ChecksumParam=046af0ef62bb0cfda466963c4cd3bb7e"
       },
       {
-        "ora": "16:15",
-        "fine": "17:10",
-        "titolo": "Pete Sampras",
-        "descrizione": "Pete Sampras ha vinto 14 Major, la meta' a Wimbledon, dove e' stato padrone assoluto vincendo il torneo 7 volte in 8 anni.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/5a3601aa-9954-4e6f-9c00-560eaf47c6b6/background?territory=IT&md5ChecksumParam=ceb4b0bf617829052afc3a0d6e9a1c20"
+        "ora": "19:30",
+        "fine": "20:55",
+        "titolo": "Miami: Federer - Nadal 28/03/04",
+        "descrizione": "Copertura televisiva dei migliori incontri di tennis nazionali ed internazionali.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/1a6a5594-5d22-410b-8d72-e21575eb8e67/HERO_CLEAN_WIDE?territory=IT&version=aa7754a0-7f88-39a1-8f7f-15ce66bf712f&w=1920&h=1080&md5ChecksumParam=047d5027ebb7eed455dc7d00cc274e04"
       },
       {
-        "ora": "17:10",
-        "fine": "18:15",
-        "titolo": "Roger Federer",
-        "descrizione": "Giorgio Porra' racconta Roger Federer, il piu' grande tennista di sempre. Con le voci di Sandro Veronesi, Panatta, Bertolucci, Zugarelli e Ljubicic.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/91714712-1f28-4e23-8ddd-4b8142f3d627/background?territory=IT&md5ChecksumParam=b8ab32000bb1642e107ed778b23709ab"
-      },
-      {
-        "ora": "18:15",
-        "fine": "21:00",
-        "titolo": "Volley Femminile Cev Champions League 2020/2021 - Stag. -3 - Conegliano - Istanbul. Finale",
-        "descrizione": "Champions League F. - A Verona va in scena l'ultimo atto della Champions League femminile, le \"pantere\" di Conegliano sfidano le turche del Vakifbank Istanbul. TC: Prini-Mangifesta",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/117d2b23-03c8-4896-a187-11f60b03a46d/background?territory=IT&md5ChecksumParam=cfd633f4faedd1afa2e9e6c8723d9049"
-      },
-      {
-        "ora": "21:00",
+        "ora": "20:55",
         "fine": "22:35",
-        "titolo": "Jackie Stewart",
-        "descrizione": "Un documentario su una delle piu' grandi leggende sportive di tutti i tempi: l'ex campione del mondo di Formula 1, nonche' imprenditore, Jackie Stewart.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/225a512c-0423-4161-838a-5caff96c0561/background?territory=IT&md5ChecksumParam=cdf5fcbb7840688154867d06aa34d6b7"
+        "titolo": "Tennis Torneo Atp Tour Di Lione 1994 Finale Maschile 23/10/94",
+        "descrizione": "Finale Maschile 23/10/94. - Tennis Torneo Atp Tour Di Lione 1994 Finale Maschile 23/10/94",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/SportCalcio_Background_u6JP1797W.png"
       },
       {
         "ora": "22:35",
-        "fine": "23:30",
-        "titolo": "Parte 1",
-        "descrizione": "Giugno 1938. La piazza di Gradisca e' in festa per il trionfo degli Azzurri. Un ragazzino come tanti sogna di diventare calciatore, non sa che 44 anni dopo quella piazza esultera' per lui.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/2e1c39d0-f9ce-4973-a924-961af700a763/background?territory=IT&md5ChecksumParam=317028f19a25c02b836729dc194c2563"
+        "fine": "00:45",
+        "titolo": "Tennis Us Open 1999 Semifinale...",
+        "descrizione": "Singolare Femminile Williams/ Davenport 10/09/99. - Tennis Us Open 1999 Semifinale Singolare Femminile Williams/ Davenport 10/09/99",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/SportCalcio_Background_u6JP1797W.png"
       },
       {
-        "ora": "23:30",
-        "fine": "00:30",
-        "titolo": "Parte 2",
-        "descrizione": "Chiamato a rifondare il calcio azzurro, dopo la disfatta del '74, il grande vecchio compone un indimenticabile capolavoro: guidare l'Italia al suo terzo titolo mondiale.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/bdf7bf71-278c-453c-aaac-0d945eda4011/background?territory=IT&md5ChecksumParam=317028f19a25c02b836729dc194c2563"
-      },
-      {
-        "ora": "00:30",
-        "fine": "01:30",
-        "titolo": "G. Bretagna, Donington 2009. MotoGP",
-        "descrizione": "Decimo appuntamento del Campionato del Mondo 2009 per la classe MotoGP. Pole per Valentino Rossi su Yamaha con tanti italiani competitivi: da Andrea Dovizioso a Marco Melandri.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/c3998a65-adc5-486f-b5e7-ece6c1440aeb/background?territory=IT&md5ChecksumParam=2c0a77789c9f959b09150df22505d1d0"
+        "ora": "00:45",
+        "fine": "03:05",
+        "titolo": "Sinner - Ruud, Finale Singolare",
+        "descrizione": "Tennis: ATP 1000 Roma. - SINNER (Ita)-RUUD (Nor) - Il n.1 al mondo punta al sesto Masters 1000 consecutivo, 50 dopo la vittoria di Panatta al Foro Italico. Tc: Pero-Bertolucci",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/uuid/d7180d67-3773-4618-b5b5-5f9d2d6c330a/background?territory=IT&md5ChecksumParam=f14cc5ac73b05df5b83898e2dd75fcd0"
       },
       {
         "ora": "01:30",
