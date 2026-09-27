@@ -570,13 +570,13 @@
       },
       {
         "ora": "12:20",
-        "fine": "14:25",
+        "fine": "14:35",
         "titolo": "Casertana - Catania",
         "descrizione": "Dallo Stadio Alberto Pinto di Caserta, Campania, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3a6b458a-abea-49cd-a56b-3e586353bf6e/background/600"
       },
       {
-        "ora": "14:25",
+        "ora": "14:35",
         "fine": "14:50",
         "titolo": "Totti",
         "descrizione": "90/10",
@@ -681,13 +681,13 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:00",
+        "fine": "07:30",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "07:00",
+        "ora": "07:30",
         "fine": "08:30",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
@@ -695,13 +695,13 @@
       },
       {
         "ora": "08:30",
-        "fine": "10:30",
+        "fine": "10:10",
         "titolo": "Finale",
         "descrizione": "... Korea Open. - WTA 250 Korea Open",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "10:30",
+        "ora": "10:10",
         "fine": "11:00",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
@@ -1162,20 +1162,13 @@
       },
       {
         "ora": "13:55",
-        "fine": "14:45",
+        "fine": "14:55",
         "titolo": "Italia: Gara 2",
         "descrizione": "Segui la gara del campionato mondiale di Supersport.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a94cc2d1-b7eb-4276-a716-76b2a889cb44/background/600"
       },
       {
-        "ora": "14:45",
-        "fine": "15:00",
-        "titolo": "Fernandez: Il mio riscatto",
-        "descrizione": "Raul Fernandez, pilota spagnolo del team Trackhouse, si sta dimostrando uno dei piu' competitivi in questa stagione dove la Aprilia sta raccogliendo ottimi risultati in MotoGP.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0762dfc6-ef38-4e55-bb0e-5e98479ae370/background/600"
-      },
-      {
-        "ora": "15:00",
+        "ora": "14:55",
         "fine": "15:15",
         "titolo": "Brivio - back to Japan",
         "descrizione": "Brivio - Back To Japan",
@@ -1190,20 +1183,20 @@
       },
       {
         "ora": "15:30",
-        "fine": "15:55",
+        "fine": "16:00",
         "titolo": "Italia: Gara 2",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/927a8eed-07e2-4bb4-8c91-1f36056be7e2/background/600"
       },
       {
-        "ora": "15:55",
-        "fine": "16:15",
+        "ora": "16:00",
+        "fine": "16:30",
         "titolo": "Italia",
         "descrizione": "Commenti e considerazioni in merito all'evento superbike appena trasmesso.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cd16b427-7b0a-4598-83ae-53764bac6d05/background/600"
       },
       {
-        "ora": "16:15",
+        "ora": "16:30",
         "fine": "16:55",
         "titolo": "Aragon, Moto3: Gara 1",
         "descrizione": "Le gare del FIM Moto3 Junior World Championship.",
@@ -1385,13 +1378,6 @@
       },
       {
         "ora": "19:30",
-        "fine": "20:05",
-        "titolo": "Boat Show 2026 Ep.29 24/09/2026",
-        "descrizione": "... Boat Show. - Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f84013c0-3de2-4aca-b36b-33841b9621e2/background/600"
-      },
-      {
-        "ora": "20:05",
         "fine": "21:00",
         "titolo": "Italia: Gara 2",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
@@ -1461,45 +1447,31 @@
       },
       {
         "ora": "06:00",
-        "fine": "10:00",
+        "fine": "10:35",
         "titolo": "6 Ore del Fuji: Gara",
         "descrizione": "... World Endurance Championship Motor Racing. - Il Wec si trasferisce al Fuji per continuare a dare spettacolo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/50564270-8f3a-4835-9593-0bec68d0dc93/background/600"
       },
       {
-        "ora": "10:00",
-        "fine": "10:30",
+        "ora": "10:35",
+        "fine": "11:15",
         "titolo": "2a Giornata",
         "descrizione": "Sintesi e momenti salienti del torneo di vela Coppa America nella seconda giornata.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/01c5343d-01c1-4f96-9691-76bdc410a26d/background/600"
       },
       {
-        "ora": "10:30",
-        "fine": "11:05",
-        "titolo": "Boat Show 2026 Ep.29 24/09/2026",
-        "descrizione": "... Boat Show. - Regate, grandi eventi, saloni nautici e tutto il nuovo che arriva dal mondo della cantieristica, a vela e a motore. In ogni occasione, un personaggio del mondo della nautica si racconta al pubblico.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f84013c0-3de2-4aca-b36b-33841b9621e2/background/600"
-      },
-      {
-        "ora": "11:05",
-        "fine": "12:55",
+        "ora": "11:15",
+        "fine": "13:10",
         "titolo": "Polonia - Francia Finale 1°/2° Posto",
         "descrizione": "... Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f9d5f1dc-6da8-4ce9-9fbd-a88d957bfcc1/background/600"
       },
       {
-        "ora": "12:55",
-        "fine": "13:20",
+        "ora": "13:10",
+        "fine": "13:45",
         "titolo": "Totti",
         "descrizione": "90/10",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a3c245bb-9fcd-432d-a5fe-15cae0de0ecc/background/600"
-      },
-      {
-        "ora": "13:20",
-        "fine": "13:45",
-        "titolo": "La Giovane Italia 2026 Ep. 20 24/09/2026",
-        "descrizione": "... 24/09/2026 La giovane Italia. - Servizi informativi dedicati ai piu' piccoli sportivi italiani e alle realta' giovanili legate al calcio, tra trofei, incontri, e storie.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f97b89d8-1eaa-447c-8ed1-929edeb12fb5/background/600"
       },
       {
         "ora": "13:45",
@@ -1510,24 +1482,17 @@
       },
       {
         "ora": "14:00",
-        "fine": "16:00",
+        "fine": "16:55",
         "titolo": "Preliminari Napoli: 3a Giornata",
         "descrizione": "... Giornata America's Cup. - Tutte le azioni delle regate dell'America's Cup.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/bfc9a014-d123-407a-997c-4ea5dbae1c19/background/600"
       },
       {
-        "ora": "16:00",
-        "fine": "16:25",
+        "ora": "16:55",
+        "fine": "17:20",
         "titolo": "Studio Vela 27/09/2026",
         "descrizione": "... Studio Vela. - Studi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/63dbc454-bfc3-404f-8a03-d808c57f7c24/background/600"
-      },
-      {
-        "ora": "16:25",
-        "fine": "17:20",
-        "titolo": "Ginevra",
-        "descrizione": "Sintesi e momenti salienti della piu' spettacolare gara velica internazionale dedicata ai catamarani foiling F50.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f5a504d5-00b8-4d86-8727-780e5a7c5a77/background/600"
       },
       {
         "ora": "17:20",
@@ -1642,13 +1607,13 @@
       },
       {
         "ora": "12:30",
-        "fine": "17:30",
+        "fine": "17:45",
         "titolo": "FedEx Open de France: Giorno 4",
         "descrizione": "... Giorno 4 Golf: DP World Tour. - Dal Golf National di Parigi, Francia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e05a2401-d20c-414d-9eb7-6c6b1428c42a/background/600"
       },
       {
-        "ora": "17:30",
+        "ora": "17:45",
         "fine": "18:00",
         "titolo": "Open De Portugal",
         "descrizione": "Il meglio dell'azione del Challenge Tour Series.",
@@ -1906,13 +1871,13 @@
       },
       {
         "ora": "13:00",
-        "fine": "13:30",
+        "fine": "14:00",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
-        "ora": "13:30",
+        "ora": "14:00",
         "fine": "15:30",
         "titolo": "Polonia - Francia Finale 1°/2° Posto",
         "descrizione": "... Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
@@ -2002,11 +1967,11 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "01:30",
-        "titolo": "G. Bretagna, Donington 2009. MotoGP",
-        "descrizione": "Decimo appuntamento del Campionato del Mondo 2009 per la classe MotoGP. Pole per Valentino Rossi su Yamaha con tanti italiani competitivi: da Andrea Dovizioso a Marco Melandri.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c3998a65-adc5-486f-b5e7-ece6c1440aeb/background/600"
+        "ora": "00:45",
+        "fine": "03:05",
+        "titolo": "Sinner - Ruud, Finale Singolare",
+        "descrizione": "... Tennis: ATP 1000 Roma. - SINNER (Ita)-RUUD (Nor) - Il n.1 al mondo punta al sesto Masters 1000 consecutivo, 50 dopo la vittoria di Panatta al Foro Italico. Tc: Pero-Bertolucci",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
         "ora": "01:30",
@@ -2066,80 +2031,59 @@
       },
       {
         "ora": "06:00",
-        "fine": "07:55",
-        "titolo": "È stato tutto bello - Storia di Paolino e Pablito",
-        "descrizione": "Bambino gracile all'apparenza e di famiglia proletaria, Paolino gioca a calcio tutti i giorni nei campetti dell'oratorio della sua citta`, Prato. Il talento si nota e, appena quattordicenne, viene chiamato a giocare nella giovanile della grande Juventus, che lo costringe a trasferirsi da solo a Torino. Si rompe il menisco per tre volte all'inizio di una carriera che rischia di non cominciare mai. Dopo essere diventato capocannoniere e aver fatto impazzire l'Italia ai Mondiali in Argentina, durante i quali entra nel cuore di tutti con il soprannome di Pablito, la sua carriera subisce nuovamente una battuta d'arresto: viene investito dalle accuse nel brutto affaire del calcioscommesse. Seppur assolto dal tribunale, la giustizia sportiva lo condanna a due anni di assenza dai campi. Subito dopo, pero`, Enzo Bearzot, che lo ama e lo stima da sempre, lo porta senza esitazione in Spagna a giocare quel Mondiale dell'82 che tutta l'Italia ricorda.",
-        "immagine": "https://img-guidatv.org/film_new/639b69e2d3d1e2681e16b44e_p_1_rs_300.jpg"
-      },
-      {
-        "ora": "07:55",
-        "fine": "13:15",
-        "titolo": "Nadal - Coria. Finale - Ep. -1 - Nadal - Coria. Finale",
-        "descrizione": "Foro Italico, 9 maggio 2005: Rafa Nadal, non ancora 19enne, sfida in finale a Roma l'argentino Guillermo Coria.",
+        "fine": "09:20",
+        "titolo": "Finale Maschile",
+        "descrizione": "SINNER (Ita) - ALCARAZ (Spa) - Alla sua prima finale a Wimbledon, Jannik Sinner sfida il due volte campione Carlos Alcaraz. Telecr.: Pero-Bertolucci-Ljubicic",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "13:15",
-        "fine": "14:15",
-        "titolo": "Fair Play di Rino Tommasi",
-        "descrizione": "Gli ospiti di Rino Tommasi e Gianpaolo Ormezzano si confrontano su tifo e sport: Omar Sivori, Filippo Grassia, Gino Bacci e Fabio Bruno.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/69147991-91ad-4f59-b805-706b3fb19151/background/600"
-      },
-      {
-        "ora": "14:15",
-        "fine": "15:45",
-        "titolo": "Il Processo del 10 Gennaio 1994",
-        "descrizione": "... processo di Biscardi. - Aldo Biscardi e Maurizio Mosca ospitano il direttore generale dell'Inter Piero Boschi e il sindaco di Napoli Antonio Bassolino per analizzare le rispettive crisi societarie",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/91082388-a577-4ac2-9e62-8e7e90e182ff/background/600"
-      },
-      {
-        "ora": "15:45",
-        "fine": "16:15",
-        "titolo": "Open - The First Serve - Flavia Pennetta e Fabio Fognini",
-        "descrizione": "... Pennetta e Fabio Fognini. - Open - The First Serve - Flavia Pennetta e Fabio Fognini",
+        "ora": "09:20",
+        "fine": "12:00",
+        "titolo": "Sinner - Fritz",
+        "descrizione": "... Open 2024. - Jannik Sinner gioca la sua seconda finale in uno Slam sfidando l'americano Taylor Fritz per il titolo degli US Open. Tc: Pero-Pescosolido.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "16:15",
-        "fine": "17:10",
-        "titolo": "Pete Sampras",
-        "descrizione": "Pete Sampras ha vinto 14 Major, la meta' a Wimbledon, dove e' stato padrone assoluto vincendo il torneo 7 volte in 8 anni.",
+        "ora": "12:00",
+        "fine": "14:10",
+        "titolo": "Tennis Us Open 1999 Semifinale...",
+        "descrizione": "... Singolare Femminile Williams/ Davenport 10/09/99. - Tennis Us Open 1999 Semifinale Singolare Femminile Williams/ Davenport 10/09/99",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "17:10",
-        "fine": "18:15",
-        "titolo": "Roger Federer",
-        "descrizione": "Giorgio Porra' racconta Roger Federer, il piu' grande tennista di sempre. Con le voci di Sandro Veronesi, Panatta, Bertolucci, Zugarelli e Ljubicic.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/91714712-1f28-4e23-8ddd-4b8142f3d627/background/600"
+        "ora": "14:10",
+        "fine": "16:00",
+        "titolo": "Tennis Torneo Atp Tour Di Lione 1994 Finale Maschile 23/10/94",
+        "descrizione": "... Finale Maschile 23/10/94. - Tennis Torneo Atp Tour Di Lione 1994 Finale Maschile 23/10/94",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "18:15",
-        "fine": "21:00",
-        "titolo": "Volley Femminile Cev Champions League 2020/2021 - Stag. -3 - Conegliano - Istanbul. Finale",
-        "descrizione": "... Champions League F. - A Verona va in scena l'ultimo atto della Champions League femminile, le \"pantere\" di Conegliano sfidano le turche del Vakifbank Istanbul. TC: Prini-Mangifesta",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/117d2b23-03c8-4896-a187-11f60b03a46d/background/600"
+        "ora": "16:00",
+        "fine": "19:30",
+        "titolo": "Finale Maschile",
+        "descrizione": "SINNER (Ita) - ALCARAZ (Spa) - Alla sua prima finale a Wimbledon, Jannik Sinner sfida il due volte campione Carlos Alcaraz. Telecr.: Pero-Bertolucci-Ljubicic",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "21:00",
+        "ora": "19:30",
+        "fine": "20:55",
+        "titolo": "Miami: Federer - Nadal 28/03/04",
+        "descrizione": "Copertura televisiva dei migliori incontri di tennis nazionali ed internazionali.",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
+      },
+      {
+        "ora": "20:55",
         "fine": "22:35",
-        "titolo": "Jackie Stewart",
-        "descrizione": "Un documentario su una delle piu' grandi leggende sportive di tutti i tempi: l'ex campione del mondo di Formula 1, nonche' imprenditore, Jackie Stewart.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/225a512c-0423-4161-838a-5caff96c0561/background/600"
+        "titolo": "Tennis Torneo Atp Tour Di Lione 1994 Finale Maschile 23/10/94",
+        "descrizione": "... Finale Maschile 23/10/94. - Tennis Torneo Atp Tour Di Lione 1994 Finale Maschile 23/10/94",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
         "ora": "22:35",
-        "fine": "23:30",
-        "titolo": "Parte 1",
-        "descrizione": "Giugno 1938. La piazza di Gradisca e' in festa per il trionfo degli Azzurri. Un ragazzino come tanti sogna di diventare calciatore, non sa che 44 anni dopo quella piazza esultera' per lui.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2e1c39d0-f9ce-4973-a924-961af700a763/background/600"
-      },
-      {
-        "ora": "23:30",
-        "fine": "00:30",
-        "titolo": "Parte 2",
-        "descrizione": "Chiamato a rifondare il calcio azzurro, dopo la disfatta del '74, il grande vecchio compone un indimenticabile capolavoro: guidare l'Italia al suo terzo titolo mondiale.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/bdf7bf71-278c-453c-aaac-0d945eda4011/background/600"
+        "fine": "00:45",
+        "titolo": "Tennis Us Open 1999 Semifinale...",
+        "descrizione": "... Singolare Femminile Williams/ Davenport 10/09/99. - Tennis Us Open 1999 Semifinale Singolare Femminile Williams/ Davenport 10/09/99",
+        "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       }
     ]
   },
@@ -2415,24 +2359,17 @@
       },
       {
         "ora": "02:15",
-        "fine": "03:55",
+        "fine": "04:00",
         "titolo": "WTA 250 Seoul",
         "descrizione": "WTA 500 Seul.- All' Olympic Park Tennis Center, va in scena il prestigioso WTA 250 Korea Open",
         "immagine": "https://img-guidatv.org/54/wta-250-seoul/0.jpg"
       },
       {
-        "ora": "03:55",
-        "fine": "05:55",
+        "ora": "04:00",
+        "fine": "06:00",
         "titolo": "WTA 500 Singapore",
         "descrizione": "WTA 500 Singapore - Ha inizio l'Asian Swing e le migliori giocatrici del circuito si contendono il titolo.",
         "immagine": "https://img-guidatv.org/54/wta-500-singapore/5.jpg"
-      },
-      {
-        "ora": "05:55",
-        "fine": "09:25",
-        "titolo": "LAVER CUP 2026",
-        "descrizione": "Laver Cup 2026. Dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
-        "immagine": "https://img-guidatv.org/54/laver-cup/0.jpg"
       },
       {
         "ora": "06:25",
@@ -2485,27 +2422,76 @@
       },
       {
         "ora": "14:50",
-        "fine": "15:05",
+        "fine": "15:20",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "15:05",
-        "fine": "16:50",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
+        "ora": "15:20",
+        "fine": "15:40",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
       },
       {
-        "ora": "16:50",
-        "fine": "17:05",
-        "titolo": "Supertennis Today",
-        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
-        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
+        "ora": "15:40",
+        "fine": "15:55",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
       },
       {
-        "ora": "17:05",
+        "ora": "15:55",
+        "fine": "16:10",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "16:10",
+        "fine": "16:25",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "16:25",
+        "fine": "16:40",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "16:40",
+        "fine": "16:55",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "16:55",
+        "fine": "17:10",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "17:10",
+        "fine": "17:25",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "17:25",
+        "fine": "17:40",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "17:40",
         "fine": "18:45",
         "titolo": "LIVE LAVER CUP",
         "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
@@ -2687,16 +2673,16 @@
       {
         "ora": "00:30",
         "fine": "02:30",
-        "titolo": "Pallavolo: Courmayeur Cup Femminile 2026",
-        "descrizione": "Pallavolo: Courmayeur Cup Femminile 2026",
-        "immagine": "https://img-guidatv.org/32/pallavolo-courmayeur-cup-femminile-2026/0.jpg"
+        "titolo": "Pallavolo - Courmayeur Cup 2026 - Finale: Conegliano - Milano",
+        "descrizione": "Nella finale della Courmayeur Cup 2026, la Prosecco DOC Imoco Conegliano affronta la Numia Vero Volley Milano per conquistare il trofeo che apre la nuova stagione della pallavolo femminile italiana.",
+        "immagine": "https://img-guidatv.org/32/pallavolo-courmayeur-cup-2026-finale-conegliano-milano/0.jpg"
       },
       {
         "ora": "02:30",
         "fine": "06:00",
-        "titolo": "Ciclismo: Camp. Mondiali Su Strada MontréAl 2026 Prova Elite Maschile",
-        "descrizione": "Ciclismo: Camp. Mondiali su strada Montréal 2026 Prova Elite Maschile",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Mondiali Di Ciclismo 2025 - Uomini ÉLite (Prima Parte)",
+        "descrizione": "A Montréal va in scena la prova in linea Uomini Élite dei Mondiali di ciclismo 2026, con la maglia iridata in palio.",
+        "immagine": "https://img-guidatv.org/32/mondiali-di-ciclismo-2025-uomini-elite-prima-parte/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2722,9 +2708,9 @@
       {
         "ora": "12:55",
         "fine": "14:55",
-        "titolo": "Calcio: Serie A Women 2026-27 - 1a Giornata: Inter- Fiorentina",
+        "titolo": "Calcio: Serie A Women 2026-2027 - 1a Giornata: Inter- Fiorentina",
         "descrizione": "Nella prima giornata della Serie A Women 2026-27, Inter e Fiorentina si affrontano nel match che apre il loro cammino nel nuovo campionato.",
-        "immagine": "https://img-guidatv.org/32/calcio-serie-a-women-2026-27-1a-giornata-inter-fiorentina/0.jpg"
+        "immagine": "https://img-guidatv.org/32/calcio-serie-a-women-2026-2027-1a-giornata-inter-fiorentina/0.jpg"
       },
       {
         "ora": "14:55",
@@ -2736,9 +2722,9 @@
       {
         "ora": "16:45",
         "fine": "17:30",
-        "titolo": "Ippica. Gran Premio Di Merano",
-        "descrizione": "Ippica. Gran Premio di Merano",
-        "immagine": "https://img-guidatv.org/32/ippica-gran-premio-di-merano/0.jpg"
+        "titolo": "Ippica - Gran Premio Merano 2026",
+        "descrizione": "All’Ippodromo di Maia va in scena l’87ª edizione del Gran Premio Merano Alto Adige, uno degli appuntamenti più prestigiosi dell’ippica italiana.",
+        "immagine": "https://img-guidatv.org/32/ippica-gran-premio-merano-2026/0.jpg"
       },
       {
         "ora": "17:30",
@@ -2777,16 +2763,16 @@
       {
         "ora": "00:30",
         "fine": "02:30",
-        "titolo": "Pallavolo: Courmayeur Cup Femminile 2026",
-        "descrizione": "Pallavolo: Courmayeur Cup Femminile 2026",
-        "immagine": "https://img-guidatv.org/32/pallavolo-courmayeur-cup-femminile-2026/0.jpg"
+        "titolo": "Pallavolo - Courmayeur Cup 2026 - Finale: Conegliano - Milano",
+        "descrizione": "Nella finale della Courmayeur Cup 2026, la Prosecco DOC Imoco Conegliano affronta la Numia Vero Volley Milano per conquistare il trofeo che apre la nuova stagione della pallavolo femminile italiana.",
+        "immagine": "https://img-guidatv.org/32/pallavolo-courmayeur-cup-2026-finale-conegliano-milano/0.jpg"
       },
       {
         "ora": "02:30",
         "fine": "06:00",
-        "titolo": "Ciclismo: Camp. Mondiali Su Strada MontréAl 2026 Prova Elite Maschile",
-        "descrizione": "Ciclismo: Camp. Mondiali su strada Montréal 2026 Prova Elite Maschile",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Mondiali Di Ciclismo 2025 - Uomini ÉLite (Prima Parte)",
+        "descrizione": "A Montréal va in scena la prova in linea Uomini Élite dei Mondiali di ciclismo 2026, con la maglia iridata in palio.",
+        "immagine": "https://img-guidatv.org/32/mondiali-di-ciclismo-2025-uomini-elite-prima-parte/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2812,9 +2798,9 @@
       {
         "ora": "12:55",
         "fine": "14:55",
-        "titolo": "Calcio: Serie A Women 2026-27 - 1a Giornata: Inter- Fiorentina",
+        "titolo": "Calcio: Serie A Women 2026-2027 - 1a Giornata: Inter- Fiorentina",
         "descrizione": "Nella prima giornata della Serie A Women 2026-27, Inter e Fiorentina si affrontano nel match che apre il loro cammino nel nuovo campionato.",
-        "immagine": "https://img-guidatv.org/32/calcio-serie-a-women-2026-27-1a-giornata-inter-fiorentina/0.jpg"
+        "immagine": "https://img-guidatv.org/32/calcio-serie-a-women-2026-2027-1a-giornata-inter-fiorentina/0.jpg"
       },
       {
         "ora": "14:55",
@@ -2826,9 +2812,9 @@
       {
         "ora": "16:45",
         "fine": "17:30",
-        "titolo": "Ippica. Gran Premio Di Merano",
-        "descrizione": "Ippica. Gran Premio di Merano",
-        "immagine": "https://img-guidatv.org/32/ippica-gran-premio-di-merano/0.jpg"
+        "titolo": "Ippica - Gran Premio Merano 2026",
+        "descrizione": "All’Ippodromo di Maia va in scena l’87ª edizione del Gran Premio Merano Alto Adige, uno degli appuntamenti più prestigiosi dell’ippica italiana.",
+        "immagine": "https://img-guidatv.org/32/ippica-gran-premio-merano-2026/0.jpg"
       },
       {
         "ora": "17:30",
@@ -6427,38 +6413,38 @@
       },
       {
         "ora": "03:20",
-        "fine": "03:40",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "03:40",
-        "fine": "04:00",
+        "fine": "03:45",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep5 Episode 5 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "ora": "03:45",
+        "fine": "04:05",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep5 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "04:50",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep6 Episode 6 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "ora": "04:05",
+        "fine": "04:30",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep6 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:50",
+        "ora": "04:30",
+        "fine": "04:55",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep7 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
+      },
+      {
+        "ora": "04:55",
         "fine": "05:15",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep7 Episode 7 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep8 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "05:15",
@@ -6825,38 +6811,38 @@
       },
       {
         "ora": "03:20",
-        "fine": "03:40",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "03:40",
-        "fine": "04:00",
+        "fine": "03:45",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep5 Episode 5 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "ora": "03:45",
+        "fine": "04:05",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep5 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "04:50",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep6 Episode 6 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "ora": "04:05",
+        "fine": "04:30",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep6 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:50",
+        "ora": "04:30",
+        "fine": "04:55",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep7 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
+      },
+      {
+        "ora": "04:55",
         "fine": "05:15",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep7 Episode 7 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep8 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "05:15",
@@ -11674,13 +11660,13 @@
       },
       {
         "ora": "02:50",
-        "fine": "03:20",
+        "fine": "03:15",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep3 di 10 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei più piccoli con soluzioni da...",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/988c1077-59f0-4c4e-9070-a32769e0d885/background/600"
       },
       {
-        "ora": "03:20",
+        "ora": "03:15",
         "fine": "03:40",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep6 di 10 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei più piccoli con soluzioni da...",
@@ -12184,13 +12170,13 @@
       },
       {
         "ora": "02:50",
-        "fine": "03:20",
+        "fine": "03:15",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep3 di 10 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei più piccoli con soluzioni da...",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/988c1077-59f0-4c4e-9070-a32769e0d885/background/600"
       },
       {
-        "ora": "03:20",
+        "ora": "03:15",
         "fine": "03:40",
         "titolo": "Tim Rex nello Spazio",
         "descrizione": "Ep6 di 10 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei più piccoli con soluzioni da...",
@@ -17813,15 +17799,15 @@
         "ora": "10:15",
         "fine": "10:45",
         "titolo": "A Sua Immagine",
-        "descrizione": "Programma di approfondimento religioso con all'interno la Santa Messa e Angelus da Piazza San Pietro. Conduce Lorena Bianchetti",
+        "descrizione": "Dal cuore dell'Europa un messaggio di pace e un invito a guardare alle sfide che interrogano il futuro del continente. Lorena Bianchetti, insieme ad Alessandro Gisotti, vicedirettore editoriale dei media vaticani, e a don Gianluca Marchetti, Sottosegretario della Conferenza Episcopale Italiana, racconta il quinto viaggio apostolico internazionale di Papa Leone XIV in Francia. I momenti più significativi del viaggio, i temi emersi nelle diverse tappe: la pace e l'unità dell'Europa, il dialogo tra fede e cultura, l'educazione e l'intelligenza artificiale. Spazio anche alle domande che la società francese pone alla Chiesa, in una realtà segnata dalla secolarizzazione ma anche dall'aumento dei battesimi degli adulti e da una riscoperta della fede, soprattutto tra i giovani. Da Lourdes, in collegamento Ignazio Ingrao che racconterà il pellegrinaggio del Papa in uno dei più importanti santuari mariani del mondo, in una giornata scandita dalla preghiera e dalla vicinanza ai malati e alle persone più vulnerabili.",
         "immagine": "https://img-guidatv.org/1/a-sua-immagine/0.jpg"
       },
       {
         "ora": "10:45",
         "fine": "12:30",
-        "titolo": "Lourdes, Santa Messa Presieduta Da Papa Leone XIV E Recita Dell'Angelus",
-        "descrizione": "Lourdes, Santa Messa presieduta da Papa Leone XIV e recita dell'Angelus. A cura del Tg1 e Rai Vaticano, in collegamento con Vatican Media. Telecronaca di Ignazio Ingrao. Regia di Luigi Zaccaria.",
-        "immagine": "https://img-guidatv.org/1/lourdes-santa-messa-presieduta-da-papa-leone-xiv-e-recita-dell-angelus/0.jpg"
+        "titolo": "Lourdes, Santa Messa Di Papa Leone XIV E Recita Dell'Angelus",
+        "descrizione": "Da Lourdes, la Santa Messa presieduta da Papa Leone XIV e, a seguire, la recita dell'Angelus. A cura del Tg1 e Rai Vaticano, in collegamento con Vatican Media. Telecronaca di Ignazio Ingrao.",
+        "immagine": "https://img-guidatv.org/1/lourdes-santa-messa-di-papa-leone-xiv-e-recita-dell-angelus/0.jpg"
       },
       {
         "ora": "12:30",
@@ -17841,7 +17827,7 @@
         "ora": "14:00",
         "fine": "17:15",
         "titolo": "Domenica In",
-        "descrizione": "Dagli Studi Televisivi Fabrizio Frizzi in Roma, Mara Venier conduce per la diciottesima volta Domenica In, alla sua nona edizione consecutiva. Al suo fianco ci sono Tommaso Cerno, direttore de Il Giornale, ed Enzo Miccio. Il programma mantiene al centro le interviste one-to-one e propone un talk con gli ospiti della puntata, le esibizioni di una band in parte rinnovata e alcuni numeri di spettacolo affidati a giovani artisti. Ogni domenica, inoltre, un collegamento da una località italiana racconta il tradizionale pranzo domenicale di una famiglia.",
+        "descrizione": "Mara Venier conduce per la diciottesima volta Domenica In, alla sua nona edizione consecutiva. Al suo fianco ci sono Tommaso Cerno, direttore de Il Giornale, ed Enzo Miccio. Il programma mantiene al centro le interviste one-to-one e propone un talk con gli ospiti della puntata, le esibizioni di una band in parte rinnovata e alcuni numeri di spettacolo affidati a giovani artisti. Ogni domenica, inoltre, un collegamento da una località italiana racconta il tradizionale pranzo domenicale di una famiglia.",
         "immagine": "https://img-guidatv.org/1/domenica-in/2.jpg"
       },
       {
@@ -17904,7 +17890,7 @@
         "ora": "23:30",
         "fine": "00:40",
         "titolo": "Speciale Tg1 - Francesco Il Mite Ribelle",
-        "descrizione": "Perché la figura di San Francesco, ottocento anni dopo la sua morte, continua ad affascinare credenti e non credenti? Il documentario di Alessandro Gaeta ripercorre la vita e il pensiero del Santo di Assisi attraverso i suoi scritti, le fonti francescane e i luoghi che ne hanno segnato il cammino. Dalla Basilica di Assisi alla Porziuncola e San Damiano, fino ai santuari di Greccio e La Verna, il racconto ricostruisce la figura di Francesco attraverso documenti originali e le testimonianze del vescovo Felice Accrocca, della storica Maria Pia Alberzoni e della scrittrice Dacia Maraini. Un'intervista immaginaria, realizzata a partire dalle fonti francescane e con l'ausilio dell'intelligenza artificiale, restituisce inoltre le riflessioni di Francesco su pace, povertà, denaro e ambiente. Un viaggio tra storia e spiritualità per comprendere l'attualità del suo pensiero a otto secoli dalla morte.            Ti piace questa personalità?",
+        "descrizione": "Perché la figura di San Francesco, ottocento anni dopo la sua morte, continua ad affascinare credenti e non credenti? Il documentario di Alessandro Gaeta ripercorre la vita e il pensiero del Santo di Assisi attraverso i suoi scritti, le fonti francescane e i luoghi che ne hanno segnato il cammino. Dalla Basilica di Assisi alla Porziuncola e San Damiano, fino ai santuari di Greccio e La Verna, il racconto ricostruisce la figura di Francesco attraverso documenti originali e le testimonianze del vescovo Felice Accrocca, della storica Maria Pia Alberzoni e della scrittrice Dacia Maraini. Un'intervista immaginaria, realizzata a partire dalle fonti francescane e con l'ausilio dell'intelligenza artificiale, restituisce inoltre le riflessioni di Francesco su pace, povertà, denaro e ambiente. Un viaggio tra storia e spiritualità per comprendere l'attualità del suo pensiero a otto secoli dalla morte.",
         "immagine": "https://img-guidatv.org/1/speciale-tg1/6.jpg"
       }
     ]
@@ -18022,15 +18008,15 @@
         "ora": "10:15",
         "fine": "10:45",
         "titolo": "A Sua Immagine",
-        "descrizione": "Programma di approfondimento religioso con all'interno la Santa Messa e Angelus da Piazza San Pietro. Conduce Lorena Bianchetti",
+        "descrizione": "Dal cuore dell'Europa un messaggio di pace e un invito a guardare alle sfide che interrogano il futuro del continente. Lorena Bianchetti, insieme ad Alessandro Gisotti, vicedirettore editoriale dei media vaticani, e a don Gianluca Marchetti, Sottosegretario della Conferenza Episcopale Italiana, racconta il quinto viaggio apostolico internazionale di Papa Leone XIV in Francia. I momenti più significativi del viaggio, i temi emersi nelle diverse tappe: la pace e l'unità dell'Europa, il dialogo tra fede e cultura, l'educazione e l'intelligenza artificiale. Spazio anche alle domande che la società francese pone alla Chiesa, in una realtà segnata dalla secolarizzazione ma anche dall'aumento dei battesimi degli adulti e da una riscoperta della fede, soprattutto tra i giovani. Da Lourdes, in collegamento Ignazio Ingrao che racconterà il pellegrinaggio del Papa in uno dei più importanti santuari mariani del mondo, in una giornata scandita dalla preghiera e dalla vicinanza ai malati e alle persone più vulnerabili.",
         "immagine": "https://img-guidatv.org/1/a-sua-immagine/0.jpg"
       },
       {
         "ora": "10:45",
         "fine": "12:30",
-        "titolo": "Lourdes, Santa Messa Presieduta Da Papa Leone XIV E Recita Dell'Angelus",
-        "descrizione": "Lourdes, Santa Messa presieduta da Papa Leone XIV e recita dell'Angelus. A cura del Tg1 e Rai Vaticano, in collegamento con Vatican Media. Telecronaca di Ignazio Ingrao. Regia di Luigi Zaccaria.",
-        "immagine": "https://img-guidatv.org/1/lourdes-santa-messa-presieduta-da-papa-leone-xiv-e-recita-dell-angelus/0.jpg"
+        "titolo": "Lourdes, Santa Messa Di Papa Leone XIV E Recita Dell'Angelus",
+        "descrizione": "Da Lourdes, la Santa Messa presieduta da Papa Leone XIV e, a seguire, la recita dell'Angelus. A cura del Tg1 e Rai Vaticano, in collegamento con Vatican Media. Telecronaca di Ignazio Ingrao.",
+        "immagine": "https://img-guidatv.org/1/lourdes-santa-messa-di-papa-leone-xiv-e-recita-dell-angelus/0.jpg"
       },
       {
         "ora": "12:30",
@@ -18050,7 +18036,7 @@
         "ora": "14:00",
         "fine": "17:15",
         "titolo": "Domenica In",
-        "descrizione": "Dagli Studi Televisivi Fabrizio Frizzi in Roma, Mara Venier conduce per la diciottesima volta Domenica In, alla sua nona edizione consecutiva. Al suo fianco ci sono Tommaso Cerno, direttore de Il Giornale, ed Enzo Miccio. Il programma mantiene al centro le interviste one-to-one e propone un talk con gli ospiti della puntata, le esibizioni di una band in parte rinnovata e alcuni numeri di spettacolo affidati a giovani artisti. Ogni domenica, inoltre, un collegamento da una località italiana racconta il tradizionale pranzo domenicale di una famiglia.",
+        "descrizione": "Mara Venier conduce per la diciottesima volta Domenica In, alla sua nona edizione consecutiva. Al suo fianco ci sono Tommaso Cerno, direttore de Il Giornale, ed Enzo Miccio. Il programma mantiene al centro le interviste one-to-one e propone un talk con gli ospiti della puntata, le esibizioni di una band in parte rinnovata e alcuni numeri di spettacolo affidati a giovani artisti. Ogni domenica, inoltre, un collegamento da una località italiana racconta il tradizionale pranzo domenicale di una famiglia.",
         "immagine": "https://img-guidatv.org/1/domenica-in/2.jpg"
       },
       {
@@ -18113,7 +18099,7 @@
         "ora": "23:30",
         "fine": "00:40",
         "titolo": "Speciale Tg1 - Francesco Il Mite Ribelle",
-        "descrizione": "Perché la figura di San Francesco, ottocento anni dopo la sua morte, continua ad affascinare credenti e non credenti? Il documentario di Alessandro Gaeta ripercorre la vita e il pensiero del Santo di Assisi attraverso i suoi scritti, le fonti francescane e i luoghi che ne hanno segnato il cammino. Dalla Basilica di Assisi alla Porziuncola e San Damiano, fino ai santuari di Greccio e La Verna, il racconto ricostruisce la figura di Francesco attraverso documenti originali e le testimonianze del vescovo Felice Accrocca, della storica Maria Pia Alberzoni e della scrittrice Dacia Maraini. Un'intervista immaginaria, realizzata a partire dalle fonti francescane e con l'ausilio dell'intelligenza artificiale, restituisce inoltre le riflessioni di Francesco su pace, povertà, denaro e ambiente. Un viaggio tra storia e spiritualità per comprendere l'attualità del suo pensiero a otto secoli dalla morte.            Ti piace questa personalità?",
+        "descrizione": "Perché la figura di San Francesco, ottocento anni dopo la sua morte, continua ad affascinare credenti e non credenti? Il documentario di Alessandro Gaeta ripercorre la vita e il pensiero del Santo di Assisi attraverso i suoi scritti, le fonti francescane e i luoghi che ne hanno segnato il cammino. Dalla Basilica di Assisi alla Porziuncola e San Damiano, fino ai santuari di Greccio e La Verna, il racconto ricostruisce la figura di Francesco attraverso documenti originali e le testimonianze del vescovo Felice Accrocca, della storica Maria Pia Alberzoni e della scrittrice Dacia Maraini. Un'intervista immaginaria, realizzata a partire dalle fonti francescane e con l'ausilio dell'intelligenza artificiale, restituisce inoltre le riflessioni di Francesco su pace, povertà, denaro e ambiente. Un viaggio tra storia e spiritualità per comprendere l'attualità del suo pensiero a otto secoli dalla morte.",
         "immagine": "https://img-guidatv.org/1/speciale-tg1/6.jpg"
       }
     ]
@@ -18237,15 +18223,15 @@
       {
         "ora": "14:00",
         "fine": "16:30",
-        "titolo": "38a America'S Cup - Regata Preliminare",
-        "descrizione": "Per quattro giorni, nel Golfo di Napoli si sfidano le imbarcazioni AC40 dei principali team internazionali. È la seconda Regata Preliminare ufficiale ed è il primo grande test organizzativo per la città, in vista dell'America's Cup di maggio-luglio 2027.",
-        "immagine": "https://img-guidatv.org/2/38a-america-s-cup-regata-preliminare/0.jpg"
+        "titolo": "38a America'S Cup - 3a Regata Preliminare - (Golfo Di Napoli)",
+        "descrizione": "Terza giornata di regate nel Golfo di Napoli per la Regata Preliminare della 38ª America's Cup. I team internazionali tornano in acqua con gli AC40, proseguendo il confronto in vista dell'America's Cup 2027.",
+        "immagine": "https://img-guidatv.org/2/38a-america-s-cup-3a-regata-preliminare-golfo-di-napoli/0.jpg"
       },
       {
         "ora": "16:30",
         "fine": "18:10",
         "titolo": "Domenica Sportiva Pomeriggio",
-        "descrizione": "Conducono Gianluca Semprini, Francesca Spaziani Testa Supervisione Massimo Proietto A cura di Alessandro Antinelli Produttore esecutivo Marco Benucci",
+        "descrizione": "Il racconto dell'attualità del calcio e degli altri sport attraverso immagini, dati, interviste e opinioni. In studio e in collegamento, i protagonisti raccontano i loro successi sportivi e personali.",
         "immagine": "https://img-guidatv.org/2/domenica-sportiva-pomeriggio/0.jpg"
       },
       {
@@ -18265,9 +18251,9 @@
       {
         "ora": "19:00",
         "fine": "20:30",
-        "titolo": "Mondiali Di Ciclismo 2026 - Uomini ÉLite",
+        "titolo": "Mondiali Di Ciclismo 2025 - Uomini ÉLite (Fasi Finali)",
         "descrizione": "A Montréal va in scena la prova in linea Uomini Élite dei Mondiali di ciclismo 2026, con la maglia iridata in palio.",
-        "immagine": "https://img-guidatv.org/2/mondiali-di-ciclismo-2026-uomini-elite/0.jpg"
+        "immagine": "https://img-guidatv.org/2/mondiali-di-ciclismo-2025-uomini-elite-fasi-finali/0.jpg"
       },
       {
         "ora": "20:30",
@@ -18279,9 +18265,9 @@
       {
         "ora": "21:00",
         "fine": "22:10",
-        "titolo": "Mondiali Di Ciclismo 2026 - Uomini ÉLite",
+        "titolo": "Mondiali Di Ciclismo 2025 - Uomini ÉLite (Fasi Finali)",
         "descrizione": "A Montréal va in scena la prova in linea Uomini Élite dei Mondiali di ciclismo 2026, con la maglia iridata in palio.",
-        "immagine": "https://img-guidatv.org/2/mondiali-di-ciclismo-2026-uomini-elite/0.jpg"
+        "immagine": "https://img-guidatv.org/2/mondiali-di-ciclismo-2025-uomini-elite-fasi-finali/0.jpg"
       },
       {
         "ora": "22:10",
@@ -18411,15 +18397,15 @@
       {
         "ora": "14:00",
         "fine": "16:30",
-        "titolo": "38a America'S Cup - Regata Preliminare",
-        "descrizione": "Per quattro giorni, nel Golfo di Napoli si sfidano le imbarcazioni AC40 dei principali team internazionali. È la seconda Regata Preliminare ufficiale ed è il primo grande test organizzativo per la città, in vista dell'America's Cup di maggio-luglio 2027.",
-        "immagine": "https://img-guidatv.org/2/38a-america-s-cup-regata-preliminare/0.jpg"
+        "titolo": "38a America'S Cup - 3a Regata Preliminare - (Golfo Di Napoli)",
+        "descrizione": "Terza giornata di regate nel Golfo di Napoli per la Regata Preliminare della 38ª America's Cup. I team internazionali tornano in acqua con gli AC40, proseguendo il confronto in vista dell'America's Cup 2027.",
+        "immagine": "https://img-guidatv.org/2/38a-america-s-cup-3a-regata-preliminare-golfo-di-napoli/0.jpg"
       },
       {
         "ora": "16:30",
         "fine": "18:10",
         "titolo": "Domenica Sportiva Pomeriggio",
-        "descrizione": "Conducono Gianluca Semprini, Francesca Spaziani Testa Supervisione Massimo Proietto A cura di Alessandro Antinelli Produttore esecutivo Marco Benucci",
+        "descrizione": "Il racconto dell'attualità del calcio e degli altri sport attraverso immagini, dati, interviste e opinioni. In studio e in collegamento, i protagonisti raccontano i loro successi sportivi e personali.",
         "immagine": "https://img-guidatv.org/2/domenica-sportiva-pomeriggio/0.jpg"
       },
       {
@@ -18439,9 +18425,9 @@
       {
         "ora": "19:00",
         "fine": "20:30",
-        "titolo": "Mondiali Di Ciclismo 2026 - Uomini ÉLite",
+        "titolo": "Mondiali Di Ciclismo 2025 - Uomini ÉLite (Fasi Finali)",
         "descrizione": "A Montréal va in scena la prova in linea Uomini Élite dei Mondiali di ciclismo 2026, con la maglia iridata in palio.",
-        "immagine": "https://img-guidatv.org/2/mondiali-di-ciclismo-2026-uomini-elite/0.jpg"
+        "immagine": "https://img-guidatv.org/2/mondiali-di-ciclismo-2025-uomini-elite-fasi-finali/0.jpg"
       },
       {
         "ora": "20:30",
@@ -18453,9 +18439,9 @@
       {
         "ora": "21:00",
         "fine": "22:10",
-        "titolo": "Mondiali Di Ciclismo 2026 - Uomini ÉLite",
+        "titolo": "Mondiali Di Ciclismo 2025 - Uomini ÉLite (Fasi Finali)",
         "descrizione": "A Montréal va in scena la prova in linea Uomini Élite dei Mondiali di ciclismo 2026, con la maglia iridata in palio.",
-        "immagine": "https://img-guidatv.org/2/mondiali-di-ciclismo-2026-uomini-elite/0.jpg"
+        "immagine": "https://img-guidatv.org/2/mondiali-di-ciclismo-2025-uomini-elite-fasi-finali/0.jpg"
       },
       {
         "ora": "22:10",
@@ -18544,7 +18530,7 @@
         "ora": "07:30",
         "fine": "08:00",
         "titolo": "Sulla Via Di Damasco",
-        "descrizione": "Eva Crosetta analizza la variegata realtà ecumenica, umana e sociale, dedita al volontariato sul territorio non solo italiano.",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/3/sulla-via-di-damasco/1.jpg"
       },
       {
@@ -18767,7 +18753,7 @@
         "ora": "07:30",
         "fine": "08:00",
         "titolo": "Sulla Via Di Damasco",
-        "descrizione": "Eva Crosetta analizza la variegata realtà ecumenica, umana e sociale, dedita al volontariato sul territorio non solo italiano.",
+        "descrizione": "$23",
         "immagine": "https://img-guidatv.org/3/sulla-via-di-damasco/1.jpg"
       },
       {
@@ -18949,7 +18935,7 @@
         "fine": "06:27",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001026901/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:27",
@@ -19026,7 +19012,7 @@
         "fine": "16:32",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000801/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:32",
@@ -19102,7 +19088,7 @@
         "fine": "06:27",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001026901/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:27",
@@ -19179,7 +19165,7 @@
         "fine": "16:32",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000801/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:32",
@@ -19269,7 +19255,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101215301/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19457,7 +19443,7 @@
         "ora": "21:20",
         "fine": "23:51",
         "titolo": "Il mio nome e' Carlo",
-        "descrizione": "[Biografico] - Come puo' un quindicenne, appassionato di videogiochi, informatica e calcio, diventare il primo santo dell'era digitale? La storia eccezionale di Carlo Acutis. Regia di G. Campiotti; ITA 2026",
+        "descrizione": "Il film ripercorre tre momenti fondamentali: il bambino di sei anni, già animato da una sensibilità spirituale fuori dal comune; il ragazzo di undici anni, curioso e brillante; e il quindicenne al suo primo anno di liceo, consapevole e determinato, capace di vivere la quotidianità con uno sguardo straordinario.",
         "immagine": "https://img-guidatv.org/film_new/i/6ab16b748b3bd6675602ff44/6ab16b748b3bd6675602ff44_p_2_rs_300.jpg"
       },
       {
@@ -19520,7 +19506,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101215301/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19708,7 +19694,7 @@
         "ora": "21:20",
         "fine": "23:51",
         "titolo": "Il mio nome e' Carlo",
-        "descrizione": "[Biografico] - Come puo' un quindicenne, appassionato di videogiochi, informatica e calcio, diventare il primo santo dell'era digitale? La storia eccezionale di Carlo Acutis. Regia di G. Campiotti; ITA 2026",
+        "descrizione": "Il film ripercorre tre momenti fondamentali: il bambino di sei anni, già animato da una sensibilità spirituale fuori dal comune; il ragazzo di undici anni, curioso e brillante; e il quindicenne al suo primo anno di liceo, consapevole e determinato, capace di vivere la quotidianità con uno sguardo straordinario.",
         "immagine": "https://img-guidatv.org/film_new/i/6ab16b748b3bd6675602ff44/6ab16b748b3bd6675602ff44_p_2_rs_300.jpg"
       },
       {
@@ -19869,21 +19855,21 @@
         "fine": "13:05",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201053901/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:05",
         "fine": "13:47",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:47",
         "fine": "14:15",
         "titolo": "E-Planet",
         "descrizione": "Appuntamento con il Magazine Green all'insegna della sostenibilita'.",
-        "immagine": "https://img-guidatv.org/42/e-planet/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314224501003901/media/22/86/2ab6b7f0-1457-4e1f-8f55-f194d4493854/0ea0ef62-0178-410e-beac-ea692c7863ab.jpg"
       },
       {
         "ora": "14:15",
@@ -20113,21 +20099,21 @@
         "fine": "13:05",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201053901/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:05",
         "fine": "13:47",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:47",
         "fine": "14:15",
         "titolo": "E-Planet",
         "descrizione": "Appuntamento con il Magazine Green all'insegna della sostenibilita'.",
-        "immagine": "https://img-guidatv.org/42/e-planet/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314224501003901/media/22/86/2ab6b7f0-1457-4e1f-8f55-f194d4493854/0ea0ef62-0178-410e-beac-ea692c7863ab.jpg"
       },
       {
         "ora": "14:15",
@@ -20972,13 +20958,13 @@
       },
       {
         "ora": "15:30",
-        "fine": "15:55",
+        "fine": "16:00",
         "titolo": "Italia: Gara 2",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/927a8eed-07e2-4bb4-8c91-1f36056be7e2/background/600"
       },
       {
-        "ora": "15:55",
+        "ora": "16:00",
         "fine": "16:30",
         "titolo": "Italia",
         "descrizione": "Commenti e considerazioni in merito all'evento superbike appena trasmesso.",
@@ -21674,13 +21660,13 @@
       },
       {
         "ora": "01:00",
-        "fine": "02:46",
+        "fine": "02:45",
         "titolo": "Bolgen - The Wave",
         "descrizione": "Kristian Eikfjord, geologo con molta esperienza, accetta un lavoro fuori città. Si prepara così a trasferirsi con la famiglia quando con i suoi colleghi è costretto a confrontarsi con piccoli cambiamenti geologici nel sottosuolo. Ben presto, il peggior incubo dell'uomo sembra avverarsi e il disastro è inevitabile: con meno di dieci minuti a disposizione, dovrà tentare di salvare quanta più gente possibile, compresa la sua famiglia.",
         "immagine": "https://img-guidatv.org/film_new/t/5e78e001ce1e246c511cdc6e/5e78e001ce1e246c511cdc6e_p_3_rs_300.jpg"
       },
       {
-        "ora": "02:46",
+        "ora": "02:45",
         "fine": "04:12",
         "titolo": "Talk to me",
         "descrizione": "Un gruppo di giovani amici scopre come evocare i demoni facendo uso di un'antica mano imbalsamata, finché uno di loro si spinge troppo oltre aprendo irrimediabilmente le porte al mondo degli spiriti. Perseguitato così da visioni soprannaturali, il gruppo si trova inconsapevolmente al centro di una possessione devastante che porterà a porsi una domanda importante: meglio fidarsi dei vivi o dei morti?",
@@ -21883,13 +21869,13 @@
       },
       {
         "ora": "01:00",
-        "fine": "02:46",
+        "fine": "02:45",
         "titolo": "Bolgen - The Wave",
         "descrizione": "Kristian Eikfjord, geologo con molta esperienza, accetta un lavoro fuori città. Si prepara così a trasferirsi con la famiglia quando con i suoi colleghi è costretto a confrontarsi con piccoli cambiamenti geologici nel sottosuolo. Ben presto, il peggior incubo dell'uomo sembra avverarsi e il disastro è inevitabile: con meno di dieci minuti a disposizione, dovrà tentare di salvare quanta più gente possibile, compresa la sua famiglia.",
         "immagine": "https://img-guidatv.org/film_new/t/5e78e001ce1e246c511cdc6e/5e78e001ce1e246c511cdc6e_p_3_rs_300.jpg"
       },
       {
-        "ora": "02:46",
+        "ora": "02:45",
         "fine": "04:12",
         "titolo": "Talk to me",
         "descrizione": "Un gruppo di giovani amici scopre come evocare i demoni facendo uso di un'antica mano imbalsamata, finché uno di loro si spinge troppo oltre aprendo irrimediabilmente le porte al mondo degli spiriti. Perseguitato così da visioni soprannaturali, il gruppo si trova inconsapevolmente al centro di una possessione devastante che porterà a porsi una domanda importante: meglio fidarsi dei vivi o dei morti?",
@@ -22494,14 +22480,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:15",
-        "fine": "02:20",
+        "ora": "00:12",
+        "fine": "02:22",
         "titolo": "L'uomo che uccise Liberty Valance",
         "descrizione": "Un maledestro avvocato vuole liberare un piccolo paese del West da uno scomodo fuorilegge. A questo scopo chiede l'aiuto di uno scaltro cow boy con il quale condivide l'amore per la stessa donna.",
         "immagine": "https://image.tmdb.org/t/p/w300/mVUOxJkLzCSaeYc60Nd1X97EwF5.jpg"
       },
       {
-        "ora": "02:20",
+        "ora": "02:22",
         "fine": "04:20",
         "titolo": "A qualcuno piace caldo",
         "descrizione": "Joe e Jerry, due musicisti assistono per errore al massacro del giorno di San Valentino, a Chicago, nel 1929 e sono costretti a scappare. Per nascondersi si inseriscono un una piccola orchestra tutta femminile, fingendosi donne. Ma per per \"Josephine\" e \"Daphne\" sarà l'inizio di una lunga serie di equivoci...",
@@ -22593,7 +22579,7 @@
       },
       {
         "ora": "22:35",
-        "fine": "00:15",
+        "fine": "00:12",
         "titolo": "Il sapore del successo",
         "descrizione": "Adam Jones è un noto chef, con due stelle Michelin, che ha visto fallire il suo ristorante di Parigi, a causa della droga e dell'alcool. Dopo essere scomparso per tre anni, passati in Louisiana a sgusciare un milione di ostriche, decide di rimettersi in gioco aprendo un nuovo ristorante a Londra.",
         "immagine": "https://img-guidatv.org/film_new/i/5e78ddface1e246c511cd206/5e78ddface1e246c511cd206_p_1_rs_300.jpg"
@@ -22605,14 +22591,14 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:15",
-        "fine": "02:20",
+        "ora": "00:12",
+        "fine": "02:22",
         "titolo": "L'uomo che uccise Liberty Valance",
         "descrizione": "Un maledestro avvocato vuole liberare un piccolo paese del West da uno scomodo fuorilegge. A questo scopo chiede l'aiuto di uno scaltro cow boy con il quale condivide l'amore per la stessa donna.",
         "immagine": "https://image.tmdb.org/t/p/w300/mVUOxJkLzCSaeYc60Nd1X97EwF5.jpg"
       },
       {
-        "ora": "02:20",
+        "ora": "02:22",
         "fine": "04:20",
         "titolo": "A qualcuno piace caldo",
         "descrizione": "Joe e Jerry, due musicisti assistono per errore al massacro del giorno di San Valentino, a Chicago, nel 1929 e sono costretti a scappare. Per nascondersi si inseriscono un una piccola orchestra tutta femminile, fingendosi donne. Ma per per \"Josephine\" e \"Daphne\" sarà l'inizio di una lunga serie di equivoci...",
@@ -22704,7 +22690,7 @@
       },
       {
         "ora": "22:35",
-        "fine": "00:15",
+        "fine": "00:12",
         "titolo": "Il sapore del successo",
         "descrizione": "Adam Jones è un noto chef, con due stelle Michelin, che ha visto fallire il suo ristorante di Parigi, a causa della droga e dell'alcool. Dopo essere scomparso per tre anni, passati in Louisiana a sgusciare un milione di ostriche, decide di rimettersi in gioco aprendo un nuovo ristorante a Londra.",
         "immagine": "https://img-guidatv.org/film_new/i/5e78ddface1e246c511cd206/5e78ddface1e246c511cd206_p_1_rs_300.jpg"
@@ -23611,7 +23597,7 @@
         "fine": "06:02",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "06:02",
@@ -23625,49 +23611,49 @@
         "fine": "12:30",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "12:30",
         "fine": "14:44",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "14:44",
         "fine": "16:44",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "16:44",
         "fine": "18:44",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "18:44",
         "fine": "21:19",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "21:19",
         "fine": "23:59",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "23:59",
         "fine": "01:59",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       }
     ]
   },
@@ -23680,7 +23666,7 @@
         "fine": "06:02",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "06:02",
@@ -23694,49 +23680,49 @@
         "fine": "12:30",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "12:30",
         "fine": "14:44",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "14:44",
         "fine": "16:44",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "16:44",
         "fine": "18:44",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "18:44",
         "fine": "21:19",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "21:19",
         "fine": "23:59",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       },
       {
         "ora": "23:59",
         "fine": "01:59",
         "titolo": "Grande Fratello Vip Live",
         "descrizione": "Appuntamento quotidiano con la casa del Grande Fratello",
-        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001001101/media/3/3/c3d4d4ce-2bd5-466b-bfe9-04150481adcd/f46ec79b-008a-4f73-82c1-8e93541b2ee2.jpg"
+        "immagine": "https://img-guidatv.org/12/grande-fratello-vip-live/5.png"
       }
     ]
   },
@@ -25102,28 +25088,28 @@
         "fine": "12:25",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
-        "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501053901/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "12:25",
         "fine": "12:58",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201053901/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "12:58",
         "fine": "13:33",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/10473/tg5/4.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201107801/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "13:33",
         "fine": "14:11",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-2026/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314686001005701/media/22/86/3737884b-ae0b-43cb-9af9-16473d20a478/26dcb11c-4d2e-444d-802c-e1830a6aa81e.jpg"
       },
       {
         "ora": "14:11",
@@ -25151,21 +25137,21 @@
         "fine": "15:55",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000801/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "15:55",
         "fine": "16:21",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000801/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:21",
         "fine": "16:37",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000801/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:37",
@@ -25436,8 +25422,8 @@
         "ora": "06:30",
         "fine": "07:00",
         "titolo": "TuttiFrutti",
-        "descrizione": "Fragolina Dolcecuore si diverte un mondo insieme ai suoi amici nella città di Berry Bitty! Insieme a Pandolce, Arancina, Pasticcina e Zenzerella vivranno emozionanti e golosissime avventure!",
-        "immagine": "https://image.tmdb.org/t/p/w300/xweEe66HXnW5LAGanucy5ZOL6fu.jpg"
+        "descrizione": "TUTTIFRUTTI",
+        "immagine": "https://image.tmdb.org/t/p/w300/2QSnzMbZxNpd7Xitjj3UVgZ6asV.jpg"
       },
       {
         "ora": "07:00",
@@ -25967,8 +25953,8 @@
         "ora": "06:30",
         "fine": "07:00",
         "titolo": "TuttiFrutti",
-        "descrizione": "Fragolina Dolcecuore si diverte un mondo insieme ai suoi amici nella città di Berry Bitty! Insieme a Pandolce, Arancina, Pasticcina e Zenzerella vivranno emozionanti e golosissime avventure!",
-        "immagine": "https://image.tmdb.org/t/p/w300/xweEe66HXnW5LAGanucy5ZOL6fu.jpg"
+        "descrizione": "TUTTIFRUTTI",
+        "immagine": "https://image.tmdb.org/t/p/w300/2QSnzMbZxNpd7Xitjj3UVgZ6asV.jpg"
       },
       {
         "ora": "07:00",
@@ -26498,8 +26484,8 @@
         "ora": "06:30",
         "fine": "07:00",
         "titolo": "TuttiFrutti",
-        "descrizione": "Fragolina Dolcecuore si diverte un mondo insieme ai suoi amici nella città di Berry Bitty! Insieme a Pandolce, Arancina, Pasticcina e Zenzerella vivranno emozionanti e golosissime avventure!",
-        "immagine": "https://image.tmdb.org/t/p/w300/xweEe66HXnW5LAGanucy5ZOL6fu.jpg"
+        "descrizione": "TUTTIFRUTTI",
+        "immagine": "https://image.tmdb.org/t/p/w300/2QSnzMbZxNpd7Xitjj3UVgZ6asV.jpg"
       },
       {
         "ora": "07:00",
@@ -29981,8 +29967,8 @@
         "ora": "00:05",
         "fine": "01:05",
         "titolo": "Stucky - Un'altra vita",
-        "descrizione": "L'ispettore capo Stucky è un detective vecchio stampo, introspettivo, apparentemente distratto e spesso sottovalutato. Indaga su casi di omicidio per la Questura di Treviso facendo ricorso all'empatia, al suo intuito non convenzionale e agli appunti rigorosamente scritti a mano.",
-        "immagine": "https://img-guidatv.org/90/stucky/1.jpg"
+        "descrizione": "In forza alla Questura di Treviso, Stucky è un ispettore apparentemente distratto, spesso bistrattato e sottovalutato, che si lascia guidare dal suo istinto, dalla curiosità e da un pensiero fuori dagli schemi.",
+        "immagine": "https://image.tmdb.org/t/p/w500/wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
       },
       {
         "ora": "01:05",
@@ -30050,7 +30036,7 @@
       {
         "ora": "05:00",
         "fine": "05:05",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30064,7 +30050,7 @@
       {
         "ora": "05:10",
         "fine": "05:25",
-        "titolo": "Il Quotidiano (R)",
+        "titolo": "Il Quotidiano",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30078,7 +30064,7 @@
       {
         "ora": "05:55",
         "fine": "06:05",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30338,8 +30324,8 @@
         "ora": "23:00",
         "fine": "00:05",
         "titolo": "Stucky - Falso d'autore",
-        "descrizione": "L'ispettore capo Stucky è un detective vecchio stampo, introspettivo, apparentemente distratto e spesso sottovalutato. Indaga su casi di omicidio per la Questura di Treviso facendo ricorso all'empatia, al suo intuito non convenzionale e agli appunti rigorosamente scritti a mano.",
-        "immagine": "https://image.tmdb.org/t/p/w500//wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
+        "descrizione": "In forza alla Questura di Treviso, Stucky è un ispettore apparentemente distratto, spesso bistrattato e sottovalutato, che si lascia guidare dal suo istinto, dalla curiosità e da un pensiero fuori dagli schemi.",
+        "immagine": "https://image.tmdb.org/t/p/w500/wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
       }
     ]
   },
@@ -30351,8 +30337,8 @@
         "ora": "00:05",
         "fine": "01:05",
         "titolo": "Stucky - Un'altra vita",
-        "descrizione": "L'ispettore capo Stucky è un detective vecchio stampo, introspettivo, apparentemente distratto e spesso sottovalutato. Indaga su casi di omicidio per la Questura di Treviso facendo ricorso all'empatia, al suo intuito non convenzionale e agli appunti rigorosamente scritti a mano.",
-        "immagine": "https://img-guidatv.org/90/stucky/1.jpg"
+        "descrizione": "In forza alla Questura di Treviso, Stucky è un ispettore apparentemente distratto, spesso bistrattato e sottovalutato, che si lascia guidare dal suo istinto, dalla curiosità e da un pensiero fuori dagli schemi.",
+        "immagine": "https://image.tmdb.org/t/p/w500/wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
       },
       {
         "ora": "01:05",
@@ -30420,7 +30406,7 @@
       {
         "ora": "05:00",
         "fine": "05:05",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30434,7 +30420,7 @@
       {
         "ora": "05:10",
         "fine": "05:25",
-        "titolo": "Il Quotidiano (R)",
+        "titolo": "Il Quotidiano",
         "descrizione": "Attualità della Svizzera italiana",
         "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
       },
@@ -30448,7 +30434,7 @@
       {
         "ora": "05:55",
         "fine": "06:05",
-        "titolo": "TG Notte (R)",
+        "titolo": "TG Notte",
         "descrizione": "Le ultime notizie della giornata",
         "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
@@ -30708,8 +30694,8 @@
         "ora": "23:00",
         "fine": "00:05",
         "titolo": "Stucky - Falso d'autore",
-        "descrizione": "L'ispettore capo Stucky è un detective vecchio stampo, introspettivo, apparentemente distratto e spesso sottovalutato. Indaga su casi di omicidio per la Questura di Treviso facendo ricorso all'empatia, al suo intuito non convenzionale e agli appunti rigorosamente scritti a mano.",
-        "immagine": "https://image.tmdb.org/t/p/w500//wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
+        "descrizione": "In forza alla Questura di Treviso, Stucky è un ispettore apparentemente distratto, spesso bistrattato e sottovalutato, che si lascia guidare dal suo istinto, dalla curiosità e da un pensiero fuori dagli schemi.",
+        "immagine": "https://image.tmdb.org/t/p/w500/wN3zGoecyOwe3B1h02B6e1VWMwK.jpg"
       }
     ]
   },
@@ -30761,10 +30747,24 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:10",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
+      },
+      {
+        "ora": "05:15",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Quotidiano (R) + Lo Specchio (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Il Quotidiano",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
       {
         "ora": "05:30",
@@ -30935,10 +30935,24 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:10",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:10",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
+      },
+      {
+        "ora": "05:15",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Quotidiano (R) + Lo Specchio (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Il Quotidiano",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/91/il-quotidiano/0.jpg"
       },
       {
         "ora": "05:30",
