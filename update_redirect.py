@@ -1,4 +1,4 @@
-﻿"""Aggiorna la pagina GitHub Pages di Next che reindirizza al link tunnel corrente."""
+"""Aggiorna la pagina GitHub Pages di Next che reindirizza al link tunnel corrente."""
 import json
 import subprocess
 import sys
@@ -14,10 +14,19 @@ TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Next</title>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>NMDZ - Live TV & Sport</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
+<meta http-equiv="refresh" content="0;url={link}">
+<script>
+    (function() {{
+        var target = "{link}";
+        if (target && target.startsWith("http")) {{
+            window.location.replace(target);
+        }}
+    }})();
+</script>
 <style>
 body {{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -48,52 +57,19 @@ h2 {{ margin: 0 0 8px 0; font-size: 1.25rem; font-weight: 600; }}
 p {{ margin: 0; font-size: 0.95rem; color: #94a3b8; }}
 a {{ color: #00e59b; text-decoration: none; font-weight: 500; }}
 a:hover {{ text-decoration: underline; }}
-.manual-link {{ margin-top: 20px; display: none; }}
+.manual-link {{ margin-top: 20px; }}
 </style>
 </head>
 <body>
 
-<div class="spinner" id="spinner"></div>
-<h2 id="statusTitle">Connessione a Next...</h2>
-<p id="statusDesc">Caricamento in corso...</p>
+<div class="spinner"></div>
+<h2>Connessione a NMDZ...</h2>
+<p>Reindirizzamento in corso...</p>
 
-<div class="manual-link" id="manualBox">
-    <p>Se non vieni reindirizzato automaticamente: <a id="manualLink" href="{link}">clicca qui per accedere</a></p>
+<div class="manual-link">
+    <p>Se non vieni reindirizzato automaticamente: <a href="{link}">clicca qui per accedere a NMDZ</a></p>
 </div>
 
-<script>
-const FALLBACK_URL = "{link}";
-
-async function getLiveUrl() {{
-    try {{
-        const resp = await fetch("https://api.github.com/repos/luishighnest/next?t=" + Date.now(), {{
-            cache: "no-store",
-            headers: {{ "Accept": "application/vnd.github.v3+json" }}
-        }});
-        if (resp.ok) {{
-            const data = await resp.json();
-            if (data.homepage && data.homepage.startsWith("https://") && data.homepage.includes("trycloudflare.com")) {{
-                return data.homepage;
-            }}
-        }}
-    }} catch (e) {{
-        console.warn("Impossibile recuperare homepage live:", e);
-    }}
-    return FALLBACK_URL;
-}}
-
-async function doRedirect() {{
-    const dest = await getLiveUrl();
-    const cleanDest = dest.replace(/\\/$/, "");
-    document.getElementById("manualLink").href = cleanDest;
-    setTimeout(() => {{
-        document.getElementById("manualBox").style.display = "block";
-    }}, 2000);
-    window.location.replace(cleanDest);
-}}
-
-doRedirect();
-</script>
 </body>
 </html>"""
 

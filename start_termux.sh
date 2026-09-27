@@ -1,4 +1,4 @@
-﻿#!/data/data/com.termux/files/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
 
@@ -12,14 +12,18 @@ while true; do
     killall -9 node cloudflared 2>/dev/null
     sleep 1
 
-    echo "[2/4] Avvio server Next.js (production mode)..."
+    echo "[2/4] Verifico build ed avvio server Next.js..."
+    if [ ! -d ".next" ]; then
+        echo "Build Next.js mancante, avvio npm run build..."
+        npm run build
+    fi
     npm run start -- -H 0.0.0.0 -p 3000 > /dev/null 2>&1 &
     PID_NEXT=$!
     sleep 4
 
-    echo "[3/4] Avvio Cloudflare Tunnel..."
+    echo "[3/4] Avvio Cloudflare Tunnel (IPv4 + HTTP/2)..."
     rm -f tunnel.log
-    cloudflared tunnel --url http://127.0.0.1:3000 --logfile tunnel.log > /dev/null 2>&1 &
+    cloudflared tunnel --edge-ip-version 4 --protocol http2 --url http://127.0.0.1:3000 --logfile tunnel.log > /dev/null 2>&1 &
     PID_TUNNEL=$!
 
     echo "Attendo generazione link Cloudflare..."
