@@ -32,12 +32,10 @@ export default function Navbar({
     const setSearchVal = propSetSearchVal || setLocalSearchVal;
 
     const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-    const [isGuidaTvOpen, setIsGuidaTvOpen] = useState(false);
     const [isNavHidden, setIsNavHidden] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [mounted, setMounted] = useState(false);
-    const [siteTime, setSiteTime] = useState("");
-    const [hoveredNav, setHoveredNav] = useState(null);
+    const [openDropdownNav, setOpenDropdownNav] = useState(null);
     const [cachedSubCategories, setCachedSubCategories] = useState({
         sport: [],
         intrattenimento: [],
@@ -80,8 +78,6 @@ export default function Navbar({
         };
     }, []);
 
-    const [openDropdownNav, setOpenDropdownNav] = useState(null);
-
     // Chiusura al click all'esterno del menu
     useEffect(() => {
         function handleClickOutside(e) {
@@ -94,6 +90,18 @@ export default function Navbar({
     }, []);
 
     const effectiveSubCategories = dynamicSubCategories || cachedSubCategories;
+
+    const handleItemMouseEnter = (tab) => {
+        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+        setOpenDropdownNav(tab);
+    };
+
+    const handleItemMouseLeave = () => {
+        if (hoverTimeoutRef.current) clearTimeout(hoverTimeoutRef.current);
+        hoverTimeoutRef.current = setTimeout(() => {
+            setOpenDropdownNav(null);
+        }, 180);
+    };
 
     const handleToggleArrow = (e, tab) => {
         e.preventDefault();
@@ -119,17 +127,9 @@ export default function Navbar({
 
     useEffect(() => {
         setMounted(true);
-        function updateSiteClock() {
-            setSiteTime(new Date().toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" }));
-        }
-        updateSiteClock();
-        const t = setInterval(updateSiteClock, 10000);
-        return () => clearInterval(t);
     }, []);
 
-    // La navbar ha la STESSA identica dimensione, struttura e posizione della Home su tutte le sezioni (Home, Sky, Evento)
-const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
-
+    const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
     const lastScrollYRef = useRef(0);
 
     useEffect(() => {
@@ -159,16 +159,11 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
 
             setIsScrolled(currentScrollY > 15);
 
-            // Se siamo vicini alla cima della pagina, mostra sempre la navbar
             if (currentScrollY <= 40) {
                 setIsNavHidden(false);
-            } 
-            // Se scrolliamo verso il BASSO (con soglia calibrata per evitare scatti nervosi)
-            else if (delta > 8 && currentScrollY > 70) {
+            } else if (delta > 8 && currentScrollY > 70) {
                 setIsNavHidden(true);
-            } 
-            // Se scrolliamo verso l'ALTO
-            else if (delta < -8) {
+            } else if (delta < -8) {
                 setIsNavHidden(false);
             }
 
@@ -266,10 +261,8 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
     const handleCloseSearch = () => {
         if (isClosingSearch) return;
         if (propOnCloseSearch) {
-            // Parent controls the closing animation (bar + overlay together)
             propOnCloseSearch();
         } else {
-            // Standalone fallback (e.g. sky/eventi pages)
             setLocalIsClosingSearch(true);
             setTimeout(() => {
                 setIsSearchOpen(false);
@@ -307,7 +300,6 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                                 }}
                                 autoFocus
                             />
-                            {/* Unico pulsante "Annulla": chiude ricerca e svuota il testo in un gesto solo */}
                             <button
                                 type="button"
                                 className="search-fullbar-cancel-btn"
@@ -322,7 +314,7 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                 ) : (
                     <div className="home-header-dock-container fade-enter">
                         <header className="home-header-dock" role="banner">
-                            {/* SEZIONE 1: BRAND LOGO + CATEGORIE AFFIANCATE IN ALTO A SINISTRA */}
+                            {/* BRAND LOGO + CATEGORIE AFFIANCATE IN ALTO A SINISTRA */}
                             <div className="dock-group dock-group-left">
                                 <Link
                                     href="/home"
@@ -350,82 +342,84 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                                         { id: "eventi", path: "/eventi", label: "EVENTI", hasSub: true },
                                         { id: "vod", path: "/vod", label: "VOD", hasSub: true }
                                     ].map((item) => {
-                                    const isActive = activeFilter === item.id;
-                                    const subItems = (item.hasSub && effectiveSubCategories[item.id]) ? effectiveSubCategories[item.id] : [];
+                                        const isActive = activeFilter === item.id;
+                                        const subItems = (item.hasSub && effectiveSubCategories[item.id]) ? effectiveSubCategories[item.id] : [];
+                                        const isDropdownOpen = openDropdownNav === item.id;
 
-                                    return (
-                                        <div
-                                            key={item.id}
-                                            className={`dock-nav-item-wrapper ${openDropdownNav === item.id ? "dropdown-active" : ""}`}
-                                        >
-                                            <Link
-                                                href={item.path}
-                                                className={`dock-nav-link ${isActive ? "active" : ""}`}
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    setOpenDropdownNav(null);
-                                                    handleNavClick(item.id);
-                                                    if (onSubFilterChange) onSubFilterChange("all");
-                                                }}
+                                        return (
+                                            <div
+                                                key={item.id}
+                                                className={`dock-nav-item-wrapper ${isDropdownOpen ? "dropdown-active" : ""}`}
+                                                onMouseEnter={() => item.hasSub && subItems.length > 0 && handleItemMouseEnter(item.id)}
+                                                onMouseLeave={() => item.hasSub && subItems.length > 0 && handleItemMouseLeave()}
                                             >
-                                                <span className="dock-label">{item.label}</span>
-                                            </Link>
-
-                                            {item.hasSub && subItems.length > 0 && (
-                                                <button
-                                                    type="button"
-                                                    className={`dock-arrow-btn ${openDropdownNav === item.id ? "is-open" : ""}`}
-                                                    onClick={(e) => handleToggleArrow(e, item.id)}
-                                                    aria-label={`Sottocategorie ${item.label}`}
-                                                    title={`Mostra sottocategorie ${item.label}`}
+                                                <Link
+                                                    href={item.path}
+                                                    className={`dock-nav-link ${isActive ? "active" : ""}`}
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        setOpenDropdownNav(null);
+                                                        handleNavClick(item.id);
+                                                        if (onSubFilterChange) onSubFilterChange("all");
+                                                    }}
                                                 >
-                                                    <span className="material-symbols-rounded dock-arrow-icon" aria-hidden="true">
-                                                        keyboard_arrow_down
-                                                    </span>
-                                                </button>
-                                            )}
+                                                    <span className="dock-label">{item.label}</span>
+                                                </Link>
 
-                                            {item.hasSub && subItems.length > 0 && (
-                                                <div className={`dock-subnav-dropdown ${openDropdownNav === item.id ? "is-open" : ""}`} role="menu">
-                                                    <div className="dock-dropdown-header">
-                                                        <span>{item.label}</span>
+                                                {item.hasSub && subItems.length > 0 && (
+                                                    <button
+                                                        type="button"
+                                                        className={`dock-arrow-btn ${isDropdownOpen ? "is-open" : ""}`}
+                                                        onClick={(e) => handleToggleArrow(e, item.id)}
+                                                        aria-label={`Sottocategorie ${item.label}`}
+                                                        title={`Mostra sottocategorie ${item.label}`}
+                                                    >
+                                                        <span className="material-symbols-rounded dock-arrow-icon" aria-hidden="true">
+                                                            keyboard_arrow_down
+                                                        </span>
+                                                    </button>
+                                                )}
+
+                                                {item.hasSub && subItems.length > 0 && (
+                                                    <div className={`dock-subnav-dropdown ${isDropdownOpen ? "is-open" : ""}`} role="menu">
+                                                        <div className="dock-dropdown-header">
+                                                            <span>{item.label}</span>
+                                                        </div>
+                                                        <div className="dock-dropdown-list">
+                                                            <button
+                                                                type="button"
+                                                                className={`dock-dropdown-item ${isActive && activeSubFilter === "all" ? "active" : ""}`}
+                                                                onClick={() => handleSubCategoryClick(item.id, "all")}
+                                                            >
+                                                                <span className="dock-dropdown-dot"></span>
+                                                                <span className="dock-dropdown-item-label">Tutti</span>
+                                                            </button>
+                                                            {subItems.map(sub => {
+                                                                const isSubActive = isActive && activeSubFilter === sub.id;
+                                                                return (
+                                                                    <button
+                                                                        key={sub.id}
+                                                                        className={`dock-dropdown-item ${isSubActive ? "active" : ""}`}
+                                                                        onClick={() => handleSubCategoryClick(item.id, sub.id)}
+                                                                    >
+                                                                        <span className="dock-dropdown-dot"></span>
+                                                                        <span className="dock-dropdown-item-label">{sub.label}</span>
+                                                                        {typeof sub.count === "number" && sub.count > 0 && (
+                                                                            <span className="dock-dropdown-badge">{sub.count}</span>
+                                                                        )}
+                                                                    </button>
+                                                                );
+                                                            })}
+                                                        </div>
                                                     </div>
-                                                    <div className="dock-dropdown-list">
-                                                        <button
-                                                            type="button"
-                                                            className={`dock-dropdown-item ${isActive && activeSubFilter === "all" ? "active" : ""}`}
-                                                            onClick={() => handleSubCategoryClick(item.id, "all")}
-                                                        >
-                                                            <span className="dock-dropdown-dot"></span>
-                                                            <span className="dock-dropdown-item-label">Tutti</span>
-                                                        </button>
-                                                        {subItems.map(sub => {
-                                                            const isSubActive = isActive && activeSubFilter === sub.id;
-                                                            return (
-                                                                <button
-                                                                    key={sub.id}
-                                                                    type="button"
-                                                                    className={`dock-dropdown-item ${isSubActive ? "active" : ""}`}
-                                                                    onClick={() => handleSubCategoryClick(item.id, sub.id)}
-                                                                >
-                                                                    <span className="dock-dropdown-dot"></span>
-                                                                    <span className="dock-dropdown-item-label">{sub.label}</span>
-                                                                    {typeof sub.count === "number" && sub.count > 0 && (
-                                                                        <span className="dock-dropdown-badge">{sub.count}</span>
-                                                                    )}
-                                                                </button>
-                                                            );
-                                                        })}
-                                                    </div>
-                                                </div>
-                                            )}
-                                        </div>
-                                    );
-                                })}
-                            </nav>
+                                                )}
+                                            </div>
+                                        );
+                                    })}
+                                </nav>
                             </div>
 
-                            {/* SEZIONE 3: AZIONI (CERCA, GUIDA TV, IMPOSTAZIONI) */}
+                            {/* AZIONI (CERCA, IMPOSTAZIONI) */}
                             <div className="dock-group dock-group-right">
                                 <button
                                     type="button"
@@ -438,14 +432,14 @@ const isPlayerPage = pathname ? pathname.startsWith("/sky") : false;
                                 </button>
 
                                 <button
-                                     type="button"
-                                     className="dock-action-btn settings-icon-btn"
-                                     onClick={() => setIsSettingsOpen(true)}
-                                     aria-label="Impostazioni"
-                                     title="Impostazioni"
-                                 >
-                                     <i className="fas fa-gear"></i>
-                                 </button>
+                                    type="button"
+                                    className="dock-action-btn settings-icon-btn"
+                                    onClick={() => setIsSettingsOpen(true)}
+                                    aria-label="Impostazioni"
+                                    title="Impostazioni"
+                                >
+                                    <i className="fas fa-gear"></i>
+                                </button>
                             </div>
                         </header>
                     </div>

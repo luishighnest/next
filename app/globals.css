@@ -1758,23 +1758,22 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     }
 }
 
-/* Modalità in cima alla pagina: totalmente trasparente e senza bordi per fondersi nello sfondo */
+/* Modalità in cima alla pagina: sfumatura scura superiore trasparente che si fonde con l'hero */
 .home-header-wrapper.header-top {
-    background: transparent !important;
-    border-bottom: 1px solid transparent !important;
-    border-color: transparent !important;
+    background: linear-gradient(180deg, rgba(8, 12, 22, 0.88) 0%, rgba(8, 12, 22, 0.4) 60%, transparent 100%) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
     box-shadow: none !important;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
 }
 
-/* Modalità durante lo scroll: elegante vetro ardesia NOW con micro-bordo */
+/* Modalità durante lo scroll: vetro ardesia scuro premium con riflesso sul bordo inferiore */
 .home-header-wrapper.header-scrolled {
-    background: rgba(11, 15, 25, 0.82) !important;
+    background: rgba(9, 13, 23, 0.92) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
-    backdrop-filter: blur(24px) saturate(190%) !important;
-    -webkit-backdrop-filter: blur(24px) saturate(190%) !important;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.65), 0 0 1px rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(28px) saturate(190%) !important;
+    -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
 }
 
 /* Modalità Ricerca attiva: altezza naturale, perfettamente centrata, zero ombre o linee bianche */
@@ -1802,9 +1801,9 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .home-header-dock-container {
     width: 100%;
     height: 100%;
-    max-width: 100%;
-    margin: 0;
-    padding: 0 48px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 40px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -1833,37 +1832,44 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 .dock-brand-link {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     text-decoration: none;
     cursor: pointer;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
-    padding: 0 !important;
-    margin-right: 24px;
-    transition: opacity 0.2s ease;
+    padding: 6px 10px 6px 0 !important;
+    margin-right: 32px;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
     flex-shrink: 0;
 }
 .dock-brand-link:hover {
-    opacity: 0.9;
+    opacity: 1;
+    transform: scale(1.02);
 }
 
 .dock-brand-logo-svg {
-    height: 28px;
-    width: 28px;
-    min-width: 28px;
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
     display: block;
-    color: #ffffff;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
-    transition: color 0.2s ease;
+    color: #00e59b;
+    filter: drop-shadow(0 0 10px rgba(0, 229, 155, 0.45));
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+.dock-brand-link:hover .dock-brand-logo-svg {
+    filter: drop-shadow(0 0 16px rgba(0, 229, 155, 0.7));
 }
 
 .dock-brand-text {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-weight: 800;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
     color: #ffffff;
     text-transform: uppercase;
+    background: linear-gradient(135deg, #ffffff 40%, rgba(255, 255, 255, 0.75) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Gruppo Centrale: Posizionato SUBITO a destra del logo senza posizionamenti assoluti o margini enormi */
@@ -1874,49 +1880,11 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     transform: none !important;
     display: flex !important;
     align-items: center !important;
-    gap: 16px !important;
+    gap: 6px !important;
     height: 100% !important;
     margin-left: 0 !important;
 }
 
-.dock-nav-link {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    height: 100%;
-    padding: 0 12px;
-    color: rgba(255, 255, 255, 0.65);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    transition: color 0.22s ease;
-    cursor: pointer;
-    user-select: none;
-}
-
-.dock-nav-link:hover {
-    color: #ffffff;
-}
-
-.dock-nav-link.active {
-    color: #00e59b !important;
-    font-weight: 700;
-}
-
-.dock-nav-link.active .dock-label {
-    color: #00e59b !important;
-    text-shadow: 0 0 12px rgba(0, 229, 155, 0.35);
-}
-
-.dock-nav-link.active::after {
-    display: none !important;
-    content: none !important;
-}
-
-/* --- WRAPPER E DROPDOWN SOTTOCATEGORIE STILE NOW (Click su Freccia) --- */
 .dock-nav-item-wrapper {
     position: relative;
     display: inline-flex;
@@ -1924,24 +1892,76 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     height: 100%;
 }
 
+.dock-nav-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 38px;
+    padding: 0 14px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+                text-shadow 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dock-nav-link:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.dock-nav-link.active {
+    color: #00e59b !important;
+    font-weight: 700;
+    background: rgba(0, 229, 155, 0.08);
+}
+
+.dock-nav-link.active .dock-label {
+    color: #00e59b !important;
+    text-shadow: 0 0 14px rgba(0, 229, 155, 0.4);
+}
+
+.dock-nav-link.active::after {
+    display: block !important;
+    content: '' !important;
+    position: absolute;
+    bottom: -2px;
+    left: 14px;
+    right: 14px;
+    height: 2px;
+    background: #00e59b;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 229, 155, 0.8), 0 0 20px rgba(0, 229, 155, 0.4);
+}
+
+/* --- WRAPPER E DROPDOWN SOTTOCATEGORIE STILE STREAMING PREMIUM --- */
 .dock-nav-item-wrapper .dock-nav-link {
-    padding-right: 4px;
+    padding-right: 6px;
 }
 
 .dock-arrow-btn {
     background: transparent;
     border: none;
-    padding: 0 6px 0 2px;
+    padding: 0 6px 0 0px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.45);
-    height: 100%;
-    transition: color 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    height: 38px;
+    transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     outline: none;
     user-select: none;
     -webkit-user-select: none;
+    margin-left: -4px;
 }
 
 .dock-arrow-btn:hover {
@@ -1949,75 +1969,81 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .dock-arrow-btn.is-open,
-.dock-nav-item-wrapper.dropdown-active .dock-arrow-btn {
+.dock-nav-item-wrapper.dropdown-active .dock-arrow-btn,
+.dock-nav-item-wrapper:hover .dock-arrow-btn {
     color: #00e59b !important;
 }
 
 .dock-arrow-icon {
-    font-size: 1.12rem;
-    transition: transform 0.24s cubic-bezier(0.2, 0.8, 0.2, 1), color 0.2s ease;
+    font-size: 1.1rem;
+    transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
     pointer-events: none;
 }
 
-.dock-arrow-btn.is-open .dock-arrow-icon {
+.dock-arrow-btn.is-open .dock-arrow-icon,
+.dock-nav-item-wrapper:hover .dock-arrow-icon {
     transform: rotate(180deg);
     color: #00e59b;
 }
 
 .dock-nav-link.active + .dock-arrow-btn {
-    color: rgba(0, 229, 155, 0.7);
+    color: rgba(0, 229, 155, 0.85);
 }
 
 .dock-subnav-dropdown {
     position: absolute;
-    top: calc(100% + 10px);
-    left: 50%;
-    transform: translateX(-50%) translateY(-6px);
+    top: calc(100% + 8px);
+    left: 0;
     min-width: 220px;
     max-width: 320px;
     max-height: 420px;
     overflow-y: auto;
     overflow-x: hidden;
-    background: rgba(11, 15, 25, 0.95);
+    background: rgba(10, 14, 24, 0.95);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 18px;
+    border-radius: 14px;
     padding: 8px;
-    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.85), 
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), 
                 0 0 0 1px rgba(255, 255, 255, 0.05), 
-                0 0 24px rgba(0, 229, 155, 0.12);
-    backdrop-filter: blur(28px) saturate(190%);
-    -webkit-backdrop-filter: blur(28px) saturate(190%);
+                0 0 30px rgba(0, 229, 155, 0.12);
+    backdrop-filter: blur(32px) saturate(190%);
+    -webkit-backdrop-filter: blur(32px) saturate(190%);
     z-index: 10005;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.2s;
+    transform: translateY(10px) scale(0.97);
+    transform-origin: top left;
+    transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), 
+                visibility 0.22s ease;
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
 }
 
-.dock-subnav-dropdown.is-open {
+.dock-subnav-dropdown.is-open,
+.dock-nav-item-wrapper:hover .dock-subnav-dropdown {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0) scale(1);
 }
 
 .dock-dropdown-header {
-    padding: 6px 12px 6px;
-    font-size: 0.72rem;
+    padding: 8px 12px 6px;
+    font-size: 0.7rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 1px;
+    color: rgba(0, 229, 155, 0.85);
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .dock-dropdown-list {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 
 .dock-dropdown-item {
@@ -2025,8 +2051,8 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     align-items: center;
     gap: 10px;
     width: 100%;
-    padding: 8px 12px;
-    border-radius: 12px;
+    padding: 9px 12px;
+    border-radius: 10px;
     background: transparent;
     border: 1px solid transparent;
     color: rgba(255, 255, 255, 0.75);
@@ -2034,20 +2060,55 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     font-weight: 500;
     cursor: pointer;
     text-align: left;
-    transition: background-color 0.18s cubic-bezier(0.2, 0.8, 0.2, 1),
-                color 0.18s cubic-bezier(0.2, 0.8, 0.2, 1),
-                border-color 0.18s cubic-bezier(0.2, 0.8, 0.2, 1),
-                transform 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
     white-space: nowrap;
 }
 
+.dock-dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+.dock-dropdown-item.active {
+    background: rgba(0, 229, 155, 0.12);
+    border-color: rgba(0, 229, 155, 0.25);
+    color: #00e59b;
+    font-weight: 600;
+}
+
 .dock-dropdown-dot {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.25);
     transition: background 0.18s ease, transform 0.18s ease;
     flex-shrink: 0;
+}
+
+.dock-dropdown-item:hover .dock-dropdown-dot {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.dock-dropdown-item.active .dock-dropdown-dot {
+    background: #00e59b;
+    box-shadow: 0 0 8px rgba(0, 229, 155, 0.8);
+    transform: scale(1.2);
+}
+
+.dock-dropdown-badge {
+    margin-left: auto;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.dock-dropdown-item.active .dock-dropdown-badge {
+    background: rgba(0, 229, 155, 0.2);
+    color: #00e59b;
 }
 
 .dock-dropdown-item:hover {
