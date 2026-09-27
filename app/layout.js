@@ -1,6 +1,7 @@
 import "./globals.css";
 import { DeviceProvider } from "@/components/DeviceProvider";
 import { TransitionProvider } from "@/components/TransitionProvider";
+import GlobalNavbarWrapper from "@/components/GlobalNavbarWrapper";
 
 export const metadata = {
     title: "NMDZ - Live TV & Sport",
@@ -35,7 +36,10 @@ export default function RootLayout({ children }) {
             <body>
                 <DeviceProvider>
                     <TransitionProvider>
-                        {children}
+                        <GlobalNavbarWrapper />
+                        <main className="main-content-layout">
+                            {children}
+                        </main>
                     </TransitionProvider>
                 </DeviceProvider>
             </body>

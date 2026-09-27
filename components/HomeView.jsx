@@ -554,21 +554,6 @@ function HomeViewContent({ defaultTab = "all" }) {
 
     return (
         <div className={`desktop-home ${mounted ? "is-mounted" : "is-mounting"}`} style={{ display: "block", minHeight: "140vh" }}>
-            <Navbar
-                activeFilter={filter}
-                onFilterChange={handleFilterChange}
-                activeSubFilter={subFilter}
-                onSubFilterChange={handleSelectSubFilter}
-                onSelectCategoryAndSub={handleSelectCategoryAndSub}
-                dynamicSubCategories={dynamicSubCategories}
-                isSearchOpen={isSearchOpen}
-                setIsSearchOpen={setIsSearchOpen}
-                searchVal={search}
-                setSearchVal={setSearch}
-                onSearch={(s) => setSearch(s)}
-                isClosingSearch={isClosingSearch}
-                onCloseSearch={handleCloseSearch}
-            />
 
             {/* HERO NOW A TUTTO SCHERMO (SOLO NEL TAB HOME/ALL E SE LA RICERCA NON È APERTA) */}
             {!isSearchOpen && !isClosingSearch && filter === "all" && (

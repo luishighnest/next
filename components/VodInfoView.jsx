@@ -186,11 +186,6 @@ export default function VodInfoView({ id, initialType = "movie" }) {
 
     return (
         <div className="atv-page">
-            <Navbar activeFilter="vod" onFilterChange={(tab) => {
-                if (tab === "vod") router.push("/vod");
-                else if (tab === "home" || tab === "all") router.push("/home");
-                else router.push(`/${tab}`);
-            }} />
 
             {/* HERO STAGE CINEMATOGRAFICO APPLE TV+ */}
             <div className="atv-hero">

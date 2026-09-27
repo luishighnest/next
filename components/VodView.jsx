@@ -160,18 +160,6 @@ function VodContent() {
 
     return (
         <div className={`desktop-home vod-page-container ${mounted ? "is-mounted" : "is-mounting"}`} style={{ display: "block", minHeight: "140vh" }}>
-            <Navbar
-                activeFilter="vod"
-                onFilterChange={handleFilterChange}
-                activeSubFilter={subFilter}
-                onSubFilterChange={handleSelectSubFilter}
-                onSelectCategoryAndSub={handleSelectCategoryAndSub}
-                isSearchOpen={isSearchOpen}
-                setIsSearchOpen={setIsSearchOpen}
-                searchVal={search}
-                setSearchVal={setSearch}
-                onSearch={(s) => setSearch(s)}
-            />
 
             <main className="home-content">
                 {!isSearchOpen && vodSubCategories.length > 0 && (

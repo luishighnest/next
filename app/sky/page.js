@@ -612,8 +612,6 @@ function SkyContent() {
 
     return (
         <div className={`sky-app ${mounted ? "is-mounted" : "is-mounting"}`}>
-            {/* Header / Navbar Identica alla Home ma neutra senza evidenziare filtri catalogo */}
-            <Navbar activeFilter={null} />
 
             {/* Layout Principale Sky Glass */}
             <main className="sky-main">
