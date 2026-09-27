@@ -103,41 +103,34 @@
       },
       {
         "ora": "12:55",
-        "fine": "14:45",
+        "fine": "15:30",
         "titolo": "GP Azerbaijan: Gara",
         "descrizione": "A Baku si corre eccezionalmente di sabato. Antonelli, gia' otto vittorie in stagione, guida la classifica con 81 punti su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7bae4f1d-cf65-433e-8746-97b39bcfed7d/background/600"
       },
       {
-        "ora": "14:45",
-        "fine": "15:15",
-        "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
-        "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
-      },
-      {
-        "ora": "15:15",
-        "fine": "15:30",
+        "ora": "15:30",
+        "fine": "15:55",
         "titolo": "Italia",
         "descrizione": "L'anteprima della gara di Superbike.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/376215f6-1157-4eb3-a989-e47d32339738/background/600"
       },
       {
-        "ora": "15:30",
-        "fine": "15:55",
+        "ora": "15:55",
+        "fine": "16:05",
         "titolo": "Italia: Gara 1",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b866d59d-59f3-4318-af11-06b8273b8906/background/600"
       },
       {
-        "ora": "15:55",
-        "fine": "16:15",
+        "ora": "16:05",
+        "fine": "16:30",
         "titolo": "Italia",
         "descrizione": "Commenti e considerazioni in merito all'evento superbike appena trasmesso.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d82d2415-74e5-4817-a37e-1fd7f8230924/background/600"
       },
       {
-        "ora": "16:15",
+        "ora": "16:30",
         "fine": "17:15",
         "titolo": "Azerbaijan",
         "descrizione": "Analizziamo insieme il Gran Premio di Formula Uno in Azerbaijan.",
@@ -750,7 +743,7 @@
       },
       {
         "ora": "02:10",
-        "fine": "04:05",
+        "fine": "04:20",
         "titolo": "GP Azerbaijan: Gara",
         "descrizione": "A Baku si corre eccezionalmente di sabato. Antonelli, gia' otto vittorie in stagione, guida la classifica con 81 punti su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7bae4f1d-cf65-433e-8746-97b39bcfed7d/background/600"
@@ -827,27 +820,27 @@
       },
       {
         "ora": "12:55",
-        "fine": "15:00",
+        "fine": "15:30",
         "titolo": "GP Azerbaijan: Gara",
         "descrizione": "A Baku si corre eccezionalmente di sabato. Antonelli, gia' otto vittorie in stagione, guida la classifica con 81 punti su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7bae4f1d-cf65-433e-8746-97b39bcfed7d/background/600"
       },
       {
-        "ora": "15:00",
-        "fine": "15:30",
+        "ora": "15:30",
+        "fine": "16:00",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
       },
       {
-        "ora": "15:30",
-        "fine": "16:00",
+        "ora": "16:00",
+        "fine": "16:05",
         "titolo": "F1 Debriefing",
         "descrizione": "E' il momento dell'analisi: dopo i giri in pista, giro di opinioni sui temi principali emersi dalla gara e dall'intero weekend. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/69df7712-56d1-46e1-a38f-474896c02a24/background/600"
       },
       {
-        "ora": "16:00",
+        "ora": "16:05",
         "fine": "16:15",
         "titolo": "F1 Notebook",
         "descrizione": "Anticipazioni entusiasmanti sulla prossima stagione 2023 direttamente dalla corsia dei box. Il giornalista britannico, esperto di Formula 1, Ted Kravitz racconta le manovre dal paddock e analizza il fine settimana.",
@@ -1071,24 +1064,17 @@
       },
       {
         "ora": "12:55",
-        "fine": "13:45",
+        "fine": "13:55",
         "titolo": "Italia: Gara 1",
         "descrizione": "Le gare della FIM Sportbike World Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/19174287-5f63-4d72-9de1-b0e97122bd31/background/600"
       },
       {
         "ora": "13:55",
-        "fine": "14:45",
+        "fine": "15:00",
         "titolo": "Italia: Gara 1",
         "descrizione": "Segui la gara del campionato mondiale di Supersport.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/21669ec4-a3b0-4d91-891c-b7c7ef931084/background/600"
-      },
-      {
-        "ora": "14:45",
-        "fine": "15:00",
-        "titolo": "Bulega: La Stagione Dei Record",
-        "descrizione": "Nicolo' Bulega sta battendo ogni record di vittorie in Superbike in attesa di scoprire se per lui, nel 2027, si apriranno le porte della MotoGP.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ad2df663-0e03-4e0b-89af-a49dcd2f94bf/background/600"
       },
       {
         "ora": "15:00",
@@ -1106,13 +1092,13 @@
       },
       {
         "ora": "15:30",
-        "fine": "15:55",
+        "fine": "16:05",
         "titolo": "Italia: Gara 1",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b866d59d-59f3-4318-af11-06b8273b8906/background/600"
       },
       {
-        "ora": "15:55",
+        "ora": "16:05",
         "fine": "16:10",
         "titolo": "Italia",
         "descrizione": "Commenti e considerazioni in merito all'evento superbike appena trasmesso.",
@@ -1273,13 +1259,13 @@
       },
       {
         "ora": "15:30",
-        "fine": "16:00",
+        "fine": "15:55",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
-        "ora": "16:00",
+        "ora": "15:55",
         "fine": "16:15",
         "titolo": "Motonautica On Board",
         "descrizione": "Uno sguardo sul mondo della Motonautica per svelare cio' che si cela dietro ogni scia, dalle imbarcazioni piu' veloci alle moto d'acqua. Un'opportunita' unica di conoscere da vicino i veri protagonisti: i piloti, con le loro storie e la loro passione.",
@@ -1461,13 +1447,13 @@
       },
       {
         "ora": "14:00",
-        "fine": "16:30",
+        "fine": "16:40",
         "titolo": "Preliminari Napoli: 2a Giornata",
         "descrizione": "... Giornata America's Cup. - Tutte le azioni delle regate dell'America's Cup.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7cece63d-f559-4901-803a-15d58cff204c/background/600"
       },
       {
-        "ora": "16:30",
+        "ora": "16:40",
         "fine": "17:00",
         "titolo": "Studio Vela 26/09/2026",
         "descrizione": "... Studio Vela. - ... Studio Vela. - Studi",
@@ -1593,24 +1579,10 @@
       },
       {
         "ora": "13:00",
-        "fine": "17:30",
+        "fine": "18:00",
         "titolo": "FedEx Open de France: Giorno 3",
         "descrizione": "... Giorno 3 Golf: DP World Tour. - Dal Golf National di Parigi, Francia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9d0fe700-b1ba-4610-babc-5a725dd23095/background/600"
-      },
-      {
-        "ora": "17:30",
-        "fine": "17:45",
-        "titolo": "Bmw Pga Championship",
-        "descrizione": "... Highlights DP World Tour. - J.J. Spaun vince il BMW PGA Championship mentre Manuel Elvira chiude l'ultima buca con un 7.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/515c3245-4709-42dc-a480-1589438cd76f/background/600"
-      },
-      {
-        "ora": "17:45",
-        "fine": "18:00",
-        "titolo": "European Masters",
-        "descrizione": "... World Tour. - Scopriamo insieme i momenti salienti degli 'European Masters'.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/56d400ad-96bc-49c8-90a9-2b6b80c7940b/background/600"
       },
       {
         "ora": "18:00",
@@ -2029,18 +2001,18 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "02:00",
-        "fine": "03:45",
+        "ora": "00:15",
+        "fine": "02:25",
+        "titolo": "GP Madrid: Gara",
+        "descrizione": "Prima storica gara sul nuovo circuito di Madrid. Antonelli comanda la classifica con 66 punti su Russell, Ferrari in cerca di riscatto. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1373d8e8-2a1a-42d3-9a24-0df14c528af8/background/600"
+      },
+      {
+        "ora": "02:25",
+        "fine": "04:10",
         "titolo": "Atalanta - Cagliari",
         "descrizione": "Nerazzurri reduci dal ko con la Roma (2-1). Il Cagliari viene dall'1-0 al Lecce. Un solo successo (2022) nelle ultime 5 gare a Bergamo, un pari e 3 sconfitte. TC: Massara-Montolivo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1b391bb0-7cfa-4041-9aa9-2148db934d71/background/600"
-      },
-      {
-        "ora": "03:45",
-        "fine": "05:25",
-        "titolo": "Inter - Udinese",
-        "descrizione": "Nerazzurri a punteggio pieno con 9 punti. Udinese reduce dal primo ko, 1-2 contro la Lazio. Un solo successo (2025) nelle ultime 9 sfide a San Siro, 8 sconfitte. TC: Zancan-Gobbi",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/08cb506c-aabd-4112-afc0-4d763f125337/background/600"
       },
       {
         "ora": "04:05",
@@ -2050,11 +2022,11 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a80c5614-f3d8-466e-9e48-63af8ab4e2a6/background/600"
       },
       {
-        "ora": "05:25",
+        "ora": "04:10",
         "fine": "06:00",
-        "titolo": "Napoli - Arsenal",
-        "descrizione": "Azzurri con un solo successo (2-0 in casa nel 2013) nei 4 precedenti europei, per il resto 3 sconfitte: una a Napoli e due all'Emirates Stadium. TC: Davide Polizzi",
-        "immagine": "https://img-guidatv.org/partite/championsreplica.png"
+        "titolo": "Inter - Udinese",
+        "descrizione": "Nerazzurri a punteggio pieno con 9 punti. Udinese reduce dal primo ko, 1-2 contro la Lazio. Un solo successo (2025) nelle ultime 9 sfide a San Siro, 8 sconfitte. TC: Zancan-Gobbi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/08cb506c-aabd-4112-afc0-4d763f125337/background/600"
       },
       {
         "ora": "06:00",
@@ -2093,73 +2065,66 @@
       },
       {
         "ora": "12:55",
-        "fine": "14:45",
+        "fine": "15:30",
         "titolo": "GP Azerbaijan: Gara",
         "descrizione": "A Baku si corre eccezionalmente di sabato. Antonelli, gia' otto vittorie in stagione, guida la classifica con 81 punti su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7bae4f1d-cf65-433e-8746-97b39bcfed7d/background/600"
       },
       {
-        "ora": "14:45",
-        "fine": "15:30",
+        "ora": "15:30",
+        "fine": "15:55",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
       },
       {
-        "ora": "15:30",
-        "fine": "15:55",
+        "ora": "15:55",
+        "fine": "16:15",
         "titolo": "F1 Debriefing",
         "descrizione": "E' il momento dell'analisi: dopo i giri in pista, giro di opinioni sui temi principali emersi dalla gara e dall'intero weekend. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/69df7712-56d1-46e1-a38f-474896c02a24/background/600"
       },
       {
-        "ora": "15:55",
-        "fine": "16:15",
+        "ora": "16:15",
+        "fine": "16:20",
         "titolo": "Azerbaigian",
         "descrizione": "La corsa sul circuito cittadino di Baku e' anticipata di 24 ore, con la gara ufficiale spostata eccezionalmente a sabato 26 settembre 2026 alle ore 13:00 italiane.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e2202e55-ff27-492a-978a-93e1b6b8694c/background/600"
       },
       {
-        "ora": "16:15",
-        "fine": "18:15",
+        "ora": "16:20",
+        "fine": "18:30",
         "titolo": "GP Azerbaijan: Gara",
         "descrizione": "A Baku si corre eccezionalmente di sabato. Antonelli, gia' otto vittorie in stagione, guida la classifica con 81 punti su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7bae4f1d-cf65-433e-8746-97b39bcfed7d/background/600"
       },
       {
-        "ora": "18:15",
-        "fine": "19:55",
+        "ora": "18:30",
+        "fine": "20:10",
         "titolo": "Juventus - Atalanta",
         "descrizione": "Entrambe reduci da un ko rispettivamente contro Sassuolo (3-2) e Cagliari (1-2). Atalanta imbattuta nelle ultime 8 sfide a Torino, 2 vittorie e 6 pari. TC: Compagnoni-Montolivo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/769b9dd3-85d4-4472-b3a6-54bca49a29fb/background/600"
       },
       {
-        "ora": "19:55",
-        "fine": "21:35",
+        "ora": "20:10",
+        "fine": "21:50",
         "titolo": "Venezia - Lazio",
         "descrizione": "Veneti ancora a 0 punti. Lazio imbattuta con 3 vittorie e un pareggio. Un solo successo (2021) nelle ultime 7 sfide di serie A a Venezia, 3 pari e 3 sconfitte. TC: Polizzi-Minotti",
         "immagine": "https://img-guidatv.org/partite/serieareplica.png"
       },
       {
-        "ora": "21:35",
-        "fine": "21:55",
+        "ora": "21:50",
+        "fine": "22:05",
         "titolo": "Azerbaigian",
         "descrizione": "La corsa sul circuito cittadino di Baku e' anticipata di 24 ore, con la gara ufficiale spostata eccezionalmente a sabato 26 settembre 2026 alle ore 13:00 italiane.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e2202e55-ff27-492a-978a-93e1b6b8694c/background/600"
       },
       {
-        "ora": "21:55",
-        "fine": "23:55",
+        "ora": "22:05",
+        "fine": "00:15",
         "titolo": "GP Azerbaijan: Gara",
         "descrizione": "A Baku si corre eccezionalmente di sabato. Antonelli, gia' otto vittorie in stagione, guida la classifica con 81 punti su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7bae4f1d-cf65-433e-8746-97b39bcfed7d/background/600"
-      },
-      {
-        "ora": "23:55",
-        "fine": "02:00",
-        "titolo": "GP Madrid: Gara",
-        "descrizione": "Prima storica gara sul nuovo circuito di Madrid. Antonelli comanda la classifica con 66 punti su Russell, Ferrari in cerca di riscatto. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1373d8e8-2a1a-42d3-9a24-0df14c528af8/background/600"
       }
     ]
   },
@@ -2412,41 +2377,13 @@
       },
       {
         "ora": "10:45",
-        "fine": "11:30",
+        "fine": "11:00",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "11:30",
-        "fine": "11:45",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "11:45",
-        "fine": "12:00",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:00",
-        "fine": "12:15",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:15",
-        "fine": "12:30",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "12:30",
+        "ora": "11:00",
         "fine": "12:45",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
@@ -2454,27 +2391,48 @@
       },
       {
         "ora": "12:45",
-        "fine": "13:10",
-        "titolo": "LIVE BJK CUP FINALS",
-        "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
-        "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
-      },
-      {
-        "ora": "13:10",
-        "fine": "15:05",
+        "fine": "13:05",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
         "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
       },
       {
-        "ora": "15:05",
-        "fine": "16:25",
+        "ora": "13:05",
+        "fine": "14:50",
         "titolo": "LIVE BJK CUP FINALS",
         "descrizione": "Le nazionali piu forti del mondo si sfidano, in palio la Billie Jean King Cup e il titolo di campionesse del mondo.",
         "immagine": "https://img-guidatv.org/54/live-bjk-cup/7.jpg"
       },
       {
-        "ora": "16:25",
+        "ora": "14:50",
+        "fine": "15:20",
+        "titolo": "Supertennis Today",
+        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
+        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
+      },
+      {
+        "ora": "15:20",
+        "fine": "15:35",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "15:35",
+        "fine": "16:00",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "16:00",
+        "fine": "16:30",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "16:30",
         "fine": "16:45",
         "titolo": "Supertennis Today",
         "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
@@ -2482,24 +2440,45 @@
       },
       {
         "ora": "16:45",
-        "fine": "18:25",
+        "fine": "17:15",
         "titolo": "LIVE LAVER CUP",
         "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
         "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
       },
       {
-        "ora": "18:25",
-        "fine": "18:40",
-        "titolo": "Supertennis Today",
-        "descrizione": "Supertennis Today - Il salotto del Tennis, Studi per e post partita",
-        "immagine": "https://img-guidatv.org/54/supertennis-today/11.jpg"
+        "ora": "17:15",
+        "fine": "17:40",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
       },
       {
-        "ora": "18:40",
+        "ora": "17:40",
+        "fine": "18:10",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "18:10",
+        "fine": "18:35",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "18:35",
+        "fine": "19:05",
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
+      },
+      {
+        "ora": "19:05",
         "fine": "19:40",
-        "titolo": "LAVER CUP 2026",
-        "descrizione": "Laver Cup 2026. Dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
-        "immagine": "https://img-guidatv.org/54/laver-cup/0.jpg"
+        "titolo": "LIVE LAVER CUP",
+        "descrizione": "Laver Cup. In diretta dalla O2 Arena di Londra, i migliori tennisti del pianeta si uniscono per l'iconica sfida Team Europe vs Team World. Match spettacolari sul celebre campo nero.",
+        "immagine": "https://img-guidatv.org/54/live-laver-cup/5.jpg"
       },
       {
         "ora": "19:40",
@@ -2670,23 +2649,23 @@
       {
         "ora": "01:30",
         "fine": "02:55",
-        "titolo": "Canoa. Europei Canoa Slalom E Kayak Cross Ivrea: Kayak Cross Batterie",
-        "descrizione": "Canoa. Europei Canoa Slalom e Kayak Cross Ivrea: Kayak Cross batterie",
+        "titolo": "Canoa - Europei Canoa Slalom 2026 - 3a Giornata: Finali Kayak Cross Batterie",
+        "descrizione": "Terza giornata degli Europei di canoa slalom 2026, con le batterie del Kayak Cross maschile e femminile che definiscono l'accesso alle fasi decisive della competizione.",
         "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
       },
       {
         "ora": "02:55",
         "fine": "04:45",
-        "titolo": "Canoa. Europei Canoa Slalom E Kayak Cross Ivrea: Kayak Cross Semifinali E Finali",
-        "descrizione": "Canoa. Europei Canoa Slalom e Kayak Cross Ivrea: Kayak Cross Semifinali e Finali",
+        "titolo": "Canoa - Europei Canoa Slalom 2026 - 3a Giornata: Finali Kayak Cross Individuali",
+        "descrizione": "Terza giornata degli Europei di canoa slalom 2026, con le finali individuali di Kayak Cross maschile e femminile che assegnano i titoli continentali.",
         "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
       },
       {
         "ora": "04:45",
         "fine": "06:00",
-        "titolo": "Vela: America'S Cup 2027 Regate Preliminari",
-        "descrizione": "Le gare preliminari della 38^ edizione dell'America's Cup a Cagliari. Obiettivo delle preliminari: fare punti, prendere confidenza con il campo di regata. Non assegnano la Coppa, ma sono il primo banco di prova.",
-        "immagine": "https://img-guidatv.org/32/vela/0.jpg"
+        "titolo": "38° America'S Cup: 2a Regata Preliminare - (Golfo Di Napoli)",
+        "descrizione": "Seconda giornata di regate nel Golfo di Napoli per la Regata Preliminare della 38ª America's Cup. I principali team internazionali tornano in acqua con gli AC40, proseguendo il primo grande confronto in vista dell'America's Cup 2027.",
+        "immagine": "https://img-guidatv.org/32/38-america-s-cup-2a-regata-preliminare-golfo-di-napoli/0.jpg"
       },
       {
         "ora": "06:00",
@@ -2767,23 +2746,23 @@
       {
         "ora": "01:30",
         "fine": "02:55",
-        "titolo": "Canoa. Europei Canoa Slalom E Kayak Cross Ivrea: Kayak Cross Batterie",
-        "descrizione": "Canoa. Europei Canoa Slalom e Kayak Cross Ivrea: Kayak Cross batterie",
+        "titolo": "Canoa - Europei Canoa Slalom 2026 - 3a Giornata: Finali Kayak Cross Batterie",
+        "descrizione": "Terza giornata degli Europei di canoa slalom 2026, con le batterie del Kayak Cross maschile e femminile che definiscono l'accesso alle fasi decisive della competizione.",
         "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
       },
       {
         "ora": "02:55",
         "fine": "04:45",
-        "titolo": "Canoa. Europei Canoa Slalom E Kayak Cross Ivrea: Kayak Cross Semifinali E Finali",
-        "descrizione": "Canoa. Europei Canoa Slalom e Kayak Cross Ivrea: Kayak Cross Semifinali e Finali",
+        "titolo": "Canoa - Europei Canoa Slalom 2026 - 3a Giornata: Finali Kayak Cross Individuali",
+        "descrizione": "Terza giornata degli Europei di canoa slalom 2026, con le finali individuali di Kayak Cross maschile e femminile che assegnano i titoli continentali.",
         "immagine": "https://img-guidatv.org/32/canoa/0.jpg"
       },
       {
         "ora": "04:45",
         "fine": "06:00",
-        "titolo": "Vela: America'S Cup 2027 Regate Preliminari",
-        "descrizione": "Le gare preliminari della 38^ edizione dell'America's Cup a Cagliari. Obiettivo delle preliminari: fare punti, prendere confidenza con il campo di regata. Non assegnano la Coppa, ma sono il primo banco di prova.",
-        "immagine": "https://img-guidatv.org/32/vela/0.jpg"
+        "titolo": "38° America'S Cup: 2a Regata Preliminare - (Golfo Di Napoli)",
+        "descrizione": "Seconda giornata di regate nel Golfo di Napoli per la Regata Preliminare della 38ª America's Cup. I principali team internazionali tornano in acqua con gli AC40, proseguendo il primo grande confronto in vista dell'America's Cup 2027.",
+        "immagine": "https://img-guidatv.org/32/38-america-s-cup-2a-regata-preliminare-golfo-di-napoli/0.jpg"
       },
       {
         "ora": "06:00",
@@ -5121,23 +5100,16 @@
       {
         "ora": "15:00",
         "fine": "15:30",
-        "titolo": "Seven 1/2 ora",
-        "descrizione": "Le principali notizie della settimana, raccontate in 30 minuti, a cura della redazione della rete. Aggiornamenti riguardanti politica, cronaca, esteri, economia, sport e attualità",
-        "immagine": "https://img-guidatv.org/20/seven/0.jpg"
-      },
-      {
-        "ora": "15:30",
-        "fine": "15:40",
-        "titolo": "NOW",
-        "descrizione": "NOW, la rubrica di Sky TG24 dedicata all’innovazione e alla tecnologia. Le grandi sfide del futuro, le immagini più curiose dal mondo, le recensioni dei nuovi prodotti in uscita.",
-        "immagine": "https://img-guidatv.org/20/now/5.png"
-      },
-      {
-        "ora": "15:40",
-        "fine": "16:00",
         "titolo": "TG24 mezz'ora",
         "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
         "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
+      },
+      {
+        "ora": "15:30",
+        "fine": "16:00",
+        "titolo": "Seven 1/2 ora",
+        "descrizione": "Le principali notizie della settimana, raccontate in 30 minuti, a cura della redazione della rete. Aggiornamenti riguardanti politica, cronaca, esteri, economia, sport e attualità",
+        "immagine": "https://img-guidatv.org/20/seven/0.jpg"
       },
       {
         "ora": "16:00",
@@ -5554,23 +5526,16 @@
       {
         "ora": "15:00",
         "fine": "15:30",
-        "titolo": "Seven 1/2 ora",
-        "descrizione": "Le principali notizie della settimana, raccontate in 30 minuti, a cura della redazione della rete. Aggiornamenti riguardanti politica, cronaca, esteri, economia, sport e attualità",
-        "immagine": "https://img-guidatv.org/20/seven/0.jpg"
-      },
-      {
-        "ora": "15:30",
-        "fine": "15:40",
-        "titolo": "NOW",
-        "descrizione": "NOW, la rubrica di Sky TG24 dedicata all’innovazione e alla tecnologia. Le grandi sfide del futuro, le immagini più curiose dal mondo, le recensioni dei nuovi prodotti in uscita.",
-        "immagine": "https://img-guidatv.org/20/now/5.png"
-      },
-      {
-        "ora": "15:40",
-        "fine": "16:00",
         "titolo": "TG24 mezz'ora",
         "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
         "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
+      },
+      {
+        "ora": "15:30",
+        "fine": "16:00",
+        "titolo": "Seven 1/2 ora",
+        "descrizione": "Le principali notizie della settimana, raccontate in 30 minuti, a cura della redazione della rete. Aggiornamenti riguardanti politica, cronaca, esteri, economia, sport e attualità",
+        "immagine": "https://img-guidatv.org/20/seven/0.jpg"
       },
       {
         "ora": "16:00",
@@ -16459,13 +16424,13 @@
     "programmi": [
       {
         "ora": "00:10",
-        "fine": "00:35",
+        "fine": "00:40",
         "titolo": "Spike Team",
         "descrizione": "Alea cerca di infondere forza nella squadra delle Spike e organizza uno stratagemma usando delle pietre che adornavano la Torcia di Olimpia. Un'antica leggenda associa a ognuna di esse una virtù sportiva che le ragazze dovranno scoprire dentro di sé per trasformarsi in nuove sacerdotesse dello sport. Gli allenamenti di Lucky procedono e, alla ricerca di una ragazza che governi i palleggi della squadra, punta su Susan, cercando di sviluppare il suo equilibrio interiore. In una prova di rafting in acque selvagge, Susan guida con polso fermo il gommone delle ragazze alla salvezza.",
         "immagine": "https://img-guidatv.org/35/spike-team/1.jpg"
       },
       {
-        "ora": "00:35",
+        "ora": "00:40",
         "fine": "00:45",
         "titolo": "Le tre moschettiere",
         "descrizione": "D'Artagnan e le moschettiere dovranno cercare di recuperare il Re Leone, un giovane pavone appartenente a Lord Buckingham, che pare sia stato rapito. Ma, come sempre, la realtà sarà ben diversa da quella che sembra.",
@@ -16473,13 +16438,13 @@
       },
       {
         "ora": "00:45",
-        "fine": "01:00",
+        "fine": "01:05",
         "titolo": "Le tre moschettiere",
         "descrizione": "Un nuovo moschettiere arriva in città, e si mostra subito volenteroso di far parte della squadra dei moschettieri con a capo D'Artagnan. Ma quando il suo desiderio di voler capire chi c'è dietro la sua maschera diventa troppo ossessivo, D'Artagnan capisce che qualcosa non torna...",
         "immagine": "https://image.tmdb.org/t/p/w300/pk97J0U6YeJutLT5MLDGWO8O6wB.jpg"
       },
       {
-        "ora": "01:00",
+        "ora": "01:05",
         "fine": "01:10",
         "titolo": "Gormiti",
         "descrizione": "Gli Heralds scoprono che i loro bracciali possono sparare potenti raggi energetici e questo porta subito a una sfida tra Riff e Ikor. Nel frattempo, Voidus invia Gredd e i suoi scagnozzi a Gorm, per acciuffare i nostri piccoli amici. Chi la spunterà?",
@@ -16487,13 +16452,13 @@
       },
       {
         "ora": "01:10",
-        "fine": "01:25",
+        "fine": "01:30",
         "titolo": "Gormiti",
         "descrizione": "Gli Heralds stanno cercando di ristabilire l'energia della Torre degli Elementi. Non sarà un'impresa semplice, ma grazie alla forza e la tenacia della guerriera Ao-ki ci riusciranno.",
         "immagine": "https://image.tmdb.org/t/p/w300/pCiaMxGrgo5Booppfi2Luns8YBl.jpg"
       },
       {
-        "ora": "01:25",
+        "ora": "01:30",
         "fine": "01:35",
         "titolo": "La famiglia Skrokkiazeppi",
         "descrizione": "Nello spazio verde dove a volte giocano Ortika, Kruncio e Lucas, verrà costruito un parcheggio. Per sensibilizzare l'opinione pubblica e convincere a firmare una petizione, gli Skrokkiazeppi creano un canale Tutube.",
@@ -17032,13 +16997,13 @@
     "programmi": [
       {
         "ora": "00:10",
-        "fine": "00:35",
+        "fine": "00:40",
         "titolo": "Spike Team",
         "descrizione": "Alea cerca di infondere forza nella squadra delle Spike e organizza uno stratagemma usando delle pietre che adornavano la Torcia di Olimpia. Un'antica leggenda associa a ognuna di esse una virtù sportiva che le ragazze dovranno scoprire dentro di sé per trasformarsi in nuove sacerdotesse dello sport. Gli allenamenti di Lucky procedono e, alla ricerca di una ragazza che governi i palleggi della squadra, punta su Susan, cercando di sviluppare il suo equilibrio interiore. In una prova di rafting in acque selvagge, Susan guida con polso fermo il gommone delle ragazze alla salvezza.",
         "immagine": "https://img-guidatv.org/35/spike-team/1.jpg"
       },
       {
-        "ora": "00:35",
+        "ora": "00:40",
         "fine": "00:45",
         "titolo": "Le tre moschettiere",
         "descrizione": "D'Artagnan e le moschettiere dovranno cercare di recuperare il Re Leone, un giovane pavone appartenente a Lord Buckingham, che pare sia stato rapito. Ma, come sempre, la realtà sarà ben diversa da quella che sembra.",
@@ -17046,13 +17011,13 @@
       },
       {
         "ora": "00:45",
-        "fine": "01:00",
+        "fine": "01:05",
         "titolo": "Le tre moschettiere",
         "descrizione": "Un nuovo moschettiere arriva in città, e si mostra subito volenteroso di far parte della squadra dei moschettieri con a capo D'Artagnan. Ma quando il suo desiderio di voler capire chi c'è dietro la sua maschera diventa troppo ossessivo, D'Artagnan capisce che qualcosa non torna...",
         "immagine": "https://image.tmdb.org/t/p/w300/pk97J0U6YeJutLT5MLDGWO8O6wB.jpg"
       },
       {
-        "ora": "01:00",
+        "ora": "01:05",
         "fine": "01:10",
         "titolo": "Gormiti",
         "descrizione": "Gli Heralds scoprono che i loro bracciali possono sparare potenti raggi energetici e questo porta subito a una sfida tra Riff e Ikor. Nel frattempo, Voidus invia Gredd e i suoi scagnozzi a Gorm, per acciuffare i nostri piccoli amici. Chi la spunterà?",
@@ -17060,13 +17025,13 @@
       },
       {
         "ora": "01:10",
-        "fine": "01:25",
+        "fine": "01:30",
         "titolo": "Gormiti",
         "descrizione": "Gli Heralds stanno cercando di ristabilire l'energia della Torre degli Elementi. Non sarà un'impresa semplice, ma grazie alla forza e la tenacia della guerriera Ao-ki ci riusciranno.",
         "immagine": "https://image.tmdb.org/t/p/w300/pCiaMxGrgo5Booppfi2Luns8YBl.jpg"
       },
       {
-        "ora": "01:25",
+        "ora": "01:30",
         "fine": "01:35",
         "titolo": "La famiglia Skrokkiazeppi",
         "descrizione": "Nello spazio verde dove a volte giocano Ortika, Kruncio e Lucas, verrà costruito un parcheggio. Per sensibilizzare l'opinione pubblica e convincere a firmare una petizione, gli Skrokkiazeppi creano un canale Tutube.",
@@ -17604,45 +17569,52 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "01:25",
+        "ora": "00:05",
+        "fine": "00:10",
+        "titolo": "TG1 Sera",
+        "descrizione": "TG1 Sera",
+        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
+      },
+      {
+        "ora": "00:10",
+        "fine": "01:50",
         "titolo": "Tutte lo vogliono",
         "descrizione": "Giovanna, Carla, Francesca, Chiara. Cosa avranno in comune queste donne così diverse fra di loro? Quale sarà mai quel dettaglio non irrilevante che rende le loro esistenze segretamente imperfette? E quale mistero femminile è così intimo e privato, che più privato non si può? Qualunque cosa sia, Tutte lo vogliono. Una food designer, il suo primo amore e uno sciampista per cani sono i protagonisti di questa commedia allegramente spudorata che racconta sulle donne quello che nessuno aveva mai osato raccontare.",
         "immagine": "https://img-guidatv.org/film_new/t/5e78e002ce1e246c511cdc71/5e78e002ce1e246c511cdc71_p_3_rs_300.jpg"
       },
       {
-        "ora": "01:25",
-        "fine": "01:30",
+        "ora": "01:50",
+        "fine": "01:55",
         "titolo": "Che Tempo Fa",
         "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare.",
         "immagine": "https://img-guidatv.org/1/che-tempo-fa/6.jpg"
       },
       {
-        "ora": "01:30",
-        "fine": "03:00",
+        "ora": "01:55",
+        "fine": "03:25",
         "titolo": "Sottovoce E Dintorni",
         "descrizione": "Gigi Marzullo ripercorre l'itinerario umano, artistico e professionale di personaggi dello sport, dello spettacolo o della cultura.",
         "immagine": "https://img-guidatv.org/1/sottovoce/6.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "04:15",
+        "ora": "03:25",
+        "fine": "04:40",
         "titolo": "Reazione A Catena Weekend",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena-weekend/0.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "05:15",
+        "ora": "04:40",
+        "fine": "05:20",
         "titolo": "Techetechetè Notte - Le Repliche Delle Passate Edizioni",
         "descrizione": "Il grande spettacolo televisivo e la musica, gli sketch più amati, i protagonisti e i dimenticati, raccontano la Tv e le trasformazioni nell'identità del nostro Paese. Le repliche delle passate edizioni.",
         "immagine": "https://img-guidatv.org/1/techetechete/5.jpg"
       },
       {
-        "ora": "05:15",
+        "ora": "05:20",
         "fine": "06:00",
         "titolo": "A Sua Immagine",
-        "descrizione": "Un viaggio tra fede, tradizioni e devozioni con Lorena Bianchetti, commento al Vangelo di Don Antonio Loffredo. Al termine In Punta di Matita l'arte con Rodolfo Papa Conduce Lorena Bianchetti.",
+        "descrizione": "Lorena Bianchetti incontra Attilio Fontana, che racconta il legame con San Pio e la nascita del musical dedicato al Santo di Pietrelcina, tra musica, fede e vicende personali. A seguire, Le Ragioni della Speranza con don Antonio Loffredo parte dalle Catacombe di San Gennaro per raccontare il riscatto del Rione Sanità attraverso i giovani, la cultura e l'inclusione.",
         "immagine": "https://img-guidatv.org/1/a-sua-immagine/0.jpg"
       },
       {
@@ -17850,7 +17822,7 @@
       },
       {
         "ora": "21:30",
-        "fine": "00:00",
+        "fine": "00:05",
         "titolo": "Bello Di Mamma...Rai!",
         "descrizione": "INTRATTENIMENTO - La perdita di un genitore crea smarrimento nel cuore e nella mente di un figlio: Brignano il dolore lo metabolizza sul palcoscenico, tornando con la mente agli insegnamenti dei suoi, sapendo evidenziarne gl - i anacronismi e gli aspetti più divertenti. - Con Enrico Brignano Regia di Cristiano D'Alisera",
         "immagine": "https://img-guidatv.org/1/bello-di-mamma-rai/0.jpg"
@@ -17862,45 +17834,52 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "01:25",
+        "ora": "00:05",
+        "fine": "00:10",
+        "titolo": "TG1 Sera",
+        "descrizione": "TG1 Sera",
+        "immagine": "https://img-guidatv.org/1/tg-1-sera/5.jpg"
+      },
+      {
+        "ora": "00:10",
+        "fine": "01:50",
         "titolo": "Tutte lo vogliono",
         "descrizione": "Giovanna, Carla, Francesca, Chiara. Cosa avranno in comune queste donne così diverse fra di loro? Quale sarà mai quel dettaglio non irrilevante che rende le loro esistenze segretamente imperfette? E quale mistero femminile è così intimo e privato, che più privato non si può? Qualunque cosa sia, Tutte lo vogliono. Una food designer, il suo primo amore e uno sciampista per cani sono i protagonisti di questa commedia allegramente spudorata che racconta sulle donne quello che nessuno aveva mai osato raccontare.",
         "immagine": "https://img-guidatv.org/film_new/t/5e78e002ce1e246c511cdc71/5e78e002ce1e246c511cdc71_p_3_rs_300.jpg"
       },
       {
-        "ora": "01:25",
-        "fine": "01:30",
+        "ora": "01:50",
+        "fine": "01:55",
         "titolo": "Che Tempo Fa",
         "descrizione": "L'appuntamento con le previsioni del tempo gestito dall'Aeronautica militare.",
         "immagine": "https://img-guidatv.org/1/che-tempo-fa/6.jpg"
       },
       {
-        "ora": "01:30",
-        "fine": "03:00",
+        "ora": "01:55",
+        "fine": "03:25",
         "titolo": "Sottovoce E Dintorni",
         "descrizione": "Gigi Marzullo ripercorre l'itinerario umano, artistico e professionale di personaggi dello sport, dello spettacolo o della cultura.",
         "immagine": "https://img-guidatv.org/1/sottovoce/6.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "04:15",
+        "ora": "03:25",
+        "fine": "04:40",
         "titolo": "Reazione A Catena Weekend",
         "descrizione": "Il gioco che, utilizzando l'associazione logica di parole, mette alla prova la padronanza della lingua italiana di concorrenti e telespettatori. Due squadre composte da 3 giocatori si sfidano sulla loro capacità di indovinare, formare, completare e ordinare parole e \"catene\" di vocaboli.",
         "immagine": "https://img-guidatv.org/1/reazione-a-catena-weekend/0.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "05:15",
+        "ora": "04:40",
+        "fine": "05:20",
         "titolo": "Techetechetè Notte - Le Repliche Delle Passate Edizioni",
         "descrizione": "Il grande spettacolo televisivo e la musica, gli sketch più amati, i protagonisti e i dimenticati, raccontano la Tv e le trasformazioni nell'identità del nostro Paese. Le repliche delle passate edizioni.",
         "immagine": "https://img-guidatv.org/1/techetechete/5.jpg"
       },
       {
-        "ora": "05:15",
+        "ora": "05:20",
         "fine": "06:00",
         "titolo": "A Sua Immagine",
-        "descrizione": "Un viaggio tra fede, tradizioni e devozioni con Lorena Bianchetti, commento al Vangelo di Don Antonio Loffredo. Al termine In Punta di Matita l'arte con Rodolfo Papa Conduce Lorena Bianchetti.",
+        "descrizione": "Lorena Bianchetti incontra Attilio Fontana, che racconta il legame con San Pio e la nascita del musical dedicato al Santo di Pietrelcina, tra musica, fede e vicende personali. A seguire, Le Ragioni della Speranza con don Antonio Loffredo parte dalle Catacombe di San Gennaro per raccontare il riscatto del Rione Sanità attraverso i giovani, la cultura e l'inclusione.",
         "immagine": "https://img-guidatv.org/1/a-sua-immagine/0.jpg"
       },
       {
@@ -18108,7 +18087,7 @@
       },
       {
         "ora": "21:30",
-        "fine": "00:00",
+        "fine": "00:05",
         "titolo": "Bello Di Mamma...Rai!",
         "descrizione": "INTRATTENIMENTO - La perdita di un genitore crea smarrimento nel cuore e nella mente di un figlio: Brignano il dolore lo metabolizza sul palcoscenico, tornando con la mente agli insegnamenti dei suoi, sapendo evidenziarne gl - i anacronismi e gli aspetti più divertenti. - Con Enrico Brignano Regia di Cristiano D'Alisera",
         "immagine": "https://img-guidatv.org/1/bello-di-mamma-rai/0.jpg"
@@ -18135,27 +18114,27 @@
       },
       {
         "ora": "01:05",
-        "fine": "01:10",
+        "fine": "01:15",
         "titolo": "TG2 Achab Libri",
         "descrizione": "Le novità in libreria, le classifiche e le segnalazioni per una buona lettura: ospite ogni settimana un autore. Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura di Carola Carulli",
         "immagine": "https://img-guidatv.org/2/tg-2-achab-libri/5.jpg"
       },
       {
-        "ora": "01:10",
-        "fine": "02:00",
+        "ora": "01:15",
+        "fine": "02:10",
         "titolo": "TG2 Dossier",
         "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale",
         "immagine": "https://img-guidatv.org/2/tg2-dossier/6.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:05",
+        "ora": "02:10",
+        "fine": "02:15",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/2/appuntamento-al-cinema/1.jpg"
       },
       {
-        "ora": "02:05",
+        "ora": "02:15",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -18261,20 +18240,13 @@
       },
       {
         "ora": "14:00",
-        "fine": "16:00",
+        "fine": "16:50",
         "titolo": "38° America'S Cup: 2a Regata Preliminare - (Golfo Di Napoli)",
         "descrizione": "Seconda giornata di regate nel Golfo di Napoli per la Regata Preliminare della 38ª America's Cup. I principali team internazionali tornano in acqua con gli AC40, proseguendo il primo grande confronto in vista dell'America's Cup 2027.",
         "immagine": "https://img-guidatv.org/2/38-america-s-cup-2a-regata-preliminare-golfo-di-napoli/0.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:53",
-        "titolo": "Squadra Speciale Cobra 11",
-        "descrizione": "Squadra Speciale Cobra 11 è una serie televisiva tedesca creata da Claude Cueni, prodotta dal 1995 e trasmessa dal 12 marzo 1996 dalla rete televisiva tedesca RTL. In Italia la serie è trasmessa dal 1º gennaio 1998 su Rai 2.",
-        "immagine": "https://img-guidatv.org/serie/5e78d8c1ce1e246c511cb990_p_43_rs_300.jpg"
-      },
-      {
-        "ora": "16:53",
+        "ora": "16:50",
         "fine": "17:50",
         "titolo": "Squadra Speciale Cobra 11",
         "descrizione": "Squadra Speciale Cobra 11 è una serie televisiva tedesca creata da Claude Cueni, prodotta dal 1995 e trasmessa dal 12 marzo 1996 dalla rete televisiva tedesca RTL. In Italia la serie è trasmessa dal 1º gennaio 1998 su Rai 2.",
@@ -18318,9 +18290,9 @@
       {
         "ora": "21:00",
         "fine": "23:00",
-        "titolo": "Europei Di Pallavolo Maschile 2026 - Finale",
+        "titolo": "Europei Di Pallavolo Maschile 2026 - Finale Francia - Polonia",
         "descrizione": "I campioni del mondo guidati da Ferdinando De Giorgi si presentano ai Campionati Europei di pallavolo maschile con l'obiettivo di conquistare il titolo continentale. Capitan Giannelli e compagni, forti di talento ed esperienza, sono pronti a difendere i colori azzurri e scrivere un nuovo capitolo della storia della pallavolo italiana.",
-        "immagine": "https://img-guidatv.org/2/europei-di-pallavolo-maschile-2026-finale/0.jpg"
+        "immagine": "https://img-guidatv.org/2/europei-di-pallavolo-maschile-2026-finale-francia-polonia/0.jpg"
       },
       {
         "ora": "23:00",
@@ -18358,27 +18330,27 @@
       },
       {
         "ora": "01:05",
-        "fine": "01:10",
+        "fine": "01:15",
         "titolo": "TG2 Achab Libri",
         "descrizione": "Le novità in libreria, le classifiche e le segnalazioni per una buona lettura: ospite ogni settimana un autore. Direttore Antonio Preziosi Vicedirettore Maria Antonietta Spadorcia A cura di Carola Carulli",
         "immagine": "https://img-guidatv.org/2/tg-2-achab-libri/5.jpg"
       },
       {
-        "ora": "01:10",
-        "fine": "02:00",
+        "ora": "01:15",
+        "fine": "02:10",
         "titolo": "TG2 Dossier",
         "descrizione": "Approfondimento del Tg2. Direttore Antonio Preziosi Vicedirettore Elisabetta Migliorelli A cura di Francesco Vitale",
         "immagine": "https://img-guidatv.org/2/tg2-dossier/6.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:05",
+        "ora": "02:10",
+        "fine": "02:15",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/2/appuntamento-al-cinema/1.jpg"
       },
       {
-        "ora": "02:05",
+        "ora": "02:15",
         "fine": "06:00",
         "titolo": "RaiNew",
         "descrizione": "RaiNews24",
@@ -18484,20 +18456,13 @@
       },
       {
         "ora": "14:00",
-        "fine": "16:00",
+        "fine": "16:50",
         "titolo": "38° America'S Cup: 2a Regata Preliminare - (Golfo Di Napoli)",
         "descrizione": "Seconda giornata di regate nel Golfo di Napoli per la Regata Preliminare della 38ª America's Cup. I principali team internazionali tornano in acqua con gli AC40, proseguendo il primo grande confronto in vista dell'America's Cup 2027.",
         "immagine": "https://img-guidatv.org/2/38-america-s-cup-2a-regata-preliminare-golfo-di-napoli/0.jpg"
       },
       {
-        "ora": "16:00",
-        "fine": "16:53",
-        "titolo": "Squadra Speciale Cobra 11",
-        "descrizione": "Squadra Speciale Cobra 11 è una serie televisiva tedesca creata da Claude Cueni, prodotta dal 1995 e trasmessa dal 12 marzo 1996 dalla rete televisiva tedesca RTL. In Italia la serie è trasmessa dal 1º gennaio 1998 su Rai 2.",
-        "immagine": "https://img-guidatv.org/serie/5e78d8c1ce1e246c511cb990_p_43_rs_300.jpg"
-      },
-      {
-        "ora": "16:53",
+        "ora": "16:50",
         "fine": "17:50",
         "titolo": "Squadra Speciale Cobra 11",
         "descrizione": "Squadra Speciale Cobra 11 è una serie televisiva tedesca creata da Claude Cueni, prodotta dal 1995 e trasmessa dal 12 marzo 1996 dalla rete televisiva tedesca RTL. In Italia la serie è trasmessa dal 1º gennaio 1998 su Rai 2.",
@@ -18541,9 +18506,9 @@
       {
         "ora": "21:00",
         "fine": "23:00",
-        "titolo": "Europei Di Pallavolo Maschile 2026 - Finale",
+        "titolo": "Europei Di Pallavolo Maschile 2026 - Finale Francia - Polonia",
         "descrizione": "I campioni del mondo guidati da Ferdinando De Giorgi si presentano ai Campionati Europei di pallavolo maschile con l'obiettivo di conquistare il titolo continentale. Capitan Giannelli e compagni, forti di talento ed esperienza, sono pronti a difendere i colori azzurri e scrivere un nuovo capitolo della storia della pallavolo italiana.",
-        "immagine": "https://img-guidatv.org/2/europei-di-pallavolo-maschile-2026-finale/0.jpg"
+        "immagine": "https://img-guidatv.org/2/europei-di-pallavolo-maschile-2026-finale-francia-polonia/0.jpg"
       },
       {
         "ora": "23:00",
@@ -18588,41 +18553,41 @@
       },
       {
         "ora": "00:35",
-        "fine": "02:15",
+        "fine": "02:00",
         "titolo": "Non riattaccare",
         "descrizione": "È una delle tante notti anonime della quarantena quando il telefono di Irene (Barbara Ronchi) squilla. È Pietro (Claudio Santamaria) il suo ex compagno. Irene non lo sente da mesi, da quando la loro storia è finita, tentenna, ma alla fine decide di rispondere. Pietro è fuori di sé e le sue parole confuse lasciano presagire un atto disperato. A Irene non resta che mettersi in viaggio, in una città spettrale, senza mai riattaccare, con la speranza di raggiungerlo in tempo.",
         "immagine": "https://image.tmdb.org/t/p/w300/aIQp6EZybc4X7p4eyushZ87EVJj.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:20",
+        "ora": "02:00",
+        "fine": "02:05",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "02:30",
+        "ora": "02:05",
+        "fine": "02:10",
         "titolo": "Fuori Orario. Cose (Mai) Viste",
         "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta STATI PROGRESSIVI DI MAGNETISMO (3) di Lorenzo Esposito",
         "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "02:50",
+        "ora": "02:10",
+        "fine": "02:30",
         "titolo": "Il Teatro",
         "descrizione": "Keaton interpreta il direttore d'orchestra e ogni membro dell'orchestra, gli attori, i ballerini, i macchinisti, i menestrelli e ogni membro del pubblico, uomini e donne. Questa sequenza si rivela essere un sogno: Keaton viene risvegliato in una camera da letto che a sua volta si rivela essere un set su un palcoscenico.",
         "immagine": "https://img-guidatv.org/3/il-teatro/0.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "04:45",
+        "ora": "02:30",
+        "fine": "04:30",
         "titolo": "Asako I & II",
         "descrizione": "Quando il suo primo grande amore scompare, Asako è sconvolta. Due anni dopo incontra il suo sosia perfetto, Ryohei. Turbata dalla strana somiglianza, si lascia sedurre ma scoprirà presto un ragazzo con tutt’altra personalità.",
         "immagine": "https://image.tmdb.org/t/p/w300/nqwfB2GMMjrjAJnQj1hxD97sQXF.jpg"
       },
       {
-        "ora": "04:45",
+        "ora": "04:30",
         "fine": "06:00",
         "titolo": "Chess of the Wind",
         "descrizione": "La first lady di una casata nobile è morta e ora c'è conflitto tra i superstiti per impossessarsi della sua eredità.",
@@ -18825,41 +18790,41 @@
       },
       {
         "ora": "00:35",
-        "fine": "02:15",
+        "fine": "02:00",
         "titolo": "Non riattaccare",
         "descrizione": "È una delle tante notti anonime della quarantena quando il telefono di Irene (Barbara Ronchi) squilla. È Pietro (Claudio Santamaria) il suo ex compagno. Irene non lo sente da mesi, da quando la loro storia è finita, tentenna, ma alla fine decide di rispondere. Pietro è fuori di sé e le sue parole confuse lasciano presagire un atto disperato. A Irene non resta che mettersi in viaggio, in una città spettrale, senza mai riattaccare, con la speranza di raggiungerlo in tempo.",
         "immagine": "https://image.tmdb.org/t/p/w300/aIQp6EZybc4X7p4eyushZ87EVJj.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:20",
+        "ora": "02:00",
+        "fine": "02:05",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "02:30",
+        "ora": "02:05",
+        "fine": "02:10",
         "titolo": "Fuori Orario. Cose (Mai) Viste",
         "descrizione": "Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta STATI PROGRESSIVI DI MAGNETISMO (3) di Lorenzo Esposito",
         "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "02:50",
+        "ora": "02:10",
+        "fine": "02:30",
         "titolo": "Il Teatro",
         "descrizione": "Keaton interpreta il direttore d'orchestra e ogni membro dell'orchestra, gli attori, i ballerini, i macchinisti, i menestrelli e ogni membro del pubblico, uomini e donne. Questa sequenza si rivela essere un sogno: Keaton viene risvegliato in una camera da letto che a sua volta si rivela essere un set su un palcoscenico.",
         "immagine": "https://img-guidatv.org/3/il-teatro/0.jpg"
       },
       {
-        "ora": "02:50",
-        "fine": "04:45",
+        "ora": "02:30",
+        "fine": "04:30",
         "titolo": "Asako I & II",
         "descrizione": "Quando il suo primo grande amore scompare, Asako è sconvolta. Due anni dopo incontra il suo sosia perfetto, Ryohei. Turbata dalla strana somiglianza, si lascia sedurre ma scoprirà presto un ragazzo con tutt’altra personalità.",
         "immagine": "https://image.tmdb.org/t/p/w300/nqwfB2GMMjrjAJnQj1hxD97sQXF.jpg"
       },
       {
-        "ora": "04:45",
+        "ora": "04:30",
         "fine": "06:00",
         "titolo": "Chess of the Wind",
         "descrizione": "La first lady di una casata nobile è morta e ora c'è conflitto tra i superstiti per impossessarsi della sua eredità.",
@@ -19163,7 +19128,7 @@
         "fine": "16:29",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000701/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:29",
@@ -19351,7 +19316,7 @@
         "fine": "16:29",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000701/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:29",
@@ -20983,13 +20948,13 @@
       },
       {
         "ora": "15:45",
-        "fine": "17:40",
+        "fine": "17:35",
         "titolo": "GP Azerbaijan: Gara",
         "descrizione": "A Baku si corre eccezionalmente di sabato. Antonelli, gia' otto vittorie in stagione, guida la classifica con 81 punti su Russell. Telecronaca di Carlo Vanzini, Marc Gene' e Roberto Chinchero.",
         "immagine": "https://img-guidatv.org/45/gp-azerbaijan-gara/6.jpg"
       },
       {
-        "ora": "17:40",
+        "ora": "17:35",
         "fine": "18:00",
         "titolo": "[REPLICA] - F1 Podio",
         "descrizione": "Al termine del gp di F1 le immagini del podio e le interviste dei protagonisti.",
@@ -21663,15 +21628,15 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "00:33",
+        "ora": "00:29",
+        "fine": "00:32",
         "titolo": "Anica Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/30/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "00:33",
-        "fine": "02:46",
+        "ora": "00:32",
+        "fine": "02:45",
         "titolo": "Black Box - La scatola nera",
         "descrizione": "Matthieu è un giovane e talentuoso analista della scatola nera in missione per risolvere la ragione dietro lo schianto mortale di un aereo nuovo di zecca. Tuttavia, quando il caso viene chiuso dalle autorità, Matthieu non può fare a meno di sentire che c'è qualcosa di sbagliato nelle prove. Mentre riascolta le tracce, inizia a rilevare alcuni dettagli davvero inquietanti. Il nastro potrebbe essere stato modificato? Andando contro gli ordini del suo capo, Matthieu inizia la sua indagine personale - una ricerca ossessiva e pericolosa della verità che minaccerà ben più della sua carriera...",
         "immagine": "https://image.tmdb.org/t/p/w300/9YByNQ7IZErlqT3XaRKTaGpQXCL.jpg"
@@ -21684,14 +21649,14 @@
         "immagine": "https://image.tmdb.org/t/p/w300/slQYCDzCMM8SBh9Xa3aPeM2fekA.jpg"
       },
       {
-        "ora": "02:46",
-        "fine": "04:04",
+        "ora": "02:45",
+        "fine": "04:03",
         "titolo": "The weapon",
         "descrizione": "Dallas è una macchina per uccidere guidata da un solo uomo, in preda a una misteriosa furia. I suoi attacchi alle bande di motociclisti e ai laboratori di metanfetamine fanno infuriare il boss della mafia di Las Vegas che tiene in ostaggio la fidanzata di Dallas. Ma per chi lavora Dallas? Nemmeno la tortura lo farà parlare, e non si fermerà finché non verrà fatta giustizia.",
         "immagine": "https://image.tmdb.org/t/p/w300/slQYCDzCMM8SBh9Xa3aPeM2fekA.jpg"
       },
       {
-        "ora": "04:04",
+        "ora": "04:03",
         "fine": "05:04",
         "titolo": "Coroner",
         "descrizione": "Dopo l'improvvisa morte del marito, Jenny si trasferisce con il figlio adolescente a Toronto, dove prende servizio come medico legale e collabora con il detective McAvoy alla risoluzione di alcuni casi di omicidio.",
@@ -21860,7 +21825,7 @@
       },
       {
         "ora": "23:06",
-        "fine": "00:30",
+        "fine": "00:29",
         "titolo": "Non dirlo a nessuno (2020)",
         "descrizione": "Due fratelli adolescenti in difficoltà, provenienti da una famiglia operaia del Kentucky, Joey (Jack Dylan Grazer) e Matt (Fionn Whitehead), rubano una scatola piena di contanti da una casa disabitata per pagare le spese mediche della madre malata (Mena Suvari). Durante la fuga, i due fratelli vengono sorpresi da una guardia di sicurezza (Rainn Wilson), che li insegue nel bosco e, accidentalmente, cade sul fondo di un pozzo in disuso, rompendosi una caviglia. Joey e Matt si trovano ora di fronte a una scelta difficile: aiutare la guardia rimasta intrappolata e rischiare di essere puniti per il loro crimine o lasciarlo lì, dove forse nessuno lo ritroverà mai.",
         "immagine": "https://image.tmdb.org/t/p/w300/81zLGYPYyPCRcZedMgr7Gy6GrDR.jpg"
@@ -21872,15 +21837,15 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "00:33",
+        "ora": "00:29",
+        "fine": "00:32",
         "titolo": "Anica Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/30/anica-appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "00:33",
-        "fine": "02:46",
+        "ora": "00:32",
+        "fine": "02:45",
         "titolo": "Black Box - La scatola nera",
         "descrizione": "Matthieu è un giovane e talentuoso analista della scatola nera in missione per risolvere la ragione dietro lo schianto mortale di un aereo nuovo di zecca. Tuttavia, quando il caso viene chiuso dalle autorità, Matthieu non può fare a meno di sentire che c'è qualcosa di sbagliato nelle prove. Mentre riascolta le tracce, inizia a rilevare alcuni dettagli davvero inquietanti. Il nastro potrebbe essere stato modificato? Andando contro gli ordini del suo capo, Matthieu inizia la sua indagine personale - una ricerca ossessiva e pericolosa della verità che minaccerà ben più della sua carriera...",
         "immagine": "https://image.tmdb.org/t/p/w300/9YByNQ7IZErlqT3XaRKTaGpQXCL.jpg"
@@ -21893,14 +21858,14 @@
         "immagine": "https://image.tmdb.org/t/p/w300/slQYCDzCMM8SBh9Xa3aPeM2fekA.jpg"
       },
       {
-        "ora": "02:46",
-        "fine": "04:04",
+        "ora": "02:45",
+        "fine": "04:03",
         "titolo": "The weapon",
         "descrizione": "Dallas è una macchina per uccidere guidata da un solo uomo, in preda a una misteriosa furia. I suoi attacchi alle bande di motociclisti e ai laboratori di metanfetamine fanno infuriare il boss della mafia di Las Vegas che tiene in ostaggio la fidanzata di Dallas. Ma per chi lavora Dallas? Nemmeno la tortura lo farà parlare, e non si fermerà finché non verrà fatta giustizia.",
         "immagine": "https://image.tmdb.org/t/p/w300/slQYCDzCMM8SBh9Xa3aPeM2fekA.jpg"
       },
       {
-        "ora": "04:04",
+        "ora": "04:03",
         "fine": "05:04",
         "titolo": "Coroner",
         "descrizione": "Dopo l'improvvisa morte del marito, Jenny si trasferisce con il figlio adolescente a Toronto, dove prende servizio come medico legale e collabora con il detective McAvoy alla risoluzione di alcuni casi di omicidio.",
@@ -22069,7 +22034,7 @@
       },
       {
         "ora": "23:06",
-        "fine": "00:30",
+        "fine": "00:29",
         "titolo": "Non dirlo a nessuno (2020)",
         "descrizione": "Due fratelli adolescenti in difficoltà, provenienti da una famiglia operaia del Kentucky, Joey (Jack Dylan Grazer) e Matt (Fionn Whitehead), rubano una scatola piena di contanti da una casa disabitata per pagare le spese mediche della madre malata (Mena Suvari). Durante la fuga, i due fratelli vengono sorpresi da una guardia di sicurezza (Rainn Wilson), che li insegue nel bosco e, accidentalmente, cade sul fondo di un pozzo in disuso, rompendosi una caviglia. Joey e Matt si trovano ora di fronte a una scelta difficile: aiutare la guardia rimasta intrappolata e rischiare di essere puniti per il loro crimine o lasciarlo lì, dove forse nessuno lo ritroverà mai.",
         "immagine": "https://image.tmdb.org/t/p/w300/81zLGYPYyPCRcZedMgr7Gy6GrDR.jpg"
@@ -22261,49 +22226,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:42",
-        "fine": "01:41",
+        "ora": "00:40",
+        "fine": "01:39",
         "titolo": "Que Viva Musica",
         "descrizione": "Nella seconda puntata i più grandi autori brasiliani: il quintetto Violado e Sabrina, Elis Regina, Milton Nascimento, Joao Bosco, Carlos Antonio Jobin, Gilberto Gil e Vinicius De Moraes.",
         "immagine": "https://img-guidatv.org/31/que-viva-musica/6.jpg"
       },
       {
-        "ora": "01:41",
-        "fine": "01:42",
+        "ora": "01:39",
+        "fine": "01:40",
         "titolo": "Rai News Notte",
         "descrizione": "Cronaca, politica, economia, cultura, spettacolo e sport dall'Italia e dal mondo. I fatti del giorno in tre minuti a cura di Rai News, il canale all news della Rai.",
         "immagine": "https://img-guidatv.org/31/rai-news-notte/6.jpg"
       },
       {
-        "ora": "01:42",
-        "fine": "02:35",
+        "ora": "01:40",
+        "fine": "02:33",
         "titolo": "Le Strade Di Overland - Somalia: Tracce Italiane A Mogadiscio - 23",
         "descrizione": "Siamo sempre in Somaliland, ma un tuffo indietro nel tempo ci porta al cospetto delle pitture arcaiche di Laas Geel, uno dei più importanti siti d'arte rupestre del Corno d'Africa con dipinti risalenti anche a 10.000 anni fa, tra i meglio conservati dell'Africa orientale. Torniamo nel presente con uno sguardo al futuro: il nuovo porto di Berbera ci racconta di grandi prospettive di sviluppo, ma anche di equilibri politici internazionali che incontrano gli interessi economici del Paese. Lasciamo il Somaliland e voliamo a Mogadiscio, la capitale della Somalia \"vera e propria\". Un Paese che ha sofferto decenni di violenza, ancora oggi considerato molto pericoloso. Accompagnati da una scorta, andiamo alla scoperta del nostro passato colonialista, tra monumenti che celebrano ancora la presenza italiana nella nazione, e della terribile storia recente che ha martoriato animi e strutture, e che speriamo possa considerarsi un capitolo ormai chiuso.",
         "immagine": "https://img-guidatv.org/31/le-strade-di-overland/1.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "03:34",
+        "ora": "02:33",
+        "fine": "03:32",
         "titolo": "Lorenzo Lotto",
         "descrizione": "Lorenzo Lotto ebbe una produzione intensissima, caratterizzata sempre da una creatività sorprendente e arguta. Il documentario presenta una sessantina di opere, tra tele, ritratti e pale d'altare, che costituiscono circa un terzo dei suoi lavori giunti fino a noi.",
         "immagine": "https://img-guidatv.org/31/lorenzo-lotto/0.jpg"
       },
       {
-        "ora": "03:34",
-        "fine": "04:04",
+        "ora": "03:32",
+        "fine": "04:02",
         "titolo": "Armonie Cremonesi - Geo",
         "descrizione": "Attraverso i ritratti di cinque donne, il documentario racconta il passaggio delle quattro stagioni ed indaga il rapporto tra esseri umani, territorio e tradizioni, nella provincia di Cremona. L'apicultrice Irene ci conduce tra le sue arnie e ci parla del suo amore sconfinato per le api. Maria sole, astro nascente del canottaggio italiano, ci fa solcare le acque del fiume Po. La liutaia Elisabetta ci fa entrare nel suo piccolo laboratorio dove passa i suoi giorni, alla ricerca del violino perfetto...",
         "immagine": "https://img-guidatv.org/31/armonie-cremonesi-geo/0.jpg"
       },
       {
-        "ora": "04:04",
-        "fine": "04:57",
+        "ora": "04:02",
+        "fine": "04:56",
         "titolo": "Paradisi Da Salvare - Yakushima, La Foresta Incantata",
         "descrizione": "A largo del Giappone, Yakushima emerge dal mare con vette alte 2.000 metri. Qui, macachi e cervi sika convivono in un raro equilibrio tra antichi cedri millenari sopravvissuti a secoli di disboscamento. Quest'isola, che ha ispirato Princess Mononoke di Hayao Miyazaki, oggi lotta per ritrovare l'armonia con la natura.",
         "immagine": "https://img-guidatv.org/31/paradisi-da-salvare-yakushima-la-foresta-incantata/0.jpg"
       },
       {
-        "ora": "04:57",
+        "ora": "04:56",
         "fine": "06:00",
         "titolo": "Di Là Dal Fiume E Tra Gli Alberi - Levanzo, L'Isola Che Non C'è",
         "descrizione": "Selvaggia, solitaria e antica, Levanzo se ne sta quieta, come se fosse sospesa, sulle acque limpide e cristalline del Mediterraneo. Vincenzo Saccone ci porta all'interno della più romantica delle Egadi, un luogo intimo dove silenzio, natura e bellezza regnano incontrastati, regalandoci un'esperienza unica.",
@@ -22444,7 +22409,7 @@
       },
       {
         "ora": "23:24",
-        "fine": "00:42",
+        "fine": "00:40",
         "titolo": "David Gilmour - Wider Horizons",
         "descrizione": "Il film è un ritratto intimo di David Gilmour, entrato nei Pink Floyd con l'implosione di Syd Barrett. Con un accesso senza precedenti, la troupe diretta da Alan Yentob ha catturato i momenti chiave della sua vita personale e professionale, e i crocevia che lo hanno plasmato come uomo e musicista.",
         "immagine": "https://img-guidatv.org/film_new/d/5e78dc03ce1e246c511cc886/5e78dc03ce1e246c511cc886_p_1_rs_300.jpg"
@@ -25029,21 +24994,21 @@
         "fine": "15:55",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000701/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "15:55",
         "fine": "16:17",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000701/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:17",
         "fine": "16:37",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000701/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:37",
@@ -25123,45 +25088,38 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:26",
-        "titolo": "TG NOTTE",
-        "descrizione": "TG NOTTE",
-        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
+        "fine": "00:27",
+        "titolo": "TG EDIZIONE PRINCIPALE CON GERENZA",
+        "descrizione": "TG EDIZIONE PRINCIPALE CON GERENZA",
+        "immagine": "https://img-guidatv.org/4/tg-edizione-principale-con-gerenza/0.jpg"
       },
       {
-        "ora": "00:26",
+        "ora": "00:27",
         "fine": "00:30",
-        "titolo": "METEO AM",
-        "descrizione": "METEO AM",
-        "immagine": "https://img-guidatv.org/4/meteo-am/0.jpg"
+        "titolo": "METEO",
+        "descrizione": "METEO",
+        "immagine": "https://img-guidatv.org/4/meteo/0.jpg"
       },
       {
         "ora": "00:30",
-        "fine": "00:45",
-        "titolo": "TG NOTTE",
-        "descrizione": "TG NOTTE",
-        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
-      },
-      {
-        "ora": "00:45",
         "fine": "01:00",
-        "titolo": "RASSEGNA STAMPA Breve",
-        "descrizione": "RASSEGNA STAMPA breve",
-        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
+        "titolo": "AMARCORD",
+        "descrizione": "Umberto Broccoli e Alessandra Solarino raccontano la storia del nostro Paese, del costume e dell'informazione attraverso le immagini delle Teche Rai.",
+        "immagine": "https://img-guidatv.org/4/amarcord/5.jpg"
       },
       {
         "ora": "01:00",
         "fine": "01:30",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (6 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (6 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-6-minuti/0.jpg"
+        "titolo": "TG NOTTE + RASSEGNA STAMPA BREVE",
+        "descrizione": "TG NOTTE + RASSEGNA STAMPA BREVE",
+        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-breve/0.jpg"
       },
       {
         "ora": "01:30",
         "fine": "02:00",
-        "titolo": "TUTTI I FRUTTI EXTRALARGE",
-        "descrizione": "TUTTI I FRUTTI EXTRALARGE",
-        "immagine": "https://img-guidatv.org/4/tutti-i-frutti-extralarge/0.jpg"
+        "titolo": "RASSEGNA REPLICA DELLE 23",
+        "descrizione": "RASSEGNA REPLICA DELLE 23",
+        "immagine": "https://img-guidatv.org/4/rassegna-replica-delle-23/0.jpg"
       },
       {
         "ora": "02:00",
@@ -25172,45 +25130,45 @@
       },
       {
         "ora": "02:30",
+        "fine": "02:45",
+        "titolo": "RASSEGNA STAMPA BREVE",
+        "descrizione": "RASSEGNA STAMPA BREVE",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
+      },
+      {
+        "ora": "02:45",
         "fine": "03:00",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (15 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (15 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-15-minuti/0.jpg"
+        "titolo": "TUTTIFRUTTI BREVE",
+        "descrizione": "TUTTIFRUTTI BREVE",
+        "immagine": "https://img-guidatv.org/4/tuttifrutti-breve/0.jpg"
       },
       {
         "ora": "03:00",
-        "fine": "03:03",
-        "titolo": "TITOLI",
-        "descrizione": "TITOLI",
-        "immagine": "https://img-guidatv.org/4/titoli/0.jpg"
+        "fine": "03:15",
+        "titolo": "TG NOTTE",
+        "descrizione": "TG NOTTE",
+        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
       },
       {
-        "ora": "03:03",
-        "fine": "03:30",
-        "titolo": "Documentario",
-        "descrizione": "DOCUMENTARIO",
-        "immagine": "https://img-guidatv.org/4/documentario/5.jpg"
-      },
-      {
-        "ora": "03:30",
+        "ora": "03:15",
         "fine": "04:00",
-        "titolo": "Documentario",
-        "descrizione": "DOCUMENTARIO",
-        "immagine": "https://img-guidatv.org/4/documentario/5.jpg"
+        "titolo": "RASSEGNA STAMPA LUNGA - REPLICA DELLE 23",
+        "descrizione": "RASSEGNA STAMPA LUNGA - REPLICA DELLE 23",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "04:00",
         "fine": "04:30",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (6 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (6 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-6-minuti/0.jpg"
+        "titolo": "TG NOTTE",
+        "descrizione": "TG NOTTE",
+        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
       },
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "Sulla strada",
-        "descrizione": "SULLA STRADA",
-        "immagine": "https://img-guidatv.org/4/sulla-strada/6.jpg"
+        "titolo": "RASSEGNA STAMPA + FOCUS",
+        "descrizione": "RASSEGNA STAMPA + FOCUS",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "05:00",
@@ -25822,45 +25780,38 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:26",
-        "titolo": "TG NOTTE",
-        "descrizione": "TG NOTTE",
-        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
+        "fine": "00:27",
+        "titolo": "TG EDIZIONE PRINCIPALE CON GERENZA",
+        "descrizione": "TG EDIZIONE PRINCIPALE CON GERENZA",
+        "immagine": "https://img-guidatv.org/4/tg-edizione-principale-con-gerenza/0.jpg"
       },
       {
-        "ora": "00:26",
+        "ora": "00:27",
         "fine": "00:30",
-        "titolo": "METEO AM",
-        "descrizione": "METEO AM",
-        "immagine": "https://img-guidatv.org/4/meteo-am/0.jpg"
+        "titolo": "METEO",
+        "descrizione": "METEO",
+        "immagine": "https://img-guidatv.org/4/meteo/0.jpg"
       },
       {
         "ora": "00:30",
-        "fine": "00:45",
-        "titolo": "TG NOTTE",
-        "descrizione": "TG NOTTE",
-        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
-      },
-      {
-        "ora": "00:45",
         "fine": "01:00",
-        "titolo": "RASSEGNA STAMPA Breve",
-        "descrizione": "RASSEGNA STAMPA breve",
-        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
+        "titolo": "AMARCORD",
+        "descrizione": "Umberto Broccoli e Alessandra Solarino raccontano la storia del nostro Paese, del costume e dell'informazione attraverso le immagini delle Teche Rai.",
+        "immagine": "https://img-guidatv.org/4/amarcord/5.jpg"
       },
       {
         "ora": "01:00",
         "fine": "01:30",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (6 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (6 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-6-minuti/0.jpg"
+        "titolo": "TG NOTTE + RASSEGNA STAMPA BREVE",
+        "descrizione": "TG NOTTE + RASSEGNA STAMPA BREVE",
+        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-breve/0.jpg"
       },
       {
         "ora": "01:30",
         "fine": "02:00",
-        "titolo": "TUTTI I FRUTTI EXTRALARGE",
-        "descrizione": "TUTTI I FRUTTI EXTRALARGE",
-        "immagine": "https://img-guidatv.org/4/tutti-i-frutti-extralarge/0.jpg"
+        "titolo": "RASSEGNA REPLICA DELLE 23",
+        "descrizione": "RASSEGNA REPLICA DELLE 23",
+        "immagine": "https://img-guidatv.org/4/rassegna-replica-delle-23/0.jpg"
       },
       {
         "ora": "02:00",
@@ -25871,45 +25822,45 @@
       },
       {
         "ora": "02:30",
+        "fine": "02:45",
+        "titolo": "RASSEGNA STAMPA BREVE",
+        "descrizione": "RASSEGNA STAMPA BREVE",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
+      },
+      {
+        "ora": "02:45",
         "fine": "03:00",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (15 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (15 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-15-minuti/0.jpg"
+        "titolo": "TUTTIFRUTTI BREVE",
+        "descrizione": "TUTTIFRUTTI BREVE",
+        "immagine": "https://img-guidatv.org/4/tuttifrutti-breve/0.jpg"
       },
       {
         "ora": "03:00",
-        "fine": "03:03",
-        "titolo": "TITOLI",
-        "descrizione": "TITOLI",
-        "immagine": "https://img-guidatv.org/4/titoli/0.jpg"
+        "fine": "03:15",
+        "titolo": "TG NOTTE",
+        "descrizione": "TG NOTTE",
+        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
       },
       {
-        "ora": "03:03",
-        "fine": "03:30",
-        "titolo": "Documentario",
-        "descrizione": "DOCUMENTARIO",
-        "immagine": "https://img-guidatv.org/4/documentario/5.jpg"
-      },
-      {
-        "ora": "03:30",
+        "ora": "03:15",
         "fine": "04:00",
-        "titolo": "Documentario",
-        "descrizione": "DOCUMENTARIO",
-        "immagine": "https://img-guidatv.org/4/documentario/5.jpg"
+        "titolo": "RASSEGNA STAMPA LUNGA - REPLICA DELLE 23",
+        "descrizione": "RASSEGNA STAMPA LUNGA - REPLICA DELLE 23",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "04:00",
         "fine": "04:30",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (6 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (6 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-6-minuti/0.jpg"
+        "titolo": "TG NOTTE",
+        "descrizione": "TG NOTTE",
+        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
       },
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "Sulla strada",
-        "descrizione": "SULLA STRADA",
-        "immagine": "https://img-guidatv.org/4/sulla-strada/6.jpg"
+        "titolo": "RASSEGNA STAMPA + FOCUS",
+        "descrizione": "RASSEGNA STAMPA + FOCUS",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "05:00",
@@ -26521,45 +26472,38 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:26",
-        "titolo": "TG NOTTE",
-        "descrizione": "TG NOTTE",
-        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
+        "fine": "00:27",
+        "titolo": "TG EDIZIONE PRINCIPALE CON GERENZA",
+        "descrizione": "TG EDIZIONE PRINCIPALE CON GERENZA",
+        "immagine": "https://img-guidatv.org/4/tg-edizione-principale-con-gerenza/0.jpg"
       },
       {
-        "ora": "00:26",
+        "ora": "00:27",
         "fine": "00:30",
-        "titolo": "METEO AM",
-        "descrizione": "METEO AM",
-        "immagine": "https://img-guidatv.org/4/meteo-am/0.jpg"
+        "titolo": "METEO",
+        "descrizione": "METEO",
+        "immagine": "https://img-guidatv.org/4/meteo/0.jpg"
       },
       {
         "ora": "00:30",
-        "fine": "00:45",
-        "titolo": "TG NOTTE",
-        "descrizione": "TG NOTTE",
-        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
-      },
-      {
-        "ora": "00:45",
         "fine": "01:00",
-        "titolo": "RASSEGNA STAMPA Breve",
-        "descrizione": "RASSEGNA STAMPA breve",
-        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
+        "titolo": "AMARCORD",
+        "descrizione": "Umberto Broccoli e Alessandra Solarino raccontano la storia del nostro Paese, del costume e dell'informazione attraverso le immagini delle Teche Rai.",
+        "immagine": "https://img-guidatv.org/4/amarcord/5.jpg"
       },
       {
         "ora": "01:00",
         "fine": "01:30",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (6 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (6 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-6-minuti/0.jpg"
+        "titolo": "TG NOTTE + RASSEGNA STAMPA BREVE",
+        "descrizione": "TG NOTTE + RASSEGNA STAMPA BREVE",
+        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-breve/0.jpg"
       },
       {
         "ora": "01:30",
         "fine": "02:00",
-        "titolo": "TUTTI I FRUTTI EXTRALARGE",
-        "descrizione": "TUTTI I FRUTTI EXTRALARGE",
-        "immagine": "https://img-guidatv.org/4/tutti-i-frutti-extralarge/0.jpg"
+        "titolo": "RASSEGNA REPLICA DELLE 23",
+        "descrizione": "RASSEGNA REPLICA DELLE 23",
+        "immagine": "https://img-guidatv.org/4/rassegna-replica-delle-23/0.jpg"
       },
       {
         "ora": "02:00",
@@ -26570,45 +26514,45 @@
       },
       {
         "ora": "02:30",
+        "fine": "02:45",
+        "titolo": "RASSEGNA STAMPA BREVE",
+        "descrizione": "RASSEGNA STAMPA BREVE",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
+      },
+      {
+        "ora": "02:45",
         "fine": "03:00",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (15 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (15 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-15-minuti/0.jpg"
+        "titolo": "TUTTIFRUTTI BREVE",
+        "descrizione": "TUTTIFRUTTI BREVE",
+        "immagine": "https://img-guidatv.org/4/tuttifrutti-breve/0.jpg"
       },
       {
         "ora": "03:00",
-        "fine": "03:03",
-        "titolo": "TITOLI",
-        "descrizione": "TITOLI",
-        "immagine": "https://img-guidatv.org/4/titoli/0.jpg"
+        "fine": "03:15",
+        "titolo": "TG NOTTE",
+        "descrizione": "TG NOTTE",
+        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
       },
       {
-        "ora": "03:03",
-        "fine": "03:30",
-        "titolo": "Documentario",
-        "descrizione": "DOCUMENTARIO",
-        "immagine": "https://img-guidatv.org/4/documentario/5.jpg"
-      },
-      {
-        "ora": "03:30",
+        "ora": "03:15",
         "fine": "04:00",
-        "titolo": "Documentario",
-        "descrizione": "DOCUMENTARIO",
-        "immagine": "https://img-guidatv.org/4/documentario/5.jpg"
+        "titolo": "RASSEGNA STAMPA LUNGA - REPLICA DELLE 23",
+        "descrizione": "RASSEGNA STAMPA LUNGA - REPLICA DELLE 23",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "04:00",
         "fine": "04:30",
-        "titolo": "TG NOTTE + RASSEGNA STAMPA (6 Minuti)",
-        "descrizione": "TG NOTTE + RASSEGNA STAMPA (6 minuti)",
-        "immagine": "https://img-guidatv.org/4/tg-notte-rassegna-stampa-6-minuti/0.jpg"
+        "titolo": "TG NOTTE",
+        "descrizione": "TG NOTTE",
+        "immagine": "https://img-guidatv.org/4/tg-notte/5.jpg"
       },
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "Sulla strada",
-        "descrizione": "SULLA STRADA",
-        "immagine": "https://img-guidatv.org/4/sulla-strada/6.jpg"
+        "titolo": "RASSEGNA STAMPA + FOCUS",
+        "descrizione": "RASSEGNA STAMPA + FOCUS",
+        "immagine": "https://img-guidatv.org/4/rassegna-stampa/6.jpg"
       },
       {
         "ora": "05:00",
@@ -27219,56 +27163,56 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:10",
-        "fine": "00:15",
+        "ora": "00:05",
+        "fine": "00:10",
         "titolo": "Rai News Notte",
         "descrizione": "Rai News Notte",
         "immagine": "https://img-guidatv.org/24/rai-news-notte/8.jpg"
       },
       {
-        "ora": "00:15",
-        "fine": "00:35",
+        "ora": "00:10",
+        "fine": "00:30",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 27 settembre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "00:35",
-        "fine": "01:15",
+        "ora": "00:30",
+        "fine": "01:10",
         "titolo": "Passato E Presente - Cola Di Rienzo, L'Ultimo Tribuno - 24",
         "descrizione": "La figura di Cola di Rienzo campeggia sulla Roma della metà del XIV secolo. La città eterna che nel 1300 aveva visto il primo giubileo della Storia, ora, abbandonata dal pontefice trasferitosi ad Avignone e dall'imperatore che da tempo risiede in terra germanica, è una città cupa, dilaniata dalla guerra tra le fazioni rivali, dalla recessione economica, dalla miseria. Cola di Rienzo intende restituirla all'ordine e alla grandezza perduti. Il mito del tribuno del popolo e del suo progetto visionario, tra alterne fortune, ha attraversato i secoli lasciando ancor oggi irrisolto l'enigma che l'avvolge: Nicola di Lorenzo, questo il suo vero nome, è stato un abile politico o un megalomane? Un sincero capopopolo o un abile affabulatore? Un alfiere della libertà o uno stratega senza scrupoli? In studio, con Paolo Mieli, lo storico Tommaso di Carpegna.",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "01:15",
-        "fine": "02:05",
+        "ora": "01:10",
+        "fine": "02:00",
         "titolo": "Diario Civile - Mauro Rostagno, Il Giornalista Vestito Di Bianco",
         "descrizione": "Quando è stato ucciso, il 26 settembre 1988, aveva quarantasei anni e molte vite alle spalle. L'ultima, la più intensa, Mauro Rostagno la vive a Trapani. Lo racconta il documentario \"Mauro Rostagno, il giornalista vestito di bianco\" realizzato da Antonio Carbone per il ciclo \"Diario Civile\" in onda su Rai Storia, con un'introduzione del Procuratore nazionale antimafia, Franco Roberti.",
         "immagine": "https://img-guidatv.org/24/diario-civile-mauro-rostagno-il-giornalista-vestito-di-bianco/0.jpg"
       },
       {
-        "ora": "02:05",
-        "fine": "03:00",
+        "ora": "02:00",
+        "fine": "02:50",
         "titolo": "Non Solo Assisi",
         "descrizione": "Il critico d arte Federico Zeri, seguìto da una troupe, ripercorre le zone dell'Umbria e delle Marche colpite dal sisma del 26 settembre 1997, descrivendo i danni al patrimonio artistico per questo speciale curato da Nino Criscenti, trasmesso il 21 dicembre dello stesso anno.",
         "immagine": "https://img-guidatv.org/24/non-solo-assisi/0.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "03:30",
+        "ora": "02:50",
+        "fine": "03:25",
         "titolo": "Claudia Cardinale, 100 Immagini Di Una Ragazza",
         "descrizione": "Immagini Rai che compongono il ritratto di Claudia Cardinale (15 aprile 1938-23 settembre 2025), fuori e dentro il set, dalla sua prima apparizione televisiva, come 'Fortuniera' nella puntata di San Silvestro di Canzonissima 1958 fino al il Leone d'Oro alla Mostra del Cinema di Venezia del 1993.",
         "immagine": "https://img-guidatv.org/24/claudia-cardinale-100-immagini-di-una-ragazza/0.jpg"
       },
       {
-        "ora": "03:30",
-        "fine": "04:25",
+        "ora": "03:25",
+        "fine": "04:20",
         "titolo": "Testimoni Oculari - Alberto Moravia: Gli Anni Del Duce",
         "descrizione": "Documenti e cronache di cose viste e vissute dai diretti protagonisti dell'epoca.",
         "immagine": "https://img-guidatv.org/24/testimoni-oculari-alberto-moravia-gli-anni-del-duce/0.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:20",
         "fine": "04:40",
         "titolo": "W La Storia - Lavarsi",
         "descrizione": "Il mondo si potrebbe dividere in due categorie: da una parte i razionali amanti della doccia, dall'altra i romantici sostenitori della vasca da bagno. Ma com'è cambiato nei secoli il rapporto tra l'uomo e la pulizia? In questa puntata di Viva la Storia, grazie alle domande degli studenti di scuole medie e superiori di Torino, Roma e Napoli, scopriremo il rapporto tra un antico romano e le terme, la grande scoperta di un medico ungherese nella Vienna di metà ottocento, le abitudini igieniche di un uomo medioevale, lo stretto rapporto tra l'acqua e le religioni.",
@@ -27472,7 +27416,7 @@
       },
       {
         "ora": "23:50",
-        "fine": "00:10",
+        "fine": "00:05",
         "titolo": "Spie Eros Vecchi: Il Rivoluzionario In C",
         "descrizione": "Spie Eros Vecchi: il rivoluzionario in camicia nera - Eros Vecchi, un militante sulla cui repentina adesione alla polizia segreta fascista girano versioni contrastanti - Un programma di Andrea Branchi, Francesco Censon e Giuanluca Miligi  Produttore esecutivo Roberta Sangermano",
         "immagine": ""
@@ -27484,56 +27428,56 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:10",
-        "fine": "00:15",
+        "ora": "00:05",
+        "fine": "00:10",
         "titolo": "Rai News Notte",
         "descrizione": "Rai News Notte",
         "immagine": "https://img-guidatv.org/24/rai-news-notte/8.jpg"
       },
       {
-        "ora": "00:15",
-        "fine": "00:35",
+        "ora": "00:10",
+        "fine": "00:30",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 27 settembre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "00:35",
-        "fine": "01:15",
+        "ora": "00:30",
+        "fine": "01:10",
         "titolo": "Passato E Presente - Cola Di Rienzo, L'Ultimo Tribuno - 24",
         "descrizione": "La figura di Cola di Rienzo campeggia sulla Roma della metà del XIV secolo. La città eterna che nel 1300 aveva visto il primo giubileo della Storia, ora, abbandonata dal pontefice trasferitosi ad Avignone e dall'imperatore che da tempo risiede in terra germanica, è una città cupa, dilaniata dalla guerra tra le fazioni rivali, dalla recessione economica, dalla miseria. Cola di Rienzo intende restituirla all'ordine e alla grandezza perduti. Il mito del tribuno del popolo e del suo progetto visionario, tra alterne fortune, ha attraversato i secoli lasciando ancor oggi irrisolto l'enigma che l'avvolge: Nicola di Lorenzo, questo il suo vero nome, è stato un abile politico o un megalomane? Un sincero capopopolo o un abile affabulatore? Un alfiere della libertà o uno stratega senza scrupoli? In studio, con Paolo Mieli, lo storico Tommaso di Carpegna.",
         "immagine": "https://img-guidatv.org/24/passato-e-presente/6.jpg"
       },
       {
-        "ora": "01:15",
-        "fine": "02:05",
+        "ora": "01:10",
+        "fine": "02:00",
         "titolo": "Diario Civile - Mauro Rostagno, Il Giornalista Vestito Di Bianco",
         "descrizione": "Quando è stato ucciso, il 26 settembre 1988, aveva quarantasei anni e molte vite alle spalle. L'ultima, la più intensa, Mauro Rostagno la vive a Trapani. Lo racconta il documentario \"Mauro Rostagno, il giornalista vestito di bianco\" realizzato da Antonio Carbone per il ciclo \"Diario Civile\" in onda su Rai Storia, con un'introduzione del Procuratore nazionale antimafia, Franco Roberti.",
         "immagine": "https://img-guidatv.org/24/diario-civile-mauro-rostagno-il-giornalista-vestito-di-bianco/0.jpg"
       },
       {
-        "ora": "02:05",
-        "fine": "03:00",
+        "ora": "02:00",
+        "fine": "02:50",
         "titolo": "Non Solo Assisi",
         "descrizione": "Il critico d arte Federico Zeri, seguìto da una troupe, ripercorre le zone dell'Umbria e delle Marche colpite dal sisma del 26 settembre 1997, descrivendo i danni al patrimonio artistico per questo speciale curato da Nino Criscenti, trasmesso il 21 dicembre dello stesso anno.",
         "immagine": "https://img-guidatv.org/24/non-solo-assisi/0.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "03:30",
+        "ora": "02:50",
+        "fine": "03:25",
         "titolo": "Claudia Cardinale, 100 Immagini Di Una Ragazza",
         "descrizione": "Immagini Rai che compongono il ritratto di Claudia Cardinale (15 aprile 1938-23 settembre 2025), fuori e dentro il set, dalla sua prima apparizione televisiva, come 'Fortuniera' nella puntata di San Silvestro di Canzonissima 1958 fino al il Leone d'Oro alla Mostra del Cinema di Venezia del 1993.",
         "immagine": "https://img-guidatv.org/24/claudia-cardinale-100-immagini-di-una-ragazza/0.jpg"
       },
       {
-        "ora": "03:30",
-        "fine": "04:25",
+        "ora": "03:25",
+        "fine": "04:20",
         "titolo": "Testimoni Oculari - Alberto Moravia: Gli Anni Del Duce",
         "descrizione": "Documenti e cronache di cose viste e vissute dai diretti protagonisti dell'epoca.",
         "immagine": "https://img-guidatv.org/24/testimoni-oculari-alberto-moravia-gli-anni-del-duce/0.jpg"
       },
       {
-        "ora": "04:25",
+        "ora": "04:20",
         "fine": "04:40",
         "titolo": "W La Storia - Lavarsi",
         "descrizione": "Il mondo si potrebbe dividere in due categorie: da una parte i razionali amanti della doccia, dall'altra i romantici sostenitori della vasca da bagno. Ma com'è cambiato nei secoli il rapporto tra l'uomo e la pulizia? In questa puntata di Viva la Storia, grazie alle domande degli studenti di scuole medie e superiori di Torino, Roma e Napoli, scopriremo il rapporto tra un antico romano e le terme, la grande scoperta di un medico ungherese nella Vienna di metà ottocento, le abitudini igieniche di un uomo medioevale, lo stretto rapporto tra l'acqua e le religioni.",
@@ -27737,7 +27681,7 @@
       },
       {
         "ora": "23:50",
-        "fine": "00:10",
+        "fine": "00:05",
         "titolo": "Spie Eros Vecchi: Il Rivoluzionario In C",
         "descrizione": "Spie Eros Vecchi: il rivoluzionario in camicia nera - Eros Vecchi, un militante sulla cui repentina adesione alla polizia segreta fascista girano versioni contrastanti - Un programma di Andrea Branchi, Francesco Censon e Giuanluca Miligi  Produttore esecutivo Roberta Sangermano",
         "immagine": ""
@@ -27749,49 +27693,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "01:00",
+        "ora": "00:35",
+        "fine": "01:15",
         "titolo": "Paesaggi Vitivinicoli Langhe Roero E Mon",
         "descrizione": "$2b",
         "immagine": "https://img-guidatv.org/34/paesaggi-vitivinicoli-langhe-roero-e-mon/0.jpg"
       },
       {
-        "ora": "01:00",
-        "fine": "02:00",
+        "ora": "01:15",
+        "fine": "02:10",
         "titolo": "Di Là Dal Fiume E Tra Gli Alberi Crocevi",
-        "descrizione": "Di là dal fiume e tra gli alberi Crocevia Oltrepò - Lucrezia Lo Bianco ci porta nell'Oltrepò pavese, che si presenta come un incrocio di valli e colline. Formalmente nella provincia di Pavia, questo luogo  - in realtà non si riconosce pavese e neanche lombardo. -   un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
+        "descrizione": "Di là dal fiume e tra gli alberi Crocevia Oltrepò - Lucrezia Lo Bianco ci porta nell'Oltrepò pavese, che si presenta come un incrocio di valli e colline. Formalmente nella provincia di Pavia, questo luogo  - in realtà non si riconosce pavese e neanche lombardo. - un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
         "immagine": "https://img-guidatv.org/34/di-la-dal-fiume-e-tra-gli-alberi/1.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:35",
+        "ora": "02:10",
+        "fine": "02:45",
         "titolo": "Progetto Scienza Stem",
         "descrizione": "$2c",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "03:30",
+        "ora": "02:45",
+        "fine": "03:35",
         "titolo": "Progetto Scienza Storie Della Scienza",
         "descrizione": "$2d",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-storie-della-scienza/0.jpg"
       },
       {
-        "ora": "03:30",
-        "fine": "04:00",
+        "ora": "03:35",
+        "fine": "04:05",
         "titolo": "Un Giorno Per: Il Sonno",
         "descrizione": "Trascorriamo nel sonno circa un terzo della nostra vita. che cosa succede al nostro corpo quando dormiamo e sogniamo?.",
         "immagine": "https://img-guidatv.org/34/un-giorno-per/1.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "05:00",
+        "ora": "04:05",
+        "fine": "05:05",
         "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
         "descrizione": "$2e",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
       },
       {
-        "ora": "05:00",
+        "ora": "05:05",
         "fine": "05:30",
         "titolo": "Memex Nautilus - Polveri Sottili, Killer",
         "descrizione": "$2f",
@@ -27981,7 +27925,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:30",
+        "fine": "00:35",
         "titolo": "Progetto Scienza 2023 Prospettive - Scie",
         "descrizione": "$2a",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
@@ -27993,49 +27937,49 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:30",
-        "fine": "01:00",
+        "ora": "00:35",
+        "fine": "01:15",
         "titolo": "Paesaggi Vitivinicoli Langhe Roero E Mon",
         "descrizione": "$2b",
         "immagine": "https://img-guidatv.org/34/paesaggi-vitivinicoli-langhe-roero-e-mon/0.jpg"
       },
       {
-        "ora": "01:00",
-        "fine": "02:00",
+        "ora": "01:15",
+        "fine": "02:10",
         "titolo": "Di Là Dal Fiume E Tra Gli Alberi Crocevi",
-        "descrizione": "Di là dal fiume e tra gli alberi Crocevia Oltrepò - Lucrezia Lo Bianco ci porta nell'Oltrepò pavese, che si presenta come un incrocio di valli e colline. Formalmente nella provincia di Pavia, questo luogo  - in realtà non si riconosce pavese e neanche lombardo. -   un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
+        "descrizione": "Di là dal fiume e tra gli alberi Crocevia Oltrepò - Lucrezia Lo Bianco ci porta nell'Oltrepò pavese, che si presenta come un incrocio di valli e colline. Formalmente nella provincia di Pavia, questo luogo  - in realtà non si riconosce pavese e neanche lombardo. - un programma di Marco Melega Vittorio Rizzo e di Gianfranco Anzini Lorenzo di Majo Monica Ghezzi Lucrezia Lo Bianco Guido Morandini Vincenzo Saccone Giuseppe Sansonna Paolo Severini Francesco Zippel a cura di Gemma Giorgini",
         "immagine": "https://img-guidatv.org/34/di-la-dal-fiume-e-tra-gli-alberi/1.jpg"
       },
       {
-        "ora": "02:00",
-        "fine": "02:35",
+        "ora": "02:10",
+        "fine": "02:45",
         "titolo": "Progetto Scienza Stem",
         "descrizione": "$2c",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-stem/0.jpg"
       },
       {
-        "ora": "02:35",
-        "fine": "03:30",
+        "ora": "02:45",
+        "fine": "03:35",
         "titolo": "Progetto Scienza Storie Della Scienza",
         "descrizione": "$2d",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-storie-della-scienza/0.jpg"
       },
       {
-        "ora": "03:30",
-        "fine": "04:00",
+        "ora": "03:35",
+        "fine": "04:05",
         "titolo": "Un Giorno Per: Il Sonno",
         "descrizione": "Trascorriamo nel sonno circa un terzo della nostra vita. che cosa succede al nostro corpo quando dormiamo e sogniamo?.",
         "immagine": "https://img-guidatv.org/34/un-giorno-per/1.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "05:00",
+        "ora": "04:05",
+        "fine": "05:05",
         "titolo": "Progetto Scienza 2023 Racconti Di Scienz",
         "descrizione": "$2e",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
       },
       {
-        "ora": "05:00",
+        "ora": "05:05",
         "fine": "05:30",
         "titolo": "Memex Nautilus - Polveri Sottili, Killer",
         "descrizione": "$2f",
@@ -28225,7 +28169,7 @@
       },
       {
         "ora": "23:55",
-        "fine": "00:30",
+        "fine": "00:35",
         "titolo": "Progetto Scienza 2023 Prospettive - Scie",
         "descrizione": "$2a",
         "immagine": "https://img-guidatv.org/34/progetto-scienza-2023/6.png"
