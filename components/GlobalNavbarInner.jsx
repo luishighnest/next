@@ -27,12 +27,12 @@ export default function GlobalNavbarInner() {
 
     const getActiveFilter = () => {
         if (!pathname) return "all";
-        if (pathname === "/sport") return "sport";
+        if (pathname === "/sport" || pathname.startsWith("/sport/")) return null;
         if (pathname === "/intrattenimento") return "intrattenimento";
-        if (pathname === "/eventi") return "eventi";
+        if (pathname === "/eventi" || pathname.startsWith("/eventi/")) return null;
         if (pathname.startsWith("/vod")) return "vod";
         if (pathname === "/home" || pathname === "/") return "all";
-        return "all";
+        return null;
     };
 
     const activeFilter = getActiveFilter();

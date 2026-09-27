@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import MobileEventoView from "@/components/MobileEventoView";
 import EventSources from "@/components/EventSources";
@@ -467,8 +466,6 @@ export default function EventoPlayerPage() {
 
     return (
         <div className={`event-player-page ${mounted ? "is-mounted" : "is-mounting"}`} style={{ background: "transparent", minHeight: "140vh", color: "#ffffff", paddingBottom: "120px" }}>
-            <Navbar activeFilter={null} />
-
             <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "76px 16px 0 16px" }}>
                 <div className="event-main-stage">
                     <div className="player-wrapper" style={{ position: "relative", overflow: "hidden" }}>
