@@ -122,13 +122,33 @@ function HomeViewContent({ defaultTab = "all" }) {
         }
     }, [categories.length]);
 
-    // Sincronizza il filtro al variare del pathname Next.js
+    // Sincronizza il filtro al variare del pathname Next.js o da eventi personalizzati di navigazione (0ms latency)
     useEffect(() => {
         if (pathname === "/sport") setFilter("sport");
         else if (pathname === "/intrattenimento") setFilter("intrattenimento");
         else if (pathname === "/eventi") setFilter("eventi");
         else if (pathname === "/home" || pathname === "/") setFilter("all");
     }, [pathname]);
+
+    useEffect(() => {
+        function handleTabChangeEvent(e) {
+            if (e.detail) {
+                const { tab, sub } = e.detail;
+                if (tab) {
+                    const clean = (tab === "home" || tab === "all") ? "all" : tab;
+                    setFilter(clean);
+                    setSubFilter(sub || "all");
+                    try {
+                        window.scrollTo({ top: 0, behavior: "instant" });
+                    } catch(err) {
+                        window.scrollTo(0, 0);
+                    }
+                }
+            }
+        }
+        window.addEventListener("nmdz:change_tab", handleTabChangeEvent);
+        return () => window.removeEventListener("nmdz:change_tab", handleTabChangeEvent);
+    }, []);
 
     // Pulizia e reindirizzamento dei vecchi endpoint con query string (es. /?tab=sport -> /sport)
     useEffect(() => {

@@ -45,6 +45,9 @@ export default function GlobalNavbarInner() {
         else if (cleanFilter === "eventi") target = "/eventi";
         else if (cleanFilter === "vod") target = "/vod";
 
+        if (typeof window !== "undefined") {
+            window.dispatchEvent(new CustomEvent("nmdz:change_tab", { detail: { tab: cleanFilter, sub: "all" } }));
+        }
         router.push(target);
     };
 
@@ -52,6 +55,10 @@ export default function GlobalNavbarInner() {
         const currentFilter = getActiveFilter();
         const base = currentFilter === "all" ? "/home" : `/${currentFilter}`;
         const target = subId && subId !== "all" ? `${base}?sub=${encodeURIComponent(subId)}` : base;
+
+        if (typeof window !== "undefined") {
+            window.dispatchEvent(new CustomEvent("nmdz:change_tab", { detail: { tab: currentFilter, sub: subId || "all" } }));
+        }
         router.push(target);
     };
 
@@ -59,6 +66,10 @@ export default function GlobalNavbarInner() {
         const cleanMacro = (macroTab === "home" || macroTab === "all") ? "all" : macroTab;
         const base = cleanMacro === "all" ? "/home" : `/${cleanMacro}`;
         const target = subId && subId !== "all" ? `${base}?sub=${encodeURIComponent(subId)}` : base;
+
+        if (typeof window !== "undefined") {
+            window.dispatchEvent(new CustomEvent("nmdz:change_tab", { detail: { tab: cleanMacro, sub: subId || "all" } }));
+        }
         router.push(target);
     };
 
