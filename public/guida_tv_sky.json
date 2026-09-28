@@ -32,28 +32,35 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b866d59d-59f3-4318-af11-06b8273b8906/background/600"
       },
       {
-        "ora": "06:45",
-        "fine": "08:00",
+        "ora": "06:00",
+        "fine": "07:00",
+        "titolo": "Italia: Gara 1",
+        "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b866d59d-59f3-4318-af11-06b8273b8906/background/600"
+      },
+      {
+        "ora": "07:00",
+        "fine": "08:15",
         "titolo": "Italia: Gara 2",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/927a8eed-07e2-4bb4-8c91-1f36056be7e2/background/600"
       },
       {
-        "ora": "08:00",
-        "fine": "10:00",
+        "ora": "08:15",
+        "fine": "10:20",
         "titolo": "Norvegia - Portogallo",
         "descrizione": "... League. - Nei 6 precedenti (amichevoli escluse), Portogallo con una sola sconfitta, 5 vittorie. Entrambe reduci da un successo rispettivamente su Danimarca e Galles. TC: Gentile-Montolivo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e7eef3c5-a7da-4a6e-8c26-0610d9be62b9/background/600"
       },
       {
-        "ora": "10:00",
-        "fine": "10:30",
+        "ora": "10:20",
+        "fine": "10:50",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
-        "ora": "10:30",
+        "ora": "10:50",
         "fine": "11:00",
         "titolo": "Totti",
         "descrizione": "90/10",
@@ -61,34 +68,34 @@
       },
       {
         "ora": "11:00",
-        "fine": "13:00",
+        "fine": "13:20",
         "titolo": "1a Semifinale",
         "descrizione": "... 250 Chengdu. - ATP 250 Chengdu",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "13:00",
-        "fine": "15:00",
+        "ora": "13:20",
+        "fine": "16:15",
         "titolo": "2a Semifinale",
         "descrizione": "... 250 Chengdu. - ATP 250 Chengdu",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "15:00",
-        "fine": "15:25",
+        "ora": "16:15",
+        "fine": "16:40",
         "titolo": "Totti",
         "descrizione": "90/10",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a3c245bb-9fcd-432d-a5fe-15cae0de0ecc/background/600"
       },
       {
-        "ora": "15:25",
-        "fine": "15:55",
+        "ora": "16:40",
+        "fine": "17:10",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
-        "ora": "15:55",
+        "ora": "17:10",
         "fine": "17:20",
         "titolo": "1a Semifinale",
         "descrizione": "ATP 250 Hangzhou",
@@ -104,9 +111,9 @@
       {
         "ora": "17:50",
         "fine": "19:55",
-        "titolo": "Georgia - Ucraina",
-        "descrizione": "... Nations League. - Nei 6 precedenti (amichevoli escluse), Ucraina imbattuta con 3 vittorie e 3 pari. Georgia reduce dal ko con l'Irlanda del Nord, Ucraina dall'1-0 all'Ungheria. TC: Manuel Favia",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f8afb180-6ca9-47e5-97d1-6b188d906fb0/background/600"
+        "titolo": "2a giornata",
+        "descrizione": "... UEFA Nations League. - Tutti i gol \"live\" per non perdersi nulla di questa seconda giornata di Nations League, edizione n. 5. Campione in carica il Portogallo",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ad9b20a0-58a2-40d0-8829-a33c329ec559/background/600"
       },
       {
         "ora": "19:55",
@@ -619,13 +626,13 @@
       },
       {
         "ora": "20:35",
-        "fine": "22:45",
+        "fine": "22:50",
         "titolo": "2a giornata",
         "descrizione": "... UEFA Nations League. - Tutti i gol \"live\" per non perdersi nulla di questa seconda giornata di Nations League, edizione n. 5. Campione in carica il Portogallo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ad9b20a0-58a2-40d0-8829-a33c329ec559/background/600"
       },
       {
-        "ora": "22:45",
+        "ora": "22:50",
         "fine": "23:15",
         "titolo": "Postpartita Nations League 28/09/2026",
         "descrizione": "... 28/09/2026 Postpartita Nations League. - Gli highlights, le interviste ai protagonisti, le analisi e i commenti. In studio Federica Masolin con Veronica Baldaccini, Gianfranco Teotino, Beppe Bergomi e Marco Nosotti",
@@ -702,20 +709,20 @@
       },
       {
         "ora": "11:30",
-        "fine": "13:30",
+        "fine": "13:10",
         "titolo": "1a Semifinale",
         "descrizione": "... 250 Hangzhou. - ATP 250 Hangzhou",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "13:30",
-        "fine": "15:30",
+        "ora": "13:10",
+        "fine": "15:40",
         "titolo": "2a Semifinale",
         "descrizione": "... 250 Hangzhou. - ATP 250 Hangzhou",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "15:30",
+        "ora": "15:40",
         "fine": "17:15",
         "titolo": "1a Semifinale",
         "descrizione": "ATP 250 Chengdu",
@@ -1323,7 +1330,7 @@
       {
         "ora": "08:00",
         "fine": "09:45",
-        "titolo": "Zebre Parma - Vodacom Bulls",
+        "titolo": "Zebre - Bulls",
         "descrizione": "Prima giornata del torneo italo-celtico-sudafricano. A Parma le Zebre giocano con i sudafricani, base a Pretoria, Bulls finalisti nelle ultime 3 stagioni. Telecronaca Molla-Fusetti",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/94f85b13-1905-456a-ac9b-f4e7efc97124/background/600"
       },
@@ -1350,48 +1357,48 @@
       },
       {
         "ora": "14:00",
-        "fine": "16:00",
+        "fine": "15:55",
         "titolo": "Polonia - Francia Finale 1°/2° Posto",
         "descrizione": "... Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/f9d5f1dc-6da8-4ce9-9fbd-a88d957bfcc1/background/600"
       },
       {
-        "ora": "16:00",
-        "fine": "18:00",
+        "ora": "15:55",
+        "fine": "17:55",
         "titolo": "Preliminari Napoli: 3a Giornata",
         "descrizione": "... America's Cup. - Tutte le azioni delle regate dell'America's Cup.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/bfc9a014-d123-407a-997c-4ea5dbae1c19/background/600"
       },
       {
-        "ora": "18:00",
-        "fine": "18:30",
+        "ora": "17:55",
+        "fine": "18:20",
         "titolo": "Totti",
         "descrizione": "90/10",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a3c245bb-9fcd-432d-a5fe-15cae0de0ecc/background/600"
       },
       {
-        "ora": "18:30",
-        "fine": "19:00",
+        "ora": "18:20",
+        "fine": "18:50",
         "titolo": "Icarus Ultra",
         "descrizione": "Continua in Alta Badia il nostro DSS Tour; Florian Eisath sulla Re Laurino del comprensorio Carezza; Sport e Sostenibilita' a San Martino di Castrozza; Impresa di Nico De Corato a Dubai.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0279a2a5-a5af-46a7-904f-4b66916c1909/background/600"
       },
       {
-        "ora": "19:00",
-        "fine": "20:00",
+        "ora": "18:50",
+        "fine": "20:05",
         "titolo": "Italia: Gara 2",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/927a8eed-07e2-4bb4-8c91-1f36056be7e2/background/600"
       },
       {
-        "ora": "20:00",
-        "fine": "20:30",
+        "ora": "20:05",
+        "fine": "20:35",
         "titolo": "Cocciaretto",
         "descrizione": "Teo Trials",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
-        "ora": "20:30",
+        "ora": "20:35",
         "fine": "22:30",
         "titolo": "Polonia - Francia Finale 1°/2° Posto",
         "descrizione": "... Campionati Europei di pallavolo maschile. - Dall'Italia, la Bulgaria e la Finlandia.",
@@ -1510,20 +1517,20 @@
       },
       {
         "ora": "15:00",
-        "fine": "16:00",
+        "fine": "16:15",
         "titolo": "Italia: Gara 2",
         "descrizione": "Dal Circuito di Cremona, in Lombardia, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/927a8eed-07e2-4bb4-8c91-1f36056be7e2/background/600"
       },
       {
-        "ora": "16:00",
-        "fine": "16:30",
-        "titolo": "Europa League Remix Ep.1 18/09/2026",
-        "descrizione": "... Europa & Conference League Remix. - Europa & Conference League Remix",
-        "immagine": "https://img-guidatv.org/8693/europa-league-remix-ep-1-18-09-2026/0.png"
+        "ora": "16:15",
+        "fine": "16:45",
+        "titolo": "Studio Vela 25/09/2026",
+        "descrizione": "Studi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/71eaf3a1-477f-4fff-b857-917af0042e83/background/600"
       },
       {
-        "ora": "16:30",
+        "ora": "16:45",
         "fine": "18:30",
         "titolo": "Real Madrid - Inter",
         "descrizione": "... League. - Blancos in vantaggio 10 a 7 nei 19 precedenti europei, 2 pareggi. Il Real ha vinto gli ultimi 4 precedenti di UCL contro l'Inter, 2 in casa e 2 in trasferta. TC: Caressa-Bergomi",
@@ -1560,9 +1567,9 @@
       {
         "ora": "23:00",
         "fine": "23:30",
-        "titolo": "Cocciaretto",
-        "descrizione": "Teo Trials",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
+        "titolo": "Studio Vela 25/09/2026",
+        "descrizione": "Studi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/71eaf3a1-477f-4fff-b857-917af0042e83/background/600"
       },
       {
         "ora": "23:30",
@@ -1675,81 +1682,137 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:50",
-        "fine": "01:30",
-        "titolo": "Maxima Roma - Napoli Basketball",
-        "descrizione": "... Basket Serie A. - Il grande basket torna a Roma: la nuovissima Maxima, erede dei diritti di Trieste, debutta ospitando l'ambiziosa Napoli di Jasmin Repesa. Telecronaca di Davide Fumagalli e Chicca Macchi.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ff3e5c44-c3a8-4375-9d10-2e8c9a3d0f8f/background/600"
-      },
-      {
-        "ora": "01:30",
-        "fine": "01:45",
-        "titolo": "Speciale Olimpia Milano",
-        "descrizione": "Attraverso immagini, ricordi e testimonianze, l'Olimpia Milano festeggia novant'anni di storia, passione, sacrifici e successi, dando voce a chi questa maglio l'ha indossata con orgoglio.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/36e9bf18-654f-4d8a-8f82-480a003363f0/background/600"
-      },
-      {
-        "ora": "01:45",
-        "fine": "03:45",
-        "titolo": "Fenerbahçe - Virtus Bologna",
-        "descrizione": "La nuova Virtus di coach Mumbru' debutta su uno dei campi piu' difficili: Nic Melli e compagni sono tra i grandi favoriti per la vittoria finale. Telecronaca di Geri De Rosa e Matteo Soragna.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ff182b57-5511-4cc8-9430-2511fb4cf505/background/600"
-      },
-      {
-        "ora": "03:00",
-        "fine": "06:00",
-        "titolo": "Round 1: New York Liberty a Minnesota Lynx",
-        "descrizione": "... a Minnesota Lynx WNBA. - Dal Target Center di Minneapolis, Minnesota, USA.",
+        "ora": "01:00",
+        "fine": "02:30",
+        "titolo": "Golden State Valkyries - Dallas Wings",
+        "descrizione": "... Wings WNBA. - Iniziano i playoff di Cecilia Zandalasini e delle Valkyries, forte del secondo miglior record di lega: le avversarie di primo turno sono le Dallas Wings. Telecronaca: Fumagalli-Macchi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7799678e-a8cc-4c2e-9359-447681a6c5d0/background/600"
       },
       {
-        "ora": "03:45",
-        "fine": "04:00",
+        "ora": "02:30",
+        "fine": "02:45",
         "titolo": "Alla Scoperta Del Mubit - Museo Del... - Ep. 33 - Alla Scoperta Del Mubit - Museo Del Basket Italiano 18/05/2026",
         "descrizione": "... Basket Italiano. - Alla Scoperta Del Mubit: Museo Del Basket Italiano",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b9168427-a4bf-493d-8164-c47a207269d7/background/600"
       },
       {
-        "ora": "04:00",
-        "fine": "06:00",
+        "ora": "02:45",
+        "fine": "04:40",
         "titolo": "Partizan Belgrado - EA7 Emporio Armani Milano",
         "descrizione": "... Armani Milano Eurolega. - Le migliori squadre d'Europa si affrontano nell'Eurolega.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8de43b3d-f886-41b7-976c-c479d76757cc/background/600"
       },
       {
+        "ora": "03:00",
+        "fine": "06:00",
+        "titolo": "Golden State Valkyries - Dallas Wings",
+        "descrizione": "... a Minnesota Lynx WNBA. - Dal Target Center di Minneapolis, Minnesota, USA.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7799678e-a8cc-4c2e-9359-447681a6c5d0/background/600"
+      },
+      {
+        "ora": "04:40",
+        "fine": "05:00",
+        "titolo": "Speciale Olimpia Milano",
+        "descrizione": "Attraverso immagini, ricordi e testimonianze, l'Olimpia Milano festeggia novant'anni di storia, passione, sacrifici e successi, dando voce a chi questa maglia l'ha indossata con orgoglio.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/36e9bf18-654f-4d8a-8f82-480a003363f0/background/600"
+      },
+      {
+        "ora": "05:00",
+        "fine": "06:00",
+        "titolo": "Il Film Delle Finali NBA 2026",
+        "descrizione": "Cinque gare di un'intensita' senza pari: la sfida tra New York e San Antonio ha regalato emozioni incredibili. Riviviamo i momenti piu' belli del trionfo dei Knicks, di nuovo campioni NBA dopo 53 anni",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/99614152-0aea-45aa-a354-55fc40519b43/background/600"
+      },
+      {
         "ora": "06:00",
-        "fine": "08:00",
+        "fine": "08:05",
         "titolo": "Olimpia Milano - Trieste",
         "descrizione": "... Serie A. - Reduce dal successo in Supercoppa e dalla prima trasferta europea, l'Olimpia debutta in campionato contro la rinnovata Trieste, l'anno scorso capace di raggiungere i playoff. TC: De Rosa-Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/929cff9c-8d8e-405a-95b6-dcc28c74a30f/background/600"
+      },
+      {
+        "ora": "08:05",
+        "fine": "08:30",
+        "titolo": "Cocciaretto",
+        "descrizione": "Teo Trials",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
       },
       {
         "ora": "08:30",
-        "fine": "10:30",
+        "fine": "10:35",
         "titolo": "Maxima Roma - Napoli Basketball",
         "descrizione": "... Basket Serie A. - Il grande basket torna a Roma: la nuovissima Maxima, erede dei diritti di Trieste, debutta ospitando l'ambiziosa Napoli di Jasmin Repesa. Telecronaca di Davide Fumagalli e Chicca Macchi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ff3e5c44-c3a8-4375-9d10-2e8c9a3d0f8f/background/600"
       },
       {
-        "ora": "14:30",
-        "fine": "15:00",
-        "titolo": "Beli Vs USA A 20 Anni Dalla Partita...",
-        "descrizione": "Sapporo, 2006: Marco Belinelli sfida la squadra statunitense al Mondiale e lascia il suo biglietto da visita all'NBA. A 20 anni dai fatti, Belinelli ci racconta quella notte indimenticabile.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/68a69135-8913-47ec-9cf4-6cb8b28ee9bd/background/600"
+        "ora": "10:35",
+        "fine": "12:35",
+        "titolo": "Olimpia Milano - Trieste",
+        "descrizione": "Reduce dal successo in Supercoppa e dalla prima trasferta europea, l'Olimpia debutta in campionato contro la rinnovata Trieste, l'anno scorso capace di raggiungere i playoff. TC: De Rosa-Meneghin.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/929cff9c-8d8e-405a-95b6-dcc28c74a30f/background/600"
       },
       {
-        "ora": "15:00",
-        "fine": "17:00",
+        "ora": "12:35",
+        "fine": "14:15",
+        "titolo": "Golden State Valkyries - Dallas Wings",
+        "descrizione": "... Wings WNBA. - Iniziano i playoff di Cecilia Zandalasini e delle Valkyries, forte del secondo miglior record di lega: le avversarie di primo turno sono le Dallas Wings. Telecronaca: Fumagalli-Macchi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7799678e-a8cc-4c2e-9359-447681a6c5d0/background/600"
+      },
+      {
+        "ora": "14:15",
+        "fine": "14:40",
+        "titolo": "Cocciaretto",
+        "descrizione": "Teo Trials",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
+      },
+      {
+        "ora": "14:40",
+        "fine": "16:40",
         "titolo": "Maxima Roma - Napoli Basketball",
         "descrizione": "... Basket Serie A. - Il grande basket torna a Roma: la nuovissima Maxima, erede dei diritti di Trieste, debutta ospitando l'ambiziosa Napoli di Jasmin Repesa. Telecronaca di Davide Fumagalli e Chicca Macchi.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ff3e5c44-c3a8-4375-9d10-2e8c9a3d0f8f/background/600"
       },
       {
-        "ora": "20:00",
-        "fine": "22:00",
+        "ora": "16:40",
+        "fine": "17:30",
+        "titolo": "Berlino 2026: Diario Mondiale. Dove Il Basket Diventa Storia",
+        "descrizione": "... Il Basket Diventa Storia. - L'Italbasket femminile torna al mondiale dopo 32 anni, Berlino nel 2026 diventa teatro di partite spettacolari, interviste ed emozioni: un mondiale storico, un mondiale azzurro.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/af5aebf0-fdb8-4883-b4b9-cbe5a18dd117/background/600"
+      },
+      {
+        "ora": "17:30",
+        "fine": "19:00",
+        "titolo": "Golden State Valkyries - Dallas Wings",
+        "descrizione": "... Wings WNBA. - Iniziano i playoff di Cecilia Zandalasini e delle Valkyries, forte del secondo miglior record di lega: le avversarie di primo turno sono le Dallas Wings. Telecronaca: Fumagalli-Macchi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7799678e-a8cc-4c2e-9359-447681a6c5d0/background/600"
+      },
+      {
+        "ora": "19:00",
+        "fine": "20:55",
         "titolo": "Olimpia Milano - Trieste",
         "descrizione": "... Serie A. - Reduce dal successo in Supercoppa e dalla prima trasferta europea, l'Olimpia debutta in campionato contro la rinnovata Trieste, l'anno scorso capace di raggiungere i playoff. TC: De Rosa-Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/929cff9c-8d8e-405a-95b6-dcc28c74a30f/background/600"
+      },
+      {
+        "ora": "20:55",
+        "fine": "22:25",
+        "titolo": "Golden State Valkyries - Dallas Wings",
+        "descrizione": "... Wings WNBA. - Iniziano i playoff di Cecilia Zandalasini e delle Valkyries, forte del secondo miglior record di lega: le avversarie di primo turno sono le Dallas Wings. Telecronaca: Fumagalli-Macchi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7799678e-a8cc-4c2e-9359-447681a6c5d0/background/600"
+      },
+      {
+        "ora": "22:25",
+        "fine": "22:55",
+        "titolo": "Cocciaretto",
+        "descrizione": "Teo Trials",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/163ad1b0-17a8-4fa4-bdb0-2438c2b98aff/background/600"
+      },
+      {
+        "ora": "22:55",
+        "fine": "01:00",
+        "titolo": "Maxima Roma - Napoli Basketball",
+        "descrizione": "... Basket Serie A. - Il grande basket torna a Roma: la nuovissima Maxima, erede dei diritti di Trieste, debutta ospitando l'ambiziosa Napoli di Jasmin Repesa. Telecronaca di Davide Fumagalli e Chicca Macchi.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ff3e5c44-c3a8-4375-9d10-2e8c9a3d0f8f/background/600"
       }
     ]
   },
@@ -2448,15 +2511,15 @@
       {
         "ora": "01:45",
         "fine": "04:30",
-        "titolo": "Calcio Nazionale A: Nations League 2027 Turchia - Italia",
-        "descrizione": "Calcio Nazionale A: Nations League 2027 Turchia - Italia",
-        "immagine": "https://img-guidatv.org/32/calcio-nazionale/0.jpg"
+        "titolo": "Calcio: UEFA Nations League 2026-2027 - Lega A: Turchia - Italia",
+        "descrizione": "Dallo Stadio Atatürk Spor Kompleksi di Bursa, secondo impegno dell'Italia nella quinta edizione della UEFA Nations League. Gli Azzurri affrontano la Turchia guidata da Vincenzo Montella.",
+        "immagine": "https://img-guidatv.org/32/calcio-uefa-nations-league-2026-2027-lega-a-turchia-italia/0.jpg"
       },
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "Corsa In Montagna. Rosetta Verticale Trial Run",
-        "descrizione": "Gli eventi in diretta sui canali Rai da rivedere su RaiPlay.",
+        "titolo": "Corsa In Montagna - Rosetta Verticale Trial Run 2026",
+        "descrizione": "A San Martino di Castrozza va in scena la 10ª edizione della Rosetta Verticale Trail Run. Una spettacolare corsa in montagna di 6,9 km e 1.279 metri di dislivello, con arrivo a Cima Rosetta a 2.742 metri di quota, nel cuore delle Pale di San Martino.",
         "immagine": "https://img-guidatv.org/32/corsa/0.jpg"
       },
       {
@@ -2496,20 +2559,20 @@
       },
       {
         "ora": "14:30",
-        "fine": "16:30",
+        "fine": "16:25",
         "titolo": "Bocce: Campionati Italiani Assoluti Raffa Elite 2026 - Finali: Individuali Uomini E Donne",
         "descrizione": "Ai Campionati Italiani Assoluti Raffa Elite 2026 va in scena l’atto conclusivo delle prove individuali maschili e femminili, con i migliori specialisti in gara per conquistare i titoli nazionali.",
         "immagine": "https://img-guidatv.org/32/bocce/7.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:00",
-        "titolo": "Corsa In Montagna - Rosetta Verticale Trial Run 2026",
-        "descrizione": "A San Martino di Castrozza va in scena la 10ª edizione della Rosetta Verticale Trail Run. Una spettacolare corsa in montagna di 6,9 km e 1.279 metri di dislivello, con arrivo a Cima Rosetta a 2.742 metri di quota, nel cuore delle Pale di San Martino.",
-        "immagine": "https://img-guidatv.org/32/corsa/0.jpg"
+        "ora": "16:25",
+        "fine": "16:35",
+        "titolo": "Sintesi Medaglie Parigi",
+        "descrizione": ".",
+        "immagine": "https://img-guidatv.org/32/sintesi-medaglie-parigi/0.jpg"
       },
       {
-        "ora": "17:00",
+        "ora": "16:35",
         "fine": "19:30",
         "titolo": "Finale terzo posto: Italia - Polonia",
         "descrizione": "Nella finale per il terzo posto dei Mondiali femminili Under 20 2026, Italia e Polonia si affrontano per conquistare la medaglia di bronzo.",
@@ -2546,9 +2609,9 @@
       {
         "ora": "22:30",
         "fine": "01:45",
-        "titolo": "Pallavolo Femminile: Courmayeur Cup Finale",
-        "descrizione": "Pallavolo Femminile: Courmayeur Cup Finale",
-        "immagine": "https://img-guidatv.org/32/pallavolo-femm/6.jpg"
+        "titolo": "Pallavolo - Courmayeur Cup 2026 - Finale: Conegliano - Milano",
+        "descrizione": "Nella finale della Courmayeur Cup 2026, la Prosecco DOC Imoco Conegliano affronta la Numia Vero Volley Milano per conquistare il trofeo che apre la nuova stagione della pallavolo femminile italiana.",
+        "immagine": "https://img-guidatv.org/32/pallavolo-courmayeur-cup-2026-finale-conegliano-milano/0.jpg"
       }
     ]
   },
@@ -2559,15 +2622,15 @@
       {
         "ora": "01:45",
         "fine": "04:30",
-        "titolo": "Calcio Nazionale A: Nations League 2027 Turchia - Italia",
-        "descrizione": "Calcio Nazionale A: Nations League 2027 Turchia - Italia",
-        "immagine": "https://img-guidatv.org/32/calcio-nazionale/0.jpg"
+        "titolo": "Calcio: UEFA Nations League 2026-2027 - Lega A: Turchia - Italia",
+        "descrizione": "Dallo Stadio Atatürk Spor Kompleksi di Bursa, secondo impegno dell'Italia nella quinta edizione della UEFA Nations League. Gli Azzurri affrontano la Turchia guidata da Vincenzo Montella.",
+        "immagine": "https://img-guidatv.org/32/calcio-uefa-nations-league-2026-2027-lega-a-turchia-italia/0.jpg"
       },
       {
         "ora": "04:30",
         "fine": "05:00",
-        "titolo": "Corsa In Montagna. Rosetta Verticale Trial Run",
-        "descrizione": "Gli eventi in diretta sui canali Rai da rivedere su RaiPlay.",
+        "titolo": "Corsa In Montagna - Rosetta Verticale Trial Run 2026",
+        "descrizione": "A San Martino di Castrozza va in scena la 10ª edizione della Rosetta Verticale Trail Run. Una spettacolare corsa in montagna di 6,9 km e 1.279 metri di dislivello, con arrivo a Cima Rosetta a 2.742 metri di quota, nel cuore delle Pale di San Martino.",
         "immagine": "https://img-guidatv.org/32/corsa/0.jpg"
       },
       {
@@ -2607,20 +2670,20 @@
       },
       {
         "ora": "14:30",
-        "fine": "16:30",
+        "fine": "16:25",
         "titolo": "Bocce: Campionati Italiani Assoluti Raffa Elite 2026 - Finali: Individuali Uomini E Donne",
         "descrizione": "Ai Campionati Italiani Assoluti Raffa Elite 2026 va in scena l’atto conclusivo delle prove individuali maschili e femminili, con i migliori specialisti in gara per conquistare i titoli nazionali.",
         "immagine": "https://img-guidatv.org/32/bocce/7.jpg"
       },
       {
-        "ora": "16:30",
-        "fine": "17:00",
-        "titolo": "Corsa In Montagna - Rosetta Verticale Trial Run 2026",
-        "descrizione": "A San Martino di Castrozza va in scena la 10ª edizione della Rosetta Verticale Trail Run. Una spettacolare corsa in montagna di 6,9 km e 1.279 metri di dislivello, con arrivo a Cima Rosetta a 2.742 metri di quota, nel cuore delle Pale di San Martino.",
-        "immagine": "https://img-guidatv.org/32/corsa/0.jpg"
+        "ora": "16:25",
+        "fine": "16:35",
+        "titolo": "Sintesi Medaglie Parigi",
+        "descrizione": ".",
+        "immagine": "https://img-guidatv.org/32/sintesi-medaglie-parigi/0.jpg"
       },
       {
-        "ora": "17:00",
+        "ora": "16:35",
         "fine": "19:30",
         "titolo": "Finale terzo posto: Italia - Polonia",
         "descrizione": "Nella finale per il terzo posto dei Mondiali femminili Under 20 2026, Italia e Polonia si affrontano per conquistare la medaglia di bronzo.",
@@ -2657,9 +2720,9 @@
       {
         "ora": "22:30",
         "fine": "01:45",
-        "titolo": "Pallavolo Femminile: Courmayeur Cup Finale",
-        "descrizione": "Pallavolo Femminile: Courmayeur Cup Finale",
-        "immagine": "https://img-guidatv.org/32/pallavolo-femm/6.jpg"
+        "titolo": "Pallavolo - Courmayeur Cup 2026 - Finale: Conegliano - Milano",
+        "descrizione": "Nella finale della Courmayeur Cup 2026, la Prosecco DOC Imoco Conegliano affronta la Numia Vero Volley Milano per conquistare il trofeo che apre la nuova stagione della pallavolo femminile italiana.",
+        "immagine": "https://img-guidatv.org/32/pallavolo-courmayeur-cup-2026-finale-conegliano-milano/0.jpg"
       }
     ]
   },
@@ -3205,7 +3268,7 @@
       },
       {
         "ora": "04:55",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Poker Face",
         "descrizione": "Charlie è una donna con un dono straordinario: riconoscere quando qualcuno mente. A bordo della sua Plymouth Barracuda, attraversa il paese e, a ogni tappa, si trova coinvolta in strani crimini che non può fare a meno di risolvere.",
         "immagine": "https://image.tmdb.org/t/p/w300/8Xm5dyMQC9whMJKnGdFugUAW73C.jpg"
@@ -3651,7 +3714,7 @@
       },
       {
         "ora": "04:20",
-        "fine": "06:00",
+        "fine": "06:05",
         "titolo": "Capitaine Marleau",
         "descrizione": "Capitaine Marleau ruota intorno a una investigatrice eccezionale. È davvero brillante e non ne sbaglia una. Sembra essere una professionista perfetta, ma siccome la perfezione non esiste, ecco cosa ha di strano. Il Capitano Marleau (interpretata da Corinne Masiero) ha aspetto a dir poco bizzarro. I suoi modi sono eccentrici e rischiano di mettere in discussione la sua bravura che poi dimostra puntualmente sul campo. Il tratto caratteristico del suo look è un berretto da cacciatore che non manca mai e è a dir poco anacronistico.",
         "immagine": "https://img-guidatv.org/serie/5ed92ccc1cc40417c605775a_p_5_rs_300.jpg"
@@ -4445,21 +4508,14 @@
       },
       {
         "ora": "03:55",
-        "fine": "04:25",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "04:25",
-        "fine": "05:15",
+        "fine": "04:45",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep7 di 8 Samuele Bersani - Freak - Ci sono album che hanno segnato la storia della musica italiana. Sky Arte vi porta alla scoperta dei loro segreti. Nella puntata: Bersani - Freak.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "06:00",
+        "ora": "04:45",
+        "fine": "05:35",
         "titolo": "33 giri Italian masters",
         "descrizione": "Ep1 di 6 Lucio Dalla - Ci sono album che hanno segnato la storia della musica italiana: scopriamone i segreti. Nella puntata: l'album omonimo di Lucio Dalla. Tra gli ospiti: Ron e L. Carboni.",
         "immagine": "https://img-guidatv.org/8473/33-giri-italian-masters/10.jpg"
@@ -5229,7 +5285,7 @@
         "ora": "21:00",
         "fine": "21:45",
         "titolo": "Stories",
-        "descrizione": "Un ciclo di interviste dedicate ai protagonisti del mondo dello spettacolo e dell'intrattenimento. Gli ospiti in studio rispondono a domande sulla propria carriera ed esperienza di vita.",
+        "descrizione": "In libreria con “Liberi tutti”, suo primo thriller sentimentale, Chiara Gamberale si racconta: l’infanzia, la scuola, la maternità e… tanto altro",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cbeec0fd-e1eb-4e58-a7f1-6656638e1adc/background/600"
       },
       {
@@ -5669,7 +5725,7 @@
         "ora": "21:00",
         "fine": "21:45",
         "titolo": "Stories",
-        "descrizione": "Un ciclo di interviste dedicate ai protagonisti del mondo dello spettacolo e dell'intrattenimento. Gli ospiti in studio rispondono a domande sulla propria carriera ed esperienza di vita.",
+        "descrizione": "In libreria con “Liberi tutti”, suo primo thriller sentimentale, Chiara Gamberale si racconta: l’infanzia, la scuola, la maternità e… tanto altro",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cbeec0fd-e1eb-4e58-a7f1-6656638e1adc/background/600"
       },
       {
@@ -6433,27 +6489,27 @@
       },
       {
         "ora": "02:45",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "Key & Peele",
         "descrizione": "Ep3 di 8 - La serie di sketch comici con Keegan-Michael Key e Jordan Peele, in cui i due comici, irriverenti carismatici e di talento, esaminano la vita in modo provocatorio e irriverente.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/26298516-e3cc-4767-972a-e9baf1d605f9/background/600"
       },
       {
-        "ora": "03:00",
-        "fine": "03:20",
+        "ora": "03:05",
+        "fine": "03:25",
         "titolo": "Key & Peele",
         "descrizione": "Ep4 di 8 - La serie di sketch comici con Keegan-Michael Key e Jordan Peele, in cui i due comici, irriverenti carismatici e di talento, esaminano la vita in modo provocatorio e irriverente.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/26298516-e3cc-4767-972a-e9baf1d605f9/background/600"
       },
       {
-        "ora": "03:20",
-        "fine": "03:45",
+        "ora": "03:25",
+        "fine": "03:50",
         "titolo": "Broad City",
         "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
         "immagine": "https://image.tmdb.org/t/p/w300/xyOCRIc6UPkiucgQwm9iT9B2vjM.jpg"
       },
       {
-        "ora": "03:45",
+        "ora": "03:50",
         "fine": "04:10",
         "titolo": "Broad City",
         "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
@@ -6461,24 +6517,24 @@
       },
       {
         "ora": "04:10",
-        "fine": "04:30",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep8 Episode 8 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "fine": "04:35",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep8 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:30",
+        "ora": "04:35",
         "fine": "04:55",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep9 Episode 9 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep9 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "04:55",
         "fine": "05:20",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep10 Episode 10 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep10 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "05:20",
@@ -6852,27 +6908,27 @@
       },
       {
         "ora": "02:45",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "Key & Peele",
         "descrizione": "Ep3 di 8 - La serie di sketch comici con Keegan-Michael Key e Jordan Peele, in cui i due comici, irriverenti carismatici e di talento, esaminano la vita in modo provocatorio e irriverente.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/26298516-e3cc-4767-972a-e9baf1d605f9/background/600"
       },
       {
-        "ora": "03:00",
-        "fine": "03:20",
+        "ora": "03:05",
+        "fine": "03:25",
         "titolo": "Key & Peele",
         "descrizione": "Ep4 di 8 - La serie di sketch comici con Keegan-Michael Key e Jordan Peele, in cui i due comici, irriverenti carismatici e di talento, esaminano la vita in modo provocatorio e irriverente.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/26298516-e3cc-4767-972a-e9baf1d605f9/background/600"
       },
       {
-        "ora": "03:20",
-        "fine": "03:45",
+        "ora": "03:25",
+        "fine": "03:50",
         "titolo": "Broad City",
         "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
         "immagine": "https://image.tmdb.org/t/p/w300/xyOCRIc6UPkiucgQwm9iT9B2vjM.jpg"
       },
       {
-        "ora": "03:45",
+        "ora": "03:50",
         "fine": "04:10",
         "titolo": "Broad City",
         "descrizione": "Broad City segue due donne nella loro vita quotidiana a New York, rendendo isterici e inquietanti anche gli eventi più piccoli e banali.",
@@ -6880,24 +6936,24 @@
       },
       {
         "ora": "04:10",
-        "fine": "04:30",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep8 Episode 8 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "fine": "04:35",
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep8 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:30",
+        "ora": "04:35",
         "fine": "04:55",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep9 Episode 9 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep9 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "04:55",
         "fine": "05:20",
-        "titolo": "Most Ridiculous 6",
-        "descrizione": "S6 Ep10 Episode 10 - La sesta stagione di Most Ridiculous vede i creator digitali Edoardo Zaggia e Alberto Sacco commentare con il loro stile dissacrante una nuova selezione di video amatoriali e virali.",
-        "immagine": "https://img-guidatv.org/318/most-ridiculous-6/1.jpg"
+        "titolo": "Most Ridiculous",
+        "descrizione": "Ep10 di 20 - I video più demenziali e assurdi che navigano indisturbati sul web con il commento dissacrante di Edoardo Zaggia e Alberto Sacco.",
+        "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
         "ora": "05:20",
@@ -18446,16 +18502,16 @@
       {
         "ora": "04:00",
         "fine": "04:45",
-        "titolo": "Anna",
-        "descrizione": "Anna, una giovane novizia in servizio presso un ospedale di Milano, vede arrivare in gravi condizioni il suo ex-fidanzato. Lacerata fra dovere e passione è costretta a prendere una difficile decisione.",
-        "immagine": "https://img-guidatv.org/2/rex-il-sorriso-del-condannato/0.jpg"
+        "titolo": "Rex",
+        "descrizione": "Le appassionanti avventure del più famoso pastore tedesco impegnato nella risoluzione di delicati casi polizieschi.",
+        "immagine": "https://img-guidatv.org/serie/5e78d8c1ce1e246c511cb992_p_1_rs_300.jpg"
       },
       {
         "ora": "04:45",
         "fine": "04:50",
         "titolo": "Zio Gianni",
-        "descrizione": "Gianni ha 50 anni e improvvisamente non ha più lavoro, non ha più una moglie, non ha nemmeno una casa. Mentre rimette a posto la sua vita - o almeno ci prova! - l'unica cosa che può fare è andare a vivere con tre studenti poco più che ventenni.",
-        "immagine": "https://img-guidatv.org/2/zio-gianni-gianni-all-you-can-eat/0.jpg"
+        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
         "ora": "04:50",
@@ -18718,16 +18774,16 @@
       {
         "ora": "04:00",
         "fine": "04:45",
-        "titolo": "Anna",
-        "descrizione": "Anna, una giovane novizia in servizio presso un ospedale di Milano, vede arrivare in gravi condizioni il suo ex-fidanzato. Lacerata fra dovere e passione è costretta a prendere una difficile decisione.",
-        "immagine": "https://img-guidatv.org/2/rex-il-sorriso-del-condannato/0.jpg"
+        "titolo": "Rex",
+        "descrizione": "Le appassionanti avventure del più famoso pastore tedesco impegnato nella risoluzione di delicati casi polizieschi.",
+        "immagine": "https://img-guidatv.org/serie/5e78d8c1ce1e246c511cb992_p_1_rs_300.jpg"
       },
       {
         "ora": "04:45",
         "fine": "04:50",
         "titolo": "Zio Gianni",
-        "descrizione": "Gianni ha 50 anni e improvvisamente non ha più lavoro, non ha più una moglie, non ha nemmeno una casa. Mentre rimette a posto la sua vita - o almeno ci prova! - l'unica cosa che può fare è andare a vivere con tre studenti poco più che ventenni.",
-        "immagine": "https://img-guidatv.org/2/zio-gianni-gianni-all-you-can-eat/0.jpg"
+        "descrizione": "Gianni Coletti è un impiegato cinquantenne mite e senza pretese, sposato da venti anni. La sua vita si ribalta nel giorno in cui, dopo il fallimento della banca, perde il lavoro e, in seguito, viene lasciato dalla moglie. Cacciato di casa anche dai genitori anziani, Gianni è costretto a cercarsi una nuova sistemazione e un nuovo impiego. L'unica possibilità che può permettersi è quella di andare a vivere con tre studenti poco più che ventenni, i quali accettano la convivenza con il cinquantenne Gianni, un po' per bisogno economico, un po' per il gusto dell'avventura. Zio Gianni si trova così, tra ritardi nei pagamenti delle bollette, turni delle pulizie e della spesa, alcol, festini, continui problemi lavorativi, soldi e fiducia nel futuro, prova a cavarsela da solo per la prima volta nella sua vita, nella speranza di riprendersi la moglie e il lavoro. Ad aiutarlo ci sono i suoi tre giovani coinquilini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/q2Vi4mXXu5dLaDk24RJ4ml2oWWv.jpg"
       },
       {
         "ora": "04:50",
@@ -19025,22 +19081,22 @@
       {
         "ora": "08:00",
         "fine": "09:50",
-        "titolo": "Agorà",
-        "descrizione": "Annalisa Bruchi approfondisce i temi di stretta attualità e segue il dibattito politico con ospiti in studio, inviati, servizi, inchieste, collegamenti e contributi video dai social.",
-        "immagine": "https://img-guidatv.org/3/agora/1.jpg"
+        "titolo": "Occhio Al Prezzo - Agorà",
+        "descrizione": "$23",
+        "immagine": "https://img-guidatv.org/3/occhio-al-prezzo-agora/0.jpg"
       },
       {
         "ora": "09:50",
         "fine": "10:45",
-        "titolo": "Agorà Extra",
-        "descrizione": "Giulia Di Stefano racconta l'attualità attraverso analisi, interviste e dibattiti con i protagonisti della politica e del giornalismo per comprendere i cambiamenti dell'Italia e del mondo.",
+        "titolo": "Cogli L'Atomo - Agorà Extra",
+        "descrizione": "Nella puntata si parla di energia e nucleare. Ospiti di Giulia Di Stefano sono: Valerio Rossi Albertini, fisico Cnr; Francesca Santolini, giornalista; Flaminia Camilletti, giornalista; Davide Tabarelli, presidente Nomisma Energia; Fabrizio Capaccioli, presidente GBC Italia; Andrea Polo. Facile.it.",
         "immagine": "https://img-guidatv.org/3/agora-extra/1.jpg"
       },
       {
         "ora": "10:45",
         "fine": "11:55",
         "titolo": "Elisir",
-        "descrizione": "Michele Mirabella, Francesca Parisella e Benedetta Rinaldi presentano nuovi approfondimenti su benessere fisico e psicologico, alimentazione, stili di vita e attualità medico-scientifica, grazie al contributo di esperti e a servizi sempre aggiornati.",
+        "descrizione": "$24",
         "immagine": "https://img-guidatv.org/3/elisir/6.jpg"
       },
       {
@@ -19150,13 +19206,6 @@
       },
       {
         "ora": "16:35",
-        "fine": "17:00",
-        "titolo": "Aspettando Geo",
-        "descrizione": "DOCUMENTARIO - GEO, il programma pomeridiano di Rai Cultura sulla natura, l'ambiente e le culture del mondo, di totale produzione interna, condotto dagli studi di Via Teulada in Roma da Sveva Sagramola ed Emanuele Biggi, in onda tu - tti i giorni in diretta, dal lunedì al venerdì, dalle 16 alle 19.00 su Rai3. - Sveva Sagramola ed Emanuele Biggi Un programma di Marco Castellazzi, Rosario Cutolo, Luigi Felicetti, Chiara Romano, Sveva Sagramola Produttore esecutivo: Sara Mellone Capo progetto: Fausta Vannutelli Coordinamento editoriale: Caterina Manganella  Regia: Michelangelo Pepe",
-        "immagine": "https://img-guidatv.org/3/aspettando-geo/10.jpg"
-      },
-      {
-        "ora": "17:00",
         "fine": "19:00",
         "titolo": "Geo",
         "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilità del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\".",
@@ -19215,7 +19264,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Lo Stato Delle Cose",
-        "descrizione": "Massimo Giletti racconta i fatti, gli eventi e le storie al centro del dibattito pubblico.",
+        "descrizione": "$25",
         "immagine": "https://img-guidatv.org/3/lo-stato-delle-cose/5.jpg"
       }
     ]
@@ -19290,22 +19339,22 @@
       {
         "ora": "08:00",
         "fine": "09:50",
-        "titolo": "Agorà",
-        "descrizione": "Annalisa Bruchi approfondisce i temi di stretta attualità e segue il dibattito politico con ospiti in studio, inviati, servizi, inchieste, collegamenti e contributi video dai social.",
-        "immagine": "https://img-guidatv.org/3/agora/1.jpg"
+        "titolo": "Occhio Al Prezzo - Agorà",
+        "descrizione": "$23",
+        "immagine": "https://img-guidatv.org/3/occhio-al-prezzo-agora/0.jpg"
       },
       {
         "ora": "09:50",
         "fine": "10:45",
-        "titolo": "Agorà Extra",
-        "descrizione": "Giulia Di Stefano racconta l'attualità attraverso analisi, interviste e dibattiti con i protagonisti della politica e del giornalismo per comprendere i cambiamenti dell'Italia e del mondo.",
+        "titolo": "Cogli L'Atomo - Agorà Extra",
+        "descrizione": "Nella puntata si parla di energia e nucleare. Ospiti di Giulia Di Stefano sono: Valerio Rossi Albertini, fisico Cnr; Francesca Santolini, giornalista; Flaminia Camilletti, giornalista; Davide Tabarelli, presidente Nomisma Energia; Fabrizio Capaccioli, presidente GBC Italia; Andrea Polo. Facile.it.",
         "immagine": "https://img-guidatv.org/3/agora-extra/1.jpg"
       },
       {
         "ora": "10:45",
         "fine": "11:55",
         "titolo": "Elisir",
-        "descrizione": "Michele Mirabella, Francesca Parisella e Benedetta Rinaldi presentano nuovi approfondimenti su benessere fisico e psicologico, alimentazione, stili di vita e attualità medico-scientifica, grazie al contributo di esperti e a servizi sempre aggiornati.",
+        "descrizione": "$24",
         "immagine": "https://img-guidatv.org/3/elisir/6.jpg"
       },
       {
@@ -19415,13 +19464,6 @@
       },
       {
         "ora": "16:35",
-        "fine": "17:00",
-        "titolo": "Aspettando Geo",
-        "descrizione": "DOCUMENTARIO - GEO, il programma pomeridiano di Rai Cultura sulla natura, l'ambiente e le culture del mondo, di totale produzione interna, condotto dagli studi di Via Teulada in Roma da Sveva Sagramola ed Emanuele Biggi, in onda tu - tti i giorni in diretta, dal lunedì al venerdì, dalle 16 alle 19.00 su Rai3. - Sveva Sagramola ed Emanuele Biggi Un programma di Marco Castellazzi, Rosario Cutolo, Luigi Felicetti, Chiara Romano, Sveva Sagramola Produttore esecutivo: Sara Mellone Capo progetto: Fausta Vannutelli Coordinamento editoriale: Caterina Manganella  Regia: Michelangelo Pepe",
-        "immagine": "https://img-guidatv.org/3/aspettando-geo/10.jpg"
-      },
-      {
-        "ora": "17:00",
         "fine": "19:00",
         "titolo": "Geo",
         "descrizione": "Sveva Sagramola ed Emanuele Biggi raccontano le persone, le meraviglie e le fragilità del nostro pianeta, grazie agli esperti in studio e i grandi documentari di \"Geo\".",
@@ -19480,7 +19522,7 @@
         "ora": "21:15",
         "fine": "00:00",
         "titolo": "Lo Stato Delle Cose",
-        "descrizione": "Massimo Giletti racconta i fatti, gli eventi e le storie al centro del dibattito pubblico.",
+        "descrizione": "$25",
         "immagine": "https://img-guidatv.org/3/lo-stato-delle-cose/5.jpg"
       }
     ]
@@ -19519,24 +19561,17 @@
       },
       {
         "ora": "05:03",
-        "fine": "05:49",
+        "fine": "06:04",
         "titolo": "Gioco di societa'",
         "descrizione": "Un industriale, dopo aver scoperto un compagno di gioco che bara, lo ricatta proponendogli dietro compenso di uccidergli la moglie. L'assassino si troverà di fronte a una donna che, offrendogli una somma ancora più alta, gli chiederà di uccidere invece suo marito.",
         "immagine": "https://image.tmdb.org/t/p/w300/pRlqhpBSThUvj97fqK75r3fa5p8.jpg"
-      },
-      {
-        "ora": "05:49",
-        "fine": "06:10",
-        "titolo": "Tg4 - ultima ora mattina",
-        "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
       },
       {
         "ora": "06:05",
         "fine": "06:26",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001027001/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:26",
@@ -19585,7 +19620,7 @@
         "fine": "13:01",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/40/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002601/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "13:01",
@@ -19599,7 +19634,7 @@
         "fine": "15:30",
         "titolo": "Lo sportello di forum",
         "descrizione": "Programma storico delle reti Mediaset che vede due contendenti affidare la soluzione del loro contrasto al giudizio di un giudice arbitro.",
-        "immagine": "https://img-guidatv.org/40/lo-sportello-di-forum/8.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314514601001601/media/1/1/848367a9-0280-4328-9e50-642e595baea6/f4ff5d7f-085b-4c05-be5d-98f827932e05.jpg"
       },
       {
         "ora": "15:30",
@@ -19613,7 +19648,7 @@
         "fine": "16:51",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:51",
@@ -19693,24 +19728,17 @@
       },
       {
         "ora": "05:03",
-        "fine": "05:49",
+        "fine": "06:04",
         "titolo": "Gioco di societa'",
         "descrizione": "Un industriale, dopo aver scoperto un compagno di gioco che bara, lo ricatta proponendogli dietro compenso di uccidergli la moglie. L'assassino si troverà di fronte a una donna che, offrendogli una somma ancora più alta, gli chiederà di uccidere invece suo marito.",
         "immagine": "https://image.tmdb.org/t/p/w300/pRlqhpBSThUvj97fqK75r3fa5p8.jpg"
-      },
-      {
-        "ora": "05:49",
-        "fine": "06:10",
-        "titolo": "Tg4 - ultima ora mattina",
-        "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
       },
       {
         "ora": "06:05",
         "fine": "06:26",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001027001/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:26",
@@ -19759,7 +19787,7 @@
         "fine": "13:01",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/40/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002601/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "13:01",
@@ -19773,7 +19801,7 @@
         "fine": "15:30",
         "titolo": "Lo sportello di forum",
         "descrizione": "Programma storico delle reti Mediaset che vede due contendenti affidare la soluzione del loro contrasto al giudizio di un giudice arbitro.",
-        "immagine": "https://img-guidatv.org/40/lo-sportello-di-forum/8.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314514601001601/media/1/1/848367a9-0280-4328-9e50-642e595baea6/f4ff5d7f-085b-4c05-be5d-98f827932e05.jpg"
       },
       {
         "ora": "15:30",
@@ -19787,7 +19815,7 @@
         "fine": "16:51",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:51",
@@ -19838,35 +19866,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:29",
-        "fine": "02:09",
+        "ora": "01:28",
+        "fine": "02:08",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/41/tg5/2.jpg"
       },
       {
-        "ora": "02:09",
-        "fine": "03:05",
+        "ora": "02:08",
+        "fine": "03:04",
         "titolo": "Caduta libera",
         "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
         "immagine": "https://img-guidatv.org/41/caduta-libera/7.jpg"
       },
       {
-        "ora": "03:05",
-        "fine": "04:11",
+        "ora": "03:04",
+        "fine": "04:10",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000601/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
-        "ora": "04:11",
-        "fine": "04:34",
+        "ora": "04:10",
+        "fine": "04:33",
         "titolo": "Una vita",
         "descrizione": "Quando Natalia comunica ad Aurelio e Genoveva di aver accettato di uscire con Felipe, i due decidono di sfruttare l'occasione per mettere in atto il loro piano.",
         "immagine": "https://img-guidatv.org/serie/5e78d81ace1e246c511cb693_p_3_rs_300.jpg"
       },
       {
-        "ora": "04:34",
+        "ora": "04:33",
         "fine": "05:14",
         "titolo": "All American",
         "descrizione": "Due mondi completamente opposti si scontrano quando un giocatore di football del difficile quartiere di Compton viene chiamato a far parte della squadra del liceo di Beverly Hills.",
@@ -19884,7 +19912,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101216101/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19954,14 +19982,14 @@
         "fine": "10:52",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/41/mattino-cinque-news/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401001101/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "10:52",
         "fine": "11:00",
         "titolo": "Tg5 ore 10",
         "descrizione": "Appuntamento con le notizie piu' importanti, nazionali ed internazionali, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/tg-5-ore-10/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202401019301/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "11:00",
@@ -19972,20 +20000,20 @@
       },
       {
         "ora": "12:58",
-        "fine": "13:40",
+        "fine": "13:41",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/41/tg5/2.jpg"
       },
       {
-        "ora": "13:40",
-        "fine": "13:57",
+        "ora": "13:41",
+        "fine": "13:58",
         "titolo": "Grande Fratello Vip",
         "descrizione": "L'appuntamento quotidiano con la vita nella casa del Grande Fratello.",
         "immagine": "https://img-guidatv.org/41/grande-fratello-vip/20.jpg"
       },
       {
-        "ora": "13:57",
+        "ora": "13:58",
         "fine": "14:19",
         "titolo": "Beautiful",
         "descrizione": "Brooke ascolta: Carter vuole il controllo Forrester. Hope lo sostiene; intanto Electra rincontra Remy. Ridge ignora tutto, ma intravede il pericolo.",
@@ -20003,7 +20031,7 @@
         "fine": "16:03",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000601/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:03",
@@ -20014,34 +20042,34 @@
       },
       {
         "ora": "16:45",
-        "fine": "18:46",
+        "fine": "18:44",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
-        "ora": "18:46",
-        "fine": "19:54",
+        "ora": "18:44",
+        "fine": "19:52",
         "titolo": "Caduta libera",
         "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
         "immagine": "https://img-guidatv.org/41/caduta-libera/7.jpg"
       },
       {
-        "ora": "19:54",
-        "fine": "20:00",
+        "ora": "19:52",
+        "fine": "19:59",
         "titolo": "Tg5 Prima Pagina",
         "descrizione": "Sintesi delle notizie principali del giorno.",
         "immagine": "https://img-guidatv.org/41/tg5-prima-pagina/2.jpg"
       },
       {
-        "ora": "20:00",
-        "fine": "20:35",
+        "ora": "19:59",
+        "fine": "20:38",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.\nQUESTO PROGRAMMA E' SOTTOTITOLATO.",
         "immagine": "https://img-guidatv.org/41/tg5/2.jpg"
       },
       {
-        "ora": "20:35",
+        "ora": "20:38",
         "fine": "21:20",
         "titolo": "La ruota della fortuna",
         "descrizione": "Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo!",
@@ -20049,9 +20077,9 @@
       },
       {
         "ora": "21:20",
-        "fine": "01:29",
+        "fine": "01:28",
         "titolo": "Grande Fratello",
-        "descrizione": "I concorrenti vivono insieme affrontando prove, strategie e relazioni. Ogni giorno puo' cambiare gli equilibri del gioco. Cosa e' successo e cosa accadra'? Conduce Ilary Blasi",
+        "descrizione": "Sei i vip in nomination: Carmen Di Pietro, Federica Morello, Michelle Masullo, Alessandro Roncaccia, Alessandro Varsi e Giancarlo Danto. Il meno votato dovra' abbandonare la casa!",
         "immagine": "https://img-guidatv.org/41/grande-fratello/11.jpg"
       }
     ]
@@ -20061,35 +20089,35 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "01:29",
-        "fine": "02:09",
+        "ora": "01:28",
+        "fine": "02:08",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/41/tg5/2.jpg"
       },
       {
-        "ora": "02:09",
-        "fine": "03:05",
+        "ora": "02:08",
+        "fine": "03:04",
         "titolo": "Caduta libera",
         "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
         "immagine": "https://img-guidatv.org/41/caduta-libera/7.jpg"
       },
       {
-        "ora": "03:05",
-        "fine": "04:11",
+        "ora": "03:04",
+        "fine": "04:10",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000601/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
-        "ora": "04:11",
-        "fine": "04:34",
+        "ora": "04:10",
+        "fine": "04:33",
         "titolo": "Una vita",
         "descrizione": "Quando Natalia comunica ad Aurelio e Genoveva di aver accettato di uscire con Felipe, i due decidono di sfruttare l'occasione per mettere in atto il loro piano.",
         "immagine": "https://img-guidatv.org/serie/5e78d81ace1e246c511cb693_p_3_rs_300.jpg"
       },
       {
-        "ora": "04:34",
+        "ora": "04:33",
         "fine": "05:14",
         "titolo": "All American",
         "descrizione": "Due mondi completamente opposti si scontrano quando un giocatore di football del difficile quartiere di Compton viene chiamato a far parte della squadra del liceo di Beverly Hills.",
@@ -20107,7 +20135,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101216101/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -20177,14 +20205,14 @@
         "fine": "10:52",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/41/mattino-cinque-news/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401001101/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "10:52",
         "fine": "11:00",
         "titolo": "Tg5 ore 10",
         "descrizione": "Appuntamento con le notizie piu' importanti, nazionali ed internazionali, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/tg-5-ore-10/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202401019301/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "11:00",
@@ -20195,20 +20223,20 @@
       },
       {
         "ora": "12:58",
-        "fine": "13:40",
+        "fine": "13:41",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
         "immagine": "https://img-guidatv.org/41/tg5/2.jpg"
       },
       {
-        "ora": "13:40",
-        "fine": "13:57",
+        "ora": "13:41",
+        "fine": "13:58",
         "titolo": "Grande Fratello Vip",
         "descrizione": "L'appuntamento quotidiano con la vita nella casa del Grande Fratello.",
         "immagine": "https://img-guidatv.org/41/grande-fratello-vip/20.jpg"
       },
       {
-        "ora": "13:57",
+        "ora": "13:58",
         "fine": "14:19",
         "titolo": "Beautiful",
         "descrizione": "Brooke ascolta: Carter vuole il controllo Forrester. Hope lo sostiene; intanto Electra rincontra Remy. Ridge ignora tutto, ma intravede il pericolo.",
@@ -20226,7 +20254,7 @@
         "fine": "16:03",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/41/uomini-e-donne/9.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000601/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "16:03",
@@ -20237,34 +20265,34 @@
       },
       {
         "ora": "16:45",
-        "fine": "18:46",
+        "fine": "18:44",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/41/dentro-la-notizia/6.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
-        "ora": "18:46",
-        "fine": "19:54",
+        "ora": "18:44",
+        "fine": "19:52",
         "titolo": "Caduta libera",
         "descrizione": "Max Giusti conduce la nuova edizione insieme a Isobel Fetiyera: studio rinnovato, band dal vivo, nuova prova finale e un montepremi che puo' raggiungere i 500.000 euro.",
         "immagine": "https://img-guidatv.org/41/caduta-libera/7.jpg"
       },
       {
-        "ora": "19:54",
-        "fine": "20:00",
+        "ora": "19:52",
+        "fine": "19:59",
         "titolo": "Tg5 Prima Pagina",
         "descrizione": "Sintesi delle notizie principali del giorno.",
         "immagine": "https://img-guidatv.org/41/tg5-prima-pagina/2.jpg"
       },
       {
-        "ora": "20:00",
-        "fine": "20:35",
+        "ora": "19:59",
+        "fine": "20:38",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.\nQUESTO PROGRAMMA E' SOTTOTITOLATO.",
         "immagine": "https://img-guidatv.org/41/tg5/2.jpg"
       },
       {
-        "ora": "20:35",
+        "ora": "20:38",
         "fine": "21:20",
         "titolo": "La ruota della fortuna",
         "descrizione": "Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo!",
@@ -20272,9 +20300,9 @@
       },
       {
         "ora": "21:20",
-        "fine": "01:29",
+        "fine": "01:28",
         "titolo": "Grande Fratello",
-        "descrizione": "I concorrenti vivono insieme affrontando prove, strategie e relazioni. Ogni giorno puo' cambiare gli equilibri del gioco. Cosa e' successo e cosa accadra'? Conduce Ilary Blasi",
+        "descrizione": "Sei i vip in nomination: Carmen Di Pietro, Federica Morello, Michelle Masullo, Alessandro Roncaccia, Alessandro Varsi e Giancarlo Danto. Il meno votato dovra' abbandonare la casa!",
         "immagine": "https://img-guidatv.org/41/grande-fratello/11.jpg"
       }
     ]
@@ -20393,7 +20421,7 @@
         "fine": "13:00",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201054101/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:00",
@@ -20407,7 +20435,7 @@
         "fine": "13:53",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:53",
@@ -20623,7 +20651,7 @@
         "fine": "13:00",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201054101/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:00",
@@ -20637,7 +20665,7 @@
         "fine": "13:53",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:53",
@@ -20775,21 +20803,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Alessandra Sardoni con Aldo Cazzullo, Claudio Cerasa, Piero Benassi, Marta Dassù, Giacomo Salvini",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Giuseppe Fioroni, Andrea Carugati, Marco Di Liddo, Chicco Testa, Luca Greco, Francesco Boezi",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Vincenzo Amendola, Claudia Fusani, Maurizio Gasparri, Sandro Iacometti, Maurizio Molinari, Angelo D’orsi, Alessia Melcangi, Antonio Di Bella, Marco Varvello, Alessandro Barbera, Alessandro Cecchi Paone,...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -20838,7 +20866,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Matteo Renzi, Italo Bocchino, Evelina Christillin",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -20893,21 +20921,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Alessandra Sardoni con Aldo Cazzullo, Claudio Cerasa, Piero Benassi, Marta Dassù, Giacomo Salvini",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Giuseppe Fioroni, Andrea Carugati, Marco Di Liddo, Chicco Testa, Luca Greco, Francesco Boezi",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Vincenzo Amendola, Claudia Fusani, Maurizio Gasparri, Sandro Iacometti, Maurizio Molinari, Angelo D’orsi, Alessia Melcangi, Antonio Di Bella, Marco Varvello, Alessandro Barbera, Alessandro Cecchi Paone,...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -20956,7 +20984,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Matteo Renzi, Italo Bocchino, Evelina Christillin",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21011,21 +21039,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Alessandra Sardoni con Aldo Cazzullo, Claudio Cerasa, Piero Benassi, Marta Dassù, Giacomo Salvini",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Giuseppe Fioroni, Andrea Carugati, Marco Di Liddo, Chicco Testa, Luca Greco, Francesco Boezi",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Vincenzo Amendola, Claudia Fusani, Maurizio Gasparri, Sandro Iacometti, Maurizio Molinari, Angelo D’orsi, Alessia Melcangi, Antonio Di Bella, Marco Varvello, Alessandro Barbera, Alessandro Cecchi Paone,...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21074,7 +21102,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Matteo Renzi, Italo Bocchino, Evelina Christillin",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21129,21 +21157,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Alessandra Sardoni con Aldo Cazzullo, Claudio Cerasa, Piero Benassi, Marta Dassù, Giacomo Salvini",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Giuseppe Fioroni, Andrea Carugati, Marco Di Liddo, Chicco Testa, Luca Greco, Francesco Boezi",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Vincenzo Amendola, Claudia Fusani, Maurizio Gasparri, Sandro Iacometti, Maurizio Molinari, Angelo D’orsi, Alessia Melcangi, Antonio Di Bella, Marco Varvello, Alessandro Barbera, Alessandro Cecchi Paone,...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21192,7 +21220,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Matteo Renzi, Italo Bocchino, Evelina Christillin",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21247,21 +21275,21 @@
         "ora": "08:00",
         "fine": "09:40",
         "titolo": "Omnibus  Dibattito",
-        "descrizione": "Conduce Gerardo Greco - Programma di informazione e approfondimento con rubriche, ospiti, rassegna stampa, aggiornamenti sul traffico, previsioni meteo, dibattito sul tema del giorno.",
+        "descrizione": "Alessandra Sardoni con Aldo Cazzullo, Claudio Cerasa, Piero Benassi, Marta Dassù, Giacomo Salvini",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/omnibus_pal_0.jpg"
       },
       {
         "ora": "09:40",
         "fine": "11:00",
         "titolo": "Coffee Break",
-        "descrizione": "Lo spazio mattutino per l'approfondimento e l'attualità condotto da Andrea Pancani. 14a Edizione.",
+        "descrizione": "Andrea Pancani con Giuseppe Fioroni, Andrea Carugati, Marco Di Liddo, Chicco Testa, Luca Greco, Francesco Boezi",
         "immagine": "https://www.la7.it/sites/default/files/palinsesto/locandine/cofeepalinasesto.jpg"
       },
       {
         "ora": "11:00",
         "fine": "13:30",
         "titolo": "L'Aria Che Tira",
-        "descrizione": "Conduce David Parenzo.",
+        "descrizione": "David Parenzo con Vincenzo Amendola, Claudia Fusani, Maurizio Gasparri, Sandro Iacometti, Maurizio Molinari, Angelo D’orsi, Alessia Melcangi, Antonio Di Bella, Marco Varvello, Alessandro Barbera, Alessandro Cecchi Paone,...",
         "immagine": "https://img-guidatv.org/23/l-aria-che-tira/9.jpg"
       },
       {
@@ -21310,7 +21338,7 @@
         "ora": "20:35",
         "fine": "21:15",
         "titolo": "Otto e Mezzo",
-        "descrizione": "Il programma di approfondimento quotidiano condotto da Lilli Gruber, con ospiti in studio e il punto di Paolo Pagliaro. 26a Edizione",
+        "descrizione": "Ospiti di Lilli Gruber: Matteo Renzi, Italo Bocchino, Evelina Christillin",
         "immagine": "https://img-guidatv.org/23/otto-e-mezzo/6.jpg"
       },
       {
@@ -21948,7 +21976,7 @@
       },
       {
         "ora": "05:12",
-        "fine": "06:02",
+        "fine": "06:00",
         "titolo": "Distretto di Polizia",
         "descrizione": "Le vicende di Distretto di Polizia scorrono nelle stanze del X Tuscolano, commissariato della periferia romana in cui la cronaca si intreccia alla vita privata degli ispettori, degli agenti e dei commissari che nel corso di 11 intense stagioni hanno dato vita ad uno dei più grandi successi della TV italiana.",
         "immagine": "https://image.tmdb.org/t/p/w300/hZv36p1NhDIQsZIwTxiwwJEN42D.jpg"
@@ -22164,7 +22192,7 @@
       },
       {
         "ora": "05:12",
-        "fine": "06:02",
+        "fine": "06:00",
         "titolo": "Distretto di Polizia",
         "descrizione": "Le vicende di Distretto di Polizia scorrono nelle stanze del X Tuscolano, commissariato della periferia romana in cui la cronaca si intreccia alla vita privata degli ispettori, degli agenti e dei commissari che nel corso di 11 intense stagioni hanno dato vita ad uno dei più grandi successi della TV italiana.",
         "immagine": "https://image.tmdb.org/t/p/w300/hZv36p1NhDIQsZIwTxiwwJEN42D.jpg"
@@ -22770,13 +22798,13 @@
     "programmi": [
       {
         "ora": "02:11",
-        "fine": "02:20",
+        "fine": "02:19",
         "titolo": "Note di cinema",
         "descrizione": "La giornalista Anna Praderio firma questa rubrica che approfondisce, con servizi e interviste ai protagonisti del cinema italiano e internazionale, gli eventi legati al mondo dello spettacolo.",
         "immagine": "https://img-guidatv.org/27/note-di-cinema/12.jpg"
       },
       {
-        "ora": "02:20",
+        "ora": "02:19",
         "fine": "04:17",
         "titolo": "Jude",
         "descrizione": "Alla fine del 1800 in Inghilterra, Jude progetta di andare in città e frequentare l'università, ma si sposa presto e diventa uno scalpellino. Quando la moglie se ne va, si trasferisce in città, dove fa amicizia con la cugina liberale Sue.",
@@ -22792,9 +22820,9 @@
       {
         "ora": "05:38",
         "fine": "06:29",
-        "titolo": "Belli dentro",
-        "descrizione": "Belli dentro è una sitcom italiana che parla della vita in carcere di alcuni detenuti. La serie è stata ideata dai detenuti del Carcere di San Vittore di Milano e della redazione di ildue.it, che ne hanno anche scritto gli episodi sotto la guida della giornalista e direttrice di \"Magazine 2\" (rivista di San Vittore), Emilia Patruno. Il primo episodio è andato in onda il 13 febbraio 2005 su Canale 5.\n\nLa serie narra in modo umoristico e parodistico la vita quotidiana dei detenuti.\n\nDalla seconda stagione la sitcom è stata registrata all'interno dello Zelig di Viale Monza a Milano, con in studio un pubblico \"vero\", non più tramite le risate registrate. Si tratta di una innovazione che fino ad allora nessun programma di questo genere aveva ancora adottato.\n\nDalla terza stagione le registrazioni sono state fatte presso il Teatro 5",
-        "immagine": "https://img-guidatv.org/serie/5e78d81ece1e246c511cb6a6_p_1_rs_300.jpg"
+        "titolo": "Gioco di societa'",
+        "descrizione": "Un industriale, dopo aver scoperto un compagno di gioco che bara, lo ricatta proponendogli dietro compenso di uccidergli la moglie. L'assassino si troverà di fronte a una donna che, offrendogli una somma ancora più alta, gli chiederà di uccidere invece suo marito.",
+        "immagine": "https://image.tmdb.org/t/p/w300/pRlqhpBSThUvj97fqK75r3fa5p8.jpg"
       },
       {
         "ora": "06:35",
@@ -22854,13 +22882,13 @@
       },
       {
         "ora": "20:16",
-        "fine": "21:16",
+        "fine": "21:15",
         "titolo": "Walker texas ranger",
         "descrizione": "I texas ranger rappresentano un baluardo di giustizia per tutta la comunità, assediata da criminali senza scrupoli. Walker e la sua squadra si impegnano per proteggere i cittadini onesti.",
         "immagine": "https://image.tmdb.org/t/p/w500/bSxLsXnuujObVIYC7Qi1PZR5V5i.jpg"
       },
       {
-        "ora": "21:16",
+        "ora": "21:15",
         "fine": "23:54",
         "titolo": "Unbroken",
         "descrizione": "Louis Zamperini è un campione di mezzofondo americano. Figlio di italiani immigrati e corridore olimpico alle Olimpiadi di Berlino del 1936, quattro anni dopo Zamperini viene reclutato nell'Aviazione come bombardiere. Nel 1942, durante una missione di recupero sull'Oceano Pacifico, il suo B-24 precipita rovinosamente, dimezzando il suo equipaggio. Sopravvissuto insieme a due commilitoni, Zamperini resiste in mare per quarantasette giorni, cibandosi di pesce crudo e schivando i colpi delle mitragliatrici aeree giapponesi. Recuperato dalla marina nemica viene condotto in un campo di prigionia, dove diventa presto ostaggio del sadismo di Watanabe, un sergente perverso col vizio del bastone e dell'umiliazione. Dovranno passare ancora due lunghi anni prima che Zamperini riacquisti la libertà, tornando in Patria e dai suoi cari.",
@@ -22881,13 +22909,13 @@
     "programmi": [
       {
         "ora": "02:11",
-        "fine": "02:20",
+        "fine": "02:19",
         "titolo": "Note di cinema",
         "descrizione": "La giornalista Anna Praderio firma questa rubrica che approfondisce, con servizi e interviste ai protagonisti del cinema italiano e internazionale, gli eventi legati al mondo dello spettacolo.",
         "immagine": "https://img-guidatv.org/27/note-di-cinema/12.jpg"
       },
       {
-        "ora": "02:20",
+        "ora": "02:19",
         "fine": "04:17",
         "titolo": "Jude",
         "descrizione": "Alla fine del 1800 in Inghilterra, Jude progetta di andare in città e frequentare l'università, ma si sposa presto e diventa uno scalpellino. Quando la moglie se ne va, si trasferisce in città, dove fa amicizia con la cugina liberale Sue.",
@@ -22903,9 +22931,9 @@
       {
         "ora": "05:38",
         "fine": "06:29",
-        "titolo": "Belli dentro",
-        "descrizione": "Belli dentro è una sitcom italiana che parla della vita in carcere di alcuni detenuti. La serie è stata ideata dai detenuti del Carcere di San Vittore di Milano e della redazione di ildue.it, che ne hanno anche scritto gli episodi sotto la guida della giornalista e direttrice di \"Magazine 2\" (rivista di San Vittore), Emilia Patruno. Il primo episodio è andato in onda il 13 febbraio 2005 su Canale 5.\n\nLa serie narra in modo umoristico e parodistico la vita quotidiana dei detenuti.\n\nDalla seconda stagione la sitcom è stata registrata all'interno dello Zelig di Viale Monza a Milano, con in studio un pubblico \"vero\", non più tramite le risate registrate. Si tratta di una innovazione che fino ad allora nessun programma di questo genere aveva ancora adottato.\n\nDalla terza stagione le registrazioni sono state fatte presso il Teatro 5",
-        "immagine": "https://img-guidatv.org/serie/5e78d81ece1e246c511cb6a6_p_1_rs_300.jpg"
+        "titolo": "Gioco di societa'",
+        "descrizione": "Un industriale, dopo aver scoperto un compagno di gioco che bara, lo ricatta proponendogli dietro compenso di uccidergli la moglie. L'assassino si troverà di fronte a una donna che, offrendogli una somma ancora più alta, gli chiederà di uccidere invece suo marito.",
+        "immagine": "https://image.tmdb.org/t/p/w300/pRlqhpBSThUvj97fqK75r3fa5p8.jpg"
       },
       {
         "ora": "06:35",
@@ -22965,13 +22993,13 @@
       },
       {
         "ora": "20:16",
-        "fine": "21:16",
+        "fine": "21:15",
         "titolo": "Walker texas ranger",
         "descrizione": "I texas ranger rappresentano un baluardo di giustizia per tutta la comunità, assediata da criminali senza scrupoli. Walker e la sua squadra si impegnano per proteggere i cittadini onesti.",
         "immagine": "https://image.tmdb.org/t/p/w500/bSxLsXnuujObVIYC7Qi1PZR5V5i.jpg"
       },
       {
-        "ora": "21:16",
+        "ora": "21:15",
         "fine": "23:54",
         "titolo": "Unbroken",
         "descrizione": "Louis Zamperini è un campione di mezzofondo americano. Figlio di italiani immigrati e corridore olimpico alle Olimpiadi di Berlino del 1936, quattro anni dopo Zamperini viene reclutato nell'Aviazione come bombardiere. Nel 1942, durante una missione di recupero sull'Oceano Pacifico, il suo B-24 precipita rovinosamente, dimezzando il suo equipaggio. Sopravvissuto insieme a due commilitoni, Zamperini resiste in mare per quarantasette giorni, cibandosi di pesce crudo e schivando i colpi delle mitragliatrici aeree giapponesi. Recuperato dalla marina nemica viene condotto in un campo di prigionia, dove diventa presto ostaggio del sadismo di Watanabe, un sergente perverso col vizio del bastone e dell'umiliazione. Dovranno passare ancora due lunghi anni prima che Zamperini riacquisti la libertà, tornando in Patria e dai suoi cari.",
@@ -23667,7 +23695,7 @@
       },
       {
         "ora": "05:24",
-        "fine": "07:05",
+        "fine": "06:00",
         "titolo": "Camera Cafe'",
         "descrizione": "Camera Café è una sitcom italiana prodotta dal 2003 al 2012 e trasmessa in prima visione da Italia 1. La sitcom è basata sull'omonimo format originale francese Caméra Café. Il titolo della serie deriva da una paronomasia in lingua francese data dall'accostamento e fusione dei termini café (\"caffè\") e caméra cachée (\"telecamera nascosta\").",
         "immagine": "https://img-guidatv.org/serie/5e78d82ece1e246c511cb6f0_p_4_rs_300.jpg"
@@ -23855,7 +23883,7 @@
       },
       {
         "ora": "05:24",
-        "fine": "07:05",
+        "fine": "06:00",
         "titolo": "Camera Cafe'",
         "descrizione": "Camera Café è una sitcom italiana prodotta dal 2003 al 2012 e trasmessa in prima visione da Italia 1. La sitcom è basata sull'omonimo format originale francese Caméra Café. Il titolo della serie deriva da una paronomasia in lingua francese data dall'accostamento e fusione dei termini café (\"caffè\") e caméra cachée (\"telecamera nascosta\").",
         "immagine": "https://img-guidatv.org/serie/5e78d82ece1e246c511cb6f0_p_4_rs_300.jpg"
@@ -24158,7 +24186,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000601/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -24346,7 +24374,7 @@
         "fine": "21:20",
         "titolo": "Uomini e donne",
         "descrizione": "L'appuntamento quotidiano con il talk show dei sentimenti. Tra le novita' la presenza di Alessandra Mussolini in qualita' di opinionista insieme a Tina Cipollari, Tini' Cansino e Gianni Sperti.",
-        "immagine": "https://img-guidatv.org/29/uomini-e-donne/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749501000601/media/23/87/fd4b36b3-9359-43d1-8ea6-3636fe64b751/30dab724-3e04-4aa8-8201-097d56388173.jpg"
       },
       {
         "ora": "21:20",
@@ -25983,14 +26011,14 @@
         "fine": "09:26",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/10473/mattino-cinque-news/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401001101/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "09:26",
         "fine": "09:47",
         "titolo": "Mattino Cinque News",
         "descrizione": "In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.",
-        "immagine": "https://img-guidatv.org/10473/mattino-cinque-news/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717401001101/media/17/81/56b4e4dc-c632-45ff-869f-1e4c5dbcebe1/217b6136-f058-4a9f-99ff-8e5b8664a295.jpg"
       },
       {
         "ora": "09:47",
@@ -26004,42 +26032,42 @@
         "fine": "11:27",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/10473/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002601/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "11:27",
         "fine": "12:00",
         "titolo": "Ore 11",
         "descrizione": "Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.",
-        "immagine": "https://img-guidatv.org/10473/ore-11/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706401002601/media/2/2/056a99ec-6b16-414d-a735-5348b36a3dd5/da31e32e-d309-4892-9877-3be7aa002959.jpg"
       },
       {
         "ora": "12:00",
         "fine": "12:25",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
-        "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501054101/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "12:25",
         "fine": "12:58",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201054101/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "12:58",
         "fine": "13:34",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/10473/tg5/4.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201108201/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "13:34",
         "fine": "14:12",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-2026/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314686001005801/media/22/86/3737884b-ae0b-43cb-9af9-16473d20a478/26dcb11c-4d2e-444d-802c-e1830a6aa81e.jpg"
       },
       {
         "ora": "14:12",
@@ -26074,21 +26102,21 @@
         "fine": "15:59",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "15:59",
         "fine": "16:16",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:16",
         "fine": "16:28",
         "titolo": "Diario del giorno",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-giorno/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314228801019301/media/20/84/a8e68d84-a22a-4df1-b752-b1e5bfd4464a/c45e95b3-3b9b-4e06-ae07-262adcd8114d.jpg"
       },
       {
         "ora": "16:28",
@@ -26102,7 +26130,7 @@
         "fine": "17:11",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:11",
@@ -26116,21 +26144,21 @@
         "fine": "17:34",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:34",
         "fine": "17:42",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "17:42",
         "fine": "18:15",
         "titolo": "Dentro la notizia",
         "descrizione": "Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.",
-        "immagine": "https://img-guidatv.org/10473/dentro-la-notizia/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717101001601/media/16/80/c5970f07-a933-4c4e-81eb-3bfd029190d3/d0d1c4fc-6678-4be5-aa99-032f5dd7ea89.jpg"
       },
       {
         "ora": "18:15",
@@ -27804,9 +27832,9 @@
       {
         "ora": "03:55",
         "fine": "04:05",
-        "titolo": "Storia In Breve: Le Leggi Razziali",
-        "descrizione": "Un'analisi delle vicende che caratterizzano l'Italia nell'autunno del 1938, con l'applicazione di un pacchetto di leggi antiebraiche..",
-        "immagine": "https://img-guidatv.org/24/storia-in-breve-le-leggi-razziali/0.jpg"
+        "titolo": "Le Leggi Razziali",
+        "descrizione": "Un'analisi delle vicende che caratterizzano l'Italia nell'autunno del 1938. Decisioni che conducono a profondi e decisivi cambiamenti per tutto il paese. Il Gran Consiglio approva un pacchetto di leggi antiebraiche, cosiddette razziali, prodotto di un preciso progetto politico, per creare una nuova razza di italiani, fascisti e non ebrei. A guidarci nel racconto la storica Alessandra Tarquini.",
+        "immagine": "https://img-guidatv.org/24/le-leggi-razziali/0.jpg"
       },
       {
         "ora": "04:05",
@@ -27875,7 +27903,7 @@
         "ora": "11:05",
         "fine": "11:30",
         "titolo": "Sappada",
-        "descrizione": "Sappada è un borgo alpino unico nel panorama delle Dolomiti al confine con il Veneto, un'isola linguistica germanofona con una sua forte identità culturale e ricca di tradizioni tramandate di generazione in generazione. Questo piccolo pae - se di 1.300 abitanti ha un primato: può contare su ben dieci medaglie olimpiche e ventisette medaglie d'oro tra sci alpino, sci nordico, biathlon e snowboard.L'ultima atleta, originaria di Sappada, a conquistare il gradino più alto del podio è stata Lisa Vittozzi alle Olimpiadi invernali Milano Cortina 2026, la prima campionessa olimpica italiana nella storia del biathlon. Tutto questo rappresenta un punto di forza per il movimento degli sport invernali, non solo per il Friuli Venezia Giulia, ma anche per tutta Italia.",
+        "descrizione": "Sappada è un borgo alpino unico nel panorama delle Dolomiti al confine con il Veneto, un'isola linguistica germanofona con una sua forte identità culturale e ricca di tradizioni tramandate di generazione in generazione. Questo piccolo paese di 1.300 abitanti ha un primato: può contare su ben dieci medaglie olimpiche e ventisette medaglie d'oro tra sci alpino, sci nordico, biathlon e snowboard. L'ultima atleta, originaria di Sappada, a conquistare il gradino più alto del podio è stata Lisa Vittozzi alle Olimpiadi invernali Milano Cortina 2026, la prima campionessa olimpica italiana nella storia del biathlon. Tutto questo rappresenta un punto di forza per il movimento degli sport invernali, non solo per il Friuli Venezia Giulia, ma anche per tutta Italia.",
         "immagine": "https://img-guidatv.org/24/sappada/0.jpg"
       },
       {
@@ -28055,9 +28083,9 @@
       {
         "ora": "03:55",
         "fine": "04:05",
-        "titolo": "Storia In Breve: Le Leggi Razziali",
-        "descrizione": "Un'analisi delle vicende che caratterizzano l'Italia nell'autunno del 1938, con l'applicazione di un pacchetto di leggi antiebraiche..",
-        "immagine": "https://img-guidatv.org/24/storia-in-breve-le-leggi-razziali/0.jpg"
+        "titolo": "Le Leggi Razziali",
+        "descrizione": "Un'analisi delle vicende che caratterizzano l'Italia nell'autunno del 1938. Decisioni che conducono a profondi e decisivi cambiamenti per tutto il paese. Il Gran Consiglio approva un pacchetto di leggi antiebraiche, cosiddette razziali, prodotto di un preciso progetto politico, per creare una nuova razza di italiani, fascisti e non ebrei. A guidarci nel racconto la storica Alessandra Tarquini.",
+        "immagine": "https://img-guidatv.org/24/le-leggi-razziali/0.jpg"
       },
       {
         "ora": "04:05",
@@ -28126,7 +28154,7 @@
         "ora": "11:05",
         "fine": "11:30",
         "titolo": "Sappada",
-        "descrizione": "Sappada è un borgo alpino unico nel panorama delle Dolomiti al confine con il Veneto, un'isola linguistica germanofona con una sua forte identità culturale e ricca di tradizioni tramandate di generazione in generazione. Questo piccolo pae - se di 1.300 abitanti ha un primato: può contare su ben dieci medaglie olimpiche e ventisette medaglie d'oro tra sci alpino, sci nordico, biathlon e snowboard.L'ultima atleta, originaria di Sappada, a conquistare il gradino più alto del podio è stata Lisa Vittozzi alle Olimpiadi invernali Milano Cortina 2026, la prima campionessa olimpica italiana nella storia del biathlon. Tutto questo rappresenta un punto di forza per il movimento degli sport invernali, non solo per il Friuli Venezia Giulia, ma anche per tutta Italia.",
+        "descrizione": "Sappada è un borgo alpino unico nel panorama delle Dolomiti al confine con il Veneto, un'isola linguistica germanofona con una sua forte identità culturale e ricca di tradizioni tramandate di generazione in generazione. Questo piccolo paese di 1.300 abitanti ha un primato: può contare su ben dieci medaglie olimpiche e ventisette medaglie d'oro tra sci alpino, sci nordico, biathlon e snowboard. L'ultima atleta, originaria di Sappada, a conquistare il gradino più alto del podio è stata Lisa Vittozzi alle Olimpiadi invernali Milano Cortina 2026, la prima campionessa olimpica italiana nella storia del biathlon. Tutto questo rappresenta un punto di forza per il movimento degli sport invernali, non solo per il Friuli Venezia Giulia, ma anche per tutta Italia.",
         "immagine": "https://img-guidatv.org/24/sappada/0.jpg"
       },
       {
@@ -30449,20 +30477,20 @@
     "programmi": [
       {
         "ora": "02:10",
-        "fine": "04:15",
+        "fine": "04:05",
         "titolo": "Lawless",
         "descrizione": "Nella Virginia dei primi anni del proibizionismo i tre fratelli Bondurant distillano e vendono clandestinamente alcolici, prima fuori città, senza immischiarsi con i gangster che si ammazzano tra loro per le strade, poi alzando il rischio e il tenore degli affari, quando anche il più giovane dei tre, Jack, trova il coraggio che inizialmente sembrava non avere. L'arrivo da Chicago di Charlie Rakes, rappresentante della legge corrotto e feroce, mette però i fratelli Bonduant sulla strada di una guerra inevitabile e all'ultimo sangue.",
         "immagine": "https://img-guidatv.org/film_new/l/5f6a35f228ab40439078c070/5f6a35f228ab40439078c070_p_1_rs_300.jpg"
       },
       {
-        "ora": "04:15",
-        "fine": "04:55",
+        "ora": "04:05",
+        "fine": "04:50",
         "titolo": "Affari di famiglia",
         "descrizione": "Ep13 di 20 Assassinio di JFK - Mentre Chum e Rick sono alle prese con alcuni articoli, un cliente porta al banco dei pegni un microfilm originale sul delitto di John Kennedy.",
         "immagine": "https://img-guidatv.org/18/affari-di-famiglia/7.jpg"
       },
       {
-        "ora": "04:55",
+        "ora": "04:50",
         "fine": "05:35",
         "titolo": "Affari di famiglia",
         "descrizione": "Ep14 di 20 Souvenir stregato - Rick ha la possibilita' di guidare un carro armato della Seconda Guerra Mondiale. Inoltre lui e Corey dovranno valutare cosa fare con alcuni cimeli 'stregati'.",
@@ -30783,10 +30811,24 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:20",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:20",
+        "fine": "05:25",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
+      },
+      {
+        "ora": "05:25",
         "fine": "06:15",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "titolo": "Prima Ora",
+        "descrizione": "Porta d'ingresso alla fascia informativa serale della RSI con ospiti e servizi. Notizie di attualità, cultura e sport dalla Svizzera e dal mondo.",
+        "immagine": "https://img-guidatv.org/90/prima-ora/5.jpg"
       },
       {
         "ora": "06:05",
@@ -31027,10 +31069,24 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:20",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:20",
+        "fine": "05:25",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
+      },
+      {
+        "ora": "05:25",
         "fine": "06:15",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "titolo": "Prima Ora",
+        "descrizione": "Porta d'ingresso alla fascia informativa serale della RSI con ospiti e servizi. Notizie di attualità, cultura e sport dalla Svizzera e dal mondo.",
+        "immagine": "https://img-guidatv.org/90/prima-ora/5.jpg"
       },
       {
         "ora": "06:05",
@@ -31271,10 +31327,17 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:20",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:20",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
       },
       {
         "ora": "05:30",
@@ -31314,9 +31377,9 @@
       {
         "ora": "09:10",
         "fine": "10:00",
-        "titolo": "Casa Svizzera",
-        "descrizione": "Alice Pedrazzini / Fabrizio Casati",
-        "immagine": "https://img-guidatv.org/91/casa-svizzera/5.png"
+        "titolo": "Casa Svizzera - C’è chi corre, chi tosa… e chi mangia",
+        "descrizione": "Ci siamo svegliati in Scozia con Lorenza Gianoni, ai Mondiali dei cani da gregge: Border Collie e pecore ovunque. Ma quando è sceso il sole è partita un’altra gara: una pie da divorare, una pecora da tosare e una pinta da bere. Tutto il più velocemente possibile.E le sfide sono continuate: a Martigny Yvonnick Mosteau e la sua squadra hanno tagliato capelli per 60 ore di fila, mentre in Alaska è tornata la Fat Bear Week, con Chunk, un orso da oltre 500 chili, pronto a difendere il titolo.Poi siamo tornati in Ticino e abbiamo messo le scarpe da corsa: con Lorenzo Pitta e Sara Ruberto abbiamo scoperto il boom dei Running Club e una novità in arrivo il 4 ottobre: correre tutti insieme… dietro a un DJ in bicicletta.",
+        "immagine": "https://img-guidatv.org/91/casa-svizzera-c-e-chi-corre-chi-tosa-e-chi-mangia/0.jpg"
       },
       {
         "ora": "10:00",
@@ -31494,10 +31557,17 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:20",
+        "titolo": "TG Notte",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/91/tg-notte/5.jpg"
+      },
+      {
+        "ora": "05:20",
         "fine": "05:30",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/91/repliche-informazione/9.jpg"
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/91/meteo/5.jpg"
       },
       {
         "ora": "05:30",
@@ -31537,9 +31607,9 @@
       {
         "ora": "09:10",
         "fine": "10:00",
-        "titolo": "Casa Svizzera",
-        "descrizione": "Alice Pedrazzini / Fabrizio Casati",
-        "immagine": "https://img-guidatv.org/91/casa-svizzera/5.png"
+        "titolo": "Casa Svizzera - C’è chi corre, chi tosa… e chi mangia",
+        "descrizione": "Ci siamo svegliati in Scozia con Lorenza Gianoni, ai Mondiali dei cani da gregge: Border Collie e pecore ovunque. Ma quando è sceso il sole è partita un’altra gara: una pie da divorare, una pecora da tosare e una pinta da bere. Tutto il più velocemente possibile.E le sfide sono continuate: a Martigny Yvonnick Mosteau e la sua squadra hanno tagliato capelli per 60 ore di fila, mentre in Alaska è tornata la Fat Bear Week, con Chunk, un orso da oltre 500 chili, pronto a difendere il titolo.Poi siamo tornati in Ticino e abbiamo messo le scarpe da corsa: con Lorenzo Pitta e Sara Ruberto abbiamo scoperto il boom dei Running Club e una novità in arrivo il 4 ottobre: correre tutti insieme… dietro a un DJ in bicicletta.",
+        "immagine": "https://img-guidatv.org/91/casa-svizzera-c-e-chi-corre-chi-tosa-e-chi-mangia/0.jpg"
       },
       {
         "ora": "10:00",
