@@ -42,7 +42,9 @@ function buildExtUrl(ch) {
     const extId = tech.extensionId || DEFAULT_EXT_ID;
     const isTsStream = baseUrl.toLowerCase().includes(".ts");
     if (isTsStream) {
-        const origin = typeof window !== "undefined" ? window.location.origin : "https://next-zeta-smoky.vercel.app";
+        // Path relativo: l'app e' sempre servita dal tunnel Cloudflare,
+        // quindi l'origin corrente (trycloudflare) e' l'unico valido.
+        const origin = typeof window !== "undefined" ? window.location.origin : "";
         const m3uUrl = `${origin}/api/m3u?url=${encodeURIComponent(baseUrl)}&title=${encodeURIComponent(ch.name || "Sky Sport F1")}`;
         return `chrome-extension://${extId}/iptv/player.html#${m3uUrl}`;
     }

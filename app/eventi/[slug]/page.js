@@ -365,7 +365,9 @@ export default function EventoPlayerPage() {
         const rawUrl = selectedSource.url.trim();
         const isTsStream = rawUrl.toLowerCase().includes(".ts");
         if (isTsStream) {
-            const origin = typeof window !== "undefined" ? window.location.origin : "https://next-zeta-smoky.vercel.app";
+            // Path relativo: l'app e' sempre servita dal tunnel Cloudflare,
+            // quindi l'origin corrente (trycloudflare) e' l'unico valido.
+            const origin = typeof window !== "undefined" ? window.location.origin : "";
             const m3uUrl = `${origin}/api/m3u?url=${encodeURIComponent(rawUrl)}&title=${encodeURIComponent(channel?.title || "Stream")}`;
             return `chrome-extension://${extId}/iptv/player.html#${m3uUrl}`;
         }

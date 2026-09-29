@@ -1,21 +1,15 @@
+<!-- NOTA: la pagina GitHub Pages di questo progetto e' servita dal branch gh-pages.
+     Questo file su main e' solo una copia di riserva: aggiornato davvero da
+     update_redirect.py, che committa su gh-pages. -->
 <!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NMDZ - Live TV & Sport</title>
+<title>NMDZ - Live TV &amp; Sport</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta http-equiv="refresh" content="0;url=https://much-principle-scholarship-detective.trycloudflare.com">
-<script>
-    (function() {
-        var target = "https://much-principle-scholarship-detective.trycloudflare.com";
-        if (target && target.startsWith("http")) {
-            window.location.replace(target);
-        }
-    })();
-</script>
 <style>
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -27,6 +21,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    padding: 24px;
     text-align: center;
 }
 .spinner {
@@ -38,6 +33,7 @@ body {
     animation: spin 0.8s linear infinite;
     margin-bottom: 20px;
 }
+.spinner.hidden { display: none; }
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -46,18 +42,83 @@ h2 { margin: 0 0 8px 0; font-size: 1.25rem; font-weight: 600; }
 p { margin: 0; font-size: 0.95rem; color: #94a3b8; }
 a { color: #00e59b; text-decoration: none; font-weight: 500; }
 a:hover { text-decoration: underline; }
-.manual-link { margin-top: 20px; }
+.box {
+    margin-top: 22px;
+    padding: 16px 20px;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    background: #111827;
+    max-width: 560px;
+}
+.box code {
+    display: block;
+    margin-top: 8px;
+    color: #00e59b;
+    font-size: 0.85rem;
+    word-break: break-all;
+}
+.hidden { display: none; }
 </style>
 </head>
 <body>
 
-<div class="spinner"></div>
-<h2>Connessione a NMDZ...</h2>
-<p>Reindirizzamento in corso...</p>
+<div class="spinner" id="spinner"></div>
+<h2 id="title">Connessione a NMDZ...</h2>
+<p id="desc">Verifica del tunnel in corso...</p>
 
-<div class="manual-link">
-    <p>Se non vieni reindirizzato automaticamente: <a href="https://much-principle-scholarship-detective.trycloudflare.com">clicca qui per accedere a NMDZ</a></p>
+<div class="box hidden" id="errBox">
+    <h2 style="color:#f87171;font-size:1.05rem;">Tunnel non raggiungibile</h2>
+    <p style="margin-top:10px;line-height:1.6;">
+        Il server sul telefono non risponde. Riavvia <code>start_termux.sh</code>
+        su Termux e attendi la riga <strong>SITO ONLINE</strong>.
+    </p>
+    <code id="errLink">https://much-principle-scholarship-detective.trycloudflare.com</code>
+    <p style="margin-top:14px;">
+        <a id="manualLink" href="https://much-principle-scholarship-detective.trycloudflare.com">Prova comunque ad aprire il tunnel</a>
+    </p>
 </div>
 
+<script>
+// Il link e' scritto qui dentro dal Termux: nessuna chiamata API, nessun rate limit.
+var DEST = "https://much-principle-scholarship-detective.trycloudflare.com";
+var tentativi = 0;
+
+async function tunnelRisponde() {
+    try {
+        // no-cors: non leggiamo il corpo, ci basta sapere che il server risponde.
+        await fetch(DEST + "/favicon.ico?probe=" + Date.now(), {
+            mode: "no-cors",
+            cache: "no-store"
+        });
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+
+async function doRedirect() {
+    tentativi++;
+    document.getElementById("desc").textContent =
+        "Tentativo " + tentativi + " di 6...";
+
+    if (await tunnelRisponde()) {
+        document.getElementById("title").textContent = "Connessione riuscita";
+        document.getElementById("desc").textContent = "Apertura del sito in corso...";
+        window.location.replace(DEST);
+        return;
+    }
+
+    if (tentativi >= 6) {
+        document.getElementById("spinner").classList.add("hidden");
+        document.getElementById("title").textContent = "Connessione non riuscita";
+        document.getElementById("errBox").classList.remove("hidden");
+        return;
+    }
+
+    setTimeout(doRedirect, 2500);
+}
+
+doRedirect();
+</script>
 </body>
 </html>

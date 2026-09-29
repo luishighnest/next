@@ -42,10 +42,19 @@ while true; do
         echo "=============================================="
         echo "  LINK TUNNEL: $LINK"
         echo "  Aggiorno https://luishighnest.github.io/next/ ..."
-        python update_redirect.py "$LINK"
-        echo "=============================================="
-        echo "  SITO ONLINE FISSO: https://luishighnest.github.io/next/"
-        echo "=============================================="
+        if python update_redirect.py "$LINK"; then
+            echo "=============================================="
+            echo "  SITO ONLINE: https://luishighnest.github.io/next/"
+            echo "=============================================="
+        else
+            echo "=============================================="
+            echo "  ERRORE: redirect NON pubblicato."
+            echo "  Il sito puo' mostrare un tunnel vecchio/morto."
+            echo "  Controlla che github_token.txt esista e contenga un"
+            echo "  token GitHub valido (permessi contents:write)."
+            echo "  Tunnel attuale comunque raggiungibile qui: $LINK"
+            echo "=============================================="
+        fi
     else
         echo "Errore: link tunnel non trovato in tempo."
     fi

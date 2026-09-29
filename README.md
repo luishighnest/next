@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NMDZ - Live TV & Sport
 
-## Getting Started
+Piattaforma di streaming Next.js 16 + React 19.
 
-First, run the development server:
+## Come funziona il deploy
+
+Il sito **non** e' deployato su un hosting statico. La catena e' questa:
+
+1. `start_termux.sh` gira su **Termux** (Android): avvia `next start` su `0.0.0.0:3000`
+   e poi un **Cloudflare quick tunnel** (`cloudflared`) verso `127.0.0.1:3000`.
+   Ogni avvio genera un URL casuale `https://<random>.trycloudflare.com`.
+2. `update_redirect.py <link>` scrive quel link nella pagina GitHub Pages e la
+   pubblica sul branch **`gh-pages`**.
+3. `https://luishighnest.github.io/next/` e' l'indirizzo stabile: reindirizza
+   al tunnel attivo, verificandone prima la raggiungibilita'.
+
+> GitHub Pages per questo progetto serve il branch `gh-pages`, **non** `main`.
+> Committare `index.html` su `main` non cambia nulla per l'utente finale.
+
+### Requisiti
+
+- `github_token.txt` nella root del progetto: token GitHub con permesso
+  `contents:write` (per scrivere sul branch `gh-pages`). Va tenuto fuori dal
+  repository (e' in `.gitignore`).
+- `npm install` almeno una volta (i `node_modules` non sono nel repository).
+
+### Avvio
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git fetch origin && git reset --hard origin/main
+bash start_termux.sh
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Lo script ripete il ciclo automaticamente: se Next.js va in crash riavvia, e a
+ogni riavvio ripubblica il nuovo tunnel.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Dati
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+I contenuti vivono in **Upstash Redis** (`stream:eventi`, `stream:sky1`,
+`stream:sky2`, `stream:guida`, ...). Senza Redis le API usano il fallback locale
+`data/store.json` e poi i file in `public/*.json`.
 
-## Learn More
+La guida TV viene ricalcolata 4 volte al giorno da
+`.github/workflows/update_epg.yml`, che committa `public/guida_tv_sky.json`.
 
-To learn more about Next.js, take a look at the following resources:
+## Sviluppo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run dev     # sviluppo su http://localhost:3000
+npm run build   # build di produzione
+npm run start   # serve la build
+npm run lint    # eslint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Note tecniche
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/api/proxy` e `/api/img` sono proxy server-side: accettano una URL arbitraria
+  e la scaricano dal server.
+- `/api/cron/guida` e `/api/richiedi` vanno protetti prima di esporli.
+- Le credenziali di default in `.env.example` sono segreti reali: ruotare
+  Upstash e `API_SECRET_KEY` e spostarli in secret GitHub.

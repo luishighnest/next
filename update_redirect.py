@@ -1,32 +1,37 @@
-"""Aggiorna la pagina GitHub Pages di Next che reindirizza al link tunnel corrente."""
+"""Pubblica il link del tunnel Cloudflare sulla pagina GitHub Pages del progetto.
+
+GitHub Pages per https://luishighnest.github.io/next/ serve il branch `gh-pages`,
+NON `main`: per questo il file va committato e pushato su `gh-pages`.
+Il link viene scritto direttamente dentro la pagina, senza dipendere dalla
+homepage del repo ne' da chiamate all'API GitHub dal browser.
+
+Uso:  python update_redirect.py https://xxxx.trycloudflare.com
+Esito: 0 = pubblicato, 1 = errore (-nessun tunnel pubblicato).
+"""
+import html
 import json
+import shutil
 import subprocess
 import sys
+import tempfile
+import time
 import urllib.request
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
-INDEX = BASE_DIR / "index.html"
 TOKEN_FILE = BASE_DIR / "github_token.txt"
+REPO = "luishighnest/next"
+PAGES_BRANCH = "gh-pages"
 
 TEMPLATE = """<!DOCTYPE html>
 <html lang="it">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NMDZ - Live TV & Sport</title>
+<title>NMDZ - Live TV &amp; Sport</title>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
-<meta http-equiv="refresh" content="0;url={link}">
-<script>
-    (function() {{
-        var target = "{link}";
-        if (target && target.startsWith("http")) {{
-            window.location.replace(target);
-        }}
-    }})();
-</script>
 <style>
 body {{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -38,6 +43,7 @@ body {{
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    padding: 24px;
     text-align: center;
 }}
 .spinner {{
@@ -49,6 +55,7 @@ body {{
     animation: spin 0.8s linear infinite;
     margin-bottom: 20px;
 }}
+.spinner.hidden {{ display: none; }}
 @keyframes spin {{
     0% {{ transform: rotate(0deg); }}
     100% {{ transform: rotate(360deg); }}
@@ -57,43 +64,139 @@ h2 {{ margin: 0 0 8px 0; font-size: 1.25rem; font-weight: 600; }}
 p {{ margin: 0; font-size: 0.95rem; color: #94a3b8; }}
 a {{ color: #00e59b; text-decoration: none; font-weight: 500; }}
 a:hover {{ text-decoration: underline; }}
-.manual-link {{ margin-top: 20px; }}
+.box {{
+    margin-top: 22px;
+    padding: 16px 20px;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    background: #111827;
+    max-width: 560px;
+}}
+.box code {{
+    display: block;
+    margin-top: 8px;
+    color: #00e59b;
+    font-size: 0.85rem;
+    word-break: break-all;
+}}
+.hidden {{ display: none; }}
 </style>
 </head>
 <body>
 
-<div class="spinner"></div>
-<h2>Connessione a NMDZ...</h2>
-<p>Reindirizzamento in corso...</p>
+<div class="spinner" id="spinner"></div>
+<h2 id="title">Connessione a NMDZ...</h2>
+<p id="desc">Verifica del tunnel in corso...</p>
 
-<div class="manual-link">
-    <p>Se non vieni reindirizzato automaticamente: <a href="{link}">clicca qui per accedere a NMDZ</a></p>
+<div class="box hidden" id="errBox">
+    <h2 style="color:#f87171;font-size:1.05rem;">Tunnel non raggiungibile</h2>
+    <p style="margin-top:10px;line-height:1.6;">
+        Il server sul telefono non risponde. Riavvia <code>start_termux.sh</code>
+        su Termux e attendi la riga <strong>SITO ONLINE</strong>.
+    </p>
+    <code id="errLink">{link}</code>
+    <p style="margin-top:14px;">
+        <a id="manualLink" href="{link}">Prova comunque ad aprire il tunnel</a>
+    </p>
 </div>
 
+<script>
+// Il link e' scritto qui dentro dal Termux: nessuna chiamata API, nessun rate limit.
+var DEST = "{link}";
+var tentativi = 0;
+
+async function tunnelRisponde() {{
+    try {{
+        // no-cors: non leggiamo il corpo, ci basta sapere che il server risponde.
+        await fetch(DEST + "/favicon.ico?probe=" + Date.now(), {{
+            mode: "no-cors",
+            cache: "no-store"
+        }});
+        return true;
+    }} catch (e) {{
+        return false;
+    }}
+}}
+
+async function doRedirect() {{
+    tentativi++;
+    document.getElementById("desc").textContent =
+        "Tentativo " + tentativi + " di 6...";
+
+    if (await tunnelRisponde()) {{
+        document.getElementById("title").textContent = "Connessione riuscita";
+        document.getElementById("desc").textContent = "Apertura del sito in corso...";
+        window.location.replace(DEST);
+        return;
+    }}
+
+    if (tentativi >= 6) {{
+        document.getElementById("spinner").classList.add("hidden");
+        document.getElementById("title").textContent = "Connessione non riuscita";
+        document.getElementById("errBox").classList.remove("hidden");
+        return;
+    }}
+
+    setTimeout(doRedirect, 2500);
+}}
+
+doRedirect();
+</script>
 </body>
 </html>"""
 
-def git(*args):
-    return subprocess.run(["git", *args], cwd=str(BASE_DIR), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-def push_with_retry(repo_url, attempts=3):
-    # Il ramo main avanza in continuazione (cron Guida TV + altri commit):
-    # allinea il locale con pull --rebase autostash (gestisce worktree sporco) e ritenta.
-    for attempt in range(1, attempts + 1):
-        git("pull", "--rebase", "--autostash", repo_url, "main")
-        push = git("push", repo_url, "HEAD:main")
-        if push.returncode == 0:
-            return True
-        print(f"[redirect] Push in conflitto (tentativo {attempt}/{attempts}), riallineo e ritento...")
+def run(args, cwd):
+    return subprocess.run(
+        args, cwd=str(cwd), stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True
+    )
+
+
+def fail(msg, code=1):
+    print(f"[redirect] ERRORE: {msg}")
+    return code
+
+
+def build_page(link):
+    return TEMPLATE.format(link=html.escape(link, quote=True))
+
+
+def check_tunnel(link):
+    """Il tunnel deve rispondere PRIMA di essere pubblicato, altrimenti si
+    pubblica un link morto e l'utente vede la pagina vuota con errore 530."""
+    for tentativo in range(1, 11):
+        richiesta = urllib.request.Request(
+            link + "/favicon.ico?probe=" + str(tentativo),
+            headers={"User-Agent": "Mozilla/5.0"},
+        )
+        try:
+            with urllib.request.urlopen(richiesta, timeout=8) as resp:
+                if resp.status < 500:
+                    return True
+        except Exception as e:
+            codice = getattr(e, "code", None)
+            # 404/403 dal tunnel significa che il server Next.js risponde: va bene.
+            if codice in (401, 403, 404):
+                return True
+        print(f"[redirect] Tunnel non ancora pronto (tentativo {tentativo}/10)...")
+        time.sleep(2)
     return False
 
-def update_github_repo_homepage(token, link):
+
+def read_token():
+    if not TOKEN_FILE.exists():
+        return None
+    token = TOKEN_FILE.read_text(encoding="utf-8").strip()
+    return token or None
+
+
+def update_homepage(token, link):
+    """Specchio secondario: tiene aggiornata la homepage del repo.
+    Non e' piu' necessario al redirect, ma utile come riferimento."""
     try:
-        url = "https://api.github.com/repos/luishighnest/next"
-        payload = json.dumps({"homepage": link}).encode("utf-8")
         req = urllib.request.Request(
-            url,
-            data=payload,
+            f"https://api.github.com/repos/{REPO}",
+            data=json.dumps({"homepage": link}).encode("utf-8"),
             headers={
                 "Authorization": f"Bearer {token}",
                 "User-Agent": "Next-Sync",
@@ -104,44 +207,94 @@ def update_github_repo_homepage(token, link):
         )
         with urllib.request.urlopen(req, timeout=10) as resp:
             if resp.status in (200, 204):
-                print(f"[redirect] API GitHub Homepage aggiornata istantaneamente a: {link}")
+                print(f"[redirect] Homepage del repo aggiornata: {link}")
                 return True
     except Exception as e:
-        print(f"[redirect] Attenzione errore API GitHub homepage: {e}")
+        print(f"[redirect] (info) homepage non aggiornata: {e}")
     return False
+
+
+def publish_to_pages(token, link):
+    """Scrive index.html nel branch `gh-pages` tramite worktree temporanea,
+    cosi il worktree principale (su main) non viene toccato."""
+    repo_url = f"https://x-access-token:{token}@github.com/{REPO}.git"
+    worktree = Path(tempfile.mkdtemp(prefix="ghpages-"))
+    try:
+        r = run(["git", "fetch", repo_url, f"{PAGES_BRANCH}:{PAGES_BRANCH}"], BASE_DIR)
+        if r.returncode != 0:
+            return fail(f"fetch di {PAGES_BRANCH} fallito: {r.stdout.strip()}")
+
+        r = run(["git", "worktree", "add", "--detach", str(worktree), PAGES_BRANCH], BASE_DIR)
+        if r.returncode != 0:
+            return fail(f"worktree non creato: {r.stdout.strip()}")
+
+        target = worktree / "index.html"
+        nuova = build_page(link)
+        if target.exists() and target.read_text(encoding="utf-8") == nuova:
+            print("[redirect] Pagina gia' aggiornata, nessun commit necessario.")
+            return 0
+
+        target.write_text(nuova, encoding="utf-8")
+
+        # La pagina di GitHub Pages e' statica: nessun requisito di root.
+        run(["git", "config", "user.name", "Termux Auto-Sync"], worktree)
+        run(["git", "config", "user.email", "termux-sync@users.noreply.github.com"], worktree)
+        r = run(["git", "add", "index.html"], worktree)
+        if r.returncode != 0:
+            return fail(f"git add fallito: {r.stdout.strip()}")
+        r = run(["git", "commit", "-m", f"redirect: tunnel {link}"], worktree)
+        if r.returncode != 0:
+            return fail(f"git commit fallito: {r.stdout.strip()}")
+
+        # 3 tentativi: main avanza spesso (cron Guida TV) e il push puo' essere
+        # respinto. Ad ogni tentativo si riallinea gh-pages su origin.
+        for tentativo in range(1, 4):
+            r = run(["git", "push", repo_url, f"HEAD:{PAGES_BRANCH}"], worktree)
+            if r.returncode == 0:
+                print(f"[redirect] Pagina pubblicata su {PAGES_BRANCH}: {link}")
+                return 0
+            print(f"[redirect] Push respinto (tentativo {tentativo}/3), riallineo...")
+            run(["git", "fetch", repo_url, PAGES_BRANCH], worktree)
+            r = run(["git", "reset", "--hard", "FETCH_HEAD"], worktree)
+            if r.returncode != 0:
+                return fail(f"reset su gh-pages fallito: {r.stdout.strip()}")
+            target.write_text(build_page(link), encoding="utf-8")
+            run(["git", "add", "index.html"], worktree)
+            run(["git", "commit", "-m", f"redirect: tunnel {link}"], worktree)
+
+        return fail("push a gh-pages fallito dopo 3 tentativi")
+    finally:
+        run(["git", "worktree", "remove", "--force", str(worktree)], BASE_DIR)
+        run(["git", "worktree", "prune"], BASE_DIR)
+        shutil.rmtree(worktree, ignore_errors=True)
+
 
 def main():
     if len(sys.argv) < 2:
-        print("[redirect] Errore: manca il link come argomento")
-        return 1
-    link = sys.argv[1].strip()
-    token = ""
-    if TOKEN_FILE.exists():
-        token = TOKEN_FILE.read_text(encoding="utf-8").strip()
+        return fail("manca il link del tunnel come argomento")
+
+    link = sys.argv[1].strip().rstrip("/")
+    if not link.startswith("https://") or ".trycloudflare.com" not in link:
+        return fail(f"link non valido: {link}")
+
+    token = read_token()
     if not token:
-        print("[redirect] Errore: github_token.txt non trovato")
-        return 1
+        return fail(
+            "github_token.txt non trovato o vuoto. "
+            "Create il file con un token GitHub (permessi contents:write) "
+            "nella cartella del progetto."
+        )
 
-    update_github_repo_homepage(token, link)
-    INDEX.write_text(TEMPLATE.format(link=link), encoding="utf-8")
+    print(f"[redirect] Verifico che il tunnel {link} risponda...")
+    if not check_tunnel(link):
+        return fail(
+            f"il tunnel {link} non risponde. "
+            "Non pubblico un link morto: riavvia start_termux.sh e riprova."
+        )
 
-    repo_url = f"https://x-access-token:{token}@github.com/luishighnest/next.git"
-    try:
-        subprocess.run(["git", "config", "user.name", "Termux Auto-Sync"], cwd=str(BASE_DIR), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        subprocess.run(["git", "config", "user.email", "termux-sync@users.noreply.github.com"], cwd=str(BASE_DIR), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        subprocess.run(["git", "add", "index.html", "update_redirect.py"], cwd=str(BASE_DIR), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        diff = subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=str(BASE_DIR), stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        if diff.returncode != 0:
-            subprocess.run(["git", "commit", "-m", "redirect: cloudflare tunnel sync"], cwd=str(BASE_DIR), check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-            if push_with_retry(repo_url):
-                print("[redirect] index.html pushato con successo.")
-            else:
-                print("[redirect] Push non riuscito: il ramo main e' avanzato di nuovo (cron/altri commit). "
-                      "Il redirect resta attivo via API homepage GitHub; il push riprovera' al prossimo avvio.")
-        return 0
-    except Exception as e:
-        print(f"[redirect] Errore push: {e}")
-        return 1
+    update_homepage(token, link)
+    return publish_to_pages(token, link)
+
 
 if __name__ == "__main__":
     sys.exit(main())

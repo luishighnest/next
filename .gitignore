@@ -33,6 +33,13 @@ yarn-error.log*
 .env*
 !.env.example
 
+# token GitHub usato da update_redirect.py per pubblicare il branch gh-pages
+github_token.txt
+
+# python
+__pycache__/
+*.py[cod]
+
 
 # vercel
 .vercel
