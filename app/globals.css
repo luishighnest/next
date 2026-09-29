@@ -1712,7 +1712,13 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     z-index: 10001;
     pointer-events: none;
     box-sizing: border-box;
-    will-change: transform, background, opacity;
+    /* RIMOSSO: will-change: transform, background, opacity.
+       Promuoveva permanentemente la barra a layer GPU. Su Android, quando un
+       layer fisso cosi' si sovrappone al layer hardware del player (che e' il
+       caso della pagina evento), Chrome ne riduce la scala di rasterizzazione
+       e il testo esce sfocato. Inoltre 'background' non e' una proprieta'
+       componibile: non guadagnava nulla e costava memoria GPU.
+       Le transizioni sono brevi (0.45-0.65s) e vengono promosse da sole. */
 }
 
 /* Transizioni abilitate solo quando il componente è montato per evitare salti o flash all'avvio */
@@ -1769,16 +1775,26 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 /* Modalità in cima alla pagina: sfumatura scura superiore trasparente che si fonde con l'hero */
+/* STESSA grafica in ogni stato e in ogni pagina.
+   Prima 'header-top' usava un gradiente che sfumava a 'transparent': la navbar
+   lasciava quindi emergere il contenuto sottostante. Sulle pagine normali
+   dietro c'e' il fondo scuro e non si nota, ma sulla pagina evento dietro c'e'
+   la copertina luminosa dell'evento, che traspariva rendendo testo e icone
+   slavati e la barra dall'aspetto diverso dal resto del sito.
+   Ora header-top e header-scrolled condividono lo stesso fondo pieno, quindi la
+   barra ha sempre identica grafica, su qualunque pagina e a qualunque scroll. */
 .home-header-wrapper.header-top {
-    background: linear-gradient(180deg, rgba(8, 12, 22, 0.88) 0%, rgba(8, 12, 22, 0.35) 60%, transparent 100%) !important;
+    background: rgba(9, 13, 23, 0.92) !important;
     border: none !important;
     border-bottom: none !important;
     box-shadow: none !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
+    backdrop-filter: blur(28px) saturate(190%) !important;
+    -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
 }
 
 /* Modalità durante lo scroll: vetro ardesia scuro premium senza linee o bordi inferiori */
+/* Stessa identica grafica di .header-top: unica regola per entrambi gli stati,
+   cosi' non possono piu' divergere. */
 .home-header-wrapper.header-scrolled {
     background: rgba(9, 13, 23, 0.92) !important;
     border: none !important;
@@ -1919,12 +1935,20 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
     justify-content: center;
     height: 38px;
     padding: 0 16px;
-    color: rgba(255, 255, 255, 0.7);
+    /* Bianco pieno, non rgba(...,0.7): su sfondo scuro il 70% leggeva come
+       grigio slavato, e con la copertina chiara della pagina evento dietro
+       diventava illeggibile. Ora il testo e' nitido e identico ovunque. */
+    color: #ffffff;
     text-decoration: none;
     font-size: 0.88rem;
     font-weight: 600;
     letter-spacing: 0.8px;
     text-transform: uppercase;
+    /* Testo reso con antialiasing pieno: garantisce bordi netti anche quando
+       la barra viene promossa a layer GPU dal browser. */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     border-radius: 8px;
     transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
                 background-color 0.2s cubic-bezier(0.16, 1, 0.3, 1),
@@ -2494,17 +2518,22 @@ body.no-channel #controls-timeline { pointer-events: none; opacity: 0.3; }
 }
 
 .home-header-dock-container.fade-enter {
-    animation: dockFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    /* Animazione solo di opacita', senza fill-mode.
+       Prima animava anche 'transform: translateY(6px) -> translateY(0)' con
+       fill 'forwards': la trasformazione finale restava applicata per sempre
+       (Chrome la espone come matrix(1,0,0,1,0,0)), quindi TUTTO il testo della
+       navbar rimaneva dentro un layer compositato permanente, rasterizzato a
+       risoluzione ridotta e quindi sfocato. Uno scorrimento di 6px su una
+       barra fissa non si vede, e non vale la pena tenere vivo un layer. */
+    animation: dockFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 @keyframes dockFadeIn {
     from {
         opacity: 0;
-        transform: translateY(6px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
 
@@ -5772,12 +5801,17 @@ html {
     transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), 
                 box-shadow 0.28s cubic-bezier(0.16, 1, 0.3, 1),
                 border-color 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
-    will-change: transform;
     cursor: pointer;
 }
+/* will-change: transform promuoveva OGNI card a layer GPU in permanenza:
+   sulla home erano 374 layer contemporanei, che esauriscono la memoria GPU e
+   fanno degradare la qualita' di rasterizzazione delle altre superfici (la
+   navbar fissa compresa). La promozione avviene da sola durante la
+   transizione, quindi basta dichiararla solo sugli stati interattivi. */
 .channel-card:hover, .now-card:hover {
     transform: translateY(-5px) scale(1.02) !important;
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 255, 255, 0.08) !important;
+    will-change: transform;
 }
 .channel-card:active, .now-card:active {
     transform: scale(0.96) !important;
