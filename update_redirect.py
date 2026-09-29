@@ -161,25 +161,58 @@ def build_page(link):
     return TEMPLATE.format(link=html.escape(link, quote=True))
 
 
-def check_tunnel(link):
-    """Il tunnel deve rispondere PRIMA di essere pubblicato, altrimenti si
-    pubblica un link morto e l'utente vede la pagina vuota con errore 530."""
-    for tentativo in range(1, 11):
-        richiesta = urllib.request.Request(
-            link + "/favicon.ico?probe=" + str(tentativo),
-            headers={"User-Agent": "Mozilla/5.0"},
+def probe(url, timeout=8):
+    """Verifica se un URL risponde. Restituisce (ok, dettaglio).
+
+    Usa curl quando disponibile: su Termux il bundle CA di Python spesso manca
+    (niente certifi) e ogni chiamata HTTPS con urllib fallisce con
+    'certificate verify failed' anche se il sito e' perfettamente funzionante.
+    Se curl non c'e', ripiega su urllib con verifica TLS disattivata, dato che
+    qui non verifichiamo il certificato ma solo se qualcosa risponde.
+    """
+    if shutil.which("curl"):
+        r = subprocess.run(
+            ["curl", "-sS", "-o", "/dev/null", "-L", "--max-time", str(timeout),
+             "-w", "%{http_code}", url],
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
         )
-        try:
-            with urllib.request.urlopen(richiesta, timeout=8) as resp:
-                if resp.status < 500:
-                    return True
-        except Exception as e:
-            codice = getattr(e, "code", None)
-            # 404/403 dal tunnel significa che il server Next.js risponde: va bene.
-            if codice in (401, 403, 404):
-                return True
-        print(f"[redirect] Tunnel non ancora pronto (tentativo {tentativo}/10)...")
-        time.sleep(2)
+        codice = (r.stdout or "").strip()[-3:]
+        if codice.isdigit() and codice != "000":
+            return True, f"HTTP {codice}"
+        return False, (r.stderr or "").strip()[:80] or "nessuna risposta"
+
+    import ssl
+    ctx = ssl._create_unverified_context()
+    try:
+        with urllib.request.urlopen(url, timeout=timeout, context=ctx) as resp:
+            return True, f"HTTP {resp.status}"
+    except urllib.error.HTTPError as e:
+        # 401/403/404/5xx dal tunnel: il server Next.js risponde, quindi va bene.
+        return True, f"HTTP {e.code}"
+    except Exception as e:
+        return False, str(e)[:80]
+
+
+def check_tunnel(link, tentativi=3, attesa=2):
+    """Verifica CONSULTIVA del tunnel: serve a informare, non a bloccare.
+
+    Non bloccare e' deliberato: l'unico modo per raggiungere il sito e' questo
+    link, quindi pubblicare quello appena creato e' sempre meglio che lasciare
+    puntare alla pagina a un tunnel vecchio e morto. Se il check fallisce si
+    avvisa e si pubblica lo stesso, e la pagina di redirect riprova dal lato
+    del browser (che ha un percorso di rete diverso rispetto al telefono).
+    """
+    for tentativo in range(1, tentativi + 1):
+        ok, dettaglio = probe(link + "/favicon.ico?probe=" + str(tentativo))
+        if ok:
+            print(f"[redirect] Tunnel raggiungibile dal telefono ({dettaglio}).")
+            return True
+        print(f"[redirect] Prova {tentativo}/{tentativi}: {dettaglio}")
+        if tentativo < tentativi:
+            time.sleep(attesa)
+    print("[redirect] ATTENZIONE: non riesco a verificare il tunnel dal telefono.")
+    print("[redirect] Procedo con la pubblicazione: se il tunnel non e' ancora")
+    print("[redirect] pronto si attivera' entro pochi secondi.")
     return False
 
 
@@ -285,12 +318,8 @@ def main():
             "nella cartella del progetto."
         )
 
-    print(f"[redirect] Verifico che il tunnel {link} risponda...")
-    if not check_tunnel(link):
-        return fail(
-            f"il tunnel {link} non risponde. "
-            "Non pubblico un link morto: riavvia start_termux.sh e riprova."
-        )
+    print(f"[redirect] Verifico il tunnel {link}...")
+    check_tunnel(link)
 
     update_homepage(token, link)
     return publish_to_pages(token, link)

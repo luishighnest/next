@@ -19,7 +19,30 @@ while true; do
     fi
     npm run start -- -H 0.0.0.0 -p 3000 > /dev/null 2>&1 &
     PID_NEXT=$!
-    sleep 4
+
+    # Il tunnel va avviato solo quando Next.js e' davvero in ascolto: altrimenti
+    # cloudflared accetta connessioni e risponde 502/503, e il link pubblicato
+    # porterebbe a una pagina di errore. Controllo in HTTP locale: nessun TLS,
+    # quindi funziona anche senza bundle CA.
+    echo "    Attendo che Next.js sia in ascolto su 127.0.0.1:3000..."
+    READY=0
+    for i in $(seq 1 40); do
+        if ! kill -0 $PID_NEXT 2>/dev/null; then
+            echo "    Next.js e' terminato durante l'avvio."
+            break
+        fi
+        if curl -s -o /dev/null --max-time 3 http://127.0.0.1:3000/ 2>/dev/null; then
+            READY=1
+            break
+        fi
+        sleep 1
+    done
+    if [ "$READY" = "1" ]; then
+        echo "    Next.js pronto (~$((i))s)."
+    else
+        echo "    ATTENZIONE: Next.js non ha risposto entro 40s."
+        echo "    Procedo comunque: il link del tunnel sara' pubblicato."
+    fi
 
     echo "[3/4] Avvio Cloudflare Tunnel (IPv4 + HTTP/2)..."
     rm -f tunnel.log
