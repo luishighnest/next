@@ -10,6 +10,7 @@
   "/api/richiedi/route": "app/api/richiedi/route.js",
   "/api/sky/route": "app/api/sky/route.js",
   "/api/vod/route": "app/api/vod/route.js",
+  "/calendario/page": "app/calendario/page.js",
   "/eventi/[slug]/page": "app/eventi/[slug]/page.js",
   "/eventi/page": "app/eventi/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",

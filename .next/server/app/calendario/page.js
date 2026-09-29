@@ -1,0 +1,13 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/calendario/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__11w50aa._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_1n3w9lb._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__10hbs-g._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0xpcv9w._.js")
+R.c("server/chunks/ssr/_1j9xbza._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_0wpq8j3._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_forbidden_0symwr9.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_unauthorized_0l_sp0x.js")
+R.c("server/chunks/ssr/node_modules_next_dist_client_components_builtin_global-error_0q-w892.js")
+R.c("server/chunks/ssr/_next-internal_server_app_calendario_page_actions_0xxmu4l.js")
+R.m(47196)
+module.exports=R.m(47196).exports

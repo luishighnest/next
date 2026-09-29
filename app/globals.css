@@ -6191,6 +6191,35 @@ html {
         }
     
 
+        /* Nav Calendar Button - stesso aspetto di ricerca e impostazioni */
+        .calendar-icon-btn {
+            width: 36px !important;
+            height: 36px !important;
+            min-width: 36px !important;
+            max-width: 36px !important;
+            border-radius: 50% !important;
+            background: transparent !important;
+            border: none !important;
+            color: var(--text-secondary, #888888) !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            cursor: pointer !important;
+            transition: background 0.2s ease, color 0.2s ease !important;
+            flex-shrink: 0 !important;
+            padding: 0 !important;
+            margin: 0 4px !important;
+            box-shadow: none !important;
+            outline: none !important;
+            vertical-align: middle !important;
+            box-sizing: border-box !important;
+        }
+        .calendar-icon-btn:hover {
+            background: var(--bg-hover, #1a1a1a) !important;
+            color: var(--text-primary, #ffffff) !important;
+        }
+        .calendar-icon-btn i { font-size: 1.05rem !important; line-height: 1 !important; }
+
         /* Nav Settings Button - 100% IDENTICO AL TASTO RICERCA */
         .settings-icon-btn, #nav-settings-btn {
             width: 36px !important;
@@ -6200,7 +6229,7 @@ html {
             border-radius: 50% !important;
             background: transparent !important;
             border: none !important;
-            color: var(--text-secondary, rgba(255, 255, 255, 0.7)) !important;
+            color: var(--text-secondary, #888888) !important;
             display: inline-flex !important;
             align-items: center !important;
             justify-content: center !important;
@@ -6215,7 +6244,7 @@ html {
             box-sizing: border-box !important;
         }
         .settings-icon-btn:hover, #nav-settings-btn:hover {
-            background: var(--bg-hover, rgba(255, 255, 255, 0.1)) !important;
+            background: var(--bg-hover, #1a1a1a) !important;
             color: var(--text-primary, #ffffff) !important;
             transform: none !important;
         }
@@ -13348,6 +13377,260 @@ body:has(.sky-app) {
     .event-sources-wrapper {
         width: 100%;
     }
+}
+
+
+/* ==========================================================
+   CALENDARIO EVENTI  (dati da campipaolo/Livesoccer)
+   ========================================================== */
+.cal-page {
+    min-height: 100vh;
+    background: var(--bg-base, #000000);
+    color: var(--text-primary, #ffffff);
+    padding-top: var(--nmdz-header-h, 72px);
+    padding-bottom: 60px;
+}
+
+.cal-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.cal-header { margin-bottom: 22px; }
+
+.cal-titolo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+
+.cal-badges {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cal-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 13.5px;
+    font-weight: 600;
+    background: rgba(150, 150, 150, 0.08);
+    border: 1px solid rgba(150, 150, 150, 0.3);
+}
+
+.cal-badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+    display: inline-block;
+}
+
+.cal-badge-live {
+    color: #ff6659;
+    border-color: rgba(224, 0, 0, 0.35);
+}
+
+.cal-aggiornato {
+    font-size: 12.5px;
+    color: var(--text-secondary, #888888);
+}
+
+.cal-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 26px;
+}
+
+.cal-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgba(150, 150, 150, 0.08);
+    border: 1px solid rgba(150, 150, 150, 0.3);
+    color: var(--text-secondary, #888888);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.cal-tab:hover { background: rgba(150, 150, 150, 0.16); }
+
+.cal-tab.is-active {
+    background: #1976d2;
+    border-color: #1976d2;
+    color: #ffffff;
+}
+
+.cal-tab-count {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.cal-gruppo { margin-bottom: 32px; }
+
+.cal-gruppo-titolo {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cal-gruppo-count {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary, #888888);
+    background: rgba(150, 150, 150, 0.12);
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+
+.cal-lista { list-style: none; margin: 0; padding: 0; }
+
+.cal-evento {
+    display: flex;
+    gap: 16px;
+    padding: 13px 15px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(150, 150, 150, 0.10), rgba(150, 150, 150, 0.04));
+    border: 1px solid rgba(150, 150, 150, 0.25);
+    margin-bottom: 8px;
+}
+
+.cal-evento.is-live {
+    border-color: rgba(224, 0, 0, 0.45);
+    background: linear-gradient(180deg, rgba(224, 0, 0, 0.12), rgba(224, 0, 0, 0.03));
+}
+
+.cal-evento-ora {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 58px;
+    flex-shrink: 0;
+}
+
+.cal-evento-ora-txt {
+    font-size: 0.95rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.cal-live-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ff4438;
+    display: inline-block;
+    animation: cal-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes cal-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.35; }
+}
+
+.cal-evento-corpo { min-width: 0; flex: 1; }
+
+.cal-evento-titolo {
+    font-size: 0.97rem;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.cal-evento-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    font-size: 12.5px;
+    color: var(--text-secondary, #888888);
+}
+
+.cal-tag {
+    padding: 2px 8px;
+    border-radius: 8px;
+    background: rgba(150, 150, 150, 0.16);
+    font-weight: 600;
+}
+
+.cal-sessione {
+    padding: 2px 8px;
+    border-radius: 8px;
+    background: rgba(25, 118, 210, 0.22);
+    color: #90caf9;
+    text-transform: capitalize;
+}
+
+.cal-canali {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.cal-canale {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 9px;
+    border-radius: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(150, 150, 150, 0.14);
+    border: 1px solid rgba(150, 150, 150, 0.28);
+}
+
+.cal-canale-numero {
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: #90caf9;
+}
+
+.cal-canale-streaming {
+    background: rgba(25, 118, 210, 0.2);
+    border-color: rgba(25, 118, 210, 0.4);
+}
+
+.cal-stato {
+    padding: 18px 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary, #888888);
+}
+
+.cal-stato-errore { color: #ff6659; }
+
+.cal-fonti {
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(150, 150, 150, 0.2);
+    font-size: 12px;
+    color: var(--text-secondary, #888888);
+    line-height: 1.7;
+}
+
+.cal-fonte { margin-right: 14px; }
+
+@media (max-width: 768px) {
+    .cal-container { padding: 0 14px; }
+    .cal-evento { flex-direction: column; gap: 8px; }
+    .cal-evento-ora { min-width: 0; }
 }
 
 

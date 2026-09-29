@@ -137,6 +137,12 @@
       "namedRegex": "^/api/vod(?:/)?$"
     },
     {
+      "page": "/calendario",
+      "regex": "^/calendario(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/calendario(?:/)?$"
+    },
+    {
       "page": "/eventi",
       "regex": "^/eventi(?:/)?$",
       "routeKeys": {},

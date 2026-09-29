@@ -436,7 +436,7 @@ export default function Navbar({
                                 </nav>
                             </div>
 
-                            {/* AZIONI (CERCA, IMPOSTAZIONI) */}
+                            {/* AZIONI (CERCA, CALENDARIO, IMPOSTAZIONI) */}
                             <div className="dock-group dock-group-right">
                                 <button
                                     type="button"
@@ -446,6 +446,16 @@ export default function Navbar({
                                     title="Cerca canali, eventi, film..."
                                 >
                                     <i className="fas fa-magnifying-glass"></i>
+                                </button>
+
+                                <button
+                                    type="button"
+                                    className="dock-action-btn calendar-icon-btn"
+                                    onClick={() => router.push("/calendario")}
+                                    aria-label="Calendario"
+                                    title="Calendario"
+                                >
+                                    <i className="fas fa-calendar-days"></i>
                                 </button>
 
                                 <button

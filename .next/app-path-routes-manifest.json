@@ -10,6 +10,7 @@
   "/api/richiedi/route": "/api/richiedi",
   "/api/sky/route": "/api/sky",
   "/api/vod/route": "/api/vod",
+  "/calendario/page": "/calendario",
   "/eventi/[slug]/page": "/eventi/[slug]",
   "/eventi/page": "/eventi",
   "/favicon.ico/route": "/favicon.ico",
