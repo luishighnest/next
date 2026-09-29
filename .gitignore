@@ -16,13 +16,12 @@
 # next.js
 /out/
 
-# La build NON deve stare in git.
-# Era tracciata (2568 file) e questo rendeva ogni modifica invisible: il
-# telefono faceva 'git reset --hard', la cartella .next tornava dal vecchio
-# commit, la condizione 'if [ ! -d .next ]' risultava falsa e 'npm run build'
-# non partiva mai. next start serviva quindi un bundle vecchio di 17 commit,
-# con la navbar allo stato precedente a qualunque fix del sorgente.
-/.next
+# La build VIENE committata, di proposito: la compilazione viene fatta dal PC
+# (su Termux 'npm run build' non e' praticabile) e il telefono si limita ad
+# avviare il server. Erano pero' tracciati anche i file di cache, che sono
+# 382 MB di dati temporanei di Turbopack con path assoluti di questa macchina:
+# sul telefono non servono e non funzionerebbero.
+/.next/cache
 
 # production
 /build

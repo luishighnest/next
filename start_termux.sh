@@ -20,37 +20,20 @@ while true; do
     # sempre dal vecchio commit e la condizione risultava vera, quindi il server
     # partiva con un bundle vecchio di molti commit e nessuna modifica al
     # sorgente si vedeva mai.
+    # La build e' gia' compilata e committata nel repository, non la ricompilo
+    # qui: su Termux 'npm run build' e' lento e va in errore, e il telefono deve
+    # limitarsi ad avviare il server. Basta verificare che la build sia
+    # presente, altrimenti il server partirebbe con pagine rotte.
     STAMP=".next/BUILD_ID"
-    RICOSTRUISCI=0
     if [ ! -f "$STAMP" ]; then
-        RICOSTRUISCI=1
-        echo "    Nessuna build trovata."
-    else
-        if [ -n "$(find app components lib -type f \( -name '*.js' -o -name '*.jsx' -o -name '*.css' \) -newer "$STAMP" 2>/dev/null | head -n 1)" ]; then
-            RICOSTRUISCI=1
-        fi
-        if [ ! -f "next.config.js" ] && [ ! -f "next.config.mjs" ] && [ ! -f "next.config.ts" ]; then
-            RICOSTRUISCI=1
-        fi
-    fi
-
-    if [ "$RICOSTRUISCI" = "1" ]; then
-        echo "    Sorgente piu' recente della build: ricompilo (puo' richiedere qualche minuto)..."
-        if npm run build; then
-            echo "    Build completata."
-        else
-            echo "    ATTENZIONE: build FALLITA. Uso la build precedente se esiste."
-        fi
-    else
-        echo "    Build gia' aggiornata."
-    fi
-
-    if [ ! -f "$STAMP" ]; then
-        echo "    ERRORE: nessuna build disponibile, non posso avviare il server."
-        echo "    Controlla che npm e le dipendenze siano installati."
+        echo "    ERRORE: build assente (.next/BUILD_ID non trovato)."
+        echo "    La build va compilata sul PC e committata, poi va tirata con:"
+        echo "      git fetch origin && git reset --hard origin/main"
+        echo "    Non ricompilo qui perche' su Termux la build fallisce."
         sleep 5
         continue
     fi
+    echo "    Build presente (BUILD_ID: $(cat "$STAMP"))."
 
     npm run start -- -H 0.0.0.0 -p 3000 > /dev/null 2>&1 &
     PID_NEXT=$!
