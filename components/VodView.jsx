@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, Suspense, useDeferredValue } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import SkeletonSection from "@/components/SkeletonSection";
@@ -30,16 +30,16 @@ function getCachedVod() {
 }
 
 function VodContent() {
-    const searchParams = useSearchParams();
     const router = useRouter();
 
+    // Vedi HomeView: useSearchParams() faceva cadere la pagina in
+    // BAILOUT_TO_CLIENT_SIDE_RENDERING. Default identico su server e client,
+    // la ?sub= viene applicata dopo l'idratazione.
     const initialSections = getCachedVod();
     const [sections, setSections] = useState(initialSections);
     const [loading, setLoading] = useState(() => initialSections.length === 0);
     const [mounted, setMounted] = useState(false);
-    const [subFilter, setSubFilter] = useState(() => {
-        return searchParams.get("sub") || "all";
-    });
+    const [subFilter, setSubFilter] = useState("all");
     const [search, setSearch] = useState("");
     const deferredSearch = useDeferredValue(search);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -50,11 +50,11 @@ function VodContent() {
     }, []);
 
     useEffect(() => {
-        const s = searchParams.get("sub");
+        const s = new URLSearchParams(window.location.search).get("sub");
         if (s !== null && s !== undefined) {
             setSubFilter(s || "all");
         }
-    }, [searchParams]);
+    }, []);
 
     // Carica sezioni VOD da /api/vod
     useEffect(() => {

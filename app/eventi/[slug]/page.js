@@ -468,7 +468,10 @@ export default function EventoPlayerPage() {
 
     return (
         <div className={`event-player-page ${mounted ? "is-mounted" : "is-mounting"}`} style={{ background: "transparent", minHeight: "140vh", color: "#ffffff", paddingBottom: "120px" }}>
-            <main style={{ maxWidth: "1600px", margin: "0 auto", padding: "76px 16px 0 16px" }}>
+            {/* Era un <main> annidato dentro il <main> del layout root: HTML non valido.
+                Ora e' un <div> con la stessa classe, e l'offset dalla navbar fissa
+                passa da un padding "magico" inline a --nmdz-header-h. */}
+            <div className="event-main-layout">
                 <div className="event-main-stage">
                     <div className="player-wrapper" style={{ position: "relative", overflow: "hidden" }}>
                         {/* Se l'evento NON ha ancora uno stream estratto: mostra la copertina dell'evento SENZA alcuna rotellina di caricamento */}
@@ -734,7 +737,7 @@ export default function EventoPlayerPage() {
                             />
                         ))}
                 </div>
-            </main>
+            </div>
         </div>
     );
 }

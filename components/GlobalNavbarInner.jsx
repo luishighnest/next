@@ -1,29 +1,52 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import React, { useState, useEffect, useCallback } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import Navbar from "@/components/Navbar";
+
+/* NOTA CRITICA: qui NON si usa useSearchParams() di proposito.
+   next/navigation lo risolve solo sul client: se la navbar globale (che sta
+   nel layout root) chiama quell'hook, Next butta fuori l'intero albero dal
+   rendering statico e spedisce una pagina con <div> vuoti + <template
+   BAILOUT_TO_CLIENT_SIDE_RENDERING>. Il sito risultava completamente vuoto
+   fino al download e all'esecuzione del bundle JS, su ogni pagina tranne
+   quelle dinamiche (/eventi/[slug]), che invece venivano renderizzate server.
+   Leggiamo la query string direttamente dal browser: la navbar resta
+   renderizzabile lato server e identica su tutte le route. */
+function readParam(name) {
+    if (typeof window === "undefined") return null;
+    return new URLSearchParams(window.location.search).get(name);
+}
 
 export default function GlobalNavbarInner() {
     const pathname = usePathname();
     const router = useRouter();
-    const searchParams = useSearchParams();
 
     const [searchVal, setSearchVal] = useState("");
     const [isSearchOpen, setIsSearchOpen] = useState(false);
     const [isClosingSearch, setIsClosingSearch] = useState(false);
+    const [subParam, setSubParam] = useState("all");
 
+    // Sincronizza i parametri URL -> stato. `usePathname` non cambia quando
+    // cambia solo la query string, quindi si ascolta anche popstate per il
+    // back/forward del browser.
     useEffect(() => {
-        const q = searchParams ? searchParams.get("search") : null;
-        if (q !== null && q !== undefined) {
-            if (q === "open" || q === "focus" || q === "") {
-                setSearchVal("");
-                setIsSearchOpen(true);
-            } else {
-                setSearchVal(q);
-                setIsSearchOpen(true);
+        const sync = () => {
+            const q = readParam("search");
+            if (q !== null && q !== undefined) {
+                if (q === "open" || q === "focus" || q === "") {
+                    setSearchVal("");
+                    setIsSearchOpen(true);
+                } else {
+                    setSearchVal(q);
+                    setIsSearchOpen(true);
+                }
             }
-        }
-    }, [searchParams]);
+            setSubParam(readParam("sub") || "all");
+        };
+        sync();
+        window.addEventListener("popstate", sync);
+        return () => window.removeEventListener("popstate", sync);
+    }, [pathname]);
 
     const getActiveFilter = () => {
         if (!pathname) return "all";
@@ -38,7 +61,17 @@ export default function GlobalNavbarInner() {
     };
 
     const activeFilter = getActiveFilter();
-    const activeSubFilter = searchParams ? searchParams.get("sub") || "all" : "all";
+    const activeSubFilter = subParam;
+
+    const go = useCallback((target, cleanFilter, subId) => {
+        // Aggiorna lo stato locale insieme alla navigazione: con usePathname
+        // da solo la sottocategoria non si aggiornerebbe cambiando solo la query.
+        setSubParam(subId || "all");
+        if (typeof window !== "undefined") {
+            window.dispatchEvent(new CustomEvent("nmdz:change_tab", { detail: { tab: cleanFilter, sub: subId || "all" } }));
+        }
+        router.push(target);
+    }, [router]);
 
     const handleFilterChange = (cleanFilter) => {
         let target = "/home";
@@ -47,10 +80,7 @@ export default function GlobalNavbarInner() {
         else if (cleanFilter === "eventi") target = "/eventi";
         else if (cleanFilter === "vod") target = "/vod";
 
-        if (typeof window !== "undefined") {
-            window.dispatchEvent(new CustomEvent("nmdz:change_tab", { detail: { tab: cleanFilter, sub: "all" } }));
-        }
-        router.push(target);
+        go(target, cleanFilter, "all");
     };
 
     const handleSubFilterChange = (subId) => {
@@ -58,10 +88,7 @@ export default function GlobalNavbarInner() {
         const base = currentFilter === "all" ? "/home" : `/${currentFilter}`;
         const target = subId && subId !== "all" ? `${base}?sub=${encodeURIComponent(subId)}` : base;
 
-        if (typeof window !== "undefined") {
-            window.dispatchEvent(new CustomEvent("nmdz:change_tab", { detail: { tab: currentFilter, sub: subId || "all" } }));
-        }
-        router.push(target);
+        go(target, currentFilter, subId || "all");
     };
 
     const handleSelectCategoryAndSub = (macroTab, subId) => {
@@ -69,10 +96,7 @@ export default function GlobalNavbarInner() {
         const base = cleanMacro === "all" ? "/home" : `/${cleanMacro}`;
         const target = subId && subId !== "all" ? `${base}?sub=${encodeURIComponent(subId)}` : base;
 
-        if (typeof window !== "undefined") {
-            window.dispatchEvent(new CustomEvent("nmdz:change_tab", { detail: { tab: cleanMacro, sub: subId || "all" } }));
-        }
-        router.push(target);
+        go(target, cleanMacro, subId || "all");
     };
 
     const handleCloseSearch = () => {

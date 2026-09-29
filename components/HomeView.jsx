@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, Suspense, useDeferredValue } from "react";
-import { useSearchParams, useRouter, usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Navbar from "@/components/Navbar";
 import CarouselSection from "@/components/CarouselSection";
 import SkeletonSection from "@/components/SkeletonSection";
@@ -38,19 +38,30 @@ function getCachedSections() {
 }
 
 function HomeViewContent({ defaultTab = "all" }) {
-    const searchParams = useSearchParams();
     const router = useRouter();
     const pathname = usePathname();
 
-    // Determina il tab iniziale in base a pathname, defaultTab o searchParams legacy
+    /* NOTA: niente useSearchParams() (vedi GlobalNavbarInner). Quel hook e'
+       risolvibile solo sul client e faceva cadere l'intera pagina in
+       BAILOUT_TO_CLIENT_SIDE_RENDERING: in pratica il server spediva un
+       <div> vuoto e tutto il contenuto appariva solo dopo il bundle JS.
+       I parametri URL che servono in fase di render (sottocategoria) vengono
+       impostati in un effetto, quindi partono da un default identico
+       lato server e lato client e l'idratazione non puo' divergere. */
+
+    // Determina il tab iniziale in base a pathname, defaultTab o query legacy
     const getInitialFilter = () => {
         if (pathname === "/sport") return "sport";
         if (pathname === "/intrattenimento") return "intrattenimento";
         if (pathname === "/eventi") return "eventi";
         if (pathname === "/home" || pathname === "/") return "all";
 
-        const rawTab = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
-        if (VALID_TABS.includes(rawTab)) return rawTab;
+        // Path non standard: la query legacy puo' esistere solo sul client.
+        if (typeof window !== "undefined") {
+            const p = new URLSearchParams(window.location.search);
+            const rawTab = (p.get("tab") || p.get("filter") || "").toLowerCase().trim();
+            if (VALID_TABS.includes(rawTab)) return rawTab;
+        }
         if (VALID_TABS.includes(defaultTab)) return defaultTab;
         return "all";
     };
@@ -60,9 +71,9 @@ function HomeViewContent({ defaultTab = "all" }) {
     const [loading, setLoading] = useState(() => initialSections.length === 0);
     const [mounted, setMounted] = useState(true);
     const [filter, setFilter] = useState(getInitialFilter);
-    const [subFilter, setSubFilter] = useState(() => {
-        return searchParams.get("sub") || "all";
-    });
+    // Default identico su server e client: la ?sub= viene applicata subito
+    // dopo l'idratazione dall'effetto qui sotto, evitando mismatch.
+    const [subFilter, setSubFilter] = useState("all");
     const [eventiLiveSubFilter, setEventiLiveSubFilter] = useState("all");
     const [eventiVodSubFilter, setEventiVodSubFilter] = useState("all");
     const [search, setSearch] = useState("");
@@ -89,17 +100,16 @@ function HomeViewContent({ defaultTab = "all" }) {
         setMounted(true);
     }, []);
 
-    // Sincronizza sub-filter se la query string cambia
+    // Sincronizza sub-filter e ricerca dalla query string.
+    // Solo client: gira dopo l'idratazione, quindi non puo' creare mismatch.
     useEffect(() => {
-        const s = searchParams.get("sub");
+        const p = new URLSearchParams(window.location.search);
+        const s = p.get("sub");
         if (s !== null && s !== undefined) {
             setSubFilter(s || "all");
         }
-    }, [searchParams]);
 
-    // Se la query string contiene ?search=, apre subito la ricerca
-    useEffect(() => {
-        const q = searchParams.get("search");
+        const q = p.get("search");
         if (q !== null && q !== undefined) {
             if (q === "open" || q === "focus" || q === "") {
                 setSearch("");
@@ -109,7 +119,7 @@ function HomeViewContent({ defaultTab = "all" }) {
                 setIsSearchOpen(true);
             }
         }
-    }, [searchParams]);
+    }, [pathname]);
 
     // Idratazione istantanea da memoria / localStorage all'avvio se ancora non presente
     useEffect(() => {
@@ -152,9 +162,9 @@ function HomeViewContent({ defaultTab = "all" }) {
 
     // Pulizia e reindirizzamento dei vecchi endpoint con query string (es. /?tab=sport -> /sport)
     useEffect(() => {
-        const hasTabParam = searchParams.has("tab") || searchParams.has("filter");
-        if (hasTabParam) {
-            const currentTab = (searchParams.get("tab") || searchParams.get("filter") || "").toLowerCase().trim();
+        const p = new URLSearchParams(window.location.search);
+        if (p.has("tab") || p.has("filter")) {
+            const currentTab = (p.get("tab") || p.get("filter") || "").toLowerCase().trim();
             if (currentTab === "sport") {
                 router.replace("/sport", { scroll: false });
                 setFilter("sport");
@@ -169,7 +179,7 @@ function HomeViewContent({ defaultTab = "all" }) {
                 setFilter("all");
             }
         }
-    }, [searchParams, router]);
+    }, [router]);
 
     // Gestione blocco scroll modale "Esplora tutti"
     useEffect(() => {
