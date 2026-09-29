@@ -16,6 +16,14 @@
 # next.js
 /out/
 
+# La build NON deve stare in git.
+# Era tracciata (2568 file) e questo rendeva ogni modifica invisible: il
+# telefono faceva 'git reset --hard', la cartella .next tornava dal vecchio
+# commit, la condizione 'if [ ! -d .next ]' risultava falsa e 'npm run build'
+# non partiva mai. next start serviva quindi un bundle vecchio di 17 commit,
+# con la navbar allo stato precedente a qualunque fix del sorgente.
+/.next
+
 # production
 /build
 

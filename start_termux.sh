@@ -13,10 +13,45 @@ while true; do
     sleep 1
 
     echo "[2/4] Verifico build ed avvio server Next.js..."
-    if [ ! -d ".next" ]; then
-        echo "Build Next.js mancante, avvio npm run build..."
-        npm run build
+
+    # Ricostruisci se manca la build, se non c'e' il marchio, o se QUALSIASI file
+    # sorgente e' piu' recente dell'ultima build. Prima bastava controllare che la
+    # cartella .next esistesse: con la build tracciata in git la cartella tornava
+    # sempre dal vecchio commit e la condizione risultava vera, quindi il server
+    # partiva con un bundle vecchio di molti commit e nessuna modifica al
+    # sorgente si vedeva mai.
+    STAMP=".next/BUILD_ID"
+    RICOSTRUISCI=0
+    if [ ! -f "$STAMP" ]; then
+        RICOSTRUISCI=1
+        echo "    Nessuna build trovata."
+    else
+        if [ -n "$(find app components lib -type f \( -name '*.js' -o -name '*.jsx' -o -name '*.css' \) -newer "$STAMP" 2>/dev/null | head -n 1)" ]; then
+            RICOSTRUISCI=1
+        fi
+        if [ ! -f "next.config.js" ] && [ ! -f "next.config.mjs" ] && [ ! -f "next.config.ts" ]; then
+            RICOSTRUISCI=1
+        fi
     fi
+
+    if [ "$RICOSTRUISCI" = "1" ]; then
+        echo "    Sorgente piu' recente della build: ricompilo (puo' richiedere qualche minuto)..."
+        if npm run build; then
+            echo "    Build completata."
+        else
+            echo "    ATTENZIONE: build FALLITA. Uso la build precedente se esiste."
+        fi
+    else
+        echo "    Build gia' aggiornata."
+    fi
+
+    if [ ! -f "$STAMP" ]; then
+        echo "    ERRORE: nessuna build disponibile, non posso avviare il server."
+        echo "    Controlla che npm e le dipendenze siano installati."
+        sleep 5
+        continue
+    fi
+
     npm run start -- -H 0.0.0.0 -p 3000 > /dev/null 2>&1 &
     PID_NEXT=$!
 
