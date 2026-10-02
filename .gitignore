@@ -22,6 +22,7 @@
 # 382 MB di dati temporanei di Turbopack con path assoluti di questa macchina:
 # sul telefono non servono e non funzionerebbero.
 /.next/cache
+/.next/dev
 
 # production
 /build
