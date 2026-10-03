@@ -138,20 +138,13 @@
       },
       {
         "ora": "14:30",
-        "fine": "15:30",
+        "fine": "15:45",
         "titolo": "Italia: Stage 3",
         "descrizione": "... Rally Championship. - Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/03d717b7-2689-4fbc-b4ad-dfa8078cfb23/background/600"
       },
       {
-        "ora": "15:30",
-        "fine": "16:05",
-        "titolo": "Federico Maldini",
-        "descrizione": "Teo Trials",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d7179878-4747-41b7-8fb0-5eb52dd27d59/background/600"
-      },
-      {
-        "ora": "16:05",
+        "ora": "15:45",
         "fine": "16:50",
         "titolo": "GP Giappone: Sprint Race",
         "descrizione": "Sedicesimo appuntamento del mondiale 2026: a  Motegi, in Giappone, si accendono i motori per la Sprint della MotoGP. Telecronaca Meda- Sanchini",
@@ -756,53 +749,39 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:20",
-        "fine": "00:55",
+        "ora": "00:45",
+        "fine": "01:15",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "00:55",
-        "fine": "01:20",
+        "ora": "01:15",
+        "fine": "01:45",
         "titolo": "Gran Bretagna",
         "descrizione": "La sedicenne Chiara Battig punta a scrivere la storia e a diventare la prima vincitrice con una wild card a Silverstone. Per iniziare, parte dalla pole position al fianco della capolista, Alisha Palmowski.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/9430539b-4426-487e-a156-fe4a77aa4f6a/background/600"
       },
       {
-        "ora": "01:20",
-        "fine": "02:20",
+        "ora": "01:45",
+        "fine": "02:40",
         "titolo": "Malesia 2013 - F1",
         "descrizione": "E il secondo appuntamento del 2013. Alla prima gara in Australia aveva vinto Raikkonnen. In Malesia la griglia di partenza vede in pole position proprio il tedesco della Red Bull.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/61098eb2-3d8e-4c93-8474-387864157457/background/600"
       },
       {
-        "ora": "02:20",
-        "fine": "03:35",
+        "ora": "02:40",
+        "fine": "04:00",
         "titolo": "GP Bahrein: Qualifiche",
         "descrizione": "A Sepang e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aefea57d-71ec-4c25-8f12-f811df864b3d/background/600"
       },
       {
-        "ora": "03:35",
-        "fine": "04:00",
+        "ora": "04:00",
+        "fine": "04:30",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
-      },
-      {
-        "ora": "04:00",
-        "fine": "05:15",
-        "titolo": "Programmazione da definire",
-        "descrizione": "I palinsesti sono in via di definizione da parte emittente",
-        "immagine": ""
-      },
-      {
-        "ora": "05:15",
-        "fine": "06:00",
-        "titolo": "Inside The Team - Un Gp con Kimi",
-        "descrizione": "Inside The Team - Un Gp con Kimi",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/59bb332e-1c30-4f19-bc9b-dd78dabec831/background/600"
       },
       {
         "ora": "06:00",
@@ -904,91 +883,84 @@
       },
       {
         "ora": "14:30",
-        "fine": "15:25",
+        "fine": "15:45",
         "titolo": "Italia: Stage 3",
         "descrizione": "... Rally Championship. - Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/03d717b7-2689-4fbc-b4ad-dfa8078cfb23/background/600"
       },
       {
-        "ora": "15:25",
-        "fine": "15:40",
-        "titolo": "Il nuovo Max",
-        "descrizione": "Il nuovo Max",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8f452145-5a16-4268-85d1-566b9b4552fb/background/600"
-      },
-      {
-        "ora": "15:40",
-        "fine": "16:15",
+        "ora": "15:45",
+        "fine": "16:25",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "16:15",
-        "fine": "17:10",
+        "ora": "16:25",
+        "fine": "17:20",
         "titolo": "Motori Formula 1 2014 - Stag. 1 Ep. 13 - Motori F1 2014 Ep.02 Gp Malesia Gara 30/03/14",
         "descrizione": "... 30/03/14 Motori Formula 1 2014. - Motori Formula 1 2014",
         "immagine": "https://img-guidatv.org/8413/motori-formula-1-2014/1.jpg"
       },
       {
-        "ora": "17:10",
-        "fine": "18:30",
+        "ora": "17:20",
+        "fine": "18:40",
         "titolo": "GP Bahrein: Qualifiche",
         "descrizione": "A Sepang e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aefea57d-71ec-4c25-8f12-f811df864b3d/background/600"
       },
       {
-        "ora": "18:30",
-        "fine": "19:00",
+        "ora": "18:40",
+        "fine": "19:15",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "19:00",
-        "fine": "19:45",
+        "ora": "19:15",
+        "fine": "20:00",
         "titolo": "Inside The Team - Un Gp con Kimi",
         "descrizione": "Inside The Team - Un Gp con Kimi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/59bb332e-1c30-4f19-bc9b-dd78dabec831/background/600"
       },
       {
-        "ora": "19:45",
-        "fine": "20:00",
+        "ora": "20:00",
+        "fine": "20:15",
         "titolo": "GP Baku",
         "descrizione": "Il campionato FIA Formula 2 e' arrivato in Azerbaigian per un fine settimana cruciale sul circuito cittadino di Baku.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3521a2b4-1ab2-4230-8e35-ec52e6994c86/background/600"
       },
       {
-        "ora": "20:00",
-        "fine": "21:15",
+        "ora": "20:15",
+        "fine": "21:35",
         "titolo": "GP Bahrein: Qualifiche",
         "descrizione": "A Sepang e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aefea57d-71ec-4c25-8f12-f811df864b3d/background/600"
       },
       {
-        "ora": "21:15",
-        "fine": "21:50",
+        "ora": "21:35",
+        "fine": "22:05",
         "titolo": "F1 Paddock Live Show",
         "descrizione": "La sintesi dei temi principali della giornata con le voci dei protagonisti. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/11c87b4d-ed4c-4edf-856d-401039a909d9/background/600"
       },
       {
-        "ora": "21:50",
-        "fine": "22:05",
+        "ora": "22:05",
+        "fine": "22:25",
         "titolo": "Fil Rouge",
         "descrizione": "Fil Rouge",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/55b7c0a8-f9f9-4b86-944e-eacd7f2c3582/background/600"
       },
       {
-        "ora": "22:05",
-        "fine": "23:05",
+        "ora": "22:25",
+        "fine": "23:25",
         "titolo": "Malesia 2015 - F1",
         "descrizione": "Riviviamo le emozioni del GP di Malesia. Al secondo appuntamento stagionale a Sepang parte in pole position Hamilton affiancato in prima fila da Vettel.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/bbe18df3-6b54-4b82-9e04-633adbff2510/background/600"
       },
       {
-        "ora": "23:05",
-        "fine": "00:20",
+        "ora": "23:25",
+        "fine": "00:45",
         "titolo": "GP Bahrein: Qualifiche",
         "descrizione": "A Sepang e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aefea57d-71ec-4c25-8f12-f811df864b3d/background/600"
@@ -1329,20 +1301,13 @@
       },
       {
         "ora": "14:00",
-        "fine": "14:55",
+        "fine": "15:50",
         "titolo": "Barcellona: Gara 1",
         "descrizione": "Le gare della GT World Challenge.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/076f7ed9-12e0-48ed-842f-c45342d0281f/background/600"
       },
       {
-        "ora": "14:55",
-        "fine": "16:10",
-        "titolo": "GP Bahrein: Qualifiche",
-        "descrizione": "A Sepang e' sfida per la pole e per scattare piu' avanti possibile in griglia di partenza. Q1, Q2 e Q3 con l'adrenalina che sale. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/aefea57d-71ec-4c25-8f12-f811df864b3d/background/600"
-      },
-      {
-        "ora": "16:10",
+        "ora": "15:50",
         "fine": "16:30",
         "titolo": "Il nuovo Max",
         "descrizione": "Il nuovo Max",
@@ -1357,31 +1322,38 @@
       },
       {
         "ora": "16:50",
-        "fine": "17:50",
+        "fine": "17:20",
         "titolo": "Barcellona: Gara 1",
         "descrizione": "Le gare del Lamborghini Super Trofeo.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/7922b43b-a008-4a71-b557-de675a816c4c/background/600"
       },
       {
+        "ora": "17:20",
+        "fine": "17:50",
+        "titolo": "Federico Maldini",
+        "descrizione": "Teo Trials",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d7179878-4747-41b7-8fb0-5eb52dd27d59/background/600"
+      },
+      {
         "ora": "17:50",
-        "fine": "18:45",
+        "fine": "18:20",
+        "titolo": "Icarus Ultra",
+        "descrizione": "Continua in Alta Badia il nostro DSS Tour; Florian Eisath sulla Re Laurino del comprensorio Carezza; Sport e Sostenibilita' a San Martino di Castrozza; Impresa di Nico De Corato a Dubai.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0279a2a5-a5af-46a7-904f-4b66916c1909/background/600"
+      },
+      {
+        "ora": "18:20",
+        "fine": "19:20",
         "titolo": "Italia: Stage 3",
         "descrizione": "... Championship. - Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/03d717b7-2689-4fbc-b4ad-dfa8078cfb23/background/600"
       },
       {
-        "ora": "18:45",
-        "fine": "19:05",
+        "ora": "19:20",
+        "fine": "19:35",
         "titolo": "Fil Rouge",
         "descrizione": "Fil Rouge",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/55b7c0a8-f9f9-4b86-944e-eacd7f2c3582/background/600"
-      },
-      {
-        "ora": "19:05",
-        "fine": "19:35",
-        "titolo": "Federico Maldini",
-        "descrizione": "Teo Trials",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d7179878-4747-41b7-8fb0-5eb52dd27d59/background/600"
       },
       {
         "ora": "19:35",
@@ -1482,13 +1454,13 @@
       },
       {
         "ora": "07:00",
-        "fine": "16:55",
+        "fine": "17:10",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "16:55",
+        "ora": "17:10",
         "fine": "17:20",
         "titolo": "This is padel",
         "descrizione": "I protagonisti, le sfide e gli eventi nazionali e internazionali in collegamento con i circoli di tutta Italia. Gli eventi del padel dilettantistico e le analisi dei materiali tecnici all'avanguardia.",
@@ -1572,34 +1544,34 @@
       },
       {
         "ora": "13:00",
-        "fine": "18:00",
+        "fine": "17:30",
         "titolo": "Alfred Dunhill Links Championship: Giorno 3",
         "descrizione": "... Championship: Giorno 3 Golf: DP World Tour. - From The Old Course at St. Andrews in Fife, Scotland.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a562c857-74ad-4421-87c3-ddd942a19da7/background/600"
       },
       {
-        "ora": "18:00",
-        "fine": "18:15",
+        "ora": "17:30",
+        "fine": "17:45",
         "titolo": "European Masters",
         "descrizione": "... Tour. - Scopriamo insieme i momenti salienti degli 'European Masters'.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/56d400ad-96bc-49c8-90a9-2b6b80c7940b/background/600"
       },
       {
-        "ora": "18:15",
-        "fine": "18:30",
+        "ora": "17:45",
+        "fine": "18:00",
         "titolo": "Open De France",
         "descrizione": "... World Tour. - Scopriamo insieme i momenti salienti e piu' emozionanti dell'Open De France.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/c3c3e7d9-f483-4316-9436-9acdeaafe4fa/background/600"
       },
       {
-        "ora": "18:30",
-        "fine": "18:55",
+        "ora": "18:00",
+        "fine": "18:25",
         "titolo": "Speciale Golf Battle Twelve 13/08/2026",
         "descrizione": "La sfida a squadre tra il Team59 Italia e il C&S Golf Team Francia, giocata il 29 e 30 luglio 2026 al Golf Club Padova.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/88bdace8-dfbb-4142-bb9c-6638988091fb/background/600"
       },
       {
-        "ora": "18:55",
+        "ora": "18:25",
         "fine": "22:00",
         "titolo": "Alfred Dunhill Links Championship: Giorno 3",
         "descrizione": "... Giorno 3 Golf: DP World Tour. - From The Old Course at St. Andrews in Fife, Scotland.",
@@ -1850,13 +1822,13 @@
       },
       {
         "ora": "12:00",
-        "fine": "16:00",
+        "fine": "16:15",
         "titolo": "Rotterdam P1 Semifinali Sessione Diurna",
         "descrizione": "... Sessione Diurna Premier Padel. - Seguiamo le gare del Premier Padel.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/cedc8ef1-732c-4328-b4e7-00cfe5f29394/background/600"
       },
       {
-        "ora": "16:00",
+        "ora": "16:15",
         "fine": "16:30",
         "titolo": "This is padel",
         "descrizione": "I protagonisti, le sfide e gli eventi nazionali e internazionali in collegamento con i circoli di tutta Italia. Gli eventi del padel dilettantistico e le analisi dei materiali tecnici all'avanguardia.",
@@ -2420,21 +2392,35 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:55",
-        "fine": "01:15",
+        "ora": "00:00",
+        "fine": "01:10",
+        "titolo": "WTA 1000 Pechino 2026",
+        "descrizione": "Jelena Ostapenko vs Paula Badosa WTA 1000 Pechino",
+        "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026/5.jpg"
+      },
+      {
+        "ora": "01:10",
+        "fine": "01:30",
         "titolo": "Circolando 2026 - Ep. 2 - Circolando - TC Napoli 1905",
         "descrizione": "Viaggio alla scoperta dei piu' bei circoli d'Italia. Stefania Chieppa e Giorgio Galimberti ci guidano sui campi tra interviste, sfide, sketch e splendide storie di tennis.",
         "immagine": "https://img-guidatv.org/54/circolando/11.jpg"
       },
       {
-        "ora": "01:15",
-        "fine": "04:50",
+        "ora": "01:30",
+        "fine": "02:55",
+        "titolo": "WTA 1000 Pechino 2026",
+        "descrizione": "Xinyu Gao vs Iga Swiatek WTA 1000 Pechino",
+        "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026/5.jpg"
+      },
+      {
+        "ora": "02:55",
+        "fine": "04:45",
         "titolo": "WTA 1000 Pechino 2026",
         "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
         "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026/5.jpg"
       },
       {
-        "ora": "04:50",
+        "ora": "04:45",
         "fine": "05:00",
         "titolo": "Colpo da campione - Stagione 2026 - Ep. 26 - Colpo da campione By Head - Il servizio di Bellucci",
         "descrizione": "I docenti dell'ISF Roberto Lombardi analizzano la tattica e la tecnica dei migliori giocatori e delle migliori giocatrici con l'aiuto della lavagna di videoanalisi",
@@ -2442,7 +2428,7 @@
       },
       {
         "ora": "05:00",
-        "fine": "07:00",
+        "fine": "06:55",
         "titolo": "LIVE WTA 1000 Pechino",
         "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
         "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
@@ -2692,31 +2678,31 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:20",
+        "fine": "00:25",
         "titolo": "Speciale Tg Sport: Rally Sardegna Rubrica 2° Parte",
-        "descrizione": "Speciale Tg Sport: Rally Sardegna rubrica 2° parte",
+        "descrizione": "Servizi, speciali, commenti e interviste sui principali eventi sportivi: flash su campionati di calcio - con risultati e schedine - basket, pallavolo, ma anche Formula 1 e motomondiale, ciclismo ed ippica.",
         "immagine": "https://img-guidatv.org/32/speciale-tg-sport/0.jpg"
       },
       {
-        "ora": "00:20",
-        "fine": "01:50",
-        "titolo": "Ciclismo 2026:Giro Dell'Emilia Internazionale Maschile Elite",
-        "descrizione": "Ciclismo 2026:Giro dell'Emilia Internazionale Maschile Elite",
+        "ora": "00:25",
+        "fine": "02:00",
+        "titolo": "Ciclismo - Giro Dell'Emilia 2026 -Uomini",
+        "descrizione": "La 109ª edizione del Giro dell'Emilia parte da Largo Castello a Ferrara e si conclude con il tradizionale e durissimo arrivo in salita al Santuario della Madonna di San Luca, a Bologna. Una delle classiche più impegnative del calendario italiano di ciclismo su strada.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "01:50",
+        "ora": "02:00",
         "fine": "04:00",
-        "titolo": "Calcio Femminile: Serie A Women Athora 2026/27 2a Giornata: Roma - Lazio",
-        "descrizione": "Calcio Femminile: Serie A Women Athora 2026/27 2a giornata: Roma - Lazio",
-        "immagine": "https://img-guidatv.org/32/calcio-femminile-serie-a-women-athora-2026-27-2a-giornata-roma-lazio/0.jpg"
+        "titolo": "Calcio: Serie A Women 2026-2027 - 2a Giornata: Roma - Lazio",
+        "descrizione": "Derby della Capitale nella seconda giornata della Serie A Women 2026-27, con Roma e Lazio a caccia di punti importanti.",
+        "immagine": "https://img-guidatv.org/32/calcio-serie-a-women-2026-2027-2a-giornata-roma-lazio/0.jpg"
       },
       {
         "ora": "04:00",
         "fine": "05:30",
-        "titolo": "Triathlon: World Cup Roma 2026 Gara Sprint Femminile",
-        "descrizione": "Triathlon: World Cup Roma 2026 gara Sprint Femminile",
-        "immagine": "https://img-guidatv.org/32/triathlon-world-cup-roma-2026-gara-sprint-femminile/0.jpg"
+        "titolo": "Triathlon - Suzuki World Triathlon Cup 2026 - 1a Giornata: Gara Sprint Donne",
+        "descrizione": "All'Eur di Roma va in scena la prova Sprint femminile della World Triathlon Cup 2026. Le atlete affrontano 750 metri di nuoto, 20 km in bicicletta e 5 km di corsa, con Bianca Seregni, Beatrice Mallozzi e Verena Steinhauser tra le azzurre al via.",
+        "immagine": "https://img-guidatv.org/32/triathlon-suzuki-world-triathlon-cup-2026-1a-giornata-gara-sprint-donne/0.jpg"
       },
       {
         "ora": "05:30",
@@ -2831,31 +2817,31 @@
     "programmi": [
       {
         "ora": "00:00",
-        "fine": "00:20",
+        "fine": "00:25",
         "titolo": "Speciale Tg Sport: Rally Sardegna Rubrica 2° Parte",
-        "descrizione": "Speciale Tg Sport: Rally Sardegna rubrica 2° parte",
+        "descrizione": "Servizi, speciali, commenti e interviste sui principali eventi sportivi: flash su campionati di calcio - con risultati e schedine - basket, pallavolo, ma anche Formula 1 e motomondiale, ciclismo ed ippica.",
         "immagine": "https://img-guidatv.org/32/speciale-tg-sport/0.jpg"
       },
       {
-        "ora": "00:20",
-        "fine": "01:50",
-        "titolo": "Ciclismo 2026:Giro Dell'Emilia Internazionale Maschile Elite",
-        "descrizione": "Ciclismo 2026:Giro dell'Emilia Internazionale Maschile Elite",
+        "ora": "00:25",
+        "fine": "02:00",
+        "titolo": "Ciclismo - Giro Dell'Emilia 2026 -Uomini",
+        "descrizione": "La 109ª edizione del Giro dell'Emilia parte da Largo Castello a Ferrara e si conclude con il tradizionale e durissimo arrivo in salita al Santuario della Madonna di San Luca, a Bologna. Una delle classiche più impegnative del calendario italiano di ciclismo su strada.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
-        "ora": "01:50",
+        "ora": "02:00",
         "fine": "04:00",
-        "titolo": "Calcio Femminile: Serie A Women Athora 2026/27 2a Giornata: Roma - Lazio",
-        "descrizione": "Calcio Femminile: Serie A Women Athora 2026/27 2a giornata: Roma - Lazio",
-        "immagine": "https://img-guidatv.org/32/calcio-femminile-serie-a-women-athora-2026-27-2a-giornata-roma-lazio/0.jpg"
+        "titolo": "Calcio: Serie A Women 2026-2027 - 2a Giornata: Roma - Lazio",
+        "descrizione": "Derby della Capitale nella seconda giornata della Serie A Women 2026-27, con Roma e Lazio a caccia di punti importanti.",
+        "immagine": "https://img-guidatv.org/32/calcio-serie-a-women-2026-2027-2a-giornata-roma-lazio/0.jpg"
       },
       {
         "ora": "04:00",
         "fine": "05:30",
-        "titolo": "Triathlon: World Cup Roma 2026 Gara Sprint Femminile",
-        "descrizione": "Triathlon: World Cup Roma 2026 gara Sprint Femminile",
-        "immagine": "https://img-guidatv.org/32/triathlon-world-cup-roma-2026-gara-sprint-femminile/0.jpg"
+        "titolo": "Triathlon - Suzuki World Triathlon Cup 2026 - 1a Giornata: Gara Sprint Donne",
+        "descrizione": "All'Eur di Roma va in scena la prova Sprint femminile della World Triathlon Cup 2026. Le atlete affrontano 750 metri di nuoto, 20 km in bicicletta e 5 km di corsa, con Bianca Seregni, Beatrice Mallozzi e Verena Steinhauser tra le azzurre al via.",
+        "immagine": "https://img-guidatv.org/32/triathlon-suzuki-world-triathlon-cup-2026-1a-giornata-gara-sprint-donne/0.jpg"
       },
       {
         "ora": "05:30",
@@ -5228,9 +5214,9 @@
       {
         "ora": "16:00",
         "fine": "16:30",
-        "titolo": "Sky Cube - Stag. 1 Ep. 113 - Sky Cube (2026) Legge Elettorale, Cosa Prevede E Cosa Cambia?",
+        "titolo": "Legge Elettorale, Cosa Prevede E Cosa Cambia?",
         "descrizione": "... Cosa Prevede E Cosa Cambia?. S1 Ep113 Sky Cube (2026) Legge Elettorale, Cosa Prevede E Cosa Cambia? - Sky Cube",
-        "immagine": "https://img-guidatv.org/20/sky-cube/6.jpg"
+        "immagine": "https://img-guidatv.org/20/legge-elettorale-cosa-prevede-e-cosa-cambia/2.jpg"
       },
       {
         "ora": "16:30",
@@ -5333,9 +5319,9 @@
       {
         "ora": "21:35",
         "fine": "22:00",
-        "titolo": "Sky Cube - Stag. 1 Ep. 112 - Sky Cube (2026) Aereo Flydubai, Qual E' La Procedura Nei Casi Di Emergenza?",
+        "titolo": "Aereo Flydubai, Qual È La Procedura Nei Casi Di Emergenza?",
         "descrizione": "... E' La Procedura Nei Casi Di Emergenza?. S1 Ep112 Sky Cube (2026) Aereo Flydubai, Qual E' La Procedura Nei Casi Di Emergenza? - Sky Cube",
-        "immagine": "https://img-guidatv.org/20/sky-cube/6.jpg"
+        "immagine": "https://img-guidatv.org/20/aereo-flydubai-qual-e-la-procedura-nei-casi-di-emergenza/0.jpg"
       },
       {
         "ora": "22:00",
@@ -5654,9 +5640,9 @@
       {
         "ora": "16:00",
         "fine": "16:30",
-        "titolo": "Sky Cube - Stag. 1 Ep. 113 - Sky Cube (2026) Legge Elettorale, Cosa Prevede E Cosa Cambia?",
+        "titolo": "Legge Elettorale, Cosa Prevede E Cosa Cambia?",
         "descrizione": "... Cosa Prevede E Cosa Cambia?. S1 Ep113 Sky Cube (2026) Legge Elettorale, Cosa Prevede E Cosa Cambia? - Sky Cube",
-        "immagine": "https://img-guidatv.org/20/sky-cube/6.jpg"
+        "immagine": "https://img-guidatv.org/20/legge-elettorale-cosa-prevede-e-cosa-cambia/2.jpg"
       },
       {
         "ora": "16:30",
@@ -5759,9 +5745,9 @@
       {
         "ora": "21:35",
         "fine": "22:00",
-        "titolo": "Sky Cube - Stag. 1 Ep. 112 - Sky Cube (2026) Aereo Flydubai, Qual E' La Procedura Nei Casi Di Emergenza?",
+        "titolo": "Aereo Flydubai, Qual È La Procedura Nei Casi Di Emergenza?",
         "descrizione": "... E' La Procedura Nei Casi Di Emergenza?. S1 Ep112 Sky Cube (2026) Aereo Flydubai, Qual E' La Procedura Nei Casi Di Emergenza? - Sky Cube",
-        "immagine": "https://img-guidatv.org/20/sky-cube/6.jpg"
+        "immagine": "https://img-guidatv.org/20/aereo-flydubai-qual-e-la-procedura-nei-casi-di-emergenza/0.jpg"
       },
       {
         "ora": "22:00",
@@ -11408,16 +11394,114 @@
       },
       {
         "ora": "02:55",
-        "fine": "03:00",
+        "fine": "03:05",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep33 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
-        "ora": "03:00",
-        "fine": "03:10",
+        "ora": "03:05",
+        "fine": "03:15",
         "titolo": "Monster Loving Maniacs",
         "descrizione": "Ep34 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "03:15",
+        "fine": "03:25",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep35 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "03:25",
+        "fine": "03:35",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep36 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "03:35",
+        "fine": "03:50",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep37 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "03:50",
+        "fine": "04:00",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep38 di 52 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "04:00",
+        "fine": "04:10",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep39 di 52 L'affascinante Samurai - Un antico samurai fantasma insegna ai bambini l'autodifesa.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "04:10",
+        "fine": "04:20",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep40 di 52 La Mummia - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "04:20",
+        "fine": "04:30",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep41 di 52 Lo specchio delle anime - Parte 1 - Dracula è tornato con una missione speciale per i bambini.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "04:30",
+        "fine": "04:45",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep42 di 52 Lo specchio delle anime - Parte 2 - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mos",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "04:45",
+        "fine": "04:55",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep43 di 52 La Banshee - Tre fratelli vengono addestrati come cacciatori di mostri dal loro vecchio e severo nonno. C'è solo un problema. Questi ragazzi amano tutti i tipi di mostri",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "04:55",
+        "fine": "05:05",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep44 di 52 Spavento divertente - Il mostro più spaventoso del mondo vuole diventare un comico. Ma c'è un problema: non è divertente.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "05:05",
+        "fine": "05:15",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep45 di 52 Safari Jack - Arthur sfida i suoi studenti a riparare la bambola più malvagia che sia mai esistita.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:25",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep46 di 52 La signora Jorgersen - Per evitare di fare i compiti, i ragazzi devono ingaggiare una battaglia disperata con la signora Jorgensen-",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "05:35",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep47 di 52 La rasatura - Una ciurma di pirati zombie emerge dall'oceano per per sfidare i protettori della città.",
+        "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
+      },
+      {
+        "ora": "05:35",
+        "fine": "05:50",
+        "titolo": "Monster Loving Maniacs",
+        "descrizione": "Ep48 di 52 Scambio di corpo - Continua la guerra degli scherzi tra Edith e Dracula. Ma la macchina di un inventore locale complica la faida. Dracula e Edith si sono scambiati i corpi.",
         "immagine": "https://image.tmdb.org/t/p/w300/70AKPGcZorSJVBoDg2nwp5sBBUf.jpg"
       },
       {
@@ -11903,6 +11987,48 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/988c1077-59f0-4c4e-9070-a32769e0d885/background/600"
       },
       {
+        "ora": "03:20",
+        "fine": "03:40",
+        "titolo": "Tim Rex nello Spazio",
+        "descrizione": "Ep6 di 10 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei più piccoli con soluzioni da...",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/988c1077-59f0-4c4e-9070-a32769e0d885/background/600"
+      },
+      {
+        "ora": "03:40",
+        "fine": "04:05",
+        "titolo": "Tim Rex nello Spazio",
+        "descrizione": "Ep7 di 10 - La nonna parte. / Fuga dal giardino. / I piccoli provano la pista.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/988c1077-59f0-4c4e-9070-a32769e0d885/background/600"
+      },
+      {
+        "ora": "04:05",
+        "fine": "04:30",
+        "titolo": "Mister Coccodrillo",
+        "descrizione": "Ep10 di 13 - Mister Coccodrillo e Daisy trasformano la vita di tutti i giorni in buffe avventure tra amicizia, entusiasmo e divertenti incomprensioni.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d5f3bfb0-8d2f-4590-8485-4bbbc6ae8384/background/600"
+      },
+      {
+        "ora": "04:30",
+        "fine": "04:50",
+        "titolo": "Mister Coccodrillo",
+        "descrizione": "Ep11 di 13 - Mister Coccodrillo e Daisy trasformano la vita di tutti i giorni in buffe avventure tra amicizia, entusiasmo e divertenti incomprensioni.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d5f3bfb0-8d2f-4590-8485-4bbbc6ae8384/background/600"
+      },
+      {
+        "ora": "04:50",
+        "fine": "05:15",
+        "titolo": "Barbapapà: Una grande famiglia felice",
+        "descrizione": "Ep25 di 26 Vivere bene insieme / Il pupazzo di neve - Per la prima volta i Barbabebè prendono il treno e dormono in un hotel. / Barbabarba costruisce un magnifico pupazzo di neve che i piccoli chiaman",
+        "immagine": "https://img-guidatv.org/461/barbapapa/6.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:35",
+        "titolo": "Barbapapà: Una grande famiglia felice",
+        "descrizione": "Ep26 di 26 Il divoratore di montagne / Ritorno a scuola - Barbapapà racconta ai Barbabebè del suo straordinario incontro con un lupo. // Domani è il primo giorno di scuola dei Barbabebè.",
+        "immagine": "https://img-guidatv.org/461/barbapapa/6.jpg"
+      },
+      {
         "ora": "05:35",
         "fine": "06:00",
         "titolo": "Barbapapà: Una grande famiglia felice",
@@ -12095,7 +12221,7 @@
         "ora": "16:30",
         "fine": "17:00",
         "titolo": "DORA #506",
-        "descrizione": "S5 Ep6 DORA #506 - Dora e la sua inseparabile scimmietta Boots continuano a esplorare il mondo affrontando missioni interattive",
+        "descrizione": "S5 Ep6 Un party per Party // Piccola Luna - Dora e la sua inseparabile scimmietta Boots continuano a esplorare il mondo affrontando missioni interattive",
         "immagine": "https://img-guidatv.org/461/dora-506/0.jpg"
       },
       {
@@ -12301,6 +12427,48 @@
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/988c1077-59f0-4c4e-9070-a32769e0d885/background/600"
       },
       {
+        "ora": "03:20",
+        "fine": "03:40",
+        "titolo": "Tim Rex nello Spazio",
+        "descrizione": "Ep6 di 10 - Tim Rex nello Spazio: Il T-Rex Tim, suo fratello maggiore Tommy, la sorellina Tia e la sua migliore amica Triceratopo Kai affrontano i problemi dei più piccoli con soluzioni da...",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/988c1077-59f0-4c4e-9070-a32769e0d885/background/600"
+      },
+      {
+        "ora": "03:40",
+        "fine": "04:05",
+        "titolo": "Tim Rex nello Spazio",
+        "descrizione": "Ep7 di 10 - La nonna parte. / Fuga dal giardino. / I piccoli provano la pista.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/988c1077-59f0-4c4e-9070-a32769e0d885/background/600"
+      },
+      {
+        "ora": "04:05",
+        "fine": "04:30",
+        "titolo": "Mister Coccodrillo",
+        "descrizione": "Ep10 di 13 - Mister Coccodrillo e Daisy trasformano la vita di tutti i giorni in buffe avventure tra amicizia, entusiasmo e divertenti incomprensioni.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d5f3bfb0-8d2f-4590-8485-4bbbc6ae8384/background/600"
+      },
+      {
+        "ora": "04:30",
+        "fine": "04:50",
+        "titolo": "Mister Coccodrillo",
+        "descrizione": "Ep11 di 13 - Mister Coccodrillo e Daisy trasformano la vita di tutti i giorni in buffe avventure tra amicizia, entusiasmo e divertenti incomprensioni.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d5f3bfb0-8d2f-4590-8485-4bbbc6ae8384/background/600"
+      },
+      {
+        "ora": "04:50",
+        "fine": "05:15",
+        "titolo": "Barbapapà: Una grande famiglia felice",
+        "descrizione": "Ep25 di 26 Vivere bene insieme / Il pupazzo di neve - Per la prima volta i Barbabebè prendono il treno e dormono in un hotel. / Barbabarba costruisce un magnifico pupazzo di neve che i piccoli chiaman",
+        "immagine": "https://img-guidatv.org/461/barbapapa/6.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:35",
+        "titolo": "Barbapapà: Una grande famiglia felice",
+        "descrizione": "Ep26 di 26 Il divoratore di montagne / Ritorno a scuola - Barbapapà racconta ai Barbabebè del suo straordinario incontro con un lupo. // Domani è il primo giorno di scuola dei Barbabebè.",
+        "immagine": "https://img-guidatv.org/461/barbapapa/6.jpg"
+      },
+      {
         "ora": "05:35",
         "fine": "06:00",
         "titolo": "Barbapapà: Una grande famiglia felice",
@@ -12493,7 +12661,7 @@
         "ora": "16:30",
         "fine": "17:00",
         "titolo": "DORA #506",
-        "descrizione": "S5 Ep6 DORA #506 - Dora e la sua inseparabile scimmietta Boots continuano a esplorare il mondo affrontando missioni interattive",
+        "descrizione": "S5 Ep6 Un party per Party // Piccola Luna - Dora e la sua inseparabile scimmietta Boots continuano a esplorare il mondo affrontando missioni interattive",
         "immagine": "https://img-guidatv.org/461/dora-506/0.jpg"
       },
       {
@@ -17665,7 +17833,7 @@
         "ora": "05:15",
         "fine": "06:00",
         "titolo": "A Sua Immagine",
-        "descrizione": "Un viaggio tra fede, tradizioni e devozioni con Lorena Bianchetti, commento al Vangelo di Padre Antonio Loffredo. Al termine In Punta di Matita l'arte con Rodolfo Papa. Conduce Lorena Bianchetti.",
+        "descrizione": "$27",
         "immagine": "https://img-guidatv.org/1/a-sua-immagine/0.jpg"
       },
       {
@@ -17923,7 +18091,7 @@
         "ora": "05:15",
         "fine": "06:00",
         "titolo": "A Sua Immagine",
-        "descrizione": "Un viaggio tra fede, tradizioni e devozioni con Lorena Bianchetti, commento al Vangelo di Padre Antonio Loffredo. Al termine In Punta di Matita l'arte con Rodolfo Papa. Conduce Lorena Bianchetti.",
+        "descrizione": "$27",
         "immagine": "https://img-guidatv.org/1/a-sua-immagine/0.jpg"
       },
       {
@@ -18150,6 +18318,13 @@
     "categoria": "Nazionale",
     "programmi": [
       {
+        "ora": "00:24",
+        "fine": "00:30",
+        "titolo": "Meteo 2",
+        "descrizione": "Meteo 2",
+        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
+      },
+      {
         "ora": "00:30",
         "fine": "01:00",
         "titolo": "TG2 Mizar",
@@ -18382,7 +18557,7 @@
       },
       {
         "ora": "23:40",
-        "fine": "00:30",
+        "fine": "00:24",
         "titolo": "Tg2 Storie. I Racconti Della Settimana",
         "descrizione": "Adriana Pannitteri racconta storie dall'Italia e dal mondo, tra attualità, impegno sociale e cultura. In apertura, un reportage dalla Sierra Leone sui bambini vittime dell'ingestione accidentale di soda caustica. Spazio poi alla violenza di genere con Paola Turci e Damiano Rizzi, alla sicurezza sul lavoro, alle periferie e ai progetti di inclusione e legalità dedicati ai giovani. In chiusura, Luca Argentero racconta il ritorno di Doc.",
         "immagine": "https://img-guidatv.org/2/tg2-storie/6.jpg"
@@ -18394,6 +18569,13 @@
     "categoria": "Nazionale",
     "programmi": [
       {
+        "ora": "00:24",
+        "fine": "00:30",
+        "titolo": "Meteo 2",
+        "descrizione": "Meteo 2",
+        "immagine": "https://img-guidatv.org/2/meteo-2/1.jpg"
+      },
+      {
         "ora": "00:30",
         "fine": "01:00",
         "titolo": "TG2 Mizar",
@@ -18626,7 +18808,7 @@
       },
       {
         "ora": "23:40",
-        "fine": "00:30",
+        "fine": "00:24",
         "titolo": "Tg2 Storie. I Racconti Della Settimana",
         "descrizione": "Adriana Pannitteri racconta storie dall'Italia e dal mondo, tra attualità, impegno sociale e cultura. In apertura, un reportage dalla Sierra Leone sui bambini vittime dell'ingestione accidentale di soda caustica. Spazio poi alla violenza di genere con Paola Turci e Damiano Rizzi, alla sicurezza sul lavoro, alle periferie e ai progetti di inclusione e legalità dedicati ai giovani. In chiusura, Luca Argentero racconta il ritorno di Doc.",
         "immagine": "https://img-guidatv.org/2/tg2-storie/6.jpg"
@@ -18638,60 +18820,60 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "00:25",
-        "titolo": "TG3 Mondo",
-        "descrizione": "A cura di Stefano Pizzetti",
-        "immagine": "https://img-guidatv.org/3/tg-3-mondo/5.jpg"
-      },
-      {
-        "ora": "00:25",
-        "fine": "00:30",
+        "ora": "00:10",
+        "fine": "00:15",
         "titolo": "TG3 Agenda Del Mondo",
         "descrizione": "A cura di Stefano Pizzetti",
         "immagine": "https://img-guidatv.org/3/tg-3-agenda-del-mondo/5.jpg"
       },
       {
-        "ora": "00:30",
-        "fine": "00:35",
+        "ora": "00:15",
+        "fine": "00:20",
         "titolo": "Meteo 3",
         "descrizione": "Meteo 3",
         "immagine": "https://img-guidatv.org/3/meteo-3/5.jpg"
       },
       {
-        "ora": "00:35",
-        "fine": "02:15",
+        "ora": "00:20",
+        "fine": "01:55",
         "titolo": "Non dirmi che hai paura",
         "descrizione": "Samia è una bambina somala con il sogno di diventare la donna più veloce del suo paese. Ci riuscirà, grazie al sostegno di suo padre e del suo amico allenatore Ali, arrivando fino alle Olimpiadi di Pechino 2008. Nulla però sarà semplice, Samia dovrà lottare contro un Paese tormentato da fanatismo religioso e dalla guerriglia, e scoprirà che attraversare l'Europa purtroppo è un'impresa - per molti - impossibile.",
         "immagine": "https://image.tmdb.org/t/p/w300/VnpCyGLUKcOg43dfsmAXVHO0nn.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:20",
+        "ora": "01:55",
+        "fine": "02:00",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "02:30",
+        "ora": "02:00",
+        "fine": "02:05",
         "titolo": "Fuori Orario. Cose (Mai) Viste",
         "descrizione": "Brakhage e Hamaguchi sono due cineasti opposti: il primo si concentra sulla visione pura, senza una narrazione classica, senza sonoro e soprattutto senza parole, mentre il secondo fa della sceneggiatura e dei dialoghi una chiave fondamentale per far emergere i lati nascosti e la realtà profonda dei personaggi che inventa e dei pezzi di mondo che racconta. Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta OCCHIO COSMICO. BRAKHAGE/HAMAGUCHI, ASCENDERE IL CINEMA DA VERSANTI OPPOSTI di Fulvio Baglivi (1)",
         "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "02:45",
+        "ora": "02:05",
+        "fine": "02:20",
         "titolo": "Visions In Meditation - #1",
         "descrizione": "Realizzato in 4 movimenti tra il 1989 e il 1990, la serie Visions in Meditation permette a Brakhage di tornare su un concetto a lui caro, il \"mind's eye\" \"l'occhio della mente\" che si affianca e completa il \"viusl eye\", ovvero il guardare \"automatico\" dell'occhio, senza il discernimento e il processo mentale che mette in moto un processo critico e di approfondimento della materia.",
         "immagine": "https://img-guidatv.org/3/visions-in-meditation-1/0.jpg"
       },
       {
-        "ora": "02:45",
-        "fine": "06:00",
+        "ora": "02:20",
+        "fine": "05:36",
         "titolo": "Happy Hour (Film)",
         "descrizione": "A Kobe quattro donne sulla quarantina sono grandi amiche e si confidano reciprocamente cercando di sfuggire all'alienazione della vita quotidiana. Durante un viaggio ai bagni termali una di loro scompare  misteriosamente scatenando una catena di eventi inaspettati.",
         "immagine": "https://image.tmdb.org/t/p/w300/hwMBpEhcZ43cWjimO6hIdPI4BoB.jpg"
+      },
+      {
+        "ora": "05:36",
+        "fine": "06:00",
+        "titolo": "Fuori Orario. Cose (Mai) Viste",
+        "descrizione": "Brakhage e Hamaguchi sono due cineasti opposti, il primo si concentra sulla visione pura, senza una narrazione classica, senza sonoro e soprattutto senza parole, mentre il secondo fa della sceneggiatura e dei dialog - hi una chiave fondamentale per far emergere i lati nascosti e la realtà profonda dei personaggi che inventa e dei pezzi di mondo che racconta. - di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta  OCCHIO COSMICO BRAKHAGE/HAMAGUCHI,  ASCENDERE IL CINEMA DA VERSANTI OPPOSTI di Fulvio Baglivi (1) con",
+        "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
         "ora": "06:00",
@@ -18870,7 +19052,7 @@
       },
       {
         "ora": "23:45",
-        "fine": "00:00",
+        "fine": "00:10",
         "titolo": "TG3 Mondo",
         "descrizione": "A cura di Stefano Pizzetti",
         "immagine": "https://img-guidatv.org/3/tg-3-mondo/5.jpg"
@@ -18882,60 +19064,60 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "00:25",
-        "titolo": "TG3 Mondo",
-        "descrizione": "A cura di Stefano Pizzetti",
-        "immagine": "https://img-guidatv.org/3/tg-3-mondo/5.jpg"
-      },
-      {
-        "ora": "00:25",
-        "fine": "00:30",
+        "ora": "00:10",
+        "fine": "00:15",
         "titolo": "TG3 Agenda Del Mondo",
         "descrizione": "A cura di Stefano Pizzetti",
         "immagine": "https://img-guidatv.org/3/tg-3-agenda-del-mondo/5.jpg"
       },
       {
-        "ora": "00:30",
-        "fine": "00:35",
+        "ora": "00:15",
+        "fine": "00:20",
         "titolo": "Meteo 3",
         "descrizione": "Meteo 3",
         "immagine": "https://img-guidatv.org/3/meteo-3/5.jpg"
       },
       {
-        "ora": "00:35",
-        "fine": "02:15",
+        "ora": "00:20",
+        "fine": "01:55",
         "titolo": "Non dirmi che hai paura",
         "descrizione": "Samia è una bambina somala con il sogno di diventare la donna più veloce del suo paese. Ci riuscirà, grazie al sostegno di suo padre e del suo amico allenatore Ali, arrivando fino alle Olimpiadi di Pechino 2008. Nulla però sarà semplice, Samia dovrà lottare contro un Paese tormentato da fanatismo religioso e dalla guerriglia, e scoprirà che attraversare l'Europa purtroppo è un'impresa - per molti - impossibile.",
         "immagine": "https://image.tmdb.org/t/p/w300/VnpCyGLUKcOg43dfsmAXVHO0nn.jpg"
       },
       {
-        "ora": "02:15",
-        "fine": "02:20",
+        "ora": "01:55",
+        "fine": "02:00",
         "titolo": "Appuntamento Al Cinema",
         "descrizione": "Rubrica per la promozione della cultura cinematografica in Italia.",
         "immagine": "https://img-guidatv.org/3/appuntamento-al-cinema/0.jpg"
       },
       {
-        "ora": "02:20",
-        "fine": "02:30",
+        "ora": "02:00",
+        "fine": "02:05",
         "titolo": "Fuori Orario. Cose (Mai) Viste",
         "descrizione": "Brakhage e Hamaguchi sono due cineasti opposti: il primo si concentra sulla visione pura, senza una narrazione classica, senza sonoro e soprattutto senza parole, mentre il secondo fa della sceneggiatura e dei dialoghi una chiave fondamentale per far emergere i lati nascosti e la realtà profonda dei personaggi che inventa e dei pezzi di mondo che racconta. Di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta OCCHIO COSMICO. BRAKHAGE/HAMAGUCHI, ASCENDERE IL CINEMA DA VERSANTI OPPOSTI di Fulvio Baglivi (1)",
         "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
-        "ora": "02:30",
-        "fine": "02:45",
+        "ora": "02:05",
+        "fine": "02:20",
         "titolo": "Visions In Meditation - #1",
         "descrizione": "Realizzato in 4 movimenti tra il 1989 e il 1990, la serie Visions in Meditation permette a Brakhage di tornare su un concetto a lui caro, il \"mind's eye\" \"l'occhio della mente\" che si affianca e completa il \"viusl eye\", ovvero il guardare \"automatico\" dell'occhio, senza il discernimento e il processo mentale che mette in moto un processo critico e di approfondimento della materia.",
         "immagine": "https://img-guidatv.org/3/visions-in-meditation-1/0.jpg"
       },
       {
-        "ora": "02:45",
-        "fine": "06:00",
+        "ora": "02:20",
+        "fine": "05:36",
         "titolo": "Happy Hour (Film)",
         "descrizione": "A Kobe quattro donne sulla quarantina sono grandi amiche e si confidano reciprocamente cercando di sfuggire all'alienazione della vita quotidiana. Durante un viaggio ai bagni termali una di loro scompare  misteriosamente scatenando una catena di eventi inaspettati.",
         "immagine": "https://image.tmdb.org/t/p/w300/hwMBpEhcZ43cWjimO6hIdPI4BoB.jpg"
+      },
+      {
+        "ora": "05:36",
+        "fine": "06:00",
+        "titolo": "Fuori Orario. Cose (Mai) Viste",
+        "descrizione": "Brakhage e Hamaguchi sono due cineasti opposti, il primo si concentra sulla visione pura, senza una narrazione classica, senza sonoro e soprattutto senza parole, mentre il secondo fa della sceneggiatura e dei dialog - hi una chiave fondamentale per far emergere i lati nascosti e la realtà profonda dei personaggi che inventa e dei pezzi di mondo che racconta. - di Ghezzi Baglivi Esposito Fina Francia Luciani Turigliatto presenta  OCCHIO COSMICO BRAKHAGE/HAMAGUCHI,  ASCENDERE IL CINEMA DA VERSANTI OPPOSTI di Fulvio Baglivi (1) con",
+        "immagine": "https://img-guidatv.org/3/fuori-orario/1.jpg"
       },
       {
         "ora": "06:00",
@@ -19114,7 +19296,7 @@
       },
       {
         "ora": "23:45",
-        "fine": "00:00",
+        "fine": "00:10",
         "titolo": "TG3 Mondo",
         "descrizione": "A cura di Stefano Pizzetti",
         "immagine": "https://img-guidatv.org/3/tg-3-mondo/5.jpg"
@@ -19242,7 +19424,7 @@
         "fine": "16:34",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000901/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:34",
@@ -19409,7 +19591,7 @@
         "fine": "16:34",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000901/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:34",
@@ -22599,13 +22781,13 @@
     "programmi": [
       {
         "ora": "01:30",
-        "fine": "03:15",
+        "fine": "03:14",
         "titolo": "Quello che tu non vedi",
         "descrizione": "Adam è affetto da schizofrenia. Per terminare gli ultimi mesi di liceo, viene mandato in un'accademia cattolica. Qui il giovane cerca di adattarsi al nuovo ambiente, mentre tenta di tenere segreta la sua malattia per non essere compatito o etichettato come diverso. Quando si imbatte in Maya, una sua coetanea brillante, schietta e spiritosa, Adam sente sin da subito una forte sintonia con lei e in breve tempo se ne innamora.",
         "immagine": "https://image.tmdb.org/t/p/w300/8h8PJu3YQ9braQE0MVU091TdlYE.jpg"
       },
       {
-        "ora": "03:15",
+        "ora": "03:14",
         "fine": "05:00",
         "titolo": "Gli specialisti (Film)",
         "descrizione": "Il fratello di un pistolero senz'arte né parte, viene selvaggiamente linciato perché accusato di un furto che, in realtà, non ha commesso. Per vendicarlo stringerà un'ambigua alleanza con un perfido bandito messicano.",
@@ -22613,6 +22795,13 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:05",
+        "titolo": "Mammamia! - Rifiuti Differenziati",
+        "descrizione": "La vita quotidiana di una mamma alle prese con le difficoltà di occuparsi di tre figli di 13, 7 e 4 anni. Perché sopravvivere alla routine di ogni giorno può diventare un'avventura che richiede una buona dose di eroismo.",
+        "immagine": "https://img-guidatv.org/46/mammamia-rifiuti-differenziati/0.jpg"
+      },
+      {
+        "ora": "05:05",
         "fine": "06:20",
         "titolo": "Likemeback",
         "descrizione": "Lavinia, Carla e Danila hanno appena finito il liceo e partono insieme per una vacanza in barca a vela. Sono sole con i loro telefonini e uno skipper, in viaggio lungo le coste della Croazia, piene di sogni, libertà e spensieratezza. Sono inconsapevoli di come condividere tutto sui social trasformerà la loro vacanza in un brutale rito di passaggio all'età adulta in cui nulla, soprattutto la loro amicizia, sarà mai più come prima.",
@@ -22710,13 +22899,13 @@
     "programmi": [
       {
         "ora": "01:30",
-        "fine": "03:15",
+        "fine": "03:14",
         "titolo": "Quello che tu non vedi",
         "descrizione": "Adam è affetto da schizofrenia. Per terminare gli ultimi mesi di liceo, viene mandato in un'accademia cattolica. Qui il giovane cerca di adattarsi al nuovo ambiente, mentre tenta di tenere segreta la sua malattia per non essere compatito o etichettato come diverso. Quando si imbatte in Maya, una sua coetanea brillante, schietta e spiritosa, Adam sente sin da subito una forte sintonia con lei e in breve tempo se ne innamora.",
         "immagine": "https://image.tmdb.org/t/p/w300/8h8PJu3YQ9braQE0MVU091TdlYE.jpg"
       },
       {
-        "ora": "03:15",
+        "ora": "03:14",
         "fine": "05:00",
         "titolo": "Gli specialisti (Film)",
         "descrizione": "Il fratello di un pistolero senz'arte né parte, viene selvaggiamente linciato perché accusato di un furto che, in realtà, non ha commesso. Per vendicarlo stringerà un'ambigua alleanza con un perfido bandito messicano.",
@@ -22724,6 +22913,13 @@
       },
       {
         "ora": "05:00",
+        "fine": "05:05",
+        "titolo": "Mammamia! - Rifiuti Differenziati",
+        "descrizione": "La vita quotidiana di una mamma alle prese con le difficoltà di occuparsi di tre figli di 13, 7 e 4 anni. Perché sopravvivere alla routine di ogni giorno può diventare un'avventura che richiede una buona dose di eroismo.",
+        "immagine": "https://img-guidatv.org/46/mammamia-rifiuti-differenziati/0.jpg"
+      },
+      {
+        "ora": "05:05",
         "fine": "06:20",
         "titolo": "Likemeback",
         "descrizione": "Lavinia, Carla e Danila hanno appena finito il liceo e partono insieme per una vacanza in barca a vela. Sono sole con i loro telefonini e uno skipper, in viaggio lungo le coste della Croazia, piene di sogni, libertà e spensieratezza. Sono inconsapevoli di come condividere tutto sui social trasformerà la loro vacanza in un brutale rito di passaggio all'età adulta in cui nulla, soprattutto la loro amicizia, sarà mai più come prima.",
@@ -25234,21 +25430,21 @@
         "fine": "15:54",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000901/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "15:54",
         "fine": "16:18",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000901/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:18",
         "fine": "16:33",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000901/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:33",
@@ -27438,21 +27634,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "00:25",
+        "ora": "00:25",
+        "fine": "00:30",
         "titolo": "Rai News Notte",
         "descrizione": "Rai News Notte",
         "immagine": "https://img-guidatv.org/24/rai-news-notte/8.jpg"
       },
       {
-        "ora": "00:25",
-        "fine": "00:45",
+        "ora": "00:30",
+        "fine": "00:50",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 4 ottobre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "00:45",
+        "ora": "00:50",
         "fine": "01:25",
         "titolo": "Passato E Presente - Otello Sarzi. Burattini Ribelli",
         "descrizione": "Artista ribelle e visionario, figlio di una dinastia di teatranti girovaghi, Otello Sarzi cresce tra burattini e palchi improvvisati.  Gli ideali antifascisti lo portano a imbracciare le armi nella Resistenza, accanto a Dante Castellucci \"Facio\" e ai fratelli Cervi. Dopo la guerra non abbandona la passione civile: nel 1957 fonda a Roma il Teatro Sperimentale dei Burattini e delle Marionette, portando sul palco Brecht, Beckett, Kafka e Majakovskij. Con lui, il teatro di figura smette di essere \"minore\" e diventa linguaggio poetico, politico e universale. Negli anni Sessanta arriva la televisione: le sue creature di gommapiuma e lattice conquistano il piccolo schermo, aprendo la strada alla prima TV per ragazzi. Un percorso che si intreccia idealmente con il pensiero di Gianni Rodari, con cui Sarzi condivide la convinzione profonda che l'immaginazione sia, prima di tutto, una forma di libertà e di resistenza. In studio con Paolo Mieli, il professor David Bidussa.",
@@ -27467,24 +27663,24 @@
       },
       {
         "ora": "02:15",
-        "fine": "03:10",
-        "titolo": "Storie Della TV - Domenica è Sempre Domenica",
-        "descrizione": "Le trasmissioni che hanno animato il pomeriggio festivo: dalla TV dei ragazzi dei primi anni, al \"Settevoci\" con Pippo Baudo, agli show con i nuovi comici, da Paolo Villaggio a Cochi e Renato, fino al contenitore di Rai 1, la sempiterna \"Domenica In\", iniziata nel 1976 in concorrenza de \"L'altra domenica\", poi di \"Blitz\", e infine di \"Quelli che...il calcio\", perfetta sintesi di sport e spettacolo, i due elementi della domenica pomeriggio.",
-        "immagine": "https://img-guidatv.org/24/storie-della-tv-domenica-e-sempre-domenica/0.jpg"
+        "fine": "03:15",
+        "titolo": "Il Natale che ho sempre desiderato",
+        "descrizione": "Una trasmissione televisiva lancia un proclama per dilettanti: “Se sapete parlare, saprete anche cantare”. Il miraggio del premio fa gola e più di una persona, o con ambizioni o con problemi finanziari, si iscrive al concorso. Il numero di centro del film – ispirato alla trasmissione “Il musichiere” – è l'episodio di Sordi che fa una gustosa parodia di un industriale che vuol cantare.",
+        "immagine": "https://image.tmdb.org/t/p/w300/1xitvyfyJ6R6jv0BMboxM8U5Pco.jpg"
       },
       {
-        "ora": "03:10",
+        "ora": "03:15",
         "fine": "03:45",
-        "titolo": "La Strage Di Acerra, Ottobre 1943",
-        "descrizione": "Ottobre 1943. L'intero paese di Acerra, Campania, viene messo a ferro e fuoco dai nazisti che uccidono per rappresaglia 84 persone: uomini, donne, anziani e bambini. La vittima più piccola aveva solo un anno. Si tratta di una delle più grandi stragi compiute dall'esercito tedesco nel sud Italia.",
-        "immagine": "https://img-guidatv.org/24/la-strage-di-acerra-ottobre-1943/0.jpg"
+        "titolo": "Domenica Con Marcello Mastroianni: Un Di",
+        "descrizione": "Domenica con Marcello Mastroianni: un divo in Tv - Le incursioni televisive di un grande attore, Marcello Mastroianni, intervallate da una celebre intervista del 1988 di Enzo Biagi.",
+        "immagine": "https://img-guidatv.org/24/domenica-con/6.jpg"
       },
       {
         "ora": "03:45",
         "fine": "04:30",
-        "titolo": "Mille Papaveri Rossi - Mao, La Gloria E Il Potere",
-        "descrizione": "La guerra civile in Cina negli anni 1948-1949, La fine di Chiang Kai Shek e la Cina di Formosa.",
-        "immagine": "https://img-guidatv.org/24/mille-papaveri-rossi-mao-la-gloria-e-il-potere/0.jpg"
+        "titolo": "Mao,La Gloria E Il Potere Pt.3",
+        "descrizione": "La guerra civile in Cina negli anni 1948-1949, La fine di Chiang Kai Shek e la Cina di Formosa.. - 1981 Di Daniela Ghezzi e Raffaello Uboldi",
+        "immagine": "https://img-guidatv.org/24/mao-la-gloria-e-il-potere-pt-3/0.jpg"
       },
       {
         "ora": "04:30",
@@ -27710,21 +27906,21 @@
     "categoria": "Nazionale",
     "programmi": [
       {
-        "ora": "00:00",
-        "fine": "00:25",
+        "ora": "00:25",
+        "fine": "00:30",
         "titolo": "Rai News Notte",
         "descrizione": "Rai News Notte",
         "immagine": "https://img-guidatv.org/24/rai-news-notte/8.jpg"
       },
       {
-        "ora": "00:25",
-        "fine": "00:45",
+        "ora": "00:30",
+        "fine": "00:50",
         "titolo": "Il Giorno E La Storia",
         "descrizione": "Persone, eventi e ricorrenze del 4 ottobre 2026.",
         "immagine": "https://img-guidatv.org/24/il-giorno-e-la-storia/0.jpg"
       },
       {
-        "ora": "00:45",
+        "ora": "00:50",
         "fine": "01:25",
         "titolo": "Passato E Presente - Otello Sarzi. Burattini Ribelli",
         "descrizione": "Artista ribelle e visionario, figlio di una dinastia di teatranti girovaghi, Otello Sarzi cresce tra burattini e palchi improvvisati.  Gli ideali antifascisti lo portano a imbracciare le armi nella Resistenza, accanto a Dante Castellucci \"Facio\" e ai fratelli Cervi. Dopo la guerra non abbandona la passione civile: nel 1957 fonda a Roma il Teatro Sperimentale dei Burattini e delle Marionette, portando sul palco Brecht, Beckett, Kafka e Majakovskij. Con lui, il teatro di figura smette di essere \"minore\" e diventa linguaggio poetico, politico e universale. Negli anni Sessanta arriva la televisione: le sue creature di gommapiuma e lattice conquistano il piccolo schermo, aprendo la strada alla prima TV per ragazzi. Un percorso che si intreccia idealmente con il pensiero di Gianni Rodari, con cui Sarzi condivide la convinzione profonda che l'immaginazione sia, prima di tutto, una forma di libertà e di resistenza. In studio con Paolo Mieli, il professor David Bidussa.",
@@ -27739,24 +27935,24 @@
       },
       {
         "ora": "02:15",
-        "fine": "03:10",
-        "titolo": "Storie Della TV - Domenica è Sempre Domenica",
-        "descrizione": "Le trasmissioni che hanno animato il pomeriggio festivo: dalla TV dei ragazzi dei primi anni, al \"Settevoci\" con Pippo Baudo, agli show con i nuovi comici, da Paolo Villaggio a Cochi e Renato, fino al contenitore di Rai 1, la sempiterna \"Domenica In\", iniziata nel 1976 in concorrenza de \"L'altra domenica\", poi di \"Blitz\", e infine di \"Quelli che...il calcio\", perfetta sintesi di sport e spettacolo, i due elementi della domenica pomeriggio.",
-        "immagine": "https://img-guidatv.org/24/storie-della-tv-domenica-e-sempre-domenica/0.jpg"
+        "fine": "03:15",
+        "titolo": "Il Natale che ho sempre desiderato",
+        "descrizione": "Una trasmissione televisiva lancia un proclama per dilettanti: “Se sapete parlare, saprete anche cantare”. Il miraggio del premio fa gola e più di una persona, o con ambizioni o con problemi finanziari, si iscrive al concorso. Il numero di centro del film – ispirato alla trasmissione “Il musichiere” – è l'episodio di Sordi che fa una gustosa parodia di un industriale che vuol cantare.",
+        "immagine": "https://image.tmdb.org/t/p/w300/1xitvyfyJ6R6jv0BMboxM8U5Pco.jpg"
       },
       {
-        "ora": "03:10",
+        "ora": "03:15",
         "fine": "03:45",
-        "titolo": "La Strage Di Acerra, Ottobre 1943",
-        "descrizione": "Ottobre 1943. L'intero paese di Acerra, Campania, viene messo a ferro e fuoco dai nazisti che uccidono per rappresaglia 84 persone: uomini, donne, anziani e bambini. La vittima più piccola aveva solo un anno. Si tratta di una delle più grandi stragi compiute dall'esercito tedesco nel sud Italia.",
-        "immagine": "https://img-guidatv.org/24/la-strage-di-acerra-ottobre-1943/0.jpg"
+        "titolo": "Domenica Con Marcello Mastroianni: Un Di",
+        "descrizione": "Domenica con Marcello Mastroianni: un divo in Tv - Le incursioni televisive di un grande attore, Marcello Mastroianni, intervallate da una celebre intervista del 1988 di Enzo Biagi.",
+        "immagine": "https://img-guidatv.org/24/domenica-con/6.jpg"
       },
       {
         "ora": "03:45",
         "fine": "04:30",
-        "titolo": "Mille Papaveri Rossi - Mao, La Gloria E Il Potere",
-        "descrizione": "La guerra civile in Cina negli anni 1948-1949, La fine di Chiang Kai Shek e la Cina di Formosa.",
-        "immagine": "https://img-guidatv.org/24/mille-papaveri-rossi-mao-la-gloria-e-il-potere/0.jpg"
+        "titolo": "Mao,La Gloria E Il Potere Pt.3",
+        "descrizione": "La guerra civile in Cina negli anni 1948-1949, La fine di Chiang Kai Shek e la Cina di Formosa.. - 1981 Di Daniela Ghezzi e Raffaello Uboldi",
+        "immagine": "https://img-guidatv.org/24/mao-la-gloria-e-il-potere-pt-3/0.jpg"
       },
       {
         "ora": "04:30",
@@ -30902,10 +31098,17 @@
       },
       {
         "ora": "11:10",
-        "fine": "14:30",
+        "fine": "12:55",
         "titolo": "Calcio: Nations League 2026/2027 - Scozia - Svizzera",
         "descrizione": "da Glasgow (GBR)",
         "immagine": "https://img-guidatv.org/91/calcio-nations-league-2026/6.png"
+      },
+      {
+        "ora": "12:55",
+        "fine": "14:30",
+        "titolo": "Zlatan",
+        "descrizione": "La storia di crescita e trasformazione di un uomo che è partito dai sobborghi fino ad arrivare al successo. Il calcio è stato la liberazione di Zlatan Ibrahimovic da un ambiente difficile: il suo notevole talento e la fiducia in se stesso lo hanno catapultato contro ogni probabilità ai vertici del calcio internazionale, portandolo a giocare in squadre come l’Ajax Amsterdam, la Juventus, l’Inter, il Milan, il Barcellona, il Paris Saint-Germain e il Manchester United.",
+        "immagine": "https://img-guidatv.org/film_new/z/62b0b245a3edf6f888cc9a3d/62b0b245a3edf6f888cc9a3d_p_1_rs_300.jpg"
       },
       {
         "ora": "14:30",
@@ -30916,13 +31119,13 @@
       },
       {
         "ora": "15:00",
-        "fine": "17:20",
+        "fine": "17:00",
         "titolo": "Ciclismo: Europei Lubiana 2026 - Gara élite femminile",
         "descrizione": "da Lubiana (SLO)",
         "immagine": "https://img-guidatv.org/91/ciclismo/0.jpg"
       },
       {
-        "ora": "17:20",
+        "ora": "17:00",
         "fine": "17:35",
         "titolo": "Il prima e dopo sport",
         "descrizione": "Immagini sportive",
@@ -31055,10 +31258,17 @@
       },
       {
         "ora": "11:10",
-        "fine": "14:30",
+        "fine": "12:55",
         "titolo": "Calcio: Nations League 2026/2027 - Scozia - Svizzera",
         "descrizione": "da Glasgow (GBR)",
         "immagine": "https://img-guidatv.org/91/calcio-nations-league-2026/6.png"
+      },
+      {
+        "ora": "12:55",
+        "fine": "14:30",
+        "titolo": "Zlatan",
+        "descrizione": "La storia di crescita e trasformazione di un uomo che è partito dai sobborghi fino ad arrivare al successo. Il calcio è stato la liberazione di Zlatan Ibrahimovic da un ambiente difficile: il suo notevole talento e la fiducia in se stesso lo hanno catapultato contro ogni probabilità ai vertici del calcio internazionale, portandolo a giocare in squadre come l’Ajax Amsterdam, la Juventus, l’Inter, il Milan, il Barcellona, il Paris Saint-Germain e il Manchester United.",
+        "immagine": "https://img-guidatv.org/film_new/z/62b0b245a3edf6f888cc9a3d/62b0b245a3edf6f888cc9a3d_p_1_rs_300.jpg"
       },
       {
         "ora": "14:30",
@@ -31069,13 +31279,13 @@
       },
       {
         "ora": "15:00",
-        "fine": "17:20",
+        "fine": "17:00",
         "titolo": "Ciclismo: Europei Lubiana 2026 - Gara élite femminile",
         "descrizione": "da Lubiana (SLO)",
         "immagine": "https://img-guidatv.org/91/ciclismo/0.jpg"
       },
       {
-        "ora": "17:20",
+        "ora": "17:00",
         "fine": "17:35",
         "titolo": "Il prima e dopo sport",
         "descrizione": "Immagini sportive",
