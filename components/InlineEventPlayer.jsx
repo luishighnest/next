@@ -78,9 +78,12 @@ export default function InlineEventPlayer({ source, title, poster }) {
                     if (source.origin) request.headers["origin"] = source.origin;
 
                     let daznTok = source.dazn_token || "";
-                    if (!daznTok && streamUrl.includes("@eyJ")) {
-                        const tm = streamUrl.match(/@([A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)/);
-                        if (tm) daznTok = tm[1];
+                    if (!daznTok) {
+                        const checkStr = (streamUrl.includes("%40eyJ") || streamUrl.includes("%2F%40eyJ")) ? decodeURIComponent(streamUrl) : streamUrl;
+                        if (checkStr.includes("@eyJ")) {
+                            const tm = checkStr.match(/@([A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)/);
+                            if (tm) daznTok = tm[1];
+                        }
                     }
                     if (daznTok) {
                         request.headers["dazn-token"] = daznTok;

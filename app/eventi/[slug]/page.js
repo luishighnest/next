@@ -379,18 +379,30 @@ export default function EventoPlayerPage() {
         }
 
         // DAZN WARP / Query Token: URL tipo https://cdn.dazn.com/@JWT/dash/stream.mpd?p=web o ?dazn-token=...
-        // L'estensione si aspetta URL PULITA + JWT come dazn-token negli headers
+        // oppure passato attraverso il Cloudflare Worker (es. /manifest?url=https%3A%2F%2F...@JWT...)
         let mpdUrl = rawUrl;
         let daznToken = selectedSource.dazn_token || "";
 
-        const warpMatch = rawUrl.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
+        let decodedForCheck = rawUrl;
+        if (rawUrl.includes("%40eyJ") || rawUrl.includes("%2F%40eyJ")) {
+            try {
+                decodedForCheck = decodeURIComponent(rawUrl);
+            } catch(e) {}
+        }
+
+        const warpMatch = decodedForCheck.match(/^(https?:\/\/[^/]+)\/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)(\/.*)?$/);
         if (warpMatch) {
             daznToken = warpMatch[2];
             mpdUrl = warpMatch[1] + (warpMatch[3] || "");
-        } else if (!daznToken) {
-            const daznParamMatch = rawUrl.match(/[?&]dazn-token=([^&]+)/);
-            if (daznParamMatch) {
-                daznToken = decodeURIComponent(daznParamMatch[1]);
+        } else {
+            const innerMatch = decodedForCheck.match(/@(eyJ[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+\.[A-Za-z0-9_\-]+)/);
+            if (innerMatch) {
+                daznToken = innerMatch[1];
+            } else if (!daznToken) {
+                const daznParamMatch = decodedForCheck.match(/[?&]dazn-token=([^&]+)/);
+                if (daznParamMatch) {
+                    daznToken = decodeURIComponent(daznParamMatch[1]);
+                }
             }
         }
 
