@@ -54,13 +54,13 @@
       },
       {
         "ora": "06:55",
-        "fine": "08:00",
+        "fine": "08:05",
         "titolo": "GP Giappone: Gara",
         "descrizione": "Sedicesimo appuntamento del mondiale 2026: a  Motegi, in Giappone, si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/822de783-d03b-46b7-bded-11b353b169ab/background/600"
       },
       {
-        "ora": "08:00",
+        "ora": "08:05",
         "fine": "08:30",
         "titolo": "Moto GP Zona Rossa",
         "descrizione": "Le interviste ai protagonisti, i commenti a caldo e le primissime analisi dopo la conclusione della gara della MotoGP.",
@@ -68,69 +68,55 @@
       },
       {
         "ora": "08:30",
-        "fine": "08:55",
+        "fine": "08:50",
         "titolo": "[REPLICA] - F1 Paddock Live Pre Gara",
         "descrizione": "L'avvicinamento al Gran Premio con l'analisi di quanto successo nel weekend, le interviste, i giri di riscaldamento delle monoposto e l'atmosfera unica della griglia di partenza prima del via.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ed61f954-b333-43b4-a39e-5fdd1dd82abe/background/600"
       },
       {
-        "ora": "08:55",
-        "fine": "10:45",
+        "ora": "08:50",
+        "fine": "12:55",
         "titolo": "GP Bahrein: Gara",
         "descrizione": "Si recupera a Sepang il GP del Bahrain. Nel 2017, l'ultima volta in Malesia, vinse Max Verstappen. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/89c5ce4b-0c15-4fb8-8a43-017992d4a965/background/600"
       },
       {
-        "ora": "10:45",
-        "fine": "11:30",
+        "ora": "12:55",
+        "fine": "13:10",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
       },
       {
-        "ora": "11:30",
-        "fine": "12:00",
+        "ora": "13:10",
+        "fine": "13:20",
         "titolo": "F1 Debriefing",
         "descrizione": "E' il momento dell'analisi: dopo i giri in pista, giro di opinioni sui temi principali emersi dalla gara e dall'intero weekend. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/69df7712-56d1-46e1-a38f-474896c02a24/background/600"
       },
       {
-        "ora": "12:00",
-        "fine": "12:15",
+        "ora": "13:20",
+        "fine": "13:35",
         "titolo": "F1 Notebook 2026 04/10/2026",
         "descrizione": "... 04/10/2026 F1 Notebook. - Anticipazioni entusiasmanti sulla prossima stagione 2023 direttamente dalla corsia dei box. Il giornalista britannico, esperto di Formula 1, Ted Kravitz racconta le manovre dal paddock e analizza il fine settimana.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1e0e8482-53fc-4ccb-a1be-8e03d5c5f6eb/background/600"
       },
       {
-        "ora": "12:15",
-        "fine": "13:15",
+        "ora": "13:35",
+        "fine": "14:35",
         "titolo": "Bahrain in Malesia",
         "descrizione": "... Anatomy F1. - L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0e66eb96-9441-4510-b13a-7734e5d0b893/background/600"
       },
       {
-        "ora": "13:15",
-        "fine": "13:40",
-        "titolo": "Federico Maldini",
-        "descrizione": "Teo Trials",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d7179878-4747-41b7-8fb0-5eb52dd27d59/background/600"
-      },
-      {
-        "ora": "13:40",
-        "fine": "14:00",
-        "titolo": "La Giovane Italia 2026 Ep.21 01/10/2026",
-        "descrizione": "... 01/10/2026 La giovane Italia. - Rivediamo tutti i gol dell'ultimo fine settimana LGI.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/6abc125c-6dbe-4140-96b4-ecbc42a72495/background/600"
-      },
-      {
-        "ora": "14:00",
-        "fine": "15:30",
+        "ora": "14:35",
+        "fine": "15:40",
         "titolo": "Italia: Stage 5",
         "descrizione": "... Rally Championship. - Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a4a83cc1-78c5-4405-896c-c3ee9658a499/background/600"
       },
       {
-        "ora": "15:30",
+        "ora": "15:40",
         "fine": "15:50",
         "titolo": "Studio Basket Serie A 2026/2027 Prepartita 04/10/2026",
         "descrizione": "... 2026/2027 Prepartita 04/10/2026 Studio Basket Serie A. - In attesa di Roma-Tortona e poi di Virtus-Maxima, Giulia Cicchine', Chicca Macchi e Andrea Meneghin, con le interviste di Gaia Accoto, presentano la seconda giornata di serie A.",
@@ -577,13 +563,13 @@
       },
       {
         "ora": "14:20",
-        "fine": "16:30",
+        "fine": "16:45",
         "titolo": "Cosenza - Foggia",
         "descrizione": "Dallo Stadio San Vito-Gigi Marulla di Cosenza, Italia.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ec64caf6-0ca4-4f50-ac12-43bd092f9c20/background/600"
       },
       {
-        "ora": "16:30",
+        "ora": "16:45",
         "fine": "17:00",
         "titolo": "Europa League Remix Ep.1 18/09/2026",
         "descrizione": "... Europa & Conference League Remix. - Europa & Conference League Remix",
@@ -721,28 +707,21 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:10",
+        "ora": "00:40",
         "fine": "00:55",
-        "titolo": "Inside The Team - Un Gp con Kimi",
-        "descrizione": "Inside The Team - Un Gp con Kimi",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/59bb332e-1c30-4f19-bc9b-dd78dabec831/background/600"
-      },
-      {
-        "ora": "00:55",
-        "fine": "01:10",
         "titolo": "GP Baku",
         "descrizione": "Il campionato FIA Formula 2 e' arrivato in Azerbaigian per un fine settimana cruciale sul circuito cittadino di Baku.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3521a2b4-1ab2-4230-8e35-ec52e6994c86/background/600"
       },
       {
-        "ora": "01:10",
-        "fine": "02:10",
+        "ora": "00:55",
+        "fine": "02:00",
         "titolo": "Bahrain in Malesia",
         "descrizione": "L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0e66eb96-9441-4510-b13a-7734e5d0b893/background/600"
       },
       {
-        "ora": "02:10",
+        "ora": "02:00",
         "fine": "02:30",
         "titolo": "[REPLICA] - F1 Paddock Live Pre Gara",
         "descrizione": "L'avvicinamento al Gran Premio con l'analisi di quanto successo nel weekend, le interviste, i giri di riscaldamento delle monoposto e l'atmosfera unica della griglia di partenza prima del via.",
@@ -792,108 +771,115 @@
       },
       {
         "ora": "08:55",
-        "fine": "11:00",
+        "fine": "12:55",
         "titolo": "GP Bahrein: Gara",
         "descrizione": "Si recupera a Sepang il GP del Bahrain. Nel 2017, l'ultima volta in Malesia, vinse Max Verstappen. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/89c5ce4b-0c15-4fb8-8a43-017992d4a965/background/600"
       },
       {
-        "ora": "11:00",
-        "fine": "11:30",
+        "ora": "12:55",
+        "fine": "13:00",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
       },
       {
-        "ora": "11:30",
-        "fine": "12:00",
+        "ora": "13:00",
+        "fine": "13:20",
         "titolo": "F1 Debriefing",
         "descrizione": "E' il momento dell'analisi: dopo i giri in pista, giro di opinioni sui temi principali emersi dalla gara e dall'intero weekend. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/69df7712-56d1-46e1-a38f-474896c02a24/background/600"
       },
       {
-        "ora": "12:00",
-        "fine": "12:15",
+        "ora": "13:20",
+        "fine": "13:35",
         "titolo": "F1 Notebook 2026 04/10/2026",
         "descrizione": "... 04/10/2026 F1 Notebook. - Anticipazioni entusiasmanti sulla prossima stagione 2023 direttamente dalla corsia dei box. Il giornalista britannico, esperto di Formula 1, Ted Kravitz racconta le manovre dal paddock e analizza il fine settimana.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1e0e8482-53fc-4ccb-a1be-8e03d5c5f6eb/background/600"
       },
       {
-        "ora": "12:15",
-        "fine": "13:15",
+        "ora": "13:35",
+        "fine": "15:00",
         "titolo": "Bahrain in Malesia",
         "descrizione": "... Anatomy F1. - L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0e66eb96-9441-4510-b13a-7734e5d0b893/background/600"
       },
       {
-        "ora": "13:15",
-        "fine": "13:30",
-        "titolo": "F1 Notebook 2026 04/10/2026",
-        "descrizione": "Anticipazioni entusiasmanti sulla prossima stagione 2023 direttamente dalla corsia dei box. Il giornalista britannico, esperto di Formula 1, Ted Kravitz racconta le manovre dal paddock e analizza il fine settimana.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1e0e8482-53fc-4ccb-a1be-8e03d5c5f6eb/background/600"
-      },
-      {
-        "ora": "13:30",
-        "fine": "13:55",
-        "titolo": "[REPLICA] - F1 Paddock Live Pre Gara",
-        "descrizione": "L'avvicinamento al Gran Premio con l'analisi di quanto successo nel weekend, le interviste, i giri di riscaldamento delle monoposto e l'atmosfera unica della griglia di partenza prima del via.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ed61f954-b333-43b4-a39e-5fdd1dd82abe/background/600"
-      },
-      {
-        "ora": "13:55",
-        "fine": "16:00",
+        "ora": "15:00",
+        "fine": "16:55",
         "titolo": "GP Bahrein: Gara",
         "descrizione": "Si recupera a Sepang il GP del Bahrain. Nel 2017, l'ultima volta in Malesia, vinse Max Verstappen. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/89c5ce4b-0c15-4fb8-8a43-017992d4a965/background/600"
       },
       {
-        "ora": "16:00",
-        "fine": "17:00",
+        "ora": "16:55",
+        "fine": "17:55",
         "titolo": "Bahrain in Malesia",
         "descrizione": "L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0e66eb96-9441-4510-b13a-7734e5d0b893/background/600"
       },
       {
-        "ora": "17:00",
+        "ora": "17:55",
         "fine": "18:15",
-        "titolo": "GP Bahrein: Gara",
-        "descrizione": "Si recupera a Sepang il GP del Bahrain. Nel 2017, l'ultima volta in Malesia, vinse Max Verstappen. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/89c5ce4b-0c15-4fb8-8a43-017992d4a965/background/600"
+        "titolo": "GP Baku",
+        "descrizione": "Il campionato FIA Formula 2 e' arrivato in Azerbaigian per un fine settimana cruciale sul circuito cittadino di Baku.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/3521a2b4-1ab2-4230-8e35-ec52e6994c86/background/600"
       },
       {
         "ora": "18:15",
-        "fine": "20:05",
+        "fine": "19:15",
         "titolo": "Barcellona: Gara 2",
         "descrizione": "Le gare della GT World Challenge.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/2e790991-471f-4306-a3bc-401d923eaf82/background/600"
       },
       {
-        "ora": "20:05",
-        "fine": "21:05",
+        "ora": "19:15",
+        "fine": "19:30",
+        "titolo": "F1 Notebook 2026 04/10/2026",
+        "descrizione": "... 04/10/2026 F1 Notebook. - Anticipazioni entusiasmanti sulla prossima stagione 2023 direttamente dalla corsia dei box. Il giornalista britannico, esperto di Formula 1, Ted Kravitz racconta le manovre dal paddock e analizza il fine settimana.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1e0e8482-53fc-4ccb-a1be-8e03d5c5f6eb/background/600"
+      },
+      {
+        "ora": "19:30",
+        "fine": "19:50",
+        "titolo": "[REPLICA] - F1 Paddock Live Pre Gara",
+        "descrizione": "L'avvicinamento al Gran Premio con l'analisi di quanto successo nel weekend, le interviste, i giri di riscaldamento delle monoposto e l'atmosfera unica della griglia di partenza prima del via.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ed61f954-b333-43b4-a39e-5fdd1dd82abe/background/600"
+      },
+      {
+        "ora": "19:50",
+        "fine": "20:50",
         "titolo": "GP Bahrein: Gara",
         "descrizione": "Si recupera a Sepang il GP del Bahrain. Nel 2017, l'ultima volta in Malesia, vinse Max Verstappen. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/89c5ce4b-0c15-4fb8-8a43-017992d4a965/background/600"
       },
       {
-        "ora": "21:05",
-        "fine": "22:05",
+        "ora": "20:50",
+        "fine": "21:50",
         "titolo": "Bahrain in Malesia",
         "descrizione": "L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0e66eb96-9441-4510-b13a-7734e5d0b893/background/600"
       },
       {
-        "ora": "22:05",
-        "fine": "23:05",
+        "ora": "21:50",
+        "fine": "22:50",
         "titolo": "GP Bahrein: Gara",
         "descrizione": "Si recupera a Sepang il GP del Bahrain. Nel 2017, l'ultima volta in Malesia, vinse Max Verstappen. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/89c5ce4b-0c15-4fb8-8a43-017992d4a965/background/600"
       },
       {
-        "ora": "23:05",
-        "fine": "00:10",
+        "ora": "22:50",
+        "fine": "23:55",
         "titolo": "Bahrain in Malesia",
         "descrizione": "L'analisi del Gran Premio disputato per commentare la gara insieme agli ospiti in studio. Riviviamo i brividi della corsa attraverso le immagini piu' spettacolari e ascoltiamo i commenti a caldo dei protagonisti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0e66eb96-9441-4510-b13a-7734e5d0b893/background/600"
+      },
+      {
+        "ora": "23:55",
+        "fine": "00:40",
+        "titolo": "Inside The Team - Un Gp con Kimi",
+        "descrizione": "Inside The Team - Un Gp con Kimi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/59bb332e-1c30-4f19-bc9b-dd78dabec831/background/600"
       }
     ]
   },
@@ -980,13 +966,13 @@
       },
       {
         "ora": "06:55",
-        "fine": "08:00",
+        "fine": "08:05",
         "titolo": "GP Giappone: Gara",
         "descrizione": "Sedicesimo appuntamento del mondiale 2026: a  Motegi, in Giappone, si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/822de783-d03b-46b7-bded-11b353b169ab/background/600"
       },
       {
-        "ora": "08:00",
+        "ora": "08:05",
         "fine": "09:00",
         "titolo": "Moto GP Zona Rossa",
         "descrizione": "Le interviste ai protagonisti, i commenti a caldo e le primissime analisi dopo la conclusione della gara della MotoGP.",
@@ -1036,27 +1022,27 @@
       },
       {
         "ora": "14:00",
-        "fine": "14:55",
+        "fine": "14:50",
         "titolo": "GP Giappone: Gara",
         "descrizione": "Sedicesimo appuntamento del mondiale 2026: a  Motegi, in Giappone, si accendono i motori per la gara della MotoGP. Telecronaca Meda- Sanchini",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/822de783-d03b-46b7-bded-11b353b169ab/background/600"
       },
       {
-        "ora": "14:55",
-        "fine": "16:00",
+        "ora": "14:50",
+        "fine": "16:05",
         "titolo": "Moto GP Zona Rossa",
         "descrizione": "Le interviste ai protagonisti, i commenti a caldo e le primissime analisi dopo la conclusione della gara della MotoGP.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b2576869-4e94-433e-a401-a432b6bcdc75/background/600"
       },
       {
-        "ora": "16:00",
-        "fine": "17:00",
+        "ora": "16:05",
+        "fine": "17:05",
         "titolo": "Giappone",
         "descrizione": "Collegamenti dal paddock, i commenti dei nostri ospiti in studio, le emozioni delle feste nei box. Questi gli ingredienti della nuova puntata di Race Anatomy per il GP del GIappone",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/567d7d8d-c437-4cc5-972b-e893e5ad37e0/background/600"
       },
       {
-        "ora": "17:00",
+        "ora": "17:05",
         "fine": "17:30",
         "titolo": "GP Giappone: Gara",
         "descrizione": "Sedicesimo appuntamento del mondiale 2026: a Motegi, in Giappone, si accendono i motori per la gara della Moto2. Telecronaca Triolo-Fuligni",
@@ -1168,13 +1154,13 @@
       },
       {
         "ora": "10:00",
-        "fine": "11:00",
+        "fine": "11:10",
         "titolo": "Italia: Stage 4",
         "descrizione": "... Rally Championship. - Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b4157cfa-f05e-4d98-9ae4-7324a9f69fde/background/600"
       },
       {
-        "ora": "11:00",
+        "ora": "11:10",
         "fine": "11:30",
         "titolo": "Speciale Giro Internazionale Citta' Di Trento 2026",
         "descrizione": "... Di Trento 2026. - Assistiamo al Giro al Sas, una gara di 10 km che si svolge tra le vie piu' suggestive del centro storico di Trento, ideata nel lontano 1907 per onorare il santo patrono della citta', San Vigilio.",
@@ -1190,9 +1176,9 @@
       {
         "ora": "12:05",
         "fine": "13:00",
-        "titolo": "Barcellona: Gara 2",
-        "descrizione": "... Lamborghini Super Trofeo. - Le gare del Lamborghini Super Trofeo.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a2360964-453d-4b62-b004-9b8593f1f9dd/background/600"
+        "titolo": "Italia: Stage 4",
+        "descrizione": "... Rally Championship. - Segui le gare del World Rally Championship.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b4157cfa-f05e-4d98-9ae4-7324a9f69fde/background/600"
       },
       {
         "ora": "13:00",
@@ -1210,20 +1196,20 @@
       },
       {
         "ora": "14:00",
-        "fine": "15:30",
+        "fine": "15:35",
         "titolo": "Italia: Stage 5",
         "descrizione": "... Rally Championship. - Segui le gare del World Rally Championship.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a4a83cc1-78c5-4405-896c-c3ee9658a499/background/600"
       },
       {
-        "ora": "15:30",
-        "fine": "16:00",
-        "titolo": "Federico Maldini",
-        "descrizione": "Teo Trials",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d7179878-4747-41b7-8fb0-5eb52dd27d59/background/600"
+        "ora": "15:35",
+        "fine": "15:50",
+        "titolo": "Fil Rouge",
+        "descrizione": "Fil Rouge",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/55b7c0a8-f9f9-4b86-944e-eacd7f2c3582/background/600"
       },
       {
-        "ora": "16:00",
+        "ora": "15:50",
         "fine": "17:20",
         "titolo": "Baku 1a Giornata",
         "descrizione": "... Judo Championships. - Ai Campionati Mondiali di judo di Baku (Azerbaigian) si disputano le finali delle categorie -48kg F e -60kg M. Telecronaca: Bonzi-Scapin",
@@ -1231,14 +1217,14 @@
       },
       {
         "ora": "17:20",
-        "fine": "19:25",
+        "fine": "19:40",
         "titolo": "Dolomiti Bellunesi - Novara",
         "descrizione": "... Novara Serie C. - Tutte le partite del campionato di Serie C italiano.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0af4e1b2-bec0-41c1-ba68-a4abbe5a9669/background/600"
       },
       {
-        "ora": "19:25",
-        "fine": "20:20",
+        "ora": "19:40",
+        "fine": "20:35",
         "titolo": "Barcellona: Gara 2",
         "descrizione": "... Trofeo. - Le gare del Lamborghini Super Trofeo.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/a2360964-453d-4b62-b004-9b8593f1f9dd/background/600"
@@ -1321,13 +1307,13 @@
       },
       {
         "ora": "07:00",
-        "fine": "17:00",
+        "fine": "18:45",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
         "immagine": "https://img-guidatv.org/immagini/tennis.jpeg"
       },
       {
-        "ora": "17:00",
+        "ora": "18:45",
         "fine": "20:35",
         "titolo": "Tennis: ATP & WTA",
         "descrizione": "Tutti i tornei di tennis internazionali del circuito maschile ATP e di quello femminile WTA, con l'attenzione puntata sui tennisti italiani.",
@@ -1335,13 +1321,13 @@
       },
       {
         "ora": "20:35",
-        "fine": "22:40",
+        "fine": "22:45",
         "titolo": "Grecia - Germania",
         "descrizione": "Gruppo A2 con Olanda seconda a quota 5 e Serbia ultima con 0 punti. Grecia prima con 7 e Germania terza con 4. Nella gara di andata 1-0 per la formazione greca. TC: Federico Zanon",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/99c23c0c-d991-48da-aa4a-762a0e19e5b2/background/600"
       },
       {
-        "ora": "22:40",
+        "ora": "22:45",
         "fine": "23:10",
         "titolo": "Federico Maldini",
         "descrizione": "Teo Trials",
@@ -1404,13 +1390,13 @@
       },
       {
         "ora": "12:30",
-        "fine": "18:00",
+        "fine": "18:15",
         "titolo": "Alfred Dunhill Links Championship: Giorno 4",
         "descrizione": "... Championship: Giorno 4 Golf: DP World Tour. - From The Old Course at St. Andrews in Fife, Scotland.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/37597dc5-647f-4896-831d-4a78f9a1b139/background/600"
       },
       {
-        "ora": "18:00",
+        "ora": "18:15",
         "fine": "18:30",
         "titolo": "Speciale Golf Battle Twelve 13/08/2026",
         "descrizione": "La sfida a squadre tra il Team59 Italia e il C&S Golf Team Francia, giocata il 29 e 30 luglio 2026 al Golf Club Padova.",
@@ -1466,13 +1452,13 @@
     "programmi": [
       {
         "ora": "01:00",
-        "fine": "03:00",
+        "fine": "02:55",
         "titolo": "BC Roma - Bertram Derthona Tortona",
         "descrizione": "... Lega Basket Serie A. - Si sfidano due squadre sconfitte in settimana nel debutto europeo. Roma cerca la prima vittoria, Tortona prova a confermarsi anche quest'anno pericolosa outsider. Telecronaca: Solaini-Meneghin.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/56b118a3-9266-4d29-9fdd-012a6a2738a3/background/600"
       },
       {
-        "ora": "03:00",
+        "ora": "02:55",
         "fine": "05:00",
         "titolo": "Virtus Bologna - Maxima Roma",
         "descrizione": "... Basket Serie A. - Dal PalaDozza di Bologna, Italia.",
@@ -1515,20 +1501,20 @@
       },
       {
         "ora": "10:55",
-        "fine": "12:50",
+        "fine": "12:55",
         "titolo": "Baskonia Vitoria Gasteiz - Armani Olimpia Milano",
         "descrizione": "... Olimpia Milano Eurolega. - Dalla Fernando Buesa Arena di Vitoria-Gasteiz, Spagna.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/1c337d1b-569f-4e05-b0f0-2a6c7abe0712/background/600"
       },
       {
-        "ora": "12:50",
-        "fine": "13:30",
+        "ora": "12:55",
+        "fine": "13:35",
         "titolo": "Federico Maldini",
         "descrizione": "Teo Trials",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d7179878-4747-41b7-8fb0-5eb52dd27d59/background/600"
       },
       {
-        "ora": "13:30",
+        "ora": "13:35",
         "fine": "15:30",
         "titolo": "Virtus Bologna - Olympiacos",
         "descrizione": "Dopo la beffarda sconfitta di Milano, Bologna ospita al PalaDozza i greci del Pireo, campioni in carica e forte di nuovi prestigiosi innesti. Telecronaca di Geri De Rosa e Andrea Meneghin.",
@@ -1564,24 +1550,31 @@
       },
       {
         "ora": "20:15",
-        "fine": "20:30",
+        "fine": "20:25",
         "titolo": "Studio Basket Serie A 2026/2027 Postpartita 04/10/2026",
         "descrizione": "... 2026/2027 Postpartita 04/10/2026 Studio Basket Serie A. - Le partite di Roma e di Bologna sono appena finite: tutti i commenti, gli approfondimenti nello studio di Giulia Cicchine' e Chicca Macchi con le interviste di Gaia Accoto.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/959e96e0-2345-408d-a38c-8fbc7f339283/background/600"
       },
       {
-        "ora": "20:30",
-        "fine": "21:00",
+        "ora": "20:25",
+        "fine": "20:55",
         "titolo": "Federico Maldini",
         "descrizione": "Teo Trials",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/d7179878-4747-41b7-8fb0-5eb52dd27d59/background/600"
       },
       {
-        "ora": "21:00",
-        "fine": "22:00",
+        "ora": "20:55",
+        "fine": "21:25",
         "titolo": "Berlino 2026: Diario Mondiale. Dove Il Basket Diventa Storia",
         "descrizione": "... Il Basket Diventa Storia. - L'Italbasket femminile torna al mondiale dopo 32 anni, Berlino nel 2026 diventa teatro di partite spettacolari, interviste ed emozioni: un mondiale storico, un mondiale azzurro.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/af5aebf0-fdb8-4883-b4b9-cbe5a18dd117/background/600"
+      },
+      {
+        "ora": "21:25",
+        "fine": "22:00",
+        "titolo": "Teo Soragna Incontra Simone Fontecchio",
+        "descrizione": "Teo Soragna Incontra Simone Fontecchio",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4b30747e-d6e8-4e18-9c72-307bda393a9a/background/600"
       },
       {
         "ora": "22:00",
@@ -1661,17 +1654,17 @@
       },
       {
         "ora": "14:25",
-        "fine": "15:25",
+        "fine": "15:30",
         "titolo": "Il Film Delle Finali NBA 2026",
         "descrizione": "Cinque gare di un'intensita' senza pari: la sfida tra New York e San Antonio ha regalato emozioni incredibili. Riviviamo i momenti piu' belli del trionfo dei Knicks, di nuovo campioni NBA dopo 53 anni",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/99614152-0aea-45aa-a354-55fc40519b43/background/600"
       },
       {
-        "ora": "15:25",
+        "ora": "15:30",
         "fine": "16:00",
-        "titolo": "Boat Show 2026 Ep.30 01/10/2026",
-        "descrizione": "... Boat Show. - Tra yacht, innovazione, sostenibilita' e nuove tecnologie, il Salone Nautico Internazionale di Genova racconta un settore chiamato a cambiare rotta. L'evento conta oltre 1.000 imbarcazioni, espositori da 45 Paesi e 5 continenti.",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/e1d02db4-865a-4933-9466-dafe27f2767d/background/600"
+        "titolo": "Icarus Ultra",
+        "descrizione": "Continua in Alta Badia il nostro DSS Tour. Florian Eisath sulla Re Laurino del comprensorio Carezza. Sport e Sostenibilita' a San Martino di Castrozza. Impresa di Nico De Corato a Dubai.",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/0279a2a5-a5af-46a7-904f-4b66916c1909/background/600"
       },
       {
         "ora": "16:00",
@@ -1712,7 +1705,7 @@
         "ora": "22:00",
         "fine": "01:30",
         "titolo": "Milwaukee Brewers - San Diego Padres",
-        "descrizione": "... Diego Padres Baseball Mlb. - Segui l'incontro della Major League di Baseball.",
+        "descrizione": "... Diego Padres Baseball Mlb. - From American Family Field in Milwaukee.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/50abc732-280c-4a88-b0bd-9f2ab6c4a2f2/background/600"
       }
     ]
@@ -1882,14 +1875,7 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:15",
-        "fine": "02:00",
-        "titolo": "Monza - Sassuolo",
-        "descrizione": "Brianzoli ancora con un solo punto, dopo il 3^ ko. Sassuolo reduce dal 3-2 alla Juventus. Non ha mai vinto a Monza nei 2 precedenti, un pareggio e una sconfitta. TC: Botti-Gobbi",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ffa37729-fca9-4c80-a6e1-23435c586deb/background/600"
-      },
-      {
-        "ora": "02:00",
+        "ora": "01:35",
         "fine": "03:45",
         "titolo": "Venezia - Lazio",
         "descrizione": "Veneti ancora a 0 punti. Lazio imbattuta con 3 vittorie e un pareggio. Un solo successo (2021) nelle ultime 7 sfide di serie A a Venezia, 3 pari e 3 sconfitte. TC: Polizzi-Minotti",
@@ -1939,80 +1925,80 @@
       },
       {
         "ora": "08:55",
-        "fine": "10:45",
+        "fine": "11:45",
         "titolo": "GP Bahrein: Gara",
         "descrizione": "Si recupera a Sepang il GP del Bahrain. Nel 2017, l'ultima volta in Malesia, vinse Max Verstappen. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/89c5ce4b-0c15-4fb8-8a43-017992d4a965/background/600"
       },
       {
-        "ora": "10:45",
-        "fine": "11:30",
+        "ora": "11:45",
+        "fine": "12:30",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
       },
       {
-        "ora": "11:30",
-        "fine": "12:00",
+        "ora": "12:30",
+        "fine": "13:00",
         "titolo": "F1 Debriefing",
         "descrizione": "E' il momento dell'analisi: dopo i giri in pista, giro di opinioni sui temi principali emersi dalla gara e dall'intero weekend. Conduce Davide Camicioli.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/69df7712-56d1-46e1-a38f-474896c02a24/background/600"
       },
       {
-        "ora": "12:00",
-        "fine": "13:50",
+        "ora": "13:00",
+        "fine": "14:50",
         "titolo": "Napoli - Bologna",
         "descrizione": "Azzurri reduci dai ko con Como e Inter. Il Bologna ha conquistato il primo punto con il 2-2 contro il Sassuolo. A Napoli ha vinto 2 delle ultime 3 sfide, un ko. TC: Gentile-Serena",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/4838af4a-a67f-4f20-a280-c05bdbcff28f/background/600"
       },
       {
-        "ora": "13:50",
-        "fine": "15:45",
+        "ora": "14:50",
+        "fine": "16:45",
         "titolo": "Milan - Benfica",
         "descrizione": "Rossoneri imbattuti nei 6 precedenti con 4 vittorie (comprese le 2 finali vinte di Coppa dei Campioni nel 1963 e 1960) e 2 pareggi entrambi in Portogallo. TC: Borghi-Montolivo",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b64c0217-ae46-4149-98e2-a90f46399464/background/600"
       },
       {
-        "ora": "15:45",
-        "fine": "17:45",
+        "ora": "16:45",
+        "fine": "18:40",
         "titolo": "Juventus - NEC",
         "descrizione": "Nessun precedente. Juventus in vantaggio 13 a 7 nei 25 precedenti europei contro avversarie olandesi, 5 pareggi. Ha vinto le ultime 3 gare europee casalinghe. TC: Zancan-Marocchi",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/35f23685-a0df-45f6-aaab-2093ffc34ee7/background/600"
       },
       {
-        "ora": "17:45",
-        "fine": "19:30",
+        "ora": "18:40",
+        "fine": "20:25",
         "titolo": "Venezia - Lazio",
         "descrizione": "Veneti ancora a 0 punti. Lazio imbattuta con 3 vittorie e un pareggio. Un solo successo (2021) nelle ultime 7 sfide di serie A a Venezia, 3 pari e 3 sconfitte. TC: Polizzi-Minotti",
         "immagine": "https://img-guidatv.org/partite/serieareplica.png"
       },
       {
-        "ora": "19:30",
-        "fine": "21:30",
+        "ora": "20:25",
+        "fine": "23:10",
         "titolo": "GP Bahrein: Gara",
         "descrizione": "Si recupera a Sepang il GP del Bahrain. Nel 2017, l'ultima volta in Malesia, vinse Max Verstappen. Telecronaca di Carlo Vanzini, Ivan Capelli e Roberto Chinchero.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/89c5ce4b-0c15-4fb8-8a43-017992d4a965/background/600"
       },
       {
-        "ora": "21:30",
-        "fine": "22:00",
-        "titolo": "Real Madrid - Inter",
-        "descrizione": "... League. - Blancos in vantaggio 10 a 7 nei 19 precedenti europei, 2 pareggi. Il Real ha vinto gli ultimi 4 precedenti di UCL contro l'Inter, 2 in casa e 2 in trasferta. TC: Caressa-Bergomi",
+        "ora": "23:10",
+        "fine": "23:30",
+        "titolo": "Napoli - Arsenal",
+        "descrizione": "Azzurri con un solo successo (2-0 in casa nel 2013) nei 4 precedenti europei, per il resto 3 sconfitte: una a Napoli e due all'Emirates Stadium. TC: Davide Polizzi",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
       },
       {
-        "ora": "22:00",
-        "fine": "23:45",
-        "titolo": "Juventus - Atalanta",
-        "descrizione": "Entrambe reduci da un ko rispettivamente contro Sassuolo (3-2) e Cagliari (1-2). Atalanta imbattuta nelle ultime 8 sfide a Torino, 2 vittorie e 6 pari. TC: Compagnoni-Montolivo",
-        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/769b9dd3-85d4-4472-b3a6-54bca49a29fb/background/600"
-      },
-      {
-        "ora": "23:45",
-        "fine": "00:15",
+        "ora": "23:30",
+        "fine": "23:50",
         "titolo": "Fenerbahce - Roma",
         "descrizione": "Nessun precedente tra le due formazioni. Roma in vantaggio 9 a 2 nei 14 precedenti contro club turchi, 3 pareggi. TC: Compagnoni-Minotti",
         "immagine": "https://img-guidatv.org/partite/championsreplica.png"
+      },
+      {
+        "ora": "23:50",
+        "fine": "01:35",
+        "titolo": "Monza - Sassuolo",
+        "descrizione": "Brianzoli ancora con un solo punto, dopo il 3^ ko. Sassuolo reduce dal 3-2 alla Juventus. Non ha mai vinto a Monza nei 2 precedenti, un pareggio e una sconfitta. TC: Botti-Gobbi",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/ffa37729-fca9-4c80-a6e1-23435c586deb/background/600"
       }
     ]
   },
@@ -2182,11 +2168,32 @@
     "categoria": "Sport",
     "programmi": [
       {
-        "ora": "00:00",
+        "ora": "00:50",
+        "fine": "02:40",
+        "titolo": "WTA 1000 Pechino 2026 - Ep. 30 - Ekaterina Alexandrova vs Diana Shnaider WTA 1000 Pechino # 1",
+        "descrizione": "Ekaterina Alexandrova vs Diana Shnaider WTA 1000 Pechino",
+        "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026-ep-30-ekaterina-alexandrova-vs-diana-shnaider-wta-1000-pechino-1/0.jpg"
+      },
+      {
+        "ora": "02:40",
+        "fine": "03:50",
+        "titolo": "WTA 1000 Pechino 2026 - Ep. 29 - Polina Kudermetova vs Mirra Andreeva WTA 1000 Pechino # 1",
+        "descrizione": "Polina Kudermetova vs Mirra Andreeva WTA 1000 Pechino",
+        "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026-ep-29-polina-kudermetova-vs-mirra-andreeva-wta-1000-pechino-1/0.jpg"
+      },
+      {
+        "ora": "03:50",
+        "fine": "04:45",
+        "titolo": "WTA 1000 Pechino 2026 - Ep. 31 - Linda Noskova vs Viktorija Golubic WTA 1000 Pechino # 1",
+        "descrizione": "Linda Noskova vs Viktorija Golubic WTA 1000 Pechino",
+        "immagine": ""
+      },
+      {
+        "ora": "04:45",
         "fine": "05:00",
-        "titolo": "WTA 1000 Pechino 2026",
-        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
-        "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026/5.jpg"
+        "titolo": "Race to Foro 2027 - Race to foro del 30 settembre 2026",
+        "descrizione": "Tornano i tornei di prequalificazioni agli internazionali BNL d'italia. Arianna Nardi ci racconta le tappe principali di questo magico viaggio verso il Foro Italico",
+        "immagine": "https://img-guidatv.org/54/race-to-foro-2027-race-to-foro-del-30-settembre-2026/0.jpg"
       },
       {
         "ora": "05:00",
@@ -2196,7 +2203,7 @@
         "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
       },
       {
-        "ora": "06:15",
+        "ora": "07:00",
         "fine": "08:55",
         "titolo": "LIVE WTA 1000 Pechino",
         "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
@@ -2211,77 +2218,140 @@
       },
       {
         "ora": "09:10",
-        "fine": "11:05",
+        "fine": "10:00",
         "titolo": "LIVE WTA 1000 Pechino",
         "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
         "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
       },
       {
-        "ora": "11:05",
-        "fine": "11:15",
+        "ora": "10:00",
+        "fine": "10:10",
         "titolo": "TennisTrophy FITP Kinder Joy of Moving - Ep. 7 - TennisTrophy FITP Kinder Joy of Moving - Master",
         "descrizione": "Tennis Trophy FITP Kinder Joy of Moving - Padova",
         "immagine": "https://img-guidatv.org/54/tennistrophy-fitp-kinder-joy-of-moving-ep-7-tennistrophy-fitp-kinder-joy-of-moving-master/0.jpg"
       },
       {
-        "ora": "11:15",
-        "fine": "13:15",
-        "titolo": "US Open 2026 - Singolare maschile - Ep. 10 - Matteo Berrettini vs Stan Wawrinka US OPEN 2026 # 4",
+        "ora": "10:10",
+        "fine": "12:45",
+        "titolo": "US Open 2026 - Singolare maschile - Ep. 10 - Matteo Berrettini vs Stan Wawrinka US OPEN 2026 # 1",
         "descrizione": "Matteo Berrettini vs Stan Wawrinka US OPEN 2026",
         "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
-        "ora": "13:15",
-        "fine": "15:05",
+        "ora": "12:45",
+        "fine": "13:00",
+        "titolo": "Colpo da campione - Stagione 2026 - Ep. 26 - Colpo da campione By Head - Il servizio di Bellucci",
+        "descrizione": "I docenti dell'ISF Roberto Lombardi analizzano la tattica e la tecnica dei migliori giocatori e delle migliori giocatrici con l'aiuto della lavagna di videoanalisi",
+        "immagine": "https://img-guidatv.org/54/colpo-da-campione/7.jpg"
+      },
+      {
+        "ora": "13:00",
+        "fine": "14:55",
         "titolo": "LIVE WTA 1000 Pechino",
         "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
         "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
       },
       {
-        "ora": "15:05",
-        "fine": "15:15",
+        "ora": "14:55",
+        "fine": "15:45",
         "titolo": "Supertennis TG",
         "descrizione": "Supertennis TG - L'informazione dall'Italia e dal mondo.",
         "immagine": "https://img-guidatv.org/54/supertennis-tg/6.jpg"
       },
       {
-        "ora": "15:15",
-        "fine": "17:05",
+        "ora": "15:45",
+        "fine": "15:50",
         "titolo": "LIVE WTA 1000 Pechino",
         "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
         "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
       },
       {
-        "ora": "17:05",
-        "fine": "18:55",
-        "titolo": "WTA 1000 Pechino 2026",
+        "ora": "15:50",
+        "fine": "16:10",
+        "titolo": "LIVE WTA 1000 Pechino",
         "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
-        "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
       },
       {
-        "ora": "18:55",
-        "fine": "19:05",
+        "ora": "16:10",
+        "fine": "16:20",
+        "titolo": "LIVE WTA 1000 Pechino",
+        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
+        "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
+      },
+      {
+        "ora": "16:20",
+        "fine": "16:30",
+        "titolo": "LIVE WTA 1000 Pechino",
+        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
+        "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
+      },
+      {
+        "ora": "16:30",
+        "fine": "16:45",
+        "titolo": "LIVE WTA 1000 Pechino",
+        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
+        "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
+      },
+      {
+        "ora": "16:45",
+        "fine": "17:00",
+        "titolo": "LIVE WTA 1000 Pechino",
+        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
+        "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
+      },
+      {
+        "ora": "17:00",
+        "fine": "17:15",
+        "titolo": "LIVE WTA 1000 Pechino",
+        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
+        "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
+      },
+      {
+        "ora": "17:15",
+        "fine": "17:30",
+        "titolo": "LIVE WTA 1000 Pechino",
+        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
+        "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
+      },
+      {
+        "ora": "17:30",
+        "fine": "18:30",
+        "titolo": "LIVE WTA 1000 Pechino",
+        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
+        "immagine": "https://img-guidatv.org/54/live-wta-1000-pechino/6.jpg"
+      },
+      {
+        "ora": "18:30",
+        "fine": "18:40",
         "titolo": "Supertennis TG",
         "descrizione": "Supertennis TG - L'informazione dall'Italia e dal mondo.",
         "immagine": "https://img-guidatv.org/54/supertennis-tg/6.jpg"
       },
       {
-        "ora": "19:05",
-        "fine": "22:40",
-        "titolo": "WTA 1000 Pechino 2026",
-        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
-        "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026/5.jpg"
+        "ora": "18:40",
+        "fine": "21:00",
+        "titolo": "US Open 2026 - Doppio maschile - Ep. 3 - Bolelli/Vavassori vs Krajicek/Mektic US OPEN 2026 # 5",
+        "descrizione": "Bolelli/Vavassori vs Krajicek/Mektic US OPEN 2026",
+        "immagine": "https://img-guidatv.org/54/us-open-2026/6.jpg"
       },
       {
-        "ora": "22:40",
+        "ora": "21:00",
         "fine": "22:55",
+        "titolo": "WTA 1000 Pechino 2026",
+        "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
+        "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026/5.jpg"
+      },
+      {
+        "ora": "22:55",
+        "fine": "23:10",
         "titolo": "Circolando 2026 - Ep. 2 - Circolando - TC Napoli 1905",
         "descrizione": "Viaggio alla scoperta dei piu' bei circoli d'Italia. Stefania Chieppa e Giorgio Galimberti ci guidano sui campi tra interviste, sfide, sketch e splendide storie di tennis.",
         "immagine": "https://img-guidatv.org/54/circolando/11.jpg"
       },
       {
-        "ora": "22:55",
-        "fine": "00:00",
+        "ora": "23:10",
+        "fine": "00:50",
         "titolo": "WTA 1000 Pechino 2026",
         "descrizione": "Entra nel vivo la stagione asiatica del grande tennis femminile. Sul cemento del National Tennis Center di Pechino, le migliori campionesse del circuito mondiale si danno battaglia.",
         "immagine": "https://img-guidatv.org/54/wta-1000-pechino-2026/5.jpg"
@@ -2454,17 +2524,17 @@
       },
       {
         "ora": "07:30",
-        "fine": "09:35",
-        "titolo": "Europei Di Ciclismo 2026 - Donne ÉLite",
+        "fine": "08:40",
+        "titolo": "Europei Di Ciclismo 2026 - Donne ÉLite - Prima Parte",
         "descrizione": "La prova in linea Donne Elite parte da Lubiana e si conclude a Šenčur, su un percorso selettivo che combina tratti veloci e le difficoltà del circuito finale. Le migliori cicliste europee si sfidano per conquistare il titolo continentale.",
         "immagine": "https://img-guidatv.org/32/europei-di-ciclismo-2026-donne-elite/0.jpg"
       },
       {
-        "ora": "07:35",
+        "ora": "08:40",
         "fine": "09:40",
-        "titolo": "Ciclismo: Camp. Europei Lubiana 2026 Pro",
-        "descrizione": "Ciclismo: Camp. Europei Lubiana 2026 Prova Elite Donne",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Europei Di Ciclismo 2026 - Donne ÉLite - Seconda Parte",
+        "descrizione": "La prova in linea Donne Elite parte da Lubiana e si conclude a Šenčur, su un percorso selettivo che combina tratti veloci e le difficoltà del circuito finale. Le migliori cicliste europee si sfidano per conquistare il titolo continentale. Donne Élite (prima parte)",
+        "immagine": "https://img-guidatv.org/32/europei-di-ciclismo-2026-donne-elite/0.jpg"
       },
       {
         "ora": "09:40",
@@ -2476,15 +2546,15 @@
       {
         "ora": "12:00",
         "fine": "13:30",
-        "titolo": "Ciclismo Gran Fondo. World Series Tre Valli Varesine",
-        "descrizione": "Ciclismo Gran Fondo. World Series Tre Valli Varesine",
+        "titolo": "Ciclismo: Gran Fondo Tre Valli Varesine 2026",
+        "descrizione": "La Gran Fondo Tre Valli Varesine 2026 porta gli appassionati di ciclismo sulle strade del Varesotto, lungo un percorso tra salite e paesaggi del territorio.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "13:30",
         "fine": "14:00",
-        "titolo": "Ciclismo. L'Eroica (Fasi Finali)",
-        "descrizione": "Ciclismo. L'Eroica (fasi finali)",
+        "titolo": "Ciclismo: L'Eroica 2026 - Terza Parte",
+        "descrizione": "La storica corsa di biciclette nelle più belle strade del Chianti. La corsa che tutti gli appassionati conoscono e che negli anni è diventata forse la più celebre gara amatoriale sulle due ruote. Un evento unico nel suo genere, nato dalla passione di Giancarlo Brocci, che considerando il passato del ciclismo un inestimabile patrimonio da riproporre e valorizzare, ha avuto l'idea di organizzare una corsa come quelle di allora: con percorsi che si svolgono in buona parte su strade bianche, con biciclette e abbigliamento d'epoca.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
@@ -2504,36 +2574,36 @@
       {
         "ora": "15:45",
         "fine": "18:00",
-        "titolo": "Pallacanestro. Serie A2 Old Wild West - 2a Giornata: Elachem Vigevano - Real Sebastiani Rieti",
-        "descrizione": "Pallacanestro. Serie A2 Old Wild West - 2a giornata: Elachem Vigevano - Real Sebastiani Rieti",
-        "immagine": "https://img-guidatv.org/32/pallacanestro-serie-a2/6.jpg"
+        "titolo": "Basket: Serie A2 Old Wild West 2026-2027 - 2a Giornata: Elachem Vigevano - Real Sebastiani Rieti",
+        "descrizione": "Nella 2ª giornata di Serie A2 Old Wild West 2026-2027, l'Elachem Vigevano affronta la Real Sebastiani Rieti.",
+        "immagine": "https://img-guidatv.org/32/basket-serie-a-2/7.jpg"
       },
       {
         "ora": "18:00",
         "fine": "20:05",
-        "titolo": "Basket: Serie A1 Femminile 2026/27 1a Giornata: La Molisana Magnolia Campobasso - Ladies Libertas Rieti",
-        "descrizione": "Basket: Serie A1 femminile 2026/27 1a giornata: La Molisana Magnolia Campobasso - Ladies Libertas Rieti",
-        "immagine": "https://img-guidatv.org/32/basket-serie-a1-femminile-2026-27-1a-giornata-la-molisana-magnolia-campobasso-ladies-libertas-rieti/0.jpg"
+        "titolo": "Basket: Serie A1 Femminile 2026-2027 - 1a Giornata: La Molisana Magnolia Campobasso - Ladies Libertas Rieti",
+        "descrizione": "Nella 1ª giornata di Serie A1 femminile 2026/27, La Molisana Magnolia Campobasso affronta la Ladies Libertas Rieti.",
+        "immagine": "https://img-guidatv.org/32/basket-serie-a1-femminile-2026-2027-1a-giornata-la-molisana-magnolia-campobasso-ladies-libertas-rieti/0.jpg"
       },
       {
         "ora": "20:05",
         "fine": "20:25",
         "titolo": "Diretta Azzurra",
-        "descrizione": "Diretta Azzurra",
+        "descrizione": "La diretta di Rai Sport per seguire da vicino gli atleti azzurri prima e dopo la partita in programma.",
         "immagine": "https://img-guidatv.org/32/diretta-azzurra/0.jpg"
       },
       {
         "ora": "20:25",
         "fine": "22:40",
-        "titolo": "Calcio. Serie C Sky Wifi: Salernitana-Bari - 8a G.Ta",
-        "descrizione": "Calcio. Serie C Sky Wifi: Salernitana-Bari - 8a g.ta",
-        "immagine": "https://img-guidatv.org/32/calcio-serie-c/7.jpg"
+        "titolo": "8a Giornata: Salernitana - Bari",
+        "descrizione": "Le partite della Lega Pro, con i tre gironi del campionato italiano di calcio e della Coppa Italia di Serie C.",
+        "immagine": "https://img-guidatv.org/32/8a-giornata-salernitana-bari/0.jpg"
       },
       {
         "ora": "22:40",
         "fine": "23:40",
-        "titolo": "Ciclismo: Trittico Lombardo - Coppa Agos",
-        "descrizione": "Ciclismo: Trittico Lombardo - Coppa Agostoni 2026",
+        "titolo": "Ciclismo - Coppa Agostoni 2026",
+        "descrizione": "La 79ª edizione della Coppa Agostoni parte e arriva a Lissone dopo 163,4 km. Passaggio chiave il circuito del Lissolo, da affrontare quattro volte, con le salite di Sirtori, Colle Brianza e Lissolo pronte a fare selezione prima del finale pianeggiante.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
@@ -2579,17 +2649,17 @@
       },
       {
         "ora": "07:30",
-        "fine": "09:35",
-        "titolo": "Europei Di Ciclismo 2026 - Donne ÉLite",
+        "fine": "08:40",
+        "titolo": "Europei Di Ciclismo 2026 - Donne ÉLite - Prima Parte",
         "descrizione": "La prova in linea Donne Elite parte da Lubiana e si conclude a Šenčur, su un percorso selettivo che combina tratti veloci e le difficoltà del circuito finale. Le migliori cicliste europee si sfidano per conquistare il titolo continentale.",
         "immagine": "https://img-guidatv.org/32/europei-di-ciclismo-2026-donne-elite/0.jpg"
       },
       {
-        "ora": "07:35",
+        "ora": "08:40",
         "fine": "09:40",
-        "titolo": "Ciclismo: Camp. Europei Lubiana 2026 Pro",
-        "descrizione": "Ciclismo: Camp. Europei Lubiana 2026 Prova Elite Donne",
-        "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
+        "titolo": "Europei Di Ciclismo 2026 - Donne ÉLite - Seconda Parte",
+        "descrizione": "La prova in linea Donne Elite parte da Lubiana e si conclude a Šenčur, su un percorso selettivo che combina tratti veloci e le difficoltà del circuito finale. Le migliori cicliste europee si sfidano per conquistare il titolo continentale. Donne Élite (prima parte)",
+        "immagine": "https://img-guidatv.org/32/europei-di-ciclismo-2026-donne-elite/0.jpg"
       },
       {
         "ora": "09:40",
@@ -2601,15 +2671,15 @@
       {
         "ora": "12:00",
         "fine": "13:30",
-        "titolo": "Ciclismo Gran Fondo. World Series Tre Valli Varesine",
-        "descrizione": "Ciclismo Gran Fondo. World Series Tre Valli Varesine",
+        "titolo": "Ciclismo: Gran Fondo Tre Valli Varesine 2026",
+        "descrizione": "La Gran Fondo Tre Valli Varesine 2026 porta gli appassionati di ciclismo sulle strade del Varesotto, lungo un percorso tra salite e paesaggi del territorio.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
         "ora": "13:30",
         "fine": "14:00",
-        "titolo": "Ciclismo. L'Eroica (Fasi Finali)",
-        "descrizione": "Ciclismo. L'Eroica (fasi finali)",
+        "titolo": "Ciclismo: L'Eroica 2026 - Terza Parte",
+        "descrizione": "La storica corsa di biciclette nelle più belle strade del Chianti. La corsa che tutti gli appassionati conoscono e che negli anni è diventata forse la più celebre gara amatoriale sulle due ruote. Un evento unico nel suo genere, nato dalla passione di Giancarlo Brocci, che considerando il passato del ciclismo un inestimabile patrimonio da riproporre e valorizzare, ha avuto l'idea di organizzare una corsa come quelle di allora: con percorsi che si svolgono in buona parte su strade bianche, con biciclette e abbigliamento d'epoca.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
@@ -2629,36 +2699,36 @@
       {
         "ora": "15:45",
         "fine": "18:00",
-        "titolo": "Pallacanestro. Serie A2 Old Wild West - 2a Giornata: Elachem Vigevano - Real Sebastiani Rieti",
-        "descrizione": "Pallacanestro. Serie A2 Old Wild West - 2a giornata: Elachem Vigevano - Real Sebastiani Rieti",
-        "immagine": "https://img-guidatv.org/32/pallacanestro-serie-a2/6.jpg"
+        "titolo": "Basket: Serie A2 Old Wild West 2026-2027 - 2a Giornata: Elachem Vigevano - Real Sebastiani Rieti",
+        "descrizione": "Nella 2ª giornata di Serie A2 Old Wild West 2026-2027, l'Elachem Vigevano affronta la Real Sebastiani Rieti.",
+        "immagine": "https://img-guidatv.org/32/basket-serie-a-2/7.jpg"
       },
       {
         "ora": "18:00",
         "fine": "20:05",
-        "titolo": "Basket: Serie A1 Femminile 2026/27 1a Giornata: La Molisana Magnolia Campobasso - Ladies Libertas Rieti",
-        "descrizione": "Basket: Serie A1 femminile 2026/27 1a giornata: La Molisana Magnolia Campobasso - Ladies Libertas Rieti",
-        "immagine": "https://img-guidatv.org/32/basket-serie-a1-femminile-2026-27-1a-giornata-la-molisana-magnolia-campobasso-ladies-libertas-rieti/0.jpg"
+        "titolo": "Basket: Serie A1 Femminile 2026-2027 - 1a Giornata: La Molisana Magnolia Campobasso - Ladies Libertas Rieti",
+        "descrizione": "Nella 1ª giornata di Serie A1 femminile 2026/27, La Molisana Magnolia Campobasso affronta la Ladies Libertas Rieti.",
+        "immagine": "https://img-guidatv.org/32/basket-serie-a1-femminile-2026-2027-1a-giornata-la-molisana-magnolia-campobasso-ladies-libertas-rieti/0.jpg"
       },
       {
         "ora": "20:05",
         "fine": "20:25",
         "titolo": "Diretta Azzurra",
-        "descrizione": "Diretta Azzurra",
+        "descrizione": "La diretta di Rai Sport per seguire da vicino gli atleti azzurri prima e dopo la partita in programma.",
         "immagine": "https://img-guidatv.org/32/diretta-azzurra/0.jpg"
       },
       {
         "ora": "20:25",
         "fine": "22:40",
-        "titolo": "Calcio. Serie C Sky Wifi: Salernitana-Bari - 8a G.Ta",
-        "descrizione": "Calcio. Serie C Sky Wifi: Salernitana-Bari - 8a g.ta",
-        "immagine": "https://img-guidatv.org/32/calcio-serie-c/7.jpg"
+        "titolo": "8a Giornata: Salernitana - Bari",
+        "descrizione": "Le partite della Lega Pro, con i tre gironi del campionato italiano di calcio e della Coppa Italia di Serie C.",
+        "immagine": "https://img-guidatv.org/32/8a-giornata-salernitana-bari/0.jpg"
       },
       {
         "ora": "22:40",
         "fine": "23:40",
-        "titolo": "Ciclismo: Trittico Lombardo - Coppa Agos",
-        "descrizione": "Ciclismo: Trittico Lombardo - Coppa Agostoni 2026",
+        "titolo": "Ciclismo - Coppa Agostoni 2026",
+        "descrizione": "La 79ª edizione della Coppa Agostoni parte e arriva a Lissone dopo 163,4 km. Passaggio chiave il circuito del Lissolo, da affrontare quattro volte, con le salite di Sirtori, Colle Brianza e Lissolo pronte a fare selezione prima del finale pianeggiante.",
         "immagine": "https://img-guidatv.org/32/ciclismo/0.jpg"
       },
       {
@@ -4850,16 +4920,16 @@
       {
         "ora": "10:00",
         "fine": "10:30",
-        "titolo": "TG24 mezz'ora",
-        "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
-        "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
+        "titolo": "Skytg24 10:00",
+        "descrizione": "Ep9 Skytg24 10:00 - Skytg24 10:00",
+        "immagine": "https://img-guidatv.org/20/skytg24-10-00/0.jpg"
       },
       {
         "ora": "10:30",
         "fine": "11:00",
-        "titolo": "TG24 mezz'ora",
-        "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
-        "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
+        "titolo": "Skytg24 10:30",
+        "descrizione": "Ep10 Skytg24 10:30 - Skytg24 10:30",
+        "immagine": "https://img-guidatv.org/20/skytg24-10-30/0.png"
       },
       {
         "ora": "11:00",
@@ -4871,9 +4941,9 @@
       {
         "ora": "11:30",
         "fine": "11:55",
-        "titolo": "Skytg24 11:30",
-        "descrizione": "Ep6 Skytg24 11:30 - Ep6 Skytg24 11:30 - Skytg24 11:30",
-        "immagine": "https://img-guidatv.org/20/skytg24-11-30/0.jpg"
+        "titolo": "TG24 mezz'ora",
+        "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
+        "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
       },
       {
         "ora": "11:55",
@@ -4982,17 +5052,17 @@
       },
       {
         "ora": "18:00",
-        "fine": "18:25",
+        "fine": "18:30",
         "titolo": "TG24 mezz'ora",
         "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
         "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
       },
       {
-        "ora": "18:25",
+        "ora": "18:30",
         "fine": "18:55",
-        "titolo": "Sky Cube: Cosa c'e' da sapere",
-        "descrizione": "Un appuntamento quotidiano con la redazione di Sky TG24: un tema al giorno, tra le notizie più rilevanti, per leggere l'attualità.",
-        "immagine": "https://img-guidatv.org/20/sky-cube/6.jpg"
+        "titolo": "Skytg24 11:30",
+        "descrizione": "Ep6 Skytg24 11:30 - Ep6 Skytg24 11:30 - Skytg24 11:30",
+        "immagine": "https://img-guidatv.org/20/skytg24-11-30/0.jpg"
       },
       {
         "ora": "18:55",
@@ -5276,16 +5346,16 @@
       {
         "ora": "10:00",
         "fine": "10:30",
-        "titolo": "TG24 mezz'ora",
-        "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
-        "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
+        "titolo": "Skytg24 10:00",
+        "descrizione": "Ep9 Skytg24 10:00 - Skytg24 10:00",
+        "immagine": "https://img-guidatv.org/20/skytg24-10-00/0.jpg"
       },
       {
         "ora": "10:30",
         "fine": "11:00",
-        "titolo": "TG24 mezz'ora",
-        "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
-        "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
+        "titolo": "Skytg24 10:30",
+        "descrizione": "Ep10 Skytg24 10:30 - Skytg24 10:30",
+        "immagine": "https://img-guidatv.org/20/skytg24-10-30/0.png"
       },
       {
         "ora": "11:00",
@@ -5297,9 +5367,9 @@
       {
         "ora": "11:30",
         "fine": "11:55",
-        "titolo": "Skytg24 11:30",
-        "descrizione": "Ep6 Skytg24 11:30 - Ep6 Skytg24 11:30 - Skytg24 11:30",
-        "immagine": "https://img-guidatv.org/20/skytg24-11-30/0.jpg"
+        "titolo": "TG24 mezz'ora",
+        "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
+        "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
       },
       {
         "ora": "11:55",
@@ -5408,17 +5478,17 @@
       },
       {
         "ora": "18:00",
-        "fine": "18:25",
+        "fine": "18:30",
         "titolo": "TG24 mezz'ora",
         "descrizione": "Telegiornale in diretta. I giornali di oggi, lo Sport, il Meteo.",
         "immagine": "https://img-guidatv.org/20/tg24-mezz-ora/1.jpg"
       },
       {
-        "ora": "18:25",
+        "ora": "18:30",
         "fine": "18:55",
-        "titolo": "Sky Cube: Cosa c'e' da sapere",
-        "descrizione": "Un appuntamento quotidiano con la redazione di Sky TG24: un tema al giorno, tra le notizie più rilevanti, per leggere l'attualità.",
-        "immagine": "https://img-guidatv.org/20/sky-cube/6.jpg"
+        "titolo": "Skytg24 11:30",
+        "descrizione": "Ep6 Skytg24 11:30 - Ep6 Skytg24 11:30 - Skytg24 11:30",
+        "immagine": "https://img-guidatv.org/20/skytg24-11-30/0.jpg"
       },
       {
         "ora": "18:55",
@@ -6215,57 +6285,50 @@
         "immagine": "https://image.tmdb.org/t/p/w300/lGwH9KWYhU16ZYyNX7mz30M0J1U.jpg"
       },
       {
-        "ora": "02:55",
-        "fine": "03:20",
+        "ora": "03:10",
+        "fine": "03:30",
         "titolo": "Ugly Americans",
         "descrizione": "In un universo alternativo di \"New York City\" creature dell'orrore, della fantasia e della fantascienza vivono tra noi come comuni cittadini.",
         "immagine": "https://image.tmdb.org/t/p/w300/lGwH9KWYhU16ZYyNX7mz30M0J1U.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "03:40",
+        "ora": "03:30",
+        "fine": "03:50",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:00",
+        "ora": "03:50",
+        "fine": "04:10",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
+        "ora": "04:10",
+        "fine": "04:35",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep6 di 20 Episodio 6 - In questo episodio: coreografie finite male, cerimonie nuziali dagli esiti imprevisti e scivoloni...",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "04:50",
+        "ora": "04:35",
+        "fine": "04:55",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep7 di 20 - In questo episodio: cadute dai pattini, disavventure in spiaggia e tagli di capelli assurdi.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:15",
+        "ora": "04:55",
+        "fine": "05:20",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep8 di 20 - In questo episodio: imprevisti ai fornelli, cadute dalla bici e animali dagli strani atteggiamenti.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:35",
-        "titolo": "See Dad Run",
-        "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
-        "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
-      },
-      {
-        "ora": "05:35",
-        "fine": "06:00",
+        "ora": "05:20",
+        "fine": "05:40",
         "titolo": "See Dad Run",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
@@ -6599,57 +6662,50 @@
         "immagine": "https://image.tmdb.org/t/p/w300/lGwH9KWYhU16ZYyNX7mz30M0J1U.jpg"
       },
       {
-        "ora": "02:55",
-        "fine": "03:20",
+        "ora": "03:10",
+        "fine": "03:30",
         "titolo": "Ugly Americans",
         "descrizione": "In un universo alternativo di \"New York City\" creature dell'orrore, della fantasia e della fantascienza vivono tra noi come comuni cittadini.",
         "immagine": "https://image.tmdb.org/t/p/w300/lGwH9KWYhU16ZYyNX7mz30M0J1U.jpg"
       },
       {
-        "ora": "03:20",
-        "fine": "03:40",
+        "ora": "03:30",
+        "fine": "03:50",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "03:40",
-        "fine": "04:00",
+        "ora": "03:50",
+        "fine": "04:10",
         "titolo": "Drawn Together",
         "descrizione": "La serie riprende in modo umoristico lo stile dei reality televisivi, in cui otto personaggi animati di generi differenti sono costretti a vivere sotto lo stesso tetto. Il punto di forza importante dello show lo si ritrova nel modo in cui ogni personaggio riesce ad essere sia una parodia di uno stile d'animazione specifico, sia una parodia dei partecipanti accozzati in ogni reality show. Dopo essersi incontrati e conosciuti per la prima volta nella puntata pilota, durante il corso degli episodi successivi gli inquilini scopriranno anche dei terribili segreti che circondano alcuni di loro.",
         "immagine": "https://image.tmdb.org/t/p/w300/xhshQ2WgAa5zyXqwRcxKMDwRBGd.jpg"
       },
       {
-        "ora": "04:00",
-        "fine": "04:25",
+        "ora": "04:10",
+        "fine": "04:35",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep6 di 20 Episodio 6 - In questo episodio: coreografie finite male, cerimonie nuziali dagli esiti imprevisti e scivoloni...",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:25",
-        "fine": "04:50",
+        "ora": "04:35",
+        "fine": "04:55",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep7 di 20 - In questo episodio: cadute dai pattini, disavventure in spiaggia e tagli di capelli assurdi.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "04:50",
-        "fine": "05:15",
+        "ora": "04:55",
+        "fine": "05:20",
         "titolo": "Most Ridiculous",
         "descrizione": "Ep8 di 20 - In questo episodio: imprevisti ai fornelli, cadute dalla bici e animali dagli strani atteggiamenti.",
         "immagine": "https://img-guidatv.org/318/most-ridiculous/4.jpg"
       },
       {
-        "ora": "05:15",
-        "fine": "05:35",
-        "titolo": "See Dad Run",
-        "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
-        "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
-      },
-      {
-        "ora": "05:35",
-        "fine": "06:00",
+        "ora": "05:20",
+        "fine": "05:40",
         "titolo": "See Dad Run",
         "descrizione": "David Hobbs, famoso attore di una sitcom, è costretto ad abbandonare il set perché sua moglie, ex-attrice di soap opera, decide di tornare a lavorare. L'uomo si ritrova così a fare il casalingo e a badare alla famiglia, rendendosi conto che intepretare il ruolo di padre in TV è molto meno impegnativo che esserlo nella vita reale...",
         "immagine": "https://image.tmdb.org/t/p/w300/wO3Zr3iBW5vgcktfkCPKvHleIdD.jpg"
@@ -17623,13 +17679,13 @@
         "ora": "09:45",
         "fine": "11:20",
         "titolo": "Santa Messa Dalla Basilica Superiore Di San Francesco In Assisi (Perugia)",
-        "descrizione": "La funzione è trasmessa in Eurovisione - Regia di Gianni Epifani. Commento liturgico di Orazio Coclite.",
+        "descrizione": "Dalla Basilica Superiore di San Francesco in Assisi, la Santa Messa presieduta dal cardinale Matteo Maria Zuppi.",
         "immagine": "https://img-guidatv.org/1/santa-messa-dalla-basilica-superiore-di-san-francesco-in-assisi-perugia/0.jpg"
       },
       {
         "ora": "11:20",
         "fine": "12:00",
-        "titolo": "A Sua Immagine E Discorsi Delle Autorità",
+        "titolo": "A Sua Immagine - Discorsi Delle Autorità",
         "descrizione": "Programma di approfondimento religioso con all'interno la Santa Messa e la Recita dell'Angelus da Piazza San Pietro.",
         "immagine": "https://img-guidatv.org/1/a-sua-immagine/0.jpg"
       },
@@ -17658,7 +17714,7 @@
         "ora": "14:00",
         "fine": "17:15",
         "titolo": "Domenica In",
-        "descrizione": "Mara Venier, la \"signora della domenica\", accoglie i protagonisti dell'attualità, i grandi nomi e i nuovi talenti dello spettacolo, per una domenica pomeriggio piena di allegria, ospiti, interviste, musica e storie di vita.",
+        "descrizione": "Mara Venier, la \"signora della domenica\", accoglie i protagonisti dell'attualità, i grandi nomi e i nuovi talenti dello spettacolo, per una domenica pomeriggio piena di allegria, ospiti, interviste, musica e storie di vita. Tra gli ospiti della seconda puntata: i Pooh, che si esibiscono con alcuni grandi successi come \"Uomini soli\", \"Pensiero\" e \"Chi fermerà la musica\", oltre a presentare il loro nuovo libro \"Banda nel vento\". Lo spazio \"Amici miei\" è interamente dedicato alla prima puntata di \"Ballando con le Stelle\". In studio: Monica Guerritore, Eugenio Finardi, Massimo Ghini, Jimmy Ghione, Simona Ventura, Francesca Fialdini, Simone Di Pasquale e Rossella Erra. Per lo spazio di attualità, Mara Venier e Tommaso Cerno commentano gli ultimi sviluppi sul caso Garlasco con Salvo Sottile, Rita Cavallaro e il Gen. Luciano Garofano in collegamento.",
         "immagine": "https://img-guidatv.org/1/domenica-in/2.jpg"
       },
       {
@@ -17700,7 +17756,7 @@
         "ora": "20:35",
         "fine": "21:55",
         "titolo": "Francesco - Il Cantico",
-        "descrizione": "Roberto Benigni ci racconta il San Francesco più intimo e autentico: un viaggio sorprendente che culmina nel Cantico delle Creature, un inno d'amore che ancora oggi colpisce per la modernità del suo messaggio di pace e fratellanza.",
+        "descrizione": "\"Cercherò di raccontarvi un Francesco vero, dalla vita straordinaria che vi stupirà\" Queste le parole di Roberto Benigni che introducono la serata evento in cui l'amato attore e regista racconta la figura di San Francesco d'Assisi, partendo dalla vita dell'uomo, attraverso curiosità e aneddoti inaspettati, illustrandone conflitti, contraddizioni ed evoluzioni che lo hanno portato a diventare Santo e Patrono d'Italia. \"...è il personaggio del medioevo di cui si conosce di più, era talmente affascinante che tutti scrivevano di lui... è stato il più grande plasmatore di anime della storia dell'umanità\", aggiunge Benigni. \"...in mezzo a tanta violenza e avidità lui dimostra a tutti che un nuovo mondo è possibile''.",
         "immagine": "https://img-guidatv.org/1/francesco-il-cantico/5.jpg"
       },
       {
@@ -17846,13 +17902,13 @@
         "ora": "09:45",
         "fine": "11:20",
         "titolo": "Santa Messa Dalla Basilica Superiore Di San Francesco In Assisi (Perugia)",
-        "descrizione": "La funzione è trasmessa in Eurovisione - Regia di Gianni Epifani. Commento liturgico di Orazio Coclite.",
+        "descrizione": "Dalla Basilica Superiore di San Francesco in Assisi, la Santa Messa presieduta dal cardinale Matteo Maria Zuppi.",
         "immagine": "https://img-guidatv.org/1/santa-messa-dalla-basilica-superiore-di-san-francesco-in-assisi-perugia/0.jpg"
       },
       {
         "ora": "11:20",
         "fine": "12:00",
-        "titolo": "A Sua Immagine E Discorsi Delle Autorità",
+        "titolo": "A Sua Immagine - Discorsi Delle Autorità",
         "descrizione": "Programma di approfondimento religioso con all'interno la Santa Messa e la Recita dell'Angelus da Piazza San Pietro.",
         "immagine": "https://img-guidatv.org/1/a-sua-immagine/0.jpg"
       },
@@ -17881,7 +17937,7 @@
         "ora": "14:00",
         "fine": "17:15",
         "titolo": "Domenica In",
-        "descrizione": "Mara Venier, la \"signora della domenica\", accoglie i protagonisti dell'attualità, i grandi nomi e i nuovi talenti dello spettacolo, per una domenica pomeriggio piena di allegria, ospiti, interviste, musica e storie di vita.",
+        "descrizione": "Mara Venier, la \"signora della domenica\", accoglie i protagonisti dell'attualità, i grandi nomi e i nuovi talenti dello spettacolo, per una domenica pomeriggio piena di allegria, ospiti, interviste, musica e storie di vita. Tra gli ospiti della seconda puntata: i Pooh, che si esibiscono con alcuni grandi successi come \"Uomini soli\", \"Pensiero\" e \"Chi fermerà la musica\", oltre a presentare il loro nuovo libro \"Banda nel vento\". Lo spazio \"Amici miei\" è interamente dedicato alla prima puntata di \"Ballando con le Stelle\". In studio: Monica Guerritore, Eugenio Finardi, Massimo Ghini, Jimmy Ghione, Simona Ventura, Francesca Fialdini, Simone Di Pasquale e Rossella Erra. Per lo spazio di attualità, Mara Venier e Tommaso Cerno commentano gli ultimi sviluppi sul caso Garlasco con Salvo Sottile, Rita Cavallaro e il Gen. Luciano Garofano in collegamento.",
         "immagine": "https://img-guidatv.org/1/domenica-in/2.jpg"
       },
       {
@@ -17923,7 +17979,7 @@
         "ora": "20:35",
         "fine": "21:55",
         "titolo": "Francesco - Il Cantico",
-        "descrizione": "Roberto Benigni ci racconta il San Francesco più intimo e autentico: un viaggio sorprendente che culmina nel Cantico delle Creature, un inno d'amore che ancora oggi colpisce per la modernità del suo messaggio di pace e fratellanza.",
+        "descrizione": "\"Cercherò di raccontarvi un Francesco vero, dalla vita straordinaria che vi stupirà\" Queste le parole di Roberto Benigni che introducono la serata evento in cui l'amato attore e regista racconta la figura di San Francesco d'Assisi, partendo dalla vita dell'uomo, attraverso curiosità e aneddoti inaspettati, illustrandone conflitti, contraddizioni ed evoluzioni che lo hanno portato a diventare Santo e Patrono d'Italia. \"...è il personaggio del medioevo di cui si conosce di più, era talmente affascinante che tutti scrivevano di lui... è stato il più grande plasmatore di anime della storia dell'umanità\", aggiunge Benigni. \"...in mezzo a tanta violenza e avidità lui dimostra a tutti che un nuovo mondo è possibile''.",
         "immagine": "https://img-guidatv.org/1/francesco-il-cantico/5.jpg"
       },
       {
@@ -18053,17 +18109,10 @@
       },
       {
         "ora": "14:00",
-        "fine": "14:30",
+        "fine": "18:05",
         "titolo": "Europei Di Ciclismo 2026 - Uomini ÉLite",
         "descrizione": "Un percorso complessivo di 196 km con partenza da Lubiana, arrivo a Šencur e caratterizzato dalla salita di Mozjanca, uno strappo di 2,1 km con una pendenza media del 10,2%, da ripetere 5 volte.",
         "immagine": "https://img-guidatv.org/2/europei-di-ciclismo-2026-uomini-elite/0.jpg"
-      },
-      {
-        "ora": "14:30",
-        "fine": "18:05",
-        "titolo": "Domenica Sportiva Pomeriggio",
-        "descrizione": "Il racconto dell'attualità del calcio e degli altri sport attraverso immagini, dati, interviste e opinioni. In studio e in collegamento, i protagonisti raccontano i loro successi sportivi e personali.",
-        "immagine": "https://img-guidatv.org/2/domenica-sportiva-pomeriggio/0.jpg"
       },
       {
         "ora": "18:05",
@@ -18248,17 +18297,10 @@
       },
       {
         "ora": "14:00",
-        "fine": "14:30",
+        "fine": "18:05",
         "titolo": "Europei Di Ciclismo 2026 - Uomini ÉLite",
         "descrizione": "Un percorso complessivo di 196 km con partenza da Lubiana, arrivo a Šencur e caratterizzato dalla salita di Mozjanca, uno strappo di 2,1 km con una pendenza media del 10,2%, da ripetere 5 volte.",
         "immagine": "https://img-guidatv.org/2/europei-di-ciclismo-2026-uomini-elite/0.jpg"
-      },
-      {
-        "ora": "14:30",
-        "fine": "18:05",
-        "titolo": "Domenica Sportiva Pomeriggio",
-        "descrizione": "Il racconto dell'attualità del calcio e degli altri sport attraverso immagini, dati, interviste e opinioni. In studio e in collegamento, i protagonisti raccontano i loro successi sportivi e personali.",
-        "immagine": "https://img-guidatv.org/2/domenica-sportiva-pomeriggio/0.jpg"
       },
       {
         "ora": "18:05",
@@ -18362,21 +18404,21 @@
         "fine": "03:15",
         "titolo": "Visions In Meditation - #2 (Mesa Verde)",
         "descrizione": "Realizzato in 4 movimenti tra il 1989 e il 1990, la serie Visions in Meditation permette a Brakhage di tornare su un concetto a lui caro, il \"mind's eye\" \"l'occhio della mente\" che si affianca e completa il \"viusl eye\", ovvero il guardare \"automatico\" dell'occhio, senza il discernimento e il processo mentale che mette in moto un processo critico e di approfondimento della materia.",
-        "immagine": "https://img-guidatv.org/3/visions-in-meditation-2-mesa-verde/0.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/rBjIWdoJWwlPbm7h6etwJjx4JWu.jpg"
       },
       {
         "ora": "03:15",
         "fine": "03:30",
         "titolo": "Visions In Meditation - #3 (Plato'S Cave)",
         "descrizione": "Realizzato in 4 movimenti tra il 1989 e il 1990, la serie Visions in Meditation permette a Brakhage di tornare su un concetto a lui caro, il \"mind's eye\" \"l'occhio della mente\" che si affianca e completa il \"viusl eye\", ovvero il guardare \"automatico\" dell'occhio, senza il discernimento e il processo mentale che mette in moto un processo critico e di approfondimento della materia.",
-        "immagine": "https://img-guidatv.org/3/visions-in-meditation-3-plato-s-cave/0.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/asYeqmk2hHoCGE9dP5SrEA3H4Nj.jpg"
       },
       {
         "ora": "03:30",
         "fine": "05:22",
         "titolo": "Happy Hour (Film)",
-        "descrizione": "A Kobe quattro donne sulla quarantina sono grandi amiche e si confidano reciprocamente cercando di sfuggire all'alienazione della vita quotidiana. Durante un viaggio ai bagni termali una di loro scompare  misteriosamente scatenando una catena di eventi inaspettati.",
-        "immagine": "https://image.tmdb.org/t/p/w300/hwMBpEhcZ43cWjimO6hIdPI4BoB.jpg"
+        "descrizione": "Quattro donne, tutte sulla trentina, tre sposate e una divorziata, sono capaci di parlare di ogni cosa o, almeno, di ciò che pensano. Un giorno, dopo aver perso una sentenza di divorzio, una di loro organizza il suo futuro e scompare. Le tre donne che rimangono si ritrovano a rivedere le loro esistenze durante il corso di una lunga notte, piena di domande su chi si voleva realmente essere.",
+        "immagine": "https://image.tmdb.org/t/p/w300/FHoTrAo6OhnUQsQrkFx4vU1017.jpg"
       },
       {
         "ora": "05:22",
@@ -18592,21 +18634,21 @@
         "fine": "03:15",
         "titolo": "Visions In Meditation - #2 (Mesa Verde)",
         "descrizione": "Realizzato in 4 movimenti tra il 1989 e il 1990, la serie Visions in Meditation permette a Brakhage di tornare su un concetto a lui caro, il \"mind's eye\" \"l'occhio della mente\" che si affianca e completa il \"viusl eye\", ovvero il guardare \"automatico\" dell'occhio, senza il discernimento e il processo mentale che mette in moto un processo critico e di approfondimento della materia.",
-        "immagine": "https://img-guidatv.org/3/visions-in-meditation-2-mesa-verde/0.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/rBjIWdoJWwlPbm7h6etwJjx4JWu.jpg"
       },
       {
         "ora": "03:15",
         "fine": "03:30",
         "titolo": "Visions In Meditation - #3 (Plato'S Cave)",
         "descrizione": "Realizzato in 4 movimenti tra il 1989 e il 1990, la serie Visions in Meditation permette a Brakhage di tornare su un concetto a lui caro, il \"mind's eye\" \"l'occhio della mente\" che si affianca e completa il \"viusl eye\", ovvero il guardare \"automatico\" dell'occhio, senza il discernimento e il processo mentale che mette in moto un processo critico e di approfondimento della materia.",
-        "immagine": "https://img-guidatv.org/3/visions-in-meditation-3-plato-s-cave/0.jpg"
+        "immagine": "https://image.tmdb.org/t/p/w300/asYeqmk2hHoCGE9dP5SrEA3H4Nj.jpg"
       },
       {
         "ora": "03:30",
         "fine": "05:22",
         "titolo": "Happy Hour (Film)",
-        "descrizione": "A Kobe quattro donne sulla quarantina sono grandi amiche e si confidano reciprocamente cercando di sfuggire all'alienazione della vita quotidiana. Durante un viaggio ai bagni termali una di loro scompare  misteriosamente scatenando una catena di eventi inaspettati.",
-        "immagine": "https://image.tmdb.org/t/p/w300/hwMBpEhcZ43cWjimO6hIdPI4BoB.jpg"
+        "descrizione": "Quattro donne, tutte sulla trentina, tre sposate e una divorziata, sono capaci di parlare di ogni cosa o, almeno, di ciò che pensano. Un giorno, dopo aver perso una sentenza di divorzio, una di loro organizza il suo futuro e scompare. Le tre donne che rimangono si ritrovano a rivedere le loro esistenze durante il corso di una lunga notte, piena di domande su chi si voleva realmente essere.",
+        "immagine": "https://image.tmdb.org/t/p/w300/FHoTrAo6OhnUQsQrkFx4vU1017.jpg"
       },
       {
         "ora": "05:22",
@@ -18829,7 +18871,7 @@
         "fine": "06:49",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001027601/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:49",
@@ -18899,7 +18941,7 @@
         "fine": "16:32",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101001001/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:32",
@@ -18982,7 +19024,7 @@
         "fine": "06:49",
         "titolo": "Tg4 - ultima ora mattina",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4.",
-        "immagine": "https://img-guidatv.org/40/tg-4-ultima-ora-mattina/7.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314229001027601/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "06:49",
@@ -19052,7 +19094,7 @@
         "fine": "16:32",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/40/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101001001/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:32",
@@ -19149,7 +19191,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101220901/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19421,7 +19463,7 @@
         "fine": "06:15",
         "titolo": "Prima Pagina Tg5",
         "descrizione": "Prima edizione quotidiana del notiziario televisivo a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/41/prima-pagina-tg5/10.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314201101220901/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "06:15",
@@ -19791,14 +19833,14 @@
         "fine": "13:06",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201055301/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:06",
         "fine": "13:49",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:49",
@@ -20042,14 +20084,14 @@
         "fine": "13:06",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/42/studio-aperto/12.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201055301/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "13:06",
         "fine": "13:49",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/42/sport-mediaset-2026/5.jpg"
+        "immagine": "https://img-guidatv.org/partite/championsleague.png"
       },
       {
         "ora": "13:49",
@@ -20887,13 +20929,13 @@
       },
       {
         "ora": "14:55",
-        "fine": "15:10",
+        "fine": "15:05",
         "titolo": "Moto GP Zona Rossa",
         "descrizione": "Le interviste ai protagonisti, i commenti a caldo e le primissime analisi dopo la conclusione della gara della MotoGP.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b2576869-4e94-433e-a401-a432b6bcdc75/background/600"
       },
       {
-        "ora": "15:10",
+        "ora": "15:05",
         "fine": "16:35",
         "titolo": "[REPLICA] - F1 Paddock Live Pre Gara",
         "descrizione": "L'avvicinamento al Gran Premio con l'analisi di quanto successo nel weekend, le interviste, i giri di riscaldamento delle monoposto e l'atmosfera unica della griglia di partenza prima del via.",
@@ -20908,17 +20950,24 @@
       },
       {
         "ora": "18:25",
-        "fine": "18:55",
+        "fine": "18:45",
         "titolo": "[REPLICA] - F1 Podio",
         "descrizione": "Al termine del gp di F1 le immagini del podio e le interviste dei protagonisti.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/b7fd36f6-0ee8-4a2f-a9b8-06b440ad7b69/background/600"
       },
       {
-        "ora": "18:55",
-        "fine": "19:10",
+        "ora": "18:45",
+        "fine": "18:55",
         "titolo": "[REPLICA] - F1 Paddock Live Post Gara",
         "descrizione": "I commenti dei piloti e dei team principal accompagnano l'analisi della gara appena conclusa. Con Davide Camicioli e tutta la squadra di Sky Sport F1.",
         "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/28a0fe6e-1c78-43ba-985b-e029b92a79ba/background/600"
+      },
+      {
+        "ora": "18:55",
+        "fine": "19:10",
+        "titolo": "Il nuovo Max",
+        "descrizione": "Il nuovo Max",
+        "immagine": "https://ethaneurope.it.imageservice.sky.com/pd-image/8f452145-5a16-4268-85d1-566b9b4552fb/background/600"
       },
       {
         "ora": "19:10",
@@ -22363,8 +22412,8 @@
         "ora": "06:20",
         "fine": "08:00",
         "titolo": "Tradimento",
-        "descrizione": "Lui è un distinto e rispettato giudice del tribunale della famiglia. Lei è una donna onesta e di principio che ha salvato molti matrimoni dalla distruzione, si è assicurata che molti bambini ricevessero l'affetto e l'amore che meritavano, ed è sempre stata dalla parte della giustizia.",
-        "immagine": "https://img-guidatv.org/serie/674c308ba0e03689d430e386_p_4_rs_300.jpg"
+        "descrizione": "Gennaro La Monica è un venditore di brodo di polipi abusivo, ed è sposato con Carmela, che gestisce un chiosco di bibite e i due hanno una figlia Titina e Gennaro ha la madre Assunta e la cognata Rosalia, sorella di Carmela che vivono con loro. La famiglia tirerebbe avanti, ma lui si ribella agli strozzini che chiedono il pizzo sul suo commercio. Intanto Nino Esposito si innamora di Rosalia, ma in questo caso, Gennaro chiede al giovane di stare lontano dalla ragazza, ma inutilmente. Invece Titina vuole molto bene a Nino, e lo vede bene insieme a sua zia Rosalia. Intanto Carmela si rivolge a un losco avvocato, questi tenta di stuprarla, ma le cade un pezzo di un vestito che la donna la teneva addosso. Gennaro si batte con il capo degli strozzini Pasquale Ruoppolo, finisce in prigione e caccia la moglie ritenendola infedele, fino all'inevitabile lieto fine, in cui tutti i problemi - sia sentimentali, sia lavorativi - si risolvono e sua sorellina Rosalia si invaghisce di Nino.",
+        "immagine": "https://image.tmdb.org/t/p/w300/qnprBTx652Fn5ZgjfswxfTB5Lc5.jpg"
       },
       {
         "ora": "08:00",
@@ -22424,13 +22473,13 @@
       },
       {
         "ora": "21:10",
-        "fine": "23:15",
+        "fine": "23:17",
         "titolo": "Io sono l'abisso",
         "descrizione": "L’Uomo che pulisce pensa che si possono ricavare un sacco di segreti dai rifiuti. Perché la gente tende a mentire; la spazzatura, invece, non mente mai. L’Uomo che pulisce credeva di essere invisibile finché non ha incontrato la Ragazzina col ciuffo viola. La Ragazzina col ciuffo viola irrompe nella sua vita ordinata perché solo un angelo cattivo può salvarla adesso. Intanto, la Cacciatrice sa che là fuori c’è qualcuno che uccide le donne dai capelli biondi. Anche se nessuno le crede, lei lo sa. Ciò che non sa, invece, è che c’è qualcosa di malvagio che si nasconde dietro la porta verde. La verità sta in fondo a un abisso buio e profondissimo.",
         "immagine": "https://img-guidatv.org/film_new/i/63ea86659dd9ab1b9ca2fa65/63ea86659dd9ab1b9ca2fa65_p_1_rs_300.jpg"
       },
       {
-        "ora": "23:15",
+        "ora": "23:17",
         "fine": "01:20",
         "titolo": "Sicario",
         "descrizione": "Al confine tra Stati Uniti e Messico, in una zona dove non esiste la legge, Kate, un'agente dell'FBI idealista è arruolata da un agente del governo in una task force d'elite impegnata nella sempre più difficile guerra al traffico di droga. Guidati da un consulente dal passato discutibile, la squadra parte per una missione segreta che costringerà Kate a mettere in discussione tutto ciò in cui credeva, per poter sopravvivere.",
@@ -22467,8 +22516,8 @@
         "ora": "06:20",
         "fine": "08:00",
         "titolo": "Tradimento",
-        "descrizione": "Lui è un distinto e rispettato giudice del tribunale della famiglia. Lei è una donna onesta e di principio che ha salvato molti matrimoni dalla distruzione, si è assicurata che molti bambini ricevessero l'affetto e l'amore che meritavano, ed è sempre stata dalla parte della giustizia.",
-        "immagine": "https://img-guidatv.org/serie/674c308ba0e03689d430e386_p_4_rs_300.jpg"
+        "descrizione": "Gennaro La Monica è un venditore di brodo di polipi abusivo, ed è sposato con Carmela, che gestisce un chiosco di bibite e i due hanno una figlia Titina e Gennaro ha la madre Assunta e la cognata Rosalia, sorella di Carmela che vivono con loro. La famiglia tirerebbe avanti, ma lui si ribella agli strozzini che chiedono il pizzo sul suo commercio. Intanto Nino Esposito si innamora di Rosalia, ma in questo caso, Gennaro chiede al giovane di stare lontano dalla ragazza, ma inutilmente. Invece Titina vuole molto bene a Nino, e lo vede bene insieme a sua zia Rosalia. Intanto Carmela si rivolge a un losco avvocato, questi tenta di stuprarla, ma le cade un pezzo di un vestito che la donna la teneva addosso. Gennaro si batte con il capo degli strozzini Pasquale Ruoppolo, finisce in prigione e caccia la moglie ritenendola infedele, fino all'inevitabile lieto fine, in cui tutti i problemi - sia sentimentali, sia lavorativi - si risolvono e sua sorellina Rosalia si invaghisce di Nino.",
+        "immagine": "https://image.tmdb.org/t/p/w300/qnprBTx652Fn5ZgjfswxfTB5Lc5.jpg"
       },
       {
         "ora": "08:00",
@@ -22528,13 +22577,13 @@
       },
       {
         "ora": "21:10",
-        "fine": "23:15",
+        "fine": "23:17",
         "titolo": "Io sono l'abisso",
         "descrizione": "L’Uomo che pulisce pensa che si possono ricavare un sacco di segreti dai rifiuti. Perché la gente tende a mentire; la spazzatura, invece, non mente mai. L’Uomo che pulisce credeva di essere invisibile finché non ha incontrato la Ragazzina col ciuffo viola. La Ragazzina col ciuffo viola irrompe nella sua vita ordinata perché solo un angelo cattivo può salvarla adesso. Intanto, la Cacciatrice sa che là fuori c’è qualcuno che uccide le donne dai capelli biondi. Anche se nessuno le crede, lei lo sa. Ciò che non sa, invece, è che c’è qualcosa di malvagio che si nasconde dietro la porta verde. La verità sta in fondo a un abisso buio e profondissimo.",
         "immagine": "https://img-guidatv.org/film_new/i/63ea86659dd9ab1b9ca2fa65/63ea86659dd9ab1b9ca2fa65_p_1_rs_300.jpg"
       },
       {
-        "ora": "23:15",
+        "ora": "23:17",
         "fine": "01:20",
         "titolo": "Sicario",
         "descrizione": "Al confine tra Stati Uniti e Messico, in una zona dove non esiste la legge, Kate, un'agente dell'FBI idealista è arruolata da un agente del governo in una task force d'elite impegnata nella sempre più difficile guerra al traffico di droga. Guidati da un consulente dal passato discutibile, la squadra parte per una missione segreta che costringerà Kate a mettere in discussione tutto ciò in cui credeva, per poter sopravvivere.",
@@ -24856,28 +24905,28 @@
         "fine": "12:25",
         "titolo": "Tg4",
         "descrizione": "Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.",
-        "immagine": "https://img-guidatv.org/10473/tg4/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501055301/media/2/2/e5412c48-4894-4218-a20d-7f7396ce9653/fbe43fb3-4a94-482b-9553-24163aa9a511.jpg"
       },
       {
         "ora": "12:25",
         "fine": "12:58",
         "titolo": "Studio Aperto",
         "descrizione": "Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.",
-        "immagine": "https://img-guidatv.org/10473/studio-aperto/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201055301/media/29/93/8f97fd38-2d14-4c56-9db4-d17fab4d3da9/2ed971f8-2719-450d-b2b0-8570adbbceaf.jpg"
       },
       {
         "ora": "12:58",
         "fine": "13:34",
         "titolo": "Tg5",
         "descrizione": "Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.",
-        "immagine": "https://img-guidatv.org/10473/tg5/4.png"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201110601/media/21/85/4f516fa5-8606-4add-a1da-a145bb3ee185/f40ad02a-c0c1-43f7-b899-e2ff92ea8157.jpg"
       },
       {
         "ora": "13:34",
         "fine": "14:11",
         "titolo": "Sport mediaset 2026",
         "descrizione": "Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.",
-        "immagine": "https://img-guidatv.org/10473/sport-mediaset-2026/5.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314686001006401/media/22/86/3737884b-ae0b-43cb-9af9-16473d20a478/26dcb11c-4d2e-444d-802c-e1830a6aa81e.jpg"
       },
       {
         "ora": "14:11",
@@ -24905,21 +24954,21 @@
         "fine": "16:00",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101001001/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:00",
         "fine": "16:22",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101001001/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:22",
         "fine": "16:32",
         "titolo": "Diario del weekend",
         "descrizione": "Approfondimento a cura del Tg4 sui principali fatti del giorno.",
-        "immagine": "https://img-guidatv.org/10473/diario-del-weekend/0.jpg"
+        "immagine": "https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101001001/media/2/2/3515c77e-14a2-4375-803c-5c1bf1b1a927/985d021f-3efa-4a56-82a9-fa81ed9b92f1.jpg"
       },
       {
         "ora": "16:32",
@@ -27596,13 +27645,34 @@
       },
       {
         "ora": "05:00",
-        "fine": "05:10",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "fine": "05:05",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
-        "ora": "05:10",
+        "ora": "05:05",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:25",
+        "titolo": "Il Quotidiano (R)",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "06:00",
+        "titolo": "Lo Specchio",
+        "descrizione": "",
+        "immagine": "https://img-guidatv.org/90/lo-specchio/6.jpg"
+      },
+      {
+        "ora": "06:00",
         "fine": "07:10",
         "titolo": "La domenica sportiva (R)",
         "descrizione": "Le immagini del weekend",
@@ -27938,13 +28008,34 @@
       },
       {
         "ora": "05:00",
-        "fine": "05:10",
-        "titolo": "Repliche informazione",
-        "descrizione": "TG notte (R) + Meteo (R) + Prima Ora (R) + Quotidiano (R) + TG sera (R)",
-        "immagine": "https://img-guidatv.org/90/repliche-informazione/10.jpg"
+        "fine": "05:05",
+        "titolo": "TG Notte (R)",
+        "descrizione": "Le ultime notizie della giornata",
+        "immagine": "https://img-guidatv.org/90/tg-notte/5.jpg"
       },
       {
-        "ora": "05:10",
+        "ora": "05:05",
+        "fine": "05:15",
+        "titolo": "Meteo",
+        "descrizione": "Tutti i colori del tempo",
+        "immagine": "https://img-guidatv.org/90/meteo/11.jpg"
+      },
+      {
+        "ora": "05:15",
+        "fine": "05:25",
+        "titolo": "Il Quotidiano (R)",
+        "descrizione": "Attualità della Svizzera italiana",
+        "immagine": "https://img-guidatv.org/90/il-quotidiano/5.jpg"
+      },
+      {
+        "ora": "05:25",
+        "fine": "06:00",
+        "titolo": "Lo Specchio",
+        "descrizione": "",
+        "immagine": "https://img-guidatv.org/90/lo-specchio/6.jpg"
+      },
+      {
+        "ora": "06:00",
         "fine": "07:10",
         "titolo": "La domenica sportiva (R)",
         "descrizione": "Le immagini del weekend",
@@ -28272,7 +28363,7 @@
         "immagine": "https://img-guidatv.org/91/albachiara-in-tv/0.jpg"
       },
       {
-        "ora": "06:20",
+        "ora": "06:10",
         "fine": "06:30",
         "titolo": "Tesori del mondo - Isole Eolie: sorelle di fuoco e vento",
         "descrizione": "Patrimonio dell'umanità\nDocumentario",
@@ -28308,27 +28399,13 @@
       },
       {
         "ora": "08:50",
-        "fine": "11:00",
+        "fine": "12:45",
         "titolo": "Automobilismo: Formula Uno 2026 - Gran Premio del Bahrain in Malesia",
         "descrizione": "da Sepang (MAS)",
         "immagine": "https://img-guidatv.org/91/automobilismo-formula-uno/7.jpg"
       },
       {
-        "ora": "11:00",
-        "fine": "12:05",
-        "titolo": "Falò",
-        "descrizione": "Rive dei laghi sempre più difficili da raggiungere per la popolazione. Il Ceresio è il lago con le sponde più privatizzate della Svizzera, mentre sul Verbano il sentiero tra Minusio e Tenero, d'estate, viene in parte riservato ai turisti. Ma cosa prevedono le leggi cantonali e federali e perché il diritto di tutti ad accedere liberamente alle rive resta spesso solo sulla carta? Inchiesta di Falò.",
-        "immagine": "https://img-guidatv.org/91/falo/0.jpg"
-      },
-      {
-        "ora": "12:05",
-        "fine": "12:25",
-        "titolo": "Tesori del mondo - Tequila, il lubrificante del machismo",
-        "descrizione": "Patrimonio dell'umanità\nDocumentario",
-        "immagine": "https://img-guidatv.org/91/tesori-del-mondo/0.jpg"
-      },
-      {
-        "ora": "12:25",
+        "ora": "12:45",
         "fine": "17:40",
         "titolo": "Ciclismo: Europei Lubiana 2026 - Gara élite maschile",
         "descrizione": "da Lubiana (SLO)",
@@ -28432,7 +28509,7 @@
         "immagine": "https://img-guidatv.org/91/albachiara-in-tv/0.jpg"
       },
       {
-        "ora": "06:20",
+        "ora": "06:10",
         "fine": "06:30",
         "titolo": "Tesori del mondo - Isole Eolie: sorelle di fuoco e vento",
         "descrizione": "Patrimonio dell'umanità\nDocumentario",
@@ -28468,27 +28545,13 @@
       },
       {
         "ora": "08:50",
-        "fine": "11:00",
+        "fine": "12:45",
         "titolo": "Automobilismo: Formula Uno 2026 - Gran Premio del Bahrain in Malesia",
         "descrizione": "da Sepang (MAS)",
         "immagine": "https://img-guidatv.org/91/automobilismo-formula-uno/7.jpg"
       },
       {
-        "ora": "11:00",
-        "fine": "12:05",
-        "titolo": "Falò",
-        "descrizione": "Rive dei laghi sempre più difficili da raggiungere per la popolazione. Il Ceresio è il lago con le sponde più privatizzate della Svizzera, mentre sul Verbano il sentiero tra Minusio e Tenero, d'estate, viene in parte riservato ai turisti. Ma cosa prevedono le leggi cantonali e federali e perché il diritto di tutti ad accedere liberamente alle rive resta spesso solo sulla carta? Inchiesta di Falò.",
-        "immagine": "https://img-guidatv.org/91/falo/0.jpg"
-      },
-      {
-        "ora": "12:05",
-        "fine": "12:25",
-        "titolo": "Tesori del mondo - Tequila, il lubrificante del machismo",
-        "descrizione": "Patrimonio dell'umanità\nDocumentario",
-        "immagine": "https://img-guidatv.org/91/tesori-del-mondo/0.jpg"
-      },
-      {
-        "ora": "12:25",
+        "ora": "12:45",
         "fine": "17:40",
         "titolo": "Ciclismo: Europei Lubiana 2026 - Gara élite maschile",
         "descrizione": "da Lubiana (SLO)",
